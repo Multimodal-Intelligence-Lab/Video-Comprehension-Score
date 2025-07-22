@@ -1,0 +1,2061 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance-based Narrative Alignment Score (NAS-D)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        /* --- SMOOTHNESS & PERFORMANCE ENHANCEMENTS --- */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            transition: background 1.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+
+        :root {
+            --bg-color: #f8fafc;
+            --light-shadow: rgba(255, 255, 255, 1);
+            --dark-shadow: rgba(148, 163, 184, 0.3);
+            --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --ease-out-cubic: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+
+        /* --- Neumorphic Page Container --- */
+        .neumorphic-page-container {
+            background: var(--bg-color);
+            border-radius: 25px;
+            box-shadow: 0 0 24px var(--dark-shadow);
+            margin: 1rem;
+            padding: 2rem;
+            min-height: calc(100vh - 2rem);
+            position: relative;
+        }
+
+        .neumorphic-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* --- Neumorphic & Enhanced Card Styles --- */
+        .interactive-card {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+            transition: transform 0.35s var(--ease-out-cubic), 
+                        box-shadow 0.35s var(--ease-out-cubic), 
+                        border-color 0.35s var(--ease-out-cubic);
+            will-change: transform, box-shadow;
+        }
+        .interactive-card:hover {
+            box-shadow: 12px 12px 24px var(--dark-shadow), -12px -12px 24px var(--light-shadow);
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .demo-card { 
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(248, 250, 252, 0.65) 100%); 
+            border-color: rgba(226, 232, 240, 0.8);
+            border-left: 3px solid #0d9488;
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow), 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+        .intro-card { 
+            background: linear-gradient(135deg, rgba(254, 252, 232, 0.6) 0%, rgba(254, 243, 199, 0.5) 100%); 
+            border-color: rgba(251, 191, 36, 0.5);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+        }
+        .metrics-card { background: linear-gradient(135deg, rgba(240, 249, 255, 0.6) 0%, rgba(219, 234, 254, 0.5) 100%); border-color: rgba(147, 197, 253, 0.6); }
+        .formula-card { background: linear-gradient(135deg, rgba(237, 233, 254, 0.6) 0%, rgba(221, 214, 254, 0.5) 100%); border-color: rgba(196, 181, 253, 0.6); }
+
+        /* Ghost score style for predictions */
+        .ghost-score {
+            color: #9ca3af;
+            font-weight: 700;
+        }
+
+        /* Tooltips */
+        #chartTooltip {
+            position: fixed; background: rgba(45, 55, 72, 0.9); backdrop-filter: blur(5px); color: white; padding: 8px 12px; border-radius: 6px;
+            font-size: 0.8rem; z-index: 100; pointer-events: none; opacity: 0; 
+            transition: opacity 0.25s var(--ease-out-quad), transform 0.25s var(--ease-out-quad);
+            transform: scale(0.95);
+        }
+        #chartTooltip.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+        #chartTooltip.penalty { border-left: 4px solid #dc2626; }
+        #chartTooltip.no-penalty { border-left: 4px solid #22c55e; }
+        
+        /* Segment List Styles */
+        .segment-list ul li { 
+            margin-bottom: 4px; line-height: 1.4; font-size: 0.8rem; color: #4b5563; padding: 4px 8px; border-radius: 0.375rem; 
+            cursor: pointer; 
+            transition: background-color 0.25s var(--ease-out-quad), border-color 0.25s var(--ease-out-quad), transform 0.25s var(--ease-out-quad), box-shadow 0.25s var(--ease-out-quad);
+            border: 1px solid #e5e7eb; user-select: none; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.4); 
+            will-change: background-color, transform;
+        }
+        .segment-list ul li:hover { background-color: #f0fdfa; border-color: #ccfbf1; transform: translateX(2px); }
+        .segment-list ul li.highlight { background-color: #cffafe !important; border-color: #67e8f9 !important; transform: scale(1.03); box-shadow: 0 4px 12px rgba(103, 232, 249, 0.6); }
+        .segment-list ul li.inactive-chunk { text-decoration: line-through; color: #9ca3af; background-color: #f3f4f6; }
+        .segment-list ul li.inactive-chunk:hover { background-color: #e5e7eb; }
+        .segment-list ul li.dragging { opacity: 0.5; background-color: #c7d2fe !important; cursor: grabbing; transform: scale(1.05); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+        @keyframes pulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.02); opacity: 0.7; } }
+        .drag-placeholder { height: 2.5em; background-color: #eef2ff; border: 2px dashed #a5b4fc; margin-bottom: 4px; border-radius: 0.375rem; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: #64748b; animation: pulse 1.5s infinite; }
+
+        /* Marker Styles */
+        .gen-marker {
+            position: absolute; width: 12px; height: 12px; border-radius: 50%;
+            background-color: #8b5cf6; border: 2px solid white;
+            cursor: grab; 
+            box-shadow: 
+                0 2px 4px rgba(0,0,0,0.3),
+                0 0 8px rgba(139, 92, 246, 0.2); 
+            z-index: 10;
+            transition: left 0.4s var(--ease-out-cubic), bottom 0.4s var(--ease-out-cubic), transform 0.25s var(--ease-out-cubic), background-color 0.25s var(--ease-out-cubic), box-shadow 0.25s var(--ease-out-cubic);
+            will-change: transform, left, bottom;
+        }
+        .gen-marker:hover { transform: scale(1.4); }
+        .gen-marker.dragging { background-color: #a78bfa; box-shadow: 0 4px 8px rgba(0,0,0,0.4); transform: scale(1.5); cursor: grabbing; }
+        
+        .marker-penalty-label {
+            position: absolute; top: 14px; left: 50%; transform: translateX(-50%);
+            font-size: 0.7rem; color: #dc2626; font-weight: 600;
+            background-color: rgba(255, 255, 255, 0.9); padding: 1px 4px;
+            border-radius: 3px; display: none; white-space: nowrap;
+            border: 1px solid rgba(220, 38, 38, 0.3);
+        }
+        .gen-marker:hover .marker-penalty-label { display: block; }
+
+        /* Tour Styles */
+        #tour-overlay { 
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 9998; 
+            opacity: 0; transition: opacity 0.4s ease-in-out; pointer-events: none; 
+        }
+        .tour-highlight { 
+            position: relative; z-index: 9999; 
+            box-shadow: 0 0 0 9999px rgba(0,0,0,0.6), 0 0 20px rgba(255, 255, 255, 0.9); 
+            border-radius: 0.5rem; transition: box-shadow 0.4s ease-in-out; 
+        }
+        #tour-callout { 
+            position: absolute; 
+            background: rgba(255, 255, 255, 0.95); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            color: #334155; 
+            padding: 1.25rem; 
+            border-radius: 20px; 
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+            z-index: 10000; 
+            max-width: 320px; 
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: opacity 0.3s var(--ease-out-cubic), transform 0.3s var(--ease-out-cubic); 
+            transform: translateY(10px); 
+            opacity: 0; 
+        }
+        #tour-callout.visible {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        #tour-callout button { 
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%); 
+            color: white; 
+            padding: 0.5rem 1rem; 
+            border: none; 
+            border-radius: 12px; 
+            cursor: pointer; 
+            font-weight: 600;
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+        }
+        #tour-callout button:hover { 
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02); 
+        }
+
+        /* Other elements */
+        .axis-label { position: absolute; font-size: 0.75rem; color: #475569; font-weight: 500; white-space: nowrap; z-index: 6; }
+        .ideal-mapping-window { 
+            position: absolute; 
+            border: 2px solid #0d9488; 
+            background-color: rgba(20, 184, 166, 0.1); 
+            box-sizing: border-box; 
+            z-index: 1; 
+            transition: all 0.3s var(--ease-out-quad); 
+            pointer-events: none; 
+            border-radius: 0.375rem;
+            box-shadow: 
+                0 0 8px rgba(13, 148, 136, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+        .lct-padding-window { position: absolute; background-color: rgba(253, 224, 71, 0.15); box-sizing: border-box; z-index: 0; transition: all 0.2s ease-out; pointer-events: none; border: 1px dashed #facc15; border-radius: 0.25rem; }
+        .chart-grid-background {
+            background-color: #fafbfc;
+            border-radius: 15px;
+            box-shadow: inset 5px 5px 10px var(--dark-shadow), inset -5px -5px 10px var(--light-shadow), inset 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        .preset-btn { 
+            border-radius: 12px;
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            font-weight: 600;
+            box-shadow: 5px 5px 10px var(--dark-shadow), -5px -5px 10px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .preset-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        .preset-btn:hover {
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02);
+        }
+        .preset-btn:active {
+            box-shadow: inset 4px 4px 8px var(--dark-shadow), inset -4px -4px 8px var(--light-shadow);
+            transform: translateY(1px);
+        }
+        .preset-btn:hover::before {
+            left: 100%;
+        }
+        .preset-btn:hover i {
+            transform: scale(1.1);
+        }
+        .preset-btn i {
+            transition: all 0.3s ease;
+        }
+        .pattern-bg { background-image: radial-gradient(circle at 2px 2px, rgba(20, 184, 166, 0.1) 1px, transparent 0); background-size: 20px 20px; }
+        .math-formula { background: linear-gradient(135deg, rgba(248, 250, 252, 0.7) 0%, rgba(241, 245, 249, 0.6) 100%); border: 1px solid #cbd5e1; font-family: 'Courier New', monospace; }
+        .step-number { background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; width: 2rem; height: 2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.875rem; flex-shrink: 0; }
+        details summary { cursor: pointer; user-select: none; transition: color 0.2s var(--ease-out-quad); }
+        details summary:hover { color: #1d4ed8; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary .summary-icon { display: inline-block; margin-right: 0.5rem; transition: transform 0.25s var(--ease-out-cubic); }
+        details[open] summary .summary-icon { transform: rotate(90deg); }
+
+        /* --- Hero Section Styles --- */
+        #hero-section {
+            background: linear-gradient(45deg, #0d9488, #0f766e); 
+            color: white;
+            border-radius: 20px 20px 0 0; /* Top corners rounded, bottom corners square */
+        }
+        #hero-section h1 {
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2); 
+        }
+
+        /* --- Hero Tour Button (No White Glow) --- */
+        .hero-tour-btn {
+            background: linear-gradient(135deg, #0f766e 0%, #064e3b 100%);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-tour-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .hero-tour-btn:hover {
+            background: linear-gradient(135deg, #14b8a6 0%, #0f766e 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-tour-btn:hover::before {
+            left: 100%;
+        }
+
+        .hero-tour-btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* --- Testing Assistant Styles --- */
+        .testing-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s var(--ease-out-cubic);
+        }
+        .testing-modal.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        .testing-modal-content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            padding: 2.5rem;
+            max-width: 90vw;
+            max-height: 85vh;
+            width: 700px;
+            box-shadow: 
+                12px 12px 24px var(--dark-shadow), 
+                -12px -12px 24px var(--light-shadow),
+                0 8px 32px rgba(0, 0, 0, 0.1);
+            transform: translateY(30px) scale(0.9);
+            transition: all 0.5s var(--ease-out-cubic);
+            overflow-y: auto;
+            box-sizing: border-box;
+            position: relative;
+        }
+        /* Custom scrollbar for testing modal */
+        .testing-modal-content::-webkit-scrollbar {
+            width: 8px;
+        }
+        .testing-modal-content::-webkit-scrollbar-track {
+            background: rgba(248, 250, 252, 0.3);
+            border-radius: 1rem;
+        }
+        .testing-modal-content::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, rgba(13, 148, 136, 0.6) 0%, rgba(20, 184, 166, 0.4) 100%);
+            border-radius: 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        .testing-modal-content::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, rgba(13, 148, 136, 0.8) 0%, rgba(20, 184, 166, 0.6) 100%);
+        }
+        /* Firefox scrollbar styling */
+        .testing-modal-content {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(13, 148, 136, 0.6) rgba(248, 250, 252, 0.3);
+        }
+        .testing-modal-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, rgba(13, 148, 136, 0.8) 50%, transparent 100%);
+        }
+        .testing-modal.visible .testing-modal-content {
+            transform: translateY(0) scale(1) rotateX(0deg);
+        }
+        .testing-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid rgba(226, 232, 240, 0.6);
+            position: relative;
+        }
+        .testing-modal-header::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, #0d9488 0%, #14b8a6 100%);
+            border-radius: 1px;
+        }
+        .testing-modal-close {
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            font-size: 1.25rem;
+            cursor: pointer;
+            color: #64748b;
+            padding: 0.75rem;
+            border-radius: 50%;
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+            transition: all 0.3s var(--ease-out-cubic);
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .testing-modal-close:hover {
+            color: #0d9488;
+            transform: rotate(90deg) scale(1.1);
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+        }
+        .test-category {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+        .test-category::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(20, 184, 166, 0.05) 0%, rgba(15, 118, 110, 0.05) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .test-category:hover::before {
+            opacity: 1;
+        }
+        .test-category:hover {
+            transform: translateY(-2px);
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+        }
+        .test-category h3 {
+            color: #0f172a;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.025em;
+        }
+        .test-category h3 i {
+            margin-right: 0.75rem;
+            color: #0d9488;
+            background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
+            padding: 0.5rem;
+            border-radius: 50%;
+            font-size: 1rem;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .test-category:hover h3 i {
+            transform: translateY(-2px) scale(1.1);
+            box-shadow: 
+                0 8px 16px rgba(20, 184, 166, 0.3),
+                0 4px 8px rgba(255, 255, 255, 0.9) inset;
+            color: #0f766e;
+        }
+        .test-item {
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+        }
+        .test-item:hover {
+            transform: translateY(-1px);
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+        }
+        .test-item:last-child {
+            margin-bottom: 0;
+        }
+        .test-item h4 {
+            color: #1e293b;
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+        .test-item p {
+            color: #475569;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .test-checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: rgba(248, 250, 252, 0.4);
+            border-radius: 0.5rem;
+            padding: 1rem;
+            border: 1px solid rgba(226, 232, 240, 0.4);
+        }
+        .test-checklist li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+            font-size: 0.875rem;
+            color: #334155;
+            line-height: 1.5;
+            transition: all 0.2s var(--ease-out-quad);
+        }
+        .test-checklist li:last-child {
+            margin-bottom: 0;
+        }
+        .test-checklist li:hover {
+            color: #0d9488;
+            transform: translateX(2px);
+        }
+        .test-checklist li::before {
+            content: "✓";
+            margin-right: 0.75rem;
+            color: #0d9488;
+            font-weight: bold;
+            background: rgba(13, 148, 136, 0.1);
+            border-radius: 50%;
+            width: 1.25rem;
+            height: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+        }
+        /* --- Neumorphic Input Elements --- */
+        .neumorphic-input {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            box-shadow: inset 4px 4px 8px var(--dark-shadow), inset -4px -4px 8px var(--light-shadow);
+            transition: box-shadow 0.3s var(--ease-out-quad), border-color 0.3s var(--ease-out-quad);
+            color: #374151;
+        }
+
+        .neumorphic-input:focus {
+            outline: none;
+            box-shadow: inset 6px 6px 12px var(--dark-shadow), inset -6px -6px 12px var(--light-shadow);
+            border-color: #0d9488;
+        }
+
+        /* --- Neumorphic Button --- */
+        .neumorphic-btn {
+            border-radius: 12px;
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            font-weight: 600;
+            box-shadow: 5px 5px 10px var(--dark-shadow), -5px -5px 10px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .neumorphic-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .neumorphic-btn:hover {
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02);
+        }
+
+        .neumorphic-btn:hover::before {
+            left: 100%;
+        }
+
+        .neumorphic-btn:active {
+            box-shadow: inset 4px 4px 8px var(--dark-shadow), inset -4px -4px 8px var(--light-shadow);
+            transform: translateY(1px);
+        }
+
+        .neumorphic-btn.primary {
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+        }
+
+        /* Math container styling */
+        .math-container {
+            background: #dbeafe;
+            border: 1px solid #93c5fd;
+            border-radius: 0.75rem;
+            padding: 0.75rem;
+            margin-top: 0.75rem;
+        }
+
+        /* KaTeX color overrides */
+        .katex {
+            color: #1e40af !important;
+        }
+
+        .katex .mord,
+        .katex .mop,
+        .katex .mbin,
+        .katex .mrel,
+        .katex .mopen,
+        .katex .mclose,
+        .katex .mpunct {
+            color: #1e40af !important;
+        }
+
+        .katex .mtext {
+            color: #1e3a8a !important;
+        }
+
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false}
+                ],
+                throwOnError: false
+            });
+        });
+    </script>
+</head>
+<body class="h-full text-slate-700 antialiased">
+    <div id="app-background" class="fixed inset-0 z-[-1] transition-all duration-1000"></div>
+    <div id="tour-overlay"></div>
+    <div id="chartTooltip"></div>
+
+    <!-- Neumorphic Page Container -->
+    <div class="neumorphic-page-container">
+        <div class="neumorphic-content">
+            <article class="interactive-card">
+                <!-- Hero Section -->
+                <section id="hero-section" class="py-6 px-4 sm:px-6 lg:px-8 relative">
+                    <div class="container mx-auto">
+                        <!-- Start Tour Button - Top Right -->
+                        <button id="start-tour-btn" class="hero-tour-btn absolute top-4 right-4 py-2 px-4">
+                            <i class="fas fa-magic mr-2"></i>Start Tour
+                        </button>
+                        
+                        <div class="text-left max-w-4xl">
+                            <div class="flex items-center justify-start mb-4">
+                                <div class="bg-teal-200 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mr-2">Interactive Demo</div>
+                                <div class="bg-white bg-opacity-20 text-white px-3 py-1 rounded-full text-xs font-semibold">Core VCS Component</div>
+                            </div>
+                            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-3 leading-tight">
+                                Distance-based Narrative Alignment Score (NAS-D)
+                            </h1>
+                            <p class="text-teal-200 text-base sm:text-lg mb-6 max-w-3xl">
+                                Explore chronological misalignment assessment through distance-based penalties when text segments are matched outside their expected narrative positions in the Video Comprehension Score framework.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Main Container -->
+                <main class="w-full max-w-7xl mx-auto p-6">
+
+        <!-- Introduction Section -->
+        <div id="tour-step-intro" class="intro-card interactive-card rounded-xl p-6 mb-8">
+            <div class="flex items-center mb-4"><i class="fas fa-lightbulb text-amber-600 text-xl mr-3"></i><h2 class="text-xl font-semibold text-amber-800">Introduction to Distance-based Narrative Alignment Score</h2></div>
+            
+            <!-- Definition -->
+            <div class="bg-white bg-opacity-70 p-4 rounded-lg mb-6 border-l-4 border-amber-500">
+                <p class="text-sm text-slate-700 mb-3"><strong>What is Distance-based NAS (NAS-D)?</strong> NAS-D measures chronological misalignment by calculating distance-based penalties when text segments are matched outside their expected narrative positions within mapping windows. Unlike semantic metrics that focus on content similarity, NAS-D explicitly evaluates narrative structure and temporal sequence integrity.</p>
+                
+                <!-- Warning -->
+                <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                    <div class="flex items-start">
+                        <i class="fas fa-exclamation-triangle text-orange-500 mr-2 mt-0.5"></i>
+                        <div>
+                            <p class="text-xs text-orange-800 font-medium mb-1">⚠️ Prerequisites Required</p>
+                            <p class="text-xs text-orange-700">Please read the VCS research paper and understand the theoretical foundation of Distance-based Narrative Alignment Score before using this interactive demo. This visualization assumes familiarity with the underlying concepts.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Prerequisites -->
+                <div class="bg-blue-50 border border-blue-200 rounded-xl p-3 mt-3">
+                    <div class="flex items-start">
+                        <i class="fas fa-info-circle text-blue-500 mr-2 mt-0.5"></i>
+                        <div>
+                            <p class="text-xs text-blue-800 font-medium mb-1">📚 Additional Prerequisites</p>
+                            <p class="text-xs text-blue-700">Before exploring Distance-based NAS, we recommend visiting the <a href="../mapping-window/" class="font-bold underline hover:text-blue-900">Mapping Window Demo</a> to understand how mapping windows work, and the <a href="../best-match/" class="font-bold underline hover:text-blue-900">Best Match Demo</a> to understand how best matches are determined. Distance-based NAS builds upon these foundational concepts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div class="bg-white bg-opacity-60 p-4 rounded-lg"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-microscope text-teal-500 mr-2"></i>Local Alignment (LAS)</h4><p class="text-sm text-slate-700">Measures average semantic quality of matched chunk pairs. Excellent for content similarity, but ignores chronological order and narrative structure.</p></div>
+                <div class="bg-white bg-opacity-60 p-4 rounded-lg"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-clock text-amber-500 mr-2"></i>Distance-based NAS (NAS-D)</h4><p class="text-sm text-slate-700">Measures chronological alignment by penalizing matches outside expected narrative positions. Detects temporal misalignments and narrative structure disruptions.</p></div>
+            </div>
+            
+            <!-- Sensitivity Analysis Section -->
+            <div class="bg-white bg-opacity-70 p-4 rounded-lg mb-6 border-l-4 border-blue-500">
+                <h4 class="font-semibold text-blue-700 mb-3 flex items-center"><i class="fas fa-balance-scale text-blue-600 mr-2"></i>NAS-D Sensitivity Analysis</h4>
+                <p class="text-sm text-slate-700 mb-3">Distance-based Narrative Alignment Score (NAS-D) responds differently to various types of chronological disruptions:</p>
+                
+                <!-- Conceptual Sensitivity Comparison -->
+                <div class="grid grid-cols-2 gap-4 mb-3">
+                    <div class="bg-gradient-to-r from-red-50 to-red-100 p-3 rounded-lg border border-red-200">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-exclamation-triangle text-red-600 mr-2"></i>
+                            <div class="text-sm font-semibold text-red-700">Global Misalignment</div>
+                        </div>
+                        <div class="text-xs text-red-600 mb-2">Major narrative disruptions</div>
+                        <div class="flex items-center">
+                            <div class="w-full bg-red-200 rounded-full h-2 mr-2">
+                                <div class="bg-red-600 h-2 rounded-full" style="width: 90%;"></div>
+                            </div>
+                            <span class="text-xs text-red-700 font-bold">HIGH</span>
+                        </div>
+                        <div class="text-xs text-slate-600 mt-1 italic">Reversals, rotations, major reordering</div>
+                    </div>
+                    <div class="bg-gradient-to-r from-yellow-50 to-yellow-100 p-3 rounded-lg border border-yellow-200">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-exchange-alt text-yellow-600 mr-2"></i>
+                            <div class="text-sm font-semibold text-yellow-700">Local Misalignment</div>
+                        </div>
+                        <div class="text-xs text-yellow-600 mb-2">Minor neighboring swaps</div>
+                        <div class="flex items-center">
+                            <div class="w-full bg-yellow-200 rounded-full h-2 mr-2">
+                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 40%;"></div>
+                            </div>
+                            <span class="text-xs text-yellow-700 font-bold">MODERATE</span>
+                        </div>
+                        <div class="text-xs text-slate-600 mt-1 italic">Adjacent chunk swaps, small deviations</div>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-3 rounded text-xs text-blue-800">
+                    <strong>Core Concept:</strong> NAS-D prioritizes global chronological coherence over local perfection. It severely penalizes large-scale narrative disruptions while being more forgiving of minor local variations, making it ideal for detecting structural narrative issues.
+                </div>
+            </div>
+            <details id="tour-step-2" class="mb-4">
+                <summary class="font-semibold text-amber-700 mb-3 flex items-center"><i class="fas fa-chevron-right summary-icon"></i>Distance-NAS Algorithm</summary>
+                <div class="mt-4 space-y-4">
+                    <!-- Main Algorithm Overview -->
+                    <div class="bg-white bg-opacity-70 p-4 rounded-lg border-l-4 border-amber-500">
+                        <p class="text-sm text-slate-700 mb-3"><strong>Algorithm Overview:</strong> The Distance-NAS algorithm follows 5 steps to measure chronological misalignment through distance penalties. The process can start with either precision or recall best matches - let's demonstrate with recall best matches using recall mapping windows:</p>
+                        
+                        <!-- Step 1: Use Recall Best Matches -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-bullseye text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 1: Use Recall Best Matches</p>
+                                    <p class="text-xs text-orange-700 mb-2">Start with recall best matches obtained from the best matching algorithm using recall mapping windows. These matches serve as the foundation for measuring chronological displacement.</p>
+                                    <div class="math-container">
+                                        <p class="text-xs">$\text{recall\_matches} = \{(r_i, g_j) \mid r_i \to g_j \text{ via recall mapping windows}\}$</p>
+                                        <p class="text-xs">$\text{recall\_mapping\_windows} = \{W_{rec}(r_i) \mid i \in [0, N_{ref})\}$</p>
+                                    </div>
+                                    <p class="text-xs text-orange-700 mt-2">where $r_i$ represents reference chunks, $g_j$ represents generated chunks from the best matching process, $N_{ref}$ is the number of reference chunks, and $N_{gen}$ is the number of generated chunks.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2: Calculate Distance Penalties -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-ruler text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 2: Calculate Distance</p>
+                                    <p class="text-xs text-orange-700 mb-2">For each recall best match that falls outside its ideal mapping window, calculate the distance as the displacement from the nearest window boundary.</p>
+                                    <div class="math-container">
+                                        <p class="text-xs">$\text{distance} = \begin{cases} 
+                                        \text{window\_start} - j & \text{if } j < \text{window\_start} \\
+                                        j - (\text{window\_end} - 1) & \text{if } j \geq \text{window\_end} \\
+                                        0 & \text{otherwise}
+                                        \end{cases}$</p>
+                                    </div>
+                                    <p class="text-xs text-orange-700 mt-2">This captures how far each match deviates from its expected chronological position in the generated sequence.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3: Apply LCT Filtering -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-filter text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 3: Apply LCT Filtering</p>
+                                    <p class="text-xs text-orange-700 mb-2">Apply Local Chronology Tolerance (LCT) to filter out minor deviations within the acceptable tolerance threshold, focusing only on significant chronological misalignments.</p>
+                                    <div class="math-container">
+                                        <p class="text-xs"><strong>Calculate LCT window height:</strong></p>
+                                        <p class="text-xs">$\text{mapping\_window\_height} = \lceil \frac{N_{gen}}{N_{ref}} \rceil$</p>
+                                        <p class="text-xs">$\text{ratio} = \frac{N_{gen}}{N_{ref}}$, $\text{ratio\_decimal} = \text{ratio} - \lfloor \text{ratio} \rfloor$</p>
+                                        <p class="text-xs">$\text{lct\_window\_height} = \begin{cases} 
+                                        \text{mapping\_window\_height} & \text{if } N_{gen} \leq N_{ref} \\
+                                        \text{mapping\_window\_height} - 1 & \text{if } N_{gen} > N_{ref} \text{ and } 0 < \text{ratio\_decimal} \leq 0.5 \\
+                                        \text{mapping\_window\_height} & \text{otherwise}
+                                        \end{cases}$</p>
+                                        <p class="text-xs"><strong>Apply LCT threshold:</strong></p>
+                                        <p class="text-xs">$\text{lct\_threshold} = \text{lct} \times \text{lct\_window\_height}$</p>
+                                        <p class="text-xs">$\text{effective\_distance}_i = \begin{cases} 
+                                        0 & \text{if } \text{distance}_i \leq \text{lct\_threshold} \\
+                                        \text{distance}_i & \text{otherwise}
+                                        \end{cases}$</p>
+                                    </div>
+                                    <p class="text-xs text-orange-700 mt-2">This allows minor narrative reorderings while penalizing major structural disruptions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 4: Normalize by Maximum Penalty -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-balance-scale text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 4: Normalize by Maximum Penalty</p>
+                                    <p class="text-xs text-orange-700 mb-2">Calculate the maximum possible penalty for normalization and compute the recall Distance-NAS score as one minus the normalized penalty ratio.</p>
+                                    <div class="math-container">
+                                        <p class="text-xs">$\text{max\_penalty} = \frac{\sum_{i=0}^{N_{ref}-1} \text{max\_distance}_i}{N_{gen}}$</p>
+                                        <p class="text-xs">$\text{total\_penalty} = \sum_{i=0}^{N_{ref}-1} \frac{\text{effective\_distance}_i}{N_{gen}}$</p>
+                                        <p class="text-xs">$\text{Recall NAS-D} = 1 - \frac{\text{total\_penalty}}{\text{max\_penalty}}$</p>
+                                    </div>
+                                    <p class="text-xs text-orange-700 mt-2">This ensures scores are bounded between 0 and 1, with higher scores indicating better chronological alignment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 5: Precision Process -->
+                        <div class="bg-green-50 border border-green-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-redo text-green-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-green-800 font-medium mb-1">Step 5: Precision Distance-NAS</p>
+                                    <p class="text-xs text-green-700 mb-2">The entire process (Steps 1-4) is repeated for precision evaluation, using precision best matches and precision mapping windows instead of recall mapping windows.</p>
+                                    <p class="text-xs text-green-700">This produces precision Distance-NAS scores that measure chronological misalignment from generated chunks to reference chunks, complementing the recall scores that measure reference to generated alignment.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6: Compute F1 Score -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-arrows-alt-h text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 6: F1 Score Combination</p>
+                                    <p class="text-xs text-orange-700 mb-2">Combine precision and recall Distance-NAS scores using harmonic mean to create a balanced measure that captures chronological alignment in both directions.</p>
+                                    <div class="math-container">
+                                        <p class="text-xs">$\text{Distance-NAS} = \frac{2 \times \text{Precision NAS-D} \times \text{Recall NAS-D}}{\text{Precision NAS-D} + \text{Recall NAS-D}}$</p>
+                                    </div>
+                                    <p class="text-xs text-orange-700 mt-2">The harmonic mean ensures balanced evaluation and prevents dominance by either precision or recall components.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Algorithm Conclusion -->
+                        <div class="bg-blue-50 border border-blue-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-play-circle text-blue-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-blue-800 font-medium mb-1">🎯 Interactive Demo</p>
+                                    <p class="text-xs text-blue-700 mb-2">Now that you understand how Distance-NAS measures chronological misalignment through distance penalties for both precision and recall, use the interactive demo below to see how different text lengths affect penalty calculations.</p>
+                                    <p class="text-xs text-blue-700">Observe how the LCT parameter provides tolerance for minor narrative reorderings while maintaining sensitivity to major structural disruptions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2 space-y-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div id="tour-step-4" class="demo-card interactive-card rounded-xl p-4">
+                        <div class="text-center mb-4"><div class="inline-flex items-center bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold mb-2"><i class="fas fa-crosshairs mr-1"></i>PRECISION NAS-D</div><h2 class="text-lg font-bold text-slate-800">Gen → Ref Alignment</h2></div>
+                        <div class="relative w-full max-w-md mx-auto pt-4 pb-36 pl-20 pr-4">
+                            <div class="absolute top-1/2 -left-8 -translate-y-16 -rotate-90 font-semibold text-sm text-slate-600 whitespace-nowrap">Reference Chunks</div>
+                            <div class="absolute bottom-24 left-1/2 -translate-x-1/4 font-semibold text-sm text-slate-600">Generated Chunks</div>
+                            <div class="relative w-full aspect-square">
+                                <div id="precisionChartGrid" class="absolute inset-0 bg-white rounded-lg chart-grid-background border border-slate-200">
+                                    <div id="precisionLctPaddingContainer"></div>
+                                    <div id="precisionIdealMappingContainer"></div>
+                                    <div id="precisionMarkerContainer"></div>
+                                    <div id="precisionAxisLabelContainerY"></div>
+                                    <div id="precisionAxisLabelContainerX"></div>
+                                </div>
+                            </div>
+                            <div id="precisionChartMetrics" class="absolute -bottom-2 left-0 right-0 grid grid-cols-3 gap-x-4 gap-y-1 text-center text-xs text-slate-600 bg-white/80 p-2 rounded-md">
+                                <div><span>Penalty:</span><br><span id="precisionActualPenalty" class="font-bold text-slate-800">0.00</span> <span id="precisionActualPenaltyPreview" class="ghost-score"></span></div>
+                                <div><span>Max Penalty:</span><br><span id="precisionMaxPenalty" class="font-bold text-slate-800">0.00</span> <span id="precisionMaxPenaltyPreview" class="ghost-score"></span></div>
+                                <div><span>Score:</span><br><span id="precisionDistNasScore" class="font-bold text-teal-600 text-sm">0.000</span> <span id="precisionDistNasScorePreview" class="ghost-score"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-card interactive-card rounded-xl p-4">
+                        <div class="text-center mb-4"><div class="inline-flex items-center bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-semibold mb-2"><i class="fas fa-search mr-1"></i>RECALL NAS-D</div><h2 class="text-lg font-bold text-slate-800">Ref → Gen Alignment</h2></div>
+                        <div class="relative w-full max-w-md mx-auto pt-4 pb-36 pl-20 pr-4">
+                            <div class="absolute top-1/2 -left-8 -translate-y-16 -rotate-90 font-semibold text-sm text-slate-600 whitespace-nowrap">Generated Chunks</div>
+                            <div class="absolute bottom-24 left-1/2 -translate-x-1/4 font-semibold text-sm text-slate-600">Reference Chunks</div>
+                            <div class="relative w-full aspect-square">
+                                <div id="recallChartGrid" class="absolute inset-0 bg-white rounded-lg chart-grid-background border border-slate-200">
+                                    <div id="recallLctPaddingContainer"></div>
+                                    <div id="recallIdealMappingContainer"></div>
+                                    <div id="recallMarkerContainer"></div>
+                                    <div id="recallAxisLabelContainerY"></div>
+                                    <div id="recallAxisLabelContainerX"></div>
+                                </div>
+                            </div>
+                             <div id="recallChartMetrics" class="absolute -bottom-2 left-0 right-0 grid grid-cols-3 gap-x-4 gap-y-1 text-center text-xs text-slate-600 bg-white/80 p-2 rounded-md">
+                                <div><span>Penalty:</span><br><span id="recallActualPenalty" class="font-bold text-slate-800">0.00</span> <span id="recallActualPenaltyPreview" class="ghost-score"></span></div>
+                                <div><span>Max Penalty:</span><br><span id="recallMaxPenalty" class="font-bold text-slate-800">0.00</span> <span id="recallMaxPenaltyPreview" class="ghost-score"></span></div>
+                                <div><span>Score:</span><br><span id="recallDistNasScore" class="font-bold text-amber-600 text-sm">0.000</span> <span id="recallDistNasScorePreview" class="ghost-score"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tour-step-5" class="demo-card interactive-card rounded-xl p-6">
+                    <div class="text-center mb-6"><h3 class="text-lg font-semibold text-slate-800 mb-2">Interactive Narrative Management</h3><p class="text-sm text-slate-500">Drag to reorder • Click to activate/deactivate • Hover items to see similarities on the grid</p></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="segment-list" id="referenceSegments"><div class="flex justify-between items-center mb-2"><h4 class="text-md font-semibold text-slate-700 flex items-center"><i class="fas fa-list text-teal-600 mr-2"></i>Reference (<span id="activeRefChunkCount">0</span>/<span id="totalRefChunkCount">0</span>)</h4><button id="resetRefOrderBtn" title="Reset Reference Order &amp; Reactivate All" class="text-slate-500 hover:text-blue-600 transition"><i class="fas fa-undo text-sm"></i></button></div><ul id="referenceSegmentsUl" class="space-y-1 h-72 overflow-y-auto pr-2 bg-slate-50/50 rounded p-2 border"></ul></div>
+                        <div class="segment-list" id="generatedSegments"><div class="flex justify-between items-center mb-2"><h4 class="text-md font-semibold text-slate-700 flex items-center"><i class="fas fa-list text-amber-600 mr-2"></i>Generated (<span id="activeGenChunkCount">0</span>/<span id="totalGenChunkCount">0</span>)</h4><button id="resetGenOrderBtn" title="Reset Generated Order &amp; Reactivate All" class="text-slate-500 hover:text-blue-600 transition"><i class="fas fa-undo text-sm"></i></button></div><ul id="generatedSegmentsUl" class="space-y-1 h-72 overflow-y-auto pr-2 bg-slate-50/50 rounded p-2 border"></ul></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls Panel -->
+            <div class="lg:col-span-1">
+                <div class="sticky top-6 space-y-6">
+                    <div id="tour-step-6" class="metrics-card interactive-card rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-blue-800 mb-4 flex items-center"><i class="fas fa-tachometer-alt text-blue-600 mr-2"></i>Live NAS-D Metrics</h3>
+                        <div class="space-y-4">
+                            <div class="text-center bg-blue-50/70 p-3 rounded-lg border border-blue-200">
+                                <label class="block text-sm font-medium text-blue-700 mb-1">Overall NAS-D (F1)</label>
+                                <span id="f1DistNasValue" class="text-4xl font-bold text-blue-600">0.000</span>
+                                <span id="f1DistNasValuePreview" class="text-4xl ghost-score"></span>
+                                <p class="text-xs text-slate-500 mt-1">Harmonic mean of P & R</p>
+                            </div>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="text-center">
+                                        <label class="block text-sm font-medium text-blue-700 mb-1">Precision NAS-D</label>
+                                        <span id="overallPrecisionNas" class="text-3xl font-bold text-teal-600">0.000</span>
+                                        <span id="overallPrecisionNasPreview" class="text-3xl ghost-score"></span>
+                                        <p class="text-xs text-slate-500 mt-1">Gen → Ref penalties</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <label class="block text-sm font-medium text-blue-700 mb-1">Recall NAS-D</label>
+                                        <span id="overallRecallNas" class="text-3xl font-bold text-amber-600">0.000</span>
+                                        <span id="overallRecallNasPreview" class="text-3xl ghost-score"></span>
+                                        <p class="text-xs text-slate-500 mt-1">Ref → Gen penalties</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div id="tour-step-lct" class="formula-card interactive-card rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-purple-800 mb-3 flex items-center"><i class="fas fa-sliders-h text-purple-600 mr-2"></i>LCT Parameter</h3>
+                        <div class="flex items-center gap-4 mb-4"><label for="lctSlider" class="text-sm font-medium text-purple-700">Tolerance:</label><input type="range" id="lctSlider" min="0" max="5" value="0" step="1" class="flex-1 h-2 bg-purple-200 rounded-lg appearance-none cursor-pointer"><span id="lctValueDisplay" class="text-lg font-bold text-purple-600 w-8 text-center">0</span></div>
+                        <div id="lctDescription" class="bg-purple-50/70 p-3 rounded-lg border border-purple-200 text-xs text-purple-700"></div>
+                        <!-- New LCT Warning Section -->
+                        <div class="mt-4 bg-amber-50/70 p-3 rounded-lg border border-amber-200 text-xs text-amber-800 flex items-start gap-2">
+                           <i class="fas fa-exclamation-triangle mt-1 text-amber-600"></i>
+                           <div>
+                               <strong>Important:</strong> First, visit the <a href="../lct-nas-l/" class="font-bold underline hover:text-amber-900">LCT Effect Demo</a> to understand how Local Chronological Tolerance works. For this demo, keep LCT at 0. You can return later to experiment with this slider.
+                           </div>
+                       </div>
+                    </div>
+                    <div id="tour-step-3" class="demo-card interactive-card rounded-xl p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold text-slate-800 flex items-center"><i class="fas fa-magic text-purple-600 mr-2"></i>Test Scenarios</h3>
+                            <button id="testing-guide-btn" class="bg-teal-500 hover:bg-teal-600 text-white px-3 py-1.5 rounded-lg text-xs font-medium transition-transform transform hover:scale-105">
+                                <i class="fas fa-clipboard-check mr-1"></i>Testing Guide
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button class="preset-btn w-full text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="handleScenarioClick('optimal')"><i class="fas fa-sort-numeric-down mr-2"></i>Optimal</button>
+                            <button class="preset-btn w-full text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="handleScenarioClick('neighborSwap')"><i class="fas fa-exchange-alt mr-2"></i>Neighbor Swaps</button>
+                            <button class="preset-btn w-full text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="handleScenarioClick('reverse')"><i class="fas fa-sort-numeric-up mr-2"></i>Reverse</button>
+                            <button class="preset-btn w-full text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="handleScenarioClick('minorDisorders')"><i class="fas fa-random mr-2"></i>Minor Disorders</button>
+                            <button class="preset-btn w-full text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="handleScenarioClick('majorDisorder')"><i class="fas fa-exclamation-triangle mr-2"></i>Major Disorder</button>
+                            <button class="preset-btn w-full text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="handleScenarioClick('rotateHalf')"><i class="fas fa-sync-alt mr-2"></i>Rotate Half</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+            </article>
+        </div>
+    </div>
+
+    <!-- Testing Modal -->
+    <div id="testing-modal" class="testing-modal">
+        <div class="testing-modal-content">
+            <div class="testing-modal-header">
+                <h2 class="text-xl font-bold text-slate-800 flex items-center">
+                    <i class="fas fa-clipboard-check mr-2 text-teal-600"></i>
+                    Testing Guide
+                </h2>
+                <button id="testing-modal-close" class="testing-modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="testing-content">
+                <!-- Getting Started -->
+                <div class="test-category">
+                    <h3><i class="fas fa-play-circle"></i>Getting Started</h3>
+                    <div class="test-item">
+                        <h4>Understanding Distance-based NAS</h4>
+                        <p>This guide will help you understand how NAS-D works by exploring different scenarios and their impact on chronological alignment scores.</p>
+                        <ul class="test-checklist">
+                            <li>NAS-D measures chronological alignment by penalizing out-of-window matches</li>
+                            <li>It's more sensitive to global misalignments than local ones</li>
+                            <li>LCT (Local Chronological Tolerance) creates forgiveness zones for minor deviations</li>
+                            <li>Close this guide and use the Test Scenarios to experiment with different configurations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Local vs Global Test -->
+                <div class="test-category">
+                    <h3><i class="fas fa-exchange-alt"></i>Testing Local Misalignment</h3>
+                    <div class="test-item">
+                        <h4>Neighbor Swaps Impact</h4>
+                        <p>Local misalignments involve neighboring chunks being swapped while maintaining global narrative order.</p>
+                        <ul class="test-checklist">
+                            <li>Click "Neighbor Swaps" to see how NAS-D handles local chronological mix-ups</li>
+                            <li>Notice the moderate penalty - globally aligned but locally disrupted</li>
+                            <li>Observe purple markers showing small distances from their ideal windows</li>
+                            <li>This represents minor editorial reorderings that don't break overall narrative flow</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 mt-2 italic">Close this guide and click "Neighbor Swaps" to see local misalignment effects.</p>
+                    </div>
+                </div>
+
+                <!-- Global Misalignment Test -->
+                <div class="test-category">
+                    <h3><i class="fas fa-sync-alt"></i>Testing Global Misalignment</h3>
+                    <div class="test-item">
+                        <h4>Rotate Half Impact</h4>
+                        <p>Global misalignments involve large-scale narrative disruptions that break chronological flow.</p>
+                        <ul class="test-checklist">
+                            <li>Click "Rotate Half" to simulate major narrative reordering</li>
+                            <li>Compare the penalty with "Neighbor Swaps" - much higher penalty for global disruption</li>
+                            <li>Notice how many markers fall outside their mapping windows</li>
+                            <li>This demonstrates NAS-D's higher sensitivity to global chronological issues</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 mt-2 italic">Try "Rotate Half" and compare scores with local misalignments.</p>
+                    </div>
+                </div>
+
+                <!-- Comprehensive Disorder Tests -->
+                <div class="test-category">
+                    <h3><i class="fas fa-random"></i>Testing Various Disorders</h3>
+                    <div class="test-item">
+                        <h4>Progressive Disorder Analysis</h4>
+                        <p>Explore how different levels of chronological disorder affect NAS-D scores.</p>
+                        <ul class="test-checklist">
+                            <li>Try "Reverse" to see maximum chronological disruption (lowest scores)</li>
+                            <li>Test "Minor Disorders" for moderate random misalignments</li>
+                            <li>Experiment with "Major Disorder" for severe chronological chaos</li>
+                            <li>Notice how penalty scores correlate with disorder severity</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 mt-2 italic">Test all disorder types to understand the penalty progression.</p>
+                    </div>
+                </div>
+
+                <!-- LCT Testing -->
+                <div class="test-category">
+                    <h3><i class="fas fa-sliders-h"></i>Testing LCT Effects</h3>
+                    <div class="test-item">
+                        <h4>Local Chronological Tolerance</h4>
+                        <p>LCT creates forgiveness zones that reduce penalties for minor deviations.</p>
+                        <ul class="test-checklist">
+                            <li>Set LCT to 0 and try different scenarios to see base penalties</li>
+                            <li>Increase LCT gradually and retry the same scenarios</li>
+                            <li>Notice how higher LCT values reduce penalties, especially for local misalignments</li>
+                            <li>Observe the yellow dashed LCT zones expanding as you increase tolerance</li>
+                            <li>Visit the <strong>LCT Effect Demo</strong> for deeper understanding of LCT mechanics</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 mt-2 italic">Experiment with LCT values 0-5 across different scenarios.</p>
+                    </div>
+                </div>
+
+                <!-- Manual Exploration -->  
+                <div class="test-category">
+                    <h3><i class="fas fa-hand-pointer"></i>Manual Exploration</h3>
+                    <div class="test-item">
+                        <h4>Interactive Chunk Management</h4>
+                        <p>Use the <strong>Interactive Narrative Management</strong> section to manually manipulate chunks and observe real-time score changes.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+                            <div class="bg-slate-50 p-3 rounded-lg">
+                                <h5 class="text-sm font-semibold text-slate-700 mb-2">🔄 Manual Operations</h5>
+                                <ul class="text-xs text-slate-600 space-y-1">
+                                    <li>• <strong>Click chunks</strong> to disable/enable them</li>
+                                    <li>• <strong>Drag chunks</strong> to reorder chronology</li>
+                                    <li>• <strong>Disable Generated chunks</strong> (missing content)</li>
+                                    <li>• <strong>Disable Reference chunks</strong> (extra content)</li>
+                                    <li>• <strong>Test patterns:</strong> Remove from start, middle, or end</li>
+                                </ul>
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-lg">
+                                <h5 class="text-sm font-semibold text-slate-700 mb-2">🔍 What to Watch</h5>
+                                <ul class="text-xs text-slate-600 space-y-1">
+                                    <li>• <strong>Real-time updates:</strong> Scores change instantly with modifications</li>
+                                    <li>• <strong>Purple markers:</strong> See how they move with chronology changes</li>
+                                    <li>• <strong>Penalty patterns:</strong> Different disruption types create different penalty distributions</li>
+                                    <li>• <strong>Window coverage:</strong> Notice how mapping windows adapt to active chunks</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bg-amber-50 p-3 rounded-lg border border-amber-200 mt-3">
+                            <p class="text-xs text-amber-800"><strong>Low Demintionality Problem:</strong> Progressively disable chunks until only 2-3 remain from each list. Notice how scores paradoxically increase! This happens because mapping windows cover the entire grid, making NAS-D meaningless. Visit <strong>Window Regularizer Demo</strong> to see how this is fixed.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Insights -->
+                <div class="test-category">
+                    <h3><i class="fas fa-lightbulb"></i>Key Insights</h3>
+                    <div class="test-item">
+                        <h4>Understanding NAS-D Behavior</h4>
+                        <p>After exploring the scenarios, you should understand these core NAS-D characteristics:</p>
+                        <ul class="test-checklist">
+                            <li>NAS-D prioritizes global chronological alignment over local perfection</li>
+                            <li>Local misalignments (neighbor swaps) receive moderate penalties</li>
+                            <li>Global misalignments (rotations, reversals) receive severe penalties</li>
+                            <li>LCT provides configurable tolerance for acceptable chronological deviations</li>
+                            <li>The metric balances strict chronological order with practical flexibility</li>
+                            <li>Distance penalties are normalized by sequence length for fair comparison</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- DATA ---
+        const masterReferenceChunks = ["The old market bell rings starting a busy market", "Vendors open their bright stalls in the busy square while the smell of fresh bread fills the air", "A young seller shouts out good deals as curious people gather around", "The steady ring of the bell sets the pace for the day", "A wise old vendor stops by his stall giving advice to those who pass by", "As the market gets busy the bell rings again at midday reminding everyone of the community spirit", "A light rain briefly slows the crowd but everyone is spirit stays strong", "Local storytellers tell simple tales that catch everyone is attention", "As evening comes the old bell rings one last time perfectly echoing the start of the day"];
+        const masterGeneratedChunks = ["At first light the town s antique bell clangs signalling that the market is open for business", "Stalls spring to life all around the square their owners lifting colourful awnings while the warm scent of freshbaked bread drifts through the crowd", "A lively young hawker calls out bargains drawing curious shoppers closer", "That bell keeps time for everyone its steady peal guiding the morning rush", "Nearby an older merchant pauses at his booth offering bits of seasoned advice to anyone who will listen", "When noon rolls around the bell sounds again a friendly reminder of the shared spirit that holds the place together", "A brief shower scatters a few people but the mood never really fades", "Storytellers soon reclaim the moment with simple tales that pull listeners back in", "As dusk settles the same bell rings one final note neatly bookending the day it helped begin"];
+        const masterSimilarityValues = [[0.737, 0.360, 0.286, 0.461, 0.284, 0.388, 0.062, 0.139, 0.396], [0.462, 0.783, 0.295, 0.269, 0.264, 0.227, 0.142, 0.158, 0.232], [0.244, 0.238, 0.814, 0.105, 0.337, 0.138, 0.120, 0.169, 0.084], [0.555, 0.259, 0.100, 0.734, 0.137, 0.593, 0.167, 0.199, 0.656], [0.258, 0.254, 0.293, 0.168, 0.774, 0.169, 0.110, 0.165, 0.151], [0.569, 0.340, 0.248, 0.483, 0.241, 0.764, 0.180, 0.216, 0.507], [0.134, 0.219, 0.106, 0.243, 0.133, 0.239, 0.689, 0.183, 0.177], [0.261, 0.259, 0.218, 0.266, 0.274, 0.286, 0.220, 0.679, 0.257], [0.537, 0.277, 0.059, 0.549, 0.218, 0.608, 0.192, 0.212, 0.869]];
+
+        // --- STATE & DOM ---
+        let activeReferenceIndices = [], activeGeneratedIndices = [];
+        let markerPositions = { precision: [], recall: [] };
+        let currentLct = 0;
+        let animationFrameId = null;
+        let isMarkerDragging = false;
+        let draggedItemInfo = { element: null, originalIndex: null, type: null, placeholder: null };
+        let draggedMarkerInfo = { chartType: null, id: null, element: null, chartGrid: null, startY: 0, startX: 0, mode: null, targetX: null };
+        const lctSlider = document.getElementById('lctSlider');
+        const lctValueDisplay = document.getElementById('lctValueDisplay');
+        const lctDescription = document.getElementById('lctDescription');
+        const referenceSegmentsUl = document.getElementById('referenceSegmentsUl');
+        const generatedSegmentsUl = document.getElementById('generatedSegmentsUl');
+        const chartTooltip = document.getElementById('chartTooltip');
+        const appBackground = document.getElementById('app-background');
+        const testingGuideBtn = document.getElementById('testing-guide-btn');
+        const testingModal = document.getElementById('testing-modal');
+        const testingModalClose = document.getElementById('testing-modal-close');
+        const charts = {
+            precision: { grid: document.getElementById('precisionChartGrid'), idealContainer: document.getElementById('precisionIdealMappingContainer'), lctContainer: document.getElementById('precisionLctPaddingContainer'), markerContainer: document.getElementById('precisionMarkerContainer'), axisX: document.getElementById('precisionAxisLabelContainerX'), axisY: document.getElementById('precisionAxisLabelContainerY'), actualPenalty: document.getElementById('precisionActualPenalty'), maxPenalty: document.getElementById('precisionMaxPenalty'), nasScore: document.getElementById('precisionDistNasScore'), actualPenaltyPreview: document.getElementById('precisionActualPenaltyPreview'), maxPenaltyPreview: document.getElementById('precisionMaxPenaltyPreview'), nasScorePreview: document.getElementById('precisionDistNasScorePreview') },
+            recall: { grid: document.getElementById('recallChartGrid'), idealContainer: document.getElementById('recallIdealMappingContainer'), lctContainer: document.getElementById('recallLctPaddingContainer'), markerContainer: document.getElementById('recallMarkerContainer'), axisX: document.getElementById('recallAxisLabelContainerX'), axisY: document.getElementById('recallAxisLabelContainerY'), actualPenalty: document.getElementById('recallActualPenalty'), maxPenalty: document.getElementById('recallMaxPenalty'), nasScore: document.getElementById('recallDistNasScore'), actualPenaltyPreview: document.getElementById('recallActualPenaltyPreview'), maxPenaltyPreview: document.getElementById('recallMaxPenaltyPreview'), nasScorePreview: document.getElementById('recallDistNasScorePreview') }
+        };
+        const overallPreviews = {
+            f1: document.getElementById('f1DistNasValuePreview'),
+            precision: document.getElementById('overallPrecisionNasPreview'),
+            recall: document.getElementById('overallRecallNasPreview')
+        };
+        
+        // --- HELPER FUNCTIONS ---
+        const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+        
+        // --- Testing Modal Manager ---
+        const testingModalManager = {
+            open: function() {
+                testingModal.classList.add('visible');
+                document.body.style.overflow = 'hidden';
+            },
+            close: function() {
+                testingModal.classList.remove('visible');
+                document.body.style.overflow = 'auto';
+            },
+            toggle: function() {
+                if (testingModal.classList.contains('visible')) {
+                    this.close();
+                } else {
+                    this.open();
+                }
+            }
+        };
+        
+        // --- TOUR MANAGER ---
+        const tourManager = {
+            isActive: false,
+            currentStep: 0,
+            overlay: document.getElementById('tour-overlay'),
+            steps: [
+                { selector: '#tour-step-intro', text: 'Welcome to Distance-based NAS! This demo measures chronological misalignment by penalizing matches outside expected narrative positions. Visit Mapping Window and Best Match demos first to understand the foundational concepts.', position: 'bottom' },
+                { selector: '#tour-step-2', text: 'Click to expand the algorithm breakdown. This shows the 6-step mathematical theory behind distance penalty calculation.', position: 'bottom'},
+                { selector: '#tour-step-4', text: 'These charts show narrative alignment assessment. Green rectangles are ideal mapping windows, yellow areas show LCT tolerance zones, purple markers are draggable best matches. Drag markers to see penalty changes.', position: 'top' },
+                { selector: '#tour-step-5', text: 'Click chunks to activate/deactivate them or drag to reorder sequences. Watch how structural changes affect distance penalties and alignment scores in real-time.', position: 'top' },
+                { selector: '#tour-step-3', text: 'Try these preset scenarios to explore different narrative misalignment challenges. Each button demonstrates a specific penalty pattern. Check the Testing Guide for detailed exploration strategies.', position: 'left', action: () => handleScenarioClick('neighborSwap') },
+                { selector: '#tour-step-lct', text: 'Local Chronological Tolerance creates forgiveness zones for minor deviations. Adjust the slider to control acceptable displacement. Visit the LCT Effect Demo first to understand this parameter.', position: 'left' },
+                { selector: '#tour-step-6', text: 'Final NAS-D scores are displayed here with detailed breakdowns. Precision NAS-D measures Gen→Ref penalties, Recall NAS-D measures Ref→Gen penalties, and F1 combines both. Higher scores indicate better chronological alignment.', position: 'left' }
+            ],
+
+            start: function() {
+                this.isActive = true;
+                this.currentStep = 0;
+                this.overlay.style.pointerEvents = 'auto';
+                this.overlay.style.opacity = '1';
+                this.addClickOutsideHandler();
+                this.showStep();
+            },
+
+            next: function() {
+                this.cleanupCurrentStep();
+                this.currentStep++;
+                if (this.currentStep < this.steps.length) {
+                    if (this.steps[this.currentStep-1].action) {
+                       this.steps[this.currentStep-1].action();
+                    }
+                    setTimeout(() => this.showStep(), 400);
+                } else {
+                    this.end();
+                }
+            },
+            
+            showStep: function() {
+                const step = this.steps[this.currentStep];
+                const targetElement = document.querySelector(step.selector);
+                if (!targetElement) { this.end(); return; }
+
+                targetElement.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+
+                setTimeout(() => {
+                    targetElement.classList.add('tour-highlight');
+                    
+                    const callout = document.createElement('div');
+                    callout.id = 'tour-callout';
+                    callout.innerHTML = `<p class="text-sm mb-4">${step.text}</p><div class="flex justify-end"><button onclick="tourManager.next()">Next &rarr;</button></div>`;
+                    document.body.appendChild(callout);
+                    
+                    const targetRect = targetElement.getBoundingClientRect();
+                    const calloutRect = callout.getBoundingClientRect();
+                    const margin = 15;
+
+                    const scrollY = window.scrollY || document.documentElement.scrollTop;
+                    const scrollX = window.scrollX || document.documentElement.scrollLeft;
+
+                    let top, left;
+
+                    switch (step.position) {
+                        case 'bottom':
+                            top = targetRect.bottom + scrollY + margin;
+                            left = targetRect.left + scrollX + (targetRect.width / 2) - (calloutRect.width / 2);
+                            break;
+                        case 'top':
+                            top = targetRect.top + scrollY - calloutRect.height - margin;
+                            left = targetRect.left + scrollX + (targetRect.width / 2) - (calloutRect.width / 2);
+                            break;
+                        case 'left':
+                            top = targetRect.top + scrollY + (targetRect.height / 2) - (calloutRect.height / 2);
+                            left = targetRect.left + scrollX - calloutRect.width - margin;
+                            break;
+                        case 'right':
+                            top = targetRect.top + scrollY + (targetRect.height / 2) - (calloutRect.height / 2);
+                            left = targetRect.right + scrollX + margin;
+                            break;
+                        default:
+                            top = targetRect.bottom + scrollY + margin;
+                            left = targetRect.left + scrollX;
+                    }
+                    
+                    const viewportRight = scrollX + window.innerWidth;
+                    const viewportBottom = scrollY + window.innerHeight;
+
+                    if (left < scrollX + margin) left = scrollX + margin;
+                    if (left + calloutRect.width > viewportRight - margin) left = viewportRight - calloutRect.width - margin;
+                    if (top < scrollY + margin) top = scrollY + margin;
+                    if (top + calloutRect.height > viewportBottom - margin) top = viewportBottom - calloutRect.height - margin;
+                    
+                    callout.style.top = `${top}px`;
+                    callout.style.left = `${left}px`;
+
+                    requestAnimationFrame(() => {
+                        callout.classList.add('visible');
+                    });
+                }, 350);
+            },
+            
+            cleanupCurrentStep: function() {
+                const oldHighlight = document.querySelector('.tour-highlight');
+                if (oldHighlight) oldHighlight.classList.remove('tour-highlight');
+                const oldCallout = document.getElementById('tour-callout');
+                if (oldCallout) oldCallout.remove();
+            },
+
+            end: function() {
+                this.cleanupCurrentStep();
+                this.isActive = false;
+                this.overlay.style.opacity = '0';
+                setTimeout(() => this.overlay.style.pointerEvents = 'none', 400);
+                this.removeClickOutsideHandler();
+            },
+
+            addClickOutsideHandler: function() {
+                this.clickOutsideHandler = (e) => {
+                    if (this.isActive) {
+                        const callout = document.getElementById('tour-callout');
+                        if (callout && !callout.contains(e.target)) {
+                            this.end();
+                        }
+                    }
+                };
+                document.addEventListener('click', this.clickOutsideHandler);
+            },
+
+            removeClickOutsideHandler: function() {
+                if (this.clickOutsideHandler) {
+                    document.removeEventListener('click', this.clickOutsideHandler);
+                    this.clickOutsideHandler = null;
+                }
+            }
+        };
+
+        // --- DYNAMIC BACKGROUND ---
+        function updateDynamicBackground(f1Score) {
+            const score = isNaN(f1Score) ? 0 : f1Score;
+            const hue = 120 * score;
+            const saturation = 30 + 40 * score;
+            const lightness = 85 + 10 * score;
+            const startColor = `hsl(170, ${saturation-10}%, ${lightness-5}%)`;
+            const endColor = `hsl(190, ${saturation}%, ${lightness}%)`;
+            if(appBackground) {
+                appBackground.style.background = `linear-gradient(135deg, hsl(170, 20%, 90%) 0%, hsl(190, 30%, 95%) 100%)`;
+            }
+        }
+        
+        // --- CORE LOGIC ---
+        function _calculate_f1(p, r) { return (p + r === 0) ? 0.0 : (2 * p * r) / (p + r); }
+        
+        function buildCurrentSimilarityMatrix(isForRecall) {
+            const numRef = activeReferenceIndices.length;
+            const numGen = activeGeneratedIndices.length;
+            if (numRef === 0 || numGen === 0) return [];
+            if (isForRecall) {
+                 return activeGeneratedIndices.map(gIdx => activeReferenceIndices.map(rIdx => masterSimilarityValues[rIdx][gIdx]));
+            } else {
+                 return activeReferenceIndices.map(rIdx => activeGeneratedIndices.map(gIdx => masterSimilarityValues[rIdx][gIdx]));
+            }
+        }
+        
+        function get_mapping_windows_generic(lenX, lenY) {
+            if (lenX === 0 || lenY === 0) return [];
+            const isYLonger = lenY >= lenX;
+            const longerLen = isYLonger ? lenY : lenX;
+            const shorterLen = isYLonger ? lenX : lenY;
+            const slope = longerLen / shorterLen;
+            const mappingWindowSize = Math.ceil(slope);
+            let direct_windows = [];
+            for (let i = 0; i < shorterLen; i++) {
+                const idx_point = i * slope;
+                const start = Math.floor(idx_point);
+                const end = Math.min(start + mappingWindowSize, longerLen);
+                direct_windows.push({ start, end });
+            }
+            if (isYLonger) return direct_windows;
+            let windows_for_X_items = Array(lenX).fill(null);
+            for (let x_idx = 0; x_idx < lenX; x_idx++) {
+                let mappedYIndices = [];
+                direct_windows.forEach((y_window_on_x_axis, y_idx) => {
+                    if (x_idx >= y_window_on_x_axis.start && x_idx < y_window_on_x_axis.end) { mappedYIndices.push(y_idx); }
+                });
+                if (mappedYIndices.length > 0) {
+                    windows_for_X_items[x_idx] = { start: Math.min(...mappedYIndices), end: Math.max(...mappedYIndices) + 1 };
+                } else { 
+                    const proportionalYPos = Math.max(0, Math.min(lenY - 1, Math.floor((x_idx / lenX) * lenY)));
+                    windows_for_X_items[x_idx] = { start: proportionalYPos, end: Math.min(proportionalYPos + 1, lenY) };
+                }
+            }
+            return windows_for_X_items.map(w => w ? ({start: w.start, end: Math.max(w.start + 1, w.end)}) : null);
+        }
+
+        function findBestMatchIndex(similarityColumn) {
+            if (!similarityColumn || similarityColumn.length === 0) return -1;
+            let maxVal = -Infinity, maxIdx = -1;
+            similarityColumn.forEach((val, idx) => { if (val > maxVal) { maxVal = val; maxIdx = idx; } });
+            return maxIdx;
+        }
+
+        function calculateLctWindow(yAxis, xAxis) {
+            if (xAxis === 0) return 0;
+            const mappingWindowHeight = Math.ceil(yAxis / xAxis);
+            const ratio = yAxis / xAxis;
+            const ratioDecimalPart = ratio - Math.floor(ratio);
+            
+            if (yAxis <= xAxis) {
+                return mappingWindowHeight;
+            } else {
+                if (0 < ratioDecimalPart && ratioDecimalPart <= 0.5) {
+                    return mappingWindowHeight - 1;
+                } else {
+                    return mappingWindowHeight;
+                }
+            }
+        }
+
+        // Refactored to accept marker data as an argument for preview functionality
+        function calculatePenaltiesAndNAS(chartType, markers) {
+            const isRecall = chartType === 'recall';
+            const numX = isRecall ? activeReferenceIndices.length : activeGeneratedIndices.length;
+            const numY = isRecall ? activeGeneratedIndices.length : activeReferenceIndices.length;
+            const idealWindows = get_mapping_windows_generic(numX, numY);
+
+            if (numX === 0 || numY === 0 || !markers || markers.length === 0) return { actualPenalty: 0, maxPenalty: 0, nas: 1.0, markerPenalties: [] };
+
+            const lctWindowHeight = calculateLctWindow(numY, numX);
+            let totalActualPenalty = 0;
+            const markerPenalties = [];
+            for (let i = 0; i < numX; i++) {
+                const marker = markers[i]; 
+                const window = idealWindows[i];
+                if (!marker || !window) continue;
+                
+                const markerY = marker.currentY; 
+                const windowStart = window.start; 
+                const windowEnd = window.end - 1; 
+                const inWindow = (markerY >= windowStart && markerY <= windowEnd);
+                
+                let rawDistance = 0;
+                if (!inWindow) {
+                    if (markerY < windowStart) {
+                        rawDistance = windowStart - markerY;
+                    } else if (markerY > windowEnd) {
+                        rawDistance = markerY - windowEnd;
+                    }
+                }
+                
+                const lctThreshold = currentLct * lctWindowHeight;
+                const effectiveDistance = rawDistance <= lctThreshold ? 0 : rawDistance;
+                const normalizedPenalty = numY > 0 ? effectiveDistance / numY : 0;
+                
+                totalActualPenalty += normalizedPenalty;
+                markerPenalties.push({ id: marker.id, penalty: normalizedPenalty, rawDistance: rawDistance });
+            }
+
+            let maxTotalPenalty = 0;
+            for (let i = 0; i < idealWindows.length; i++) {
+                const window = idealWindows[i];
+                const distDown = window.start;
+                const distUp = numY - window.end;
+                const maxDistanceForWindow = Math.max(distDown, distUp);
+                maxTotalPenalty += maxDistanceForWindow;
+            }
+            
+            const normalizedMaxPenalty = numY > 0 ? maxTotalPenalty / numY : 0;
+            const nas = (normalizedMaxPenalty > 0) ? Math.max(0, 1 - (totalActualPenalty / normalizedMaxPenalty)) : 1.0;
+            return { actualPenalty: totalActualPenalty, maxPenalty: normalizedMaxPenalty, nas: nas, markerPenalties: markerPenalties };
+        }
+
+        // --- RENDER LOGIC ---
+        function renderGridLines(container, numX, numY) {
+            container.querySelectorAll('.grid-line').forEach(e => e.remove());
+            for (let i = 0; i <= numX; i++) {
+                const line = document.createElement('div');
+                line.className = 'grid-line';
+                line.style.position = 'absolute';
+                line.style.left = `${i / numX * 100}%`;
+                line.style.top = '0';
+                line.style.bottom = '0';
+                line.style.borderLeft = '1px solid rgba(148, 163, 184, 0.3)';
+                container.appendChild(line);
+            }
+            for (let i = 0; i <= numY; i++) {
+                const line = document.createElement('div');
+                line.className = 'grid-line';
+                line.style.position = 'absolute';
+                line.style.top = `${i / numY * 100}%`;
+                line.style.left = '0';
+                line.style.right = '0';
+                line.style.borderBottom = '1px solid rgba(148, 163, 184, 0.3)';
+                container.appendChild(line);
+            }
+        }
+
+        function renderChart(chartType, isAnimating = false) {
+            const chartUI = charts[chartType];
+            const isRecall = chartType === 'recall';
+            const numX = isRecall ? activeReferenceIndices.length : activeGeneratedIndices.length;
+            const numY = isRecall ? activeGeneratedIndices.length : activeReferenceIndices.length;
+            const markers = markerPositions[chartType];
+            
+            if (!isAnimating) {
+                // Only clear SVG and axis containers, preserve ideal and LCT windows for smooth transitions
+                chartUI.axisX.innerHTML = ''; chartUI.axisY.innerHTML = '';
+                renderGridLines(chartUI.grid, numX, numY);
+                const xIndices = isRecall ? activeReferenceIndices : activeGeneratedIndices;
+                const yIndices = isRecall ? activeGeneratedIndices : activeReferenceIndices;
+                const yStep = Math.max(1, Math.ceil(numY / 6)); for (let i = 0; i < numY; i+=yStep) { const lbl=document.createElement('div'); lbl.className='axis-label'; lbl.textContent=yIndices[i]; lbl.style.left='-1rem'; lbl.style.top=`calc(100% - (${i}*100%/${numY}) - (50%/${numY}))`; lbl.style.transform='translateY(-50%) translateX(-100%)'; chartUI.axisY.appendChild(lbl); }
+                const xStep = Math.max(1, Math.ceil(numX / 6)); for (let i = 0; i < numX; i+=xStep) { const lbl=document.createElement('div'); lbl.className='axis-label'; lbl.textContent=xIndices[i]; lbl.style.bottom='-1.5rem'; lbl.style.left=`calc(${i}*100%/${numX} + 50%/${numX})`; lbl.style.transform='translateX(-50%)'; chartUI.axisX.appendChild(lbl); }
+                
+                if (numX > 0 && numY > 0) {
+                    const idealWindows = get_mapping_windows_generic(numX, numY);
+                    const lctWindowHeight = calculateLctWindow(numY, numX);
+                    const scaledLct = currentLct * lctWindowHeight;
+
+                    // Apply element reuse strategy for ideal windows
+                    const existingIdealWindows = Array.from(chartUI.idealContainer.children);
+                    const existingLctWindows = Array.from(chartUI.lctContainer.children);
+
+                    idealWindows.forEach((window, x_idx) => {
+                        const startY = window.start; const endY = window.end; const height = endY - startY;
+                        
+                        // Reuse existing ideal window or create new one
+                        let idealDiv = existingIdealWindows[x_idx];
+                        if (!idealDiv) {
+                            idealDiv = document.createElement('div');
+                            idealDiv.className = 'ideal-mapping-window';
+                            chartUI.idealContainer.appendChild(idealDiv);
+                        }
+                        
+                        // Update position and size - CSS transitions handle the animation
+                        idealDiv.style.left = `calc(${x_idx} * 100% / ${numX})`;
+                        idealDiv.style.width = `calc(100% / ${numX})`;
+                        idealDiv.style.bottom = `calc(${startY} * 100% / ${numY})`;
+                        idealDiv.style.height = `calc(${height} * 100% / ${numY})`;
+                        
+                        // Update or create LCT window
+                        const lctStartY = Math.max(0, startY - scaledLct); const lctEndY = Math.min(numY, endY + scaledLct);
+                        const lctHeight = lctEndY - lctStartY;
+                        
+                        let lctDiv = existingLctWindows[x_idx];
+                        if (!lctDiv) {
+                            lctDiv = document.createElement('div');
+                            lctDiv.className = 'lct-padding-window';
+                            chartUI.lctContainer.appendChild(lctDiv);
+                        }
+                        
+                        // Update LCT window position and size
+                        lctDiv.style.left = idealDiv.style.left;
+                        lctDiv.style.width = idealDiv.style.width;
+                        lctDiv.style.bottom = `calc(${lctStartY} * 100% / ${numY})`;
+                        lctDiv.style.height = `calc(${lctHeight} * 100% / ${numY})`;
+                    });
+                    
+                    // Remove extra windows if there are fewer windows now
+                    while (chartUI.idealContainer.children.length > idealWindows.length) {
+                        chartUI.idealContainer.lastChild.remove();
+                    }
+                    while (chartUI.lctContainer.children.length > idealWindows.length) {
+                        chartUI.lctContainer.lastChild.remove();
+                    }
+                }
+            }
+            
+            // Apply element reuse strategy for markers
+            if (numX > 0 && numY > 0 && markers.length > 0) {
+                const { markerPenalties } = calculatePenaltiesAndNAS(chartType, markers);
+                const penaltyMap = new Map(markerPenalties.map(p => [p.id, { penalty: p.penalty, rawDistance: p.rawDistance }]));
+                
+                // Get existing markers
+                const existingMarkers = Array.from(chartUI.markerContainer.children);
+                
+                // Update or create markers
+                markers.forEach((marker, index) => {
+                    // Reuse existing marker or create new one
+                    let markerDiv = existingMarkers[index];
+                    if (!markerDiv) {
+                        markerDiv = document.createElement('div');
+                        markerDiv.className = 'gen-marker';
+                        const penaltyLabel = document.createElement('span');
+                        penaltyLabel.className = 'marker-penalty-label';
+                        markerDiv.appendChild(penaltyLabel);
+                        chartUI.markerContainer.appendChild(markerDiv);
+                    }
+                    
+                    // Update marker properties
+                    markerDiv.dataset.id = marker.id;
+                    markerDiv.dataset.chartType = chartType;
+                    
+                    const penaltyInfo = penaltyMap.get(marker.id) || { penalty: 0, rawDistance: 0 };
+                    const penaltyLabel = markerDiv.querySelector('.marker-penalty-label');
+                    if (penaltyInfo.penalty > 0) { 
+                        penaltyLabel.textContent = `-${penaltyInfo.rawDistance.toFixed(0)}`; 
+                        penaltyLabel.style.display = 'block'; 
+                    } else {
+                        penaltyLabel.textContent = '';
+                        penaltyLabel.style.display = 'none';
+                    }
+                    
+                    // Update marker position
+                    markerDiv.style.left = `calc(${(marker.id + 0.5)} * 100% / ${numX} - 6px)`;
+                    markerDiv.style.bottom = `calc(${(marker.currentY + 0.5)} * 100% / ${numY} - 6px)`;
+                });
+                
+                // Remove extra markers if there are fewer markers now
+                while (chartUI.markerContainer.children.length > markers.length) {
+                    chartUI.markerContainer.lastChild.remove();
+                }
+            } else {
+                // Clear markers if no data
+                chartUI.markerContainer.innerHTML = '';
+            }
+        }
+        
+        function updateAndRenderAll() {
+            if (animationFrameId) return;
+
+            currentLct = parseInt(lctSlider.value); lctValueDisplay.textContent = currentLct; updateLctDescription();
+            const nRef = activeReferenceIndices.length, nGen = activeGeneratedIndices.length;
+            
+            const precResults = calculatePenaltiesAndNAS('precision', markerPositions.precision);
+            const recResults = calculatePenaltiesAndNAS('recall', markerPositions.recall);
+            const f1 = _calculate_f1(precResults.nas, recResults.nas);
+            
+            renderSegmentLists();
+            
+            requestAnimationFrame(() => {
+                renderChart('precision');
+                renderChart('recall');
+            });
+            
+            ['precision', 'recall'].forEach(type => {
+                const chart = charts[type];
+                const results = type === 'precision' ? precResults : recResults;
+                animateNumber(chart.actualPenalty, parseFloat(chart.actualPenalty.textContent)||0, results.actualPenalty, 500);
+                animateNumber(chart.maxPenalty, parseFloat(chart.maxPenalty.textContent)||0, results.maxPenalty, 500);
+                animateNumber(chart.nasScore, parseFloat(chart.nasScore.textContent)||0, results.nas, 500);
+            });
+            
+            animateNumber(document.getElementById('overallPrecisionNas'), parseFloat(document.getElementById('overallPrecisionNas').textContent)||0, precResults.nas, 500);
+            animateNumber(document.getElementById('overallRecallNas'), parseFloat(document.getElementById('overallRecallNas').textContent)||0, recResults.nas, 500);
+            animateNumber(document.getElementById('f1DistNasValue'), parseFloat(document.getElementById('f1DistNasValue').textContent)||0, f1, 500);
+            
+            updateDynamicBackground(f1);
+        }
+        
+        // --- PREDICTION (GHOST) FUNCTIONS ---
+        function showScorePreview(tempMarkerPositions) {
+            const precResults = calculatePenaltiesAndNAS('precision', tempMarkerPositions.precision);
+            const recResults = calculatePenaltiesAndNAS('recall', tempMarkerPositions.recall);
+            const f1 = _calculate_f1(precResults.nas, recResults.nas);
+
+            charts.precision.actualPenaltyPreview.textContent = `→ ${precResults.actualPenalty.toFixed(2)}`;
+            charts.precision.maxPenaltyPreview.textContent = `→ ${precResults.maxPenalty.toFixed(2)}`;
+            charts.precision.nasScorePreview.textContent = `→ ${precResults.nas.toFixed(3)}`;
+            
+            charts.recall.actualPenaltyPreview.textContent = `→ ${recResults.actualPenalty.toFixed(2)}`;
+            charts.recall.maxPenaltyPreview.textContent = `→ ${recResults.maxPenalty.toFixed(2)}`;
+            charts.recall.nasScorePreview.textContent = `→ ${recResults.nas.toFixed(3)}`;
+
+            overallPreviews.f1.textContent = `→ ${f1.toFixed(3)}`;
+            overallPreviews.precision.textContent = `→ ${precResults.nas.toFixed(3)}`;
+            overallPreviews.recall.textContent = `→ ${recResults.nas.toFixed(3)}`;
+        }
+
+        function hideScorePreview() {
+            for (const key in charts) {
+                charts[key].actualPenaltyPreview.textContent = '';
+                charts[key].maxPenaltyPreview.textContent = '';
+                charts[key].nasScorePreview.textContent = '';
+            }
+             for (const key in overallPreviews) {
+                overallPreviews[key].textContent = '';
+            }
+        }
+
+
+        // --- EVENT BINDING & INITIALIZATION ---
+        window.addEventListener('load', () => {
+            activeReferenceIndices = Array.from({ length: masterReferenceChunks.length }, (_, i) => i);
+            activeGeneratedIndices = Array.from({ length: masterGeneratedChunks.length }, (_, i) => i);
+            
+            document.getElementById('start-tour-btn').addEventListener('click', () => tourManager.start());
+            
+            // Testing modal event listeners
+            testingGuideBtn.addEventListener('click', () => testingModalManager.open());
+            testingModalClose.addEventListener('click', () => testingModalManager.close());
+            testingModal.addEventListener('click', (e) => {
+                if (e.target === testingModal) {
+                    testingModalManager.close();
+                }
+            });
+            
+            // Keyboard shortcuts
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && testingModal.classList.contains('visible')) {
+                    testingModalManager.close();
+                }
+                if (e.key === 't' && e.ctrlKey) {
+                    e.preventDefault();
+                    testingModalManager.toggle();
+                }
+            });
+            
+            document.getElementById('resetGenOrderBtn').addEventListener('click', () => resetSegmentOrder('generated'));
+            document.getElementById('resetRefOrderBtn').addEventListener('click', () => resetSegmentOrder('reference'));
+            lctSlider.addEventListener('input', updateAndRenderAll);
+            [generatedSegmentsUl, referenceSegmentsUl].forEach(ul => {  
+                ul.addEventListener('dragstart', handleSegmentDragStart);  
+                ul.addEventListener('dragover', handleSegmentDragOver);
+                ul.addEventListener('drop', handleSegmentDrop);
+                ul.addEventListener('dragend', handleSegmentDragEnd);
+            });
+            
+            document.addEventListener('mousedown', handlePointMarkerMouseDown);
+            document.addEventListener('mousemove', handlePointMarkerMouseMove);
+            document.addEventListener('mouseup', handlePointMarkerMouseUp);
+
+            ['precisionMarkerContainer', 'recallMarkerContainer'].forEach(id => {
+                document.getElementById(id).addEventListener('mouseover', e => {
+                    if (e.target.classList.contains('gen-marker')) {
+                        updateChartTooltip(e, e.target.dataset.chartType, parseInt(e.target.dataset.id));
+                    }
+                });
+                document.getElementById(id).addEventListener('mouseout', e => {
+                    if (e.target.classList.contains('gen-marker') && !isMarkerDragging) {
+                        hideChartTooltip();
+                    }
+                });
+            });
+
+            let resizeTimer;
+            window.addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(updateAndRenderAll, 150); });
+            
+            initializeAppState();
+            updateAndRenderAll();
+        });
+        
+        // --- Scenario Tips & Click Handler (Matching Line NAS) ---
+        const scenarioTips = {
+            optimal: '<strong>Tip:</strong> The path is perfectly aligned with zero penalties. Try dragging markers vertically or horizontally to see how penalties change.',
+            neighborSwap: '<strong>Tip:</strong> Global order is maintained, but local misalignments create distance penalties. Notice the score drop from these small swaps.',
+            reverse: '<strong>Tip:</strong> The alignment is completely reversed. Test how penalties change with and without LCT enabled.',
+            minorDisorders: '<strong>Tip:</strong> Even a few out-of-place alignments can significantly impact the distance penalty score.',
+            majorDisorder: '<strong>Tip:</strong> With major chaos, most markers are outside their windows, resulting in maximum distance penalties.',
+            rotateHalf: '<strong>Tip:</strong> Local chronology is mostly preserved, but global order is wrong. Distance penalties are moderate due to shifted alignments.'
+        };
+
+        function handleScenarioClick(scenarioType) { 
+            // document.getElementById('scenarioTip').innerHTML = scenarioTips[scenarioType];
+            let targetGenOrder = [...activeGeneratedIndices].sort((a,b) => a-b); 
+            const n = targetGenOrder.length; 
+            switch(scenarioType) { 
+                case 'optimal': break; 
+                case 'neighborSwap': for(let i=0; i < n - 1; i+=2) { [targetGenOrder[i], targetGenOrder[i+1]] = [targetGenOrder[i+1], targetGenOrder[i]]; } break; 
+                case 'reverse': targetGenOrder.reverse(); break; 
+                case 'minorDisorders': targetGenOrder.forEach((_, i) => { if (Math.random() > 0.6) { const swapWith = (i + (Math.random() > 0.5 ? 1 : -1) + n) % n; [targetGenOrder[i], targetGenOrder[swapWith]] = [targetGenOrder[swapWith], targetGenOrder[i]]; } }); break; 
+                case 'majorDisorder': const reorderPattern = [2, 5, 1, 7, 0, 4, 8, 3, 6]; targetGenOrder = reorderPattern.slice(0, n); break; 
+                case 'rotateHalf': const mid = Math.floor(n/2); targetGenOrder = [...targetGenOrder.slice(mid), ...targetGenOrder.slice(0, mid)]; break; 
+            } 
+            animatePathTransition(targetGenOrder); 
+        }
+        
+        function animatePathTransition(targetGenOrder) { 
+            if (animationFrameId) cancelAnimationFrame(animationFrameId); 
+            const duration = 600;
+            
+            const startPositions = { 
+                precision: JSON.parse(JSON.stringify(markerPositions.precision)),
+                recall: JSON.parse(JSON.stringify(markerPositions.recall))
+            };
+            const genIndexToNewPosMap = new Map(targetGenOrder.map((originalIndex, newPos) => [originalIndex, newPos]));
+            
+            const targetPositions = { precision: [], recall: [] };
+            startPositions.precision.forEach(startPoint => {
+                const originalGenIndex = activeGeneratedIndices[startPoint.id];
+                const newX = genIndexToNewPosMap.get(originalGenIndex);
+                if (newX !== undefined) {
+                    targetPositions.precision[newX] = { id: newX, currentY: startPoint.currentY };
+                }
+            });
+            startPositions.recall.forEach(startPoint => {
+                const newYforGen = genIndexToNewPosMap.get(activeGeneratedIndices[startPoint.currentY]);
+                if (newYforGen !== undefined) {
+                    targetPositions.recall[startPoint.id] = { id: startPoint.id, currentY: newYforGen };
+                }
+            });
+
+            const startTime = performance.now();
+            
+            function tick(currentTime) {
+                const elapsedTime = currentTime - startTime;
+                const rawProgress = Math.min(elapsedTime / duration, 1);
+                const progress = easeOutCubic(rawProgress);
+
+                ['precision', 'recall'].forEach(chartType => {
+                    for(let i=0; i < startPositions[chartType].length; i++) {
+                        const start = startPositions[chartType][i];
+                        const target = targetPositions[chartType][i];
+                        if (start && target) {
+                           markerPositions[chartType][i].currentY = start.currentY + (target.currentY - start.currentY) * progress;
+                        }
+                    }
+                });
+                
+                requestAnimationFrame(() => {
+                    renderChart('precision', true);
+                    renderChart('recall', true);
+                });
+
+                if (rawProgress < 1) {
+                    animationFrameId = requestAnimationFrame(tick);
+                } else {
+                    animationFrameId = null;
+                    activeGeneratedIndices = targetGenOrder;
+                    initializeAppState();
+                    updateAndRenderAll();
+                }
+            }
+            animationFrameId = requestAnimationFrame(tick);
+        }
+        
+        function updateLctDescription() { lctDescription.innerHTML = ["<strong>Strict:</strong> Only exact window matches have zero penalty.", "<strong>Minor Tolerance:</strong> Small deviations outside windows are forgiven.", "<strong>Moderate Tolerance:</strong> Moderate distance deviations are ignored.", "<strong>High Tolerance:</strong> Significant misalignments receive forgiveness.", "<strong>Very High:</strong> Large distance penalties are substantially reduced.", "<strong>Maximum:</strong> Most distance penalties are eliminated."][parseInt(lctSlider.value)]; }
+        function updateChartTooltip(e, type, id) {
+            const highlightedItems = document.querySelectorAll('.segment-list li.highlight');
+            highlightedItems.forEach(item => item.classList.remove('highlight'));
+            
+            chartTooltip.classList.add('visible');
+            chartTooltip.style.left = `${e.clientX + 15}px`;
+            chartTooltip.style.top = `${e.clientY + 15}px`;
+            
+            const marker = markerPositions[type].find(m => m.id === id);
+            if (!marker) return;
+            
+            const isRecall = type === 'recall';
+            
+            const refOriginalIndex = isRecall ? activeReferenceIndices[id] : activeReferenceIndices[marker.currentY];
+            const genOriginalIndex = isRecall ? activeGeneratedIndices[marker.currentY] : activeGeneratedIndices[id];
+
+            const refLi = document.querySelector(`#referenceSegmentsUl li[data-original-index='${refOriginalIndex}']`);
+            const genLi = document.querySelector(`#generatedSegmentsUl li[data-original-index='${genOriginalIndex}']`);
+            if (refLi) refLi.classList.add('highlight');
+            if (genLi) genLi.classList.add('highlight');
+
+            const xOriginalIndex = (isRecall ? activeReferenceIndices : activeGeneratedIndices)[id];
+            const yOriginalIndex = (isRecall ? activeGeneratedIndices : activeReferenceIndices)[marker.currentY];
+            const mappingText = `${isRecall ? 'Ref' : 'Gen'} Chunk ${xOriginalIndex} ↔ ${isRecall ? 'Gen' : 'Ref'} Chunk ${yOriginalIndex}`;
+            
+            const { markerPenalties } = calculatePenaltiesAndNAS(type, markerPositions[type]);
+            const penaltyInfo = markerPenalties.find(p => p.id === id);
+            let penaltyText = '';
+            let statusClass = '';
+            if (penaltyInfo && penaltyInfo.penalty > 0) {
+                statusClass = 'penalty';
+                penaltyText = `<hr class="my-1 border-slate-500"><strong class="text-red-400">Distance Penalty</strong><br>Raw Distance: ${penaltyInfo.rawDistance}<br>Normalized: ${penaltyInfo.penalty.toFixed(3)}`;
+            } else {
+                statusClass = 'no-penalty';
+                penaltyText = `<hr class="my-1 border-slate-500"><strong class="text-green-400">No Penalty</strong><br>Marker in valid window`;
+            }
+            chartTooltip.className = `visible ${statusClass}`;
+            chartTooltip.innerHTML = mappingText + penaltyText;
+        }
+        function hideChartTooltip() {
+            chartTooltip.classList.remove('visible');
+            const highlightedItems = document.querySelectorAll('.segment-list li.highlight');
+            highlightedItems.forEach(item => item.classList.remove('highlight'));
+        }
+        
+        // Marker drag functions (WITH HORIZONTAL MOVEMENT LIKE LINE NAS)
+        function handlePointMarkerMouseDown(e) { 
+            if (!e.target.classList.contains('gen-marker')) return;
+            e.preventDefault();
+            isMarkerDragging = true;
+            hideChartTooltip();
+            hideScorePreview(); // Clear any stale previews
+            const marker = e.target;
+            draggedMarkerInfo = { 
+                chartType: marker.dataset.chartType, 
+                id: parseInt(marker.dataset.id), 
+                element: marker, 
+                chartGrid: charts[marker.dataset.chartType].grid, 
+                startY: e.clientY, 
+                startX: e.clientX, 
+                mode: null, 
+                targetX: null 
+            };
+            marker.classList.add('dragging');
+            document.body.style.userSelect = 'none';
+            document.body.style.cursor = 'grabbing';
+        }
+        
+        function handlePointMarkerMouseMove(e) {
+            if (!isMarkerDragging || !draggedMarkerInfo.chartGrid) return;
+            
+            const { chartType, id, chartGrid, startX, startY } = draggedMarkerInfo;
+            
+            // Determine drag mode if not set
+            if (!draggedMarkerInfo.mode) {
+                const dx = e.clientX - startX;
+                const dy = e.clientY - startY;
+                if (Math.abs(dx) > 5 || Math.abs(dy) > 5) {
+                    draggedMarkerInfo.mode = Math.abs(dx) > Math.abs(dy) ? 'horizontal' : 'vertical';
+                    document.body.style.cursor = draggedMarkerInfo.mode === 'horizontal' ? 'ew-resize' : 'ns-resize';
+                }
+            }
+            
+            // Create a temporary state for real-time preview
+            const tempMarkers = JSON.parse(JSON.stringify(markerPositions));
+            let hasChanged = false;
+
+            if (draggedMarkerInfo.mode === 'vertical') {
+                const isRecall = chartType === 'recall';
+                const targetLen = isRecall ? activeGeneratedIndices.length : activeReferenceIndices.length;
+                const rect = chartGrid.getBoundingClientRect();
+                const y = e.clientY - rect.top;
+                let newYIndex = Math.floor((1 - (y / rect.height)) * targetLen);
+                newYIndex = Math.max(0, Math.min(targetLen - 1, newYIndex));
+                
+                const marker = tempMarkers[chartType].find(m => m.id === id);
+                if (marker && marker.currentY !== newYIndex) {
+                    marker.currentY = newYIndex;
+                    hasChanged = true;
+                    
+                    // Animate the marker's position directly for immediate visual feedback
+                    draggedMarkerInfo.element.style.bottom = `calc(${(newYIndex + 0.5)} * 100% / ${targetLen} - 6px)`;
+                }
+            } else if (draggedMarkerInfo.mode === 'horizontal') {
+                const isRecall = chartType === 'recall';
+                const sourceLen = isRecall ? activeReferenceIndices.length : activeGeneratedIndices.length;
+                const rect = chartGrid.getBoundingClientRect();
+                let hoverX = Math.floor(((e.clientX - rect.left) / rect.width) * sourceLen);
+                hoverX = Math.max(0, Math.min(sourceLen - 1, hoverX));
+                
+                // Animate the marker's horizontal position for immediate visual feedback
+                draggedMarkerInfo.element.style.left = `calc(${(hoverX + 0.5)} * 100% / ${sourceLen} - 6px)`;
+                
+                if (hoverX !== id) {
+                    draggedMarkerInfo.targetX = hoverX;
+                    const sourceMarker = tempMarkers[chartType].find(m => m.id === id);
+                    const targetMarker = tempMarkers[chartType].find(m => m.id === hoverX);
+                    if (sourceMarker && targetMarker) {
+                        // Simulate swap in temporary state
+                        [sourceMarker.currentY, targetMarker.currentY] = [targetMarker.currentY, sourceMarker.currentY];
+                        hasChanged = true;
+                    }
+                } else {
+                    draggedMarkerInfo.targetX = null;
+                }
+            }
+
+            // Show live preview of score changes
+            if (hasChanged) {
+                showScorePreview(tempMarkers);
+            }
+        }
+        
+        function handlePointMarkerMouseUp(e) {
+            if (!isMarkerDragging) return;
+            
+            hideScorePreview(); // Hide preview on mouse up
+
+            // Apply the changes to the actual state
+            if (draggedMarkerInfo.mode === 'horizontal' && draggedMarkerInfo.targetX !== null) {
+                const { chartType, id, targetX } = draggedMarkerInfo;
+                const markers = markerPositions[chartType];
+                const sourceMarker = markers.find(m => m.id === id);
+                const targetMarker = markers.find(m => m.id === targetX);
+                if (sourceMarker && targetMarker) {
+                    // Perform the actual swap on the real state
+                    [sourceMarker.currentY, targetMarker.currentY] = [targetMarker.currentY, sourceMarker.currentY];
+                }
+            } else if (draggedMarkerInfo.mode === 'vertical') {
+                const { chartType, id, chartGrid } = draggedMarkerInfo;
+                const isRecall = chartType === 'recall';
+                const targetLen = isRecall ? activeGeneratedIndices.length : activeReferenceIndices.length;
+                const rect = chartGrid.getBoundingClientRect();
+                const y = e.clientY - rect.top;
+                let newYIndex = Math.floor((1 - (y / rect.height)) * targetLen);
+                newYIndex = Math.max(0, Math.min(targetLen - 1, newYIndex));
+                const marker = markerPositions[chartType].find(m => m.id === id);
+                if (marker) {
+                    marker.currentY = newYIndex;
+                }
+            }
+            
+            // Clean up drag state
+            if (draggedMarkerInfo.element) {
+                draggedMarkerInfo.element.classList.remove('dragging');
+            }
+            document.body.style.cursor = 'default';
+            document.body.style.userSelect = '';
+            isMarkerDragging = false;
+            draggedMarkerInfo = { 
+                chartType: null, 
+                id: null, 
+                element: null, 
+                chartGrid: null, 
+                startY: 0, 
+                startX: 0, 
+                mode: null, 
+                targetX: null 
+            };
+            
+            // Final render with the new state
+            updateAndRenderAll();
+        }
+        
+        // Segment management functions
+        renderSegmentLists = function() { function populateList(ul, chunks, indices, type) { ul.innerHTML = ''; const activeSet = new Set(indices); const items = chunks.map((text, index) => { const li = document.createElement('li'); const isActive = activeSet.has(index); li.dataset.originalIndex = index; li.dataset.chunkType = type; const textSpan = document.createElement('span'); textSpan.textContent = `${type.slice(0,3).toUpperCase()} ${index}: ${text.substring(0,50)}${text.length > 50 ? '...' : ''}`; li.appendChild(textSpan); if (isActive) { li.setAttribute('draggable', true); const handle = document.createElement('i'); handle.className = 'fas fa-grip-vertical text-slate-400'; li.appendChild(handle); } li.classList.toggle('inactive-chunk', !isActive); li.onclick = () => toggleChunkActiveState(type, index); return { li, isActive, originalIndex: index }; }); indices.forEach(idx => ul.appendChild(items.find(it => it.originalIndex === idx).li)); items.forEach(it => { if (!it.isActive) ul.appendChild(it.li); }); } document.getElementById('activeRefChunkCount').textContent = activeReferenceIndices.length; document.getElementById('totalRefChunkCount').textContent = masterReferenceChunks.length; document.getElementById('activeGenChunkCount').textContent = activeGeneratedIndices.length; document.getElementById('totalGenChunkCount').textContent = masterGeneratedChunks.length; populateList(referenceSegmentsUl, masterReferenceChunks, activeReferenceIndices, 'reference'); populateList(generatedSegmentsUl, masterGeneratedChunks, activeGeneratedIndices, 'generated'); };
+        handleSegmentDragStart = function(e) { if (!e.target.getAttribute('draggable')) return; draggedItemInfo.element = e.target; draggedItemInfo.originalIndex = parseInt(e.target.dataset.originalIndex); draggedItemInfo.type = e.target.dataset.chunkType; e.dataTransfer.effectAllowed = 'move'; e.dataTransfer.setData('text/plain', draggedItemInfo.originalIndex); setTimeout(() => e.target.classList.add('dragging'), 0); };
+        handleSegmentDragOver = function(e) { e.preventDefault(); const ul = e.target.closest('ul'); if (!ul || (ul.id !== `${draggedItemInfo.type}SegmentsUl`)) return; if (!draggedItemInfo.placeholder) { draggedItemInfo.placeholder = document.createElement('li'); draggedItemInfo.placeholder.className = 'drag-placeholder'; draggedItemInfo.placeholder.textContent = 'Drop here'; } const li = e.target.closest('li:not(.inactive-chunk):not(.dragging)'); if (li && li.dataset.chunkType === draggedItemInfo.type) { const r = li.getBoundingClientRect(); ul.insertBefore(draggedItemInfo.placeholder, e.clientY > r.top + r.height / 2 ? li.nextSibling : li); } else if (!ul.querySelector('.drag-placeholder')) { const first = ul.querySelector('li[draggable="true"]'); if (first) ul.insertBefore(draggedItemInfo.placeholder, first); } };
+        handleSegmentDrop = function(e) { e.preventDefault(); if (!draggedItemInfo.placeholder || !draggedItemInfo.placeholder.parentNode) return; const arr = draggedItemInfo.type === 'reference' ? activeReferenceIndices : activeGeneratedIndices; const from = arr.indexOf(draggedItemInfo.originalIndex); if(from > -1) arr.splice(from, 1); const items = Array.from(draggedItemInfo.placeholder.parentNode.children); const to = items.filter(li => li.getAttribute('draggable') === 'true' || li.classList.contains('drag-placeholder')).indexOf(draggedItemInfo.placeholder); arr.splice(to, 0, draggedItemInfo.originalIndex); draggedItemInfo.placeholder.remove(); initializeAppState(); updateAndRenderAll(); };
+        handleSegmentDragEnd = function() { if (draggedItemInfo.element) draggedItemInfo.element.classList.remove('dragging'); if (draggedItemInfo.placeholder && draggedItemInfo.placeholder.parentNode) draggedItemInfo.placeholder.remove(); draggedItemInfo = { element: null, originalIndex: null, type: null, placeholder: null }; };
+        
+        toggleChunkActiveState = function(type, index) { let arr = (type === 'reference') ? activeReferenceIndices : activeGeneratedIndices; const pos = arr.indexOf(index); if (pos > -1) { if (arr.length > 1) arr.splice(pos, 1); else return; } else { arr.push(index); } activeReferenceIndices.sort((a,b)=>a-b); activeGeneratedIndices.sort((a,b)=>a-b); initializeAppState(); updateAndRenderAll(); };
+        
+        resetSegmentOrder = function(type) {
+            if (type === 'generated') {
+                activeGeneratedIndices = Array.from({ length: masterGeneratedChunks.length }, (_, i) => i);
+                initializeAppState();
+                updateAndRenderAll();
+            } else {
+                activeReferenceIndices = Array.from({ length: masterReferenceChunks.length }, (_, i) => i);
+                initializeAppState();
+                updateAndRenderAll();
+            }
+        };
+
+        animateNumber = function(el, start, end, duration = 400) { if (Math.abs(end - start) < 0.001) { el.textContent = end.toFixed(el.id.includes("NasScore") || el.id.includes("Nas") || el.id.includes("f1") ? 3 : 2); return; } const frame = (ct) => { const elapsed = ct - st; const rawProgress = Math.min(elapsed / duration, 1); const progress = easeOutCubic(rawProgress); const current = start + (end - start) * progress; el.textContent = current.toFixed(el.id.includes("NasScore") || el.id.includes("Nas") || el.id.includes("f1") ? 3 : 2); if (rawProgress < 1) requestAnimationFrame(frame); }; const st = performance.now(); requestAnimationFrame(frame); };
+
+        initializeAppState = function() { if (animationFrameId) cancelAnimationFrame(animationFrameId); ['precision', 'recall'].forEach(type => { const isR = type === 'recall', nX = isR ? activeReferenceIndices.length : activeGeneratedIndices.length, nY = isR ? activeGeneratedIndices.length : activeReferenceIndices.length; markerPositions[type] = []; if (nX === 0 || nY === 0) return; const sim = buildCurrentSimilarityMatrix(isR); for (let x=0; x<nX; x++) { const colSim = sim.map(row => row[x]), match = findBestMatchIndex(colSim); let y = match >= 0 ? match : Math.floor(nY/2); markerPositions[type].push({id: x, currentY: y});} }); const maxPrecisionY = activeReferenceIndices.length; const maxRecallY = activeGeneratedIndices.length; lctSlider.max = Math.max(0, Math.min(maxPrecisionY, maxRecallY) -1); if (parseInt(lctSlider.value) > parseInt(lctSlider.max)) lctSlider.value = lctSlider.max; };
+
+    </script>
+</body>
+</html>

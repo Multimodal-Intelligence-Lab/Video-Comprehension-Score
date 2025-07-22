@@ -1,0 +1,229 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vcs._visualize_vcs._las.visualizer &mdash; VCS Metrics v1.0.2</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css?v=887dc02f" />
+
+  
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../_static/documentation_options.js?v=1ed6394b"></script>
+      <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #0d9488" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            VCS Metrics
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api.html">API Reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Resources:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/yourusername/vcs-metrics">GitHub Repository</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/vcs-metrics/">PyPI Package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #0d9488" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">VCS Metrics</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">vcs._visualize_vcs._las.visualizer</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for vcs._visualize_vcs._las.visualizer</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Any</span>
+
+<div class="viewcode-block" id="visualize_las">
+<a class="viewcode-back" href="../../../../api.html#vcs.visualize_las">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">visualize_las</span><span class="p">(</span><span class="n">internals</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Creates a visualization of LAS metrics with improved average line annotations</span>
+<span class="sd">    that remain visible regardless of data values.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+    
+    <span class="n">precision_sim_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">internals</span><span class="p">[</span><span class="s1">&#39;alignment&#39;</span><span class="p">][</span><span class="s1">&#39;precision&#39;</span><span class="p">][</span><span class="s1">&#39;similarity_values&#39;</span><span class="p">])</span>
+    <span class="n">recall_sim_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">internals</span><span class="p">[</span><span class="s1">&#39;alignment&#39;</span><span class="p">][</span><span class="s1">&#39;recall&#39;</span><span class="p">][</span><span class="s1">&#39;similarity_values&#39;</span><span class="p">])</span>
+    <span class="n">precision_matches</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;alignment&#39;</span><span class="p">][</span><span class="s1">&#39;precision&#39;</span><span class="p">][</span><span class="s1">&#39;matches&#39;</span><span class="p">]</span>
+    <span class="n">recall_matches</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;alignment&#39;</span><span class="p">][</span><span class="s1">&#39;recall&#39;</span><span class="p">][</span><span class="s1">&#39;matches&#39;</span><span class="p">]</span>
+    
+    <span class="n">las_metrics</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;metrics&#39;</span><span class="p">][</span><span class="s1">&#39;las&#39;</span><span class="p">]</span>
+    <span class="n">precision_las</span> <span class="o">=</span> <span class="n">las_metrics</span><span class="p">[</span><span class="s1">&#39;precision&#39;</span><span class="p">]</span>
+    <span class="n">recall_las</span> <span class="o">=</span> <span class="n">las_metrics</span><span class="p">[</span><span class="s1">&#39;recall&#39;</span><span class="p">]</span>
+    <span class="n">f1_las</span> <span class="o">=</span> <span class="n">las_metrics</span><span class="p">[</span><span class="s1">&#39;f1&#39;</span><span class="p">]</span>
+    
+    <span class="n">ax_precision</span> <span class="o">=</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    
+    <span class="n">x_indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">precision_sim_values</span><span class="p">))</span>
+    
+    <span class="n">bars</span> <span class="o">=</span> <span class="n">ax_precision</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x_indices</span><span class="p">,</span> <span class="n">precision_sim_values</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">sim</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">precision_sim_values</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">sim</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">:</span>
+            <span class="n">ax_precision</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">sim</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> 
+                                <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">sim</span><span class="p">),</span> 
+                                <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
+                                <span class="n">textcoords</span><span class="o">=</span><span class="s2">&quot;offset points&quot;</span><span class="p">,</span>
+                                <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span>
+                                <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+    
+    <span class="c1"># Add the average line with improved positioning and visibility</span>
+    <span class="n">ax_precision</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">precision_las</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+    
+    <span class="c1"># Add a text annotation for the average in a more visible position</span>
+    <span class="c1"># If the average is close to 1.0, place it slightly lower to ensure visibility</span>
+    <span class="k">if</span> <span class="n">precision_las</span> <span class="o">&gt;</span> <span class="mf">0.95</span><span class="p">:</span>
+        <span class="n">avg_text_y</span> <span class="o">=</span> <span class="mf">0.9</span>  <span class="c1"># Position text lower when average is near top</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">avg_text_y</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">precision_las</span> <span class="o">+</span> <span class="mf">0.07</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">)</span>  <span class="c1"># Place above line but not too high</span>
+    
+    <span class="n">ax_precision</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">precision_sim_values</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">avg_text_y</span><span class="p">,</span> 
+                     <span class="sa">f</span><span class="s1">&#39;Average: </span><span class="si">{</span><span class="n">precision_las</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span>
+                     <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span>
+                     <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">boxstyle</span><span class="o">=</span><span class="s1">&#39;round,pad=0.3&#39;</span><span class="p">))</span>
+    
+    <span class="n">ax_precision</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Generation Index&#39;</span><span class="p">)</span>
+    <span class="n">ax_precision</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Similarity Value&#39;</span><span class="p">)</span>
+    <span class="n">ax_precision</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Precision LAS: </span><span class="si">{</span><span class="n">precision_las</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">ax_precision</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.05</span><span class="p">)</span>
+    
+    <span class="n">match_text</span> <span class="o">=</span> <span class="s2">&quot;Matches:</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="k">for</span> <span class="n">g_idx</span><span class="p">,</span> <span class="n">r_idx</span> <span class="ow">in</span> <span class="n">precision_matches</span><span class="p">[:</span><span class="mi">10</span><span class="p">]:</span>
+        <span class="n">match_text</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;Gen </span><span class="si">{</span><span class="n">g_idx</span><span class="si">}</span><span class="s2"> → Ref </span><span class="si">{</span><span class="n">r_idx</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">precision_matches</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="n">match_text</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;... and </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">precision_matches</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">10</span><span class="si">}</span><span class="s2"> more&quot;</span>
+    
+    <span class="n">ax_precision</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">,</span> <span class="n">match_text</span><span class="p">,</span> 
+                    <span class="n">transform</span><span class="o">=</span><span class="n">ax_precision</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span> 
+                    <span class="n">va</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span>
+                    <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">boxstyle</span><span class="o">=</span><span class="s1">&#39;round&#39;</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">),</span>
+                    <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+    
+    <span class="n">ax_recall</span> <span class="o">=</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    
+    <span class="n">x_indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">recall_sim_values</span><span class="p">))</span>
+    
+    <span class="n">bars</span> <span class="o">=</span> <span class="n">ax_recall</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x_indices</span><span class="p">,</span> <span class="n">recall_sim_values</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;salmon&#39;</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">sim</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">recall_sim_values</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">sim</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">:</span>
+            <span class="n">ax_recall</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">sim</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> 
+                            <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">sim</span><span class="p">),</span> 
+                            <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
+                            <span class="n">textcoords</span><span class="o">=</span><span class="s2">&quot;offset points&quot;</span><span class="p">,</span>
+                            <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span>
+                            <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+    
+    <span class="c1"># Add the average line with improved visibility</span>
+    <span class="n">ax_recall</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">recall_las</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+    
+    <span class="c1"># Add a text annotation for the average in a more visible position</span>
+    <span class="c1"># If the average is close to 1.0, place it slightly lower to ensure visibility</span>
+    <span class="k">if</span> <span class="n">recall_las</span> <span class="o">&gt;</span> <span class="mf">0.95</span><span class="p">:</span>
+        <span class="n">avg_text_y</span> <span class="o">=</span> <span class="mf">0.9</span>  <span class="c1"># Position text lower when average is near top</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">avg_text_y</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">recall_las</span> <span class="o">+</span> <span class="mf">0.07</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">)</span>  <span class="c1"># Place above line but not too high</span>
+    
+    <span class="n">ax_recall</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">recall_sim_values</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">avg_text_y</span><span class="p">,</span> 
+                  <span class="sa">f</span><span class="s1">&#39;Average: </span><span class="si">{</span><span class="n">recall_las</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span>
+                  <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span>
+                  <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">boxstyle</span><span class="o">=</span><span class="s1">&#39;round,pad=0.3&#39;</span><span class="p">))</span>
+    
+    <span class="n">ax_recall</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Reference Index&#39;</span><span class="p">)</span>
+    <span class="n">ax_recall</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Similarity Value&#39;</span><span class="p">)</span>
+    <span class="n">ax_recall</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Recall LAS: </span><span class="si">{</span><span class="n">recall_las</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">ax_recall</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.05</span><span class="p">)</span>
+    
+    <span class="n">match_text</span> <span class="o">=</span> <span class="s2">&quot;Matches:</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="k">for</span> <span class="n">g_idx</span><span class="p">,</span> <span class="n">r_idx</span> <span class="ow">in</span> <span class="n">recall_matches</span><span class="p">[:</span><span class="mi">10</span><span class="p">]:</span>
+        <span class="n">match_text</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;Ref </span><span class="si">{</span><span class="n">r_idx</span><span class="si">}</span><span class="s2"> → Gen </span><span class="si">{</span><span class="n">g_idx</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">recall_matches</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="n">match_text</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;... and </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">recall_matches</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">10</span><span class="si">}</span><span class="s2"> more&quot;</span>
+    
+    <span class="n">ax_recall</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">,</span> <span class="n">match_text</span><span class="p">,</span> 
+                 <span class="n">transform</span><span class="o">=</span><span class="n">ax_recall</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span> 
+                 <span class="n">va</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span>
+                 <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">boxstyle</span><span class="o">=</span><span class="s1">&#39;round&#39;</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">),</span>
+                 <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+    
+    <span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Local Alignment Score (LAS): </span><span class="si">{</span><span class="n">f1_las</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">fig</span></div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Harsh Dubey, Chulwoo Pack.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

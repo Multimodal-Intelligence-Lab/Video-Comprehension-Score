@@ -1,0 +1,390 @@
+<div id="exampleContent" class="tab-inner-content">
+    <div class="neumorphic-page-container">
+        <div class="neumorphic-content">
+            <article class="interactive-card overflow-hidden">
+        <!-- Hero Section -->
+        <section id="hero-section" class="py-10 px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto text-center">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4 leading-tight">
+                    How VCS Works: A Step-by-Step Example
+                </h1>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <div class="component-discovery-section">
+            <div class="p-6 sm:p-8 lg:p-10">
+                <section id="example" class="content-section fade-in-section">
+
+                <div class="space-y-6">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-teal-700 mb-6 flex items-center justify-center gap-3">
+                            <div class="bg-teal-100 p-3 rounded-full">
+                                <i class="fas fa-file-alt text-teal-600 text-xl"></i>
+                            </div>
+                            1. Input Texts: Reference & Generated
+                        </h3>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-around items-stretch md:space-x-6 space-y-6 md:space-y-0">
+                        <div class="interactive-card foundation-card md:w-1/2 p-6">
+                            <h4 class="text-xl font-semibold text-teal-700 mb-4 flex items-center gap-2">
+                                <div class="w-2 h-2 bg-teal-500 rounded-full"></div>
+                                Reference Text (T<sub>ref</sub>)
+                            </h4>
+                            <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-gray-700 text-sm leading-relaxed max-h-32 overflow-y-auto">
+The old market bell rings, starting a busy market. Vendors open their bright stalls in the busy square, while the smell of fresh bread fills the air. A young seller shouts out good deals as curious people gather around. The steady ring of the bell sets the pace for the day. A wise old vendor stops by his stall, giving advice to those who pass by. As the market gets busy, the bell rings again at midday, reminding everyone of the community spirit. A light rain briefly slows the crowd, but everyone's spirit stays strong. Local storytellers tell simple tales that catch everyone's attention. As evening comes, the old bell rings one last time, perfectly echoing the start of the day.
+                            </div>
+                        </div>
+                        <div class="interactive-card foundation-card md:w-1/2 p-6">
+                            <h4 class="text-xl font-semibold text-teal-700 mb-4 flex items-center gap-2">
+                                <div class="w-2 h-2 bg-teal-500 rounded-full"></div>
+                                Generated Text (T<sub>gen</sub>)
+                            </h4>
+                            <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-gray-700 text-sm leading-relaxed max-h-32 overflow-y-auto">
+The old town bell rings, signaling the start of a busy market. Stalls come alive as vendors set up their goods in the busy square, and the smell of fresh baked goods fills the morning air. A lively seller shouts out good deals to attract a curious crowd. A happy child runs after a flying kite among the stalls, adding a fun touch to the scene. An eager artist quickly draws the lively scene, adding a creative touch. A short rain briefly stops the flow, but the market soon gets moving again. A lively musician starts playing a song that grabs the attention of a nearby group. As the market gets at its busiest, the bell rings again at midday, refreshing the crowd with its familiar sound. As dusk comes, the old bell rings once more, echoing the busy start of the market.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="connector-wrapper flex flex-col items-center">
+                        <div class="flex w-full max-w-xl"> <div class="w-1/2 flex justify-center"><div class="connector-line w-0.5 h-6"></div></div>
+                            <div class="w-1/2 flex justify-center"><div class="connector-line w-0.5 h-6"></div></div>
+                        </div>
+                        <div class="connector-line h-0.5 w-1/2 md:w-1/4 my-[-1px] relative z-0"></div> <div class="connector-line w-0.5 h-6 relative z-0"></div> <div class="connector-arrow connector-arrow-styled"><i class="fas fa-arrow-down"></i></div>
+                    </div>
+
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-teal-700 mb-6 flex items-center justify-center gap-3">
+                            <div class="bg-teal-100 p-3 rounded-full">
+                                <i class="fas fa-cogs text-teal-600 text-xl"></i>
+                            </div>
+                            2. Processing via VCS API
+                        </h3>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="interactive-card core-metric-card max-w-4xl p-6">
+                            <h4 class="text-xl font-semibold text-teal-700 mb-6 flex items-center gap-2">
+                                <div class="w-2 h-2 bg-teal-500 rounded-full"></div>
+                                compute_vcs_score API Call
+                            </h4>
+                            <div class="bg-gray-900 text-gray-100 rounded-lg p-6 font-mono text-sm overflow-x-auto" style="border-left: 4px solid #14b8a6;">
+                                <code>compute_vcs_score(</code><br>
+                                <code>&nbsp;&nbsp;&nbsp;&nbsp;<span class="param-name">reference_text</span>: <span class="param-type">str</span>,</code><br>
+                                <code>&nbsp;&nbsp;&nbsp;&nbsp;<span class="param-name">generated_text</span>: <span class="param-type">str</span>,</code><br>
+                                <code>&nbsp;&nbsp;&nbsp;&nbsp;<span class="param-name">segmenter_fn</span>,</code><br>
+                                <code>&nbsp;&nbsp;&nbsp;&nbsp;<span class="param-name">embedding_fn_las</span>,</code><br>
+                                <code>&nbsp;&nbsp;&nbsp;&nbsp;<span class="param-name">embedding_fn_gas</span> = <span class="default-val">None</span>,</code><br>
+                                <code>&nbsp;&nbsp;&nbsp;&nbsp;<span class="param-name">chunk_size</span>: <span class="param-type">int</span> = <span class="default-val">1</span>,</code><br>
+                                <code>&nbsp;&nbsp;&nbsp;&nbsp;<span class="param-name">context_cutoff_value</span>: <span class="param-type">float</span> = <span class="default-val">0.6</span>,</code><br>
+                                <code>&nbsp;&nbsp;&nbsp;&nbsp;<span class="param-name">context_window_control</span>: <span class="param-type">float</span> = <span class="default-val">4.0</span>,</code><br>
+                                <code>&nbsp;&nbsp;&nbsp;&nbsp;<span class="param-name">lct</span>: <span class="param-type">int</span> = <span class="default-val">1</span>,</code><br>
+                                <code>&nbsp;&nbsp;&nbsp;&nbsp;<span class="param-name">return_all_metrics</span>: <span class="param-type">bool</span> = <span class="default-val">False</span>,</code><br>
+                                <code>&nbsp;&nbsp;&nbsp;&nbsp;<span class="param-name">return_internals</span>: <span class="param-type">bool</span> = <span class="default-val">False</span></code><br>
+                                <code>)</code>
+                            </div>
+                            <p class="text-teal-600 text-sm mt-4 leading-relaxed">The input texts are passed to the core VCS function along with configuration parameters.</p>
+                        </div>
+                    </div>
+
+                    <div class="connector-wrapper flex flex-col items-center">
+                        <div class="connector-line w-0.5 h-6"></div>
+                        <div class="connector-arrow connector-arrow-styled"><i class="fas fa-arrow-down"></i></div>
+                        <div class="connector-line w-0.5 h-6"></div>
+                        <div class="connector-line h-0.5 w-full max-w-2xl my-[-1px] relative z-0"></div> <div class="flex w-full max-w-2xl"> <div class="w-1/2 flex flex-col items-center">
+                                <div class="connector-line w-0.5 h-6"></div>
+                                <div class="connector-arrow connector-arrow-styled"><i class="fas fa-arrow-down"></i></div>
+                            </div>
+                            <div class="w-1/2 flex flex-col items-center">
+                                <div class="connector-line w-0.5 h-6"></div>
+                                <div class="connector-arrow connector-arrow-styled"><i class="fas fa-arrow-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-teal-700 mb-6 flex items-center justify-center gap-3">
+                            <div class="bg-teal-100 p-3 rounded-full">
+                                <i class="fas fa-sitemap text-teal-600 text-xl"></i>
+                            </div>
+                            3. Internal Processing Steps
+                        </h3>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-around items-stretch md:space-x-6 space-y-6 md:space-y-0">
+                        <div class="interactive-card intermediate-card md:w-2/5 p-6 relative">
+                            <h4 class="text-lg font-semibold text-teal-700 mb-4 flex items-center gap-2">
+                                <i class="fas fa-globe-americas text-teal-600"></i>
+                                Figure A: Global Alignment (GAS)
+                            </h4>
+                            <figure class="bg-teal-50/50 border border-teal-100 rounded-lg p-2 mb-3">
+                                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-md">
+                                    <video controls autoplay loop playsinline>
+                                        <source src="assets/videos/metrics/gas/gas.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </figure>
+                            <figcaption class="text-xs text-teal-600 mt-2 text-center leading-relaxed">Overall thematic similarity using full-text embeddings. Corresponds to Equation (1) in the paper.</figcaption>
+                            
+                            </div>
+                        <div class="interactive-card intermediate-card md:w-2/5 p-6">
+                            <h4 class="text-lg font-semibold text-teal-700 mb-4 flex items-center gap-2">
+                                <i class="fas fa-tasks text-teal-600"></i>
+                                Figure B: Preprocessing & Segmentation
+                            </h4>
+                            <figure class="bg-teal-50/50 border border-teal-100 rounded-lg p-2 mb-3">
+                                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-md">
+                                    <video  controls autoplay loop playsinline>
+                                        <source src="assets/videos/segmenting/segmenting.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </figure>
+                            <figcaption class="text-xs text-teal-600 mt-2 text-center leading-relaxed">Texts are cleaned, segmented (SaT), and chunked. See Section 3.1.2 for details.</figcaption>
+                        </div>
+                    </div>
+
+                    <div class="connector-wrapper flex flex-col items-center">
+                        <div class="flex w-full max-w-2xl"> <div class="w-1/2 flex justify-center"><div class="connector-line w-0.5 h-6"></div></div>
+                            <div class="w-1/2 flex justify-center"><div class="connector-line w-0.5 h-6"></div></div>
+                        </div>
+                        <div class="connector-line h-0.5 w-1/2 md:w-1/4 my-[-1px] relative z-0"></div> <div class="connector-line w-0.5 h-6 relative z-0"></div> <div class="connector-arrow connector-arrow-styled"><i class="fas fa-arrow-down"></i></div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-teal-700 mb-6 flex items-center justify-center gap-3">
+                            <div class="bg-teal-100 p-3 rounded-full">
+                                <i class="fas fa-chalkboard-teacher text-teal-600 text-xl"></i>
+                            </div>
+                            4. Conceptual Detour: Mapping Windows (MW)
+                        </h3>
+                        <p class="text-teal-600 text-base mb-6 max-w-2xl mx-auto leading-relaxed">Understanding how VCS aligns text segments of varying lengths and details. (Ref: Section 3.2.2)</p>
+                    </div>
+                    <div class="example-mapping-container">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-6">
+                            <div class="interactive-card advanced-card p-6">
+                                <h4 class="text-lg font-semibold text-teal-700 mb-4 flex items-center gap-2">
+                                    <i class="fas fa-equals text-teal-600"></i>
+                                    Figure C1: MW - Equal Length
+                                </h4>
+                                <figure class="bg-teal-50/50 border border-teal-100 rounded-lg p-2 mb-3">
+                                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-md">
+                                        <video controls autoplay loop playsinline>
+                                            <source src="assets/videos/mapping window/case1.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </figure>
+                                <figcaption class="text-xs text-teal-600 mt-2 text-center leading-relaxed">Ideal 1-to-1 mapping when T<sub>ref</sub> and T<sub>gen</sub> have similar segment counts.</figcaption>
+                            </div>
+                            <div class="interactive-card advanced-card p-6">
+                                <h4 class="text-lg font-semibold text-teal-700 mb-4 flex items-center gap-2">
+                                    <i class="fas fa-compress-arrows-alt text-teal-600"></i>
+                                    Figure C2: MW - Concise Gen.
+                                </h4>
+                                <figure class="bg-teal-50/50 border border-teal-100 rounded-lg p-2 mb-3">
+                                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-md">
+                                        <video controls autoplay  loop playsinline>
+                                            <source src="assets/videos/mapping window/case2.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </figure>
+                                <figcaption class="text-xs text-teal-600 mt-2 text-center leading-relaxed">T<sub>gen</sub> is shorter; mapping window adjusts for recall.</figcaption>
+                            </div>
+                            <div class="interactive-card advanced-card p-6">
+                                <h4 class="text-lg font-semibold text-teal-700 mb-4 flex items-center gap-2">
+                                    <i class="fas fa-expand-arrows-alt text-teal-600"></i>
+                                    Figure C3: MW - Verbose Gen.
+                                </h4>
+                                <figure class="bg-teal-50/50 border border-teal-100 rounded-lg p-2 mb-3">
+                                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-md">
+                                        <video controls autoplay  loop playsinline>
+                                            <source src="assets/videos/mapping window/case3.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </figure>
+                                <figcaption class="text-xs text-teal-600 mt-2 text-center leading-relaxed">T<sub>gen</sub> is longer; mapping window adjusts for precision.</figcaption>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="connector-wrapper flex flex-col items-center">
+                        <div class="connector-line w-0.5 h-6"></div>
+                        <div class="connector-arrow connector-arrow-styled"><i class="fas fa-arrow-down"></i></div>
+                    </div>
+
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-teal-700 mb-6 flex items-center justify-center gap-3">
+                            <div class="bg-teal-100 p-3 rounded-full">
+                                <i class="fas fa-calculator text-teal-600 text-xl"></i>
+                            </div>
+                            5. Core Score Calculation Components
+                        </h3>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-6 md:items-stretch">
+                        <div class="interactive-card core-metric-card p-6">
+                            <h4 class="text-lg font-semibold text-teal-700 mb-4 flex items-center gap-2">
+                                <i class="fas fa-people-arrows text-teal-600"></i>
+                                Figure D: Best Matching
+                            </h4>
+                            <figure class="bg-teal-50/50 border border-teal-100 rounded-lg p-2 mb-3">
+                                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-md">
+                                    <video controls autoplay  loop playsinline>
+                                        <source src="assets/videos/best matching/matching.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </figure>
+                            <figcaption class="text-xs text-teal-600 mt-2 text-center leading-relaxed">Establishes robust one-to-one chunk correspondences. (Ref: Section 3.2.2)</figcaption>
+                        </div>
+                        <div class="interactive-card core-metric-card p-6">
+                            <h4 class="text-lg font-semibold text-teal-700 mb-4 flex items-center gap-2">
+                                <i class="fas fa-th-list text-teal-600"></i>
+                                Figure E: Local Alignment (LAS)
+                            </h4>
+                            <figure class="bg-teal-50/50 border border-teal-100 rounded-lg p-2 mb-3">
+                                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-md">
+                                    <video controls autoplay  loop playsinline>
+                                        <source src="assets/videos/metrics/las/las.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </figure>
+                            <figcaption class="text-xs text-teal-600 mt-2 text-center leading-relaxed">Assesses fine-grained semantic quality of matched chunks. (Ref: Eq. 2)</figcaption>
+                        </div>
+                        <div class="interactive-card core-metric-card p-6">
+                            <h4 class="text-lg font-semibold text-teal-700 mb-4 flex items-center gap-2">
+                                <i class="fas fa-ruler-combined text-teal-600"></i>
+                                Figure F: Distance-based Narrative Alignment Score (NAS-D)
+                            </h4>
+                            <figure class="bg-teal-50/50 border border-teal-100 rounded-lg p-2 mb-3">
+                                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-md">
+                                    <video controls autoplay  loop playsinline>
+                                        <source src="assets/videos/metrics/nas/nas-d/nas-d.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </figure>
+                            <figcaption class="text-xs text-teal-600 mt-2 text-center leading-relaxed">Penalizes deviations of matched elements from expected positions. (Ref: Eq. 3, 4)</figcaption>
+                        </div>
+                    </div>
+
+                    <div class="connector-wrapper flex flex-col items-center mt-4 mb-4">
+                        <div class="connector-line w-0.5 h-6 bg-teal-300"></div>
+                        <div class="connector-line h-0.5 w-full max-w-3xl my-[-1px] relative z-0 bg-teal-300"></div>
+                    
+                        <div class="flex w-full max-w-3xl justify-between mt-[-1px]">
+                            <div class="flex flex-col items-center relative pt-0">
+                                <div class="connector-line w-0.5 h-6 bg-teal-300"></div>
+                                <div class="connector-arrow connector-arrow-styled"><i class="fas fa-arrow-down"></i></div>
+                                <span class="absolute top-full mt-1 text-xs font-semibold text-teal-700 whitespace-nowrap">GAS</span>
+                            </div>
+                            <div class="flex flex-col items-center relative pt-0">
+                                <div class="connector-line w-0.5 h-6 bg-teal-300"></div>
+                                <div class="connector-arrow connector-arrow-styled"><i class="fas fa-arrow-down"></i></div>
+                                <span class="absolute top-full mt-1 text-xs font-semibold text-teal-700 whitespace-nowrap">LAS</span>
+                            </div>
+                            <div class="flex flex-col items-center pt-0">
+                                <div class="connector-line w-0.5 h-6 bg-teal-300"></div>
+                                <div class="connector-arrow connector-arrow-styled"><i class="fas fa-arrow-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:grid md:grid-cols-3 gap-x-6 md:items-stretch">
+                        <div class="md:order-2 space-y-0 flex flex-col justify-between">
+                            <div class="interactive-card core-metric-card p-6">
+                                <h4 class="text-lg font-semibold text-teal-700 mb-4 flex items-center gap-2">
+                                    <i class="fas fa-wave-square text-teal-600"></i>
+                                    Figure G: Line-based Narrative Alignment Score (NAS-L)
+                                </h4>
+                                <figure class="bg-teal-50/50 border border-teal-100 rounded-lg p-2 mb-3">
+                                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-md">
+                                        <video controls autoplay loop playsinline>
+                                            <source src="assets/videos/metrics/nas/nas-l/nas-l.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </figure>
+                                <figcaption class="text-xs text-teal-600 mt-2 text-center leading-relaxed">Evaluates local chronological flow of matched elements. (Ref: Eq. 5, 6)</figcaption>
+                            </div>
+                            
+                            <div class="connector-wrapper flex flex-col items-center nas-vertical-connector my-2">
+                                <div class="connector-line w-0.5 h-6"></div>
+                                <div class="connector-arrow connector-arrow-styled"><i class="fas fa-arrow-down"></i></div>
+                            </div>
+                            
+                            <div class="interactive-card advanced-card p-6 relative">
+                                <h4 class="text-lg font-semibold text-teal-700 mb-4 flex items-center gap-2">
+                                    <i class="fas fa-window-maximize text-teal-600"></i>
+                                    Figure H: Window Regularizer (R<sub>W</sub>)
+                                </h4>
+                                <figure class="bg-teal-50/50 border border-teal-100 rounded-lg p-2 mb-3">
+                                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-md">
+                                        <video controls autoplay loop playsinline>
+                                            <source src="assets/videos/metrics/nas/window-regularizer/Rw.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </figure>
+                                <figcaption class="text-xs text-teal-600 mt-2 text-center leading-relaxed">Adjusts NAS for extreme text length disparities. (Ref: Eq. 8, 9)</figcaption>
+                                
+                                <div class="hidden md:block absolute z-10 pointer-events-none"
+                                     style="top: 100%;
+                                            left: 50%; 
+                                            transform: translateX(-50%);
+                                            ">
+                                    <div class="relative connector-line w-0.5 bg-teal-300"
+                                         style="height: var(--nas-arrow-v1-down-height);
+                                                ">
+                                        <div class="absolute connector-line h-0.5 bg-teal-300"
+                                             style="top: 100%;
+                                                    right: 0%;
+                                                    width: var(--nas-arrow-h-left-width);
+                                                    ">
+                                            <div class="absolute"
+                                                 style="bottom: 0%;
+                                                        right: 100%;
+                                                        height: var(--nas-arrow-v-up-height);
+                                                        display: flex;
+                                                        flex-direction: column-reverse;
+                                                        align-items: center;
+                                                        ">
+                                                <div class="connector-arrow-styled bg-teal-100 p-1.5">
+                                                    <i class="fas fa-arrow-up text-xl text-teal-600"></i>
+                                                </div>
+                                                <div class="connector-line w-0.5 bg-teal-300 flex-grow"></div>
+                                            </div>
+                                            <span class="absolute text-sm font-bold text-teal-700 whitespace-nowrap"
+                                                  style="bottom: 0.2rem;
+                                                         right: calc(100% + var(--nas-arrow-label-offset));
+                                                         transform: translateY(-50%);
+                                                         ">NAS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-last md:order-1 md:col-span-2 interactive-card final-video-card p-8 flex flex-col">
+                            <h4 class="text-xl font-semibold text-teal-700 mb-6 flex items-center gap-3">
+                                <i class="fas fa-video text-teal-600 text-lg"></i>
+                                Figure I: Final VCS Score Video
+                            </h4>
+                            <figure class="bg-teal-50/50 border border-teal-100 rounded-lg p-4 mb-4 flex-grow flex items-center justify-center">
+                                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg w-full max-w-4xl"> <video controls autoplay  loop playsinline class="block w-full object-contain"> <source src="assets/videos/vcs/vcs.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </figure>
+                            <figcaption class="text-sm text-teal-600 mt-4 text-center leading-relaxed font-medium">This video illustrates the final score calculation, combining semantic and narrative alignments to provide a comprehensive measure of video understanding. It shows how GAS, LAS, and NAS contribute to the overall VCS.</figcaption>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </article>
+        </div>
+    </div>
+</div>

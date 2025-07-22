@@ -1,0 +1,2456 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect of LCT on Line-based NAS (NAS-L)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        /* --- Base Styles --- */
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--bg-color);
+            transition: background 1.5s cubic-bezier(0.25, 0.1, 0.25, 1); 
+        }
+        :root { 
+            --bg-color: #f8fafc;
+            --light-shadow: rgba(255, 255, 255, 1);
+            --dark-shadow: rgba(148, 163, 184, 0.3);
+            --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+            --ease-out-cubic: cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+        }
+
+        /* --- Neumorphic Page Container --- */
+        .neumorphic-page-container {
+            background: var(--bg-color);
+            border-radius: 25px;
+            box-shadow: 0 0 24px var(--dark-shadow);
+            margin: 1rem;
+            padding: 2rem;
+            min-height: calc(100vh - 2rem);
+            position: relative;
+        }
+
+        .neumorphic-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* --- Neumorphic Card Style --- */
+        .interactive-card {
+            background: rgba(255, 255, 255, 0.5); 
+            backdrop-filter: blur(12px); 
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+            transition: transform 0.35s var(--ease-out-cubic), box-shadow 0.35s var(--ease-out-cubic), border-color 0.35s var(--ease-out-cubic);
+            will-change: transform, box-shadow;
+        }
+        .interactive-card:hover { 
+            box-shadow: 12px 12px 24px var(--dark-shadow), -12px -12px 24px var(--light-shadow); 
+            transform: translateY(-5px); 
+            border-color: rgba(255, 255, 255, 0.5); 
+        }
+        
+        /* --- Card Color Themes --- */
+        .intro-card { 
+            background: linear-gradient(135deg, rgba(254, 252, 232, 0.6) 0%, rgba(254, 243, 199, 0.5) 100%); 
+            border-color: rgba(251, 191, 36, 0.5);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+        }
+        .demo-card { 
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(248, 250, 252, 0.65) 100%); 
+            border-color: rgba(226, 232, 240, 0.8); 
+            border-left: 3px solid #0d9488; 
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow), 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+        .metrics-card { background: linear-gradient(135deg, rgba(240, 249, 255, 0.6) 0%, rgba(219, 234, 254, 0.5) 100%); border-color: rgba(147, 197, 253, 0.6); }
+        .formula-card { background: linear-gradient(135deg, rgba(237, 233, 254, 0.6) 0%, rgba(221, 214, 254, 0.5) 100%); border-color: rgba(196, 181, 253, 0.6); }
+
+        /* --- Tooltip & Tour Styles --- */
+        #chartTooltip { position: fixed; background: rgba(45, 55, 72, 0.9); backdrop-filter: blur(5px); color: white; padding: 8px 12px; border-radius: 6px; font-size: 0.8rem; z-index: 100; pointer-events: none; opacity: 0; transition: opacity 0.25s, transform 0.25s; transform: scale(0.95); }
+        #chartTooltip.visible { opacity: 1; transform: scale(1); }
+        #chartTooltip.standard { border-left: 4px solid #22c55e; }
+        #chartTooltip.lct-capped { border-left: 4px solid #f59e0b; }
+        #chartTooltip.invalid { border-left: 4px solid #ef4444; }
+        
+        /* Ghost score style for predictions */
+        .ghost-score {
+            color: #9ca3af;
+            font-weight: 700;
+        }
+        #tour-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 9998; opacity: 0; transition: opacity 0.4s ease-in-out; pointer-events: none; }
+        .tour-highlight { position: relative; z-index: 9999; box-shadow: 0 0 0 9999px rgba(0,0,0,0.6), 0 0 20px rgba(255, 255, 255, 0.9); border-radius: 0.5rem; transition: box-shadow 0.4s ease-in-out; }
+        #tour-callout { 
+            position: absolute; 
+            background: rgba(255, 255, 255, 0.95); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            color: #334155; 
+            padding: 1.25rem; 
+            border-radius: 20px; 
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+            z-index: 10000; 
+            max-width: 320px; 
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: opacity 0.3s var(--ease-out-cubic), transform 0.3s var(--ease-out-cubic); 
+            transform: translateY(10px); 
+            opacity: 0; 
+        }
+        #tour-callout.visible { transform: translateY(0); opacity: 1; }
+        #tour-callout button { 
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%); 
+            color: white; 
+            padding: 0.5rem 1rem; 
+            border: none; 
+            border-radius: 12px; 
+            cursor: pointer; 
+            font-weight: 600;
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+        }
+        #tour-callout button:hover { 
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02); 
+        }
+
+        /* --- Chart & UI Element Styles --- */
+        .axis-label { position: absolute; font-size: 0.75rem; color: #475569; font-weight: 500; white-space: nowrap; z-index: 6; }
+        .ideal-mapping-window { position: absolute; border: 2px solid #0d9488; background-color: rgba(20, 184, 166, 0.3); box-sizing: border-box; z-index: 1; transition: all 0.3s; pointer-events: none; border-radius: 0.375rem; box-shadow: 0 0 8px rgba(13, 148, 136, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2); outline: 1px solid #0d9488; outline-offset: -1px; }
+        .chart-grid-background {
+            background-color: #fafbfc;
+            border-radius: 15px;
+            box-shadow: inset 5px 5px 10px var(--dark-shadow), inset -5px -5px 10px var(--light-shadow), inset 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        
+        .grid-line {
+            position: absolute;
+            background-color: #e2e8f0;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        .gen-marker { position: absolute; width: 12px; height: 12px; border-radius: 50%; background-color: #8b5cf6; border: 2px solid white; cursor: grab; box-shadow: 0 2px 4px rgba(0,0,0,0.3); z-index: 10; transition: left 0.4s var(--ease-out-cubic), bottom 0.4s var(--ease-out-cubic), transform 0.25s var(--ease-out-cubic), background-color 0.25s var(--ease-out-cubic), box-shadow 0.25s var(--ease-out-cubic); will-change: transform, left, bottom; }
+        .gen-marker:hover { transform: scale(1.4); }
+        .gen-marker.dragging { background-color: #a78bfa; box-shadow: 0 4px 8px rgba(0,0,0,0.4); transform: scale(1.5); cursor: grabbing; }
+        .grid-cell-overlay { position: absolute; z-index: 5; transition: background-color 0.2s; }
+        .grid-cell-overlay.drag-over { background-color: rgba(139, 92, 246, 0.1); border: 1px dashed #8b5cf6; z-index: 7; border-radius: 4px; }
+        .preset-btn { 
+            border-radius: 12px;
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            font-weight: 600;
+            box-shadow: 5px 5px 10px var(--dark-shadow), -5px -5px 10px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .preset-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        .preset-btn:hover {
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02);
+        }
+        .preset-btn:active {
+            box-shadow: inset 4px 4px 8px var(--dark-shadow), inset -4px -4px 8px var(--light-shadow);
+            transform: translateY(1px);
+        }
+        .preset-btn:hover::before {
+            left: 100%;
+        }
+        .preset-btn:hover i {
+            transform: scale(1.1);
+        }
+        .preset-btn i {
+            transition: all 0.3s ease;
+        }
+        .step-number { background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; width: 2rem; height: 2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.875rem; flex-shrink: 0; }
+        details summary { cursor: pointer; user-select: none; transition: color 0.2s; }
+        details summary:hover { color: #1d4ed8; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary .summary-icon { display: inline-block; margin-right: 0.5rem; transition: transform 0.25s; }
+        details[open] summary .summary-icon { transform: rotate(90deg); }
+
+        /* --- Path & Segment Styles --- */
+        #idealPathsSvg, #actualPathSvg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2; }
+        .floor-path-line { stroke: #0ea5e9; stroke-width: 2.5px; fill: none; transition: d 0.5s var(--ease-out-cubic); }
+        .ceil-path-line { stroke: #ec4899; stroke-width: 2.5px; fill: none; transition: d 0.5s var(--ease-out-cubic); }
+        .actual-path-line { stroke: #8b5cf6; stroke-width: 3px; fill: none; }
+        .path-marker-circle { r: 4px; stroke-width: 2px; }
+        .lct-guidance-line-base { stroke: rgba(34, 197, 94, 0.7); stroke-width: 1.5px; stroke-dasharray: 4 3; }
+        .lct-guidance-line-expanded { stroke: rgba(245, 158, 11, 0.7); stroke-width: 1.5px; stroke-dasharray: 2 4; }
+        .path-segment-standard { stroke: #059669; stroke-width: 4px; transition: all 0.3s ease; }
+        .path-segment-lct-capped { stroke: #d97706; stroke-width: 4px; transition: all 0.3s ease; }
+        .path-segment-invalid { stroke: #dc2626; stroke-width: 4px; stroke-dasharray: 6 3; transition: all 0.3s ease; }
+
+        /* --- Modern Hover Cone Styles --- */
+        .hover-cone-standard {
+            fill: rgba(34, 197, 94, 0.15);
+            stroke: rgba(34, 197, 94, 0.4);
+            stroke-width: 1.5;
+            filter: drop-shadow(0 4px 12px rgba(34, 197, 94, 0.25)) drop-shadow(0 2px 6px rgba(34, 197, 94, 0.15));
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .hover-cone-lct-capped {
+            fill: rgba(245, 158, 11, 0.12);
+            stroke: rgba(245, 158, 11, 0.35);
+            stroke-width: 1.5;
+            filter: drop-shadow(0 4px 12px rgba(245, 158, 11, 0.22)) drop-shadow(0 2px 6px rgba(245, 158, 11, 0.12));
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        /* --- Segment Info Labels --- */
+        .segment-info-label {
+            position: absolute; top: 16px; left: 50%; transform: translateX(-50%);
+            font-size: 0.65rem; font-weight: 600; background-color: rgba(255, 255, 255, 0.95);
+            padding: 2px 6px; border-radius: 4px; z-index: 15; text-align: center;
+            border: 1px solid #e2e8f0; min-width: 60px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: opacity 0.25s var(--ease-out-quad), transform 0.25s var(--ease-out-quad);
+        }
+        .segment-info-label.standard { color: #059669; border-color: #34d399; background-color: rgba(52, 211, 153, 0.1); }
+        .segment-info-label.lct-capped { color: #d97706; border-color: #fbbf24; background-color: rgba(251, 191, 36, 0.1); }
+        .segment-info-label.invalid { color: #dc2626; border-color: #f87171; background-color: rgba(248, 113, 113, 0.1); }
+
+        /* --- Neumorphic Input & Button Styles --- */
+        .neumorphic-input {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            box-shadow: inset 4px 4px 8px var(--dark-shadow), inset -4px -4px 8px var(--light-shadow);
+            padding: 0.75rem;
+            font-size: 0.875rem;
+            transition: box-shadow 0.3s var(--ease-out-quad), border-color 0.3s var(--ease-out-quad);
+            color: #374151;
+        }
+        .neumorphic-input:focus {
+            outline: none;
+            box-shadow: inset 6px 6px 12px var(--dark-shadow), inset -6px -6px 12px var(--light-shadow);
+            border-color: #0d9488;
+        }
+
+        .neumorphic-btn {
+            border-radius: 12px;
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            font-weight: 600;
+            box-shadow: 5px 5px 10px var(--dark-shadow), -5px -5px 10px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .neumorphic-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        .neumorphic-btn:hover {
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02);
+        }
+        .neumorphic-btn:hover::before {
+            left: 100%;
+        }
+        .neumorphic-btn:active {
+            box-shadow: inset 4px 4px 8px var(--dark-shadow), inset -4px -4px 8px var(--light-shadow);
+            transform: translateY(1px);
+        }
+        .neumorphic-btn.primary {
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+        }
+
+        /* --- LCT Explorer Styles --- */
+        .lct-explorer-wrapper { 
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(248, 250, 252, 0.8) 100%); 
+            border-radius: 1rem; 
+            border: 1px solid rgba(148, 163, 184, 0.2); 
+            padding: 1.5rem; 
+            box-shadow: 
+                0 4px 16px rgba(0,0,0,0.08),
+                0 2px 8px rgba(0,0,0,0.06),
+                inset 0 1px 0 rgba(255,255,255,0.8);
+            backdrop-filter: blur(8px);
+        }
+        .lct-explorer-container { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: flex-start; }
+        .lct-scenario-wrapper { text-align: center; }
+        .matrix-title { font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem; color: #374151; }
+        .scenario-label { font-weight: 600; margin-bottom: 0.75rem; padding: 0.5rem; background: rgba(59, 130, 246, 0.1); border-radius: 0.5rem; color: #1e40af; }
+        
+        /* Alignment Matrix Grid System */
+        .matrix-container { 
+            position: relative; 
+            display: inline-block; 
+            padding: 2rem 0 2rem 2rem; 
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.1));
+        }
+        
+        .alignment-grid { 
+            display: grid; 
+            gap: 3px; 
+            position: relative;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border-radius: 1rem;
+            padding: 1rem;
+            box-shadow: 
+                0 8px 32px rgba(0,0,0,0.12),
+                0 4px 16px rgba(0,0,0,0.08),
+                inset 0 1px 0 rgba(255,255,255,0.8);
+            border: 1px solid rgba(255,255,255,0.6);
+            backdrop-filter: blur(10px);
+        }
+        
+        .grid-cell { 
+            width: 50px; 
+            height: 50px; 
+            border: 1px solid rgba(148, 163, 184, 0.2); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.9) 100%);
+            font-size: 1.2rem;
+            font-weight: 700;
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 0.5rem;
+            box-shadow: 
+                0 2px 8px rgba(0,0,0,0.06),
+                0 1px 4px rgba(0,0,0,0.04),
+                inset 0 1px 0 rgba(255,255,255,0.8);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .grid-cell::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .grid-cell.perfect-match { 
+            background: linear-gradient(135deg, #10b981 0%, #34d399 100%); 
+            color: white; 
+            border-color: rgba(16, 185, 129, 0.3); 
+            box-shadow: 
+                0 4px 20px rgba(16, 185, 129, 0.3),
+                0 2px 8px rgba(16, 185, 129, 0.2),
+                inset 0 1px 0 rgba(255,255,255,0.3);
+            transform: scale(1.02);
+        }
+        
+        .grid-cell.penalty-forgiven { 
+            background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%); 
+            color: white; 
+            border-color: rgba(59, 130, 246, 0.3); 
+            box-shadow: 
+                0 4px 20px rgba(59, 130, 246, 0.3),
+                0 2px 8px rgba(59, 130, 246, 0.2),
+                inset 0 1px 0 rgba(255,255,255,0.3);
+            transform: scale(1.02);
+        }
+        
+        .grid-cell.penalty-active { 
+            background: linear-gradient(135deg, #ef4444 0%, #f87171 100%); 
+            color: white; 
+            border-color: rgba(239, 68, 68, 0.3); 
+            box-shadow: 
+                0 4px 20px rgba(239, 68, 68, 0.3),
+                0 2px 8px rgba(239, 68, 68, 0.2),
+                inset 0 1px 0 rgba(255,255,255,0.3);
+            transform: scale(1.02);
+        }
+        
+        /* Labels */
+        .ref-labels { 
+            position: absolute; 
+            left: 0; 
+            top: 3.0rem; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 2px; 
+            height: calc(100% - 3rem); 
+        }
+        
+        .ref-label { 
+            height: 50px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 0.7rem; 
+            font-weight: 600; 
+            color: #64748b; 
+            width: 1.4rem; 
+            writing-mode: vertical-lr; 
+            text-orientation: mixed;
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(248,250,252,0.8) 100%);
+            border-radius: 0.375rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            margin-bottom: 2px;
+        }
+        
+        .gen-labels { 
+            position: absolute; 
+            bottom: 0; 
+            left: 3.0rem; 
+            display: flex; 
+            gap: 2px; 
+            width: calc(100% - 1.5rem); 
+        }
+        
+        .gen-label { 
+            width: 50px; 
+            height: 1.4rem; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 0.7rem; 
+            font-weight: 600; 
+            color: #64748b; 
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(248,250,252,0.8) 100%);
+            border-radius: 0.375rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            margin-right: 2px;
+        }
+        
+        .gen-label.swapped { 
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(248, 113, 113, 0.1) 100%); 
+            color: #dc2626; 
+            border-color: rgba(239, 68, 68, 0.3);
+            box-shadow: 0 2px 8px rgba(239, 68, 68, 0.2);
+            transform: translateY(-1px);
+        }
+        
+        .gen-label.lct-forgiven { 
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(96, 165, 250, 0.1) 100%); 
+            color: #2563eb; 
+            border-color: rgba(59, 130, 246, 0.3);
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+            transform: translateY(-1px);
+        }
+
+        /* --- Hero Section Styles --- */
+        #hero-section {
+            background: linear-gradient(45deg, #0d9488, #0f766e); 
+            color: white;
+            border-radius: 20px 20px 0 0; /* Top corners rounded, bottom corners square */
+        }
+        #hero-section h1 {
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2); 
+        }
+
+        /* --- Hero Tour Button (No White Glow) --- */
+        .hero-tour-btn {
+            background: linear-gradient(135deg, #0f766e 0%, #064e3b 100%);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-tour-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .hero-tour-btn:hover {
+            background: linear-gradient(135deg, #14b8a6 0%, #0f766e 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-tour-btn:hover::before {
+            left: 100%;
+        }
+
+        .hero-tour-btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* --- Testing Modal Styles --- */
+        .testing-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s var(--ease-out-cubic);
+        }
+        .testing-modal.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        .testing-modal-content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            padding: 2.5rem;
+            max-width: 90vw;
+            max-height: 85vh;
+            width: 700px;
+            box-shadow: 
+                12px 12px 24px var(--dark-shadow), 
+                -12px -12px 24px var(--light-shadow),
+                0 8px 32px rgba(0, 0, 0, 0.1);
+            transform: translateY(30px) scale(0.9);
+            transition: all 0.5s var(--ease-out-cubic);
+            overflow-y: auto;
+            box-sizing: border-box;
+            position: relative;
+        }
+        /* Custom scrollbar for testing modal */
+        .testing-modal-content::-webkit-scrollbar {
+            width: 8px;
+        }
+        .testing-modal-content::-webkit-scrollbar-track {
+            background: rgba(248, 250, 252, 0.3);
+            border-radius: 1rem;
+        }
+        .testing-modal-content::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, rgba(13, 148, 136, 0.6) 0%, rgba(20, 184, 166, 0.4) 100%);
+            border-radius: 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        .testing-modal-content::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, rgba(13, 148, 136, 0.8) 0%, rgba(20, 184, 166, 0.6) 100%);
+        }
+        /* Firefox scrollbar styling */
+        .testing-modal-content {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(13, 148, 136, 0.6) rgba(248, 250, 252, 0.3);
+        }
+        .testing-modal-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, rgba(13, 148, 136, 0.8) 50%, transparent 100%);
+        }
+        .testing-modal.visible .testing-modal-content {
+            transform: translateY(0) scale(1);
+        }
+        .testing-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid rgba(226, 232, 240, 0.6);
+            position: relative;
+        }
+        .testing-modal-header::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, #0d9488 0%, #14b8a6 100%);
+            border-radius: 1px;
+        }
+        .testing-modal-close {
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            font-size: 1.25rem;
+            cursor: pointer;
+            color: #64748b;
+            padding: 0.75rem;
+            border-radius: 50%;
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+            transition: all 0.3s var(--ease-out-cubic);
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .testing-modal-close:hover {
+            color: #0d9488;
+            transform: rotate(90deg) scale(1.1);
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+        }
+        .testing-content {
+            padding: 0;
+        }
+        .test-category {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+        .test-category::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(20, 184, 166, 0.05) 0%, rgba(15, 118, 110, 0.05) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .test-category:hover::before {
+            opacity: 1;
+        }
+        .test-category:hover {
+            transform: translateY(-2px);
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+        }
+        .test-category h3 {
+            color: #0f172a;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.025em;
+        }
+        .test-category h3 i {
+            margin-right: 0.75rem;
+            color: #0d9488;
+            background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
+            padding: 0.5rem;
+            border-radius: 50%;
+            font-size: 1rem;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .test-category:hover h3 i {
+            transform: translateY(-2px) scale(1.1);
+            box-shadow: 
+                0 8px 16px rgba(20, 184, 166, 0.3),
+                0 4px 8px rgba(255, 255, 255, 0.9) inset;
+            color: #0f766e;
+        }
+        .test-item {
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+        }
+        .test-item:hover {
+            transform: translateY(-1px);
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+        }
+        .test-item:last-child {
+            margin-bottom: 0;
+        }
+        .test-item h4 {
+            color: #1e293b;
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+        .test-item p {
+            color: #475569;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .test-checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: rgba(248, 250, 252, 0.4);
+            border-radius: 0.5rem;
+            padding: 1rem;
+            border: 1px solid rgba(226, 232, 240, 0.4);
+        }
+        .test-checklist li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+            font-size: 0.875rem;
+            color: #334155;
+            line-height: 1.5;
+            transition: all 0.2s var(--ease-out-quad);
+        }
+        .test-checklist li:last-child {
+            margin-bottom: 0;
+        }
+        .test-checklist li:hover {
+            color: #0d9488;
+            transform: translateX(2px);
+        }
+        .test-checklist li::before {
+            content: "✓";
+            margin-right: 0.75rem;
+            color: #0d9488;
+            font-weight: bold;
+            background: rgba(13, 148, 136, 0.1);
+            border-radius: 50%;
+            width: 1.25rem;
+            height: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+        }
+        .action-button {
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s var(--ease-out-cubic);
+            margin-right: 0.75rem;
+            margin-top: 1rem;
+            box-shadow: 0 2px 8px rgba(13, 148, 136, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .action-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
+            transition: left 0.5s var(--ease-out-quad);
+        }
+        .action-button:hover::before {
+            left: 100%;
+        }
+        .action-button:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 6px 20px rgba(13, 148, 136, 0.3);
+        }
+        .action-button:active {
+            transform: translateY(-1px) scale(1);
+        }
+    </style>
+</head>
+<body class="h-full text-slate-700 antialiased">
+    <div id="app-background" class="fixed inset-0 z-[-1] transition-all duration-1000"></div>
+    <div id="tour-overlay"></div>
+    <div id="chartTooltip"></div>
+
+    <!-- Neumorphic Page Container -->
+    <div class="neumorphic-page-container">
+        <div class="neumorphic-content">
+            <article class="interactive-card">
+                <!-- Hero Section -->
+                <section id="hero-section" class="py-6 px-4 sm:px-6 lg:px-8 relative">
+                    <div class="container mx-auto">
+                        <!-- Start Tour Button - Top Right -->
+                        <button id="start-tour-btn" class="hero-tour-btn absolute top-4 right-4 py-2 px-4">
+                            <i class="fas fa-magic mr-2"></i>Start Tour
+                        </button>
+                        
+                        <div class="text-left max-w-4xl">
+                            <div class="flex items-center justify-start mb-4">
+                                <div class="bg-teal-200 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mr-2">Interactive Demo</div>
+                                <div class="bg-white bg-opacity-20 text-white px-3 py-1 rounded-full text-xs font-semibold">Core VCS Component</div>
+                            </div>
+                            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-3 leading-tight">
+                                LCT Effect on Line-based NAS (NAS-L)
+                            </h1>
+                            <p class="text-teal-200 text-base sm:text-lg mb-6 max-w-3xl">
+                                Explore how Local Chronology Threshold (LCT) affects path segment classification and calculability in line-based narrative alignment score within the Video Comprehension Score framework.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Main Container -->
+                <main class="w-full max-w-7xl mx-auto p-6">
+
+        <!-- Introduction Section -->
+        <div class="mb-8">
+            <div id="tour-step-1" class="intro-card interactive-card rounded-xl p-6">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-route text-amber-600 text-xl mr-3"></i>
+                    <h2 class="text-xl font-semibold text-amber-800">Introduction to LCT Effect on Line-based NAS</h2>
+                </div>
+                
+                <!-- Definition -->
+                <div class="bg-white bg-opacity-70 p-4 rounded-xl mb-6 border-l-4 border-amber-500">
+                    <p class="text-sm text-slate-700 mb-3">
+                        <strong>What is Local Chronology Tolerance (LCT) Effect on NAS-L?</strong> Local Chronology Threshold (LCT) introduces controlled flexibility to Line-based NAS by creating "forgiveness neighborhoods" where chronological content can be locally rearranged without affecting segment calculability. This addresses the limitation where minor narrative reorderings make path segments non-calculable despite preserving semantic flow.
+                    </p>
+                    
+                    <!-- Warning -->
+                    <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                        <div class="flex items-start">
+                            <i class="fas fa-exclamation-triangle text-orange-500 mr-2 mt-0.5"></i>
+                            <div>
+                                <p class="text-xs text-orange-800 font-medium mb-1">⚠️ Prerequisites Required</p>
+                                <p class="text-xs text-orange-700">Please read the VCS research paper and understand the theoretical foundation of Line-based Narrative Alignment Score before using this interactive demo. This visualization assumes familiarity with the underlying concepts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Prerequisites -->
+                    <div class="bg-blue-50 border border-blue-200 rounded-xl p-3 mt-3">
+                        <div class="flex items-start">
+                            <i class="fas fa-info-circle text-blue-500 mr-2 mt-0.5"></i>
+                            <div>
+                                <p class="text-xs text-blue-800 font-medium mb-1">📚 Additional Prerequisites</p>
+                                <p class="text-xs text-blue-700">Before exploring LCT effects on Line-based NAS, we recommend visiting the <a href="../mapping-window/" class="font-bold underline hover:text-blue-900">Mapping Window Demo</a>, <a href="../best-match/" class="font-bold underline hover:text-blue-900">Best Match Demo</a>, and <a href="../line-nas/" class="font-bold underline hover:text-blue-900">Line-based NAS Demo</a> to understand the foundational concepts. LCT builds upon these by adding controlled flexibility to path segment calculability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Comparison grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white bg-opacity-60 p-4 rounded-xl">
+                        <h4 class="font-semibold text-amber-700 mb-2 flex items-center">
+                            <i class="fas fa-times-circle text-red-500 mr-2"></i>Without LCT (Strict)
+                        </h4>
+                        <p class="text-sm text-slate-700">Every chronological deviation makes path segments invalid and non-calculable. Even minor adjacent swaps result in segments contributing 0 to total path length, making the score overly sensitive to harmless local reorderings.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-60 p-4 rounded-xl">
+                        <h4 class="font-semibold text-amber-700 mb-2 flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>With LCT (Flexible)
+                        </h4>
+                        <p class="text-sm text-slate-700">Creates tolerance zones around path segments. Segments within LCT bounds use floor path dynamics instead of becoming invalid. This preserves narrative flow measurements while maintaining chronological integrity.</p>
+                    </div>
+                </div>
+                
+                <details id="tour-step-2" class="mb-4">
+                    <summary class="font-semibold text-amber-700 mb-3 flex items-center"><i class="fas fa-chevron-right summary-icon"></i>LCT Neighborhood Explorer</summary>
+                    <div class="mt-4 space-y-8 ml-6 border-l-2 border-slate-200 pl-6">
+                        
+                        <div class="flex items-start">
+                            <div class="step-number mr-4">1</div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-slate-800 mb-2">LCT 1: 2×2 Neighborhood Forgiveness</h4>
+                                <p class="text-sm text-slate-600 mb-3">
+                                    <strong>Diagonal Mapping Analysis:</strong> In ideal alignment between reference and generated chunks, we observe a diagonal mapping where chunk 1 in generated sequence maps to chunk 1 in reference sequence, and so forth. When we swap adjacent chunks in the generated sequence (replacing 1st with 2nd and 2nd with 1st), the diagonal mapping reverses. In the similarity matrix, the 2nd chunk now in position 1 of the generated sequence exhibits high similarity with the 2nd chunk in position 2 of the reference sequence, creating a reversed diagonal pattern.
+                                </p>
+                                <div class="bg-blue-50/50 p-3 rounded-xl mb-3 border border-blue-200">
+                                    <p class="text-xs text-blue-700">
+                                        <strong>Line-based NAS Behavior:</strong> Without LCT, Line-based NAS expects neighboring path segments to maintain upward or horizontal progression (same grid level or one above). When adjacent chunks are swapped, the diagonal mapping flips, creating a downward path segment where the line moves backward in the reference sequence while advancing in the generated sequence. These backward-sloping segments are considered non-calculable and their length is excluded from the actual path length calculation. With LCT=1, these downward segments within the tolerance zone become calculable, and their segment lengths are now included in the actual path length, this allows for immediate neighbor swaps.
+                                        <br><strong>⚠️ Caution:</strong> When ratios are non-integer (10/7, 9/8), mapping window heights vary, affecting tolerance zone behavior—explore this in the demo.
+                                    </p>
+                                </div>
+                                <div id="lct1-explorer" class="lct-explorer-wrapper"></div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="step-number mr-4">2</div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-slate-800 mb-2">LCT 2: 3×3 Neighborhood Forgiveness</h4>
+                                <p class="text-sm text-slate-600 mb-3">
+                                    <strong>Extended Diagonal Transformations:</strong> With three chunks, the ideal diagonal mapping (1→1, 2→2, 3→3) can undergo more complex transformations. When chunks are reordered in the generated sequence—for example, (1,2,3) → (3,1,2) or (2,3,1)—the similarity matrix reveals shifted diagonal patterns where chunks map to positions up to 2 steps away from their original reference positions.
+                                </p>
+                                <div class="bg-green-50/50 p-3 rounded-xl mb-3 border border-green-200">
+                                    <p class="text-xs text-green-700">
+                                        <strong>Expanded Search Parameters:</strong> LCT=2 not only allows negative slopes to be calculable, but also significantly expands the search area for path segment connections. LCT=2 extends the search range based on the mapping window height. This broader search capability allows chunks to connect across larger chronological distances while maintaining calculable path segments, accommodating more complex reorderings like rotation patterns and second-neighbor swaps within the tolerance zone.
+                                        <br><strong>⚠️ Caution:</strong> Non-integer ratios (10/7, 9/8) produce irregular mapping window heights, affecting both tolerance zone behavior and search parameter scaling—experiment with different ratios in the demo.
+                                    </p>
+                                </div>
+                                 <div id="lct2-explorer" class="lct-explorer-wrapper"></div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- Main Content Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2 space-y-8">
+                <!-- Chart -->
+                <div class="demo-card interactive-card rounded-xl p-4">
+                    <div class="text-center mb-4">
+                        <h2 class="text-lg font-bold text-slate-800">LCT Effect on Path Segment Classification</h2>
+                    </div>
+                    
+                    <div class="relative w-full max-w-2xl mx-auto pt-4 pb-36 pl-20 pr-4">
+                        <div class="absolute top-1/2 -left-12 -translate-y-16 -rotate-90 font-semibold text-sm text-slate-600 whitespace-nowrap">Reference Chunks</div>
+                        <div class="absolute bottom-20 left-1/2 -translate-x-1/2 font-semibold text-sm text-slate-600">Generated Chunks</div>
+                        <div class="relative w-full aspect-square">
+                            <div id="chartGrid" class="absolute inset-0 bg-white rounded-xl chart-grid-background border border-slate-200">
+                                <svg id="idealPathsSvg"></svg>
+                                <svg id="actualPathSvg"></svg>
+                                <div id="idealMappingContainer"></div>
+                                <div id="dropTargetCellContainer"></div>
+                                <div id="genChunkMarkerContainer"></div>
+                                <div id="axisLabelContainerY"></div>
+                                <div id="axisLabelContainerX"></div>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-0 left-0 right-0 grid grid-cols-3 gap-x-4 gap-y-1 text-center text-xs text-slate-600 bg-white/80 p-2 rounded-md">
+                            <div><span>LCT Window Base:</span><br><span id="lctWindowBaseDisplay" class="font-bold text-green-600">0</span></div>
+                            <div><span>Expanded Window:</span><br><span id="expandedWindowDisplay" class="font-bold text-orange-600">0</span></div>
+                            <div><span>Calculable Segments:</span><br><span id="calculableSegmentsDisplay" class="font-bold text-blue-600">0/0</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tour-step-next-steps" class="demo-card interactive-card rounded-xl p-6">
+                    <h3 class="font-semibold text-slate-800 mb-3 flex items-center text-lg"><i class="fas fa-graduation-cap text-teal-600 mr-2"></i>Next Steps</h3>
+                    <div class="mt-2 space-y-4 text-sm text-slate-700 bg-slate-50/50 p-4 rounded-xl border border-slate-200">
+                        <p class="flex items-start"><strong class="mr-3 text-teal-600 text-base mt-0.5">📚</strong> <span>Once you understand the LCT concept here, visit the <a href="../line-nas/" class="text-teal-600 hover:text-teal-800 underline font-semibold">Line-based NAS demo</a> to see how LCT plays out in real examples with actual narrative content and path calculations.</span></p>
+                        <p class="flex items-start"><strong class="mr-3 text-teal-600 text-base mt-0.5">🎯</strong> <span>Then explore the <a href="../nas/" class="text-teal-600 hover:text-teal-800 underline font-semibold">final NAS demo</a> to see how LCT affects the overall Narrative Alignment Score combining both distance and line-based components.</span></p>
+                        <p class="flex items-start"><strong class="mr-3 text-teal-600 text-base mt-0.5">🔄</strong> <span>Compare with the <a href="../lct-nas-d/" class="text-teal-600 hover:text-teal-800 underline font-semibold">LCT Distance-based demo</a> to understand the differences between distance penalties and segment calculability approaches.</span></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controls Sidebar -->
+            <div class="lg:col-span-1">
+                <div class="sticky top-6 space-y-6">
+                    
+                    <div id="tour-step-3" class="metrics-card interactive-card rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-blue-800 mb-4 flex items-center">
+                            <i class="fas fa-calculator text-blue-600 mr-2"></i>Live NAS-L Metrics
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="text-center bg-blue-50/70 p-3 rounded-xl border border-blue-200">
+                                <label class="block text-sm font-medium text-blue-700 mb-1">Line-based NAS-L Score</label>
+                                <span id="nasLScoreDisplay" class="text-4xl font-bold text-blue-600">-</span>
+                                <span id="nasLScorePreview" class="text-4xl font-bold ghost-score"></span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="text-center">
+                                    <label class="block text-sm font-medium text-blue-700 mb-1">Floor Length</label>
+                                    <span id="floorLengthDisplay" class="text-2xl font-bold text-green-600">-</span>
+                                </div>
+                                <div class="text-center">
+                                    <label class="block text-sm font-medium text-blue-700 mb-1">Ceil Length</label>
+                                    <span id="ceilLengthDisplay" class="text-2xl font-bold text-pink-600">-</span>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <label class="block text-sm font-medium text-blue-700 mb-1">Actual Length</label>
+                                <span id="actualLengthDisplay" class="text-xl font-bold text-purple-600">-</span>
+                                <span id="actualLengthPreview" class="text-xl font-bold ghost-score"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="tour-step-4" class="formula-card interactive-card rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-purple-800 mb-4 flex items-center">
+                            <i class="fas fa-sliders-h text-purple-600 mr-2"></i>LCT Parameter
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <label for="lctSlider" class="text-sm font-medium text-purple-700">LCT Multiplier (τ<sub>LCT</sub>):</label>
+                                <span id="lctValueDisplay" class="text-lg font-bold text-purple-600 bg-purple-100 px-3 py-1 rounded">0</span>
+                            </div>
+                            <input type="range" id="lctSlider" min="0" max="8" value="0" class="w-full h-2 bg-purple-200 rounded-xl appearance-none cursor-pointer">
+                            <div id="lctDescription" class="text-xs text-purple-600"></div>
+                        </div>
+                    </div>
+
+                    <div id="tour-step-5" class="demo-card interactive-card rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-slate-800 mb-4 flex items-center">
+                            <i class="fas fa-th text-teal-600 mr-2"></i>Grid Configuration
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <label for="refLenInput" class="text-sm font-medium text-slate-700">Reference Chunks (Y):</label>
+                                <input type="number" id="refLenInput" min="1" max="10" value="10" 
+                                       class="w-16 text-center text-sm neumorphic-input">
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <label for="genLenInput" class="text-sm font-medium text-slate-700">Generated Chunks (X):</label>
+                                <input type="number" id="genLenInput" min="1" max="10" value="10" 
+                                       class="w-16 text-center text-sm neumorphic-input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tour-step-6" class="demo-card interactive-card rounded-xl p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold text-slate-800 flex items-center">
+                                <i class="fas fa-magic text-purple-600 mr-2"></i>Test Scenarios
+                            </h3>
+                            <button id="testing-guide-btn" class="neumorphic-btn primary px-3 py-1.5 text-xs">
+                                <i class="fas fa-clipboard-check mr-1"></i>Testing Guide
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <button class="preset-btn text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="animateToScenario('optimal')"><i class="fas fa-check-circle mr-1"></i>Optimal</button>
+                            <button class="preset-btn text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="animateToScenario('lct1Rotation')"><i class="fas fa-sync-alt mr-1"></i>2x2 Rotation</button>
+                            <button class="preset-btn text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="animateToScenario('lct2Rotation')"><i class="fas fa-th-large mr-1"></i>3x3 Rotation</button>
+                            <button class="preset-btn text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="animateToScenario('deleteEnd')"><i class="fas fa-cut mr-1"></i>Delete End</button>
+                            <button class="preset-btn text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="animateToScenario('deleteMiddle')"><i class="fas fa-cut mr-1"></i>Delete Middle</button>
+                            <button class="preset-btn text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="animateToScenario('deleteBegin')"><i class="fas fa-cut mr-1"></i>Delete Begin</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+            </article>
+        </div>
+    </div>
+
+    <!-- Testing Guide Modal -->
+    <div id="testing-modal" class="testing-modal">
+        <div class="testing-modal-content">
+            <div class="testing-modal-header">
+                <h2 class="text-xl font-bold text-slate-800 flex items-center">
+                    <i class="fas fa-clipboard-check mr-2 text-teal-600"></i>
+                    LCT Effect Testing Guide
+                </h2>
+                <button id="testing-modal-close" class="testing-modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="testing-content">
+                <div class="test-category">
+                    <h3><i class="fas fa-play-circle"></i>Getting Started</h3>
+                    <div class="test-item">
+                        <h4>Understanding Local Chronology Tolerance (LCT) Effect on NAS-L</h4>
+                        <p>This guide will help you understand how Local Chronology Threshold (LCT) modifies Line-based NAS behavior.</p>
+                        <ul class="test-checklist">
+                            <li>At LCT = 0, each segment is surrounded by a green search zone(Base LCT Window) for its adjacent path segments. If an immediate neighbor lies within this zone, calculability is preserved and the connecting line adds to the total path length.</li>
+                            <li>For LCT > 0, each segment is surrounded by an expanded lct search zone(yellow color): if its immediate neighbor falls within this zone, the segment remains calculable and uses its floor‐path length instead of being marked invalid(red color).</li>
+                            <li>It addresses the limitation where minor reorderings make segments non-calculable</li>
+                            <li>Natural narrative variations are preserved while maintaining chronological integrity</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="test-category">
+                    <h3><i class="fas fa-chart-line"></i>Understanding Path Metrics</h3>
+                    <div class="test-item">
+                        <h4>Line-based Score Components</h4>
+                        <p>Learn how LCT affects the different components of line-based narrative scoring.</p>
+                        <ul class="test-checklist">
+                            <li>Watch the Floor Length (green path) - this sets the minimum baseline</li>
+                            <li>Monitor the Ceil Length (pink path) - this represents the maximum ideal path</li>
+                            <li>Track the Actual Length (purple) - how LCT preserves calculable segments</li>
+                            <li>Observe the NAS-L Score - ratio of actual to ideal path length</li>
+                            <li>Key: Invalid segments contribute 0 to actual length, LCT-capped segments contribute positively</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="test-category">
+                    <h3><i class="fas fa-sync-alt"></i>Testing 2×2 Rotation & LCT=1</h3>
+                    <div class="test-item">
+                        <h4>Adjacent Neighbor Swaps</h4>
+                        <p>Learn how LCT=1 handles immediate neighbor chronology changes affecting segment calculability.</p>
+                        <ul class="test-checklist">
+                            <li>Click the "2×2 Rotation" scenario button</li>
+                            <li>Observe the path segments with LCT=0 (strict mode) - note invalid segments</li>
+                            <li>Set LCT=1 using the slider and watch segments become calculable</li>
+                            <li>Notice how orange LCT-capped segments replace invalid red segments</li>
+                            <li>LCT=1 means you can swap immediate neighbors without losing segment calculability</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-category">
+                    <h3><i class="fas fa-th-large"></i>Testing 3×3 Rotation & Progressive LCT</h3>
+                    <div class="test-item">
+                        <h4>Larger Block Rotations</h4>
+                        <p>See how different LCT values progressively enable calculation of larger chronological deviations.</p>
+                        <ul class="test-checklist">
+                            <li>Click the "3×3 Rotation" scenario button</li>
+                            <li>Try LCT=0: Note that 3×3 rotations create many invalid segments</li>
+                            <li>Try LCT=1: Observe that 3×3 rotations are NOT fully rescued</li>
+                            <li>Try LCT=2: Watch the path length improve as 3×3 rotations become calculable</li>
+                            <li>Key insight: LCT=1 only supports immediate neighbors, LCT=2 supports 2-place deviations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-category">
+                    <h3><i class="fas fa-cut"></i>Testing Deletion Scenarios</h3>
+                    <div class="test-item">
+                        <h4>Content Gaps & Missing Segments</h4>
+                        <p>Understand how LCT affects segment calculability when content is missing from different positions.</p>
+                        <ul class="test-checklist">
+                            <li>Try "Delete End": See how shorter sequences affect segment calculation</li>
+                            <li>Try "Delete Middle": Notice discontinuous segments and how LCT helps</li>
+                            <li>Try "Delete Begin": Observe displacement effects on segment calculability</li>
+                            <li>Compare how different LCT values rescue different deletion patterns</li>
+                            <li>Note: LCT can't rescue all gaps, but it preserves calculable segments where possible</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="test-category">
+                    <h3><i class="fas fa-hand-pointer"></i>Manual Exploration</h3>
+                    <div class="test-item">
+                        <h4>Interactive Marker Testing</h4>
+                        <p>Experiment freely to understand LCT behavior with any alignment pattern and segment calculability.</p>
+                        <ul class="test-checklist">
+                            <li>Drag markers to create neighbor swaps, then adjust LCT to see segment effects</li>
+                            <li>Create rotation patterns manually and test different LCT values</li>
+                            <li>Try reverse patterns and observe how LCT affects segment calculability</li>
+                            <li>Experiment with partial misalignments and LCT tolerance on path segments</li>
+                            <li>Use different grid dimensions to see how LCT scaling affects line-based calculations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-category">
+                    <h3><i class="fas fa-cog"></i>Grid Configuration & Segment Dynamics</h3>
+                    <div class="test-item">
+                        <h4>Exploring LCT Behavior with Varying Grid Ratios</h4>
+                        <p>Investigate how LCT affects segment calculability when reference and generated sequences create different length ratios, leading to varying path segment characteristics.</p>
+                        <ul class="test-checklist">
+                            <li>Modify grid configuration by adjusting reference chunks (e.g., 10) and generated chunks (e.g., 7) to create different ratios</li>
+                            <li>Observe how non-square grids (10/7 ≈ 1.43, 9/8 = 1.125) affect segment slope and calculability patterns</li>
+                            <li>Test different LCT values (0, 1, 2) with these varying configurations</li>
+                            <li>Notice how tolerance zones adapt to different grid dimensions and aspect ratios</li>
+                            <li>Compare LCT effectiveness between square grids (6/6 = 1.0) and rectangular grids (10/7 ≈ 1.43)</li>
+                            <li>Document scenarios where LCT rescue patterns differ based on grid geometry</li>
+                        </ul>
+                        <p class="text-sm text-amber-700 mt-2 italic">Key insight: Non-integer ratios create mapping windows with fractional heights, causing LCT tolerance zones to exhibit asymmetric forgiveness patterns that may not align perfectly with theoretical 2×2 or 3×3 neighborhood expectations.</p>
+
+                    </div>
+                </div>
+
+                <div class="test-category">
+                    <h3><i class="fas fa-lightbulb"></i>Key Insights</h3>
+                    <div class="test-item">
+                        <h4>Understanding LCT Design Principles for Line-based NAS</h4>
+                        <p>Essential principles for effective use of LCT with line-based narrative alignment scoring.</p>
+                        <ul class="test-checklist">
+                            <li>LCT tolerance adapts to local segment characteristics and slope variations</li>
+                            <li>Segment rescue is local - only affects nearby calculability within tolerance bounds</li>
+                            <li>Global chronological disruptions remain as invalid segments despite LCT</li>
+                            <li>LCT value represents neighborhood size for segment calculability preservation</li>
+                            <li>Higher LCT can mask genuine path calculation issues - use carefully for analysis</li>
+                            <li>Invalid segments (red) contribute zero to path length, LCT-capped segments (orange) contribute positively</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global state
+        let numUnitsY = 10, numUnitsX = 10, currentLct = 0;
+        let markers_config = [], currentPrecisionWindows = [], currentFloorPath = [], currentCeilPath = [];
+        let currentFloorLength = 0, currentCeilLength = 0, currentActualLength = 0, currentLineNas = 0;
+        let floorPathDyMap = {}, currentActualPathSegments = [], currentLctWindowBase = 0, currentExpandedLctWindow = 0;
+        let draggedMarkerId = null, animationFrameId = null, isMarkerDragging = false;
+        let hoveredMarkerId = null;
+        let animatedSegments = []; // Track animated segments for smooth transitions
+
+        // DOM references
+        const elements = {
+            chartGrid: document.getElementById('chartGrid'),
+            idealMappingContainer: document.getElementById('idealMappingContainer'),
+            genChunkMarkerContainer: document.getElementById('genChunkMarkerContainer'),
+            dropTargetCellContainer: document.getElementById('dropTargetCellContainer'),
+            axisLabelContainerX: document.getElementById('axisLabelContainerX'),
+            axisLabelContainerY: document.getElementById('axisLabelContainerY'),
+            idealPathsSvg: document.getElementById('idealPathsSvg'),
+            actualPathSvg: document.getElementById('actualPathSvg'),
+            lctSlider: document.getElementById('lctSlider'),
+            lctValueDisplay: document.getElementById('lctValueDisplay'),
+            lctDescription: document.getElementById('lctDescription'),
+            refLenInput: document.getElementById('refLenInput'),
+            genLenInput: document.getElementById('genLenInput'),
+            floorLengthDisplay: document.getElementById('floorLengthDisplay'),
+            ceilLengthDisplay: document.getElementById('ceilLengthDisplay'),
+            actualLengthDisplay: document.getElementById('actualLengthDisplay'),
+            calculableSegmentsDisplay: document.getElementById('calculableSegmentsDisplay'),
+            nasLScoreDisplay: document.getElementById('nasLScoreDisplay'),
+            chartTooltip: document.getElementById('chartTooltip'),
+            appBackground: document.getElementById('app-background'),
+            lctWindowBaseDisplay: document.getElementById('lctWindowBaseDisplay'),
+            expandedWindowDisplay: document.getElementById('expandedWindowDisplay'),
+            nasLScorePreview: document.getElementById('nasLScorePreview'),
+            actualLengthPreview: document.getElementById('actualLengthPreview')
+        };
+
+        // Easing functions
+        const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+
+        // Story chunks for LCT explorer
+        const storyChunks = [
+            "Alice enters wonderland...", "She meets the rabbit...", "Down the rabbit hole...", "The tea party begins...",
+            "The queen appears...", "Off with their heads!...", "Alice grows larger...", "The trial starts...",
+            "Everything becomes clear...", "Alice wakes up..."
+        ];
+
+        // --- TOUR MANAGER ---
+        const tourManager = {
+            isActive: false, currentStep: 0, overlay: document.getElementById('tour-overlay'),
+            steps: [ 
+                { selector: '#tour-step-1', text: 'Welcome to LCT Effect on Line-based NAS! This demo shows how Local Chronological Tolerance affects path segment calculability in geometric scoring. Visit Mapping Window, Best Match, and Line-based NAS demos first to understand the foundational concepts.', position: 'bottom' }, 
+                { selector: '#tour-step-2', text: 'Click to expand the neighborhood explorer. This shows how LCT forgives local chronological reorderings by creating tolerance zones for segment classification.', position: 'bottom' }, 
+                { selector: '#chartGrid', text: 'This grid visualizes LCT effects on path segment calculability. Green rectangles are ideal mapping windows, yellow zones show LCT tolerance areas. The path line connects mappings with color-coded segments. Drag path points to test different scenarios.', position: 'top' },
+                { selector: '#tour-step-5', text: 'Adjust grid configuration parameters to see how different text length ratios affect LCT window calculations and segment classification. Try different reference/generated length ratios.', position: 'left' }, 
+                { selector: '#tour-step-6', text: 'Try these preset scenarios to explore different LCT effects on narrative alignment patterns. Each button demonstrates a specific segment classification outcome. Check the Testing Guide for detailed exploration strategies.', position: 'left' },
+                { selector: '#tour-step-4', text: 'LCT Parameter slider controls tolerance multiplier with precise effects on segment classification. Higher values expand tolerance windows, converting invalid segments to LCT-capped segments.', position: 'left' }, 
+                { selector: '#tour-step-3', text: 'Live Line-based NAS score calculation with real-time path length ratio updates. Click the score to see the underlying formula. Watch how LCT changes path length by affecting which segments are calculable.', position: 'left' },
+                { selector: '#tour-step-next-steps', text: 'After exploring this demo, visit the Line-based NAS demo to see how LCT applies to real narrative content, then explore the final NAS demo to understand how LCT affects combined scoring.', position: 'top' } 
+            ],
+            start: function() { this.isActive = true; this.currentStep = 0; this.overlay.style.pointerEvents = 'auto'; this.overlay.style.opacity = '1'; this.addClickOutsideHandler(); this.showStep(); },
+            next: function() { this.cleanupCurrentStep(); this.currentStep++; if (this.currentStep < this.steps.length) { setTimeout(() => this.showStep(), 400); } else { this.end(); } },
+            showStep: function() { const step = this.steps[this.currentStep]; const targetElement = document.querySelector(step.selector); if (!targetElement) { this.end(); return; } targetElement.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' }); setTimeout(() => { targetElement.classList.add('tour-highlight'); const callout = document.createElement('div'); callout.id = 'tour-callout'; callout.innerHTML = `<p class="text-sm mb-4">${step.text}</p><div class="flex justify-end"><button onclick="tourManager.next()">Next &rarr;</button></div>`; document.body.appendChild(callout); const targetRect = targetElement.getBoundingClientRect(); const calloutRect = callout.getBoundingClientRect(); const margin = 15; const scrollY = window.scrollY || document.documentElement.scrollTop; const scrollX = window.scrollX || document.documentElement.scrollLeft; let top, left; switch (step.position) { case 'bottom': top = targetRect.bottom + scrollY + margin; left = targetRect.left + scrollX + (targetRect.width / 2) - (calloutRect.width / 2); break; case 'top': top = targetRect.top + scrollY - calloutRect.height - margin; left = targetRect.left + scrollX + (targetRect.width / 2) - (calloutRect.width / 2); break; case 'left': top = targetRect.top + scrollY + (targetRect.height / 2) - (calloutRect.height / 2); left = targetRect.left + scrollX - calloutRect.width - margin; break; case 'right': default: top = targetRect.top + scrollY + (targetRect.height / 2) - (calloutRect.height / 2); left = targetRect.right + scrollX + margin; break; } const viewportRight = scrollX + window.innerWidth; const viewportBottom = scrollY + window.innerHeight; if (left < scrollX + margin) left = scrollX + margin; if (left + calloutRect.width > viewportRight - margin) left = viewportRight - calloutRect.width - margin; if (top < scrollY + margin) top = scrollY + margin; if (top + calloutRect.height > viewportBottom - margin) top = viewportBottom - calloutRect.height - margin; callout.style.top = `${top}px`; callout.style.left = `${left}px`; requestAnimationFrame(() => { callout.classList.add('visible'); }); }, 350); },
+            cleanupCurrentStep: function() { const oldHighlight = document.querySelector('.tour-highlight'); if (oldHighlight) oldHighlight.classList.remove('tour-highlight'); const oldCallout = document.getElementById('tour-callout'); if (oldCallout) oldCallout.remove(); },
+            end: function() { this.cleanupCurrentStep(); this.isActive = false; this.overlay.style.opacity = '0'; this.removeClickOutsideHandler(); setTimeout(() => this.overlay.style.pointerEvents = 'none', 400); },
+            addClickOutsideHandler: function() { this.clickOutsideHandler = (e) => { if (this.isActive) { const callout = document.getElementById('tour-callout'); if (callout && !callout.contains(e.target)) { this.end(); } } }; document.addEventListener('click', this.clickOutsideHandler); },
+            removeClickOutsideHandler: function() { if (this.clickOutsideHandler) { document.removeEventListener('click', this.clickOutsideHandler); this.clickOutsideHandler = null; } }
+        };
+
+        // --- LCT EXPLORER ---
+        const lctExplorerManager = {
+            configs: {
+                lct1: { 
+                    containerId: 'lct1-explorer', 
+                    size: 2, 
+                    animation: [
+                        { label: 'Perfect Alignment', genOrder: [0, 1], refOrder: [0, 1] },
+                        { label: 'Adjacent Swap', genOrder: [1, 0], refOrder: [0, 1] },
+                    ]
+                },
+                lct2: { 
+                    containerId: 'lct2-explorer', 
+                    size: 3, 
+                    animation: [
+                        { label: 'Perfect Alignment', genOrder: [0, 1, 2], refOrder: [0, 1, 2] },
+                        { label: 'Corner Swap', genOrder: [2, 1, 0], refOrder: [0, 1, 2] },
+                        { label: 'Rotation', genOrder: [1, 2, 0], refOrder: [0, 1, 2] },
+                    ]
+                }
+            },
+            explorers: {}, intervals: {},
+            init() { 
+                Object.values(this.intervals).forEach(clearInterval); 
+                this.initExplorer('lct1'); 
+                this.initExplorer('lct2'); 
+            },
+            initExplorer(type) {
+                const config = this.configs[type]; 
+                const wrapper = document.getElementById(config.containerId); 
+                if (!wrapper) return;
+                
+                wrapper.innerHTML = '';
+                const scenarioLabel = document.createElement('div'); 
+                scenarioLabel.className = 'scenario-label'; 
+                wrapper.appendChild(scenarioLabel);
+                
+                const container = document.createElement('div'); 
+                container.className = 'lct-explorer-container'; 
+                wrapper.appendChild(container);
+                
+                const withoutLCT = this.createMatrixInstance(config, 'Without LCT', false);
+                const withLCT = this.createMatrixInstance(config, `With LCT=${config.size-1}`, true);
+                
+                container.appendChild(withoutLCT); 
+                container.appendChild(withLCT);
+                
+                this.explorers[type] = { config, scenarioLabel, containers: [withoutLCT, withLCT], caseIndex: 0 };
+                this.runAnimation(type); 
+                this.intervals[type] = setInterval(() => this.runAnimation(type), 3500);
+            },
+            createMatrixInstance(config, title, hasLCT) {
+                const wrapper = document.createElement('div'); 
+                wrapper.className = 'lct-scenario-wrapper';
+                wrapper.dataset.hasLct = hasLCT.toString();
+                
+                const titleEl = document.createElement('div'); 
+                titleEl.className = 'matrix-title'; 
+                titleEl.textContent = title; 
+                wrapper.appendChild(titleEl);
+                
+                const matrixContainer = document.createElement('div');
+                matrixContainer.className = 'matrix-container';
+                
+                // Create the CSS grid
+                const grid = document.createElement('div');
+                grid.className = 'alignment-grid';
+                grid.style.gridTemplateColumns = `repeat(${config.size}, 50px)`;
+                grid.style.gridTemplateRows = `repeat(${config.size}, 50px)`;
+                
+                // Create grid cells (bottom-left origin)
+                for (let ref = config.size - 1; ref >= 0; ref--) {
+                    for (let gen = 0; gen < config.size; gen++) {
+                        const cell = document.createElement('div');
+                        cell.className = 'grid-cell';
+                        cell.dataset.ref = ref;
+                        cell.dataset.gen = gen;
+                        cell.textContent = '-';
+                        grid.appendChild(cell);
+                    }
+                }
+                
+                matrixContainer.appendChild(grid);
+                
+                // Create ref labels (Y-axis, left side)
+                const refLabels = document.createElement('div');
+                refLabels.className = 'ref-labels';
+                for (let i = 0; i < config.size; i++) {
+                    const label = document.createElement('div');
+                    label.className = 'ref-label';
+                    label.textContent = `Ref ${i}`;
+                    refLabels.appendChild(label);
+                }
+                matrixContainer.appendChild(refLabels);
+                
+                // Create gen labels (X-axis, bottom)
+                const genLabels = document.createElement('div');
+                genLabels.className = 'gen-labels';
+                for (let i = 0; i < config.size; i++) {
+                    const label = document.createElement('div');
+                    label.className = 'gen-label';
+                    label.textContent = `Gen ${i}`;
+                    genLabels.appendChild(label);
+                }
+                matrixContainer.appendChild(genLabels);
+                
+                wrapper.appendChild(matrixContainer);
+                return wrapper;
+            },
+            runAnimation(type) {
+                const explorer = this.explorers[type]; 
+                if (!explorer) return;
+                
+                const { config, scenarioLabel, containers, caseIndex } = explorer;
+                const currentCase = config.animation[caseIndex];
+                
+                scenarioLabel.textContent = currentCase.label;
+                
+                containers.forEach((container, containerIdx) => {
+                    const hasLCT = container.dataset.hasLct === 'true';
+                    const grid = container.querySelector('.alignment-grid');
+                    const genLabels = container.querySelector('.gen-labels');
+                    
+                    // Clear all cells
+                    grid.querySelectorAll('.grid-cell').forEach(cell => {
+                        cell.className = 'grid-cell';
+                        cell.textContent = '-';
+                    });
+                    
+                    // Animate gen labels to show the reordering
+                    const labelItems = genLabels.querySelectorAll('.gen-label');
+                    labelItems.forEach((label, index) => {
+                        const newGenPos = currentCase.genOrder[index];
+                        label.textContent = `Gen ${newGenPos}`;
+                        
+                        // Reset classes
+                        label.className = 'gen-label';
+                        
+                        // Visual effect to show movement
+                        if (newGenPos !== index) {
+                            if (hasLCT) {
+                                label.classList.add('lct-forgiven');
+                            } else {
+                                label.classList.add('swapped');
+                            }
+                        }
+                    });
+                    
+                    // Fill in matches based on current mapping
+                    currentCase.genOrder.forEach((genSentenceIdx, genPos) => {
+                        const refPos = currentCase.refOrder.indexOf(genSentenceIdx);
+                        if (refPos !== -1) {
+                            const cell = grid.querySelector(`[data-ref="${refPos}"][data-gen="${genPos}"]`);
+                            
+                            // Calculate distance for segment calculability in NAS-L context
+                            const distance = Math.abs(refPos - genPos);
+                            
+                            // Determine cell class based on distance and LCT for line-based scoring
+                            if (distance === 0) {
+                                cell.classList.add('perfect-match');
+                                cell.textContent = '✓';
+                            } else {
+                                // There's a chronological deviation affecting segment calculability
+                                if (hasLCT && distance <= config.size - 1) {
+                                    // LCT enables segment calculation via floor path dynamics
+                                    cell.classList.add('penalty-forgiven');
+                                    cell.textContent = '○';
+                                } else {
+                                    // Segment becomes non-calculable
+                                    cell.classList.add('penalty-active');
+                                    cell.textContent = '✗';
+                                }
+                            }
+                        }
+                    });
+                });
+                
+                explorer.caseIndex = (caseIndex + 1) % config.animation.length;
+            }
+        };
+
+        // Dynamic background
+        function updateDynamicBackground(score) {
+            // Use consistent greyish background like VCS demo
+            elements.appBackground.style.background = `linear-gradient(135deg, hsl(170, 20%, 90%) 0%, hsl(190, 30%, 95%) 100%)`;
+        }
+
+        // LCT descriptions
+        function updateLctDescription() {
+            const lctValue = parseInt(elements.lctSlider.value);
+            const descriptions = [
+                "Tolerance: 0 blocks (Strict calculation)",
+                "Tolerance: Low (2×2 neighbor rotations calculable)",
+                "Tolerance: Moderate (3×3 group rotations calculable)",
+                "Tolerance: High (4×4 block rotations calculable)",
+                "Tolerance: Very High (5×5 section rotations calculable)",
+                "Tolerance: Extreme (6×6 region rotations calculable)",
+                "Tolerance: Maximum (7×7 area rotations calculable)",
+                "Tolerance: Ultra (8×8 zone rotations calculable)",
+                "Tolerance: Complete (9×9 full rotations calculable)"
+            ];
+            const colors = ['border-red-200 bg-red-50', 'border-purple-200 bg-purple-50', 'border-blue-200 bg-blue-50', 'border-green-200 bg-green-50', 'border-yellow-200 bg-yellow-50', 'border-orange-200 bg-orange-50', 'border-pink-200 bg-pink-50', 'border-indigo-200 bg-indigo-50', 'border-gray-200 bg-gray-50'];
+            elements.lctDescription.innerHTML = `<div class="p-2 rounded border ${colors[Math.min(lctValue, 8)]}">${descriptions[Math.min(lctValue, 8)]}</div>`;
+        }
+
+        // Core algorithms
+        function get_mapping_windows_js(refLen, genLen) {
+            const isRefLonger = refLen >= genLen; const longerLen = isRefLonger ? refLen : genLen; const shorterLen = isRefLonger ? genLen : refLen;
+            if (shorterLen === 0) return { precision_windows: [] };
+            const slope = longerLen / shorterLen; const mappingWindowHeight = Math.ceil(slope);
+            let direct_windows = [];
+            for (let i = 0; i < shorterLen; i++) {
+                const idx_point = i * slope; const start = Math.max(Math.floor(idx_point), 0);
+                const end = Math.min(start + mappingWindowHeight, longerLen);
+                direct_windows.push({ start, end });
+            }
+            let precision_windows_for_gen_chunks;
+            if (isRefLonger) {
+                precision_windows_for_gen_chunks = direct_windows;
+            } else {
+                precision_windows_for_gen_chunks = [];
+                for (let genIdx = 0; genIdx < genLen; genIdx++) {
+                    let mappedRefIndices = [];
+                    direct_windows.forEach((ref_window_on_gen_axis, refIdx) => {
+                        if (genIdx >= ref_window_on_gen_axis.start && genIdx < ref_window_on_gen_axis.end) mappedRefIndices.push(refIdx);
+                    });
+                    if (mappedRefIndices.length > 0) {
+                        precision_windows_for_gen_chunks.push({ start: Math.min(...mappedRefIndices), end: Math.max(...mappedRefIndices) + 1 });
+                    } else {
+                        const proportionalRefPos = Math.floor((genIdx / genLen) * refLen);
+                        precision_windows_for_gen_chunks.push({ start: proportionalRefPos, end: Math.min(proportionalRefPos + 1, refLen)});
+                    }
+                }
+            }
+            return { precision_windows: precision_windows_for_gen_chunks.map(w => ({start: w.start, end: Math.max(w.start +1, w.end)})) };
+        }
+
+        function computeIdealNarrativeLineBandJS(mappingWindows, numGenChunks, numRefChunks) {
+            const n_windows = mappingWindows.length;
+            if (n_windows <= 1) return { shortest_line: 0.0, longest_line: 0.0, floor_path: [], ceil_path: [] };
+            
+            let dp_min_list = [], dp_max_list = [], pred_min_list = [], pred_max_list = [];
+            for (let i = 0; i < n_windows; i++) {
+                const { start, end } = mappingWindows[i]; const window_height = Math.max(1, end - start);
+                dp_min_list.push(Array(window_height).fill(Infinity)); dp_max_list.push(Array(window_height).fill(-Infinity));
+                pred_min_list.push(Array(window_height).fill(-1)); pred_max_list.push(Array(window_height).fill(-1));
+            }
+            
+            if (mappingWindows[0]){
+                const { start: start0, end: end0 } = mappingWindows[0]; const window0_height = Math.max(1, end0 - start0);
+                for (let y_offset = 0; y_offset < window0_height; y_offset++) {
+                    if (dp_min_list[0] && dp_min_list[0][y_offset] !== undefined) { 
+                        dp_min_list[0][y_offset] = 0; dp_max_list[0][y_offset] = 0;
+                    }
+                }
+            }
+
+            for (let i = 1; i < n_windows; i++) {
+                 if (!mappingWindows[i-1] || !mappingWindows[i]) continue;
+                const { start: curr_start, end: curr_end } = mappingWindows[i]; const curr_window_height = Math.max(1, curr_end - curr_start);
+                const { start: prev_start, end: prev_end } = mappingWindows[i-1]; const prev_window_height = Math.max(1, prev_end - prev_start);
+                for (let y_curr_offset = 0; y_curr_offset < curr_window_height; y_curr_offset++) {
+                    const curr_y_abs = curr_start + y_curr_offset;
+                    for (let y_prev_offset = 0; y_prev_offset < prev_window_height; y_prev_offset++) {
+                        const prev_y_abs = prev_start + y_prev_offset; const dx_val = 1; const dy_val = curr_y_abs - prev_y_abs;
+                        const distance = Math.sqrt(dx_val*dx_val + dy_val*dy_val);
+                        if (dp_min_list[i-1] && dp_min_list[i-1][y_prev_offset] !== undefined && dp_min_list[i] && dp_min_list[i][y_curr_offset] !== undefined) {
+                            if (dp_min_list[i-1][y_prev_offset] + distance < dp_min_list[i][y_curr_offset]) {
+                                dp_min_list[i][y_curr_offset] = dp_min_list[i-1][y_prev_offset] + distance; pred_min_list[i][y_curr_offset] = y_prev_offset;
+                            }
+                        }
+                        if (dp_max_list[i-1] && dp_max_list[i-1][y_prev_offset] !== undefined && dp_max_list[i] && dp_max_list[i][y_curr_offset] !== undefined) {
+                            if (dp_max_list[i-1][y_prev_offset] !== -Infinity && dp_max_list[i-1][y_prev_offset] + distance > dp_max_list[i][y_curr_offset]) {
+                                dp_max_list[i][y_curr_offset] = dp_max_list[i-1][y_prev_offset] + distance; pred_max_list[i][y_curr_offset] = y_prev_offset;
+                            }
+                        }
+                    }
+                }
+            }
+
+            let shortest_line = 0, longest_line = 0, shortest_end_y_offset = 0, longest_end_y_offset = 0;
+            if (n_windows > 0 && mappingWindows[n_windows -1]) {
+                const last_window_idx = n_windows - 1; const { start: last_start, end: last_end } = mappingWindows[last_window_idx];
+                const last_window_height = Math.max(1, last_end - last_start); shortest_line = Infinity;
+                if (dp_min_list[last_window_idx] && dp_min_list[last_window_idx].length > 0) {
+                    for (let y_offset = 0; y_offset < last_window_height; y_offset++) {
+                        if (dp_min_list[last_window_idx][y_offset] < shortest_line) {
+                            shortest_line = dp_min_list[last_window_idx][y_offset]; shortest_end_y_offset = y_offset;
+                        }
+                    }
+                }
+                if (shortest_line === Infinity) shortest_line = 0;
+                longest_line = -Infinity;
+                if (dp_max_list[last_window_idx] && dp_max_list[last_window_idx].length > 0) {
+                    for (let y_offset = 0; y_offset < last_window_height; y_offset++) {
+                        if (dp_max_list[last_window_idx][y_offset] > longest_line) {
+                            longest_line = dp_max_list[last_window_idx][y_offset]; longest_end_y_offset = y_offset;
+                        }
+                    }
+                }
+                 if (longest_line === -Infinity) longest_line = shortest_line;
+            }
+
+            let floor_path = [];
+            if (n_windows > 0) {
+                let current_y_offset_min = shortest_end_y_offset;
+                for (let i = n_windows - 1; i >= 0; i--) {
+                    if (!mappingWindows[i] || !pred_min_list[i] || (pred_min_list[i][current_y_offset_min] === undefined && i > 0)) break;
+                    const y_abs = mappingWindows[i].start + current_y_offset_min; floor_path.unshift({ x: i, y: y_abs });
+                    if (i > 0) {
+                        if (pred_min_list[i][current_y_offset_min] === -1 || pred_min_list[i][current_y_offset_min] === undefined) break;
+                        current_y_offset_min = pred_min_list[i][current_y_offset_min];
+                    }
+                }
+            }
+            
+            let ceil_path = [];
+            if (n_windows > 0) {
+                let current_y_offset_max = longest_end_y_offset;
+                for (let i = n_windows - 1; i >= 0; i--) {
+                     if (!mappingWindows[i] || !pred_max_list[i] || (pred_max_list[i][current_y_offset_max] === undefined && i > 0)) break;
+                    const y_abs = mappingWindows[i].start + current_y_offset_max; ceil_path.unshift({ x: i, y: y_abs });
+                    if (i > 0) {
+                         if (pred_max_list[i][current_y_offset_max] === -1 || pred_max_list[i][current_y_offset_max] === undefined) break;
+                        current_y_offset_max = pred_max_list[i][current_y_offset_max];
+                    }
+                }
+            }
+            return { shortest_line, longest_line, floor_path, ceil_path };
+        }
+
+        function generateFloorPathDyMap(floorPath) {
+            const dyMap = {}; if (!floorPath || floorPath.length < 2) return dyMap;
+            for (let i = 0; i < floorPath.length - 1; i++) {
+                const p1 = floorPath[i]; const p2 = floorPath[i+1];
+                if (p2.x - p1.x === 1) dyMap[p1.x] = p2.y - p1.y;
+            }
+            return dyMap;
+        }
+        
+        function computeActualLineLengthJS(actualPathPoints, totalRefChunks, totalGenChunks, lctValue, localFloorPathDyMap) {
+            if (!actualPathPoints || actualPathPoints.length <= 1) {
+                return { totalLength: 0.0, segments: [], lct_window_base: 0, expanded_lct_window: 0 };
+            }
+            const sortedPath = [...actualPathPoints].sort((a,b) => a.x - b.x);
+            let currentTotalLength = 0; let pathSegments = [];
+            const mappingWindowHeight = totalGenChunks > 0 ? Math.ceil(totalRefChunks / totalGenChunks) : 0;
+            const ratio = totalGenChunks > 0 ? totalRefChunks / totalGenChunks : 0;
+            const ratioDecimalPart = ratio - Math.floor(ratio);
+            let lct_window_base;
+            if (totalRefChunks <= totalGenChunks) {
+                lct_window_base = mappingWindowHeight;
+            } else {
+                if (ratioDecimalPart > 0 && ratioDecimalPart <= 0.5) {
+                    lct_window_base = (2 * mappingWindowHeight) - 2;
+                } else {
+                    lct_window_base = (2 * mappingWindowHeight) - 1;
+                }
+            }
+            lct_window_base = Math.max(0, lct_window_base);
+            let expanded_lct_window;
+            if (totalRefChunks <= totalGenChunks) {
+                expanded_lct_window = lctValue > 0 ? lct_window_base + (mappingWindowHeight * lctValue) : lct_window_base;
+            } else {
+                if (ratioDecimalPart > 0 && ratioDecimalPart <= 0.5) {
+                    expanded_lct_window = lctValue > 0 ? lct_window_base + ((mappingWindowHeight - 1) * lctValue) : lct_window_base;
+                } else {
+                    expanded_lct_window = lctValue > 0 ? lct_window_base + (mappingWindowHeight * lctValue) : lct_window_base;
+                }
+            }
+            
+            for (let i = 0; i < sortedPath.length - 1; i++) {
+                const p1 = sortedPath[i]; const p2 = sortedPath[i+1];
+                const dx_segment = p2.x - p1.x; const dy_segment_raw = p2.y - p1.y;
+                if (dx_segment <= 0) continue;
+                
+                const dy_for_eval = Math.abs(dy_segment_raw);
+                let segmentLength = 0; let calculation_method = "invalid"; let is_calculable = false;
+                
+                // Check if it's a naturally valid segment (positive slope within base window)
+                if (dy_segment_raw >= 0 && dy_for_eval <= lct_window_base) {
+                    segmentLength = Math.sqrt(dx_segment**2 + dy_segment_raw**2);
+                    is_calculable = true; calculation_method = "standard";
+                }
+                // Check if it's a negative slope made calculable by LCT (should be lct-capped)
+                else if (lctValue > 0 && dy_segment_raw < 0 && dy_for_eval <= expanded_lct_window) {
+                    let floor_dy_val = dy_segment_raw; 
+                    if (localFloorPathDyMap && localFloorPathDyMap.hasOwnProperty(p1.x)) {
+                        floor_dy_val = Math.abs(localFloorPathDyMap[p1.x]);
+                    }
+                    segmentLength = Math.sqrt(dx_segment**2 + floor_dy_val**2);
+                    is_calculable = true; calculation_method = "lct-capped";
+                }
+                // Check if it's a positive slope within LCT tolerance (also lct-capped)
+                else if (lctValue > 0 && dy_segment_raw >= 0 && dy_for_eval > lct_window_base && dy_for_eval <= expanded_lct_window) {
+                    let floor_dy_val = dy_segment_raw; 
+                    if (localFloorPathDyMap && localFloorPathDyMap.hasOwnProperty(p1.x)) {
+                        floor_dy_val = Math.abs(localFloorPathDyMap[p1.x]);
+                    }
+                    segmentLength = Math.sqrt(dx_segment**2 + floor_dy_val**2);
+                    is_calculable = true; calculation_method = "lct-capped";
+                }
+                
+                currentTotalLength += segmentLength;
+                pathSegments.push({
+                    start: {x: p1.x, y: p1.y}, end: {x: p2.x, y: p2.y}, dx: dx_segment, dy: dy_segment_raw,
+                    threshold: lct_window_base, threshold_with_lct: expanded_lct_window,
+                    is_calculable: is_calculable, calculation_method: calculation_method, length: segmentLength
+                });
+            }
+            return { totalLength: currentTotalLength, segments: pathSegments, lct_window_base: lct_window_base, expanded_lct_window: expanded_lct_window };
+        }
+
+        function calculateLineNAS(floorLength, ceilLength, actualLength) {
+            const fl = Math.max(0, floorLength); const cl = Math.max(0, ceilLength); const al = Math.max(0, actualLength);
+            if (fl === 0 && cl === 0 && al === 0) return 1.0;
+            if (fl === 0 && al === 0) return 1.0;
+            if (fl <= al && al <= cl) return 1.0;
+            else if (al < fl) return fl > 0 ? al / fl : 0.0;
+            else return al > 0 ? cl / al : 0.0;
+        }
+
+        // --- HOVER CONE FUNCTIONS ---
+        function drawHoverCone(markerId) {
+            clearHoverCone();
+            const marker = markers_config.find(m => m.id === markerId);
+            if (!marker || marker.currentX >= numUnitsX - 1) return;
+            
+            const chartWidthPx = elements.chartGrid.clientWidth;
+            const chartHeightPx = elements.chartGrid.clientHeight;
+            if (chartWidthPx === 0 || chartHeightPx === 0) return;
+            
+            const cellWidthPx = chartWidthPx / numUnitsX;
+            const cellHeightPx = chartHeightPx / numUnitsY;
+            
+            const startX = (marker.currentX + 0.5) * cellWidthPx;
+            const startY = chartHeightPx - ((marker.currentY + 0.5) * cellHeightPx);
+            const endX = (marker.currentX + 1.5) * cellWidthPx;
+            
+            const baseWindow = currentLctWindowBase;
+            const expandedWindow = currentExpandedLctWindow;
+            
+            const coneGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+            coneGroup.id = 'hover-cone-group';
+            
+            if (currentLct === 0) {
+                const topYStandard = Math.max(0, chartHeightPx - ((marker.currentY + baseWindow + 0.5) * cellHeightPx));
+                const bottomYStandard = Math.min(chartHeightPx, chartHeightPx - ((marker.currentY + 0.5) * cellHeightPx));
+                
+                const standardCone = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+                const pointsStandard = `${startX},${startY} ${endX},${topYStandard} ${endX},${bottomYStandard}`;
+                standardCone.setAttribute('points', pointsStandard);
+                standardCone.setAttribute('class', 'hover-cone-standard');
+                coneGroup.appendChild(standardCone);
+            } else {
+                const topY = Math.max(0, chartHeightPx - ((marker.currentY + expandedWindow + 0.5) * cellHeightPx));
+                const bottomY = Math.min(chartHeightPx, chartHeightPx - ((marker.currentY - expandedWindow + 0.5) * cellHeightPx));
+                
+                const lctCappedCone = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+                const points = `${startX},${startY} ${endX},${topY} ${endX},${bottomY}`;
+                lctCappedCone.setAttribute('points', points);
+                lctCappedCone.setAttribute('class', 'hover-cone-lct-capped');
+                coneGroup.appendChild(lctCappedCone);
+            }
+            
+            elements.actualPathSvg.appendChild(coneGroup);
+        }
+
+        function clearHoverCone() {
+            const existingCone = document.getElementById('hover-cone-group');
+            if (existingCone) {
+                existingCone.remove();
+            }
+        }
+
+        // Animation helper
+        function animateNumber(el, start, end, duration = 400) {
+            if (Math.abs(end - start) < 0.001) { el.textContent = end.toFixed(el.id.includes("Score") ? 3 : 2); return; }
+            const frame = (ct) => {
+                const elapsed = ct - st; const rawProgress = Math.min(elapsed / duration, 1);
+                const progress = easeOutCubic(rawProgress); const current = start + (end - start) * progress;
+                el.textContent = current.toFixed(el.id.includes("Score") ? 3 : 2);
+                if (rawProgress < 1) requestAnimationFrame(frame);
+            };
+            const st = performance.now(); requestAnimationFrame(frame);
+        }
+
+        // Preview functions
+        function showScorePreview(tempMarkers, lctValue) {
+            if (!tempMarkers) return;
+            const sortedMarkers = [...tempMarkers].sort((a, b) => a.currentX - b.currentX);
+            const pathData = sortedMarkers.map(marker => ({ x: marker.currentX, y: marker.currentY }));
+            const lengthData = computeActualLineLengthJS(pathData, numUnitsY, numUnitsX, lctValue, floorPathDyMap);
+            const previewActualLength = lengthData.totalLength;
+            const previewLineNas = calculateLineNAS(currentFloorLength, currentCeilLength, previewActualLength);
+            elements.nasLScorePreview.textContent = `→ ${previewLineNas.toFixed(3)}`;
+            elements.actualLengthPreview.textContent = `→ ${previewActualLength.toFixed(2)}`;
+        }
+        function hideScorePreview() { elements.nasLScorePreview.textContent = ''; elements.actualLengthPreview.textContent = ''; }
+
+        // Tooltip functions
+        function updateChartTooltip(e, markerId) {
+            const marker = markers_config.find(m => m.id === markerId);
+            if (!marker) return;
+            elements.chartTooltip.classList.add('visible');
+            elements.chartTooltip.style.left = `${e.clientX + 15}px`;
+            elements.chartTooltip.style.top = `${e.clientY + 15}px`;
+            const segment = currentActualPathSegments.find(s => s.start.x === marker.currentX && s.start.y === marker.currentY);
+            const mappingText = `Gen Chunk ${marker.id} → Ref Chunk ${marker.currentY}`;
+            let statusClass, segmentText;
+            
+            if (segment) {
+                if (segment.calculation_method === 'standard') {
+                    statusClass = 'standard';
+                    segmentText = `<hr class="my-1 border-slate-500"><strong class="text-green-400">In Window (Standard)</strong><br>|Δy|: ${Math.abs(segment.dy).toFixed(1)}, Base: ${segment.threshold.toFixed(1)}`;
+                } else if (segment.calculation_method === 'lct-capped') {
+                    statusClass = 'lct-capped';
+                    segmentText = `<hr class="my-1 border-slate-500"><strong class="text-yellow-400">Outside Window (Capped)</strong><br>|Δy|: ${Math.abs(segment.dy).toFixed(1)}, Exp: ${segment.threshold_with_lct.toFixed(1)}`;
+                } else { // 'invalid'
+                    statusClass = 'invalid';
+                    segmentText = `<hr class="my-1 border-slate-500"><strong class="text-red-400">Outside Window (Invalid)</strong><br>|Δy|: ${Math.abs(segment.dy).toFixed(1)}, Exp: ${segment.threshold_with_lct.toFixed(1)}`;
+                }
+            } else {
+                statusClass = 'standard';
+                segmentText = `<hr class="my-1 border-slate-500">End of path`;
+            }
+            elements.chartTooltip.className = `visible ${statusClass}`;
+            elements.chartTooltip.innerHTML = mappingText + segmentText;
+        }
+
+        function hideChartTooltip() { elements.chartTooltip.classList.remove('visible', 'standard', 'lct-capped', 'invalid'); }
+
+        // Rendering functions
+        function renderGridLines() {
+            const container = elements.chartGrid;
+            container.querySelectorAll('.grid-line').forEach(e => e.remove());
+            
+            for (let i = 0; i <= numUnitsX; i++) {
+                const line = document.createElement('div');
+                line.className = 'grid-line';
+                line.style.left = `${i / numUnitsX * 100}%`;
+                line.style.top = '0';
+                line.style.width = '1px';
+                line.style.height = '100%';
+                container.appendChild(line);
+            }
+            
+            for (let i = 0; i <= numUnitsY; i++) {
+                const line = document.createElement('div');
+                line.className = 'grid-line';
+                line.style.left = '0';
+                line.style.top = `${i / numUnitsY * 100}%`;
+                line.style.width = '100%';
+                line.style.height = '1px';
+                container.appendChild(line);
+            }
+        }
+        
+        function updateGridBackground() {
+            // Remove the old background-image approach
+            // elements.chartGrid.style.backgroundSize = `calc(100% / ${numUnitsX}) calc(100% / ${numUnitsY})`;
+            renderGridLines();
+        }
+
+        function renderIdealMappingWindows() {
+            // Apply element reuse strategy for smooth transitions
+            const existingWindows = Array.from(elements.idealMappingContainer.children);
+            
+            currentPrecisionWindows.forEach((window, gen_chunk_idx) => {
+                let idealWindowDiv = existingWindows[gen_chunk_idx];
+                if (!idealWindowDiv) {
+                    idealWindowDiv = document.createElement('div');
+                    idealWindowDiv.classList.add('ideal-mapping-window');
+                    elements.idealMappingContainer.appendChild(idealWindowDiv);
+                }
+                
+                // Update position and size - CSS transitions handle the animation
+                idealWindowDiv.style.left = `calc(${gen_chunk_idx} * 100% / ${numUnitsX})`;
+                idealWindowDiv.style.width = `calc(100% / ${numUnitsX})`;
+                idealWindowDiv.style.bottom = `calc(${window.start} * 100% / ${numUnitsY})`;
+                idealWindowDiv.style.height = `calc(${(window.end - window.start)} * 100% / ${numUnitsY})`;
+            });
+            
+            // Remove extra windows
+            while (elements.idealMappingContainer.children.length > currentPrecisionWindows.length) {
+                elements.idealMappingContainer.lastChild.remove();
+            }
+        }
+
+        function drawPathAndMarkersOnSvg(svgElement, pathData, lineClass, markerFillColor, markerStrokeColor) {
+            const chartWidthPx = elements.chartGrid.clientWidth; const chartHeightPx = elements.chartGrid.clientHeight;
+            if (numUnitsX === 0 || numUnitsY === 0 || chartWidthPx === 0 || chartHeightPx === 0 || !pathData || pathData.length === 0) return;
+            const cellWidthPx = chartWidthPx / numUnitsX; const cellHeightPx = chartHeightPx / numUnitsY;
+            if (pathData.length >= 2) {
+                const points = pathData.map(p => {
+                    const svgX = (p.x + 0.5) * cellWidthPx; const svgY = chartHeightPx - ((p.y + 0.5) * cellHeightPx);
+                    return `${svgX},${svgY}`;
+                }).join(' ');
+                const polyline = document.createElementNS('http://www.w3.org/2000/svg', 'polyline');
+                polyline.setAttribute('points', points);
+                polyline.setAttribute('class', lineClass);
+                svgElement.appendChild(polyline);
+            }
+        }
+
+        function renderIdealPaths() {
+            elements.idealPathsSvg.innerHTML = '';
+            drawPathAndMarkersOnSvg(elements.idealPathsSvg, currentFloorPath, 'floor-path-line', '#93c5fd', '#0ea5e9');
+            drawPathAndMarkersOnSvg(elements.idealPathsSvg, currentCeilPath, 'ceil-path-line', '#f9a8d4', '#ec4899');
+        }
+
+        function drawSegmentClassifications(svgElement, pathSegments, animated = false) {
+            if (!pathSegments || pathSegments.length === 0) return;
+            const chartWidthPx = elements.chartGrid.clientWidth;
+            const chartHeightPx = elements.chartGrid.clientHeight;
+            if (chartWidthPx === 0 || chartHeightPx === 0) return;
+            const cellWidthPx = chartWidthPx / numUnitsX;
+            const cellHeightPx = chartHeightPx / numUnitsY;
+
+            pathSegments.forEach(segment => {
+                const x1 = (segment.start.x + 0.5) * cellWidthPx;
+                const y1 = chartHeightPx - ((segment.start.y + 0.5) * cellHeightPx);
+                const x2 = (segment.end.x + 0.5) * cellWidthPx;
+                const y2 = chartHeightPx - ((segment.end.y + 0.5) * cellHeightPx);
+                const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                line.setAttribute('x1', x1);
+                line.setAttribute('y1', y1);
+                line.setAttribute('x2', x2);
+                line.setAttribute('y2', y2);
+                let className = 'path-segment-invalid';
+                if (segment.calculation_method === 'standard') {
+                    className = 'path-segment-standard';
+                } else if (segment.calculation_method === 'lct-capped') {
+                    className = 'path-segment-lct-capped';
+                }
+                line.setAttribute('class', className);
+
+                // FIXED: Append the line to the DOM FIRST, then get its length.
+                svgElement.appendChild(line);
+
+                if (animated) {
+                    try {
+                        const length = line.getTotalLength();
+                        line.style.strokeDasharray = length;
+                        line.style.strokeDashoffset = length;
+                        // Use requestAnimationFrame to ensure the style is applied after the element is in the DOM.
+                        requestAnimationFrame(() => {
+                           line.style.animation = 'drawLine 0.5s ease-out forwards';
+                        });
+                    } catch (error) {
+                        // This catch block handles cases where the element might still not be ready,
+                        // although appending it first should prevent this.
+                        console.error("Could not animate line segment:", error);
+                    }
+                }
+            });
+        }
+
+
+        function renderActualPath(animated = false) {
+            if (markers_config.length === 0) {
+                 elements.actualPathSvg.innerHTML = ''; animateNumber(elements.actualLengthDisplay, parseFloat(elements.actualLengthDisplay.textContent)||0, 0);
+                 elements.calculableSegmentsDisplay.textContent = '0/0'; currentActualPathSegments = [];
+                 currentLctWindowBase = 0; currentExpandedLctWindow = 0; currentActualLength = 0; 
+                 currentLineNas = calculateLineNAS(currentFloorLength, currentCeilLength, currentActualLength); 
+                 animateNumber(elements.nasLScoreDisplay, parseFloat(elements.nasLScoreDisplay.textContent)||0, currentLineNas);
+                 updateDynamicBackground(currentLineNas); return;
+            }
+            const sortedMarkers = [...markers_config].sort((a, b) => a.currentX - b.currentX);
+            const pathData = sortedMarkers.map(marker => ({ x: marker.currentX, y: marker.currentY }));
+            elements.actualPathSvg.innerHTML = '';
+            
+            const lengthAndSegmentData = computeActualLineLengthJS(pathData, numUnitsY, numUnitsX, currentLct, floorPathDyMap);
+            const prevActualLength = currentActualLength; const prevLineNas = currentLineNas;
+            currentActualLength = lengthAndSegmentData.totalLength; currentActualPathSegments = lengthAndSegmentData.segments;
+            currentLctWindowBase = lengthAndSegmentData.lct_window_base; currentExpandedLctWindow = lengthAndSegmentData.expanded_lct_window; 
+            
+            drawSegmentClassifications(elements.actualPathSvg, currentActualPathSegments, animated);
+            
+            animateNumber(elements.actualLengthDisplay, prevActualLength, currentActualLength);
+            const calculableSegments = currentActualPathSegments.filter(s => s.is_calculable).length;
+            elements.calculableSegmentsDisplay.textContent = `${calculableSegments}/${currentActualPathSegments.length}`;
+            elements.lctWindowBaseDisplay.textContent = currentLctWindowBase.toFixed(1);
+            elements.expandedWindowDisplay.textContent = currentExpandedLctWindow.toFixed(1);
+
+            currentLineNas = calculateLineNAS(currentFloorLength, currentCeilLength, currentActualLength);
+            animateNumber(elements.nasLScoreDisplay, prevLineNas, currentLineNas); updateDynamicBackground(currentLineNas);
+        }
+        
+        function renderGenChunkMarkers() {
+            renderActualPath(); 
+            if (numUnitsX === 0 || numUnitsY === 0) return;
+            
+            // Apply element reuse strategy for smooth transitions
+            const existingMarkers = Array.from(elements.genChunkMarkerContainer.children);
+            
+            markers_config.forEach((markerData, index) => {
+                let markerDiv = existingMarkers[index];
+                if (!markerDiv) {
+                    markerDiv = document.createElement('div');
+                    markerDiv.classList.add('gen-marker'); 
+                    markerDiv.setAttribute('draggable', 'true');
+                    const markerWidth = 12; const markerHeight = 12;
+                    markerDiv.style.width = `${markerWidth}px`; 
+                    markerDiv.style.height = `${markerHeight}px`;
+                    
+                    markerDiv.addEventListener('dragstart', handleDragStart);
+                    markerDiv.addEventListener('dragend', handleDragEnd);
+                    markerDiv.addEventListener('mouseover', e => { 
+                        if (!isMarkerDragging) {
+                            updateChartTooltip(e, markerData.id);
+                            hoveredMarkerId = markerData.id;
+                            drawHoverCone(markerData.id);
+                        }
+                    });
+                    markerDiv.addEventListener('mouseout', () => { 
+                        if (!isMarkerDragging) {
+                            hideChartTooltip();
+                            hoveredMarkerId = null;
+                            clearHoverCone();
+                        }
+                    });
+                    elements.genChunkMarkerContainer.appendChild(markerDiv);
+                }
+                
+                // Update marker properties and position
+                markerDiv.dataset.id = markerData.id;
+                markerDiv.style.left = `calc(${markerData.currentX} * 100% / ${numUnitsX} + (100% / ${numUnitsX} / 2) - 6px)`;
+                markerDiv.style.bottom = `calc(${markerData.currentY} * 100% / ${numUnitsY} + (100% / ${numUnitsY} / 2) - 6px)`;
+            });
+            
+            // Remove extra markers
+            while (elements.genChunkMarkerContainer.children.length > markers_config.length) {
+                elements.genChunkMarkerContainer.lastChild.remove();
+            }
+        }
+
+        function renderAnimatedMarkers(animatedMarkers) {
+            elements.genChunkMarkerContainer.innerHTML = '';
+            const lctValue = parseInt(elements.lctSlider.value);
+            animatedMarkers.forEach(markerData => {
+                if (typeof markerData.opacity !== 'number' || markerData.opacity > 0.01) {
+                    const markerDiv = document.createElement('div');
+                    markerDiv.className = 'gen-marker'; 
+                    markerDiv.dataset.id = markerData.id;
+                    markerDiv.setAttribute('draggable', 'true');
+                    markerDiv.style.left = `calc(${(markerData.currentX + 0.5)}*100%/${numUnitsX} - 6px)`;
+                    markerDiv.style.bottom = `calc(${(markerData.currentY + 0.5)}*100%/${numUnitsY} - 6px)`;
+                    markerDiv.style.opacity = markerData.opacity;
+                    
+                    // Add event listeners for dragging functionality
+                    markerDiv.addEventListener('dragstart', handleDragStart);
+                    markerDiv.addEventListener('dragend', handleDragEnd);
+                    markerDiv.addEventListener('mouseover', e => { 
+                        if (!isMarkerDragging) {
+                            updateChartTooltip(e, markerData.id);
+                            hoveredMarkerId = markerData.id;
+                            drawHoverCone(markerData.id);
+                        }
+                    });
+                    markerDiv.addEventListener('mouseout', () => { 
+                        if (!isMarkerDragging) {
+                            hideChartTooltip();
+                            hoveredMarkerId = null;
+                            clearHoverCone();
+                        }
+                    });
+                    
+                    elements.genChunkMarkerContainer.appendChild(markerDiv);
+                }
+            });
+        }
+
+        function renderDropTargetCells(force = false) {
+            if (elements.dropTargetCellContainer.childElementCount > 0 && !force) return;
+            elements.dropTargetCellContainer.innerHTML = '';
+            for (let y_idx = 0; y_idx < numUnitsY; y_idx++) {
+                for (let x_idx = 0; x_idx < numUnitsX; x_idx++) {
+                    const cell = document.createElement('div');
+                    cell.classList.add('grid-cell-overlay'); cell.dataset.x = x_idx; cell.dataset.y = y_idx;
+                    cell.style.width = `calc(100% / ${numUnitsX})`; cell.style.height = `calc(100% / ${numUnitsY})`;
+                    cell.style.left = `calc(${x_idx} * 100% / ${numUnitsX})`; cell.style.bottom = `calc(${y_idx} * 100% / ${numUnitsY})`;
+                    cell.addEventListener('dragover', handleDragOver); cell.addEventListener('dragleave', handleDragLeave);
+                    cell.addEventListener('drop', handleDrop); elements.dropTargetCellContainer.appendChild(cell);
+                }
+            }
+        }
+        
+        function renderAxisLabels() {
+            elements.axisLabelContainerX.innerHTML = ''; elements.axisLabelContainerY.innerHTML = '';
+            if (numUnitsX <= 0 || numUnitsY <= 0) return; 
+            const yStep = Math.max(1, Math.floor(numUnitsY / 8)) || 1; const xStep = Math.max(1, Math.floor(numUnitsX / 8)) || 1;
+            for (let i = 0; i < numUnitsY; i += yStep) {
+                const tickLabelY = document.createElement('div'); tickLabelY.classList.add('axis-label');
+                tickLabelY.textContent = i; tickLabelY.style.left = '-2rem';
+                tickLabelY.style.bottom = `calc((${i} + 0.5) * 100% / ${numUnitsY})`; 
+                tickLabelY.style.transform = 'translateY(50%)'; elements.axisLabelContainerY.appendChild(tickLabelY);
+            }
+            for (let i = 0; i < numUnitsX; i += xStep) {
+                const tickLabelX = document.createElement('div'); tickLabelX.classList.add('axis-label');
+                tickLabelX.textContent = i; tickLabelX.style.bottom = '-1.5rem';
+                tickLabelX.style.left = `calc((${i} + 0.5) * 100% / ${numUnitsX})`; 
+                tickLabelX.style.transform = 'translateX(-50%)'; elements.axisLabelContainerX.appendChild(tickLabelX);
+            }
+        }
+
+        function renderAll() { 
+            updateGridBackground(); 
+            renderIdealMappingWindows(); 
+            renderIdealPaths(); 
+            renderDropTargetCells(true); 
+            renderAxisLabels(); 
+            renderGenChunkMarkers(); 
+        }
+
+        // --- ENHANCED SCENARIO & GRID ANIMATION SYSTEM ---
+        function getScenarioConfig(scenarioType) {
+            let config = { targetRefLen: 10, targetGenLen: 10, yMapping: (i) => i };
+            switch(scenarioType) {
+                case 'optimal': break;
+                case 'lct1Rotation': config.yMapping = (i) => (i === 0) ? 1 : (i === 1) ? 0 : i; break;
+                case 'lct2Rotation': config.yMapping = (i) => (i === 0) ? 1 : (i === 1) ? 2 : (i === 2) ? 0 : i; break;
+                case 'deleteEnd': config.targetGenLen = 7; break;
+                case 'deleteBegin': config.targetGenLen = 7; config.yMapping = (i) => i + 3; break;
+                case 'deleteMiddle': config.targetGenLen = 7; config.yMapping = (i) => (i < 3) ? i : i + 3; break;
+            }
+            return config;
+        }
+
+        function updateScenarioTip(scenarioType) {
+            const tips = {
+                optimal: "This is a perfect 1-to-1 alignment along the optimal path. All segments are standard and calculable, resulting in optimal NAS-L score.",
+                lct1Rotation: "A minor 2x2 reordering. Without LCT, this creates invalid segments. Set LCT=1 to see them become LCT-capped, improving calculability.",
+                lct2Rotation: "A more complex 3x3 rotation. This requires LCT=2 to make segments calculable. Notice how segments transition from invalid to LCT-capped.",
+                deleteEnd: "The generated sequence is shorter, ending prematurely. This affects path length calculation and reduces the total calculable segments.",
+                deleteMiddle: "A gap in the middle creates discontinuous segments. Some become invalid while others may remain calculable depending on LCT.",
+                deleteBegin: "Missing the start creates significant displacement. Most segments become invalid without sufficient LCT tolerance."
+            };
+            // Tip functionality disabled since scenarioTip element doesn't exist in HTML
+            // const tipElement = document.getElementById('scenarioTip');
+            // if (tipElement) tipElement.innerHTML = `<p><strong>Tip:</strong> ${tips[scenarioType] || tips.optimal}</p>`;
+        }
+
+        function computeAnimatedSegments(animatedMarkers, lctValue, floorPathDyMap) {
+            const visibleMarkers = animatedMarkers.filter(m => m.opacity > 0.01);
+            if (visibleMarkers.length <= 1) return [];
+            
+            const sortedMarkers = [...visibleMarkers].sort((a, b) => a.currentX - b.currentX);
+            const pathData = sortedMarkers.map(marker => ({ x: marker.currentX, y: marker.currentY }));
+            const lengthData = computeActualLineLengthJS(pathData, numUnitsY, numUnitsX, lctValue, floorPathDyMap);
+            return lengthData.segments;
+        }
+
+        function renderAnimatedSegments(segments) {
+            const existingLines = elements.actualPathSvg.querySelectorAll('line, polygon');
+            existingLines.forEach(line => {
+                if(line.id !== 'hover-cone-group') line.remove();
+            });
+            
+            if (segments && segments.length > 0) {
+                drawSegmentClassifications(elements.actualPathSvg, segments, true);
+            }
+        }
+
+        function animateToScenario(scenarioType) {
+            const config = getScenarioConfig(scenarioType);
+            updateScenarioTip(scenarioType);
+            animateGridChange(config.targetGenLen, config.targetRefLen, config.yMapping);
+        }
+        
+        function animateGridChange(targetGenLen, targetRefLen, yMapping = i => i) {
+            if (animationFrameId) cancelAnimationFrame(animationFrameId);
+
+            // --- 1. Capture Start State ---
+            const startPositions = JSON.parse(JSON.stringify(markers_config));
+            const startFloorPath = JSON.parse(JSON.stringify(currentFloorPath));
+            const startCeilPath = JSON.parse(JSON.stringify(currentCeilPath));
+            const startGenLen = numUnitsX;
+            const startRefLen = numUnitsY;
+            const startFloorLength = currentFloorLength;
+            const startCeilLength = currentCeilLength;
+            const startActualLength = currentActualLength;
+            const startNasL = currentLineNas;
+
+            // --- 2. Update to Target Grid State (data) ---
+            numUnitsY = targetRefLen;
+            numUnitsX = targetGenLen;
+            elements.refLenInput.value = numUnitsY;
+            elements.genLenInput.value = numUnitsX;
+            elements.lctSlider.max = Math.max(0, numUnitsY - 1);
+            if (parseInt(elements.lctSlider.value) > elements.lctSlider.max) {
+                elements.lctSlider.value = elements.lctSlider.max;
+                elements.lctValueDisplay.textContent = elements.lctSlider.value;
+                updateLctDescription();
+            }
+            currentLct = parseInt(elements.lctSlider.value, 10);
+            
+            // --- 3. Calculate Target Paths & Positions ---
+            const windows = get_mapping_windows_js(numUnitsY, numUnitsX);
+            currentPrecisionWindows = windows.precision_windows;
+            const { shortest_line, longest_line, floor_path, ceil_path } = computeIdealNarrativeLineBandJS(currentPrecisionWindows, numUnitsX, numUnitsY);
+            
+            const targetFloorPath = floor_path;
+            const targetCeilPath = ceil_path;
+            const targetFloorLength = shortest_line;
+            const targetCeilLength = longest_line;
+            const targetDyMap = generateFloorPathDyMap(targetFloorPath);
+
+            const targetPositions = [];
+            for (let i = 0; i < numUnitsX; i++) {
+                targetPositions.push({ id: i, currentX: i, currentY: yMapping(i) });
+            }
+
+            const targetLengthData = computeActualLineLengthJS(targetPositions.map(p => ({ x: p.currentX, y: p.currentY })), numUnitsY, numUnitsX, currentLct, targetDyMap);
+            const targetActualLength = targetLengthData.totalLength;
+            const targetNasL = calculateLineNAS(targetFloorLength, targetCeilLength, targetActualLength);
+
+            // --- 4. Render Static Parts of Grid ---
+            updateGridBackground();
+            renderIdealMappingWindows();
+            renderDropTargetCells(true);
+            renderAxisLabels();
+
+            // --- 5. Animate ---
+            const duration = 800;
+            const startTime = performance.now();
+
+            function interpolatePath(start, end, progress) {
+                const path = [];
+                const len = end.length;
+                if (len === 0) return [];
+
+                for (let i = 0; i < len; i++) {
+                    const endPoint = end[i];
+                    // Find a proportional point in the start path for smooth y-transition
+                    const start_i_float = start.length > 1 ? i / (len - 1) * (start.length - 1) : 0;
+                    const start_i1 = Math.floor(start_i_float);
+                    const start_i2 = Math.ceil(start_i_float);
+                    const start_frac = start_i_float - start_i1;
+                    const start_y = start.length > 0 ? (start[start_i1]?.y ?? endPoint.y) * (1 - start_frac) + (start[start_i2]?.y ?? endPoint.y) * start_frac : endPoint.y;
+                    
+                    const newY = start_y + (endPoint.y - start_y) * progress;
+                    path.push({ x: endPoint.x, y: newY });
+                }
+                return path;
+            }
+
+            function tick(currentTime) {
+                const elapsedTime = currentTime - startTime;
+                const rawProgress = Math.min(elapsedTime / duration, 1);
+                const progress = easeOutCubic(rawProgress);
+
+                // Animate Ideal Paths
+                const animatedFloorPath = interpolatePath(startFloorPath, targetFloorPath, progress);
+                const animatedCeilPath = interpolatePath(startCeilPath, targetCeilPath, progress);
+                elements.idealPathsSvg.innerHTML = '';
+                drawPathAndMarkersOnSvg(elements.idealPathsSvg, animatedFloorPath, 'floor-path-line');
+                drawPathAndMarkersOnSvg(elements.idealPathsSvg, animatedCeilPath, 'ceil-path-line');
+                
+                // Animate Markers
+                const animatedMarkers = [];
+                const maxMarkers = Math.max(startGenLen, numUnitsX);
+                for (let i = 0; i < maxMarkers; i++) {
+                    const startMarker = startPositions.find(m => m.id === i);
+                    const targetMarker = targetPositions.find(m => m.id === i);
+                    
+                    if (startMarker && targetMarker) {
+                        const newY = startMarker.currentY + (targetMarker.currentY - startMarker.currentY) * progress;
+                        animatedMarkers.push({ ...targetMarker, currentY: newY, opacity: 1 });
+                    } else if (!startMarker && targetMarker) {
+                        const idealY = (targetFloorPath.find(p => p.x === i) || {y: Math.floor(numUnitsY/2)}).y;
+                        const newY = idealY + (targetMarker.currentY - idealY) * progress;
+                        animatedMarkers.push({ ...targetMarker, currentY: newY, opacity: progress });
+                    } else if (startMarker && !targetMarker) {
+                        animatedMarkers.push({ ...startMarker, opacity: 1 - progress });
+                    }
+                }
+                renderAnimatedMarkers(animatedMarkers);
+
+                // Animate Actual Path based on animated markers
+                const animatedSegments = computeAnimatedSegments(animatedMarkers, currentLct, targetDyMap);
+                renderAnimatedSegments(animatedSegments);
+
+                // Animate Metrics
+                elements.floorLengthDisplay.textContent = (startFloorLength + (targetFloorLength - startFloorLength) * progress).toFixed(2);
+                elements.ceilLengthDisplay.textContent = (startCeilLength + (targetCeilLength - startCeilLength) * progress).toFixed(2);
+                
+                const currentAnimatedActualLength = computeActualLineLengthJS(animatedMarkers.map(m=>({x: m.currentX, y: m.currentY})), numUnitsY, numUnitsX, currentLct, targetDyMap).totalLength;
+                elements.actualLengthDisplay.textContent = currentAnimatedActualLength.toFixed(2);
+
+                const animatedNasL = calculateLineNAS(
+                    parseFloat(elements.floorLengthDisplay.textContent),
+                    parseFloat(elements.ceilLengthDisplay.textContent),
+                    currentAnimatedActualLength
+                );
+                elements.nasLScoreDisplay.textContent = animatedNasL.toFixed(3);
+                updateDynamicBackground(animatedNasL);
+                
+                const calculableSegments = animatedSegments.filter(s => s.is_calculable).length;
+                elements.calculableSegmentsDisplay.textContent = `${calculableSegments}/${animatedSegments.length}`;
+                
+                if (rawProgress < 1) {
+                    animationFrameId = requestAnimationFrame(tick);
+                } else {
+                    animationFrameId = null;
+                    markers_config = targetPositions;
+                    currentFloorPath = targetFloorPath;
+                    currentCeilPath = targetCeilPath;
+                    // Final render to clean up and set correct values
+                    initializeStateAndRender(true);
+                }
+            }
+
+            animationFrameId = requestAnimationFrame(tick);
+        }
+
+
+        // Drag and Drop Event Handlers
+        function handleDragStart(e) {
+            const markerElement = e.target.closest('.gen-marker'); if (!markerElement) return;
+            draggedMarkerId = parseInt(markerElement.dataset.id, 10); markerElement.classList.add('dragging');
+            e.dataTransfer.effectAllowed = 'move'; e.dataTransfer.setData('text/plain', draggedMarkerId);
+            isMarkerDragging = true; hideChartTooltip(); clearHoverCone();
+        }
+        function handleDragEnd(e) {
+            isMarkerDragging = false; document.querySelector(`.gen-marker[data-id='${draggedMarkerId}']`)?.classList.remove('dragging');
+            hideScorePreview(); renderGenChunkMarkers();
+        }
+        function handleDragOver(e) {
+            e.preventDefault(); e.dataTransfer.dropEffect = 'move';
+            if (e.currentTarget.classList.contains('grid-cell-overlay')) {
+                e.currentTarget.classList.add('drag-over');
+                const targetX = parseInt(e.currentTarget.dataset.x);
+                const targetY = parseInt(e.currentTarget.dataset.y);
+                const tempMarkers = JSON.parse(JSON.stringify(markers_config));
+                const draggedMarker = tempMarkers.find(m => m.id === draggedMarkerId);
+                
+                if (draggedMarker) {
+                    const originalX = markers_config.find(m => m.id === draggedMarkerId).currentX;
+                    const markerAtTarget = tempMarkers.find(m => m.currentX === targetX && m.id !== draggedMarkerId);
+
+                    if (markerAtTarget && targetX !== originalX) {
+                        markerAtTarget.currentX = originalX;
+                    }
+                    draggedMarker.currentX = targetX;
+                    draggedMarker.currentY = targetY;
+                    showScorePreview(tempMarkers, currentLct);
+                }
+            }
+        }
+        function handleDragLeave(e) {
+            if (e.currentTarget.classList.contains('grid-cell-overlay')) e.currentTarget.classList.remove('drag-over');
+        }
+        function handleDrop(e) {
+            e.preventDefault(); hideScorePreview();
+            if (!e.currentTarget.classList.contains('grid-cell-overlay')) return;
+            e.currentTarget.classList.remove('drag-over');
+            const targetX = parseInt(e.currentTarget.dataset.x, 10); const targetY = parseInt(e.currentTarget.dataset.y, 10);
+            const draggedMarkerData = markers_config.find(m => m.id === draggedMarkerId); if (!draggedMarkerData) return;
+            const oldX = draggedMarkerData.currentX;
+            const markerAtTargetXColumn = markers_config.find(m => m.currentX === targetX && m.id !== draggedMarkerId);
+            if (markerAtTargetXColumn && targetX !== oldX) markerAtTargetXColumn.currentX = oldX;
+            draggedMarkerData.currentX = targetX; draggedMarkerData.currentY = targetY;
+            const markerElementDOM = elements.genChunkMarkerContainer.querySelector(`.gen-marker[data-id='${draggedMarkerId}']`);
+            if(markerElementDOM) markerElementDOM.classList.remove('dragging');
+            draggedMarkerId = null; renderGenChunkMarkers(); 
+        }
+
+        // Main initialization function
+        function initializeStateAndRender(preserveMarkerPositions = false) {
+            numUnitsY = Math.max(1, Math.min(10, parseInt(elements.refLenInput.value, 10) || 1));
+            numUnitsX = Math.max(1, Math.min(10, parseInt(elements.genLenInput.value, 10) || 1));
+            currentLct = parseInt(elements.lctSlider.value, 10); elements.lctValueDisplay.textContent = currentLct;
+            updateLctDescription();
+            elements.refLenInput.value = numUnitsY; elements.genLenInput.value = numUnitsX;
+            
+            const windowsData = get_mapping_windows_js(numUnitsY, numUnitsX);
+            currentPrecisionWindows = windowsData.precision_windows;
+            
+            if (currentPrecisionWindows && currentPrecisionWindows.length > 0 && numUnitsX > 0 && numUnitsY > 0) {
+                const { shortest_line, longest_line, floor_path, ceil_path } = computeIdealNarrativeLineBandJS(currentPrecisionWindows, numUnitsX, numUnitsY);
+                currentFloorPath = floor_path; currentCeilPath = ceil_path;
+                const prevFloorLength = currentFloorLength; const prevCeilLength = currentCeilLength;
+                currentFloorLength = shortest_line; currentCeilLength = longest_line;
+                animateNumber(elements.floorLengthDisplay, prevFloorLength, currentFloorLength);
+                animateNumber(elements.ceilLengthDisplay, prevCeilLength, currentCeilLength);
+                floorPathDyMap = generateFloorPathDyMap(currentFloorPath);
+            } else {
+                currentFloorPath = []; currentCeilPath = []; currentFloorLength = 0; currentCeilLength = 0;
+                animateNumber(elements.floorLengthDisplay, parseFloat(elements.floorLengthDisplay.textContent)||0, 0);
+                animateNumber(elements.ceilLengthDisplay, parseFloat(elements.ceilLengthDisplay.textContent)||0, 0);
+                floorPathDyMap = {}; currentLineNas = calculateLineNAS(0, 0, currentActualLength); 
+                animateNumber(elements.nasLScoreDisplay, parseFloat(elements.nasLScoreDisplay.textContent)||0, currentLineNas);
+            }
+
+            const reinitializeMarkers = !preserveMarkerPositions && (markers_config.length !== numUnitsX || !markers_config.every((m,i)=> m.id === i && m.currentX === i));
+            if (reinitializeMarkers) {
+                resetToOptimalOrder();
+            } else {
+                markers_config.forEach(marker => {
+                    marker.currentY = Math.min(Math.max(0, marker.currentY), numUnitsY - 1);
+                    marker.currentX = Math.min(Math.max(0, marker.currentX), numUnitsX - 1);
+                });
+                if (markers_config.length > numUnitsX) markers_config = markers_config.slice(0, numUnitsX);
+                markers_config.sort((a,b) => a.currentX - b.currentX);
+            }
+            
+            renderAll();
+        }
+
+        // Scenario functions
+        function resetToOptimalOrder() {
+            markers_config = [];
+            for(let i = 0; i < numUnitsX; i++) {
+                const idealYStart = (currentFloorPath.find(p => p.x === i) || {}).y ?? Math.floor(numUnitsY / 2);
+                markers_config.push({ id: i, currentX: i, currentY: Math.min(idealYStart, numUnitsY - 1) });
+            }
+            updateScenarioTip('optimal'); renderGenChunkMarkers();
+        }
+
+        // Event Listeners
+        function handleGridInputChange() {
+            const targetRefLen = Math.max(1, Math.min(10, parseInt(elements.refLenInput.value, 10) || 1));
+            const targetGenLen = Math.max(1, Math.min(10, parseInt(elements.genLenInput.value, 10) || 1));
+
+            if (targetRefLen !== numUnitsY || targetGenLen !== numUnitsX) {
+                 // Reset to optimal layout for the new dimensions
+                animateGridChange(targetGenLen, targetRefLen, i => {
+                    // Need to calculate the target floor path to find the optimal Y
+                    const tempWindows = get_mapping_windows_js(targetRefLen, targetGenLen);
+                    const { floor_path } = computeIdealNarrativeLineBandJS(tempWindows.precision_windows, targetGenLen, targetRefLen);
+                    return (floor_path.find(p => p.x === i) || { y: Math.floor(targetRefLen / 2) }).y;
+                });
+            }
+        }
+
+        document.getElementById('start-tour-btn').addEventListener('click', () => tourManager.start());
+        elements.refLenInput.addEventListener('change', handleGridInputChange);
+        elements.genLenInput.addEventListener('change', handleGridInputChange);
+        elements.lctSlider.addEventListener('input', () => {
+            currentLct = parseInt(elements.lctSlider.value, 10); 
+            elements.lctValueDisplay.textContent = currentLct;
+            updateLctDescription();
+            renderGenChunkMarkers(); 
+        });
+
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer); 
+            resizeTimer = setTimeout(() => { renderAll(); }, 150); 
+        });
+
+        // Testing modal event listeners
+        document.getElementById('testing-guide-btn').addEventListener('click', () => {
+            document.getElementById('testing-modal').classList.add('visible');
+        });
+        document.getElementById('testing-modal-close').addEventListener('click', () => {
+            document.getElementById('testing-modal').classList.remove('visible');
+        });
+        document.getElementById('testing-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'testing-modal') {
+                document.getElementById('testing-modal').classList.remove('visible');
+            }
+        });
+        
+        window.addEventListener('load', () => {
+            lctExplorerManager.init();
+            initializeStateAndRender();
+        });
+    </script>
+
+    <!-- Add CSS animation for smooth line drawing -->
+    <style>
+        @keyframes drawLine {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+</body>
+</html>

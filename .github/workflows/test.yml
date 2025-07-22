@@ -1,0 +1,244 @@
+name: Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install build pytest
+        # Install torch for testing (simulates Colab/user environment)
+        pip install torch
+        pip install -e .[dev]
+    
+    - name: Run tests
+      run: |
+        # Test package build and all public APIs
+        echo "Testing package structure and public APIs..."
+        
+        # Test basic package import and version
+        python -c "import vcs; print(f'✅ VCS version: {vcs.__version__}')"
+        
+        # Test all public APIs dynamically from __all__
+        python << 'EOF'
+        import vcs
+        print('Testing all public APIs from __all__...')
+        failed_imports = []
+        for api_name in vcs.__all__:
+            try:
+                getattr(vcs, api_name)
+                print(f'✅ {api_name}')
+            except Exception as e:
+                failed_imports.append((api_name, str(e)))
+                print(f'❌ {api_name}: {e}')
+        
+        if failed_imports:
+            print(f'Failed to import {len(failed_imports)} APIs')
+            exit(1)
+        else:
+            print(f'✅ All {len(vcs.__all__)} public APIs importable')
+        EOF
+        
+        # Test exact configuration values
+        python << 'EOF'
+        import vcs
+        print('Testing configuration constants...')
+        assert vcs.DEFAULT_LCT == 0, f'LCT should be 0, got {vcs.DEFAULT_LCT}'
+        assert vcs.DEFAULT_CONTEXT_CUTOFF_VALUE == 0.6, f'Context cutoff should be 0.6, got {vcs.DEFAULT_CONTEXT_CUTOFF_VALUE}'
+        assert vcs.DEFAULT_CONTEXT_WINDOW_CONTROL == 4.0, f'Context window control should be 4.0, got {vcs.DEFAULT_CONTEXT_WINDOW_CONTROL}'
+        assert vcs.DEFAULT_CHUNK_SIZE == 1, f'Chunk size should be 1, got {vcs.DEFAULT_CHUNK_SIZE}'
+        print('✅ All configuration values are correct')
+        EOF
+        
+        # Test getting started example functionality
+        python << 'EOF'
+        import subprocess
+        import sys
+        import torch
+        from typing import List
+        
+        print('Testing getting started example functionality...')
+        
+        # Test VCS package import first
+        try:
+            import vcs
+            print("✅ VCS package imported successfully!")
+            
+            if hasattr(vcs, 'compute_vcs_score'):
+                print("✅ Main function 'compute_vcs_score' is available!")
+            else:
+                print("❌ Main function not found")
+                exit(1)
+                
+        except ImportError as e:
+            print(f"❌ VCS import failed: {e}")
+            exit(1)
+        
+        # Define segmenter function from getting started example
+        def simple_segmenter(text: str) -> List[str]:
+            """Simple sentence segmenter using period splitting."""
+            segments = [s.strip() for s in text.split('.') if s.strip()]
+            return segments
+        
+        # Define embedding function that auto-installs sentence-transformers
+        def lightweight_embedding_function(texts: List[str]) -> torch.Tensor:
+            """Lightweight embedding function using sentence-transformers."""
+            try:
+                from sentence_transformers import SentenceTransformer
+                model = SentenceTransformer('all-MiniLM-L6-v2')
+                embeddings = model.encode(texts)
+                return torch.tensor(embeddings, dtype=torch.float32)
+                
+            except ImportError:
+                print("Installing sentence-transformers...")
+                subprocess.check_call([sys.executable, "-m", "pip", "install", "sentence-transformers"], 
+                                    stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+                
+                # Try again after installation
+                from sentence_transformers import SentenceTransformer
+                model = SentenceTransformer('all-MiniLM-L6-v2')
+                embeddings = model.encode(texts)
+                return torch.tensor(embeddings, dtype=torch.float32)
+        
+        # Test data from getting started example
+        reference_text = "The quick brown fox jumps over the lazy dog. It was a beautiful sunny day in the forest. The fox was looking for food for its family."
+        generated_text = "A brown fox jumped over a sleeping dog. The weather was nice and sunny in the woods. The fox needed to find food for its cubs."
+        
+        # Compute VCS score
+        print("🧠 Computing VCS score...")
+        try:
+            result = vcs.compute_vcs_score(
+                reference_text=reference_text,
+                generated_text=generated_text,
+                segmenter_fn=simple_segmenter,
+                embedding_fn_las=lightweight_embedding_function,
+                embedding_fn_gas=lightweight_embedding_function,
+                return_all_metrics=True,
+                return_internals=True
+            )
+            
+            # Validate results
+            required_keys = ['VCS', 'GAS', 'LAS', 'NAS']
+            for key in required_keys:
+                assert key in result, f'Missing key: {key}'
+                assert isinstance(result[key], (int, float)), f'{key} should be numeric, got {type(result[key])}'
+                assert 0 <= result[key] <= 1, f'{key} should be between 0 and 1, got {result[key]}'
+            
+            # Check internals are returned
+            assert 'internals' in result, 'internals should be returned when return_internals=True'
+            
+            print("🎯 VCS Results:")
+            print(f"VCS Score: {result['VCS']:.4f}")
+            print(f"GAS Score: {result['GAS']:.4f}")
+            print(f"LAS Score: {result['LAS']:.4f}")
+            print(f"NAS Score: {result['NAS']:.4f}")
+            print("✅ Getting started example works correctly!")
+            
+            # Test all public APIs dynamically
+            print("🧪 Testing all public APIs...")
+            
+            internals = result['internals']
+            api_test_results = {}
+            
+            for api_name in vcs.__all__:
+                try:
+                    api_func = getattr(vcs, api_name)
+                    
+                    # Categorize APIs dynamically based on naming patterns and type
+                    if api_name == 'compute_vcs_score':
+                        api_test_results[api_name] = "✅ Already tested (main functionality)"
+                        
+                    elif api_name.startswith('DEFAULT_'):
+                        # Configuration constants
+                        api_test_results[api_name] = "✅ Already tested (configuration)"
+                        
+                    elif api_name.startswith('__') and api_name.endswith('__'):
+                        # Metadata attributes (__version__, __author__, etc.)
+                        if api_func is not None:
+                            api_test_results[api_name] = "✅ Metadata accessible"
+                        else:
+                            api_test_results[api_name] = "❌ Metadata is None"
+                            
+                    elif api_name.startswith('visualize_') or api_name == 'create_vcs_pdf_report':
+                        # Visualization/reporting functions - test with internals
+                        if api_name == 'create_vcs_pdf_report':
+                            # PDF report needs special parameters
+                            result_obj = api_func(internals=internals, output_file='/tmp/test_report.pdf')
+                        else:
+                            # Standard visualization functions
+                            result_obj = api_func(internals)
+                        
+                        api_test_results[api_name] = "✅ Executed successfully"
+                        
+                    elif callable(api_func):
+                        # Unknown callable - attempt basic execution
+                        import inspect
+                        sig = inspect.signature(api_func)
+                        
+                        if len(sig.parameters) == 0:
+                            # No parameters required
+                            result_obj = api_func()
+                            api_test_results[api_name] = "✅ Function executed (no params)"
+                        else:
+                            # Has parameters - try with internals if it seems like a viz function
+                            if 'internals' in [p.name for p in sig.parameters.values()]:
+                                result_obj = api_func(internals)
+                                api_test_results[api_name] = "✅ Executed with internals"
+                            else:
+                                # Can't determine parameters - skip execution but mark as callable
+                                api_test_results[api_name] = "⚠️ Callable but requires unknown parameters"
+                    else:
+                        # Non-callable value (constants, etc.)
+                        api_test_results[api_name] = "✅ Value accessible"
+                            
+                except Exception as e:
+                    api_test_results[api_name] = f"❌ Failed: {str(e)[:50]}..."
+            
+            # Report API test results
+            print("📊 Public API Test Results:")
+            failed_apis = []
+            for api_name, result_msg in api_test_results.items():
+                print(f"  {api_name}: {result_msg}")
+                if result_msg.startswith("❌"):
+                    failed_apis.append(api_name)
+            
+            if failed_apis:
+                print(f"❌ {len(failed_apis)} APIs failed: {failed_apis}")
+                exit(1)
+            else:
+                print(f"✅ All {len(api_test_results)} public APIs tested successfully!")
+            
+        except Exception as e:
+            print(f"❌ Getting started example failed: {e}")
+            import traceback
+            traceback.print_exc()
+            exit(1)
+        EOF
+        
+        echo "✅ All package tests passed"
+    
+    - name: Lint with flake8
+      run: |
+        flake8 src/ --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 src/ --count --exit-zero --max-complexity=10 --max-line-length=88 --statistics
+    
+    - name: Test package build
+      run: python -m build

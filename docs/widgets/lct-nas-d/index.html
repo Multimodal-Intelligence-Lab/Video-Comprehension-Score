@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect of LCT on Distance-based NAS (NAS-D)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        /* --- Base Styles --- */
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--bg-color);
+            transition: background 1.5s cubic-bezier(0.25, 0.1, 0.25, 1); 
+        }
+        :root { 
+            --bg-color: #f8fafc;
+            --light-shadow: rgba(255, 255, 255, 1);
+            --dark-shadow: rgba(148, 163, 184, 0.3);
+            --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+            --ease-out-cubic: cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+        }
+
+        /* --- Neumorphic Page Container --- */
+        .neumorphic-page-container {
+            background: var(--bg-color);
+            border-radius: 25px;
+            box-shadow: 0 0 24px var(--dark-shadow);
+            margin: 1rem;
+            padding: 2rem;
+            min-height: calc(100vh - 2rem);
+            position: relative;
+        }
+
+        .neumorphic-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* --- Neumorphic Card Style --- */
+        .interactive-card {
+            background: rgba(255, 255, 255, 0.5); 
+            backdrop-filter: blur(12px); 
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+            transition: transform 0.35s var(--ease-out-cubic), box-shadow 0.35s var(--ease-out-cubic), border-color 0.35s var(--ease-out-cubic);
+            will-change: transform, box-shadow;
+        }
+        .interactive-card:hover { 
+            box-shadow: 12px 12px 24px var(--dark-shadow), -12px -12px 24px var(--light-shadow); 
+            transform: translateY(-5px); 
+            border-color: rgba(255, 255, 255, 0.5); 
+        }
+        
+        /* --- Card Color Themes --- */
+        .intro-card { 
+            background: linear-gradient(135deg, rgba(254, 252, 232, 0.6) 0%, rgba(254, 243, 199, 0.5) 100%); 
+            border-color: rgba(251, 191, 36, 0.5);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+        }
+        .demo-card { 
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(248, 250, 252, 0.65) 100%); 
+            border-color: rgba(226, 232, 240, 0.8); 
+            border-left: 3px solid #0d9488; 
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow), 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+        .metrics-card { background: linear-gradient(135deg, rgba(240, 249, 255, 0.6) 0%, rgba(219, 234, 254, 0.5) 100%); border-color: rgba(147, 197, 253, 0.6); }
+        .formula-card { background: linear-gradient(135deg, rgba(237, 233, 254, 0.6) 0%, rgba(221, 214, 254, 0.5) 100%); border-color: rgba(196, 181, 253, 0.6); }
+
+        /* --- Tooltip & Tour Styles --- */
+        #chartTooltip { position: fixed; background: rgba(45, 55, 72, 0.9); backdrop-filter: blur(5px); color: white; padding: 8px 12px; border-radius: 6px; font-size: 0.8rem; z-index: 100; pointer-events: none; opacity: 0; transition: opacity 0.25s, transform 0.25s; transform: scale(0.95); user-select: none; -webkit-user-drag: none; -khtml-user-drag: none; -moz-user-drag: none; -o-user-drag: none; }
+        #chartTooltip.visible { opacity: 1; transform: scale(1); }
+        #chartTooltip.penalty { border-left: 4px solid #ef4444; }
+        #chartTooltip.forgiven { border-left: 4px solid #3b82f6; }
+        #chartTooltip.in-window { border-left: 4px solid #22c55e; }
+        
+        /* Ghost score style for predictions */
+        .ghost-score {
+            color: #9ca3af;
+            font-weight: 700;
+        }
+        #tour-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 9998; opacity: 0; transition: opacity 0.4s ease-in-out; pointer-events: none; }
+        .tour-highlight { position: relative; z-index: 9999; box-shadow: 0 0 0 9999px rgba(0,0,0,0.6), 0 0 20px rgba(255, 255, 255, 0.9); border-radius: 0.5rem; transition: box-shadow 0.4s ease-in-out; }
+        #tour-callout { 
+            position: absolute; 
+            background: rgba(255, 255, 255, 0.95); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            color: #334155; 
+            padding: 1.25rem; 
+            border-radius: 20px; 
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+            z-index: 10000; 
+            max-width: 320px; 
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: opacity 0.3s var(--ease-out-cubic), transform 0.3s var(--ease-out-cubic); 
+            transform: translateY(10px); 
+            opacity: 0; 
+        }
+        #tour-callout.visible { transform: translateY(0); opacity: 1; }
+        #tour-callout button { 
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%); 
+            color: white; 
+            padding: 0.5rem 1rem; 
+            border: none; 
+            border-radius: 12px; 
+            cursor: pointer; 
+            font-weight: 600;
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+        }
+        #tour-callout button:hover { 
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02); 
+        }
+
+        /* --- Chart & UI Element Styles --- */
+        #penaltyLinesContainer { position: absolute; inset: 0; z-index: 8; pointer-events: none; overflow: visible; }
+        .axis-label { position: absolute; font-size: 0.75rem; color: #475569; font-weight: 500; white-space: nowrap; z-index: 6; }
+        .ideal-mapping-window { position: absolute; border: 2px solid #0d9488; background-color: rgba(20, 184, 166, 0.3); box-sizing: border-box; z-index: 1; transition: all 0.3s; pointer-events: none; border-radius: 0.375rem; box-shadow: 0 0 8px rgba(13, 148, 136, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2); }
+        .lct-padding-window { 
+            position: absolute; 
+            background-color: rgba(253, 224, 71, 0.15); 
+            box-sizing: border-box; 
+            z-index: 0; 
+            transition: bottom 0.3s var(--ease-out-cubic), height 0.3s var(--ease-out-cubic), opacity 0.3s var(--ease-out-cubic);
+            will-change: bottom, height, opacity;
+            pointer-events: none; 
+            border: 1px dashed #facc15; 
+            border-radius: 0.25rem; 
+        }
+        .gen-marker { position: absolute; width: 12px; height: 12px; border-radius: 50%; background-color: #8b5cf6; border: 2px solid white; cursor: grab; box-shadow: 0 2px 4px rgba(0,0,0,0.3); z-index: 10; transition: left 0.4s var(--ease-out-cubic), bottom 0.4s var(--ease-out-cubic), transform 0.25s var(--ease-out-cubic), background-color 0.25s var(--ease-out-cubic), box-shadow 0.25s var(--ease-out-cubic); will-change: transform, left, bottom; }
+        .gen-marker:hover { transform: scale(1.4); }
+        .gen-marker.dragging { background-color: #a78bfa; box-shadow: 0 4px 8px rgba(0,0,0,0.4); transform: scale(1.5); cursor: grabbing; }
+        .marker-penalty-label { position: absolute; top: 16px; left: 50%; transform: translateX(-50%); font-size: 0.65rem; font-weight: 600; background-color: rgba(255, 255, 255, 0.9); padding: 1px 4px; border-radius: 3px; white-space: nowrap; border: 1px solid rgba(0,0,0,0.1); transition: all 0.25s; }
+        .grid-cell-overlay { position: absolute; z-index: 5; transition: background-color 0.2s; }
+        .grid-cell-overlay.drag-over { background-color: rgba(139, 92, 246, 0.1); border: 1px dashed #8b5cf6; z-index: 7; border-radius: 4px; }
+        .preset-btn { 
+            border-radius: 12px;
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            font-weight: 600;
+            box-shadow: 5px 5px 10px var(--dark-shadow), -5px -5px 10px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .preset-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        .preset-btn:hover {
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02);
+        }
+        .preset-btn:active {
+            box-shadow: inset 4px 4px 8px var(--dark-shadow), inset -4px -4px 8px var(--light-shadow);
+            transform: translateY(1px);
+        }
+        .preset-btn:hover::before {
+            left: 100%;
+        }
+        .preset-btn:hover i {
+            transform: scale(1.1);
+        }
+        .preset-btn i {
+            transition: all 0.3s ease;
+        }
+        .step-number { background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; width: 2rem; height: 2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.875rem; flex-shrink: 0; }
+        details summary { cursor: pointer; user-select: none; transition: color 0.2s; }
+        details summary:hover { color: #1d4ed8; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary .summary-icon { display: inline-block; margin-right: 0.5rem; transition: transform 0.25s; }
+        details[open] summary .summary-icon { transform: rotate(90deg); }
+
+        /* --- LCT Explorer Styles --- */
+        .lct-explorer-wrapper { 
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(248, 250, 252, 0.8) 100%); 
+            border-radius: 1rem; 
+            border: 1px solid rgba(148, 163, 184, 0.2); 
+            padding: 1.5rem; 
+            box-shadow: 
+                0 4px 16px rgba(0,0,0,0.08),
+                0 2px 8px rgba(0,0,0,0.06),
+                inset 0 1px 0 rgba(255,255,255,0.8);
+            backdrop-filter: blur(8px);
+        }
+        .lct-explorer-container { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: flex-start; }
+        .lct-scenario-wrapper { text-align: center; }
+        .matrix-title { font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem; color: #374151; }
+        .scenario-label { font-weight: 600; margin-bottom: 0.75rem; padding: 0.5rem; background: rgba(59, 130, 246, 0.1); border-radius: 0.5rem; color: #1e40af; }
+        
+        /* Alignment Matrix Grid System */
+        .matrix-container { 
+            position: relative; 
+            display: inline-block; 
+            padding: 2rem 0 2rem 2rem; 
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.1));
+        }
+        
+        .alignment-grid { 
+            display: grid; 
+            gap: 3px; 
+            position: relative;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border-radius: 1rem;
+            padding: 1rem;
+            box-shadow: 
+                0 8px 32px rgba(0,0,0,0.12),
+                0 4px 16px rgba(0,0,0,0.08),
+                inset 0 1px 0 rgba(255,255,255,0.8);
+            border: 1px solid rgba(255,255,255,0.6);
+            backdrop-filter: blur(10px);
+        }
+        
+        .grid-cell { 
+            width: 50px; 
+            height: 50px; 
+            border: 1px solid rgba(148, 163, 184, 0.2); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.9) 100%);
+            font-size: 1.2rem;
+            font-weight: 700;
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 0.5rem;
+            box-shadow: 
+                0 2px 8px rgba(0,0,0,0.06),
+                0 1px 4px rgba(0,0,0,0.04),
+                inset 0 1px 0 rgba(255,255,255,0.8);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .grid-cell::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .grid-cell.perfect-match { 
+            background: linear-gradient(135deg, #10b981 0%, #34d399 100%); 
+            color: white; 
+            border-color: rgba(16, 185, 129, 0.3); 
+            box-shadow: 
+                0 4px 20px rgba(16, 185, 129, 0.3),
+                0 2px 8px rgba(16, 185, 129, 0.2),
+                inset 0 1px 0 rgba(255,255,255,0.3);
+            transform: scale(1.02);
+        }
+        
+        .grid-cell.penalty-forgiven { 
+            background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%); 
+            color: white; 
+            border-color: rgba(59, 130, 246, 0.3); 
+            box-shadow: 
+                0 4px 20px rgba(59, 130, 246, 0.3),
+                0 2px 8px rgba(59, 130, 246, 0.2),
+                inset 0 1px 0 rgba(255,255,255,0.3);
+            transform: scale(1.02);
+        }
+        
+        .grid-cell.penalty-active { 
+            background: linear-gradient(135deg, #ef4444 0%, #f87171 100%); 
+            color: white; 
+            border-color: rgba(239, 68, 68, 0.3); 
+            box-shadow: 
+                0 4px 20px rgba(239, 68, 68, 0.3),
+                0 2px 8px rgba(239, 68, 68, 0.2),
+                inset 0 1px 0 rgba(255,255,255,0.3);
+            transform: scale(1.02);
+        }
+        
+        /* Labels */
+        .ref-labels { 
+            position: absolute; 
+            left: 0; 
+            top: 3.0rem; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 2px; 
+            height: calc(100% - 3rem); 
+        }
+        
+        .ref-label { 
+            height: 50px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 0.7rem; 
+            font-weight: 600; 
+            color: #64748b; 
+            width: 1.4rem; 
+            writing-mode: vertical-lr; 
+            text-orientation: mixed;
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(248,250,252,0.8) 100%);
+            border-radius: 0.375rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            margin-bottom: 2px;
+        }
+        
+        .gen-labels { 
+            position: absolute; 
+            bottom: 0; 
+            left: 3.0rem; 
+            display: flex; 
+            gap: 2px; 
+            width: calc(100% - 1.5rem); 
+        }
+        
+        .gen-label { 
+            width: 50px; 
+            height: 1.4rem; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 0.7rem; 
+            font-weight: 600; 
+            color: #64748b; 
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(248,250,252,0.8) 100%);
+            border-radius: 0.375rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            margin-right: 2px;
+        }
+        
+        .gen-label.swapped { 
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(248, 113, 113, 0.1) 100%); 
+            color: #dc2626; 
+            border-color: rgba(239, 68, 68, 0.3);
+            box-shadow: 0 2px 8px rgba(239, 68, 68, 0.2);
+            transform: translateY(-1px);
+        }
+        
+        .gen-label.lct-forgiven { 
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(96, 165, 250, 0.1) 100%); 
+            color: #2563eb; 
+            border-color: rgba(59, 130, 246, 0.3);
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+            transform: translateY(-1px);
+        }
+
+        /* --- Hero Section Styles --- */
+        #hero-section {
+            background: linear-gradient(45deg, #0d9488, #0f766e); 
+            color: white;
+            border-radius: 20px 20px 0 0; /* Top corners rounded, bottom corners square */
+        }
+        #hero-section h1 {
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2); 
+        }
+
+        /* --- Hero Tour Button (No White Glow) --- */
+        .hero-tour-btn {
+            background: linear-gradient(135deg, #0f766e 0%, #064e3b 100%);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-tour-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .hero-tour-btn:hover {
+            background: linear-gradient(135deg, #14b8a6 0%, #0f766e 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-tour-btn:hover::before {
+            left: 100%;
+        }
+
+        .hero-tour-btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* --- Testing Modal Styles --- */
+        .testing-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s var(--ease-out-cubic);
+        }
+
+        .testing-modal.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .testing-modal-content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            padding: 2.5rem;
+            max-width: 90vw;
+            max-height: 85vh;
+            width: 700px;
+            box-shadow: 
+                12px 12px 24px var(--dark-shadow), 
+                -12px -12px 24px var(--light-shadow),
+                0 8px 32px rgba(0, 0, 0, 0.1);
+            transform: translateY(30px) scale(0.9);
+            transition: all 0.5s var(--ease-out-cubic);
+            overflow-y: auto;
+        }
+
+        .testing-modal.visible .testing-modal-content {
+            transform: translateY(0) scale(1);
+        }
+
+        .testing-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid rgba(20, 184, 166, 0.2);
+        }
+
+        .testing-modal-close {
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            font-size: 1.25rem;
+            cursor: pointer;
+            color: #64748b;
+            padding: 0.75rem;
+            border-radius: 50%;
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+            transition: all 0.3s var(--ease-out-cubic);
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .testing-modal-close:hover {
+            color: #0d9488;
+            transform: rotate(90deg) scale(1.1);
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+        }
+
+        .testing-content {
+            padding: 0;
+        }
+
+        .test-category {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 1.5rem;
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.1),
+                0 2px 8px rgba(255, 255, 255, 0.8) inset;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .test-category::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(20, 184, 166, 0.05) 0%, rgba(15, 118, 110, 0.05) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .test-category:hover::before {
+            opacity: 1;
+        }
+        .test-category:hover {
+            transform: translateY(-12px) scale(1.02);
+            border-color: rgba(20, 184, 166, 0.3);
+            box-shadow: 
+                0 25px 50px rgba(20, 184, 166, 0.2),
+                0 4px 16px rgba(255, 255, 255, 0.9) inset,
+                0 0 0 1px rgba(20, 184, 166, 0.2);
+        }
+
+        .test-category h3 {
+            color: #0f172a;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.025em;
+        }
+
+        .test-category h3 i {
+            margin-right: 0.75rem;
+            color: #0d9488;
+            background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
+            padding: 0.5rem;
+            border-radius: 50%;
+            font-size: 1rem;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .test-category:hover h3 i {
+            transform: translateY(-2px) scale(1.1);
+            box-shadow: 
+                0 8px 16px rgba(20, 184, 166, 0.3),
+                0 4px 8px rgba(255, 255, 255, 0.9) inset;
+            color: #0f766e;
+        }
+
+        .test-item {
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 0.75rem;
+            border: 1px solid rgba(20, 184, 166, 0.15);
+        }
+
+        .test-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .test-item h4 {
+            color: #374151;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .test-item p {
+            color: #6b7280;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+
+        .test-checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .test-checklist li {
+            color: #4b5563;
+            font-size: 0.8rem;
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .test-checklist li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #14b8a6;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .test-checklist li:last-child {
+            margin-bottom: 0;
+        }
+
+        .chart-grid-background {
+            background-color: #fafbfc;
+            border-radius: 15px;
+            box-shadow: inset 5px 5px 10px var(--dark-shadow), inset -5px -5px 10px var(--light-shadow), inset 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        
+        .grid-line {
+            position: absolute;
+            background-color: #e2e8f0;
+            z-index: 1;
+            pointer-events: none;
+        }
+        /* --- Neumorphic Input Elements --- */
+        .neumorphic-input {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            box-shadow: inset 4px 4px 8px var(--dark-shadow), inset -4px -4px 8px var(--light-shadow);
+            transition: box-shadow 0.3s var(--ease-out-quad), border-color 0.3s var(--ease-out-quad);
+            color: #374151;
+        }
+
+        .neumorphic-input:focus {
+            outline: none;
+            box-shadow: inset 6px 6px 12px var(--dark-shadow), inset -6px -6px 12px var(--light-shadow);
+            border-color: #0d9488;
+        }
+
+        /* --- Neumorphic Button --- */
+        .neumorphic-btn {
+            border-radius: 12px;
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            font-weight: 600;
+            box-shadow: 5px 5px 10px var(--dark-shadow), -5px -5px 10px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .neumorphic-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .neumorphic-btn:hover {
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02);
+        }
+
+        .neumorphic-btn:hover::before {
+            left: 100%;
+        }
+
+        .neumorphic-btn:active {
+            box-shadow: inset 4px 4px 8px var(--dark-shadow), inset -4px -4px 8px var(--light-shadow);
+            transform: translateY(1px);
+        }
+
+        .neumorphic-btn.primary {
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+        }
+    </style>
+</head>
+<body class="h-full text-slate-700 antialiased">
+    <div id="app-background" class="fixed inset-0 z-[-1] transition-all duration-1000"></div>
+    <div id="tour-overlay"></div>
+    <div id="chartTooltip"></div>
+
+    <!-- Neumorphic Page Container -->
+    <div class="neumorphic-page-container">
+        <div class="neumorphic-content">
+            <article class="interactive-card">
+                <!-- Hero Section -->
+                <section id="hero-section" class="py-6 px-4 sm:px-6 lg:px-8 relative">
+                    <div class="container mx-auto">
+                        <!-- Start Tour Button - Top Right -->
+                        <button id="start-tour-btn" class="hero-tour-btn absolute top-4 right-4 py-2 px-4">
+                            <i class="fas fa-magic mr-2"></i>Start Tour
+                        </button>
+                        
+                        <div class="text-left max-w-4xl">
+                            <div class="flex items-center justify-start mb-4">
+                                <div class="bg-teal-200 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mr-2">Interactive Demo</div>
+                                <div class="bg-white bg-opacity-20 text-white px-3 py-1 rounded-full text-xs font-semibold">Core VCS Component</div>
+                            </div>
+                            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-3 leading-tight">
+                                LCT Effect on Distance-based NAS (NAS-D)
+                            </h1>
+                            <p class="text-teal-200 text-base sm:text-lg mb-6 max-w-3xl">
+                                Explore how Local Chronology Threshold (LCT) introduces flexibility for local chronological deviations by enabling tolerance zones in Distance-based NAS within the Video Comprehension Score framework.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Main Container -->
+                <main class="w-full max-w-7xl mx-auto p-6">
+
+        <div class="mb-8">
+            <div id="tour-step-intro" class="intro-card interactive-card rounded-xl p-6">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-lightbulb text-amber-600 text-xl mr-3"></i>
+                    <h2 class="text-xl font-semibold text-amber-800">Introduction to LCT Effect on Distance-based NAS</h2>
+                </div>
+                
+                <!-- Definition -->
+                <div class="bg-white bg-opacity-70 p-4 rounded-xl mb-6 border-l-4 border-amber-500">
+                    <p class="text-sm text-slate-700 mb-3">
+                        <strong>What is Local Chronology Tolerance (LCT) Effect on NAS-D?</strong> Local Chronology Threshold (LCT) introduces controlled flexibility to Distance-based NAS by creating "forgiveness neighborhoods" where chronological content can be locally rearranged without distance penalties. This addresses the limitation where minor narrative reorderings (like adjacent sentence swaps) are heavily penalized despite preserving meaning.
+                    </p>
+                    
+                    <!-- Warning -->
+                    <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                        <div class="flex items-start">
+                            <i class="fas fa-exclamation-triangle text-orange-500 mr-2 mt-0.5"></i>
+                            <div>
+                                <p class="text-xs text-orange-800 font-medium mb-1">⚠️ Prerequisites Required</p>
+                                <p class="text-xs text-orange-700">Please read the VCS research paper and understand the theoretical foundation of Distance-based Narrative Alignment Score before using this interactive demo. This visualization assumes familiarity with the underlying concepts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Prerequisites -->
+                    <div class="bg-blue-50 border border-blue-200 rounded-xl p-3 mt-3">
+                        <div class="flex items-start">
+                            <i class="fas fa-info-circle text-blue-500 mr-2 mt-0.5"></i>
+                            <div>
+                                <p class="text-xs text-blue-800 font-medium mb-1">📚 Additional Prerequisites</p>
+                                <p class="text-xs text-blue-700">Before exploring LCT effects on Distance-based NAS, we recommend visiting the <a href="../mapping-window/" class="font-bold underline hover:text-blue-900">Mapping Window Demo</a>, <a href="../best-match/" class="font-bold underline hover:text-blue-900">Best Match Demo</a>, and <a href="../distance-nas/" class="font-bold underline hover:text-blue-900">Distance-based NAS Demo</a> to understand the foundational concepts. LCT builds upon these by adding controlled flexibility to chronological alignment assessment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Comparison grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white bg-opacity-60 p-4 rounded-xl">
+                        <h4 class="font-semibold text-amber-700 mb-2 flex items-center">
+                            <i class="fas fa-times-circle text-red-500 mr-2"></i>Without LCT (Strict)
+                        </h4>
+                        <p class="text-sm text-slate-700">Every chronological deviation is penalized based on distance from the mapping window. Even minor adjacent swaps receive distance penalties, making the score overly sensitive to harmless local reorderings.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-60 p-4 rounded-xl">
+                        <h4 class="font-semibold text-amber-700 mb-2 flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>With LCT (Flexible)
+                        </h4>
+                        <p class="text-sm text-slate-700">Creates tolerance zones around mapping windows. Distance penalties within LCT zones are nullified: if raw_distance ≤ LCT_tolerance, then penalty = 0. This forgives natural narrative variations while maintaining chronological integrity.</p>
+                    </div>
+                </div>
+                
+                <details id="tour-step-2" class="mb-4">
+                    <summary class="font-semibold text-amber-700 mb-3 flex items-center"><i class="fas fa-chevron-right summary-icon"></i>LCT Neighborhood Explorer</summary>
+                    <div class="mt-4 space-y-8 ml-6 border-l-2 border-slate-200 pl-6">
+                        
+                        <div class="flex items-start">
+                            <div class="step-number mr-4">1</div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-slate-800 mb-2">LCT 1: 2×2 Neighborhood Forgiveness</h4>
+                                <p class="text-sm text-slate-600 mb-3">
+                                    <strong>Diagonal Mapping Analysis:</strong> In ideal alignment between reference and generated chunks, we observe a diagonal mapping where chunk 1 in generated sequence maps to chunk 1 in reference sequence, and so forth. When we swap adjacent chunks in the generated sequence (replacing 1st with 2nd and 2nd with 1st), the diagonal mapping reverses. In the similarity matrix, the 2nd chunk now in position 1 of the generated sequence exhibits high similarity with the 2nd chunk in position 2 of the reference sequence, creating a reversed diagonal pattern.
+                                </p>
+                                <div class="bg-blue-50/50 p-3 rounded-xl mb-3 border border-blue-200">
+                                    <p class="text-xs text-blue-700">
+                                        <strong>Distance-based NAS Behavior:</strong> Without LCT, this reversal incurs distance penalties. With LCT=1, these penalties are forgiven within the tolerance zone. For perfect ratios (max(ref,gen)/min(ref,gen) yielding whole numbers like 10/5, 9/3), LCT=1 enables swap with immediate neighbor without penalty.
+                                        <br><strong>⚠️ Caution:</strong> When ratios are non-integer (10/7, 9/8), behavior varies slightly—explore this in the demo.
+                                    </p>
+                                </div>
+                                <div id="lct1-explorer" class="lct-explorer-wrapper"></div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="step-number mr-4">2</div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-slate-800 mb-2">LCT 2: 3×3 Neighborhood Forgiveness</h4>
+                                <p class="text-sm text-slate-600 mb-3">
+                                    <strong>Extended Diagonal Transformations:</strong> With three chunks, the ideal diagonal mapping (1→1, 2→2, 3→3) can undergo more complex transformations. When chunks are reordered in the generated sequence—for example, (1,2,3) → (3,1,2) or (2,3,1)—the similarity matrix reveals shifted diagonal patterns where chunks map to positions up to 2 steps away from their original reference positions.
+                                </p>
+                                <div class="bg-green-50/50 p-3 rounded-xl mb-3 border border-green-200">
+                                    <p class="text-xs text-green-700">
+                                        <strong>Tolerance Zone Extension:</strong> LCT=2 creates a 3×3 mapping window tolerance zone, enabling rotation within 3-mapping-window-height blocks. This allows chunks to move up to 2 positions away from their ideal diagonal without penalty. While LCT=1 only forgives immediate neighbor swaps, LCT=2 accommodates rotation upto second neighbor and other swapping permutations within the 3x3 block.
+                                        <br><strong>⚠️ Caution:</strong> Non-integer ratios (10/7, 9/8) produce irregular mapping window heights, affecting tolerance zone behavior—experiment with different ratios in the demo.
+                                    </p>
+                                </div>
+                                 <div id="lct2-explorer" class="lct-explorer-wrapper"></div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2">
+                <div class="demo-card interactive-card rounded-xl p-4">
+                    <div class="text-center mb-4">
+                        <h2 class="text-lg font-bold text-slate-800">LCT Effect on Distance Penalties</h2>
+                    </div>
+                    
+                    <div class="relative w-full max-w-2xl mx-auto pt-4 pb-36 pl-20 pr-4">
+                        <div class="absolute top-1/2 -left-12 -translate-y-16 -rotate-90 font-semibold text-sm text-slate-600 whitespace-nowrap">Reference Chunks</div>
+                        <div class="absolute bottom-20 left-1/2 -translate-x-1/2 font-semibold text-sm text-slate-600">Generated Chunks</div>
+                        <div class="relative w-full aspect-square">
+                            <div id="chartGrid" class="absolute inset-0 bg-white rounded-xl chart-grid-background border border-slate-200">
+                                <svg id="gridLinesContainer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></svg>
+                                <div id="paddingBoxContainer"></div>
+                                <div id="idealMappingContainer"></div>
+                                <div id="dropTargetCellContainer"></div>
+                                <svg id="penaltyLinesContainer"></svg>
+                                <div id="genChunkMarkerContainer"></div>
+                                <div id="axisLabelContainerY"></div>
+                                <div id="axisLabelContainerX"></div>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-0 left-0 right-0 grid grid-cols-3 gap-x-4 gap-y-1 text-center text-xs text-slate-600 bg-white/80 p-2 rounded-md">
+                            <div><span>LCT Tolerance:</span><br><span id="currentToleranceDisplay" class="font-bold text-purple-600">0 blocks</span></div>
+                            <div><span class="text-red-600">Active Penalties:</span><br><span id="activePenaltiesCount" class="font-bold text-red-600">0</span></div>
+                            <div><span class="text-blue-600">Forgiven by LCT:</span><br><span id="forgivenPenaltiesCount" class="font-bold text-blue-600">0</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tour-step-next-steps" class="demo-card interactive-card rounded-xl p-6 mt-8">
+                    <h3 class="font-semibold text-slate-800 mb-3 flex items-center text-lg"><i class="fas fa-graduation-cap text-teal-600 mr-2"></i>Next Steps</h3>
+                    <div class="mt-2 space-y-4 text-sm text-slate-700 bg-slate-50/50 p-4 rounded-xl border border-slate-200">
+                        <p class="flex items-start"><strong class="mr-3 text-teal-600 text-base mt-0.5">📚</strong> <span>Once you understand the LCT concept here, visit the <a href="../distance-nas/" class="text-teal-600 hover:text-teal-800 underline font-semibold">Distance-based NAS demo</a> to see how LCT plays out in real examples with actual narrative content.</span></p>
+                        <p class="flex items-start"><strong class="mr-3 text-teal-600 text-base mt-0.5">🎯</strong> <span>Then explore the <a href="../nas/" class="text-teal-600 hover:text-teal-800 underline font-semibold">final NAS demo</a> to see how all components work together.</span></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="lg:col-span-1">
+                <div class="sticky top-6 space-y-6">
+                    
+                    <div id="tour-step-3" class="metrics-card interactive-card rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-blue-800 mb-4 flex items-center">
+                            <i class="fas fa-calculator text-blue-600 mr-2"></i>Live NAS-D Metrics
+                        </h3>
+                        <div class="space-y-3">
+                            <details class="text-center bg-blue-50/70 p-3 rounded-xl border border-blue-200 cursor-pointer">
+                                <summary class="list-none">
+                                    <label class="block text-sm font-medium text-blue-700 mb-1 cursor-pointer">Distance-based NAS-D</label>
+                                    <span id="nasScoreDisplay" class="text-4xl font-bold text-blue-600">-</span>
+                                    <span id="nasScorePreview" class="text-4xl font-bold ghost-score"></span>
+                                </summary>
+                            </details>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="text-center">
+                                    <label class="block text-sm font-medium text-blue-700 mb-1">Max Penalty</label>
+                                    <span id="maxPenaltyDisplay" class="text-2xl font-bold text-green-600">-</span>
+                                </div>
+                                <div class="text-center">
+                                    <label class="block text-sm font-medium text-blue-700 mb-1">Actual Penalty</label>
+                                    <span id="totalActualPenaltyDisplay" class="text-2xl font-bold text-red-600">-</span>
+                                    <span id="totalActualPenaltyPreview" class="text-2xl font-bold ghost-score"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="tour-step-4" class="formula-card interactive-card rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-purple-800 mb-4 flex items-center">
+                            <i class="fas fa-sliders-h text-purple-600 mr-2"></i>LCT Parameter
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <label for="lctSlider" class="text-sm font-medium text-purple-700">LCT Multiplier (τ<sub>LCT</sub>):</label>
+                                <span id="lctValueDisplay" class="text-lg font-bold text-purple-600 bg-purple-100 px-3 py-1 rounded">0</span>
+                            </div>
+                            <input type="range" id="lctSlider" min="0" max="8" value="0" class="w-full h-2 bg-purple-200 rounded-xl appearance-none cursor-pointer">
+                            <div id="lctDescription" class="text-xs text-purple-600"></div>
+                        </div>
+                    </div>
+
+                    <div id="tour-step-5" class="demo-card interactive-card rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-slate-800 mb-4 flex items-center">
+                            <i class="fas fa-th text-teal-600 mr-2"></i>Grid Configuration
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <label for="refLenInput" class="text-sm font-medium text-slate-700">Reference Chunks (Y):</label>
+                                <input type="number" id="refLenInput" min="1" max="10" value="10" 
+                                       class="w-16 px-2 py-1 neumorphic-input text-center text-sm">
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <label for="genLenInput" class="text-sm font-medium text-slate-700">Generated Chunks (X):</label>
+                                <input type="number" id="genLenInput" min="1" max="10" value="10" 
+                                       class="w-16 px-2 py-1 neumorphic-input text-center text-sm">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tour-step-6" class="demo-card interactive-card rounded-xl p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold text-slate-800 flex items-center">
+                                <i class="fas fa-magic text-purple-600 mr-2"></i>Test Scenarios
+                            </h3>
+                            <button id="testing-guide-btn" class="bg-teal-500 hover:bg-teal-600 text-white px-3 py-1.5 rounded-xl text-xs font-medium transition-transform transform hover:scale-105">
+                                <i class="fas fa-clipboard-check mr-1"></i>Testing Guide
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <button class="preset-btn text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="animateToScenario('optimal')"><i class="fas fa-check-circle mr-1"></i>Optimal</button>
+                            <button class="preset-btn text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="animateToScenario('lct1Rotation')"><i class="fas fa-sync-alt mr-1"></i>2x2 Rotation</button>
+                            <button class="preset-btn text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="animateToScenario('lct2Rotation')"><i class="fas fa-th-large mr-1"></i>3x3 Rotation</button>
+                            <button class="preset-btn text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="animateToScenario('deleteEnd')"><i class="fas fa-cut mr-1"></i>Delete End</button>
+                            <button class="preset-btn text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="animateToScenario('deleteMiddle')"><i class="fas fa-cut mr-1"></i>Delete Middle</button>
+                            <button class="preset-btn text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="animateToScenario('deleteBegin')"><i class="fas fa-cut mr-1"></i>Delete Begin</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+            </article>
+        </div>
+    </div>
+
+    <!-- Testing Guide Modal -->
+    <div id="testing-modal" class="testing-modal">
+        <div class="testing-modal-content">
+            <div class="testing-modal-header">
+                <h2 class="text-xl font-bold text-slate-800 flex items-center">
+                    <i class="fas fa-clipboard-check mr-2 text-teal-600"></i>
+                    LCT Effect Testing Guide
+                </h2>
+                <button id="testing-modal-close" class="testing-modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="testing-content">
+                <div class="test-category">
+                    <h3><i class="fas fa-play-circle"></i>Getting Started</h3>
+                    <div class="test-item">
+                        <h4>Understanding Local Chronology Tolerance (LCT) Effect on NAS-D</h4>
+                        <p>This guide will help you understand how Local Chronology Threshold (LCT) modifies Distance-based NAS behavior.</p>
+                        <ul class="test-checklist">
+                            <li>LCT creates tolerance zones around mapping windows where penalties are forgiven</li>
+                            <li>Raw distance ≤ LCT_tolerance results in penalty = 0</li>
+                            <li>It addresses the limitation where minor reorderings receive harsh penalties</li>
+                            <li>Natural narrative variations are forgiven while maintaining chronological integrity</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-category">
+                    <h3><i class="fas fa-sync-alt"></i>Testing 2×2 Rotation & LCT=1</h3>
+                    <div class="test-item">
+                        <h4>Adjacent Neighbor Swaps</h4>
+                        <p>Learn how LCT=1 handles immediate neighbor chronology changes (2×2 box rotations).</p>
+                        <ul class="test-checklist">
+                            <li>Click the "2×2 Rotation" scenario button</li>
+                            <li>Observe the score with LCT=0 (strict mode) - note the penalties</li>
+                            <li>Set LCT=1 using the slider and watch the score improve</li>
+                            <li>Notice how yellow forgiveness zones appear around mapping windows</li>
+                            <li>LCT=1 means you can swap immediate neighbors (within 2×2 blocks) without penalty</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-category">
+                    <h3><i class="fas fa-th-large"></i>Testing 3×3 Rotation & Progressive LCT</h3>
+                    <div class="test-item">
+                        <h4>Larger Block Rotations</h4>
+                        <p>See how different LCT values progressively forgive larger chronological deviations.</p>
+                        <ul class="test-checklist">
+                            <li>Click the "3×3 Rotation" scenario button</li>
+                            <li>Try LCT=0: Note the heavy penalties for 3×3 rotations</li>
+                            <li>Try LCT=1: Observe that 3×3 rotations are NOT fully forgiven</li>
+                            <li>Try LCT=2: Watch the score improve significantly as 3×3 rotations become forgiven</li>
+                            <li>Key insight: LCT=1 only supports immediate neighbors, LCT=2 supports 2-place swaps</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-category">
+                    <h3><i class="fas fa-cut"></i>Testing LCT Impact on Deleted Content</h3>
+                    <div class="test-item">
+                        <h4>Recall Effects and Content Masking</h4>
+                        <p>Understand how increasing LCT can sometimes lead to weaker content alignment detection.</p>
+                        <ul class="test-checklist">
+                            <li>Try "Delete End" scenario with LCT=0, then increase LCT gradually</li>
+                            <li>Try "Delete Middle" scenario with varying LCT values</li>
+                            <li>Try "Delete Begin" scenario with different LCT settings</li>
+                            <li>Notice how higher LCT may sometimes mask alignment issues</li>
+                            <li>Key insight: LCT can hide genuine content misalignment problems</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-category">
+                    <h3><i class="fas fa-hand-pointer"></i>Manual Exploration</h3>
+                    <div class="test-item">
+                        <h4>Interactive Marker Testing</h4>
+                        <p>Experiment freely to understand LCT behavior with any alignment pattern.</p>
+                        <ul class="test-checklist">
+                            <li>Drag markers to create neighbor swaps, then adjust LCT to see effects</li>
+                            <li>Create rotation patterns manually and test different LCT values</li>
+                            <li>Try reverse patterns and observe how LCT affects the penalties</li>
+                            <li>Experiment with partial misalignments and LCT tolerance</li>
+                            <li>Use different grid dimensions to see how LCT scaling works</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-category">
+                    <h3><i class="fas fa-cog"></i>Grid Configuration & Non-Integer Ratios</h3>
+                    <div class="test-item">
+                        <h4>Exploring LCT Behavior with Fractional Mappings</h4>
+                        <p>Investigate how LCT tolerance zones behave when reference and generated sequences create non-integer length ratios, leading to irregular mapping window heights.</p>
+                        <ul class="test-checklist">
+                            <li>Modify grid configuration by adjusting reference chunks (e.g., 10) and generated chunks (e.g., 7) to create fractional ratios</li>
+                            <li>Observe how non-integer ratios (10/7 ≈ 1.43, 9/8 = 1.125) affect mapping window height calculations</li>
+                            <li>Test different LCT values (0, 1, 2) with these fractional configurations</li>
+                            <li>Notice how tolerance zones become irregular when mapping windows have fractional heights</li>
+                            <li>Compare LCT effectiveness between integer ratios (6/3 = 2.0) and fractional ratios (10/7 ≈ 1.43)</li>
+                            <li>Document scenarios where LCT forgiveness patterns differ from expected whole-number behavior</li>
+                        </ul>
+                        <p class="text-sm text-amber-700 mt-2 italic">Key insight: Non-integer ratios create mapping windows with fractional heights, causing LCT tolerance zones to exhibit asymmetric forgiveness patterns that may not align perfectly with theoretical 2×2 or 3×3 neighborhood expectations.</p>
+                    </div>
+                </div>
+
+                <div class="test-category">
+                    <h3><i class="fas fa-lightbulb"></i>Key Insights</h3>
+                    <div class="test-item">
+                        <h4>Understanding LCT Design Principles</h4>
+                        <ul class="test-checklist">
+                            <li>LCT tolerance scales with mapping window height</li>
+                            <li>Forgiveness is local - only affects nearby deviations</li>
+                            <li>Global chronological disruptions remain penalized</li>
+                            <li>LCT value represents neighborhood size for forgiveness</li>
+                            <li>Higher LCT can mask genuine alignment issues - use carefully</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- DOM REFERENCES ---
+        const chartGrid = document.getElementById('chartGrid');
+        const paddingBoxContainer = document.getElementById('paddingBoxContainer');
+        const idealMappingContainer = document.getElementById('idealMappingContainer');
+        const genChunkMarkerContainer = document.getElementById('genChunkMarkerContainer');
+        const dropTargetCellContainer = document.getElementById('dropTargetCellContainer');
+        const penaltyLinesContainer = document.getElementById('penaltyLinesContainer');
+        const axisLabelContainerX = document.getElementById('axisLabelContainerX');
+        const axisLabelContainerY = document.getElementById('axisLabelContainerY');
+        const lctSlider = document.getElementById('lctSlider');
+        const lctValueDisplay = document.getElementById('lctValueDisplay');
+        const lctDescription = document.getElementById('lctDescription');
+        const maxPenaltyDisplay = document.getElementById('maxPenaltyDisplay');
+        const totalActualPenaltyDisplay = document.getElementById('totalActualPenaltyDisplay');
+        const nasScoreDisplay = document.getElementById('nasScoreDisplay');
+        const currentToleranceDisplay = document.getElementById('currentToleranceDisplay');
+        const activePenaltiesCount = document.getElementById('activePenaltiesCount');
+        const forgivenPenaltiesCount = document.getElementById('forgivenPenaltiesCount');
+        const chartTooltip = document.getElementById('chartTooltip');
+        chartTooltip.setAttribute('draggable', 'false');
+        const appBackground = document.getElementById('app-background');
+        const refLenInput = document.getElementById('refLenInput');
+        const genLenInput = document.getElementById('genLenInput');
+        const gridLinesContainer = document.getElementById('gridLinesContainer'); // New ref for SVG grid
+        // New interactive elements
+        const nasScorePreview = document.getElementById('nasScorePreview');
+        const totalActualPenaltyPreview = document.getElementById('totalActualPenaltyPreview');
+        // const formulaActual = document.getElementById('formulaActual'); // FIX: This element does not exist
+        // const formulaMax = document.getElementById('formulaMax'); // FIX: This element does not exist
+
+
+        // --- STATE ---
+        let numUnitsY = 10;
+        let numUnitsX = 10;
+        let markers_config = [];
+        let currentPrecisionWindows = [];
+        let isMarkerDragging = false;
+        let draggedMarkerId = null;
+        let animationFrameId = null;
+
+        // --- CONSTANTS & HELPERS ---
+        const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+        const storyChunks = [
+            "A hero was born...", "He trained for years...", "He faced the dragon...", "The dragon was fierce...",
+            "He found its weakness...", "With a final blow...", "The kingdom was saved...", "He became a legend...",
+            "Peace reigned again...", "The story ends."
+        ];
+
+        // --- TOUR MANAGER ---
+        const tourManager = {
+            isActive: false, currentStep: 0, overlay: document.getElementById('tour-overlay'),
+            steps: [ 
+                { selector: '#tour-step-intro', text: 'Welcome to LCT Effect on Distance-based NAS! This demo shows how Local Chronological Tolerance creates forgiveness zones around mapping windows. Visit Mapping Window, Best Match, and Distance-based NAS demos first to understand the foundational concepts.', position: 'bottom' }, 
+                { selector: '#tour-step-2', text: 'Click to expand the neighborhood explorer. This shows how LCT forgives local chronological reorderings by creating tolerance zones.', position: 'bottom' }, 
+                { selector: '.lg\\:col-span-2 > .demo-card', text: 'This grid visualizes LCT effects in real-time. Green rectangles are ideal mapping windows, yellow zones show LCT forgiveness areas. Drag purple markers to test penalty calculations.', position: 'top' }, 
+                { selector: '#tour-step-5', text: 'Adjust grid configuration parameters to see how different text length ratios affect LCT window calculations. Try different reference/generated length ratios.', position: 'left' }, 
+                { selector: '#tour-step-6', text: 'Try these preset scenarios to explore different LCT effects on narrative disruption patterns. Each button demonstrates a specific forgiveness pattern. Check the Testing Guide for detailed exploration strategies.', position: 'left' },
+                { selector: '#tour-step-4', text: 'LCT Parameter slider controls forgiveness tolerance. Higher values create larger yellow tolerance zones around mapping windows, reducing penalties for minor deviations.', position: 'left' }, 
+                { selector: '#tour-step-3', text: 'Live Distance-based NAS score updates with real-time penalty calculations. Click the score to see the underlying formula. Watch how LCT reduces penalties by expanding forgiveness zones.', position: 'left' },
+                { selector: '#tour-step-next-steps', text: 'After exploring this demo, check out the Distance-based NAS demo to try the LCT parameter there, and see how all components work together.', position: 'top' } 
+            ],
+            start: function() { this.isActive = true; this.currentStep = 0; this.overlay.style.pointerEvents = 'auto'; this.overlay.style.opacity = '1'; this.addClickOutsideHandler(); this.showStep(); },
+            next: function() { this.cleanupCurrentStep(); this.currentStep++; if (this.currentStep < this.steps.length) { setTimeout(() => this.showStep(), 400); } else { this.end(); } },
+            showStep: function() { const step = this.steps[this.currentStep]; const targetElement = document.querySelector(step.selector); if (!targetElement) { this.end(); return; } targetElement.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' }); setTimeout(() => { targetElement.classList.add('tour-highlight'); const callout = document.createElement('div'); callout.id = 'tour-callout'; callout.innerHTML = `<p class="text-sm mb-4">${step.text}</p><div class="flex justify-end"><button onclick="tourManager.next()">Next &rarr;</button></div>`; document.body.appendChild(callout); const targetRect = targetElement.getBoundingClientRect(); const calloutRect = callout.getBoundingClientRect(); const margin = 15; const scrollY = window.scrollY || document.documentElement.scrollTop; const scrollX = window.scrollX || document.documentElement.scrollLeft; let top, left; switch (step.position) { case 'bottom': top = targetRect.bottom + scrollY + margin; left = targetRect.left + scrollX + (targetRect.width / 2) - (calloutRect.width / 2); break; case 'top': top = targetRect.top + scrollY - calloutRect.height - margin; left = targetRect.left + scrollX + (targetRect.width / 2) - (calloutRect.width / 2); break; case 'left': top = targetRect.top + scrollY + (targetRect.height / 2) - (calloutRect.height / 2); left = targetRect.left + scrollX - calloutRect.width - margin; break; case 'right': default: top = targetRect.top + scrollY + (targetRect.height / 2) - (calloutRect.height / 2); left = targetRect.right + scrollX + margin; break; } const viewportRight = scrollX + window.innerWidth; const viewportBottom = scrollY + window.innerHeight; if (left < scrollX + margin) left = scrollX + margin; if (left + calloutRect.width > viewportRight - margin) left = viewportRight - calloutRect.width - margin; if (top < scrollY + margin) top = scrollY + margin; if (top + calloutRect.height > viewportBottom - margin) top = viewportBottom - calloutRect.height - margin; callout.style.top = `${top}px`; callout.style.left = `${left}px`; requestAnimationFrame(() => { callout.classList.add('visible'); }); }, 350); },
+            cleanupCurrentStep: function() { const oldHighlight = document.querySelector('.tour-highlight'); if (oldHighlight) oldHighlight.classList.remove('tour-highlight'); const oldCallout = document.getElementById('tour-callout'); if (oldCallout) oldCallout.remove(); },
+            end: function() { this.cleanupCurrentStep(); this.isActive = false; this.overlay.style.opacity = '0'; this.removeClickOutsideHandler(); setTimeout(() => this.overlay.style.pointerEvents = 'none', 400); },
+            addClickOutsideHandler: function() { this.clickOutsideHandler = (e) => { if (this.isActive) { const callout = document.getElementById('tour-callout'); if (callout && !callout.contains(e.target)) { this.end(); } } }; document.addEventListener('click', this.clickOutsideHandler); },
+            removeClickOutsideHandler: function() { if (this.clickOutsideHandler) { document.removeEventListener('click', this.clickOutsideHandler); this.clickOutsideHandler = null; } }
+        };
+
+        // --- DYNAMIC VISUALS ---
+        function updateDynamicBackground(nasScore) { const score = isNaN(nasScore) ? 0 : nasScore; const hue = 120 * score; const saturation = 30 + 40 * score; const lightness = 85 + 10 * score; const startColor = `hsl(170, 20%, 90%)`; const endColor = `hsl(190, 30%, 95%)`; appBackground.style.background = `linear-gradient(135deg, ${startColor} 0%, ${endColor} 100%)`; }
+        function updateLctDescription() { const lctValue = parseInt(lctSlider.value); const descriptions = [ "Tolerance: 0 blocks (Strict alignment)", "Tolerance: Low (2×2 neighbor rotations forgiven)", "Tolerance: Moderate (3×3 group rotations forgiven)", "Tolerance: High (4×4 block rotations forgiven)", "Tolerance: Very High (5×5 section rotations forgiven)", "Tolerance: Extreme (6×6 region rotations forgiven)", "Tolerance: Maximum (7×7 area rotations forgiven)", "Tolerance: Ultra (8×8 zone rotations forgiven)", "Tolerance: Complete (9×9 full rotations forgiven)", "Tolerance: Grid-level forgiveness"]; const colors = ['border-red-200 bg-red-50', 'border-purple-200 bg-purple-50', 'border-blue-200 bg-blue-50', 'border-green-200 bg-green-50', 'border-yellow-200 bg-yellow-50', 'border-orange-200 bg-orange-50', 'border-pink-200 bg-pink-50', 'border-indigo-200 bg-indigo-50', 'border-gray-200 bg-gray-50', 'border-gray-400 bg-gray-200']; lctDescription.innerHTML = `<div class="p-2 rounded border ${colors[Math.min(lctValue, 9)]}">${descriptions[Math.min(lctValue, 9)]}</div>`; }
+        
+        // --- CORE LOGIC ---
+        function get_mapping_windows_js(refLen, genLen) { const isRefLonger = refLen >= genLen; const longerLen = isRefLonger ? refLen : genLen; const shorterLen = isRefLonger ? genLen : refLen; if (shorterLen === 0) return { precision_windows: [], recall_windows: [] }; const slope = longerLen / shorterLen; const mappingWindowHeight = Math.ceil(slope); let direct_windows = []; for (let i = 0; i < shorterLen; i++) { const idx_point = i * slope; const start = Math.floor(idx_point); const end = Math.min(start + mappingWindowHeight, longerLen); direct_windows.push({ start, end }); } let reverse_windows = Array(longerLen).fill(null).map((_, longIdx) => { const shortIndices = direct_windows.map((dw, shortIdx) => (dw.start <= longIdx && longIdx < dw.end) ? shortIdx : -1).filter(idx => idx !== -1); if (shortIndices.length > 0) { return { start: Math.min(...shortIndices), end: Math.max(...shortIndices) + 1 }; } else { return null; }}); for (let i = 0; i < longerLen; i++) { if (reverse_windows[i] === null) { const proportionalYPos = Math.max(0, Math.min(shorterLen - 1, Math.floor((i / longerLen) * shorterLen))); reverse_windows[i] = { start: proportionalYPos, end: Math.min(proportionalYPos + 1, shorterLen) };}} return isRefLonger ? { precision_windows: direct_windows, recall_windows: reverse_windows } : { precision_windows: reverse_windows, recall_windows: direct_windows }; }
+        function calculate_lct_window_js(y_axis, x_axis) { if (x_axis === 0) return 0; const ratio = y_axis / x_axis; const mappingWindowHeight = Math.ceil(ratio); const ratioDecimalPart = ratio - Math.floor(ratio); if (y_axis <= x_axis) { return mappingWindowHeight; } else { if (0 < ratioDecimalPart && ratioDecimalPart <= 0.5) { return mappingWindowHeight - 1; } else { return mappingWindowHeight; } } }
+        function calculate_penalty_for_marker(markerX, markerY, lct, idealWindow) { if (!idealWindow) return { penalty: 1.0, forgiven: false, rawDistance: numUnitsY }; let dist; if (markerY >= idealWindow.start && markerY < idealWindow.end) { dist = 0; } else if (markerY < idealWindow.start) { dist = idealWindow.start - markerY; } else { dist = markerY - (idealWindow.end - 1); } const tolerance = lct * calculate_lct_window_js(numUnitsY, numUnitsX); const effective_dist = (dist <= tolerance) ? 0 : dist; return { penalty: numUnitsY > 0 ? effective_dist / numUnitsY : 0, forgiven: dist > 0 && effective_dist === 0, rawDistance: dist }; }
+        function calculate_max_penalty_js() { let sum_max_dist = 0; if (!currentPrecisionWindows || currentPrecisionWindows.length === 0) return 0; currentPrecisionWindows.forEach(window => { sum_max_dist += Math.max(window.start, (numUnitsY - 1) - (window.end - 1)); }); return numUnitsY > 0 ? sum_max_dist / numUnitsY : 0.0; }
+        function calculate_all_scores(markers, lct) { let totalPenalty = 0; markers.forEach(marker => { const idealWindow = currentPrecisionWindows[marker.currentX]; if(idealWindow) { totalPenalty += calculate_penalty_for_marker(marker.currentX, marker.currentY, lct, idealWindow).penalty; } }); const maxPenalty = calculate_max_penalty_js(); const nasScore = maxPenalty > 0 ? (1 - (totalPenalty / maxPenalty)) : (totalPenalty > 0 ? 0 : 1); return { totalPenalty, maxPenalty, nasScore: Math.max(0, nasScore) }; }
+
+        // --- ANIMATION & SCENARIO FUNCTIONS ---
+        function animateNumber(element, startValue, endValue, duration = 500) { let startTimestamp = null; const step = (timestamp) => { if (!startTimestamp) startTimestamp = timestamp; const progress = Math.min((timestamp - startTimestamp) / duration, 1); const easedProgress = easeOutCubic(progress); const currentValue = startValue + (endValue - startValue) * easedProgress; const isInt = element.id.includes("Count"); element.textContent = isInt ? Math.round(currentValue) : currentValue.toFixed(3); if (progress < 1) { window.requestAnimationFrame(step); } }; window.requestAnimationFrame(step); }
+        
+        function getScenarioConfig(scenarioType) {
+            let config = { targetRefLen: 10, targetGenLen: 10, yMapping: (i) => i };
+            switch(scenarioType) {
+                case 'optimal': break;
+                case 'lct1Rotation': config.yMapping = (i) => (i === 0) ? 1 : (i === 1) ? 0 : i; break;
+                case 'lct2Rotation': config.yMapping = (i) => (i === 0) ? 1 : (i === 1) ? 2 : (i === 2) ? 0 : i; break;
+                case 'deleteEnd': config.targetGenLen = 7; break;
+                case 'deleteBegin': config.targetGenLen = 7; config.yMapping = (i) => i + 3; break;
+                case 'deleteMiddle': config.targetGenLen = 7; config.yMapping = (i) => (i < 3) ? i : i + 3; break;
+            }
+            return config;
+        }
+
+        function animateToScenario(scenarioType) {
+            if (animationFrameId) cancelAnimationFrame(animationFrameId);
+            const startPositions = JSON.parse(JSON.stringify(markers_config));
+            const startGenLen = numUnitsX;
+            const config = getScenarioConfig(scenarioType);
+            numUnitsY = config.targetRefLen; numUnitsX = config.targetGenLen;
+            refLenInput.value = numUnitsY; genLenInput.value = numUnitsX;
+            updateScenarioTip(scenarioType);
+            lctSlider.max = Math.max(0, numUnitsY - 1);
+            if (parseInt(lctSlider.value) > lctSlider.max) lctSlider.value = lctSlider.max;
+            lctValueDisplay.textContent = lctSlider.value;
+            updateLctDescription();
+            const windows = get_mapping_windows_js(numUnitsY, numUnitsX);
+            currentPrecisionWindows = windows.precision_windows;
+            renderAll(); // Simplified call to renderAll
+            const targetPositions = [];
+            for(let i = 0; i < numUnitsX; i++) { targetPositions.push({ id: i, currentX: i, currentY: config.yMapping(i) }); }
+            const duration = 800; const startTime = performance.now();
+            function tick(currentTime) {
+                const elapsedTime = currentTime - startTime;
+                const rawProgress = Math.min(elapsedTime / duration, 1);
+                const progress = easeOutCubic(rawProgress);
+                const animatedMarkers = []; const maxMarkers = Math.max(startGenLen, numUnitsX);
+                for (let i = 0; i < maxMarkers; i++) {
+                    const startMarker = startPositions[i];
+                    const targetMarker = targetPositions[i];
+                    if (startMarker && targetMarker) { const newY = startMarker.currentY + (targetMarker.currentY - startMarker.currentY) * progress; animatedMarkers.push({ ...targetMarker, currentY: newY, opacity: 1 });
+                    } else if (!startMarker && targetMarker) { const idealY = currentPrecisionWindows[i]?.start ?? Math.floor(numUnitsY / 2); const newY = idealY + (targetMarker.currentY - idealY) * progress; animatedMarkers.push({ ...targetMarker, currentY: newY, opacity: progress });
+                    } else if (startMarker && !targetMarker) { animatedMarkers.push({ ...startMarker, opacity: 1 - progress }); }
+                }
+                renderAnimatedMarkersAndScores(animatedMarkers);
+                if (rawProgress < 1) { animationFrameId = requestAnimationFrame(tick);
+                } else { animationFrameId = null; markers_config = targetPositions; renderAll(); }
+            }
+            animationFrameId = requestAnimationFrame(tick);
+        }
+
+        function updateScenarioTip(scenarioType) {
+            const tips = {
+                optimal: "This is a perfect 1-to-1 alignment. The NAS-D score is 1.0, and there are no penalties.",
+                lct1Rotation: "A minor 2x2 reordering. Without LCT, this creates penalties. Set LCT=1 to see them forgiven, boosting the score.",
+                lct2Rotation: "A more complex 3x3 rotation. This requires LCT=2 to be fully forgiven. Notice the larger initial penalty.",
+                deleteEnd: "The generated sequence is shorter, ending prematurely. This lowers the max possible penalty but still results in a poor score.",
+                deleteMiddle: "A gap in the middle creates a significant chronological disruption, heavily penalizing the score as markers are misaligned.",
+                deleteBegin: "Missing the start of a sequence is costly. All generated chunks are mapped to later reference chunks, creating large penalties."
+            };
+            // document.getElementById('scenarioTip').innerHTML = `<p><strong>Tip:</strong> ${tips[scenarioType] || tips.optimal}</p>`;
+        }
+
+        // --- TOOLTIP & PREVIEW FUNCTIONS ---
+        function updateChartTooltip(e, markerId) { const marker = markers_config.find(m => m.id === markerId); if (!marker) return; chartTooltip.classList.add('visible'); chartTooltip.style.left = `${e.clientX + 15}px`; chartTooltip.style.top = `${e.clientY + 15}px`; const lctValue = parseInt(lctSlider.value); const idealWindow = currentPrecisionWindows[marker.currentX]; const penaltyInfo = calculate_penalty_for_marker(marker.currentX, marker.currentY, lctValue, idealWindow); const mappingText = `Gen Chunk ${marker.currentX} ↔ Ref Chunk ${marker.currentY}`; let statusClass, penaltyText; if (penaltyInfo.penalty > 0) { statusClass = 'penalty'; penaltyText = `<hr class="my-1 border-slate-500"><strong class="text-red-400">Penalty Active!</strong><br>Raw Distance: ${penaltyInfo.rawDistance}<br>Normalized: ${penaltyInfo.penalty.toFixed(3)}`; } else if (penaltyInfo.forgiven) { statusClass = 'forgiven'; penaltyText = `<hr class="my-1 border-slate-500"><strong class="text-blue-400">Forgiven by LCT</strong><br>Raw Distance: ${penaltyInfo.rawDistance}`; } else { statusClass = 'in-window'; penaltyText = `<hr class="my-1 border-slate-500"><strong class="text-green-400">In Window</strong><br>No Penalty`; } chartTooltip.className = `visible ${statusClass}`; chartTooltip.innerHTML = mappingText + penaltyText; }
+        function hideChartTooltip() { chartTooltip.classList.remove('visible'); }
+        function showScorePreview(tempMarkers, lctValue) {
+            const { totalPenalty, nasScore } = calculate_all_scores(tempMarkers, lctValue);
+            nasScorePreview.textContent = `→ ${nasScore.toFixed(3)}`;
+            totalActualPenaltyPreview.textContent = `→ ${totalPenalty.toFixed(3)}`;
+        }
+        function hideScorePreview() { nasScorePreview.textContent = ''; totalActualPenaltyPreview.textContent = ''; }
+
+        // --- RENDER FUNCTIONS ---
+        function renderAll() {
+             renderGridLines();
+             renderIdealMappingWindows();
+             renderPadding();
+             renderGenChunkMarkersAndScores();
+             renderDropTargetCells(true); // Always force re-render of drop targets on full render
+             renderAxisLabels();
+        }
+
+        function renderGridLines() {
+            gridLinesContainer.innerHTML = ''; // Clear old lines
+            // Vertical lines
+            for (let i = 1; i < numUnitsX; i++) {
+                const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                const x = i / numUnitsX * 100;
+                line.setAttribute('x1', `${x}%`);
+                line.setAttribute('y1', '0%');
+                line.setAttribute('x2', `${x}%`);
+                line.setAttribute('y2', '100%');
+                line.setAttribute('stroke', '#e2e8f0');
+                line.setAttribute('stroke-width', '1');
+                gridLinesContainer.appendChild(line);
+            }
+            // Horizontal lines
+            for (let i = 1; i < numUnitsY; i++) {
+                const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                const y = i / numUnitsY * 100;
+                line.setAttribute('x1', '0%');
+                line.setAttribute('y1', `${y}%`);
+                line.setAttribute('x2', '100%');
+                line.setAttribute('y2', `${y}%`);
+                line.setAttribute('stroke', '#e2e8f0');
+                line.setAttribute('stroke-width', '1');
+                gridLinesContainer.appendChild(line);
+            }
+        }
+        
+        function renderIdealMappingWindows() { 
+            // Apply element reuse strategy for smooth transitions
+            if (!currentPrecisionWindows) return; 
+            const existingWindows = Array.from(idealMappingContainer.children);
+            
+            currentPrecisionWindows.forEach((window, gen_chunk_idx) => { 
+                let div = existingWindows[gen_chunk_idx];
+                if (!div) {
+                    div = document.createElement('div'); 
+                    div.className = 'ideal-mapping-window'; 
+                    idealMappingContainer.appendChild(div);
+                }
+                
+                // Update position and size - CSS transitions handle the animation
+                div.style.left = `calc(${gen_chunk_idx}*100%/${numUnitsX})`;
+                div.style.width = `calc(100%/${numUnitsX})`;
+                div.style.bottom = `calc(${window.start}*100%/${numUnitsY})`;
+                div.style.height = `calc(${(window.end - window.start)}*100%/${numUnitsY})`;
+            }); 
+            
+            // Remove extra windows
+            while (idealMappingContainer.children.length > currentPrecisionWindows.length) {
+                idealMappingContainer.lastChild.remove();
+            }
+        }
+        function renderPadding() {
+            const lctValue = parseInt(lctSlider.value, 10);
+            if (!currentPrecisionWindows) {
+                paddingBoxContainer.innerHTML = '';
+                return;
+            }
+
+            const lctUnitHeight = calculate_lct_window_js(numUnitsY, numUnitsX);
+
+            // Ensure there are enough padding windows for all precision windows
+            while (paddingBoxContainer.children.length < currentPrecisionWindows.length) {
+                const div = document.createElement('div');
+                div.className = 'lct-padding-window';
+                paddingBoxContainer.appendChild(div);
+            }
+            // Remove extra windows if the number of chunks decreases
+            while (paddingBoxContainer.children.length > currentPrecisionWindows.length) {
+                paddingBoxContainer.lastChild.remove();
+            }
+            
+            currentPrecisionWindows.forEach((win, idx) => {
+                const div = paddingBoxContainer.children[idx];
+                if (!div) return;
+
+                div.style.left = `calc(${idx}*100%/${numUnitsX})`;
+                div.style.width = `calc(100%/${numUnitsX})`;
+
+                if (lctValue === 0) {
+                    // Collapse the window to zero height at the center of the ideal window for a smooth animation start
+                    const idealWindowHeight = win.end - win.start;
+                    const centerPoint = win.start + idealWindowHeight / 2;
+                    div.style.bottom = `calc(${centerPoint} * 100% / ${numUnitsY})`;
+                    div.style.height = '0px';
+                    div.style.opacity = '0';
+                } else {
+                    // Expand the window to its calculated size
+                    const padBottom = Math.max(0, win.start - (lctValue * lctUnitHeight));
+                    const padTop = Math.min(numUnitsY, win.end + (lctValue * lctUnitHeight));
+                    div.style.bottom = `calc(${padBottom} * 100% / ${numUnitsY})`;
+                    div.style.height = `calc(${(padTop - padBottom)} * 100% / ${numUnitsY})`;
+                    div.style.opacity = '1';
+                }
+            });
+        }
+        
+        function renderAnimatedMarkersAndScores(animatedMarkers) {
+            genChunkMarkerContainer.innerHTML = '';
+            const lctValue = parseInt(lctSlider.value);
+            animatedMarkers.forEach(markerData => {
+                if (typeof markerData.opacity !== 'number' || markerData.opacity > 0.01) {
+                    const markerDiv = document.createElement('div');
+                    markerDiv.className = 'gen-marker'; 
+                    markerDiv.dataset.id = markerData.id;
+                    markerDiv.setAttribute('draggable', 'true');
+                    markerDiv.style.left = `calc(${(markerData.currentX + 0.5)}*100%/${numUnitsX} - 6px)`;
+                    markerDiv.style.bottom = `calc(${(markerData.currentY + 0.5)}*100%/${numUnitsY} - 6px)`;
+                    markerDiv.style.opacity = markerData.opacity;
+                    
+                    const idealWindow = currentPrecisionWindows[markerData.currentX];
+                    const penaltyInfo = calculate_penalty_for_marker(markerData.currentX, markerData.currentY, lctValue, idealWindow);
+                    const penaltyLabel = document.createElement('span'); 
+                    penaltyLabel.className = 'marker-penalty-label';
+                    if (penaltyInfo.penalty > 0) { 
+                        penaltyLabel.innerHTML = `<i class="fas fa-times-circle text-red-500 mr-1"></i>Penalty`; 
+                        penaltyLabel.style.borderColor = '#fca5a5';
+                    } else if (penaltyInfo.forgiven) { 
+                        penaltyLabel.innerHTML = `<i class="fas fa-check-circle text-blue-500 mr-1"></i>Forgiven`; 
+                        penaltyLabel.style.borderColor = '#93c5fd';
+                    } else { 
+                        penaltyLabel.innerHTML = `<i class="fas fa-check-circle text-green-500 mr-1"></i>In Window`; 
+                        penaltyLabel.style.borderColor = '#86efac'; 
+                    }
+                    markerDiv.appendChild(penaltyLabel);
+                    
+                    // Add event listeners for dragging functionality and tooltips
+                    markerDiv.addEventListener('dragstart', handleDragStart);
+                    markerDiv.addEventListener('dragend', handleDragEnd);
+                    markerDiv.addEventListener('mouseover', (e) => { 
+                        if (!isMarkerDragging) updateChartTooltip(e, markerData.id); 
+                    });
+                    markerDiv.addEventListener('mouseout', () => { 
+                        if (!isMarkerDragging) hideChartTooltip(); 
+                    });
+                    
+                    genChunkMarkerContainer.appendChild(markerDiv);
+                }
+            });
+        }
+        function renderGenChunkMarkersAndScores(isAnimating = false) {
+            penaltyLinesContainer.innerHTML = '';
+            const lctValue = parseInt(lctSlider.value);
+            let totalPenalty = 0, activePenalties = 0, forgivenPenalties = 0;
+            
+            // Apply element reuse strategy for smooth transitions
+            const existingMarkers = Array.from(genChunkMarkerContainer.children);
+            
+            markers_config.forEach((markerData, index) => {
+                // Reuse existing marker or create new one
+                let markerDiv = existingMarkers[index];
+                if (!markerDiv) {
+                    markerDiv = document.createElement('div');
+                    markerDiv.className = 'gen-marker'; 
+                    markerDiv.setAttribute('draggable', 'true');
+                    
+                    const penaltyLabel = document.createElement('span'); 
+                    penaltyLabel.className = 'marker-penalty-label';
+                    markerDiv.appendChild(penaltyLabel);
+                    
+                    markerDiv.addEventListener('dragstart', handleDragStart);
+                    markerDiv.addEventListener('dragend', handleDragEnd);
+                    markerDiv.addEventListener('mouseover', (e) => { if (!isMarkerDragging) updateChartTooltip(e, markerData.id); });
+                    markerDiv.addEventListener('mouseout', () => { if (!isMarkerDragging) hideChartTooltip(); });
+                    genChunkMarkerContainer.appendChild(markerDiv);
+                }
+                
+                // Update marker properties
+                markerDiv.dataset.id = markerData.id;
+                markerDiv.style.left = `calc(${(markerData.currentX + 0.5)}*100%/${numUnitsX} - 6px)`;
+                markerDiv.style.bottom = `calc(${(markerData.currentY + 0.5)}*100%/${numUnitsY} - 6px)`;
+                
+                const idealWindow = currentPrecisionWindows[markerData.currentX];
+                const penaltyInfo = calculate_penalty_for_marker(markerData.currentX, markerData.currentY, lctValue, idealWindow);
+                totalPenalty += penaltyInfo.penalty;
+                
+                if (penaltyInfo.penalty > 0 && idealWindow) {
+                    activePenalties++;
+                }
+                if (penaltyInfo.forgiven) forgivenPenalties++;
+                
+                const penaltyLabel = markerDiv.querySelector('.marker-penalty-label');
+                if (penaltyInfo.penalty > 0) { 
+                    penaltyLabel.innerHTML = `<i class="fas fa-times-circle text-red-500 mr-1"></i>Penalty`; 
+                    penaltyLabel.style.borderColor = '#fca5a5';
+                } else if (penaltyInfo.forgiven) { 
+                    penaltyLabel.innerHTML = `<i class="fas fa-check-circle text-blue-500 mr-1"></i>Forgiven`; 
+                    penaltyLabel.style.borderColor = '#93c5fd';
+                } else { 
+                    penaltyLabel.innerHTML = `<i class="fas fa-check-circle text-green-500 mr-1"></i>In Window`; 
+                    penaltyLabel.style.borderColor = '#86efac';
+                }
+            });
+            
+            // Remove extra markers
+            while (genChunkMarkerContainer.children.length > markers_config.length) {
+                genChunkMarkerContainer.lastChild.remove();
+            }
+            if (isAnimating) return;
+            const { totalPenalty: calculatedTotalPenalty, maxPenalty, nasScore } = calculate_all_scores(markers_config, lctValue);
+            animateNumber(maxPenaltyDisplay, parseFloat(maxPenaltyDisplay.textContent) || 0, maxPenalty);
+            animateNumber(totalActualPenaltyDisplay, parseFloat(totalActualPenaltyDisplay.textContent) || 0, calculatedTotalPenalty);
+            animateNumber(nasScoreDisplay, parseFloat(nasScoreDisplay.textContent) || 0, nasScore);
+            animateNumber(activePenaltiesCount, parseInt(activePenaltiesCount.textContent) || 0, activePenalties);
+            animateNumber(forgivenPenaltiesCount, parseInt(forgivenPenaltiesCount.textContent) || 0, forgivenPenalties);
+            // FIX: These elements do not exist in the DOM, causing a TypeError.
+            // formulaActual.textContent = totalPenalty.toFixed(3);
+            // formulaMax.textContent = maxPenalty.toFixed(3);
+            const tolerance = lctValue * calculate_lct_window_js(numUnitsY, numUnitsX);
+            currentToleranceDisplay.textContent = `${tolerance} blocks`;
+            updateDynamicBackground(nasScore);
+        }
+
+        function renderDropTargetCells(force = false) {
+            if (dropTargetCellContainer.childElementCount > 0 && !force) return;
+            dropTargetCellContainer.innerHTML = '';
+            for (let y = 0; y < numUnitsY; y++) {
+                for (let x = 0; x < numUnitsX; x++) {
+                    const cell = document.createElement('div');
+                    cell.className = 'grid-cell-overlay';
+                    cell.dataset.x = x; cell.dataset.y = y;
+                    cell.style.width = `calc(100%/${numUnitsX})`; cell.style.height = `calc(100%/${numUnitsY})`;
+                    cell.style.left = `calc(${x}*100%/${numUnitsX})`; cell.style.bottom = `calc(${y}*100%/${numUnitsY})`;
+                    cell.addEventListener('dragover', handleDragOver);
+                    cell.addEventListener('dragleave', handleDragLeave);
+                    cell.addEventListener('drop', handleDrop);
+                    dropTargetCellContainer.appendChild(cell);
+                }
+            }
+        }
+        function renderAxisLabels() { axisLabelContainerX.innerHTML = ''; axisLabelContainerY.innerHTML = ''; const yStep = Math.max(1, Math.ceil(numUnitsY / 8)); for (let i = 0; i < numUnitsY; i+=yStep) { const lbl = document.createElement('div'); lbl.className = 'axis-label'; lbl.textContent = i; lbl.style.left = '-2rem'; lbl.style.bottom = `calc(${i}*100%/${numUnitsY} + 50%/${numUnitsY})`; lbl.style.transform = 'translateY(50%)'; axisLabelContainerY.appendChild(lbl); } const xStep = Math.max(1, Math.ceil(numUnitsX / 8)); for (let i = 0; i < numUnitsX; i+=xStep) { const lbl = document.createElement('div'); lbl.className = 'axis-label'; lbl.textContent = i; lbl.style.bottom = '-1.5rem'; lbl.style.left = `calc(${i}*100%/${numUnitsX} + 50%/${numUnitsX})`; lbl.style.transform = 'translateX(-50%)'; axisLabelContainerX.appendChild(lbl); } }
+
+        // --- DRAG HANDLERS ---
+        function handleDragStart(e) { draggedMarkerId = parseInt(e.target.dataset.id); e.target.classList.add('dragging'); e.dataTransfer.effectAllowed = 'move'; e.dataTransfer.setData('text/plain', draggedMarkerId); isMarkerDragging = true; hideChartTooltip(); }
+        
+        function handleDragEnd(e) {
+            isMarkerDragging = false;
+            document.querySelector(`.gen-marker[data-id='${draggedMarkerId}']`)?.classList.remove('dragging');
+            document.querySelectorAll('.drag-over').forEach(el => el.classList.remove('drag-over'));
+            hideScorePreview();
+            renderAll();
+        }
+
+        function handleDragOver(e) {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'move';
+            if (e.currentTarget.classList.contains('grid-cell-overlay')) {
+                document.querySelectorAll('.drag-over').forEach(el => el.classList.remove('drag-over'));
+                e.currentTarget.classList.add('drag-over');
+                const targetX = parseInt(e.currentTarget.dataset.x);
+                const targetY = parseInt(e.currentTarget.dataset.y);
+                const tempMarkers = JSON.parse(JSON.stringify(markers_config));
+                const draggedMarker = tempMarkers.find(m => m.id === draggedMarkerId);
+                
+                if (draggedMarker) {
+                    const originalX = markers_config.find(m => m.id === draggedMarkerId).currentX;
+                    const markerAtTarget = tempMarkers.find(m => m.currentX === targetX && m.id !== draggedMarkerId);
+
+                    if (markerAtTarget && targetX !== originalX) {
+                        markerAtTarget.currentX = originalX;
+                    }
+                    draggedMarker.currentX = targetX;
+                    draggedMarker.currentY = targetY;
+                    showScorePreview(tempMarkers, parseInt(lctSlider.value));
+                }
+            }
+        }
+        function handleDragLeave(e) {
+            if (e.currentTarget.classList.contains('grid-cell-overlay')) {
+                e.currentTarget.classList.remove('drag-over');
+            }
+            hideScorePreview(); // Hide preview when leaving grid area
+        }
+
+        function handleDrop(e) {
+            e.preventDefault(); hideScorePreview();
+            if (!e.currentTarget.classList.contains('grid-cell-overlay')) return;
+            e.currentTarget.classList.remove('drag-over');
+            const targetX = parseInt(e.currentTarget.dataset.x); const targetY = parseInt(e.currentTarget.dataset.y);
+            const draggedMarker = markers_config.find(m => m.id === draggedMarkerId); if (!draggedMarker) return;
+            const oldX = draggedMarker.currentX;
+            const markerAtTarget = markers_config.find(m => m.currentX === targetX && m.id !== draggedMarkerId);
+            if (markerAtTarget && targetX !== oldX) { markerAtTarget.currentX = oldX; }
+            draggedMarker.currentX = targetX; draggedMarker.currentY = targetY;
+            isMarkerDragging = false; document.querySelector(`.gen-marker[data-id='${draggedMarkerId}']`)?.classList.remove('dragging');
+            renderAll();
+        }
+
+        // --- LCT NEIGHBORHOOD EXPLORER (Alignment Matrix) ---
+        const lctExplorerManager = {
+            configs: {
+                lct1: { 
+                    containerId: 'lct1-explorer', 
+                    size: 2, 
+                    animation: [ 
+                        { label: 'Ideal Alignment', refOrder: [0, 1], genOrder: [0, 1] }, 
+                        { label: 'Adjacent Swap', refOrder: [0, 1], genOrder: [1, 0] } 
+                    ], 
+                    sentences: ["He faced the dragon...", "The dragon was fierce..."]
+                },
+                lct2: { 
+                    containerId: 'lct2-explorer', 
+                    size: 3, 
+                    animation: [ 
+                        { label: 'Ideal Alignment', refOrder: [0, 1, 2], genOrder: [0, 1, 2] }, 
+                        { label: 'Corner Swap', refOrder: [0, 1, 2], genOrder: [2, 1, 0] }, 
+                        { label: 'Rotation', refOrder: [0, 1, 2], genOrder: [1, 2, 0] } 
+                    ], 
+                    sentences: ["He found its weakness...", "With a final blow...", "The kingdom was saved..."]
+                }
+            },
+            explorers: {}, intervals: {},
+            init() { Object.values(this.intervals).forEach(clearInterval); this.initExplorer('lct1'); this.initExplorer('lct2'); },
+            initExplorer(type) {
+                const config = this.configs[type]; 
+                const wrapper = document.getElementById(config.containerId); 
+                if (!wrapper) return;
+                wrapper.innerHTML = '';
+                
+                const scenarioLabel = document.createElement('div'); 
+                scenarioLabel.className = 'scenario-label'; 
+                wrapper.appendChild(scenarioLabel);
+                
+                const container = document.createElement('div'); 
+                container.className = 'lct-explorer-container'; 
+                wrapper.appendChild(container);
+                
+                const withoutLCT = this.createMatrixInstance(config, 'Without LCT', false);
+                const withLCT = this.createMatrixInstance(config, `With LCT=${config.size-1}`, true);
+                
+                container.appendChild(withoutLCT); 
+                container.appendChild(withLCT);
+                
+                this.explorers[type] = { config, scenarioLabel, containers: [withoutLCT, withLCT], caseIndex: 0 };
+                this.runAnimation(type); 
+                this.intervals[type] = setInterval(() => this.runAnimation(type), 3500);
+            },
+            createMatrixInstance(config, title, hasLCT) {
+                const wrapper = document.createElement('div'); 
+                wrapper.className = 'lct-scenario-wrapper';
+                
+                const titleEl = document.createElement('div'); 
+                titleEl.className = 'matrix-title'; 
+                titleEl.textContent = title; 
+                wrapper.appendChild(titleEl);
+                
+                const matrixContainer = document.createElement('div');
+                matrixContainer.className = 'matrix-container';
+                
+                // Create the CSS grid
+                const grid = document.createElement('div');
+                grid.className = 'alignment-grid';
+                grid.style.gridTemplateColumns = `repeat(${config.size}, 50px)`;
+                grid.style.gridTemplateRows = `repeat(${config.size}, 50px)`;
+                
+                // Create grid cells (bottom-left origin)
+                for (let ref = config.size - 1; ref >= 0; ref--) {
+                    for (let gen = 0; gen < config.size; gen++) {
+                        const cell = document.createElement('div');
+                        cell.className = 'grid-cell';
+                        cell.dataset.ref = ref;
+                        cell.dataset.gen = gen;
+                        cell.textContent = '-';
+                        grid.appendChild(cell);
+                    }
+                }
+                
+                matrixContainer.appendChild(grid);
+                
+                // Create ref labels (Y-axis, left side)
+                const refLabels = document.createElement('div');
+                refLabels.className = 'ref-labels';
+                for (let i = 0; i < config.size; i++) {
+                    const label = document.createElement('div');
+                    label.className = 'ref-label';
+                    label.textContent = `Ref ${i}`;
+                    refLabels.appendChild(label);
+                }
+                matrixContainer.appendChild(refLabels);
+                
+                // Create gen labels (X-axis, bottom)
+                const genLabels = document.createElement('div');
+                genLabels.className = 'gen-labels';
+                for (let i = 0; i < config.size; i++) {
+                    const label = document.createElement('div');
+                    label.className = 'gen-label';
+                    label.textContent = `Gen ${i}`;
+                    label.dataset.originalIndex = i;
+                    genLabels.appendChild(label);
+                }
+                matrixContainer.appendChild(genLabels);
+                
+                wrapper.appendChild(matrixContainer);
+                wrapper.dataset.hasLct = hasLCT;
+                return wrapper;
+            },
+            runAnimation(type) {
+                const explorer = this.explorers[type]; 
+                if (!explorer) return;
+                
+                const { config, scenarioLabel, containers, caseIndex } = explorer;
+                const currentCase = config.animation[caseIndex];
+                
+                scenarioLabel.textContent = currentCase.label;
+                
+                containers.forEach((container, containerIdx) => {
+                    const hasLCT = container.dataset.hasLct === 'true';
+                    const grid = container.querySelector('.alignment-grid');
+                    const genLabels = container.querySelector('.gen-labels');
+                    
+                    // Clear all cells
+                    grid.querySelectorAll('.grid-cell').forEach(cell => {
+                        cell.className = 'grid-cell';
+                        cell.textContent = '-';
+                    });
+                    
+                    // Animate gen labels to show the reordering
+                    const labelItems = genLabels.querySelectorAll('.gen-label');
+                    labelItems.forEach((label, index) => {
+                        const newGenPos = currentCase.genOrder[index];
+                        label.textContent = `Gen ${newGenPos}`;
+                        
+                        // Reset classes
+                        label.className = 'gen-label';
+                        
+                        // Visual effect to show movement
+                        if (newGenPos !== index) {
+                            if (hasLCT) {
+                                label.classList.add('lct-forgiven');
+                            } else {
+                                label.classList.add('swapped');
+                            }
+                        }
+                    });
+                    
+                    // Fill in matches based on current mapping
+                    currentCase.genOrder.forEach((genSentenceIdx, genPos) => {
+                        const refPos = currentCase.refOrder.indexOf(genSentenceIdx);
+                        if (refPos !== -1) {
+                            const cell = grid.querySelector(`[data-ref="${refPos}"][data-gen="${genPos}"]`);
+                            
+                            // Calculate distance
+                            const distance = Math.abs(refPos - genPos);
+                            
+                            // Determine cell class based on distance and LCT
+                            if (distance === 0) {
+                                cell.classList.add('perfect-match');
+                                cell.textContent = '✓';
+                            } else {
+                                // There's a distance penalty
+                                if (hasLCT && distance <= config.size - 1) {
+                                    // LCT forgives this penalty
+                                    cell.classList.add('penalty-forgiven');
+                                    cell.textContent = '○';
+                                } else {
+                                    // Active penalty
+                                    cell.classList.add('penalty-active');
+                                    cell.textContent = '✗';
+                                }
+                            }
+                        }
+                    });
+                });
+                
+                explorer.caseIndex = (caseIndex + 1) % config.animation.length;
+            }
+        };
+
+        // --- INITIALIZATION ---
+        function initializeApp() {
+            handleGridInputChange(); // Use the main handler for initialization
+            lctExplorerManager.init();
+            updateLctDescription();
+        }
+        
+        // --- EVENT LISTENERS ---
+        function handleGridInputChange() {
+            numUnitsY = parseInt(refLenInput.value, 10) || 1;
+            numUnitsX = parseInt(genLenInput.value, 10) || 1;
+            
+            const windows = get_mapping_windows_js(numUnitsY, numUnitsX);
+            currentPrecisionWindows = windows.precision_windows;
+            
+            markers_config = [];
+            for(let i = 0; i < numUnitsX; i++) {
+                const idealY = currentPrecisionWindows[i]?.start ?? Math.floor(numUnitsY / 2);
+                markers_config.push({ id: i, currentX: i, currentY: Math.min(idealY, numUnitsY - 1) });
+            }
+            
+            lctSlider.max = Math.max(0, numUnitsY - 1);
+            if (parseInt(lctSlider.value) > parseInt(lctSlider.max)) {
+                 lctSlider.value = lctSlider.max;
+                 lctValueDisplay.textContent = lctSlider.value;
+            }
+
+            updateLctDescription();
+            renderAll();
+        }
+
+        document.getElementById('start-tour-btn').addEventListener('click', () => tourManager.start());
+        lctSlider.addEventListener('input', () => { lctValueDisplay.textContent = lctSlider.value; updateLctDescription(); renderAll(); });
+        refLenInput.addEventListener('change', handleGridInputChange);
+        genLenInput.addEventListener('change', handleGridInputChange);
+        window.addEventListener('resize', () => { clearTimeout(window.resizeTimer); window.resizeTimer = setTimeout(renderAll, 150); });
+        
+        // Testing modal event listeners
+        document.getElementById('testing-guide-btn').addEventListener('click', () => {
+            document.getElementById('testing-modal').classList.add('visible');
+        });
+        document.getElementById('testing-modal-close').addEventListener('click', () => {
+            document.getElementById('testing-modal').classList.remove('visible');
+        });
+        document.getElementById('testing-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'testing-modal') {
+                document.getElementById('testing-modal').classList.remove('visible');
+            }
+        });
+        
+        window.addEventListener('load', initializeApp);
+
+    </script>
+</body>
+</html>

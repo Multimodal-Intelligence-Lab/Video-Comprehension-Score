@@ -1,0 +1,2871 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Narrative Alignment Score (NAS) - Interactive Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        /* --- SMOOTHNESS & PERFORMANCE ENHANCEMENTS --- */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            transition: background 1.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+
+        :root {
+            --bg-color: #f8fafc;
+            --light-shadow: rgba(255, 255, 255, 1);
+            --dark-shadow: rgba(148, 163, 184, 0.3);
+            --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --ease-out-cubic: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+
+        /* --- Neumorphic Page Container --- */
+        .neumorphic-page-container {
+            background: var(--bg-color);
+            border-radius: 25px;
+            box-shadow: 0 0 24px var(--dark-shadow);
+            margin: 1rem;
+            padding: 2rem;
+            min-height: calc(100vh - 2rem);
+            position: relative;
+        }
+
+        .neumorphic-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* --- Neumorphic Card Style --- */
+        .interactive-card {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+            transition: transform 0.35s var(--ease-out-cubic), 
+                        box-shadow 0.35s var(--ease-out-cubic), 
+                        border-color 0.35s var(--ease-out-cubic);
+            will-change: transform, box-shadow;
+        }
+        .interactive-card:hover {
+            box-shadow: 12px 12px 24px var(--dark-shadow), -12px -12px 24px var(--light-shadow);
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .demo-card { 
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(248, 250, 252, 0.65) 100%); 
+            border-color: rgba(226, 232, 240, 0.8); 
+            border-left: 3px solid #0d9488; 
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow), 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+        .intro-card { 
+            background: linear-gradient(135deg, rgba(254, 252, 232, 0.6) 0%, rgba(254, 243, 199, 0.5) 100%); 
+            border-color: rgba(251, 191, 36, 0.5);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+        }
+        .metrics-card { 
+            background: linear-gradient(135deg, rgba(240, 249, 255, 0.6) 0%, rgba(219, 234, 254, 0.5) 100%); 
+            border-color: rgba(147, 197, 253, 0.6);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+        }
+        .formula-card { 
+            background: linear-gradient(135deg, rgba(237, 233, 254, 0.6) 0%, rgba(221, 214, 254, 0.5) 100%); 
+            border-color: rgba(196, 181, 253, 0.6);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+        }
+
+        .ghost-score {
+            color: #9ca3af;
+            font-weight: 700;
+        }
+
+        /* Tooltips */
+        #chartTooltip {
+            position: fixed; background: rgba(45, 55, 72, 0.9); backdrop-filter: blur(5px); color: white; padding: 8px 12px; border-radius: 6px;
+            font-size: 0.8rem; z-index: 100; pointer-events: none; opacity: 0; 
+            transition: opacity 0.25s var(--ease-out-quad), transform 0.25s var(--ease-out-quad);
+            transform: scale(0.95);
+        }
+        #chartTooltip.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+        #chartTooltip.standard { border-left: 4px solid #22c55e; }
+        #chartTooltip.lct-capped { border-left: 4px solid #f59e0b; }
+        #chartTooltip.invalid { border-left: 4px solid #ef4444; }
+        
+        /* Segment List Styles */
+        .segment-list ul li { 
+            margin-bottom: 4px; line-height: 1.4; font-size: 0.8rem; color: #4b5563; padding: 4px 8px; border-radius: 0.375rem; 
+            cursor: pointer; 
+            transition: background-color 0.25s var(--ease-out-quad), border-color 0.25s var(--ease-out-quad), transform 0.25s var(--ease-out-quad), box-shadow 0.25s var(--ease-out-quad);
+            border: 1px solid #e5e7eb; user-select: none; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.4); 
+            will-change: background-color, transform;
+        }
+        .segment-list ul li:hover { background-color: #f0fdfa; border-color: #ccfbf1; transform: translateX(2px); }
+        .segment-list ul li.highlight { background-color: #cffafe !important; border-color: #67e8f9 !important; transform: scale(1.03); box-shadow: 0 4px 12px rgba(103, 232, 249, 0.6); }
+        .segment-list ul li.inactive-chunk { text-decoration: line-through; color: #9ca3af; background-color: #f3f4f6; }
+        .segment-list ul li.inactive-chunk:hover { background-color: #e5e7eb; }
+        .segment-list ul li.dragging { opacity: 0.5; background-color: #c7d2fe !important; cursor: grabbing; transform: scale(1.05); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+        @keyframes pulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.02); opacity: 0.7; } }
+        .drag-placeholder { height: 2.5em; background-color: #eef2ff; border: 2px dashed #a5b4fc; margin-bottom: 4px; border-radius: 0.375rem; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: #64748b; animation: pulse 1.5s infinite; }
+
+        .gen-marker {
+            position: absolute; width: 12px; height: 12px; border-radius: 50%;
+            background-color: #8b5cf6; border: 2px solid white;
+            cursor: ns-resize; box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            z-index: 10;
+            transition: left 0.4s var(--ease-out-cubic), bottom 0.4s var(--ease-out-cubic), transform 0.25s var(--ease-out-cubic), background-color 0.25s var(--ease-out-cubic), box-shadow 0.25s var(--ease-out-cubic);
+            will-change: transform, left, bottom;
+        }
+        .gen-marker:hover { transform: scale(1.4); }
+        .gen-marker.dragging { background-color: #a78bfa; box-shadow: 0 4px 8px rgba(0,0,0,0.4); transform: scale(1.5); cursor: grabbing; }
+
+        .marker-penalty-label {
+            position: absolute; top: 14px; left: 50%; transform: translateX(-50%);
+            font-size: 0.7rem; color: #dc2626; font-weight: 600;
+            background-color: rgba(255, 255, 255, 0.8); padding: 1px 3px;
+            border-radius: 3px;
+            display: none;
+        }
+        /* Make penalty visible via JS by adding a class, not direct style */
+        .marker-penalty-label.visible {
+            display: block;
+        }
+
+        /* Tour Styles */
+        #tour-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 9998; opacity: 0; transition: opacity 0.4s ease-in-out; pointer-events: none; }
+        .tour-highlight { position: relative; z-index: 9999; box-shadow: 0 0 0 9999px rgba(0,0,0,0.6), 0 0 20px rgba(255, 255, 255, 0.9); border-radius: 0.5rem; transition: box-shadow 0.4s ease-in-out; }
+        #tour-callout { 
+            position: absolute; 
+            background: rgba(255, 255, 255, 0.95); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            color: #334155; 
+            padding: 1.25rem; 
+            border-radius: 20px; 
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+            z-index: 10000; 
+            max-width: 320px; 
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: opacity 0.3s var(--ease-out-cubic), transform 0.3s var(--ease-out-cubic); 
+            transform: translateY(10px); 
+            opacity: 0; 
+        }
+        #tour-callout.visible { transform: translateY(0); opacity: 1; }
+        #tour-callout button { 
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%); 
+            color: white; 
+            padding: 0.5rem 1rem; 
+            border: none; 
+            border-radius: 12px; 
+            cursor: pointer; 
+            font-weight: 600;
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+        }
+        #tour-callout button:hover { 
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02); 
+        }
+
+        /* --- Testing Modal Styles --- */
+        .testing-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s var(--ease-out-cubic);
+        }
+        .testing-modal.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        .testing-modal-content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            padding: 2.5rem;
+            max-width: 90vw;
+            max-height: 85vh;
+            width: 700px;
+            box-shadow: 
+                12px 12px 24px var(--dark-shadow), 
+                -12px -12px 24px var(--light-shadow),
+                0 8px 32px rgba(0, 0, 0, 0.1);
+            transform: translateY(30px) scale(0.9);
+            transition: all 0.5s var(--ease-out-cubic);
+            overflow-y: auto;
+            box-sizing: border-box;
+            position: relative;
+        }
+        /* Custom scrollbar for testing modal */
+        .testing-modal-content::-webkit-scrollbar {
+            width: 8px;
+        }
+        .testing-modal-content::-webkit-scrollbar-track {
+            background: rgba(248, 250, 252, 0.3);
+            border-radius: 1rem;
+        }
+        .testing-modal-content::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, rgba(13, 148, 136, 0.6) 0%, rgba(20, 184, 166, 0.4) 100%);
+            border-radius: 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        .testing-modal-content::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, rgba(13, 148, 136, 0.8) 0%, rgba(20, 184, 166, 0.6) 100%);
+        }
+        /* Firefox scrollbar styling */
+        .testing-modal-content {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(13, 148, 136, 0.6) rgba(248, 250, 252, 0.3);
+        }
+        .testing-modal-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, rgba(13, 148, 136, 0.8) 50%, transparent 100%);
+        }
+        .testing-modal.visible .testing-modal-content {
+            transform: translateY(0) scale(1);
+        }
+        .testing-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid rgba(226, 232, 240, 0.6);
+            position: relative;
+        }
+        .testing-modal-header::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, #0d9488 0%, #14b8a6 100%);
+            border-radius: 1px;
+        }
+        .testing-modal-close {
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            font-size: 1.25rem;
+            cursor: pointer;
+            color: #64748b;
+            padding: 0.75rem;
+            border-radius: 50%;
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+            transition: all 0.3s var(--ease-out-cubic);
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .testing-modal-close:hover {
+            color: #0d9488;
+            transform: rotate(90deg) scale(1.1);
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+        }
+        .test-category {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+        .test-category::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(20, 184, 166, 0.05) 0%, rgba(15, 118, 110, 0.05) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .test-category:hover::before {
+            opacity: 1;
+        }
+        .test-category:hover {
+            transform: translateY(-2px);
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+        }
+        .test-category h3 {
+            color: #0f172a;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.025em;
+        }
+        .test-category h3 i {
+            margin-right: 0.75rem;
+            color: #0d9488;
+            background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
+            padding: 0.5rem;
+            border-radius: 50%;
+            font-size: 1rem;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .test-category:hover h3 i {
+            transform: translateY(-2px) scale(1.1);
+            box-shadow: 
+                0 8px 16px rgba(20, 184, 166, 0.3),
+                0 4px 8px rgba(255, 255, 255, 0.9) inset;
+            color: #0f766e;
+        }
+        .test-item {
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+        }
+        .test-item:hover {
+            transform: translateY(-1px);
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+        }
+        .test-item:last-child {
+            margin-bottom: 0;
+        }
+        .test-item h4 {
+            color: #1e293b;
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+        .test-item p {
+            color: #475569;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .test-checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: rgba(248, 250, 252, 0.4);
+            border-radius: 0.5rem;
+            padding: 1rem;
+            border: 1px solid rgba(226, 232, 240, 0.4);
+        }
+        .test-checklist li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+            font-size: 0.875rem;
+            color: #334155;
+            line-height: 1.5;
+            transition: all 0.2s var(--ease-out-quad);
+        }
+        .test-checklist li:last-child {
+            margin-bottom: 0;
+        }
+        .test-checklist li:hover {
+            color: #0d9488;
+            transform: translateX(2px);
+        }
+        .test-checklist li::before {
+            content: "✓";
+            margin-right: 0.75rem;
+            color: #0d9488;
+            font-weight: bold;
+            background: rgba(13, 148, 136, 0.1);
+            border-radius: 50%;
+            width: 1.25rem;
+            height: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+        }
+        .action-button {
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s var(--ease-out-cubic);
+            margin-right: 0.75rem;
+            margin-top: 1rem;
+            box-shadow: 0 2px 8px rgba(13, 148, 136, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .action-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
+            transition: left 0.5s var(--ease-out-quad);
+        }
+        .action-button:hover::before {
+            left: 100%;
+        }
+        .action-button:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 6px 20px rgba(13, 148, 136, 0.3);
+        }
+        .action-button:active {
+            transform: translateY(-1px) scale(1);
+        }
+
+        /* --- Algorithm Details Styles --- */
+        .math-formula { 
+            background: rgba(248, 250, 252, 0.8); 
+            border: 1px solid #e2e8f0; 
+            font-family: 'Inter', sans-serif; 
+            font-size: 1rem; 
+        }
+        .step-number { 
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); 
+            color: white; 
+            width: 2rem; 
+            height: 2rem; 
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-weight: bold; 
+            font-size: 0.875rem; 
+            flex-shrink: 0; 
+        }
+        details summary { 
+            cursor: pointer; 
+            user-select: none; 
+            transition: color 0.2s var(--ease-out-quad); 
+        }
+        details summary:hover { 
+            color: #1d4ed8; 
+        }
+        details summary::-webkit-details-marker { 
+            display: none; 
+        }
+        details summary .summary-icon { 
+            display: inline-block; 
+            margin-right: 0.5rem; 
+            transition: transform 0.25s var(--ease-out-cubic); 
+        }
+        details[open] summary .summary-icon { 
+            transform: rotate(90deg); 
+        }
+        
+        .axis-label { position: absolute; font-size: 0.75rem; color: #475569; font-weight: 500; white-space: nowrap; z-index: 6; }
+        .ideal-mapping-window { position: absolute; border: 2px solid #0d9488; background-color: rgba(20, 184, 166, 0.3); box-sizing: border-box; z-index: 1; transition: all 0.3s var(--ease-out-quad); pointer-events: none; border-radius: 0.375rem; box-shadow: 0 0 8px rgba(13, 148, 136, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2); outline: 1px solid #0d9488; outline-offset: -1px; }
+        .lct-padding-window { position: absolute; background-color: rgba(253, 224, 71, 0.15); box-sizing: border-box; z-index: 0; transition: all 0.2s ease-out; pointer-events: none; border: 1px dashed #facc15; border-radius: 0.25rem; }
+        .chart-grid-background {
+            background-color: #fafbfc;
+            border-radius: 15px;
+            box-shadow: inset 5px 5px 10px var(--dark-shadow), inset -5px -5px 10px var(--light-shadow), inset 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        
+        .grid-line {
+            position: absolute;
+            background-color: #e2e8f0;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        .ideal-paths-svg, .actual-path-svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+        .ideal-paths-svg { z-index: 2; }
+        .actual-path-svg { z-index: 4; }  
+        .floor-path-line, .ceil-path-line { stroke-width: 2px; fill: none; stroke-dasharray: 4; transition: d 0.3s var(--ease-out-quad); }
+        .floor-path-line { stroke: #0ea5e9; }
+        .ceil-path-line { stroke: #ec4899; }
+        .actual-path-line { stroke: #8b5cf6; stroke-width: 2.5px; fill: none; }
+
+        /* Path segment color styling */
+        .path-segment-standard { 
+            stroke: #22c55e; 
+            stroke-width: 3.5px; 
+            fill: none; 
+            transition: stroke 0.3s var(--ease-out-quad);
+        }
+        .path-segment-lct-capped { 
+            stroke: #f59e0b; 
+            stroke-width: 3.5px; 
+            fill: none; 
+            transition: stroke 0.3s var(--ease-out-quad);
+        }
+        .path-segment-invalid { 
+            stroke: #ef4444; 
+            stroke-width: 3.5px; 
+            fill: none; 
+            stroke-dasharray: 5, 5; 
+            transition: stroke 0.3s var(--ease-out-quad);
+        }
+
+        /* Path animation */
+        .path-segment-animated {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: draw-path 600ms var(--ease-out-cubic) forwards;
+        }
+        @keyframes draw-path {
+            to { stroke-dashoffset: 0; }
+        }
+        /* --- Neumorphic Input & Button Styles --- */
+        .neumorphic-input {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            box-shadow: inset 4px 4px 8px var(--dark-shadow), inset -4px -4px 8px var(--light-shadow);
+            padding: 0.75rem;
+            font-size: 0.875rem;
+            transition: box-shadow 0.3s var(--ease-out-quad), border-color 0.3s var(--ease-out-quad);
+            color: #374151;
+        }
+        .neumorphic-input:focus {
+            outline: none;
+            box-shadow: inset 6px 6px 12px var(--dark-shadow), inset -6px -6px 12px var(--light-shadow);
+            border-color: #0d9488;
+        }
+
+        .neumorphic-btn {
+            border-radius: 12px;
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            font-weight: 600;
+            box-shadow: 5px 5px 10px var(--dark-shadow), -5px -5px 10px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .neumorphic-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        .neumorphic-btn:hover {
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02);
+        }
+        .neumorphic-btn:hover::before {
+            left: 100%;
+        }
+        .neumorphic-btn:active {
+            box-shadow: inset 4px 4px 8px var(--dark-shadow), inset -4px -4px 8px var(--light-shadow);
+            transform: translateY(1px);
+        }
+        .neumorphic-btn.primary {
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+        }
+
+        .preset-btn { 
+            border-radius: 12px;
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            font-weight: 600;
+            box-shadow: 5px 5px 10px var(--dark-shadow), -5px -5px 10px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .preset-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        .preset-btn:hover {
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02);
+        }
+        .preset-btn:active {
+            box-shadow: inset 4px 4px 8px var(--dark-shadow), inset -4px -4px 8px var(--light-shadow);
+            transform: translateY(1px);
+        }
+        .preset-btn:hover::before {
+            left: 100%;
+        }
+        .preset-btn:hover i {
+            transform: scale(1.1);
+        }
+        .preset-btn i {
+            transition: all 0.3s ease;
+        }
+        .pattern-bg { background-image: radial-gradient(circle at 2px 2px, rgba(20, 184, 166, 0.1) 1px, transparent 0); background-size: 20px 20px; }
+        .step-number { background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; width: 2rem; height: 2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.875rem; flex-shrink: 0; }
+        details summary { cursor: pointer; user-select: none; transition: color 0.2s var(--ease-out-quad); }
+        details summary:hover { color: #1d4ed8; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary .summary-icon { display: inline-block; margin-right: 0.5rem; transition: transform 0.25s var(--ease-out-cubic); }
+        details[open] summary .summary-icon { transform: rotate(90deg); }
+
+        /* --- Hero Section Styles --- */
+        #hero-section {
+            background: linear-gradient(45deg, #0d9488, #0f766e); 
+            color: white; 
+        }
+        #hero-section h1 {
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2); 
+        }
+
+        /* --- Hero Tour Button (No White Glow) --- */
+        .hero-tour-btn {
+            background: linear-gradient(135deg, #0f766e 0%, #064e3b 100%);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-tour-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .hero-tour-btn:hover {
+            background: linear-gradient(135deg, #14b8a6 0%, #0f766e 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-tour-btn:hover::before {
+            left: 100%;
+        }
+
+        .hero-tour-btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Math container styling */
+        .math-container {
+            background: #dbeafe;
+            border: 1px solid #93c5fd;
+            border-radius: 0.75rem;
+            padding: 0.75rem;
+            margin-top: 0.75rem;
+        }
+
+        /* KaTeX color overrides */
+        .katex {
+            color: #1e40af !important;
+        }
+
+        .katex .mord,
+        .katex .mop,
+        .katex .mbin,
+        .katex .mrel,
+        .katex .mopen,
+        .katex .mclose,
+        .katex .mpunct {
+            color: #1e40af !important;
+        }
+
+        .katex .mtext {
+            color: #1e3a8a !important;
+        }
+
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false}
+                ],
+                throwOnError: false
+            });
+        });
+    </script>
+</head>
+<body class="h-full text-slate-700 antialiased pattern-bg">
+    <div id="app-background" class="fixed inset-0 z-[-1] transition-all duration-1000"></div>
+    <div id="tour-overlay"></div>
+    <div id="chartTooltip"></div>
+
+    <div class="neumorphic-page-container">
+        <div class="neumorphic-content">
+            <article class="interactive-card overflow-hidden">
+                <!-- Hero Section -->
+                <section id="hero-section" class="py-6 px-4 sm:px-6 lg:px-8 relative">
+                    <div class="container mx-auto">
+                        <!-- Start Tour Button - Top Right -->
+                        <button id="start-tour-btn" class="hero-tour-btn absolute top-4 right-4 py-2 px-4">
+                            <i class="fas fa-magic mr-2"></i>Start Tour
+                        </button>
+                        
+                        <div class="text-left max-w-4xl">
+                            <div class="flex items-center justify-start mb-4">
+                                <div class="bg-teal-200 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mr-2">Interactive Demo</div>
+                                <div class="bg-white bg-opacity-20 text-white px-3 py-1 rounded-full text-xs font-semibold">Core VCS Component</div>
+                            </div>
+                            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-3 leading-tight">
+                                Complete Narrative Alignment Score (NAS)
+                            </h1>
+                            <p class="text-teal-200 text-base sm:text-lg mb-6 max-w-3xl">
+                                Evaluate narrative similarity by analyzing how well the chronological order of semantics aligns between two texts through distance-based alignment (NAS-D), narrative flow continuity (NAS-L), and length coverage validation (Window Regularizer for Narrative Alignment) in the Video Comprehension Score framework.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Main Container -->
+                <main class="w-full max-w-8xl mx-auto p-6">
+        
+        <!-- Introduction Section -->
+        <div id="tour-step-intro" class="intro-card interactive-card rounded-xl p-6 mb-8">
+            <div class="flex items-center mb-4"><i class="fas fa-lightbulb text-amber-600 text-xl mr-3"></i><h2 class="text-xl font-semibold text-amber-800">Introduction to Complete NAS</h2></div>
+            
+            <!-- Definition -->
+            <div class="bg-white bg-opacity-70 p-4 rounded-xl mb-6 border-l-4 border-amber-500">
+                <p class="text-sm text-slate-700 mb-3"><strong>What is Complete NAS?</strong> The Complete Narrative Alignment Score (NAS) is a comprehensive evaluation system that combines three critical aspects of narrative similarity: global chronological order (NAS-D), local chronological order (NAS-L), and length coverage (Window Regularizer). It provides a robust, balanced assessment of how well a generated text aligns with a reference text in terms of narrative.</p>
+                
+                <!-- Warning -->
+                <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                    <div class="flex items-start">
+                        <i class="fas fa-exclamation-triangle text-orange-500 mr-2 mt-0.5"></i>
+                        <div>
+                            <p class="text-xs text-orange-800 font-medium mb-1">⚠️ Prerequisites Required</p>
+                            <p class="text-xs text-orange-700">Please read the VCS research paper and understand the theoretical foundation of Narrative Alignment Score before using this comprehensive demo.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Prerequisites -->
+                <div class="bg-blue-50 border border-blue-200 rounded-xl p-3 mt-3">
+                    <div class="flex items-start">
+                        <i class="fas fa-info-circle text-blue-500 mr-2 mt-0.5"></i>
+                        <div>
+                            <p class="text-xs text-blue-800 font-medium mb-1">📚 Additional Prerequisites</p>
+                            <p class="text-xs text-blue-700">Before exploring Complete NAS, we strongly recommend visiting the <a href="../distance-nas/" class="font-bold underline hover:text-blue-900">Distance-based NAS Demo</a>, <a href="../line-nas/" class="font-bold underline hover:text-blue-900">Line-based NAS Demo</a>, and <a href="../window-regularizer/" class="font-bold underline hover:text-blue-900">Window Regularizer Demo</a> to understand each component individually. Complete NAS combines all three systems into a comprehensive text similarity assessment framework.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <div class="bg-white bg-opacity-60 p-4 rounded-xl"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-crosshairs text-blue-500 mr-2"></i>NAS-D Component</h4><p class="text-sm text-slate-700">Distance-based chronological alignment penalties. Measures positional accuracy of chunks within mapping windows.</p></div>
+                <div class="bg-white bg-opacity-60 p-4 rounded-xl"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-route text-purple-500 mr-2"></i>NAS-L Component</h4><p class="text-sm text-slate-700">Line-based narrative flow assessment. Evaluates path smoothness and calculability between aligned segments.</p></div>
+                <div class="bg-white bg-opacity-60 p-4 rounded-xl"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-balance-scale text-red-500 mr-2"></i>Window Regularizer</h4><p class="text-sm text-slate-700">Length coverage penalty preventing artificially high scores from oversimplified or imbalanced content.</p></div>
+            </div>
+            <details id="tour-step-algo" class="mb-4">
+                <summary class="font-semibold text-amber-700 mb-3 flex items-center"><i class="fas fa-chevron-right summary-icon"></i>NAS Algorithm</summary>
+                <div class="mt-4 space-y-4">
+                    <!-- Main Algorithm Overview -->
+                    <div class="bg-white bg-opacity-70 p-4 rounded-lg border-l-4 border-amber-500">
+                        <p class="text-sm text-slate-700 mb-3"><strong>Algorithm Overview:</strong> The Complete NAS algorithm follows 4 steps to combine three critical components: Distance-NAS measures chronological alignment, Line-NAS evaluates narrative flow smoothness, and Window Regularizer prevents inflated scores from excessive coverage. Each component operates independently before final combination:</p>
+                        
+                        <!-- Step 1: Calculate Distance-NAS -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-crosshairs text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 1: Calculate Distance-NAS (NAS-D)</p>
+                                    <p class="text-xs text-orange-700 mb-2">Calculate Distance-based NAS for the given reference and generated text using precision and recall best matches combined with F1 harmonic mean.</p>
+                                    <p class="text-xs text-orange-700 mt-2">📍 <strong>Learn more:</strong> Visit the <a href="../distance-nas/" class="font-bold underline hover:text-orange-900">Distance-NAS Demo</a> to understand the complete 6-step algorithm with detailed distance penalty calculations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2: Calculate Line-NAS -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-route text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 2: Calculate Line-NAS (NAS-L)</p>
+                                    <p class="text-xs text-orange-700 mb-2">Calculate Line-based NAS for the given reference and generated text using precision and recall best matches combined with F1 harmonic mean.</p>
+                                    <p class="text-xs text-orange-700 mt-2">📍 <strong>Learn more:</strong> Visit the <a href="../line-nas/" class="font-bold underline hover:text-orange-900">Line-NAS Demo</a> to explore the complete 6-step algorithm with path geometry analysis and ideal bound computation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3: Calculate Window Regularizer -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-balance-scale text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 3: Calculate Window Regularizer</p>
+                                    <p class="text-xs text-orange-700 mb-2">Calculate Window Regularizer penalty for the given reference and generated text to prevent excessive mapping window coverage.</p>
+                                    <p class="text-xs text-orange-700 mt-2">📍 <strong>Learn more:</strong> Visit the <a href="../window-regularizer/" class="font-bold underline hover:text-orange-900">Window Regularizer Demo</a> to understand the complete 4-step algorithm with coverage analysis and penalty computation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 4: Combine and Regularize -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-calculator text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 4: Combine Components and Apply Regularization</p>
+                                    <p class="text-xs text-orange-700 mb-2">Combine Distance-NAS and Line-NAS using harmonic mean, then apply window regularization with renormalization to produce the final comprehensive score.</p>
+                                    <div class="math-container">
+                                        <p class="text-xs">$\text{NAS-F1} = \frac{2 \times \text{NAS-D} \times \text{NAS-L}}{\text{NAS-D} + \text{NAS-L}}$</p>
+                                        <p class="text-xs">$\text{regularized\_nas} = \text{NAS-F1} - \text{window\_regularizer}$</p>
+                                        <p class="text-xs">$\text{Complete NAS} = \begin{cases} 
+                                        \frac{\text{regularized\_nas}}{1 - \text{window\_regularizer}} & \text{if } \text{regularized\_nas} > 0 \\
+                                        0 & \text{otherwise}
+                                        \end{cases}$</p>
+                                    </div>
+                                    <p class="text-xs text-orange-700 mt-2">The final score balances chronological accuracy, narrative flow, and structural coverage for comprehensive text similarity assessment.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Algorithm Conclusion -->
+                        <div class="bg-blue-50 border border-blue-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-play-circle text-blue-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-blue-800 font-medium mb-1">🎯 Interactive Demo</p>
+                                    <p class="text-xs text-blue-700 mb-2">Now that you understand how Complete NAS combines Distance-NAS, Line-NAS, and Window Regularizer into a comprehensive assessment, use the interactive demo below to see how all three components work together in real-time.</p>
+                                    <p class="text-xs text-blue-700">Adjust the alignment markers to observe how changes affect each component individually and their combined impact on the final Complete NAS score.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2 space-y-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div id="tour-step-4" class="demo-card interactive-card rounded-xl p-4">
+                        <div class="text-center mb-4"><div class="inline-flex items-center bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold mb-2"><i class="fas fa-crosshairs mr-1"></i>PRECISION ANALYSIS</div><h2 class="text-lg font-bold text-slate-800">Gen → Ref Alignment</h2></div>
+                        <div class="relative w-full max-w-md mx-auto pt-4 pb-36 pl-20 pr-4">
+                            <div class="absolute top-1/2 -left-8 -translate-y-16 -rotate-90 font-semibold text-sm text-slate-600 whitespace-nowrap">Reference Chunks</div>
+                            <div class="absolute bottom-24 left-1/2 -translate-x-1/4 font-semibold text-sm text-slate-600">Generated Chunks</div>
+                            <div class="relative w-full aspect-square">
+                                <div id="precisionChartGrid" class="absolute inset-0 bg-white rounded-xl chart-grid-background border border-slate-200">
+                                    <div id="precisionLctPaddingContainer"></div>
+                                    <div id="precisionIdealMappingContainer"></div>
+                                    <svg class="ideal-paths-svg" id="precisionIdealPathsSvg"></svg>
+                                    <div id="precisionMarkerContainer"></div>
+                                    <svg class="actual-path-svg" id="precisionActualPathSvg"></svg>
+                                    <div id="precisionAxisLabelContainerY"></div>
+                                    <div id="precisionAxisLabelContainerX"></div>
+                                </div>
+                            </div>
+                            <div id="precisionChartMetrics" class="absolute -bottom-2 left-0 right-0 grid grid-cols-2 gap-x-4 gap-y-1 text-center text-xs text-slate-600 bg-white/80 p-2 rounded-md">
+                                <div><span>NAS-D:</span><br><span id="precisionNasD" class="font-bold text-blue-600">0.000</span> <span id="precisionNasDPreview" class="ghost-score"></span></div>
+                                <div><span>NAS-L:</span><br><span id="precisionNasL" class="font-bold text-purple-600">0.000</span> <span id="precisionNasLPreview" class="ghost-score"></span></div>
+                                <div class="col-span-2"><span>Combined:</span><br><span id="precisionCombined" class="font-bold text-teal-600 text-sm">0.000</span> <span id="precisionCombinedPreview" class="ghost-score"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-card interactive-card rounded-xl p-4">
+                        <div class="text-center mb-4"><div class="inline-flex items-center bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-semibold mb-2"><i class="fas fa-search mr-1"></i>RECALL ANALYSIS</div><h2 class="text-lg font-bold text-slate-800">Ref → Gen Alignment</h2></div>
+                        <div class="relative w-full max-w-md mx-auto pt-4 pb-36 pl-20 pr-4">
+                            <div class="absolute top-1/2 -left-8 -translate-y-16 -rotate-90 font-semibold text-sm text-slate-600 whitespace-nowrap">Generated Chunks</div>
+                            <div class="absolute bottom-24 left-1/2 -translate-x-1/4 font-semibold text-sm text-slate-600">Reference Chunks</div>
+                            <div class="relative w-full aspect-square">
+                                <div id="recallChartGrid" class="absolute inset-0 bg-white rounded-xl chart-grid-background border border-slate-200">
+                                    <div id="recallLctPaddingContainer"></div>
+                                    <div id="recallIdealMappingContainer"></div>
+                                    <svg class="ideal-paths-svg" id="recallIdealPathsSvg"></svg>
+                                    <div id="recallMarkerContainer"></div>
+                                    <svg class="actual-path-svg" id="recallActualPathSvg"></svg>
+                                    <div id="recallAxisLabelContainerY"></div>
+                                    <div id="recallAxisLabelContainerX"></div>
+                                </div>
+                            </div>
+                            <div id="recallChartMetrics" class="absolute -bottom-2 left-0 right-0 grid grid-cols-2 gap-x-4 gap-y-1 text-center text-xs text-slate-600 bg-white/80 p-2 rounded-md">
+                                <div><span>NAS-D:</span><br><span id="recallNasD" class="font-bold text-blue-600">0.000</span> <span id="recallNasDPreview" class="ghost-score"></span></div>
+                                <div><span>NAS-L:</span><br><span id="recallNasL" class="font-bold text-purple-600">0.000</span> <span id="recallNasLPreview" class="ghost-score"></span></div>
+                                <div class="col-span-2"><span>Combined:</span><br><span id="recallCombined" class="font-bold text-amber-600 text-sm">0.000</span> <span id="recallCombinedPreview" class="ghost-score"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tour-step-5" class="demo-card interactive-card rounded-xl p-6">
+                    <div class="text-center mb-6"><h3 class="text-lg font-semibold text-slate-800 mb-2">Interactive Narrative Management</h3><p class="text-sm text-slate-500">Drag to reorder chunks • Click to activate/deactivate • Drag purple markers to adjust alignments</p></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="segment-list" id="referenceSegments"><div class="flex justify-between items-center mb-2"><h4 class="text-md font-semibold text-slate-700 flex items-center"><i class="fas fa-list text-teal-600 mr-2"></i>Reference (<span id="activeRefChunkCount">0</span>/<span id="totalRefChunkCount">0</span>)</h4><button id="resetRefOrderBtn" title="Reset Reference Order" class="text-slate-500 hover:text-blue-600 transition"><i class="fas fa-undo text-sm"></i></button></div><ul id="referenceSegmentsUl" class="space-y-1 h-72 overflow-y-auto pr-2 bg-slate-50/50 rounded p-2 border"></ul></div>
+                        <div class="segment-list" id="generatedSegments"><div class="flex justify-between items-center mb-2"><h4 class="text-md font-semibold text-slate-700 flex items-center"><i class="fas fa-list text-amber-600 mr-2"></i>Generated (<span id="activeGenChunkCount">0</span>/<span id="totalGenChunkCount">0</span>)</h4><button id="resetGenOrderBtn" title="Reset Generated Order" class="text-slate-500 hover:text-blue-600 transition"><i class="fas fa-undo text-sm"></i></button></div><ul id="generatedSegmentsUl" class="space-y-1 h-72 overflow-y-auto pr-2 bg-slate-50/50 rounded p-2 border"></ul></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls Panel -->
+            <div class="lg:col-span-1">
+                <div class="sticky top-6 space-y-6">
+                    <div id="tour-step-6" class="metrics-card interactive-card rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-blue-800 mb-4 flex items-center"><i class="fas fa-trophy text-blue-600 mr-2"></i>Complete NAS Score</h3>
+                        <div class="space-y-4">
+                            <div class="text-center bg-green-50/70 p-3 rounded-xl border border-green-200">
+                                <label class="block text-sm font-medium text-green-700 mb-1">Final NAS Score</label>
+                                <span id="finalCompleteNas" class="text-4xl font-bold text-green-600">0.000</span>
+                                <span id="finalCompleteNasPreview" class="text-4xl ghost-score"></span>
+                                <p class="text-xs text-slate-500 mt-1">Regularized comprehensive score</p>
+                            </div>
+                               <div class="grid grid-cols-2 gap-4">
+                                  <div class="text-center">
+                                      <label class="block text-sm font-medium text-blue-700 mb-1">F1 NAS-D</label>
+                                      <span id="overallNasDF1" class="text-2xl font-bold text-blue-600">0.000</span>
+                                      <span id="overallNasDF1Preview" class="text-2xl ghost-score"></span>
+                                      <p class="text-xs text-slate-500 mt-1">Distance alignment</p>
+                                  </div>
+                                  <div class="text-center">
+                                      <label class="block text-sm font-medium text-purple-700 mb-1">F1 NAS-L</label>
+                                      <span id="overallNasLF1" class="text-2xl font-bold text-purple-600">0.000</span>
+                                      <span id="overallNasLF1Preview" class="text-2xl ghost-score"></span>
+                                      <p class="text-xs text-slate-500 mt-1">Flow alignment</p>
+                                  </div>
+                               </div>
+                               <div class="grid grid-cols-2 gap-4">
+                                  <div class="text-center">
+                                      <label class="block text-sm font-medium text-amber-700 mb-1">Combined F1</label>
+                                      <span id="combinedF1NAS" class="text-xl font-bold text-amber-600">0.000</span>
+                                      <span id="combinedF1NASPreview" class="text-xl ghost-score"></span>
+                                      <p class="text-xs text-slate-500 mt-1">Before regularizer</p>
+                                  </div>
+                                  <div class="text-center">
+                                      <label class="block text-sm font-medium text-red-700 mb-1">Regularizer</label>
+                                      <span id="windowRegularizer" class="text-xl font-bold text-red-600">0.000</span>
+                                       <span id="windowRegularizerPreview" class="text-xl ghost-score"></span>
+                                      <p class="text-xs text-slate-500 mt-1">Coverage penalty</p>
+                                  </div>
+                               </div>
+                        </div>
+                    </div>
+                    <div id="tour-step-lct" class="formula-card interactive-card rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-purple-800 mb-3 flex items-center"><i class="fas fa-sliders-h text-purple-600 mr-2"></i>LCT Parameter</h3>
+                        <div class="flex items-center gap-4 mb-4"><label for="lctSlider" class="text-sm font-medium text-purple-700">Tolerance:</label><input type="range" id="lctSlider" min="0" max="5" value="0" step="1" class="flex-1 h-2 bg-purple-200 rounded-xl appearance-none cursor-pointer"><span id="lctValueDisplay" class="text-lg font-bold text-purple-600 w-8 text-center">0</span></div>
+                        <div id="lctDescription" class="bg-purple-50/70 p-3 rounded-xl border border-purple-200 text-xs text-purple-700"></div>
+                    </div>
+                    <div id="tour-step-3" class="demo-card interactive-card rounded-xl p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold text-slate-800 flex items-center"><i class="fas fa-magic text-purple-600 mr-2"></i>Test Scenarios</h3>
+                            <button id="testing-guide-btn" class="neumorphic-btn primary px-3 py-1.5 text-xs">
+                                <i class="fas fa-clipboard-check mr-1"></i>Testing Guide
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button class="preset-btn w-full text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="handleScenarioClick('optimal')">
+                                <i class="fas fa-sort-numeric-down mr-2"></i>Optimal
+                            </button>
+                            <button class="preset-btn w-full text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="handleScenarioClick('neighborSwap')">
+                                <i class="fas fa-exchange-alt mr-2"></i>Neighbor Swaps
+                            </button>
+                            <button class="preset-btn w-full text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="handleScenarioClick('reverse')">
+                                <i class="fas fa-sort-numeric-up mr-2"></i>Reverse
+                            </button>
+                            <button class="preset-btn w-full text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="handleScenarioClick('minorDisorders')">
+                                <i class="fas fa-random mr-2"></i>Minor Disorders
+                            </button>
+                            <button class="preset-btn w-full text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="handleScenarioClick('majorDisorder')">
+                                <i class="fas fa-exclamation-triangle mr-2"></i>Major Disorder
+                            </button>
+                            <button class="preset-btn w-full text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="handleScenarioClick('rotateHalf')">
+                                <i class="fas fa-sync-alt mr-2"></i>Rotate Half
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    </div>
+    </div>
+
+    <!-- Testing Modal -->
+    <div id="testing-modal" class="testing-modal">
+        <div class="testing-modal-content">
+            <div class="testing-modal-header">
+                <h2 class="text-xl font-bold text-slate-800 flex items-center">
+                    <i class="fas fa-clipboard-check mr-2 text-teal-600"></i>
+                    Complete NAS Testing Guide
+                </h2>
+                <button id="testing-modal-close" class="testing-modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="testing-content">
+                <!-- Getting Started -->
+                <div class="test-category">
+                    <h3><i class="fas fa-play-circle"></i>Getting Started</h3>
+                    <div class="test-item">
+                        <h4>Understanding Complete NAS Integration</h4>
+                        <p>This guide explores how Distance-NAS, Line-NAS, and Window Regularizer work together to provide comprehensive narrative alignment assessment.</p>
+                        <ul class="test-checklist">
+                            <li>Three components evaluate different aspects: chronological accuracy, narrative flow, and structural fairness</li>
+                            <li>Each component has complementary strengths and sensitivities</li>
+                            <li>Window Regularizer prevents the low-dimensionality problem that affects individual components</li>
+                            <li>Close this guide and experiment with preset scenarios to see integrated behavior</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Optimal Alignment -->
+                <div class="test-category">
+                    <h3><i class="fas fa-sort-numeric-down"></i>Optimal Alignment</h3>
+                    <div class="test-item">
+                        <h4>Perfect Integration Benchmark</h4>
+                        <p>When narratives align perfectly, observe how all components achieve maximum performance.</p>
+                        <ul class="test-checklist">
+                            <li>Distance-NAS, Line-NAS, and NAS F1 should all equal 1.0000</li>
+                            <li>Window Regularizer penalty should be 0.0000</li>
+                            <li>Complete NAS achieves perfect 1.0000 score</li>
+                            <li>All purple markers align precisely within teal mapping windows</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 mt-2 italic">Close this guide and click "Optimal" to establish the performance baseline.</p>
+                    </div>
+                </div>
+
+                <!-- Local Chronological Issues vs LCT -->
+                <div class="test-category">
+                    <h3><i class="fas fa-exchange-alt"></i>Local Chronological Issues vs LCT</h3>
+                    <div class="test-item">
+                        <h4>Testing LCT Effectiveness on Local Disruptions</h4>
+                        <p>Explore how Local Chronological Tolerance rescues local misalignments but affects overall NAS differently than individual components.</p>
+                        <ul class="test-checklist">
+                            <li>Click "Neighbor Swaps" - notice Complete NAS drops to 0 because Line-NAS becomes 0</li>
+                            <li>Increase LCT to 1 and observe the score jump as Line-NAS segments become calculable</li>
+                            <li>Try "Minor Disorder" and experiment with LCT values - each click generates different patterns</li>
+                            <li>Notice how Complete NAS responds to LCT rescue of Line-NAS components</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 mt-2 italic">Test local disruptions with varying LCT to understand tolerance rescue effects.</p>
+                    </div>
+                </div>
+
+                <!-- Global Chronological Issues vs LCT -->
+                <div class="test-category">
+                    <h3><i class="fas fa-undo"></i>Global Chronological Issues vs LCT</h3>
+                    <div class="test-item">
+                        <h4>Testing LCT Limitations on Global Disruptions</h4>
+                        <p>Compare LCT effectiveness on global reorderings versus local disruptions to understand tolerance scope.</p>
+                        <ul class="test-checklist">
+                            <li>Try "Reverse" and observe Complete NAS - notice how global disruptions affect all components</li>
+                            <li>Increase LCT and observe whether it helps with global chronological issues</li>
+                            <li>Try "Rotate Half" and test LCT effectiveness on large-scale reorderings</li>
+                            <li>Compare LCT rescue effectiveness: local issues vs global reorderings</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 mt-2 italic">Contrast LCT effects on global disruptions with local disruption results from above.</p>
+                    </div>
+                </div>
+
+                <!-- Major Disorder Analysis -->
+                <div class="test-category">
+                    <h3><i class="fas fa-exclamation-triangle"></i>Major Disorder Analysis</h3>
+                    <div class="test-item">
+                        <h4>Severe Disruption Response</h4>
+                        <p>Test Complete NAS behavior under severe disruptions and LCT rescue limitations.</p>
+                        <ul class="test-checklist">
+                            <li>Click "Major Disorder" and observe Complete NAS degradation</li>
+                            <li>Increase LCT gradually and observe score changes</li>
+                            <li>Notice how Window Regularizer prevents artificially high scores</li>
+                            <li>Compare component degradation patterns under severe stress</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 mt-2 italic">Observe integrated system response to extreme narrative disruptions.</p>
+                    </div>
+                </div>
+
+                <!-- Manual Exploration -->
+                <div class="test-category">
+                    <h3><i class="fas fa-hand-pointer"></i>Manual Exploration</h3>
+                    <div class="test-item">
+                        <h4>Interactive Chunk Management</h4>
+                        <p>Use manual controls to understand Complete NAS robustness and content alignment enforcement.</p>
+                        <ul class="test-checklist">
+                            <li>Progressively disable chunks by clicking them in the segment lists</li>
+                            <li>Notice how Complete NAS enforces content alignment requirements</li>
+                            <li>Observe that NAS does NOT suffer from the low-dimensionality problem that affects NAS-D and NAS-L individually</li>
+                            <li>Window Regularizer prevents paradoxical score increases when chunks are disabled</li>
+                            <li>Complete NAS maintains meaningful assessment even with fewer active chunks</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 mt-2 italic">Demonstrate Complete NAS advantage over individual component limitations.</p>
+                    </div>
+                </div>
+
+                <!-- Key Insights -->
+                <div class="test-category">
+                    <h3><i class="fas fa-lightbulb"></i>Key Insights</h3>
+                    <div class="test-item">
+                        <h4>Complete NAS System Understanding</h4>
+                        <p>After systematic exploration, you should understand these integrated assessment principles:</p>
+                        <ul class="test-checklist">
+                            <li>Complete NAS integrates three complementary evaluation dimensions</li>
+                            <li>LCT effectively rescues local chronological issues but has limited impact on global disruptions</li>
+                            <li>Window Regularizer prevents the low-dimensionality problem that affects individual NAS-D and NAS-L</li>
+                            <li>Complete NAS provides robust assessment that maintains content alignment requirements</li>
+                            <li>Integration prevents gaming and artificial score inflation through structural awareness</li>
+                            <li>Manual exploration reveals systematic advantages over individual component evaluation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                </main>
+            </article>
+        </div>
+    </div>
+
+    <script>
+        // --- DATA ---
+        const masterReferenceChunks = [
+            "The old market bell rings starting a busy market", "Vendors open their bright stalls in the busy square while the smell of fresh bread fills the air", "A young seller shouts out good deals as curious people gather around", "The steady ring of the bell sets the pace for the day", "A wise old vendor stops by his stall giving advice to those who pass by", "As the market gets busy the bell rings again at midday reminding everyone of the community spirit", "A light rain briefly slows the crowd but everyone is spirit stays strong", "Local storytellers tell simple tales that catch everyone is attention", "As evening comes the old bell rings one last time perfectly echoing the start of the day"
+        ];
+        const masterGeneratedChunks = [
+            "At first light the town s antique bell clangs signalling that the market is open for business", "Stalls spring to life all around the square their owners lifting colourful awnings while the warm scent of freshbaked bread drifts through the crowd", "A lively young hawker calls out bargains drawing curious shoppers closer", "That bell keeps time for everyone its steady peal guiding the morning rush", "Nearby an older merchant pauses at his booth offering bits of seasoned advice to anyone who will listen", "When noon rolls around the bell sounds again a friendly reminder of the shared spirit that holds the place together", "A brief shower scatters a few people but the mood never really fades", "Storytellers soon reclaim the moment with simple tales that pull listeners back in", "As dusk settles the same bell rings one final note neatly bookending the day it helped begin"
+        ];
+        const masterSimilarityValues = [ 
+            [0.737, 0.360, 0.286, 0.461, 0.284, 0.388, 0.062, 0.139, 0.396], [0.462, 0.783, 0.295, 0.269, 0.264, 0.227, 0.142, 0.158, 0.232], [0.244, 0.238, 0.814, 0.105, 0.337, 0.138, 0.120, 0.169, 0.084], [0.555, 0.259, 0.100, 0.734, 0.137, 0.593, 0.167, 0.199, 0.656], [0.258, 0.254, 0.293, 0.168, 0.774, 0.169, 0.110, 0.165, 0.151], [0.569, 0.340, 0.248, 0.483, 0.241, 0.764, 0.180, 0.216, 0.507], [0.134, 0.219, 0.106, 0.243, 0.133, 0.239, 0.689, 0.183, 0.177], [0.261, 0.259, 0.218, 0.266, 0.274, 0.286, 0.220, 0.679, 0.257], [0.537, 0.277, 0.059, 0.549, 0.218, 0.608, 0.192, 0.212, 0.869]
+        ];
+
+        // --- STATE & DOM ---
+        let activeReferenceIndices = [], activeGeneratedIndices = [];
+        let markerPositions = { precision: [], recall: [] };
+        let actualPathPositions = { precision: [], recall: [] };
+        let actualPathSegments = { precision: [], recall: [] }; // **ADDED** To store segment info
+        let currentLct = 0;
+        let animationFrameId = null;
+        let isMarkerDragging = false; 
+        let draggedItemInfo = { element: null, originalIndex: null, type: null, placeholder: null };
+        let draggedMarkerInfo = { chartType: null, id: null, element: null, chartGrid: null, startY: 0 };
+        
+        const lctSlider = document.getElementById('lctSlider');
+        const lctValueDisplay = document.getElementById('lctValueDisplay');
+        const lctDescription = document.getElementById('lctDescription');
+        const referenceSegmentsUl = document.getElementById('referenceSegmentsUl');  
+        const generatedSegmentsUl = document.getElementById('generatedSegmentsUl');
+        const resetGenOrderBtn = document.getElementById('resetGenOrderBtn');
+        const resetRefOrderBtn = document.getElementById('resetRefOrderBtn');
+        const chartTooltip = document.getElementById('chartTooltip');
+        const appBackground = document.getElementById('app-background');
+
+        const testingGuideBtn = document.getElementById('testing-guide-btn');
+        const testingModal = document.getElementById('testing-modal');
+        const testingModalClose = document.getElementById('testing-modal-close');
+        
+        const charts = {
+            precision: {
+                grid: document.getElementById('precisionChartGrid'), idealContainer: document.getElementById('precisionIdealMappingContainer'),
+                lctContainer: document.getElementById('precisionLctPaddingContainer'), markerContainer: document.getElementById('precisionMarkerContainer'),
+                idealPathsSvg: document.getElementById('precisionIdealPathsSvg'), actualPathSvg: document.getElementById('precisionActualPathSvg'),
+                axisX: document.getElementById('precisionAxisLabelContainerX'), axisY: document.getElementById('precisionAxisLabelContainerY'),
+            },
+            recall: {
+                grid: document.getElementById('recallChartGrid'), idealContainer: document.getElementById('recallIdealMappingContainer'),
+                lctContainer: document.getElementById('recallLctPaddingContainer'), markerContainer: document.getElementById('recallMarkerContainer'),
+                idealPathsSvg: document.getElementById('recallIdealPathsSvg'), actualPathSvg: document.getElementById('recallActualPathSvg'),
+                axisX: document.getElementById('recallAxisLabelContainerX'), axisY: document.getElementById('recallAxisLabelContainerY'),
+            }
+        };
+
+        // Easing function for smoother animations
+        const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+        
+        // --- TOUR MANAGER ---
+        const tourManager = {
+            isActive: false,
+            currentStep: 0,
+            overlay: document.getElementById('tour-overlay'),
+            steps: [
+                { selector: '#tour-step-intro', text: 'Welcome to Complete Narrative Alignment Score! This demo combines Distance-based NAS, Line-based NAS, and Window Regularizer into a unified text similarity assessment. Understand each component individually first.', position: 'bottom' },
+                { selector: '#tour-step-algo', text: 'Click to expand the complete NAS algorithm pipeline. This shows step-by-step calculations integrating all three evaluation dimensions.', position: 'bottom'},
+                { selector: '#tour-step-4', text: 'Interactive dual visualization showing Distance-based NAS and Line-based NAS operating together. Purple markers are draggable best matches that affect both distance penalties and path geometry.', position: 'top' },
+                { selector: '#tour-step-5', text: 'Click chunks to activate/deactivate them or drag to reorder sequences. Watch how all three components respond to structural changes in real-time.', position: 'top' },
+                { selector: '#tour-step-3', text: 'Try these preset scenarios to explore how different narrative patterns affect all three NAS components simultaneously. Each button demonstrates specific disruption effects. Check the Testing Guide for comprehensive exploration strategies.', position: 'left', action: () => handleScenarioClick('neighborSwap') },
+                { selector: '#tour-step-lct', text: 'Local Chronological Tolerance affects both Distance-based penalties and Line-based path calculations simultaneously. Higher values create forgiveness zones across all evaluation dimensions.', position: 'left' },
+                { selector: '#tour-step-6', text: 'Comprehensive scoring dashboard shows integrated results from all three systems. Distance-based Narrative Alignment Score (NAS-D) measures chronological accuracy, Line-based Narrative Alignment Score (NAS-L) captures narrative flow, Window Regularizer for Narrative Alignment prevents gaming, and Complete NAS provides balanced assessment.', position: 'left' }
+            ],
+
+            start: function() {
+                this.isActive = true;
+                this.currentStep = 0;
+                this.overlay.style.pointerEvents = 'auto';
+                this.overlay.style.opacity = '1';
+                this.addClickOutsideHandler();
+                this.showStep();
+            },
+
+            next: function() {
+                this.cleanupCurrentStep();
+                this.currentStep++;
+                if (this.currentStep < this.steps.length) {
+                    if (this.steps[this.currentStep-1].action) {
+                       this.steps[this.currentStep-1].action();
+                    }
+                    setTimeout(() => this.showStep(), 400);
+                } else {
+                    this.end();
+                }
+            },
+            
+            showStep: function() {
+                const step = this.steps[this.currentStep];
+                const targetElement = document.querySelector(step.selector);
+                if (!targetElement) { this.end(); return; }
+
+                targetElement.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+
+                setTimeout(() => {
+                    targetElement.classList.add('tour-highlight');
+                    
+                    const callout = document.createElement('div');
+                    callout.id = 'tour-callout';
+                    callout.innerHTML = `<p class="text-sm mb-4">${step.text}</p><div class="flex justify-end"><button onclick="tourManager.next()">Next &rarr;</button></div>`;
+                    document.body.appendChild(callout);
+                    
+                    const targetRect = targetElement.getBoundingClientRect();
+                    const calloutRect = callout.getBoundingClientRect();
+                    const margin = 15;
+
+                    const scrollY = window.scrollY || document.documentElement.scrollTop;
+                    const scrollX = window.scrollX || document.documentElement.scrollLeft;
+
+                    let top, left;
+
+                    switch (step.position) {
+                        case 'bottom':
+                            top = targetRect.bottom + scrollY + margin;
+                            left = targetRect.left + scrollX + (targetRect.width / 2) - (calloutRect.width / 2);
+                            break;
+                        case 'top':
+                            top = targetRect.top + scrollY - calloutRect.height - margin;
+                            left = targetRect.left + scrollX + (targetRect.width / 2) - (calloutRect.width / 2);
+                            break;
+                        case 'left':
+                            top = targetRect.top + scrollY + (targetRect.height / 2) - (calloutRect.height / 2);
+                            left = targetRect.left + scrollX - calloutRect.width - margin;
+                            break;
+                        case 'right':
+                            top = targetRect.top + scrollY + (targetRect.height / 2) - (calloutRect.height / 2);
+                            left = targetRect.right + scrollX + margin;
+                            break;
+                        default:
+                            top = targetRect.bottom + scrollY + margin;
+                            left = targetRect.left + scrollX;
+                    }
+                    
+                    const viewportRight = scrollX + window.innerWidth;
+                    const viewportBottom = scrollY + window.innerHeight;
+
+                    if (left < scrollX + margin) left = scrollX + margin;
+                    if (left + calloutRect.width > viewportRight - margin) left = viewportRight - calloutRect.width - margin;
+                    if (top < scrollY + margin) top = scrollY + margin;
+                    if (top + calloutRect.height > viewportBottom - margin) top = viewportBottom - calloutRect.height - margin;
+                    
+                    callout.style.top = `${top}px`;
+                    callout.style.left = `${left}px`;
+
+                    requestAnimationFrame(() => {
+                        callout.classList.add('visible');
+                    });
+                }, 350);
+            },
+            
+            cleanupCurrentStep: function() {
+                const oldHighlight = document.querySelector('.tour-highlight');
+                if (oldHighlight) oldHighlight.classList.remove('tour-highlight');
+                const oldCallout = document.getElementById('tour-callout');
+                if (oldCallout) oldCallout.remove();
+            },
+
+            end: function() {
+                this.cleanupCurrentStep();
+                this.isActive = false;
+                this.overlay.style.opacity = '0';
+                this.removeClickOutsideHandler();
+                setTimeout(() => this.overlay.style.pointerEvents = 'none', 400);
+            },
+
+            addClickOutsideHandler: function() {
+                this.clickOutsideHandler = (e) => {
+                    if (this.isActive) {
+                        const callout = document.getElementById('tour-callout');
+                        if (callout && !callout.contains(e.target)) {
+                            this.end();
+                        }
+                    }
+                };
+                document.addEventListener('click', this.clickOutsideHandler);
+            },
+
+            removeClickOutsideHandler: function() {
+                if (this.clickOutsideHandler) {
+                    document.removeEventListener('click', this.clickOutsideHandler);
+                    this.clickOutsideHandler = null;
+                }
+            }
+        };
+
+        // --- DYNAMIC BACKGROUND ---
+        function updateDynamicBackground(finalScore) {
+            const score = isNaN(finalScore) ? 0 : finalScore;
+            // Use consistent greyish background like VCS demo
+            appBackground.style.background = `linear-gradient(135deg, hsl(170, 20%, 90%) 0%, hsl(190, 30%, 95%) 100%)`;
+        }
+        
+        // --- CORE LOGIC FUNCTIONS ---
+        function _calculate_f1(precision, recall) {
+            if (precision + recall === 0) return 0.0;
+            return (2 * precision * recall) / (precision + recall);
+        }
+
+        function buildCurrentSimilarityMatrix(isForRecall) {
+            const numRef = activeReferenceIndices.length;
+            const numGen = activeGeneratedIndices.length;
+            if (numRef === 0 || numGen === 0) return [];
+
+            const matrix = Array.from({ length: isForRecall ? numGen : numRef }, () => Array(isForRecall ? numRef : numGen).fill(0));
+
+            for (let i = 0; i < (isForRecall ? numGen : numRef); i++) {
+                for (let j = 0; j < (isForRecall ? numRef : numGen); j++) {
+                    const rIdx = isForRecall ? activeReferenceIndices[j] : activeReferenceIndices[i];
+                    const gIdx = isForRecall ? activeGeneratedIndices[i] : activeGeneratedIndices[j];
+                    matrix[i][j] = masterSimilarityValues[rIdx][gIdx];
+                }
+            }
+
+            if (!isForRecall) {
+                return matrix[0].map((_, colIndex) => matrix.map(row => row[colIndex]));
+            }
+            return matrix[0].map((_, colIndex) => matrix.map(row => row[colIndex]));
+        }
+        
+        function get_mapping_windows_generic(lenX, lenY) {
+            if (lenX === 0 || lenY === 0) return [];
+            const isYLonger = lenY >= lenX;
+            const longerLen = isYLonger ? lenY : lenX;
+            const shorterLen = isYLonger ? lenX : lenY;
+            const slope = longerLen / shorterLen;
+            const mappingWindowSize = Math.ceil(slope);
+            let direct_windows = [];
+            for (let i = 0; i < shorterLen; i++) {
+                const idx_point = i * slope;
+                const start = Math.floor(idx_point);
+                const end = Math.min(start + mappingWindowSize, longerLen);
+                direct_windows.push({ start, end });
+            }
+            if (isYLonger) return direct_windows;
+            let windows_for_X_items = Array(lenX).fill(null);
+            for (let x_idx = 0; x_idx < lenX; x_idx++) {
+                let mappedYIndices = [];
+                direct_windows.forEach((y_window_on_x_axis, y_idx) => {
+                    if (x_idx >= y_window_on_x_axis.start && x_idx < y_window_on_x_axis.end) { mappedYIndices.push(y_idx); }
+                });
+                if (mappedYIndices.length > 0) {
+                    windows_for_X_items[x_idx] = { start: Math.min(...mappedYIndices), end: Math.max(...mappedYIndices) + 1 };
+                } else { 
+                    const proportionalYPos = Math.max(0, Math.min(lenY - 1, Math.floor((x_idx / lenX) * lenY)));
+                    windows_for_X_items[x_idx] = { start: proportionalYPos, end: Math.min(proportionalYPos + 1, lenY) };
+                }
+            }
+            return windows_for_X_items.map(w => w ? ({start: w.start, end: Math.max(w.start + 1, w.end)}) : null);
+        }
+
+        function calculateLctWindow(yAxis, xAxis) {
+            if (xAxis === 0) return 0;
+            const mappingWindowHeight = Math.ceil(yAxis / xAxis);
+            const ratio = yAxis / xAxis;
+            const ratioDecimalPart = ratio - Math.floor(ratio);
+            
+            if (yAxis <= xAxis) {
+                return mappingWindowHeight;
+            } else {
+                if (0 < ratioDecimalPart && ratioDecimalPart <= 0.5) {
+                    return mappingWindowHeight - 1;
+                } else {
+                    return mappingWindowHeight;
+                }
+            }
+        }
+
+        function calculateMaxPenalty(mappingWindows, yMax) {
+            if (!mappingWindows || mappingWindows.length === 0 || yMax <= 0) return 0.0;
+            
+            let sumMaxDist = 0;
+            mappingWindows.forEach(window => {
+                const distDown = window.start;
+                const distUp = yMax - window.end;
+                const maxDistance = Math.max(distDown, distUp);
+                sumMaxDist += maxDistance;
+            });
+            
+            return sumMaxDist / yMax;
+        }
+
+        function findBestMatchIndex(similarityColumn) {
+            if (!similarityColumn || similarityColumn.length === 0) return -1;
+            let maxVal = -Infinity, maxIdx = -1;
+            similarityColumn.forEach((val, idx) => { if (val > maxVal) { maxVal = val; maxIdx = idx; } });
+            return maxIdx;
+        }
+
+        function findBestMatchWithContextJS(similarityArray, mappingWindow, cutoff, ctrl) {
+            let maxVal = -Infinity; let maxIdx = -1;
+            if (!similarityArray || similarityArray.length === 0) return { bestMatchIndex: -1 };
+            similarityArray.forEach((val, idx) => { if (val > maxVal) { maxVal = val; maxIdx = idx; } });
+            if (maxIdx === -1) return { bestMatchIndex: -1 };
+
+            const contextRange = 1 - cutoff;
+            const contextWindowApplied = maxVal > 0 && (contextRange - (1 - maxVal)) > 0;
+            const contextValueDrop = (contextWindowApplied && maxVal !== 0) ? ((contextRange - (1 - maxVal)) / maxVal) / ctrl : 0.0;
+            const contextThreshold = maxVal - contextValueDrop;
+            
+            const candidateIndices = []; const candidateValues = [];
+            similarityArray.forEach((val, idx) => { if (val >= contextThreshold) { candidateIndices.push(idx); candidateValues.push(val); } });
+
+            if (candidateIndices.length <= 1 || !mappingWindow) {
+                return { bestMatchIndex: candidateIndices.length === 1 ? candidateIndices[0] : maxIdx };
+            }
+
+            const { start, end } = mappingWindow; 
+            let minDistance = Infinity; let bestMatchIndexToReturn = maxIdx; let highestSimInMinDist = -Infinity;
+
+            candidateIndices.forEach((candIdx, i) => {
+                const dist = candIdx >= start && candIdx < end ? 0 : Math.min(Math.abs(candIdx - start), Math.abs(candIdx - (end - 1)));
+                if (dist < minDistance) {
+                    minDistance = dist;
+                    bestMatchIndexToReturn = candIdx;
+                    highestSimInMinDist = candidateValues[i];
+                } else if (dist === minDistance) {
+                    if (candidateValues[i] > highestSimInMinDist) {
+                        highestSimInMinDist = candidateValues[i];
+                        bestMatchIndexToReturn = candIdx;
+                    }
+                }
+            });
+            return { bestMatchIndex: bestMatchIndexToReturn };
+        }
+
+        // NAS-D Distance calculations
+        function calculatePenaltiesAndNAS(chartType) {
+            const isRecall = chartType === 'recall';
+            const sourceLen = isRecall ? activeReferenceIndices.length : activeGeneratedIndices.length;
+            const targetLen = isRecall ? activeGeneratedIndices.length : activeReferenceIndices.length;
+            const markers = markerPositions[chartType];
+            const idealWindows = get_mapping_windows_generic(sourceLen, targetLen);
+
+            if (sourceLen === 0 || targetLen === 0 || markers.length === 0) return { actualPenalty: 0, maxPenalty: 0, nas: 1.0, markerPenalties: [] };
+
+            const lctWindow = calculateLctWindow(targetLen, sourceLen);
+            let totalActualPenalty = 0;
+            const markerPenalties = [];
+            for (let i = 0; i < sourceLen; i++) {
+                const marker = markers[i]; const window = idealWindows[i];
+                if (!marker || !window) continue;
+                const markerY = marker.currentY; const windowStart = window.start; const windowEnd = window.end - 1; 
+                const lctThreshold = currentLct * lctWindow;
+                let rawDistance = 0;
+                if (markerY < windowStart) { rawDistance = windowStart - markerY; } 
+                else if (markerY > windowEnd) { rawDistance = markerY - windowEnd; }
+                const effectiveDistance = rawDistance <= lctThreshold ? 0 : rawDistance;
+                const normalizedPenalty = targetLen > 0 ? effectiveDistance / targetLen : 0;
+                totalActualPenalty += normalizedPenalty;
+                markerPenalties.push({ id: marker.id, penalty: normalizedPenalty });
+            }
+            const maxTotalPenalty = calculateMaxPenalty(idealWindows, targetLen);
+            const nas = (maxTotalPenalty > 0) ? Math.max(0, 1 - (totalActualPenalty / maxTotalPenalty)) : 1.0;
+            return { actualPenalty: totalActualPenalty, maxPenalty: maxTotalPenalty, nas: nas, markerPenalties: markerPenalties };
+        }
+
+        // NAS-L Line calculations
+        function computeIdealNarrativeLineBandJS(mappingWindows, numX, numY) {
+            const n_windows = mappingWindows.length;
+            if (n_windows === 0 || numX === 0 || numY === 0) {
+                return { shortest_line: 0.0, longest_line: 0.0, floor_path: [], ceil_path: [], floor_path_dy_map: {} };
+            }
+            
+            let dp_min = [], dp_max = [], pred_min = [], pred_max = [];
+            for(let i=0; i<n_windows; ++i) {
+                if(!mappingWindows[i]) {
+                    dp_min.push([]); dp_max.push([]); pred_min.push([]); pred_max.push([]);
+                    continue;
+                }
+                const {start, end} = mappingWindows[i];
+                const h = end - start;
+                dp_min.push(Array(h).fill(Infinity));
+                dp_max.push(Array(h).fill(-Infinity));
+                pred_min.push(Array(h).fill(-1));
+                pred_max.push(Array(h).fill(-1));
+            }
+
+            if(dp_min[0]) {
+                for(let y=0; y<dp_min[0].length; ++y) {
+                    dp_min[0][y] = 0;
+                    dp_max[0][y] = 0;
+                }
+            }
+            
+            for(let i=1; i<n_windows; ++i) {
+                if(!mappingWindows[i] || !mappingWindows[i-1]) continue;
+                const {start: cur_s, end: cur_e} = mappingWindows[i];
+                const {start: prev_s, end: prev_e} = mappingWindows[i-1];
+                for(let y_cur=0; y_cur<cur_e-cur_s; ++y_cur) {
+                    for(let y_prev=0; y_prev<prev_e-prev_s; ++y_prev) {
+                        const dist = Math.sqrt(1 + (cur_s+y_cur - (prev_s+y_prev))**2);
+                        if(dp_min[i-1][y_prev] !== Infinity && dp_min[i-1][y_prev] + dist < dp_min[i][y_cur]) {
+                            dp_min[i][y_cur] = dp_min[i-1][y_prev] + dist;
+                            pred_min[i][y_cur] = y_prev;
+                        }
+                        if(dp_max[i-1][y_prev] !== -Infinity && dp_max[i-1][y_prev] + dist > dp_max[i][y_cur]) {
+                            dp_max[i][y_cur] = dp_max[i-1][y_prev] + dist;
+                            pred_max[i][y_cur] = y_prev;
+                        }
+                    }
+                }
+            }
+
+            let shortest_line = dp_min[n_windows-1] ? Math.min(...dp_min[n_windows-1]) : 0;
+            let longest_line = dp_max[n_windows-1] ? Math.max(...dp_max[n_windows-1]) : 0;
+            let shortest_end_y = dp_min[n_windows-1] ? dp_min[n_windows-1].indexOf(shortest_line) : -1;
+            let longest_end_y = dp_max[n_windows-1] ? dp_max[n_windows-1].indexOf(longest_line) : -1;
+
+            if(shortest_line === Infinity || shortest_end_y === -1) shortest_line = 0;
+            if(longest_line === -Infinity || longest_end_y === -1) longest_line = 0;
+
+            let floor_path = [], ceil_path = [];
+            let current_y_min = shortest_end_y;
+            let current_y_max = longest_end_y;
+
+            for(let i = n_windows-1; i>=0; --i) {
+                if(!mappingWindows[i]) continue;
+                if(current_y_min !== -1 && pred_min[i] && pred_min[i][current_y_min] !== undefined) {
+                    floor_path.unshift({x: i, y: mappingWindows[i].start + current_y_min});
+                    current_y_min = pred_min[i][current_y_min];
+                }
+                if(current_y_max !== -1 && pred_max[i] && pred_max[i][current_y_max] !== undefined) {
+                    ceil_path.unshift({x: i, y: mappingWindows[i].start + current_y_max});
+                    current_y_max = pred_max[i][current_y_max];
+                }
+            }
+            
+            const dyMap = {};
+            if(floor_path.length > 1) {
+                for(let i=0; i<floor_path.length-1; ++i) {
+                    const x_pos = floor_path[i].x;
+                    const dy = floor_path[i+1].y - floor_path[i].y;
+                    dyMap[x_pos] = dy;
+                }
+            }
+            
+            return { shortest_line, longest_line, floor_path, ceil_path, floor_path_dy_map: dyMap };
+        }
+
+        function computeActualLineLengthJS(actualPath, y_axis, x_axis, lctValue, dyMap) {
+            if (!actualPath || actualPath.length <= 1) return { totalLength: 0.0, segments: [] };
+
+            let len = 0;
+            const segments = [];
+            const sortedPath = [...actualPath].sort((a,b) => a.x - b.x);
+            const ratio = x_axis > 0 ? y_axis / x_axis : 0;
+            const mappingWindowHeight = Math.ceil(ratio);
+            const ratioDecimalPart = ratio - Math.floor(ratio);
+            let lct_window;
+            if (y_axis <= x_axis) {
+                lct_window = mappingWindowHeight;
+            } else {
+                if (0 < ratioDecimalPart && ratioDecimalPart <= 0.5) {
+                    lct_window = (2 * mappingWindowHeight) - 2;
+                } else {
+                    lct_window = (2 * mappingWindowHeight) - 1;
+                }
+            }
+            lct_window = Math.max(0, lct_window);
+
+            let expanded_lct_window;
+            if (y_axis <= x_axis) {
+                expanded_lct_window = lctValue > 0 ? lct_window + (mappingWindowHeight * lctValue) : lct_window;
+            } else {
+                if (0 < ratioDecimalPart && ratioDecimalPart <= 0.5) {
+                    expanded_lct_window = lctValue > 0 ? lct_window + ((mappingWindowHeight - 1) * lctValue) : lct_window;
+                } else {
+                    expanded_lct_window = lctValue > 0 ? lct_window + (mappingWindowHeight * lctValue) : lct_window;
+                }
+            }
+
+            for (let i = 0; i < sortedPath.length - 1; i++) {
+                const p1 = sortedPath[i], p2 = sortedPath[i+1];
+                const dx = p2.x - p1.x, dyRaw = p2.y - p1.y;
+                if (dx <= 0) continue;
+                
+                let segmentLength = 0;
+                let calculation_method = "invalid";
+                let isCalculable = false;
+                
+                // CASE 1: Normal segments (positive slope, reasonable vertical change)
+                if (dyRaw >= 0 && dyRaw <= lct_window) {
+                    isCalculable = true;
+                    segmentLength = Math.sqrt(dx**2 + dyRaw**2);
+                    calculation_method = "standard";
+                }
+                // CASE 2: LCT-allowed segments (negative slopes or large jumps within LCT range)
+                else if (lctValue > 0 && Math.abs(dyRaw) <= expanded_lct_window) {
+                    isCalculable = true;
+                    let floorDy = null;
+                    if (dyMap && dyMap[p1.x] !== undefined) {
+                        floorDy = Math.abs(dyMap[p1.x]);
+                    }
+                    if (floorDy !== null) {
+                        segmentLength = Math.sqrt(dx**2 + floorDy**2);
+                        calculation_method = "lct-capped";
+                    }
+                }
+                // CASE 3: Beyond LCT range - invalid segments
+                // Length remains 0, segment not calculable
+                
+                len += segmentLength;
+                segments.push({ 
+                    start: p1, 
+                    end: p2, 
+                    length: segmentLength, 
+                    calculation_method: calculation_method, 
+                    dy: dyRaw, 
+                    threshold: lct_window, 
+                    expanded_threshold: expanded_lct_window,
+                    is_calculable: isCalculable
+                });
+            }
+            return { totalLength: len, segments: segments };
+        }
+
+        function calculateLineNAS(floor, ceil, actual) {
+            if (floor === 0 && ceil === 0) return 1.0;
+            if (actual >= floor && actual <= ceil) return 1.0;
+            if (actual < floor) return floor > 0 ? actual / floor : 0.0;
+            return actual > 0 ? ceil / actual : 0.0;
+        }
+
+        // Window Regularizer calculation
+        function calculateWindowRegularizer(refLen, genLen) {
+            // Select appropriate mapping windows based on which length is larger
+            let mappingWindows, maxLen;
+            if (refLen < genLen) {
+                mappingWindows = get_mapping_windows_generic(refLen, genLen);  // Recall windows
+                maxLen = genLen;
+            } else {
+                mappingWindows = get_mapping_windows_generic(genLen, refLen);  // Precision windows
+                maxLen = refLen;
+            }
+            
+            let totalMappingWindowArea = 0;
+            for (const window of mappingWindows) {
+                if (window) {
+                    const mappingWindowHeight = window.end - window.start;
+                    totalMappingWindowArea += mappingWindowHeight * 1;
+                }
+            }
+            
+            const timelineArea = refLen * genLen;
+            
+            // Calculate min_area based on Python logic
+            let minAreaVal;
+            if (refLen > genLen) {
+                minAreaVal = 1 / refLen;
+            } else {
+                minAreaVal = 1 / genLen;
+            }
+            
+            let windowRegularizerVal;
+            if (timelineArea > 0 && minAreaVal < 1) {
+                windowRegularizerVal = (totalMappingWindowArea / timelineArea - minAreaVal) / (0.5 - minAreaVal);
+                windowRegularizerVal = Math.max(0, Math.min(1, windowRegularizerVal));
+            } else {
+                windowRegularizerVal = 0;
+            }
+            
+            return {
+                windowRegularizer: windowRegularizerVal,
+                timelineArea: timelineArea,
+                totalMappingWindowArea: totalMappingWindowArea,
+                minArea: minAreaVal
+            };
+        }
+
+        function regularizeNAS(nasF1, windowRegularizer) {
+            const nasRegularized = nasF1 - windowRegularizer;
+            if (nasRegularized <= 0) return 0.0;
+            if (Math.abs(1 - windowRegularizer) < 1e-9) return 0.0;
+            return nasRegularized / (1 - windowRegularizer);
+        }
+
+        function initializeActualPath(simMatrix, mappingWindowsForX, sourceLen, targetLen) {
+            const newPath = [];
+            if (sourceLen === 0 || targetLen === 0 || simMatrix.length === 0 || simMatrix[0].length === 0) {
+                 return newPath;
+            }
+            for (let x_idx = 0; x_idx < sourceLen; x_idx++) {
+                const columnSimilarity = simMatrix[x_idx];
+                const currentMappingWindow = mappingWindowsForX[x_idx];
+                const matchInfo = findBestMatchWithContextJS(columnSimilarity, currentMappingWindow, 0.6, 4.0);
+                let y_match_idx = matchInfo.bestMatchIndex;
+                if (y_match_idx === -1) {
+                    y_match_idx = currentMappingWindow ? Math.floor((currentMappingWindow.start + currentMappingWindow.end) / 2) : Math.floor(targetLen / 2);
+                }
+                newPath.push({ x: x_idx, y: y_match_idx });
+            }
+            return newPath;
+        }
+
+        // --- SCENARIO PRESET FUNCTIONS ---
+
+        function handleScenarioClick(scenarioType) { 
+            let targetGenOrder = [...activeGeneratedIndices].sort((a,b) => a-b); 
+            const n = targetGenOrder.length; 
+            switch(scenarioType) { 
+                case 'optimal': break; 
+                case 'neighborSwap': for(let i=0; i < n - 1; i+=2) { [targetGenOrder[i], targetGenOrder[i+1]] = [targetGenOrder[i+1], targetGenOrder[i]]; } break; 
+                case 'reverse': targetGenOrder.reverse(); break; 
+                case 'minorDisorders': targetGenOrder.forEach((_, i) => { if (Math.random() > 0.6) { const swapWith = (i + (Math.random() > 0.5 ? 1 : -1) + n) % n; [targetGenOrder[i], targetGenOrder[swapWith]] = [targetGenOrder[swapWith], targetGenOrder[i]]; } }); break; 
+                case 'majorDisorder': const reorderPattern = [2, 5, 1, 7, 0, 4, 8, 3, 6]; targetGenOrder = reorderPattern.slice(0, n); break; 
+                case 'rotateHalf': const mid = Math.floor(n/2); targetGenOrder = [...targetGenOrder.slice(mid), ...targetGenOrder.slice(0, mid)]; break; 
+            } 
+            animateScenarioTransition(targetGenOrder); 
+        }
+
+        function animateScenarioTransition(targetGenOrder) {
+            if (animationFrameId) cancelAnimationFrame(animationFrameId);
+            const duration = 600;
+            
+            const startPositions = { 
+                precision: JSON.parse(JSON.stringify(markerPositions.precision)),
+                recall: JSON.parse(JSON.stringify(markerPositions.recall))
+            };
+            const genIndexToNewPosMap = new Map(targetGenOrder.map((originalIndex, newPos) => [originalIndex, newPos]));
+            
+            // Create target positions for markers
+            const targetPositions = { precision: [], recall: [] };
+            
+            // Calculate target positions for precision (Gen -> Ref)
+            startPositions.precision.forEach(startMarker => {
+                const originalGenIndex = activeGeneratedIndices[startMarker.id];
+                const newX = genIndexToNewPosMap.get(originalGenIndex);
+                if (newX !== undefined) {
+                    targetPositions.precision[newX] = { 
+                        id: newX, 
+                        currentY: startMarker.currentY 
+                    };
+                }
+            });
+            
+            // Calculate target positions for recall (Ref -> Gen)  
+            startPositions.recall.forEach(startMarker => {
+                const newYforGen = genIndexToNewPosMap.get(activeGeneratedIndices[startMarker.currentY]);
+                if (newYforGen !== undefined) {
+                    targetPositions.recall[startMarker.id] = { 
+                        id: startMarker.id, 
+                        currentY: newYforGen 
+                    };
+                }
+            });
+
+            const startTime = performance.now();
+            
+            function easeOutCubic(t) {
+                return 1 - Math.pow(1 - t, 3);
+            }
+            
+            function tick(currentTime) {
+                const elapsedTime = currentTime - startTime;
+                const rawProgress = Math.min(elapsedTime / duration, 1);
+                const progress = easeOutCubic(rawProgress);
+
+                // Interpolate marker positions
+                ['precision', 'recall'].forEach(chartType => {
+                    for(let i = 0; i < startPositions[chartType].length; i++) {
+                        const start = startPositions[chartType][i];
+                        const target = targetPositions[chartType][i];
+                        if (start && target) {
+                            markerPositions[chartType][i].id = start.id + (target.id - start.id) * progress;
+                            markerPositions[chartType][i].currentY = start.currentY + (target.currentY - start.currentY) * progress;
+                        }
+                    }
+                });
+                
+                // Update charts with animation flag  
+                requestAnimationFrame(() => {
+                    const precisionResults = { nasD: { markerPenalties: [] } };
+                    const recallResults = { nasD: { markerPenalties: [] } };
+                    renderChart('precision', precisionResults);
+                    renderChart('recall', recallResults);
+                });
+
+                if (rawProgress < 1) {
+                    animationFrameId = requestAnimationFrame(tick);
+                } else {
+                    animationFrameId = null;
+                    activeGeneratedIndices = targetGenOrder;
+                    initializeAppState();
+                    updateAndRenderAll();
+                }
+            }
+            animationFrameId = requestAnimationFrame(tick);
+        }
+
+
+        // --- PREVIEW (GHOST) FUNCTIONS ---
+        function showScorePreview(tempMarkers, tempPaths) {
+             currentLct = parseInt(lctSlider.value);
+             const nRef = activeReferenceIndices.length, nGen = activeGeneratedIndices.length;
+
+             // Calculate NAS-D for both charts
+             const precNasDResult = calculatePenaltiesForMarkers('precision', tempMarkers.precision);
+             const recNasDResult = calculatePenaltiesForMarkers('recall', tempMarkers.recall);
+             
+             // Calculate NAS-L for both charts
+             const precMappingWindows = get_mapping_windows_generic(nGen, nRef);
+             const precIdealBand = computeIdealNarrativeLineBandJS(precMappingWindows, nGen, nRef);
+             const precPathInfo = computeActualLineLengthJS(tempPaths.precision, nRef, nGen, currentLct, precIdealBand.floor_path_dy_map);
+             const precNasL = calculateLineNAS(precIdealBand.shortest_line, precIdealBand.longest_line, precPathInfo.totalLength);
+             
+             const recMappingWindows = get_mapping_windows_generic(nRef, nGen);
+             const recIdealBand = computeIdealNarrativeLineBandJS(recMappingWindows, nRef, nGen);
+             const recPathInfo = computeActualLineLengthJS(tempPaths.recall, nGen, nRef, currentLct, recIdealBand.floor_path_dy_map);
+             const recNasL = calculateLineNAS(recIdealBand.shortest_line, recIdealBand.longest_line, recPathInfo.totalLength);
+
+             // Calculate F1 scores
+             const nasDf1 = _calculate_f1(precNasDResult.nas, recNasDResult.nas);
+             const nasLf1 = _calculate_f1(precNasL, recNasL);
+             const combinedF1 = _calculate_f1(nasDf1, nasLf1);
+             
+             // Calculate regularizer and final score
+             const regResults = calculateWindowRegularizer(nRef, nGen);
+             const finalNAS = regularizeNAS(combinedF1, regResults.windowRegularizer);
+
+             // Update precision chart metrics
+             document.getElementById('precisionNasDPreview').textContent = `→ ${precNasDResult.nas.toFixed(3)}`;
+             document.getElementById('precisionNasLPreview').textContent = `→ ${precNasL.toFixed(3)}`;
+             document.getElementById('precisionCombinedPreview').textContent = `→ ${_calculate_f1(precNasDResult.nas, precNasL).toFixed(3)}`;
+             
+             // Update recall chart metrics
+             document.getElementById('recallNasDPreview').textContent = `→ ${recNasDResult.nas.toFixed(3)}`;
+             document.getElementById('recallNasLPreview').textContent = `→ ${recNasL.toFixed(3)}`;
+             document.getElementById('recallCombinedPreview').textContent = `→ ${_calculate_f1(recNasDResult.nas, recNasL).toFixed(3)}`;
+
+             // Update overall metrics
+             document.getElementById('overallNasDF1Preview').textContent = `→ ${nasDf1.toFixed(3)}`;
+             document.getElementById('overallNasLF1Preview').textContent = `→ ${nasLf1.toFixed(3)}`;
+             document.getElementById('combinedF1NASPreview').textContent = `→ ${combinedF1.toFixed(3)}`;
+             document.getElementById('windowRegularizerPreview').textContent = `→ ${regResults.windowRegularizer.toFixed(3)}`;
+             document.getElementById('finalCompleteNasPreview').textContent = `→ ${finalNAS.toFixed(3)}`;
+        }
+
+        function hideScorePreview() {
+            const previewElements = ['precisionNasDPreview', 'precisionNasLPreview', 'precisionCombinedPreview', 
+                                     'recallNasDPreview', 'recallNasLPreview', 'recallCombinedPreview',
+                                     'overallNasDF1Preview', 'overallNasLF1Preview', 'combinedF1NASPreview', 
+                                     'windowRegularizerPreview', 'finalCompleteNasPreview'];
+            previewElements.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.textContent = '';
+            });
+        }
+
+        function calculatePenaltiesForMarkers(chartType, tempMarkers) {
+            const isRecall = chartType === 'recall';
+            const sourceLen = isRecall ? activeReferenceIndices.length : activeGeneratedIndices.length;
+            const targetLen = isRecall ? activeGeneratedIndices.length : activeReferenceIndices.length;
+            const idealWindows = get_mapping_windows_generic(sourceLen, targetLen);
+
+            if (sourceLen === 0 || targetLen === 0 || tempMarkers.length === 0) return { nas: 1.0 };
+
+            const lctWindow = calculateLctWindow(targetLen, sourceLen);
+            let totalActualPenalty = 0;
+            for (let i = 0; i < sourceLen; i++) {
+                const marker = tempMarkers[i]; const window = idealWindows[i];
+                if (!marker || !window) continue;
+                const markerY = marker.currentY; const windowStart = window.start; const windowEnd = window.end - 1; 
+                const lctThreshold = currentLct * lctWindow;
+                let rawDistance = 0;
+                if (markerY < windowStart) { rawDistance = windowStart - markerY; } 
+                else if (markerY > windowEnd) { rawDistance = markerY - windowEnd; }
+                const effectiveDistance = rawDistance <= lctThreshold ? 0 : rawDistance;
+                const normalizedPenalty = targetLen > 0 ? effectiveDistance / targetLen : 0;
+                totalActualPenalty += normalizedPenalty;
+            }
+            const maxTotalPenalty = calculateMaxPenalty(idealWindows, targetLen);
+            const nas = (maxTotalPenalty > 0) ? Math.max(0, 1 - (totalActualPenalty / maxTotalPenalty)) : 1.0;
+            return { nas: nas };
+        }
+
+        // --- RENDERING FUNCTIONS ---
+        function renderSegmentLists() {
+            function populateList(ul, masterChunks, activeIndices, type) {
+                ul.innerHTML = '';
+                const activeSet = new Set(activeIndices);
+                const listItems = masterChunks.map((text, index) => {
+                    const li = document.createElement('li');
+                    const isActive = activeSet.has(index);
+                    li.dataset.originalIndex = index;
+                    li.dataset.chunkType = type;
+                    const textSpan = document.createElement('span');
+                    textSpan.textContent = `${type.slice(0,3).toUpperCase()} ${index}: ${text.substring(0,50)}${text.length > 50 ? '...' : ''}`;
+                    li.appendChild(textSpan);
+                    if (isActive) {
+                        li.setAttribute('draggable', true);
+                        const handle = document.createElement('i');
+                        handle.className = 'fas fa-grip-vertical text-slate-400';
+                        li.appendChild(handle);
+                    }
+                    li.classList.toggle('inactive-chunk', !isActive);
+                    li.addEventListener('click', () => toggleChunkActiveState(type, index));
+                    return { li, isActive, originalIndex: index };
+                });
+
+                activeIndices.forEach(activeIndex => {
+                    const item = listItems.find(it => it.originalIndex === activeIndex);
+                    if (item) ul.appendChild(item.li);
+                });
+                
+                listItems.forEach(item => {
+                    if (!item.isActive) ul.appendChild(item.li);
+                });
+            }
+            document.getElementById('activeRefChunkCount').textContent = activeReferenceIndices.length;
+            document.getElementById('totalRefChunkCount').textContent = masterReferenceChunks.length;
+            document.getElementById('activeGenChunkCount').textContent = activeGeneratedIndices.length;
+            document.getElementById('totalGenChunkCount').textContent = masterGeneratedChunks.length;
+
+            populateList(referenceSegmentsUl, masterReferenceChunks, activeReferenceIndices, 'reference');
+            populateList(generatedSegmentsUl, masterGeneratedChunks, activeGeneratedIndices, 'generated');
+        }
+        
+        function renderGridLines(chartGrid, sourceLen, targetLen) {
+            chartGrid.querySelectorAll('.grid-line').forEach(e => e.remove());
+            
+            if (sourceLen > 0 && targetLen > 0) {
+                for (let i = 0; i <= sourceLen; i++) {
+                    const line = document.createElement('div');
+                    line.className = 'grid-line';
+                    line.style.left = `${i / sourceLen * 100}%`;
+                    line.style.top = '0';
+                    line.style.width = '1px';
+                    line.style.height = '100%';
+                    chartGrid.appendChild(line);
+                }
+                
+                for (let i = 0; i <= targetLen; i++) {
+                    const line = document.createElement('div');
+                    line.className = 'grid-line';
+                    line.style.left = '0';
+                    line.style.top = `${i / targetLen * 100}%`;
+                    line.style.width = '100%';
+                    line.style.height = '1px';
+                    chartGrid.appendChild(line);
+                }
+            }
+        }
+        
+        function renderChart(chartType, results) {
+            const chartUI = charts[chartType];
+            const isRecall = chartType === 'recall';
+            const sourceLen = isRecall ? activeReferenceIndices.length : activeGeneratedIndices.length;
+            const targetLen = isRecall ? activeGeneratedIndices.length : activeReferenceIndices.length;
+            
+            // Instead of clearing, we'll update existing elements and manage them
+            chartUI.axisX.innerHTML = ''; chartUI.axisY.innerHTML = '';
+            chartUI.idealPathsSvg.innerHTML = ''; chartUI.actualPathSvg.innerHTML = '';
+
+            requestAnimationFrame(() => {
+                renderGridLines(chartUI.grid, sourceLen, targetLen);
+            });
+            if (sourceLen === 0 || targetLen === 0) return;
+            
+            const idealWindows = get_mapping_windows_generic(sourceLen, targetLen);
+            const lctWindow = calculateLctWindow(targetLen, sourceLen);
+            
+            // Get existing window elements
+            const existingIdealWindows = Array.from(chartUI.idealContainer.children);
+            const existingLctWindows = Array.from(chartUI.lctContainer.children);
+            
+            // Update or create ideal windows
+            idealWindows.forEach((window, x_idx) => {
+                if (!window) return;
+                const startY = window.start; const endY = window.end; const height = endY - startY;
+                
+                // Reuse existing ideal window or create new one
+                let idealDiv = existingIdealWindows[x_idx];
+                if (!idealDiv) {
+                    idealDiv = document.createElement('div');
+                    idealDiv.className = 'ideal-mapping-window';
+                    chartUI.idealContainer.appendChild(idealDiv);
+                }
+                
+                // Update position and size
+                idealDiv.style.left = `calc(${x_idx} * 100% / ${sourceLen})`;
+                idealDiv.style.width = `calc(100% / ${sourceLen})`;
+                idealDiv.style.bottom = `calc(${startY} * 100% / ${targetLen})`;
+                idealDiv.style.height = `calc(${height} * 100% / ${targetLen})`;
+                
+                // Update or create LCT window
+                const lctThreshold = currentLct * lctWindow;
+                const lctStartY = Math.max(0, startY - lctThreshold); const lctEndY = Math.min(targetLen, endY + lctThreshold);
+                const lctHeight = lctEndY - lctStartY;
+                
+                let lctDiv = existingLctWindows[x_idx];
+                if (!lctDiv) {
+                    lctDiv = document.createElement('div');
+                    lctDiv.className = 'lct-padding-window';
+                    chartUI.lctContainer.appendChild(lctDiv);
+                }
+                
+                // Update LCT window position and size
+                lctDiv.style.left = idealDiv.style.left;
+                lctDiv.style.width = idealDiv.style.width;
+                lctDiv.style.bottom = `calc(${lctStartY} * 100% / ${targetLen})`;
+                lctDiv.style.height = `calc(${lctHeight} * 100% / ${targetLen})`;
+            });
+            
+            // Remove extra windows if there are fewer windows now
+            while (chartUI.idealContainer.children.length > idealWindows.length) {
+                chartUI.idealContainer.lastChild.remove();
+            }
+            while (chartUI.lctContainer.children.length > idealWindows.length) {
+                chartUI.lctContainer.lastChild.remove();
+            }
+
+            const { markerPenalties } = results.nasD;
+            const penaltyMap = new Map(markerPenalties.map(p => [p.id, p.penalty]));
+            
+            // Get existing markers
+            const existingMarkers = Array.from(chartUI.markerContainer.children);
+            
+            // Update or create markers
+            markerPositions[chartType].forEach((marker, index) => {
+                // Reuse existing marker or create new one
+                let markerDiv = existingMarkers[index];
+                if (!markerDiv) {
+                    markerDiv = document.createElement('div');
+                    markerDiv.className = 'gen-marker';
+                    const penaltyLabel = document.createElement('span');
+                    penaltyLabel.className = 'marker-penalty-label';
+                    markerDiv.appendChild(penaltyLabel);
+                    chartUI.markerContainer.appendChild(markerDiv);
+                }
+                
+                // Update marker properties
+                markerDiv.dataset.id = marker.id;
+                markerDiv.dataset.chartType = chartType;
+                
+                const penalty = penaltyMap.get(marker.id) || 0;
+                const penaltyLabel = markerDiv.querySelector('.marker-penalty-label');
+                if (penalty > 0) { 
+                    penaltyLabel.textContent = `${penalty.toFixed(2)}`;
+                    penaltyLabel.classList.add('visible');
+                } else {
+                    penaltyLabel.textContent = '';
+                    penaltyLabel.classList.remove('visible');
+                }
+                
+                // Update marker position
+                markerDiv.style.left = `calc(${(marker.id + 0.5)} * 100% / ${sourceLen} - 6px)`;
+                markerDiv.style.bottom = `calc(${(marker.currentY + 0.5)} * 100% / ${targetLen} - 6px)`;
+            });
+            
+            // Remove extra markers if there are fewer markers now
+            while (chartUI.markerContainer.children.length > markerPositions[chartType].length) {
+                chartUI.markerContainer.lastChild.remove();
+            }
+
+            const yIndices = isRecall ? activeGeneratedIndices : activeReferenceIndices;
+            const xIndices = isRecall ? activeReferenceIndices : activeGeneratedIndices;
+            
+            const yStep = Math.max(1, Math.ceil(targetLen / 8));
+            for (let i = 0; i < targetLen; i += yStep) {
+                const lbl = document.createElement('div'); lbl.className = 'axis-label'; lbl.textContent = yIndices[i];
+                lbl.style.left = '-1rem'; lbl.style.top = `calc(100% - (${i}*100%/${targetLen}) - (50%/${targetLen}))`;
+                lbl.style.transform = 'translateY(-50%) translateX(-100%)'; chartUI.axisY.appendChild(lbl);
+            }
+            if (targetLen > 1 && (targetLen-1) % yStep !== 0) {
+                const lbl = document.createElement('div'); lbl.className = 'axis-label'; lbl.textContent = yIndices[targetLen-1];
+                lbl.style.left = '-1rem'; lbl.style.top = `calc(100% - (${targetLen-1}*100%/${targetLen}) - (50%/${targetLen}))`;
+                lbl.style.transform = 'translateY(-50%) translateX(-100%)'; chartUI.axisY.appendChild(lbl);
+            }
+            const xStep = Math.max(1, Math.ceil(sourceLen / 8));
+            for (let i = 0; i < sourceLen; i += xStep) {
+                const lbl = document.createElement('div'); lbl.className = 'axis-label'; lbl.textContent = xIndices[i];
+                lbl.style.bottom = '-1.5rem'; lbl.style.left = `calc(${i}*100%/${sourceLen} + 50%/${sourceLen})`;
+                lbl.style.transform = 'translateX(-50%)'; chartUI.axisX.appendChild(lbl);
+            }
+            if (sourceLen > 1 && (sourceLen-1) % xStep !== 0) {
+                const lbl = document.createElement('div'); lbl.className = 'axis-label'; lbl.textContent = xIndices[sourceLen - 1];
+                lbl.style.bottom = '-1.5rem'; lbl.style.left = `calc(${sourceLen - 1}*100%/${sourceLen} + 50%/${sourceLen})`;
+                lbl.style.transform = 'translateX(-50%)'; chartUI.axisX.appendChild(lbl);
+            }
+
+            // Render SVG paths for Line NAS
+            const chartWidth = chartUI.grid.clientWidth;
+            const chartHeight = chartUI.grid.clientHeight;
+            
+            // Clear the SVG first
+            chartUI.idealPathsSvg.innerHTML = '';
+            chartUI.actualPathSvg.innerHTML = '';
+            
+            const drawIdealPath = (svg, pathData, className) => {
+                if (!pathData || pathData.length === 0 || !(chartWidth > 0) || !(chartHeight > 0)) return;
+                const points = pathData.map(p => `${(p.x + 0.5) * (chartWidth / sourceLen)},${chartHeight - ((p.y + 0.5) * (chartHeight / targetLen))}`).join(' ');
+                const line = document.createElementNS('http://www.w3.org/2000/svg', 'polyline');
+                line.setAttribute('points', points); 
+                line.setAttribute('class', className);
+                svg.appendChild(line);
+            };
+
+            const drawSegmentedPath = (svg, pathData, segments) => {
+                if (!pathData || pathData.length === 0 || !segments || !(chartWidth > 0) || !(chartHeight > 0)) return;
+                
+                // Clear existing paths
+                svg.innerHTML = '';
+                
+                for (let i = 0; i < pathData.length - 1; i++) {
+                    const startPoint = pathData[i];
+                    const endPoint = pathData[i + 1];
+                    
+                    // Convert to screen coordinates
+                    const x1 = (startPoint.x + 0.5) * (chartWidth / sourceLen);
+                    const y1 = chartHeight - ((startPoint.y + 0.5) * (chartHeight / targetLen));
+                    const x2 = (endPoint.x + 0.5) * (chartWidth / sourceLen);
+                    const y2 = chartHeight - ((endPoint.y + 0.5) * (chartHeight / targetLen));
+                    
+                    // Create line segment
+                    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                    line.setAttribute('x1', x1);
+                    line.setAttribute('y1', y1);
+                    line.setAttribute('x2', x2);
+                    line.setAttribute('y2', y2);
+                    
+                    // Determine segment type and apply appropriate class
+                    let segmentClass = 'path-segment-standard';
+                    if (segments[i]) {
+                        switch (segments[i].calculation_method) {
+                            case 'lct-capped':
+                                segmentClass = 'path-segment-lct-capped';
+                                break;
+                            case 'invalid':
+                                segmentClass = 'path-segment-invalid';
+                                break;
+                            default:
+                                segmentClass = 'path-segment-standard';
+                        }
+                    }
+                    
+                    line.setAttribute('class', `${segmentClass} path-segment-animated`);
+                    
+                    // Add animation delay for staggered effect
+                    line.style.animationDelay = `${i * 50}ms`;
+                    
+                    // Add tooltip functionality
+                    line.addEventListener('mouseenter', (e) => {
+                        const segmentInfo = segments[i] || { calculation_method: 'standard' };
+                        const tooltip = document.getElementById('chartTooltip');
+                        
+                        // Set tooltip content
+                        let typeText = segmentInfo.calculation_method === 'lct-capped' ? 'LCT-Capped' : 
+                                      segmentInfo.calculation_method === 'invalid' ? 'Invalid' : 'Standard';
+                        tooltip.innerHTML = `<strong>Segment ${i + 1}</strong><br>Type: ${typeText}`;
+                        
+                        // Remove existing type classes and add new one
+                        tooltip.classList.remove('standard', 'lct-capped', 'invalid');
+                        tooltip.classList.add(segmentInfo.calculation_method || 'standard');
+                        tooltip.classList.add('visible');
+                        
+                        // Position tooltip
+                        const rect = svg.getBoundingClientRect();
+                        tooltip.style.left = e.clientX + 10 + 'px';
+                        tooltip.style.top = e.clientY - 10 + 'px';
+                    });
+                    
+                    line.addEventListener('mouseleave', () => {
+                        const tooltip = document.getElementById('chartTooltip');
+                        tooltip.classList.remove('visible');
+                    });
+                    
+                    svg.appendChild(line);
+                }
+            };
+
+            if (results.nasL && results.nasL.idealBand) {
+                drawIdealPath(chartUI.idealPathsSvg, results.nasL.idealBand.floor_path, 'floor-path-line');
+                drawIdealPath(chartUI.idealPathsSvg, results.nasL.idealBand.ceil_path, 'ceil-path-line');
+            }
+            // Use segmented path for actual path with color coding
+            if (actualPathSegments[chartType] && actualPathSegments[chartType].length > 0) {
+                drawSegmentedPath(chartUI.actualPathSvg, actualPathPositions[chartType], actualPathSegments[chartType]);
+            } else {
+                drawIdealPath(chartUI.actualPathSvg, actualPathPositions[chartType], 'actual-path-line');
+            }
+        }
+        
+        // --- EVENT HANDLERS ---
+        function handleSegmentDragStart(e) {
+            if (!e.target.getAttribute('draggable')) return;
+            draggedItemInfo.element = e.target;
+            draggedItemInfo.originalIndex = parseInt(e.target.dataset.originalIndex);
+            draggedItemInfo.type = e.target.dataset.chunkType;
+            e.dataTransfer.effectAllowed = 'move';
+            e.dataTransfer.setData('text/plain', draggedItemInfo.originalIndex);
+            setTimeout(() => e.target.classList.add('dragging'), 0);
+        }
+
+        function handleSegmentDragOver(e) {
+            e.preventDefault();
+            const listUl = e.target.closest('ul');
+            if (!listUl || (listUl.id !== `${draggedItemInfo.type}SegmentsUl`)) return;
+            if (!draggedItemInfo.placeholder) {
+                draggedItemInfo.placeholder = document.createElement('li');
+                draggedItemInfo.placeholder.className = 'drag-placeholder';
+                draggedItemInfo.placeholder.textContent = 'Drop here';
+            }
+            const targetLi = e.target.closest('li:not(.inactive-chunk):not(.dragging)');
+            if (targetLi && targetLi.dataset.chunkType === draggedItemInfo.type) {
+                const rect = targetLi.getBoundingClientRect();
+                const isAfter = e.clientY > rect.top + rect.height / 2;
+                listUl.insertBefore(draggedItemInfo.placeholder, isAfter ? targetLi.nextSibling : targetLi);
+            } else if (!listUl.querySelector('.drag-placeholder')) {
+                const firstActive = listUl.querySelector('li[draggable="true"]');
+                if (firstActive) {
+                    listUl.insertBefore(draggedItemInfo.placeholder, firstActive);
+                } else {
+                    listUl.appendChild(draggedItemInfo.placeholder);
+                }
+            }
+        }
+        
+        function handleSegmentDrop(e) {
+            e.preventDefault();
+            if (!draggedItemInfo.element || !draggedItemInfo.placeholder || !draggedItemInfo.placeholder.parentNode) return;
+
+            const activeIndicesArray = draggedItemInfo.type === 'reference' ? activeReferenceIndices : activeGeneratedIndices;
+            
+            // Find the index to move the item to
+            const listItems = Array.from(draggedItemInfo.placeholder.parentNode.children);
+            const toIndex = listItems.filter(li => li.getAttribute('draggable') === 'true' || li === draggedItemInfo.placeholder).indexOf(draggedItemInfo.placeholder);
+
+            // Remove the item from its original position
+            const fromIndex = activeIndicesArray.indexOf(draggedItemInfo.originalIndex);
+            if (fromIndex > -1) {
+                activeIndicesArray.splice(fromIndex, 1);
+            }
+            
+            // Insert it at the new position
+            activeIndicesArray.splice(toIndex, 0, draggedItemInfo.originalIndex);
+            
+            draggedItemInfo.placeholder.remove();
+            draggedItemInfo.element.classList.remove('dragging');
+            
+            initializeAppState();
+            updateAndRenderAll();
+        }
+
+        function handleSegmentDragEnd() {
+            if (draggedItemInfo.element) draggedItemInfo.element.classList.remove('dragging');
+            if (draggedItemInfo.placeholder && draggedItemInfo.placeholder.parentNode) draggedItemInfo.placeholder.remove();
+            draggedItemInfo = { element: null, originalIndex: null, type: null, placeholder: null };
+        }
+
+        function handleMarkerMouseDown(e) {
+            if (!e.target.classList.contains('gen-marker')) return;
+            e.preventDefault();
+            const markerElement = e.target;
+            draggedMarkerInfo = {
+                chartType: markerElement.dataset.chartType, 
+                id: parseInt(markerElement.dataset.id),
+                element: markerElement, 
+                chartGrid: charts[markerElement.dataset.chartType].grid, 
+                startY: e.clientY,
+                startX: e.clientX,
+                mode: null,
+                targetX: null
+            };
+            markerElement.classList.add('dragging');
+            document.body.style.cursor = 'grabbing';
+            isMarkerDragging = true; 
+            hideChartTooltip();
+            document.addEventListener('mousemove', handleMarkerMouseMove); 
+            document.addEventListener('mouseup', handleMarkerMouseUp);
+        }
+
+        function handleMarkerMouseMove(e) {
+            if (!isMarkerDragging || !draggedMarkerInfo.chartGrid) return;
+            
+            const { chartType, id, chartGrid, startX, startY } = draggedMarkerInfo;
+            
+            // Determine drag mode if not set
+            if (!draggedMarkerInfo.mode) {
+                const dx = e.clientX - startX;
+                const dy = e.clientY - startY;
+                if (Math.abs(dx) > 5 || Math.abs(dy) > 5) {
+                    draggedMarkerInfo.mode = Math.abs(dx) > Math.abs(dy) ? 'horizontal' : 'vertical';
+                    document.body.style.cursor = draggedMarkerInfo.mode === 'horizontal' ? 'ew-resize' : 'ns-resize';
+                }
+            }
+            
+            const isRecall = chartType === 'recall';
+            const targetLen = isRecall ? activeGeneratedIndices.length : activeReferenceIndices.length;
+            const sourceLen = isRecall ? activeReferenceIndices.length : activeGeneratedIndices.length;
+
+            if (targetLen === 0) return;
+
+            const rect = chartGrid.getBoundingClientRect();
+            let hasChanged = false;
+
+            if (draggedMarkerInfo.mode === 'vertical') {
+                const y = e.clientY - rect.top;
+                let newYIndex = Math.floor((1 - (y / rect.height)) * targetLen);
+                newYIndex = Math.max(0, Math.min(targetLen - 1, newYIndex));
+
+                const markerToUpdate = markerPositions[chartType].find(m => m.id === id);
+                const pathToUpdate = actualPathPositions[chartType].find(p => p.x === id);
+
+                if (markerToUpdate && markerToUpdate.currentY !== newYIndex) {
+                    markerToUpdate.currentY = newYIndex;
+                    if(pathToUpdate) {
+                      pathToUpdate.y = newYIndex;
+                    }
+                    hasChanged = true;
+                    
+                    // Animate the marker's position directly for smooth feedback
+                    draggedMarkerInfo.element.style.bottom = `calc(${(newYIndex + 0.5)} * 100% / ${targetLen} - 6px)`;
+                }
+            } else if (draggedMarkerInfo.mode === 'horizontal') {
+                const x = e.clientX - rect.left;
+                let hoverX = Math.floor((x / rect.width) * sourceLen);
+                hoverX = Math.max(0, Math.min(sourceLen - 1, hoverX));
+                
+                // Animate the marker's horizontal position for immediate visual feedback
+                draggedMarkerInfo.element.style.left = `calc(${(hoverX + 0.5)} * 100% / ${sourceLen} - 6px)`;
+                
+                if (hoverX !== id) {
+                    draggedMarkerInfo.targetX = hoverX;
+                    // Just mark that we have a change for preview, don't modify actual state yet
+                    hasChanged = true;
+                } else {
+                    draggedMarkerInfo.targetX = null;
+                }
+            }
+
+            if (hasChanged) {
+                // Create temporary state for preview without modifying actual state
+                const tempMarkers = JSON.parse(JSON.stringify(markerPositions));
+                const tempPaths = JSON.parse(JSON.stringify(actualPathPositions));
+                
+                // Apply temporary changes for horizontal mode preview
+                if (draggedMarkerInfo.mode === 'horizontal' && draggedMarkerInfo.targetX !== null) {
+                    const sourceMarker = tempMarkers[chartType].find(m => m.id === id);
+                    const targetMarker = tempMarkers[chartType].find(m => m.id === draggedMarkerInfo.targetX);
+                    const sourcePath = tempPaths[chartType].find(p => p.x === id);
+                    const targetPath = tempPaths[chartType].find(p => p.x === draggedMarkerInfo.targetX);
+                    
+                    if (sourceMarker && targetMarker) {
+                        [sourceMarker.currentY, targetMarker.currentY] = [targetMarker.currentY, sourceMarker.currentY];
+                        if (sourcePath && targetPath) {
+                            [sourcePath.y, targetPath.y] = [targetPath.y, sourcePath.y];
+                        }
+                    }
+                }
+                
+                // Show preview during drag without full re-render
+                showScorePreview(tempMarkers, tempPaths);
+            }
+        }
+
+
+        function handleMarkerMouseUp() {
+            if (!isMarkerDragging) return;
+
+            hideScorePreview();
+
+            // Apply the changes to the actual state
+            if (draggedMarkerInfo.mode === 'horizontal' && draggedMarkerInfo.targetX !== null) {
+                const { chartType, id, targetX } = draggedMarkerInfo;
+                const sourceMarker = markerPositions[chartType].find(m => m.id === id);
+                const targetMarker = markerPositions[chartType].find(m => m.id === targetX);
+                const sourcePath = actualPathPositions[chartType].find(p => p.x === id);
+                const targetPath = actualPathPositions[chartType].find(p => p.x === targetX);
+                
+                if (sourceMarker && targetMarker) {
+                    // Perform the actual swap on the real state
+                    [sourceMarker.currentY, targetMarker.currentY] = [targetMarker.currentY, sourceMarker.currentY];
+                    if (sourcePath && targetPath) {
+                        [sourcePath.y, targetPath.y] = [targetPath.y, sourcePath.y];
+                    }
+                }
+            }
+            // Note: Vertical mode changes are already applied directly to the real state during mousemove
+
+            // Clean up drag state
+            if (draggedMarkerInfo.element) {
+                draggedMarkerInfo.element.classList.remove('dragging');
+            }
+            document.body.style.cursor = 'default';
+            isMarkerDragging = false; 
+            hideScorePreview();
+            
+            document.removeEventListener('mousemove', handleMarkerMouseMove); 
+            document.removeEventListener('mouseup', handleMarkerMouseUp);
+            
+            // Reset draggedMarkerInfo
+            draggedMarkerInfo = {
+                chartType: null,
+                id: null,
+                element: null,
+                chartGrid: null,
+                startY: 0,
+                startX: 0,
+                mode: null,
+                targetX: null
+            };
+            
+            // Final update after dragging is complete
+            updateAndRenderAll();
+        }
+
+        function toggleChunkActiveState(type, originalIndex) {
+            let activeIndicesArray = (type === 'reference') ? activeReferenceIndices : activeGeneratedIndices;
+            const minChunks = 1;
+            const currentIndexPositionInActive = activeIndicesArray.indexOf(originalIndex);
+            
+            if (currentIndexPositionInActive > -1) { 
+                if (activeIndicesArray.length > minChunks) { 
+                    activeIndicesArray.splice(currentIndexPositionInActive, 1); 
+                } else { 
+                    return; // Don't allow deactivating the last chunk
+                } 
+            } else { 
+                activeIndicesArray.push(originalIndex);
+                 // When adding a chunk back, we need to decide where it goes.
+                 // For simplicity, let's sort the active indices to maintain a somewhat logical order.
+                 // A more advanced implementation could insert it at its original position.
+                 if(type === 'reference') {
+                    activeReferenceIndices.sort((a,b) => a - b);
+                 } else {
+                    activeGeneratedIndices.sort((a,b) => a - b);
+                 }
+            }
+            
+            initializeAppState(); 
+            updateAndRenderAll();
+        }
+
+        function resetSegmentOrder(type) {
+            if (type === 'generated') {
+                // Reset both order and enable all generated chunks
+                activeGeneratedIndices = Array.from({length: masterGeneratedChunks.length}, (_, i) => i);
+            } else {
+                // Reset both order and enable all reference chunks
+                activeReferenceIndices = Array.from({length: masterReferenceChunks.length}, (_, i) => i);
+            }
+            initializeAppState();
+            updateAndRenderAll();
+        }
+
+        function initializeAppState() {
+            const newMarkerPositions = { precision: [], recall: [] };
+            const newActualPathPositions = { precision: [], recall: [] };
+            
+            ['precision', 'recall'].forEach(chartType => {
+                const isRecall = chartType === 'recall';
+                const sourceLen = isRecall ? activeReferenceIndices.length : activeGeneratedIndices.length;
+                const targetLen = isRecall ? activeGeneratedIndices.length : activeReferenceIndices.length;
+
+                if (sourceLen > 0 && targetLen > 0) {
+                    const simMatrix = buildCurrentSimilarityMatrix(isRecall);
+                    const mappingWindows = get_mapping_windows_generic(sourceLen, targetLen);
+
+                    // Initialize markers for NAS-D
+                    const currentMarkers = [];
+                    for (let i = 0; i < sourceLen; i++) {
+                        const similarityColumn = simMatrix[i];
+                        const bestMatchIdx = findBestMatchIndex(similarityColumn);
+                        currentMarkers.push({ id: i, currentY: bestMatchIdx });
+                    }
+                    newMarkerPositions[chartType] = currentMarkers;
+
+                    // Initialize paths for NAS-L
+                    newActualPathPositions[chartType] = initializeActualPath(simMatrix, mappingWindows, sourceLen, targetLen);
+                }
+            });
+
+            // Atomically update the global state
+            markerPositions = newMarkerPositions;
+            actualPathPositions = newActualPathPositions;
+
+            // Update LCT slider max value based on the smaller of the two target lengths
+            const maxPrecisionTargetLen = activeReferenceIndices.length;
+            const maxRecallTargetLen = activeGeneratedIndices.length;
+            lctSlider.max = Math.max(0, Math.min(maxPrecisionTargetLen, maxRecallTargetLen) - 1);
+            if (parseInt(lctSlider.value) > parseInt(lctSlider.max)) {
+                lctSlider.value = lctSlider.max;
+            }
+        }
+
+        function updateLctDescription() {
+            const lctValue = parseInt(lctSlider.value);
+            const descriptions = [
+                "Strict: Only monotonic alignments contribute to calculations",
+                "Slight: Small deviations allowed in both distance and flow",
+                "Balanced: Moderate jumps forgiven in calculations",
+                "Generous: Significant reorderings treated as valid",
+                "Very Generous: Large jumps accommodated",
+                "Maximum: Most non-monotonic jumps treated as valid"
+            ];
+            lctDescription.innerHTML = `<strong>${descriptions[Math.min(lctValue, 5)]}</strong>`;
+        }
+
+        /**
+         * [MODIFIED] This function now shows both NAS-D and NAS-L details.
+         */
+        function updateChartTooltip(e, chartType, markerId) {
+            const highlightedItems = document.querySelectorAll('.segment-list li.highlight');
+            highlightedItems.forEach(item => item.classList.remove('highlight'));
+            
+            chartTooltip.classList.add('visible');
+            chartTooltip.style.left = `${e.clientX + 15}px`;
+            chartTooltip.style.top = `${e.clientY + 15}px`;
+            
+            const isRecall = chartType === 'recall';
+            const sourceLen = isRecall ? activeReferenceIndices.length : activeGeneratedIndices.length;
+            const targetLen = isRecall ? activeGeneratedIndices.length : activeReferenceIndices.length;
+            
+            const marker = markerPositions[chartType].find(m => m.id === markerId);
+            if (!marker) return;
+
+            // Highlight corresponding list items
+            const xOriginalIndex = (isRecall ? activeReferenceIndices : activeGeneratedIndices)[marker.id];
+            const yOriginalIndex = (isRecall ? activeGeneratedIndices : activeReferenceIndices)[marker.currentY];
+            const refLi = document.querySelector(`#referenceSegmentsUl li[data-original-index='${isRecall ? xOriginalIndex : yOriginalIndex}']`);
+            const genLi = document.querySelector(`#generatedSegmentsUl li[data-original-index='${isRecall ? yOriginalIndex : xOriginalIndex}']`);
+            if(refLi) refLi.classList.add('highlight');
+            if(genLi) genLi.classList.add('highlight');
+            
+            const mappingText = `${isRecall ? 'Ref' : 'Gen'} Chunk ${xOriginalIndex} ↔ ${isRecall ? 'Gen' : 'Ref'} Chunk ${yOriginalIndex}`;
+            
+            // --- NAS-D Details ---
+            let penaltyText = '';
+            let finalStatusClass = 'standard';
+            const idealWindows = get_mapping_windows_generic(sourceLen, targetLen);
+            const window = idealWindows[markerId];
+            if (window) {
+                const lctWindow = calculateLctWindow(targetLen, sourceLen);
+                const markerY = marker.currentY;
+                const windowStart = window.start;
+                const windowEnd = window.end - 1;
+                const lctThreshold = currentLct * lctWindow;
+                let rawDistance = 0;
+                if (markerY < windowStart) { rawDistance = windowStart - markerY; }
+                else if (markerY > windowEnd) { rawDistance = markerY - windowEnd; }
+                const effectiveDistance = rawDistance <= lctThreshold ? 0 : rawDistance;
+                const penalty = targetLen > 0 ? effectiveDistance / targetLen : 0;
+                
+                if (penalty > 0) {
+                    penaltyText = `<strong class="text-red-400">Penalty: ${penalty.toFixed(2)}</strong><br>Raw Distance: ${rawDistance}`;
+                    finalStatusClass = 'invalid';
+                } else {
+                    penaltyText = `<strong class="text-green-400">In Window</strong>`;
+                }
+            }
+            
+            // --- NAS-L Segment Details ---
+            let segmentText = 'End of path';
+            const segments = actualPathSegments[chartType] || [];
+            const segment = segments.find(s => s.start.x === markerId);
+            if (segment) {
+                const status = segment.calculation_method;
+                const statusColor = status === 'standard' ? 'text-green-400' : status === 'lct-capped' ? 'text-yellow-400' : 'text-red-400';
+                segmentText = `<strong class="${statusColor} capitalize">${status}</strong><br>|Δy|: ${Math.abs(segment.dy).toFixed(1)}, Len: ${segment.length.toFixed(2)}`;
+                 // If the segment is invalid, it overrides the tooltip color
+                 if (status === 'invalid' || status === 'lct-capped' && finalStatusClass === 'standard') {
+                     finalStatusClass = status;
+                 }
+            }
+
+            chartTooltip.className = `visible ${finalStatusClass}`;
+            chartTooltip.innerHTML = `
+                <div>${mappingText}</div>
+                <hr class="my-1 border-slate-500">
+                <div><strong>Distance (NAS-D):</strong> ${penaltyText}</div>
+                <div><strong>Flow (NAS-L):</strong> ${segmentText}</div>
+            `;
+        }
+
+
+        function hideChartTooltip() {
+            chartTooltip.classList.remove('visible', 'standard', 'invalid', 'lct-capped');
+            const highlightedItems = document.querySelectorAll('.segment-list li.highlight');
+            highlightedItems.forEach(item => item.classList.remove('highlight'));
+        }
+
+        function animateNumber(el, start, end, duration = 400) {
+            if (Math.abs(end - start) < 0.001) { 
+                el.textContent = end.toFixed(3); 
+                return; 
+            }
+            const frame = (ct) => {
+                const elapsed = ct - st;
+                const rawProgress = Math.min(elapsed / duration, 1);
+                const progress = easeOutCubic(rawProgress);
+                const current = start + (end - start) * progress;
+                el.textContent = current.toFixed(3);
+                if (rawProgress < 1) requestAnimationFrame(frame);
+            };
+            const st = performance.now();
+            requestAnimationFrame(frame);
+        }
+
+        // --- Testing Modal Manager ---
+        const testingModalManager = {
+            open: function() {
+                testingModal.classList.add('visible');
+                document.body.style.overflow = 'hidden';
+            },
+            close: function() {
+                testingModal.classList.remove('visible');
+                document.body.style.overflow = 'auto';
+            },
+            toggle: function() {
+                if (testingModal.classList.contains('visible')) {
+                    this.close();
+                } else {
+                    this.open();
+                }
+            }
+        };
+
+        // --- Live Calculations Update Function ---
+        function updateLiveCalculations(nasDPrecision, precNasL, nasDRecall, recallNasL, combinedF1, regularizer, finalNAS) {
+            const currentNASMath = document.getElementById('currentNASMath');
+            if (currentNASMath) {
+                const nasDf1 = _calculate_f1(nasDPrecision, nasDRecall);
+                const nasLf1 = _calculate_f1(precNasL, recallNasL);
+
+                let mathHtml = `<strong>Component Scores:</strong><br>`;
+                mathHtml += `NAS-D: P=${nasDPrecision.toFixed(3)}, R=${nasDRecall.toFixed(3)}, F1=${nasDf1.toFixed(3)}<br>`;
+                mathHtml += `NAS-L: P=${precNasL.toFixed(3)}, R=${recallNasL.toFixed(3)}, F1=${nasLf1.toFixed(3)}<br>`;
+                mathHtml += `<strong>Combined F1:</strong> 2×(${nasDf1.toFixed(3)}×${nasLf1.toFixed(3)})/(${nasDf1.toFixed(3)}+${nasLf1.toFixed(3)}) = ${combinedF1.toFixed(3)}<br>`;
+                mathHtml += `<strong>Window Regularizer:</strong> ${regularizer.toFixed(3)}<br>`;
+                mathHtml += `<strong>Final NAS:</strong> (${combinedF1.toFixed(3)} - ${regularizer.toFixed(3)}) / (1 - ${regularizer.toFixed(3)}) = ${finalNAS.toFixed(3)}`;
+                currentNASMath.innerHTML = mathHtml;
+            }
+        }
+
+        function updateAndRenderAll() {
+            currentLct = parseInt(lctSlider.value); lctValueDisplay.textContent = currentLct;
+            updateLctDescription();
+            
+            const numActiveRef = activeReferenceIndices.length;
+            const numActiveGen = activeGeneratedIndices.length;
+
+            // --- Precision Calculations ---
+            const precNasDResults = calculatePenaltiesAndNAS('precision');
+            const nasDPrecision = precNasDResults.nas;
+
+            const precSourceLenL = activeGeneratedIndices.length;
+            const precTargetLenL = activeReferenceIndices.length;
+            const precMappingWindows = get_mapping_windows_generic(precSourceLenL, precTargetLenL);
+            const precIdealBand = computeIdealNarrativeLineBandJS(precMappingWindows, precSourceLenL, precTargetLenL);
+            const precPathInfo = computeActualLineLengthJS(actualPathPositions.precision, precTargetLenL, precSourceLenL, currentLct, precIdealBand.floor_path_dy_map);
+            actualPathSegments.precision = precPathInfo.segments; // **ADDED** Store segments
+            const precNasL = calculateLineNAS(precIdealBand.shortest_line, precIdealBand.longest_line, precPathInfo.totalLength);
+            
+            // --- Recall Calculations ---
+            const recallNasDResults = calculatePenaltiesAndNAS('recall');
+            const nasDRecall = recallNasDResults.nas;
+            
+            const recallSourceLenL = activeReferenceIndices.length;
+            const recallTargetLenL = activeGeneratedIndices.length;
+            const recallMappingWindows = get_mapping_windows_generic(recallSourceLenL, recallTargetLenL);
+            const recallIdealBand = computeIdealNarrativeLineBandJS(recallMappingWindows, recallSourceLenL, recallTargetLenL);
+            const recallPathInfo = computeActualLineLengthJS(actualPathPositions.recall, recallTargetLenL, recallSourceLenL, currentLct, recallIdealBand.floor_path_dy_map);
+            actualPathSegments.recall = recallPathInfo.segments; // **ADDED** Store segments
+            const recallNasL = calculateLineNAS(recallIdealBand.shortest_line, recallIdealBand.longest_line, recallPathInfo.totalLength);
+
+            // --- Combined & Final Calculations ---
+            const nasDf1 = _calculate_f1(nasDPrecision, nasDRecall);
+            const nasLf1 = _calculate_f1(precNasL, recallNasL);
+            const combinedF1NAS = _calculate_f1(nasDf1, nasLf1);
+            const regResults = calculateWindowRegularizer(numActiveRef, numActiveGen);
+            const windowRegularizer = regResults.windowRegularizer;
+            const finalNAS = regularizeNAS(combinedF1NAS, windowRegularizer);
+
+            // --- Update UI ---
+            renderSegmentLists();
+            
+            const precisionResults = {
+                nasD: precNasDResults,
+                nasL: { idealBand: precIdealBand, actualLength: precPathInfo.totalLength, score: precNasL }
+            };
+            const recallResults = {
+                nasD: recallNasDResults,
+                nasL: { idealBand: recallIdealBand, actualLength: recallPathInfo.totalLength, score: recallNasL }
+            };
+            
+            requestAnimationFrame(() => {
+                renderChart('precision', precisionResults);
+                renderChart('recall', recallResults);
+            });
+            
+            // Update chart metrics
+            animateNumber(document.getElementById('precisionNasD'), parseFloat(document.getElementById('precisionNasD').textContent)||0, nasDPrecision);
+            animateNumber(document.getElementById('precisionNasL'), parseFloat(document.getElementById('precisionNasL').textContent)||0, precNasL);
+            animateNumber(document.getElementById('precisionCombined'), parseFloat(document.getElementById('precisionCombined').textContent)||0, _calculate_f1(nasDPrecision, precNasL));
+            
+            animateNumber(document.getElementById('recallNasD'), parseFloat(document.getElementById('recallNasD').textContent)||0, nasDRecall);
+            animateNumber(document.getElementById('recallNasL'), parseFloat(document.getElementById('recallNasL').textContent)||0, recallNasL);
+            animateNumber(document.getElementById('recallCombined'), parseFloat(document.getElementById('recallCombined').textContent)||0, _calculate_f1(nasDRecall, recallNasL));
+
+            // Update overall metrics
+            animateNumber(document.getElementById('overallNasDF1'), parseFloat(document.getElementById('overallNasDF1').textContent)||0, nasDf1);
+            animateNumber(document.getElementById('overallNasLF1'), parseFloat(document.getElementById('overallNasLF1').textContent)||0, nasLf1);
+            animateNumber(document.getElementById('combinedF1NAS'), parseFloat(document.getElementById('combinedF1NAS').textContent)||0, combinedF1NAS);
+            animateNumber(document.getElementById('windowRegularizer'), parseFloat(document.getElementById('windowRegularizer').textContent)||0, windowRegularizer);
+            animateNumber(document.getElementById('finalCompleteNas'), parseFloat(document.getElementById('finalCompleteNas').textContent)||0, finalNAS);
+            
+            updateDynamicBackground(finalNAS);
+            
+            // Update live calculations in the algorithm section
+            updateLiveCalculations(nasDPrecision, precNasL, nasDRecall, recallNasL, combinedF1NAS, windowRegularizer, finalNAS);
+        }
+        
+        // --- INITIALIZATION ---
+        window.addEventListener('load', () => {
+            activeReferenceIndices = Array.from({ length: masterReferenceChunks.length }, (_, i) => i);
+            activeGeneratedIndices = Array.from({ length: masterGeneratedChunks.length }, (_, i) => i);
+            
+            document.getElementById('start-tour-btn').addEventListener('click', () => tourManager.start());
+            
+            // Testing modal event listeners
+            testingGuideBtn.addEventListener('click', () => testingModalManager.open());
+            testingModalClose.addEventListener('click', () => testingModalManager.close());
+            testingModal.addEventListener('click', (e) => {
+                if (e.target === testingModal) {
+                    testingModalManager.close();
+                }
+            });
+            
+            // Keyboard shortcuts
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && testingModal.classList.contains('visible')) {
+                    testingModalManager.close();
+                }
+                if (e.key === 't' && e.ctrlKey) {
+                    e.preventDefault();
+                    testingModalManager.toggle();
+                }
+            });
+            
+            lctSlider.addEventListener('input', () => {
+              // Only trigger a full re-render on slider input, not every frame of dragging
+              if (!isMarkerDragging) {
+                updateAndRenderAll();
+              }
+            });
+
+            resetGenOrderBtn.addEventListener('click', () => resetSegmentOrder('generated'));
+            resetRefOrderBtn.addEventListener('click', () => resetSegmentOrder('reference'));
+            [generatedSegmentsUl, referenceSegmentsUl].forEach(ul => {
+                ul.addEventListener('dragstart', handleSegmentDragStart);
+                ul.addEventListener('dragover', handleSegmentDragOver);
+                ul.addEventListener('drop', handleSegmentDrop);
+                ul.addEventListener('dragend', handleSegmentDragEnd);
+            });
+            document.addEventListener('mousedown', handleMarkerMouseDown);
+            
+            // Tooltip events
+            ['precisionMarkerContainer', 'recallMarkerContainer'].forEach(id => {
+                document.getElementById(id).addEventListener('mouseover', e => {
+                    if (e.target.classList.contains('gen-marker') && !isMarkerDragging) {
+                        updateChartTooltip(e, e.target.dataset.chartType, parseInt(e.target.dataset.id));
+                    }
+                });
+                document.getElementById(id).addEventListener('mouseout', e => {
+                    if (e.target.classList.contains('gen-marker') && !isMarkerDragging) {
+                        hideChartTooltip();
+                    }
+                });
+            });
+            
+            let resizeTimer;
+            window.addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(updateAndRenderAll, 150); });
+            
+            initializeAppState();
+            updateAndRenderAll();
+        });
+    </script>
+</body>
+</html>

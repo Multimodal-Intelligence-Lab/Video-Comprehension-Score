@@ -1,0 +1,332 @@
+<div id="apiContent" class="tab-inner-content">
+    <div class="neumorphic-page-container">
+        <div class="neumorphic-content">
+            <article class="interactive-card overflow-hidden">
+        <!-- Hero Section -->
+        <section id="hero-section" class="py-10 px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto text-center">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4 leading-tight">
+                    VCS Library Documentation
+                </h1>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <div class="component-discovery-section">
+            <div class="p-6 sm:p-8 lg:p-10">
+                <section id="api" class="content-section fade-in-section">
+                    <p class="mb-6 text-center text-teal-600 text-lg font-medium">Complete API documentation and developer guides for the Video Comprehension Score (VCS) library. Generated from source code with comprehensive examples and usage patterns.</p>
+
+                <!-- Full-width Sphinx Documentation Frame -->
+                <div id="apiRightPane" class="w-full interactive-card core-metric-card overflow-hidden relative">
+                    <!-- Iframe Container -->
+                    <div class="relative">
+                        <iframe 
+                            id="sphinxFrame" 
+                            src="sphinx/build/html/index.html" 
+                            class="w-full border-0"
+                            style="height: 85vh; min-height: 500px;"
+                            onload="handleIframeLoad()"
+                            onerror="handleIframeError()"
+                            sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation"
+                        ></iframe>
+                        
+                        <!-- Loading Indicator -->
+                        <div id="loadingIndicator" class="absolute inset-0 bg-gradient-to-br from-teal-50/95 to-white/95 backdrop-blur-sm flex items-center justify-center hidden">
+                            <div class="text-center p-8">
+                                <div class="relative mb-6">
+                                    <div class="animate-spin rounded-full h-12 w-12 border-4 border-teal-200 border-t-teal-600 mx-auto"></div>
+                                    <div class="absolute inset-0 rounded-full border-4 border-transparent border-t-teal-400 animate-ping"></div>
+                                </div>
+                                <h3 class="text-xl font-semibold text-teal-700 mb-2">Loading Documentation</h3>
+                                <p class="text-teal-600">Preparing your developer experience...</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Error Fallback -->
+                        <div id="iframeError" class="absolute inset-0 bg-gradient-to-br from-red-50/95 to-white/95 backdrop-blur-sm p-8 hidden">
+                            <div class="text-center max-w-md mx-auto">
+                                <div class="relative mb-6">
+                                    <i class="fas fa-exclamation-triangle text-5xl text-red-500 animate-pulse"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-3">Documentation Unavailable</h3>
+                                <p class="text-slate-600 mb-6">We're having trouble loading the documentation</p>
+                                
+                                <div class="bg-white/60 backdrop-blur-sm rounded-lg p-4 mb-6">
+                                    <div class="flex items-center text-sm text-slate-600 mb-2">
+                                        <i class="fas fa-info-circle text-blue-500 mr-2"></i>
+                                        <span class="font-medium">Possible causes:</span>
+                                    </div>
+                                    <ul class="text-left text-sm text-slate-600 space-y-1">
+                                        <li class="flex items-center"><span class="w-2 h-2 bg-red-400 rounded-full mr-2"></span>Documentation files not found</li>
+                                        <li class="flex items-center"><span class="w-2 h-2 bg-red-400 rounded-full mr-2"></span>Sphinx build incomplete</li>
+                                        <li class="flex items-center"><span class="w-2 h-2 bg-red-400 rounded-full mr-2"></span>Browser security restrictions</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="space-y-3">
+                                    <button onclick="retryLoadDocs()" class="w-full neumorphic-btn px-6 py-3">
+                                        <i class="fas fa-redo mr-2"></i>Try Again
+                                    </button>
+                                    <a href="sphinx/build/html/index.html" target="_blank" class="block w-full interactive-card p-3 text-center text-teal-600 hover:text-teal-700 transition-all duration-200">
+                                        <i class="fas fa-external-link-alt mr-2"></i>Open in New Tab
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documentation Info -->
+                <div class="mt-6 interactive-card intro-card p-6">
+                    <div class="flex items-start space-x-3">
+                        <i class="fas fa-info-circle text-teal-600 mt-1"></i>
+                        <div>
+                            <h4 class="text-sm font-semibold text-teal-800 mb-1">About This Documentation</h4>
+                            <p class="text-sm text-teal-700">
+                                This documentation is automatically generated from the VCS library source code using Sphinx. 
+                                It includes comprehensive API references, usage examples, and integration guides. 
+                                Use the sidebar navigation within the documentation to explore different sections.
+                                All function signatures, parameters, and return values are extracted directly from the codebase to ensure accuracy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </article>
+        </div>
+    </div>
+</div>
+
+<script>
+// Global variables for iframe management
+let isFullscreen = false;
+let originalHeight = '';
+
+/**
+ * Handle successful iframe loading
+ */
+function handleIframeLoad() {
+    const loadingIndicator = document.getElementById('loadingIndicator');
+    const errorDiv = document.getElementById('iframeError');
+    const iframe = document.getElementById('sphinxFrame');
+    
+    // Hide loading and error indicators
+    loadingIndicator.classList.add('hidden');
+    errorDiv.classList.add('hidden');
+    
+    console.log('Sphinx documentation loaded successfully');
+    
+    try {
+        // Try to access iframe content to apply custom styles
+        const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+        
+        // Apply VCS-specific styles to the Sphinx documentation
+        applyVCSStyles(iframeDoc);
+        
+    } catch (error) {
+        // Cross-origin restrictions - this is normal and expected
+        console.log('Iframe content loaded (cross-origin restrictions apply)');
+    }
+}
+
+/**
+ * Handle iframe loading errors
+ */
+function handleIframeError() {
+    console.error('Failed to load Sphinx documentation');
+    showIframeError();
+}
+
+/**
+ * Show iframe error message
+ */
+function showIframeError() {
+    const loadingIndicator = document.getElementById('loadingIndicator');
+    const errorDiv = document.getElementById('iframeError');
+    
+    loadingIndicator.classList.add('hidden');
+    errorDiv.classList.remove('hidden');
+}
+
+/**
+ * Refresh the iframe
+ */
+function refreshIframe() {
+    const iframe = document.getElementById('sphinxFrame');
+    const loadingIndicator = document.getElementById('loadingIndicator');
+    
+    // Show loading indicator
+    loadingIndicator.classList.remove('hidden');
+    
+    // Reload iframe
+    iframe.src = iframe.src;
+}
+
+/**
+ * Open documentation in new tab
+ */
+function openInNewTab() {
+    const iframe = document.getElementById('sphinxFrame');
+    window.open(iframe.src, '_blank');
+}
+
+/**
+ * Toggle fullscreen mode for the documentation
+ */
+function toggleFullscreen() {
+    const container = document.getElementById('apiRightPane');
+    const icon = document.getElementById('fullscreenIcon');
+    const iframe = document.getElementById('sphinxFrame');
+    
+    if (!isFullscreen) {
+        // Enter fullscreen mode
+        originalHeight = iframe.style.height;
+        
+        container.style.position = 'fixed';
+        container.style.top = '0';
+        container.style.left = '0';
+        container.style.width = '100vw';
+        container.style.height = '100vh';
+        container.style.zIndex = '9999';
+        container.style.borderRadius = '0';
+        
+        iframe.style.height = '100vh';
+        
+        icon.className = 'fas fa-compress text-sm text-slate-600';
+        isFullscreen = true;
+    } else {
+        // Exit fullscreen mode
+        container.style.position = '';
+        container.style.top = '';
+        container.style.left = '';
+        container.style.width = '';
+        container.style.height = '';
+        container.style.zIndex = '';
+        container.style.borderRadius = '';
+        
+        iframe.style.height = originalHeight || '85vh';
+        
+        icon.className = 'fas fa-expand text-sm text-slate-600';
+        isFullscreen = false;
+    }
+}
+
+/**
+ * Retry loading documentation
+ */
+function retryLoadDocs() {
+    const iframe = document.getElementById('sphinxFrame');
+    const loadingIndicator = document.getElementById('loadingIndicator');
+    const errorDiv = document.getElementById('iframeError');
+    
+    // Show loading, hide error
+    loadingIndicator.classList.remove('hidden');
+    errorDiv.classList.add('hidden');
+    
+    // Reload iframe
+    iframe.src = 'build/html/index.html';
+}
+
+/**
+ * Apply VCS-specific styles to Sphinx documentation
+ * @param {Document} iframeDoc - The iframe document
+ */
+function applyVCSStyles(iframeDoc) {
+    try {
+        // Only apply if we can access the document (same-origin)
+        if (!iframeDoc) return;
+        
+        // Create and inject custom styles
+        const style = iframeDoc.createElement('style');
+        style.textContent = `
+            /* VCS Integration Styles for Sphinx */
+            body {
+                font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+                background-color: #f8fafc !important;
+            }
+            
+            /* Ensure Sphinx sidebar is fully visible and functional */
+            .wy-nav-side {
+                background: white !important;
+                border-right: 1px solid #e2e8f0 !important;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.05) !important;
+            }
+            
+            /* Improve content area styling */
+            .wy-nav-content-wrap {
+                background: #f8fafc !important;
+            }
+            
+            .rst-content {
+                background: white !important;
+                margin: 1rem !important;
+                padding: 2rem !important;
+                border-radius: 8px !important;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+            }
+            
+            /* Make sure all interactive elements work */
+            .wy-menu-vertical a {
+                cursor: pointer !important;
+            }
+        `;
+        
+        // Append to head
+        if (iframeDoc.head) {
+            iframeDoc.head.appendChild(style);
+        }
+        
+    } catch (error) {
+        // Silently fail if we can't modify iframe content
+        console.log('Cannot modify iframe content due to cross-origin restrictions');
+    }
+}
+
+/**
+ * Handle escape key to exit fullscreen
+ */
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && isFullscreen) {
+        toggleFullscreen();
+    }
+});
+
+// Initialize when the API tab content loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Set up initial state if this content is loaded
+    if (document.getElementById('sphinxFrame')) {
+        // Show loading indicator initially
+        const loadingIndicator = document.getElementById('loadingIndicator');
+        if (loadingIndicator) {
+            loadingIndicator.classList.remove('hidden');
+        }
+    }
+});
+
+// Handle iframe load events
+document.addEventListener('DOMContentLoaded', function() {
+    const iframe = document.getElementById('sphinxFrame');
+    if (iframe) {
+        // Set up load event listener
+        iframe.addEventListener('load', handleIframeLoad);
+        iframe.addEventListener('error', handleIframeError);
+        
+        // Initial loading indicator
+        const loadingIndicator = document.getElementById('loadingIndicator');
+        if (loadingIndicator) {
+            loadingIndicator.classList.remove('hidden');
+        }
+        
+        // Timeout fallback
+        setTimeout(() => {
+            const indicator = document.getElementById('loadingIndicator');
+            if (indicator && !indicator.classList.contains('hidden')) {
+                // If still loading after 10 seconds, show error
+                showIframeError();
+            }
+        }, 10000);
+    }
+});
+</script>

@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Alignment Score (GAS) - Interactive Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        /* --- SMOOTHNESS & PERFORMANCE ENHANCEMENTS --- */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            transition: background 1.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+
+        /* --- Neumorphic Theme Variables --- */
+        :root {
+            --bg-color: #f8fafc;
+            --light-shadow: rgba(255, 255, 255, 1);
+            --dark-shadow: rgba(148, 163, 184, 0.3);
+            --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --ease-out-cubic: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            --ease-slick: cubic-bezier(0.23, 1, 0.32, 1);
+            --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        /* --- Neumorphic Page Container --- */
+        .neumorphic-page-container {
+            background: var(--bg-color);
+            border-radius: 25px;
+            box-shadow: 0 0 24px var(--dark-shadow);
+            margin: 1rem;
+            padding: 2rem;
+            min-height: calc(100vh - 2rem);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .neumorphic-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* --- Neumorphic Card Styles --- */
+        .interactive-card {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+            transition: transform 0.35s var(--ease-out-cubic),
+                        box-shadow 0.35s var(--ease-out-cubic),
+                        border-color 0.35s var(--ease-out-cubic);
+            will-change: transform, box-shadow;
+        }
+        .interactive-card:hover {
+            box-shadow: 12px 12px 24px var(--dark-shadow), -12px -12px 24px var(--light-shadow);
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .demo-card { 
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(248, 250, 252, 0.65) 100%); 
+            border-color: rgba(226, 232, 240, 0.8);
+            border-left: 3px solid #0d9488;
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow), 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+        
+        .intro-card { 
+            background: linear-gradient(135deg, rgba(254, 252, 232, 0.6) 0%, rgba(254, 243, 199, 0.5) 100%); 
+            border-color: rgba(251, 191, 36, 0.5);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+        }
+
+        /* --- Unified Demo Container --- */
+        .unified-demo-container {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(248, 250, 252, 0.7) 100%);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            border-left: 3px solid #0d9488;
+            border-radius: 24px;
+            box-shadow: 12px 12px 24px var(--dark-shadow), -12px -12px 24px var(--light-shadow);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            padding: 2rem;
+            transition: all 0.5s var(--ease-slick);
+        }
+
+        .unified-demo-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 16px 16px 32px var(--dark-shadow), -16px -16px 32px var(--light-shadow);
+        }
+
+        /* --- Navigation Controls --- */
+        .nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+        }
+
+        /* --- Button Styles (aligned with mapping-window) --- */
+        .action-button, .nav-button {
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s var(--ease-out-cubic);
+            margin-right: 0.75rem;
+            margin-top: 1rem;
+            box-shadow: 0 2px 8px rgba(13, 148, 136, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .action-button::before, .nav-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
+            transition: left 0.5s var(--ease-out-quad);
+        }
+        .action-button:hover::before, .nav-button:hover::before {
+            left: 100%;
+        }
+        .action-button:hover, .nav-button:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 6px 20px rgba(13, 148, 136, 0.3);
+        }
+        .action-button:active, .nav-button:active {
+            transform: translateY(-1px) scale(1);
+        }
+
+        .nav-button:disabled {
+            background: #94a3b8;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: inset 2px 2px 4px var(--dark-shadow);
+        }
+
+        .nav-button:disabled::before {
+            display: none;
+        }
+
+        /* --- Neumorphic Button Styles --- */
+        .neumorphic-btn {
+            border-radius: 12px;
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            font-weight: 600;
+            box-shadow: 5px 5px 10px var(--dark-shadow), -5px -5px 10px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .neumorphic-btn:hover {
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02);
+        }
+
+        /* --- Example Header --- */
+        .example-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+        }
+
+        .example-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+            transition: all 0.5s var(--ease-slick);
+        }
+
+        .example-description {
+            color: #64748b;
+            font-size: 0.875rem;
+            transition: all 0.5s var(--ease-slick);
+        }
+
+        /* --- Content Sections --- */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .text-section {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 16px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: inset 4px 4px 8px var(--dark-shadow), inset -4px -4px 8px var(--light-shadow);
+            transition: all 0.5s var(--ease-slick);
+        }
+
+        .text-section:hover {
+            transform: translateY(-2px);
+            box-shadow: inset 6px 6px 12px var(--dark-shadow), inset -6px -6px 12px var(--light-shadow), 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .text-section h4 {
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .text-content {
+            max-height: 250px;
+            overflow-y: auto;
+            line-height: 1.6;
+            transition: all 0.6s var(--ease-slick);
+        }
+
+        .text-content.fade-out {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        .text-content.fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- Analysis Section --- */
+        .analysis-section {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+            transition: all 0.5s var(--ease-slick);
+        }
+
+        .gas-score-display {
+            background: linear-gradient(135deg, #dbeafe 0%, #93c5fd 100%);
+            border: 2px solid #3b82f6;
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            transition: all 0.4s var(--ease-slick);
+        }
+
+        .gas-score-number {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #1e40af;
+            font-family: 'Courier New', monospace;
+            line-height: 1;
+            transition: all 0.4s var(--ease-slick);
+        }
+
+        .gas-score-label {
+            font-size: 1rem;
+            color: #1e40af;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 0.5rem;
+        }
+
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .analysis-item {
+            background: rgba(255, 255, 255, 0.5);
+            padding: 1rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+            transition: all 0.4s var(--ease-slick);
+        }
+
+        .analysis-item h5 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .challenge-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+
+        .performance-excellent {
+            background: linear-gradient(135deg, #d1fae5 0%, #86efac 100%);
+            color: #14532d;
+            border: 1px solid #22c55e;
+        }
+
+        .performance-poor {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            color: #991b1b;
+            border: 1px solid #f87171;
+        }
+
+        .insight-section {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 1.5rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: inset 2px 2px 4px var(--dark-shadow), inset -2px -2px 4px var(--light-shadow);
+        }
+
+        .insight-section h5 {
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .insight-text {
+            line-height: 1.6;
+            color: #475569;
+            transition: all 0.5s var(--ease-slick);
+        }
+
+        /* --- Text Highlighting --- */
+        .text-original {
+            background-color: rgba(229, 231, 235, 0.3);
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        .text-changed {
+            background-color: rgba(251, 191, 36, 0.3);
+            padding: 2px 4px;
+            border-radius: 3px;
+            border-bottom: 2px solid #f59e0b;
+        }
+
+        .text-moved {
+            background-color: rgba(147, 197, 253, 0.3);
+            padding: 2px 4px;
+            border-radius: 3px;
+            border-bottom: 2px solid #3b82f6;
+        }
+
+        .text-added {
+            background-color: rgba(167, 243, 208, 0.4);
+            padding: 2px 4px;
+            border-radius: 3px;
+            border-bottom: 2px solid #059669;
+        }
+
+        .text-removed {
+            background-color: rgba(252, 165, 165, 0.4);
+            padding: 2px 4px;
+            border-radius: 3px;
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+
+        /* --- Step Numbers --- */
+        .step-number { 
+            width: 2rem; height: 2rem; 
+            border-radius: 50%; 
+            display: flex; align-items: center; justify-content: center; 
+            color: white; font-weight: bold; font-size: 0.875rem; 
+            flex-shrink: 0; 
+        }
+
+        /* --- Details Styling --- */
+        details summary { 
+            cursor: pointer; 
+            user-select: none; 
+            transition: color 0.2s var(--ease-out-quad); 
+        }
+        details summary:hover { 
+            color: #1d4ed8; 
+        }
+        details summary::-webkit-details-marker { 
+            display: none; 
+        }
+        details summary .summary-icon { 
+            display: inline-block; 
+            margin-right: 0.5rem; 
+            transition: transform 0.25s var(--ease-out-cubic); 
+        }
+        details[open] summary .summary-icon { 
+            transform: rotate(90deg); 
+        }
+
+        /* --- Math Formula --- */
+        .math-formula {
+            background: linear-gradient(135deg, rgba(248, 250, 252, 0.8) 0%, rgba(241, 245, 249, 0.9) 100%);
+            border: 1px solid rgba(203, 213, 225, 0.5);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+        }
+
+        /* --- Tour Styles --- */
+        #tour-overlay { 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(0,0,0,0.6); 
+            z-index: 9998; 
+            opacity: 0; 
+            transition: opacity 0.4s ease-in-out; 
+            pointer-events: none; 
+        }
+        .tour-highlight { 
+            position: relative; 
+            z-index: 9999; 
+            box-shadow: 0 0 0 9999px rgba(0,0,0,0.6), 0 0 20px rgba(255, 255, 255, 0.9); 
+            border-radius: 0.5rem; 
+            transition: box-shadow 0.4s ease-in-out; 
+        }
+        #tour-callout { 
+            position: absolute; 
+            background: rgba(255, 255, 255, 0.95); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 0.75rem;
+            padding: 1.25rem;
+            max-width: 20rem;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+            z-index: 10000;
+            transition: all 0.4s var(--ease-out-cubic); 
+            transform: translateY(10px); 
+            opacity: 0; 
+        }
+        #tour-callout.visible { 
+            transform: translateY(0); 
+            opacity: 1; 
+        }
+        #tour-callout button { 
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%); 
+            color: white; 
+            padding: 0.5rem 1rem; 
+            border-radius: 0.5rem; 
+            border: none; 
+            font-size: 0.875rem; 
+            font-weight: 600; 
+            cursor: pointer; 
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+        }
+        #tour-callout button:hover { 
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02); 
+        }
+
+        /* --- Mobile Responsive --- */
+        @media (max-width: 768px) {
+            .neumorphic-page-container {
+                margin: 0.5rem;
+                padding: 1rem;
+            }
+            
+            .unified-demo-container {
+                padding: 1rem;
+            }
+            
+            .content-grid,
+            .analysis-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .gas-score-number {
+                font-size: 2.5rem;
+            }
+            
+            .nav-controls {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .text-content {
+                max-height: 200px;
+            }
+        }
+
+        /* --- Hero Section Styles --- */
+        #hero-section {
+            background: linear-gradient(45deg, #0d9488, #0f766e); 
+            color: white;
+            border-radius: 20px 20px 0 0; /* Top corners rounded, bottom corners square */
+        }
+        #hero-section h1 {
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2); 
+        }
+
+        /* --- Hero Tour Button (No White Glow) --- */
+        .hero-tour-btn {
+            background: linear-gradient(135deg, #0f766e 0%, #064e3b 100%);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-tour-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .hero-tour-btn:hover {
+            background: linear-gradient(135deg, #14b8a6 0%, #0f766e 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-tour-btn:hover::before {
+            left: 100%;
+        }
+
+        .hero-tour-btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Math container styling */
+        .math-container {
+            background: #dbeafe;
+            border: 1px solid #93c5fd;
+            border-radius: 0.75rem;
+            padding: 0.75rem;
+            margin-top: 0.75rem;
+        }
+
+        /* KaTeX color overrides */
+        .katex {
+            color: #1e40af !important;
+        }
+
+        .katex .mord,
+        .katex .mop,
+        .katex .mbin,
+        .katex .mrel,
+        .katex .mopen,
+        .katex .mclose,
+        .katex .mpunct {
+            color: #1e40af !important;
+        }
+
+        .katex .mtext {
+            color: #1e3a8a !important;
+        }
+    </style>
+</head>
+<body class="h-full text-slate-700 antialiased">
+    <div id="app-background" class="fixed inset-0 z-[-1] transition-all duration-1000"></div>
+    <div id="tour-overlay"></div>
+
+    <!-- Neumorphic Page Container -->
+    <div class="neumorphic-page-container">
+        <div class="neumorphic-content">
+            <article class="interactive-card">
+                <!-- Hero Section -->
+                <section id="hero-section" class="py-6 px-4 sm:px-6 lg:px-8 relative">
+                    <div class="container mx-auto">
+                        <!-- Start Tour Button - Top Right -->
+                        <button id="start-tour-btn" class="hero-tour-btn absolute top-4 right-4 py-2 px-4">
+                            <i class="fas fa-magic mr-2"></i>Start Tour
+                        </button>
+                        
+                        <div class="text-left max-w-4xl">
+                            <div class="flex items-center justify-start mb-4">
+                                <div class="bg-teal-200 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mr-2">Interactive Demo</div>
+                                <div class="bg-white bg-opacity-20 text-white px-3 py-1 rounded-full text-xs font-semibold">Core VCS Component</div>
+                            </div>
+                            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-3 leading-tight">
+                                Global Alignment Score (GAS)
+                            </h1>
+                            <p class="text-teal-200 text-base sm:text-lg mb-6 max-w-3xl">
+                                Explore how GAS measures overall semantic alignment between entire reference and generated texts through global embedding comparison in the Video Comprehension Score framework.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Main Container -->
+                <main class="w-full max-w-6xl mx-auto p-6">
+
+                <!-- Introduction Section -->
+                <div id="tour-step-intro" class="intro-card interactive-card rounded-xl p-6 mb-8">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-lightbulb text-amber-600 text-xl mr-3"></i>
+                        <h2 class="text-xl font-semibold text-amber-800">Introduction to Global Alignment Score</h2>
+                    </div>
+                    
+                    <!-- Definition -->
+                    <div class="bg-white bg-opacity-70 p-4 rounded-lg mb-6 border-l-4 border-amber-500">
+                        <p class="text-sm text-slate-700 mb-3"><strong>What is GAS?</strong> The Global Alignment Score measures the overall semantic alignment between entire reference texts (T<sub>ref</sub>) and generated texts (T<sub>gen</sub>). GAS determines whether both narratives address similar or identical overarching themes, concepts, and entities at a holistic level.</p>
+                        
+                        <!-- Warning -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-lg p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-exclamation-triangle text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">⚠️ Prerequisites Required</p>
+                                    <p class="text-xs text-orange-700">Please read the VCS research paper and understand the theoretical foundation of GAS before using this interactive demo. This visualization assumes familiarity with the underlying concepts.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-white bg-opacity-60 p-4 rounded-lg">
+                            <h4 class="font-semibold text-amber-700 mb-2 flex items-center">
+                                <i class="fas fa-globe-americas text-blue-500 mr-2"></i>Global Embeddings
+                            </h4>
+                            <p class="text-sm text-slate-700">Both texts are embedded independently using nv-embed-v2 to generate global embedding vectors.</p>
+                        </div>
+                        <div class="bg-white bg-opacity-60 p-4 rounded-lg">
+                            <h4 class="font-semibold text-amber-700 mb-2 flex items-center">
+                                <i class="fas fa-calculator text-purple-500 mr-2"></i>Cosine Similarity
+                            </h4>
+                            <p class="text-sm text-slate-700">GAS is calculated using cosine similarity between these global embeddings, ranging from 0 to 1.</p>
+                        </div>
+                    </div>
+
+                    <!-- Algorithm Details -->
+                    <details id="tour-step-math" class="mb-4">
+                        <summary class="font-semibold text-amber-700 mb-3 flex items-center">
+                            <i class="fas fa-chevron-right summary-icon"></i>Complete GAS Algorithm
+                        </summary>
+                        <div class="mt-4 space-y-4">
+                            <!-- Main Algorithm Overview -->
+                            <div class="bg-white bg-opacity-70 p-4 rounded-lg border-l-4 border-amber-500">
+                                <p class="text-sm text-slate-700 mb-3"><strong>Algorithm Overview:</strong> The Global Alignment Score (GAS) algorithm follows 3 simple steps to compute document-level semantic similarity. Steps 1-2 handle embedding generation and similarity calculation, while Step 3 provides interpretation guidelines:</p>
+                                
+                                <!-- Step 1: Embedding Generation -->
+                                <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                                    <div class="flex items-start">
+                                        <i class="fas fa-brain text-orange-500 mr-2 mt-0.5"></i>
+                                        <div>
+                                            <p class="text-xs text-orange-800 font-medium mb-1">Step 1: Generate Global Embeddings</p>
+                                            <p class="text-xs text-orange-700 mb-2">Generate document-level embeddings for both reference and generated texts using the nv-embed-v2 model to capture semantic meaning at the global level.</p>
+                                            <div class="math-container">
+                                                <p class="text-xs">$E_{ref} = \text{Embed}_{NV2}(T_{ref})$</p>
+                                                <p class="text-xs">$E_{gen} = \text{Embed}_{NV2}(T_{gen})$</p>
+                                            </div>
+                                            <p class="text-xs text-orange-700 mt-2">This step creates fixed-size vector representations that capture the overall semantic content of each complete document.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Step 2: Cosine Similarity -->
+                                <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                                    <div class="flex items-start">
+                                        <i class="fas fa-calculator text-orange-500 mr-2 mt-0.5"></i>
+                                        <div>
+                                            <p class="text-xs text-orange-800 font-medium mb-1">Step 2: Calculate Cosine Similarity</p>
+                                            <p class="text-xs text-orange-700 mb-2">Compute the cosine similarity between the global embeddings to measure semantic alignment between the complete documents.</p>
+                                            <div class="math-container">
+                                                <p class="text-xs">$\text{GAS} = \cos(E_{ref}, E_{gen}) = \frac{E_{ref} \cdot E_{gen}}{\|E_{ref}\| \cdot \|E_{gen}\|}$</p>
+                                            </div>
+                                            <p class="text-xs text-orange-700 mt-2">The cosine similarity provides a normalized measure from 0 to 1, where higher values indicate stronger semantic alignment.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Step 3: Interpretation -->
+                                <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                                    <div class="flex items-start">
+                                        <i class="fas fa-chart-line text-orange-500 mr-2 mt-0.5"></i>
+                                        <div>
+                                            <p class="text-xs text-orange-800 font-medium mb-1">Step 3: Interpret GAS Score</p>
+                                            <p class="text-xs text-orange-700 mb-2">Interpret the calculated GAS score in the context of semantic alignment quality and document-level coherence.</p>
+                                            <div class="math-container">
+                                                <p class="text-xs"><strong>GAS ≥ 0.9:</strong> Excellent semantic alignment</p>
+                                                <p class="text-xs"><strong>0.7 ≤ GAS < 0.9:</strong> Good semantic alignment</p>
+                                                <p class="text-xs"><strong>0.5 ≤ GAS < 0.7:</strong> Moderate semantic alignment</p>
+                                                <p class="text-xs"><strong>GAS < 0.5:</strong> Poor semantic alignment</p>
+                                            </div>
+                                            <p class="text-xs text-orange-700 mt-2">These thresholds help assess whether the generated text maintains the same overall semantic meaning as the reference text.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Algorithm Conclusion -->
+                                <div class="bg-blue-50 border border-blue-200 rounded-xl p-3 mt-3">
+                                    <div class="flex items-start">
+                                        <i class="fas fa-play-circle text-blue-500 mr-2 mt-0.5"></i>
+                                        <div>
+                                            <p class="text-xs text-blue-800 font-medium mb-1">🎯 Interactive Demo</p>
+                                            <p class="text-xs text-blue-700 mb-2">Now that you understand how GAS measures document-level semantic similarity through global embeddings and cosine similarity, use the interactive demo below to see how GAS performs across different text variations.</p>
+                                            <p class="text-xs text-blue-700">Explore examples ranging from paraphrasing to chronological disruptions to understand both the strengths and limitations of global semantic alignment measurement.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+                <!-- Unified Interactive Demo Container -->
+                <div id="tour-step-demo" class="unified-demo-container">
+                    <!-- Navigation Controls -->
+                    <div id="tour-step-controls" class="nav-controls">
+                        <button id="prevBtn" class="nav-button">
+                            <i class="fas fa-chevron-left mr-2"></i>Previous
+                        </button>
+                        
+                        <div class="text-center">
+                            <div class="inline-flex items-center bg-teal-100 text-teal-800 px-4 py-2 rounded-full text-sm font-semibold mb-2">
+                                <i class="fas fa-flask mr-2"></i>INTERACTIVE EXAMPLES
+                            </div>
+                            <div class="text-sm text-slate-500" id="exampleCounter">1 of 6</div>
+                        </div>
+                        
+                        <button id="nextBtn" class="nav-button">
+                            Next<i class="fas fa-chevron-right ml-2"></i>
+                        </button>
+                    </div>
+
+                    <!-- Example Header -->
+                    <div id="tour-step-header" class="example-header">
+                        <h3 class="example-title" id="exampleTitle">Valid Paraphrasing</h3>
+                        <p class="example-description" id="exampleDescription">Exploring how GAS handles semantic preservation across different expressions</p>
+                    </div>
+
+                    <!-- Text Comparison Grid -->
+                    <div id="tour-step-texts" class="content-grid">
+                        <!-- Reference Text -->
+                        <div class="text-section">
+                            <h4>
+                                <i class="fas fa-file-text text-blue-600 mr-2"></i>
+                                Reference Text
+                            </h4>
+                            <div class="text-content" id="referenceTextContent">
+                                <!-- Reference text content will be inserted here -->
+                            </div>
+                        </div>
+                        
+                        <!-- Generated Text -->
+                        <div class="text-section">
+                            <h4>
+                                <i class="fas fa-robot text-green-600 mr-2"></i>
+                                Generated Text
+                            </h4>
+                            <div class="text-content" id="generatedTextContent">
+                                <!-- Generated text content will be inserted here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GAS Score Display -->
+                    <div id="tour-step-analysis" class="gas-score-display">
+                        <div class="gas-score-number" id="scoreNumber">0.897</div>
+                        <div class="gas-score-label">GAS Score</div>
+                    </div>
+
+                    <!-- Challenge and Performance Badges -->
+                    <div class="analysis-grid">
+                        <div class="analysis-item">
+                            <h5><i class="fas fa-tag text-slate-600 mr-2"></i>Challenge Type</h5>
+                            <div class="challenge-badge performance-excellent" id="challengeBadge">Expressive Variability</div>
+                        </div>
+                        <div class="analysis-item">
+                            <h5><i class="fas fa-chart-bar text-slate-600 mr-2"></i>Performance</h5>
+                            <div class="challenge-badge performance-excellent" id="performanceBadge">Excellent</div>
+                        </div>
+                    </div>
+
+                    <!-- Analysis Insights -->
+                    <div class="insight-section">
+                        <h5><i class="fas fa-lightbulb text-amber-600 mr-2"></i>Analysis & Key Insights</h5>
+                        <p class="insight-text" id="analysisText">GAS correctly recognizes that extensive paraphrasing preserves semantic meaning. The high score demonstrates that GAS successfully captures global semantic alignment despite complete lexical differences.</p>
+                        <p class="insight-text text-sm font-medium" id="insightText">💡 Global embeddings excel at recognizing semantic preservation across different linguistic expressions.</p>
+                    </div>
+                </div>
+                </main>
+            </article>
+        </div>
+    </div>
+
+    <script>
+        // Example data with all the challenges
+        const examples = [
+            {
+                id: 'paraphrasing',
+                title: 'Valid Paraphrasing',
+                description: 'Exploring how GAS handles semantic preservation across different expressions',
+                challenge: 'Expressive Variability',
+                score: 0.897,
+                performance: 'excellent',
+                referenceText: 'The old market bell rings, starting a busy market. Vendors open their bright stalls in the busy square, while the smell of fresh bread fills the air. A young seller shouts out good deals as curious people gather around. The steady ring of the bell sets the pace for the day. A wise old vendor stops by his stall, giving advice to those who pass by. As the market gets busy, the bell rings again at midday, reminding everyone of the community spirit. A light rain briefly slows the crowd, but everyone\'s spirit stays strong. Local storytellers tell simple tales that catch everyone\'s attention. As evening comes, the old bell rings one last time, perfectly echoing the start of the day.',
+                generatedText: 'The weathered marketplace bell tolls, ushering in a bustling bazaar. Merchants unveil their colorful booths in the crowded square, while the aroma of warm loaves drifts through the air. A youthful vendor calls out enticing bargains as inquisitive patrons congregate nearby. The rhythmic chime of the bell establishes the tempo for the morning. An experienced stallholder pauses at his stand, offering counsel to passersby. As the marketplace grows lively, the bell resonates again at noon, reminding folks here of their shared camaraderie. A gentle drizzle momentarily slows the throng, yet spirits remain undampened. Village raconteurs spin modest yarns that captivate all onlookers. As dusk approaches, the timeworn bell sounds one final time, perfectly mirroring its morning greeting.',
+                textClass: 'text-changed',
+                analysis: 'GAS correctly recognizes that extensive paraphrasing preserves semantic meaning. The high score demonstrates that GAS successfully captures global semantic alignment despite complete lexical differences.',
+                insight: '💡 Global embeddings excel at recognizing semantic preservation across different linguistic expressions.'
+            },
+            {
+                id: 'brevity',
+                title: 'Brevity (65% shorter)',
+                description: 'Testing GAS performance on significantly shortened text versions',
+                challenge: 'Descriptive Variability',
+                score: 0.941,
+                performance: 'excellent',
+                referenceText: 'The old market bell rings, starting a busy market. Vendors open their bright stalls in the busy square, while the smell of fresh bread fills the air. A young seller shouts out good deals as curious people gather around. The steady ring of the bell sets the pace for the day. A wise old vendor stops by his stall, giving advice to those who pass by. As the market gets busy, the bell rings again at midday, reminding everyone of the community spirit. A light rain briefly slows the crowd, but everyone\'s spirit stays strong. Local storytellers tell simple tales that catch everyone\'s attention. As evening comes, the old bell rings one last time, perfectly echoing the start of the day.',
+                generatedText: 'The old market bell signals vendors to open stalls amid fresh bread aromas. A young seller calls out deals, drawing curious onlookers as the bell sets the day\'s pace. A wise old vendor advises passersby when the midday bell rings, fostering community spirit. A brief light rain slows the crowd, but local storytellers share simple tales that maintain spirits. At evening, the final bell echoes the day\'s start.',
+                textClass: 'text-removed',
+                analysis: 'GAS achieves an excellent score despite 65% length reduction, demonstrating its ability to recognize that brevity can preserve core narrative themes without losing semantic alignment.',
+                insight: '💡 GAS is length-agnostic and focuses on semantic content rather than text volume.'
+            },
+            {
+                id: 'verbosity',
+                title: 'Verbosity (377% longer)',
+                description: 'Evaluating GAS on highly detailed, expanded text versions',
+                challenge: 'Descriptive Variability',
+                score: 0.886,
+                performance: 'excellent',
+                referenceText: 'The old market bell rings, starting a busy market. Vendors open their bright stalls in the busy square, while the smell of fresh bread fills the air. A young seller shouts out good deals as curious people gather around. The steady ring of the bell sets the pace for the day. A wise old vendor stops by his stall, giving advice to those who pass by. As the market gets busy, the bell rings again at midday, reminding everyone of the community spirit. A light rain briefly slows the crowd, but everyone\'s spirit stays strong. Local storytellers tell simple tales that catch everyone\'s attention. As evening comes, the old bell rings one last time, perfectly echoing the start of the day.',
+                generatedText: 'The old market bell swings forward, strikes the metal rim sharply, swings back, and its echo ripples gently outward, marking the market\'s opening. Vendors grasp wooden shutters, push them upward firmly, latch them in place, unroll striped canvas covers, and arrange baskets methodically. Hands quickly stack fresh bread loaves, tilt trays slightly, and let warm scents drift into the morning air. A young seller heaves a heavy crate onto an old barrel, wipes his brow briefly, sorts goods neatly, and taps each loaf with care. He cups his palms around his mouth, takes a deep breath, and calls clearly, drawing curious passersby who step nearer one by one, nodding and exchanging glances. The bell maintains a steady rhythm: the clapper swings, strikes, swings again, echo fading, yet steady enough to pace the market\'s tempo. A wise vendor gently rests his cane against the stall, straightens his hat carefully, beckons a passerby closer, cups a hand near his mouth, whispers some seasoned advice, then nudges a jar slightly to realign his wares precisely. At midday, a hand firmly pulls the rope, swinging the bell\'s heavy clapper once more. The deep sound resonates, prompting shoppers to pause, look around briefly, nod politely at familiar faces, then return to browsing and bargaining. Raindrops gently land on canvas awnings, roll down fabric edges, drip onto stone pavement, and ripple through small puddles. People step swiftly beneath nearby shelters, umbrellas pop open quickly, hands brush off damp sleeves, and murmurs rise as everyone maintains their good spirits. A storyteller carefully steps onto an overturned crate, shakes out a worn cloth puppet, extends one hand upward to signal silence, narrates a short, simple tale clearly, then lowers the puppet as young listeners applaud enthusiastically. As evening approaches, the old bell swings again slowly, the metal rim vibrates briefly, ringing one final time. Vendors quickly fold cloth, lower shutters carefully, lock wooden panels, sweep stray crumbs away, and gather their belongings. Gradually, people exit the square, voices growing softer, footsteps fading, the quiet evening gently mirroring the day\'s hopeful start.',
+                textClass: 'text-added',
+                analysis: 'Despite 377% length increase with micro-action detail, GAS maintains a strong score, showing its ability to recognize that granular descriptions preserve the same overarching narrative themes.',
+                insight: '💡 GAS tolerates detailed expansions that maintain thematic consistency.'
+            },
+            {
+                id: 'reordering',
+                title: 'Valid Narrative Reordering',
+                description: 'Examining GAS response to logically reordered narrative elements',
+                challenge: 'Narrative Variability',
+                score: 0.893,
+                performance: 'excellent',
+                referenceText: 'The old market bell rings, starting a busy market. Vendors open their bright stalls in the busy square, while the smell of fresh bread fills the air. A young seller shouts out good deals as curious people gather around. The steady ring of the bell sets the pace for the day. A wise old vendor stops by his stall, giving advice to those who pass by. As the market gets busy, the bell rings again at midday, reminding everyone of the community spirit. A light rain briefly slows the crowd, but everyone\'s spirit stays strong. Local storytellers tell simple tales that catch everyone\'s attention. As evening comes, the old bell rings one last time, perfectly echoing the start of the day.',
+                generatedText: 'Vendors open their bright stalls in the busy square, while the smell of fresh bread fills the air. A young seller shouts out good deals as curious people gather around. The old market bell rings, starting a busy market. The steady ring of the bell sets the pace for the day. As the market gets busy, the bell rings again at midday, reminding everyone of the community spirit. A light rain briefly slows the crowd, but everyone\'s spirit stays strong. A wise old vendor stops by his stall, giving advice to those who pass by. Local storytellers tell simple tales that catch everyone\'s attention. As evening comes, the old bell rings one last time, perfectly echoing the start of the day.',
+                textClass: 'text-moved',
+                analysis: 'GAS achieves a high score for valid reordering, demonstrating that global embeddings capture thematic content regardless of sequence, which is appropriate for narrative variations.',
+                insight: '💡 Global embeddings are order-independent for thematically consistent content.'
+            },
+            {
+                id: 'local-disruption',
+                title: 'Local Chronological Disruption',
+                description: 'Revealing GAS limitations with local chronological inconsistencies',
+                challenge: 'Chronological Variability',
+                score: 0.991,
+                performance: 'poor',
+                referenceText: 'The old market bell rings, starting a busy market. Vendors open their bright stalls in the busy square, while the smell of fresh bread fills the air. A young seller shouts out good deals as curious people gather around. The steady ring of the bell sets the pace for the day. A wise old vendor stops by his stall, giving advice to those who pass by. As the market gets busy, the bell rings again at midday, reminding everyone of the community spirit. A light rain briefly slows the crowd, but everyone\'s spirit stays strong. Local storytellers tell simple tales that catch everyone\'s attention. As evening comes, the old bell rings one last time, perfectly echoing the start of the day.',
+                generatedText: 'Vendors open their bright stalls in the busy square, while the smell of fresh bread fills the air. The old market bell rings, starting a busy market. The steady ring of the bell sets the pace for the day. A young seller shouts out good deals as curious people gather around. As the market gets busy, the bell rings again at midday, reminding everyone of the community spirit. A wise old vendor stops by his stall, giving advice to those who pass by. Local storytellers tell simple tales that catch everyone\'s attention. A light rain briefly slows the crowd, but everyone\'s spirit stays strong. As evening comes, the old bell rings one last time, perfectly echoing the start of the day.',
+                textClass: 'text-moved',
+                analysis: 'GAS gives an almost perfect score despite severe local chronological disruption. Global embeddings cannot detect that neighboring sentence swaps create narrative chaos at the local level.',
+                insight: '⚠️ GAS limitation: Cannot detect local chronological inconsistencies that disrupt narrative flow.'
+            },
+            {
+                id: 'global-disruption',
+                title: 'Global Chronological Disruption',
+                description: 'Exposing GAS blindness to major chronological ordering problems',
+                challenge: 'Chronological Variability',
+                score: 0.981,
+                performance: 'poor',
+                referenceText: 'The old market bell rings, starting a busy market. Vendors open their bright stalls in the busy square, while the smell of fresh bread fills the air. A young seller shouts out good deals as curious people gather around. The steady ring of the bell sets the pace for the day. A wise old vendor stops by his stall, giving advice to those who pass by. As the market gets busy, the bell rings again at midday, reminding everyone of the community spirit. A light rain briefly slows the crowd, but everyone\'s spirit stays strong. Local storytellers tell simple tales that catch everyone\'s attention. As evening comes, the old bell rings one last time, perfectly echoing the start of the day.',
+                generatedText: 'A wise old vendor stops by his stall, giving advice to those who pass by. As the market gets busy, the bell rings again at midday, reminding everyone of the community spirit. A light rain briefly slows the crowd, but everyone\'s spirit stays strong. Local storytellers tell simple tales that catch everyone\'s attention. As evening comes, the old bell rings one last time, perfectly echoing the start of the day. The old market bell rings, starting a busy market. Vendors open their bright stalls in the busy square, while the smell of fresh bread fills the air. A young seller shouts out good deals as curious people gather around. The steady ring of the bell sets the pace for the day.',
+                textClass: 'text-moved',
+                analysis: 'Even with major global chronological disruption (half paragraph rotation), GAS maintains an excellent score. Global embeddings cannot capture that ending events occur before beginning events, breaking narrative flow.',
+                insight: '⚠️ GAS limitation: Insensitive to global chronological ordering that breaks temporal logic.'
+            }
+        ];
+
+        let currentExampleIndex = 0;
+
+        // DOM elements
+        const exampleTitle = document.getElementById('exampleTitle');
+        const exampleDescription = document.getElementById('exampleDescription');
+        const referenceTextContent = document.getElementById('referenceTextContent');
+        const generatedTextContent = document.getElementById('generatedTextContent');
+        const scoreNumber = document.getElementById('scoreNumber');
+        const scoreDisplay = document.getElementById('scoreDisplay');
+        const challengeBadge = document.getElementById('challengeBadge');
+        const performanceBadge = document.getElementById('performanceBadge');
+        const analysisText = document.getElementById('analysisText');
+        const insightText = document.getElementById('insightText');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const exampleCounter = document.getElementById('exampleCounter');
+
+        // --- Tour Manager ---
+        const tourManager = {
+            isActive: false,
+            currentStep: 0,
+            overlay: document.getElementById('tour-overlay'),
+            steps: [
+                { selector: '#tour-step-intro', text: 'This demo explains the core concept of Global Alignment Score (GAS), which measures semantic alignment between entire reference and generated texts using global embeddings.', position: 'bottom' },
+                { selector: '#tour-step-math', text: 'Explore the complete GAS algorithm here, including the embedding generation process and cosine similarity calculation for measuring semantic alignment.', position: 'bottom' },
+                { selector: '#tour-step-demo', text: 'This unified demo container showcases how GAS performs across different text variation challenges, all in one interactive interface.', position: 'top' },
+                { selector: '#tour-step-controls', text: 'Use these navigation controls to browse through 6 different examples that test GAS performance across various text challenges.', position: 'bottom' },
+                { selector: '#tour-step-header', text: 'Each example focuses on a specific challenge type, from paraphrasing to chronological disruptions, showing both strengths and limitations of GAS.', position: 'bottom' },
+                { selector: '#tour-step-texts', text: 'Compare the reference text (left) with the generated text (right). Notice the text highlighting that shows different types of variations being tested.', position: 'top' },
+                { selector: '#tour-step-analysis', text: 'The analysis section shows the GAS score, challenge type, performance rating, and detailed insights about how GAS handles each specific variation type.', position: 'top' },
+            ],
+            start: function() { 
+                this.isActive = true; 
+                this.currentStep = 0; 
+                this.overlay.style.opacity = '1'; 
+                this.overlay.style.pointerEvents = 'all'; 
+                this.showStep(); 
+                this.addClickOutsideHandler(); 
+            },
+            next: function() { 
+                this.currentStep++; 
+                if (this.currentStep >= this.steps.length) { 
+                    this.end(); 
+                } else { 
+                    this.showStep(); 
+                } 
+            },
+            showStep: function() {
+                this.cleanupCurrentStep();
+                const step = this.steps[this.currentStep];
+                const targetElement = document.querySelector(step.selector);
+                if (!targetElement) { this.end(); return; }
+                targetElement.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+                setTimeout(() => {
+                    targetElement.classList.add('tour-highlight');
+                    const callout = document.createElement('div');
+                    callout.id = 'tour-callout';
+                    callout.innerHTML = `<p class="text-sm mb-4">${step.text}</p><div class="flex justify-end"><button onclick="tourManager.next()">Next &rarr;</button></div>`;
+                    document.body.appendChild(callout);
+                    const targetRect = targetElement.getBoundingClientRect();
+                    const calloutRect = callout.getBoundingClientRect();
+                    let top, left;
+                    if (step.position === 'bottom') {
+                        top = targetRect.bottom + window.scrollY + 15;
+                        left = targetRect.left + window.scrollX + (targetRect.width - calloutRect.width) / 2;
+                    } else if (step.position === 'top') {
+                        top = targetRect.top + window.scrollY - calloutRect.height - 15;
+                        left = targetRect.left + window.scrollX + (targetRect.width - calloutRect.width) / 2;
+                    } else if (step.position === 'left') {
+                        top = targetRect.top + window.scrollY + (targetRect.height - calloutRect.height) / 2;
+                        left = targetRect.left + window.scrollX - calloutRect.width - 15;
+                    } else {
+                        top = targetRect.top + window.scrollY + (targetRect.height - calloutRect.height) / 2;
+                        left = targetRect.right + window.scrollX + 15;
+                    }
+                    top = Math.max(10, Math.min(top, window.innerHeight + window.scrollY - calloutRect.height - 10));
+                    left = Math.max(10, Math.min(left, window.innerWidth - calloutRect.width - 10));
+                    callout.style.top = `${top}px`;
+                    callout.style.left = `${left}px`;
+                    requestAnimationFrame(() => { callout.classList.add('visible'); });
+                }, 350);
+            },
+            cleanupCurrentStep: function() { const oldHighlight = document.querySelector('.tour-highlight'); if (oldHighlight) oldHighlight.classList.remove('tour-highlight'); const oldCallout = document.getElementById('tour-callout'); if (oldCallout) oldCallout.remove(); },
+            end: function() { 
+                this.cleanupCurrentStep(); 
+                this.isActive = false; 
+                this.overlay.style.opacity = '0'; 
+                this.overlay.style.pointerEvents = 'none'; 
+                this.currentStep = 0; 
+                this.removeClickOutsideHandler(); 
+            },
+            addClickOutsideHandler: function() {
+                this.clickOutsideHandler = (e) => {
+                    if (this.isActive) {
+                        const callout = document.getElementById('tour-callout');
+                        if (callout && !callout.contains(e.target)) {
+                            this.end();
+                        }
+                    }
+                };
+                document.addEventListener('click', this.clickOutsideHandler);
+            },
+            removeClickOutsideHandler: function() { if (this.clickOutsideHandler) { document.removeEventListener('click', this.clickOutsideHandler); } }
+        };
+
+        // Update display with current example
+        function updateDisplay() {
+            const example = examples[currentExampleIndex];
+            
+            // Fade out current content
+            referenceTextContent.classList.add('fade-out');
+            generatedTextContent.classList.add('fade-out');
+            
+            // Add bounce effect to score display
+            if (scoreDisplay) {
+                scoreDisplay.style.transform = 'scale(0.95)';
+            }
+            
+            setTimeout(() => {
+                // Update example counter
+                exampleCounter.textContent = `${currentExampleIndex + 1} of ${examples.length}`;
+                
+                // Update example info with smooth transitions
+                exampleTitle.style.opacity = '0';
+                exampleDescription.style.opacity = '0';
+                
+                setTimeout(() => {
+                    exampleTitle.textContent = example.title;
+                    exampleDescription.textContent = example.description;
+                    
+                    exampleTitle.style.opacity = '1';
+                    exampleDescription.style.opacity = '1';
+                }, 200);
+                
+                // Update text content with highlighting
+                referenceTextContent.innerHTML = `<span class="text-original">${example.referenceText}</span>`;
+                generatedTextContent.innerHTML = `<span class="${example.textClass}">${example.generatedText}</span>`;
+                
+                // Fade in new content
+                referenceTextContent.classList.remove('fade-out');
+                referenceTextContent.classList.add('fade-in');
+                generatedTextContent.classList.remove('fade-out');
+                generatedTextContent.classList.add('fade-in');
+                
+                // Update score panel with animation
+                scoreNumber.style.transform = 'scale(0.8)';
+                scoreNumber.style.opacity = '0.5';
+                
+                setTimeout(() => {
+                    scoreNumber.textContent = example.score;
+                    scoreNumber.style.transform = 'scale(1.1)';
+                    scoreNumber.style.opacity = '1';
+                    
+                    setTimeout(() => {
+                        scoreNumber.style.transform = 'scale(1)';
+                        if (scoreDisplay) {
+                           scoreDisplay.style.transform = 'scale(1)';
+                        }
+                    }, 200);
+                }, 100);
+                
+                challengeBadge.textContent = example.challenge;
+                challengeBadge.className = `challenge-badge performance-${example.performance}`;
+                
+                performanceBadge.textContent = example.performance === 'excellent' ? 'Excellent' : 'Poor - Limitation';
+                performanceBadge.className = `challenge-badge performance-${example.performance}`;
+                
+                // Animate text updates
+                analysisText.style.opacity = '0';
+                insightText.style.opacity = '0';
+                
+                setTimeout(() => {
+                    analysisText.textContent = example.analysis;
+                    insightText.textContent = example.insight;
+                    
+                    analysisText.style.opacity = '1';
+                    insightText.style.opacity = '1';
+                }, 300);
+                
+                // Update navigation buttons
+                prevBtn.disabled = currentExampleIndex === 0;
+                nextBtn.disabled = currentExampleIndex === examples.length - 1;
+                
+            }, 200);
+        }
+
+        // Handle navigation buttons
+        prevBtn.addEventListener('click', function() {
+            if (currentExampleIndex > 0) {
+                currentExampleIndex--;
+                updateDisplay();
+            }
+        });
+
+        nextBtn.addEventListener('click', function() {
+            if (currentExampleIndex < examples.length - 1) {
+                currentExampleIndex++;
+                updateDisplay();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft' && currentExampleIndex > 0) {
+                currentExampleIndex--;
+                updateDisplay();
+            } else if (e.key === 'ArrowRight' && currentExampleIndex < examples.length - 1) {
+                currentExampleIndex++;
+                updateDisplay();
+            }
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateDisplay();
+            
+            // Set background
+            const appBackground = document.getElementById('app-background');
+            if (appBackground) {
+                appBackground.style.background = `linear-gradient(135deg, hsl(170, 20%, 90%) 0%, hsl(190, 30%, 95%) 100%)`;
+            }
+            
+            // Tour button
+            document.getElementById('start-tour-btn').addEventListener('click', () => tourManager.start());
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false}
+                ],
+                throwOnError: false
+            });
+        });
+    </script>
+</body>
+</html>

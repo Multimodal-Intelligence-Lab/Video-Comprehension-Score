@@ -1,0 +1,94 @@
+name: Build and Publish
+
+on:
+  # Publish on releases and tags
+  release:
+    types: [published, created]
+  push:
+    tags:
+      - 'v*.*.*'
+  
+  # Manual trigger for testing
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Deploy to'
+        required: true
+        default: 'testpypi'
+        type: choice
+        options:
+        - testpypi
+        - pypi
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Fetch all history for proper version calculation
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+    
+    - name: Create version tag
+      run: |
+        echo "Fetching all tags:"
+        git fetch --tags
+        echo "Current tags:"
+        git tag -l v*.*.* | sort -V | tail -5
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        python tag_version.py
+    
+    - name: Install build dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install build
+    
+    - name: Build package
+      run: python -m build
+    
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: dist
+        path: dist/
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download build artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: dist
+        path: dist/
+    
+    - name: Determine target repository
+      id: target
+      run: |
+        if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+          TARGET="${{ github.event.inputs.environment }}"
+        else
+          TARGET="testpypi"  # Default for releases
+        fi
+        
+        if [[ "$TARGET" == "pypi" ]]; then
+          echo "repository_url=" >> $GITHUB_OUTPUT
+          echo "environment=Production PyPI" >> $GITHUB_OUTPUT
+        else
+          echo "repository_url=https://test.pypi.org/legacy/" >> $GITHUB_OUTPUT
+          echo "environment=Test PyPI" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Publish to ${{ steps.target.outputs.environment }}
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        repository-url: ${{ steps.target.outputs.repository_url }}
