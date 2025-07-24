@@ -63,11 +63,11 @@ all = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/hdubey-debug/vcs"
-Documentation = "https://hdubey-debug.github.io/vcs/"
-Repository = "https://github.com/hdubey-debug/vcs.git"
-"Bug Tracker" = "https://github.com/hdubey-debug/vcs/issues"
-Changelog = "https://github.com/hdubey-debug/vcs/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score"
+Documentation = "https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/"
+Repository = "https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score.git"
+"Bug Tracker" = "https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues"
+Changelog = "https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/blob/main/CHANGELOG.md"
 
 [tool.setuptools.packages.find]
 where = ["src"]
