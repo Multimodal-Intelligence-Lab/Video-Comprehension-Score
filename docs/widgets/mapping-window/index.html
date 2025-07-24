@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapping Windows</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false}
+                ],
+                throwOnError: false
+            });
+        });
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        /* --- SMOOTHNESS & PERFORMANCE ENHANCEMENTS --- */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            transition: background 1.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+
+        /* --- Neumorphic Theme Variables --- */
+        :root {
+            --bg-color: #f8fafc; /* Keep original light background */
+            --light-shadow: rgba(255, 255, 255, 1);
+            --dark-shadow: rgba(148, 163, 184, 0.3); /* Subtle slate shadows */
+            --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --ease-out-cubic: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+
+        /* --- Neumorphic Page Container --- */
+        .neumorphic-page-container {
+            background: var(--bg-color);
+            border-radius: 25px;
+            box-shadow: 0 0 24px var(--dark-shadow);
+            margin: 1rem;
+            padding: 2rem;
+            min-height: calc(100vh - 2rem);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .neumorphic-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* --- Neumorphic Card Styles --- */
+        .interactive-card {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+            transition: transform 0.35s var(--ease-out-cubic),
+                        box-shadow 0.35s var(--ease-out-cubic),
+                        border-color 0.35s var(--ease-out-cubic);
+            will-change: transform, box-shadow;
+        }
+        .interactive-card:hover {
+            box-shadow: 12px 12px 24px var(--dark-shadow), -12px -12px 24px var(--light-shadow);
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .demo-card { 
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(248, 250, 252, 0.65) 100%); 
+            border-color: rgba(226, 232, 240, 0.8);
+            border-left: 3px solid #0d9488;
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow), 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+        
+        .intro-card { 
+            background: linear-gradient(135deg, rgba(254, 252, 232, 0.6) 0%, rgba(254, 243, 199, 0.5) 100%); 
+            border-color: rgba(251, 191, 36, 0.5);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+        }
+        
+        .formula-card { 
+            background: linear-gradient(135deg, rgba(237, 233, 254, 0.6) 0%, rgba(221, 214, 254, 0.5) 100%); 
+            border-color: rgba(196, 181, 253, 0.6);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+        }
+
+        /* --- Chart & Visualization Elements --- */
+        .mapping-window { 
+            position: absolute; 
+            box-sizing: border-box; 
+            z-index: 10; 
+            transition: left 0.4s var(--ease-out-cubic), top 0.4s var(--ease-out-cubic), width 0.4s var(--ease-out-cubic), height 0.4s var(--ease-out-cubic), background-color 0.25s var(--ease-out-cubic), border-color 0.25s var(--ease-out-cubic), box-shadow 0.25s var(--ease-out-cubic), opacity 0.25s var(--ease-out-cubic); 
+            border-radius: 0.375rem;
+        }
+        .precision-window-style { 
+            border: 2px solid #0d9488; 
+            background-color: rgba(20, 184, 166, 0.3);
+            box-shadow: 
+                0 0 8px rgba(13, 148, 136, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+        .recall-window-style { 
+            border: 2px solid #f59e0b; 
+            background-color: rgba(245, 158, 11, 0.3);
+            box-shadow: 
+                0 0 8px rgba(245, 158, 11, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+        .axis-label { position: absolute; font-size: 0.75rem; color: #475569; font-weight: 500; white-space: nowrap; }
+        .axis-title { position: absolute; font-size: 0.875rem; color: #475569; font-weight: 600; white-space: nowrap; }
+        .chart-grid-background {
+            background-color: #fafbfc;
+            border-radius: 15px;
+            box-shadow: inset 5px 5px 10px var(--dark-shadow), inset -5px -5px 10px var(--light-shadow), inset 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        /* --- Neumorphic Input & Button Styles --- */
+        .neumorphic-input {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            box-shadow: inset 4px 4px 8px var(--dark-shadow), inset -4px -4px 8px var(--light-shadow);
+            transition: box-shadow 0.3s var(--ease-out-quad), border-color 0.3s var(--ease-out-quad);
+            color: #374151;
+        }
+        .neumorphic-input:focus {
+            outline: none;
+            box-shadow: inset 6px 6px 12px var(--dark-shadow), inset -6px -6px 12px var(--light-shadow);
+            border-color: #0d9488;
+        }
+
+        .neumorphic-btn {
+            border-radius: 12px;
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            font-weight: 600;
+            box-shadow: 5px 5px 10px var(--dark-shadow), -5px -5px 10px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .neumorphic-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        .neumorphic-btn:hover {
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02);
+        }
+        .neumorphic-btn:hover::before {
+            left: 100%;
+        }
+        .neumorphic-btn:active {
+            box-shadow: inset 4px 4px 8px var(--dark-shadow), inset -4px -4px 8px var(--light-shadow);
+            transform: translateY(1px);
+        }
+        .neumorphic-btn.primary {
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+        }
+
+        /* --- Hero Section Styles --- */
+        #hero-section {
+            background: linear-gradient(45deg, #0d9488, #0f766e); 
+            color: white; 
+        }
+        #hero-section h1 {
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2); 
+        }
+
+        /* --- Hero Link Buttons --- */
+        .hero-link-neumorphic {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 0.75rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 0.75rem;
+            text-decoration: none;
+            color: #ccfbf1;
+            transition: all 0.3s ease;
+            text-align: center;
+            min-height: 80px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 
+                4px 4px 8px rgba(0, 0, 0, 0.2),
+                -2px -2px 6px rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-link-neumorphic::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .hero-link-neumorphic:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 
+                6px 6px 12px rgba(0, 0, 0, 0.25),
+                -3px -3px 8px rgba(255, 255, 255, 0.15);
+        }
+
+        .hero-link-neumorphic:hover::before {
+            left: 100%;
+        }
+
+        .hero-link-neumorphic:active {
+            transform: translateY(-1px);
+            box-shadow: 
+                2px 2px 4px rgba(0, 0, 0, 0.3),
+                -1px -1px 3px rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-link-neumorphic span {
+            margin-top: 0.5rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .hero-link-neumorphic:hover span {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        /* --- Hero Tour Button (No White Glow) --- */
+        .hero-tour-btn {
+            background: linear-gradient(135deg, #0f766e 0%, #064e3b 100%);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-tour-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .hero-tour-btn:hover {
+            background: linear-gradient(135deg, #14b8a6 0%, #0f766e 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-tour-btn:hover::before {
+            left: 100%;
+        }
+
+        .hero-tour-btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* --- Tour Styles --- */
+        #tour-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 9998; opacity: 0; transition: opacity 0.4s ease-in-out; pointer-events: none; }
+        .tour-highlight { position: relative; z-index: 9999; box-shadow: 0 0 0 9999px rgba(0,0,0,0.6), 0 0 20px rgba(255, 255, 255, 0.9); border-radius: 0.5rem; transition: box-shadow 0.4s ease-in-out; }
+        #tour-callout { 
+            position: absolute; 
+            background: rgba(255, 255, 255, 0.95); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            color: #334155; 
+            padding: 1.25rem; 
+            border-radius: 20px; 
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+            z-index: 10000; 
+            max-width: 320px; 
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: opacity 0.3s var(--ease-out-cubic), transform 0.3s var(--ease-out-cubic); 
+            transform: translateY(10px); 
+            opacity: 0; 
+        }
+        #tour-callout.visible { transform: translateY(0); opacity: 1; }
+        #tour-callout button { 
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%); 
+            color: white; 
+            padding: 0.5rem 1rem; 
+            border: none; 
+            border-radius: 12px; 
+            cursor: pointer; 
+            font-weight: 600;
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+        }
+        #tour-callout button:hover { 
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02); 
+        }
+
+        /* --- Other Styled Components --- */
+        .preset-btn { 
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            position: relative;
+            overflow: hidden;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+        .preset-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        .preset-btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 
+                0 12px 24px rgba(6, 78, 59, 0.4),
+                0 4px 8px rgba(255, 255, 255, 0.3) inset;
+        }
+        .preset-btn:hover::before {
+            left: 100%;
+        }
+        .preset-btn:hover i {
+            transform: scale(1.1);
+        }
+        .preset-btn i {
+            transition: all 0.3s ease;
+        }
+        details summary { cursor: pointer; user-select: none; transition: color 0.2s var(--ease-out-quad); }
+        details summary:hover { color: #1d4ed8; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary .summary-icon { display: inline-block; margin-right: 0.5rem; transition: transform 0.25s var(--ease-out-cubic); }
+        details[open] summary .summary-icon { transform: rotate(90deg); }
+        .step-number { 
+            width: 2rem; height: 2rem; 
+            border-radius: 50%; 
+            display: flex; align-items: center; justify-content: center; 
+            color: white; font-weight: bold; font-size: 0.875rem; 
+            flex-shrink: 0; 
+        }
+        .math-formula { 
+            background: linear-gradient(135deg, rgba(248, 250, 252, 0.8) 0%, rgba(241, 245, 249, 0.9) 100%); 
+            border: 1px solid rgba(203, 213, 225, 0.5); 
+        }
+
+        /* --- Testing Assistant Styles --- */
+
+        .testing-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s var(--ease-out-cubic);
+        }
+        .testing-modal.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        .testing-modal-content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            padding: 2.5rem;
+            max-width: 90vw;
+            max-height: 85vh;
+            width: 700px;
+            box-shadow: 
+                12px 12px 24px var(--dark-shadow), 
+                -12px -12px 24px var(--light-shadow),
+                0 8px 32px rgba(0, 0, 0, 0.1);
+            transform: translateY(30px) scale(0.9);
+            transition: all 0.5s var(--ease-out-cubic);
+            overflow-y: auto;
+            box-sizing: border-box;
+            position: relative;
+        }
+        /* Custom scrollbar for testing modal */
+        .testing-modal-content::-webkit-scrollbar {
+            width: 8px;
+        }
+        .testing-modal-content::-webkit-scrollbar-track {
+            background: rgba(248, 250, 252, 0.3);
+            border-radius: 1rem;
+        }
+        .testing-modal-content::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, rgba(13, 148, 136, 0.6) 0%, rgba(20, 184, 166, 0.4) 100%);
+            border-radius: 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        .testing-modal-content::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, rgba(13, 148, 136, 0.8) 0%, rgba(20, 184, 166, 0.6) 100%);
+        }
+        /* Firefox scrollbar styling */
+        .testing-modal-content {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(13, 148, 136, 0.6) rgba(248, 250, 252, 0.3);
+        }
+        .testing-modal-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, rgba(13, 148, 136, 0.8) 50%, transparent 100%);
+        }
+        .testing-modal.visible .testing-modal-content {
+            transform: translateY(0) scale(1);
+        }
+        .testing-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid rgba(226, 232, 240, 0.6);
+            position: relative;
+        }
+        .testing-modal-header::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, #0d9488 0%, #14b8a6 100%);
+            border-radius: 1px;
+        }
+        .testing-modal-close {
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            font-size: 1.25rem;
+            cursor: pointer;
+            color: #64748b;
+            padding: 0.75rem;
+            border-radius: 50%;
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+            transition: all 0.3s var(--ease-out-cubic);
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .testing-modal-close:hover {
+            color: #0d9488;
+            transform: rotate(90deg) scale(1.1);
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+        }
+        .test-category {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+        .test-category::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(20, 184, 166, 0.05) 0%, rgba(15, 118, 110, 0.05) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .test-category:hover::before {
+            opacity: 1;
+        }
+        .test-category:hover {
+            transform: translateY(-2px);
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+        }
+        .test-category h3 {
+            color: #0f172a;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.025em;
+        }
+        .test-category h3 i {
+            margin-right: 0.75rem;
+            color: #0d9488;
+            background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
+            padding: 0.5rem;
+            border-radius: 50%;
+            font-size: 1rem;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .test-category:hover h3 i {
+            transform: translateY(-2px) scale(1.1);
+            box-shadow: 
+                0 8px 16px rgba(20, 184, 166, 0.3),
+                0 4px 8px rgba(255, 255, 255, 0.9) inset;
+            color: #0f766e;
+        }
+        .test-item {
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+        }
+        .test-item:hover {
+            transform: translateY(-1px);
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+        }
+        .test-item:last-child {
+            margin-bottom: 0;
+        }
+        .test-item h4 {
+            color: #1e293b;
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+        .test-item p {
+            color: #475569;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .test-checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: rgba(248, 250, 252, 0.4);
+            border-radius: 0.5rem;
+            padding: 1rem;
+            border: 1px solid rgba(226, 232, 240, 0.4);
+        }
+        .test-checklist li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+            font-size: 0.875rem;
+            color: #334155;
+            line-height: 1.5;
+            transition: all 0.2s var(--ease-out-quad);
+        }
+        .test-checklist li:last-child {
+            margin-bottom: 0;
+        }
+        .test-checklist li:hover {
+            color: #0d9488;
+            transform: translateX(2px);
+        }
+        .test-checklist li::before {
+            content: "✓";
+            margin-right: 0.75rem;
+            color: #0d9488;
+            font-weight: bold;
+            background: rgba(13, 148, 136, 0.1);
+            border-radius: 50%;
+            width: 1.25rem;
+            height: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+        }
+        .action-button {
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s var(--ease-out-cubic);
+            margin-right: 0.75rem;
+            margin-top: 1rem;
+            box-shadow: 0 2px 8px rgba(13, 148, 136, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .action-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
+            transition: left 0.5s var(--ease-out-quad);
+        }
+        .action-button:hover::before {
+            left: 100%;
+        }
+        .action-button:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 6px 20px rgba(13, 148, 136, 0.3);
+        }
+        .action-button:active {
+            transform: translateY(-1px) scale(1);
+        }
+
+        /* --- MathJax Custom Styling --- */
+        .MathJax {
+            color: #1e40af !important; /* Blue-700 for math text */
+        }
+        
+        .MathJax_Display {
+            color: #1e40af !important; /* Blue-700 for display math */
+        }
+        
+        .MathJax_CHTML {
+            color: #1e40af !important; /* Blue-700 for CHTML output */
+        }
+        
+        .MathJax_SVG {
+            color: #1e40af !important; /* Blue-700 for SVG output */
+        }
+        
+        /* Style math containers to match blue prerequisite block theme */
+        .math-container {
+            background: #dbeafe;
+            border: 1px solid #93c5fd;
+            border-radius: 0.75rem;
+            padding: 0.75rem;
+            margin-top: 0.75rem;
+        }
+        
+        /* KaTeX color overrides */
+        .katex {
+            color: #1e40af !important;
+        }
+        
+        .katex .mord,
+        .katex .mop,
+        .katex .mbin,
+        .katex .mrel,
+        .katex .mopen,
+        .katex .mclose,
+        .katex .mpunct {
+            color: #1e40af !important;
+        }
+        
+        .katex .mtext {
+            color: #1e3a8a !important;
+        }
+    </style>
+</head>
+<body class="h-full text-slate-700 antialiased">
+    <div id="app-background" class="fixed inset-0 z-[-1] transition-all duration-1000"></div>
+    <div id="tour-overlay"></div>
+
+    <!-- Neumorphic Page Container -->
+    <div class="neumorphic-page-container">
+        <div class="neumorphic-content">
+            <article class="interactive-card overflow-hidden">
+                <!-- Hero Section -->
+                <section id="hero-section" class="py-6 px-4 sm:px-6 lg:px-8 relative">
+                    <div class="container mx-auto">
+                        <!-- Start Tour Button - Top Right -->
+                        <button id="start-tour-btn" class="hero-tour-btn absolute top-4 right-4 py-2 px-4">
+                            <i class="fas fa-magic mr-2"></i>Start Tour
+                        </button>
+                        
+                        <div class="text-left max-w-4xl">
+                            <div class="flex items-center justify-start mb-4">
+                                <div class="bg-teal-200 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mr-2">Interactive Demo</div>
+                                <div class="bg-white bg-opacity-20 text-white px-3 py-1 rounded-full text-xs font-semibold">Core VCS Component</div>
+                            </div>
+                            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-3 leading-tight">
+                                Mapping Window Visualization
+                            </h1>
+                            <p class="text-teal-200 text-base sm:text-lg mb-6 max-w-3xl">
+                                Explore how texts of different lengths are aligned using precision and recall mapping windows in the Video Comprehension Score framework.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Main Container -->
+                <main class="w-full max-w-8xl mx-auto p-6">
+        
+        <!-- Introduction Section -->
+        <div id="tour-step-intro" class="intro-card interactive-card rounded-xl p-6 mb-8">
+            <div class="flex items-center mb-4"><i class="fas fa-lightbulb text-amber-600 text-xl mr-3"></i><h2 class="text-xl font-semibold text-amber-800">Introduction to Mapping Windows</h2></div>
+            
+            <!-- Definition -->
+            <div class="bg-white bg-opacity-70 p-4 rounded-lg mb-6 border-l-4 border-amber-500">
+                <p class="text-sm text-slate-700 mb-3"><strong>What are Mapping Windows?</strong> Mapping windows define the permissible regions on the alignment grid where text chunks can and should match if the stories are the same or align in narrative structure. They constrain the search space for optimal alignments between reference and generated texts.</p>
+                
+                <p class="text-sm text-slate-700 mb-3"><strong>Real-World Intuition:</strong> The concept of mapping windows stems from observed patterns in text similarity matrices. When you take identical stories and compute pairwise sentence embeddings using sentence transformers, the resulting similarity matrix exhibits a clear diagonal structure—the first sentence from one text has highest cosine similarity with the first sentence from the other text, the second with the second, and so on. This diagonal alignment pattern holds even when stories have different lengths: in brevity cases (shorter generated text) or verbosity cases (longer generated text), the diagonal pattern stretches or compresses proportionally. Mapping windows formalize this empirical observation by constraining the search space to regions where these natural alignments are expected to occur based on text length ratios.</p>
+                
+                <!-- Warning -->
+                <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                    <div class="flex items-start">
+                        <i class="fas fa-exclamation-triangle text-orange-500 mr-2 mt-0.5"></i>
+                        <div>
+                            <p class="text-xs text-orange-800 font-medium mb-1">⚠️ Prerequisites Required</p>
+                            <p class="text-xs text-orange-700">Please read the VCS research paper and understand the theoretical foundation of mapping windows before using this interactive demo. This visualization assumes familiarity with the underlying concepts.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Prerequisites -->
+                <div class="bg-blue-50 border border-blue-200 rounded-xl p-3 mt-3">
+                    <div class="flex items-start">
+                        <i class="fas fa-info-circle text-blue-500 mr-2 mt-0.5"></i>
+                        <div>
+                            <p class="text-xs text-blue-800 font-medium mb-1">📚 Additional Prerequisites</p>
+                            <p class="text-xs text-blue-700">Before exploring Mapping Windows, we recommend visiting the <a href="../gas/" class="font-bold underline hover:text-blue-900">Global Alignment Score (GAS) Demo</a> to understand overall semantic similarity calculation between paragraphs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div class="bg-white bg-opacity-60 p-4 rounded-lg"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-crosshairs text-teal-500 mr-2"></i>Precision Windows (MW<sub>prec</sub>)</h4><p class="text-sm text-slate-700">Used when matching generated chunks to reference chunks. Shows which reference chunks each generated chunk can align with.</p></div>
+                <div class="bg-white bg-opacity-60 p-4 rounded-lg"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-search text-amber-500 mr-2"></i>Recall Windows (MW<sub>rec</sub>)</h4><p class="text-sm text-slate-700">Used when matching reference chunks to generated chunks. Shows which generated chunks each reference chunk can align with.</p></div>
+            </div>
+             <details id="tour-step-math" class="mb-4">
+                <summary class="font-semibold text-amber-700 mb-3 flex items-center"><i class="fas fa-chevron-right summary-icon"></i>Mapping Window Algorithm</summary>
+                <div class="mt-4 space-y-4">
+                    <!-- Main Algorithm Overview -->
+                    <div class="bg-white bg-opacity-70 p-4 rounded-lg border-l-4 border-amber-500">
+                        <p class="text-sm text-slate-700 mb-3"><strong>Algorithm Overview:</strong> The mapping window algorithm follows 5 steps to establish permissible alignment regions:</p>
+                        
+                        <!-- Step 1: Text Segmentation and Chunk Analysis -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-scissors text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 1: Text Segmentation and Chunk Analysis</p>
+                                    <p class="text-xs text-orange-700 mb-2">Both reference and generated texts are first segmented into semantic segments using the Segment Any Text (SAT) model. These segments are then grouped into chunks, where the chunk size is a user-controlled parameter in VCS. This creates coherent text units that preserve the semantic boundaries while allowing flexible granularity control.</p>
+                                    <p class="text-xs text-orange-700 mb-2">Let $T_{ref}$ and $T_{gen}$ denote the reference and generated texts, respectively. The two-stage process works as follows:</p>
+                                    <div class="math-container">
+                                        <p class="text-xs">$S_{ref} = \text{SAT}(T_{ref}) = \{s_{ref,1}, s_{ref,2}, ..., s_{ref,M_{ref}}\}$</p>
+                                        <p class="text-xs">$S_{gen} = \text{SAT}(T_{gen}) = \{s_{gen,1}, s_{gen,2}, ..., s_{gen,M_{gen}}\}$</p>
+                                        <p class="text-xs">$C_{ref} = \text{Group}(S_{ref}, k) = \{c_{ref,1}, c_{ref,2}, ..., c_{ref,N_{ref}}\}$</p>
+                                        <p class="text-xs">$C_{gen} = \text{Group}(S_{gen}, k) = \{c_{gen,1}, c_{gen,2}, ..., c_{gen,N_{gen}}\}$</p>
+                                    </div>
+                                    <p class="text-xs text-orange-700 mt-2">where $M_{ref}$ and $M_{gen}$ are the number of segments from SAT, $k$ is the user-controlled chunk size parameter, and $N_{ref}$ and $N_{gen}$ represent the final number of chunks after grouping.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2: Length Ratio and Slope Calculation -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-calculator text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 2: Length Ratio and Slope Calculation</p>
+                                    <p class="text-xs text-orange-700 mb-2">The algorithm computes the alignment slope by calculating the length ratio/slope by comparing the number of chunks (i.e., text units) we got from the SAT model.</p>
+                                    <div class="math-container">
+                                        <p class="text-xs">$\text{slope} = \frac{\max(N_{ref}, N_{gen})}{\min(N_{ref}, N_{gen})}$</p>
+                                        <p class="text-xs">$h_{mw} = \lceil \text{slope} \rceil$</p>
+                                    </div>
+                                    <p class="text-xs text-orange-700 mt-2">where $h_{mw}$ represents the mapping window height.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3: Direct Window Construction -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-arrow-right text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 3: Direct Window Construction</p>
+                                    <p class="text-xs text-orange-700 mb-2">For each chunk in the shorter text, we construct a direct window, using the length ratio from step 2, that defines its permissible alignment region in the longer text using linear interpolation.</p>
+                                    <p class="text-xs text-orange-700 mb-2">For chunk $i$ in the shorter text ($i \in [0, N_{short})$), the direct window is computed as:</p>
+                                    <div class="math-container">
+                                        <p class="text-xs">$\text{projection}_i = i \times \text{slope}$</p>
+                                        <p class="text-xs">$\text{start}_i = \max(0, \lfloor \text{projection}_i \rfloor)$</p>
+                                        <p class="text-xs">$\text{end}_i = \min(\text{start}_i + h_{mw}, N_{long})$</p>
+                                        <p class="text-xs">$W_{direct}(i) = [\text{start}_i, \text{end}_i)$</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 4: Reverse Window Computation -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-arrow-left text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 4: Reverse Window Computation</p>
+                                    <p class="text-xs text-orange-700 mb-2">Reverse windows are computed by inverting the direct window mappings, ensuring bidirectional alignment constraints between texts.</p>
+                                    <p class="text-xs text-orange-700 mb-2">For each chunk $j$ in the longer text ($j \in [0, N_{long})$), we define:</p>
+                                    <div class="math-container">
+                                        <p class="text-xs">$S_j = \{i \mid j \in W_{direct}(i)\}$</p>
+                                        <p class="text-xs">$W_{reverse}(j) = \begin{cases} 
+                                        [\min(S_j), \max(S_j) + 1) & \text{if } S_j \neq \emptyset \\
+                                        [0, 1) & \text{if } j < \min_k(\text{start}_k) \\
+                                        [N_{short}-1, N_{short}) & \text{otherwise}
+                                        \end{cases}$</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 5: Precision and Recall Assignment -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-tags text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 5: Precision and Recall Window Assignment</p>
+                                    <p class="text-xs text-orange-700 mb-2">The computed windows are assigned to precision and recall metrics based on the relative lengths of the reference and generated texts, ensuring proper evaluation directionality.</p>
+                                    <div class="math-container">
+                                        <p class="text-xs">$\text{If } N_{ref} \geq N_{gen}:$</p>
+                                        <p class="text-xs">$MW_{prec}(i) = W_{direct}(i) \text{ for } i \in [0, N_{gen})$</p>
+                                        <p class="text-xs">$MW_{rec}(j) = W_{reverse}(j) \text{ for } j \in [0, N_{ref})$</p>
+                                        <p class="text-xs mt-2">$\text{Else:}$</p>
+                                        <p class="text-xs">$MW_{prec}(i) = W_{reverse}(i) \text{ for } i \in [0, N_{gen})$</p>
+                                        <p class="text-xs">$MW_{rec}(j) = W_{direct}(j) \text{ for } j \in [0, N_{ref})$</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Algorithm Conclusion -->
+                        <div class="bg-blue-50 border border-blue-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-play-circle text-blue-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-blue-800 font-medium mb-1">🎯 Interactive Demo</p>
+                                    <p class="text-xs text-blue-700 mb-2">Now that you understand how the mapping window algorithm works, use the interactive demo below to visualize these direct and reverse mapping windows for various text lengths.</p>
+                                    <p class="text-xs text-blue-700">Experiment with different reference and generated text sizes to see how the algorithm adapts the window constraints to maintain fair evaluation across diverse content lengths.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <!-- App Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2 flex flex-col">
+                <!-- Charts Container -->
+                <div id="tour-step-viz" class="grid grid-cols-1 md:grid-cols-2 gap-8 flex-grow">
+                    <!-- Precision Chart -->
+                    <div class="demo-card interactive-card rounded-xl p-6 flex flex-col">
+                        <div class="text-center mb-6"><div class="inline-flex items-center bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold mb-2"><i class="fas fa-crosshairs mr-1"></i>PRECISION</div><h2 class="text-xl font-bold text-slate-800">Precision Windows</h2><p class="text-sm text-slate-500 mt-1" id="precisionStatus">(Gen → Ref)</p></div>
+                        <div class="relative bg-gradient-to-br from-slate-50 to-slate-100 rounded-lg p-4 flex-grow" style="padding-bottom: 85%; padding-left: 15%; padding-right: 5%;"><div class="absolute" style="top: 10%; bottom: 15%; left: 15%; right: 5%;"><div id="precisionChartGrid" class="relative w-full h-full bg-white rounded-lg chart-grid-background border border-slate-200"><div id="precisionWindowContainer" class="absolute inset-0"></div><div id="precisionAxisLabelContainerY" class="absolute inset-0"></div><div id="precisionAxisLabelContainerX" class="absolute inset-0"></div><div id="precisionAxisTitleX" class="absolute inset-0"></div><div id="precisionAxisTitleY" class="absolute inset-0"></div></div></div></div>
+                        <div class="mt-4 bg-white/50 rounded-lg p-2"><div class="flex items-center text-xs text-slate-600"><div class="w-3 h-3 bg-teal-500 bg-opacity-30 border-2 border-teal-600 rounded mr-2 flex-shrink-0"></div>Each column shows reference chunks mapped to a generated chunk</div></div>
+                    </div>
+                    <!-- Recall Chart -->
+                    <div class="demo-card interactive-card rounded-xl p-6 flex flex-col">
+                        <div class="text-center mb-6"><div class="inline-flex items-center bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-semibold mb-2"><i class="fas fa-search mr-1"></i>RECALL</div><h2 class="text-xl font-bold text-slate-800">Recall Windows</h2><p class="text-sm text-slate-500 mt-1" id="recallStatus">(Ref → Gen)</p></div>
+                        <div class="relative bg-gradient-to-br from-slate-50 to-slate-100 rounded-lg p-4 flex-grow" style="padding-bottom: 85%; padding-left: 15%; padding-right: 5%;"><div class="absolute" style="top: 10%; bottom: 15%; left: 15%; right: 5%;"><div id="recallChartGrid" class="relative w-full h-full bg-white rounded-lg chart-grid-background border border-slate-200"><div id="recallWindowContainer" class="absolute inset-0"></div><div id="recallAxisLabelContainerY" class="absolute inset-0"></div><div id="recallAxisLabelContainerX" class="absolute inset-0"></div><div id="recallAxisTitleX" class="absolute inset-0"></div><div id="recallAxisTitleY" class="absolute inset-0"></div></div></div></div>
+                        <div class="mt-4 bg-white/50 rounded-lg p-2"><div class="flex items-center text-xs text-slate-600"><div class="w-3 h-3 bg-amber-500 bg-opacity-30 border-2 border-amber-600 rounded mr-2 flex-shrink-0"></div>Each row shows generated chunks mapped to a reference chunk</div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls Panel -->
+            <div class="lg:col-span-1 flex flex-col">
+                <div class="flex flex-col space-y-6 h-full">
+                    <div id="tour-step-controls" class="demo-card interactive-card rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-slate-800 mb-4 flex items-center"><i class="fas fa-sliders-h text-teal-600 mr-2"></i>Controls</h3>
+                        <div class="space-y-5">
+                            <div><label for="refLenInput" class="block text-sm font-medium text-slate-700 mb-2">Reference Chunks</label><input type="number" id="refLenInput" min="0" max="30" value="5" class="w-full p-3 neumorphic-input"></div>
+                            <div><label for="genLenInput" class="block text-sm font-medium text-slate-700 mb-2">Generated Chunks</label><input type="number" id="genLenInput" min="0" max="30" value="3" class="w-full p-3 neumorphic-input"></div>
+                        </div>
+                    </div>
+                    <div id="tour-step-scenarios" class="demo-card interactive-card rounded-xl p-6 flex-grow flex flex-col justify-end">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold text-slate-800 flex items-center"><i class="fas fa-magic text-purple-600 mr-2"></i>Test Scenarios</h3>
+                            <button id="testing-guide-btn" class="bg-teal-500 hover:bg-teal-600 text-white px-3 py-1.5 rounded-lg text-xs font-medium transition-transform transform hover:scale-105">
+                                <i class="fas fa-clipboard-check mr-1"></i>Testing Guide
+                            </button>
+                        </div>
+                        <div class="space-y-3">
+                            <button class="neumorphic-btn w-full py-3 text-sm" onclick="setPreset(7, 7)"><i class="fas fa-equals mr-2"></i>Perfect 1:1 Alignment</button>
+                            <button class="neumorphic-btn w-full py-3 text-sm" onclick="setPreset(5, 10)"><i class="fas fa-compress-arrows-alt mr-2"></i>Brevity (1:2 mapping)</button>
+                            <button class="neumorphic-btn w-full py-3 text-sm" onclick="setPreset(10, 5)"><i class="fas fa-expand-arrows-alt mr-2"></i>Verbosity (2:1 mapping)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </main>
+            </article>
+        </div>
+    </div>
+
+
+    <!-- Testing Modal -->
+    <div id="testing-modal" class="testing-modal">
+        <div class="testing-modal-content">
+            <div class="testing-modal-header">
+                <h2 class="text-xl font-bold text-slate-800 flex items-center">
+                    <i class="fas fa-clipboard-check mr-2 text-teal-600"></i>
+                    Testing Guide
+                </h2>
+                <button id="testing-modal-close" class="testing-modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="testing-content">
+                <!-- Getting Started -->
+                <div class="test-category">
+                    <h3><i class="fas fa-play-circle"></i>Getting Started</h3>
+                    <div class="test-item">
+                        <h4>Understanding the Visualization</h4>
+                        <p>This guide will help you understand how mapping windows work by observing key patterns in the visualization.</p>
+                        <ul class="test-checklist">
+                            <li>Precision windows (teal) show which reference chunks each generated chunk can match</li>
+                            <li>Recall windows (amber) show which generated chunks each reference chunk can match</li>
+                            <li>Window sizes and positions change based on text length ratios</li>
+                            <li>Close this guide and use the Controls panel to experiment with different values</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Perfect 1:1 Alignment -->
+                <div class="test-category">
+                    <h3><i class="fas fa-equals"></i>Perfect 1:1 Alignment</h3>
+                    <div class="test-item">
+                        <h4>What to Notice</h4>
+                        <p>When two stories are identical and have exactly the same length, they should map perfectly 1:1.</p>
+                        <ul class="test-checklist">
+                            <li>Each generated chunk maps to exactly one reference chunk</li>
+                            <li>Each reference chunk maps to exactly one generated chunk</li>
+                            <li>Both precision and recall windows are single squares</li>
+                            <li>This represents perfect alignment between identical stories</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 mt-2 italic">Close this guide and click "Perfect 1:1 Alignment" to see this in action.</p>
+                    </div>
+                </div>
+
+                <!-- Brevity Scenario -->
+                <div class="test-category">
+                    <h3><i class="fas fa-compress-arrows-alt"></i>Brevity (1:2 Mapping)</h3>
+                    <div class="test-item">
+                        <h4>What to Notice</h4>
+                        <p>When one story is more concise (half the length), you'll see a 1:2 mapping pattern.</p>
+                        <ul class="test-checklist">
+                            <li>Each generated chunk maps to 2 reference chunks</li>
+                            <li>Two reference chunks map to the same generated chunk</li>
+                            <li>Precision windows are taller rectangles (spanning 2 reference chunks)</li>
+                            <li>Recall windows show multiple reference chunks pointing to the same generated chunk</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 mt-2 italic">Close this guide and click "Brevity (1:2 mapping)" to see this pattern.</p>
+                    </div>
+                </div>
+
+                <!-- Verbosity Scenario -->
+                <div class="test-category">
+                    <h3><i class="fas fa-expand-arrows-alt"></i>Verbosity (2:1 Mapping)</h3>
+                    <div class="test-item">
+                        <h4>What to Notice</h4>
+                        <p>When one story is more verbose (twice the length), you'll see a 2:1 mapping pattern.</p>
+                        <ul class="test-checklist">
+                            <li>Two generated chunks map to the same reference chunk</li>
+                            <li>Each reference chunk maps to 2 generated chunks</li>
+                            <li>Precision windows show multiple generated chunks pointing to the same reference chunk</li>
+                            <li>Recall windows are wider rectangles (spanning 2 generated chunks)</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 mt-2 italic">Close this guide and click "Verbosity (2:1 mapping)" to see this pattern.</p>
+                    </div>
+                </div>
+
+                <!-- Manual Exploration -->
+                <div class="test-category">
+                    <h3><i class="fas fa-hand-pointer"></i>Manual Exploration</h3>
+                    <div class="test-item">
+                        <h4>Experiment with Different Ratios</h4>
+                        <p>Try different combinations to see how mapping windows adapt to various text length ratios.</p>
+                        <ul class="test-checklist">
+                            <li>Close this guide and use the Controls panel</li>
+                            <li>Try values like 3 ref chunks and 9 gen chunks (1:3 ratio)</li>
+                            <li>Try values like 8 ref chunks and 4 gen chunks (2:1 ratio)</li>
+                            <li>Note how the window type in the precision/recall grids adjusts depending on whether reference chunks outnumber generated chunks or vice versa.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Key Insights -->
+                <div class="test-category">
+                    <h3><i class="fas fa-lightbulb"></i>Key Insights</h3>
+                    <div class="test-item">
+                        <h4>What You Should Understand</h4>
+                        <p>After exploring the different scenarios, you should understand these core concepts:</p>
+                        <ul class="test-checklist">
+                            <li>Mapping windows constrain where chunks can align during text comparison</li>
+                            <li>Window sizes are determined by the ratio between text lengths</li>
+                            <li>Precision windows help evaluate generated text against reference text</li>
+                            <li>Recall windows help evaluate reference text coverage by generated text</li>
+                            <li>The algorithm adapts to different text length ratios automatically</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- DOM Element References ---
+        const refLenInput = document.getElementById('refLenInput');
+        const genLenInput = document.getElementById('genLenInput');
+        const precisionChartGrid = document.getElementById('precisionChartGrid');
+        const precisionWindowContainer = document.getElementById('precisionWindowContainer');
+        const precisionAxisLabelContainerX = document.getElementById('precisionAxisLabelContainerX');
+        const precisionAxisLabelContainerY = document.getElementById('precisionAxisLabelContainerY');
+        const precisionAxisTitleX = document.getElementById('precisionAxisTitleX');
+        const precisionAxisTitleY = document.getElementById('precisionAxisTitleY');
+        const precisionStatus = document.getElementById('precisionStatus');
+        const recallChartGrid = document.getElementById('recallChartGrid');
+        const recallWindowContainer = document.getElementById('recallWindowContainer');
+        const recallAxisLabelContainerX = document.getElementById('recallAxisLabelContainerX');
+        const recallAxisLabelContainerY = document.getElementById('recallAxisLabelContainerY');
+        const recallAxisTitleX = document.getElementById('recallAxisTitleX');
+        const recallAxisTitleY = document.getElementById('recallAxisTitleY');
+        const recallStatus = document.getElementById('recallStatus');
+        const appBackground = document.getElementById('app-background');
+        const testingGuideBtn = document.getElementById('testing-guide-btn');
+        const testingModal = document.getElementById('testing-modal');
+        const testingModalClose = document.getElementById('testing-modal-close');
+
+        // --- State Variables ---
+        let currentRefLen = 0;
+        let currentGenLen = 0;
+        let allWindows = {};
+
+        // --- Tour Manager ---
+        const tourManager = {
+            isActive: false,
+            currentStep: 0,
+            overlay: document.getElementById('tour-overlay'),
+            steps: [
+                { selector: '#tour-step-intro', text: 'Welcome to Mapping Windows! This demo shows how text chunks align between reference and generated texts. Visit the GAS demo first to understand overall semantic similarity.', position: 'bottom' },
+                { selector: '#tour-step-math', text: 'Click to expand the algorithm breakdown. This shows the 5-step mathematical theory behind mapping window construction.', position: 'bottom' },
+                { selector: '#tour-step-viz', text: 'These charts show your mapping windows as colored rectangles. The left displays Precision Windows (teal) and the right shows Recall Windows (amber). Watch how window shapes change as you adjust text lengths.', position: 'top' },
+                { selector: '#tour-step-controls', text: 'Adjust the number of reference and generated chunks here. Try different ratios to see how mapping windows adapt. The coverage areas determine where chunks can align.', position: 'left' },
+                { selector: '#tour-step-scenarios', text: 'Try these preset scenarios to explore different alignment patterns. Each button demonstrates a specific text length ratio. Check the Testing Guide for detailed exploration strategies.', position: 'left' },
+            ],
+            start: function() { 
+                this.isActive = true; 
+                this.currentStep = 0; 
+                this.overlay.style.pointerEvents = 'auto'; 
+                this.overlay.style.opacity = '1'; 
+                this.addClickOutsideHandler();
+                this.showStep(); 
+            },
+            next: function() { this.cleanupCurrentStep(); this.currentStep++; if (this.currentStep < this.steps.length) { setTimeout(() => this.showStep(), 400); } else { this.end(); } },
+            showStep: function() {
+                const step = this.steps[this.currentStep];
+                const targetElement = document.querySelector(step.selector);
+                if (!targetElement) { this.end(); return; }
+                targetElement.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+                setTimeout(() => {
+                    targetElement.classList.add('tour-highlight');
+                    const callout = document.createElement('div');
+                    callout.id = 'tour-callout';
+                    callout.innerHTML = `<p class="text-sm mb-4">${step.text}</p><div class="flex justify-end"><button onclick="tourManager.next()">Next &rarr;</button></div>`;
+                    document.body.appendChild(callout);
+                    const targetRect = targetElement.getBoundingClientRect();
+                    const calloutRect = callout.getBoundingClientRect();
+                    const margin = 15;
+                    const scrollY = window.scrollY || document.documentElement.scrollTop;
+                    const scrollX = window.scrollX || document.documentElement.scrollLeft;
+                    let top, left;
+                    switch (step.position) {
+                        case 'bottom': top = targetRect.bottom + scrollY + margin; left = targetRect.left + scrollX + (targetRect.width / 2) - (calloutRect.width / 2); break;
+                        case 'top': top = targetRect.top + scrollY - calloutRect.height - margin; left = targetRect.left + scrollX + (targetRect.width / 2) - (calloutRect.width / 2); break;
+                        case 'left': top = targetRect.top + scrollY + (targetRect.height / 2) - (calloutRect.height / 2); left = targetRect.left + scrollX - calloutRect.width - margin; break;
+                        case 'right': top = targetRect.top + scrollY + (targetRect.height / 2) - (calloutRect.height / 2); left = targetRect.right + scrollX + margin; break;
+                        default: top = targetRect.bottom + scrollY + margin; left = targetRect.left + scrollX;
+                    }
+                    const viewportRight = scrollX + window.innerWidth;
+                    const viewportBottom = scrollY + window.innerHeight;
+                    if (left < scrollX + margin) left = scrollX + margin;
+                    if (left + calloutRect.width > viewportRight - margin) left = viewportRight - calloutRect.width - margin;
+                    if (top < scrollY + margin) top = scrollY + margin;
+                    if (top + calloutRect.height > viewportBottom - margin) top = viewportBottom - calloutRect.height - margin;
+                    callout.style.top = `${top}px`;
+                    callout.style.left = `${left}px`;
+                    requestAnimationFrame(() => { callout.classList.add('visible'); });
+                }, 350);
+            },
+            cleanupCurrentStep: function() { const oldHighlight = document.querySelector('.tour-highlight'); if (oldHighlight) oldHighlight.classList.remove('tour-highlight'); const oldCallout = document.getElementById('tour-callout'); if (oldCallout) oldCallout.remove(); },
+            end: function() { 
+                this.cleanupCurrentStep(); 
+                this.isActive = false; 
+                this.overlay.style.opacity = '0'; 
+                this.removeClickOutsideHandler();
+                setTimeout(() => this.overlay.style.pointerEvents = 'none', 400); 
+            },
+            addClickOutsideHandler: function() {
+                this.clickOutsideHandler = (e) => {
+                    if (this.isActive) {
+                        const callout = document.getElementById('tour-callout');
+                        if (callout && !callout.contains(e.target)) {
+                            this.end();
+                        }
+                    }
+                };
+                document.addEventListener('click', this.clickOutsideHandler);
+            },
+            removeClickOutsideHandler: function() {
+                if (this.clickOutsideHandler) {
+                    document.removeEventListener('click', this.clickOutsideHandler);
+                    this.clickOutsideHandler = null;
+                }
+            }
+        };
+
+        // --- Core Logic ---
+
+        function get_mapping_windows_js(refLen, genLen) {
+            const isRefLonger = refLen >= genLen;
+            const longerLen = isRefLonger ? refLen : genLen;
+            const shorterLen = isRefLonger ? genLen : refLen;
+            if (shorterLen === 0 && longerLen === 0) { return { precision_windows: [], recall_windows: [], isRefLonger: isRefLonger }; }
+            if (shorterLen === 0) { 
+                let prec_wins = genLen > 0 ? Array(genLen).fill({ start: 0, end: 0 }) : [];
+                let rec_wins = refLen > 0 ? Array(refLen).fill({ start: 0, end: 0 }) : [];
+                return { precision_windows: isRefLonger ? [] : prec_wins, recall_windows: isRefLonger ? rec_wins : [], isRefLonger: isRefLonger };
+            }
+            const slope = longerLen / shorterLen;
+            const mappingWindowHeight = Math.max(1, Math.ceil(slope));
+            let direct_windows = []; 
+            for (let i = 0; i < shorterLen; i++) {
+                const idx_point = i * slope;
+                const start = Math.floor(idx_point);
+                const end = Math.min(start + mappingWindowHeight, longerLen);
+                direct_windows.push({ start: start, end: end });
+            }
+            let reverse_windows = []; 
+            for (let long_idx = 0; long_idx < longerLen; long_idx++) {
+                let short_indices = [];
+                direct_windows.forEach((window, short_idx) => { if (window.start <= long_idx && long_idx < window.end) { short_indices.push(short_idx); } });
+                if (short_indices.length > 0) { reverse_windows.push({ start: Math.min(...short_indices), end: Math.max(...short_indices) + 1 }); } 
+                else {
+                    if (direct_windows.length === 0 || shorterLen === 0) { reverse_windows.push({ start: 0, end: 0 }); } 
+                    else if (long_idx < direct_windows[0].start) { reverse_windows.push({ start: 0, end: Math.min(1, shorterLen) }); } 
+                    else { reverse_windows.push({ start: Math.max(0, shorterLen - 1), end: shorterLen }); }
+                }
+            }
+            let precision_windows, recall_windows;
+            if (isRefLonger) { precision_windows = direct_windows; recall_windows = reverse_windows; } 
+            else { recall_windows = direct_windows; precision_windows = reverse_windows; }
+            if (precision_windows.length !== genLen && genLen > 0) { if(precision_windows.length === 0) precision_windows = Array(genLen).fill({start:0, end:0}); }
+            if (recall_windows.length !== refLen && refLen > 0) { if(recall_windows.length === 0) recall_windows = Array(refLen).fill({start:0, end:0}); }
+            return { precision_windows, recall_windows, isRefLonger };
+        }
+
+        function renderGridLines(container, numX, numY) {
+            container.querySelectorAll('.grid-line').forEach(e => e.remove());
+            for (let i = 0; i <= numX; i++) {
+                const line = document.createElement('div');
+                line.className = 'grid-line';
+                line.style.position = 'absolute';
+                line.style.left = `${i / numX * 100}%`;
+                line.style.top = '0';
+                line.style.bottom = '0';
+                line.style.borderLeft = '1px solid rgba(148, 163, 184, 0.3)';
+                container.appendChild(line);
+            }
+            for (let i = 0; i <= numY; i++) {
+                const line = document.createElement('div');
+                line.className = 'grid-line';
+                line.style.position = 'absolute';
+                line.style.top = `${i / numY * 100}%`;
+                line.style.left = '0';
+                line.style.right = '0';
+                line.style.borderBottom = '1px solid rgba(148, 163, 184, 0.3)';
+                container.appendChild(line);
+            }
+        }
+
+        // --- Render Functions ---
+        function updateAxisTitles(axisTitleContainerX, axisTitleContainerY, xLabel, yLabel) {
+            // Clear and rebuild axis titles (titles are simple and change infrequently)
+            // For axis titles, clearing is more efficient than complex reuse logic
+            axisTitleContainerX.innerHTML = ''; 
+            axisTitleContainerY.innerHTML = '';
+            
+            const xTitle = document.createElement('div');
+            xTitle.className = 'axis-title'; 
+            xTitle.textContent = xLabel; 
+            xTitle.style.bottom = '-4.5rem'; 
+            xTitle.style.left = '50%'; 
+            xTitle.style.transform = 'translateX(-50%)';
+            axisTitleContainerX.appendChild(xTitle);
+            
+            const yTitle = document.createElement('div');
+            yTitle.className = 'axis-title'; 
+            yTitle.textContent = yLabel; 
+            yTitle.style.left = '-7.5rem'; 
+            yTitle.style.top = '50%'; 
+            yTitle.style.transform = 'translateY(-50%) rotate(-90deg)'; 
+            yTitle.style.transformOrigin = 'center center';
+            axisTitleContainerY.appendChild(yTitle);
+        }
+
+        function updateAxisLabels(axisLabelContainerX, axisLabelContainerY, numX, numY) {
+            // Clear and rebuild axis labels (they change frequently with different step sizes)
+            // For axis labels, clearing is more efficient than complex reuse logic
+            axisLabelContainerX.innerHTML = ''; 
+            axisLabelContainerY.innerHTML = '';
+            
+            const maxXIndex = numX > 0 ? numX - 1 : -1; 
+            const maxYIndex = numY > 0 ? numY - 1 : -1;
+            const yStep = numY > 0 ? Math.max(1, Math.floor(numY / 8)) || 1 : 1;
+            const xStep = numX > 0 ? Math.max(1, Math.floor(numX / 8)) || 1 : 1;
+            
+            if (numY > 0) {
+                for (let i = 0; i <= maxYIndex; i += yStep) { 
+                    const tickLabel = document.createElement('div'); 
+                    tickLabel.className = 'axis-label'; 
+                    tickLabel.textContent = i; 
+                    tickLabel.style.left = '-1.5rem'; 
+                    tickLabel.style.top = `calc(100% - (${i} * 100% / ${numY}) - (50% / ${numY}))`; 
+                    tickLabel.style.transform = 'translateY(-50%) translateX(-100%)'; 
+                    axisLabelContainerY.appendChild(tickLabel); 
+                }
+                if (maxYIndex > 0 && (maxYIndex % yStep !== 0)) { 
+                    const tickLabel = document.createElement('div'); 
+                    tickLabel.className = 'axis-label'; 
+                    tickLabel.textContent = maxYIndex; 
+                    tickLabel.style.left = '-1.5rem'; 
+                    tickLabel.style.top = `calc(100% - (${maxYIndex} * 100% / ${numY}) - (50% / ${numY}))`; 
+                    tickLabel.style.transform = 'translateY(-50%) translateX(-100%)'; 
+                    axisLabelContainerY.appendChild(tickLabel); 
+                }
+            }
+            if (numX > 0) {
+                for (let i = 0; i <= maxXIndex; i += xStep) { 
+                    const tickLabel = document.createElement('div'); 
+                    tickLabel.className = 'axis-label'; 
+                    tickLabel.textContent = i; 
+                    tickLabel.style.bottom = '-1.5rem'; 
+                    tickLabel.style.left = `calc(${i} * 100% / ${numX} + (50% / ${numX}))`; 
+                    tickLabel.style.transform = 'translateX(-50%)'; 
+                    axisLabelContainerX.appendChild(tickLabel); 
+                }
+                if (maxXIndex > 0 && (maxXIndex % xStep !== 0)) { 
+                    const tickLabel = document.createElement('div'); 
+                    tickLabel.className = 'axis-label'; 
+                    tickLabel.textContent = maxXIndex; 
+                    tickLabel.style.bottom = '-1.5rem'; 
+                    tickLabel.style.left = `calc(${maxXIndex} * 100% / ${numX} + (50% / ${numX}))`; 
+                    tickLabel.style.transform = 'translateX(-50%)'; 
+                    axisLabelContainerX.appendChild(tickLabel); 
+                }
+            }
+        }
+
+        function renderWindows(windowContainer, windowsData, numRef, numGen, type) {
+            if (!windowsData || windowsData.length === 0 ) {
+                // Hide existing windows if no data
+                Array.from(windowContainer.children).forEach(child => {
+                    child.style.opacity = '0';
+                });
+                return;
+            }
+            if (type === 'precision' && numGen <= 0) return;
+            if (type === 'recall' && numRef <= 0) return;
+            
+            // Apply element reuse strategy for smooth transitions
+            const existingWindows = Array.from(windowContainer.children);
+            let windowIndex = 0;
+            
+            windowsData.forEach((windowObj, index) => {
+                if (!windowObj || typeof windowObj.start === 'undefined' || typeof windowObj.end === 'undefined') return;
+                
+                // Reuse existing window or create new one
+                let windowDiv = existingWindows[windowIndex];
+                if (!windowDiv) {
+                    windowDiv = document.createElement('div');
+                    windowDiv.className = `mapping-window ${type === 'precision' ? 'precision-window-style' : 'recall-window-style'}`;
+                    windowContainer.appendChild(windowDiv);
+                }
+                
+                // Update window styling if needed
+                windowDiv.className = `mapping-window ${type === 'precision' ? 'precision-window-style' : 'recall-window-style'}`;
+                
+                let x_coord, y_coord, w_val, h_val;
+                if (type === 'precision') {
+                    if (index >= numGen || numGen <= 0) return;
+                    x_coord = index / numGen * 100; w_val = 1 / numGen * 100;
+                    y_coord = numRef > 0 ? windowObj.start / numRef * 100 : 0;
+                    h_val = numRef > 0 ? Math.max(0, windowObj.end - windowObj.start) / numRef * 100 : 0;
+                } else {
+                    if (index >= numRef || numRef <= 0) return;
+                    x_coord = index / numRef * 100; w_val = 1 / numRef * 100;
+                    y_coord = numGen > 0 ? windowObj.start / numGen * 100 : 0;
+                    h_val = numGen > 0 ? Math.max(0, windowObj.end - windowObj.start) / numGen * 100 : 0;
+                }
+                
+                w_val = Math.min(Math.max(0, w_val), 100); 
+                h_val = Math.min(Math.max(0, h_val), 100);
+                x_coord = Math.min(Math.max(0, x_coord), 100 - w_val); 
+                y_coord = 100 - (y_coord + h_val); 
+                y_coord = Math.min(Math.max(0, y_coord), 100 - h_val);
+                
+                // Update position and size - CSS transitions handle the animation
+                windowDiv.style.left = `${x_coord}%`; 
+                windowDiv.style.width = `${w_val}%`; 
+                windowDiv.style.top = `${y_coord}%`; 
+                windowDiv.style.height = `${h_val}%`;
+                windowDiv.style.opacity = '1';
+                windowDiv.title = `Index: ${index}, Window: [${windowObj.start}, ${windowObj.end})`;
+                
+                windowIndex++;
+            });
+            
+            // Hide extra windows instead of removing them (for smoother transitions)
+            for (let i = windowIndex; i < existingWindows.length; i++) {
+                existingWindows[i].style.opacity = '0';
+            }
+        }
+
+        // --- Main Orchestrator ---
+        function initializeStateAndRender() {
+            currentRefLen = parseInt(refLenInput.value, 10);
+            currentGenLen = parseInt(genLenInput.value, 10);
+            currentRefLen = Math.max(0, Math.min(currentRefLen, 30));
+            currentGenLen = Math.max(0, Math.min(currentGenLen, 30));
+            refLenInput.value = currentRefLen; genLenInput.value = currentGenLen;
+            allWindows = get_mapping_windows_js(currentRefLen, currentGenLen);
+            if (currentGenLen === 0 && currentRefLen === 0) { precisionStatus.textContent = 'Precision: N/A'; recallStatus.textContent = 'Recall: N/A'; }
+            else if (currentGenLen === 0) { precisionStatus.textContent = '(No Generated Chunks)'; recallStatus.textContent = allWindows.isRefLonger ? 'Reverse (Ref → Gen)' : 'Direct (Ref → Gen)'; }
+            else if (currentRefLen === 0) { recallStatus.textContent = '(No Reference Chunks)'; precisionStatus.textContent = allWindows.isRefLonger ? 'Direct (Gen → Ref)' : 'Reverse (Gen → Ref)'; }
+            else { precisionStatus.textContent = `Type: ${allWindows.isRefLonger ? 'Direct (Gen → Ref)' : 'Reverse (Gen → Ref)'}`; recallStatus.textContent = `Type: ${allWindows.isRefLonger ? 'Reverse (Ref → Gen)' : 'Direct (Ref → Gen)'}`; }
+            renderGridLines(precisionChartGrid, currentGenLen, currentRefLen);
+            updateAxisTitles(precisionAxisTitleX, precisionAxisTitleY, 'Generated Chunks', 'Reference Chunks');
+            updateAxisLabels(precisionAxisLabelContainerX, precisionAxisLabelContainerY, currentGenLen, currentRefLen);
+            renderWindows(precisionWindowContainer, allWindows.precision_windows, currentRefLen, currentGenLen, 'precision');
+            renderGridLines(recallChartGrid, currentRefLen, currentGenLen);
+            updateAxisTitles(recallAxisTitleX, recallAxisTitleY, 'Reference Chunks', 'Generated Chunks');
+            updateAxisLabels(recallAxisLabelContainerX, recallAxisLabelContainerY, currentRefLen, currentGenLen);
+            renderWindows(recallWindowContainer, allWindows.recall_windows, currentRefLen, currentGenLen, 'recall');
+        }
+
+        function setPreset(gen, ref) { genLenInput.value = gen; refLenInput.value = ref; initializeStateAndRender(); }
+
+        // --- Testing Modal Manager ---
+        const testingModalManager = {
+            open: function() {
+                testingModal.classList.add('visible');
+                document.body.style.overflow = 'hidden';
+            },
+            close: function() {
+                testingModal.classList.remove('visible');
+                document.body.style.overflow = 'auto';
+            },
+            toggle: function() {
+                if (testingModal.classList.contains('visible')) {
+                    this.close();
+                } else {
+                    this.open();
+                }
+            }
+        };
+
+        // --- Initial Load & Event Listeners ---
+        window.addEventListener('load', () => {
+            document.getElementById('start-tour-btn').addEventListener('click', () => tourManager.start());
+            refLenInput.addEventListener('input', initializeStateAndRender);
+            genLenInput.addEventListener('input', initializeStateAndRender);
+            window.addEventListener('resize', initializeStateAndRender);
+            
+            // Testing modal event listeners
+            testingGuideBtn.addEventListener('click', () => testingModalManager.open());
+            testingModalClose.addEventListener('click', () => testingModalManager.close());
+            testingModal.addEventListener('click', (e) => {
+                if (e.target === testingModal) {
+                    testingModalManager.close();
+                }
+            });
+            
+            // Keyboard shortcuts
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && testingModal.classList.contains('visible')) {
+                    testingModalManager.close();
+                }
+                if (e.key === 't' && e.ctrlKey) {
+                    e.preventDefault();
+                    testingModalManager.toggle();
+                }
+            });
+            
+            if(appBackground) { appBackground.style.background = `linear-gradient(135deg, hsl(170, 20%, 90%) 0%, hsl(190, 30%, 95%) 100%)`; }
+            initializeStateAndRender();
+        });
+    </script>
+</body>
+</html>

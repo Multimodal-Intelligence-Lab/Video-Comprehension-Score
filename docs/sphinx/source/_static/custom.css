@@ -1,0 +1,28 @@
+/* VCS Documentation Custom Styles */
+
+/* Fix horizontal spacing - make content use full width available */
+.wy-nav-content {
+    max-width: 96% !important;
+    margin: 0 auto !important;
+}
+
+.document {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+.wy-nav-content .rst-content {
+    max-width: none !important;
+}
+
+/* Make external links open in new tabs */
+a.external {
+    target: _blank;
+}
+
+/* Style external links */
+a.external::after {
+    content: " ↗";
+    font-size: 0.8em;
+    opacity: 0.6;
+}

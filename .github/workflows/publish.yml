@@ -1,0 +1,157 @@
+name: Build and Publish
+
+on:
+  # Publish on releases and tags (only after tests pass)
+  release:
+    types: [published, created]
+  push:
+    tags:
+      - 'v*.*.*'
+  
+  # Manual trigger for testing (only after tests pass)
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Deploy to'
+        required: true
+        default: 'testpypi'
+        type: choice
+        options:
+        - testpypi
+        - pypi
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  check-tests:
+    runs-on: ubuntu-latest
+    outputs:
+      tests-passed: ${{ steps.check.outputs.tests-passed }}
+    steps:
+    - name: Check if tests passed for current commit
+      id: check
+      run: |
+        # Get current commit SHA
+        CURRENT_SHA="${{ github.sha }}"
+        echo "Checking tests for commit: $CURRENT_SHA"
+        
+        # For manual dispatch, we need to check tests for the current HEAD of main
+        if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          echo "Manual trigger - checking test status for latest commit on main"
+          
+          # Wait for any running tests to complete (max 10 minutes)
+          for i in {1..60}; do
+            # Get test runs for current commit
+            curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                 -H "Accept: application/vnd.github.v3+json" \
+                 "https://api.github.com/repos/${{ github.repository }}/actions/workflows/test.yml/runs?head_sha=$CURRENT_SHA&per_page=5" > test_runs.json
+            
+            # Check if there are any runs for this commit
+            run_count=$(jq '.total_count' test_runs.json)
+            if [ "$run_count" -eq 0 ]; then
+              echo "⏳ No test runs found for commit $CURRENT_SHA yet, waiting... (attempt $i/60)"
+              sleep 10
+              continue
+            fi
+            
+            # Check status of the test run
+            status=$(jq -r '.workflow_runs[0].status' test_runs.json)
+            conclusion=$(jq -r '.workflow_runs[0].conclusion' test_runs.json)
+            
+            echo "Test run status: $status, conclusion: $conclusion"
+            
+            if [ "$status" = "completed" ]; then
+              if [ "$conclusion" = "success" ]; then
+                echo "✅ Tests passed for commit $CURRENT_SHA"
+                echo "tests-passed=true" >> $GITHUB_OUTPUT
+                exit 0
+              else
+                echo "❌ Tests failed for commit $CURRENT_SHA (conclusion: $conclusion)"
+                echo "tests-passed=false" >> $GITHUB_OUTPUT
+                exit 1
+              fi
+            else
+              echo "⏳ Tests still running for commit $CURRENT_SHA... waiting (attempt $i/60)"
+              sleep 10
+            fi
+          done
+          
+          echo "❌ Timeout waiting for tests to complete"
+          echo "tests-passed=false" >> $GITHUB_OUTPUT
+          exit 1
+        else
+          # For releases/tags, assume tests passed (they run on push to main)
+          echo "✅ Release/tag trigger - assuming tests passed for commit $CURRENT_SHA"
+          echo "tests-passed=true" >> $GITHUB_OUTPUT
+        fi
+
+  build:
+    needs: check-tests
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Fetch all history for proper version calculation
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+    
+    - name: Create version tag
+      run: |
+        echo "Fetching all tags:"
+        git fetch --tags
+        echo "Current tags:"
+        git tag -l v*.*.* | sort -V | tail -5
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        python tag_version.py
+    
+    - name: Install build dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install build
+    
+    - name: Build package
+      run: python -m build
+    
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: dist
+        path: dist/
+
+  publish:
+    needs: [check-tests, build]
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download build artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: dist
+        path: dist/
+    
+    - name: Determine target repository
+      id: target
+      run: |
+        if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+          TARGET="${{ github.event.inputs.environment }}"
+        else
+          TARGET="testpypi"  # Default for releases
+        fi
+        
+        if [[ "$TARGET" == "pypi" ]]; then
+          echo "repository_url=" >> $GITHUB_OUTPUT
+          echo "environment=Production PyPI" >> $GITHUB_OUTPUT
+        else
+          echo "repository_url=https://test.pypi.org/legacy/" >> $GITHUB_OUTPUT
+          echo "environment=Test PyPI" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Publish to ${{ steps.target.outputs.environment }}
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        repository-url: ${{ steps.target.outputs.repository_url }}

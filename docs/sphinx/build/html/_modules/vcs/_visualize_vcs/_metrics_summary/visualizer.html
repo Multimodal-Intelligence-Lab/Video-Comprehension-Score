@@ -1,0 +1,251 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vcs._visualize_vcs._metrics_summary.visualizer &mdash; VCS Metrics v1.0.2</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css?v=887dc02f" />
+
+  
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../_static/documentation_options.js?v=1ed6394b"></script>
+      <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #0d9488" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            VCS Metrics
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api.html">API Reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Resources:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/yourusername/vcs-metrics">GitHub Repository</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/vcs-metrics/">PyPI Package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #0d9488" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">VCS Metrics</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">vcs._visualize_vcs._metrics_summary.visualizer</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for vcs._visualize_vcs._metrics_summary.visualizer</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Any</span>
+
+<div class="viewcode-block" id="visualize_metrics_summary">
+<a class="viewcode-back" href="../../../../api.html#vcs.visualize_metrics_summary">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">visualize_metrics_summary</span><span class="p">(</span><span class="n">internals</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Create a comprehensive overview of all VCS metrics and their components.</span>
+<span class="sd">    </span>
+<span class="sd">    Displays all computed metrics in a clear horizontal bar chart, organized by</span>
+<span class="sd">    metric type. Essential for getting a quick overview of the analysis results</span>
+<span class="sd">    and understanding the relative contributions of different components to the</span>
+<span class="sd">    final VCS score.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    internals : dict</span>
+<span class="sd">        The internals dictionary returned by ``compute_vcs_score`` with </span>
+<span class="sd">        ``return_internals=True``. Must contain complete &#39;metrics&#39; section.</span>
+<span class="sd">    </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    matplotlib.figure.Figure</span>
+<span class="sd">        A figure showing all metrics as a horizontal bar chart with color coding</span>
+<span class="sd">        by metric type and visual separators between metric families.</span>
+<span class="sd">    </span>
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; result = compute_vcs_score(ref_text, gen_text, segmenter, embedder,</span>
+<span class="sd">    ...                           return_internals=True, return_all_metrics=True)</span>
+<span class="sd">    &gt;&gt;&gt; fig = visualize_metrics_summary(result[&#39;internals&#39;])</span>
+<span class="sd">    &gt;&gt;&gt; fig.show()</span>
+<span class="sd">    </span>
+<span class="sd">    **Reading the Summary:**</span>
+<span class="sd">    </span>
+<span class="sd">    &gt;&gt;&gt; # Top section: Final VCS and GAS scores</span>
+<span class="sd">    &gt;&gt;&gt; # Middle section: LAS components and scaled scores</span>
+<span class="sd">    &gt;&gt;&gt; # Bottom section: NAS components and regularization</span>
+<span class="sd">    &gt;&gt;&gt; # Look for consistent values across precision/recall for balanced results</span>
+<span class="sd">    </span>
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    * Provides quick visual assessment of all metric components</span>
+<span class="sd">    * Color coding helps distinguish metric families</span>
+<span class="sd">    * Values are displayed alongside bars for precise reading</span>
+<span class="sd">    * Useful for comparing multiple analyses or parameter settings</span>
+<span class="sd">    * Should be included in most analysis reports</span>
+<span class="sd">    </span>
+<span class="sd">    See Also</span>
+<span class="sd">    --------</span>
+<span class="sd">    create_vcs_pdf_report : Include summary in comprehensive report</span>
+<span class="sd">    visualize_config : See parameters that produced these results</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+    
+    <span class="n">metrics</span> <span class="o">=</span> <span class="p">{}</span>
+    
+    <span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;VCS&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;metrics&#39;</span><span class="p">][</span><span class="s1">&#39;vcs&#39;</span><span class="p">][</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
+    
+    <span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;GAS&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;metrics&#39;</span><span class="p">][</span><span class="s1">&#39;gas&#39;</span><span class="p">][</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
+    
+    <span class="n">las_metrics</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;metrics&#39;</span><span class="p">][</span><span class="s1">&#39;las&#39;</span><span class="p">]</span>
+    <span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;LAS&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">las_metrics</span><span class="p">[</span><span class="s1">&#39;f1&#39;</span><span class="p">]</span>
+    <span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;LAS Precision&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">las_metrics</span><span class="p">[</span><span class="s1">&#39;precision&#39;</span><span class="p">]</span>
+    <span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;LAS Recall&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">las_metrics</span><span class="p">[</span><span class="s1">&#39;recall&#39;</span><span class="p">]</span>
+    
+    <span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;SAS&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;metrics&#39;</span><span class="p">][</span><span class="s1">&#39;vcs&#39;</span><span class="p">][</span><span class="s1">&#39;gas_las_scaled&#39;</span><span class="p">]</span>
+    
+    <span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;NAS&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;metrics&#39;</span><span class="p">][</span><span class="s1">&#39;nas&#39;</span><span class="p">][</span><span class="s1">&#39;regularized_nas&#39;</span><span class="p">]</span>
+    
+    <span class="n">nas_d</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;metrics&#39;</span><span class="p">][</span><span class="s1">&#39;nas&#39;</span><span class="p">][</span><span class="s1">&#39;nas_d&#39;</span><span class="p">]</span>
+    <span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;NAS-D&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">nas_d</span><span class="p">[</span><span class="s1">&#39;f1&#39;</span><span class="p">]</span>
+    <span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;NAS-D Precision&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">nas_d</span><span class="p">[</span><span class="s1">&#39;precision&#39;</span><span class="p">][</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
+    <span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;NAS-D Recall&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">nas_d</span><span class="p">[</span><span class="s1">&#39;recall&#39;</span><span class="p">][</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
+    
+    <span class="n">nas_l</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;metrics&#39;</span><span class="p">][</span><span class="s1">&#39;nas&#39;</span><span class="p">][</span><span class="s1">&#39;nas_l&#39;</span><span class="p">]</span>
+    <span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;NAS-L&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">nas_l</span><span class="p">[</span><span class="s1">&#39;f1&#39;</span><span class="p">]</span>
+    <span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;NAS-L Precision&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">nas_l</span><span class="p">[</span><span class="s1">&#39;precision&#39;</span><span class="p">][</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
+    <span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;NAS-L Recall&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">nas_l</span><span class="p">[</span><span class="s1">&#39;recall&#39;</span><span class="p">][</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
+    
+    <span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;NAS F1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;metrics&#39;</span><span class="p">][</span><span class="s1">&#39;nas&#39;</span><span class="p">][</span><span class="s1">&#39;nas_f1&#39;</span><span class="p">]</span>
+    <span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;Window Regularizer&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;metrics&#39;</span><span class="p">][</span><span class="s1">&#39;nas&#39;</span><span class="p">][</span><span class="s1">&#39;regularizer&#39;</span><span class="p">][</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
+    
+    <span class="n">order</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s1">&#39;VCS&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;GAS&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;LAS&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;LAS Precision&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;LAS Recall&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SAS&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;NAS&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;Window Regularizer&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;NAS F1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;NAS-D&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;NAS-D Precision&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;NAS-D Recall&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;NAS-L&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;NAS-L Precision&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;NAS-L Recall&#39;</span>
+    <span class="p">]</span>
+    
+    <span class="n">y_pos</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">y_ticks</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">y_labels</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="n">colors</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;VCS&#39;</span><span class="p">:</span> <span class="s1">&#39;gold&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;GAS&#39;</span><span class="p">:</span> <span class="s1">&#39;skyblue&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;LAS&#39;</span><span class="p">:</span> <span class="s1">&#39;lightgreen&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;SAS&#39;</span><span class="p">:</span> <span class="s1">&#39;lightcyan&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;NAS&#39;</span><span class="p">:</span> <span class="s1">&#39;salmon&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;NAS-D&#39;</span><span class="p">:</span> <span class="s1">&#39;plum&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;NAS-L&#39;</span><span class="p">:</span> <span class="s1">&#39;orchid&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;Window Regularizer&#39;</span><span class="p">:</span> <span class="s1">&#39;peachpuff&#39;</span><span class="p">,</span>
+    <span class="p">}</span>
+    
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_color</span><span class="p">(</span><span class="n">metric_name</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">colors</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">metric_name</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+                <span class="k">return</span> <span class="n">colors</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+        <span class="k">return</span> <span class="s1">&#39;lightgray&#39;</span>
+    
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">metric_name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">order</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">metric_name</span> <span class="ow">in</span> <span class="n">metrics</span><span class="p">:</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">metrics</span><span class="p">[</span><span class="n">metric_name</span><span class="p">]</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">get_color</span><span class="p">(</span><span class="n">metric_name</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">value</span> <span class="o">+</span> <span class="mf">0.01</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">value</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
+            <span class="n">y_labels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">metric_name</span><span class="p">)</span>
+            <span class="n">y_ticks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">y_ticks</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="n">y_labels</span><span class="p">)</span>
+    
+    <span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mf">5.5</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mf">8.5</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+    
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Metric Value&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;VCS Metrics Summary&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+    
+    <span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">fig</span></div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Harsh Dubey, Chulwoo Pack.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

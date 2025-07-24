@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gradient-to-br from-slate-50 to-teal-50">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Comprehension Score (VCS) Introduction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .demo-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .pattern-bg {
+            background-image: radial-gradient(circle at 2px 2px, rgba(20, 184, 166, 0.1) 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+
+        .concept-card {
+            background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
+            border: 1px solid #99f6e4;
+        }
+
+        .problem-card {
+            background: linear-gradient(135deg, #fef2f2 0%, #fecaca 100%);
+            border: 1px solid #f87171;
+        }
+
+        .solution-card {
+            background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
+            border: 1px solid #99f6e4;
+        }
+
+        .info-badge {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            color: #92400e;
+        }
+
+        .paradox-badge {
+            background: linear-gradient(135deg, #fecaca 0%, #f87171 100%);
+            color: #991b1b;
+        }
+
+        .balance-badge {
+            background: linear-gradient(135deg, #dbeafe 0%, #93c5fd 100%);
+            color: #1e40af;
+        }
+
+        .distinction-badge {
+            background: linear-gradient(135deg, #d1fae5 0%, #86efac 100%);
+            color: #14532d;
+        }
+
+        /* Diff highlighting styles */
+        .text-original {
+            background-color: rgba(229, 231, 235, 0.3);
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        .text-changed {
+            background-color: rgba(251, 191, 36, 0.3);
+            padding: 2px 4px;
+            border-radius: 3px;
+            border-bottom: 2px solid #f59e0b;
+        }
+
+        .text-moved {
+            background-color: rgba(147, 197, 253, 0.3);
+            padding: 2px 4px;
+            border-radius: 3px;
+            border-bottom: 2px solid #3b82f6;
+        }
+
+        .text-added {
+            background-color: rgba(167, 243, 208, 0.4);
+            padding: 2px 4px;
+            border-radius: 3px;
+            border-bottom: 2px solid #059669;
+        }
+
+        .text-removed {
+            background-color: rgba(252, 165, 165, 0.4);
+            padding: 2px 4px;
+            border-radius: 3px;
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+
+        .example-box {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border: 1px solid #e2e8f0;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .example-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #0d9488, #14b8a6);
+        }
+
+        .example-box h5 {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .example-box h5 i {
+            margin-right: 0.5rem;
+            color: #0d9488;
+        }
+
+        .example-box p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #475569;
+            margin: 0;
+        }
+
+        .example-note {
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            color: #6b7280;
+            font-style: italic;
+            padding: 0.75rem;
+            background-color: rgba(99, 102, 241, 0.1);
+            border-left: 3px solid #6366f1;
+            border-radius: 0 0.375rem 0.375rem 0;
+        }
+
+        .metrics-comparison {
+            margin-top: 1rem;
+            padding: 0.75rem;
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            border-radius: 0.5rem;
+            border: 1px solid #cbd5e1;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 0.4rem;
+            margin-top: 0.5rem;
+        }
+
+        .metric-item {
+            background: white;
+            padding: 0.4rem;
+            border-radius: 0.375rem;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+
+        .metric-label {
+            font-size: 0.65rem;
+            font-weight: 600;
+            color: #64748b;
+            text-transform: uppercase;
+        }
+
+        .metric-value {
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-top: 0.2rem;
+        }
+
+        .metric-value.poor { color: #dc2626; }
+        .metric-value.good { color: #ca8a04; }
+        .metric-value.excellent { color: #0d9488; }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            color: #475569;
+        }
+
+        .legend-sample {
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            white-space: nowrap;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+            border: 1px solid #c4b5fd;
+        }
+
+        .info-card-grid {
+            background: linear-gradient(135deg, #f0f9ff 0%, #dbeafe 100%);
+            border: 1px solid #93c5fd;
+        }
+
+        /* Interactive hover effects */
+        .example-box:hover {
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .info-card {
+            transition: all 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .contradiction-highlight {
+            background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+            border: 1px solid #fca5a5;
+            border-radius: 0.5rem;
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+        }
+
+        .challenge-summary-table {
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+
+        .challenge-summary-table table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 0.85rem;
+        }
+
+        .challenge-summary-table th {
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        .challenge-summary-table td {
+            padding: 0.5rem 0.75rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .challenge-summary-table .problem-name {
+            font-weight: 600;
+            background: #fef2f2;
+        }
+
+        .summary-table {
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+
+        .summary-table table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .summary-table th {
+            background: linear-gradient(135deg, #475569 0%, #64748b 100%);
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        .summary-table td {
+            padding: 0.5rem;
+            border-bottom: 1px solid #e5e7eb;
+            text-align: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .summary-table .problem-name {
+            text-align: left;
+            font-weight: 600;
+            background: #f8fafc;
+            padding: 0.75rem;
+        }
+
+        .solution-table {
+            overflow-x: auto;
+        }
+
+        .solution-table table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .solution-table th {
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            font-weight: 600;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        .solution-table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .solution-table tr:hover {
+            background-color: #f8fafc;
+        }
+
+        .component-tag {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.375rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin: 0.125rem;
+        }
+
+        .tag-gas {
+            background-color: #dbeafe;
+            color: #1e40af;
+        }
+
+        .tag-las {
+            background-color: #d1fae5;
+            color: #14532d;
+        }
+
+        .tag-nas {
+            background-color: #fce7f3;
+            color: #9d174d;
+        }
+
+        .tag-mapping {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+
+        .tag-matching {
+            background-color: #e0e7ff;
+            color: #3730a3;
+        }
+
+        .tag-regularizer {
+            background-color: #f3e8ff;
+            color: #7c3aed;
+        }
+
+        .sensitivity-bar {
+            display: inline-block;
+            width: 60px;
+            height: 8px;
+            border-radius: 4px;
+            margin: 0 2px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sensitivity-none {
+            background: linear-gradient(to right, #f1f5f9 0%, #f1f5f9 100%);
+        }
+
+        .sensitivity-slight {
+            background: linear-gradient(to right, #fbbf24 0%, #fbbf24 25%, #f1f5f9 25%, #f1f5f9 100%);
+        }
+
+        .sensitivity-moderate {
+            background: linear-gradient(to right, #f59e0b 0%, #f59e0b 50%, #f1f5f9 50%, #f1f5f9 100%);
+        }
+
+        .sensitivity-high {
+            background: linear-gradient(to right, #dc2626 0%, #dc2626 75%, #f1f5f9 75%, #f1f5f9 100%);
+        }
+
+        .sensitivity-complete {
+            background: linear-gradient(to right, #991b1b 0%, #991b1b 100%);
+        }
+
+        .component-sensitivity {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            font-size: 0.8rem;
+        }
+
+        .component-row {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .component-name {
+            min-width: 50px;
+            font-weight: 600;
+        }
+
+        .sensitivity-label {
+            font-size: 0.7rem;
+            color: #64748b;
+            min-width: 60px;
+        }
+
+        .problem-highlight {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            border: 1px solid #f87171;
+            border-radius: 0.375rem;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+        }
+
+        .problem-highlight h5 {
+            color: #dc2626;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            font-size: 0.9rem;
+        }
+
+        .problem-highlight p {
+            color: #7f1d1d;
+            font-size: 0.8rem;
+            margin: 0;
+        }
+
+        /* --- Hero Section Styles --- */
+        #hero-section {
+            background: linear-gradient(45deg, #0d9488, #0f766e); 
+            color: white;
+            border-radius: 20px 20px 0 0; /* Top corners rounded, bottom corners square */
+        }
+        #hero-section h1 {
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2); 
+        }
+
+        /* --- Hero Tour Button (No White Glow) --- */
+        .hero-tour-btn {
+            background: linear-gradient(135deg, #0f766e 0%, #064e3b 100%);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-tour-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .hero-tour-btn:hover {
+            background: linear-gradient(135deg, #14b8a6 0%, #0f766e 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-tour-btn:hover::before {
+            left: 100%;
+        }
+
+        .hero-tour-btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Container for new structure */
+        .page-container {
+            background: #f8fafc;
+            border-radius: 25px;
+            box-shadow: 0 0 24px rgba(148, 163, 184, 0.3);
+            margin: 1rem;
+            padding: 2rem;
+            min-height: calc(100vh - 2rem);
+            position: relative;
+        }
+
+        .interactive-card {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px rgba(148, 163, 184, 0.3), -8px -8px 16px rgba(255, 255, 255, 0.7);
+            transition: transform 0.35s cubic-bezier(0.215, 0.610, 0.355, 1.000), box-shadow 0.35s cubic-bezier(0.215, 0.610, 0.355, 1.000), border-color 0.35s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            will-change: transform, box-shadow;
+        }
+    </style>
+</head>
+<body class="h-full text-slate-700 antialiased pattern-bg">
+
+    <div class="page-container">
+        <article class="interactive-card">
+            <!-- Hero Section -->
+            <section id="hero-section" class="py-6 px-4 sm:px-6 lg:px-8 relative">
+                <div class="container mx-auto">
+                    <!-- Start Tour Button - Top Right -->
+                    <button id="start-tour-btn" class="hero-tour-btn absolute top-4 right-4 py-2 px-4">
+                        <i class="fas fa-magic mr-2"></i>Start Tour
+                    </button>
+                    
+                    <div class="text-left max-w-4xl">
+                        <div class="flex items-center justify-start mb-4">
+                            <div class="bg-teal-200 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mr-2">Interactive Demo</div>
+                            <div class="bg-white bg-opacity-20 text-white px-3 py-1 rounded-full text-xs font-semibold">Core VCS Component</div>
+                        </div>
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-3 leading-tight">
+                            Video Comprehension Score (VCS) Introduction
+                        </h1>
+                        <p class="text-teal-200 text-base sm:text-lg mb-6 max-w-3xl">
+                            Explore the comprehensive evaluation framework for dense, long-form video descriptions that handles the inherent complexities of narrative text assessment in the Video Comprehension Score framework.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main Container -->
+            <main class="w-full max-w-6xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Context Setting -->
+        <div class="demo-card rounded-xl p-8 mb-12">
+            <h2 class="text-2xl font-bold text-slate-800 mb-6 flex items-center">
+                <i class="fas fa-video text-teal-600 mr-3"></i>
+                The Era of Advanced Video Understanding
+            </h2>
+            <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                Recent advances in Large Video Language Models (LVLMs) have significantly improved automated video understanding, enabling models to interpret increasingly lengthy and complex video content. However, a fundamental question emerges: <strong>do these models truly understand the video content they describe?</strong>
+            </p>
+            <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                Current evaluation predominantly relies on QA-based benchmarks that assess isolated aspects of comprehension. However, <strong>QA-based tasks inherently fall short in assessing holistic comprehension</strong>. Accurately answering isolated questions about specific events does not necessarily indicate genuine understanding of the overall narrative or the intricate interplay of events throughout the video.
+            </p>
+        </div>
+
+        <!-- Core Problem Statement -->
+        <div class="demo-card rounded-xl p-8 mb-12">
+            <h2 class="text-2xl font-bold text-slate-800 mb-6 flex items-center">
+                <i class="fas fa-search text-teal-600 mr-3"></i>
+                True Video Comprehension: The Story Capture Challenge
+            </h2>
+            <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                True video comprehension can only be evaluated by asking LVLMs to describe what is happening in the video, then comparing their narratives with human-written captions to assess whether the model was able to capture the <strong>"story"</strong>. If they did, we can confidently say they understood the video.
+            </p>
+            <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                This brings us to the <strong>core problem: how do we score these narrative descriptions?</strong> There are multitudes of ways a valid story can be expressed, and current evaluation approaches fall short:
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                <div class="bg-red-50 p-4 rounded-lg border border-red-200">
+                    <h4 class="font-semibold text-red-800 mb-2">
+                        <i class="fas fa-hashtag text-red-600 mr-2"></i>N-gram Metrics
+                    </h4>
+                    <p class="text-sm text-red-700 mb-3">BLEU, ROUGE, METEOR rely on lexical overlap. BLEU measures n-gram precision with brevity penalties, ROUGE emphasizes recall via n-gram overlap and LCS, METEOR integrates synonyms with fragmentation penalties.</p>
+                    <div class="problem-highlight">
+                        <h5><i class="fas fa-exclamation-triangle mr-1"></i>Core Problems:</h5>
+                        <p>• Rigid lexical matching fails with paraphrasing<br>• Cannot distinguish valid vs. invalid variations<br>• Blind to chronological ordering</p>
+                    </div>
+                </div>
+                <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+                    <h4 class="font-semibold text-yellow-800 mb-2">
+                        <i class="fas fa-vector-square text-yellow-600 mr-2"></i>Embedding-based
+                    </h4>
+                    <p class="text-sm text-yellow-700 mb-3">BERTScore, MoverScore, SBERT capture semantic similarity beyond lexical matches but struggle with limited context windows. Modern models like nv-embed-v2 offer larger contexts but overlook local alignment.</p>
+                    <div class="problem-highlight">
+                        <h5><i class="fas fa-exclamation-triangle mr-1"></i>Core Problems:</h5>
+                        <p>• Global embeddings miss local content accuracy<br>• Context window limitations for long texts<br>• Chronological coherence ignored</p>
+                    </div>
+                </div>
+                <div class="bg-orange-50 p-4 rounded-lg border border-orange-200">
+                    <h4 class="font-semibold text-orange-800 mb-2">
+                        <i class="fas fa-eye text-orange-600 mr-2"></i>Multimodal Embedding
+                    </h4>
+                    <p class="text-sm text-orange-700 mb-3">EMScore and PAC-S use vision-language models like CLIP for visual-text alignment. Effective for short captions but face computational and methodological challenges with dense, extended narratives.</p>
+                    <div class="problem-highlight">
+                        <h5><i class="fas fa-exclamation-triangle mr-1"></i>Core Problems:</h5>
+                        <p>• Computational scalability issues<br>• Complex chronology handling failures<br>• Segment-level coherence struggles</p>
+                    </div>
+                </div>
+                <div class="bg-purple-50 p-4 rounded-lg border border-purple-200">
+                    <h4 class="font-semibold text-purple-800 mb-2">
+                        <i class="fas fa-robot text-purple-600 mr-2"></i>LLM-based
+                    </h4>
+                    <p class="text-sm text-purple-700 mb-3">Component-based (AutoDQ, VAD-Score) use semantic extraction; holistic methods (ChatGPT-based) provide overall assessments. Both suffer from calibration issues, prompt sensitivity, and consistency problems.</p>
+                    <div class="problem-highlight">
+                        <h5><i class="fas fa-exclamation-triangle mr-1"></i>Core Problems:</h5>
+                        <p>• Score calibration ambiguity<br>• Prompt sensitivity and inconsistency<br>• Limited interpretability and reproducibility</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contradiction-highlight">
+                <p class="text-red-800 font-medium">
+                    <i class="fas fa-exclamation-triangle text-red-600 mr-2"></i>
+                    <strong>The Fundamental Gap:</strong> Effectively scoring dense, extended video descriptions remains unresolved due to four intertwined complexities that existing metrics cannot handle.
+                </p>
+            </div>
+        </div>
+
+        <!-- Section Header for Challenges -->
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold bg-gradient-to-r from-red-600 to-red-800 bg-clip-text text-transparent">
+                Why Long Description Scoring is Hard
+            </h2>
+            <p class="mt-2 text-lg text-slate-600">Four fundamental challenges that break traditional evaluation approaches</p>
+        </div>
+
+        <!-- The Four Challenges -->
+        <div class="space-y-12">
+            
+            <!-- Expressive Variability -->
+            <div class="problem-card rounded-xl p-8">
+                <div class="flex items-center mb-6">
+                    <i class="fas fa-quote-right text-red-600 text-2xl mr-4"></i>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-red-800">1. Expressive Variability</h3>
+                        <div class="distinction-badge px-3 py-1 rounded-full text-xs font-semibold mt-2">
+                            Need for Valid vs. Invalid Variation Distinction
+                        </div>
+                    </div>
+                </div>
+                <p class="text-slate-700 mb-6 text-lg leading-relaxed">
+                    Descriptions can differ <strong>substantially in wording, structure, and style</strong>. Metrics must distinguish between <strong>valid linguistic variations</strong> (paraphrasing, stylistic differences) and <strong>invalid variations</strong> (superficial lexical overlap without semantic correspondence).
+                </p>
+
+                <div class="grid lg:grid-cols-2 gap-6">
+                    <div class="example-box">
+                        <h5><i class="fas fa-file-text"></i>Reference Description</h5>
+                        <p>
+                            <span class="text-original">The old market bell rings, starting a busy market. Vendors open their bright stalls in the busy square, while the smell of fresh bread fills the air. A young seller shouts out good deals as curious people gather around. The steady ring of the bell sets the pace for the day. A wise old vendor stops by his stall, giving advice to those who pass by. As the market gets busy, the bell rings again at midday, reminding everyone of the community spirit. A light rain briefly slows the crowd, but everyone's spirit stays strong. Local storytellers tell simple tales that catch everyone's attention. As evening comes, the old bell rings one last time, perfectly echoing the start of the day.</span>
+                        </p>
+                    </div>
+                    <div class="example-box">
+                        <h5><i class="fas fa-language"></i>Valid Paraphrased Version</h5>
+                        <p>
+                            <span class="text-changed">The weathered marketplace bell tolls, ushering in a bustling bazaar. Merchants unveil their colorful booths in the crowded square, while the aroma of warm loaves drifts through the air. A youthful vendor calls out enticing bargains as inquisitive patrons congregate nearby. The rhythmic chime of the bell establishes the tempo for the morning. An experienced stallholder pauses at his stand, offering counsel to passersby. As the marketplace grows lively, the bell resonates again at noon, reminding folks here of their shared camaraderie. A gentle drizzle momentarily slows the throng, yet spirits remain undampened. Village raconteurs spin modest yarns that captivate all onlookers. As dusk approaches, the timeworn bell sounds one final time, perfectly mirroring its morning greeting.</span>
+                        </p>
+                        <div class="metrics-comparison">
+                            <h6 class="font-semibold text-slate-700 text-sm mb-2">
+                                <i class="fas fa-chart-bar text-slate-600 mr-2"></i>Metric Performance Comparison
+                            </h6>
+                            <div class="metrics-grid">
+                                <div class="metric-item">
+                                    <div class="metric-label">BLEU-1</div>
+                                    <div class="metric-value poor">0.428</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">BLEU-4</div>
+                                    <div class="metric-value poor">0.088</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-1</div>
+                                    <div class="metric-value poor">0.375</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-4</div>
+                                    <div class="metric-value poor">0.000</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-L</div>
+                                    <div class="metric-value poor">0.358</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-Lsum</div>
+                                    <div class="metric-value poor">0.358</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">METEOR</div>
+                                    <div class="metric-value poor">0.439</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">VCS</div>
+                                    <div class="metric-value excellent">0.975</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="example-note">
+                            <strong>Analysis:</strong> Traditional metrics catastrophically fail despite identical semantic content. N-gram metrics cannot distinguish valid paraphrasing from content changes, penalizing legitimate expressive variability.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Challenge Summary Table -->
+                <div class="challenge-summary-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Specific Problem</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="problem-name">Not Penalizing Valid Variations</td>
+                                <td>Traditional metrics fail to recognize valid paraphrasing and legitimate linguistic variations as semantically equivalent</td>
+                            </tr>
+                            <tr>
+                                <td class="problem-name">Penalizing Invalid Variations</td>
+                                <td>Superficial lexical overlap masks semantic divergence, allowing fake similarity to receive undeserved high scores</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Descriptive Variability -->
+            <div class="problem-card rounded-xl p-8">
+                <div class="flex items-center mb-6">
+                    <i class="fas fa-align-left text-red-600 text-2xl mr-4"></i>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-red-800">2. Descriptive Variability</h3>
+                        <div class="paradox-badge px-3 py-1 rounded-full text-xs font-semibold mt-2">
+                            Leniency vs. Strictness Paradox + Length Mismatch
+                        </div>
+                    </div>
+                </div>
+                <p class="text-slate-700 mb-4 text-lg leading-relaxed">
+                    Descriptions exhibit <strong>inherent differences in information density, focus, and length</strong>. This creates a fundamental paradox and a critical length challenge:
+                </p>
+                <div class="contradiction-highlight mb-8">
+                    <p class="text-red-800">
+                        <strong>The Descriptive Variability Paradox:</strong> Metrics must accommodate valid variations in detail level (brevity vs. verbosity) while also strictly penalizing significant content omissions or hallucinations. This forces a choice between leniency toward variability or strict content alignment—simultaneously supporting both is inherently contradictory. <strong>Additionally, descriptive variability leads to huge mismatches in description length</strong>, requiring metrics to handle dramatically different text lengths while maintaining fair evaluation.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-6">
+                    <div class="example-box">
+                        <h5><i class="fas fa-file-text"></i>Reference (Original Length)</h5>
+                        <p>
+                            <span class="text-original">The old market bell rings, starting a busy market. Vendors open their bright stalls in the busy square, while the smell of fresh bread fills the air. A young seller shouts out good deals as curious people gather around. The steady ring of the bell sets the pace for the day. A wise old vendor stops by his stall, giving advice to those who pass by. As the market gets busy, the bell rings again at midday, reminding everyone of the community spirit. A light rain briefly slows the crowd, but everyone's spirit stays strong. Local storytellers tell simple tales that catch everyone's attention. As evening comes, the old bell rings one last time, perfectly echoing the start of the day.</span>
+                        </p>
+                        <div class="mt-3 text-xs text-slate-500">
+                            <strong>Length:</strong> 95 words
+                        </div>
+                    </div>
+                    <div class="example-box">
+                        <h5><i class="fas fa-compress-alt"></i>Brevity Version (65% Shorter)</h5>
+                        <p>
+                            <span class="text-removed">The old market bell signals vendors to open stalls amid fresh bread aromas. A young seller calls out deals, drawing curious onlookers as the bell sets the day's pace. A wise old vendor advises passersby when the midday bell rings, fostering community spirit. A brief light rain slows the crowd, but local storytellers share simple tales that maintain spirits. At evening, the final bell echoes the day's start.</span>
+                        </p>
+                        <div class="mt-3 text-xs text-slate-500">
+                            <strong>Length:</strong> 33 words (-65%)
+                        </div>
+                        <div class="metrics-comparison">
+                            <div class="metrics-grid">
+                                <div class="metric-item">
+                                    <div class="metric-label">BLEU-1</div>
+                                    <div class="metric-value poor">0.368</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">BLEU-4</div>
+                                    <div class="metric-value poor">0.133</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-1</div>
+                                    <div class="metric-value good">0.580</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-4</div>
+                                    <div class="metric-value poor">0.043</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-L</div>
+                                    <div class="metric-value poor">0.487</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-Lsum</div>
+                                    <div class="metric-value poor">0.487</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">METEOR</div>
+                                    <div class="metric-value poor">0.354</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">VCS</div>
+                                    <div class="metric-value excellent">0.888</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="example-note">
+                            <strong>Analysis:</strong> Essential information preserved despite 65% length reduction. The story remains the same, but traditional metrics harshly penalize this valid brevity and struggle with length mismatch.
+                        </div>
+                    </div>
+                    <div class="example-box">
+                        <h5><i class="fas fa-search-plus"></i>Micro-Action Detail (300% Longer)</h5>
+                        <p>
+                            <span class="text-added">The old market bell swings forward, strikes the metal rim sharply, swings back, and its echo ripples gently outward, marking the market's opening. Vendors grasp wooden shutters, push them upward firmly, latch them in place, unroll striped canvas covers, and arrange baskets methodically. Hands quickly stack fresh bread loaves, tilt trays slightly, and let warm scents drift into the morning air. A young seller heaves a heavy crate onto an old barrel, wipes his brow briefly, sorts goods neatly, and taps each loaf with care. He cups his palms around his mouth, takes a deep breath, and calls clearly, drawing curious passersby who step nearer one by one, nodding and exchanging glances. The bell maintains a steady rhythm: the clapper swings, strikes, swings again, echo fading, yet steady enough to pace the market's tempo. A wise vendor gently rests his cane against the stall, straightens his hat carefully, beckons a passerby closer, cups a hand near his mouth, whispers some seasoned advice, then nudges a jar slightly to realign his wares precisely. At midday, a hand firmly pulls the rope, swinging the bell's heavy clapper once more. The deep sound resonates, prompting shoppers to pause, look around briefly, nod politely at familiar faces, then return to browsing and bargaining. Raindrops gently land on canvas awnings, roll down fabric edges, drip onto stone pavement, and ripple through small puddles. People step swiftly beneath nearby shelters, umbrellas pop open quickly, hands brush off damp sleeves, and murmurs rise as everyone maintains their good spirits. A storyteller carefully steps onto an overturned crate, shakes out a worn cloth puppet, extends one hand upward to signal silence, narrates a short, simple tale clearly, then lowers the puppet as young listeners applaud enthusiastically. As evening approaches, the old bell swings again slowly, the metal rim vibrates briefly, ringing one final time. Vendors quickly fold cloth, lower shutters carefully, lock wooden panels, sweep stray crumbs away, and gather their belongings. Gradually, people exit the square, voices growing softer, footsteps fading, the quiet evening gently mirroring the day's hopeful start.</span>
+                        </p>
+                        <div class="mt-3 text-xs text-slate-500">
+                            <strong>Length:</strong> 358 words (+377%)
+                        </div>
+                        <div class="metrics-comparison">
+                            <div class="metrics-grid">
+                                <div class="metric-item">
+                                    <div class="metric-label">BLEU-1</div>
+                                    <div class="metric-value poor">0.294</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">BLEU-4</div>
+                                    <div class="metric-value poor">0.051</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-1</div>
+                                    <div class="metric-value poor">0.367</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-4</div>
+                                    <div class="metric-value poor">0.012</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-L</div>
+                                    <div class="metric-value poor">0.212</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-Lsum</div>
+                                    <div class="metric-value poor">0.212</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">METEOR</div>
+                                    <div class="metric-value poor">0.342</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">VCS</div>
+                                    <div class="metric-value excellent">0.897</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="example-note">
+                            <strong>Analysis:</strong> Granular actions represent preference differences, not narrative obscuration—the story remains the same. N-gram metrics penalize this detail preference and cannot handle the 300% length increase appropriately.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Challenge Summary Table -->
+                <div class="challenge-summary-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Specific Problem</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="problem-name">Strict Content Alignment vs. Lenient Content Alignment Paradox</td>
+                                <td>Must simultaneously allow detail variation (brevity/verbosity) while penalizing content omissions/hallucinations</td>
+                            </tr>
+                            <tr>
+                                <td class="problem-name">Length Variation Handling</td>
+                                <td>Dramatic length differences (65% shorter to 300% longer) require fair comparison across varying text sizes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Narrative Variability -->
+            <div class="problem-card rounded-xl p-8">
+                <div class="flex items-center mb-6">
+                    <i class="fas fa-stream text-red-600 text-2xl mr-4"></i>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-red-800">3. Narrative Variability</h3>
+                        <div class="paradox-badge px-3 py-1 rounded-full text-xs font-semibold mt-2">
+                            Ordering Flexibility Paradox
+                        </div>
+                    </div>
+                </div>
+                <p class="text-slate-700 mb-4 text-lg leading-relaxed">
+                    Descriptions can present <strong>acceptable variations in the chronological sequencing of events</strong>. This creates another fundamental paradox:
+                </p>
+                <div class="contradiction-highlight mb-8">
+                    <p class="text-red-800">
+                        <strong>The Narrative Variability Paradox:</strong> While strict chronological order is crucial in certain contexts, minor logical reorderings can be permissible in others. Metrics must be capable of supporting both strict and flexible chronological evaluations, despite the inherent conflict between these two needs.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-6">
+                    <div class="example-box">
+                        <h5><i class="fas fa-file-text"></i>Original Narrative Order</h5>
+                        <p>
+                            <span class="text-original">The old market bell rings, starting a busy market. Vendors open their bright stalls in the busy square, while the smell of fresh bread fills the air. A young seller shouts out good deals as curious people gather around. The steady ring of the bell sets the pace for the day. A wise old vendor stops by his stall, giving advice to those who pass by. As the market gets busy, the bell rings again at midday, reminding everyone of the community spirit. A light rain briefly slows the crowd, but everyone's spirit stays strong. Local storytellers tell simple tales that catch everyone's attention. As evening comes, the old bell rings one last time, perfectly echoing the start of the day.</span>
+                        </p>
+                    </div>
+                    <div class="example-box">
+                        <h5><i class="fas fa-random"></i>Valid Narrative Reordering</h5>
+                        <p>
+                            <span class="text-moved">Vendors open their bright stalls in the busy square, while the smell of fresh bread fills the air. A young seller shouts out good deals as curious people gather around.</span> 
+                            <span class="text-moved">The old market bell rings, starting a busy market.</span> 
+                            <span class="text-moved">The steady ring of the bell sets the pace for the day. As the market gets busy, the bell rings again at midday, reminding everyone of the community spirit. A light rain briefly slows the crowd, but everyone's spirit stays strong.</span> 
+                            <span class="text-moved">A wise old vendor stops by his stall, giving advice to those who pass by.</span> 
+                            <span class="text-moved">Local storytellers tell simple tales that catch everyone's attention. As evening comes, the old bell rings one last time, perfectly echoing the start of the day.</span>
+                        </p>
+                        <div class="metrics-comparison">
+                            <div class="metrics-grid">
+                                <div class="metric-item">
+                                    <div class="metric-label">BLEU-1</div>
+                                    <div class="metric-value excellent">0.972</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">BLEU-4</div>
+                                    <div class="metric-value excellent">0.920</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-1</div>
+                                    <div class="metric-value excellent">1.000</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-4</div>
+                                    <div class="metric-value excellent">0.883</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-L</div>
+                                    <div class="metric-value excellent">0.805</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-Lsum</div>
+                                    <div class="metric-value excellent">0.805</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">METEOR</div>
+                                    <div class="metric-value excellent">0.973</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">VCS</div>
+                                    <div class="metric-value excellent">0.966</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="example-note">
+                            <strong>Analysis:</strong> Valid narrative reordering with nearly identical wording. Traditional metrics score perfectly but are blind to reordering implications. VCS recognizes both semantic similarity and chronological considerations.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Challenge Summary Table -->
+                <div class="challenge-summary-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Specific Problem</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="problem-name">Local Chronology Flexibility vs. Strictness</td>
+                                <td>Must support both strict chronological order enforcement and permissible minor reordering tolerance depending on context</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Chronological Variability -->
+            <div class="problem-card rounded-xl p-8">
+                <div class="flex items-center mb-6">
+                    <i class="fas fa-history text-red-600 text-2xl mr-4"></i>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-red-800">4. Chronological Variability</h3>
+                        <div class="balance-badge px-3 py-1 rounded-full text-xs font-semibold mt-2">
+                            Need for Global-Local Balance
+                        </div>
+                    </div>
+                </div>
+                <p class="text-slate-700 mb-4 text-lg leading-relaxed">
+                    Descriptions can vary in their coherence at both <strong>global and local scales</strong>. This requires finding the right balance:
+                </p>
+                <div class="contradiction-highlight mb-8">
+                    <p class="text-blue-800">
+                        <strong>The Chronological Variability Challenge:</strong> Metrics must penalize globally incorrect ordering even if locally coherent, and vice versa—effectively evaluating coherence across narrative scales. This requires balanced assessment of micro and macro-level chronological integrity.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-6">
+                    <div class="example-box">
+                        <h5><i class="fas fa-file-text"></i>Reference</h5>
+                        <p>
+                            <span class="text-original">The old market bell rings, starting a busy market. Vendors open their bright stalls in the busy square, while the smell of fresh bread fills the air. A young seller shouts out good deals as curious people gather around. The steady ring of the bell sets the pace for the day. A wise old vendor stops by his stall, giving advice to those who pass by. As the market gets busy, the bell rings again at midday, reminding everyone of the community spirit. A light rain briefly slows the crowd, but everyone's spirit stays strong. Local storytellers tell simple tales that catch everyone's attention. As evening comes, the old bell rings one last time, perfectly echoing the start of the day.</span>
+                        </p>
+                    </div>
+                    <div class="example-box">
+                        <h5><i class="fas fa-exchange-alt"></i>Neighboring Sentences Swapped</h5>
+                        <p>
+                            <span class="text-moved">Vendors open their bright stalls in the busy square, while the smell of fresh bread fills the air.</span> 
+                            <span class="text-moved">The old market bell rings, starting a busy market.</span> 
+                            <span class="text-moved">The steady ring of the bell sets the pace for the day.</span> 
+                            <span class="text-moved">A young seller shouts out good deals as curious people gather around.</span> 
+                            <span class="text-moved">As the market gets busy, the bell rings again at midday, reminding everyone of the community spirit.</span> 
+                            <span class="text-moved">A wise old vendor stops by his stall, giving advice to those who pass by.</span> 
+                            <span class="text-moved">Local storytellers tell simple tales that catch everyone's attention.</span> 
+                            <span class="text-moved">A light rain briefly slows the crowd, but everyone's spirit stays strong.</span> 
+                            <span class="text-original">As evening comes, the old bell rings one last time, perfectly echoing the start of the day.</span>
+                        </p>
+                        <div class="metrics-comparison">
+                            <div class="metrics-grid">
+                                <div class="metric-item">
+                                    <div class="metric-label">BLEU-1</div>
+                                    <div class="metric-value poor">1.000</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">BLEU-4</div>
+                                    <div class="metric-value poor">0.957</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-1</div>
+                                    <div class="metric-value poor">1.000</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-4</div>
+                                    <div class="metric-value poor">0.817</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-L</div>
+                                    <div class="metric-value good">0.650</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-Lsum</div>
+                                    <div class="metric-value good">0.650</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">METEOR</div>
+                                    <div class="metric-value poor">0.988</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">VCS</div>
+                                    <div class="metric-value excellent">0.000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="example-note">
+                            <strong>Impact:</strong> Local chronological flow severely disrupted despite global narrative preservation. Traditional metrics score excellently but miss the chronological chaos. VCS correctly identifies severe ordering problems with appropriate low score.
+                        </div>
+                    </div>
+                    <div class="example-box">
+                        <h5><i class="fas fa-sync-alt"></i>Half Paragraph Rotated</h5>
+                        <p>
+                            <span class="text-moved">A wise old vendor stops by his stall, giving advice to those who pass by. As the market gets busy, the bell rings again at midday, reminding everyone of the community spirit. A light rain briefly slows the crowd, but everyone's spirit stays strong. Local storytellers tell simple tales that catch everyone's attention. As evening comes, the old bell rings one last time, perfectly echoing the start of the day.</span> 
+                            <span class="text-moved">The old market bell rings, starting a busy market. Vendors open their bright stalls in the busy square, while the smell of fresh bread fills the air. A young seller shouts out good deals as curious people gather around. The steady ring of the bell sets the pace for the day.</span>
+                        </p>
+                        <div class="metrics-comparison">
+                            <div class="metrics-grid">
+                                <div class="metric-item">
+                                    <div class="metric-label">BLEU-1</div>
+                                    <div class="metric-value poor">1.000</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">BLEU-4</div>
+                                    <div class="metric-value poor">0.989</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-1</div>
+                                    <div class="metric-value poor">1.000</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-4</div>
+                                    <div class="metric-value poor">0.975</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-L</div>
+                                    <div class="metric-value good">0.585</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">ROUGE-Lsum</div>
+                                    <div class="metric-value good">0.585</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">METEOR</div>
+                                    <div class="metric-value poor">0.892</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-label">VCS</div>
+                                    <div class="metric-value excellent">0.527</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="example-note">
+                            <strong>Impact:</strong> Local ordering preserved within segments, but global chronological structure severely disrupted. Traditional metrics score nearly perfectly while VCS appropriately penalizes the major global distortion.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Challenge Summary Table -->
+                <div class="challenge-summary-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Specific Problem</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="problem-name">Balancing Global vs. Local Chronological Assessment</td>
+                                <td>Must evaluate both large-scale narrative coherence and sentence-level chronological flow in a balanced manner</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Visual Legend -->
+        <div class="demo-card rounded-xl p-6 my-12">
+            <h3 class="text-xl font-semibold text-slate-800 mb-6 text-center">
+                <i class="fas fa-palette text-teal-600 mr-2"></i>
+                Visual Difference Legend
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div class="legend-item">
+                    <span class="legend-sample text-original">Original</span>
+                    <span>Unchanged</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-sample text-changed">Changed</span>
+                    <span>Paraphrased</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-sample text-moved">Moved</span>
+                    <span>Reordered</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-sample text-added">Added</span>
+                    <span>Extra Detail</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-sample text-removed">Removed</span>
+                    <span>Compressed</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary Table -->
+        <div class="summary-table">
+            <h3 class="text-2xl font-bold text-slate-800 mb-6 text-center">
+                <i class="fas fa-table text-slate-600 mr-2"></i>
+                Comprehensive Evaluation Challenge Summary
+            </h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Challenge</th>
+                        <th>BLEU-1</th>
+                        <th>BLEU-4</th>
+                        <th>ROUGE-1</th>
+                        <th>ROUGE-4</th>
+                        <th>ROUGE-L</th>
+                        <th>ROUGE-Lsum</th>
+                        <th>METEOR</th>
+                        <th>VCS (LCT=0)</th>
+                        <th>VCS (LCT=1)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="problem-name">Expressive Variability (Paraphrasing)</td>
+                        <td class="metric-value poor">0.428</td>
+                        <td class="metric-value poor">0.088</td>
+                        <td class="metric-value poor">0.375</td>
+                        <td class="metric-value poor">0.000</td>
+                        <td class="metric-value poor">0.358</td>
+                        <td class="metric-value poor">0.358</td>
+                        <td class="metric-value poor">0.439</td>
+                        <td class="metric-value excellent">0.877</td>
+                        <td class="metric-value excellent">0.877</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-name">Descriptive Variability (Brevity)</td>
+                        <td class="metric-value poor">0.368</td>
+                        <td class="metric-value poor">0.133</td>
+                        <td class="metric-value good">0.580</td>
+                        <td class="metric-value poor">0.043</td>
+                        <td class="metric-value poor">0.487</td>
+                        <td class="metric-value poor">0.487</td>
+                        <td class="metric-value poor">0.354</td>
+                        <td class="metric-value excellent">0.831</td>
+                        <td class="metric-value excellent">0.910</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-name">Descriptive Variability (Verbosity)</td>
+                        <td class="metric-value poor">0.119</td>
+                        <td class="metric-value poor">0.024</td>
+                        <td class="metric-value poor">0.240</td>
+                        <td class="metric-value poor">0.005</td>
+                        <td class="metric-value poor">0.168</td>
+                        <td class="metric-value poor">0.168</td>
+                        <td class="metric-value poor">0.361</td>
+                        <td class="metric-value excellent">0.740</td>
+                        <td class="metric-value excellent">0.772</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-name">Narrative Variability (Valid Reordering)</td>
+                        <td class="metric-value excellent">0.972</td>
+                        <td class="metric-value excellent">0.920</td>
+                        <td class="metric-value excellent">1.000</td>
+                        <td class="metric-value excellent">0.883</td>
+                        <td class="metric-value excellent">0.805</td>
+                        <td class="metric-value excellent">0.805</td>
+                        <td class="metric-value excellent">0.973</td>
+                        <td class="metric-value excellent">0.515</td>
+                        <td class="metric-value excellent">0.862</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-name">Chronological Variability (Local Disruption)</td>
+                        <td class="metric-value poor">1.000</td>
+                        <td class="metric-value poor">0.957</td>
+                        <td class="metric-value poor">1.000</td>
+                        <td class="metric-value poor">0.817</td>
+                        <td class="metric-value good">0.650</td>
+                        <td class="metric-value good">0.650</td>
+                        <td class="metric-value poor">0.988</td>
+                        <td class="metric-value excellent">0.000</td>
+                        <td class="metric-value excellent">0.767</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-name">Chronological Variability (Global Disruption)</td>
+                        <td class="metric-value poor">1.000</td>
+                        <td class="metric-value poor">0.989</td>
+                        <td class="metric-value poor">1.000</td>
+                        <td class="metric-value poor">0.975</td>
+                        <td class="metric-value good">0.585</td>
+                        <td class="metric-value good">0.585</td>
+                        <td class="metric-value poor">0.892</td>
+                        <td class="metric-value excellent">0.420</td>
+                        <td class="metric-value excellent">0.420</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="text-sm text-slate-600 text-center mt-4">
+                <span class="metric-value poor">Red</span>: Poor performance (metric fails) | 
+                <span class="metric-value good">Yellow</span>: Moderate performance | 
+                <span class="metric-value excellent">Teal</span>: Excellent performance<br>
+                <strong>LCT:</strong> Local Chronology Tolerance parameter (0=strict, 1=flexible chronological evaluation)
+            </p>
+        </div>
+
+        <!-- Solution Section -->
+        <div class="highlight-box rounded-xl p-8 mb-12">
+            <div class="text-center mb-8">
+                <h3 class="text-3xl font-bold text-purple-800 mb-4">
+                    <i class="fas fa-lightbulb text-purple-600 mr-3"></i>
+                    Introducing Video Comprehension Score (VCS)
+                </h3>
+                <p class="text-lg text-purple-700 leading-relaxed max-w-4xl mx-auto mb-6">
+                    To address these intertwined challenges, we introduce the Video Comprehension Score (VCS), specifically designed for comprehensive assessment of dense, long-form video descriptions. VCS adopts the philosophy that <strong>true video comprehension involves accurately capturing the narrative</strong>, emphasizing semantic and structural evaluations over rigid lexical matching.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8 mt-8 mb-8">
+                <div class="info-card-grid rounded-xl p-6 text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-globe-americas text-4xl text-blue-600"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-blue-800 mb-3">Global Alignment Score (GAS)</h4>
+                    <p class="text-blue-700">Measures overall thematic alignment and semantic coherence across entire descriptions through global embedding comparison.</p>
+                </div>
+                <div class="info-card-grid rounded-xl p-6 text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-tasks text-4xl text-green-600"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-green-800 mb-3">Local Alignment Score (LAS)</h4>
+                    <p class="text-green-700">Evaluates semantic correspondence and content coverage through chunk-level alignment and best matching algorithms.</p>
+                </div>
+                <div class="info-card-grid rounded-xl p-6 text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-route text-4xl text-purple-600"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-purple-800 mb-3">Narrative Alignment Score (NAS)</h4>
+                    <p class="text-purple-700">Assesses chronological integrity and narrative flow through distance-based and line-based chronological evaluation.</p>
+                </div>
+            </div>
+
+            <!-- VCS Problem-Solution Mapping -->
+            <div class="solution-table">
+                <h4 class="text-xl font-semibold text-purple-800 mb-4 text-center">
+                    <i class="fas fa-puzzle-piece text-purple-600 mr-2"></i>
+                    How VCS Components Address Each Challenge - Sensitivity Analysis
+                </h4>
+                <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-4">
+                    <p class="text-sm text-amber-800">
+                        <i class="fas fa-exclamation-triangle text-amber-600 mr-2"></i>
+                        <strong>Caution:</strong> This table provides general sensitivity patterns. Real-world behavior involves significant nuance and case dependency. These patterns serve as rules of thumb for understanding component interactions.
+                    </p>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Challenge</th>
+                            <th>Specific Problem</th>
+                            <th>VCS Solution & Components</th>
+                            <th>Component Sensitivity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2"><strong>Expressive Variability</strong></td>
+                            <td>Not Penalizing Valid Variations</td>
+                            <td>
+                                <span class="component-tag tag-gas">GAS</span>
+                                <span class="component-tag tag-las">LAS</span>
+                                Semantic matching recognizes paraphrasing and valid linguistic variations
+                            </td>
+                            <td>
+                                <div class="component-sensitivity">
+                                    <div class="component-row">
+                                        <span class="component-name tag-gas">GAS:</span>
+                                        <div class="sensitivity-bar sensitivity-slight"></div>
+                                        <span class="sensitivity-label">Slight penalty</span>
+                                    </div>
+                                    <div class="component-row">
+                                        <span class="component-name tag-las">LAS:</span>
+                                        <div class="sensitivity-bar sensitivity-slight"></div>
+                                        <span class="sensitivity-label">Slight penalty</span>
+                                    </div>
+                                    <div class="component-row">
+                                        <span class="component-name tag-nas">NAS:</span>
+                                        <div class="sensitivity-bar sensitivity-none"></div>
+                                        <span class="sensitivity-label">No penalty</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Penalizing Invalid Variations</td>
+                            <td>
+                                <span class="component-tag tag-gas">GAS</span>
+                                <span class="component-tag tag-las">LAS</span>
+                                <span class="component-tag tag-nas">NAS</span>
+                                All components detect and penalize superficial similarity masking semantic divergence
+                            </td>
+                            <td>
+                                <div class="component-sensitivity">
+                                    <div class="component-row">
+                                        <span class="component-name tag-gas">GAS:</span>
+                                        <div class="sensitivity-bar sensitivity-moderate"></div>
+                                        <span class="sensitivity-label">Penalty</span>
+                                    </div>
+                                    <div class="component-row">
+                                        <span class="component-name tag-las">LAS:</span>
+                                        <div class="sensitivity-bar sensitivity-high"></div>
+                                        <span class="sensitivity-label">Strong penalty</span>
+                                    </div>
+                                    <div class="component-row">
+                                        <span class="component-name tag-nas">NAS:</span>
+                                        <div class="sensitivity-bar sensitivity-moderate"></div>
+                                        <span class="sensitivity-label">Penalty</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><strong>Descriptive Variability</strong></td>
+                            <td>Strict Content Alignment vs. Lenient Content Alignment Paradox</td>
+                            <td>
+                                <span class="component-tag tag-gas">GAS</span>
+                                <span class="component-tag tag-las">LAS</span>
+                                <span class="component-tag tag-nas">NAS</span>
+                                Combined sensitivity enables content alignment; strictness controlled by LCT within NAS
+                            </td>
+                            <td>
+                                <div class="component-sensitivity">
+                                    <div class="component-row">
+                                        <span class="component-name tag-gas">GAS:</span>
+                                        <div class="sensitivity-bar sensitivity-slight"></div>
+                                        <span class="sensitivity-label">Least sensitive</span>
+                                    </div>
+                                    <div class="component-row">
+                                        <span class="component-name tag-las">LAS:</span>
+                                        <div class="sensitivity-bar sensitivity-high"></div>
+                                        <span class="sensitivity-label">More sensitive</span>
+                                    </div>
+                                    <div class="component-row">
+                                        <span class="component-name tag-nas">NAS:</span>
+                                        <div class="sensitivity-bar sensitivity-high"></div>
+                                        <span class="sensitivity-label">Equal to LAS</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Length Variation Handling</td>
+                            <td>
+                                <span class="component-tag tag-mapping">Mapping Windows</span>
+                                <span class="component-tag tag-regularizer">Window Regularizer</span>
+                                All components handle length differences; Window Regularizer prevents extreme under-description
+                            </td>
+                            <td>
+                                <div class="component-sensitivity">
+                                    <div class="component-row">
+                                        <span class="component-name tag-gas">GAS:</span>
+                                        <div class="sensitivity-bar sensitivity-moderate"></div>
+                                        <span class="sensitivity-label">Moderate</span>
+                                    </div>
+                                    <div class="component-row">
+                                        <span class="component-name tag-las">LAS:</span>
+                                        <div class="sensitivity-bar sensitivity-complete"></div>
+                                        <span class="sensitivity-label">Most sensitive</span>
+                                    </div>
+                                    <div class="component-row">
+                                        <span class="component-name tag-nas">NAS:</span>
+                                        <div class="sensitivity-bar sensitivity-slight"></div>
+                                        <span class="sensitivity-label">Least sensitive</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Narrative Variability</strong></td>
+                            <td>Local Chronology Flexibility vs. Strictness</td>
+                            <td>
+                                <span class="component-tag tag-nas">NAS</span>
+                                NAS is specifically designed for narrative assessment; sensitivity controlled by LCT parameter
+                            </td>
+                            <td>
+                                <div class="component-sensitivity">
+                                    <div class="component-row">
+                                        <span class="component-name tag-gas">GAS:</span>
+                                        <div class="sensitivity-bar sensitivity-slight"></div>
+                                        <span class="sensitivity-label">Slightly sensitive</span>
+                                    </div>
+                                    <div class="component-row">
+                                        <span class="component-name tag-las">LAS:</span>
+                                        <div class="sensitivity-bar sensitivity-none"></div>
+                                        <span class="sensitivity-label">Not sensitive</span>
+                                    </div>
+                                    <div class="component-row">
+                                        <span class="component-name tag-nas">NAS:</span>
+                                        <div class="sensitivity-bar sensitivity-complete"></div>
+                                        <span class="sensitivity-label">Completely sensitive</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Chronological Variability</strong></td>
+                            <td>Balancing Global vs. Local Chronological Assessment</td>
+                            <td>
+                                <span class="component-tag tag-nas">NAS-Distance</span>
+                                <span class="component-tag tag-nas">NAS-Line</span>
+                                NAS provides balanced multi-scale chronological evaluation through Distance and Line components
+                            </td>
+                            <td>
+                                <div class="component-sensitivity">
+                                    <div class="component-row">
+                                        <span class="component-name tag-gas">GAS:</span>
+                                        <div class="sensitivity-bar sensitivity-slight"></div>
+                                        <span class="sensitivity-label">Slightly sensitive</span>
+                                    </div>
+                                    <div class="component-row">
+                                        <span class="component-name tag-las">LAS:</span>
+                                        <div class="sensitivity-bar sensitivity-none"></div>
+                                        <span class="sensitivity-label">Not sensitive</span>
+                                    </div>
+                                    <div class="component-row">
+                                        <span class="component-name tag-nas">NAS:</span>
+                                        <div class="sensitivity-bar sensitivity-complete"></div>
+                                        <span class="sensitivity-label">Completely sensitive</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="mt-8 p-6 bg-white bg-opacity-60 rounded-lg border border-purple-200">
+                <p class="text-lg text-purple-800 text-center font-medium leading-relaxed">
+                    <strong>VCS = f(GAS, LAS, NAS)</strong><br>
+                    This comprehensive framework explicitly addresses all four fundamental challenges in video description evaluation, providing the first metric capable of handling the full complexity of narrative assessment.
+                </p>
+            </div>
+        </div>
+
+        <!-- Next Steps -->
+        <div class="concept-card rounded-xl p-8">
+            <div class="flex items-start">
+                <i class="fas fa-arrow-right text-teal-600 text-2xl mr-4 mt-1"></i>
+                <div>
+                    <h4 class="text-xl font-semibold text-teal-800 mb-3">Explore VCS Components Interactively</h4>
+                    <p class="text-teal-700 mb-4 text-lg leading-relaxed">
+                        Now that you understand how each VCS component addresses specific evaluation challenges, dive into interactive demonstrations to learn how these solutions work in practice:
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-4 mb-6">
+                        <div class="bg-white bg-opacity-60 p-4 rounded-lg border border-teal-200 hover:shadow-lg transition-all duration-300">
+                            <h5 class="font-semibold text-teal-800 mb-2">
+                                <i class="fas fa-globe-americas text-teal-600 mr-2"></i>
+                                Global Alignment Score (GAS)
+                            </h5>
+                            <p class="text-sm text-teal-700">Understand semantic matching and thematic coherence evaluation across entire descriptions.</p>
+                        </div>
+                        <div class="bg-white bg-opacity-60 p-4 rounded-lg border border-teal-200 hover:shadow-lg transition-all duration-300">
+                            <h5 class="font-semibold text-teal-800 mb-2">
+                                <i class="fas fa-map text-teal-600 mr-2"></i>
+                                Mapping Windows
+                            </h5>
+                            <p class="text-sm text-teal-700">Learn how adaptive windows handle length differences and enable fair alignment.</p>
+                        </div>
+                        <div class="bg-white bg-opacity-60 p-4 rounded-lg border border-teal-200 hover:shadow-lg transition-all duration-300">
+                            <h5 class="font-semibold text-teal-800 mb-2">
+                                <i class="fas fa-crosshairs text-teal-600 mr-2"></i>
+                                Best Matching Algorithm
+                            </h5>
+                            <p class="text-sm text-teal-700">Understand how context windows and chronological constraints solve semantic ambiguity.</p>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-4 mb-6">
+                        <div class="bg-white bg-opacity-60 p-4 rounded-lg border border-teal-200 hover:shadow-lg transition-all duration-300">
+                            <h5 class="font-semibold text-teal-800 mb-2">
+                                <i class="fas fa-tasks text-teal-600 mr-2"></i>
+                                Local Alignment Score (LAS)
+                            </h5>
+                            <p class="text-sm text-teal-700">Learn precision/recall evaluation and how LAS balances content strictness with variability tolerance.</p>
+                        </div>
+                        <div class="bg-white bg-opacity-60 p-4 rounded-lg border border-teal-200 hover:shadow-lg transition-all duration-300">
+                            <h5 class="font-semibold text-teal-800 mb-2">
+                                <i class="fas fa-route text-teal-600 mr-2"></i>
+                                NAS-Distance (NAS-D)
+                            </h5>
+                            <p class="text-sm text-teal-700">Learn global chronological assessment with distance-based penalties and Local Chronology Tolerance (LCT).</p>
+                        </div>
+                        <div class="bg-white bg-opacity-60 p-4 rounded-lg border border-teal-200 hover:shadow-lg transition-all duration-300">
+                            <h5 class="font-semibold text-teal-800 mb-2">
+                                <i class="fas fa-project-diagram text-teal-600 mr-2"></i>
+                                NAS-Line (NAS-L)
+                            </h5>
+                            <p class="text-sm text-teal-700">Understand local chronological flow evaluation through line-based path analysis.</p>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-white bg-opacity-60 p-4 rounded-lg border border-teal-200 hover:shadow-lg transition-all duration-300">
+                            <h5 class="font-semibold text-teal-800 mb-2">
+                                <i class="fas fa-shield-alt text-teal-600 mr-2"></i>
+                                Window Regularizer
+                            </h5>
+                            <p class="text-sm text-teal-700">Understand how penalties prevent extremely short descriptions and ensure coverage.</p>
+                        </div>
+                        <div class="bg-white bg-opacity-60 p-4 rounded-lg border border-teal-200 hover:shadow-lg transition-all duration-300">
+                            <h5 class="font-semibold text-teal-800 mb-2">
+                                <i class="fas fa-sitemap text-teal-600 mr-2"></i>
+                                Complete NAS
+                            </h5>
+                            <p class="text-sm text-teal-700">Learn how NAS-D and NAS-L combine for balanced global-local chronological evaluation.</p>
+                        </div>
+                        <div class="bg-white bg-opacity-60 p-4 rounded-lg border border-teal-200 hover:shadow-lg transition-all duration-300">
+                            <h5 class="font-semibold text-teal-800 mb-2">
+                                <i class="fas fa-trophy text-teal-600 mr-2"></i>
+                                Full VCS System
+                            </h5>
+                            <p class="text-sm text-teal-700">Understand the complete VCS framework integrating GAS, LAS, and NAS for comprehensive evaluation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </main>
+        </article>
+    </div>
+</body>
+</html>

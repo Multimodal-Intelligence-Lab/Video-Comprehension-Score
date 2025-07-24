@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VCS Playground</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); transition: background 1.5s cubic-bezier(0.25, 0.1, 0.25, 1); }
+        :root {
+            --bg-color: #f8fafc;
+            --light-shadow: rgba(255, 255, 255, 0.8);
+            --dark-shadow: rgba(148, 163, 184, 0.4);
+            --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --ease-out-cubic: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+
+        /* --- Neumorphic Page Container --- */
+        .neumorphic-page-container {
+            background: var(--bg-color);
+            border-radius: 25px;
+            box-shadow: 
+                0 0 24px var(--dark-shadow);
+            margin: 1rem;
+            padding: 2rem;
+            min-height: calc(100vh - 2rem);
+            position: relative;
+        }
+
+        .neumorphic-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* --- Neumorphic Card Style --- */
+        .interactive-card {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+            transition: transform 0.35s var(--ease-out-cubic), box-shadow 0.35s var(--ease-out-cubic), border-color 0.35s var(--ease-out-cubic);
+            will-change: transform, box-shadow;
+        }
+        .interactive-card:hover {
+            box-shadow: 12px 12px 24px var(--dark-shadow), -12px -12px 24px var(--light-shadow);
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .demo-card { 
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(248, 250, 252, 0.65) 100%); 
+            border-color: rgba(226, 232, 240, 0.8);
+            border-left: 3px solid #0d9488;
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow), 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+        .intro-card { 
+            background: linear-gradient(135deg, rgba(254, 252, 232, 0.6) 0%, rgba(254, 243, 199, 0.5) 100%); 
+            border-color: rgba(251, 191, 36, 0.5);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+        }
+
+        /* --- Neumorphic Button Styles --- */
+        .neumorphic-btn {
+            border-radius: 12px;
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            font-weight: 600;
+            box-shadow: 5px 5px 10px var(--dark-shadow), -5px -5px 10px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .neumorphic-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        .neumorphic-btn:hover {
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02);
+        }
+        .neumorphic-btn:hover::before {
+            left: 100%;
+        }
+        .neumorphic-btn:active {
+            box-shadow: inset 4px 4px 8px var(--dark-shadow), inset -4px -4px 8px var(--light-shadow);
+            transform: translateY(1px);
+        }
+        .neumorphic-btn.primary {
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="neumorphic-page-container">
+    <div class="neumorphic-content">
+    <div id="playgroundContent" class="tab-inner-content">
+        <article class="interactive-card overflow-hidden">
+            <!-- Hero Section -->
+            <section id="hero-section" class="py-10 px-4 sm:px-6 lg:px-8">
+                <div class="container mx-auto">
+                    <div class="flex flex-col md:flex-row md:items-stretch gap-8 lg:gap-12">
+                        <!-- Video Section -->
+                        <div class="md:w-1/2 lg:w-3/5 w-full flex md:items-start">
+                            <div class="video-alignment-wrapper rounded-lg shadow-2xl overflow-hidden border-2 border-teal-500/50 bg-black w-full">
+                                <div class="relative w-full h-full">
+                                    <video autoplay muted loop playsinline class="rounded-md absolute top-0 left-0 w-full h-full object-contain">
+                                        <source src="assets/videos/vcs/vcs.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Title and Links Section -->
+                        <div class="md:w-1/2 lg:w-2/5 w-full text-left flex flex-col">
+                            <div class="flex-grow">
+                                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-3 leading-tight">
+                                    Video Comprehension Score (VCS)
+                                </h1>
+                                <p class="text-teal-200 text-base sm:text-lg mb-6">
+                                    Interactive playground to explore and understand the core concepts of VCS through hands-on experimentation.
+                                </p>
+                                
+                                <!-- 6 Link Boxes in 3x2 Grid -->
+                                <div class="grid grid-cols-2 gap-3 mb-6">
+                                    <a href="https://github.com/hdubey-debug/vcs" target="_blank" rel="noopener noreferrer" class="hero-link-neumorphic group">
+                                        <i class="fab fa-github fa-2x mb-2 text-teal-300 group-hover:text-white transition-colors"></i>
+                                        <span class="text-sm font-medium">GitHub Repository</span>
+                                    </a>
+                                    <a href="https://test.pypi.org/project/vcs-metrics/" target="_blank" rel="noopener noreferrer" class="hero-link-neumorphic group">
+                                        <i class="fas fa-box-open fa-2x mb-2 text-teal-300 group-hover:text-white transition-colors"></i>
+                                        <span class="text-sm font-medium">PyPI Package</span>
+                                    </a>
+                                    <a href="#paper-url" class="hero-link-neumorphic group">
+                                        <i class="fas fa-file-alt fa-2x mb-2 text-teal-300 group-hover:text-white transition-colors"></i>
+                                        <span class="text-sm font-medium">Research Paper</span>
+                                    </a>
+                                    <a href="https://chulwoopack.com/lab/" target="_blank" rel="noopener noreferrer" class="hero-link-neumorphic group">
+                                        <i class="fas fa-flask fa-2x mb-2 text-teal-300 group-hover:text-white transition-colors"></i>
+                                        <span class="text-sm font-medium">Research Lab</span>
+                                    </a>
+                                    <a href="mailto:your-email@example.com" class="hero-link-neumorphic group">
+                                        <i class="fas fa-envelope fa-2x mb-2 text-teal-300 group-hover:text-white transition-colors"></i>
+                                        <span class="text-sm font-medium">Contact Us</span>
+                                    </a>
+                                    <div class="hero-link-neumorphic group cursor-pointer" id="authorsBox">
+                                        <i class="fas fa-users fa-2x mb-2 text-teal-300 group-hover:text-white transition-colors"></i>
+                                        <span class="text-sm font-medium">Meet Authors</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-4 border-t border-teal-700/50">
+                                <p class="text-sm text-teal-300 text-center">
+                                    South Dakota State University &copy; 2024
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Component Discovery Grid -->
+            <div class="component-discovery-section">
+                <div class="discovery-header">
+                    <h2 class="discovery-title">Explore VCS Components</h2>
+                    <p class="discovery-subtitle">Click any component card to launch an interactive demonstration</p>
+                </div>
+                
+                <div class="components-grid">
+                    <!-- Introduction Card -->
+                    <div class="component-card interactive-card" data-component="introduction">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <div class="card-badge">Foundation</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Introduction</h3>
+                            <p class="card-description">Learn about video description evaluation challenges and how VCS solves them</p>
+                            <div class="card-tags">
+                                <span class="tag">Interactive</span>
+                                <span class="tag">Examples</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="demo-button neumorphic-btn">
+                                <i class="fas fa-rocket mr-2"></i>
+                                Explore Concepts
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Core Technologies Card -->
+
+                    <!-- GAS Card -->
+                    <div class="component-card interactive-card" data-component="gas">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <div class="card-badge">Core Metric</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Global Alignment Score (GAS)</h3>
+                            <p class="card-description">Overall thematic similarity measurement</p>
+                            <div class="card-tags">
+                                <span class="tag">Interactive</span>
+                                <span class="tag">Examples</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="demo-button neumorphic-btn">
+                                <i class="fas fa-tasks mr-2"></i>
+                                Try Interactive Demo
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Mapping Windows Card -->
+                    <div class="component-card interactive-card" data-component="mapping-windows">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-window-restore"></i>
+                            </div>
+                            <div class="card-badge">Intermediate</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Mapping Windows</h3>
+                            <p class="card-description">Define alignment ranges for different text lengths</p>
+                            <div class="card-tags">
+                                <span class="tag">Interactive</span>
+                                <span class="tag">Visualization</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="demo-button neumorphic-btn">
+                                <i class="fas fa-window-restore mr-2"></i>
+                                Try Interactive Demo
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Best Matching Card -->
+                    <div class="component-card interactive-card" data-component="best-matching">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <div class="card-badge">Intermediate</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Best Matching Algorithm</h3>
+                            <p class="card-description">Establish robust chunk correspondences using similarity constraints</p>
+                            <div class="card-tags">
+                                <span class="tag">Interactive</span>
+                                <span class="tag">Algorithm</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="demo-button neumorphic-btn">
+                                <i class="fas fa-magic mr-2"></i>
+                                Try Interactive Demo
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- LAS Card -->
+                    <div class="component-card interactive-card" data-component="las">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="card-badge">Core Metric</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Local Alignment Score (LAS)</h3>
+                            <p class="card-description">Fine-grained semantic quality assessment</p>
+                            <div class="card-tags">
+                                <span class="tag">Interactive</span>
+                                <span class="tag">F1 Score</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="demo-button neumorphic-btn">
+                                <i class="fas fa-tasks mr-2"></i>
+                                Try Interactive Demo
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- NAS Distance Card -->
+                    <div class="component-card interactive-card" data-component="nas-distance">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-route"></i>
+                            </div>
+                            <div class="card-badge">Core Metric</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Distance-based Narrative Alignment Score (NAS-D)</h3>
+                            <p class="card-description">Penalize position deviations within mapping windows</p>
+                            <div class="card-tags">
+                                <span class="tag">Interactive</span>
+                                <span class="tag">Chronology</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="demo-button neumorphic-btn">
+                                <i class="fas fa-route mr-2"></i>
+                                Try Interactive Demo
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- NAS Line Card -->
+                    <div class="component-card interactive-card" data-component="nas-line">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-wave-square"></i>
+                            </div>
+                            <div class="card-badge">Core Metric</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Line-based Narrative Alignment Score (NAS-L)</h3>
+                            <p class="card-description">Evaluate chronological flow of consecutive matched elements</p>
+                            <div class="card-tags">
+                                <span class="tag">Interactive</span>
+                                <span class="tag">Flow Analysis</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="demo-button neumorphic-btn">
+                                <i class="fas fa-wave-square mr-2"></i>
+                                Try Interactive Demo
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- LCT NAS-D Card -->
+                    <div class="component-card interactive-card" data-component="lct-nas-d">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-sliders-h"></i>
+                            </div>
+                            <div class="card-badge">Advanced</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Local Chronology Tolerance (LCT) Effect on NAS-D</h3>
+                            <p class="card-description">Configure chronology tolerance for Distance-based Narrative Alignment Score calculations</p>
+                            <div class="card-tags">
+                                <span class="tag">Interactive</span>
+                                <span class="tag">Tolerance</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="demo-button neumorphic-btn">
+                                <i class="fas fa-sliders-h mr-2"></i>
+                                Try Interactive Demo
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- LCT NAS-L Card -->
+                    <div class="component-card interactive-card" data-component="lct-nas-l">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-sliders-h"></i>
+                            </div>
+                            <div class="card-badge">Advanced</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Local Chronology Tolerance (LCT) Effect on NAS-L</h3>
+                            <p class="card-description">Configure chronology tolerance for Line-based Narrative Alignment Score flow analysis</p>
+                            <div class="card-tags">
+                                <span class="tag">Interactive</span>
+                                <span class="tag">Flow Control</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="demo-button neumorphic-btn">
+                                <i class="fas fa-sliders-h mr-2"></i>
+                                Try Interactive Demo
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Window Regularizer Card -->
+                    <div class="component-card interactive-card" data-component="window-regularizer">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-window-maximize"></i>
+                            </div>
+                            <div class="card-badge">Advanced</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Window Regularizer for Narrative Alignment</h3>
+                            <p class="card-description">Adjust NAS scores for extreme text length disparities</p>
+                            <div class="card-tags">
+                                <span class="tag">Interactive</span>
+                                <span class="tag">Regularization</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="demo-button neumorphic-btn">
+                                <i class="fas fa-window-maximize mr-2"></i>
+                                Try Interactive Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="component-card interactive-card" data-component="nas">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <div class="card-badge">Core Metric</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Narrative Alignment Score (NAS)</h3>
+                            <p class="card-description">Complete Narrative Alignment Score calculation</p>
+                            <div class="card-tags">
+                                <span class="tag">Interactive</span>
+                                <span class="tag">Examples</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="demo-button neumorphic-btn">
+                                <i class="fas fa-tasks mr-2"></i>
+                                Try Interactive Demo
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Final VCS Card -->
+                    <div class="component-card interactive-card" data-component="final-vcs">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <div class="card-badge">Complete System</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Final VCS Score</h3>
+                            <p class="card-description">Complete Video Comprehension Score calculation</p>
+                            <div class="card-tags">
+                                <span class="tag">Interactive</span>
+                                <span class="tag">Complete Demo</span>
+                                <span class="tag">All Metrics</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="demo-button neumorphic-btn">
+                                <i class="fas fa-calculator mr-2"></i>
+                                Experience Complete VCS
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    </div>
+    </div>
+
+        <!-- Component Demo Modal -->
+        <div id="componentModal" class="modal-overlay">
+            <div class="component-modal-container">
+                <div class="component-modal-header">
+                    <div class="modal-title-section">
+                        <div class="modal-component-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="modal-title-info">
+                            <h2 class="modal-title" id="modalTitle">Component Demo</h2>
+                            <p class="modal-subtitle" id="modalSubtitle">Interactive demonstration</p>
+                        </div>
+                    </div>
+                    <div class="modal-controls">
+                        <button class="modal-nav-btn neumorphic-btn" id="prevComponent" title="Previous Component">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="modal-nav-btn neumorphic-btn" id="nextComponent" title="Next Component">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="modal-close neumorphic-btn" id="closeComponentModal">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="component-modal-content">
+                    <div class="component-iframe-container">
+                        <iframe 
+                            id="componentIframe"
+                            class="component-iframe"
+                            title="Component Interactive Demo"
+                            >
+                        </iframe>
+                        
+                        <!-- Loading State -->
+                        <div class="iframe-loading" id="iframeLoading">
+                            <div class="loading-spinner">
+                                <i class="fas fa-spinner fa-spin text-4xl text-teal-600 mb-4"></i>
+                                <p class="text-lg text-gray-600">Loading interactive demo...</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Coming Soon State -->
+                        <div class="iframe-coming-soon hidden" id="iframeComingSoon">
+                            <div class="coming-soon-content">
+                                <i class="fas fa-tools text-6xl text-gray-400 mb-4"></i>
+                                <h3 class="text-2xl font-bold text-gray-700 mb-2">Demo Coming Soon</h3>
+                                <p class="text-gray-600">This interactive demonstration is currently under development.</p>
+                                <p class="text-sm text-gray-500 mt-4">Check back soon for an amazing interactive experience!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Authors Modal -->
+        <div id="authorsModal" class="modal-overlay">
+            <div class="authors-modal-container">
+                <div class="authors-modal-header">
+                    <h2 class="authors-modal-title">
+                        <i class="fas fa-users text-teal-600 mr-2"></i>
+                        Research Team
+                    </h2>
+                    <button class="authors-modal-close neumorphic-btn" id="closeModal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="authors-modal-content">
+                    <div class="authors-grid-neumorphic">
+                        <!-- Author 1 -->
+                        <div class="author-card-neumorphic">
+                            <div class="author-header-neumorphic">
+                                <div class="author-avatar-neumorphic">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <div class="author-info-neumorphic">
+                                    <h3 class="author-name-neumorphic">
+                                        Harsh Dubey
+                                        <sup class="author-rank-neumorphic">1</sup>
+                                    </h3>
+                                    <p class="author-role-neumorphic">First Author</p>
+                                </div>
+                            </div>
+                            <div class="author-details-neumorphic">
+                                <p class="author-affiliation-neumorphic">
+                                    <i class="fas fa-university text-teal-500 mr-1"></i>
+                                    South Dakota State University
+                                </p>
+                                <div class="author-links-neumorphic">
+                                    <a href="#author-harsh" class="author-link-btn-neumorphic">
+                                        <i class="fas fa-user mr-1"></i>Profile
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Author 2 -->
+                        <div class="author-card-neumorphic">
+                            <div class="author-header-neumorphic">
+                                <div class="author-avatar-neumorphic">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <div class="author-info-neumorphic">
+                                    <h3 class="author-name-neumorphic">
+                                        Mukhtiar Ali
+                                        <sup class="author-rank-neumorphic">2</sup>
+                                    </h3>
+                                    <p class="author-role-neumorphic">Co-Author</p>
+                                </div>
+                            </div>
+                            <div class="author-details-neumorphic">
+                                <p class="author-affiliation-neumorphic">
+                                    <i class="fas fa-university text-teal-500 mr-1"></i>
+                                    South Dakota State University
+                                </p>
+                                <div class="author-links-neumorphic">
+                                    <a href="#author-mukhtiar" class="author-link-btn-neumorphic">
+                                        <i class="fas fa-user mr-1"></i>Profile
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Author 3 -->
+                        <div class="author-card-neumorphic">
+                            <div class="author-header-neumorphic">
+                                <div class="author-avatar-neumorphic">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <div class="author-info-neumorphic">
+                                    <h3 class="author-name-neumorphic">
+                                        Sugam Mishra
+                                        <sup class="author-rank-neumorphic">3</sup>
+                                    </h3>
+                                    <p class="author-role-neumorphic">Co-Author</p>
+                                </div>
+                            </div>
+                            <div class="author-details-neumorphic">
+                                <p class="author-affiliation-neumorphic">
+                                    <i class="fas fa-university text-teal-500 mr-1"></i>
+                                    South Dakota State University
+                                </p>
+                                <div class="author-links-neumorphic">
+                                    <a href="#author-sugam" class="author-link-btn-neumorphic">
+                                        <i class="fas fa-user mr-1"></i>Profile
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Author 4 -->
+                        <div class="author-card-neumorphic">
+                            <div class="author-header-neumorphic">
+                                <div class="author-avatar-neumorphic">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <div class="author-info-neumorphic">
+                                    <h3 class="author-name-neumorphic">
+                                        Chulwoo Pack
+                                        <sup class="author-rank-neumorphic">4</sup>
+                                    </h3>
+                                    <p class="author-role-neumorphic">Co-Author and Advisor</p>
+                                </div>
+                            </div>
+                            <div class="author-details-neumorphic">
+                                <p class="author-affiliation-neumorphic">
+                                    <i class="fas fa-university text-teal-500 mr-1"></i>
+                                    South Dakota State University
+                                </p>
+                                <div class="author-links-neumorphic">
+                                    <a href="https://chulwoopack.com/" target="_blank" rel="noopener noreferrer" class="author-link-btn-neumorphic external">
+                                        <i class="fas fa-external-link-alt mr-1"></i>Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="authors-modal-footer">
+                        <div class="institution-info-neumorphic">
+                            <i class="fas fa-map-marker-alt text-teal-500 mr-2"></i>
+                            <span class="text-gray-600">South Dakota State University, Brookings, SD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- Modern JavaScript Enhancements -->
+    <script>
+        // Smooth scroll progress indicator
+        function updateScrollIndicator() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollProgress = (scrollTop / scrollHeight) * 100;
+            
+            document.getElementById('scrollIndicator').style.transform = `scaleX(${scrollProgress / 100})`;
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Initialize animations and scroll effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add scroll progress indicator
+            window.addEventListener('scroll', updateScrollIndicator);
+            
+            // Add animation classes to elements
+            const discoveryHeader = document.querySelector('.discovery-header');
+            if (discoveryHeader) {
+                discoveryHeader.classList.add('fade-in');
+                observer.observe(discoveryHeader);
+            }
+
+            // Animate component cards with staggered effect
+            const componentCards = document.querySelectorAll('.component-card');
+            componentCards.forEach((card, index) => {
+                card.style.transitionDelay = `${index * 0.1}s`;
+                card.classList.add('fade-in');
+                observer.observe(card);
+            });
+
+            // Animate hero sections
+            const heroContent = document.querySelector('#hero-section .container');
+            if (heroContent) {
+                heroContent.classList.add('slide-in-left');
+                observer.observe(heroContent);
+            }
+
+            // Enhanced hover effects for component cards
+            componentCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    // Add subtle tilt effect
+                    this.style.transform = 'translateY(-12px) scale(1.02) rotateX(5deg)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = '';
+                });
+            });
+
+            // Smooth modal animations
+            const modals = document.querySelectorAll('.modal-overlay');
+            modals.forEach(modal => {
+                modal.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        this.classList.remove('show');
+                    }
+                });
+            });
+
+            // Enhanced button ripple effect
+            const buttons = document.querySelectorAll('.demo-button:not(.coming-soon)');
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    const ripple = document.createElement('span');
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
+                    
+                    ripple.style.cssText = `
+                        position: absolute;
+                        width: ${size}px;
+                        height: ${size}px;
+                        left: ${x}px;
+                        top: ${y}px;
+                        background: rgba(255, 255, 255, 0.3);
+                        border-radius: 50%;
+                        transform: scale(0);
+                        animation: ripple 0.6s ease-out;
+                        pointer-events: none;
+                    `;
+                    
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+
+            // Add ripple animation keyframes
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes ripple {
+                    to {
+                        transform: scale(4);
+                        opacity: 0;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('#hero-section::before');
+            
+            parallaxElements.forEach(element => {
+                const speed = 0.5;
+                element.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+
+        // Modern loading states
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.opacity = '0';
+            document.body.style.transform = 'translateY(20px)';
+            document.body.style.transition = 'all 0.6s ease';
+            
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+                document.body.style.transform = 'translateY(0)';
+            }, 100);
+        });
+    </script>
+</body>
+</html>

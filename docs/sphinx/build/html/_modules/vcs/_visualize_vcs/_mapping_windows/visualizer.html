@@ -1,0 +1,290 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vcs._visualize_vcs._mapping_windows.visualizer &mdash; VCS Metrics v1.0.2</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css?v=887dc02f" />
+
+  
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../_static/documentation_options.js?v=1ed6394b"></script>
+      <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #0d9488" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            VCS Metrics
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api.html">API Reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Resources:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/yourusername/vcs-metrics">GitHub Repository</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/vcs-metrics/">PyPI Package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #0d9488" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">VCS Metrics</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">vcs._visualize_vcs._mapping_windows.visualizer</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for vcs._visualize_vcs._mapping_windows.visualizer</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="kn">import</span> <span class="n">Rectangle</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Any</span>
+
+<div class="viewcode-block" id="visualize_mapping_windows">
+<a class="viewcode-back" href="../../../../api.html#vcs.visualize_mapping_windows">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">visualize_mapping_windows</span><span class="p">(</span><span class="n">internals</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Visualize the mapping windows used for constraining alignment between texts.</span>
+<span class="sd">    </span>
+<span class="sd">    Shows the allowable alignment regions (mapping windows) that constrain which</span>
+<span class="sd">    reference chunks can be matched to which generated chunks. This helps maintain</span>
+<span class="sd">    chronological ordering while allowing some flexibility. Also displays Local</span>
+<span class="sd">    Chronology Tolerance (LCT) zones when applicable.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    internals : dict</span>
+<span class="sd">        The internals dictionary returned by ``compute_vcs_score`` with </span>
+<span class="sd">        ``return_internals=True``. Must contain &#39;mapping_windows&#39;, &#39;alignment&#39;,</span>
+<span class="sd">        &#39;config&#39;, and &#39;metrics&#39; sections.</span>
+<span class="sd">    </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    matplotlib.figure.Figure</span>
+<span class="sd">        A figure with two subplots showing precision and recall mapping windows,</span>
+<span class="sd">        including LCT padding zones and actual matches found.</span>
+<span class="sd">    </span>
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; result = compute_vcs_score(ref_text, gen_text, segmenter, embedder,</span>
+<span class="sd">    ...                           return_internals=True, lct=1)</span>
+<span class="sd">    &gt;&gt;&gt; fig = visualize_mapping_windows(result[&#39;internals&#39;])</span>
+<span class="sd">    &gt;&gt;&gt; fig.show()</span>
+<span class="sd">    </span>
+<span class="sd">    **Understanding the Visualization:**</span>
+<span class="sd">    </span>
+<span class="sd">    &gt;&gt;&gt; # The left plot shows precision windows (gen → ref)</span>
+<span class="sd">    &gt;&gt;&gt; # The right plot shows recall windows (ref → gen)</span>
+<span class="sd">    &gt;&gt;&gt; # Blue rectangles are original mapping windows</span>
+<span class="sd">    &gt;&gt;&gt; # Green dashed areas are LCT tolerance zones (if lct &gt; 0)</span>
+<span class="sd">    &gt;&gt;&gt; # Colored dots show actual matches found</span>
+<span class="sd">    </span>
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    * Mapping windows enforce approximate chronological order</span>
+<span class="sd">    * LCT (Local Chronology Tolerance) adds flexibility zones around windows</span>
+<span class="sd">    * Window size depends on the ratio of text lengths</span>
+<span class="sd">    * Matches outside windows incur penalties in NAS-D calculation</span>
+<span class="sd">    * Green padding shows where LCT allows matches without penalty</span>
+<span class="sd">    </span>
+<span class="sd">    See Also</span>
+<span class="sd">    --------</span>
+<span class="sd">    visualize_distance_nas : See how mapping windows affect NAS-D penalties</span>
+<span class="sd">    visualize_similarity_matrix : Compare with unconstrained similarity</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">ref_len</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;texts&#39;</span><span class="p">][</span><span class="s1">&#39;reference_length&#39;</span><span class="p">]</span>
+    <span class="n">gen_len</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;texts&#39;</span><span class="p">][</span><span class="s1">&#39;generated_length&#39;</span><span class="p">]</span>
+    <span class="n">precision_windows</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;mapping_windows&#39;</span><span class="p">][</span><span class="s1">&#39;precision&#39;</span><span class="p">]</span>
+    <span class="n">recall_windows</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;mapping_windows&#39;</span><span class="p">][</span><span class="s1">&#39;recall&#39;</span><span class="p">]</span>
+    
+    <span class="c1"># Get LCT value from config</span>
+    <span class="n">lct</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;config&#39;</span><span class="p">][</span><span class="s1">&#39;lct&#39;</span><span class="p">]</span>
+    
+    <span class="c1"># Get the LCT window heights from the NAS calculations</span>
+    <span class="n">prec_window_height</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;metrics&#39;</span><span class="p">][</span><span class="s1">&#39;nas&#39;</span><span class="p">][</span><span class="s1">&#39;nas_d&#39;</span><span class="p">][</span><span class="s1">&#39;precision&#39;</span><span class="p">][</span><span class="s1">&#39;mapping_window_height&#39;</span><span class="p">]</span>
+    <span class="n">rec_window_height</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;metrics&#39;</span><span class="p">][</span><span class="s1">&#39;nas&#39;</span><span class="p">][</span><span class="s1">&#39;nas_d&#39;</span><span class="p">][</span><span class="s1">&#39;recall&#39;</span><span class="p">][</span><span class="s1">&#39;mapping_window_height&#39;</span><span class="p">]</span> 
+    
+    <span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+    
+    <span class="n">is_ref_longer</span> <span class="o">=</span> <span class="n">ref_len</span> <span class="o">&gt;=</span> <span class="n">gen_len</span>
+    
+    <span class="n">ax_precision</span> <span class="o">=</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">g_idx</span><span class="p">,</span> <span class="p">(</span><span class="n">r_start</span><span class="p">,</span> <span class="n">r_end</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">precision_windows</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">g_idx</span> <span class="o">&lt;</span> <span class="n">gen_len</span><span class="p">:</span>
+            <span class="n">height</span> <span class="o">=</span> <span class="n">r_end</span> <span class="o">-</span> <span class="n">r_start</span>
+            <span class="c1"># Draw the original mapping window</span>
+            <span class="n">rect</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">((</span><span class="n">g_idx</span><span class="p">,</span> <span class="n">r_start</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> 
+                            <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;lightblue&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+            <span class="n">ax_precision</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">rect</span><span class="p">)</span>
+            
+            <span class="c1"># Draw LCT padding if lct &gt; 0</span>
+            <span class="k">if</span> <span class="n">lct</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="c1"># Use the centralized LCT window height from NAS calculation</span>
+                <span class="n">lct_padding</span> <span class="o">=</span> <span class="n">lct</span> <span class="o">*</span> <span class="n">prec_window_height</span>
+                
+                <span class="c1"># Create expanded window with LCT padding</span>
+                <span class="n">expanded_start</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">r_start</span> <span class="o">-</span> <span class="n">lct_padding</span><span class="p">)</span>
+                <span class="n">expanded_end</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">ref_len</span><span class="p">,</span> <span class="n">r_end</span> <span class="o">+</span> <span class="n">lct_padding</span><span class="p">)</span>
+                
+                <span class="c1"># Draw the LCT padding zone (if it extends beyond the original window)</span>
+                <span class="k">if</span> <span class="n">expanded_start</span> <span class="o">&lt;</span> <span class="n">r_start</span><span class="p">:</span>
+                    <span class="n">top_padding</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">((</span><span class="n">g_idx</span><span class="p">,</span> <span class="n">expanded_start</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">r_start</span> <span class="o">-</span> <span class="n">expanded_start</span><span class="p">,</span>
+                                        <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;lightgreen&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+                    <span class="n">ax_precision</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">top_padding</span><span class="p">)</span>
+                
+                <span class="k">if</span> <span class="n">expanded_end</span> <span class="o">&gt;</span> <span class="n">r_end</span><span class="p">:</span>
+                    <span class="n">bottom_padding</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">((</span><span class="n">g_idx</span><span class="p">,</span> <span class="n">r_end</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">expanded_end</span> <span class="o">-</span> <span class="n">r_end</span><span class="p">,</span>
+                                        <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;lightgreen&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+                    <span class="n">ax_precision</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">bottom_padding</span><span class="p">)</span>
+            
+            <span class="c1"># Add text label for window</span>
+            <span class="n">ax_precision</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">g_idx</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">r_start</span> <span class="o">+</span> <span class="n">height</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;P(</span><span class="si">{</span><span class="n">g_idx</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">,</span>
+                            <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+    
+    <span class="n">ax_precision</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">gen_len</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">)</span>
+    <span class="n">ax_precision</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">ref_len</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">)</span>
+    <span class="n">ax_precision</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Generation Index&#39;</span><span class="p">)</span>
+    <span class="n">ax_precision</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Reference Index&#39;</span><span class="p">)</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;Precision Mapping Windows (ref→gen)&#39;</span>
+    <span class="k">if</span> <span class="n">lct</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">title</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39; (LCT=</span><span class="si">{</span><span class="n">lct</span><span class="si">}</span><span class="s1">, LCT Window=</span><span class="si">{</span><span class="n">prec_window_height</span><span class="si">}</span><span class="s1">)&#39;</span>
+    <span class="n">ax_precision</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+    <span class="n">ax_precision</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+    
+    <span class="c1"># Add a legend for LCT padding if applicable</span>
+    <span class="k">if</span> <span class="n">lct</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">lct_patch</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;lightgreen&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+        <span class="n">ax_precision</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="n">lct_patch</span><span class="p">],</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;LCT Padding (LCT=</span><span class="si">{</span><span class="n">lct</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">])</span>
+    
+    <span class="n">precision_matches</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;alignment&#39;</span><span class="p">][</span><span class="s1">&#39;precision&#39;</span><span class="p">][</span><span class="s1">&#39;matches&#39;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">g_idx</span><span class="p">,</span> <span class="n">r_idx</span> <span class="ow">in</span> <span class="n">precision_matches</span><span class="p">:</span>
+        <span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">g_idx</span> <span class="o">&lt;</span> <span class="n">gen_len</span> <span class="ow">and</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">r_idx</span> <span class="o">&lt;</span> <span class="n">ref_len</span><span class="p">:</span>
+            <span class="n">ax_precision</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">g_idx</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">r_idx</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">&#39;ro&#39;</span><span class="p">,</span> <span class="n">ms</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+    
+    <span class="n">ax_recall</span> <span class="o">=</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">r_idx</span><span class="p">,</span> <span class="p">(</span><span class="n">g_start</span><span class="p">,</span> <span class="n">g_end</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">recall_windows</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">r_idx</span> <span class="o">&lt;</span> <span class="n">ref_len</span><span class="p">:</span>
+            <span class="n">height</span> <span class="o">=</span> <span class="n">g_end</span> <span class="o">-</span> <span class="n">g_start</span>
+            <span class="c1"># Draw the original mapping window</span>
+            <span class="n">rect</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">((</span><span class="n">r_idx</span><span class="p">,</span> <span class="n">g_start</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> 
+                            <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;mistyrose&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+            <span class="n">ax_recall</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">rect</span><span class="p">)</span>
+            
+            <span class="c1"># Draw LCT padding if lct &gt; 0</span>
+            <span class="k">if</span> <span class="n">lct</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="c1"># Use the centralized LCT window height from NAS calculation</span>
+                <span class="n">lct_padding</span> <span class="o">=</span> <span class="n">lct</span> <span class="o">*</span> <span class="n">rec_window_height</span>
+                
+                <span class="c1"># Create expanded window with LCT padding</span>
+                <span class="n">expanded_start</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">g_start</span> <span class="o">-</span> <span class="n">lct_padding</span><span class="p">)</span>
+                <span class="n">expanded_end</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">gen_len</span><span class="p">,</span> <span class="n">g_end</span> <span class="o">+</span> <span class="n">lct_padding</span><span class="p">)</span>
+                
+                <span class="c1"># Draw the LCT padding zone (if it extends beyond the original window)</span>
+                <span class="k">if</span> <span class="n">expanded_start</span> <span class="o">&lt;</span> <span class="n">g_start</span><span class="p">:</span>
+                    <span class="n">top_padding</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">((</span><span class="n">r_idx</span><span class="p">,</span> <span class="n">expanded_start</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">g_start</span> <span class="o">-</span> <span class="n">expanded_start</span><span class="p">,</span>
+                                        <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;lightgreen&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+                    <span class="n">ax_recall</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">top_padding</span><span class="p">)</span>
+                
+                <span class="k">if</span> <span class="n">expanded_end</span> <span class="o">&gt;</span> <span class="n">g_end</span><span class="p">:</span>
+                    <span class="n">bottom_padding</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">((</span><span class="n">r_idx</span><span class="p">,</span> <span class="n">g_end</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">expanded_end</span> <span class="o">-</span> <span class="n">g_end</span><span class="p">,</span>
+                                        <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;lightgreen&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+                    <span class="n">ax_recall</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">bottom_padding</span><span class="p">)</span>
+            
+            <span class="c1"># Add text label for window</span>
+            <span class="n">ax_recall</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">r_idx</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">g_start</span> <span class="o">+</span> <span class="n">height</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;R(</span><span class="si">{</span><span class="n">r_idx</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">,</span>
+                          <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+    
+    <span class="n">ax_recall</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">ref_len</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">)</span>
+    <span class="n">ax_recall</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">gen_len</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">)</span>
+    <span class="n">ax_recall</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Reference Index&#39;</span><span class="p">)</span>
+    <span class="n">ax_recall</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Generation Index&#39;</span><span class="p">)</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;Recall Mapping Windows (gen→ref)&#39;</span>
+    <span class="k">if</span> <span class="n">lct</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">title</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39; (LCT=</span><span class="si">{</span><span class="n">lct</span><span class="si">}</span><span class="s1">, LCT Window=</span><span class="si">{</span><span class="n">rec_window_height</span><span class="si">}</span><span class="s1">)&#39;</span>
+    <span class="n">ax_recall</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+    <span class="n">ax_recall</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+    
+    <span class="c1"># Add a legend for LCT padding if applicable</span>
+    <span class="k">if</span> <span class="n">lct</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">lct_patch</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;lightgreen&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+        <span class="n">ax_recall</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="n">lct_patch</span><span class="p">],</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;LCT Padding (LCT=</span><span class="si">{</span><span class="n">lct</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">])</span>
+    
+    <span class="n">recall_matches</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;alignment&#39;</span><span class="p">][</span><span class="s1">&#39;recall&#39;</span><span class="p">][</span><span class="s1">&#39;matches&#39;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">g_idx</span><span class="p">,</span> <span class="n">r_idx</span> <span class="ow">in</span> <span class="n">recall_matches</span><span class="p">:</span>
+        <span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">g_idx</span> <span class="o">&lt;</span> <span class="n">gen_len</span> <span class="ow">and</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">r_idx</span> <span class="o">&lt;</span> <span class="n">ref_len</span><span class="p">:</span>
+            <span class="n">ax_recall</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">r_idx</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">g_idx</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">ms</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+    
+    <span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Mapping Windows (ref_len=</span><span class="si">{</span><span class="n">ref_len</span><span class="si">}</span><span class="s1">, gen_len=</span><span class="si">{</span><span class="n">gen_len</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">fig</span></div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Harsh Dubey, Chulwoo Pack.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

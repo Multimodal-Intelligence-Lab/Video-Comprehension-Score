@@ -1,0 +1,546 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vcs.scorer &mdash; VCS Metrics v1.0.2</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=887dc02f" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=1ed6394b"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #0d9488" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            VCS Metrics
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api.html">API Reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Resources:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/yourusername/vcs-metrics">GitHub Repository</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/vcs-metrics/">PyPI Package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #0d9488" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">VCS Metrics</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">vcs.scorer</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for vcs.scorer</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Any</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Any</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">._config</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">DEFAULT_CONTEXT_CUTOFF_VALUE</span><span class="p">,</span>
+    <span class="n">DEFAULT_CONTEXT_WINDOW_CONTROL</span><span class="p">,</span>
+    <span class="n">DEFAULT_LCT</span><span class="p">,</span>
+    <span class="n">DEFAULT_CHUNK_SIZE</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">._utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">_validate_seg_embed_functions</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">._segmenting</span><span class="w"> </span><span class="kn">import</span> <span class="n">_segment_and_chunk_texts</span><span class="p">,</span> <span class="n">_build_similarity_matrix</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">._mapping_windows</span><span class="w"> </span><span class="kn">import</span> <span class="n">_get_mapping_windows</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">._matching</span><span class="w"> </span><span class="kn">import</span> <span class="n">_calculate_row_col_matches_context</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">._metrics</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">_compute_gas_metrics</span><span class="p">,</span>
+    <span class="n">_compute_las_metrics</span><span class="p">,</span>
+    <span class="n">_compute_nas_metrics</span><span class="p">,</span>
+    <span class="n">_compute_vcs_metrics</span><span class="p">,</span>
+<span class="p">)</span>
+
+<div class="viewcode-block" id="compute_vcs_score">
+<a class="viewcode-back" href="../../api.html#vcs.compute_vcs_score">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">compute_vcs_score</span><span class="p">(</span>
+    <span class="n">reference_text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">generated_text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">segmenter_fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">str</span><span class="p">],</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span>
+    <span class="n">embedding_fn_las</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">],</span>
+    <span class="n">embedding_fn_gas</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">chunk_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">DEFAULT_CHUNK_SIZE</span><span class="p">,</span>
+    <span class="n">context_cutoff_value</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">DEFAULT_CONTEXT_CUTOFF_VALUE</span><span class="p">,</span>
+    <span class="n">context_window_control</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">DEFAULT_CONTEXT_WINDOW_CONTROL</span><span class="p">,</span>
+    <span class="n">lct</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">DEFAULT_LCT</span><span class="p">,</span>
+    <span class="n">return_all_metrics</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="n">return_internals</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Compute Video Comprehension Score (VCS) between reference and generated text.</span>
+<span class="sd">    </span>
+<span class="sd">    The VCS metric combines Global Alignment Score (GAS), Local Alignment Score (LAS),</span>
+<span class="sd">    and Narrative Alignment Score (NAS) to provide a comprehensive measure of how well</span>
+<span class="sd">    a generated text preserves the narrative structure and semantic content of a</span>
+<span class="sd">    reference text.</span>
+<span class="sd">    </span>
+<span class="sd">    **Key Metrics Computed:**</span>
+<span class="sd">    </span>
+<span class="sd">    * **GAS (Global Alignment Score)**: Measures overall semantic similarity between </span>
+<span class="sd">      the full reference and generated texts using document-level embeddings.</span>
+<span class="sd">    * **LAS (Local Alignment Score)**: Evaluates segment-by-segment semantic similarity</span>
+<span class="sd">      using optimal alignment between text chunks.</span>
+<span class="sd">    * **NAS (Narrative Alignment Score)**: Assesses how well the narrative flow and </span>
+<span class="sd">      chronological structure are preserved, combining distance-based and line-based </span>
+<span class="sd">      alignment measures.</span>
+<span class="sd">    * **VCS (Video Comprehension Score)**: The final combined score that balances all </span>
+<span class="sd">      three metrics to provide an overall narrative similarity assessment.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    reference_text : str</span>
+<span class="sd">        The reference text to compare against. This should be the &quot;ground truth&quot; or</span>
+<span class="sd">        original text that serves as the comparison baseline.</span>
+<span class="sd">    generated_text : str</span>
+<span class="sd">        The generated text to evaluate. This is the text being assessed for how well</span>
+<span class="sd">        it preserves the content and structure of the reference.</span>
+<span class="sd">    segmenter_fn : callable</span>
+<span class="sd">        Function to segment text into meaningful units for comparison. Must take a </span>
+<span class="sd">        string as input and return a list of strings. Common choices include sentence</span>
+<span class="sd">        segmentation, clause segmentation, or custom domain-specific segmentation.</span>
+<span class="sd">        </span>
+<span class="sd">        Example: ``lambda text: text.split(&#39;.&#39;)`` for simple sentence splitting.</span>
+<span class="sd">    embedding_fn_las : callable</span>
+<span class="sd">        Function to compute embeddings for Local Alignment Score calculation. Must </span>
+<span class="sd">        take a list of strings (text segments) and return a torch.Tensor of shape </span>
+<span class="sd">        (n_segments, embedding_dim) where each row is the embedding for one segment.</span>
+<span class="sd">        </span>
+<span class="sd">        Example: A function that uses sentence transformers or other semantic models.</span>
+<span class="sd">    embedding_fn_gas : callable, optional</span>
+<span class="sd">        Function to compute embeddings for Global Alignment Score calculation. If </span>
+<span class="sd">        None, uses ``embedding_fn_las`` for both GAS and LAS calculations. Should </span>
+<span class="sd">        follow the same signature as ``embedding_fn_las``.</span>
+<span class="sd">    chunk_size : int, default=1</span>
+<span class="sd">        Number of consecutive segments to group together for analysis. Larger values</span>
+<span class="sd">        create bigger comparison units but may lose fine-grained alignment details.</span>
+<span class="sd">        </span>
+<span class="sd">        - ``chunk_size=1``: Compare individual segments (most precise)</span>
+<span class="sd">        - ``chunk_size=2``: Compare pairs of segments  </span>
+<span class="sd">        - ``chunk_size=3+``: Compare larger groups</span>
+<span class="sd">    context_cutoff_value : float, default=0.6</span>
+<span class="sd">        Threshold that controls when context windows are applied during best match </span>
+<span class="sd">        finding. Must be between 0 and 1. Higher values make context windows less </span>
+<span class="sd">        likely to be applied, leading to more restrictive matching.</span>
+<span class="sd">    context_window_control : float, default=4.0</span>
+<span class="sd">        Controls the size of context windows when they are applied. Larger values </span>
+<span class="sd">        create smaller context windows (more restrictive), while smaller values </span>
+<span class="sd">        create larger context windows (more permissive).</span>
+<span class="sd">    lct : int, default=0</span>
+<span class="sd">        Local Chronology Tolerance - allows flexibility in narrative ordering. </span>
+<span class="sd">        Higher values permit more deviation from strict chronological order:</span>
+<span class="sd">        </span>
+<span class="sd">        - ``lct=0``: Strict chronological order required</span>
+<span class="sd">        - ``lct=1``: Small deviations allowed</span>
+<span class="sd">        - ``lct=2+``: More flexible chronological matching</span>
+<span class="sd">    return_all_metrics : bool, default=False</span>
+<span class="sd">        If True, returns all intermediate metrics (GAS, LAS, NAS components) in </span>
+<span class="sd">        addition to the final VCS score. Useful for detailed analysis.</span>
+<span class="sd">    return_internals : bool, default=False</span>
+<span class="sd">        If True, includes detailed internal calculations and intermediate results.</span>
+<span class="sd">        Required for generating visualizations and detailed analysis reports.</span>
+<span class="sd">    </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    dict</span>
+<span class="sd">        Dictionary containing VCS score and optionally other metrics and internals.</span>
+<span class="sd">        </span>
+<span class="sd">        **Minimal return (default):**</span>
+<span class="sd">        </span>
+<span class="sd">        * ``&#39;VCS&#39;`` : float</span>
+<span class="sd">            The Video Comprehension Score (0.0 to 1.0, higher is better)</span>
+<span class="sd">            </span>
+<span class="sd">        **With return_all_metrics=True:**</span>
+<span class="sd">        </span>
+<span class="sd">        * ``&#39;VCS&#39;`` : float - Video Comprehension Score  </span>
+<span class="sd">        * ``&#39;GAS&#39;`` : float - Global Alignment Score</span>
+<span class="sd">        * ``&#39;GAS-LAS-Scaled&#39;`` : float - Scaled combination of GAS and LAS</span>
+<span class="sd">        * ``&#39;Precision LAS&#39;`` : float - LAS precision component</span>
+<span class="sd">        * ``&#39;Recall LAS&#39;`` : float - LAS recall component  </span>
+<span class="sd">        * ``&#39;LAS&#39;`` : float - Local Alignment Score (F1 of precision/recall)</span>
+<span class="sd">        * ``&#39;Precision NAS-D&#39;`` : float - Distance-based NAS precision</span>
+<span class="sd">        * ``&#39;Recall NAS-D&#39;`` : float - Distance-based NAS recall</span>
+<span class="sd">        * ``&#39;NAS-D&#39;`` : float - Distance-based Narrative Alignment Score</span>
+<span class="sd">        * ``&#39;Precision NAS-L&#39;`` : float - Line-based NAS precision</span>
+<span class="sd">        * ``&#39;Recall NAS-L&#39;`` : float - Line-based NAS recall</span>
+<span class="sd">        * ``&#39;NAS-L&#39;`` : float - Line-based Narrative Alignment Score</span>
+<span class="sd">        * ``&#39;NAS-F1&#39;`` : float - Combined NAS-D and NAS-L score</span>
+<span class="sd">        * ``&#39;Window-Regularizer&#39;`` : float - Regularization factor for window overlap</span>
+<span class="sd">        * ``&#39;NAS&#39;`` : float - Final regularized Narrative Alignment Score</span>
+<span class="sd">            </span>
+<span class="sd">        **With return_internals=True:**</span>
+<span class="sd">        </span>
+<span class="sd">        * ``&#39;internals&#39;`` : dict</span>
+<span class="sd">            Detailed calculation data for visualization and analysis, containing:</span>
+<span class="sd">            </span>
+<span class="sd">            - ``&#39;texts&#39;``: Original and processed text data</span>
+<span class="sd">            - ``&#39;similarity&#39;``: Similarity matrix and related data  </span>
+<span class="sd">            - ``&#39;mapping_windows&#39;``: Alignment window information</span>
+<span class="sd">            - ``&#39;alignment&#39;``: Detailed alignment results</span>
+<span class="sd">            - ``&#39;metrics&#39;``: Breakdown of all metric calculations</span>
+<span class="sd">            - ``&#39;config&#39;``: Configuration parameters used</span>
+<span class="sd">            - ``&#39;best_match&#39;``: Detailed matching information</span>
+<span class="sd">    </span>
+<span class="sd">    Raises</span>
+<span class="sd">    ------</span>
+<span class="sd">    ValueError</span>
+<span class="sd">        If embedding functions are not callable, or if both embedding functions are None.</span>
+<span class="sd">    TypeError</span>
+<span class="sd">        If segmenter_fn is not callable or doesn&#39;t return a list of strings.</span>
+<span class="sd">    </span>
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    **Basic Usage with Sentence Segmentation:**</span>
+<span class="sd">    </span>
+<span class="sd">    &gt;&gt;&gt; import spacy</span>
+<span class="sd">    &gt;&gt;&gt; from sentence_transformers import SentenceTransformer</span>
+<span class="sd">    &gt;&gt;&gt; </span>
+<span class="sd">    &gt;&gt;&gt; # Set up segmentation and embedding functions</span>
+<span class="sd">    &gt;&gt;&gt; nlp = spacy.load(&quot;en_core_web_sm&quot;)</span>
+<span class="sd">    &gt;&gt;&gt; model = SentenceTransformer(&#39;all-MiniLM-L6-v2&#39;)</span>
+<span class="sd">    &gt;&gt;&gt; </span>
+<span class="sd">    &gt;&gt;&gt; def segment_sentences(text):</span>
+<span class="sd">    ...     doc = nlp(text)</span>
+<span class="sd">    ...     return [sent.text.strip() for sent in doc.sents]</span>
+<span class="sd">    &gt;&gt;&gt; </span>
+<span class="sd">    &gt;&gt;&gt; def get_embeddings(texts):</span>
+<span class="sd">    ...     embeddings = model.encode(texts)</span>
+<span class="sd">    ...     return torch.tensor(embeddings)</span>
+<span class="sd">    &gt;&gt;&gt; </span>
+<span class="sd">    &gt;&gt;&gt; # Compare texts</span>
+<span class="sd">    &gt;&gt;&gt; ref_text = &quot;The cat sat on the mat. It was very comfortable. The sun was shining.&quot;</span>
+<span class="sd">    &gt;&gt;&gt; gen_text = &quot;A cat was sitting on a mat and seemed comfortable in the sunshine.&quot;</span>
+<span class="sd">    &gt;&gt;&gt; </span>
+<span class="sd">    &gt;&gt;&gt; result = compute_vcs_score(ref_text, gen_text, segment_sentences, get_embeddings)</span>
+<span class="sd">    &gt;&gt;&gt; print(f&quot;VCS Score: {result[&#39;VCS&#39;]:.4f}&quot;)</span>
+<span class="sd">    VCS Score: 0.8234</span>
+<span class="sd">    </span>
+<span class="sd">    **Advanced Usage with All Metrics and Custom Configuration:**</span>
+<span class="sd">    </span>
+<span class="sd">    &gt;&gt;&gt; result = compute_vcs_score(</span>
+<span class="sd">    ...     ref_text, gen_text, segment_sentences, get_embeddings,</span>
+<span class="sd">    ...     return_all_metrics=True,</span>
+<span class="sd">    ...     return_internals=True,</span>
+<span class="sd">    ...     chunk_size=2,              # Group sentences in pairs</span>
+<span class="sd">    ...     lct=1,                     # Allow some narrative reordering</span>
+<span class="sd">    ...     context_cutoff_value=0.7,  # More restrictive context windows</span>
+<span class="sd">    ...     context_window_control=3.0 # Larger context windows when applied</span>
+<span class="sd">    ... )</span>
+<span class="sd">    &gt;&gt;&gt; </span>
+<span class="sd">    &gt;&gt;&gt; # Access individual metrics</span>
+<span class="sd">    &gt;&gt;&gt; print(f&quot;Global Alignment (GAS): {result[&#39;GAS&#39;]:.4f}&quot;)</span>
+<span class="sd">    &gt;&gt;&gt; print(f&quot;Local Alignment (LAS): {result[&#39;LAS&#39;]:.4f}&quot;)  </span>
+<span class="sd">    &gt;&gt;&gt; print(f&quot;Narrative Alignment (NAS): {result[&#39;NAS&#39;]:.4f}&quot;)</span>
+<span class="sd">    &gt;&gt;&gt; print(f&quot;Final VCS Score: {result[&#39;VCS&#39;]:.4f}&quot;)</span>
+<span class="sd">    </span>
+<span class="sd">    **Using Different Embedding Functions for GAS and LAS:**</span>
+<span class="sd">    </span>
+<span class="sd">    &gt;&gt;&gt; # Use different models for global vs local comparison</span>
+<span class="sd">    &gt;&gt;&gt; global_model = SentenceTransformer(&#39;all-mpnet-base-v2&#39;)  # Better for documents</span>
+<span class="sd">    &gt;&gt;&gt; local_model = SentenceTransformer(&#39;all-MiniLM-L6-v2&#39;)   # Faster for segments</span>
+<span class="sd">    &gt;&gt;&gt; </span>
+<span class="sd">    &gt;&gt;&gt; def get_global_embeddings(texts):</span>
+<span class="sd">    ...     return torch.tensor(global_model.encode(texts))</span>
+<span class="sd">    &gt;&gt;&gt; </span>
+<span class="sd">    &gt;&gt;&gt; def get_local_embeddings(texts):</span>
+<span class="sd">    ...     return torch.tensor(local_model.encode(texts))</span>
+<span class="sd">    &gt;&gt;&gt; </span>
+<span class="sd">    &gt;&gt;&gt; result = compute_vcs_score(</span>
+<span class="sd">    ...     ref_text, gen_text, segment_sentences,</span>
+<span class="sd">    ...     embedding_fn_las=get_local_embeddings,</span>
+<span class="sd">    ...     embedding_fn_gas=get_global_embeddings</span>
+<span class="sd">    ... )</span>
+<span class="sd">    </span>
+<span class="sd">    **Custom Segmentation for Dialog:**</span>
+<span class="sd">    </span>
+<span class="sd">    &gt;&gt;&gt; def segment_dialog(text):</span>
+<span class="sd">    ...     # Custom segmentation for dialog/conversation</span>
+<span class="sd">    ...     lines = text.split(&#39;\\n&#39;)</span>
+<span class="sd">    ...     return [line.strip() for line in lines if line.strip()]</span>
+<span class="sd">    &gt;&gt;&gt; </span>
+<span class="sd">    &gt;&gt;&gt; dialog_ref = &quot;Speaker A: Hello there\\nSpeaker B: Hi, how are you?\\nSpeaker A: I&#39;m doing well&quot;</span>
+<span class="sd">    &gt;&gt;&gt; dialog_gen = &quot;A: Hello\\nB: Hi, how are you doing?\\nA: I&#39;m well&quot;</span>
+<span class="sd">    &gt;&gt;&gt; </span>
+<span class="sd">    &gt;&gt;&gt; result = compute_vcs_score(dialog_ref, dialog_gen, segment_dialog, get_embeddings)</span>
+<span class="sd">    </span>
+<span class="sd">    See Also</span>
+<span class="sd">    --------</span>
+<span class="sd">    visualize_metrics_summary : Create overview visualization of all metrics</span>
+<span class="sd">    visualize_similarity_matrix : Visualize the similarity matrix between segments</span>
+<span class="sd">    visualize_mapping_windows : Show alignment windows used for matching</span>
+<span class="sd">    create_vcs_pdf_report : Generate comprehensive PDF analysis report</span>
+<span class="sd">    </span>
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    **Choosing Parameters:**</span>
+<span class="sd">    </span>
+<span class="sd">    * **Segmentation**: Use sentence segmentation for most text types. Consider </span>
+<span class="sd">      custom segmentation for structured content (dialog, lists, etc.)</span>
+<span class="sd">    * **Chunk Size**: Start with 1 for fine-grained analysis. Increase for longer </span>
+<span class="sd">      texts or when segments are very short.</span>
+<span class="sd">    * **LCT**: Use 0 for strict chronological comparison (news, stories). Use 1-2 </span>
+<span class="sd">      for content where reordering is acceptable (summaries, descriptions).</span>
+<span class="sd">    * **Context Parameters**: Default values work well for most cases. Adjust if </span>
+<span class="sd">      you need more/less restrictive matching behavior.</span>
+<span class="sd">    </span>
+<span class="sd">    **Performance Considerations:**</span>
+<span class="sd">    </span>
+<span class="sd">    * Computation time scales with text length and chunk size</span>
+<span class="sd">    * Large similarity matrices (&gt;100x100) may be slow to visualize</span>
+<span class="sd">    * Consider chunking very long texts into smaller sections</span>
+<span class="sd">    </span>
+<span class="sd">    **Interpretation:**</span>
+<span class="sd">    </span>
+<span class="sd">    * **VCS ≥ 0.8**: Excellent narrative preservation</span>
+<span class="sd">    * **VCS 0.6-0.8**: Good preservation with some differences  </span>
+<span class="sd">    * **VCS 0.4-0.6**: Moderate preservation, significant changes</span>
+<span class="sd">    * **VCS &lt; 0.4**: Poor preservation, major structural differences</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">embedding_fn_las</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">embedding_fn_gas</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">embedding_fn_las</span> <span class="o">=</span> <span class="n">embedding_fn_gas</span>
+    <span class="k">elif</span> <span class="n">embedding_fn_gas</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">embedding_fn_las</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">embedding_fn_gas</span> <span class="o">=</span> <span class="n">embedding_fn_las</span>
+    <span class="k">if</span> <span class="n">embedding_fn_las</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">embedding_fn_gas</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Provide at least one embedding function (LAS or GAS).&quot;</span><span class="p">)</span>
+
+    <span class="n">_validate_seg_embed_functions</span><span class="p">(</span><span class="n">segmenter_fn</span><span class="p">,</span> <span class="n">embedding_fn_las</span><span class="p">,</span> <span class="n">embedding_fn_gas</span><span class="p">)</span>
+    
+    <span class="n">gas_val</span> <span class="o">=</span> <span class="n">_compute_gas_metrics</span><span class="p">(</span><span class="n">reference_text</span><span class="p">,</span> <span class="n">generated_text</span><span class="p">,</span> <span class="n">embedding_fn_gas</span><span class="p">)</span>
+
+    <span class="n">ref_chunks</span><span class="p">,</span> <span class="n">gen_chunks</span> <span class="o">=</span> <span class="n">_segment_and_chunk_texts</span><span class="p">(</span>
+        <span class="n">reference_text</span><span class="p">,</span> <span class="n">generated_text</span><span class="p">,</span> <span class="n">chunk_size</span><span class="p">,</span> <span class="n">segmenter_fn</span>
+    <span class="p">)</span>
+
+    <span class="n">sim_matrix</span><span class="p">,</span> <span class="n">ref_len</span><span class="p">,</span> <span class="n">gen_len</span> <span class="o">=</span> <span class="n">_build_similarity_matrix</span><span class="p">(</span>
+        <span class="n">ref_chunks</span><span class="p">,</span> <span class="n">gen_chunks</span><span class="p">,</span> <span class="n">embedding_fn_las</span>
+    <span class="p">)</span>
+
+    <span class="n">prec_map_windows</span><span class="p">,</span> <span class="n">rec_map_windows</span> <span class="o">=</span> <span class="n">_get_mapping_windows</span><span class="p">(</span><span class="n">ref_len</span><span class="p">,</span> <span class="n">gen_len</span><span class="p">)</span>
+
+    <span class="n">precision_matches</span><span class="p">,</span> <span class="n">precision_indices</span><span class="p">,</span> <span class="n">precision_sim_values</span><span class="p">,</span> <span class="n">precision_match_details</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">_calculate_row_col_matches_context</span><span class="p">(</span>
+            <span class="n">sim_matrix</span><span class="p">,</span> <span class="n">prec_map_windows</span><span class="p">,</span> <span class="s2">&quot;precision&quot;</span><span class="p">,</span>
+            <span class="n">context_cutoff_value</span><span class="p">,</span> <span class="n">context_window_control</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+    <span class="n">recall_matches</span><span class="p">,</span> <span class="n">recall_indices</span><span class="p">,</span> <span class="n">recall_sim_values</span><span class="p">,</span> <span class="n">recall_match_details</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">_calculate_row_col_matches_context</span><span class="p">(</span>
+            <span class="n">sim_matrix</span><span class="p">,</span> <span class="n">rec_map_windows</span><span class="p">,</span> <span class="s2">&quot;recall&quot;</span><span class="p">,</span>
+            <span class="n">context_cutoff_value</span><span class="p">,</span> <span class="n">context_window_control</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="n">las_metrics</span> <span class="o">=</span> <span class="n">_compute_las_metrics</span><span class="p">(</span><span class="n">precision_sim_values</span><span class="p">,</span> <span class="n">recall_sim_values</span><span class="p">)</span>
+    <span class="n">nas_metrics</span><span class="p">,</span> <span class="n">nas_internals</span> <span class="o">=</span> <span class="n">_compute_nas_metrics</span><span class="p">(</span>
+        <span class="n">sim_matrix</span><span class="p">,</span> <span class="n">ref_len</span><span class="p">,</span> <span class="n">gen_len</span><span class="p">,</span>
+        <span class="n">precision_matches</span><span class="p">,</span> <span class="n">precision_indices</span><span class="p">,</span> <span class="n">precision_sim_values</span><span class="p">,</span>
+        <span class="n">recall_matches</span><span class="p">,</span> <span class="n">recall_indices</span><span class="p">,</span> <span class="n">recall_sim_values</span><span class="p">,</span>
+        <span class="n">prec_map_windows</span><span class="p">,</span> <span class="n">rec_map_windows</span><span class="p">,</span>
+        <span class="n">ref_chunks</span><span class="p">,</span> <span class="n">gen_chunks</span><span class="p">,</span>
+        <span class="n">lct</span><span class="o">=</span><span class="n">lct</span>
+    <span class="p">)</span>
+    <span class="n">combined</span> <span class="o">=</span> <span class="n">_compute_vcs_metrics</span><span class="p">(</span>
+        <span class="n">gas_val</span><span class="p">,</span> <span class="n">nas_metrics</span><span class="p">[</span><span class="s2">&quot;NAS&quot;</span><span class="p">],</span> <span class="n">las_metrics</span><span class="p">[</span><span class="s2">&quot;LAS&quot;</span><span class="p">]</span>
+    <span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">return_all_metrics</span><span class="p">:</span>
+        <span class="n">output</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="o">**</span><span class="n">las_metrics</span><span class="p">,</span> <span class="o">**</span><span class="n">nas_metrics</span><span class="p">,</span> <span class="o">**</span><span class="n">combined</span><span class="p">}</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;VCS&quot;</span><span class="p">:</span> <span class="n">combined</span><span class="p">[</span><span class="s2">&quot;VCS&quot;</span><span class="p">],</span>
+        <span class="p">}</span>
+    
+    <span class="k">if</span> <span class="n">return_internals</span><span class="p">:</span>
+        <span class="n">internals</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;texts&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;reference_chunks&quot;</span><span class="p">:</span> <span class="n">ref_chunks</span><span class="p">,</span>
+                <span class="s2">&quot;generated_chunks&quot;</span><span class="p">:</span> <span class="n">gen_chunks</span><span class="p">,</span>
+                <span class="s2">&quot;reference_length&quot;</span><span class="p">:</span> <span class="n">ref_len</span><span class="p">,</span>
+                <span class="s2">&quot;generated_length&quot;</span><span class="p">:</span> <span class="n">gen_len</span><span class="p">,</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;similarity&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;matrix&quot;</span><span class="p">:</span> <span class="n">sim_matrix</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">sim_matrix</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="k">else</span> <span class="n">sim_matrix</span><span class="p">,</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;mapping_windows&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;precision&quot;</span><span class="p">:</span> <span class="n">prec_map_windows</span><span class="p">,</span>
+                <span class="s2">&quot;recall&quot;</span><span class="p">:</span> <span class="n">rec_map_windows</span><span class="p">,</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;alignment&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;precision&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;matches&quot;</span><span class="p">:</span> <span class="n">precision_matches</span><span class="p">,</span>
+                    <span class="s2">&quot;indices&quot;</span><span class="p">:</span> <span class="n">precision_indices</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">precision_indices</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="k">else</span> <span class="n">precision_indices</span><span class="p">,</span>
+                    <span class="s2">&quot;similarity_values&quot;</span><span class="p">:</span> <span class="n">precision_sim_values</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">precision_sim_values</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="k">else</span> <span class="n">precision_sim_values</span><span class="p">,</span>
+                    <span class="s2">&quot;aligned_segments&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;aligned_precision&quot;</span><span class="p">]</span> <span class="k">if</span> <span class="s2">&quot;aligned_precision&quot;</span> <span class="ow">in</span> <span class="n">nas_internals</span> <span class="k">else</span> <span class="p">[],</span>
+                <span class="p">},</span>
+                <span class="s2">&quot;recall&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;matches&quot;</span><span class="p">:</span> <span class="n">recall_matches</span><span class="p">,</span>
+                    <span class="s2">&quot;indices&quot;</span><span class="p">:</span> <span class="n">recall_indices</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">recall_indices</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="k">else</span> <span class="n">recall_indices</span><span class="p">,</span>
+                    <span class="s2">&quot;similarity_values&quot;</span><span class="p">:</span> <span class="n">recall_sim_values</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">recall_sim_values</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="k">else</span> <span class="n">recall_sim_values</span><span class="p">,</span>
+                    <span class="s2">&quot;aligned_segments&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;aligned_recall&quot;</span><span class="p">]</span> <span class="k">if</span> <span class="s2">&quot;aligned_recall&quot;</span> <span class="ow">in</span> <span class="n">nas_internals</span> <span class="k">else</span> <span class="p">[],</span>
+                <span class="p">}</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;metrics&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;gas&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="n">gas_val</span><span class="p">,</span>
+                <span class="p">},</span>
+                <span class="s2">&quot;las&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;precision&quot;</span><span class="p">:</span> <span class="n">las_metrics</span><span class="p">[</span><span class="s2">&quot;Precision LAS&quot;</span><span class="p">],</span>
+                    <span class="s2">&quot;recall&quot;</span><span class="p">:</span> <span class="n">las_metrics</span><span class="p">[</span><span class="s2">&quot;Recall LAS&quot;</span><span class="p">],</span>
+                    <span class="s2">&quot;f1&quot;</span><span class="p">:</span> <span class="n">las_metrics</span><span class="p">[</span><span class="s2">&quot;LAS&quot;</span><span class="p">],</span>
+                <span class="p">},</span>
+                <span class="s2">&quot;nas&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;nas_d&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s2">&quot;precision&quot;</span><span class="p">:</span> <span class="p">{</span>
+                            <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="n">nas_metrics</span><span class="p">[</span><span class="s2">&quot;Precision NAS-D&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;mapping_window_height&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;precision_nas_internals&quot;</span><span class="p">][</span><span class="s2">&quot;mapping_window_height&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;max_penalty&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;precision_nas_internals&quot;</span><span class="p">][</span><span class="s2">&quot;max_penalty&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;total_penalty&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;precision_nas_internals&quot;</span><span class="p">][</span><span class="s2">&quot;total_penalty&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;penalties&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;precision_nas_internals&quot;</span><span class="p">][</span><span class="s2">&quot;penalties&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;in_window&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;precision_nas_internals&quot;</span><span class="p">][</span><span class="s2">&quot;in_window&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;in_lct_zone&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;precision_nas_internals&quot;</span><span class="p">][</span><span class="s2">&quot;in_lct_zone&quot;</span><span class="p">],</span>
+                        <span class="p">},</span>
+                        <span class="s2">&quot;recall&quot;</span><span class="p">:</span> <span class="p">{</span>
+                            <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="n">nas_metrics</span><span class="p">[</span><span class="s2">&quot;Recall NAS-D&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;mapping_window_height&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;recall_nas_internals&quot;</span><span class="p">][</span><span class="s2">&quot;mapping_window_height&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;max_penalty&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;recall_nas_internals&quot;</span><span class="p">][</span><span class="s2">&quot;max_penalty&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;total_penalty&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;recall_nas_internals&quot;</span><span class="p">][</span><span class="s2">&quot;total_penalty&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;penalties&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;recall_nas_internals&quot;</span><span class="p">][</span><span class="s2">&quot;penalties&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;in_window&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;recall_nas_internals&quot;</span><span class="p">][</span><span class="s2">&quot;in_window&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;in_lct_zone&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;recall_nas_internals&quot;</span><span class="p">][</span><span class="s2">&quot;in_lct_zone&quot;</span><span class="p">],</span>
+                        <span class="p">},</span>
+                        <span class="s2">&quot;f1&quot;</span><span class="p">:</span> <span class="n">nas_metrics</span><span class="p">[</span><span class="s2">&quot;NAS-D&quot;</span><span class="p">],</span>
+                    <span class="p">},</span>
+                    <span class="s2">&quot;nas_l&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s2">&quot;precision&quot;</span><span class="p">:</span> <span class="p">{</span>
+                            <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="n">nas_metrics</span><span class="p">[</span><span class="s2">&quot;Precision NAS-L&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;actual_line_length&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;precision_line_internals&quot;</span><span class="p">][</span><span class="s2">&quot;actual_line_length&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;floor_ideal_line_length&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;precision_line_internals&quot;</span><span class="p">][</span><span class="s2">&quot;floor_ideal_line_length&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;ceil_ideal_line_length&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;precision_line_internals&quot;</span><span class="p">][</span><span class="s2">&quot;ceil_ideal_line_length&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;average_ideal_line_length&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;precision_line_internals&quot;</span><span class="p">][</span><span class="s2">&quot;average_ideal_line_length&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;segments&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;precision_line_internals&quot;</span><span class="p">][</span><span class="s2">&quot;segments&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;floor_path&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;precision_line_internals&quot;</span><span class="p">][</span><span class="s2">&quot;floor_path&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;ceil_path&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;precision_line_internals&quot;</span><span class="p">][</span><span class="s2">&quot;ceil_path&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;actual_path&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;precision_line_internals&quot;</span><span class="p">][</span><span class="s2">&quot;actual_path&quot;</span><span class="p">]</span>
+                        <span class="p">},</span>
+                        <span class="s2">&quot;recall&quot;</span><span class="p">:</span> <span class="p">{</span>
+                            <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="n">nas_metrics</span><span class="p">[</span><span class="s2">&quot;Recall NAS-L&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;actual_line_length&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;recall_line_internals&quot;</span><span class="p">][</span><span class="s2">&quot;actual_line_length&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;floor_ideal_line_length&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;recall_line_internals&quot;</span><span class="p">][</span><span class="s2">&quot;floor_ideal_line_length&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;ceil_ideal_line_length&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;recall_line_internals&quot;</span><span class="p">][</span><span class="s2">&quot;ceil_ideal_line_length&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;average_ideal_line_length&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;recall_line_internals&quot;</span><span class="p">][</span><span class="s2">&quot;average_ideal_line_length&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;segments&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;recall_line_internals&quot;</span><span class="p">][</span><span class="s2">&quot;segments&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;floor_path&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;recall_line_internals&quot;</span><span class="p">][</span><span class="s2">&quot;floor_path&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;ceil_path&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;recall_line_internals&quot;</span><span class="p">][</span><span class="s2">&quot;ceil_path&quot;</span><span class="p">],</span>
+                            <span class="s2">&quot;actual_path&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;recall_line_internals&quot;</span><span class="p">][</span><span class="s2">&quot;actual_path&quot;</span><span class="p">]</span>
+                        <span class="p">},</span>
+                        <span class="s2">&quot;f1&quot;</span><span class="p">:</span> <span class="n">nas_metrics</span><span class="p">[</span><span class="s2">&quot;NAS-L&quot;</span><span class="p">],</span>
+                    <span class="p">},</span>
+                    <span class="s2">&quot;regularizer&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="n">nas_metrics</span><span class="p">[</span><span class="s2">&quot;Window-Regularizer&quot;</span><span class="p">],</span>
+                        <span class="s2">&quot;total_mapping_window_area&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;regularizer_internals&quot;</span><span class="p">][</span><span class="s2">&quot;total_mapping_window_area&quot;</span><span class="p">],</span>
+                        <span class="s2">&quot;timeline_area&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;regularizer_internals&quot;</span><span class="p">][</span><span class="s2">&quot;timeline_area&quot;</span><span class="p">],</span>
+                        <span class="s2">&quot;min_area&quot;</span><span class="p">:</span> <span class="n">nas_internals</span><span class="p">[</span><span class="s2">&quot;regularizer_internals&quot;</span><span class="p">][</span><span class="s2">&quot;min_area&quot;</span><span class="p">],</span>
+                    <span class="p">},</span>
+                    <span class="s2">&quot;nas_f1&quot;</span><span class="p">:</span> <span class="n">nas_metrics</span><span class="p">[</span><span class="s2">&quot;NAS-F1&quot;</span><span class="p">],</span>
+                    <span class="s2">&quot;regularized_nas&quot;</span><span class="p">:</span> <span class="n">nas_metrics</span><span class="p">[</span><span class="s2">&quot;NAS&quot;</span><span class="p">],</span>
+                <span class="p">},</span>
+                <span class="s2">&quot;vcs&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="n">combined</span><span class="p">[</span><span class="s2">&quot;VCS&quot;</span><span class="p">],</span>
+                    <span class="s2">&quot;gas_las_scaled&quot;</span><span class="p">:</span> <span class="n">combined</span><span class="p">[</span><span class="s2">&quot;GAS-LAS-Scaled&quot;</span><span class="p">],</span>
+                <span class="p">},</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;config&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;chunk_size&quot;</span><span class="p">:</span> <span class="n">chunk_size</span><span class="p">,</span>
+                <span class="s2">&quot;context_cutoff_value&quot;</span><span class="p">:</span> <span class="n">context_cutoff_value</span><span class="p">,</span>
+                <span class="s2">&quot;context_window_control&quot;</span><span class="p">:</span> <span class="n">context_window_control</span><span class="p">,</span>
+                <span class="s2">&quot;lct&quot;</span><span class="p">:</span> <span class="n">lct</span><span class="p">,</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;best_match&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;precision&quot;</span><span class="p">:</span> <span class="n">precision_match_details</span><span class="p">,</span>
+                <span class="s2">&quot;recall&quot;</span><span class="p">:</span> <span class="n">recall_match_details</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">output</span><span class="p">[</span><span class="s2">&quot;internals&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">internals</span>
+    
+    <span class="k">return</span> <span class="n">output</span></div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Harsh Dubey, Chulwoo Pack.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

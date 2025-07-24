@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vcs._visualize_vcs._line_nas.calculations_visualizer &mdash; VCS Metrics v1.0.2</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css?v=887dc02f" />
+
+  
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../_static/documentation_options.js?v=1ed6394b"></script>
+      <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #0d9488" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            VCS Metrics
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api.html">API Reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Resources:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/yourusername/vcs-metrics">GitHub Repository</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/vcs-metrics/">PyPI Package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #0d9488" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">VCS Metrics</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">vcs._visualize_vcs._line_nas.calculations_visualizer</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for vcs._visualize_vcs._line_nas.calculations_visualizer</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Any</span><span class="p">,</span> <span class="n">List</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">._utils</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">paginate_segments</span><span class="p">,</span> <span class="n">should_paginate</span><span class="p">,</span> <span class="n">create_base_calculation_figure</span><span class="p">,</span> 
+    <span class="n">finalize_calculation_figure</span><span class="p">,</span> <span class="n">create_empty_segments_figure</span><span class="p">,</span>
+    <span class="n">generate_summary_text</span><span class="p">,</span> <span class="n">generate_calculation_method_text</span><span class="p">,</span> <span class="n">generate_lct_note</span><span class="p">,</span>
+    <span class="n">create_segment_table</span>
+<span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">create_line_nas_calculation_figure</span><span class="p">(</span><span class="n">title</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">segments</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">],</span> 
+                                     <span class="n">summary_data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">float</span><span class="p">],</span> 
+                                     <span class="n">lct</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">page_num</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">total_pages</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Create a figure for a page of Line NAS calculation details.&quot;&quot;&quot;</span>
+    <span class="c1"># Create base figure</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">create_base_calculation_figure</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">page_num</span><span class="p">,</span> <span class="n">total_pages</span><span class="p">)</span>
+    
+    <span class="c1"># Generate summary text</span>
+    <span class="n">summary_text</span> <span class="o">=</span> <span class="n">generate_summary_text</span><span class="p">(</span><span class="n">summary_data</span><span class="p">,</span> <span class="n">segments</span><span class="p">)</span>
+    
+    <span class="c1"># Add calculation method explanation on first page only</span>
+    <span class="k">if</span> <span class="n">page_num</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">summary_text</span> <span class="o">+=</span> <span class="n">generate_calculation_method_text</span><span class="p">(</span><span class="n">summary_data</span><span class="p">)</span>
+    
+    <span class="c1"># Display summary in a box</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.85</span><span class="p">,</span> <span class="n">summary_text</span><span class="p">,</span> 
+            <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;#e6f3ff&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">boxstyle</span><span class="o">=</span><span class="s1">&#39;round,pad=0.5&#39;</span><span class="p">),</span>
+            <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">)</span>
+    
+    <span class="c1"># Create and display segment table</span>
+    <span class="n">segments_text</span> <span class="o">=</span> <span class="n">create_segment_table</span><span class="p">(</span><span class="n">segments</span><span class="p">,</span> <span class="n">lct</span><span class="p">)</span>
+    
+    <span class="c1"># Add LCT note if applicable</span>
+    <span class="n">segments_text</span> <span class="o">+=</span> <span class="n">generate_lct_note</span><span class="p">(</span><span class="n">lct</span><span class="p">)</span>
+    
+    <span class="c1"># Display segment table</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="n">segments_text</span><span class="p">,</span> 
+            <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">family</span><span class="o">=</span><span class="s1">&#39;monospace&#39;</span><span class="p">,</span>
+            <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">)</span>
+    
+    <span class="c1"># Finalize figure</span>
+    <span class="n">finalize_calculation_figure</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">page_num</span><span class="p">,</span> <span class="n">total_pages</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">fig</span>
+
+<div class="viewcode-block" id="visualize_line_nas_precision_calculations">
+<a class="viewcode-back" href="../../../../api.html#vcs.visualize_line_nas_precision_calculations">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">visualize_line_nas_precision_calculations</span><span class="p">(</span><span class="n">internals</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Create detailed visualizations of precision Line-based NAS calculations.</span>
+<span class="sd">    </span>
+<span class="sd">    Provides comprehensive breakdown of how the precision NAS-L score was calculated,</span>
+<span class="sd">    including segment-by-segment analysis, threshold applications, and calculation</span>
+<span class="sd">    methods. Automatically creates multiple pages for large datasets.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    internals : dict</span>
+<span class="sd">        The internals dictionary returned by ``compute_vcs_score`` with </span>
+<span class="sd">        ``return_internals=True``. Must contain detailed line-based NAS calculations.</span>
+<span class="sd">    </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    list of matplotlib.figure.Figure</span>
+<span class="sd">        List of figures (one or more pages) showing detailed precision NAS-L </span>
+<span class="sd">        calculations, including:</span>
+<span class="sd">        - Summary statistics and calculation methods</span>
+<span class="sd">        - Segment-by-segment breakdown table</span>
+<span class="sd">        - Threshold and LCT information</span>
+<span class="sd">    </span>
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; result = compute_vcs_score(ref_text, gen_text, segmenter, embedder,</span>
+<span class="sd">    ...                           return_internals=True, lct=1)</span>
+<span class="sd">    &gt;&gt;&gt; precision_figs = visualize_line_nas_precision_calculations(result[&#39;internals&#39;])</span>
+<span class="sd">    &gt;&gt;&gt; </span>
+<span class="sd">    &gt;&gt;&gt; # Display all pages</span>
+<span class="sd">    &gt;&gt;&gt; for i, fig in enumerate(precision_figs):</span>
+<span class="sd">    ...     fig.suptitle(f&#39;Precision NAS-L Calculations - Page {i+1}&#39;)</span>
+<span class="sd">    ...     fig.show()</span>
+<span class="sd">    </span>
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    * Shows how each segment in the alignment path contributes to the total length</span>
+<span class="sd">    * Indicates which calculation method was used for each segment</span>
+<span class="sd">    * Displays LCT threshold applications when applicable</span>
+<span class="sd">    * Essential for debugging unexpected NAS-L precision scores</span>
+<span class="sd">    * Automatically paginated for datasets with &gt;15 segments per page</span>
+<span class="sd">    </span>
+<span class="sd">    See Also</span>
+<span class="sd">    --------</span>
+<span class="sd">    visualize_line_nas : Overview of line-based analysis</span>
+<span class="sd">    visualize_line_nas_recall_calculations : Corresponding recall analysis</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">precision_line_data</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;metrics&#39;</span><span class="p">][</span><span class="s1">&#39;nas&#39;</span><span class="p">][</span><span class="s1">&#39;nas_l&#39;</span><span class="p">][</span><span class="s1">&#39;precision&#39;</span><span class="p">]</span>
+    <span class="n">lct</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;config&#39;</span><span class="p">][</span><span class="s1">&#39;lct&#39;</span><span class="p">]</span>
+    <span class="n">segments</span> <span class="o">=</span> <span class="n">precision_line_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;segments&#39;</span><span class="p">,</span> <span class="p">[])</span>
+    
+    <span class="c1"># Handle empty segments</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">segments</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">create_empty_segments_figure</span><span class="p">(</span>
+            <span class="s2">&quot;Precision Line-based NAS Calculation Details&quot;</span><span class="p">,</span> <span class="s2">&quot;Precision&quot;</span>
+        <span class="p">)]</span>
+    
+    <span class="c1"># Check if pagination is needed</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">should_paginate</span><span class="p">(</span><span class="n">segments</span><span class="p">):</span>
+        <span class="n">fig</span> <span class="o">=</span> <span class="n">create_line_nas_calculation_figure</span><span class="p">(</span>
+            <span class="s2">&quot;Precision Line-based NAS Calculation Details&quot;</span><span class="p">,</span>
+            <span class="n">segments</span><span class="p">,</span>
+            <span class="n">precision_line_data</span><span class="p">,</span>
+            <span class="n">lct</span><span class="p">,</span>
+            <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">fig</span><span class="p">]</span>
+    
+    <span class="c1"># Create paginated figures</span>
+    <span class="n">paginated_segments</span> <span class="o">=</span> <span class="n">paginate_segments</span><span class="p">(</span><span class="n">segments</span><span class="p">)</span>
+    <span class="n">figures</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">page_segments</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">paginated_segments</span><span class="p">):</span>
+        <span class="n">fig</span> <span class="o">=</span> <span class="n">create_line_nas_calculation_figure</span><span class="p">(</span>
+            <span class="s2">&quot;Precision Line-based NAS Calculation Details&quot;</span><span class="p">,</span>
+            <span class="n">page_segments</span><span class="p">,</span>
+            <span class="n">precision_line_data</span><span class="p">,</span>
+            <span class="n">lct</span><span class="p">,</span>
+            <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nb">len</span><span class="p">(</span><span class="n">paginated_segments</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="n">figures</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">figures</span></div>
+
+
+<div class="viewcode-block" id="visualize_line_nas_recall_calculations">
+<a class="viewcode-back" href="../../../../api.html#vcs.visualize_line_nas_recall_calculations">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">visualize_line_nas_recall_calculations</span><span class="p">(</span><span class="n">internals</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Create detailed visualizations of recall Line-based NAS calculations.</span>
+<span class="sd">    </span>
+<span class="sd">    Provides comprehensive breakdown of how the recall NAS-L score was calculated,</span>
+<span class="sd">    including segment-by-segment analysis, threshold applications, and calculation</span>
+<span class="sd">    methods. Automatically creates multiple pages for large datasets.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    internals : dict</span>
+<span class="sd">        The internals dictionary returned by ``compute_vcs_score`` with </span>
+<span class="sd">        ``return_internals=True``. Must contain detailed line-based NAS calculations.</span>
+<span class="sd">    </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    list of matplotlib.figure.Figure</span>
+<span class="sd">        List of figures (one or more pages) showing detailed recall NAS-L </span>
+<span class="sd">        calculations, including:</span>
+<span class="sd">        - Summary statistics and calculation methods</span>
+<span class="sd">        - Segment-by-segment breakdown table  </span>
+<span class="sd">        - Threshold and LCT information</span>
+<span class="sd">    </span>
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; result = compute_vcs_score(ref_text, gen_text, segmenter, embedder,</span>
+<span class="sd">    ...                           return_internals=True, lct=1)</span>
+<span class="sd">    &gt;&gt;&gt; recall_figs = visualize_line_nas_recall_calculations(result[&#39;internals&#39;])</span>
+<span class="sd">    &gt;&gt;&gt; </span>
+<span class="sd">    &gt;&gt;&gt; # Save all pages to files</span>
+<span class="sd">    &gt;&gt;&gt; for i, fig in enumerate(recall_figs):</span>
+<span class="sd">    ...     fig.savefig(f&#39;recall_nas_l_page_{i+1}.png&#39;, dpi=300, bbox_inches=&#39;tight&#39;)</span>
+<span class="sd">    ...     plt.close(fig)</span>
+<span class="sd">    </span>
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    * Shows how each segment in the alignment path contributes to the total length</span>
+<span class="sd">    * Indicates which calculation method was used for each segment</span>
+<span class="sd">    * Displays LCT threshold applications when applicable</span>
+<span class="sd">    * Essential for debugging unexpected NAS-L recall scores</span>
+<span class="sd">    * Automatically paginated for datasets with &gt;15 segments per page</span>
+<span class="sd">    </span>
+<span class="sd">    See Also</span>
+<span class="sd">    --------</span>
+<span class="sd">    visualize_line_nas : Overview of line-based analysis  </span>
+<span class="sd">    visualize_line_nas_precision_calculations : Corresponding precision analysis</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">recall_line_data</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;metrics&#39;</span><span class="p">][</span><span class="s1">&#39;nas&#39;</span><span class="p">][</span><span class="s1">&#39;nas_l&#39;</span><span class="p">][</span><span class="s1">&#39;recall&#39;</span><span class="p">]</span>
+    <span class="n">lct</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;config&#39;</span><span class="p">][</span><span class="s1">&#39;lct&#39;</span><span class="p">]</span>
+    <span class="n">segments</span> <span class="o">=</span> <span class="n">recall_line_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;segments&#39;</span><span class="p">,</span> <span class="p">[])</span>
+    
+    <span class="c1"># Handle empty segments</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">segments</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">create_empty_segments_figure</span><span class="p">(</span>
+            <span class="s2">&quot;Recall Line-based NAS Calculation Details&quot;</span><span class="p">,</span> <span class="s2">&quot;Recall&quot;</span>
+        <span class="p">)]</span>
+    
+    <span class="c1"># Check if pagination is needed</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">should_paginate</span><span class="p">(</span><span class="n">segments</span><span class="p">):</span>
+        <span class="n">fig</span> <span class="o">=</span> <span class="n">create_line_nas_calculation_figure</span><span class="p">(</span>
+            <span class="s2">&quot;Recall Line-based NAS Calculation Details&quot;</span><span class="p">,</span>
+            <span class="n">segments</span><span class="p">,</span>
+            <span class="n">recall_line_data</span><span class="p">,</span>
+            <span class="n">lct</span><span class="p">,</span>
+            <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">fig</span><span class="p">]</span>
+    
+    <span class="c1"># Create paginated figures</span>
+    <span class="n">paginated_segments</span> <span class="o">=</span> <span class="n">paginate_segments</span><span class="p">(</span><span class="n">segments</span><span class="p">)</span>
+    <span class="n">figures</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">page_segments</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">paginated_segments</span><span class="p">):</span>
+        <span class="n">fig</span> <span class="o">=</span> <span class="n">create_line_nas_calculation_figure</span><span class="p">(</span>
+            <span class="s2">&quot;Recall Line-based NAS Calculation Details&quot;</span><span class="p">,</span>
+            <span class="n">page_segments</span><span class="p">,</span>
+            <span class="n">recall_line_data</span><span class="p">,</span>
+            <span class="n">lct</span><span class="p">,</span>
+            <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nb">len</span><span class="p">(</span><span class="n">paginated_segments</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="n">figures</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">figures</span></div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Harsh Dubey, Chulwoo Pack.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

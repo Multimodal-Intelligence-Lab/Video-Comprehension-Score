@@ -1,0 +1,692 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usage Guide &mdash; VCS Metrics v1.0.2</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=887dc02f" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=1ed6394b"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #0d9488" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            VCS Metrics
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Resources:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/yourusername/vcs-metrics">GitHub Repository</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/vcs-metrics/">PyPI Package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #0d9488" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">VCS Metrics</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Usage Guide</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/yourusername/vcs-metrics/blob/main/docs/source/usage.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="usage-guide">
+<h1>Usage Guide<a class="headerlink" href="#usage-guide" title="Link to this heading"></a></h1>
+<p>This guide provides comprehensive examples of how to use VCS Metrics for different scenarios and text types.</p>
+<section id="basic-usage">
+<h2>Basic Usage<a class="headerlink" href="#basic-usage" title="Link to this heading"></a></h2>
+<section id="simple-text-comparison">
+<h3>Simple Text Comparison<a class="headerlink" href="#simple-text-comparison" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sentence_transformers</span><span class="w"> </span><span class="kn">import</span> <span class="n">SentenceTransformer</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">nltk</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">vcs</span><span class="w"> </span><span class="kn">import</span> <span class="n">compute_vcs_score</span>
+
+<span class="c1"># Setup (run once)</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;punkt&#39;</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">SentenceTransformer</span><span class="p">(</span><span class="s1">&#39;all-MiniLM-L6-v2&#39;</span><span class="p">)</span>
+
+<span class="c1"># Define your functions</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">segment_text</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">nltk</span><span class="o">.</span><span class="n">sent_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">embed_text</span><span class="p">(</span><span class="n">texts</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">texts</span><span class="p">))</span>
+
+<span class="c1"># Compare texts</span>
+<span class="n">reference</span> <span class="o">=</span> <span class="s2">&quot;The cat sat on the mat. It was very comfortable.&quot;</span>
+<span class="n">generated</span> <span class="o">=</span> <span class="s2">&quot;A cat was sitting on a mat and seemed comfortable.&quot;</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+    <span class="n">reference_text</span><span class="o">=</span><span class="n">reference</span><span class="p">,</span>
+    <span class="n">generated_text</span><span class="o">=</span><span class="n">generated</span><span class="p">,</span>
+    <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">segment_text</span><span class="p">,</span>
+    <span class="n">embedding_fn_las</span><span class="o">=</span><span class="n">embed_text</span>
+<span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;VCS Score: </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;VCS&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="getting-all-metrics">
+<h3>Getting All Metrics<a class="headerlink" href="#getting-all-metrics" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get detailed breakdown of all metrics</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+    <span class="n">reference_text</span><span class="o">=</span><span class="n">reference</span><span class="p">,</span>
+    <span class="n">generated_text</span><span class="o">=</span><span class="n">generated</span><span class="p">,</span>
+    <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">segment_text</span><span class="p">,</span>
+    <span class="n">embedding_fn_las</span><span class="o">=</span><span class="n">embed_text</span><span class="p">,</span>
+    <span class="n">return_all_metrics</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+<span class="c1"># Print all metrics</span>
+<span class="k">for</span> <span class="n">metric</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">result</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">metric</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">value</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="advanced-configuration">
+<h2>Advanced Configuration<a class="headerlink" href="#advanced-configuration" title="Link to this heading"></a></h2>
+<section id="custom-parameters">
+<h3>Custom Parameters<a class="headerlink" href="#custom-parameters" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fine-tune the analysis parameters</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+    <span class="n">reference_text</span><span class="o">=</span><span class="n">reference</span><span class="p">,</span>
+    <span class="n">generated_text</span><span class="o">=</span><span class="n">generated</span><span class="p">,</span>
+    <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">segment_text</span><span class="p">,</span>
+    <span class="n">embedding_fn_las</span><span class="o">=</span><span class="n">embed_text</span><span class="p">,</span>
+    <span class="n">chunk_size</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>                    <span class="c1"># Group sentences in pairs</span>
+    <span class="n">context_cutoff_value</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>        <span class="c1"># More restrictive matching</span>
+    <span class="n">context_window_control</span><span class="o">=</span><span class="mf">3.0</span><span class="p">,</span>      <span class="c1"># Different context window size</span>
+    <span class="n">lct</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>                          <span class="c1"># Allow some narrative reordering</span>
+    <span class="n">return_all_metrics</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="different-embedding-functions">
+<h3>Different Embedding Functions<a class="headerlink" href="#different-embedding-functions" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Use different models for global vs local analysis</span>
+<span class="n">global_model</span> <span class="o">=</span> <span class="n">SentenceTransformer</span><span class="p">(</span><span class="s1">&#39;all-mpnet-base-v2&#39;</span><span class="p">)</span>  <span class="c1"># High quality</span>
+<span class="n">local_model</span> <span class="o">=</span> <span class="n">SentenceTransformer</span><span class="p">(</span><span class="s1">&#39;all-MiniLM-L6-v2&#39;</span><span class="p">)</span>   <span class="c1"># Fast</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">global_embeddings</span><span class="p">(</span><span class="n">texts</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">global_model</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">texts</span><span class="p">))</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">local_embeddings</span><span class="p">(</span><span class="n">texts</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">local_model</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">texts</span><span class="p">))</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+    <span class="n">reference_text</span><span class="o">=</span><span class="n">reference</span><span class="p">,</span>
+    <span class="n">generated_text</span><span class="o">=</span><span class="n">generated</span><span class="p">,</span>
+    <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">segment_text</span><span class="p">,</span>
+    <span class="n">embedding_fn_las</span><span class="o">=</span><span class="n">local_embeddings</span><span class="p">,</span>
+    <span class="n">embedding_fn_gas</span><span class="o">=</span><span class="n">global_embeddings</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="visualization-examples">
+<h2>Visualization Examples<a class="headerlink" href="#visualization-examples" title="Link to this heading"></a></h2>
+<section id="basic-visualizations">
+<h3>Basic Visualizations<a class="headerlink" href="#basic-visualizations" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">vcs</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">visualize_config</span><span class="p">,</span> <span class="n">visualize_metrics_summary</span><span class="p">,</span>
+    <span class="n">visualize_similarity_matrix</span><span class="p">,</span> <span class="n">visualize_las</span>
+<span class="p">)</span>
+
+<span class="c1"># Get internals for visualization</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+    <span class="n">reference_text</span><span class="o">=</span><span class="n">reference</span><span class="p">,</span>
+    <span class="n">generated_text</span><span class="o">=</span><span class="n">generated</span><span class="p">,</span>
+    <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">segment_text</span><span class="p">,</span>
+    <span class="n">embedding_fn_las</span><span class="o">=</span><span class="n">embed_text</span><span class="p">,</span>
+    <span class="n">return_internals</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">return_all_metrics</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+<span class="n">internals</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;internals&#39;</span><span class="p">]</span>
+
+<span class="c1"># Show configuration</span>
+<span class="n">config_fig</span> <span class="o">=</span> <span class="n">visualize_config</span><span class="p">(</span><span class="n">internals</span><span class="p">)</span>
+<span class="n">config_fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Overview of all metrics</span>
+<span class="n">summary_fig</span> <span class="o">=</span> <span class="n">visualize_metrics_summary</span><span class="p">(</span><span class="n">internals</span><span class="p">)</span>
+<span class="n">summary_fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Similarity matrix heatmap</span>
+<span class="n">sim_fig</span> <span class="o">=</span> <span class="n">visualize_similarity_matrix</span><span class="p">(</span><span class="n">internals</span><span class="p">)</span>
+<span class="n">sim_fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Local Alignment Score details</span>
+<span class="n">las_fig</span> <span class="o">=</span> <span class="n">visualize_las</span><span class="p">(</span><span class="n">internals</span><span class="p">)</span>
+<span class="n">las_fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="advanced-visualizations">
+<h3>Advanced Visualizations<a class="headerlink" href="#advanced-visualizations" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">vcs</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">visualize_text_chunks</span><span class="p">,</span> <span class="n">visualize_mapping_windows</span><span class="p">,</span>
+    <span class="n">visualize_distance_nas</span><span class="p">,</span> <span class="n">visualize_line_nas</span><span class="p">,</span>
+    <span class="n">visualize_best_match</span>
+<span class="p">)</span>
+
+<span class="c1"># Text chunks (may return multiple pages)</span>
+<span class="n">chunk_figs</span> <span class="o">=</span> <span class="n">visualize_text_chunks</span><span class="p">(</span><span class="n">internals</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">fig</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">chunk_figs</span><span class="p">[</span><span class="s1">&#39;reference_chunks&#39;</span><span class="p">]):</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Reference Chunks - Page </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Mapping windows showing alignment constraints</span>
+<span class="n">windows_fig</span> <span class="o">=</span> <span class="n">visualize_mapping_windows</span><span class="p">(</span><span class="n">internals</span><span class="p">)</span>
+<span class="n">windows_fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Distance-based narrative analysis</span>
+<span class="n">distance_fig</span> <span class="o">=</span> <span class="n">visualize_distance_nas</span><span class="p">(</span><span class="n">internals</span><span class="p">)</span>
+<span class="n">distance_fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Line-based narrative analysis</span>
+<span class="n">line_fig</span> <span class="o">=</span> <span class="n">visualize_line_nas</span><span class="p">(</span><span class="n">internals</span><span class="p">)</span>
+<span class="n">line_fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Best match analysis (returns multiple figures)</span>
+<span class="n">match_figs</span> <span class="o">=</span> <span class="n">visualize_best_match</span><span class="p">(</span><span class="n">internals</span><span class="p">)</span>
+<span class="n">match_figs</span><span class="p">[</span><span class="s1">&#39;precision_details&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">match_figs</span><span class="p">[</span><span class="s1">&#39;recall_details&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">match_figs</span><span class="p">[</span><span class="s1">&#39;summary_table&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="creating-pdf-reports">
+<h3>Creating PDF Reports<a class="headerlink" href="#creating-pdf-reports" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">vcs</span><span class="w"> </span><span class="kn">import</span> <span class="n">create_vcs_pdf_report</span>
+
+<span class="c1"># Generate comprehensive PDF report</span>
+<span class="n">create_vcs_pdf_report</span><span class="p">(</span>
+    <span class="n">internals</span><span class="o">=</span><span class="n">internals</span><span class="p">,</span>
+    <span class="n">output_file</span><span class="o">=</span><span class="s2">&quot;complete_analysis.pdf&quot;</span><span class="p">,</span>
+    <span class="n">metrics_to_include</span><span class="o">=</span><span class="s2">&quot;all&quot;</span>
+<span class="p">)</span>
+
+<span class="c1"># Generate focused report with specific metrics</span>
+<span class="n">create_vcs_pdf_report</span><span class="p">(</span>
+    <span class="n">internals</span><span class="o">=</span><span class="n">internals</span><span class="p">,</span>
+    <span class="n">output_file</span><span class="o">=</span><span class="s2">&quot;summary_report.pdf&quot;</span><span class="p">,</span>
+    <span class="n">metrics_to_include</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Config&quot;</span><span class="p">,</span> <span class="s2">&quot;Overview&quot;</span><span class="p">,</span> <span class="s2">&quot;LAS&quot;</span><span class="p">,</span> <span class="s2">&quot;NAS Distance&quot;</span><span class="p">]</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="domain-specific-examples">
+<h2>Domain-Specific Examples<a class="headerlink" href="#domain-specific-examples" title="Link to this heading"></a></h2>
+<section id="news-article-comparison">
+<h3>News Article Comparison<a class="headerlink" href="#news-article-comparison" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># For news articles, use strict chronological order</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">analyze_news_articles</span><span class="p">(</span><span class="n">reference_article</span><span class="p">,</span> <span class="n">generated_summary</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+        <span class="n">reference_text</span><span class="o">=</span><span class="n">reference_article</span><span class="p">,</span>
+        <span class="n">generated_text</span><span class="o">=</span><span class="n">generated_summary</span><span class="p">,</span>
+        <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">segment_text</span><span class="p">,</span>
+        <span class="n">embedding_fn_las</span><span class="o">=</span><span class="n">embed_text</span><span class="p">,</span>
+        <span class="n">chunk_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>        <span class="c1"># Sentence-level analysis</span>
+        <span class="n">lct</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>              <span class="c1"># Strict chronological order</span>
+        <span class="n">return_all_metrics</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">return_internals</span><span class="o">=</span><span class="kc">True</span>
+    <span class="p">)</span>
+
+<span class="n">news_result</span> <span class="o">=</span> <span class="n">analyze_news_articles</span><span class="p">(</span><span class="n">original_article</span><span class="p">,</span> <span class="n">ai_summary</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="dialog-conversation-analysis">
+<h3>Dialog/Conversation Analysis<a class="headerlink" href="#dialog-conversation-analysis" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Custom segmentation for dialog</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">segment_dialog</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span> <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()]</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">analyze_dialog</span><span class="p">(</span><span class="n">reference_dialog</span><span class="p">,</span> <span class="n">generated_dialog</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+        <span class="n">reference_text</span><span class="o">=</span><span class="n">reference_dialog</span><span class="p">,</span>
+        <span class="n">generated_text</span><span class="o">=</span><span class="n">generated_dialog</span><span class="p">,</span>
+        <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">segment_dialog</span><span class="p">,</span>
+        <span class="n">embedding_fn_las</span><span class="o">=</span><span class="n">embed_text</span><span class="p">,</span>
+        <span class="n">chunk_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">lct</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>              <span class="c1"># Allow some reordering in conversations</span>
+        <span class="n">return_all_metrics</span><span class="o">=</span><span class="kc">True</span>
+    <span class="p">)</span>
+
+<span class="c1"># Example dialog texts</span>
+<span class="n">ref_dialog</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Speaker A: Hello, how are you?</span>
+<span class="s2">Speaker B: I&#39;m doing well, thanks!</span>
+<span class="s2">Speaker A: What are your plans for today?</span>
+<span class="s2">Speaker B: I&#39;m going to the library.&quot;&quot;&quot;</span>
+
+<span class="n">gen_dialog</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;A: Hi, how are you doing?</span>
+<span class="s2">B: I&#39;m good, thank you!</span>
+<span class="s2">A: Any plans for today?</span>
+<span class="s2">B: I&#39;ll visit the library.&quot;&quot;&quot;</span>
+
+<span class="n">dialog_result</span> <span class="o">=</span> <span class="n">analyze_dialog</span><span class="p">(</span><span class="n">ref_dialog</span><span class="p">,</span> <span class="n">gen_dialog</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="creative-writing-analysis">
+<h3>Creative Writing Analysis<a class="headerlink" href="#creative-writing-analysis" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># For creative writing, allow more narrative flexibility</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">analyze_creative_writing</span><span class="p">(</span><span class="n">reference_story</span><span class="p">,</span> <span class="n">generated_story</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+        <span class="n">reference_text</span><span class="o">=</span><span class="n">reference_story</span><span class="p">,</span>
+        <span class="n">generated_text</span><span class="o">=</span><span class="n">generated_story</span><span class="p">,</span>
+        <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">segment_text</span><span class="p">,</span>
+        <span class="n">embedding_fn_las</span><span class="o">=</span><span class="n">embed_text</span><span class="p">,</span>
+        <span class="n">chunk_size</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>        <span class="c1"># Group sentences for narrative flow</span>
+        <span class="n">lct</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>              <span class="c1"># Allow creative reordering</span>
+        <span class="n">context_cutoff_value</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>  <span class="c1"># More permissive matching</span>
+        <span class="n">return_all_metrics</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">return_internals</span><span class="o">=</span><span class="kc">True</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="batch-processing">
+<h2>Batch Processing<a class="headerlink" href="#batch-processing" title="Link to this heading"></a></h2>
+<section id="processing-multiple-text-pairs">
+<h3>Processing Multiple Text Pairs<a class="headerlink" href="#processing-multiple-text-pairs" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">tqdm</span><span class="w"> </span><span class="kn">import</span> <span class="n">tqdm</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">batch_vcs_analysis</span><span class="p">(</span><span class="n">text_pairs</span><span class="p">,</span> <span class="n">output_file</span><span class="o">=</span><span class="s2">&quot;results.csv&quot;</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Process multiple text pairs and save results.&quot;&quot;&quot;</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">ref_text</span><span class="p">,</span> <span class="n">gen_text</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">tqdm</span><span class="p">(</span><span class="n">text_pairs</span><span class="p">,</span> <span class="n">desc</span><span class="o">=</span><span class="s2">&quot;Processing&quot;</span><span class="p">)):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+                <span class="n">reference_text</span><span class="o">=</span><span class="n">ref_text</span><span class="p">,</span>
+                <span class="n">generated_text</span><span class="o">=</span><span class="n">gen_text</span><span class="p">,</span>
+                <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">segment_text</span><span class="p">,</span>
+                <span class="n">embedding_fn_las</span><span class="o">=</span><span class="n">embed_text</span><span class="p">,</span>
+                <span class="n">return_all_metrics</span><span class="o">=</span><span class="kc">True</span>
+            <span class="p">)</span>
+
+            <span class="c1"># Extract key metrics</span>
+            <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+                <span class="s1">&#39;pair_id&#39;</span><span class="p">:</span> <span class="n">i</span><span class="p">,</span>
+                <span class="s1">&#39;vcs_score&#39;</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;VCS&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;gas_score&#39;</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;GAS&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;las_score&#39;</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;LAS&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;nas_score&#39;</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;NAS&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;ref_length&#39;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">segment_text</span><span class="p">(</span><span class="n">ref_text</span><span class="p">)),</span>
+                <span class="s1">&#39;gen_length&#39;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">segment_text</span><span class="p">(</span><span class="n">gen_text</span><span class="p">))</span>
+            <span class="p">})</span>
+
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error processing pair </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+                <span class="s1">&#39;pair_id&#39;</span><span class="p">:</span> <span class="n">i</span><span class="p">,</span>
+                <span class="s1">&#39;vcs_score&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+            <span class="p">})</span>
+
+    <span class="c1"># Save results</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_file</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df</span>
+
+<span class="c1"># Example usage</span>
+<span class="n">text_pairs</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;Reference 1&quot;</span><span class="p">,</span> <span class="s2">&quot;Generated 1&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Reference 2&quot;</span><span class="p">,</span> <span class="s2">&quot;Generated 2&quot;</span><span class="p">),</span>
+    <span class="c1"># ... more pairs</span>
+<span class="p">]</span>
+
+<span class="n">results_df</span> <span class="o">=</span> <span class="n">batch_vcs_analysis</span><span class="p">(</span><span class="n">text_pairs</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">results_df</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
+</pre></div>
+</div>
+</section>
+<section id="parameter-optimization">
+<h3>Parameter Optimization<a class="headerlink" href="#parameter-optimization" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">itertools</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">parameter_grid_search</span><span class="p">(</span><span class="n">ref_text</span><span class="p">,</span> <span class="n">gen_text</span><span class="p">,</span> <span class="n">param_grid</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Test different parameter combinations.&quot;&quot;&quot;</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># Generate all combinations</span>
+    <span class="n">keys</span> <span class="o">=</span> <span class="n">param_grid</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+    <span class="n">values</span> <span class="o">=</span> <span class="n">param_grid</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">combination</span> <span class="ow">in</span> <span class="n">itertools</span><span class="o">.</span><span class="n">product</span><span class="p">(</span><span class="o">*</span><span class="n">values</span><span class="p">):</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">keys</span><span class="p">,</span> <span class="n">combination</span><span class="p">))</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+                <span class="n">reference_text</span><span class="o">=</span><span class="n">ref_text</span><span class="p">,</span>
+                <span class="n">generated_text</span><span class="o">=</span><span class="n">gen_text</span><span class="p">,</span>
+                <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">segment_text</span><span class="p">,</span>
+                <span class="n">embedding_fn_las</span><span class="o">=</span><span class="n">embed_text</span><span class="p">,</span>
+                <span class="o">**</span><span class="n">params</span><span class="p">,</span>
+                <span class="n">return_all_metrics</span><span class="o">=</span><span class="kc">True</span>
+            <span class="p">)</span>
+
+            <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+                <span class="o">**</span><span class="n">params</span><span class="p">,</span>
+                <span class="s1">&#39;vcs_score&#39;</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;VCS&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;gas_score&#39;</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;GAS&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;las_score&#39;</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;LAS&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;nas_score&#39;</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;NAS&#39;</span><span class="p">]</span>
+            <span class="p">})</span>
+
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error with params </span><span class="si">{</span><span class="n">params</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
+
+<span class="c1"># Define parameter grid</span>
+<span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;chunk_size&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+    <span class="s1">&#39;lct&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+    <span class="s1">&#39;context_cutoff_value&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="c1"># Run grid search</span>
+<span class="n">grid_results</span> <span class="o">=</span> <span class="n">parameter_grid_search</span><span class="p">(</span><span class="n">reference</span><span class="p">,</span> <span class="n">generated</span><span class="p">,</span> <span class="n">param_grid</span><span class="p">)</span>
+
+<span class="c1"># Find best parameters</span>
+<span class="n">best_params</span> <span class="o">=</span> <span class="n">grid_results</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">grid_results</span><span class="p">[</span><span class="s1">&#39;vcs_score&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">idxmax</span><span class="p">()]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Best VCS score: </span><span class="si">{</span><span class="n">best_params</span><span class="p">[</span><span class="s1">&#39;vcs_score&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Best parameters: </span><span class="si">{</span><span class="n">best_params</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="performance-optimization">
+<h2>Performance Optimization<a class="headerlink" href="#performance-optimization" title="Link to this heading"></a></h2>
+<section id="memory-management">
+<h3>Memory Management<a class="headerlink" href="#memory-management" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">memory_efficient_analysis</span><span class="p">(</span><span class="n">ref_text</span><span class="p">,</span> <span class="n">gen_text</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Analyze text with memory optimization.&quot;&quot;&quot;</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+        <span class="n">reference_text</span><span class="o">=</span><span class="n">ref_text</span><span class="p">,</span>
+        <span class="n">generated_text</span><span class="o">=</span><span class="n">gen_text</span><span class="p">,</span>
+        <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">segment_text</span><span class="p">,</span>
+        <span class="n">embedding_fn_las</span><span class="o">=</span><span class="n">embed_text</span><span class="p">,</span>
+        <span class="n">return_internals</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">return_all_metrics</span><span class="o">=</span><span class="kc">True</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Generate and save visualizations without keeping in memory</span>
+    <span class="n">internals</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;internals&#39;</span><span class="p">]</span>
+
+    <span class="c1"># Save key visualizations</span>
+    <span class="k">for</span> <span class="n">viz_name</span><span class="p">,</span> <span class="n">viz_func</span> <span class="ow">in</span> <span class="p">[</span>
+        <span class="p">(</span><span class="s1">&#39;config&#39;</span><span class="p">,</span> <span class="n">visualize_config</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">&#39;summary&#39;</span><span class="p">,</span> <span class="n">visualize_metrics_summary</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">&#39;similarity&#39;</span><span class="p">,</span> <span class="n">visualize_similarity_matrix</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">&#39;las&#39;</span><span class="p">,</span> <span class="n">visualize_las</span><span class="p">)</span>
+    <span class="p">]:</span>
+        <span class="n">fig</span> <span class="o">=</span> <span class="n">viz_func</span><span class="p">(</span><span class="n">internals</span><span class="p">)</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">viz_name</span><span class="si">}</span><span class="s1">.png&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>  <span class="c1"># Free memory</span>
+
+    <span class="c1"># Generate PDF report</span>
+    <span class="n">create_vcs_pdf_report</span><span class="p">(</span>
+        <span class="n">internals</span><span class="o">=</span><span class="n">internals</span><span class="p">,</span>
+        <span class="n">output_file</span><span class="o">=</span><span class="s2">&quot;analysis_report.pdf&quot;</span><span class="p">,</span>
+        <span class="n">metrics_to_include</span><span class="o">=</span><span class="s2">&quot;all&quot;</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Return just the scores (not internals) to save memory</span>
+    <span class="k">return</span> <span class="p">{</span><span class="n">k</span><span class="p">:</span> <span class="n">v</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">result</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">k</span> <span class="o">!=</span> <span class="s1">&#39;internals&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="large-text-handling">
+<h3>Large Text Handling<a class="headerlink" href="#large-text-handling" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">analyze_long_text</span><span class="p">(</span><span class="n">ref_text</span><span class="p">,</span> <span class="n">gen_text</span><span class="p">,</span> <span class="n">max_segments</span><span class="o">=</span><span class="mi">50</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Handle very long texts by chunking.&quot;&quot;&quot;</span>
+    <span class="n">ref_segments</span> <span class="o">=</span> <span class="n">segment_text</span><span class="p">(</span><span class="n">ref_text</span><span class="p">)</span>
+    <span class="n">gen_segments</span> <span class="o">=</span> <span class="n">segment_text</span><span class="p">(</span><span class="n">gen_text</span><span class="p">)</span>
+
+    <span class="c1"># If texts are too long, analyze in chunks</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">ref_segments</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">max_segments</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">gen_segments</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">max_segments</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Text too long (</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">ref_segments</span><span class="p">)</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">gen_segments</span><span class="p">)</span><span class="si">}</span><span class="s2"> segments). Chunking...&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Simple chunking strategy</span>
+        <span class="n">ref_chunks</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ref_segments</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">max_segments</span><span class="p">])</span>
+                     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">ref_segments</span><span class="p">),</span> <span class="n">max_segments</span><span class="p">)]</span>
+        <span class="n">gen_chunks</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">gen_segments</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">max_segments</span><span class="p">])</span>
+                     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">gen_segments</span><span class="p">),</span> <span class="n">max_segments</span><span class="p">)]</span>
+
+        <span class="c1"># Analyze each chunk pair</span>
+        <span class="n">chunk_results</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">ref_chunk</span><span class="p">,</span> <span class="n">gen_chunk</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">ref_chunks</span><span class="p">,</span> <span class="n">gen_chunks</span><span class="p">):</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+                <span class="n">reference_text</span><span class="o">=</span><span class="n">ref_chunk</span><span class="p">,</span>
+                <span class="n">generated_text</span><span class="o">=</span><span class="n">gen_chunk</span><span class="p">,</span>
+                <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">segment_text</span><span class="p">,</span>
+                <span class="n">embedding_fn_las</span><span class="o">=</span><span class="n">embed_text</span><span class="p">,</span>
+                <span class="n">return_all_metrics</span><span class="o">=</span><span class="kc">True</span>
+            <span class="p">)</span>
+            <span class="n">chunk_results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+        <span class="c1"># Aggregate results (simple average)</span>
+        <span class="n">avg_result</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">chunk_results</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="n">avg_result</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">chunk_results</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">chunk_results</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">avg_result</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># Normal analysis for reasonable-sized texts</span>
+        <span class="k">return</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+            <span class="n">reference_text</span><span class="o">=</span><span class="n">ref_text</span><span class="p">,</span>
+            <span class="n">generated_text</span><span class="o">=</span><span class="n">gen_text</span><span class="p">,</span>
+            <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">segment_text</span><span class="p">,</span>
+            <span class="n">embedding_fn_las</span><span class="o">=</span><span class="n">embed_text</span><span class="p">,</span>
+            <span class="n">return_all_metrics</span><span class="o">=</span><span class="kc">True</span>
+        <span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="error-handling-and-debugging">
+<h2>Error Handling and Debugging<a class="headerlink" href="#error-handling-and-debugging" title="Link to this heading"></a></h2>
+<section id="robust-analysis-function">
+<h3>Robust Analysis Function<a class="headerlink" href="#robust-analysis-function" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">robust_vcs_analysis</span><span class="p">(</span><span class="n">ref_text</span><span class="p">,</span> <span class="n">gen_text</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;VCS analysis with comprehensive error handling.&quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Validate inputs</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">ref_text</span><span class="o">.</span><span class="n">strip</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Reference text is empty&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">gen_text</span><span class="o">.</span><span class="n">strip</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Generated text is empty&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Attempt analysis</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+            <span class="n">reference_text</span><span class="o">=</span><span class="n">ref_text</span><span class="p">,</span>
+            <span class="n">generated_text</span><span class="o">=</span><span class="n">gen_text</span><span class="p">,</span>
+            <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">segment_text</span><span class="p">,</span>
+            <span class="n">embedding_fn_las</span><span class="o">=</span><span class="n">embed_text</span><span class="p">,</span>
+            <span class="n">return_all_metrics</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kwargs</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Validate results</span>
+        <span class="k">if</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;VCS&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;VCS&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Warning: VCS score </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;VCS&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2"> is outside expected range [0, 1]&quot;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s1">&#39;success&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+            <span class="s1">&#39;result&#39;</span><span class="p">:</span> <span class="n">result</span><span class="p">,</span>
+            <span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="kc">None</span>
+        <span class="p">}</span>
+
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s1">&#39;success&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+            <span class="s1">&#39;result&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">),</span>
+            <span class="s1">&#39;error_type&#39;</span><span class="p">:</span> <span class="nb">type</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="p">}</span>
+
+<span class="c1"># Usage with error handling</span>
+<span class="n">analysis</span> <span class="o">=</span> <span class="n">robust_vcs_analysis</span><span class="p">(</span><span class="n">reference</span><span class="p">,</span> <span class="n">generated</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">analysis</span><span class="p">[</span><span class="s1">&#39;success&#39;</span><span class="p">]:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">analysis</span><span class="p">[</span><span class="s1">&#39;result&#39;</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;VCS Score: </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;VCS&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Analysis failed: </span><span class="si">{</span><span class="n">analysis</span><span class="p">[</span><span class="s1">&#39;error&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="best-practices">
+<h2>Best Practices<a class="headerlink" href="#best-practices" title="Link to this heading"></a></h2>
+<section id="choosing-segmentation-strategy">
+<h3>Choosing Segmentation Strategy<a class="headerlink" href="#choosing-segmentation-strategy" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Test different segmentation strategies</span>
+<span class="n">strategies</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;sentences&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="n">nltk</span><span class="o">.</span><span class="n">sent_tokenize</span><span class="p">(</span><span class="n">t</span><span class="p">),</span>
+    <span class="s1">&#39;simple_split&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">t</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">strip</span><span class="p">()],</span>
+    <span class="s1">&#39;paragraphs&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="p">[</span><span class="n">p</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">t</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">p</span><span class="o">.</span><span class="n">strip</span><span class="p">()],</span>
+    <span class="s1">&#39;fixed_length&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="p">[</span><span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="mi">100</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="mi">100</span><span class="p">)]</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">segmenter</span> <span class="ow">in</span> <span class="n">strategies</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+            <span class="n">reference_text</span><span class="o">=</span><span class="n">reference</span><span class="p">,</span>
+            <span class="n">generated_text</span><span class="o">=</span><span class="n">generated</span><span class="p">,</span>
+            <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">segmenter</span><span class="p">,</span>
+            <span class="n">embedding_fn_las</span><span class="o">=</span><span class="n">embed_text</span>
+        <span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">: VCS = </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;VCS&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">: Error - </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="model-selection-guidelines">
+<h3>Model Selection Guidelines<a class="headerlink" href="#model-selection-guidelines" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Compare different embedding models</span>
+<span class="n">models</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;all-MiniLM-L6-v2&#39;</span><span class="p">:</span> <span class="s1">&#39;Fast, good quality&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;all-mpnet-base-v2&#39;</span><span class="p">:</span> <span class="s1">&#39;Slower, higher quality&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;all-distilroberta-v1&#39;</span><span class="p">:</span> <span class="s1">&#39;Balanced speed/quality&#39;</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">description</span> <span class="ow">in</span> <span class="n">models</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Testing </span><span class="si">{</span><span class="n">model_name</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">description</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+
+    <span class="n">model</span> <span class="o">=</span> <span class="n">SentenceTransformer</span><span class="p">(</span><span class="n">model_name</span><span class="p">)</span>
+    <span class="n">embedder</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">texts</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">texts</span><span class="p">))</span>
+
+    <span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+        <span class="n">reference_text</span><span class="o">=</span><span class="n">reference</span><span class="p">,</span>
+        <span class="n">generated_text</span><span class="o">=</span><span class="n">generated</span><span class="p">,</span>
+        <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">segment_text</span><span class="p">,</span>
+        <span class="n">embedding_fn_las</span><span class="o">=</span><span class="n">embedder</span>
+    <span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;VCS Score: </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;VCS&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="next-steps">
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Explore the <a class="reference internal" href="api.html"><span class="doc">API Reference</span></a> reference for detailed function documentation</p></li>
+<li><p>Check out the <a class="reference external" href="https://github.com/yourusername/vcs-metrics">GitHub repository</a> for examples and updates</p></li>
+<li><p>Join the discussion on <a class="reference external" href="https://github.com/yourusername/vcs-metrics/discussions">GitHub Discussions</a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Harsh Dubey, Chulwoo Pack.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

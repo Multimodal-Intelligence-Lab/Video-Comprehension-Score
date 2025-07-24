@@ -1,0 +1,16 @@
+/* VCS Documentation Custom Styles */
+
+/* Fix horizontal spacing - make content use full width available */
+.wy-nav-content {
+    max-width: 96% !important;
+    margin: 0 auto !important;
+}
+
+.document {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+.wy-nav-content .rst-content {
+    max-width: none !important;
+}

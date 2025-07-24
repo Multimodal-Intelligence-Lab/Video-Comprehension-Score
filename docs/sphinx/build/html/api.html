@@ -1,0 +1,1320 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Reference &mdash; VCS Metrics v1.0.2</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=887dc02f" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=1ed6394b"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Getting Started" href="getting_started.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #0d9488" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            VCS Metrics
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#core-functions">Core Functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#main-scoring-function">Main Scoring Function</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#vcs.compute_vcs_score"><code class="docutils literal notranslate"><span class="pre">compute_vcs_score()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#visualization-functions">Visualization Functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#configuration-and-overview">Configuration and Overview</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#vcs.visualize_config"><code class="docutils literal notranslate"><span class="pre">visualize_config()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vcs.visualize_metrics_summary"><code class="docutils literal notranslate"><span class="pre">visualize_metrics_summary()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#text-analysis">Text Analysis</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#vcs.visualize_text_chunks"><code class="docutils literal notranslate"><span class="pre">visualize_text_chunks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vcs.visualize_similarity_matrix"><code class="docutils literal notranslate"><span class="pre">visualize_similarity_matrix()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#alignment-analysis">Alignment Analysis</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#vcs.visualize_mapping_windows"><code class="docutils literal notranslate"><span class="pre">visualize_mapping_windows()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vcs.visualize_best_match"><code class="docutils literal notranslate"><span class="pre">visualize_best_match()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metric-visualizations">Metric Visualizations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#local-alignment-score-las">Local Alignment Score (LAS)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#narrative-alignment-score-nas">Narrative Alignment Score (NAS)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#window-regularization">Window Regularization</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#report-generation">Report Generation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#vcs.create_vcs_pdf_report"><code class="docutils literal notranslate"><span class="pre">create_vcs_pdf_report()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration-constants">Configuration Constants</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vcs.DEFAULT_CONTEXT_CUTOFF_VALUE"><code class="docutils literal notranslate"><span class="pre">DEFAULT_CONTEXT_CUTOFF_VALUE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vcs.DEFAULT_CONTEXT_WINDOW_CONTROL"><code class="docutils literal notranslate"><span class="pre">DEFAULT_CONTEXT_WINDOW_CONTROL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vcs.DEFAULT_LCT"><code class="docutils literal notranslate"><span class="pre">DEFAULT_LCT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vcs.DEFAULT_CHUNK_SIZE"><code class="docutils literal notranslate"><span class="pre">DEFAULT_CHUNK_SIZE</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#package-information">Package Information</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vcs.__version__"><code class="docutils literal notranslate"><span class="pre">__version__</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vcs.__author__"><code class="docutils literal notranslate"><span class="pre">__author__</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vcs.__email__"><code class="docutils literal notranslate"><span class="pre">__email__</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#function-return-types">Function Return Types</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vcs-score-result">VCS Score Result</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#visualization-return-types">Visualization Return Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#error-handling">Error Handling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#common-exceptions">Common Exceptions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ValueError"><code class="docutils literal notranslate"><span class="pre">ValueError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#TypeError"><code class="docutils literal notranslate"><span class="pre">TypeError</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-of-error-handling">Examples of Error Handling</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#type-hints">Type Hints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#see-also">See Also</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Resources:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/yourusername/vcs-metrics">GitHub Repository</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/vcs-metrics/">PyPI Package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #0d9488" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">VCS Metrics</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">API Reference</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/yourusername/vcs-metrics/blob/main/docs/source/api.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="api-reference">
+<h1>API Reference<a class="headerlink" href="#api-reference" title="Link to this heading"></a></h1>
+<p>This page contains the complete API documentation for VCS Metrics, automatically generated from docstrings.</p>
+<section id="core-functions">
+<h2>Core Functions<a class="headerlink" href="#core-functions" title="Link to this heading"></a></h2>
+<section id="main-scoring-function">
+<h3>Main Scoring Function<a class="headerlink" href="#main-scoring-function" title="Link to this heading"></a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="vcs.compute_vcs_score">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">compute_vcs_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reference_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">generated_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segmenter_fn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding_fn_las</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding_fn_gas</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chunk_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context_cutoff_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context_window_control</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lct</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_all_metrics</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_internals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vcs/scorer.html#compute_vcs_score"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vcs.compute_vcs_score" title="Link to this definition"></a></dt>
+<dd><p>Compute Video Comprehension Score (VCS) between reference and generated text.</p>
+<p>The VCS metric combines Global Alignment Score (GAS), Local Alignment Score (LAS),
+and Narrative Alignment Score (NAS) to provide a comprehensive measure of how well
+a generated text preserves the narrative structure and semantic content of a
+reference text.</p>
+<p><strong>Key Metrics Computed:</strong></p>
+<ul class="simple">
+<li><p><strong>GAS (Global Alignment Score)</strong>: Measures overall semantic similarity between
+the full reference and generated texts using document-level embeddings.</p></li>
+<li><p><strong>LAS (Local Alignment Score)</strong>: Evaluates segment-by-segment semantic similarity
+using optimal alignment between text chunks.</p></li>
+<li><p><strong>NAS (Narrative Alignment Score)</strong>: Assesses how well the narrative flow and
+chronological structure are preserved, combining distance-based and line-based
+alignment measures.</p></li>
+<li><p><strong>VCS (Video Comprehension Score)</strong>: The final combined score that balances all
+three metrics to provide an overall narrative similarity assessment.</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>reference_text</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a>) – The reference text to compare against. This should be the “ground truth” or
+original text that serves as the comparison baseline.</p></li>
+<li><p><strong>generated_text</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a>) – The generated text to evaluate. This is the text being assessed for how well
+it preserves the content and structure of the reference.</p></li>
+<li><p><strong>segmenter_fn</strong> (<em>callable</em>) – <p>Function to segment text into meaningful units for comparison. Must take a
+string as input and return a list of strings. Common choices include sentence
+segmentation, clause segmentation, or custom domain-specific segmentation.</p>
+<p>Example: <code class="docutils literal notranslate"><span class="pre">lambda</span> <span class="pre">text:</span> <span class="pre">text.split('.')</span></code> for simple sentence splitting.</p>
+</p></li>
+<li><p><strong>embedding_fn_las</strong> (<em>callable</em>) – <p>Function to compute embeddings for Local Alignment Score calculation. Must
+take a list of strings (text segments) and return a torch.Tensor of shape
+(n_segments, embedding_dim) where each row is the embedding for one segment.</p>
+<p>Example: A function that uses sentence transformers or other semantic models.</p>
+</p></li>
+<li><p><strong>embedding_fn_gas</strong> (<em>callable</em><em>, </em><em>optional</em>) – Function to compute embeddings for Global Alignment Score calculation. If
+None, uses <code class="docutils literal notranslate"><span class="pre">embedding_fn_las</span></code> for both GAS and LAS calculations. Should
+follow the same signature as <code class="docutils literal notranslate"><span class="pre">embedding_fn_las</span></code>.</p></li>
+<li><p><strong>chunk_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><em>int</em></a><em>, </em><em>default=1</em>) – <p>Number of consecutive segments to group together for analysis. Larger values
+create bigger comparison units but may lose fine-grained alignment details.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">chunk_size=1</span></code>: Compare individual segments (most precise)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">chunk_size=2</span></code>: Compare pairs of segments</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">chunk_size=3+</span></code>: Compare larger groups</p></li>
+</ul>
+</p></li>
+<li><p><strong>context_cutoff_value</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a><em>, </em><em>default=0.6</em>) – Threshold that controls when context windows are applied during best match
+finding. Must be between 0 and 1. Higher values make context windows less
+likely to be applied, leading to more restrictive matching.</p></li>
+<li><p><strong>context_window_control</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a><em>, </em><em>default=4.0</em>) – Controls the size of context windows when they are applied. Larger values
+create smaller context windows (more restrictive), while smaller values
+create larger context windows (more permissive).</p></li>
+<li><p><strong>lct</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><em>int</em></a><em>, </em><em>default=0</em>) – <p>Local Chronology Tolerance - allows flexibility in narrative ordering.
+Higher values permit more deviation from strict chronological order:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">lct=0</span></code>: Strict chronological order required</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lct=1</span></code>: Small deviations allowed</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lct=2+</span></code>: More flexible chronological matching</p></li>
+</ul>
+</p></li>
+<li><p><strong>return_all_metrics</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><em>bool</em></a><em>, </em><em>default=False</em>) – If True, returns all intermediate metrics (GAS, LAS, NAS components) in
+addition to the final VCS score. Useful for detailed analysis.</p></li>
+<li><p><strong>return_internals</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><em>bool</em></a><em>, </em><em>default=False</em>) – If True, includes detailed internal calculations and intermediate results.
+Required for generating visualizations and detailed analysis reports.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p>Dictionary containing VCS score and optionally other metrics and internals.</p>
+<p><strong>Minimal return (default):</strong></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">'VCS'</span></code><span class="classifier">float</span></dt><dd><p>The Video Comprehension Score (0.0 to 1.0, higher is better)</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p><strong>With return_all_metrics=True:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">'VCS'</span></code> : float - Video Comprehension Score</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'GAS'</span></code> : float - Global Alignment Score</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'GAS-LAS-Scaled'</span></code> : float - Scaled combination of GAS and LAS</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Precision</span> <span class="pre">LAS'</span></code> : float - LAS precision component</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Recall</span> <span class="pre">LAS'</span></code> : float - LAS recall component</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'LAS'</span></code> : float - Local Alignment Score (F1 of precision/recall)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Precision</span> <span class="pre">NAS-D'</span></code> : float - Distance-based NAS precision</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Recall</span> <span class="pre">NAS-D'</span></code> : float - Distance-based NAS recall</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'NAS-D'</span></code> : float - Distance-based Narrative Alignment Score</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Precision</span> <span class="pre">NAS-L'</span></code> : float - Line-based NAS precision</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Recall</span> <span class="pre">NAS-L'</span></code> : float - Line-based NAS recall</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'NAS-L'</span></code> : float - Line-based Narrative Alignment Score</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'NAS-F1'</span></code> : float - Combined NAS-D and NAS-L score</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Window-Regularizer'</span></code> : float - Regularization factor for window overlap</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'NAS'</span></code> : float - Final regularized Narrative Alignment Score</p></li>
+</ul>
+<p><strong>With return_internals=True:</strong></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">'internals'</span></code><span class="classifier">dict</span></dt><dd><p>Detailed calculation data for visualization and analysis, containing:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">'texts'</span></code>: Original and processed text data</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'similarity'</span></code>: Similarity matrix and related data</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'mapping_windows'</span></code>: Alignment window information</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'alignment'</span></code>: Detailed alignment results</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'metrics'</span></code>: Breakdown of all metric calculations</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'config'</span></code>: Configuration parameters used</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'best_match'</span></code>: Detailed matching information</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)">dict</a></p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference internal" href="#ValueError" title="ValueError"><strong>ValueError</strong></a> – If embedding functions are not callable, or if both embedding functions are None.</p></li>
+<li><p><a class="reference internal" href="#TypeError" title="TypeError"><strong>TypeError</strong></a> – If segmenter_fn is not callable or doesn’t return a list of strings.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p><strong>Basic Usage with Sentence Segmentation:</strong></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">spacy</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sentence_transformers</span><span class="w"> </span><span class="kn">import</span> <span class="n">SentenceTransformer</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Set up segmentation and embedding functions</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">nlp</span> <span class="o">=</span> <span class="n">spacy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;en_core_web_sm&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">SentenceTransformer</span><span class="p">(</span><span class="s1">&#39;all-MiniLM-L6-v2&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">segment_sentences</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">doc</span> <span class="o">=</span> <span class="n">nlp</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="p">[</span><span class="n">sent</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">sent</span> <span class="ow">in</span> <span class="n">doc</span><span class="o">.</span><span class="n">sents</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">get_embeddings</span><span class="p">(</span><span class="n">texts</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">embeddings</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">texts</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">embeddings</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Compare texts</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ref_text</span> <span class="o">=</span> <span class="s2">&quot;The cat sat on the mat. It was very comfortable. The sun was shining.&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gen_text</span> <span class="o">=</span> <span class="s2">&quot;A cat was sitting on a mat and seemed comfortable in the sunshine.&quot;</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span><span class="n">ref_text</span><span class="p">,</span> <span class="n">gen_text</span><span class="p">,</span> <span class="n">segment_sentences</span><span class="p">,</span> <span class="n">get_embeddings</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;VCS Score: </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;VCS&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="go">VCS Score: 0.8234</span>
+</pre></div>
+</div>
+<p><strong>Advanced Usage with All Metrics and Custom Configuration:</strong></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">ref_text</span><span class="p">,</span> <span class="n">gen_text</span><span class="p">,</span> <span class="n">segment_sentences</span><span class="p">,</span> <span class="n">get_embeddings</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">return_all_metrics</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">return_internals</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">chunk_size</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>              <span class="c1"># Group sentences in pairs</span>
+<span class="gp">... </span>    <span class="n">lct</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>                     <span class="c1"># Allow some narrative reordering</span>
+<span class="gp">... </span>    <span class="n">context_cutoff_value</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>  <span class="c1"># More restrictive context windows</span>
+<span class="gp">... </span>    <span class="n">context_window_control</span><span class="o">=</span><span class="mf">3.0</span> <span class="c1"># Larger context windows when applied</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Access individual metrics</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Global Alignment (GAS): </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;GAS&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Local Alignment (LAS): </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;LAS&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Narrative Alignment (NAS): </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;NAS&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Final VCS Score: </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;VCS&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Using Different Embedding Functions for GAS and LAS:</strong></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Use different models for global vs local comparison</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">global_model</span> <span class="o">=</span> <span class="n">SentenceTransformer</span><span class="p">(</span><span class="s1">&#39;all-mpnet-base-v2&#39;</span><span class="p">)</span>  <span class="c1"># Better for documents</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">local_model</span> <span class="o">=</span> <span class="n">SentenceTransformer</span><span class="p">(</span><span class="s1">&#39;all-MiniLM-L6-v2&#39;</span><span class="p">)</span>   <span class="c1"># Faster for segments</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">get_global_embeddings</span><span class="p">(</span><span class="n">texts</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">global_model</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">texts</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">get_local_embeddings</span><span class="p">(</span><span class="n">texts</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">local_model</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">texts</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">ref_text</span><span class="p">,</span> <span class="n">gen_text</span><span class="p">,</span> <span class="n">segment_sentences</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">embedding_fn_las</span><span class="o">=</span><span class="n">get_local_embeddings</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">embedding_fn_gas</span><span class="o">=</span><span class="n">get_global_embeddings</span>
+<span class="gp">... </span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Custom Segmentation for Dialog:</strong></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">segment_dialog</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="c1"># Custom segmentation for dialog/conversation</span>
+<span class="gp">... </span>    <span class="n">lines</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="p">[</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span> <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()]</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dialog_ref</span> <span class="o">=</span> <span class="s2">&quot;Speaker A: Hello there</span><span class="se">\n</span><span class="s2">Speaker B: Hi, how are you?</span><span class="se">\n</span><span class="s2">Speaker A: I&#39;m doing well&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dialog_gen</span> <span class="o">=</span> <span class="s2">&quot;A: Hello</span><span class="se">\n</span><span class="s2">B: Hi, how are you doing?</span><span class="se">\n</span><span class="s2">A: I&#39;m well&quot;</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span><span class="n">dialog_ref</span><span class="p">,</span> <span class="n">dialog_gen</span><span class="p">,</span> <span class="n">segment_dialog</span><span class="p">,</span> <span class="n">get_embeddings</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="#vcs.visualize_metrics_summary" title="vcs.visualize_metrics_summary"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_metrics_summary</span></code></a></dt><dd><p>Create overview visualization of all metrics</p>
+</dd>
+<dt><a class="reference internal" href="#vcs.visualize_similarity_matrix" title="vcs.visualize_similarity_matrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_similarity_matrix</span></code></a></dt><dd><p>Visualize the similarity matrix between segments</p>
+</dd>
+<dt><a class="reference internal" href="#vcs.visualize_mapping_windows" title="vcs.visualize_mapping_windows"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_mapping_windows</span></code></a></dt><dd><p>Show alignment windows used for matching</p>
+</dd>
+<dt><a class="reference internal" href="#vcs.create_vcs_pdf_report" title="vcs.create_vcs_pdf_report"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_vcs_pdf_report</span></code></a></dt><dd><p>Generate comprehensive PDF analysis report</p>
+</dd>
+</dl>
+</div>
+<p class="rubric">Notes</p>
+<p><strong>Choosing Parameters:</strong></p>
+<ul class="simple">
+<li><p><strong>Segmentation</strong>: Use sentence segmentation for most text types. Consider
+custom segmentation for structured content (dialog, lists, etc.)</p></li>
+<li><p><strong>Chunk Size</strong>: Start with 1 for fine-grained analysis. Increase for longer
+texts or when segments are very short.</p></li>
+<li><p><strong>LCT</strong>: Use 0 for strict chronological comparison (news, stories). Use 1-2
+for content where reordering is acceptable (summaries, descriptions).</p></li>
+<li><p><strong>Context Parameters</strong>: Default values work well for most cases. Adjust if
+you need more/less restrictive matching behavior.</p></li>
+</ul>
+<p><strong>Performance Considerations:</strong></p>
+<ul class="simple">
+<li><p>Computation time scales with text length and chunk size</p></li>
+<li><p>Large similarity matrices (&gt;100x100) may be slow to visualize</p></li>
+<li><p>Consider chunking very long texts into smaller sections</p></li>
+</ul>
+<p><strong>Interpretation:</strong></p>
+<ul class="simple">
+<li><p><strong>VCS ≥ 0.8</strong>: Excellent narrative preservation</p></li>
+<li><p><strong>VCS 0.6-0.8</strong>: Good preservation with some differences</p></li>
+<li><p><strong>VCS 0.4-0.6</strong>: Moderate preservation, significant changes</p></li>
+<li><p><strong>VCS &lt; 0.4</strong>: Poor preservation, major structural differences</p></li>
+</ul>
+</dd></dl>
+
+</section>
+</section>
+<section id="visualization-functions">
+<h2>Visualization Functions<a class="headerlink" href="#visualization-functions" title="Link to this heading"></a></h2>
+<section id="configuration-and-overview">
+<h3>Configuration and Overview<a class="headerlink" href="#configuration-and-overview" title="Link to this heading"></a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="vcs.visualize_config">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">visualize_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">internals</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vcs/_visualize_vcs/_config/visualizer.html#visualize_config"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vcs.visualize_config" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>internals</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.13)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></a>]</span>)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="(in Matplotlib v3.10.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Figure</span></code></a></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vcs.visualize_metrics_summary">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">visualize_metrics_summary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">internals</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vcs/_visualize_vcs/_metrics_summary/visualizer.html#visualize_metrics_summary"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vcs.visualize_metrics_summary" title="Link to this definition"></a></dt>
+<dd><p>Create a comprehensive overview of all VCS metrics and their components.</p>
+<p>Displays all computed metrics in a clear horizontal bar chart, organized by
+metric type. Essential for getting a quick overview of the analysis results
+and understanding the relative contributions of different components to the
+final VCS score.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>internals</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><em>dict</em></a>) – The internals dictionary returned by <code class="docutils literal notranslate"><span class="pre">compute_vcs_score</span></code> with
+<code class="docutils literal notranslate"><span class="pre">return_internals=True</span></code>. Must contain complete ‘metrics’ section.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A figure showing all metrics as a horizontal bar chart with color coding
+by metric type and visual separators between metric families.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="(in Matplotlib v3.10.3)">matplotlib.figure.Figure</a></p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span><span class="n">ref_text</span><span class="p">,</span> <span class="n">gen_text</span><span class="p">,</span> <span class="n">segmenter</span><span class="p">,</span> <span class="n">embedder</span><span class="p">,</span>
+<span class="gp">... </span>                          <span class="n">return_internals</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">return_all_metrics</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span> <span class="o">=</span> <span class="n">visualize_metrics_summary</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;internals&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Reading the Summary:</strong></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Top section: Final VCS and GAS scores</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Middle section: LAS components and scaled scores</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Bottom section: NAS components and regularization</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Look for consistent values across precision/recall for balanced results</span>
+</pre></div>
+</div>
+<p class="rubric">Notes</p>
+<ul class="simple">
+<li><p>Provides quick visual assessment of all metric components</p></li>
+<li><p>Color coding helps distinguish metric families</p></li>
+<li><p>Values are displayed alongside bars for precise reading</p></li>
+<li><p>Useful for comparing multiple analyses or parameter settings</p></li>
+<li><p>Should be included in most analysis reports</p></li>
+</ul>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="#vcs.create_vcs_pdf_report" title="vcs.create_vcs_pdf_report"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_vcs_pdf_report</span></code></a></dt><dd><p>Include summary in comprehensive report</p>
+</dd>
+<dt><a class="reference internal" href="#vcs.visualize_config" title="vcs.visualize_config"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_config</span></code></a></dt><dd><p>See parameters that produced these results</p>
+</dd>
+</dl>
+</div>
+</dd></dl>
+
+</section>
+<section id="text-analysis">
+<h3>Text Analysis<a class="headerlink" href="#text-analysis" title="Link to this heading"></a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="vcs.visualize_text_chunks">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">visualize_text_chunks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">internals</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vcs/_visualize_vcs/_text_chunks/visualizer.html#visualize_text_chunks"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vcs.visualize_text_chunks" title="Link to this definition"></a></dt>
+<dd><p>Visualize the segmented and chunked text content from both reference and generated texts.</p>
+<p>Creates structured text displays showing how the input texts were segmented and
+grouped into chunks for analysis. For large numbers of chunks, automatically
+creates multiple pages for better readability. Essential for understanding how
+the algorithm processed the input texts.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>internals</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><em>dict</em></a>) – The internals dictionary returned by <code class="docutils literal notranslate"><span class="pre">compute_vcs_score</span></code> with
+<code class="docutils literal notranslate"><span class="pre">return_internals=True</span></code>. Must contain ‘texts’ section with chunk data.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p>Dictionary with keys ‘reference_chunks’ and ‘generated_chunks’, each
+containing a list of matplotlib figures:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">'reference_chunks'</span></code><span class="classifier">list of plt.Figure</span></dt><dd><p>One or more figures showing reference text chunks</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">'generated_chunks'</span></code><span class="classifier">list of plt.Figure</span></dt><dd><p>One or more figures showing generated text chunks</p>
+</dd>
+</dl>
+</li>
+</ul>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)">dict</a></p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p><strong>Basic Usage:</strong></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span><span class="n">ref_text</span><span class="p">,</span> <span class="n">gen_text</span><span class="p">,</span> <span class="n">segmenter</span><span class="p">,</span> <span class="n">embedder</span><span class="p">,</span>
+<span class="gp">... </span>                          <span class="n">return_internals</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chunk_figs</span> <span class="o">=</span> <span class="n">visualize_text_chunks</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;internals&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Display reference chunks (may be multiple pages)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">fig</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">chunk_figs</span><span class="p">[</span><span class="s1">&#39;reference_chunks&#39;</span><span class="p">]):</span>
+<span class="gp">... </span>    <span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Reference Chunks - Page </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Display generated chunks</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">fig</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">chunk_figs</span><span class="p">[</span><span class="s1">&#39;generated_chunks&#39;</span><span class="p">]):</span>
+<span class="gp">... </span>    <span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Generated Chunks - Page </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Save All Chunk Visualizations:</strong></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">chunk_figs</span> <span class="o">=</span> <span class="n">visualize_text_chunks</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;internals&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Save reference chunk pages</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">fig</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">chunk_figs</span><span class="p">[</span><span class="s1">&#39;reference_chunks&#39;</span><span class="p">]):</span>
+<span class="gp">... </span>    <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;ref_chunks_page_</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s1">.png&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>  <span class="c1"># Free memory</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Save generated chunk pages</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">fig</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">chunk_figs</span><span class="p">[</span><span class="s1">&#39;generated_chunks&#39;</span><span class="p">]):</span>
+<span class="gp">... </span>    <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;gen_chunks_page_</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s1">.png&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="rubric">Notes</p>
+<ul class="simple">
+<li><p>Chunks are automatically paginated when there are more than 25 chunks per page</p></li>
+<li><p>Each chunk is numbered according to its position in the analysis</p></li>
+<li><p>Text is automatically wrapped for better readability</p></li>
+<li><p>Useful for debugging segmentation issues or understanding text preprocessing</p></li>
+</ul>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="#vcs.visualize_similarity_matrix" title="vcs.visualize_similarity_matrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_similarity_matrix</span></code></a></dt><dd><p>See how chunks relate to each other</p>
+</dd>
+<dt><a class="reference internal" href="#vcs.visualize_mapping_windows" title="vcs.visualize_mapping_windows"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_mapping_windows</span></code></a></dt><dd><p>Understand chunk alignment windows</p>
+</dd>
+</dl>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vcs.visualize_similarity_matrix">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">visualize_similarity_matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">internals</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vcs/_visualize_vcs/_similarity_matrix/visualizer.html#visualize_similarity_matrix"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vcs.visualize_similarity_matrix" title="Link to this definition"></a></dt>
+<dd><p>Create a heatmap visualization of the similarity matrix between text chunks.</p>
+<p>Displays the cosine similarity values between all reference and generated text
+chunks as a color-coded matrix. Optionally highlights the best matches found
+during precision and recall alignment. Essential for understanding the semantic
+relationships discovered by the algorithm.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>internals</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><em>dict</em></a>) – The internals dictionary returned by <code class="docutils literal notranslate"><span class="pre">compute_vcs_score</span></code> with
+<code class="docutils literal notranslate"><span class="pre">return_internals=True</span></code>. Must contain ‘similarity’, ‘alignment’, and
+‘texts’ sections.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A figure containing the similarity matrix heatmap with optional match
+highlighting. The matrix shows reference chunks on the y-axis and
+generated chunks on the x-axis.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="(in Matplotlib v3.10.3)">matplotlib.figure.Figure</a></p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span><span class="n">ref_text</span><span class="p">,</span> <span class="n">gen_text</span><span class="p">,</span> <span class="n">segmenter</span><span class="p">,</span> <span class="n">embedder</span><span class="p">,</span>
+<span class="gp">... </span>                          <span class="n">return_internals</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span> <span class="o">=</span> <span class="n">visualize_similarity_matrix</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;internals&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Customize and Save:</strong></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span> <span class="o">=</span> <span class="n">visualize_similarity_matrix</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;internals&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Custom Title: Semantic Similarity Analysis&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;similarity_matrix.png&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="rubric">Notes</p>
+<ul class="simple">
+<li><p>Color intensity represents similarity strength (darker = more similar)</p></li>
+<li><p>Red boxes highlight precision matches (generated → reference)</p></li>
+<li><p>Blue boxes highlight recall matches (reference → generated)</p></li>
+<li><p>For very large matrices (&gt;100x100), matches may not be shown for clarity</p></li>
+<li><p>Values range from 0.0 (no similarity) to 1.0 (identical)</p></li>
+</ul>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="#vcs.visualize_text_chunks" title="vcs.visualize_text_chunks"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_text_chunks</span></code></a></dt><dd><p>See the actual text content being compared</p>
+</dd>
+<dt><a class="reference internal" href="#vcs.visualize_best_match" title="vcs.visualize_best_match"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_best_match</span></code></a></dt><dd><p>Detailed analysis of matching decisions</p>
+</dd>
+<dt><a class="reference internal" href="#vcs.visualize_mapping_windows" title="vcs.visualize_mapping_windows"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_mapping_windows</span></code></a></dt><dd><p>See alignment constraints applied</p>
+</dd>
+</dl>
+</div>
+</dd></dl>
+
+</section>
+<section id="alignment-analysis">
+<h3>Alignment Analysis<a class="headerlink" href="#alignment-analysis" title="Link to this heading"></a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="vcs.visualize_mapping_windows">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">visualize_mapping_windows</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">internals</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vcs/_visualize_vcs/_mapping_windows/visualizer.html#visualize_mapping_windows"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vcs.visualize_mapping_windows" title="Link to this definition"></a></dt>
+<dd><p>Visualize the mapping windows used for constraining alignment between texts.</p>
+<p>Shows the allowable alignment regions (mapping windows) that constrain which
+reference chunks can be matched to which generated chunks. This helps maintain
+chronological ordering while allowing some flexibility. Also displays Local
+Chronology Tolerance (LCT) zones when applicable.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>internals</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><em>dict</em></a>) – The internals dictionary returned by <code class="docutils literal notranslate"><span class="pre">compute_vcs_score</span></code> with
+<code class="docutils literal notranslate"><span class="pre">return_internals=True</span></code>. Must contain ‘mapping_windows’, ‘alignment’,
+‘config’, and ‘metrics’ sections.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A figure with two subplots showing precision and recall mapping windows,
+including LCT padding zones and actual matches found.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="(in Matplotlib v3.10.3)">matplotlib.figure.Figure</a></p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span><span class="n">ref_text</span><span class="p">,</span> <span class="n">gen_text</span><span class="p">,</span> <span class="n">segmenter</span><span class="p">,</span> <span class="n">embedder</span><span class="p">,</span>
+<span class="gp">... </span>                          <span class="n">return_internals</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">lct</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span> <span class="o">=</span> <span class="n">visualize_mapping_windows</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;internals&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Understanding the Visualization:</strong></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># The left plot shows precision windows (gen → ref)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># The right plot shows recall windows (ref → gen)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Blue rectangles are original mapping windows</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Green dashed areas are LCT tolerance zones (if lct &gt; 0)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Colored dots show actual matches found</span>
+</pre></div>
+</div>
+<p class="rubric">Notes</p>
+<ul class="simple">
+<li><p>Mapping windows enforce approximate chronological order</p></li>
+<li><p>LCT (Local Chronology Tolerance) adds flexibility zones around windows</p></li>
+<li><p>Window size depends on the ratio of text lengths</p></li>
+<li><p>Matches outside windows incur penalties in NAS-D calculation</p></li>
+<li><p>Green padding shows where LCT allows matches without penalty</p></li>
+</ul>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="#vcs.visualize_distance_nas" title="vcs.visualize_distance_nas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_distance_nas</span></code></a></dt><dd><p>See how mapping windows affect NAS-D penalties</p>
+</dd>
+<dt><a class="reference internal" href="#vcs.visualize_similarity_matrix" title="vcs.visualize_similarity_matrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_similarity_matrix</span></code></a></dt><dd><p>Compare with unconstrained similarity</p>
+</dd>
+</dl>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vcs.visualize_best_match">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">visualize_best_match</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">internals</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vcs/_visualize_vcs/_best_match/visualizer.html#visualize_best_match"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vcs.visualize_best_match" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>internals</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.13)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></a>]</span>)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="(in Matplotlib v3.10.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Figure</span></code></a>]</span></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="metric-visualizations">
+<h3>Metric Visualizations<a class="headerlink" href="#metric-visualizations" title="Link to this heading"></a></h3>
+<section id="local-alignment-score-las">
+<h4>Local Alignment Score (LAS)<a class="headerlink" href="#local-alignment-score-las" title="Link to this heading"></a></h4>
+<dl class="py function">
+<dt class="sig sig-object py" id="vcs.visualize_las">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">visualize_las</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">internals</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vcs/_visualize_vcs/_las/visualizer.html#visualize_las"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vcs.visualize_las" title="Link to this definition"></a></dt>
+<dd><p>Creates a visualization of LAS metrics with improved average line annotations
+that remain visible regardless of data values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>internals</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.13)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></a>]</span>)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="(in Matplotlib v3.10.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Figure</span></code></a></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="narrative-alignment-score-nas">
+<h4>Narrative Alignment Score (NAS)<a class="headerlink" href="#narrative-alignment-score-nas" title="Link to this heading"></a></h4>
+<dl class="py function">
+<dt class="sig sig-object py" id="vcs.visualize_distance_nas">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">visualize_distance_nas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">internals</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vcs/_visualize_vcs/_distance_nas/visualizer.html#visualize_distance_nas"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vcs.visualize_distance_nas" title="Link to this definition"></a></dt>
+<dd><p>Visualize distance-based NAS metrics with precision and recall mapping and penalty plots.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>internals</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.13)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></a>]</span>) – The internals dictionary from VCS computation</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="(in Matplotlib v3.10.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Figure</span></code></a></span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Figure containing precision and recall distance NAS visualizations</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vcs.visualize_line_nas">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">visualize_line_nas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">internals</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vcs/_visualize_vcs/_line_nas/visualizer.html#visualize_line_nas"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vcs.visualize_line_nas" title="Link to this definition"></a></dt>
+<dd><p>Visualize Line-based Narrative Alignment Score (NAS-L) calculations.</p>
+<p>Shows the actual alignment paths compared to ideal narrative lines for both
+precision and recall directions. Displays floor (shortest) and ceiling (longest)
+ideal paths along with the actual path taken through the alignment space.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>internals</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><em>dict</em></a>) – The internals dictionary returned by <code class="docutils literal notranslate"><span class="pre">compute_vcs_score</span></code> with
+<code class="docutils literal notranslate"><span class="pre">return_internals=True</span></code>. Must contain ‘alignment’ and ‘metrics’ sections
+with line-based NAS calculations.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A figure with two subplots showing precision and recall line-based analysis,
+including actual paths, ideal boundaries, and calculated path lengths.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="(in Matplotlib v3.10.3)">matplotlib.figure.Figure</a></p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span><span class="n">ref_text</span><span class="p">,</span> <span class="n">gen_text</span><span class="p">,</span> <span class="n">segmenter</span><span class="p">,</span> <span class="n">embedder</span><span class="p">,</span>
+<span class="gp">... </span>                          <span class="n">return_internals</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span> <span class="o">=</span> <span class="n">visualize_line_nas</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;internals&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Path Interpretation:</strong></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Blue line with circles = actual alignment path</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Green dashed line with triangles = floor ideal (shortest possible path)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Red dashed line with squares = ceiling ideal (longest possible path)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># NAS-L = 1.0 if actual path is between floor and ceiling</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># NAS-L &lt; 1.0 if actual path is outside the ideal range</span>
+</pre></div>
+</div>
+<p class="rubric">Notes</p>
+<ul class="simple">
+<li><p>NAS-L measures narrative flow continuity via path analysis</p></li>
+<li><p>Ideal paths represent optimal narrative alignment boundaries</p></li>
+<li><p>Actual path length is calculated using Euclidean distance between matches</p></li>
+<li><p>Paths outside the ideal band indicate narrative flow disruption</p></li>
+<li><p>Combines with NAS-D to form comprehensive narrative alignment assessment</p></li>
+</ul>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="#vcs.visualize_distance_nas" title="vcs.visualize_distance_nas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_distance_nas</span></code></a></dt><dd><p>Compare with distance-based narrative analysis</p>
+</dd>
+<dt><a class="reference internal" href="#vcs.visualize_line_nas_precision_calculations" title="vcs.visualize_line_nas_precision_calculations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_line_nas_precision_calculations</span></code></a></dt><dd><p>Detailed precision calculations</p>
+</dd>
+<dt><a class="reference internal" href="#vcs.visualize_line_nas_recall_calculations" title="vcs.visualize_line_nas_recall_calculations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_line_nas_recall_calculations</span></code></a></dt><dd><p>Detailed recall calculations</p>
+</dd>
+</dl>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vcs.visualize_line_nas_precision_calculations">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">visualize_line_nas_precision_calculations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">internals</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vcs/_visualize_vcs/_line_nas/calculations_visualizer.html#visualize_line_nas_precision_calculations"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vcs.visualize_line_nas_precision_calculations" title="Link to this definition"></a></dt>
+<dd><p>Create detailed visualizations of precision Line-based NAS calculations.</p>
+<p>Provides comprehensive breakdown of how the precision NAS-L score was calculated,
+including segment-by-segment analysis, threshold applications, and calculation
+methods. Automatically creates multiple pages for large datasets.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>internals</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><em>dict</em></a>) – The internals dictionary returned by <code class="docutils literal notranslate"><span class="pre">compute_vcs_score</span></code> with
+<code class="docutils literal notranslate"><span class="pre">return_internals=True</span></code>. Must contain detailed line-based NAS calculations.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of figures (one or more pages) showing detailed precision NAS-L
+calculations, including:
+- Summary statistics and calculation methods
+- Segment-by-segment breakdown table
+- Threshold and LCT information</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.13)">list</a> of <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="(in Matplotlib v3.10.3)">matplotlib.figure.Figure</a></p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span><span class="n">ref_text</span><span class="p">,</span> <span class="n">gen_text</span><span class="p">,</span> <span class="n">segmenter</span><span class="p">,</span> <span class="n">embedder</span><span class="p">,</span>
+<span class="gp">... </span>                          <span class="n">return_internals</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">lct</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">precision_figs</span> <span class="o">=</span> <span class="n">visualize_line_nas_precision_calculations</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;internals&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Display all pages</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">fig</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">precision_figs</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Precision NAS-L Calculations - Page </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p class="rubric">Notes</p>
+<ul class="simple">
+<li><p>Shows how each segment in the alignment path contributes to the total length</p></li>
+<li><p>Indicates which calculation method was used for each segment</p></li>
+<li><p>Displays LCT threshold applications when applicable</p></li>
+<li><p>Essential for debugging unexpected NAS-L precision scores</p></li>
+<li><p>Automatically paginated for datasets with &gt;15 segments per page</p></li>
+</ul>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="#vcs.visualize_line_nas" title="vcs.visualize_line_nas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_line_nas</span></code></a></dt><dd><p>Overview of line-based analysis</p>
+</dd>
+<dt><a class="reference internal" href="#vcs.visualize_line_nas_recall_calculations" title="vcs.visualize_line_nas_recall_calculations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_line_nas_recall_calculations</span></code></a></dt><dd><p>Corresponding recall analysis</p>
+</dd>
+</dl>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="vcs.visualize_line_nas_recall_calculations">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">visualize_line_nas_recall_calculations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">internals</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vcs/_visualize_vcs/_line_nas/calculations_visualizer.html#visualize_line_nas_recall_calculations"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vcs.visualize_line_nas_recall_calculations" title="Link to this definition"></a></dt>
+<dd><p>Create detailed visualizations of recall Line-based NAS calculations.</p>
+<p>Provides comprehensive breakdown of how the recall NAS-L score was calculated,
+including segment-by-segment analysis, threshold applications, and calculation
+methods. Automatically creates multiple pages for large datasets.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>internals</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><em>dict</em></a>) – The internals dictionary returned by <code class="docutils literal notranslate"><span class="pre">compute_vcs_score</span></code> with
+<code class="docutils literal notranslate"><span class="pre">return_internals=True</span></code>. Must contain detailed line-based NAS calculations.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of figures (one or more pages) showing detailed recall NAS-L
+calculations, including:
+- Summary statistics and calculation methods
+- Segment-by-segment breakdown table
+- Threshold and LCT information</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.13)">list</a> of <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="(in Matplotlib v3.10.3)">matplotlib.figure.Figure</a></p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span><span class="n">ref_text</span><span class="p">,</span> <span class="n">gen_text</span><span class="p">,</span> <span class="n">segmenter</span><span class="p">,</span> <span class="n">embedder</span><span class="p">,</span>
+<span class="gp">... </span>                          <span class="n">return_internals</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">lct</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">recall_figs</span> <span class="o">=</span> <span class="n">visualize_line_nas_recall_calculations</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;internals&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Save all pages to files</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">fig</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">recall_figs</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;recall_nas_l_page_</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s1">.png&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="rubric">Notes</p>
+<ul class="simple">
+<li><p>Shows how each segment in the alignment path contributes to the total length</p></li>
+<li><p>Indicates which calculation method was used for each segment</p></li>
+<li><p>Displays LCT threshold applications when applicable</p></li>
+<li><p>Essential for debugging unexpected NAS-L recall scores</p></li>
+<li><p>Automatically paginated for datasets with &gt;15 segments per page</p></li>
+</ul>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="#vcs.visualize_line_nas" title="vcs.visualize_line_nas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_line_nas</span></code></a></dt><dd><p>Overview of line-based analysis</p>
+</dd>
+<dt><a class="reference internal" href="#vcs.visualize_line_nas_precision_calculations" title="vcs.visualize_line_nas_precision_calculations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_line_nas_precision_calculations</span></code></a></dt><dd><p>Corresponding precision analysis</p>
+</dd>
+</dl>
+</div>
+</dd></dl>
+
+</section>
+<section id="window-regularization">
+<h4>Window Regularization<a class="headerlink" href="#window-regularization" title="Link to this heading"></a></h4>
+<dl class="py function">
+<dt class="sig sig-object py" id="vcs.visualize_window_regularizer">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">visualize_window_regularizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">internals</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vcs/_visualize_vcs/_window_regularizer/visualizer.html#visualize_window_regularizer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vcs.visualize_window_regularizer" title="Link to this definition"></a></dt>
+<dd><p>Visualize the Window Regularizer calculation and its components.</p>
+<p>Shows how the window regularizer adjusts the final NAS score based on the
+overlap between mapping windows and the total timeline area. The regularizer
+prevents inflated scores when mapping windows cover too much of the alignment
+space.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>internals</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><em>dict</em></a>) – The internals dictionary returned by <code class="docutils literal notranslate"><span class="pre">compute_vcs_score</span></code> with
+<code class="docutils literal notranslate"><span class="pre">return_internals=True</span></code>. Must contain ‘metrics’ section with regularizer
+calculations.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A figure showing the regularizer components as a bar chart with calculation
+formula and final regularizer value prominently displayed.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="(in Matplotlib v3.10.3)">matplotlib.figure.Figure</a></p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span><span class="n">ref_text</span><span class="p">,</span> <span class="n">gen_text</span><span class="p">,</span> <span class="n">segmenter</span><span class="p">,</span> <span class="n">embedder</span><span class="p">,</span>
+<span class="gp">... </span>                          <span class="n">return_internals</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span> <span class="o">=</span> <span class="n">visualize_window_regularizer</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;internals&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Understanding Regularization:</strong></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Higher regularizer values indicate more window overlap</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># This leads to lower final NAS scores to prevent gaming the metric</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Important when text lengths are very different</span>
+</pre></div>
+</div>
+<p class="rubric">Notes</p>
+<ul class="simple">
+<li><p>Window regularizer prevents score inflation from excessive window overlap</p></li>
+<li><p>Based on ratio of mapping window area to total timeline area</p></li>
+<li><p>Higher values indicate more overlap, leading to stronger regularization</p></li>
+<li><p>Final NAS = (NAS-F1 - regularizer) / (1 - regularizer) when positive</p></li>
+<li><p>Essential for fair comparison across different text length ratios</p></li>
+</ul>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="#vcs.visualize_mapping_windows" title="vcs.visualize_mapping_windows"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_mapping_windows</span></code></a></dt><dd><p>See the windows being regularized</p>
+</dd>
+<dt><a class="reference internal" href="#vcs.visualize_metrics_summary" title="vcs.visualize_metrics_summary"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_metrics_summary</span></code></a></dt><dd><p>See impact on final NAS score</p>
+</dd>
+</dl>
+</div>
+</dd></dl>
+
+</section>
+</section>
+<section id="report-generation">
+<h3>Report Generation<a class="headerlink" href="#report-generation" title="Link to this heading"></a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="vcs.create_vcs_pdf_report">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">create_vcs_pdf_report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">internals</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metrics_to_include</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vcs/_visualize_vcs/_pdf_report/pdf_report.html#create_vcs_pdf_report"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vcs.create_vcs_pdf_report" title="Link to this definition"></a></dt>
+<dd><p>Generate a comprehensive PDF report of the VCS analysis.</p>
+<p>Creates a professional, multi-page PDF report containing all relevant
+visualizations, metrics, and analysis details. Perfect for documentation,
+sharing results, or creating analysis archives.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>internals</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><em>dict</em></a>) – The internals dictionary returned by <code class="docutils literal notranslate"><span class="pre">compute_vcs_score</span></code> with
+<code class="docutils literal notranslate"><span class="pre">return_internals=True</span></code>. Must contain complete analysis data.</p></li>
+<li><p><strong>output_file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a>) – Path where the PDF report should be saved. Directory will be created
+if it doesn’t exist. Should end with ‘.pdf’.</p></li>
+<li><p><strong>metrics_to_include</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.13)"><em>list</em></a><em> of </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a><em>, </em><em>default=&quot;all&quot;</em>) – <p>Controls which sections to include in the report:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;all&quot;</span></code> : Include all available visualizations and analyses</p></li>
+<li><p>List of specific metrics: Choose from:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;Config&quot;</span></code> : Configuration parameters</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;Overview&quot;</span></code> : Metrics summary</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;Text</span> <span class="pre">Chunks&quot;</span></code> : Segmented text display</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;Similarity</span> <span class="pre">Matrix&quot;</span></code> : Similarity heatmap</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;Mapping</span> <span class="pre">Windows&quot;</span></code> : Alignment windows</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;Best</span> <span class="pre">Match&quot;</span></code> : Match analysis details</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;LAS&quot;</span></code> : Local Alignment Score analysis</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;NAS</span> <span class="pre">Distance&quot;</span></code> : Distance-based NAS analysis</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;NAS</span> <span class="pre">Line&quot;</span></code> : Line-based NAS analysis</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;Window</span> <span class="pre">Regularizer&quot;</span></code> : Regularization analysis</p></li>
+</ul>
+</li>
+</ul>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The function saves the PDF to the specified file path.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p><strong>Create Complete Report:</strong></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span><span class="n">ref_text</span><span class="p">,</span> <span class="n">gen_text</span><span class="p">,</span> <span class="n">segmenter</span><span class="p">,</span> <span class="n">embedder</span><span class="p">,</span>
+<span class="gp">... </span>                          <span class="n">return_internals</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">return_all_metrics</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">create_vcs_pdf_report</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;internals&#39;</span><span class="p">],</span> <span class="s1">&#39;analysis_report.pdf&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Complete PDF report saved to analysis_report.pdf&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Create Focused Report:</strong></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Include only key metrics for a summary report</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">create_vcs_pdf_report</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">result</span><span class="p">[</span><span class="s1">&#39;internals&#39;</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">&#39;summary_report.pdf&#39;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">metrics_to_include</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Config&quot;</span><span class="p">,</span> <span class="s2">&quot;Overview&quot;</span><span class="p">,</span> <span class="s2">&quot;LAS&quot;</span><span class="p">,</span> <span class="s2">&quot;NAS Distance&quot;</span><span class="p">]</span>
+<span class="gp">... </span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Create Report for Specific Analysis:</strong></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Focus on similarity and alignment analysis</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">create_vcs_pdf_report</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">result</span><span class="p">[</span><span class="s1">&#39;internals&#39;</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">&#39;alignment_analysis.pdf&#39;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">metrics_to_include</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Similarity Matrix&quot;</span><span class="p">,</span> <span class="s2">&quot;Best Match&quot;</span><span class="p">,</span> <span class="s2">&quot;Mapping Windows&quot;</span><span class="p">]</span>
+<span class="gp">... </span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Organize Multiple Reports:</strong></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s1">&#39;reports&#39;</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Create timestamped report</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">timestamp</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2">_%H%M%S&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">report_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;reports/vcs_analysis_</span><span class="si">{</span><span class="n">timestamp</span><span class="si">}</span><span class="s1">.pdf&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">create_vcs_pdf_report</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;internals&#39;</span><span class="p">],</span> <span class="n">report_path</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="rubric">Notes</p>
+<p><strong>Report Structure:</strong></p>
+<ul class="simple">
+<li><p>Title page with generation date and library version</p></li>
+<li><p>Optional metrics summary page (when multiple metrics included)</p></li>
+<li><p>Optional table of contents (when multiple sections included)</p></li>
+<li><p>Individual analysis sections as specified</p></li>
+<li><p>Automatic page numbering and professional formatting</p></li>
+</ul>
+<p><strong>Performance Notes:</strong></p>
+<ul class="simple">
+<li><p>Large datasets may take several minutes to generate complete reports</p></li>
+<li><p>Consider using specific metrics list for faster generation</p></li>
+<li><p>Reports with many text chunks or detailed calculations will be longer</p></li>
+<li><p>PDF generation temporarily disables matplotlib display to avoid memory issues</p></li>
+</ul>
+<p><strong>Best Practices:</strong></p>
+<ul class="simple">
+<li><p>Always include “Config” and “Overview” for documentation</p></li>
+<li><p>Use descriptive file names with dates/versions</p></li>
+<li><p>Consider file size when including all visualizations</p></li>
+<li><p>Test with smaller metric sets first for large datasets</p></li>
+</ul>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="#vcs.visualize_metrics_summary" title="vcs.visualize_metrics_summary"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_metrics_summary</span></code></a></dt><dd><p>Quick overview without full report</p>
+</dd>
+<dt><a class="reference internal" href="#vcs.visualize_config" title="vcs.visualize_config"><code class="xref py py-obj docutils literal notranslate"><span class="pre">visualize_config</span></code></a></dt><dd><p>Just configuration display</p>
+</dd>
+</dl>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><a class="reference internal" href="#ValueError" title="ValueError"><strong>ValueError</strong></a> – If unknown metric names are provided in metrics_to_include list.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#IOError" title="(in Python v3.13)"><strong>IOError</strong></a> – If output directory cannot be created or file cannot be written.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+<section id="configuration-constants">
+<h2>Configuration Constants<a class="headerlink" href="#configuration-constants" title="Link to this heading"></a></h2>
+<p>Default configuration values that can be imported and used:</p>
+<dl class="py data">
+<dt class="sig sig-object py" id="vcs.DEFAULT_CONTEXT_CUTOFF_VALUE">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">DEFAULT_CONTEXT_CUTOFF_VALUE</span></span><em class="property"><span class="w"> </span><span class="pre">=</span> <span class="pre">0.6</span></em><a class="headerlink" href="#vcs.DEFAULT_CONTEXT_CUTOFF_VALUE" title="Link to this definition"></a></dt>
+<dd><p>Convert a string or number to a floating-point number, if possible.</p>
+<p>Default context cutoff value for best match finding. Controls when context windows are applied during the best match selection process.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="vcs.DEFAULT_CONTEXT_WINDOW_CONTROL">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">DEFAULT_CONTEXT_WINDOW_CONTROL</span></span><em class="property"><span class="w"> </span><span class="pre">=</span> <span class="pre">4.0</span></em><a class="headerlink" href="#vcs.DEFAULT_CONTEXT_WINDOW_CONTROL" title="Link to this definition"></a></dt>
+<dd><p>Convert a string or number to a floating-point number, if possible.</p>
+<p>Default context window control parameter. Controls the size of context windows when they are applied during best match finding.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="vcs.DEFAULT_LCT">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">DEFAULT_LCT</span></span><em class="property"><span class="w"> </span><span class="pre">=</span> <span class="pre">0</span></em><a class="headerlink" href="#vcs.DEFAULT_LCT" title="Link to this definition"></a></dt>
+<dd><p>int([x]) -&gt; integer
+int(x, base=10) -&gt; integer</p>
+<p>Convert a number or string to an integer, or return 0 if no arguments
+are given.  If x is a number, return x.__int__().  For floating-point
+numbers, this truncates towards zero.</p>
+<p>If x is not a number or if base is given, then x must be a string,
+bytes, or bytearray instance representing an integer literal in the
+given base.  The literal can be preceded by ‘+’ or ‘-’ and be surrounded
+by whitespace.  The base defaults to 10.  Valid bases are 0 and 2-36.
+Base 0 means to interpret the base from the string as an integer literal.
+&gt;&gt;&gt; int(‘0b100’, base=0)
+4</p>
+<p>Default Local Chronology Tolerance (LCT) value. Controls how much flexibility is allowed in narrative chronological ordering.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="vcs.DEFAULT_CHUNK_SIZE">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">DEFAULT_CHUNK_SIZE</span></span><em class="property"><span class="w"> </span><span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#vcs.DEFAULT_CHUNK_SIZE" title="Link to this definition"></a></dt>
+<dd><p>int([x]) -&gt; integer
+int(x, base=10) -&gt; integer</p>
+<p>Convert a number or string to an integer, or return 0 if no arguments
+are given.  If x is a number, return x.__int__().  For floating-point
+numbers, this truncates towards zero.</p>
+<p>If x is not a number or if base is given, then x must be a string,
+bytes, or bytearray instance representing an integer literal in the
+given base.  The literal can be preceded by ‘+’ or ‘-’ and be surrounded
+by whitespace.  The base defaults to 10.  Valid bases are 0 and 2-36.
+Base 0 means to interpret the base from the string as an integer literal.
+&gt;&gt;&gt; int(‘0b100’, base=0)
+4</p>
+<p>Default chunk size for grouping text segments. Determines how many consecutive text segments are grouped together to form analysis chunks.</p>
+</dd></dl>
+
+</section>
+<section id="package-information">
+<h2>Package Information<a class="headerlink" href="#package-information" title="Link to this heading"></a></h2>
+<dl class="py data">
+<dt class="sig sig-object py" id="vcs.__version__">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">__version__</span></span><em class="property"><span class="w"> </span><span class="pre">=</span> <span class="pre">&quot;1.0.0&quot;</span></em><a class="headerlink" href="#vcs.__version__" title="Link to this definition"></a></dt>
+<dd><p>str(object=’’) -&gt; str
+str(bytes_or_buffer[, encoding[, errors]]) -&gt; str</p>
+<p>Create a new string object from the given object. If encoding or
+errors is specified, then the object must expose a data buffer
+that will be decoded using the given encoding and error handler.
+Otherwise, returns the result of object.__str__() (if defined)
+or repr(object).
+encoding defaults to ‘utf-8’.
+errors defaults to ‘strict’.</p>
+<p>Current version of the VCS Metrics package.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="vcs.__author__">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">__author__</span></span><em class="property"><span class="w"> </span><span class="pre">=</span> <span class="pre">&quot;Harsh</span> <span class="pre">Dubey&quot;</span></em><a class="headerlink" href="#vcs.__author__" title="Link to this definition"></a></dt>
+<dd><p>str(object=’’) -&gt; str
+str(bytes_or_buffer[, encoding[, errors]]) -&gt; str</p>
+<p>Create a new string object from the given object. If encoding or
+errors is specified, then the object must expose a data buffer
+that will be decoded using the given encoding and error handler.
+Otherwise, returns the result of object.__str__() (if defined)
+or repr(object).
+encoding defaults to ‘utf-8’.
+errors defaults to ‘strict’.</p>
+<p>Primary author of the VCS Metrics package.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="vcs.__email__">
+<span class="sig-prename descclassname"><span class="pre">vcs.</span></span><span class="sig-name descname"><span class="pre">__email__</span></span><em class="property"><span class="w"> </span><span class="pre">=</span> <span class="pre">&quot;chulwoo.pack&#64;sdstate.edu&quot;</span></em><a class="headerlink" href="#vcs.__email__" title="Link to this definition"></a></dt>
+<dd><p>str(object=’’) -&gt; str
+str(bytes_or_buffer[, encoding[, errors]]) -&gt; str</p>
+<p>Create a new string object from the given object. If encoding or
+errors is specified, then the object must expose a data buffer
+that will be decoded using the given encoding and error handler.
+Otherwise, returns the result of object.__str__() (if defined)
+or repr(object).
+encoding defaults to ‘utf-8’.
+errors defaults to ‘strict’.</p>
+<p>Contact email for the VCS Metrics package.</p>
+</dd></dl>
+
+</section>
+<section id="function-return-types">
+<h2>Function Return Types<a class="headerlink" href="#function-return-types" title="Link to this heading"></a></h2>
+<section id="vcs-score-result">
+<h3>VCS Score Result<a class="headerlink" href="#vcs-score-result" title="Link to this heading"></a></h3>
+<p>The <a class="reference internal" href="#vcs.compute_vcs_score" title="vcs.compute_vcs_score"><code class="xref py py-func docutils literal notranslate"><span class="pre">vcs.compute_vcs_score()</span></code></a> function returns a dictionary with the following structure:</p>
+<p><strong>Minimal return (default):</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;VCS&#39;</span><span class="p">:</span> <span class="nb">float</span>  <span class="c1"># Video Comprehension Score (0.0 to 1.0)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>With return_all_metrics=True:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;VCS&#39;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>                    <span class="c1"># Video Comprehension Score</span>
+    <span class="s1">&#39;GAS&#39;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>                    <span class="c1"># Global Alignment Score</span>
+    <span class="s1">&#39;GAS-LAS-Scaled&#39;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>         <span class="c1"># Scaled combination of GAS and LAS</span>
+    <span class="s1">&#39;Precision LAS&#39;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>          <span class="c1"># LAS precision component</span>
+    <span class="s1">&#39;Recall LAS&#39;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>             <span class="c1"># LAS recall component</span>
+    <span class="s1">&#39;LAS&#39;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>                    <span class="c1"># Local Alignment Score (F1)</span>
+    <span class="s1">&#39;Precision NAS-D&#39;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>        <span class="c1"># Distance-based NAS precision</span>
+    <span class="s1">&#39;Recall NAS-D&#39;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>           <span class="c1"># Distance-based NAS recall</span>
+    <span class="s1">&#39;NAS-D&#39;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>                  <span class="c1"># Distance-based NAS</span>
+    <span class="s1">&#39;Precision NAS-L&#39;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>        <span class="c1"># Line-based NAS precision</span>
+    <span class="s1">&#39;Recall NAS-L&#39;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>           <span class="c1"># Line-based NAS recall</span>
+    <span class="s1">&#39;NAS-L&#39;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>                  <span class="c1"># Line-based NAS</span>
+    <span class="s1">&#39;NAS-F1&#39;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>                 <span class="c1"># Combined NAS-D and NAS-L</span>
+    <span class="s1">&#39;Window-Regularizer&#39;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>     <span class="c1"># Regularization factor</span>
+    <span class="s1">&#39;NAS&#39;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>                    <span class="c1"># Final regularized NAS</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>With return_internals=True:</strong></p>
+<p>Adds an <code class="docutils literal notranslate"><span class="pre">'internals'</span></code> key containing detailed calculation data for visualization and analysis.</p>
+</section>
+<section id="visualization-return-types">
+<h3>Visualization Return Types<a class="headerlink" href="#visualization-return-types" title="Link to this heading"></a></h3>
+<p>Most visualization functions return <code class="docutils literal notranslate"><span class="pre">matplotlib.figure.Figure</span></code> objects:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">vcs</span><span class="w"> </span><span class="kn">import</span> <span class="n">visualize_similarity_matrix</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">visualize_similarity_matrix</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;internals&#39;</span><span class="p">])</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>  <span class="c1"># Display the plot</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;output.png&#39;</span><span class="p">)</span>  <span class="c1"># Save to file</span>
+</pre></div>
+</div>
+<p>Some functions return multiple figures or dictionaries of figures:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#vcs.visualize_text_chunks" title="vcs.visualize_text_chunks"><code class="xref py py-func docutils literal notranslate"><span class="pre">vcs.visualize_text_chunks()</span></code></a>: Returns <code class="docutils literal notranslate"><span class="pre">Dict[str,</span> <span class="pre">List[plt.Figure]]</span></code></p></li>
+<li><p><a class="reference internal" href="#vcs.visualize_best_match" title="vcs.visualize_best_match"><code class="xref py py-func docutils literal notranslate"><span class="pre">vcs.visualize_best_match()</span></code></a>: Returns <code class="docutils literal notranslate"><span class="pre">Dict[str,</span> <span class="pre">plt.Figure]</span></code></p></li>
+<li><p><a class="reference internal" href="#vcs.visualize_line_nas_precision_calculations" title="vcs.visualize_line_nas_precision_calculations"><code class="xref py py-func docutils literal notranslate"><span class="pre">vcs.visualize_line_nas_precision_calculations()</span></code></a>: Returns <code class="docutils literal notranslate"><span class="pre">List[plt.Figure]</span></code></p></li>
+<li><p><a class="reference internal" href="#vcs.visualize_line_nas_recall_calculations" title="vcs.visualize_line_nas_recall_calculations"><code class="xref py py-func docutils literal notranslate"><span class="pre">vcs.visualize_line_nas_recall_calculations()</span></code></a>: Returns <code class="docutils literal notranslate"><span class="pre">List[plt.Figure]</span></code></p></li>
+</ul>
+</section>
+</section>
+<section id="error-handling">
+<h2>Error Handling<a class="headerlink" href="#error-handling" title="Link to this heading"></a></h2>
+<section id="common-exceptions">
+<h3>Common Exceptions<a class="headerlink" href="#common-exceptions" title="Link to this heading"></a></h3>
+<dl class="py exception">
+<dt class="sig sig-object py" id="ValueError">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ValueError</span></span><a class="headerlink" href="#ValueError" title="Link to this definition"></a></dt>
+<dd><p>Raised when:
+- Embedding functions are not callable
+- Both embedding functions are None
+- Unknown metric names in visualization functions</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="TypeError">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TypeError</span></span><a class="headerlink" href="#TypeError" title="Link to this definition"></a></dt>
+<dd><p>Raised when:
+- Segmenter function is not callable
+- Segmenter function doesn’t return a list of strings</p>
+</dd></dl>
+
+</section>
+<section id="examples-of-error-handling">
+<h3>Examples of Error Handling<a class="headerlink" href="#examples-of-error-handling" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">vcs</span><span class="w"> </span><span class="kn">import</span> <span class="n">compute_vcs_score</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+        <span class="n">reference_text</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>  <span class="c1"># Empty text might cause issues</span>
+        <span class="n">generated_text</span><span class="o">=</span><span class="s2">&quot;Some text&quot;</span><span class="p">,</span>
+        <span class="n">segmenter_fn</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>  <span class="c1"># This will raise TypeError</span>
+        <span class="n">embedding_fn_las</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s2">&quot;not a tensor&quot;</span>  <span class="c1"># This will cause issues</span>
+    <span class="p">)</span>
+<span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Configuration error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">TypeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Function type error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Unexpected error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="type-hints">
+<h2>Type Hints<a class="headerlink" href="#type-hints" title="Link to this heading"></a></h2>
+<p>For type checking and IDE support, the package uses the following types:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Union</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
+
+<span class="c1"># Function signatures</span>
+<span class="n">SegmenterFunction</span> <span class="o">=</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">str</span><span class="p">],</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span>
+<span class="n">EmbeddingFunction</span> <span class="o">=</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]</span>
+<span class="n">VCSResult</span> <span class="o">=</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="getting_started.html"><span class="doc">Getting Started</span></a> - Installation and basic setup</p></li>
+<li><p><a class="reference internal" href="usage.html"><span class="doc">Usage Guide</span></a> - Detailed usage examples and tutorials</p></li>
+<li><p><a class="reference external" href="https://github.com/yourusername/vcs-metrics">GitHub Repository</a> - Source code and issue tracking</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="getting_started.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Harsh Dubey, Chulwoo Pack.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final VCS Score - VCS Component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); transition: background 1.5s cubic-bezier(0.25, 0.1, 0.25, 1); }
+        :root {
+            --bg-color: #f8fafc;
+            --light-shadow: rgba(255, 255, 255, 1);
+            --dark-shadow: rgba(148, 163, 184, 0.3);
+            --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --ease-out-cubic: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+
+        /* --- Neumorphic Page Container --- */
+        .neumorphic-page-container {
+            background: var(--bg-color);
+            border-radius: 25px;
+            box-shadow: 0 0 24px var(--dark-shadow);
+            margin: 1rem;
+            padding: 2rem;
+            min-height: calc(100vh - 2rem);
+            position: relative;
+        }
+
+        .neumorphic-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* --- Neumorphic Card Style --- */
+        .interactive-card {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+            transition: transform 0.35s var(--ease-out-cubic), box-shadow 0.35s var(--ease-out-cubic), border-color 0.35s var(--ease-out-cubic);
+            will-change: transform, box-shadow;
+        }
+        .interactive-card:hover {
+            box-shadow: 12px 12px 24px var(--dark-shadow), -12px -12px 24px var(--light-shadow);
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .demo-card { 
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(248, 250, 252, 0.65) 100%); 
+            border-color: rgba(226, 232, 240, 0.8);
+            border-left: 3px solid #0d9488;
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow), 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+        .intro-card { 
+            background: linear-gradient(135deg, rgba(254, 252, 232, 0.6) 0%, rgba(254, 243, 199, 0.5) 100%); 
+            border-color: rgba(251, 191, 36, 0.5);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+        }
+        .metrics-card { 
+            background: linear-gradient(135deg, rgba(240, 249, 255, 0.6) 0%, rgba(219, 234, 254, 0.5) 100%); 
+            border-color: rgba(147, 197, 253, 0.6);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+        }
+        .formula-card { 
+            background: linear-gradient(135deg, rgba(237, 233, 254, 0.6) 0%, rgba(221, 214, 254, 0.5) 100%); 
+            border-color: rgba(196, 181, 253, 0.6);
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+        }
+        
+        /* Algorithm dropdown styles */
+        details summary { cursor: pointer; user-select: none; transition: color 0.2s var(--ease-out-quad); }
+        details summary:hover { color: #1d4ed8; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary .summary-icon { display: inline-block; margin-right: 0.5rem; transition: transform 0.25s var(--ease-out-cubic); }
+        details[open] summary .summary-icon { transform: rotate(90deg); }
+        .step-number { 
+            width: 2rem; height: 2rem; 
+            border-radius: 50%; 
+            display: flex; align-items: center; justify-content: center; 
+            color: white; font-weight: bold; font-size: 0.875rem; 
+            flex-shrink: 0; 
+        }
+        .math-formula { 
+            background: linear-gradient(135deg, rgba(248, 250, 252, 0.8) 0%, rgba(241, 245, 249, 0.9) 100%); 
+            border: 1px solid rgba(203, 213, 225, 0.5); 
+        }
+
+        #tour-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 9998; opacity: 0; transition: opacity 0.4s ease-in-out; pointer-events: none; }
+        .tour-highlight { position: relative; z-index: 9999; box-shadow: 0 0 0 9999px rgba(0,0,0,0.6), 0 0 20px rgba(255, 255, 255, 0.9); border-radius: 0.5rem; transition: box-shadow 0.4s ease-in-out; }
+        #tour-callout { 
+            position: absolute; 
+            background: rgba(255, 255, 255, 0.95); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            color: #334155; 
+            padding: 1.25rem; 
+            border-radius: 20px; 
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+            z-index: 10000; 
+            max-width: 320px; 
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: opacity 0.3s var(--ease-out-cubic), transform 0.3s var(--ease-out-cubic); 
+            transform: translateY(10px); 
+            opacity: 0; 
+        }
+        #tour-callout.visible { transform: translateY(0); opacity: 1; }
+        #tour-callout button { 
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%); 
+            color: white; 
+            padding: 0.5rem 1rem; 
+            border: none; 
+            border-radius: 12px; 
+            cursor: pointer; 
+            font-weight: 600;
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+        }
+        #tour-callout button:hover { 
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02); 
+        }
+
+        .pattern-bg { background-image: radial-gradient(circle at 2px 2px, rgba(20, 184, 166, 0.1) 1px, transparent 0); background-size: 20px 20px; }
+        
+        .chart-grid-background {
+            background-color: #fafbfc;
+            border-radius: 15px;
+            box-shadow: inset 5px 5px 10px var(--dark-shadow), inset -5px -5px 10px var(--light-shadow), inset 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        .heatmap-container { background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(248, 250, 252, 0.6) 100%); border: 1px solid #e2e8f0; box-shadow: 0 8px 16px rgba(0,0,0,0.04), 0 2px 6px rgba(0,0,0,0.04); }
+        .heatmap-grid-actual { display: grid; border: 1px solid #d1d5db; width: 100%; height: 100%; position: relative; }
+        .heatmap-cell { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; font-size: 0.6rem; border-right: 1px solid #e5e7eb; border-bottom: 1px solid #e5e7eb; box-sizing: border-box; color: #374151; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; transition: all 0.2s ease; font-weight: 500; }
+        .heatmap-cell:nth-child(11n) { border-right: none; }
+        .heatmap-grid-actual > .heatmap-cell:nth-last-child(-n+11) { border-bottom: none; }
+        .heatmap-cell.highlighted { border: 3px solid #0d9488; box-shadow: 0 0 0 2px #0d9488 inset, 0 4px 8px rgba(13, 148, 136, 0.3); font-weight: bold; z-index: 10; position: relative; transform: scale(1.05); }
+        /* --- Neumorphic Input & Button Styles --- */
+        .neumorphic-input {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            box-shadow: inset 4px 4px 8px var(--dark-shadow), inset -4px -4px 8px var(--light-shadow);
+            padding: 0.75rem;
+            font-size: 0.875rem;
+            transition: box-shadow 0.3s var(--ease-out-quad), border-color 0.3s var(--ease-out-quad);
+            color: #374151;
+        }
+        .neumorphic-input:focus {
+            outline: none;
+            box-shadow: inset 6px 6px 12px var(--dark-shadow), inset -6px -6px 12px var(--light-shadow);
+            border-color: #0d9488;
+        }
+
+        .neumorphic-btn {
+            border-radius: 12px;
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            font-weight: 600;
+            box-shadow: 5px 5px 10px var(--dark-shadow), -5px -5px 10px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .neumorphic-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        .neumorphic-btn:hover {
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02);
+        }
+        .neumorphic-btn:hover::before {
+            left: 100%;
+        }
+        .neumorphic-btn:active {
+            box-shadow: inset 4px 4px 8px var(--dark-shadow), inset -4px -4px 8px var(--light-shadow);
+            transform: translateY(1px);
+        }
+        .neumorphic-btn.primary {
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+        }
+
+        .preset-btn { 
+            border-radius: 12px;
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            font-weight: 600;
+            box-shadow: 5px 5px 10px var(--dark-shadow), -5px -5px 10px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .preset-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        .preset-btn:hover {
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            transform: translateY(-1px) scale(1.02);
+        }
+        .preset-btn:active {
+            box-shadow: inset 4px 4px 8px var(--dark-shadow), inset -4px -4px 8px var(--light-shadow);
+            transform: translateY(1px);
+        }
+        .preset-btn:hover::before {
+            left: 100%;
+        }
+        .preset-btn:hover i {
+            transform: scale(1.1);
+        }
+        .preset-btn i {
+            transition: all 0.3s ease;
+        }
+        .result-item { position: relative; display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; padding: 8px 0; border-bottom: 1px solid #e2e8f0; cursor: help; }
+        .result-item:last-child { border-bottom: none; }
+        .result-item span:first-child { color: #475569; font-weight: 500; }
+        .result-item span:last-child { font-weight: 600; padding: 4px 8px; border-radius: 6px; font-size: 1rem; }
+        .result-item.sas-result span:last-child { color: #0d9488; background-color: rgba(13, 148, 136, 0.1); }
+        .result-item.vcs-result span:last-child { color: #8b5cf6; background-color: rgba(139, 92, 246, 0.1); }
+        .axis-title { font-weight: 600; color: #374151; font-size: 0.875rem; }
+        
+        #explainer-tooltip {
+            position: fixed;
+            background: rgba(45, 55, 72, 0.95);
+            backdrop-filter: blur(5px);
+            color: white;
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            z-index: 10001;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.25s var(--ease-out-quad), transform 0.25s var(--ease-out-quad);
+            transform: scale(0.95);
+            max-width: 280px;
+            border-left: 4px solid transparent;
+        }
+        #explainer-tooltip.visible { opacity: 1; transform: scale(1); }
+        #explainer-tooltip strong { font-weight: 700; }
+        #explainer-tooltip .sas-color { color: #2dd4bf; }
+        #explainer-tooltip .vcs-color { color: #a78bfa; }
+
+        /* Testing Assistant Styles */
+        .testing-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s var(--ease-out-cubic);
+        }
+        .testing-modal.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        .testing-modal-content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            padding: 2.5rem;
+            max-width: 90vw;
+            max-height: 85vh;
+            width: 700px;
+            box-shadow: 
+                12px 12px 24px var(--dark-shadow), 
+                -12px -12px 24px var(--light-shadow),
+                0 8px 32px rgba(0, 0, 0, 0.1);
+            transform: translateY(30px) scale(0.9);
+            transition: all 0.5s var(--ease-out-cubic);
+            overflow-y: auto;
+            box-sizing: border-box;
+            position: relative;
+        }
+        /* Custom scrollbar for testing modal */
+        .testing-modal-content::-webkit-scrollbar {
+            width: 8px;
+        }
+        .testing-modal-content::-webkit-scrollbar-track {
+            background: rgba(248, 250, 252, 0.3);
+            border-radius: 1rem;
+        }
+        .testing-modal-content::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, rgba(13, 148, 136, 0.6) 0%, rgba(20, 184, 166, 0.4) 100%);
+            border-radius: 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        .testing-modal-content::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, rgba(13, 148, 136, 0.8) 0%, rgba(20, 184, 166, 0.6) 100%);
+        }
+        /* Firefox scrollbar styling */
+        .testing-modal-content {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(13, 148, 136, 0.6) rgba(248, 250, 252, 0.3);
+        }
+        .testing-modal-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, rgba(13, 148, 136, 0.8) 50%, transparent 100%);
+        }
+        .testing-modal.visible .testing-modal-content {
+            transform: translateY(0) scale(1);
+        }
+        .testing-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid rgba(226, 232, 240, 0.6);
+            position: relative;
+        }
+        .testing-modal-header::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, #0d9488 0%, #14b8a6 100%);
+            border-radius: 1px;
+        }
+        .testing-modal-close {
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            font-size: 1.25rem;
+            cursor: pointer;
+            color: #64748b;
+            padding: 0.75rem;
+            border-radius: 50%;
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+            transition: all 0.3s var(--ease-out-cubic);
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .testing-modal-close:hover {
+            color: #0d9488;
+            transform: rotate(90deg) scale(1.1);
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+        }
+        .test-category {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+        .test-category::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(20, 184, 166, 0.05) 0%, rgba(15, 118, 110, 0.05) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .test-category:hover::before {
+            opacity: 1;
+        }
+        .test-category:hover {
+            transform: translateY(-2px);
+            box-shadow: 8px 8px 16px var(--dark-shadow), -8px -8px 16px var(--light-shadow);
+        }
+        .test-category h3 {
+            color: #0f172a;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.025em;
+        }
+        .test-category h3 i {
+            margin-right: 0.75rem;
+            color: #0d9488;
+            background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
+            padding: 0.5rem;
+            border-radius: 50%;
+            font-size: 1rem;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .test-category:hover h3 i {
+            transform: translateY(-2px) scale(1.1);
+            box-shadow: 
+                0 8px 16px rgba(20, 184, 166, 0.3),
+                0 4px 8px rgba(255, 255, 255, 0.9) inset;
+            color: #0f766e;
+        }
+        .test-item {
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 4px 4px 8px var(--dark-shadow), -4px -4px 8px var(--light-shadow);
+            transition: all 0.2s var(--ease-out-quad);
+        }
+        .test-item:hover {
+            transform: translateY(-1px);
+            box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+        }
+        .test-item:last-child {
+            margin-bottom: 0;
+        }
+        .test-item h4 {
+            color: #1e293b;
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+        .test-item p {
+            color: #475569;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .test-checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: rgba(248, 250, 252, 0.4);
+            border-radius: 0.5rem;
+            padding: 1rem;
+            border: 1px solid rgba(226, 232, 240, 0.4);
+        }
+        .test-checklist li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+            font-size: 0.875rem;
+            color: #334155;
+            line-height: 1.5;
+            transition: all 0.2s var(--ease-out-quad);
+        }
+        .test-checklist li:last-child {
+            margin-bottom: 0;
+        }
+        .test-checklist li:hover {
+            color: #0d9488;
+            transform: translateX(2px);
+        }
+        .test-checklist li::before {
+            content: "✓";
+            margin-right: 0.75rem;
+            color: #0d9488;
+            font-weight: bold;
+            background: rgba(13, 148, 136, 0.1);
+            border-radius: 50%;
+            width: 1.25rem;
+            height: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+        }
+        .action-button {
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s var(--ease-out-cubic);
+            margin-right: 0.75rem;
+            margin-top: 1rem;
+            box-shadow: 0 2px 8px rgba(13, 148, 136, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .action-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
+            transition: left 0.5s var(--ease-out-quad);
+        }
+        .action-button:hover::before {
+            left: 100%;
+        }
+        .action-button:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 6px 20px rgba(13, 148, 136, 0.3);
+        }
+        .action-button:active {
+            transform: translateY(-1px) scale(1);
+        }
+
+        /* --- Hero Section Styles --- */
+        #hero-section {
+            background: linear-gradient(45deg, #0d9488, #0f766e); 
+            color: white;
+            border-radius: 20px 20px 0 0; /* Top corners rounded, bottom corners square */
+        }
+        #hero-section h1 {
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2); 
+        }
+
+        /* --- Hero Tour Button (No White Glow) --- */
+        .hero-tour-btn {
+            background: linear-gradient(135deg, #0f766e 0%, #064e3b 100%);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-tour-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .hero-tour-btn:hover {
+            background: linear-gradient(135deg, #14b8a6 0%, #0f766e 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-tour-btn:hover::before {
+            left: 100%;
+        }
+
+        .hero-tour-btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Math container styling */
+        .math-container {
+            background: #dbeafe;
+            border: 1px solid #93c5fd;
+            border-radius: 0.75rem;
+            padding: 0.75rem;
+            margin-top: 0.75rem;
+        }
+
+        /* KaTeX color overrides */
+        .katex {
+            color: #1e40af !important;
+        }
+
+        .katex .mord,
+        .katex .mop,
+        .katex .mbin,
+        .katex .mrel,
+        .katex .mopen,
+        .katex .mclose,
+        .katex .mpunct {
+            color: #1e40af !important;
+        }
+
+        .katex .mtext {
+            color: #1e3a8a !important;
+        }
+
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false}
+                ],
+                throwOnError: false
+            });
+        });
+    </script>
+</head>
+<body class="h-full text-slate-700 antialiased">
+    <div id="app-background" class="fixed inset-0 z-[-1] transition-all duration-1000 pattern-bg"></div>
+    <div id="tour-overlay"></div>
+    <div id="explainer-tooltip"></div>
+
+    <div class="neumorphic-page-container">
+        <div class="neumorphic-content">
+            <article class="interactive-card">
+                <!-- Hero Section -->
+                <section id="hero-section" class="py-6 px-4 sm:px-6 lg:px-8 relative">
+                    <div class="container mx-auto">
+                        <!-- Start Tour Button - Top Right -->
+                        <button id="start-tour-btn" class="hero-tour-btn absolute top-4 right-4 py-2 px-4">
+                            <i class="fas fa-magic mr-2"></i>Start Tour
+                        </button>
+                        
+                        <div class="text-left max-w-4xl">
+                            <div class="flex items-center justify-start mb-4">
+                                <div class="bg-teal-200 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mr-2">Interactive Demo</div>
+                                <div class="bg-white bg-opacity-20 text-white px-3 py-1 rounded-full text-xs font-semibold">Core VCS Component</div>
+                            </div>
+                            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-3 leading-tight">
+                                Video Comprehension Score (VCS)
+                            </h1>
+                            <p class="text-teal-200 text-base sm:text-lg mb-6 max-w-3xl">
+                                Explore how Global and Local Alignment combine to form Semantic Alignment, and how semantic and narrative scores create comprehensive video comprehension evaluation in the Video Comprehension Score framework.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Main Container -->
+                <main class="w-full max-w-7xl mx-auto p-6">
+
+        <!-- Introduction Section -->
+        <div id="tour-step-intro" class="intro-card interactive-card rounded-xl p-6 mb-8">
+            <div class="flex items-center mb-4"><i class="fas fa-lightbulb text-amber-600 text-xl mr-3"></i><h2 class="text-xl font-semibold text-amber-800">Introduction to VCS Score Computation</h2></div>
+            
+            <!-- Definition -->
+            <div class="bg-white bg-opacity-70 p-4 rounded-xl mb-6 border-l-4 border-amber-500">
+                <p class="text-sm text-slate-700 mb-3"><strong>What is VCS?</strong> Video Comprehension Score (VCS) compares a generated long caption to a reference caption to evaluate how well they align in narrative and story coherence. It uses three core components - Global Alignment Score (GAS), Local Alignment Score (LAS), and Narrative Alignment Score (NAS) - to achieve this comprehensive assessment. GAS and LAS first combine to form the Semantic Alignment Score (SAS), which then integrates with NAS to produce the final VCS that captures both semantic understanding and narrative flow.</p>
+                
+                <!-- Warning -->
+                <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                    <div class="flex items-start">
+                        <i class="fas fa-exclamation-triangle text-orange-500 mr-2 mt-0.5"></i>
+                        <div>
+                            <p class="text-xs text-orange-800 font-medium mb-1">⚠️ Prerequisites Required</p>
+                            <p class="text-xs text-orange-700">Please read the VCS research paper and understand the theoretical foundation of semantic and narrative alignment before using this interactive demo. This visualization assumes familiarity with the underlying concepts.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 border border-blue-200 rounded-xl p-3 mt-3">
+                    <div class="flex items-start">
+                        <i class="fas fa-info-circle text-blue-500 mr-2 mt-0.5"></i>
+                        <div>
+                            <p class="text-xs text-blue-800 font-medium mb-1">📚 Additional Prerequisites</p>
+                            <p class="text-xs text-blue-700">Before exploring the complete VCS framework, we recommend visiting the <a href="../las/" class="font-bold underline hover:text-blue-900">Global Alignment Score (GAS) Demo</a>, <a href="../las/" class="font-bold underline hover:text-blue-900">Local Alignment Score (LAS) Demo</a>, and <a href="../nas/" class="font-bold underline hover:text-blue-900">Narrative Alignment Score (NAS) Demo</a> to understand how semantic and narrative alignment components work individually before seeing their integration in the final VCS computation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div class="bg-white bg-opacity-60 p-4 rounded-xl"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-layer-group text-teal-500 mr-2"></i>Semantic Alignment Score (SAS)</h4><p class="text-sm text-slate-700">Combines Global Alignment Score (GAS) and Local Alignment Score (LAS) where LAS acts as a regularizer for GAS confidence.</p></div>
+                <div class="bg-white bg-opacity-60 p-4 rounded-xl"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-chart-line text-amber-500 mr-2"></i>Video Comprehension Score (VCS)</h4><p class="text-sm text-slate-700">Combines SAS and Narrative Alignment Score (NAS) to ensure both semantic understanding and narrative order are strong.</p></div>
+            </div>
+            
+            <!-- Algorithm Dropdown -->
+            <details id="tour-step-algorithm" class="mb-4">
+                <summary class="font-semibold text-amber-700 mb-3 flex items-center"><i class="fas fa-chevron-right summary-icon"></i>Video Comprehension Score Algorithm</summary>
+                <div class="mt-4 space-y-4">
+                    <!-- Main Algorithm Overview -->
+                    <div class="bg-white bg-opacity-70 p-4 rounded-lg border-l-4 border-amber-500">
+                        <p class="text-sm text-slate-700 mb-3"><strong>Algorithm Overview:</strong> The Complete VCS algorithm follows 10 steps to compute the final Video Comprehension Score. Steps 1-8 calculate individual components using dedicated algorithms, while Steps 9-10 perform the unique VCS combinations that balance semantic understanding with narrative coherence:</p>
+                        
+                        <!-- Step 1: Calculate GAS -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-globe text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 1: Calculate Global Alignment Score (GAS)</p>
+                                    <p class="text-xs text-orange-700 mb-2">Compute document-level semantic similarity between the complete reference and generated texts using document embeddings. This provides the global semantic understanding baseline.</p>
+                                    <p class="text-xs text-orange-700 mt-2">📍 <strong>Learn more:</strong> Visit the <a href="../gas/" class="font-bold underline hover:text-orange-900">Global Alignment Score (GAS) Demo</a> to understand global semantic similarity computation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2: Calculate Mapping Windows -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-window-maximize text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 2: Calculate Mapping Windows</p>
+                                    <p class="text-xs text-orange-700 mb-2">First segment both texts using the Segment Any Text (SAT) model, then group these segments into chunks using a user-controlled chunk size parameter. Finally, generate direct and reverse mapping windows based on the resulting chunk length ratios to constrain alignment regions and ensure chronologically reasonable matches.</p>
+                                    <p class="text-xs text-orange-700 mt-2">📍 <strong>Learn more:</strong> Visit the <a href="../mapping-window/" class="font-bold underline hover:text-orange-900">Mapping Window Demo</a> to explore window generation and constraint visualization.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3: Find Best Matches -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-search text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 3: Find Precision and Recall Best Matches</p>
+                                    <p class="text-xs text-orange-700 mb-2">Use the best matching algorithm to find optimal chunk alignments constrained by mapping windows. This involves similarity detection, context windows, candidate filtering, and mapping window disambiguation.</p>
+                                    <p class="text-xs text-orange-700 mt-2">📍 <strong>Learn more:</strong> Visit the <a href="../best-match/" class="font-bold underline hover:text-orange-900">Best Matching Algorithm Demo</a> to understand the complete 6-step matching process with precision and recall evaluation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 4: Calculate LAS -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-crosshairs text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 4: Calculate Local Alignment Score (LAS)</p>
+                                    <p class="text-xs text-orange-700 mb-2">Measure fine-grained semantic coherence by computing average similarity scores of precision and recall best matches, combined using F1 harmonic mean.</p>
+                                    <p class="text-xs text-orange-700 mt-2">📍 <strong>Learn more:</strong> Visit the <a href="../las/" class="font-bold underline hover:text-orange-900">Local Alignment Score (LAS) Demo</a> to understand the complete 3-step chunk-level similarity process.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 5: Calculate Distance-NAS -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-ruler text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 5: Calculate Distance-NAS (NAS-D)</p>
+                                    <p class="text-xs text-orange-700 mb-2">Compute distance-based chronological alignment penalties for best matches that fall outside their expected mapping window positions, with LCT tolerance and normalization.</p>
+                                    <p class="text-xs text-orange-700 mt-2">📍 <strong>Learn more:</strong> Visit the <a href="../distance-nas/" class="font-bold underline hover:text-orange-900">Distance-NAS Demo</a> to understand the complete 6-step distance penalty algorithm.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 6: Calculate Line-NAS -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-route text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 6: Calculate Line-NAS (NAS-L)</p>
+                                    <p class="text-xs text-orange-700 mb-2">Measure narrative flow smoothness by analyzing alignment path geometry, comparing actual path length to ideal bounds computed through dynamic programming on mapping windows.</p>
+                                    <p class="text-xs text-orange-700 mt-2">📍 <strong>Learn more:</strong> Visit the <a href="../line-nas/" class="font-bold underline hover:text-orange-900">Line-NAS Demo</a> to explore the complete 6-step path geometry analysis algorithm.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 7: Calculate Window Regularizer -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-balance-scale text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 7: Calculate Window Regularizer</p>
+                                    <p class="text-xs text-orange-700 mb-2">Compute penalties for excessive mapping window coverage that leads to overly permissive alignments, especially important for large text length imbalances.</p>
+                                    <p class="text-xs text-orange-700 mt-2">📍 <strong>Learn more:</strong> Visit the <a href="../window-regularizer/" class="font-bold underline hover:text-orange-900">Window Regularizer Demo</a> to understand the complete 4-step coverage analysis algorithm.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 8: Calculate Complete NAS -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-chart-line text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 8: Calculate Complete Narrative Alignment Score (NAS)</p>
+                                    <p class="text-xs text-orange-700 mb-2">Combine Distance-NAS and Line-NAS using harmonic mean, then apply window regularization with renormalization to produce the comprehensive narrative alignment score.</p>
+                                    <p class="text-xs text-orange-700 mt-2">📍 <strong>Learn more:</strong> Visit the <a href="../nas/" class="font-bold underline hover:text-orange-900">Complete NAS Demo</a> to understand the complete 4-step component combination algorithm.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 9: Calculate SAS -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-layer-group text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 9: Calculate Semantic Alignment Score (SAS)</p>
+                                    <p class="text-xs text-orange-700 mb-2">Combine GAS and LAS where LAS acts as a regularizer for GAS confidence. When GAS is confident, LAS regularization has minimal effect, but when both are low, SAS becomes zero.</p>
+                                    <div class="math-container">
+                                        <p class="text-xs">$\text{val\_gl} = \text{GAS} + \text{LAS} - 1$</p>
+                                        <p class="text-xs">$\text{SAS} = \begin{cases} 
+                                        0 & \text{if } \text{val\_gl} \leq 0 \\
+                                        \frac{\text{val\_gl}}{\text{LAS}} & \text{otherwise}
+                                        \end{cases}$</p>
+                                    </div>
+                                    <p class="text-xs text-orange-700 mt-2">This ensures both global understanding and local coherence are strong for robust semantic alignment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 10: Calculate Final VCS -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-trophy text-orange-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 10: Calculate Final Video Comprehension Score (VCS)</p>
+                                    <p class="text-xs text-orange-700 mb-2">Combine SAS and NAS where the smaller score gets regularized by the larger one. This ensures both semantic understanding and narrative coherence are essential for high video comprehension scores.</p>
+                                    <div class="math-container">
+                                        <p class="text-xs">$\text{num\_vcs} = \text{SAS} + \text{NAS} - 1$</p>
+                                        <p class="text-xs">$\text{VCS} = \begin{cases} 
+                                        0 & \text{if } \text{num\_vcs} \leq 0 \\
+                                        \frac{\text{num\_vcs}}{\max(\text{SAS}, \text{NAS})} & \text{otherwise}
+                                        \end{cases}$</p>
+                                    </div>
+                                    <p class="text-xs text-orange-700 mt-2">The final VCS ensures balanced assessment: wrong content in right order OR right content in wrong order both result in poor storytelling scores.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Algorithm Conclusion -->
+                        <div class="bg-blue-50 border border-blue-200 rounded-xl p-3 mt-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-play-circle text-blue-500 mr-2 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs text-blue-800 font-medium mb-1">🎯 Interactive Demo</p>
+                                    <p class="text-xs text-blue-700 mb-2">Now that you understand how VCS combines global semantics (GAS), local coherence (LAS), and narrative alignment (NAS) through a two-stage process, use the interactive demo below to see how changes in individual components affect the final video comprehension assessment.</p>
+                                    <p class="text-xs text-blue-700">Experiment with different GAS, LAS, and NAS values to observe the regularization effects and understand why both semantic understanding and narrative order are essential for coherent storytelling.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2 space-y-8">
+                <div id="tour-step-1" class="intro-card interactive-card rounded-xl p-6">
+                    <div class="flex items-center mb-4"><i class="fas fa-layer-group text-teal-600 text-xl mr-3"></i><h3 class="text-lg font-semibold text-teal-800">Two-Stage Semantic Assessment Process</h3></div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-white bg-opacity-60 p-4 rounded-xl"><h4 class="font-semibold text-teal-700 mb-2 flex items-center"><div class="w-8 h-8 bg-teal-500 text-white rounded-full flex items-center justify-center text-sm font-bold mr-2">1</div>GAS → LAS → SAS</h4><p class="text-sm text-slate-700 mb-3"><strong>Local Alignment Score (LAS)</strong> acts as a regularizer for <strong>Global Alignment Score (GAS)</strong>. When GAS is confident, LAS regularization has minimal effect. This produces the <strong>Semantic Alignment Score (SAS)</strong>.</p><div class="bg-teal-50 p-3 rounded text-xs text-teal-700"><strong>Key Insight:</strong> Strong global confidence reduces the impact of local variations.</div></div>
+                        <div class="bg-white bg-opacity-60 p-4 rounded-xl"><h4 class="font-semibold text-purple-700 mb-2 flex items-center"><div class="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center text-sm font-bold mr-2">2</div>SAS + NAS → VCS</h4><p class="text-sm text-slate-700 mb-3"><strong>Video Comprehension Score (VCS)</strong> compares SAS and NAS, where the smaller score gets regularized. This ensures both semantic understanding and narrative order are captured.</p><div class="bg-purple-50 p-3 rounded text-xs text-purple-700"><strong>Key Insight:</strong> Both semantics and narrative order must be strong for coherent storytelling.</div></div>
+                    </div>
+                    <div class="bg-white bg-opacity-80 p-4 rounded-xl">
+                        <h4 class="font-semibold text-slate-800 mb-2">Story Coherence Logic</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-700 mb-4">
+                            <div><p><strong>Scenario 1:</strong> High GAS, Low LAS</p><p class="text-xs text-slate-600">Same story, different expression → Chunking noise affects alignment → LAS heavily regularizes GAS</p></div>
+                            <div><p><strong>Scenario 2:</strong> Low GAS, Low LAS</p><p class="text-xs text-slate-600">Low global confidence + poor local alignment → Superficial word overlap only → No real story similarity</p></div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-700">
+                            <div><p><strong>Scenario 3:</strong> High NAS, Low SAS</p><p class="text-xs text-slate-600">Wrong content in right order → No semantic understanding → No story</p></div>
+                            <div><p><strong>Scenario 4:</strong> High SAS, Low NAS</p><p class="text-xs text-slate-600">Right content in wrong order → No narrative coherence → No story</p></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div id="tour-step-2" class="demo-card interactive-card rounded-xl p-4">
+                        <div class="text-center mb-4"><div class="inline-flex items-center bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold mb-2"><i class="fas fa-th mr-1"></i>SAS HEATMAP</div><h2 class="text-lg font-bold text-slate-800">Local Regularization of Global</h2></div>
+                        <div class="grid items-center gap-x-2" style="grid-template-columns: auto 1fr; grid-template-rows: 1fr auto;">
+                            <div class="axis-title flex justify-center" style="grid-row: 1; grid-column: 1;"><span class="transform -rotate-90 whitespace-nowrap">LAS</span></div>
+                            <div class="heatmap-container rounded-xl p-1" style="grid-row: 1; grid-column: 2;"><div id="sasHeatmapGridActual" class="heatmap-grid-actual aspect-square"></div></div>
+                            <div class="axis-title text-center pt-2" style="grid-row: 2; grid-column: 2;">GAS</div>
+                        </div>
+                    </div>
+                    <div id="tour-step-3" class="demo-card interactive-card rounded-xl p-4">
+                        <div class="text-center mb-4"><div class="inline-flex items-center bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold mb-2"><i class="fas fa-th mr-1"></i>VCS HEATMAP</div><h2 class="text-lg font-bold text-slate-800">Semantic + Narrative Coherence</h2></div>
+                        <div class="grid items-center gap-x-2" style="grid-template-columns: auto 1fr; grid-template-rows: 1fr auto;">
+                            <div class="axis-title flex justify-center" style="grid-row: 1; grid-column: 1;"><span class="transform -rotate-90 whitespace-nowrap">SAS</span></div>
+                            <div class="heatmap-container rounded-xl p-1" style="grid-row: 1; grid-column: 2;"><div id="vcsHeatmapGridActual" class="heatmap-grid-actual aspect-square"></div></div>
+                            <div class="axis-title text-center pt-2" style="grid-row: 2; grid-column: 2;">NAS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-1">
+                <div class="sticky top-6 space-y-6">
+                    <div id="tour-step-4" class="formula-card interactive-card rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-purple-800 mb-4 flex items-center"><i class="fas fa-sliders-h text-purple-600 mr-2"></i>Input Scores</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between"><label for="gasInput" class="text-sm font-medium text-slate-700">Global Alignment (GAS):</label><input type="number" id="gasInput" value="0.8" step="0.1" min="0" max="1" class="w-20 text-center text-sm neumorphic-input"></div>
+                            <div class="flex items-center justify-between"><label for="lasInput" class="text-sm font-medium text-slate-700">Local Alignment (LAS):</label><input type="number" id="lasInput" value="0.7" step="0.1" min="0" max="1" class="w-20 text-center text-sm neumorphic-input"></div>
+                            <div class="flex items-center justify-between"><label for="nasInput" class="text-sm font-medium text-slate-700">Narrative Alignment (NAS):</label><input type="number" id="nasInput" value="0.9" step="0.1" min="0" max="1" class="w-20 text-center text-sm neumorphic-input"></div>
+                        </div>
+                    </div>
+                    <div id="tour-step-5" class="demo-card interactive-card rounded-xl p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold text-slate-800 flex items-center"><i class="fas fa-magic text-teal-600 mr-2"></i>Test Scenarios</h3>
+                            <button id="testing-guide-btn" class="neumorphic-btn primary px-3 py-1.5 text-xs">
+                                <i class="fas fa-clipboard-check mr-1"></i>Testing Guide
+                            </button>
+                        </div>
+                        <div class="space-y-3">
+                            <button class="preset-btn w-full text-white px-4 py-2 rounded-xl text-sm font-medium" onclick="setScenario(0.9, 0.3, 0.8)"><i class="fas fa-arrow-up mr-2"></i>High GAS, Low LAS</button>
+                            <button class="preset-btn w-full text-white px-4 py-2 rounded-xl text-sm font-medium" onclick="setScenario(0.3, 0.9, 0.8)"><i class="fas fa-arrow-down mr-2"></i>Low GAS, High LAS</button>
+                            <button class="preset-btn w-full text-white px-4 py-2 rounded-xl text-sm font-medium" onclick="setScenario(0.5, 0.5, 0.8)"><i class="fas fa-equals mr-2"></i>Mid GAS & LAS</button>
+                            <button class="preset-btn w-full text-white px-4 py-2 rounded-xl text-sm font-medium text-center" onclick="setScenario(0.9, 0.9, 0.4)">NAS &lt; SAS</button>
+                            <button class="preset-btn w-full text-white px-4 py-2 rounded-xl text-sm font-medium text-center" onclick="setScenario(0.8, 0.8, 0.9)">SAS &lt; NAS</button>
+                        </div>
+                    </div>
+                    <div id="tour-step-6" class="metrics-card interactive-card rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-blue-800 mb-4 flex items-center"><i class="fas fa-chart-line text-blue-600 mr-2"></i>Computed Scores</h3>
+                        <div class="space-y-3">
+                            <div class="result-item sas-result" data-tooltip-type="sas"><span class="flex items-center">Semantic Alignment (SAS): <i class="fas fa-info-circle text-slate-400 ml-2 text-xs"></i></span><span id="sasOutput">0.0000</span></div>
+                            <div class="result-item vcs-result" data-tooltip-type="vcs"><span class="flex items-center">Visual Coherence (VCS): <i class="fas fa-info-circle text-slate-400 ml-2 text-xs"></i></span><span id="vcsOutput">0.0000</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    </div>
+    </div>
+
+    <!-- Testing Modal -->
+    <div id="testing-modal" class="testing-modal">
+        <div class="testing-modal-content">
+            <div class="testing-modal-header">
+                <h2 class="text-xl font-bold text-slate-800 flex items-center">
+                    <i class="fas fa-clipboard-check mr-2 text-teal-600"></i>
+                    Testing Guide
+                </h2>
+                <button id="testing-modal-close" class="testing-modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="testing-content">
+                <!-- Getting Started -->
+                <div class="test-category">
+                    <h3><i class="fas fa-play-circle"></i>Getting Started</h3>
+                    <div class="test-item">
+                        <h4>Understanding Two-Stage VCS Assessment</h4>
+                        <p>This guide explores the hierarchical VCS computation through systematic testing of regularization effects.</p>
+                        <ul class="test-checklist">
+                            <li>Stage 1: GAS and LAS combine to form SAS (semantic alignment)</li>
+                            <li>Stage 2: SAS and NAS combine to form VCS (video comprehension)</li>
+                            <li>Each stage uses regularization where the weaker score moderates the stronger</li>
+                            <li>Close this guide and follow the systematic exploration below</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- GAS Confidence Analysis -->
+                <div class="test-category">
+                    <h3><i class="fas fa-search"></i>GAS Confidence Analysis</h3>
+                    <div class="test-item">
+                        <h4>Systematic LAS Modulation Testing</h4>
+                        <p>Explore how Local Alignment Score modulates Global Alignment Score under different confidence levels.</p>
+                        <ul class="test-checklist">
+                            <li><strong>Test 1:</strong> Set GAS=1.0, decrease LAS from 1.0→0.0 in 0.1 steps - notice minimal SAS impact until LAS becomes very low</li>
+                            <li><strong>Test 2:</strong> Set GAS=0.9, repeat LAS sweep 1.0→0.0 - observe increased LAS sensitivity compared to GAS=1.0</li>
+                            <li><strong>Test 3:</strong> Set GAS=0.8, repeat LAS sweep 1.0→0.0 - notice even stronger LAS regularization effect</li>
+                            <li>Key insight: High GAS confidence resists LAS regularization; lower GAS becomes more vulnerable to LAS modulation</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 mt-2 italic">Use Input Scores panel to systematically test GAS confidence levels.</p>
+                    </div>
+                </div>
+
+                <!-- VCS Integration Testing -->
+                <div class="test-category">
+                    <h3><i class="fas fa-layer-group"></i>VCS Integration Testing</h3>
+                    <div class="test-item">
+                        <h4>Two-Component Balance Assessment</h4>
+                        <p>Test how SAS and NAS interact to produce final VCS through systematic component isolation.</p>
+                        <ul class="test-checklist">
+                            <li><strong>Test 1:</strong> Set GAS=1.0, LAS=1.0, decrease NAS from 1.0→0.0 - observe direct VCS degradation from NAS weakness</li>
+                            <li><strong>Test 2:</strong> Set GAS=1.0, NAS=1.0, decrease LAS from 1.0→0.0 - watch VCS respond to SAS degradation via LAS</li>
+                            <li><strong>Test 3:</strong> Set LAS=1.0, NAS=1.0, decrease GAS from 1.0→0.0 - observe VCS response to SAS degradation via GAS</li>
+                            <li>Key insight: VCS requires both semantic (SAS) and narrative (NAS) strength - weakness in either component limits final score</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 mt-2 italic">Isolate each component systematically to understand integration effects.</p>
+                    </div>
+                </div>
+
+                <!-- Score Relationship Analysis -->
+                <div class="test-category">
+                    <h3><i class="fas fa-balance-scale"></i>Score Relationship Analysis</h3>
+                    <div class="test-item">
+                        <h4>Regularization Direction Testing</h4>
+                        <p>Experiment with different score relationships to understand bidirectional regularization.</p>
+                        <ul class="test-checklist">
+                            <li><strong>SAS > NAS scenarios:</strong> Set high semantic scores (GAS=0.9, LAS=0.8) with low narrative (NAS=0.3-0.5)</li>
+                            <li><strong>NAS > SAS scenarios:</strong> Set high narrative (NAS=0.9) with low semantic scores (GAS=0.4, LAS=0.5)</li>
+                            <li><strong>Balanced scenarios:</strong> Test equal SAS≈NAS relationships (try 0.7≈0.7, 0.5≈0.5, 0.9≈0.9)</li>
+                            <li>Key insight: The weaker score always regularizes the final VCS regardless of which component is stronger</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 mt-2 italic">Use Input Scores panel to create specific SAS vs NAS relationships.</p>
+                    </div>
+                </div>
+
+                <!-- Preset Scenario Exploration -->
+                <div class="test-category">
+                    <h3><i class="fas fa-magic"></i>Preset Scenario Analysis</h3>
+                    <div class="test-item">
+                        <h4>Understanding Predefined Test Cases</h4>
+                        <p>Explore preset buttons to understand common VCS evaluation patterns.</p>
+                        <ul class="test-checklist">
+                            <li><strong>"High GAS, Low LAS":</strong> Same story, different expressions - notice how GAS confidence resists LAS regularization</li>
+                            <li><strong>"Low GAS, High LAS":</strong> Superficial similarity - observe how low global confidence cannot be rescued by local alignment</li>
+                            <li><strong>"Mid GAS & LAS":</strong> Balanced semantic assessment - see typical real-world evaluation scenario</li>
+                            <li><strong>"NAS < SAS" and "SAS < NAS":</strong> Compare story coherence failure modes in both directions</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 mt-2 italic">Click each preset button and observe the Story Coherence Logic explanations.</p>
+                    </div>
+                </div>
+
+                <!-- Manual Exploration -->
+                <div class="test-category">
+                    <h3><i class="fas fa-hand-pointer"></i>Advanced Manual Testing</h3>
+                    <div class="test-item">
+                        <h4>Comprehensive VCS Behavior Analysis</h4>
+                        <p>Free-form exploration to understand edge cases and complex interactions.</p>
+                        <ul class="test-checklist">
+                            <li><strong>Extreme values:</strong> Test boundary conditions (0.0, 1.0) and near-boundary values (0.1, 0.9)</li>
+                            <li><strong>Heatmap navigation:</strong> Watch highlighted cells move across SAS and VCS heatmaps as you adjust inputs</li>
+                            <li><strong>Tooltip exploration:</strong> Hover over SAS and VCS scores to see detailed calculation explanations</li>
+                            <li><strong>Three-way interactions:</strong> Experiment with complex relationships where all three scores (GAS, LAS, NAS) vary</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 mt-2 italic">Use the full range of Input Scores panel for comprehensive testing.</p>
+                    </div>
+                </div>
+
+                <!-- Key Insights -->
+                <div class="test-category">
+                    <h3><i class="fas fa-lightbulb"></i>Key Insights</h3>
+                    <div class="test-item">
+                        <h4>What You Should Understand</h4>
+                        <p>After systematic exploration, you should grasp these fundamental VCS principles:</p>
+                        <ul class="test-checklist">
+                            <li><strong>Hierarchical Assessment:</strong> GAS→LAS→SAS, then SAS→NAS→VCS creates two-stage evaluation</li>
+                            <li><strong>Confidence-Based Regularization:</strong> Higher confidence scores resist regularization from weaker components</li>
+                            <li><strong>Bidirectional Moderation:</strong> In both SAS and VCS computation, the weaker score always limits the final result</li>
+                            <li><strong>Story Coherence Requirement:</strong> Both semantic understanding and narrative order must be strong for high VCS</li>
+                            <li><strong>Real-world Application:</strong> VCS provides comprehensive video comprehension assessment through balanced semantic and narrative evaluation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                </main>
+            </article>
+        </div>
+    </div>
+
+    <script>
+        const gasInput = document.getElementById('gasInput'), lasInput = document.getElementById('lasInput'), nasInput = document.getElementById('nasInput');
+        const sasOutput = document.getElementById('sasOutput'), vcsOutput = document.getElementById('vcsOutput');
+        const sasHeatmapGridActual = document.getElementById('sasHeatmapGridActual');
+        const vcsHeatmapGridActual = document.getElementById('vcsHeatmapGridActual');
+        const appBackground = document.getElementById('app-background');
+        const explainerTooltip = document.getElementById('explainer-tooltip');
+        const testingGuideBtn = document.getElementById('testing-guide-btn');
+        const testingModal = document.getElementById('testing-modal');
+        const testingModalClose = document.getElementById('testing-modal-close');
+        const HEATMAP_STEPS = 11;
+
+        function compute_sas(gas, las) { if (las <= 0) return 0; const val_gl = gas + las - 1; return (val_gl > 1e-9) ? (val_gl / las) : 0; }
+        function compute_vcs(sas, nas) { const num_vcs = sas + nas - 1; if (num_vcs <= 1e-9) return 0; const den_vcs = Math.max(sas, nas); if (Math.abs(den_vcs) < 1e-9) return 0; return num_vcs / den_vcs; }
+        function setScenario(gas, las, nas) { gasInput.value = gas.toFixed(1); lasInput.value = las.toFixed(1); nasInput.value = nas.toFixed(1); updateAll(); }
+        
+        function updateMathDisplay() {
+            const mathDisplay = document.getElementById('currentMath');
+            if (!mathDisplay) return;
+            let gas = parseFloat(gasInput.value), las = parseFloat(lasInput.value), nas = parseFloat(nasInput.value);
+            const current_sas = compute_sas(gas, las);
+            const current_vcs = compute_vcs(current_sas, nas);
+            mathDisplay.innerHTML = `<strong>SAS Calculation:</strong><br>val_gl = ${gas.toFixed(1)} + ${las.toFixed(1)} - 1 = ${(gas + las - 1).toFixed(2)}<br>SAS = ${(gas + las - 1) > 0 ? `${(gas + las - 1).toFixed(2)} / ${las.toFixed(1)}` : '0'} = ${current_sas.toFixed(3)}<br><br><strong>VCS Calculation:</strong><br>num_vcs = ${current_sas.toFixed(3)} + ${nas.toFixed(1)} - 1 = ${(current_sas + nas - 1).toFixed(3)}<br>VCS = ${(current_sas + nas - 1) > 0 ? `${(current_sas + nas - 1).toFixed(3)} / ${Math.max(current_sas, nas).toFixed(3)}` : '0'} = ${current_vcs.toFixed(3)}`;
+        }
+
+        const tourManager = {
+            isActive: false, currentStep: 0, overlay: document.getElementById('tour-overlay'),
+            steps: [
+                { selector: '#tour-step-intro', text: 'Welcome to the complete VCS framework! This demo shows how GAS and LAS combine to form SAS, then how SAS combines with NAS to create the final Video Comprehension Score. Understand each component individually first.', position: 'bottom' },
+                { selector: '#tour-step-algorithm', text: 'Click to expand the complete VCS algorithm. This shows the two-stage computation process combining semantic and narrative alignment scores.', position: 'bottom' },
+                { selector: '#tour-step-2', text: 'Interactive SAS heatmap showing local regularization of global alignment. Each cell represents a GAS/LAS combination, with the highlighted cell showing your current inputs. Watch how high GAS reduces LAS regularization effect.', position: 'top' },
+                { selector: '#tour-step-3', text: 'Interactive VCS heatmap displaying the final video comprehension score. Each cell shows how SAS and NAS combine, with the highlighted cell representing your current computed values. Both semantic understanding and narrative order must be strong for high scores.', position: 'top' },
+                { selector: '#tour-step-4', text: 'Adjust GAS, LAS, and NAS values here to see real-time updates in both heatmaps and final scores. Experiment with different score combinations to understand the algorithm behavior.', position: 'left' },
+                { selector: '#tour-step-5', text: 'Try these preset scenarios to explore key VCS behaviors and edge cases. Each button demonstrates different alignment patterns. Check the Testing Guide for detailed explanations of each scenario.', position: 'left' },
+                { selector: '#tour-step-6', text: 'Final computed scores with interactive tooltips explaining the calculation logic. Hover over SAS to understand local regularization effects, and hover over VCS to see how semantic and narrative alignment combine.', position: 'left' }
+            ],
+            start: function() { this.isActive = true; this.currentStep = 0; this.overlay.style.pointerEvents = 'auto'; this.overlay.style.opacity = '1'; this.addClickOutsideHandler(); this.showStep(); },
+            next: function() { this.cleanupCurrentStep(); this.currentStep++; if (this.currentStep < this.steps.length) { setTimeout(() => this.showStep(), 400); } else { this.end(); } },
+            showStep: function() {
+                const step = this.steps[this.currentStep];
+                const targetElement = document.querySelector(step.selector);
+                if (!targetElement) { this.end(); return; }
+                targetElement.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+                setTimeout(() => {
+                    targetElement.classList.add('tour-highlight');
+                    const callout = document.createElement('div'); callout.id = 'tour-callout';
+                    callout.innerHTML = `<p class="text-sm mb-4">${step.text}</p><div class="flex justify-end"><button onclick="tourManager.next()">Next &rarr;</button></div>`;
+                    document.body.appendChild(callout);
+                    const targetRect = targetElement.getBoundingClientRect(); const calloutRect = callout.getBoundingClientRect(); const margin = 15;
+                    const scrollY = window.scrollY || document.documentElement.scrollTop; const scrollX = window.scrollX || document.documentElement.scrollLeft;
+                    let top, left;
+                    switch (step.position) {
+                        case 'bottom': top = targetRect.bottom + scrollY + margin; left = targetRect.left + scrollX + (targetRect.width / 2) - (calloutRect.width / 2); break;
+                        case 'top': top = targetRect.top + scrollY - calloutRect.height - margin; left = targetRect.left + scrollX + (targetRect.width / 2) - (calloutRect.width / 2); break;
+                        case 'left': top = targetRect.top + scrollY + (targetRect.height / 2) - (calloutRect.height / 2); left = targetRect.left + scrollX - calloutRect.width - margin; break;
+                        case 'right': top = targetRect.top + scrollY + (targetRect.height / 2) - (calloutRect.height / 2); left = targetRect.right + scrollX + margin; break;
+                        default: top = targetRect.bottom + scrollY + margin; left = targetRect.left + scrollX;
+                    }
+                    const viewportRight = scrollX + window.innerWidth; const viewportBottom = scrollY + window.innerHeight;
+                    if (left < scrollX + margin) left = scrollX + margin; if (left + calloutRect.width > viewportRight - margin) left = viewportRight - calloutRect.width - margin;
+                    if (top < scrollY + margin) top = scrollY + margin; if (top + calloutRect.height > viewportBottom - margin) top = viewportBottom - calloutRect.height - margin;
+                    callout.style.top = `${top}px`; callout.style.left = `${left}px`;
+                    requestAnimationFrame(() => { callout.classList.add('visible'); });
+                }, 350);
+            },
+            cleanupCurrentStep: function() {
+                const oldHighlight = document.querySelector('.tour-highlight'); if (oldHighlight) oldHighlight.classList.remove('tour-highlight');
+                const oldCallout = document.getElementById('tour-callout'); if (oldCallout) oldCallout.remove();
+            },
+            end: function() { this.cleanupCurrentStep(); this.isActive = false; this.overlay.style.opacity = '0'; this.removeClickOutsideHandler(); setTimeout(() => this.overlay.style.pointerEvents = 'none', 400); },
+            addClickOutsideHandler: function() { this.clickOutsideHandler = (e) => { if (this.isActive) { const callout = document.getElementById('tour-callout'); if (callout && !callout.contains(e.target)) { this.end(); } } }; document.addEventListener('click', this.clickOutsideHandler); },
+            removeClickOutsideHandler: function() { if (this.clickOutsideHandler) { document.removeEventListener('click', this.clickOutsideHandler); this.clickOutsideHandler = null; } }
+        };
+
+        function getCellColor(value) {
+            const v = Math.max(0, Math.min(1, value)); if (v < 0.01) return '#f8fafc';
+            const hue = 160 + (v * 40); const saturation = 40 + (v * 40); const lightness = 95 - (v * 50);
+            return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+        }
+
+        function createSingleHeatmap(grid, dataFunc, yVals, xVals, isVCS) {
+            grid.innerHTML = ''; grid.style.gridTemplateColumns = `repeat(${HEATMAP_STEPS}, 1fr)`; grid.style.gridTemplateRows = `repeat(${HEATMAP_STEPS}, 1fr)`;
+            for (let i = 0; i < HEATMAP_STEPS; i++) {
+                for (let j = 0; j < HEATMAP_STEPS; j++) {
+                    const cellVal = dataFunc(parseFloat(xVals[j]), parseFloat(yVals[HEATMAP_STEPS - 1 - i]));
+                    const cell = document.createElement('div'); cell.className = 'heatmap-cell';
+                    cell.textContent = cellVal.toFixed(2); cell.style.backgroundColor = getCellColor(cellVal);
+                    if (isVCS) { cell.dataset.nas = xVals[j]; cell.dataset.sas = yVals[HEATMAP_STEPS - 1 - i]; }
+                    else { cell.dataset.gas = xVals[j]; cell.dataset.las = yVals[HEATMAP_STEPS - 1 - i]; }
+                    grid.appendChild(cell);
+                }
+            }
+        }
+        
+        function updateDynamicBackground(vcsScore) {
+            // Use greyish background like mapping window demo instead of green
+            appBackground.style.background = `linear-gradient(135deg, hsl(170, 20%, 90%) 0%, hsl(190, 30%, 95%) 100%)`;
+        }
+        
+        let highlightedSasCell, highlightedVcsCell;
+        // Testing Modal Manager
+        const testingModalManager = {
+            open: function() {
+                testingModal.classList.add('visible');
+                document.body.style.overflow = 'hidden';
+            },
+            close: function() {
+                testingModal.classList.remove('visible');
+                document.body.style.overflow = 'auto';
+            },
+            toggle: function() {
+                if (testingModal.classList.contains('visible')) {
+                    this.close();
+                } else {
+                    this.open();
+                }
+            }
+        };
+        
+        function updateAll() {
+            let gas = parseFloat(gasInput.value), las = parseFloat(lasInput.value), nas = parseFloat(nasInput.value);
+            gas = isNaN(gas) ? 0 : Math.max(0, Math.min(1, gas));
+            las = isNaN(las) ? 0 : Math.max(0, Math.min(1, las));
+            nas = isNaN(nas) ? 0 : Math.max(0, Math.min(1, nas));
+            
+            gasInput.value = gas.toFixed(1);
+            lasInput.value = las.toFixed(1);
+            nasInput.value = nas.toFixed(1);
+            
+            const current_sas = compute_sas(gas, las);
+            const current_vcs = compute_vcs(current_sas, nas);
+            sasOutput.textContent = current_sas.toFixed(4);
+            vcsOutput.textContent = current_vcs.toFixed(4);
+
+            if (highlightedSasCell) highlightedSasCell.classList.remove('highlighted');
+            highlightedSasCell = sasHeatmapGridActual.querySelector(`.heatmap-cell[data-gas="${gas.toFixed(1)}"][data-las="${las.toFixed(1)}"]`);
+            if (highlightedSasCell) highlightedSasCell.classList.add('highlighted');
+
+            if (highlightedVcsCell) highlightedVcsCell.classList.remove('highlighted');
+            const sasForHighlight = parseFloat(current_sas.toFixed(1)).toFixed(1);
+            highlightedVcsCell = vcsHeatmapGridActual.querySelector(`.heatmap-cell[data-sas="${sasForHighlight}"][data-nas="${nas.toFixed(1)}"]`);
+            if (highlightedVcsCell) highlightedVcsCell.classList.add('highlighted');
+            
+            updateDynamicBackground(current_vcs);
+            updateMathDisplay();
+        }
+
+        function showExplainerTooltip(e, type) {
+            let gas = parseFloat(gasInput.value), las = parseFloat(lasInput.value), nas = parseFloat(nasInput.value);
+            let sas = parseFloat(sasOutput.textContent);
+            let text = '';
+            let borderColor = '';
+
+            if (type === 'sas') {
+                borderColor = '#14b8a6';
+                if (gas + las < 1) { text = `With both <strong class="sas-color">GAS (${gas.toFixed(1)})</strong> and <strong class="sas-color">LAS (${las.toFixed(1)})</strong> being low, their sum is less than 1, resulting in a <strong>SAS score of 0.</strong>`; }
+                else if (gas > 0.9) { text = `Because <strong class="sas-color">Global Alignment (${gas.toFixed(1)})</strong> is very high, the <strong class="sas-color">Local Alignment (${las.toFixed(1)})</strong> has little regularizing effect, leading to a strong SAS.`; }
+                else { text = `The <strong class="sas-color">SAS score</strong> is determined by how much the sum of <strong class="sas-color">GAS (${gas.toFixed(1)})</strong> and <strong class="sas-color">LAS (${las.toFixed(1)})</strong> exceeds 1, normalized by the LAS score.`; }
+            } else if (type === 'vcs') {
+                borderColor = '#8b5cf6';
+                if (sas > nas) { text = `The <strong class="vcs-color">VCS score</strong> is penalized because <strong class="vcs-color">Narrative Alignment (${nas.toFixed(1)})</strong> is significantly lower than <strong class="vcs-color">Semantic Alignment (${sas.toFixed(2)})</strong>.`; }
+                else if (nas > sas) { text = `The <strong class="vcs-color">VCS score</strong> is penalized because <strong class="vcs-color">Semantic Alignment (${sas.toFixed(2)})</strong> is lower than <strong class="vcs-color">Narrative Alignment (${nas.toFixed(1)})</strong>.`; }
+                else { text = `With both <strong class="vcs-color">SAS (${sas.toFixed(2)})</strong> and <strong class="vcs-color">NAS (${nas.toFixed(1)})</strong> being high and balanced, the final VCS score is strong.`; }
+            }
+            
+            explainerTooltip.innerHTML = text;
+            explainerTooltip.style.borderColor = borderColor;
+
+            // New positioning logic
+            const tooltipRect = explainerTooltip.getBoundingClientRect();
+            let top = e.clientY + 15;
+            let left = e.clientX + 15;
+
+            if (left + tooltipRect.width > window.innerWidth) {
+                left = e.clientX - tooltipRect.width - 15;
+            }
+            if (top + tooltipRect.height > window.innerHeight) {
+                top = e.clientY - tooltipRect.height - 15;
+            }
+
+            explainerTooltip.style.left = `${left}px`;
+            explainerTooltip.style.top = `${top}px`;
+            explainerTooltip.classList.add('visible');
+        }
+
+        function hideExplainerTooltip() { explainerTooltip.classList.remove('visible'); }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const axisValues = Array.from({length: HEATMAP_STEPS}, (_, k) => (k * 0.1).toFixed(1));
+            const reversedAxisValues = [...axisValues].reverse();
+            createSingleHeatmap(sasHeatmapGridActual, (gas, las) => compute_sas(gas, las), reversedAxisValues, axisValues, false);
+            createSingleHeatmap(vcsHeatmapGridActual, (nas, sas) => compute_vcs(sas, nas), reversedAxisValues, axisValues, true);
+            
+            [gasInput, lasInput, nasInput].forEach(input => { input.addEventListener('input', updateAll); });
+            document.getElementById('start-tour-btn').addEventListener('click', () => tourManager.start());
+            
+            // Testing modal event listeners
+            testingGuideBtn.addEventListener('click', () => testingModalManager.open());
+            testingModalClose.addEventListener('click', () => testingModalManager.close());
+            testingModal.addEventListener('click', (e) => {
+                if (e.target === testingModal) {
+                    testingModalManager.close();
+                }
+            });
+            
+            // Keyboard shortcuts
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && testingModal.classList.contains('visible')) {
+                    testingModalManager.close();
+                }
+                if (e.key === 't' && e.ctrlKey) {
+                    e.preventDefault();
+                    testingModalManager.toggle();
+                }
+            });
+            
+            document.querySelectorAll('.result-item').forEach(item => {
+                item.addEventListener('mouseenter', e => showExplainerTooltip(e, item.dataset.tooltipType));
+                item.addEventListener('mouseleave', hideExplainerTooltip);
+                item.addEventListener('mousemove', e => {
+                    // This ensures the tooltip follows the mouse while avoiding the boundary logic on every single pixel move
+                    const tooltipRect = explainerTooltip.getBoundingClientRect();
+                    let top = e.clientY + 15;
+                    let left = e.clientX + 15;
+                    if (left + tooltipRect.width > window.innerWidth) { left = e.clientX - tooltipRect.width - 15; }
+                    if (top + tooltipRect.height > window.innerHeight) { top = e.clientY - tooltipRect.height - 15; }
+                    explainerTooltip.style.left = `${left}px`;
+                    explainerTooltip.style.top = `${top}px`;
+                });
+            });
+            
+            updateAll(); 
+        });
+    </script>
+</body>
+</html>
