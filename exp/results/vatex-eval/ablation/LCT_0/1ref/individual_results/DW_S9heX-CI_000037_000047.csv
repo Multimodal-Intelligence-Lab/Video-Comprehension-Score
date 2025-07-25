@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young boy is making techno music noises with his mouth and moving to the music .,0.3573,a boy beat boxes and hums to the tune of music playing in the background .,5.0,5.0,5.0,5.0,0.611,0.839,0.9451,0.6951,0.7215,0.668,0.5363,0.4403,0.5883,0.4608,0.5093,0.3329,0.3573
+2,a young boy is sitting in a chair and shaking his head .,0.0,a boy beat boxes and hums to the tune of music playing in the background .,4.0,4.0,2.0,3.3333,0.2641,0.7786,0.9497,0.8589,0.8531,0.8113,0.0548,0.1432,0.2251,0.1374,0.0048,0.0,0.0
+3,a young boy is sitting in a car and he is shaking his head .,0.0,a boy beat boxes and hums to the tune of music playing in the background .,4.0,3.0,2.0,3.0,0.2467,0.7805,0.9497,0.8589,0.8531,0.8118,0.0348,0.123,0.2068,0.117,0.0,0.0,0.0
+4,a young boy is making musical sounds by blowing into a small object .,0.0,a boy beat boxes and hums to the tune of music playing in the background .,4.0,4.0,3.0,3.6667,0.4872,0.8145,0.9091,0.4177,0.5724,0.475,0.3704,0.0,0.4359,0.1041,0.3074,0.0,0.0
+5,a boy is talking to the camera while there is music playing in the background .,0.4187,a boy beat boxes and hums to the tune of music playing in the background .,4.0,4.0,4.0,4.0,0.5694,0.9007,0.9831,0.7992,0.8225,0.8029,0.5219,0.4612,0.562,0.4765,0.5137,0.4018,0.4187
+6,a boy is tapping his hands and making music sounds .,0.4233,a boy beat boxes and hums to the tune of music playing in the background .,4.0,4.0,4.0,4.0,0.6358,0.8382,0.9474,0.7475,0.7535,0.7059,0.5655,0.5127,0.6155,0.5166,0.5413,0.4187,0.4233

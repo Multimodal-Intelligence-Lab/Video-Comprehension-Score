@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,some group of people were dancing holding each others hand and run in some order,0.1466,men and women are dancing partner two by two to the music .,5.0,4.0,5.0,4.6667,0.3798,0.7938,1.0,0.8933,0.9155,0.8935,0.2187,0.3058,0.3798,0.3226,0.2187,0.1254,0.1466
+2,a group of people are square dancing in a room .,0.0,men and women are dancing partner two by two to the music .,5.0,5.0,5.0,5.0,0.4078,0.7968,0.9048,0.5274,0.4439,0.3021,0.2568,0.0,0.3455,0.0,0.1786,0.0,0.0
+3,a group of people are square dancing in a room .,0.0,men and women are dancing partner two by two to the music .,5.0,5.0,5.0,5.0,0.4078,0.7968,0.9048,0.5274,0.4439,0.3021,0.2568,0.0,0.3455,0.0,0.1786,0.0,0.0
+4,a lot of older women and men are holding hands and dancing in a circle,0.0,men and women are dancing partner two by two to the music .,5.0,5.0,5.0,5.0,0.4133,0.8503,0.8548,0.4431,0.3754,0.2655,0.3099,0.0,0.3136,0.0,0.1927,0.0,0.0
+5,a group of people in a room doing a dance together,0.0,men and women are dancing partner two by two to the music .,5.0,5.0,5.0,5.0,0.42,0.7994,0.8803,0.5274,0.4327,0.2903,0.2745,0.0,0.3411,0.0,0.1758,0.0,0.0
+6,a group of elderly people dance around with each other outdoors,0.0,men and women are dancing partner two by two to the music .,4.0,4.0,4.0,4.0,0.3241,0.7799,0.92,0.3972,0.258,0.0486,0.1333,0.0,0.2653,0.0,0.058,0.0,0.0

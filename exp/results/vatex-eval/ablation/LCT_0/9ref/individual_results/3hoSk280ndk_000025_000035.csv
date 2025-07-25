@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a little boy is standing in a field with a bow and arrow in his hand,0.7317,"a little boy is standing in a field with a bow and arrow , a cap , and a bandana on his face , and he pulls an arrow out into his hand .",5.0,5.0,5.0,5.0,0.8317,0.9562,0.95,0.8387,0.8097,0.7777,0.8239,0.7246,0.8093,0.7342,0.8006,0.722,0.7317
+2,a man is shooting a bow and arrow at a target .,0.1447,"a young child is holding a bow outside , he reaches down to grab an arrow from his quiver .",4.0,4.0,4.0,4.0,0.5388,0.8496,1.0,0.755,0.7676,0.7223,0.4527,0.2517,0.4326,0.2841,0.3289,0.1091,0.1447
+3,a man is shooting a bow and arrow at a target .,0.1447,"a young child is holding a bow outside , he reaches down to grab an arrow from his quiver .",4.0,4.0,3.0,3.6667,0.5388,0.8496,1.0,0.755,0.7676,0.7223,0.4527,0.2517,0.4326,0.2841,0.3289,0.1091,0.1447
+4,a boy throws nerf arrows after getting into a throwing position .,0.2036,a boy holding a bow and arrow bends to the right a little in slow motion .,5.0,2.0,3.0,3.3333,0.5177,0.8321,0.9873,0.7591,0.8016,0.7555,0.4166,0.3538,0.4754,0.3539,0.3534,0.207,0.2036
+5,"a man raises up a bow , preparing to shoot the arrow at a target .",0.4416,"on a field , a young boy gets ready to shoot an arrow and holds it up .",4.0,4.0,4.0,4.0,0.5928,0.8428,0.9873,0.8928,0.8888,0.868,0.5147,0.5281,0.5797,0.5315,0.499,0.4375,0.4416
+6,several people are standing around while two men shoot a bow and arrow .,0.2039,"on a field , a young boy gets ready to shoot an arrow and holds it up .",2.0,3.0,2.0,2.3333,0.5408,0.8361,1.0,0.7984,0.8431,0.8068,0.4378,0.341,0.4743,0.3551,0.3564,0.1865,0.2039

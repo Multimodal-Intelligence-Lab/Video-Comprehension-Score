@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"someone is cleaning the surface of a hard , decorative surface with a blast of air .",0.0663,a close up of someone air blasting wall tiles with contact info on the screen .,5.0,4.0,4.0,4.3333,0.6105,0.8434,0.9831,0.7249,0.7305,0.6559,0.5381,0.2214,0.5273,0.188,0.4394,0.1167,0.0663
+2,a person is demonstrating how to use a tool to make a product .,0.0,a person with a mask is spraying off tile and then sprays some water .,4.0,2.0,5.0,3.6667,0.2436,0.7904,1.0,0.8723,0.8996,0.8717,0.0386,0.0642,0.2192,0.0865,0.0,0.0,0.0
+3,a person is demonstrating how to use a tool to clean a pool .,0.0763,a person using a preassure washer to clean wall tiles .,4.0,2.0,4.0,3.3333,0.3864,0.8334,1.0,1.0,1.0,1.0,0.2638,0.2422,0.3608,0.2422,0.233,0.0903,0.0763
+4,a man pours cleanser onto a sponge and starts cleaning the tiles on the side of a pool .,0.1749,a man uses a nozzle to pressure wash a tiled wall .,2.0,3.0,3.0,2.6667,0.469,0.8215,0.9778,0.8536,0.8561,0.8247,0.3516,0.3149,0.4308,0.3232,0.3049,0.166,0.1749
+5,a person was using sponge and soap to wash and clean a tiled floor,0.376,a person using a preassure washer to clean wall tiles .,3.0,4.0,2.0,3.0,0.5471,0.8905,1.0,1.0,1.0,1.0,0.4914,0.4537,0.5401,0.4537,0.4835,0.3584,0.376
+6,a man uses a disposable pad style mop to mop the tiles in a public restroom .,0.2317,a man is power washing tile wall in the bathroom .,2.0,3.0,2.0,2.3333,0.4735,0.8366,0.9778,0.9135,0.9261,0.9116,0.3661,0.3515,0.4365,0.3619,0.3215,0.2192,0.2317

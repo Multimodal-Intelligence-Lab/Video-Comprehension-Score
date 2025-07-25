@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"in a foreign language , a man is describing a math equation while pointing at a blackboard .",0.5015,a man is describing a math formula on the chalkboard .,5.0,5.0,5.0,5.0,0.7463,0.9159,0.8684,0.7904,0.7317,0.7071,0.7045,0.5773,0.7078,0.5434,0.6597,0.5385,0.5015
+2,a man is demonstrating how to do a math problem .,0.5769,a man is describing a math formula on the chalkboard .,5.0,5.0,5.0,5.0,0.8115,0.8974,1.0,1.0,1.0,1.0,0.7813,0.6983,0.7381,0.6335,0.7222,0.6866,0.5769
+3,a man is giving a tutorial on how to do a math problem .,0.7023,a man is explaining the various steps involved in solving a mathematical equation .,5.0,5.0,5.0,5.0,0.8008,0.8823,1.0,1.0,1.0,1.0,0.7698,0.7525,0.7782,0.7168,0.7437,0.714,0.7023
+4,a man explaining how to do a math problem while displaying it on a whiteboard .,0.7686,a man is explaining a complicated math problem that is written on a chalk board .,4.0,4.0,4.0,4.0,0.8087,0.9075,1.0,0.9478,0.942,0.9267,0.7892,0.7845,0.8087,0.79,0.7892,0.7626,0.7686
+5,a man is talking and showing the steps to solve a math problem .,0.8591,a man is explaining the various steps involved in solving a mathematical equation .,5.0,5.0,5.0,5.0,0.8785,0.8965,0.9859,0.9777,0.9615,0.957,0.8645,0.8757,0.8749,0.8736,0.8604,0.8614,0.8591
+6,a man explains a mathematical equations while pointing to geometric shapes with a pen .,0.5621,a man is explaining the various steps involved in solving a mathematical equation .,4.0,4.0,4.0,4.0,0.7265,0.8642,0.9892,0.8151,0.7941,0.741,0.6835,0.5247,0.6609,0.6184,0.6077,0.4948,0.5621

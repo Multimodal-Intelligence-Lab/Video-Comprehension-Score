@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,man operates tractor dump truck next to large pile of dirt,0.4834,a person uses a truck to pick up a pile of dirt .,5.0,5.0,5.0,5.0,0.731,0.9626,0.9697,0.8772,0.8896,0.8745,0.7206,0.5389,0.712,0.5453,0.7008,0.4761,0.4834
+2,a man is driving a bulldozer in the back of a truck .,0.0,a construction truck is emptying dirt from a large container .,4.0,2.0,3.0,3.0,0.4243,0.8306,0.9756,0.8644,0.8611,0.8189,0.3056,0.1764,0.3472,0.1556,0.2126,0.0,0.0
+3,a man is driving a bulldozer to move the back of a truck .,0.042,"a man operating a dump truck , dumping dirt into a large pile .",2.0,2.0,4.0,2.6667,0.4585,0.8295,1.0,0.8723,0.8863,0.8527,0.345,0.2423,0.3776,0.2283,0.2463,0.0825,0.042
+4,an excavator truck is filling the back of a truck with dirt .,0.3176,a construction truck is emptying dirt from a large container .,4.0,1.0,1.0,2.0,0.5873,0.86,0.9667,0.8387,0.8253,0.7805,0.5201,0.3475,0.5142,0.4131,0.4351,0.2001,0.3176
+5,a tractor dumps dirt into a large dump truck underneath it .,0.1603,a man in is dumping dirt with a tractor onto a mound of dirt .,3.0,2.0,2.0,2.3333,0.687,0.9095,0.9089,0.6795,0.7035,0.619,0.6468,0.0719,0.5689,0.2095,0.5135,0.0,0.1603
+6,a bulldozer picked up dirt and emptied it in the back of a truck,0.0,a construction truck is emptying dirt from a large container .,4.0,2.0,3.0,3.0,0.6537,0.8646,0.948,0.7516,0.7847,0.7093,0.5994,0.1684,0.4971,0.2034,0.4148,0.0,0.0

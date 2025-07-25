@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman sits against a wall and blows up a purple balloon really big and it explodes in her face .,0.5528,the woman is trying to blow a balloon to the fullest but it popped .,5.0,4.0,5.0,4.6667,0.7944,0.896,1.0,1.0,1.0,1.0,0.7705,0.629,0.7727,0.629,0.7463,0.5528,0.5528
+2,a woman is sitting on a couch and blowing up a balloon .,0.6382,a lady siting down side wall blowing up a balloon .,4.0,3.0,4.0,3.6667,0.6756,0.9172,1.0,1.0,1.0,1.0,0.6384,0.6756,0.6756,0.6756,0.6382,0.6384,0.6382
+3,a woman is sitting on the ground and blowing up a balloon .,0.7321,a woman seated on the ground outside blows into a balloon until it pops,5.0,4.0,5.0,4.6667,0.8071,0.9469,1.0,1.0,1.0,1.0,0.7963,0.7698,0.7802,0.7495,0.7679,0.7569,0.7321
+4,a woman blows a bubble so large that it explodes all over her face .,0.1898,the woman is trying to blow a balloon to the fullest but it popped .,5.0,4.0,5.0,4.6667,0.5839,0.8641,0.9497,0.6857,0.7417,0.6796,0.5185,0.1366,0.5528,0.3278,0.4759,0.0,0.1898
+5,a small girl picks up an uninflated balloon and tries to blow in it .,0.0,a woman sitting down outside blows up a balloon and then it pops ; surprising her .,4.0,2.0,4.0,3.3333,0.5071,0.8535,0.9199,0.6732,0.629,0.5336,0.4209,0.141,0.3839,0.0261,0.2761,0.0,0.0
+6,a group of people talk excitedly in a room and one person attempts to pop a balloon .,0.2567,a girl blows up a big pink balloon until it pops .,4.0,1.0,3.0,2.6667,0.4686,0.8244,0.9614,0.9527,0.9427,0.9296,0.3554,0.4012,0.4066,0.3948,0.2712,0.2645,0.2567

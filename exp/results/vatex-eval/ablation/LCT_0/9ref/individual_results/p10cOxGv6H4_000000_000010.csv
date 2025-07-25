@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is driving a car and a traffic officer is dancing in the street .,0.7885,a man is riding in his car as he shows the traffic director dancing in the street .,5.0,5.0,5.0,5.0,0.8036,0.9287,1.0,1.0,1.0,1.0,0.7885,0.8036,0.8036,0.8036,0.7885,0.7885,0.7885
+2,a person is walking down the street and is directing traffic .,0.2972,a policeman dances around in the street in a high-viz jacket as they direct traffic .,4.0,3.0,5.0,4.0,0.4683,0.9069,0.9388,0.965,0.9275,0.9142,0.391,0.4296,0.4137,0.4066,0.3056,0.3245,0.2972
+3,a person is standing in the middle of the street directing traffic .,0.1505,a policeman dances around in the street in a high-viz jacket as they direct traffic .,5.0,5.0,5.0,5.0,0.4472,0.8874,0.9497,0.7909,0.7946,0.7583,0.355,0.2748,0.396,0.2781,0.2892,0.1465,0.1505
+4,a police officer is directing traffic in an intersection then begins dancing .,0.3636,"a person in the passenger seat of a vehicle is recording a traffic officer in the street , who is dancing while directing traffic .",5.0,5.0,5.0,5.0,0.7567,0.8826,0.9599,0.6485,0.6234,0.5095,0.7243,0.398,0.6888,0.3908,0.6474,0.3701,0.3636
+5,a man in uniform standing in the middle of the street directing traffic using dance-like moves .,0.4041,cars drive through a crosswalk while a traffic guard dances .,5.0,5.0,5.0,5.0,0.6793,0.8584,0.9343,0.9007,0.8896,0.8614,0.6174,0.5312,0.6029,0.5253,0.5263,0.4115,0.4041
+6,a person driving a car is showing a driver in another car texting while driving .,0.068,a man is riding in his car as he shows the traffic director dancing in the street .,3.0,2.0,3.0,2.6667,0.446,0.8769,0.9529,0.7362,0.7461,0.6947,0.3499,0.2145,0.3727,0.2249,0.2457,0.0555,0.068

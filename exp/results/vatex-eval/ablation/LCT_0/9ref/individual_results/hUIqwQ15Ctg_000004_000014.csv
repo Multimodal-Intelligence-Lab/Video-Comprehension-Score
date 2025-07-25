@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is looking at the camera while cracking his neck then cracking his fingers .,0.6341,a man pushes his head to the side to crack his neck then changes position and cracks his knuckles,5.0,5.0,5.0,5.0,0.8122,0.9333,0.9888,0.9178,0.9359,0.9254,0.7949,0.6796,0.7871,0.6858,0.7676,0.6269,0.6341
+2,a man is cracking his neck with his hands .,0.7535,a man is turning his head to crack his neck then interlocks his hands to crack his nuckles .,5.0,5.0,5.0,5.0,0.8375,0.9239,1.0,0.9487,0.948,0.9404,0.8241,0.8151,0.8289,0.7575,0.8148,0.7998,0.7535
+3,a man cracks his neck and then cracks his neck .,0.7362,a man is turning his head to crack his neck then interlocks his hands to crack his nuckles .,4.0,5.0,4.0,4.3333,0.8106,0.9345,0.9524,0.8571,0.8013,0.7782,0.7886,0.7791,0.7796,0.7549,0.7539,0.7534,0.7362
+4,"a man brings another man next to him , and starts cracking his neck .",0.3662,a man is turning his head to crack his neck then interlocks his hands to crack his nuckles .,3.0,3.0,4.0,3.3333,0.6488,0.8615,0.9195,0.6992,0.7177,0.6704,0.5862,0.4706,0.5953,0.462,0.5233,0.3763,0.3662
+5,a boy cracking his neck in front of the video camera,0.3919,a man is cracking his knuckles while recording himself .,5.0,2.0,4.0,3.6667,0.6152,0.8679,1.0,1.0,1.0,1.0,0.5566,0.5032,0.5185,0.5032,0.4452,0.3919,0.3919
+6,"the blonde-haired boy grabs his head and turns it , making his neck crack .",0.0,a man cracking his head and knuckles while looking at the camera .,4.0,3.0,5.0,4.0,0.5152,0.8776,0.9424,0.6112,0.6513,0.5586,0.4475,0.0385,0.3817,0.1163,0.2819,0.0,0.0

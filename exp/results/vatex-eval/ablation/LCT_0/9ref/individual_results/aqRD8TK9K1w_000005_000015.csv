@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a child , together with mom and dad is wobbly walking on the porch .",0.2761,"on a porch , a boy takes wobbly steps in front of his parents .",3.0,5.0,5.0,4.3333,0.8042,0.8632,0.9888,0.9135,0.9329,0.9166,0.7731,0.2893,0.4531,0.3041,0.4311,0.1757,0.2761
+2,a man is walking on a tightrope in a park .,0.0,a boy walks on his tip toes on the backporch of his house outdoors .,1.0,2.0,1.0,1.3333,0.2282,0.8382,0.9697,0.8555,0.8039,0.7549,0.0791,0.0352,0.204,0.0285,0.0504,0.0,0.0
+3,a young man is doing a dance routine on a sidewalk .,0.2943,a young man walks back and forth on an outdoor deck .,2.0,3.0,1.0,2.0,0.4127,0.8496,1.0,1.0,1.0,1.0,0.3088,0.4127,0.3981,0.4004,0.2915,0.3088,0.2943
+4,a boy walks a dog while riding his skateboard down the street,0.0,a boy walks on his tip toes on the backporch of his house outdoors .,2.0,2.0,2.0,2.0,0.2961,0.8331,0.9804,0.8723,0.88,0.8395,0.1497,0.1049,0.2023,0.1033,0.0096,0.0,0.0
+5,a boy is skateboarding and walking his dog at the same time .,0.0,a boy walks on his tip toes on the backporch of his house outdoors .,2.0,2.0,2.0,2.0,0.3025,0.831,1.0,0.8644,0.8788,0.8394,0.1606,0.1705,0.2793,0.1277,0.1326,0.0017,0.0
+6,a boy is walking a dog on a leash on a street .,0.1833,a boy walks on his tip toes on the backporch of his house outdoors .,2.0,2.0,2.0,2.0,0.3889,0.8266,1.0,1.0,1.0,1.0,0.2602,0.3256,0.3889,0.3256,0.2602,0.1833,0.1833

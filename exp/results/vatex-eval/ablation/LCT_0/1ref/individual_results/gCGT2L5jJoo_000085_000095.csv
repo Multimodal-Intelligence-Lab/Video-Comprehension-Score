@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman plays a harp while sitting in front of a decorated wall .,0.0,a girl is making music using the instrument that is a harp .,5.0,5.0,5.0,5.0,0.566,0.7804,0.8603,0.5778,0.4855,0.3407,0.4438,0.2488,0.4955,0.0909,0.3536,0.0374,0.0
+2,a woman is playing a harp in front of a camera .,0.0,a girl is making music using the instrument that is a harp .,5.0,5.0,5.0,5.0,0.621,0.8036,0.8819,0.5812,0.4013,0.2549,0.5283,0.3255,0.5702,0.0358,0.4652,0.1884,0.0
+3,a woman is playing a song on a harp in a room .,0.2219,a girl is making music using the instrument that is a harp .,5.0,5.0,5.0,5.0,0.62,0.8341,0.941,0.685,0.5856,0.5032,0.5444,0.4452,0.5961,0.3316,0.5158,0.3348,0.2219
+4,a woman plays a flute while another woman is playing a harp instrument .,0.0,a girl is making music using the instrument that is a harp .,3.0,3.0,4.0,3.3333,0.4301,0.8296,0.8988,0.4088,0.343,0.208,0.313,0.0,0.3659,0.0,0.2356,0.0,0.0
+5,a woman sitting on a bed plays a small harp .,0.2853,a girl is making music using the instrument that is a harp .,4.0,4.0,3.0,3.6667,0.5326,0.7823,0.9583,0.7414,0.836,0.7904,0.4025,0.3695,0.5122,0.4409,0.3765,0.1941,0.2853
+6,a woman is playing a flute and another woman is playing the harp,0.0799,a girl is making music using the instrument that is a harp .,3.0,3.0,3.0,3.0,0.4126,0.8018,0.9388,0.8241,0.7962,0.7459,0.2674,0.2872,0.3743,0.2622,0.2196,0.1111,0.0799

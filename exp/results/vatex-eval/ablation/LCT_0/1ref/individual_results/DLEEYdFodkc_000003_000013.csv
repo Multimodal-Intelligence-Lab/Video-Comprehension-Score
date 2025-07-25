@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a little girl smiles for the camera , lifting her eyebrows up and down .",0.0,a baby is qute a hair is gold colur and a eyebrow in move and baby is smilling,4.0,5.0,5.0,4.6667,0.4434,0.821,0.838,0.5297,0.5088,0.4017,0.322,0.0,0.3357,0.0,0.1909,0.0,0.0
+2,a little girl is looking at the camera and she is talking to the camera .,0.0,a baby is qute a hair is gold colur and a eyebrow in move and baby is smilling,2.0,4.0,3.0,3.0,0.2137,0.7655,0.9697,0.8747,0.8877,0.8533,0.0,0.101,0.1891,0.1142,0.0,0.0,0.0
+3,a little girl is making funny faces at the camera .,0.0209,a baby is qute a hair is gold colur and a eyebrow in move and baby is smilling,2.0,5.0,4.0,3.6667,0.268,0.767,0.9851,0.979,0.9748,0.9672,0.0455,0.2523,0.2569,0.2491,0.0311,0.0251,0.0209
+4,a girl smiles and crosses her eyes and moves her head around .,0.0,a baby is qute a hair is gold colur and a eyebrow in move and baby is smilling,4.0,5.0,4.0,4.3333,0.3759,0.8173,0.85,0.7025,0.677,0.6047,0.2364,0.1116,0.2658,0.0781,0.1016,0.0,0.0
+5,a girl smiles then makes exagerated winks at the camera,0.0,a baby is qute a hair is gold colur and a eyebrow in move and baby is smilling,3.0,4.0,5.0,4.0,0.2994,0.7689,0.8519,0.7835,0.7428,0.6655,0.0888,0.1058,0.1776,0.0567,0.0,0.0,0.0
+6,a kid sitting in a stroller winks his eyebrows several times while he is encouraged .,0.0,a baby is qute a hair is gold colur and a eyebrow in move and baby is smilling,3.0,1.0,3.0,2.3333,0.344,0.799,0.9233,0.5092,0.519,0.3979,0.179,0.0,0.2895,0.0,0.1108,0.0,0.0

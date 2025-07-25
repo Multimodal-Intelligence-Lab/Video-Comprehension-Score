@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people watch a reenact-ion of a fight from the american revolution from behind a fence .,0.4423,a group of people watch a civil war reenactment of a battle .,5.0,4.0,5.0,4.6667,0.6447,0.9003,0.8859,0.7145,0.7075,0.6751,0.6054,0.5028,0.599,0.4979,0.5546,0.4478,0.4423
+2,a group of people are gathered around a large group of people .,0.0,a group of people watch a civil war reenactment of a battle .,5.0,4.0,4.0,4.3333,0.3097,0.8459,0.8,0.7638,0.7815,0.7417,0.184,0.0963,0.1372,0.1167,0.0,0.0,0.0
+3,a group of people are standing in a field and a man is talking .,0.0,a group of people watch a civil war reenactment of a battle .,5.0,2.0,4.0,3.6667,0.22,0.8216,1.0,0.8723,0.8863,0.8616,0.0506,0.1057,0.22,0.1199,0.0506,0.0,0.0
+4,a group of people are in a field re-enacting a battle scene with guns .,0.3801,a group of people watch a civil war reenactment of a battle .,5.0,5.0,5.0,5.0,0.5797,0.9043,0.8485,0.6716,0.7498,0.7233,0.5352,0.3742,0.5046,0.4394,0.4522,0.3079,0.3801
+5,two groups of people reenact a civil war battle as people watch .,0.2696,a group of people watch a civil war reenactment of a battle .,5.0,5.0,5.0,5.0,0.9193,0.9733,0.7492,0.4,0.3302,0.3118,0.917,0.3473,0.7271,0.2713,0.7265,0.3457,0.2696
+6,a group of men in a field are doing an reenactment of a battle and firing guns .,0.1866,a group of people watch a civil war reenactment of a battle .,5.0,5.0,5.0,5.0,0.5212,0.8793,0.8485,0.5527,0.6694,0.624,0.4555,0.1338,0.4357,0.2847,0.3583,0.0149,0.1866

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the leaves on the roof and in the gutters were being blown out and cleaned .,0.0,a person is standing on a roof blowing leaves off the roof with a leaf blower .,5.0,5.0,5.0,5.0,0.5968,0.8873,0.6977,0.5778,0.4482,0.3781,0.5456,0.2926,0.4221,0.0754,0.3487,0.2136,0.0
+2,a person is using a leaf blower to clean a gutter .,0.1432,a person is standing on a roof blowing leaves off the roof with a leaf blower .,5.0,5.0,5.0,5.0,0.6391,0.8758,0.8471,0.5462,0.4962,0.4248,0.5879,0.29,0.574,0.2118,0.5135,0.2282,0.1432
+3,a person is using a leaf blower to clean the gutters of a house .,0.1695,a person is standing on a roof blowing leaves off the roof with a leaf blower .,5.0,5.0,5.0,5.0,0.6581,0.8717,0.8406,0.548,0.4952,0.4209,0.6078,0.3132,0.5933,0.233,0.5334,0.2564,0.1695
+4,a person uses a hose to clean leaves out of a gutter .,0.2442,a person is standing on a roof blowing leaves off the roof with a leaf blower .,4.0,4.0,4.0,4.0,0.4917,0.8281,0.9667,0.7988,0.8121,0.7731,0.3862,0.3637,0.4742,0.3741,0.3651,0.2316,0.2442
+5,someone is sitting on a leaf blower and riding around some trees that have shed many leaves .,0.0,a person is standing on a roof blowing leaves off the roof with a leaf blower .,3.0,1.0,2.0,2.0,0.4973,0.8534,0.8457,0.4414,0.4401,0.3439,0.4109,0.0,0.4055,0.0,0.3035,0.0,0.0
+6,a person is riding a riding lawn mower and they are moving up and down to move leaves .,0.0,a person is standing on a roof blowing leaves off the roof with a leaf blower .,3.0,3.0,2.0,2.6667,0.4313,0.8146,0.8811,0.3708,0.522,0.4132,0.3018,0.0,0.3545,0.0,0.2076,0.0,0.0

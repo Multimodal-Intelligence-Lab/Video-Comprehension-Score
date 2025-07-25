@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person throws a ball in a sling shot while standing in an area the is covered in snow .,0.0,a person swings around a ball on a rope in circles several times then launches the ball while a person stands in the distance .,4.0,4.0,5.0,4.3333,0.3779,0.834,0.842,0.58,0.6173,0.5411,0.2541,0.0,0.2612,0.0,0.1141,0.0,0.0
+2,a man is throwing a ball in a circle and then throws it .,0.0082,a person swings around a ball on a rope in circles several times then launches the ball while a person stands in the distance .,5.0,5.0,5.0,5.0,0.5251,0.8376,0.8632,0.6286,0.5717,0.4887,0.433,0.2445,0.4498,0.1693,0.3431,0.098,0.0082
+3,a man spins around and throws a discus in a field .,0.0,a person swings around a ball on a rope in circles several times then launches the ball while a person stands in the distance .,4.0,5.0,4.0,4.3333,0.3398,0.8025,0.9388,0.7974,0.7837,0.7304,0.1773,0.172,0.2967,0.1575,0.1236,0.0,0.0
+4,a man is in the snow twirling fire balls that are attached to string while walking/dancing .,0.0,a person swings around a ball on a rope in circles several times then launches the ball while a person stands in the distance .,4.0,4.0,3.0,3.6667,0.2977,0.7896,0.8882,0.6602,0.7036,0.6246,0.1106,0.0,0.2093,0.0017,0.0,0.0,0.0
+5,a man is twirling fiery balls on chains while out in the snow .,0.0,a person swings around a ball on a rope in circles several times then launches the ball while a person stands in the distance .,4.0,4.0,4.0,4.0,0.3106,0.799,0.9043,0.6285,0.5939,0.4917,0.1372,0.0,0.2376,0.0,0.0458,0.0,0.0
+6,a man with flaming balls on strings flails them around in the snow .,0.0,a person swings around a ball on a rope in circles several times then launches the ball while a person stands in the distance .,4.0,4.0,4.0,4.0,0.3517,0.8143,0.8768,0.5844,0.635,0.5517,0.2038,0.0,0.2605,0.0,0.0919,0.0,0.0

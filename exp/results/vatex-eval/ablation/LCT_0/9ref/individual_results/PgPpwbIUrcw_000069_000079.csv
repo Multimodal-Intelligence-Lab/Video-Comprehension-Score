@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,in a gym a man stands up while lifting a weight .,0.5309,a large man is standing in the middle of the room and picking up large weights,5.0,5.0,5.0,5.0,0.7497,0.9234,0.9388,0.9755,0.9352,0.9244,0.7254,0.6144,0.6648,0.5978,0.6333,0.5503,0.5309
+2,a man is in a gym lifting a barbell with weights .,0.4508,"a man is in a gym , he lifts a heavy barbell from it's stand and lifts it above his head , he then returns it to the stand .",5.0,5.0,5.0,5.0,0.8247,0.9241,0.9524,0.7823,0.8529,0.8223,0.8038,0.4768,0.7727,0.4648,0.7585,0.4632,0.4508
+3,a man is lifting weights in a gym while music is playing in the background .,0.607,a weightlifter lifts heavy barbells over his shoulders in a gym while music plays .,5.0,5.0,5.0,5.0,0.7626,0.8766,0.8989,0.7367,0.7146,0.6708,0.7261,0.6548,0.7359,0.6258,0.6953,0.6283,0.607
+4,a man is in a large gym lifting up a large set of weights,0.4832,a strong man power lifting a large weight in the gym,5.0,5.0,5.0,5.0,0.8506,0.9415,0.9524,0.8796,0.8576,0.8255,0.8413,0.4341,0.7526,0.4888,0.7217,0.4112,0.4832
+5,"in a gym , a man is lifting a heavy barbell over his head .",0.5163,"a man is in a gym , he lifts a heavy barbell from it's stand and lifts it above his head , he then returns it to the stand .",4.0,4.0,4.0,4.0,0.8605,0.9434,0.9714,0.8057,0.7216,0.6686,0.8521,0.6164,0.7914,0.521,0.7894,0.5685,0.5163
+6,a man is in the gym squatting and lifting heavy weights on a bar .,0.5314,a strong man power lifting a large weight in the gym,4.0,5.0,5.0,4.6667,0.828,0.9174,0.8883,0.6667,0.6958,0.6589,0.8126,0.4557,0.8015,0.5711,0.7836,0.4273,0.5314

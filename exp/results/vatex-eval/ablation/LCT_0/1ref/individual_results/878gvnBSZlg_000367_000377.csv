@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is putting together a box for an iphone while speaking in a foreign language .,0.0,"a male puts back together the packaging of an item , while talking .",4.0,5.0,4.0,4.3333,0.4838,0.8352,0.9129,0.5298,0.5057,0.4082,0.382,0.0256,0.4345,0.0,0.323,0.0,0.0
+2,a person is showing how to open a deck of cards .,0.0,"a male puts back together the packaging of an item , while talking .",4.0,1.0,4.0,3.0,0.2567,0.7812,0.95,0.6847,0.6596,0.5643,0.0485,0.0,0.2175,0.0,0.0,0.0,0.0
+3,a man is showing how to open a card card .,0.0578,"a male puts back together the packaging of an item , while talking .",4.0,1.0,4.0,3.0,0.3451,0.798,1.0,0.8564,0.8711,0.8384,0.1793,0.2352,0.3451,0.2481,0.1793,0.0416,0.0578
+4,a man unboxes a bicycle and explains how it was packaged .,0.0,"a male puts back together the packaging of an item , while talking .",4.0,1.0,4.0,3.0,0.5049,0.7881,0.8327,0.0,0.0,0.0,0.3718,0.0,0.4054,0.0,0.2455,0.0,0.0
+5,a man taking out a bunch of paper that was wrapped by a machine,0.0,"a male puts back together the packaging of an item , while talking .",4.0,1.0,2.0,2.3333,0.3006,0.8004,0.9787,0.6236,0.603,0.504,0.1262,0.0,0.2854,0.0,0.1072,0.0,0.0
+6,a machine is wrapping reams of paper in clear plastic wrap and a man is removing them at the end .,0.0,"a male puts back together the packaging of an item , while talking .",4.0,1.0,3.0,2.6667,0.2823,0.7813,0.8332,0.6754,0.6614,0.5666,0.0814,0.0,0.1387,0.0,0.0,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,swimmers compete in a race while a near by scoreboard shows their placing .,0.4046,a swimming race is being conducted in an indoor pool area .,5.0,5.0,5.0,5.0,0.5728,0.8095,1.0,0.8723,0.8863,0.8595,0.4723,0.5103,0.5728,0.518,0.4723,0.3951,0.4046
+2,a group of people are competing in a swimming competition .,0.0,a swimming race is being conducted in an indoor pool area .,5.0,5.0,5.0,5.0,0.6307,0.8029,0.7895,0.4587,0.1605,0.0,0.54,0.1417,0.5322,0.0,0.4173,0.0,0.0
+3,a group of swimmers are competing in a swimming competition .,0.0,a swimming race is being conducted in an indoor pool area .,5.0,5.0,5.0,5.0,0.6067,0.8117,0.7534,0.3672,0.0,0.0,0.5155,0.0,0.478,0.0,0.3569,0.0,0.0
+4,a group of swimmers are racing in a pool and finish at the end of the pool,0.2853,a swimming race is being conducted in an indoor pool area .,5.0,5.0,5.0,5.0,0.6451,0.8499,0.9004,0.6435,0.5842,0.5108,0.5825,0.4473,0.6059,0.3555,0.5362,0.3511,0.2853
+5,several swimmers compete in a race by swimming in their lanes .,0.1628,a swimming race is being conducted in an indoor pool area .,5.0,5.0,5.0,5.0,0.631,0.8383,0.6818,0.4352,0.5313,0.4409,0.5598,0.1049,0.4588,0.2572,0.3544,0.0,0.1628
+6,a scan of a pool during a swimming competition with multiple swimmers .,0.0,a swimming race is being conducted in an indoor pool area .,5.0,5.0,5.0,5.0,0.6217,0.8438,0.5556,0.2188,0.3139,0.1869,0.5517,0.0,0.2851,0.0,0.193,0.0,0.0

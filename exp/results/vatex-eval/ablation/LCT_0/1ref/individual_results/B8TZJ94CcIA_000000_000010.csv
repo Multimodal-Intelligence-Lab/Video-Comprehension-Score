@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man jump kicking a boxing dummy in a fitness room .,0.0124,a man makes two attempts at kicking the head of a punching dummy .,5.0,5.0,5.0,5.0,0.559,0.8579,0.8408,0.5713,0.5205,0.4411,0.486,0.2281,0.4755,0.1422,0.3887,0.1002,0.0124
+2,a young man is practicing a kick kick in a gym .,0.0,a man makes two attempts at kicking the head of a punching dummy .,5.0,5.0,5.0,5.0,0.4052,0.8293,0.9333,0.6306,0.629,0.5526,0.2827,0.0567,0.3627,0.0543,0.2315,0.0,0.0
+3,a man in a martial arts uniform kicks a punching bag .,0.0,a man makes two attempts at kicking the head of a punching dummy .,2.0,2.0,3.0,2.3333,0.5197,0.8423,0.9569,0.5101,0.4982,0.4043,0.4298,0.0574,0.4981,0.0345,0.4041,0.0,0.0
+4,a young man breaks a board with a kick then prepares to break a board with a punch,0.0,a man makes two attempts at kicking the head of a punching dummy .,2.0,2.0,2.0,2.0,0.4657,0.826,0.9451,0.5199,0.5391,0.442,0.3532,0.0,0.4347,0.0089,0.3156,0.0,0.0
+5,a slow motion scene of a man running to the punching bag and kicking it .,0.0,a man makes two attempts at kicking the head of a punching dummy .,4.0,3.0,4.0,3.6667,0.4878,0.8414,0.8176,0.4066,0.5431,0.457,0.3913,0.0,0.3735,0.0569,0.2555,0.0,0.0
+6,in a gym a man is moving his foot back and forth and getting ready to throw a ball,0.0,a man makes two attempts at kicking the head of a punching dummy .,4.0,3.0,2.0,3.0,0.2214,0.777,0.9903,0.6575,0.7204,0.6402,0.0,0.0,0.2138,0.0,0.0,0.0,0.0

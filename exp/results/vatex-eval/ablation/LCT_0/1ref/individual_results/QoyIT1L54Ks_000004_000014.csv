@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young man attempts to bench press while his spotter stands by .,0.3425,a male bench presses with the aid of a spotter in a gym .,4.0,5.0,5.0,4.6667,0.7544,0.8756,0.9004,0.5945,0.5269,0.4597,0.7195,0.4625,0.7272,0.3729,0.6884,0.4365,0.3425
+2,a man is laying on a bench and lifting a heavy weight .,0.2301,a male bench presses with the aid of a spotter in a gym .,5.0,5.0,5.0,5.0,0.5562,0.8005,0.937,0.5848,0.7202,0.6504,0.4455,0.2411,0.5263,0.3837,0.4083,0.0519,0.2301
+3,a man is laying on a weight bench and lifting a heavy weight .,0.1546,a male bench presses with the aid of a spotter in a gym .,5.0,5.0,4.0,4.6667,0.5735,0.7982,0.9404,0.6652,0.632,0.539,0.4657,0.3588,0.5465,0.3252,0.4318,0.1967,0.1546
+4,a man at a gym lifts a barbell with large weights several times .,0.0,a male bench presses with the aid of a spotter in a gym .,5.0,4.0,4.0,4.3333,0.5366,0.7913,0.7986,0.4204,0.3263,0.1486,0.4144,0.0,0.4197,0.0,0.2667,0.0,0.0
+5,a man is weight lifting weights while in a gym setting .,0.4131,a male bench presses with the aid of a spotter in a gym .,5.0,5.0,5.0,5.0,0.5833,0.7984,0.9583,0.8295,0.8893,0.8613,0.4781,0.4976,0.5651,0.5314,0.4554,0.3708,0.4131
+6,a man is lifting heavy weights at a gym facility,0.3724,a male bench presses with the aid of a spotter in a gym .,5.0,5.0,5.0,5.0,0.5555,0.7965,0.9583,0.8295,0.8893,0.861,0.4419,0.4641,0.5361,0.5001,0.4176,0.3272,0.3724

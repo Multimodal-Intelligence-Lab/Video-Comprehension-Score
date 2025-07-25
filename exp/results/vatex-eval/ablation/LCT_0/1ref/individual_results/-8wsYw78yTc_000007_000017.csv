@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young boy sweeps up in the garage whilst his dad films and instructs him .,0.0,a young child is drawing with with sidewalk chalk on the ground and then sweeps it up .,5.0,5.0,5.0,5.0,0.4095,0.8216,0.8406,0.6137,0.5641,0.4695,0.2813,0.0377,0.2975,0.0,0.1449,0.0,0.0
+2,a little boy is using a vacuum to clean the ground .,0.0,a young child is drawing with with sidewalk chalk on the ground and then sweeps it up .,4.0,4.0,4.0,4.0,0.4169,0.8172,0.96,0.5945,0.5572,0.4581,0.2864,0.0192,0.3926,0.0,0.2567,0.0,0.0
+3,a young boy is using a broom to clean the floor .,0.0,a young child is drawing with with sidewalk chalk on the ground and then sweeps it up .,5.0,4.0,5.0,4.6667,0.4434,0.8229,0.9804,0.5945,0.567,0.4738,0.3236,0.0638,0.4323,0.0183,0.3101,0.0,0.0
+4,two kids try their best to sweep the floor with broom and dust pan .,0.0,a young child is drawing with with sidewalk chalk on the ground and then sweeps it up .,4.0,4.0,4.0,4.0,0.3703,0.8126,0.8993,0.7402,0.7369,0.6762,0.225,0.1493,0.2998,0.1454,0.1382,0.0,0.0
+5,two young children are sweeping a floor with a broom and dust pan .,0.0675,a young child is drawing with with sidewalk chalk on the ground and then sweeps it up .,4.0,4.0,3.0,3.6667,0.4698,0.8444,0.8989,0.6924,0.6734,0.6132,0.3721,0.2343,0.4102,0.2126,0.3014,0.0931,0.0675
+6,a young boy attempts to clean the floor using a vacuum .,0.1184,a young child is drawing with with sidewalk chalk on the ground and then sweeps it up .,4.0,4.0,4.0,4.0,0.3842,0.8112,0.9543,0.7845,0.8611,0.8288,0.2408,0.215,0.3547,0.2849,0.2045,0.0323,0.1184

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a little girl tries to ice skate in a ice skating venue,0.7382,a little girl walks on ice skates at an ice rink .,5.0,5.0,5.0,5.0,0.7893,0.9219,0.9859,0.8542,0.873,0.8622,0.7715,0.7533,0.7863,0.7587,0.7682,0.7325,0.7382
+2,a group of people are ice skating on an ice rink .,0.3341,a little girl walks on ice skates at an ice rink .,4.0,4.0,4.0,4.0,0.4726,0.8936,1.0,0.8723,0.8863,0.8728,0.4099,0.3954,0.4726,0.405,0.4099,0.3234,0.3341
+3,a group of people are ice skating in an ice rink .,0.3353,a little girl walks on ice skates at an ice rink .,4.0,4.0,4.0,4.0,0.4736,0.8936,1.0,0.8723,0.8863,0.8728,0.4109,0.3965,0.4736,0.406,0.4109,0.3246,0.3353
+4,a female figure skater is displaying her ice-skating skills inside an empty arena .,0.0225,a little girl walks on ice skates at an ice rink .,4.0,2.0,5.0,3.6667,0.3964,0.7767,0.925,0.7925,0.7951,0.7362,0.2228,0.2383,0.3474,0.2408,0.1598,0.0193,0.0225
+5,children skating in the ice while playing hockey in the ice rink,0.0,a little girl walks on ice skates at an ice rink .,4.0,4.0,4.0,4.0,0.5126,0.886,0.8485,0.4024,0.5459,0.4875,0.4499,0.0,0.4255,0.107,0.3516,0.0,0.0
+6,a young boy and girl practice an ice skating routine on a big rink .,0.3199,a little girl walks on ice skates at an ice rink .,4.0,2.0,4.0,3.3333,0.5013,0.8894,0.9744,0.7934,0.8244,0.8026,0.4393,0.3714,0.4882,0.3951,0.4245,0.2933,0.3199

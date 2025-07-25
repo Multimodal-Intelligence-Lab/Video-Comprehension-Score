@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,an adult woman assists an infants who is struggling to open a bottle of water .,0.5068,a women helps a baby open a bottle then the baby tries to drink from it .,5.0,5.0,5.0,5.0,0.7875,0.8927,1.0,0.9823,0.9424,0.9296,0.762,0.5038,0.7114,0.5228,0.692,0.3916,0.5068
+2,a little boy is sitting on the floor playing with a toy .,0.4343,a little boy is sitting on the floor holding a cup that his mother is helping him with .,4.0,3.0,4.0,3.6667,0.5513,0.8928,1.0,0.8879,0.8884,0.875,0.4975,0.4947,0.5359,0.495,0.4801,0.434,0.4343
+3,a little boy is sitting on the floor and playing with a toy .,0.4334,a little boy is sitting on the floor holding a cup that his mother is helping him with .,4.0,3.0,4.0,3.6667,0.5506,0.8928,1.0,0.8879,0.8884,0.875,0.4966,0.4938,0.5351,0.4941,0.4792,0.4331,0.4334
+4,a baby is crying and an adult gives the baby a bottle .,0.2144,"a baby tries to turn a straw cup upwards to drink and an adult pushes the cup back down , the baby sucks on the straw and gets a drink .",4.0,2.0,4.0,3.3333,0.585,0.8735,0.9667,0.964,0.948,0.9326,0.5249,0.3185,0.5116,0.3324,0.4408,0.198,0.2144
+5,a young child drinks out of straw in a sippy type cup .,0.3984,a little boy practices drinking out of a blue sippy cup .,5.0,5.0,5.0,5.0,0.6707,0.8717,0.9404,0.7617,0.7256,0.6852,0.6202,0.3717,0.5811,0.4756,0.5168,0.2853,0.3984
+6,a man holds a baby while she drinks from a sippy cup .,0.5149,a person is helping a baby retrieve a sipping cup .,4.0,4.0,4.0,4.0,0.6495,0.8735,0.9583,0.8955,0.8398,0.8151,0.5944,0.5272,0.6342,0.5807,0.5768,0.453,0.5149

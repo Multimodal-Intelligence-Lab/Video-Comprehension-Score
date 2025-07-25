@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is making two puppets hit into each other behind a blanket .,0.1807,a homemade puppet show in which the two puppets are having a disagreement that leads to a fight .,4.0,4.0,3.0,3.6667,0.8288,0.8771,0.9412,0.8644,0.8069,0.7578,0.8048,0.4411,0.5847,0.3158,0.5097,0.4244,0.1807
+2,a baby is crawling on the floor in a living room .,0.0,a person performs a puppet show behind a hanging bed sheet .,4.0,1.0,1.0,2.0,0.118,0.7774,1.0,0.9142,0.9146,0.8879,0.0,0.0267,0.093,0.0357,0.0,0.0,0.0
+3,a little boy is laying on the floor while a woman is talking to him .,0.0,a person performs a puppet show behind a hanging bed sheet .,2.0,1.0,1.0,1.3333,0.2466,0.8189,0.9474,0.8377,0.8082,0.756,0.0801,0.0354,0.0771,0.0002,0.0,0.0,0.0
+4,a group of people performing a puppet act for a audience .,0.5755,a group of children are putting on a puppet show .,4.0,4.0,4.0,4.0,0.6995,0.8561,1.0,1.0,1.0,1.0,0.649,0.6426,0.6995,0.6366,0.649,0.5825,0.5755
+5,two woman are using hand puppets and are making the puppets talk .,0.4215,people are playing with puppets and having them wrestle .,4.0,4.0,4.0,4.0,0.5654,0.8567,0.9655,0.9632,0.9328,0.9165,0.4721,0.5488,0.5413,0.5341,0.4304,0.4397,0.4215
+6,some people are putting on a puppet show by hiding behind a sheet and sticking their hands with puppets under the sheet .,0.4995,a person performs a puppet show behind a hanging bed sheet .,5.0,5.0,5.0,5.0,0.7427,0.8935,0.9439,0.9535,0.8131,0.7738,0.712,0.5793,0.7174,0.5202,0.6837,0.4907,0.4995

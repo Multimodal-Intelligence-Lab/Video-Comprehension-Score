@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a snippet of the game mel is shown , there is a woman exercising .",0.0,a video game shows two women performing exercises on mats .,5.0,5.0,5.0,5.0,0.5088,0.859,0.8654,0.2698,0.1169,0.0,0.4282,0.0,0.4324,0.0,0.3393,0.0,0.0
+2,a group of people are doing aerobics in a gym .,0.0,a video game shows two women performing exercises on mats .,2.0,4.0,3.0,3.0,0.296,0.7767,0.9243,0.8753,0.8487,0.8052,0.0937,0.1957,0.2384,0.1705,0.0195,0.0,0.0
+3,a man and a woman are doing a dance routine in a gym .,0.0,a video game shows two women performing exercises on mats .,4.0,2.0,2.0,2.6667,0.2807,0.7926,0.856,0.5686,0.5249,0.4006,0.0925,0.0,0.1597,0.0,0.0,0.0,0.0
+4,a group of women are in an exercise studio participating in an aerobic exercise class .,0.0,a video game shows two women performing exercises on mats .,4.0,2.0,4.0,3.3333,0.4277,0.8193,0.8125,0.3646,0.5033,0.3938,0.3014,0.0,0.2956,0.0,0.1402,0.0,0.0
+5,a group of women do some exercises when they are inside of a gym,0.0,a video game shows two women performing exercises on mats .,2.0,4.0,4.0,3.3333,0.483,0.8377,0.8151,0.3753,0.271,0.1298,0.3829,0.0,0.3658,0.0,0.2429,0.0,0.0
+6,women are in a studio doing exercise moves to some music .,0.0,a video game shows two women performing exercises on mats .,5.0,4.0,4.0,4.3333,0.505,0.8165,0.7742,0.3463,0.2179,0.042,0.3938,0.0,0.3607,0.0,0.2169,0.0,0.0

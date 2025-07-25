@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a women voices news over a man using a parachute floating in the background i the sky .,0.1442,a report of a military parachute training drill .,5.0,5.0,5.0,5.0,0.7312,0.8582,0.9244,0.8284,0.7901,0.7314,0.6708,0.362,0.4633,0.331,0.3419,0.1839,0.1442
+2,a person is parachuting in the air with a parachute .,0.7324,a person performs a parachute jump while descending to the ground .,5.0,5.0,5.0,5.0,0.8015,0.9282,0.9474,1.0,0.9189,0.902,0.7731,0.7854,0.7849,0.7659,0.7542,0.7547,0.7324
+3,a person is parachuting in the sky in the sky .,0.7184,a person performs a parachute jump while descending to the ground .,5.0,5.0,5.0,5.0,0.7607,0.9077,1.0,1.0,1.0,1.0,0.7184,0.7607,0.7607,0.7607,0.7184,0.7184,0.7184
+4,a man is parachuting in front of a large body of water .,0.2986,someone parachuting in the distance while a woman speaks over it .,2.0,3.0,4.0,3.0,0.6248,0.8537,1.0,0.9679,0.9393,0.925,0.5576,0.4863,0.544,0.4321,0.4623,0.3942,0.2986
+5,a person afar was dropping from the sky using a parachute,0.6355,a man is dropping to the ground with his open parachute .,5.0,5.0,5.0,5.0,0.7632,0.8723,1.0,1.0,1.0,1.0,0.7169,0.682,0.6925,0.682,0.6355,0.6355,0.6355
+6,a person in a parachute is desending from the sky .,0.8716,a person performs a parachute jump while descending to the ground .,5.0,5.0,5.0,5.0,0.8836,0.9068,1.0,1.0,1.0,1.0,0.8716,0.8836,0.8836,0.8836,0.8716,0.8716,0.8716

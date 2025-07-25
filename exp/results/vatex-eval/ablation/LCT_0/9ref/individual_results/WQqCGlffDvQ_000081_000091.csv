@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a magician is performing on a stage and swallows a sword .,0.7727,a man is doing a performance that involved swallowing a sword .,5.0,3.0,5.0,4.3333,0.8074,0.8475,1.0,1.0,1.0,1.0,0.7727,0.8074,0.8074,0.8074,0.7727,0.7727,0.7727
+2,a man is standing in front of a microphone and playing a guitar .,0.0,a man pours out liquid in a circle around him and then swallows a sword .,2.0,2.0,4.0,2.6667,0.2123,0.7823,1.0,0.9478,0.9311,0.9108,0.0,0.0707,0.1812,0.0541,0.0,0.0,0.0
+3,a man is playing a musical instrument in front of a crowd .,0.0,a man pours out liquid in a circle around him and then swallows a sword .,3.0,3.0,4.0,3.3333,0.2616,0.7845,1.0,0.9181,0.9293,0.9077,0.0587,0.1467,0.2616,0.1577,0.0587,0.0,0.0
+4,a man pushes a sword down his throat before pulling it out .,0.5752,a man is doing a performance that involved swallowing a sword .,4.0,4.0,4.0,4.0,0.7435,0.8483,0.9388,0.965,0.9275,0.9125,0.6976,0.5961,0.7069,0.6125,0.6544,0.5123,0.5752
+5,a man swallows a sword in front of a mermaid statue .,0.4005,a man pours woter out of a vase and then swallows a sword .,4.0,3.0,4.0,3.6667,0.6941,0.866,0.8988,0.821,0.7872,0.7299,0.6402,0.4633,0.6151,0.4863,0.5473,0.3781,0.4005
+6,outside a man is pushing a curved sword down his throat then pulls it out .,0.4221,a man pours a liquid in a circle then proceeds to stick a knife down his throat .,4.0,3.0,4.0,3.6667,0.6363,0.8417,0.9599,0.7938,0.8078,0.7611,0.5639,0.5219,0.6182,0.521,0.5353,0.4232,0.4221

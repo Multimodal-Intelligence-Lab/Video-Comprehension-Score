@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a black bull with long horns rams into a man on a horse in a bull fighting ring .,0.2787,a bullfighter runs past and then a bull slams into a man on a horse .,5.0,5.0,5.0,5.0,0.7344,0.8807,0.8678,0.5532,0.5431,0.4785,0.6985,0.3464,0.653,0.3316,0.6059,0.2946,0.2787
+2,a man is riding on a horse while a man is watching him .,0.0,a bullfighter runs past and then a bull slams into a man on a horse .,5.0,4.0,4.0,4.3333,0.408,0.8429,1.0,0.8536,0.8512,0.8094,0.2958,0.2212,0.3328,0.2191,0.1622,0.0036,0.0
+3,a group of people are watching a bullfight in a ring .,0.2095,bull ramming the side of a horse in a bullfighting arena with its horns .,5.0,5.0,5.0,5.0,0.487,0.7912,0.928,0.9301,0.8777,0.8454,0.3344,0.4098,0.4053,0.3745,0.2484,0.2541,0.2095
+4,"a man is riding a horse and chasing a bull , which he then lassos and brings to the ground .",0.0984,a bull goes after a horse and tries to hit it in the side,2.0,2.0,3.0,2.3333,0.6475,0.8425,0.8838,0.6307,0.586,0.4982,0.5816,0.4096,0.487,0.2563,0.3781,0.3226,0.0984
+5,a group of people in a bullfighting arena taunting the bull and running away .,0.1741,a bullfighter in an arena backs away from a bull quickly before a bull fighter on a horse pokes the bull with a stick and the bull rams the horse .,4.0,4.0,4.0,4.0,0.6085,0.8682,0.8419,0.6731,0.5776,0.5078,0.5491,0.2431,0.4879,0.2849,0.4102,0.1373,0.1741
+6,a bull fight in a ring fighting a bull while others watch .,0.2734,a bullfighter in an arena backs away from a bull quickly before a bull fighter on a horse pokes the bull with a stick and the bull rams the horse .,5.0,5.0,5.0,5.0,0.5877,0.8707,0.9186,0.7684,0.7898,0.7384,0.5165,0.3834,0.5116,0.3831,0.4159,0.2737,0.2734

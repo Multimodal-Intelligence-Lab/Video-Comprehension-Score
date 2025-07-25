@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is shown singing on stage in front a crowd .,0.4987,a man sings into a microphone in front of a crowd of people .,4.0,5.0,3.0,4.0,0.6992,0.8861,0.9599,0.797,0.836,0.7967,0.6589,0.3789,0.6477,0.543,0.6004,0.3409,0.4987
+2,a man is playing a harmonica while another man is singing in the background .,0.081,a man singing a song on a microphone with live instrumentation in the background .,4.0,4.0,2.0,3.3333,0.4359,0.8824,0.9787,0.6652,0.7008,0.6584,0.3559,0.1205,0.2698,0.1951,0.1662,0.0,0.081
+3,a man is singing into a microphone in a dark room .,0.4921,a man singing a song on a microphone with live instrumentation in the background .,5.0,5.0,5.0,5.0,0.5471,0.8998,1.0,1.0,1.0,1.0,0.4921,0.5471,0.5471,0.5471,0.4921,0.4921,0.4921
+4,a man dances and sings around two others on a stage .,0.2817,a man singing into a microphone with other people dancing,3.0,3.0,4.0,3.3333,0.6136,0.8969,1.0,0.7735,0.7801,0.7234,0.5402,0.4853,0.5398,0.3892,0.4525,0.3946,0.2817
+5,a crowd of men sing and observe people on a stage .,0.0702,a man singing a song on a microphone with live instrumentation in the background .,2.0,3.0,2.0,2.3333,0.5336,0.8753,0.9714,0.8387,0.811,0.768,0.4672,0.2676,0.378,0.2427,0.2647,0.1042,0.0702
+6,"a man standing , singing karaoke while others watch him sing .",0.6928,a man sings karaoke to a song while others dance .,4.0,5.0,3.0,4.0,0.7949,0.9102,0.95,0.8983,0.8723,0.8462,0.7746,0.7327,0.7818,0.7006,0.7603,0.7138,0.6928

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,marbles are rolling down a homemade paper and brown tape ramp onto a cardboard box while a young boy is talking .,0.0,a large structure made out of cardboard with tracks for marbles .,5.0,5.0,4.0,4.6667,0.5149,0.8232,0.7647,0.428,0.291,0.1387,0.4107,0.0,0.3656,0.0,0.2293,0.0,0.0
+2,a person is opening up a box and talking about it .,0.0,a large structure made out of cardboard with tracks for marbles .,4.0,4.0,1.0,3.0,0.1687,0.7698,0.963,0.9657,0.9286,0.9073,0.0,0.1391,0.1367,0.1048,0.0,0.0,0.0
+3,a group of people are playing a game of dominoes .,0.0,a large structure made out of cardboard with tracks for marbles .,3.0,1.0,1.0,1.6667,0.1871,0.7512,1.0,0.8408,0.827,0.7698,0.0,0.0332,0.1871,0.0171,0.0,0.0,0.0
+4,"someone dropping a marble on a dvd , making it follow a trail to an empty can .",0.0,a large structure made out of cardboard with tracks for marbles .,4.0,3.0,1.0,2.6667,0.4661,0.7858,0.8333,0.6547,0.5999,0.4909,0.3206,0.1845,0.3594,0.1101,0.1847,0.0,0.0
+5,a person has made a ramp and rolled a large marble into a bucket .,0.0,a large structure made out of cardboard with tracks for marbles .,4.0,4.0,4.0,4.0,0.4546,0.8466,0.8397,0.4575,0.3205,0.1974,0.3558,0.0,0.3504,0.0,0.2328,0.0,0.0
+6,someone rolls a marble down a home made track and into a dish on the floor .,0.1229,a large structure made out of cardboard with tracks for marbles .,4.0,4.0,4.0,4.0,0.5582,0.8239,0.8497,0.6569,0.6114,0.5283,0.4637,0.3274,0.48,0.2773,0.3688,0.1836,0.1229

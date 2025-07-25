@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people at a wedding performs an organized dance .,0.3654,"several people , including a bride , are doing a macarena dance while listening to music .",5.0,5.0,5.0,5.0,0.6651,0.8836,0.9321,0.8065,0.7972,0.7576,0.6118,0.4751,0.5459,0.469,0.4792,0.3728,0.3654
+2,a group of people are dancing to music in a room .,0.0716,a bride and three other people dance the macarena at a wedding .,5.0,5.0,5.0,5.0,0.3997,0.8573,1.0,1.0,1.0,1.0,0.2963,0.236,0.3457,0.236,0.233,0.0716,0.0716
+3,a group of people are dancing to music in a room .,0.0716,a bride and three other people dance the macarena at a wedding .,5.0,5.0,5.0,5.0,0.3997,0.8573,1.0,1.0,1.0,1.0,0.2963,0.236,0.3457,0.236,0.233,0.0716,0.0716
+4,a room is full of couples ballroom dancing together as music plays .,0.0,bride and other persons at the wedding reception dance to the the macarena,5.0,4.0,5.0,4.6667,0.3761,0.8384,0.8941,0.8884,0.79,0.7349,0.2331,0.0603,0.2241,0.0001,0.0414,0.0,0.0
+5,couples dancing to music at a club and people watching .,0.0,bride and other persons at the wedding reception dance to the the macarena,5.0,4.0,5.0,4.6667,0.4129,0.8632,0.8829,0.7494,0.5573,0.4738,0.3021,0.2166,0.2781,0.0,0.1298,0.0687,0.0
+6,pairs of couples dance on a dance floor while music plays .,0.1222,at a wedding reception the bride and a couple are dancing on the dance floor .,5.0,4.0,5.0,4.6667,0.483,0.8788,0.9221,0.8891,0.737,0.6794,0.4117,0.1694,0.3997,0.2286,0.3064,0.0548,0.1222

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two kids are playing basketball out on the road while the cameraman laughs .,0.0,a boy is dribbling a basketball in the street while another boy tries to stop him .,5.0,5.0,5.0,5.0,0.5447,0.7991,0.7582,0.4867,0.3893,0.2358,0.4302,0.0577,0.3995,0.0,0.2485,0.0,0.0
+2,a group of people are playing basketball in a parking lot .,0.0,a boy is dribbling a basketball in the street while another boy tries to stop him .,4.0,4.0,3.0,3.6667,0.3892,0.7859,0.7986,0.3446,0.2222,0.0103,0.2228,0.0,0.2351,0.0,0.0268,0.0,0.0
+3,two boys are playing a game of basketball in the street .,0.0,a boy is dribbling a basketball in the street while another boy tries to stop him .,5.0,5.0,5.0,5.0,0.7856,0.8608,0.66,0.3431,0.1773,0.0443,0.751,0.1639,0.5672,0.0,0.5473,0.1253,0.0
+4,a boy runs down a court dribbling two basketballs at once .,0.0,a boy is dribbling a basketball in the street while another boy tries to stop him .,4.0,4.0,2.0,3.3333,0.5136,0.8661,0.6496,0.0,0.0,0.0,0.4384,0.0,0.2512,0.0,0.1355,0.0,0.0
+5,a man and a kid are dribbling basketballs and a group of players are watching them .,0.0,a boy is dribbling a basketball in the street while another boy tries to stop him .,4.0,4.0,4.0,4.0,0.4936,0.8318,0.8696,0.4058,0.33,0.1945,0.3912,0.0,0.4177,0.0,0.2999,0.0,0.0
+6,"two boys play basketball inside an indoor gymnasium , making shots at the basket and juking past each other .",0.0,a boy is dribbling a basketball in the street while another boy tries to stop him .,3.0,4.0,3.0,3.3333,0.4828,0.8104,0.8671,0.4517,0.4925,0.3737,0.3618,0.0,0.4036,0.0,0.264,0.0,0.0

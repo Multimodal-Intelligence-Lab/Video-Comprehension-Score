@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,on a large body of water people are sailing on sail boats .,0.2756,a man points at two sailboats in the distance .,5.0,5.0,5.0,5.0,0.5995,0.8629,0.9756,0.9722,0.9565,0.9458,0.5359,0.4281,0.4301,0.4187,0.2898,0.2873,0.2756
+2,a group of people are sailing on a sailboat in the ocean .,0.0267,a man points at two white sailboats as they bob up and down on the water in the distance .,5.0,4.0,5.0,4.6667,0.4521,0.829,0.9583,0.8819,0.8778,0.8501,0.33,0.2101,0.2959,0.2064,0.1507,0.0312,0.0267
+3,a group of people are on a sailboat in the ocean .,0.1617,a man points at two sailboats in the distance .,5.0,4.0,5.0,4.6667,0.4614,0.8298,1.0,1.0,1.0,1.0,0.3305,0.3238,0.3238,0.3238,0.1617,0.1617,0.1617
+4,a man is navigating a small sail boat through open sea waters .,0.2357,a man points at two sailboats in the distance .,5.0,5.0,5.0,5.0,0.5221,0.8624,0.9658,0.8819,0.8714,0.8438,0.4459,0.3925,0.4293,0.38,0.2964,0.2511,0.2357
+5,a guy sits on his sail boat as it cruises across the ocean .,0.0737,a man points at two sailboats in the distance .,4.0,5.0,5.0,4.6667,0.5073,0.8598,0.9873,0.8284,0.7923,0.7326,0.4269,0.3117,0.3948,0.2804,0.2171,0.1141,0.0737
+6,a sailboat drifts away as people on another sailboat watch .,0.307,two sail boats are in view while a man says the mark is where one sailboat is and the farther out sailboat just gave up their place .,5.0,5.0,4.0,4.6667,0.4957,0.8514,0.9491,0.8664,0.8849,0.8601,0.3868,0.4179,0.4686,0.4301,0.3539,0.2922,0.307

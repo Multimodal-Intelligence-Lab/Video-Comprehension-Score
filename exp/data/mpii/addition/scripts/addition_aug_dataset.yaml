@@ -1,0 +1,71 @@
+# ============================================================================
+# Data Augmentation Configuration for Addition Experiments
+# ============================================================================
+
+# ============================================================================
+# DATA PATHS (relative to script location)
+# ============================================================================
+data:
+  # Ground truth JSON files directory (processes all .json files in directory)
+  gt_file_path: "../raw_dataset/*.json"
+  
+  # Unrelated text corpus for segment insertion
+  unrelated_segments_file: "./unrelated_segments.txt"
+
+# ============================================================================
+# OUTPUT PATHS (relative to script location)
+# ============================================================================
+output:
+  # Directory to save augmented datasets (with position subdirectories)
+  output_dir: "../aug_dataset"
+  
+  # Directory for log files
+  logs_dir: "./logs"
+
+# ============================================================================
+# PROCESSING SETTINGS
+# ============================================================================
+processing:
+  # Enable detailed logging of additions and outputs
+  log_details: true
+  
+  # Enable file-based logging
+  enable_logging: true
+  
+  # Resume processing from existing files (true) or start fresh (false)
+  resume_processing: true
+  
+  # Video IDs to process (["Default"] = all available)
+  selected_ids: ["Default"]
+
+# ============================================================================
+# ADDITION SETTINGS
+# ============================================================================
+additions:
+  # Number of addition iterations per position
+  num_iterations: 10
+  
+  # Addition positions to process
+  positions: ["beginning", "middle", "end", "random"]
+  
+  # Random seed for reproducible additions
+  random_seed: 42
+  
+  # Number of segments to keep from original text (head truncation)
+  number_of_segments: 12
+  
+  # Number of unrelated segments to add per iteration
+  add_segments: 1
+
+# ============================================================================
+# TEXT PROCESSING SETTINGS
+# ============================================================================
+text_processing:
+  # Enable SAT model for sentence segmentation
+  use_sat_segmentation: true
+  
+  # Enable contractions expansion
+  expand_contractions: true
+  
+  # Enable punctuation normalization
+  normalize_punctuation: true

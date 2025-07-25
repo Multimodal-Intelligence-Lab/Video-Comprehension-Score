@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"one man is digging in the dirt , another is standing on rocks , while another narrates .",0.0814,"a man is using a shovel to dig some dirt , as a man is narrating the scene and speaking about the wall and gravel .",5.0,5.0,5.0,5.0,0.6502,0.8557,0.8984,0.4257,0.457,0.3654,0.5912,0.1166,0.6106,0.1648,0.5449,0.0285,0.0814
+2,a person is using a chainsaw to cut up a large piece of wood .,0.0,"a man is using a shovel to dig some dirt , as a man is narrating the scene and speaking about the wall and gravel .",1.0,2.0,2.0,1.6667,0.0993,0.8105,0.9375,0.8723,0.8762,0.8472,0.0,0.0,0.0393,0.0,0.0,0.0,0.0
+3,a group of people are watching a man throw a rock into the hole .,0.0,"a man is using a shovel to dig some dirt , as a man is narrating the scene and speaking about the wall and gravel .",2.0,2.0,4.0,2.6667,0.2234,0.7952,0.9176,0.619,0.6648,0.5785,0.0234,0.0,0.1537,0.0,0.0,0.0,0.0
+4,a man is demonstrating to the viewers the art of stone laying in construction .,0.0,"a man is using a shovel to dig some dirt , as a man is narrating the scene and speaking about the wall and gravel .",2.0,3.0,4.0,3.0,0.2883,0.7872,0.9064,0.7071,0.7357,0.6643,0.0959,0.0,0.2149,0.0327,0.0026,0.0,0.0
+5,several people work in an archaeological dig site as a guy stands and sifts dirt .,0.0,"a man is using a shovel to dig some dirt , as a man is narrating the scene and speaking about the wall and gravel .",5.0,5.0,5.0,5.0,0.3702,0.8076,0.8815,0.4743,0.5072,0.3899,0.2202,0.0,0.2856,0.0,0.1154,0.0,0.0
+6,a man is standing in a hole with rocks while measuring it .,0.0,"a man is using a shovel to dig some dirt , as a man is narrating the scene and speaking about the wall and gravel .",4.0,3.0,4.0,3.6667,0.2358,0.8083,0.9375,0.7099,0.6543,0.5724,0.0546,0.0,0.1849,0.0,0.0,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,small children are picking up easter eggs and placing them into a basket,0.6096,kids and parents on in a yard picking up easter eggs and putting them in a basket .,5.0,5.0,5.0,5.0,0.6951,0.9355,1.0,0.8857,0.929,0.918,0.6621,0.6332,0.6654,0.6347,0.6423,0.6079,0.6096
+2,a group of children are playing with easter eggs in a yard .,0.5876,several children search for easter eggs during an egg hunt .,5.0,4.0,5.0,4.6667,0.7825,0.9216,0.9787,0.904,0.8707,0.8541,0.764,0.6353,0.753,0.6346,0.732,0.5891,0.5876
+3,a group of children are collecting easter eggs in a yard .,0.6769,several children search for easter eggs during an egg hunt .,5.0,5.0,5.0,5.0,0.772,0.9123,1.0,1.0,1.0,1.0,0.7479,0.7131,0.7465,0.7131,0.7222,0.6769,0.6769
+4,a group of kid easter egg hunting in a grave yard at a town .,0.5417,lots of kids and their parents are easter egg hunting in a grass field .,4.0,4.0,4.0,4.0,0.6496,0.8963,0.9355,0.8153,0.8596,0.8424,0.606,0.5695,0.6139,0.5917,0.5666,0.5168,0.5417
+5,kids are together with adults and kids are doing an egg hunt in a cemetery .,0.5271,a large group of adults and children are outside during an easter egg hunt .,4.0,4.0,4.0,4.0,0.6762,0.9072,0.9555,0.7736,0.7547,0.7296,0.6431,0.5815,0.6443,0.571,0.6079,0.5386,0.5271
+6,at a cemetery kids are running and are looking for easter eggs .,0.4306,several children search for easter eggs during an egg hunt .,4.0,4.0,4.0,4.0,0.6252,0.8972,0.9655,0.803,0.7738,0.7368,0.5658,0.5333,0.601,0.5085,0.5411,0.4593,0.4306

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a rodeo is underway and a man ropes a calf and hogties while the crowd applauses .,0.0,"a man wrangles an animal to the ground , tying rope around it , before walking back to his horse .",4.0,5.0,5.0,4.6667,0.5144,0.7917,0.8749,0.4504,0.4596,0.3173,0.3866,0.0,0.4449,0.0,0.2988,0.0,0.0
+2,a man is riding a horse and lassos a calf .,0.0,"a man wrangles an animal to the ground , tying rope around it , before walking back to his horse .",3.0,4.0,4.0,3.6667,0.5812,0.8221,0.8278,0.2486,0.1764,0.0,0.4905,0.0,0.494,0.0,0.3845,0.0,0.0
+3,a man is riding a horse in a rodeo with a rope .,0.0,"a man wrangles an animal to the ground , tying rope around it , before walking back to his horse .",3.0,4.0,4.0,3.6667,0.5892,0.8681,0.75,0.4062,0.3693,0.2734,0.5268,0.0,0.4523,0.0,0.369,0.0,0.0
+4,a man on a horse ropes and ties a baby calf at a rodeo event .,0.0,"a man wrangles an animal to the ground , tying rope around it , before walking back to his horse .",4.0,4.0,4.0,4.0,0.6299,0.8514,0.797,0.3574,0.3247,0.2069,0.5654,0.0,0.5357,0.0,0.4547,0.0,0.0
+5,"a man is in an indoor riding arena , practicing calf roping on horseback .",0.0,"a man wrangles an animal to the ground , tying rope around it , before walking back to his horse .",2.0,2.0,4.0,2.6667,0.4435,0.8141,0.8809,0.4497,0.4605,0.3373,0.3164,0.0,0.3683,0.0,0.224,0.0,0.0
+6,"a man rides a horse which gallops into a stadium , and then the man throws a lasso at a cow and ties it up",0.0,"a man wrangles an animal to the ground , tying rope around it , before walking back to his horse .",3.0,1.0,4.0,2.6667,0.5585,0.8287,0.7547,0.3249,0.4543,0.3415,0.4673,0.0,0.4151,0.0229,0.2942,0.0,0.0

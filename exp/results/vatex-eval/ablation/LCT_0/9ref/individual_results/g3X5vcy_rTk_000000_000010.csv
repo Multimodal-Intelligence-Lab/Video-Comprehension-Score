@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy on a horse is practicing calf roping while a woman encourages him .,0.2812,"a man riding a horse take off out of the gate chasing a calf , before roping it and hog tying it .",5.0,5.0,5.0,5.0,0.6733,0.8715,0.9004,0.6958,0.685,0.6034,0.6178,0.378,0.6371,0.3648,0.5756,0.2914,0.2812
+2,a man is riding a horse in a rodeo while a man is talking .,0.2786,"a man on a horse is seen bolting through the gate of a stable with a cow in the lane to the left of him , and as both take off running , the man on horseback is seen lassoing the cow with a rope , as a woman's voice is heard off camera .",4.0,4.0,4.0,4.0,0.5311,0.8853,0.8887,0.8824,0.8327,0.799,0.4703,0.4333,0.4374,0.3995,0.3368,0.3192,0.2786
+3,a man is riding a horse and lassos a calf .,0.704,a person rides a horse around and then lassos a cow .,5.0,5.0,5.0,5.0,0.7638,0.9072,1.0,1.0,1.0,1.0,0.7388,0.7356,0.7356,0.7356,0.704,0.704,0.704
+4,"a man rides a horse which gallops into a stadium , and then the man throws a lasso at a cow and ties it up",0.6555,a person rides a horse around and then lassos a cow .,4.0,5.0,5.0,4.6667,0.7311,0.8937,0.9343,0.8776,0.8734,0.8584,0.6991,0.6936,0.7122,0.6921,0.6779,0.6571,0.6555
+5,a man on a horse ropes and ties a baby calf at a rodeo event .,0.6664,"a man riding a horse take off out of the gate chasing a calf , before roping it and hog tying it .",4.0,5.0,4.0,4.3333,0.7746,0.8998,0.9529,0.7986,0.7785,0.7448,0.7403,0.7177,0.7416,0.7104,0.7023,0.6748,0.6664
+6,in a rodeo arena a man ropes and ties up a calf in front of spectators .,0.338,a man ropes a calf and then ties him up while a woman eggs him on .,4.0,4.0,4.0,4.0,0.78,0.891,0.8991,0.598,0.6248,0.5286,0.7531,0.414,0.7461,0.3608,0.7151,0.3931,0.338

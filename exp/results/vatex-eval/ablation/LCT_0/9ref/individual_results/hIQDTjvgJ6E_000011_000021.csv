@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is standing on the shore of a lake casting out a fishing line .,0.5092,a man was standing beside a river and casting his line into the river,5.0,5.0,5.0,5.0,0.7725,0.9108,0.9859,0.8248,0.8608,0.8393,0.7491,0.5294,0.6408,0.557,0.6296,0.4732,0.5092
+2,a man stands on the edge of a lake and casts a fishing line into the water .,0.6032,"a man is standing on a cliff bank , casts a fishing rod into the water .",5.0,5.0,5.0,5.0,0.7825,0.92,1.0,1.0,1.0,1.0,0.7598,0.6423,0.6805,0.6423,0.671,0.6032,0.6032
+3,a man is standing on the edge of a lake and throwing a fishing pole into the water .,0.5527,"a man is standing on a cliff bank , casts a fishing rod into the water .",5.0,5.0,4.0,4.6667,0.7112,0.9166,1.0,1.0,1.0,1.0,0.6792,0.6046,0.6195,0.6046,0.5698,0.5527,0.5527
+4,a man is standing on a beach next to the shore and then casts a fishing rod out into the water .,0.6627,"a man is standing on a cliff bank , casts a fishing rod into the water .",4.0,4.0,4.0,4.0,0.6875,0.9262,1.0,1.0,1.0,1.0,0.6627,0.6875,0.6875,0.6875,0.6627,0.6627,0.6627
+5,one guy is fishing on a river with a reel and another with bare hands .,0.2806,a man is fishing with a pole and standing on a rock .,4.0,4.0,4.0,4.0,0.544,0.8346,1.0,1.0,1.0,1.0,0.4442,0.4217,0.4899,0.4217,0.3783,0.2806,0.2806
+6,an older person is standing on the side of a lake with a fishing pole and is fishing .,0.3119,man standing by the edge of the water practicing fly fishing .,5.0,4.0,5.0,4.6667,0.5531,0.9053,0.971,0.934,0.9266,0.9117,0.4818,0.427,0.4859,0.4224,0.4062,0.3114,0.3119

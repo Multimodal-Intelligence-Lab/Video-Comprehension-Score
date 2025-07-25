@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman holds a slice of watermelon in front of a man that eats it out of her hands .,0.2242,people holding watermelons in their hands while two men race to eat them .,5.0,4.0,5.0,4.6667,0.6744,0.8687,0.8409,0.3712,0.515,0.4417,0.6251,0.0675,0.6128,0.2808,0.5542,0.0,0.2242
+2,a group of people are eating watermelon at a table .,0.0,people holding watermelons in their hands while two men race to eat them .,5.0,5.0,5.0,5.0,0.5915,0.8665,0.6142,0.2476,0.0294,0.0,0.5286,0.0,0.3349,0.0,0.2325,0.0,0.0
+3,a group of people are having a watermelon eating contest .,0.2016,people holding watermelons in their hands while two men race to eat them .,5.0,5.0,5.0,5.0,0.7635,0.882,0.7725,0.5046,0.4157,0.3376,0.7318,0.3512,0.6938,0.2347,0.6529,0.3231,0.2016
+4,a woman is eating watermelon and a guy gets her to take a bite off of his piece .,0.181,people holding watermelons in their hands while two men race to eat them .,4.0,1.0,4.0,3.0,0.5912,0.7987,0.8281,0.5018,0.6249,0.5304,0.4882,0.1573,0.5064,0.3458,0.382,0.0,0.181
+5,people are having a watermelon eating contest without using their hands .,0.0,people holding watermelons in their hands while two men race to eat them .,5.0,5.0,5.0,5.0,0.7228,0.8781,0.6703,0.0,0.0,0.0,0.6843,0.0,0.5439,0.0,0.5183,0.0,0.0
+6,a woman eating a slice of watermelon held by another person on the street filled with people,0.0,people holding watermelons in their hands while two men race to eat them .,5.0,4.0,4.0,4.3333,0.5806,0.8568,0.6731,0.1478,0.0,0.0,0.5105,0.0,0.3769,0.0,0.2728,0.0,0.0

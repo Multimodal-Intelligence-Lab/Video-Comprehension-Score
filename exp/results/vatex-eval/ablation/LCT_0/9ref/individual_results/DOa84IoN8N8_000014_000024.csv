@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a metal pole is being used to cook something in a furnace while some people speak,0.0,two men are hanging out around a fire with a cat walking around on the ground .,5.0,5.0,2.0,4.0,0.4062,0.8205,0.9091,0.8044,0.7585,0.6929,0.2763,0.1754,0.2874,0.1255,0.1315,0.0,0.0
+2,a group of people are roasting marshmallows on a fire .,0.0,two men are hanging out around a fire with a cat walking around on the ground .,4.0,4.0,3.0,3.6667,0.4118,0.8757,0.963,0.8954,0.8992,0.8669,0.3221,0.171,0.302,0.1213,0.1954,0.0,0.0
+3,a group of people are roasting marshmallows over a fire .,0.0,two men are hanging out around a fire with a cat walking around on the ground .,5.0,4.0,3.0,4.0,0.4338,0.8757,0.963,0.8954,0.8992,0.8669,0.3474,0.1634,0.3281,0.1132,0.2255,0.0,0.0
+4,a man cooking a hot dog over the open flame of a campfire .,0.2221,the man is roasting a hot dog in his wood stove while talking to his cat .,4.0,3.0,4.0,3.6667,0.4699,0.8598,1.0,0.9045,0.9217,0.8964,0.3834,0.3322,0.4375,0.3312,0.3458,0.2233,0.2221
+5,outside someone started a fire and is cooking food on top of it .,0.2482,a person was roasting something in the fire burning in the house,4.0,4.0,4.0,4.0,0.5155,0.8666,0.9859,0.797,0.7663,0.7222,0.4239,0.3921,0.4809,0.3678,0.3828,0.2772,0.2482
+6,outside a man is holding a fire and blows into the fire and it enlarges .,0.2375,the person is holding something up to the fire trying to start it .,2.0,2.0,4.0,2.6667,0.5389,0.861,0.9804,0.7901,0.7374,0.695,0.4642,0.3479,0.5297,0.3439,0.4535,0.2423,0.2375

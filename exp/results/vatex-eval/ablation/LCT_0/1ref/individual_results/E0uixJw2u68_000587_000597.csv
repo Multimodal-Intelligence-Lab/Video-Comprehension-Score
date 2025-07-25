@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is tattooing a person on the thigh as she lays back .,0.191,a man is carefully tattooing a flower on a women's leg .,5.0,5.0,5.0,5.0,0.5781,0.8595,0.7477,0.5105,0.6067,0.5424,0.5091,0.1532,0.4358,0.3047,0.3435,0.0384,0.191
+2,a tattoo artist is getting a tattoo on a man ' s arm .,0.0,a man is carefully tattooing a flower on a women's leg .,4.0,4.0,4.0,4.0,0.5327,0.8402,0.7238,0.4188,0.5306,0.4413,0.4438,0.0,0.3544,0.1188,0.2316,0.0,0.0
+3,a tattoo artist is tattooing a tattoo on a man ' s arm .,0.1185,a man is carefully tattooing a flower on a women's leg .,4.0,4.0,4.0,4.0,0.5515,0.8639,0.7658,0.4786,0.589,0.5243,0.4808,0.0545,0.4143,0.2385,0.322,0.0,0.1185
+4,a woman is laying down while a tattoo artist is tattooing her chest .,0.0,a man is carefully tattooing a flower on a women's leg .,4.0,4.0,4.0,4.0,0.452,0.8256,0.7895,0.48,0.597,0.5119,0.3363,0.0,0.3059,0.0821,0.1593,0.0,0.0
+5,a woman is laying in a chair getting a tattoo done by a man .,0.0,a man is carefully tattooing a flower on a women's leg .,4.0,5.0,4.0,4.3333,0.5196,0.8341,0.5989,0.1618,0.0,0.0,0.424,0.0,0.1978,0.0,0.0383,0.0,0.0
+6,a woman is in the process of getting a tattoo on her chest .,0.0,a man is carefully tattooing a flower on a women's leg .,4.0,4.0,4.0,4.0,0.4149,0.8204,0.7636,0.392,0.0361,0.0,0.2868,0.0,0.2338,0.0,0.0661,0.0,0.0

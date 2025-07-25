@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people play a game that involves paintball guns and one captures a flag .,0.0,man with guns are shooting out on a tire playing area and one man grabs a red flag and runs .,5.0,5.0,5.0,5.0,0.5011,0.8553,0.8248,0.483,0.5115,0.4289,0.4167,0.0,0.3952,0.0247,0.2928,0.0,0.0
+2,a group of people are playing paintball in a field .,0.0,man with guns are shooting out on a tire playing area and one man grabs a red flag and runs .,5.0,5.0,5.0,5.0,0.2886,0.7857,0.9157,0.2787,0.0455,0.0,0.0946,0.0,0.2232,0.0,0.0113,0.0,0.0
+3,a group of people are playing paintball in a field .,0.0,man with guns are shooting out on a tire playing area and one man grabs a red flag and runs .,5.0,5.0,5.0,5.0,0.2886,0.7857,0.9157,0.2787,0.0455,0.0,0.0946,0.0,0.2232,0.0,0.0113,0.0,0.0
+4,a man is throwing an exercise ball at a wall and catching it .,0.0,man with guns are shooting out on a tire playing area and one man grabs a red flag and runs .,1.0,1.0,1.0,1.0,0.1242,0.7927,0.9565,0.8498,0.875,0.8423,0.0,0.0,0.0844,0.0,0.0,0.0,0.0
+5,"a man shows a dart , laughs , throws it at a dartboard , and retrieves it .",0.0,man with guns are shooting out on a tire playing area and one man grabs a red flag and runs .,1.0,1.0,1.0,1.0,0.1615,0.7672,0.8972,0.6723,0.7108,0.623,0.0,0.0,0.0654,0.0,0.0,0.0,0.0
+6,a man was practicing the by throwing the ball on the wall and missed it and another man gets that ball,0.0,man with guns are shooting out on a tire playing area and one man grabs a red flag and runs .,1.0,1.0,1.0,1.0,0.2376,0.8072,0.9684,0.6841,0.7522,0.6931,0.0555,0.0,0.2128,0.0,0.0247,0.0,0.0

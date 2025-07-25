@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl sits in the backseat of a car and plays the flute .,0.7631,a girl sits in the back of a car seat as she plays a recorder .,5.0,5.0,5.0,5.0,0.8574,0.9368,1.0,1.0,1.0,1.0,0.8443,0.8024,0.7888,0.7912,0.7631,0.7742,0.7631
+2,a young girl is playing a song on a recorder .,0.3257,a girl plays a recorder in the backseat of a car .,4.0,5.0,5.0,4.6667,0.6354,0.8817,0.941,0.7611,0.6939,0.6227,0.5801,0.3193,0.5768,0.4041,0.52,0.2571,0.3257
+3,a young girl is playing a song on a recorder .,0.3257,a girl plays a recorder in the backseat of a car .,4.0,5.0,5.0,4.6667,0.6354,0.8817,0.941,0.7611,0.6939,0.6227,0.5801,0.3193,0.5768,0.4041,0.52,0.2571,0.3257
+4,small girl sitting while playing a classical song on a piano .,0.0,a girl sitting in the back of the car is annoying the driver by playing the recorder in a very amateur fashion .,4.0,4.0,4.0,4.0,0.3704,0.8559,0.9599,0.8644,0.7871,0.7328,0.2335,0.2054,0.3166,0.1274,0.2016,0.0026,0.0
+5,in a room a girl is playing a piano music .,0.0,a girl sitting in the back of the car is annoying the driver by playing the recorder in a very amateur fashion .,2.0,2.0,3.0,2.3333,0.324,0.8326,0.9125,0.6846,0.7066,0.6389,0.1773,0.0,0.2233,0.0,0.0671,0.0,0.0
+6,a girl is playing on a piano while sitting on the lap of a woman .,0.1054,a girl plays a flute while sitting in a car riding,2.0,2.0,2.0,2.0,0.3346,0.8655,0.875,0.865,0.866,0.844,0.2253,0.2308,0.2326,0.2317,0.1065,0.1044,0.1054

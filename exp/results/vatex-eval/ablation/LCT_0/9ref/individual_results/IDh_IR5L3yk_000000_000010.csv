@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is showing how to pack a bunch of stuff in one suitcase .,0.5507,someone packs a variety of small bags into a large suitcase .,5.0,5.0,5.0,5.0,0.8382,0.8886,0.9859,0.8803,0.8711,0.8405,0.8161,0.582,0.7982,0.6192,0.7787,0.5068,0.5507
+2,a woman is demonstrating how to properly fold a suitcase .,0.2462,an individual demonstrates how to neatly pack a suitcase with several packages .,4.0,3.0,4.0,3.6667,0.6825,0.8509,0.9756,0.9387,0.9232,0.9007,0.6205,0.3829,0.6667,0.3805,0.6015,0.3199,0.2462
+3,a person is showing how to pack a suitcase .,0.8087,an individual demonstrates how to neatly pack a suitcase with several packages .,5.0,5.0,5.0,5.0,0.8718,0.9289,0.9744,0.9487,0.9317,0.9181,0.8581,0.8615,0.854,0.8117,0.8385,0.8467,0.8087
+4,a man reviewing the stuff in his suitcase while stuff his case .,0.3871,an individual demonstrates how to neatly pack a suitcase with several packages .,4.0,3.0,2.0,3.0,0.5652,0.8373,1.0,1.0,1.0,1.0,0.4763,0.5015,0.5652,0.5094,0.4568,0.3772,0.3871
+5,a machine is packing a bag and then seals the bag and moves on to the next bag .,0.1155,a woman packs a travel bag with other little bag separating everything very neatly .,3.0,3.0,1.0,2.3333,0.421,0.8352,0.9859,0.7978,0.8247,0.7892,0.2945,0.2343,0.3947,0.2646,0.2532,0.0791,0.1155
+6,a woman is showing what she packs in her suitcase to travel .,0.5925,an individual demonstrates how to neatly pack a suitcase with several packages .,5.0,4.0,5.0,4.6667,0.6883,0.8693,1.0,1.0,1.0,1.0,0.6333,0.6649,0.6719,0.6537,0.6139,0.6057,0.5925

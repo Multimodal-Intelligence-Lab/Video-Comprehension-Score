@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a kid cleans the soles of gold boots with a toothbrush and toothpaste .,0.7285,a person is cleaning gold shoes with a toothbrush an toothpaste .,5.0,5.0,5.0,5.0,0.7915,0.9298,1.0,1.0,1.0,1.0,0.7758,0.747,0.7874,0.7476,0.7713,0.7279,0.7285
+2,a man is showing how to clean a shoe with a brush .,0.3962,a person cleans the bottom of their sneaker with a brush and tooth paste .,4.0,4.0,4.0,4.0,0.5925,0.8788,0.941,0.8644,0.7861,0.7471,0.5363,0.5286,0.5487,0.4694,0.478,0.4636,0.3962
+3,a person is using a cloth to shine a pair of shoes .,0.1938,someone is cleaning the bottom of shoes with toothpaste .,4.0,1.0,4.0,3.0,0.5184,0.8591,0.9831,0.7974,0.8019,0.7633,0.4142,0.3961,0.4882,0.3371,0.3775,0.2654,0.1938
+4,a teenager is using white shoe polish to clean up his shoes .,0.1351,a pair of gold shoes are being cleaned with a toothbrush and toothpaste .,4.0,4.0,4.0,4.0,0.5909,0.8658,0.9524,0.8723,0.8089,0.7684,0.504,0.338,0.5083,0.2861,0.4039,0.1979,0.1351
+5,a person has clippers and clipping their dog or a dogs toenails .,0.0,someone is cleaning the bottom of shoes with toothpaste .,2.0,1.0,2.0,1.6667,0.1904,0.7838,1.0,1.0,1.0,1.0,0.0,0.188,0.188,0.188,0.0,0.0,0.0
+6,a person gets more nail polish and applies it to a toe nail .,0.0409,a person cleans the bottom of their sneaker with a brush and tooth paste .,2.0,1.0,2.0,1.6667,0.373,0.8114,0.9773,0.7913,0.8457,0.8096,0.2014,0.138,0.34,0.2229,0.1593,0.0,0.0409

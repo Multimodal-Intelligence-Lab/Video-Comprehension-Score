@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man seated outside on a sidewalk playing multiple instruments while playing a song .,0.0603,a person that is outside playing the guitar in front of others,5.0,5.0,4.0,4.6667,0.5169,0.8714,0.8623,0.7584,0.7215,0.6804,0.4071,0.2209,0.3372,0.1811,0.23,0.106,0.0603
+2,a group of people are in a parking lot and they are doing a dance .,0.0,a person that is outside playing the guitar in front of others,3.0,3.0,2.0,2.6667,0.2371,0.8203,0.9084,0.7929,0.5405,0.4398,0.0561,0.0,0.0586,0.0,0.0,0.0,0.0
+3,a man is standing in front of a crowd of people and he is dancing .,0.0955,a man sings and taps his feet while a bunch of people watch him outside,4.0,4.0,4.0,4.0,0.3937,0.8226,0.9667,0.8018,0.8148,0.7749,0.263,0.2438,0.3728,0.2559,0.2376,0.0808,0.0955
+4,a man is on stage playing a musical instrument while a song plays,0.0,a person that is outside playing the guitar in front of others,4.0,4.0,4.0,4.0,0.3811,0.8592,0.9167,0.7486,0.6912,0.6272,0.2796,0.0,0.1851,0.0,0.0253,0.0,0.0
+5,in the pub many people were playing different musical instrument and sing song and enjoy,0.0,a person that is outside playing the guitar in front of others,1.0,3.0,2.0,2.0,0.4523,0.8625,0.8999,0.763,0.7659,0.7126,0.365,0.0,0.3507,0.0101,0.2471,0.0,0.0
+6,an old man singing an playing a guitar with an audience outside .,0.2325,a man sings and taps his feet while a bunch of people watch him outside,4.0,5.0,5.0,4.6667,0.6277,0.901,0.9134,0.7486,0.7098,0.6532,0.5816,0.4214,0.5566,0.3577,0.5017,0.3497,0.2325

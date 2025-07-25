@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman cleans a toilet with a brush to get out the stains .,0.2949,a woman with gloves sits on a bathtub and uses a brush to clean the toilet next to her .,5.0,5.0,5.0,5.0,0.6354,0.8746,0.8086,0.6298,0.5913,0.5327,0.5831,0.4173,0.549,0.3567,0.4844,0.338,0.2949
+2,a person is using a toilet brush to clean a toilet .,0.0,a woman with gloves sits on a bathtub and uses a brush to clean the toilet next to her .,5.0,5.0,5.0,5.0,0.5678,0.8899,0.8949,0.4426,0.4292,0.3586,0.5143,0.0183,0.517,0.0,0.4573,0.0,0.0
+3,a man is using a toilet brush to clean a toilet .,0.0,a woman with gloves sits on a bathtub and uses a brush to clean the toilet next to her .,4.0,4.0,4.0,4.0,0.5221,0.8784,0.8949,0.4426,0.4292,0.3502,0.4559,0.0,0.466,0.0,0.392,0.0,0.0
+4,a woman explains and cleans her bathroom toilet using a deep-cleaning vacuum .,0.0,a woman with gloves sits on a bathtub and uses a brush to clean the toilet next to her .,4.0,4.0,4.0,4.0,0.575,0.848,0.8638,0.0,0.0,0.0,0.4989,0.0,0.5081,0.0,0.4199,0.0,0.0
+5,a women is mixing up a cleaning solution in the toilet .,0.1436,a woman with gloves sits on a bathtub and uses a brush to clean the toilet next to her .,3.0,1.0,2.0,2.0,0.5389,0.8329,0.9474,0.6172,0.6465,0.5755,0.4463,0.2529,0.5132,0.2867,0.4156,0.103,0.1436
+6,a woman describes how to clean around a toilet with a vacuum cleaner .,0.0,a woman with gloves sits on a bathtub and uses a brush to clean the toilet next to her .,4.0,4.0,4.0,4.0,0.4943,0.859,0.8609,0.4327,0.4063,0.3088,0.4113,0.0,0.4126,0.0,0.3161,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a family is feeding fish along the side of a pond .,0.4841,a family is watching fish at a local park and the baby is happy .,5.0,5.0,5.0,5.0,0.7259,0.8653,1.0,1.0,1.0,1.0,0.6833,0.5734,0.695,0.5734,0.6476,0.4841,0.4841
+2,a woman and a little girl are feeding a fish in a pond .,0.6118,"a woman , a young girl , and a toddler girl sit around a fish pond .",5.0,4.0,5.0,4.6667,0.6788,0.9013,0.9851,0.9016,0.9181,0.9091,0.6436,0.6437,0.6739,0.6501,0.6382,0.6047,0.6118
+3,a group of children are sitting on the edge of a pond and feeding a fish .,0.5513,people sitting on the edge of the water looking at the fish,4.0,4.0,4.0,4.0,0.6337,0.901,1.0,1.0,1.0,1.0,0.5935,0.599,0.599,0.599,0.5513,0.5513,0.5513
+4,a little girl and her mother watch the swarm of fish in the pond .,0.4381,"a woman , a young girl , and a toddler girl sit around a fish pond .",5.0,4.0,5.0,4.6667,0.6428,0.8734,0.9787,0.8387,0.819,0.7756,0.5899,0.491,0.6237,0.5106,0.568,0.4156,0.4381
+5,a woman and child sit by the water with fish and ducks .,0.486,"two adults and a child sit by a body of water with fish swimming in it , and a person walks in the background .",4.0,4.0,4.0,4.0,0.6371,0.8901,0.9532,0.9011,0.882,0.8619,0.5867,0.5385,0.6052,0.5487,0.5504,0.4744,0.486
+6,a girl sits at the edge of a pond and watches a large number of fish swim below her .,0.4447,a mom and two kids sit at the edge of a koi pond and watch the large fish swim .,4.0,4.0,5.0,4.3333,0.6204,0.9128,0.9412,0.835,0.8389,0.8113,0.5645,0.5219,0.5758,0.5241,0.512,0.4414,0.4447

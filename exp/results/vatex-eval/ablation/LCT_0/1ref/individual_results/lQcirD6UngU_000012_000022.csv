@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a baby in a bed crying and throwing cover over the bed,0.0,"a baby in a diaper is lying on a bed , and then gets up and asks for his mommy .",5.0,5.0,5.0,5.0,0.4572,0.8462,0.8187,0.3413,0.1363,0.0,0.3585,0.0,0.337,0.0,0.2164,0.0,0.0
+2,a man is holding a baby in a chair and he is crying .,0.0,"a baby in a diaper is lying on a bed , and then gets up and asks for his mommy .",2.0,2.0,3.0,2.3333,0.3072,0.7985,0.8067,0.5071,0.3712,0.2125,0.1323,0.0,0.1412,0.0,0.0,0.0,0.0
+3,a young boy is laying on a bed and a woman is talking to him .,0.0,"a baby in a diaper is lying on a bed , and then gets up and asks for his mommy .",3.0,2.0,3.0,2.6667,0.3746,0.8151,0.9565,0.7341,0.7178,0.6538,0.2327,0.1481,0.3462,0.1288,0.1979,0.0,0.0
+4,a baby is on a floor throwing a temper tantrum .,0.0,"a baby in a diaper is lying on a bed , and then gets up and asks for his mommy .",4.0,4.0,4.0,4.0,0.3777,0.7983,0.8649,0.4142,0.2669,0.0817,0.2206,0.0,0.2805,0.0,0.0988,0.0,0.0
+5,a small baby lies face down on a bed and looks up at the camera while crying .,0.2625,"a baby in a diaper is lying on a bed , and then gets up and asks for his mommy .",4.0,4.0,4.0,4.0,0.549,0.8582,0.918,0.722,0.7125,0.665,0.4745,0.3754,0.5088,0.367,0.4276,0.2722,0.2625
+6,"a baby on the floor cries , pushing itself up on its hands and knees and crying momma .",0.2382,"a baby in a diaper is lying on a bed , and then gets up and asks for his mommy .",4.0,4.0,4.0,4.0,0.5386,0.8078,0.9846,0.722,0.7497,0.6902,0.4289,0.361,0.5314,0.3846,0.42,0.209,0.2382

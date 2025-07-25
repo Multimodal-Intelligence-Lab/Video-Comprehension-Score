@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man sits and adjusts the settings on a microscope .,0.6594,a man demonstrates how to adjust a camera on a microscope .,5.0,5.0,5.0,5.0,0.7025,0.8734,1.0,1.0,1.0,1.0,0.6594,0.7025,0.7025,0.7025,0.6594,0.6594,0.6594
+2,a woman is demonstrating how to use a microscope .,0.4612,a man demonstrates how to adjust a camera on a microscope .,4.0,4.0,2.0,3.3333,0.5364,0.8605,1.0,1.0,1.0,1.0,0.4612,0.5364,0.5364,0.5364,0.4612,0.4612,0.4612
+3,a man is demonstrating how to use a microscope .,0.7306,a man demonstrates how to adjust a camera on a microscope .,5.0,5.0,5.0,5.0,0.7544,0.9118,1.0,1.0,1.0,1.0,0.7306,0.7544,0.7544,0.7544,0.7306,0.7306,0.7306
+4,a man carefully places a glass slide under a microscope .,0.2877,a man demonstrates how to adjust a camera on a microscope .,3.0,3.0,2.0,2.6667,0.5102,0.8313,1.0,0.8408,0.827,0.7919,0.4109,0.4175,0.5102,0.4078,0.4109,0.2993,0.2877
+5,a person is demonstrating how to put a slide into a microscope .,0.5318,a man demonstrates how to adjust a camera on a microscope .,2.0,4.0,2.0,2.6667,0.5951,0.8648,1.0,1.0,1.0,1.0,0.5318,0.5951,0.5951,0.5951,0.5318,0.5318,0.5318
+6,a woman is demonstrating how to adjust and look into a microscope .,0.5863,a man demonstrates how to adjust a camera on a microscope .,4.0,5.0,4.0,4.3333,0.6311,0.8918,1.0,1.0,1.0,1.0,0.5863,0.6311,0.6311,0.6311,0.5863,0.5863,0.5863

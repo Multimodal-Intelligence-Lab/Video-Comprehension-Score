@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a small girl is sitting on the floor while playing with an object .,0.2745,a young child is sitting alone and playing with a book .,5.0,4.0,5.0,4.6667,0.3771,0.8585,1.0,1.0,1.0,1.0,0.2745,0.3771,0.3771,0.3771,0.2745,0.2745,0.2745
+2,a little boy is sitting on the floor playing with a toy .,0.2756,a young child is sitting alone and playing with a book .,4.0,4.0,3.0,3.6667,0.3739,0.8643,1.0,1.0,1.0,1.0,0.2756,0.3739,0.3739,0.3739,0.2756,0.2756,0.2756
+3,a young boy is sitting on the floor and playing with his toys .,0.3651,a young child is sitting alone and playing with a book .,4.0,4.0,4.0,4.0,0.4299,0.8979,1.0,1.0,1.0,1.0,0.3651,0.4299,0.4299,0.4299,0.3651,0.3651,0.3651
+4,a young child is sitting on a sofa with a newspaper on their lap and turning the pages .,0.3069,a young child is sitting alone and playing with a book .,2.0,4.0,2.0,2.6667,0.4547,0.8628,1.0,0.8889,0.9118,0.8977,0.368,0.3866,0.4547,0.4019,0.368,0.289,0.3069
+5,a baby is sitting on the floor playing with some pieces of paper .,0.0,a young child is sitting alone and playing with a book .,5.0,5.0,5.0,5.0,0.3682,0.8718,0.8333,0.3414,0.4844,0.4085,0.2753,0.0,0.2419,0.0,0.1304,0.0,0.0
+6,a young boy is reading a children's book while sitting on a couch .,0.0,a young child is sitting alone and playing with a book .,4.0,4.0,2.0,3.3333,0.5405,0.8969,0.8603,0.424,0.28,0.1972,0.4877,0.0,0.466,0.0,0.4045,0.0,0.0

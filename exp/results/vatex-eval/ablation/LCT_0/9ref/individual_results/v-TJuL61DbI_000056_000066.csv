@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is ironing a red garment on an ironing board with an iron .,0.9235,a woman is ironing a red cloth on an ironing board .,5.0,5.0,5.0,5.0,0.9756,0.9669,0.9804,0.934,0.9277,0.9252,0.9746,0.9302,0.9455,0.9236,0.9437,0.9301,0.9235
+2,a man is ironing a shirt on a ironing board .,0.6181,a woman ironing a red shirt on an ironing board .,4.0,4.0,4.0,4.0,0.6881,0.9403,1.0,1.0,1.0,1.0,0.6627,0.6409,0.6409,0.6409,0.6181,0.6181,0.6181
+3,a man is ironing a shirt on an ironing board .,0.6197,a woman ironing a red shirt on an ironing board .,4.0,4.0,4.0,4.0,0.69,0.9403,1.0,1.0,1.0,1.0,0.6647,0.6424,0.6424,0.6424,0.6197,0.6197,0.6197
+4,a man is ironing a shirt on an ironing board with an iron .,0.5177,a woman ironing a red shirt on an ironing board .,4.0,4.0,4.0,4.0,0.6928,0.9336,0.9565,0.7624,0.7977,0.7752,0.6654,0.5154,0.6342,0.5497,0.6015,0.481,0.5177
+5,a person is ironing a shirt using a large iron in an office .,0.1315,a woman is ironing a red piece of clothing on an ironing board .,4.0,5.0,3.0,4.0,0.523,0.8778,0.8929,0.7673,0.7958,0.7565,0.4438,0.3252,0.4006,0.2715,0.3171,0.1893,0.1315
+6,a man is ironing his clothes on a ironing board .,0.5167,a woman is ironing a red cloth on an ironing board .,4.0,4.0,4.0,4.0,0.5765,0.9232,1.0,1.0,1.0,1.0,0.5413,0.5547,0.5554,0.5547,0.5184,0.5167,0.5167

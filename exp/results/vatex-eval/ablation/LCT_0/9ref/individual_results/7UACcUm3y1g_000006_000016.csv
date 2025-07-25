@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is working out with a exercising jumping rope .,0.33,a man lunges forward with his right leg and moves a rope with his left hand .,5.0,5.0,4.0,4.6667,0.6439,0.8763,0.95,1.0,0.9617,0.9536,0.5936,0.4677,0.6215,0.4464,0.5681,0.3557,0.33
+2,a woman is demonstrating how to use a exercise ball .,0.0,man wearing red shirt and black shorts does rope exercise with left hand .,4.0,1.0,4.0,3.0,0.2281,0.7982,0.9796,1.0,0.9845,0.9793,0.0329,0.0207,0.1541,0.0,0.0,0.0,0.0
+3,a woman is standing in a gym and doing a dance routine .,0.0,man wearing red shirt and black shorts does rope exercise with left hand .,1.0,1.0,4.0,2.0,0.167,0.7858,0.9714,0.8845,0.8504,0.8038,0.0,0.0,0.1362,0.0,0.0,0.0,0.0
+4,a man is exercising by way of squats and shaking large ropes,0.3518,"a man is exercising with a very long cord , which he throws up and down with 1 hand .",5.0,5.0,5.0,5.0,0.6383,0.8767,0.9688,0.8477,0.9042,0.884,0.5875,0.4293,0.5889,0.4649,0.5311,0.3086,0.3518
+5,"a man in a gym is pulling a rope with weights tied to the end of it , he runs to straighten out the rope and begins pulling again .",0.3957,"a man is exercising with a very long cord , which he throws up and down with 1 hand .",3.0,2.0,4.0,3.0,0.5795,0.8259,0.9725,0.9778,0.9689,0.9608,0.4909,0.5255,0.5229,0.5211,0.4104,0.4012,0.3957
+6,a young man whips a rope back and forth in a fitness room for a workout .,0.1062,a male waving a rope with his left hand and music playing in the background .,5.0,4.0,5.0,4.6667,0.5914,0.8414,0.9647,0.7922,0.8179,0.773,0.5144,0.2597,0.5241,0.283,0.4166,0.0771,0.1062

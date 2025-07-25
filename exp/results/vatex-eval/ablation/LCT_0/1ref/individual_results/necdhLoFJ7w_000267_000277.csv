@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,cell phone users are looking at their phones in different areas of a city with writing stating cell phone usage statistics .,0.0,"people are spending a lot of time on their phones , but they think it is a good way to pass the time .",5.0,5.0,5.0,5.0,0.4538,0.8066,0.8887,0.4105,0.4739,0.3478,0.3229,0.0,0.3854,0.0,0.2381,0.0,0.0
+2,a man and a woman are standing in front of a tree and talking to each other .,0.0,"people are spending a lot of time on their phones , but they think it is a good way to pass the time .",4.0,4.0,4.0,4.0,0.0129,0.7575,0.948,0.8693,0.8759,0.8362,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a man is talking to a woman in front of a group of people .,0.0,"people are spending a lot of time on their phones , but they think it is a good way to pass the time .",1.0,1.0,4.0,2.0,0.0375,0.7914,0.7768,0.3892,0.3581,0.189,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,a cracked cellphone is being used by someone standing next to a building .,0.0,"people are spending a lot of time on their phones , but they think it is a good way to pass the time .",4.0,4.0,4.0,4.0,0.2318,0.7736,0.8988,0.5059,0.5298,0.3922,0.0069,0.0,0.1453,0.0,0.0,0.0,0.0
+5,a person is playing with their cell phone and apps .,0.0,"people are spending a lot of time on their phones , but they think it is a good way to pass the time .",4.0,5.0,5.0,4.6667,0.458,0.8095,0.625,0.5574,0.4524,0.3235,0.3304,0.0276,0.1327,0.0,0.0,0.0,0.0
+6,"an app is shown , then people talk on their phones in the city , followed by another view of an app .",0.0751,"people are spending a lot of time on their phones , but they think it is a good way to pass the time .",3.0,2.0,4.0,3.0,0.4243,0.8089,0.9426,0.65,0.7694,0.7149,0.2883,0.1143,0.3893,0.2518,0.245,0.0,0.0751

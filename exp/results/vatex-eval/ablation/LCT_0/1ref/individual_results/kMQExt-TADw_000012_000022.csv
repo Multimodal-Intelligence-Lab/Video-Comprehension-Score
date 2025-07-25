@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young man is doing hand tricks with his band instrument .,0.4524,a young man twirls around with an instrument outside .,5.0,5.0,5.0,5.0,0.611,0.8786,0.937,0.7109,0.8085,0.782,0.5573,0.4529,0.5849,0.5189,0.5275,0.3773,0.4524
+2,a man is standing in a yard playing with a ball .,0.0,a young man twirls around with an instrument outside .,5.0,4.0,4.0,4.3333,0.282,0.7945,1.0,0.8408,0.827,0.7823,0.0963,0.1461,0.282,0.1318,0.0963,0.0,0.0
+3,a man is hitting a ball with a mallet and then hits it .,0.0,a young man twirls around with an instrument outside .,2.0,2.0,4.0,2.6667,0.1651,0.7888,1.0,0.8408,0.827,0.7807,0.0,0.007,0.1651,0.0,0.0,0.0,0.0
+4,a man plays a groove on a drum set that features a cymbal .,0.0,a young man twirls around with an instrument outside .,5.0,3.0,4.0,4.0,0.2048,0.7813,0.92,0.3972,0.258,0.0504,0.0,0.0,0.1356,0.0,0.0,0.0,0.0
+5,a man sits and plays a large set of drums and cymbals .,0.0,a young man twirls around with an instrument outside .,4.0,3.0,3.0,3.3333,0.1862,0.7792,0.9199,0.803,0.7624,0.6951,0.0,0.0,0.1153,0.0,0.0,0.0,0.0
+6,a young man plays a set of drums making music with them .,0.0,a young man twirls around with an instrument outside .,5.0,4.0,3.0,4.0,0.406,0.837,0.9599,0.6434,0.6174,0.5428,0.2903,0.0768,0.3812,0.0378,0.2607,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,some men are at the edge of a lake talking about where the middle is .,0.2091,four men stand on a marshy beach and discuss where and how to lay out some boxes,5.0,5.0,5.0,5.0,0.3561,0.8141,1.0,1.0,1.0,1.0,0.2091,0.3561,0.3561,0.3561,0.2091,0.2091,0.2091
+2,a group of people are on the beach and they are building a sand castle .,0.0,four men stand on a marshy beach and discuss where and how to lay out some boxes,3.0,2.0,4.0,3.0,0.3052,0.7964,0.9497,0.5541,0.5498,0.4347,0.1276,0.0,0.2685,0.0,0.0814,0.0,0.0
+3,a group of people are on a beach and they are digging in the sand .,0.0043,four men stand on a marshy beach and discuss where and how to lay out some boxes,4.0,2.0,4.0,3.3333,0.3247,0.8,0.9378,0.8624,0.8478,0.8098,0.1558,0.2169,0.2799,0.2034,0.0999,0.0211,0.0043
+4,a man places a rock on the ground and begins brushing dirt followed by a man who is talking .,0.0,four men stand on a marshy beach and discuss where and how to lay out some boxes,4.0,2.0,2.0,2.6667,0.198,0.782,0.8809,0.3966,0.396,0.2276,0.0,0.0,0.0896,0.0,0.0,0.0,0.0
+5,"in a foreign language , a man describes the work of people planting plants in a garden next to a body of water .",0.0,four men stand on a marshy beach and discuss where and how to lay out some boxes,4.0,1.0,4.0,3.0,0.1427,0.7649,0.9216,0.6958,0.7412,0.6616,0.0,0.0,0.0698,0.0,0.0,0.0,0.0
+6,a group of guys floating a concrete sidewalk with someone narrating what is happening .,0.0,four men stand on a marshy beach and discuss where and how to lay out some boxes,4.0,2.0,2.0,2.6667,0.1888,0.7469,0.9885,0.8983,0.9412,0.9213,0.0,0.0969,0.1794,0.1381,0.0,0.0,0.0

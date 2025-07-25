@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"an infant yawns , stretches , and makes noises while a female voice is heard cooing .",0.6397,a young infant yawns while a female voice is spoken in the background .,5.0,4.0,4.0,4.3333,0.8359,0.895,0.8878,0.7283,0.7203,0.6712,0.8167,0.6561,0.8148,0.648,0.793,0.648,0.6397
+2,a baby is laying on a bed and crying and laughing .,0.0414,a young infant yawns while a female voice is spoken in the background .,4.0,2.0,2.0,2.6667,0.515,0.8449,1.0,0.9447,0.8651,0.8265,0.4259,0.3046,0.403,0.2559,0.2935,0.1055,0.0414
+3,a baby is laying on a bed and is crying .,0.2504,a little boy is being held on a bed and yawns .,4.0,2.0,2.0,2.6667,0.5641,0.8579,1.0,1.0,1.0,1.0,0.4919,0.3919,0.5181,0.3919,0.4383,0.2504,0.2504
+4,a small baby being held lets out a very large and long yawn .,0.5707,a baby being held by a person gives a big yawn and stretches his arm .,5.0,5.0,5.0,5.0,0.8069,0.8902,1.0,0.8072,0.8673,0.8351,0.7831,0.5968,0.7885,0.5834,0.7624,0.5845,0.5707
+5,a man is holding a little girl who is yawning .,0.1582,a little boy is being held on a bed and yawns .,5.0,4.0,4.0,4.3333,0.5687,0.8967,0.95,0.8366,0.8162,0.7719,0.5143,0.292,0.4962,0.2451,0.3967,0.1142,0.1582
+6,"a man is holding a baby who is yawning , the man then smiles .",0.3546,a boy held in a hand yawned an stared at the person,4.0,4.0,4.0,4.0,0.7166,0.862,0.96,0.8295,0.8893,0.8697,0.6712,0.4123,0.6654,0.4518,0.6119,0.3082,0.3546

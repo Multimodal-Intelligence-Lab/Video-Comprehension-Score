@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a lady was giving some weather report about the africa and gives report on some channel .,0.5772,a lady is giving a weather forecast for other to view .,4.0,5.0,5.0,4.6667,0.835,0.887,0.9831,0.8047,0.7943,0.7464,0.8099,0.6397,0.7664,0.625,0.7592,0.5937,0.5772
+2,a woman is giving a weather report in a foreign language .,0.6743,a lady is giving a weather forecast for other to view .,5.0,5.0,5.0,5.0,0.7133,0.88,1.0,1.0,1.0,1.0,0.6743,0.7133,0.7133,0.7133,0.6743,0.6743,0.6743
+3,a man is giving a weather report on the weather .,0.4723,a lady is giving a weather forecast for other to view .,4.0,4.0,4.0,4.0,0.5835,0.8833,0.95,0.8946,0.8936,0.8796,0.5285,0.5141,0.5538,0.5339,0.4948,0.4499,0.4723
+4,a weather woman stands in front of a map and talks about the forecast .,0.1796,a lady is giving a weather forecast for other to view .,5.0,5.0,5.0,5.0,0.8359,0.9209,0.8571,0.8128,0.7049,0.6242,0.8218,0.3762,0.7123,0.2378,0.7074,0.3286,0.1796
+5,a young woman stands beside a weather map and tells the forecast .,0.5518,a lady is giving a weather forecast for other to view .,5.0,5.0,5.0,5.0,0.7473,0.888,0.9378,0.9387,0.9074,0.8907,0.7155,0.6329,0.6905,0.6203,0.6515,0.5667,0.5518
+6,a woman stands in front of a map backdrop and provides a weather forecast,0.5357,a lady looks at a map and starts to talk about the weather around,5.0,5.0,5.0,5.0,0.7841,0.8814,1.0,0.8933,0.9155,0.8986,0.755,0.6033,0.658,0.6129,0.6448,0.5242,0.5357

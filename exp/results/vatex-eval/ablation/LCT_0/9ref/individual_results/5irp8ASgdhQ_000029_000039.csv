@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is demonstrating how bend different pieces of material in a shop,0.5618,a man is demonstrating how to bend a long strip of thin metal .,4.0,3.0,4.0,3.6667,0.6329,0.8723,0.9859,0.9512,0.9604,0.9545,0.5792,0.6141,0.6215,0.6178,0.5661,0.5576,0.5618
+2,a person is using a machine to cut a piece of wood .,0.5407,a man is using a machine to cut pieces of sheet metal .,4.0,4.0,4.0,4.0,0.5792,0.9161,1.0,1.0,1.0,1.0,0.5407,0.5792,0.5792,0.5792,0.5407,0.5407,0.5407
+3,a man is demonstrating how to use a tool to cut a piece of wood .,0.2791,a man is demonstrating how to bend a long strip of thin metal .,4.0,4.0,4.0,4.0,0.5256,0.8838,1.0,1.0,1.0,1.0,0.4632,0.3989,0.4674,0.3989,0.363,0.2791,0.2791
+4,a man shows how to cut metal and ceramic using a special drill .,0.2499,a man demonstrates cutting thin metal as an ad is displayed for getting more information about it .,4.0,4.0,4.0,4.0,0.5194,0.8817,1.0,0.8933,0.9155,0.8948,0.4366,0.3402,0.4908,0.3601,0.4031,0.2265,0.2499
+5,a man talks and demonstrates how to use a tool with a piece of metal .,0.3822,a man is demonstrating how to bend a long strip of thin metal .,4.0,4.0,4.0,4.0,0.7164,0.9085,0.9394,0.7845,0.855,0.8305,0.6879,0.4239,0.6658,0.4714,0.6321,0.3267,0.3822
+6,a man in a workshop takes a piece metal off of a machine .,0.1908,a man measuring a piece of aluminum the cutting it off,5.0,5.0,5.0,5.0,0.5363,0.8999,1.0,0.8408,0.827,0.7971,0.4807,0.3349,0.5169,0.3102,0.4137,0.2176,0.1908

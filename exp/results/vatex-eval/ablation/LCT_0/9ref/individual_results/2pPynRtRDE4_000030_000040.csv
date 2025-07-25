@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy uses a key to open a door and then starts peeking through the door .,0.7451,a boy uses a sharp object to open the door to a room and peeks inside .,4.0,4.0,4.0,4.0,0.7726,0.9134,0.978,0.9905,0.977,0.9748,0.751,0.7704,0.7671,0.7672,0.7451,0.7486,0.7451
+2,a young boy is showing how to clean a door .,0.3948,a young boy uses a pin to unlcok a bedroom door .,4.0,4.0,4.0,4.0,0.4715,0.8732,1.0,1.0,1.0,1.0,0.3948,0.4715,0.4715,0.4715,0.3948,0.3948,0.3948
+3,a young boy is showing how to open a door .,0.5588,a young boy uses a pin to unlcok a bedroom door .,5.0,5.0,5.0,5.0,0.6396,0.8861,1.0,1.0,1.0,1.0,0.5933,0.6104,0.6104,0.6104,0.5588,0.5588,0.5588
+4,a man quickly picks the lock on a door frame .,0.3574,a young boy with glasses picks the lock of a room in a house and sneeks a peak .,4.0,3.0,5.0,4.0,0.603,0.892,1.0,1.0,1.0,1.0,0.5496,0.4662,0.5231,0.4662,0.4376,0.3574,0.3574
+5,a guys is showing people how to pick a lock and how it works .,0.3381,a young boy uses a small piece of metal to pick a door lock and peek in .,5.0,5.0,5.0,5.0,0.4832,0.8249,0.9851,1.0,0.9895,0.9862,0.3736,0.4691,0.4583,0.4583,0.3381,0.3513,0.3381
+6,a boy is climbing a ladder in to a closet with little light,0.2017,a boy uses a sharp object to open the door to a room and peeks inside .,2.0,2.0,2.0,2.0,0.3862,0.7952,1.0,1.0,1.0,1.0,0.2078,0.3758,0.3758,0.3758,0.2017,0.2017,0.2017

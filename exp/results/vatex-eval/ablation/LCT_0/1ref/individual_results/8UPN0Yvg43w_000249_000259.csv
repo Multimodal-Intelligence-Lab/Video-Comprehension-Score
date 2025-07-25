@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy is showing how to properly massage a woman's leg .,0.263,a person is laying on a bench in a room and a man is sitting and massaging their lower leg and ankle .,5.0,5.0,5.0,5.0,0.5581,0.8267,0.9357,0.6895,0.7253,0.6677,0.4654,0.3591,0.5277,0.3907,0.4287,0.2247,0.263
+2,a man is massaging another person ' s leg while he is laying down .,0.0,a person is laying on a bench in a room and a man is sitting and massaging their lower leg and ankle .,5.0,5.0,5.0,5.0,0.6978,0.9235,0.5536,0.2636,0.1428,0.0719,0.6728,0.0,0.3603,0.0,0.3366,0.0,0.0
+3,a woman is massaging a woman ' s leg while she lays on a bed .,0.0,a person is laying on a bench in a room and a man is sitting and massaging their lower leg and ankle .,4.0,4.0,4.0,4.0,0.6001,0.8585,0.6259,0.3122,0.2222,0.094,0.5342,0.0,0.361,0.0,0.2557,0.0,0.0
+4,a man gives a leg massage to a woman's leg as she lays on a table .,0.0,a person is laying on a bench in a room and a man is sitting and massaging their lower leg and ankle .,5.0,4.0,5.0,4.6667,0.626,0.8695,0.6986,0.0,0.0,0.0,0.5699,0.0,0.4647,0.0,0.3844,0.0,0.0
+5,a man is slowly massaging the legs of a woman who is lying on a couch,0.0,a person is laying on a bench in a room and a man is sitting and massaging their lower leg and ankle .,5.0,5.0,4.0,4.6667,0.5553,0.8644,0.6331,0.2019,0.0749,0.0,0.4856,0.0,0.2977,0.0,0.1875,0.0,0.0
+6,a person is massaging a woman's leg inside a room .,0.0,a person is laying on a bench in a room and a man is sitting and massaging their lower leg and ankle .,5.0,5.0,5.0,5.0,0.6736,0.8967,0.7049,0.0,0.0,0.0,0.636,0.0,0.537,0.0,0.4837,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a kid throws a long pass to his friend , but the friend misses the football and trips over a pole .",0.0,"a young boy runs across a street and someone throws him a ball to catch , but he drops it .",5.0,3.0,4.0,4.0,0.3698,0.7996,0.9071,0.5531,0.6872,0.6088,0.2119,0.0,0.3053,0.083,0.1312,0.0,0.0
+2,a young boy runs and throws a frisbee in a yard .,0.0979,"a young boy runs across a street and someone throws him a ball to catch , but he drops it .",4.0,3.0,4.0,3.6667,0.4458,0.8807,0.9057,0.6744,0.6975,0.6565,0.3707,0.1782,0.3881,0.2055,0.3053,0.0669,0.0979
+3,a boy is running and then throws a football into the air .,0.029,"a young boy runs across a street and someone throws him a ball to catch , but he drops it .",5.0,4.0,4.0,4.3333,0.4757,0.8648,0.8838,0.6049,0.6243,0.5656,0.3938,0.1333,0.4068,0.1602,0.3141,0.0,0.029
+4,a young man throws a football with such velocity that it knocks over a young boy who catches it .,0.0,"a young boy runs across a street and someone throws him a ball to catch , but he drops it .",4.0,4.0,4.0,4.0,0.453,0.8595,0.748,0.3781,0.3365,0.228,0.3636,0.0,0.2688,0.0,0.1492,0.0,0.0
+5,a young boy outside in a yard juggles a large number of ball high into the air even turning and catching them all .,0.0,"a young boy runs across a street and someone throws him a ball to catch , but he drops it .",4.0,2.0,2.0,2.6667,0.4375,0.829,0.9425,0.5914,0.666,0.5972,0.3216,0.0489,0.4033,0.1555,0.2802,0.0,0.0
+6,a boy throws a soccer ball against a wall and misses the catch .,0.0,"a young boy runs across a street and someone throws him a ball to catch , but he drops it .",4.0,3.0,4.0,3.6667,0.4888,0.8737,0.8198,0.4258,0.414,0.3293,0.4149,0.0,0.3765,0.0,0.2863,0.0,0.0

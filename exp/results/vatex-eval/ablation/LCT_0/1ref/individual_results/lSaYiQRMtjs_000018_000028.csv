@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man smoking a pipe is holding it in his teeth .,0.0,a man wearing glasses and no shirt is smoking a pipe .,5.0,4.0,5.0,4.6667,0.565,0.8809,0.7044,0.6299,0.3302,0.2396,0.5062,0.3095,0.3825,0.0,0.299,0.2161,0.0
+2,a man is sitting in front of a camera and smoking a cigarette .,0.2143,a man wearing glasses and no shirt is smoking a pipe .,5.0,5.0,4.0,4.6667,0.356,0.8413,0.9787,0.9698,0.9743,0.9694,0.2346,0.336,0.342,0.339,0.2179,0.2107,0.2143
+3,a young boy is standing in front of a camera and talking .,0.0,a man wearing glasses and no shirt is smoking a pipe .,2.0,4.0,4.0,3.3333,-0.005,0.7443,0.9148,0.7915,0.8487,0.7967,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,a man wearing a jacket and a cap smoking a pipe and blowing some smoke .,0.3196,a man wearing glasses and no shirt is smoking a pipe .,4.0,4.0,4.0,4.0,0.5161,0.9079,0.9,0.8153,0.7833,0.7613,0.467,0.4065,0.4623,0.3823,0.4078,0.3462,0.3196
+5,a person is siting outside and is smoking a pipe by himself .,0.2946,a man wearing glasses and no shirt is smoking a pipe .,4.0,4.0,4.0,4.0,0.4969,0.8623,1.0,0.8408,0.827,0.7994,0.4166,0.4017,0.4969,0.3917,0.4166,0.3061,0.2946
+6,a man smokes from a pipe while driving .,0.0,a man wearing glasses and no shirt is smoking a pipe .,4.0,4.0,4.0,4.0,0.5076,0.8814,0.7071,0.4913,0.1595,0.0464,0.4414,0.0,0.3037,0.0,0.21,0.0,0.0

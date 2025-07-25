@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people dancing and listening to music play in a room .,0.498,a group of people dancing to a song all doing the same steps .,5.0,4.0,5.0,4.6667,0.6807,0.9223,0.9756,1.0,0.9794,0.9774,0.6443,0.5514,0.573,0.542,0.5183,0.5083,0.498
+2,a group of people are square dancing to country music .,0.5383,a group of people are line dancing on the dance floor with music playing .,5.0,3.0,4.0,4.0,0.6686,0.9187,1.0,0.8723,0.8863,0.8694,0.6311,0.574,0.6403,0.5796,0.6049,0.5321,0.5383
+3,a group of people are square dancing to country music .,0.5383,a group of people are line dancing on the dance floor with music playing .,5.0,3.0,4.0,4.0,0.6686,0.9187,1.0,0.8723,0.8863,0.8694,0.6311,0.574,0.6403,0.5796,0.6049,0.5321,0.5383
+4,a group of people dancing together in a dance studio as other people watch and play music,0.4594,a group of people dance together in synchrony to a song .,4.0,3.0,4.0,3.6667,0.6706,0.9251,0.9318,0.7545,0.7733,0.755,0.6341,0.4873,0.5807,0.4999,0.5467,0.4459,0.4594
+5,a room is full of couples ballroom dancing together as music plays .,0.2653,a group of people dance together in synchrony to a song .,5.0,4.0,5.0,4.6667,0.5607,0.9149,0.9667,0.8879,0.8884,0.8708,0.5198,0.3654,0.5029,0.3658,0.4567,0.2649,0.2653
+6,a group of woman in a crowded hall perform coordinated dance moves to music .,0.2223,a large group of people are line dancing in a studio .,5.0,4.0,5.0,4.6667,0.5248,0.8561,0.975,0.979,0.9541,0.9429,0.4384,0.3902,0.487,0.3743,0.3937,0.2421,0.2223

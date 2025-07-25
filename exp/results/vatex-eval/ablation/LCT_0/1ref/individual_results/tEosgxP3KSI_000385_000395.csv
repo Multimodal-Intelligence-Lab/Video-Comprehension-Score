@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a child is explaining how to solve the rubicks cube to an adult that is watching .,0.0,a person is rotating several sides of a rubix cube .,3.0,4.0,4.0,3.6667,0.4495,0.8286,0.8766,0.5945,0.5142,0.4137,0.3357,0.0741,0.372,0.0,0.2421,0.0,0.0
+2,a man is demonstrating how to solve a rubix cube .,0.6279,a person is rotating several sides of a rubix cube .,4.0,5.0,5.0,4.6667,0.6803,0.8594,1.0,1.0,1.0,1.0,0.6279,0.6803,0.6803,0.6803,0.6279,0.6279,0.6279
+3,a person is demonstrating how to solve a rubik ' s cube .,0.6286,a person is rotating several sides of a rubix cube .,5.0,5.0,5.0,5.0,0.7301,0.8788,1.0,0.8408,0.827,0.8032,0.6928,0.6789,0.7301,0.6736,0.6928,0.6347,0.6286
+4,a child is demonstrating how to solve a rubiks cube,0.358,a person is rotating several sides of a rubix cube .,4.0,5.0,5.0,4.6667,0.5494,0.8487,1.0,0.8408,0.827,0.7962,0.4691,0.4641,0.5494,0.4552,0.4691,0.3685,0.358
+5,a person discussing and works on solving a rubik's cube .,0.6649,a person is rotating several sides of a rubix cube .,5.0,5.0,5.0,5.0,0.7094,0.8671,1.0,1.0,1.0,1.0,0.6649,0.7094,0.7094,0.7094,0.6649,0.6649,0.6649
+6,someone's hands are shown working a rubik's cube .,0.6715,a person is rotating several sides of a rubix cube .,5.0,5.0,5.0,5.0,0.7498,0.8363,0.9787,0.8515,0.9107,0.8932,0.7009,0.7062,0.7444,0.7253,0.6944,0.6487,0.6715

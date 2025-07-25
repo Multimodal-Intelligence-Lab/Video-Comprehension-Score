@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a performer is explaining his trick to a group of bystanding watchers .,0.0,a group of men hold up a man balancing on a 6 foot unicycle platform .,4.0,4.0,5.0,4.3333,0.1863,0.7669,0.8359,0.6131,0.5904,0.4658,0.0,0.0,0.0265,0.0,0.0,0.0,0.0
+2,a group of people are standing in the middle of a street .,0.0,a group of men hold up a man balancing on a 6 foot unicycle platform .,5.0,5.0,5.0,5.0,0.1478,0.7944,1.0,1.0,1.0,1.0,0.0,0.1478,0.1478,0.1478,0.0,0.0,0.0
+3,a man is standing in front of a crowd of people in the street .,0.0,a group of men hold up a man balancing on a 6 foot unicycle platform .,5.0,4.0,4.0,4.3333,0.1775,0.7862,0.8784,0.5514,0.5485,0.4258,0.0,0.0,0.0637,0.0,0.0,0.0,0.0
+4,a man on a unicycle riding it with a woman on his shoulders while other people are watching,0.0,a group of men hold up a man balancing on a 6 foot unicycle platform .,4.0,4.0,4.0,4.0,0.5404,0.8254,0.7742,0.189,0.0253,0.0,0.4431,0.0,0.4063,0.0,0.2807,0.0,0.0
+5,a man juggles on a tall unicycle as a crowd cheers .,0.0,a group of men hold up a man balancing on a 6 foot unicycle platform .,4.0,4.0,4.0,4.0,0.5656,0.814,0.8235,0.5482,0.5215,0.4122,0.4664,0.2013,0.4725,0.1541,0.352,0.0266,0.0
+6,a man is on a tall unicycle juggling fire in front of a large crowd .,0.0,a group of men hold up a man balancing on a 6 foot unicycle platform .,4.0,4.0,4.0,4.0,0.5406,0.8226,0.868,0.4205,0.3931,0.2623,0.4416,0.0,0.4708,0.0,0.3567,0.0,0.0

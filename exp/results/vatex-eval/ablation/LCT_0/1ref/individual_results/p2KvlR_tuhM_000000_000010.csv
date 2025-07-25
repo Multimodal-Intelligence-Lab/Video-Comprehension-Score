@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young man walking towards the end of a diving board and jumping off doing a flip into the pool below .,0.0,a boy with black short is jumping into the swimming pool from a height,5.0,5.0,5.0,5.0,0.4021,0.8295,0.9106,0.4002,0.408,0.2864,0.2793,0.0,0.3434,0.0,0.2085,0.0,0.0
+2,a man jumps off of a diving board into a pool .,0.0,a boy with black short is jumping into the swimming pool from a height,5.0,5.0,5.0,5.0,0.4149,0.8417,0.9048,0.6916,0.6399,0.5722,0.3049,0.154,0.3533,0.0857,0.2317,0.0,0.0
+3,a man jumps off a diving board into a swimming pool .,0.0,a boy with black short is jumping into the swimming pool from a height,5.0,5.0,5.0,5.0,0.4395,0.8644,0.9162,0.6771,0.6312,0.5734,0.3517,0.1723,0.3883,0.1121,0.2924,0.0424,0.0
+4,a young man jumps off of a diving board and into a pool .,0.2312,a boy with black short is jumping into the swimming pool from a height,5.0,5.0,5.0,5.0,0.4348,0.8295,1.0,0.8723,0.8863,0.8629,0.3186,0.352,0.4348,0.3622,0.3186,0.2188,0.2312
+5,a person jumps off a diving board and flips into a pool,0.0,a boy with black short is jumping into the swimming pool from a height,5.0,5.0,5.0,5.0,0.4044,0.8376,0.8798,0.697,0.6297,0.5579,0.2889,0.1455,0.323,0.0541,0.1917,0.0,0.0
+6,a guy throws something off a cliff and then another guy jumps off the cliff with a parachute .,0.0,a boy with black short is jumping into the swimming pool from a height,2.0,2.0,4.0,2.6667,0.1443,0.7797,0.8831,0.6504,0.6488,0.5495,0.0,0.0,0.031,0.0,0.0,0.0,0.0

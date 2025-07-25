@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young woman is demonstrating how to make a put shot .,0.3056,a young girl tries to sink a put in a hold with a red flag .,5.0,5.0,5.0,5.0,0.589,0.8287,0.9386,0.8153,0.8047,0.7643,0.4716,0.432,0.5328,0.4246,0.4005,0.3146,0.3056
+2,a man is in a gym and he is doing push ups .,0.0,a girl is practicing putting using a special piece of equipment,3.0,2.0,1.0,2.0,0.0819,0.7658,0.975,1.0,0.9744,0.9656,0.0,0.0819,0.0533,0.0578,0.0,0.0,0.0
+3,a man is standing on a field and is throwing a ball .,0.0,a girl is practicing putting using a special piece of equipment,4.0,4.0,3.0,3.6667,0.1841,0.8192,1.0,1.0,0.9845,0.9802,0.004,0.0749,0.1494,0.0711,0.0,0.0,0.0
+4,a person putts two golf strokes to get a ball in the hole .,0.0507,a woman stands on a putting green and taps a golf ball into the hole .,5.0,5.0,5.0,5.0,0.7,0.913,0.9134,0.5078,0.6486,0.5444,0.6715,0.0,0.6001,0.1774,0.5619,0.0,0.0507
+5,a person on a golf course hitting the ball into the hole in front of them,0.153,a woman putts a golf ball towards a hole and misses but then makes it in .,5.0,5.0,5.0,5.0,0.5986,0.9112,1.0,0.7845,0.8611,0.8174,0.5595,0.2517,0.5637,0.2644,0.5211,0.1845,0.153
+6,a girl is swinging and then shoots a shot put .,0.0514,a young girl tries to sink a put in a hold with a red flag .,5.0,4.0,5.0,4.6667,0.4908,0.8276,0.9714,0.8408,0.8028,0.7423,0.3706,0.3417,0.371,0.2188,0.223,0.1862,0.0514

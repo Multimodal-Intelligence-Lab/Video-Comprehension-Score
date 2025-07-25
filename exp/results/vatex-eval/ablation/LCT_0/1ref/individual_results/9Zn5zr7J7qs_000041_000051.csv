@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"just snow boot covered feet are visible while they slide down a hill at fast speeds , just the sound of the wind .",0.0,someone is toboganning down a worn path while steering it with leads and filming at the same time .,5.0,5.0,5.0,5.0,0.3619,0.7395,0.9826,0.6914,0.7579,0.6726,0.1372,0.0771,0.3506,0.1581,0.1219,0.0,0.0
+2,a person is riding a sled down a snowy hill .,0.0,someone is toboganning down a worn path while steering it with leads and filming at the same time .,5.0,5.0,5.0,5.0,0.4005,0.7655,0.724,0.3731,0.2386,0.0054,0.2168,0.0,0.1719,0.0,0.0,0.0,0.0
+3,a person is riding a sled down a snowy hill .,0.0,someone is toboganning down a worn path while steering it with leads and filming at the same time .,5.0,5.0,5.0,5.0,0.4005,0.7655,0.724,0.3731,0.2386,0.0054,0.2168,0.0,0.1719,0.0,0.0,0.0,0.0
+4,someone pilots a wind-driven sled with a sail on it across the snow .,0.0,someone is toboganning down a worn path while steering it with leads and filming at the same time .,4.0,4.0,3.0,3.6667,0.4085,0.7631,0.9129,0.6377,0.6263,0.5102,0.225,0.0724,0.3521,0.0555,0.151,0.0,0.0
+5,two people ride on a red sled down a hill in the snow .,0.0,someone is toboganning down a worn path while steering it with leads and filming at the same time .,4.0,4.0,4.0,4.0,0.3157,0.7519,0.8973,0.6377,0.6183,0.4924,0.0899,0.0,0.2374,0.0,0.0,0.0,0.0
+6,two people are on sleds and sliding down a snow covered terrain .,0.0,someone is toboganning down a worn path while steering it with leads and filming at the same time .,4.0,4.0,4.0,4.0,0.3688,0.7468,0.8886,0.3267,0.2167,0.0,0.1548,0.0,0.2896,0.0,0.0488,0.0,0.0

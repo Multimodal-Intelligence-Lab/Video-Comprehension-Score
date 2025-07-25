@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young woman coaches viewers in how to correctly draw a cat eye with eyeliner .,0.2042,a woman is using an eyeliner that she is holding on her eyelids .,5.0,5.0,5.0,5.0,0.5943,0.8179,0.8245,0.6565,0.6233,0.5395,0.504,0.382,0.5079,0.3491,0.3984,0.2444,0.2042
+2,a woman is demonstrating how to apply mascara to her eyelashes .,0.01,a woman is using an eyeliner that she is holding on her eyelids .,4.0,3.0,4.0,3.6667,0.5847,0.8233,0.8426,0.3651,0.5095,0.4042,0.4956,0.0,0.5071,0.1611,0.4014,0.0,0.01
+3,a woman is demonstrating how to apply mascara to her eyelashes .,0.01,a woman is using an eyeliner that she is holding on her eyelids .,4.0,3.0,4.0,3.6667,0.5847,0.8233,0.8426,0.3651,0.5095,0.4042,0.4956,0.0,0.5071,0.1611,0.4014,0.0,0.01
+4,a woman is demonstrating how to put makeup on her eyelashes .,0.0,a woman is using an eyeliner that she is holding on her eyelids .,5.0,4.0,4.0,4.3333,0.641,0.8307,0.8077,0.0,0.0,0.0,0.5679,0.0,0.5556,0.0,0.465,0.0,0.0
+5,a young woman is showing how the properly put on eye makeup .,0.1525,a woman is using an eyeliner that she is holding on her eyelids .,5.0,5.0,5.0,5.0,0.5685,0.803,0.928,0.6733,0.6339,0.5441,0.4627,0.3592,0.535,0.3194,0.421,0.202,0.1525
+6,a girl is showing the camera how to do your eye makeup,0.0454,a woman is using an eyeliner that she is holding on her eyelids .,5.0,5.0,5.0,5.0,0.4731,0.7726,0.875,0.6036,0.7144,0.6303,0.318,0.1271,0.3979,0.2625,0.2206,0.0,0.0454

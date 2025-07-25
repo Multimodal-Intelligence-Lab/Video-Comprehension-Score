@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young punches the punching bag on an arcade game just before another man walks up to the game .,0.6543,a man is punching a punching bag in an arcade with another man .,5.0,5.0,5.0,5.0,0.7725,0.9485,0.9343,0.8569,0.8428,0.8117,0.7601,0.7075,0.7258,0.6598,0.7108,0.6916,0.6543
+2,a man is punching a punching bag with a punching bag .,0.5048,a man is at an arcade and they punched the boxing bag in order to get a score .,4.0,4.0,5.0,4.3333,0.7244,0.9618,0.9565,0.8879,0.8476,0.83,0.7036,0.5762,0.6933,0.556,0.6702,0.5273,0.5048
+3,a man is playing with a punching bag in a arcade .,0.6871,a man punches a punching bag in an arcade and then yells something .,5.0,5.0,5.0,5.0,0.9009,0.9539,0.941,0.8408,0.7761,0.7209,0.8932,0.7766,0.8156,0.6921,0.8005,0.773,0.6871
+4,man in a bedroom hitting a punching bag several times .,0.282,"a man at at arcade or amusement facility , punching a bag on a punching machine .",3.0,4.0,3.0,3.3333,0.574,0.9038,0.9787,0.7612,0.7801,0.7369,0.5067,0.3685,0.5548,0.3799,0.4844,0.2688,0.282
+5,two guys are in a basement taking turns hitting the punching bag as it swings back and forth,0.2785,two young men are trying out a punching bag video game .,4.0,4.0,2.0,3.3333,0.5521,0.8483,0.9739,0.7442,0.799,0.7566,0.4622,0.3392,0.5073,0.3879,0.4192,0.221,0.2785
+6,man hitting a punching bag in a room with one window .,0.4447,a man punches a punching bag that is part of a game machine .,3.0,4.0,4.0,3.6667,0.5951,0.9089,1.0,0.8933,0.929,0.9198,0.5375,0.4802,0.5358,0.508,0.4761,0.4133,0.4447

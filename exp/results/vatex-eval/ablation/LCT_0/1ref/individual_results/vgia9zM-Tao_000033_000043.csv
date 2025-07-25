@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a lady is peeling and cutting apples from a bowl on the counter .,0.2316,a woman is standing in the kitchen coring an apple with a knife .,4.0,4.0,4.0,4.0,0.5896,0.8104,0.7895,0.5657,0.6591,0.5793,0.4936,0.2634,0.4802,0.3773,0.3585,0.1048,0.2316
+2,a person is using a knife to cut an apple with a knife .,0.4959,a woman is standing in the kitchen coring an apple with a knife .,5.0,5.0,5.0,5.0,0.661,0.8745,0.9148,0.6633,0.769,0.7358,0.6124,0.4889,0.6294,0.5592,0.5763,0.4156,0.4959
+3,a person is demonstrating how to cut an apple with a knife .,0.2878,a woman is standing in the kitchen coring an apple with a knife .,5.0,5.0,4.0,4.6667,0.6024,0.8657,0.9412,0.7302,0.6448,0.5897,0.5407,0.4556,0.5776,0.3834,0.512,0.3711,0.2878
+4,a person carving an apple with a small knife on a plate,0.0,a woman is standing in the kitchen coring an apple with a knife .,4.0,4.0,4.0,4.0,0.5412,0.8493,0.7703,0.2,0.3175,0.1965,0.4598,0.0,0.4044,0.0,0.2987,0.0,0.0
+5,a woman sitting down at a table taking a knife and cutting up a apple,0.0,a woman is standing in the kitchen coring an apple with a knife .,4.0,4.0,4.0,4.0,0.6372,0.874,0.8984,0.3202,0.1202,0.0,0.5849,0.0,0.5962,0.0,0.538,0.0,0.0
+6,"a person has an apple on a plate , and is slicing it with a dull knife .",0.0,a woman is standing in the kitchen coring an apple with a knife .,5.0,3.0,4.0,4.0,0.5075,0.8609,0.7658,0.2,0.3172,0.2068,0.4279,0.0,0.3568,0.0,0.2529,0.0,0.0

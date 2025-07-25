@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young adult male dancing in a style referred to as a shuffle .,0.0,a man is break dancing in an empty street kicking his feet back and forth on the ground,5.0,5.0,5.0,5.0,0.3076,0.7901,0.9111,0.5771,0.6088,0.5049,0.1236,0.0,0.24,0.0,0.0381,0.0,0.0
+2,a man is dancing to music in a dance studio .,0.0,a man is break dancing in an empty street kicking his feet back and forth on the ground,4.0,2.0,2.0,2.6667,0.4095,0.8272,0.9195,0.6433,0.676,0.6083,0.2861,0.082,0.3578,0.1264,0.2236,0.0,0.0
+3,a man is dancing to music on a dance floor .,0.0,a man is break dancing in an empty street kicking his feet back and forth on the ground,4.0,3.0,2.0,3.0,0.3588,0.8446,0.9195,0.6433,0.676,0.6164,0.2408,0.0031,0.3026,0.0514,0.1743,0.0,0.0
+4,a man is dancing outside vigorously while music playing in the background .,0.3454,a man is break dancing in an empty street kicking his feet back and forth on the ground,5.0,3.0,3.0,3.6667,0.5492,0.8261,0.9312,0.8257,0.8337,0.7987,0.4542,0.454,0.5159,0.4593,0.4139,0.339,0.3454
+5,a man doing a few dance steps in what looks to be a studio,0.2274,a man is break dancing in an empty street kicking his feet back and forth on the ground,4.0,3.0,4.0,3.6667,0.3985,0.8164,0.9508,0.9802,0.9537,0.9433,0.2632,0.3863,0.3674,0.3693,0.2251,0.2483,0.2274
+6,a young man dances around a bedroom to dance music while different colored lights flash .,0.0,a man is break dancing in an empty street kicking his feet back and forth on the ground,2.0,2.0,2.0,2.0,0.3162,0.8036,0.9793,0.6907,0.7558,0.6962,0.1491,0.01,0.3017,0.0953,0.1311,0.0,0.0

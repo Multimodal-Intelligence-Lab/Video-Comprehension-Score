@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy is showing how he can lick his elbow,0.3361,a young man bends his elbow in a way he touches the end of it with his tongue .,4.0,4.0,4.0,4.0,0.6437,0.8185,0.85,0.7046,0.6557,0.5794,0.5647,0.4943,0.5808,0.4566,0.4878,0.3821,0.3361
+2,a woman is sitting on a bed and she is cracking her knuckles .,0.0,a young man bends his elbow in a way he touches the end of it with his tongue .,1.0,4.0,2.0,2.3333,0.0627,0.7381,0.9796,0.8819,0.8923,0.8541,0.0,0.0,0.0432,0.0,0.0,0.0,0.0
+3,a girl is sitting in a chair and is cracking her neck .,0.0,a young man bends his elbow in a way he touches the end of it with his tongue .,4.0,5.0,3.0,4.0,0.1215,0.751,0.9583,0.8047,0.8123,0.75,0.0,0.0,0.0833,0.0,0.0,0.0,0.0
+4,a boy gives a piece of gum to a girl and then she starts to chew it .,0.0,a young man bends his elbow in a way he touches the end of it with his tongue .,1.0,4.0,1.0,2.0,0.1348,0.7876,0.9396,0.6488,0.6513,0.5573,0.0,0.0,0.0791,0.0,0.0,0.0,0.0
+5,"boy unwraps foil from stick of gum , places gum in girl's mouth , girl pushes gum into mouth and chews .",0.0,a young man bends his elbow in a way he touches the end of it with his tongue .,1.0,3.0,1.0,1.6667,0.1888,0.7776,0.9239,0.7836,0.8176,0.7654,0.0,0.0,0.1219,0.0077,0.0,0.0,0.0
+6,a girl sits at a table holding a lollipop then tastes it before sticking it in her mouth .,0.0,a young man bends his elbow in a way he touches the end of it with his tongue .,2.0,4.0,2.0,2.6667,0.1417,0.77,0.8713,0.6948,0.7731,0.7053,0.0,0.0,0.015,0.0,0.0,0.0,0.0

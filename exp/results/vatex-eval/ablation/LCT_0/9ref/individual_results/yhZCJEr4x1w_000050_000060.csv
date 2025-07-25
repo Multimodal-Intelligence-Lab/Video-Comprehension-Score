@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a group of people are skiing on a course , a man is skiing fast around all the flags .",0.375,someone in red and white ski gear skies down a snowy slope past many flags .,5.0,4.0,4.0,4.3333,0.6789,0.895,0.9764,0.8798,0.9043,0.8838,0.6412,0.4709,0.6232,0.4852,0.5791,0.3576,0.375
+2,a group of people are skiing down a snowy slope .,0.2533,someone in red and white ski gear skies down a snowy slope past many flags .,5.0,4.0,4.0,4.3333,0.5252,0.8618,0.9234,0.8845,0.8263,0.7969,0.4428,0.4034,0.4285,0.3614,0.3318,0.3024,0.2533
+3,a group of people are skiing down a snowy hill .,0.1874,someone in red and white ski gear skies down a snowy slope past many flags .,5.0,4.0,4.0,4.3333,0.4933,0.8653,0.9393,0.8845,0.84,0.8069,0.3788,0.3604,0.3978,0.3265,0.2734,0.2284,0.1874
+4,someone is going down a snowy slope on skis at a high rate of speed while others are also skiing .,0.4424,a man is going skeeing down a hill fast avoiding obsticales,5.0,4.0,5.0,4.6667,0.6346,0.8606,0.9615,0.9535,0.9235,0.9071,0.5687,0.5477,0.5837,0.5356,0.5087,0.457,0.4424
+5,a person on skis jumps over a small mound of snow then skis down the hill .,0.1239,a person is skiing down a steep slope swerving by various obstacles .,4.0,4.0,2.0,3.3333,0.4447,0.874,1.0,1.0,1.0,1.0,0.3225,0.3004,0.3912,0.2819,0.2572,0.1465,0.1239
+6,a snow skier is coming down a ski slope going around poles that mark the trail .,0.3966,a person is skiing in and out of flags in a competition .,5.0,5.0,5.0,5.0,0.5513,0.8389,0.987,0.9706,0.9493,0.9366,0.4606,0.5276,0.5357,0.517,0.4301,0.4099,0.3966

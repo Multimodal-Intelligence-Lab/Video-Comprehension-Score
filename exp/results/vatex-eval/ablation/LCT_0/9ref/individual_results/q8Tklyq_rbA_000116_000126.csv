@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person flips an origami frog and then begins to show how to fold the paper to create origami objects .,0.3878,a child plays with a frog made out of paper and then begins folding paper .,5.0,5.0,5.0,5.0,0.7432,0.8975,0.9133,0.578,0.6106,0.5612,0.7082,0.3974,0.6664,0.4249,0.6142,0.3649,0.3878
+2,a person is folding a piece of paper on a piece of paper .,0.7133,a person is folding and refolding a small piece of paper .,4.0,5.0,5.0,4.6667,0.8404,0.9674,0.9787,0.8723,0.8707,0.8459,0.835,0.5993,0.821,0.7152,0.815,0.5967,0.7133
+3,a person is folding a piece of paper on a table .,0.5713,a person is folding and refolding a small piece of paper .,5.0,5.0,5.0,5.0,0.7152,0.9479,0.9524,0.8284,0.8102,0.7689,0.6996,0.6532,0.6771,0.5817,0.6593,0.6341,0.5713
+4,a person is using cloth to design an image of a frog .,0.3409,a person is using paper to make origami animals including a jumping frog,4.0,4.0,4.0,4.0,0.5482,0.8546,1.0,0.8723,0.9107,0.8906,0.4713,0.4277,0.52,0.4367,0.4383,0.3303,0.3409
+5,a sheet of green paper is being folded into an origami piece .,0.2234,a person is demonstrating how to use origami to make fun shapes .,4.0,5.0,4.0,4.3333,0.61,0.8822,0.9599,0.7663,0.7558,0.7102,0.552,0.3861,0.551,0.3714,0.4552,0.2416,0.2234
+6,a man is demonstrating advanced origami folds with green paper .,0.5694,a person is demonstrating how to use origami to make fun shapes .,4.0,5.0,4.0,4.3333,0.6591,0.8826,0.9846,0.8792,0.929,0.9166,0.6,0.6123,0.6538,0.633,0.5937,0.545,0.5694

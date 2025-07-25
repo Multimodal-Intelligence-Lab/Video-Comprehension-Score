@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a couple of people climbing on top of buildings and then parachuting off,0.3974,two guys are jumping off building and other high structures to skydive .,2.0,5.0,5.0,4.0,0.6419,0.8659,0.9599,0.7675,0.7926,0.7342,0.5812,0.5091,0.6269,0.4992,0.5511,0.4094,0.3974
+2,a person jumps off of a building and then jumps off of a building .,0.3446,a man wearing a parachute is jumping off of high building and then pulling the parachute,5.0,5.0,5.0,5.0,0.6199,0.8745,0.8824,0.8047,0.7444,0.7071,0.5654,0.4864,0.5552,0.428,0.4914,0.4127,0.3446
+3,a man jumps off a tall building with a parachute .,0.7658,a man wearing a parachute is jumping off of high building and then pulling the parachute,5.0,5.0,5.0,5.0,0.8701,0.9296,0.9125,0.838,0.7985,0.7832,0.8603,0.8138,0.8549,0.7684,0.844,0.8117,0.7658
+4,a person is unfolding his parachute and then runs to jump off the cliff .,0.0727,"a man dressed in ski clothes with a parachute on his back , climbs to the top of a tall building and jumps off and opens his parachute to land safely .",4.0,3.0,4.0,3.6667,0.5686,0.8378,0.8812,0.6511,0.6143,0.5274,0.4851,0.2591,0.4993,0.2432,0.4023,0.0921,0.0727
+5,a guy throws something off a cliff and then another guy jumps off the cliff with a parachute .,0.2286,"a man dressed in ski clothes with a parachute on his back , climbs to the top of a tall building and jumps off and opens his parachute to land safely .",4.0,3.0,4.0,3.6667,0.5703,0.8267,0.9336,0.6856,0.6918,0.6233,0.4663,0.3057,0.5131,0.369,0.4048,0.1513,0.2286
+6,several people are bungee jumping from a cliff and a bridge .,0.2893,a succession of people base jumping off of different structures .,2.0,2.0,4.0,2.6667,0.5745,0.8612,0.9557,0.8879,0.8529,0.8141,0.4934,0.3947,0.5127,0.41,0.4198,0.2612,0.2893

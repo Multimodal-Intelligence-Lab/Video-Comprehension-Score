@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy stetches his legs outside in the park .,0.0,a may lying on a mat was holding her thigh interchangeably,5.0,5.0,5.0,5.0,0.1427,0.7452,0.941,0.5323,0.3599,0.141,0.0,0.0,0.0889,0.0,0.0,0.0,0.0
+2,a woman is laying on the ground and doing yoga exercises .,0.1342,a may lying on a mat was holding her thigh interchangeably,4.0,4.0,3.0,3.6667,0.4587,0.7622,0.9412,0.8812,0.8204,0.7643,0.2898,0.3856,0.4248,0.3401,0.2454,0.194,0.1342
+3,a woman is laying on the floor and stretching her legs .,0.3796,a may lying on a mat was holding her thigh interchangeably,4.0,4.0,4.0,4.0,0.5209,0.7723,1.0,1.0,1.0,1.0,0.3796,0.5209,0.5209,0.5209,0.3796,0.3796,0.3796
+4,a group of people together as a man shows his students how to stretch on a mat,0.0,a may lying on a mat was holding her thigh interchangeably,4.0,3.0,3.0,3.3333,0.3223,0.7816,0.8333,0.4492,0.3755,0.201,0.1329,0.0,0.1868,0.0,0.0,0.0,0.0
+5,"on a carpeted floor , a man is doing leg extension exercises with his hands braced against the floor . .",0.0,a may lying on a mat was holding her thigh interchangeably,4.0,4.0,4.0,4.0,0.297,0.7559,0.8225,0.4541,0.4193,0.2317,0.07,0.0,0.1453,0.0,0.0,0.0,0.0
+6,a person is laying on a bench in a room and a man is sitting and massaging their lower leg and ankle .,0.0364,a may lying on a mat was holding her thigh interchangeably,2.0,4.0,2.0,2.6667,0.2773,0.7801,0.9614,0.9809,0.9614,0.9505,0.0736,0.2632,0.2482,0.2483,0.0363,0.0556,0.0364

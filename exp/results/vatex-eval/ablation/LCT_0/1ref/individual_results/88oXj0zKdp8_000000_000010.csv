@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a factory worker is monitoring a line where bottles of alcohol are getting labels applied .,0.0,someone is filming bottles going through a bottle labeling machine .,5.0,5.0,5.0,5.0,0.6054,0.8329,0.8328,0.3587,0.302,0.162,0.5262,0.0,0.5262,0.0,0.4311,0.0,0.0
+2,a man is using a machine to fill up bottles of bottles .,0.0,someone is filming bottles going through a bottle labeling machine .,3.0,5.0,4.0,4.0,0.6515,0.8491,0.7996,0.3513,0.147,0.0,0.5896,0.0044,0.5642,0.0,0.4868,0.0,0.0
+3,a man is using a machine to fill up bottles of wine .,0.0,someone is filming bottles going through a bottle labeling machine .,3.0,5.0,4.0,4.0,0.548,0.839,0.7996,0.3513,0.147,0.0,0.4612,0.0,0.4347,0.0,0.3262,0.0,0.0
+4,a machine is filling bottle with liquid and putting caps on bottles .,0.2393,someone is filming bottles going through a bottle labeling machine .,2.0,5.0,4.0,3.6667,0.6554,0.8371,0.726,0.4459,0.5525,0.4654,0.5883,0.1546,0.5253,0.3172,0.433,0.0582,0.2393
+5,several bottles of liquid are being created on an assembly line .,0.0,someone is filming bottles going through a bottle labeling machine .,4.0,5.0,4.0,4.3333,0.5708,0.8089,0.9388,0.2205,0.0,0.0,0.4695,0.0,0.5428,0.0,0.4349,0.0,0.0
+6,bottles run through a bottling machine having the caps put on then back up at the end of the machine .,0.0,someone is filming bottles going through a bottle labeling machine .,4.0,4.0,4.0,4.0,0.6063,0.834,0.875,0.4,0.3686,0.2429,0.528,0.0105,0.5501,0.0,0.4605,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a younger woman shows how to perfectly peel a green apple .,0.4278,a woman is using a large knife to peel an apple .,5.0,5.0,5.0,5.0,0.7622,0.8744,1.0,0.8723,0.9115,0.8896,0.7281,0.5025,0.6845,0.5103,0.642,0.432,0.4278
+2,a person is using a knife to peel an apple .,0.8117,in a kitchen someone is using a knife to peel an apple on a plate .,5.0,5.0,5.0,5.0,0.8397,0.9477,1.0,1.0,1.0,1.0,0.8305,0.8276,0.8312,0.8218,0.8216,0.8178,0.8117
+3,a person is using a tool to peel an apple .,0.6674,in a kitchen someone is using a knife to peel an apple on a plate .,5.0,5.0,5.0,5.0,0.6983,0.9127,1.0,1.0,1.0,1.0,0.6674,0.6983,0.6983,0.6983,0.6674,0.6674,0.6674
+4,a lady is peeling and cutting apples from a bowl on the counter .,0.4145,a lady peels a green apple with a knife slowly .,4.0,4.0,4.0,4.0,0.6386,0.8729,0.9167,0.7876,0.7454,0.6929,0.5754,0.4053,0.5956,0.4889,0.5368,0.2929,0.4145
+5,one woman cuts apples with a knife and the other woman cuts with an easier tool .,0.1735,a person cuts into a green apple with a knife in their hand,3.0,3.0,3.0,3.0,0.6349,0.8888,0.8536,0.6306,0.6043,0.5548,0.5827,0.3068,0.5541,0.2654,0.4903,0.2237,0.1735
+6,a girl is holding the top of a cut off apple and then starts cutting into it .,0.4991,a woman holds an apple and rotates the apple while cutting the skin off .,5.0,4.0,2.0,3.6667,0.7108,0.8849,0.9384,0.7938,0.7636,0.7206,0.6732,0.5095,0.6819,0.5256,0.6405,0.4203,0.4991

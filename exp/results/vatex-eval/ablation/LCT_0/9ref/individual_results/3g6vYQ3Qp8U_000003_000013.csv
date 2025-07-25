@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young toddler is hitting a xylophone and is trying to sing .,0.6562,"a young girl bangs on a xylophone to make music , and she sings along .",5.0,5.0,5.0,5.0,0.7505,0.8396,1.0,0.8879,0.8863,0.8516,0.7029,0.7191,0.7324,0.7114,0.6813,0.6654,0.6562
+2,a little girl is sitting on the floor playing with a xylophone .,0.8448,a litle girl is kneeling on the floor playing a toy xylophone .,5.0,5.0,5.0,5.0,0.8551,0.9333,1.0,1.0,1.0,1.0,0.8448,0.8551,0.8551,0.8551,0.8448,0.8448,0.8448
+3,a little girl is sitting on the floor playing with a toy xylophone .,0.8755,a litle girl is kneeling on the floor playing a toy xylophone .,5.0,5.0,5.0,5.0,0.8815,0.9522,1.0,1.0,1.0,1.0,0.8755,0.8815,0.8815,0.8815,0.8755,0.8755,0.8755
+4,a girl taps on the tubes of a pan flute then blows along the edge of each,0.0,a little girl is playing a toy instrument that is on the floor .,2.0,2.0,3.0,2.3333,0.3733,0.8037,0.9497,0.8018,0.7868,0.7194,0.2202,0.1689,0.3204,0.1333,0.1266,0.0,0.0
+5,"a young child sitting down , playing with his toy xylophone .",0.5944,a litle girl is kneeling on the floor playing a toy xylophone .,4.0,5.0,4.0,4.3333,0.6575,0.8903,1.0,1.0,1.0,1.0,0.6099,0.6483,0.6507,0.6439,0.6021,0.5994,0.5944
+6,a small girl sits in a chair and plays a tune on the accordion .,0.1051,a litle girl is kneeling on the floor playing a toy xylophone .,3.0,3.0,3.0,3.0,0.4977,0.8492,0.9565,0.7684,0.8252,0.786,0.4084,0.1874,0.4411,0.269,0.3419,0.0,0.1051

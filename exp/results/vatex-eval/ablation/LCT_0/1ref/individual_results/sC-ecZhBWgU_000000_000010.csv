@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a small child tackles a dummy used for football drills .,0.0,a kid running outside and jumping on a blow up toy,3.0,5.0,5.0,4.3333,0.2641,0.7737,0.9787,0.7069,0.7014,0.6141,0.0488,0.0,0.2481,0.0,0.0282,0.0,0.0
+2,a little girl is on the grass and is trying to blow up the grass .,0.0,a kid running outside and jumping on a blow up toy,4.0,1.0,1.0,2.0,0.3067,0.8204,0.9583,0.7414,0.836,0.8002,0.155,0.065,0.2766,0.1708,0.1183,0.0,0.0
+3,a young boy is laying on the ground and is trying to climb up .,0.0,a kid running outside and jumping on a blow up toy,4.0,1.0,2.0,2.3333,0.1158,0.7885,0.9167,0.5657,0.6996,0.619,0.0,0.0,0.0355,0.0,0.0,0.0,0.0
+4,the young boy threw the football so hard it knocked the other boy down when he caught it .,0.0,a kid running outside and jumping on a blow up toy,4.0,1.0,2.0,2.3333,0.1085,0.7836,0.9831,0.7475,0.7739,0.7115,0.0,0.0,0.0931,0.0,0.0,0.0,0.0
+5,a boy runs across the playground and dive rolls over a swing .,0.0,a kid running outside and jumping on a blow up toy,4.0,1.0,2.0,2.3333,0.275,0.8177,1.0,0.8723,0.8863,0.8609,0.1134,0.1689,0.275,0.182,0.1134,0.0,0.0
+6,"a young boy runs across a street and someone throws him a ball to catch , but he drops it .",0.0818,a kid running outside and jumping on a blow up toy,2.0,1.0,2.0,1.6667,0.3064,0.8129,0.987,0.91,0.9293,0.913,0.1468,0.2378,0.2973,0.2536,0.1356,0.0624,0.0818

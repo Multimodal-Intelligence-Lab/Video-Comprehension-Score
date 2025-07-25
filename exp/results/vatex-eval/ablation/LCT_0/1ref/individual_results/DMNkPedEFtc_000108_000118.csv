@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl is holding a paper plate in front of her face and then a boy turns the plate around and starts flicking playing cards at the plate .,0.6368,a girl is holding a plastic plate in front of her face while a boy is throwing playing cards at her .,5.0,5.0,5.0,5.0,0.8628,0.9377,0.8859,0.6319,0.6899,0.6693,0.8537,0.5733,0.8451,0.6406,0.8348,0.5688,0.6368
+2,a man and a little girl are standing in a living room and one of them is holding a bottle .,0.0,a girl is holding a plastic plate in front of her face while a boy is throwing playing cards at her .,5.0,4.0,4.0,4.3333,0.1547,0.8012,0.8166,0.4033,0.3865,0.2343,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,two young girls are standing in front of a couch and one of them is dancing .,0.0,a girl is holding a plastic plate in front of her face while a boy is throwing playing cards at her .,4.0,1.0,4.0,3.0,0.1117,0.7938,0.9038,0.7657,0.772,0.7128,0.0,0.0,0.0172,0.0,0.0,0.0,0.0
+4,a kid is throwing cards with both his right and left hand .,0.0,a girl is holding a plastic plate in front of her face while a boy is throwing playing cards at her .,5.0,3.0,4.0,4.0,0.4628,0.8458,0.6773,0.3581,0.2913,0.1622,0.3649,0.0,0.2068,0.0,0.0623,0.0,0.0
+5,a girl and a boy are playing poker with face cards against each other .,0.0,a girl is holding a plastic plate in front of her face while a boy is throwing playing cards at her .,5.0,4.0,2.0,3.6667,0.5553,0.9216,0.7287,0.4273,0.385,0.3327,0.5175,0.0,0.3898,0.0,0.3379,0.0,0.0
+6,"a boy outside with a deck of cards , he fans them out and then tosses them and then there is a still shot of him and the cards in mid-air .",0.0,a girl is holding a plastic plate in front of her face while a boy is throwing playing cards at her .,4.0,3.0,3.0,3.3333,0.4165,0.8257,0.7675,0.377,0.5056,0.4013,0.2933,0.0,0.2397,0.0,0.0792,0.0,0.0

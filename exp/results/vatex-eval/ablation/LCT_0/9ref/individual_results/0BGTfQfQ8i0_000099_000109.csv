@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a person rolls a tire , then a person is seen sand-blasting a piece of metal .",0.1146,a man wearing gloves is rotating a wheel and another person is using some kind of spraying device unto an iron board .,5.0,5.0,5.0,5.0,0.6833,0.8895,0.9598,0.9144,0.9239,0.9068,0.644,0.2695,0.6602,0.2769,0.618,0.1054,0.1146
+2,a man is using a power tool to clean a piece of metal .,0.0,an industrial work video with someone moving a large tire and another person spray painting . there is text in a foreign language .,4.0,4.0,5.0,4.3333,0.4165,0.8616,0.9859,0.8659,0.8831,0.8501,0.3228,0.144,0.3052,0.1928,0.1935,0.0,0.0
+3,a man is using a machine to paint a piece of metal .,0.498,a man is painting pieces of metal with a spray gun .,5.0,4.0,4.0,4.3333,0.7468,0.9012,1.0,0.8879,0.911,0.8839,0.719,0.4231,0.6365,0.5167,0.6143,0.4008,0.498
+4,a man power sands a piece of metal until it is shiny .,0.1305,a man is painting pieces of metal with a spray gun .,4.0,4.0,4.0,4.0,0.3903,0.8552,1.0,0.9318,0.9197,0.8956,0.2872,0.2026,0.3349,0.2563,0.2224,0.0385,0.1305
+5,a man demonstrating how to correctly polish a tire wheel .,0.1611,"in a workshop two people do their work , one moves a tire and the other paints a piece .",5.0,3.0,2.0,3.3333,0.4521,0.8247,1.0,1.0,1.0,1.0,0.3357,0.3273,0.4122,0.3396,0.2873,0.1454,0.1611
+6,a man is taking a piece on metal form a tire .,0.1789,a man is painting pieces of metal with a spray gun .,5.0,2.0,3.0,3.3333,0.4816,0.8598,1.0,1.0,1.0,1.0,0.3567,0.31,0.4122,0.3016,0.2705,0.1789,0.1789

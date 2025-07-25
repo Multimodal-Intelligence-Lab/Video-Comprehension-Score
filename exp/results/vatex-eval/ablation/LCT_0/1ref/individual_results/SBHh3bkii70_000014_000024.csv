@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,different girls are jumping off a diving board into an indoor swimming pool .,0.5987,"a group of girls jump on a diving board , flip in the air , and land in the water .",5.0,5.0,4.0,4.6667,0.6729,0.8807,0.9885,0.9084,0.9255,0.9154,0.6286,0.6399,0.6691,0.6466,0.6243,0.5912,0.5987
+2,a man jumps off of a diving board into a pool .,0.3044,"a group of girls jump on a diving board , flip in the air , and land in the water .",4.0,4.0,4.0,4.0,0.4945,0.8646,0.9649,0.8192,0.8405,0.8155,0.4153,0.3829,0.4761,0.3986,0.3941,0.2863,0.3044
+3,a girl jumps off a diving board into a swimming pool .,0.5331,"a group of girls jump on a diving board , flip in the air , and land in the water .",5.0,5.0,5.0,5.0,0.6581,0.8774,0.9851,0.7982,0.8346,0.8115,0.6103,0.5717,0.6529,0.5904,0.6044,0.5118,0.5331
+4,a woman jumps off a diving board and does a back flip .,0.4341,"a group of girls jump on a diving board , flip in the air , and land in the water .",4.0,4.0,4.0,4.0,0.5999,0.8815,0.9412,0.7894,0.8021,0.7755,0.5461,0.4932,0.5749,0.5012,0.5177,0.425,0.4341
+5,a young woman bouncing on a diving board then diving backwards into a pool .,0.2954,"a group of girls jump on a diving board , flip in the air , and land in the water .",4.0,4.0,4.0,4.0,0.5035,0.8393,0.9767,0.8098,0.8396,0.8089,0.4084,0.3869,0.4917,0.4087,0.3943,0.2694,0.2954
+6,"in an indoor swimming facility , two women are bounding on two separate diving boards , one which they synchronize their jumps and flips while they dive into the water .",0.0,"a group of girls jump on a diving board , flip in the air , and land in the water .",5.0,4.0,3.0,4.0,0.5757,0.8543,0.807,0.1534,0.1341,0.0,0.5034,0.0,0.4743,0.0,0.3847,0.0,0.0

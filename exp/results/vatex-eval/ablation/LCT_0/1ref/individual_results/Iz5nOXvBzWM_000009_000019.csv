@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a little boy walks a very small do that takes off running .,0.072,"a boy is walking a small puppy , who is attempting to sniff at the bushes .",5.0,5.0,5.0,5.0,0.5622,0.8545,0.8203,0.6597,0.5522,0.4759,0.4876,0.3363,0.4662,0.2033,0.3754,0.2233,0.072
+2,a little girl is walking on a sidewalk with a leaf blower .,0.0,"a boy is walking a small puppy , who is attempting to sniff at the bushes .",3.0,2.0,3.0,2.6667,0.2625,0.8203,0.8397,0.431,0.2827,0.1256,0.1009,0.0,0.1217,0.0,0.0,0.0,0.0
+3,a little boy is walking on a sidewalk with a leaf blower .,0.0,"a boy is walking a small puppy , who is attempting to sniff at the bushes .",4.0,4.0,4.0,4.0,0.4124,0.8528,0.8203,0.5523,0.4335,0.3358,0.311,0.0,0.2837,0.0,0.16,0.0,0.0
+4,a boy walks a dog while riding his skateboard down the street,0.2055,"a boy is walking a small puppy , who is attempting to sniff at the bushes .",3.0,3.0,2.0,2.6667,0.4212,0.822,1.0,0.8723,0.8863,0.8617,0.2959,0.3364,0.4212,0.3469,0.2959,0.1927,0.2055
+5,a young boy is dragging a puppy toy across the room as he walks .,0.0,"a boy is walking a small puppy , who is attempting to sniff at the bushes .",2.0,4.0,2.0,2.6667,0.461,0.8417,0.8548,0.6785,0.6347,0.566,0.3597,0.2056,0.3695,0.1509,0.2509,0.0562,0.0
+6,a man and a little girl walking dogs down the street .,0.0,"a boy is walking a small puppy , who is attempting to sniff at the bushes .",3.0,3.0,3.0,3.0,0.3679,0.8417,0.8356,0.519,0.4005,0.2877,0.249,0.0,0.2434,0.0,0.1012,0.0,0.0

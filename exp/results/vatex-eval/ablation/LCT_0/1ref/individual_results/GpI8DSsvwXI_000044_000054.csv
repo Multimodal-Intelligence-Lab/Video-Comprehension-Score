@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man was sliding on the water using a surfing board while being dragged along with rope,0.0,a person is on a board and riding on the lake while tied to a jet ski or boat .,5.0,5.0,5.0,5.0,0.5228,0.7937,0.8684,0.3823,0.3432,0.1724,0.3988,0.0,0.4505,0.0,0.3077,0.0,0.0
+2,a person is water skiing on a lake while music is playing .,0.0,a person is on a board and riding on the lake while tied to a jet ski or boat .,4.0,4.0,4.0,4.0,0.5707,0.8488,0.7496,0.0,0.0,0.0,0.4942,0.0,0.4273,0.0,0.3253,0.0,0.0
+3,a person is water skiing behind a boat on a lake .,0.0,a person is on a board and riding on the lake while tied to a jet ski or boat .,5.0,5.0,5.0,5.0,0.6508,0.8932,0.7652,0.0,0.0,0.0,0.6091,0.0,0.5437,0.0,0.4892,0.0,0.0
+4,a man is gliding across the water while water skiing,0.0,a person is on a board and riding on the lake while tied to a jet ski or boat .,5.0,5.0,5.0,5.0,0.3935,0.7997,0.9655,0.6547,0.6704,0.5879,0.2416,0.0736,0.3718,0.0953,0.2145,0.0,0.0
+5,a man rides a surfboard while being towed by a boat,0.1684,a person is on a board and riding on the lake while tied to a jet ski or boat .,5.0,5.0,5.0,5.0,0.464,0.8336,0.898,0.8047,0.7732,0.7279,0.357,0.3339,0.4031,0.3068,0.2839,0.201,0.1684
+6,a man is riding on a board in the water behind a boat .,0.0,a person is on a board and riding on the lake while tied to a jet ski or boat .,5.0,5.0,5.0,5.0,0.5914,0.8756,0.9333,0.3233,0.2204,0.1096,0.5333,0.0,0.5622,0.0,0.5,0.0,0.0

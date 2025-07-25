@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,man in gym does lunges while curling weights in his hands .,0.5759,a man is in the gym lifting weights while doing squats .,5.0,5.0,5.0,5.0,0.8112,0.9049,1.0,1.0,1.0,1.0,0.7798,0.6249,0.6544,0.6249,0.6405,0.5759,0.5759
+2,a man is doing lunges in a gym with his legs .,0.5047,a man doing lunges and then using a dumbbell to curl .,5.0,5.0,5.0,5.0,0.6628,0.8714,0.9412,0.9762,0.8891,0.8652,0.608,0.6545,0.6206,0.5739,0.559,0.5985,0.5047
+3,a man is doing lunges while another man is talking in the background .,0.1658,a man doing lunges and then using a dumbbell to curl .,4.0,4.0,3.0,3.6667,0.6043,0.8448,0.9202,0.8699,0.8591,0.8226,0.5316,0.4582,0.5282,0.2851,0.4416,0.3586,0.1658
+4,an man in the gym squats down and attempts to lift a weight up .,0.5014,"in a gym , a man is doing various exercises while holding weights .",4.0,3.0,4.0,3.6667,0.8997,0.9562,1.0,0.8723,0.8863,0.8618,0.8951,0.5158,0.7373,0.5654,0.7359,0.5048,0.5014
+5,a man in a gym is doing squats while using a weight,0.555,a man is in the gym lifting weights while doing squats .,4.0,4.0,4.0,4.0,0.9311,0.9347,1.0,1.0,0.9788,0.974,0.9262,0.608,0.7986,0.5995,0.7976,0.5185,0.555
+6,a guy is in a gym lifting weight on his shoulders and doing squats .,0.8233,a man is in the gym lifting weights while doing squats .,3.0,2.0,4.0,3.0,0.8332,0.9442,1.0,1.0,1.0,1.0,0.8233,0.8332,0.8332,0.8332,0.8233,0.8233,0.8233

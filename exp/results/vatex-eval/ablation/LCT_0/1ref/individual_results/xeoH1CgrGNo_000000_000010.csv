@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a young shirtless guy , in front of a stack of wood , lines up a large piece , with the help of another young man and drives his axe into the stump .",0.0814,a man places a log on a chopping block and uses an axe to try and split the log .,5.0,5.0,5.0,5.0,0.4674,0.7966,0.8767,0.6812,0.7278,0.6583,0.3315,0.2182,0.3925,0.2682,0.2374,0.0186,0.0814
+2,a man is chopping a piece of wood with a sledge hammer .,0.4047,a man places a log on a chopping block and uses an axe to try and split the log .,4.0,5.0,4.0,4.3333,0.5633,0.8319,0.948,0.8776,0.882,0.8581,0.475,0.5024,0.5393,0.5048,0.4462,0.4018,0.4047
+3,a man chops a piece of wood with an ax .,0.4344,a man places a log on a chopping block and uses an axe to try and split the log .,5.0,5.0,5.0,5.0,0.7302,0.8448,0.9216,0.5791,0.615,0.5442,0.6807,0.4236,0.7073,0.4728,0.6535,0.3816,0.4344
+4,the group of men were operating a type of saw to cut the tree logs .,0.0,a man places a log on a chopping block and uses an axe to try and split the log .,5.0,4.0,4.0,4.3333,0.3858,0.8146,0.8973,0.5773,0.6034,0.5131,0.246,0.0,0.3155,0.0,0.1597,0.0,0.0
+5,a group of men pushing a wood shredder to shred a log of wood .,0.0,a man places a log on a chopping block and uses an axe to try and split the log .,3.0,3.0,4.0,3.3333,0.3754,0.8069,0.9109,0.428,0.4432,0.31,0.2259,0.0,0.3143,0.0,0.1502,0.0,0.0
+6,"a person is shown trying to split a log outdoors with an axe , finally cleaving it open with his hands .",0.4649,a man places a log on a chopping block and uses an axe to try and split the log .,4.0,4.0,4.0,4.0,0.7141,0.8711,0.7954,0.6583,0.6405,0.5873,0.6718,0.5215,0.6406,0.4966,0.5874,0.4914,0.4649

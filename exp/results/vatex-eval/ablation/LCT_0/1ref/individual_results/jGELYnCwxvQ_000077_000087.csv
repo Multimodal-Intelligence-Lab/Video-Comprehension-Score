@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is doing chin ups hanging from a metal bar but cannot complete a second one .,0.0568,"a man holds a bar between two white pillars , struggles to do one pull-up and lets go of the bar dropping to the floor with a grunt .",5.0,5.0,5.0,5.0,0.5891,0.813,0.8528,0.4715,0.5358,0.4291,0.4946,0.1029,0.5182,0.2121,0.4074,0.0,0.0568
+2,a man is doing pull ups on a bar in a gym .,0.1202,"a man holds a bar between two white pillars , struggles to do one pull-up and lets go of the bar dropping to the floor with a grunt .",5.0,4.0,5.0,4.6667,0.5527,0.8361,0.9052,0.6097,0.608,0.5311,0.4651,0.2664,0.5059,0.2644,0.4091,0.1226,0.1202
+3,a man is doing pull ups on a bar in a gym .,0.1202,"a man holds a bar between two white pillars , struggles to do one pull-up and lets go of the bar dropping to the floor with a grunt .",5.0,4.0,5.0,4.6667,0.5527,0.8361,0.9052,0.6097,0.608,0.5311,0.4651,0.2664,0.5059,0.2644,0.4091,0.1226,0.1202
+4,a man hold a bar and his leg folded while he pulled himself up in multiple repetition,0.3768,"a man holds a bar between two white pillars , struggles to do one pull-up and lets go of the bar dropping to the floor with a grunt .",4.0,4.0,4.0,4.0,0.5425,0.832,0.9304,0.8723,0.8823,0.8585,0.4501,0.4755,0.5083,0.4814,0.409,0.3696,0.3768
+5,a man in a sweatshirt does pull ups outside in front of a brick wall,0.0,"a man holds a bar between two white pillars , struggles to do one pull-up and lets go of the bar dropping to the floor with a grunt .",4.0,2.0,4.0,3.3333,0.3216,0.7845,0.9574,0.7762,0.8314,0.7851,0.1352,0.126,0.2913,0.184,0.0966,0.0,0.0
+6,a person performs strict pull ups with pauses in the middle of the movement .,0.1438,"a man holds a bar between two white pillars , struggles to do one pull-up and lets go of the bar dropping to the floor with a grunt .",5.0,4.0,5.0,4.6667,0.4457,0.775,0.9567,0.7821,0.8353,0.7875,0.2848,0.2913,0.4207,0.3364,0.2524,0.0855,0.1438

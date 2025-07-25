@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man try to chop down tree he got mad and thew his ax at the tree .,0.9021,man trying to chop down a tree with an ax when he gets frustrated and throws the ax at the tree .,5.0,5.0,5.0,5.0,0.9427,0.9491,0.9744,0.9519,0.9352,0.9295,0.9396,0.9071,0.9412,0.9054,0.938,0.8989,0.9021
+2,a man is throwing a knife at a wooden target .,0.0,"a man swings an axe at tree that is nearly ready to fall , before walking a few steps away and throwing the axe at the tree .",4.0,4.0,4.0,4.0,0.5243,0.8754,0.9388,0.7322,0.7341,0.6616,0.4566,0.0823,0.4214,0.0207,0.339,0.0,0.0
+3,a man is throwing a axe at a tree trunk .,0.4264,in a forest a man swings an axe and hits a tree then an axe is thrown at the same tree .,5.0,5.0,5.0,5.0,0.7746,0.9322,0.862,0.6392,0.582,0.5334,0.7583,0.5173,0.6989,0.4385,0.6847,0.5069,0.4264
+4,a man chops wood with an ax and then rips it apart with his hands while shouting .,0.5578,man trying to chop down a tree with an ax when he gets frustrated and throws the ax at the tree .,3.0,3.0,3.0,3.0,0.666,0.8829,1.0,1.0,1.0,1.0,0.6086,0.6356,0.6333,0.6226,0.5704,0.5731,0.5578
+5,a man out in a woods throwing a knife at a tree trunk .,0.3813,a man in the woods with an ax hits the wood and then throw the ax to hit the wood again .,4.0,4.0,4.0,4.0,0.6434,0.8875,0.9184,0.7551,0.7404,0.679,0.5891,0.4619,0.5998,0.463,0.5389,0.3799,0.3813
+6,a man is throwing a large ax at a target across the room .,0.1872,man trying to chop down a tree with an ax when he gets frustrated and throws the ax at the tree .,4.0,4.0,4.0,4.0,0.5925,0.8607,1.0,0.7612,0.7966,0.7484,0.5262,0.3199,0.5339,0.3142,0.458,0.194,0.1872

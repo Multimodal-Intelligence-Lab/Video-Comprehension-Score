@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,in a shower someone is making a dog stand and moving it's paws .,0.3661,a puppy is in the shower with its owner . the owner is playing around with the puppy,5.0,4.0,5.0,4.6667,0.818,0.9067,0.8972,0.7688,0.7222,0.6696,0.798,0.3793,0.668,0.448,0.6597,0.3254,0.3661
+2,a woman is shaving a dog ' s hair with a brush .,0.2014,person standing in the shower with a wet dog holding two of its feet in the air making them move .,4.0,2.0,4.0,3.3333,0.3895,0.8102,0.9851,1.0,0.9865,0.9833,0.2465,0.3625,0.366,0.3537,0.2175,0.2122,0.2014
+3,a woman is giving a dog a bath in a bathtub .,0.3001,a cute little black puppy is in the shower bathing with his owner .,4.0,2.0,4.0,3.3333,0.5721,0.9025,0.9756,0.9722,0.9565,0.9468,0.5226,0.4374,0.4394,0.4282,0.3433,0.3709,0.3001
+4,a man give a grey hound a bath in a tub with shampoo .,0.2491,a cute little black puppy is in the shower bathing with his owner .,5.0,2.0,4.0,3.6667,0.5032,0.8539,0.9599,0.8884,0.9132,0.8917,0.4182,0.3809,0.423,0.3977,0.3242,0.2281,0.2491
+5,people use soap and water to give their dog a bath,0.2254,person naked in a shower giving a dog a bath and moving it's paws around .,4.0,3.0,4.0,3.6667,0.5038,0.8682,0.9804,0.8387,0.84,0.8073,0.4276,0.3556,0.4246,0.3285,0.3362,0.2566,0.2254
+6,a person washing their dog outside and putting soap on him .,0.276,person standing in the shower with a wet dog holding two of its feet in the air making them move .,4.0,2.0,4.0,3.3333,0.4863,0.8423,0.9192,0.8673,0.8618,0.8339,0.3901,0.4013,0.4351,0.3975,0.3212,0.2806,0.276

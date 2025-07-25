@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young man does a shoulder stretching exercise .,0.5278,a man is holding his own arm across his shoulder and demonstrating a stretching technique .,5.0,5.0,5.0,5.0,0.6714,0.8717,0.9183,0.8185,0.7983,0.7687,0.6231,0.5985,0.6422,0.5884,0.5895,0.5395,0.5278
+2,a man is standing in front of a wall and is showing how to use a tool .,0.0308,a man is holding his own arm across his shoulder and demonstrating a stretching technique .,4.0,3.0,4.0,3.6667,0.2814,0.8192,0.9846,0.8933,0.9051,0.8842,0.1227,0.1956,0.2701,0.206,0.109,0.018,0.0308
+3,a woman is sitting in front of a desk and a piece of paper .,0.0,a man is holding his own arm across his shoulder and demonstrating a stretching technique .,1.0,1.0,2.0,1.3333,-0.0163,0.7534,0.9831,0.9234,0.9284,0.905,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,a man demonstrates a stretching move as he describes it .,0.2405,a man is holding his own arm across his shoulder and demonstrating a stretching technique .,5.0,5.0,5.0,5.0,0.6971,0.8619,0.7755,0.5923,0.5074,0.4285,0.6485,0.4151,0.6094,0.2934,0.5468,0.3713,0.2405
+5,a man moves his arms while demonstrating a few stretches .,0.6774,a man is holding his own arm across his shoulder and demonstrating a stretching technique .,5.0,3.0,3.0,3.6667,0.7686,0.8966,0.9388,0.8047,0.7999,0.7768,0.7419,0.7125,0.7535,0.7107,0.7251,0.6793,0.6774
+6,a guy is demonstrating how to correctly stretch his arms .,0.0,a man is holding his own arm across his shoulder and demonstrating a stretching technique .,5.0,5.0,5.0,5.0,0.7692,0.873,0.6531,0.3877,0.2298,0.1178,0.7356,0.2039,0.5489,0.0,0.5283,0.1676,0.0

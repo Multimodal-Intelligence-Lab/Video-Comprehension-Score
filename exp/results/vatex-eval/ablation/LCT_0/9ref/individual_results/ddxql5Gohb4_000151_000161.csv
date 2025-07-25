@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a boy walking forward , backwards , and jumping on a tight rope in a field .",0.5202,a young man is walking and balancing on a rope in a field .,5.0,5.0,5.0,5.0,0.6889,0.8697,0.9497,0.7489,0.7727,0.7345,0.6423,0.5782,0.6724,0.5827,0.6234,0.5151,0.5202
+2,a woman is standing on a tightrope and does a back flip .,0.3064,a person is walking on a tightrope a few feet above the ground in a park .,4.0,4.0,3.0,3.6667,0.4312,0.82,1.0,1.0,1.0,1.0,0.3064,0.4312,0.4312,0.4312,0.3064,0.3064,0.3064
+3,a young woman is walking on a tightrope in a park .,0.5708,a young man is walking on a tightrope close to the ground .,4.0,4.0,4.0,4.0,0.7372,0.9098,1.0,1.0,1.0,1.0,0.7111,0.6143,0.6904,0.6143,0.6597,0.5708,0.5708
+4,a young man is balancing and walking on a rope suspended above the ground .,0.5594,"a young man is doing a tightrope walk , while suspended over a green grassy slope .",5.0,5.0,5.0,5.0,0.8247,0.953,0.9804,1.0,0.9167,0.9006,0.8161,0.6407,0.8174,0.6097,0.8084,0.5716,0.5594
+5,barefoot young man walks a tight rope with grass beneath him .,0.5761,a young man is walking and balancing on a rope in a field .,5.0,5.0,5.0,5.0,0.7194,0.8849,1.0,1.0,1.0,1.0,0.6793,0.6249,0.6874,0.6249,0.6427,0.5761,0.5761
+6,a man on a tight rope balancing and standing up outdoors .,0.2372,"a young man is doing a tightrope walk , while suspended over a green grassy slope .",5.0,5.0,5.0,5.0,0.5972,0.8796,0.9497,0.7361,0.7441,0.682,0.542,0.3795,0.519,0.3861,0.4491,0.2289,0.2372

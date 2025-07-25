@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy is showing how to properly massage a woman's leg .,0.6673,a man is narrating as he is massaging a woman's leg .,5.0,5.0,5.0,5.0,0.7988,0.8986,1.0,1.0,1.0,1.0,0.7724,0.701,0.7904,0.701,0.7629,0.6673,0.6673
+2,a man is massaging another person ' s leg while he is laying down .,0.7281,a man demonstrating a massage on another persons foot and leg .,5.0,5.0,5.0,5.0,0.7606,0.9362,0.9599,0.9737,0.9446,0.9406,0.7432,0.7541,0.7506,0.7465,0.7325,0.7363,0.7281
+3,a woman is massaging a woman ' s leg while she lays on a bed .,0.3783,a man massages a prone person's lower leg and talks about healing the body .,4.0,4.0,4.0,4.0,0.6001,0.8856,0.9851,0.9002,0.917,0.8986,0.5342,0.486,0.5461,0.4911,0.4697,0.4196,0.3783
+4,a man gives a leg massage to a woman's leg as she lays on a table .,0.5326,a man is narrating as he is massaging a woman's leg .,5.0,4.0,5.0,4.6667,0.686,0.9159,0.9122,0.838,0.7985,0.78,0.6396,0.5921,0.6558,0.5719,0.6049,0.5546,0.5326
+5,a man is slowly massaging the legs of a woman who is lying on a couch,0.3517,a man is narrating as he is massaging a woman's leg .,5.0,5.0,4.0,4.6667,0.5759,0.9015,0.9091,0.8027,0.7324,0.6957,0.5295,0.4534,0.5312,0.4156,0.48,0.3937,0.3517
+6,a person is massaging a woman's leg inside a room .,0.3525,a man massages a prone person's lower leg and talks about healing the body .,5.0,5.0,5.0,5.0,0.6736,0.916,0.9697,0.8408,0.8576,0.832,0.636,0.4987,0.537,0.451,0.4837,0.4527,0.3525

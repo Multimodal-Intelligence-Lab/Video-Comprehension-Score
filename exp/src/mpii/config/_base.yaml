@@ -1,0 +1,98 @@
+# ============================================================================
+# BASE CONFIGURATION FOR ALL MPII EXPERIMENTS
+# ============================================================================
+# This file contains all common settings shared across experiments.
+# Individual experiment configs only need to specify their unique settings.
+
+# ============================================================================
+# MODELS CONFIGURATION
+# ============================================================================
+models:
+  # Path to downloaded NV-Embed model directory
+  # Download from: https://huggingface.co/nvidia/NV-Embed-v1
+  nv_embed_path: "/mmfs1/scratch/jacks.local/mali9292/VAD-LLM2Vec/nv-embed"
+  
+  # SAT model for text segmentation (auto-downloaded via wtpsplit)
+  sat_model: "sat-12l-sm"
+
+# ============================================================================
+# VCS COMPUTATION SETTINGS (COMMON DEFAULTS)
+# ============================================================================
+vcs:
+  # VCS algorithm parameters (research settings - usually don't change)
+  chunk_size: 1
+  context_cutoff_value: 0.6
+  context_window_control: 4.0
+  
+  # Return detailed VCS internals for debugging
+  return_internals: false
+  
+  # Default LCT values (experiments can override)
+  lct_values: [0, 1]
+
+# ============================================================================
+# PARALLEL PROCESSING
+# ============================================================================
+processing:
+  # Number of parallel workers for file processing
+  max_workers: 12
+  
+  # Checkpoint saving interval (save every N files)
+  checkpoint_interval: 5
+  
+  # Resume from checkpoint if available
+  resume_from_checkpoint: true
+
+# ============================================================================
+# MODEL PARAMETERS
+# ============================================================================
+embedding:
+  # NV-Embed model parameters
+  batch_size: 8
+  max_length: 32768
+  instruction: ""  # Optional instruction for embeddings
+
+# ============================================================================
+# OUTPUT FORMATTING
+# ============================================================================
+output:
+  # Decimal precision for metrics
+  decimal_precision: 3
+  
+  # Default metrics order (experiments can override)
+  metrics_order: 
+    - "BLEU-1"
+    - "BLEU-4" 
+    - "METEOR"
+    - "ROUGE-1"
+    - "ROUGE-4"
+    - "ROUGE-L"
+    - "ROUGE-Lsum"
+    - "VCS"
+
+# ============================================================================
+# LOGGING AND VERBOSITY
+# ============================================================================
+logging:
+  # Log level: DEBUG, INFO, WARNING, ERROR
+  level: "INFO"
+  
+  # Enable verbose output to console
+  verbose: false
+
+
+# ============================================================================
+# ADVANCED SETTINGS (USUALLY DON'T CHANGE)
+# ============================================================================
+advanced:
+  # Enable CUDA if available
+  use_cuda: true
+
+# ============================================================================
+# DEFAULT PATHS STRUCTURE (EXPERIMENTS MUST OVERRIDE)
+# ============================================================================
+paths:
+  # Experiments must specify their specific data and results directories
+  individual_results_dir: "individual_results"
+  aggregated_results_dir: "aggregated_results"
+  logs_dir: "logs"

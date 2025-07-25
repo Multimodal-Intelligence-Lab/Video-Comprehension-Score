@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman holding and explaining how to use a small device .,0.5495,a beautiful lady showing examples on how to use a little equipment,5.0,5.0,5.0,5.0,0.6592,0.8584,1.0,0.8723,0.8863,0.8668,0.6007,0.6093,0.6592,0.6155,0.6007,0.5423,0.5495
+2,a woman is demonstrating how to use a pair of glasses .,0.4792,a beautiful lady showing examples on how to use a little equipment,4.0,4.0,4.0,4.0,0.5759,0.8809,0.9524,1.0,0.9593,0.9521,0.5009,0.5759,0.5547,0.5579,0.4754,0.5009,0.4792
+3,a woman is demonstrating how to use an inhaler while a woman talks about it .,0.6963,a women is demonstrating how to use an inhaling device while another women watches .,4.0,4.0,4.0,4.0,0.8126,0.9262,0.9403,0.7655,0.761,0.7286,0.7872,0.7114,0.7989,0.7058,0.7717,0.7021,0.6963
+4,"a doctor demonstrates , with the help of a small girl , how to use an inhaler properly .",0.0639,a woman is showing a group of people how to properly use and breath in in a device,4.0,4.0,3.0,3.6667,0.6538,0.8731,0.9643,0.787,0.8286,0.7803,0.6035,0.1966,0.5655,0.2278,0.5023,0.1296,0.0639
+5,a woman and a child are demonstrating how to use a nebulizer device to help with breathing .,0.2875,a woman is demonstrating the proper way to use a handheld inhaler .,4.0,4.0,4.0,4.0,0.6137,0.8934,0.9477,0.6864,0.6832,0.628,0.5641,0.3908,0.5533,0.3808,0.486,0.299,0.2875
+6,a woman shows how an oxygen machine works along with a young child with a mask .,0.3285,a woman is showing a group of people how to properly use and breath in in a device,4.0,4.0,4.0,4.0,0.6006,0.8331,1.0,0.9798,0.977,0.971,0.5126,0.4478,0.5619,0.4498,0.4653,0.3224,0.3285

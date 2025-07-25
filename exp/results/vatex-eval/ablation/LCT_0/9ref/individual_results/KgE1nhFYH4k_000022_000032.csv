@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is showing how to spread a cream on one's face .,0.7319,a woman is putting a makeup cream on her face .,3.0,4.0,5.0,4.0,0.922,0.9248,1.0,1.0,1.0,1.0,0.9147,0.7616,0.9131,0.7616,0.9073,0.7319,0.7319
+2,a woman is demonstrating how to apply makeup to her face .,0.655,a woman is demonstrating the proper way to apply a facial cream product .,5.0,4.0,4.0,4.3333,0.7368,0.9242,0.9714,0.8819,0.8642,0.8507,0.7152,0.6925,0.729,0.6862,0.7068,0.662,0.655
+3,a woman is applying makeup to her face with a brush .,0.5215,a woman is putting a makeup cream on her face .,2.0,3.0,3.0,2.6667,0.63,0.9067,0.9756,0.8408,0.8529,0.8378,0.5919,0.527,0.6053,0.5661,0.5647,0.4783,0.5215
+4,a woman is using some cream and applying it to her face,0.5592,a woman is putting a makeup cream on her face .,5.0,5.0,5.0,5.0,0.8891,0.9362,0.9756,0.8644,0.8611,0.8371,0.8759,0.5896,0.8774,0.5881,0.8629,0.5468,0.5592
+5,a women is applying moisturising cream on her face,0.795,a woman is putting a makeup cream on her face .,5.0,5.0,5.0,5.0,0.8185,0.9232,1.0,1.0,1.0,1.0,0.795,0.8185,0.8185,0.8185,0.795,0.795,0.795
+6,a face cream is displayed and then a woman shown using it .,0.2679,a lady is showing how to apply face cream on her face .,5.0,4.0,3.0,4.0,0.8509,0.9092,0.7548,0.4107,0.3892,0.3282,0.8343,0.2945,0.6178,0.2809,0.5423,0.2712,0.2679

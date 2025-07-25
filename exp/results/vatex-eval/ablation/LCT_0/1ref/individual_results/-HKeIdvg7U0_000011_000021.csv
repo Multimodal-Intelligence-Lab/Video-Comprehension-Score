@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a middle aged man playing a string instrument that resembles a lute or rebec .,0.0892,a man is playing a guitar type musical instrument with his fingers .,5.0,5.0,5.0,5.0,0.4242,0.8539,0.8873,0.7527,0.7403,0.6959,0.3257,0.2351,0.3511,0.2222,0.2401,0.1043,0.0892
+2,a man is playing a song on a stringed instrument .,0.475,a man is playing a guitar type musical instrument with his fingers .,5.0,5.0,5.0,5.0,0.664,0.9009,0.9756,0.7165,0.7104,0.6785,0.6271,0.5311,0.6556,0.5271,0.6178,0.4795,0.475
+3,a man is playing a song on a stringed instrument .,0.475,a man is playing a guitar type musical instrument with his fingers .,5.0,5.0,5.0,5.0,0.664,0.9009,0.9756,0.7165,0.7104,0.6785,0.6271,0.5311,0.6556,0.5271,0.6178,0.4795,0.475
+4,a man delicately plays a song on a medieval lute stringed instrument .,0.0103,a man is playing a guitar type musical instrument with his fingers .,5.0,5.0,5.0,5.0,0.4916,0.8528,0.8832,0.6293,0.6024,0.5338,0.4038,0.1921,0.4243,0.156,0.3249,0.0526,0.0103
+5,a man plays a stringed instrument as he looks at his sheet music .,0.0,a man is playing a guitar type musical instrument with his fingers .,3.0,4.0,4.0,3.6667,0.498,0.8755,0.8634,0.4,0.5467,0.4823,0.4266,0.0,0.4186,0.0818,0.3359,0.0,0.0
+6,a young man playing an odd shaped string instrument in front of sheet music .,0.0,a man is playing a guitar type musical instrument with his fingers .,4.0,4.0,4.0,4.0,0.414,0.8761,0.8765,0.4608,0.4721,0.3974,0.3312,0.0,0.3315,0.0,0.237,0.0,0.0

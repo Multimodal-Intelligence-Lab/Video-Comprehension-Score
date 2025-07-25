@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,someone uses a vacuum cleaner to clean crumbs off the floor .,0.2919,someone is standing and vacuuming up a small pile of white rocks .,5.0,5.0,5.0,5.0,0.5093,0.799,0.9697,0.7845,0.8673,0.834,0.3859,0.3745,0.494,0.4342,0.3667,0.2172,0.2919
+2,a person is using a vacuum cleaner to clean a carpet .,0.0607,someone is standing and vacuuming up a small pile of white rocks .,5.0,5.0,5.0,5.0,0.4769,0.7937,0.9787,0.7071,0.7017,0.6242,0.3409,0.2602,0.4655,0.2545,0.3265,0.0678,0.0607
+3,a person is using a vacuum cleaner to clean the carpet .,0.0584,someone is standing and vacuuming up a small pile of white rocks .,5.0,5.0,5.0,5.0,0.4755,0.7937,0.9787,0.7071,0.7017,0.6242,0.3392,0.2583,0.4641,0.2526,0.3249,0.0655,0.0584
+4,a person is vacuuming the hardwood floors with their vacuum .,0.0124,someone is standing and vacuuming up a small pile of white rocks .,4.0,4.0,4.0,4.0,0.4455,0.8289,0.8545,0.7635,0.6774,0.6108,0.331,0.2737,0.351,0.1814,0.2171,0.1238,0.0124
+5,a person is using a vacuum to clean a light colored carpet .,0.3304,someone is standing and vacuuming up a small pile of white rocks .,5.0,5.0,4.0,4.6667,0.5386,0.7944,0.9697,0.7845,0.8673,0.833,0.4192,0.4119,0.5242,0.4681,0.4011,0.2597,0.3304
+6,a person uses a small vacuum cleaner to sweep up dust on a dark brown hardwood floor .,0.2094,someone is standing and vacuuming up a small pile of white rocks .,4.0,4.0,4.0,4.0,0.4998,0.8237,0.9406,0.7262,0.7681,0.7184,0.3927,0.3112,0.4682,0.3488,0.3544,0.1638,0.2094

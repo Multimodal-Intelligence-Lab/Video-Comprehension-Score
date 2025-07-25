@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"soccer players leave the field , walking towards the corner of the sidelines .",0.4748,a soccer team walking off the field while the audience claps .,5.0,5.0,4.0,4.6667,0.67,0.8611,0.8988,0.7535,0.7296,0.686,0.6168,0.562,0.6328,0.5477,0.5736,0.4914,0.4748
+2,a group of people are playing a game of soccer in a field .,0.0,a soccer team walking off the field while the audience claps .,3.0,4.0,3.0,3.3333,0.4097,0.8394,0.6641,0.4188,0.5136,0.4206,0.2968,0.0,0.1111,0.0,0.0,0.0,0.0
+3,a large group of people are in a field and dancing to music .,0.0,a soccer team walking off the field while the audience claps .,4.0,4.0,4.0,4.0,0.1577,0.7887,0.9167,0.6828,0.7827,0.7244,0.0,0.0,0.0812,0.0,0.0,0.0,0.0
+4,a bunch of people are clapping in the stands and on the field at a soccer game .,0.0,a soccer team walking off the field while the audience claps .,5.0,5.0,5.0,5.0,0.6711,0.8649,0.68,0.3658,0.1262,0.0,0.6197,0.055,0.5163,0.0,0.4408,0.0,0.0
+5,thousands of people are gathered as soccer players run across the field .,0.0,a soccer team walking off the field while the audience claps .,4.0,5.0,4.0,4.3333,0.4663,0.8105,0.8497,0.4013,0.3177,0.1582,0.3415,0.0,0.3719,0.0,0.225,0.0,0.0
+6,"coaches , players , and people in the stands of a soccer game clap .",0.24,a soccer team walking off the field while the audience claps .,5.0,5.0,4.0,4.6667,0.6449,0.8281,0.8798,0.6378,0.5659,0.4757,0.5712,0.4384,0.5964,0.3268,0.5126,0.3277,0.24

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is sticking a needle into a stuffed horse .,0.3577,a lady is giving instruction on how to create stuffed animals,4.0,4.0,5.0,4.3333,0.4622,0.8372,1.0,1.0,1.0,1.0,0.3577,0.4622,0.4622,0.4622,0.3577,0.3577,0.3577
+2,a woman is using a tool to cut a piece of fabric .,0.1117,a lady is giving instruction on how to create stuffed animals,4.0,4.0,4.0,4.0,0.3005,0.7874,1.0,1.0,1.0,1.0,0.1117,0.3005,0.3005,0.3005,0.1117,0.1117,0.1117
+3,a person is using a tool to carve a piece of material .,0.0,a lady is giving instruction on how to create stuffed animals,4.0,4.0,4.0,4.0,0.1123,0.7769,1.0,1.0,1.0,1.0,0.0,0.1123,0.1123,0.1123,0.0,0.0,0.0
+4,a person makes a small felted wool stuffed animal doll .,0.233,a lady is giving instruction on how to create stuffed animals,5.0,5.0,5.0,5.0,0.5102,0.8227,0.9831,0.75,0.7763,0.7281,0.4046,0.3469,0.5017,0.369,0.3943,0.2061,0.233
+5,girl holding stuffed animal getting her ears pierced .,0.0,a lady is giving instruction on how to create stuffed animals,4.0,4.0,3.0,3.6667,0.3111,0.8424,0.7595,0.3564,0.142,0.0,0.1821,0.0,0.0929,0.0,0.0,0.0,0.0
+6,a woman demonstrates felting a piece of fabric while explaining the process .,0.1903,a lady is giving instruction on how to create stuffed animals,5.0,5.0,5.0,5.0,0.4637,0.7789,0.9167,0.904,0.8505,0.808,0.3114,0.4067,0.4149,0.3693,0.2488,0.2382,0.1903

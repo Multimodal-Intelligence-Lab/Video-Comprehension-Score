@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a male individidual doing a tutorial on how to make ballon animals,0.4651,someone is making a balloon animal while describing what they are doing .,5.0,5.0,4.0,4.6667,0.7162,0.8682,1.0,0.9679,0.8863,0.8619,0.6594,0.6263,0.6524,0.5357,0.5828,0.5696,0.4651
+2,a man is demonstrating how to make a balloon animal .,0.6165,someone is making a balloon animal while describing what they are doing .,5.0,5.0,4.0,4.6667,0.8026,0.8921,1.0,0.9387,0.8606,0.842,0.7787,0.6519,0.6648,0.6584,0.6498,0.6092,0.6165
+3,a man is demonstrating how to make a balloon animal .,0.6165,someone is making a balloon animal while describing what they are doing .,5.0,5.0,4.0,4.6667,0.8026,0.8921,1.0,0.9387,0.8606,0.842,0.7787,0.6519,0.6648,0.6584,0.6498,0.6092,0.6165
+4,a man is showing you how to make a balloon animal .,0.6075,someone is making a balloon animal while describing what they are doing .,5.0,5.0,4.0,4.6667,0.7822,0.8949,1.0,0.9387,0.876,0.8569,0.7538,0.6421,0.6554,0.6487,0.6382,0.6,0.6075
+5,the guy is demonstrating how to make balloon animals and discussing the technique .,0.7408,someone is making a balloon animal while describing what they are doing .,5.0,5.0,4.0,4.6667,0.7743,0.877,1.0,1.0,1.0,1.0,0.7408,0.7743,0.7743,0.7743,0.7408,0.7408,0.7408
+6,a man is demonstrating how to twist a balloon into a shape .,0.6265,a seated man bends and twists a balloon into a shape .,5.0,5.0,5.0,5.0,0.7289,0.9209,1.0,0.8408,0.827,0.8122,0.6911,0.6616,0.7155,0.656,0.6911,0.6326,0.6265

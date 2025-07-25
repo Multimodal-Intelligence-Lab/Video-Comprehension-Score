@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl lets out a loud burp and then begins laughing about it .,0.6005,"a woman momentarily pauses , burps out loudly then laughs .",5.0,4.0,5.0,4.6667,0.7539,0.8493,0.9787,0.9513,0.9212,0.9036,0.7103,0.5636,0.7316,0.6356,0.6839,0.4622,0.6005
+2,a woman is talking to the camera while a woman is talking to her .,0.1194,"a woman talks , laughs and smiles while moving her hands near her face .",5.0,5.0,5.0,5.0,0.5378,0.9503,0.9128,0.9609,0.7817,0.7439,0.5137,0.3891,0.4472,0.2491,0.4183,0.2836,0.1194
+3,a woman is sitting in front of a camera and talking to the camera .,0.0,a girl is in front of a camera belching like a monster .,5.0,5.0,5.0,5.0,0.4643,0.9199,0.9756,0.8581,0.8783,0.8411,0.4176,0.1245,0.2959,0.0923,0.1954,0.0,0.0
+4,a couple of girls making noses and laughing about the noises .,0.0,a girl is in front of a camera belching like a monster .,5.0,1.0,4.0,3.3333,0.3552,0.8173,0.9841,0.9825,0.9767,0.9685,0.2111,0.2068,0.2552,0.2021,0.0707,0.0,0.0
+5,something is burnt in air by a lady and she is talking and laughing,0.0,a girl is in front of a camera belching like a monster .,4.0,4.0,5.0,4.3333,0.5225,0.8638,0.937,0.5848,0.7202,0.6242,0.4214,0.1422,0.3394,0.0056,0.1853,0.0,0.0
+6,a woman is yelling for somebody to come outside while everyone else is laughing .,0.0978,a woman suddenly burps while talking to her friend and laughing .,4.0,2.0,1.0,2.3333,0.6261,0.8557,0.9831,0.8879,0.8996,0.8771,0.5631,0.2786,0.4499,0.2628,0.3572,0.1482,0.0978

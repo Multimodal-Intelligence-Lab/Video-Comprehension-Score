@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young boy feeds himself pasta as his mother speaks proudly in the background .,0.3748,a toddler boy is feeding himself spaghetti at the dinner table .,5.0,5.0,5.0,5.0,0.5755,0.8124,0.9333,0.8515,0.8358,0.7979,0.4775,0.5015,0.5452,0.4921,0.4402,0.3864,0.3748
+2,a little girl is sitting at a table and eating spaghetti .,0.154,a toddler boy is feeding himself spaghetti at the dinner table .,4.0,4.0,4.0,4.0,0.6136,0.8672,0.7895,0.4,0.531,0.4591,0.5544,0.0222,0.5106,0.2356,0.4356,0.0,0.154
+3,a little boy is sitting at a table and eating spaghetti .,0.3714,a toddler boy is feeding himself spaghetti at the dinner table .,5.0,5.0,5.0,5.0,0.7727,0.8955,0.7895,0.4,0.531,0.4763,0.7462,0.2235,0.7121,0.393,0.6785,0.1959,0.3714
+4,a baby in a high chair is sitting and eating spaghetti with her mouth and hands making a mess .,0.4255,a toddler boy is feeding himself spaghetti at the dinner table .,4.0,4.0,4.0,4.0,0.5734,0.8117,0.987,0.8902,0.9148,0.8951,0.4744,0.5208,0.5678,0.5337,0.4675,0.4096,0.4255
+5,a young girl is eating a plate of spaghetti with her hands while sitting in a high chair .,0.2256,a toddler boy is feeding himself spaghetti at the dinner table .,4.0,3.0,4.0,3.6667,0.5575,0.8109,0.9108,0.6959,0.7046,0.6357,0.4543,0.3642,0.5142,0.3721,0.4009,0.2159,0.2256
+6,"a child has their head in a plate , and his using their hand to eat spaghetti .",0.0,a toddler boy is feeding himself spaghetti at the dinner table .,5.0,3.0,4.0,4.0,0.6139,0.8253,0.8523,0.5523,0.4504,0.3341,0.5322,0.2707,0.547,0.1048,0.4511,0.1529,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man in a mirrored room demonstrates how to preform the exercise move called mountain climbers .,0.3286,a man demonstrates how to do a mountain climber exercise on the floor .,5.0,5.0,5.0,5.0,0.7209,0.9005,0.9134,0.7292,0.748,0.7027,0.6901,0.4672,0.6177,0.3753,0.5566,0.4434,0.3286
+2,a man is in a gym doing push ups on the floor .,0.4258,a man in a gym does the mountain climber training exercise .,4.0,5.0,4.0,4.3333,0.6748,0.8816,0.9756,0.8812,0.8204,0.7841,0.6312,0.5551,0.5835,0.5221,0.4995,0.4654,0.4258
+3,a man is demonstrating how to do a leg exercise .,0.5521,a man is giving a tutorial on how to the mountain climber exercise .,5.0,5.0,5.0,5.0,0.6175,0.8901,1.0,1.0,1.0,1.0,0.5557,0.6175,0.6175,0.6175,0.5521,0.5521,0.5521
+4,"an older man demonstrates how to do an exercise called "" mountain climbers "" in a gym .",0.5158,a man is giving a tutorial on how to the mountain climber exercise .,4.0,5.0,4.0,4.3333,0.7805,0.9209,0.9129,0.7144,0.6701,0.6282,0.7593,0.5655,0.6858,0.5401,0.6459,0.5371,0.5158
+5,a man is doing mountain climbers in a gym on the floor .,0.7931,a man demonstrates how to do a mountain climber exercise on the floor .,5.0,5.0,5.0,5.0,0.9049,0.9294,1.0,1.0,1.0,1.0,0.8969,0.8077,0.8383,0.8077,0.8368,0.7931,0.7931
+6,"in a room , a man is doing mountain climbers on the floor while a man standing is explaining the exercise .",0.4746,a man is doing mountain climbers while laying on a carpet .,4.0,4.0,3.0,3.6667,0.8006,0.9225,0.8764,0.8065,0.776,0.7451,0.7839,0.5557,0.7214,0.5383,0.7154,0.4945,0.4746

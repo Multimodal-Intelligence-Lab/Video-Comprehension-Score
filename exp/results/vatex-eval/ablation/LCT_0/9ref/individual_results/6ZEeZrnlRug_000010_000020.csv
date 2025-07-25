@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man in a white suit getting out of a fancy red car .,0.6262,the man in a white robe exits the bright red sports car .,5.0,5.0,5.0,5.0,0.6881,0.8899,0.9846,0.9335,0.9376,0.9298,0.6495,0.6659,0.6832,0.6673,0.644,0.6245,0.6262
+2,a person is using a gas pump to carve a car .,0.0,the man in a white robe exits the bright red sports car .,2.0,2.0,2.0,2.0,0.2505,0.849,0.9744,0.91,0.9214,0.8971,0.1172,0.0603,0.1451,0.072,0.0,0.0,0.0
+3,a person is using a gas pump to put gas on a car .,0.0,the man in a white robe exits the bright red sports car .,3.0,2.0,2.0,2.3333,0.2451,0.8396,0.9888,0.8218,0.8634,0.8211,0.1009,0.0,0.1451,0.0,0.0,0.0,0.0
+4,a man puts oil into a car and removes the tire .,0.0,the man in a white robe exits the bright red sports car .,2.0,2.0,2.0,2.0,0.2379,0.8251,1.0,0.8879,0.911,0.8881,0.0763,0.103,0.2035,0.1257,0.0142,0.0,0.0
+5,some men are at the racetrack and are pushing a race car onto the track and it drives off .,0.0,the man in a white robe exits the bright red sports car .,2.0,2.0,2.0,2.0,0.3144,0.812,0.9474,0.7936,0.81,0.7546,0.1408,0.0519,0.2439,0.0711,0.0526,0.0,0.0
+6,a man drives a white car then a woman opens a door and leaves with a man .,0.0,the man in a white robe exits the bright red sports car .,2.0,3.0,2.0,2.3333,0.5582,0.8823,0.9464,0.6768,0.7892,0.7204,0.4765,0.0063,0.4319,0.0514,0.3268,0.0,0.0

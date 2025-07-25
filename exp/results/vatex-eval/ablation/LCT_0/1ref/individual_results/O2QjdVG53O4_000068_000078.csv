@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a group of women , some holding children , watch two man dance in front of them .",0.0,"a group of younger people are at a dance - a man in a blue shirt starts to dance , and then a man in a black shirt does the moonwalk . he looks to be skilled .",5.0,5.0,5.0,5.0,0.3676,0.8413,0.8989,0.5907,0.6607,0.5967,0.2483,0.0,0.2965,0.0428,0.1637,0.0,0.0
+2,a group of people are dancing to music in a room .,0.0081,"a group of younger people are at a dance - a man in a blue shirt starts to dance , and then a man in a black shirt does the moonwalk . he looks to be skilled .",4.0,5.0,5.0,4.6667,0.3496,0.8422,0.9356,0.7732,0.7785,0.737,0.2277,0.1588,0.3049,0.1646,0.1746,0.0012,0.0081
+3,a group of people are doing a dance routine in a room .,0.0528,"a group of younger people are at a dance - a man in a blue shirt starts to dance , and then a man in a black shirt does the moonwalk . he looks to be skilled .",4.0,5.0,5.0,4.6667,0.3857,0.8608,0.9356,0.7446,0.7534,0.7135,0.2864,0.1751,0.3435,0.1847,0.2373,0.0416,0.0528
+4,several men are outside while two dance and spin in a circle .,0.0,"a group of younger people are at a dance - a man in a blue shirt starts to dance , and then a man in a black shirt does the moonwalk . he looks to be skilled .",2.0,3.0,3.0,2.6667,0.3771,0.8096,0.9466,0.7388,0.7543,0.6965,0.2305,0.1568,0.3419,0.1741,0.1871,0.0,0.0
+5,a man and a woman are doing a dance routine in front of people .,0.0,"a group of younger people are at a dance - a man in a blue shirt starts to dance , and then a man in a black shirt does the moonwalk . he looks to be skilled .",4.0,4.0,4.0,4.0,0.411,0.8588,0.7759,0.2634,0.1236,0.0,0.3142,0.0,0.2408,0.0,0.1161,0.0,0.0
+6,a man is doing some type of dance in front of an audience .,0.0,"a group of younger people are at a dance - a man in a blue shirt starts to dance , and then a man in a black shirt does the moonwalk . he looks to be skilled .",5.0,4.0,5.0,4.6667,0.4093,0.8393,0.8915,0.6707,0.6613,0.5964,0.2962,0.1193,0.3374,0.1068,0.2106,0.0,0.0

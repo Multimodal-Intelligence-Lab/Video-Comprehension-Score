@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is holding a baby in a baby wrap that goes around her neck and shoulders .,0.5616,a woman is holding a baby in a sling while talking .,5.0,5.0,5.0,5.0,0.6956,0.8931,0.9818,1.0,0.9872,0.9853,0.6489,0.6222,0.6606,0.6173,0.6085,0.5672,0.5616
+2,a man is sitting on the ground and is trying to climb up a rock .,0.0,a woman is showing the proper way to wear a baby sling .,1.0,1.0,1.0,1.0,0.0576,0.7672,1.0,0.9181,0.9381,0.9172,0.0,0.0,0.0236,0.0,0.0,0.0,0.0
+3,a man is standing in front of a wall and is trying to climb a wall .,0.0,a woman is showing the proper way to wear a baby sling .,1.0,1.0,3.0,1.6667,0.0176,0.7635,0.9901,0.975,0.9798,0.9732,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,a young mother is showing how to wrap a baby with clothes in order to better carry it .,0.6933,a woman is demonstrating how to wrap a baby for carrying .,5.0,5.0,5.0,5.0,0.8096,0.894,0.9818,1.0,0.9872,0.9839,0.787,0.6728,0.7988,0.7018,0.775,0.6634,0.6933
+5,a woman talks to a camera while holding a small child in a sling that is hung around her neck .,0.6002,a woman is holding a baby in a sling while talking .,5.0,5.0,5.0,5.0,0.7588,0.9072,1.0,0.9428,0.9608,0.9509,0.7341,0.6716,0.7027,0.6133,0.6723,0.6459,0.6002
+6,a woman is showing how to hold a baby in a handeewrap advertisement .,0.6645,a woman is demonstrating how to place a baby in a wrap to carry them .,3.0,5.0,4.0,4.0,0.7461,0.8747,1.0,1.0,1.0,1.0,0.7097,0.7236,0.7217,0.7072,0.6819,0.684,0.6645

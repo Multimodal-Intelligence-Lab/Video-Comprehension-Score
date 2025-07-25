@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a womaqn sits behind another woman as she gives her shoulders a massage .,0.4541,"standing behind another woman , a woman massages the other woman's shoulders .",5.0,5.0,5.0,5.0,0.8218,0.9252,0.828,0.497,0.5593,0.5236,0.8074,0.3104,0.7503,0.4637,0.7459,0.2958,0.4541
+2,a man is massaging another man ' s head while he is laying down .,0.1325,a lady is massage other lady shoulder while listen to music .,2.0,2.0,1.0,1.6667,0.4757,0.8472,0.9583,0.8295,0.8893,0.8587,0.3688,0.2838,0.4223,0.3204,0.3133,0.1546,0.1325
+3,a man is giving a tutorial on how to do a massage .,0.0848,a lady giving a goodand relaxing back massage to a woman,4.0,4.0,4.0,4.0,0.5939,0.863,0.9375,0.9258,0.8573,0.8329,0.5095,0.3491,0.5233,0.2184,0.4242,0.2137,0.0848
+4,a man lays on a massage table as a woman massages his back .,0.0539,a woman is giving another woman a neck massage on a table .,2.0,3.0,3.0,2.6667,0.575,0.8788,0.8798,0.6667,0.7006,0.6334,0.5117,0.2413,0.4253,0.1954,0.3398,0.1073,0.0539
+5,a man laying down while a woman gives his back a massage,0.0,"standing behind another woman , a woman massages the other woman's shoulders .",3.0,4.0,3.0,3.3333,0.6088,0.9011,0.8587,0.7018,0.6203,0.5312,0.5658,0.2439,0.4537,0.1445,0.3937,0.0665,0.0
+6,a woman in a massage chair getting a back massage from a man .,0.3768,a lady giving a goodand relaxing back massage to a woman,4.0,3.0,4.0,3.6667,0.6442,0.8922,0.9004,0.6732,0.6399,0.5964,0.6012,0.3674,0.4886,0.4411,0.4268,0.3221,0.3768

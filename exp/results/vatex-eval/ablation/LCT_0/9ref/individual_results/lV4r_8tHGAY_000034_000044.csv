@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is shown climbing in a tree while a loud machine hums .,0.5479,a person scales down a tree while their is a loud sound in the background .,5.0,5.0,5.0,5.0,0.6261,0.8699,1.0,1.0,1.0,1.0,0.5653,0.616,0.6186,0.6112,0.5566,0.5535,0.5479
+2,a man is climbing up a tree with a chainsaw .,0.7898,a man climbing down a tree with a chainsaw on his waist .,4.0,4.0,4.0,4.0,0.7957,0.9718,1.0,1.0,1.0,1.0,0.7898,0.7957,0.7957,0.7957,0.7898,0.7898,0.7898
+3,a man is climbing up a tree with a chainsaw .,0.7898,a man climbing down a tree with a chainsaw on his waist .,4.0,4.0,4.0,4.0,0.7957,0.9718,1.0,1.0,1.0,1.0,0.7898,0.7957,0.7957,0.7957,0.7898,0.7898,0.7898
+4,a man using a chainsaw high up in a tree to cut it down .,0.3165,a man high up in a tree uses his safety line to hold him in place while he uses a chainsaw to cut down limbs .,4.0,5.0,3.0,4.0,0.822,0.9128,0.9831,0.8509,0.8683,0.8367,0.805,0.3418,0.6916,0.3306,0.6504,0.3279,0.3165
+5,"an man cuts the top off of a very tall tree , while he is secured to the trunk at a great height .",0.4286,"a man , possibly a tree-trimmer , is in a tree attached to a limb with a safety belt .",4.0,4.0,4.0,4.0,0.7212,0.833,0.9818,0.8571,0.8814,0.8553,0.6651,0.5198,0.6333,0.5349,0.5598,0.4101,0.4286
+6,man with on a ladder cutting limbs off a tree with a chainsaw .,0.2696,a man high up in a tree uses his safety line to hold him in place while he uses a chainsaw to cut down limbs .,4.0,4.0,3.0,3.6667,0.7446,0.8958,1.0,0.8879,0.911,0.8906,0.7144,0.4461,0.6406,0.3792,0.61,0.3622,0.2696

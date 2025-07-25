@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people are dancing in a gym in unison .,0.3369,the kids in uniform are practicing their dance in the gym .,4.0,5.0,5.0,4.6667,0.6806,0.8516,0.7065,0.5,0.5856,0.5134,0.6249,0.2653,0.5479,0.3911,0.4691,0.1999,0.3369
+2,a group of people are doing a dance routine in a gym .,0.0773,the kids in uniform are practicing their dance in the gym .,5.0,5.0,5.0,5.0,0.6844,0.8676,0.8426,0.2735,0.4129,0.3233,0.6363,0.0,0.6255,0.1422,0.5683,0.0,0.0773
+3,a group of young girls are doing a dance routine together .,0.0,the kids in uniform are practicing their dance in the gym .,5.0,5.0,5.0,5.0,0.4808,0.8229,0.8819,0.3723,0.0472,0.0,0.369,0.0,0.4112,0.0,0.2845,0.0,0.0
+4,a group of women are in a gym doing a dancing class,0.0,the kids in uniform are practicing their dance in the gym .,5.0,4.0,5.0,4.6667,0.5186,0.8375,0.8125,0.4268,0.5596,0.4742,0.4253,0.0,0.4076,0.1398,0.2926,0.0,0.0
+5,a group of people are taking a group fitness dance class indoors .,0.0654,the kids in uniform are practicing their dance in the gym .,5.0,5.0,5.0,5.0,0.4618,0.8065,0.9183,0.7235,0.714,0.6454,0.3327,0.2561,0.4139,0.2462,0.2733,0.0776,0.0654
+6,a dance troupe performs a routine in a school gymnasium .,0.0,the kids in uniform are practicing their dance in the gym .,4.0,5.0,5.0,4.6667,0.6514,0.829,0.7895,0.2333,0.0,0.0,0.5795,0.0,0.5584,0.0,0.4674,0.0,0.0

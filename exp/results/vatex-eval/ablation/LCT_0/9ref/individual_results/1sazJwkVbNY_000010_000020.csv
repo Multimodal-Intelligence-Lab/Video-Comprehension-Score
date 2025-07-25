@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of girls are playing field hockey on an indoor field .,0.8343,a group of people are playing field hockey in an indoor facility .,5.0,5.0,5.0,5.0,0.8534,0.951,0.9873,0.934,0.9302,0.9266,0.8459,0.8388,0.8461,0.8424,0.8381,0.8304,0.8343
+2,a group of people are playing a game of cricket .,0.3512,several people are playing field hockey on the grass .,4.0,5.0,5.0,4.6667,0.4412,0.8882,1.0,1.0,1.0,1.0,0.3512,0.4412,0.4412,0.4412,0.3512,0.3512,0.3512
+3,a group of people are playing a game of cricket .,0.3512,several people are playing field hockey on the grass .,4.0,5.0,5.0,4.6667,0.4412,0.8882,1.0,1.0,1.0,1.0,0.3512,0.4412,0.4412,0.4412,0.3512,0.3512,0.3512
+4,a group of girls playing field hockey with spectators watching .,0.4132,several people are playing field hockey on the grass .,4.0,4.0,5.0,4.3333,0.6195,0.8949,0.975,0.9045,0.9138,0.8951,0.5649,0.5047,0.5946,0.4869,0.5364,0.4336,0.4132
+5,a woman using a field hockey stick to move a ball across an indoor field .,0.4469,a group of people are playing field hockey in an indoor facility .,4.0,5.0,5.0,4.6667,0.7723,0.8921,0.9313,0.6603,0.697,0.6138,0.7331,0.4582,0.7371,0.475,0.6918,0.4292,0.4469
+6,a title scrolls across the screen then a group of girls are playing field hockey in a field .,0.3484,several people are playing field hockey on the grass .,4.0,4.0,4.0,4.0,0.6264,0.8882,0.921,0.7741,0.7883,0.7445,0.5737,0.4632,0.528,0.429,0.4615,0.3875,0.3484

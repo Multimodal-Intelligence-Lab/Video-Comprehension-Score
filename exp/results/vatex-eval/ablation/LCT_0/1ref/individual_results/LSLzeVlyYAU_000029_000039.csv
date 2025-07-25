@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young teenage boy appears to be laughing after some type of procedure,0.0,a young man lays on a procedure table while a woman applies something to him with a stick .,5.0,5.0,5.0,5.0,0.3438,0.8191,0.8358,0.5005,0.4765,0.3609,0.1989,0.0,0.2149,0.0,0.0416,0.0,0.0
+2,a man is sitting on a chair while another man is getting his head waxed .,0.0,a young man lays on a procedure table while a woman applies something to him with a stick .,2.0,3.0,3.0,2.6667,0.2069,0.7917,0.9426,0.3972,0.3824,0.2199,0.0,0.0,0.1586,0.0,0.0,0.0,0.0
+3,a woman is sitting in a chair while another man is massaging her neck .,0.0,a young man lays on a procedure table while a woman applies something to him with a stick .,1.0,2.0,3.0,2.0,0.2144,0.8131,0.7873,0.1934,0.0347,0.0,0.0338,0.0,0.0021,0.0,0.0,0.0,0.0
+4,a man laughs maniacally while getting his chest waxed by a woman .,0.0,a young man lays on a procedure table while a woman applies something to him with a stick .,4.0,4.0,3.0,3.6667,0.268,0.8039,0.9123,0.4913,0.4941,0.3707,0.0895,0.0,0.1977,0.0,0.002,0.0,0.0
+5,a man sitting in a chair has his eyebrows waxed by a woman,0.0,a young man lays on a procedure table while a woman applies something to him with a stick .,4.0,3.0,5.0,4.0,0.2208,0.8088,0.9108,0.5027,0.5069,0.3903,0.0366,0.0,0.1446,0.0,0.0,0.0,0.0
+6,a guy laying flat on his back as a woman attempts to wax his chest and stomach .,0.1355,a young man lays on a procedure table while a woman applies something to him with a stick .,4.0,3.0,4.0,3.6667,0.4244,0.8087,0.9374,0.734,0.8233,0.7815,0.2883,0.2158,0.386,0.3009,0.2407,0.0303,0.1355

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a monopoly game board is set up with cards and fake money .,0.3462,parts of a game board are shown as someone removes play money from under the board .,5.0,5.0,5.0,5.0,0.6814,0.8853,0.9223,0.7341,0.6813,0.6092,0.6402,0.4287,0.6546,0.4293,0.6098,0.3456,0.3462
+2,a person is playing a game of monopoly on a table .,0.4277,a human is playing the extended version of monopoly alone .,5.0,4.0,4.0,4.3333,0.7471,0.9021,0.941,0.7578,0.656,0.6063,0.7153,0.5671,0.7205,0.4881,0.6853,0.5045,0.4277
+3,a person is playing a game of monopoly on a table .,0.4277,a human is playing the extended version of monopoly alone .,5.0,4.0,4.0,4.3333,0.7471,0.9021,0.941,0.7578,0.656,0.6063,0.7153,0.5671,0.7205,0.4881,0.6853,0.5045,0.4277
+4,a group of people sit on the floor to play a game of monopoly .,0.2881,a young child demonstrates a turn in the board game monopoly .,4.0,4.0,4.0,4.0,0.6233,0.8912,0.9688,0.7253,0.8296,0.7963,0.5689,0.3186,0.5408,0.4042,0.4745,0.1858,0.2881
+5,a group of people are playing the game of monopoly .,0.3573,a young child demonstrates a turn in the board game monopoly .,4.0,4.0,4.0,4.0,0.645,0.8859,0.95,0.7528,0.7333,0.6882,0.5944,0.4645,0.5757,0.4503,0.5039,0.374,0.3573
+6,people are playing monopoly at a table and one of them moves their token .,0.6154,a person that is playing monopoly and showing the different parts of the board,4.0,4.0,4.0,4.0,0.6732,0.8497,1.0,1.0,1.0,1.0,0.6154,0.6732,0.6732,0.6732,0.6154,0.6154,0.6154

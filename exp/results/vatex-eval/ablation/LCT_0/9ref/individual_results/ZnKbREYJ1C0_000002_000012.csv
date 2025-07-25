@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is going for a drive through snow while it is snowing .,0.4967,a person is riding a motor vehicle quickly on snowy mountain terrain .,4.0,4.0,4.0,4.0,0.6907,0.8934,0.941,0.9755,0.9184,0.9054,0.6215,0.5913,0.6492,0.5659,0.5708,0.5262,0.4967
+2,a person is riding a snowmobile down a snowy hill .,0.3717,a person riding some vehicle on the snow with very difficult and with struggle .,5.0,5.0,4.0,4.6667,0.6674,0.9132,1.0,0.8408,0.827,0.8075,0.6327,0.4566,0.6397,0.4354,0.5941,0.3997,0.3717
+3,a person is riding a snowmobile down a snowy hill .,0.3717,a person riding some vehicle on the snow with very difficult and with struggle .,5.0,5.0,4.0,4.6667,0.6674,0.9132,1.0,0.8408,0.827,0.8075,0.6327,0.4566,0.6397,0.4354,0.5941,0.3997,0.3717
+4,a person on a vehicle is sliding across a snowy outdoor environment .,0.6266,a person is riding a motor vehicle quickly on snowy mountain terrain .,5.0,5.0,5.0,5.0,0.7637,0.8773,0.971,0.8159,0.8301,0.8063,0.7269,0.6667,0.7538,0.6724,0.7155,0.6201,0.6266
+5,someone is using a snowmobile on a very snowy mountain .,0.3999,a person riding some vehicle on the snow with very difficult and with struggle .,5.0,5.0,4.0,4.6667,0.7116,0.8642,1.0,0.8408,0.827,0.7895,0.6663,0.515,0.6739,0.507,0.6095,0.4097,0.3999
+6,a person uses a snowmobile and rides around in the snow .,0.5029,a person is driving a snow mobile through thick snow on the ground .,5.0,5.0,5.0,5.0,0.7421,0.9,0.8988,0.7071,0.714,0.6464,0.699,0.6053,0.713,0.5317,0.6651,0.5743,0.5029

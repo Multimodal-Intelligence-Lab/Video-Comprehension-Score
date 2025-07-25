@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a male is standing with others , someone counts down and he drinks a drink out of a shot glass .",0.4864,"man in the center of the picture urges others to drink their shots ; another man says drink on three , glasses click and they all drink .",4.0,5.0,5.0,4.6667,0.6661,0.8901,1.0,1.0,1.0,1.0,0.6249,0.5303,0.638,0.5508,0.5933,0.463,0.4864
+2,a man is sitting at a table and drinking a bottle of beer .,0.0,"man lifts shot glass , hesitates , lifts drink to mouth , and drinks while tilting head back .",4.0,4.0,4.0,4.0,0.3064,0.8289,0.9599,0.8704,0.8659,0.8334,0.1422,0.1799,0.2209,0.1756,0.0326,0.0,0.0
+3,a man is sitting in a chair and he is drinking a drink .,0.1026,"man lifts shot glass , hesitates , lifts drink to mouth , and drinks while tilting head back .",3.0,4.0,4.0,3.6667,0.3756,0.8529,0.9787,1.0,0.9839,0.9802,0.2429,0.302,0.3199,0.2599,0.1754,0.1537,0.1026
+4,a man makes a face then smells the contents of a beer bottle before taking a drink,0.0,"man lifts shot glass , hesitates , lifts drink to mouth , and drinks while tilting head back .",5.0,2.0,4.0,3.6667,0.3746,0.8379,0.978,0.5765,0.707,0.6466,0.2357,0.0,0.3133,0.0,0.1609,0.0,0.0
+5,a man in a bar drinks a beer and follows it with a chaser .,0.1717,"a man is clearly worried about drinking a shot of alcohol while his friends are egging him on , so he drinks it with them .",4.0,2.0,5.0,3.6667,0.4463,0.836,0.9557,0.9478,0.9311,0.9166,0.336,0.3279,0.3698,0.3159,0.2306,0.1863,0.1717
+6,a man quickly drinks a large glass of beer followed by a shot .,0.1706,"three men , drinking alcohol in a kitchen , each down a glass of liquor on the count of 3 .",4.0,2.0,3.0,3.0,0.5697,0.862,1.0,0.7984,0.8431,0.8092,0.4971,0.295,0.4248,0.3177,0.3242,0.1821,0.1706

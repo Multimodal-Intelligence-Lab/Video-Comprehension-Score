@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a muscular man in a tank top is talking about exercise in a gym .,0.7406,a man in a tank top is exercising at the gym .,5.0,5.0,5.0,5.0,0.7528,0.9528,1.0,1.0,1.0,1.0,0.7406,0.7528,0.7528,0.7528,0.7406,0.7406,0.7406
+2,a man is in a gym doing exercises with a weight machine .,0.6633,a male is at the gym and performing a exercise at the gym .,5.0,5.0,5.0,5.0,0.7794,0.9406,1.0,1.0,1.0,1.0,0.7536,0.6789,0.7488,0.6753,0.7201,0.6401,0.6633
+3,a man is in a gym using a weight machine to exercise .,0.5485,a man in the gym showing how to use a machine for your biceps .,5.0,5.0,5.0,5.0,0.7708,0.9318,1.0,1.0,1.0,1.0,0.754,0.551,0.7061,0.5971,0.6682,0.4969,0.5485
+4,a man performs an exercise on a machine in a gym and gives instructions .,0.5078,a man demonstrates an exercise while using a piece of gym machinery .,5.0,5.0,5.0,5.0,0.8283,0.9159,0.928,0.7274,0.6925,0.631,0.8063,0.5113,0.7976,0.5209,0.7717,0.4985,0.5078
+5,a man gives instructions while using an exercise machine in a gym .,0.6941,"a man stands at an exercise machine at the gym , as he exercises with the machine he describes what he is doing .",5.0,5.0,5.0,5.0,0.8093,0.921,1.0,0.8644,0.8788,0.8485,0.7929,0.7395,0.783,0.7049,0.7644,0.7151,0.6941
+6,"in a workout tutorial , a man shows how he works his arms out .",0.2613,a man in the gym showing how to use a machine for your biceps .,5.0,5.0,5.0,5.0,0.6786,0.8755,0.9091,0.7302,0.6198,0.528,0.6221,0.3216,0.5956,0.3268,0.5189,0.1578,0.2613

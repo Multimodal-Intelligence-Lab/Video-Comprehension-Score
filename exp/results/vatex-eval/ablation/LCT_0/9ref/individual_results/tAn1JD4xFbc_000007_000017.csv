@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is lifting a very heavy weight while other watch and cheer .,0.8461,a woman is lifting a heavy weight and then people clap .,5.0,5.0,5.0,5.0,0.8578,0.9236,1.0,1.0,1.0,1.0,0.8461,0.8578,0.8578,0.8578,0.8461,0.8461,0.8461
+2,a man in a gym is lifting a heavy barbell over his head .,0.3202,a woman is in a gym with people watching and lifts up really heavy weights and sets them back down .,4.0,4.0,4.0,4.0,0.531,0.8545,0.9737,0.7876,0.8074,0.7746,0.4512,0.3853,0.5184,0.4192,0.4363,0.2807,0.3202
+3,a man is in a gym and he is lifting a heavy barbell .,0.4104,a woman is in a gym with people watching and lifts up really heavy weights and sets them back down .,4.0,4.0,4.0,4.0,0.5839,0.8586,0.8882,0.847,0.8228,0.7934,0.5149,0.5087,0.5314,0.4942,0.4538,0.4272,0.4104
+4,a woman does a workout where she lifts weights above her head using her shoulders .,0.4963,a woman is lifting up weights as people are talking in the background .,4.0,3.0,4.0,3.6667,0.6178,0.8642,1.0,0.8933,0.9155,0.8983,0.5535,0.5619,0.6178,0.5688,0.5535,0.4882,0.4963
+5,a woman lifts a heavy barbell while exersizing in her basement .,0.2752,a woman is lifting up weights as people are talking in the background .,4.0,3.0,4.0,3.6667,0.5986,0.8648,0.9655,0.7107,0.769,0.721,0.5194,0.3043,0.5515,0.3999,0.463,0.1827,0.2752
+6,a woman is in a gym and lifts a heavy barbell over her head while her dog watches .,0.4333,a woman is lifting up weights as people are talking in the background .,4.0,4.0,4.0,4.0,0.7233,0.8809,0.9831,0.9766,0.9574,0.9497,0.6859,0.5337,0.661,0.5397,0.6152,0.4287,0.4333

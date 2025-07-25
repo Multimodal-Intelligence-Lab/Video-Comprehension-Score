@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man cuts pieces out of a pumpkin to make a jack o lantern .,0.3269,a person is carving square eyes in a pumpking sitting on newspaper on a table .,5.0,5.0,4.0,4.6667,0.5359,0.7896,0.971,0.8659,0.8732,0.8394,0.4123,0.4641,0.5221,0.4685,0.3947,0.3213,0.3269
+2,a person is using a knife to carve a pumpkin .,0.0,a person is carving square eyes in a pumpking sitting on newspaper on a table .,5.0,5.0,5.0,5.0,0.616,0.8583,0.6826,0.4361,0.2983,0.1825,0.5526,0.0846,0.4375,0.0,0.3446,0.0,0.0
+3,a woman is carving a pumpkin on a table with a pumpkin .,0.5777,a person is carving square eyes in a pumpking sitting on newspaper on a table .,5.0,4.0,4.0,4.3333,0.6762,0.8934,0.8745,0.9387,0.8582,0.8413,0.6375,0.655,0.6297,0.6227,0.5855,0.6139,0.5777
+4,a large group of people is seen carving pumpkins together .,0.0,a person is carving square eyes in a pumpking sitting on newspaper on a table .,4.0,2.0,4.0,3.3333,0.4716,0.8379,0.7767,0.1527,0.0,0.0,0.3694,0.0,0.3196,0.0,0.188,0.0,0.0
+5,a pumpkin is shown as someone carves it out in fast motion .,0.0,a person is carving square eyes in a pumpking sitting on newspaper on a table .,5.0,5.0,5.0,5.0,0.5255,0.827,0.6393,0.5141,0.3549,0.2199,0.4262,0.0755,0.2578,0.0,0.1025,0.0,0.0
+6,a group of asian people carving pumpkins on a table in a large room .,0.0513,a person is carving square eyes in a pumpking sitting on newspaper on a table .,4.0,3.0,3.0,3.3333,0.5372,0.848,0.863,0.4314,0.5753,0.4991,0.4542,0.0,0.4637,0.1955,0.3676,0.0,0.0513

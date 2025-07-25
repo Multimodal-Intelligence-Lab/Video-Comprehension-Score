@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl is eating a piece of watermelon and then takes a bite out of someone else's .,0.603,a teenager girl eats a watermelon and asks another why he doesn't want some .,5.0,5.0,5.0,5.0,0.8056,0.9117,0.9831,0.9766,0.9697,0.9629,0.7867,0.5869,0.7505,0.6665,0.7317,0.5527,0.603
+2,a group of people are eating a watermelon eating contest .,0.2079,a woman eating watermelon outside on a very crowded beachfront .,2.0,2.0,4.0,2.6667,0.6358,0.874,0.8824,0.5678,0.6067,0.5373,0.5745,0.2325,0.5348,0.3267,0.4566,0.1497,0.2079
+3,a group of people are eating watermelon at a table .,0.0793,a woman is enjoying a slice of watermelon on the beach .,2.0,2.0,3.0,2.3333,0.5945,0.861,0.8705,0.6667,0.6549,0.5602,0.5021,0.2295,0.474,0.2753,0.3553,0.0868,0.0793
+4,people are holding pieces of watermelon while other people bite into the watermelon .,0.3349,a woman is enjoying a slice of watermelon on the beach .,5.0,4.0,5.0,4.6667,0.6846,0.8809,0.9023,0.9301,0.86,0.8303,0.6333,0.4925,0.614,0.4511,0.5467,0.3851,0.3349
+5,a woman holding a watermelon for a man who is in the process of an eating competition .,0.4395,"a woman is eating watermelon , and asks somebody else whether or not they want one .",2.0,2.0,3.0,2.3333,0.7541,0.8782,0.9129,0.6897,0.6795,0.6208,0.72,0.5333,0.697,0.5264,0.655,0.4733,0.4395
+6,a group of middle aged men and women are eating watermelon from the floor,0.0039,"outside at a farmer's market , a woman tastes a man's watermelon and shrieks in disgust .",2.0,2.0,3.0,2.3333,0.5308,0.8602,0.9445,0.6969,0.7228,0.6565,0.4408,0.1662,0.3848,0.1961,0.2377,0.0,0.0039

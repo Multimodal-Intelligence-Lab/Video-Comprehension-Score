@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is outside playing basketball and shooting hoop .,0.0,a young boy is outside and is shooting a basketball in a hoop .,5.0,4.0,5.0,4.6667,0.6307,0.9272,0.92,0.6847,0.693,0.6143,0.6018,0.2565,0.578,0.1461,0.5449,0.1227,0.0
+2,a young boy is shooting a basketball into a hoop .,0.9394,a young boy is outside and is shooting a basketball in a hoop .,5.0,4.0,5.0,4.6667,0.9406,0.981,1.0,1.0,1.0,1.0,0.9394,0.9406,0.9406,0.9406,0.9394,0.9394,0.9394
+3,a person is shooting a basketball into a basketball hoop .,0.3969,a young boy is outside and is shooting a basketball in a hoop .,5.0,4.0,5.0,4.6667,0.5811,0.9303,0.928,0.8408,0.7466,0.7276,0.5497,0.5018,0.5388,0.4389,0.5043,0.4645,0.3969
+4,a boy is attempting to throw a basketball into a hoop .,0.582,a young boy is outside and is shooting a basketball in a hoop .,5.0,4.0,5.0,4.6667,0.6912,0.8932,1.0,0.8408,0.827,0.8063,0.6543,0.6328,0.6912,0.6267,0.6543,0.5888,0.582
+5,a young boy runs across a gym floor with a basketball and shoots it into the hoop .,0.4199,a young boy is outside and is shooting a basketball in a hoop .,5.0,4.0,4.0,4.3333,0.6754,0.9068,0.95,0.7828,0.8016,0.7504,0.6307,0.4526,0.6209,0.474,0.582,0.3963,0.4199
+6,a man playing basketball with a boy throws the ball into the hoop .,0.0,a young boy is outside and is shooting a basketball in a hoop .,4.0,4.0,4.0,4.0,0.5784,0.8698,0.8634,0.4111,0.4891,0.4007,0.5053,0.0,0.4955,0.0,0.4082,0.0,0.0

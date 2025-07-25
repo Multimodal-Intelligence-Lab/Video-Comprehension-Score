@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,an adult wearing a white coat is instructing a girl sitting on a chair to breathe into a tube and exhaling .,0.3367,"woman wearing lab coat inserts and holds tube in girl's mouth , and counts before removing tube .",5.0,5.0,5.0,5.0,0.5959,0.8437,0.9722,0.921,0.9231,0.9009,0.5204,0.4192,0.5708,0.4404,0.4913,0.2765,0.3367
+2,a woman is demonstrating how to apply a cream to her face .,0.2673,a woman shows how to use medicine on a little girl .,3.0,1.0,3.0,2.3333,0.399,0.8323,1.0,1.0,1.0,1.0,0.2673,0.399,0.399,0.399,0.2673,0.2673,0.2673
+3,a woman is standing in front of a group of people and she is doing a demonstration .,0.1906,"a woman is standing up and talking , and a little girl holds something in her month for the count of ten .",4.0,3.0,3.0,3.3333,0.3556,0.818,0.9895,1.0,0.9822,0.9781,0.2114,0.3556,0.3382,0.344,0.1835,0.205,0.1906
+4,a woman is demonstrating the proper way to use a handheld inhaler .,0.0369,a woman doctor demonstrates showing a girl to use an inhaler .,5.0,5.0,4.0,4.6667,0.7409,0.8989,0.902,0.7587,0.7802,0.7153,0.7117,0.1966,0.6793,0.1071,0.6433,0.1296,0.0369
+5,a woman and a child are demonstrating how to use a nebulizer device to help with breathing .,0.2807,a healthcare provider explains and shows a girl how to use an inhaler device and counts to ten .,4.0,3.0,4.0,3.6667,0.6291,0.8722,0.9407,0.837,0.8243,0.7748,0.5747,0.4064,0.5327,0.4033,0.4642,0.2844,0.2807
+6,a woman is showing a group of people how to properly use and breath in in a device,0.1428,a woman hold an inhaler for a little girl and counts to ten while she breathes in then tells her to blow it out .,4.0,4.0,4.0,4.0,0.547,0.8564,0.9804,1.0,0.9868,0.9832,0.471,0.3078,0.4951,0.3147,0.4105,0.1342,0.1428

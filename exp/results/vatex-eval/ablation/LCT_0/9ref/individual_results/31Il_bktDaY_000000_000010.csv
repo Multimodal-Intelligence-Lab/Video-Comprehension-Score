@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a fencing point happens where the crowd reacts and the match restarts .,0.0,"two people participate in a fencing competition , one man is struck by the rapier .",5.0,5.0,5.0,5.0,0.4431,0.8266,0.9859,0.7268,0.7551,0.6746,0.3152,0.0581,0.3481,0.1429,0.1898,0.0,0.0
+2,a group of people are competing in a fencing competition .,0.5083,a group of people at an event for fencing where two people practice and spar,4.0,5.0,5.0,4.6667,0.7886,0.9503,1.0,1.0,1.0,1.0,0.7776,0.5586,0.721,0.5586,0.7148,0.5375,0.5083
+3,a group of people in a gym are watching a fencing match .,0.3322,two people are in a gym jousting while other watch them,4.0,4.0,4.0,4.0,0.6852,0.8888,0.92,0.8023,0.783,0.726,0.6309,0.5242,0.6362,0.3854,0.5906,0.4646,0.3322
+4,two people compete against one another in a fencing competition .,0.4417,"two people participate in a fencing competition , one man is struck by the rapier .",5.0,5.0,5.0,5.0,0.9529,0.9605,0.9714,0.7131,0.7541,0.6981,0.951,0.5359,0.8501,0.4889,0.8498,0.535,0.4417
+5,two young people are engaged in a contest of fencing .,0.4914,two people are in a fencing competition both are fencing each other .,5.0,5.0,5.0,5.0,0.774,0.9406,0.9333,0.8401,0.8145,0.7731,0.7597,0.626,0.7578,0.5008,0.7425,0.6189,0.4914
+6,a fencing competition about to begin as two people stand facing each other .,0.1838,a group of people at an event for fencing where two people practice and spar,5.0,5.0,4.0,4.6667,0.7393,0.9397,1.0,0.8933,0.9155,0.8875,0.7226,0.3584,0.5476,0.2728,0.4794,0.3435,0.1838

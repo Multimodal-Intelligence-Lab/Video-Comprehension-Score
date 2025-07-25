@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man sleeps in an office chair , someone slaps a notebook loudly on the table in front of him , and he jumps up after them .",0.558,a man is asleep at his desk and someone slams something to wake him up .,5.0,5.0,5.0,5.0,0.8081,0.8866,0.9305,0.7655,0.7942,0.761,0.7835,0.6052,0.7802,0.6195,0.7521,0.5414,0.558
+2,a man is sitting on a couch and a woman is laughing .,0.0,a huge-bodied man in a yellow striped shirt is interrupted from his sleep by a flap on the table .,4.0,4.0,2.0,3.3333,0.2583,0.8395,0.9756,0.9796,0.9501,0.9373,0.072,0.1981,0.1768,0.1732,0.0,0.0,0.0
+3,a little boy is sitting on a bed and is laughing .,0.0,a huge-bodied man in a yellow striped shirt is interrupted from his sleep by a flap on the table .,4.0,2.0,1.0,2.3333,0.2183,0.7889,0.9688,0.886,0.8855,0.8495,0.0,0.0404,0.162,0.0399,0.0,0.0,0.0
+4,"two guys are sitting on a couch together and one turns his torso towards the other and headbutts him hard enough to make him say "" holy shit "" .",0.0,a huge-bodied man in a yellow striped shirt is interrupted from his sleep by a flap on the table .,3.0,3.0,1.0,2.3333,0.2944,0.786,0.9931,0.9649,0.9557,0.9426,0.1023,0.1707,0.2428,0.1729,0.0366,0.0,0.0
+5,"a man exclaims and looks at someone offscreen who slaps him , then they both laugh .",0.0,a huge-bodied man in a yellow striped shirt is interrupted from his sleep by a flap on the table .,4.0,3.0,4.0,3.6667,0.4374,0.8573,0.9873,0.8955,0.9148,0.89,0.3299,0.1506,0.3469,0.1686,0.2167,0.0,0.0
+6,a man is seen slapping a boy that's sleeping .,0.0228,a huge-bodied man in a yellow striped shirt is interrupted from his sleep by a flap on the table .,5.0,3.0,4.0,4.0,0.4895,0.8513,0.9357,0.8635,0.8393,0.7979,0.3982,0.2447,0.366,0.2228,0.2473,0.0502,0.0228

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man with a bat is preparing to hit a tee ball inside a practice ring,0.0,a man is instructing how to hit a baseball off a batting tee .,5.0,5.0,5.0,5.0,0.6608,0.8788,0.7791,0.3628,0.2931,0.1956,0.614,0.0357,0.5646,0.0,0.5046,0.0,0.0
+2,a man in a batting cage hits a baseball with a bat .,0.1688,a man is instructing how to hit a baseball off a batting tee .,4.0,4.0,5.0,4.3333,0.5947,0.9139,0.75,0.4188,0.5374,0.4939,0.5565,0.0226,0.4596,0.2222,0.4087,0.0,0.1688
+3,a man is in a batting cage hitting a ball with a bat .,0.0,a man is instructing how to hit a baseball off a batting tee .,4.0,4.0,5.0,4.3333,0.5543,0.8731,0.7703,0.3094,0.4415,0.3602,0.4895,0.0,0.4213,0.0,0.3372,0.0,0.0
+4,a man is swinging a baseball bat as another man explains how to swing .,0.0867,a man is instructing how to hit a baseball off a batting tee .,4.0,4.0,4.0,4.0,0.6571,0.8503,0.7944,0.5311,0.4549,0.359,0.5968,0.2865,0.5684,0.1706,0.4925,0.2143,0.0867
+5,a man is showing some people how to properly throw a baseball .,0.2262,a man is instructing how to hit a baseball off a batting tee .,4.0,4.0,4.0,4.0,0.6002,0.8517,0.7477,0.5105,0.6067,0.5382,0.5305,0.1843,0.4652,0.341,0.3721,0.0772,0.2262
+6,a man showing to properly showing how to take a good baseball swing,0.5597,a man is instructing how to hit a baseball off a batting tee .,5.0,5.0,5.0,5.0,0.6996,0.8377,0.9321,0.827,0.8146,0.7787,0.6413,0.6367,0.6777,0.6312,0.6152,0.5663,0.5597

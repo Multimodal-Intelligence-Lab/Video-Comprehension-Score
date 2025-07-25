@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is throwing an ex at a target indoors .,0.6088,a man is throwing a large ax at a target across the room .,5.0,5.0,5.0,5.0,0.647,0.9024,1.0,1.0,1.0,1.0,0.6088,0.647,0.647,0.647,0.6088,0.6088,0.6088
+2,a group of people are throwing axes at a target .,0.4723,"a group of men watch a young man throw an ax to a target , then congratulate him",4.0,4.0,4.0,4.0,0.7003,0.8942,1.0,1.0,1.0,1.0,0.6648,0.5502,0.6198,0.5286,0.5743,0.4814,0.4723
+3,a group of people are throwing axes at a target .,0.4723,"a group of men watch a young man throw an ax to a target , then congratulate him",4.0,4.0,4.0,4.0,0.7003,0.8942,1.0,1.0,1.0,1.0,0.6648,0.5502,0.6198,0.5286,0.5743,0.4814,0.4723
+4,"a man throws an ax into a board , then another man throws an ax at the board but it bounces off .",0.4694,a man throws an ax at a target and nearly hits the center .,2.0,3.0,3.0,2.6667,0.6251,0.8945,0.9333,0.8484,0.8131,0.7841,0.5759,0.5458,0.5715,0.531,0.5153,0.4862,0.4694
+5,the men are aiming and throwing axes on the wall across them .,0.2107,a man demonstrates how to throw an axe at a target in front of people .,5.0,4.0,4.0,4.3333,0.6763,0.8769,0.9404,0.7773,0.7408,0.6748,0.6309,0.4071,0.6558,0.369,0.6075,0.2824,0.2107
+6,"two men are behind a cage , and are having an ax throwing competition .",0.207,a man is in a room where they are showing axes for a target .,4.0,3.0,4.0,3.6667,0.541,0.8501,1.0,0.8644,0.8788,0.8505,0.4601,0.3464,0.485,0.3571,0.3906,0.1938,0.207

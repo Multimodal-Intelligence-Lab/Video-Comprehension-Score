@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,pairs take turns making a bed as quick as they can .,0.6581,a few people are in a room competing on who makes the bed faster .,5.0,5.0,5.0,5.0,0.7594,0.8467,1.0,1.0,1.0,1.0,0.7126,0.6708,0.7485,0.7138,0.6995,0.6168,0.6581
+2,a group of people are in a room and one of them is folding a bed .,0.5348,"a group of people are in a room , two sets of people are putting sheets on a bed as others watch .",5.0,3.0,4.0,4.0,0.689,0.8873,0.9851,0.8153,0.8161,0.7716,0.6495,0.579,0.6514,0.5872,0.607,0.5255,0.5348
+3,a group of people are having a pillow fight in a hotel room .,0.0428,a group of ladies are sorting the bed out bu putting some new bedding sheet on,4.0,4.0,4.0,4.0,0.4139,0.8571,1.0,0.9679,0.9408,0.9259,0.3066,0.2596,0.3382,0.237,0.1916,0.0336,0.0428
+4,a woman is showing how to properly make a bed .,0.4703,the ladies are doing a demonstration on how to make beds properly .,5.0,4.0,5.0,4.6667,0.7735,0.925,1.0,1.0,0.9839,0.9779,0.7552,0.435,0.6768,0.4829,0.6689,0.3379,0.4703
+5,a woman shows how to make a bed with sheets .,0.6512,the ladies are doing a demonstration on how to make beds properly .,5.0,4.0,5.0,4.6667,0.7087,0.8655,0.9677,0.962,0.9649,0.9594,0.6635,0.6972,0.699,0.6981,0.6523,0.6502,0.6512
+6,a women in her room attemping to clean up and fold her bed,0.2464,a few people are in a room competing on who makes the bed faster .,4.0,4.0,4.0,4.0,0.4875,0.8304,0.9667,0.8879,0.8884,0.849,0.3801,0.3304,0.4507,0.3742,0.3385,0.1746,0.2464

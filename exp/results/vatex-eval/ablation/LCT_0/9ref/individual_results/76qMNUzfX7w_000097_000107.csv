@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is seen outdoors dancing with a hula hoop,0.6272,a woman stands and twists her hips with a hoola hoop .,5.0,5.0,5.0,5.0,0.807,0.8916,1.0,1.0,1.0,1.0,0.7795,0.6864,0.6864,0.6864,0.6359,0.6272,0.6272
+2,a woman is hula hooping in the middle of a room .,0.5028,a woman dances with a hula hoop while music plays .,4.0,4.0,3.0,3.6667,0.6427,0.8712,1.0,0.8694,0.8392,0.8154,0.5888,0.575,0.6427,0.568,0.5888,0.5109,0.5028
+3,a woman is hula hooping in a hula hoop .,0.5962,a woman twirls a green hula hoop around her arm and waist .,5.0,5.0,5.0,5.0,0.8417,0.908,0.9084,0.8513,0.7942,0.7678,0.8234,0.6765,0.8258,0.6437,0.8055,0.6519,0.5962
+4,women dancing in the dark with neon-lit hula hoops to music .,0.4384,a woman dances with a hula hoop while music plays .,4.0,3.0,2.0,3.0,0.6743,0.8991,0.96,0.8933,0.8545,0.8231,0.6378,0.5426,0.6298,0.4736,0.5883,0.4912,0.4384
+5,a group of girls dance with hula hoops which have some lighting system turned on,0.265,a woman dances with a hula hoop while music plays .,4.0,2.0,2.0,2.6667,0.5376,0.8323,0.9859,0.8659,0.8732,0.839,0.4445,0.3835,0.512,0.3883,0.4136,0.2593,0.265
+6,a group of ladies dressed in neon hula hoops are dancing around in a studio,0.1363,a woman twirls a green hula hoop around her arm and waist .,4.0,3.0,2.0,3.0,0.5256,0.8328,0.9547,0.7464,0.7566,0.7037,0.4304,0.2502,0.4624,0.2816,0.3544,0.0985,0.1363

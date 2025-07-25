@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man dead lifts weights in a crowded gym,0.4527,a man is lifting a weight and fixing its weights .,5.0,4.0,5.0,4.6667,0.6378,0.901,0.9677,1.0,0.9672,0.9628,0.5682,0.5328,0.5895,0.517,0.503,0.4706,0.4527
+2,a man in a gym is lifting a heavy barbell over his head .,0.4684,two men in a gym are lifting barbels as a woman watches .,5.0,5.0,5.0,5.0,0.7279,0.9141,1.0,0.8723,0.8863,0.8652,0.698,0.5444,0.7042,0.5516,0.6717,0.4892,0.4684
+3,a man in a gym is lifting a heavy weight over his head .,0.5202,in a gym a man is preparing to lift a heavy weight .,5.0,5.0,5.0,5.0,0.7569,0.9495,1.0,1.0,1.0,1.0,0.7439,0.5416,0.6929,0.5416,0.6766,0.4573,0.5202
+4,"a man is in a gym , he lifts a heavy barbell from it's stand and lifts it above his head , he then returns it to the stand .",0.4964,in a gym a man is preparing to lift a heavy weight .,5.0,5.0,5.0,5.0,0.6901,0.889,0.9459,0.7388,0.7599,0.7023,0.6514,0.5787,0.6154,0.5523,0.5674,0.5262,0.4964
+5,"in a gym , a man is lifting a heavy barbell over his head .",0.5852,in a gym a man is preparing to lift a heavy weight .,5.0,5.0,5.0,5.0,0.7343,0.9141,0.9677,0.8115,0.8382,0.8229,0.7051,0.6057,0.6912,0.6208,0.6572,0.5686,0.5852
+6,a man is lifting a heavy set of weights inside of a gym .,0.2452,a man is lifting a weight and fixing its weights .,5.0,5.0,5.0,5.0,0.7907,0.9275,0.9804,0.7071,0.7027,0.6402,0.7744,0.3585,0.6408,0.3132,0.6007,0.3189,0.2452

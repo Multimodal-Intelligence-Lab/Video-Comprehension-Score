@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is walking looking like he is giving a tour that pans to two kids walking down a path .,0.2721,a man is showing a man and two children some plants and then the kids walk down the road .,4.0,4.0,5.0,4.3333,0.5881,0.8895,1.0,1.0,1.0,1.0,0.5369,0.3208,0.5303,0.3525,0.472,0.2364,0.2721
+2,a group of people are walking around in a wooded area .,0.8551,a group of people are walking through the woods and paths .,5.0,5.0,5.0,5.0,0.8666,0.9204,1.0,1.0,1.0,1.0,0.8551,0.8666,0.8666,0.8666,0.8551,0.8551,0.8551
+3,a man and a little girl are walking around a yard .,0.0,"a group of kids consults a man in nature , then follows a path , looking at a gps , probably .",3.0,3.0,3.0,3.0,0.3641,0.8553,1.0,0.91,0.9214,0.8947,0.2403,0.0552,0.3025,0.0394,0.1668,0.0,0.0
+4,an adult and a kid carry a tree while the kid talks .,0.0,"a group of kids consults a man in nature , then follows a path , looking at a gps , probably .",2.0,2.0,2.0,2.0,0.3808,0.8217,1.0,1.0,1.0,1.0,0.2439,0.1824,0.2413,0.1824,0.0735,0.0,0.0
+5,a man and two woman walking through a path near trees looking at the surroundings .,0.4349,a group of people are walking through the woods and paths .,4.0,3.0,5.0,4.0,0.6078,0.8789,0.9706,0.8316,0.8217,0.7856,0.5377,0.5283,0.57,0.5206,0.4932,0.4441,0.4349
+6,a woman and a child are walking down the sidewalk .,0.0327,a group of people are walking through the woods and paths .,4.0,5.0,4.0,4.3333,0.3191,0.8618,1.0,1.0,1.0,1.0,0.2099,0.2362,0.3035,0.2128,0.1659,0.0944,0.0327

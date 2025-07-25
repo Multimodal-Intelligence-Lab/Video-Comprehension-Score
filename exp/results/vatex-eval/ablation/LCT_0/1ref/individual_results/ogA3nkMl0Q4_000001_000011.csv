@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of men are playing baseball in a parking lot .,0.0,a man waits for the ball then hits it in a game of cricket .,3.0,1.0,4.0,2.6667,0.1781,0.7747,0.8077,0.4517,0.5794,0.457,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,a group of people are playing a game of cricket .,0.3221,a man waits for the ball then hits it in a game of cricket .,5.0,5.0,5.0,5.0,0.5399,0.8487,0.9677,0.8408,0.7996,0.7639,0.4579,0.4528,0.5246,0.4247,0.4398,0.3553,0.3221
+3,a group of people are playing a game of cricket .,0.3221,a man waits for the ball then hits it in a game of cricket .,5.0,5.0,5.0,5.0,0.5399,0.8487,0.9677,0.8408,0.7996,0.7639,0.4579,0.4528,0.5246,0.4247,0.4398,0.3553,0.3221
+4,a group of men play a game of cricket outdoors .,0.1521,a man waits for the ball then hits it in a game of cricket .,5.0,5.0,5.0,5.0,0.5469,0.8632,0.8333,0.4924,0.619,0.5586,0.4751,0.072,0.4563,0.2681,0.3701,0.0,0.1521
+5,men are playing cricket on a television in a field .,0.0,a man waits for the ball then hits it in a game of cricket .,4.0,4.0,4.0,4.0,0.4673,0.8218,0.8819,0.5954,0.4218,0.2964,0.3518,0.1054,0.396,0.0,0.2649,0.0,0.0
+6,group of men standing around while one of them runs up hops and throws a cricket ball,0.1298,a man waits for the ball then hits it in a game of cricket .,5.0,5.0,4.0,4.6667,0.5024,0.835,0.8829,0.6726,0.6848,0.6225,0.4041,0.2603,0.4365,0.2734,0.3251,0.1141,0.1298

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl is holding a napkin and blows her nose clean .,0.31,a little girl in a highchair tries to blow her nose .,5.0,4.0,5.0,4.6667,0.6043,0.8518,0.8312,0.5657,0.6732,0.6164,0.5355,0.2813,0.524,0.4123,0.4412,0.1788,0.31
+2,a little girl is sitting on the floor and playing with a tissue .,0.0754,a little girl in a highchair tries to blow her nose .,4.0,4.0,4.0,4.0,0.3678,0.8178,0.9583,0.7414,0.836,0.7995,0.227,0.1474,0.3404,0.2439,0.1934,0.0,0.0754
+3,a little girl is trying to blow her nose with a tissue .,0.5842,a little girl in a highchair tries to blow her nose .,5.0,5.0,5.0,5.0,0.7079,0.9411,0.8537,0.6633,0.7465,0.7306,0.6896,0.5243,0.6579,0.6087,0.6364,0.5117,0.5842
+4,a young child in a white poke-a-dot shirt blows her nose into the white tissue .,0.1161,a little girl in a highchair tries to blow her nose .,4.0,4.0,4.0,4.0,0.5617,0.8281,0.8674,0.6059,0.5988,0.5155,0.4707,0.2767,0.4947,0.2681,0.3898,0.1265,0.1161
+5,a toddler wipes and blows their nose with a tissue .,0.003,a little girl in a highchair tries to blow her nose .,5.0,4.0,5.0,4.6667,0.5798,0.8312,0.8228,0.6951,0.5071,0.407,0.4944,0.3954,0.4893,0.1498,0.3855,0.2726,0.003
+6,a baby has tissue over her nose and a person tells her to blow her nose .,0.0,a little girl in a highchair tries to blow her nose .,5.0,5.0,5.0,5.0,0.5643,0.873,0.8603,0.4483,0.3157,0.2162,0.501,0.0223,0.4936,0.0,0.42,0.0,0.0

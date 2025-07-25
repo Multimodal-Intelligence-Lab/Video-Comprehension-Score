@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,one person is spinning two lights on poles while outside in the dark .,0.1458,a girl twirls fire sticks and dances to music at night .,5.0,4.0,5.0,4.6667,0.4982,0.778,0.9859,0.7268,0.7551,0.6852,0.355,0.3095,0.491,0.3354,0.3458,0.1125,0.1458
+2,a person is twirling around in a dark room with lights .,0.2133,a girl twirls fire sticks and dances to music at night .,2.0,3.0,3.0,2.6667,0.449,0.7969,0.9787,0.8812,0.879,0.8481,0.3085,0.3746,0.437,0.3731,0.2935,0.2152,0.2133
+3,a person is twirling a fire in the dark while music is playing in the background .,0.6092,a girl twirls fire sticks and dances to music at night .,5.0,4.0,5.0,4.6667,0.7187,0.8701,0.9081,0.7593,0.8271,0.8013,0.6768,0.6296,0.6903,0.6599,0.644,0.5743,0.6092
+4,someone is dancing while twirling sticks with what looks like fire on them .,0.0402,a girl twirls fire sticks and dances to music at night .,4.0,1.0,4.0,3.0,0.7238,0.8737,0.7576,0.2222,0.3436,0.2487,0.6838,0.0,0.6354,0.0931,0.5827,0.0,0.0402
+5,a woman begins to spin a fire torch at night time .,0.318,a girl twirls fire sticks and dances to music at night .,4.0,4.0,5.0,4.3333,0.6423,0.8339,0.8634,0.4946,0.6289,0.555,0.571,0.2132,0.5857,0.4223,0.5032,0.115,0.318
+6,a person is juggling a stick that is burning at both ends at night .,0.1528,a girl twirls fire sticks and dances to music at night .,4.0,5.0,3.0,4.0,0.6143,0.8367,0.9599,0.5843,0.5441,0.4551,0.539,0.3234,0.5982,0.2579,0.5198,0.2111,0.1528

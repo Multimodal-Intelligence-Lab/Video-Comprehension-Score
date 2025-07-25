@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is doing a pull up on a bar high up in the air .,0.5779,a women doing pull-ups in a gym with a male trainer beside her,5.0,5.0,3.0,4.3333,0.7738,0.8401,1.0,1.0,1.0,1.0,0.7308,0.6649,0.7216,0.6649,0.6686,0.5779,0.5779
+2,a man is doing pull ups on a bar in a gym .,0.0567,the man was instructing a girl to do pull ups .,5.0,4.0,4.0,4.3333,0.5846,0.9006,0.9115,0.6536,0.6903,0.6088,0.5387,0.2966,0.4219,0.1683,0.358,0.1402,0.0567
+3,a man is doing pull ups on a bar in a gym .,0.0567,the man was instructing a girl to do pull ups .,4.0,4.0,4.0,4.0,0.5846,0.9006,0.9115,0.6536,0.6903,0.6088,0.5387,0.2966,0.4219,0.1683,0.358,0.1402,0.0567
+4,a young woman tries to do some pullup exercises on a metal bar .,0.1564,a woman demonstrates how to do a certain type of pull up .,5.0,5.0,5.0,5.0,0.6645,0.8161,0.928,0.6985,0.6617,0.5629,0.5818,0.3653,0.6292,0.2823,0.5378,0.275,0.1564
+5,a man is in a gym and uses a pull up bar to do a few repetitions of pull ups .,0.3121,a man in a gym coaching a woman who is doing chin ups,4.0,4.0,4.0,4.0,0.5707,0.881,0.9583,0.8347,0.8187,0.788,0.5127,0.423,0.4813,0.4117,0.3935,0.3253,0.3121
+6,a woman attempts to do pull ups unsuccessfully several times .,0.3247,a woman in a gym is doing pull ups while a man on the floor speaks a foreign language to her .,4.0,4.0,4.0,4.0,0.6905,0.8418,0.9873,0.9045,0.9217,0.8966,0.6224,0.4595,0.6389,0.4696,0.5594,0.3039,0.3247

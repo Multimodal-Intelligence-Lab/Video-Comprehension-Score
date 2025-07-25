@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man swallows a sword in front of a mermaid statue .,0.578,a man performs a sword swallowing stunt just next to the little mermaid statue in copenhagen while a boat passes by in the background .,5.0,4.0,5.0,4.6667,0.9201,0.9627,0.9404,0.7618,0.7194,0.6628,0.917,0.6756,0.915,0.5965,0.9117,0.6324,0.578
+2,a group of people are in a lake and one man is holding a fish .,0.0,outside a young boy attempts to do a trick by swallowing a fake sword .,3.0,4.0,4.0,3.6667,0.3028,0.8124,0.9688,0.6315,0.6469,0.5346,0.1418,0.0,0.1995,0.0,0.0147,0.0,0.0
+3,a man is sitting on the edge of a boat and trying to get a fish out of the water .,0.0,outside a young boy attempts to do a trick by swallowing a fake sword .,3.0,2.0,4.0,3.0,0.2156,0.8002,1.0,1.0,1.0,1.0,0.0031,0.1627,0.2013,0.1639,0.0,0.0,0.0
+4,a man is doing a performance that involved swallowing a sword .,0.5476,a a man is performing the art of swallowing a sword while people are talking in the background .,5.0,5.0,5.0,5.0,0.8131,0.8956,1.0,0.8819,0.8923,0.871,0.7913,0.6298,0.7764,0.6003,0.7503,0.6196,0.5476
+5,"outside there is a man that is preforming tricks , one in particular is that he stuck a sword in his mouth",0.3424,a man stands by the ocean as he swallows a sword .,5.0,5.0,5.0,5.0,0.5895,0.8515,0.9851,0.8954,0.9004,0.8795,0.5167,0.4533,0.5689,0.4563,0.4937,0.3387,0.3424
+6,a man pours a liquid on the floor in a circle around himself then swallows a small sword .,0.5244,a man stands by the ocean as he swallows a sword .,3.0,3.0,5.0,3.6667,0.5926,0.8566,1.0,1.0,1.0,1.0,0.5244,0.5926,0.5926,0.5926,0.5244,0.5244,0.5244

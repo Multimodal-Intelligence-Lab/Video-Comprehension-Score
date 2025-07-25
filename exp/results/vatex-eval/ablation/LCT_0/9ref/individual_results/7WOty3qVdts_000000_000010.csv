@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man on one knee performing tricks with a dog .,0.8055,a man on one knee is playing with his dog .,5.0,5.0,5.0,5.0,0.8183,0.9343,1.0,1.0,1.0,1.0,0.8055,0.8183,0.8183,0.8183,0.8055,0.8055,0.8055
+2,a man is trying to push a little boy in a wheelbarrow .,0.0,a man is playing with a german shepherd dog outside .,2.0,2.0,2.0,2.0,0.0856,0.816,1.0,0.9766,0.9697,0.9629,0.0,0.0477,0.0539,0.041,0.0,0.0,0.0
+3,a man is trying to kick a boy in the head with his head .,0.0,a man is playing with a german shepherd dog outside .,2.0,2.0,2.0,2.0,0.2,0.8223,1.0,1.0,1.0,1.0,0.0095,0.1435,0.1827,0.1435,0.0,0.0,0.0
+4,man teaches a young husky some basic dog tricks .,0.2041,a man is training his dog to do a trick and gives him food when he does it .,4.0,5.0,4.0,4.3333,0.5719,0.8718,0.9804,0.8644,0.8611,0.8331,0.503,0.4011,0.5455,0.3104,0.4573,0.3087,0.2041
+5,a man with his feet on an exercise ball bends his knees and draws the ball closer and returns to his original position .,0.0024,"a man is on one knee , and playing with , and or training a dog .",3.0,3.0,2.0,2.6667,0.2722,0.8143,0.9895,1.0,0.9868,0.9825,0.0933,0.1897,0.2402,0.1992,0.0535,0.0,0.0024
+6,a man feeds a pit bull a bite of food and then asks him to lay down .,0.1799,the man is trying to train his dog to do specific actions and giving him treats for doing it .,4.0,4.0,4.0,4.0,0.5637,0.8362,0.9667,0.9111,0.8884,0.8573,0.4783,0.316,0.5126,0.3574,0.4171,0.1249,0.1799

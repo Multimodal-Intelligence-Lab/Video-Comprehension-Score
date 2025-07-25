@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,outside of building that has wood siding a man is working .,0.0,a man using a machine to blast the side of a log wall with crushed glass .,5.0,5.0,5.0,5.0,0.2832,0.8087,0.838,0.6768,0.6483,0.5651,0.1136,0.0,0.1445,0.0,0.0,0.0,0.0
+2,a man is using a power tool to clean a wall .,0.1083,a man using a machine to blast the side of a log wall with crushed glass .,5.0,5.0,5.0,5.0,0.4458,0.867,0.9557,0.6847,0.7169,0.6735,0.3607,0.1905,0.4201,0.2269,0.331,0.0663,0.1083
+3,a man is using a power washer to clean a wall .,0.0388,a man using a machine to blast the side of a log wall with crushed glass .,5.0,5.0,5.0,5.0,0.3903,0.8572,0.9412,0.7175,0.74,0.6966,0.2887,0.1503,0.3522,0.1761,0.2443,0.0087,0.0388
+4,a person is using a steam cleaner to clean a hard wood floor .,0.0,a man using a machine to blast the side of a log wall with crushed glass .,5.0,4.0,3.0,4.0,0.1996,0.7967,1.0,0.9084,0.9328,0.9157,0.0,0.119,0.1996,0.142,0.0,0.0,0.0
+5,"a man chisels a piece of wood , then uses a brush to remove wood chips .",0.0,a man using a machine to blast the side of a log wall with crushed glass .,2.0,3.0,1.0,2.0,0.291,0.7847,0.9461,0.6295,0.756,0.689,0.0964,0.0,0.2506,0.0622,0.045,0.0,0.0
+6,a person in a room using a machine to clean and make the wood look nice,0.0,a man using a machine to blast the side of a log wall with crushed glass .,4.0,4.0,4.0,4.0,0.3329,0.8295,0.9464,0.6499,0.7706,0.7234,0.1958,0.0,0.2951,0.1343,0.1503,0.0,0.0

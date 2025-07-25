@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is tightening bolts on a wooden plank with a wrench .,0.5896,a man tightens nuts on a board using a ratcheting wrench .,5.0,5.0,5.0,5.0,0.6856,0.8715,0.9787,0.8812,0.879,0.8611,0.6392,0.6432,0.6788,0.6423,0.6314,0.5906,0.5896
+2,a person is using a vacuum to clean a carpet .,0.0,a man tightens nuts on a board using a ratcheting wrench .,2.0,2.0,2.0,2.0,0.0807,0.7999,0.8571,0.4651,0.3383,0.1728,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a person is demonstrating how to install a carpet .,0.0,a man tightens nuts on a board using a ratcheting wrench .,4.0,4.0,4.0,4.0,0.1601,0.7443,0.724,0.4328,0.2362,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,a man is trying to tighten a very large bolt with a very large tool .,0.0,a man tightens nuts on a board using a ratcheting wrench .,4.0,4.0,4.0,4.0,0.4936,0.8229,0.8777,0.2578,0.3986,0.2691,0.3846,0.0,0.423,0.0,0.2988,0.0,0.0
+5,a person is picking the lock on a wooden door .,0.0,a man tightens nuts on a board using a ratcheting wrench .,3.0,4.0,4.0,3.6667,0.1337,0.7645,0.928,0.6388,0.5945,0.4696,0.0,0.0,0.0665,0.0,0.0,0.0,0.0
+6,a person is using a saw and and wrench to work on pieces of wood .,0.0,a man tightens nuts on a board using a ratcheting wrench .,4.0,4.0,4.0,4.0,0.4487,0.8394,0.7092,0.1179,0.2021,0.0494,0.3432,0.0,0.2227,0.0,0.0739,0.0,0.0

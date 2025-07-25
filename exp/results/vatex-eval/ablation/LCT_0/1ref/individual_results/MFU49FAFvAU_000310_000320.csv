@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man laying on his stomach gets a nice back massage from a woman .,0.5801,a man laying down while a woman gives his back a massage,5.0,5.0,5.0,5.0,0.8357,0.9444,0.8497,0.7019,0.6532,0.6327,0.8261,0.6433,0.8067,0.585,0.7953,0.6392,0.5801
+2,a woman is massaging the back of a woman who is laying on a table .,0.0,a man laying down while a woman gives his back a massage,4.0,4.0,4.0,4.0,0.691,0.9272,0.52,0.0,0.0,0.0,0.6668,0.0,0.3054,0.0,0.2801,0.0,0.0
+3,a woman is massaging a man ' s back while he lays on a table .,0.0,a man laying down while a woman gives his back a massage,5.0,5.0,4.0,4.6667,0.7961,0.9257,0.5,0.0,0.0,0.0,0.7797,0.0,0.3719,0.0,0.3588,0.0,0.0
+4,a woman is lying on a massage bed while getting massaged .,0.2143,a man laying down while a woman gives his back a massage,4.0,4.0,5.0,4.3333,0.6265,0.87,0.8077,0.4188,0.5516,0.4845,0.5707,0.0723,0.5376,0.2843,0.4685,0.0,0.2143
+5,a man giving a woman who is sitting in a chair a back massage .,0.0,a man laying down while a woman gives his back a massage,2.0,2.0,2.0,2.0,0.6311,0.9313,0.9004,0.4072,0.2679,0.2139,0.6039,0.0606,0.5903,0.0,0.56,0.0183,0.0
+6,a man is performing a massage on a person lying down .,0.0,a man laying down while a woman gives his back a massage,4.0,4.0,4.0,4.0,0.7166,0.8812,0.6452,0.2843,0.0,0.0,0.6783,0.0012,0.5048,0.0,0.4769,0.0,0.0

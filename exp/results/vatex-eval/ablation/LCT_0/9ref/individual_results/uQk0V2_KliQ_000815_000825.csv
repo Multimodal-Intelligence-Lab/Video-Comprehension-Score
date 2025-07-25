@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a small ensemble plays music while being led by a conductor .,0.5324,a small orchestra on a stage is awaiting direction from a conductor .,5.0,5.0,5.0,5.0,0.6487,0.864,0.9787,0.9129,0.9107,0.8933,0.5921,0.5816,0.6359,0.6088,0.5649,0.4999,0.5324
+2,a group of people are playing instruments on a stage .,0.7713,"a group of people are playing instruments , led by a conductor , on stage .",5.0,5.0,5.0,5.0,0.9377,0.9606,0.9524,1.0,0.9617,0.9573,0.9351,0.7863,0.8077,0.7812,0.7989,0.7766,0.7713
+3,a group of musicians are playing a song on a stage .,0.8392,a group of musicians are playing on a stage with instruments .,5.0,5.0,5.0,5.0,0.9192,0.9513,1.0,1.0,1.0,1.0,0.9151,0.7632,0.9138,0.84,0.9094,0.7621,0.8392
+4,a man is on stage playing a musical instrument while a song plays,0.0,"a group of people are playing instruments , led by a conductor , on stage .",4.0,5.0,1.0,3.3333,0.5458,0.9053,0.9199,0.6916,0.6765,0.6228,0.4983,0.0,0.384,0.0,0.3196,0.0,0.0
+5,a group of people play some music for a person conducting them,0.499,"a group of people are playing instruments , led by a conductor , on stage .",5.0,5.0,5.0,5.0,0.7283,0.9093,0.9162,0.9416,0.8725,0.8562,0.7012,0.5744,0.6559,0.5469,0.6196,0.5277,0.499
+6,a group of individuals are playing instruments and singing on stage .,0.5987,"a group of people are playing instruments , led by a conductor , on stage .",4.0,4.0,4.0,4.0,0.8378,0.9415,0.9787,0.7974,0.7807,0.7606,0.8277,0.6323,0.8089,0.6324,0.7971,0.5986,0.5987

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a person is holding a can of black shoe polish , swirls a cotton ball on it and then begins to apply the polish to a shoe .",0.792,"a man holds a container of shoe polish , dips in a cotton ball , and then rubs it on a shoe .",5.0,5.0,5.0,5.0,0.8379,0.9235,0.9593,0.8546,0.8706,0.8554,0.8189,0.8103,0.8281,0.8138,0.8079,0.7881,0.792
+2,a man is demonstrating how to properly clean a shoe .,0.3397,"a man holds a container of shoe polish , dips in a cotton ball , and then rubs it on a shoe .",4.0,4.0,5.0,4.3333,0.6852,0.8998,0.941,0.847,0.8508,0.8186,0.6502,0.4947,0.6234,0.4566,0.5815,0.3732,0.3397
+3,a man is demonstrating how to tie a pair of glasses .,0.0,a person holds up a shoe shine mixture then dips into it and rubs on the shoe .,3.0,3.0,3.0,3.0,0.3684,0.851,0.9851,1.0,0.9865,0.9823,0.2519,0.1257,0.2803,0.1138,0.1475,0.0,0.0
+4,a man is polishing his black boots with shoe polish .,0.6755,a man is shining a pair of shoes with shoe polish .,5.0,4.0,5.0,4.6667,0.7562,0.9143,0.9164,0.8889,0.8219,0.8052,0.7333,0.6694,0.7318,0.7033,0.7066,0.6444,0.6755
+5,a man holds a high heel shoe then uses a brush on the shoe,0.4468,a man is shining a pair of shoes with shoe polish .,4.0,4.0,4.0,4.0,0.5474,0.8692,0.9667,0.9766,0.9574,0.9502,0.4703,0.5366,0.5318,0.5273,0.4521,0.4577,0.4468
+6,man is shoe shining another mans shoe with some black ink,0.1803,a man is shining a pair of shoes with shoe polish .,4.0,5.0,4.0,4.3333,0.5705,0.9076,0.9478,0.5936,0.6628,0.6036,0.5268,0.2764,0.5276,0.256,0.4795,0.2028,0.1803

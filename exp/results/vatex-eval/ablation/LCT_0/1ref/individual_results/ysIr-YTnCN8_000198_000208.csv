@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is holding a sheep on the ground while he cuts all of its wool off .,0.3316,a group of men are shearing sheep and putting the wool in a container .,5.0,5.0,5.0,5.0,0.5958,0.847,1.0,0.7071,0.714,0.6624,0.5227,0.4283,0.5958,0.4339,0.5227,0.325,0.3316
+2,a group of people are shaving a sheep in a barn .,0.4159,a group of men are shearing sheep and putting the wool in a container .,5.0,5.0,5.0,5.0,0.5859,0.8592,0.928,0.8644,0.8251,0.7964,0.518,0.521,0.5538,0.4981,0.4806,0.4425,0.4159
+3,a group of men are sheering a sheep with a razor .,0.5609,a group of men are shearing sheep and putting the wool in a container .,4.0,5.0,5.0,4.6667,0.6654,0.9104,0.9524,0.8571,0.8371,0.8211,0.6324,0.6096,0.6486,0.6002,0.614,0.5711,0.5609
+4,a young man shaves a sheep to collect its wool .,0.3988,a group of men are shearing sheep and putting the wool in a container .,5.0,5.0,5.0,5.0,0.5547,0.8493,0.9804,0.8723,0.872,0.8492,0.4758,0.4895,0.5458,0.4894,0.4653,0.399,0.3988
+5,"a man holds down a sheep , slowly shaving off its coat of wool .",0.1062,a group of men are shearing sheep and putting the wool in a container .,5.0,5.0,5.0,5.0,0.5743,0.8415,0.8634,0.421,0.566,0.4842,0.4941,0.0,0.507,0.2443,0.4141,0.0,0.1062
+6,a man is holding onto a sheep and sheering its hair off .,0.1303,a group of men are shearing sheep and putting the wool in a container .,4.0,4.0,4.0,4.0,0.5915,0.8327,0.9199,0.6167,0.564,0.4764,0.5095,0.3377,0.556,0.2629,0.4668,0.2047,0.1303

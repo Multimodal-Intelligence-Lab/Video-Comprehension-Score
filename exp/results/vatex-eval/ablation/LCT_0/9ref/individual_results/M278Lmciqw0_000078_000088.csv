@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man in a kitchen shows how to shake a plastic container to coat a pastry with flour .,0.508,a man demonstrates shaking a container to batter food for cooking .,5.0,5.0,5.0,5.0,0.682,0.8743,0.9451,0.8787,0.8486,0.8215,0.6311,0.6037,0.6635,0.5708,0.6096,0.5457,0.508
+2,a woman is demonstrating how to make an egg in a bowl .,0.2295,a man is explaining how to make a dish .,4.0,4.0,3.0,3.6667,0.3617,0.8284,1.0,1.0,1.0,1.0,0.2295,0.3617,0.3617,0.3617,0.2295,0.2295,0.2295
+3,a woman is demonstrating how to make a recipe .,0.488,a man is explaining how to make a dish .,5.0,4.0,5.0,4.6667,0.5696,0.8405,1.0,1.0,1.0,1.0,0.488,0.5696,0.5696,0.5696,0.488,0.488,0.488
+4,man in a kitchen wiping out and arranging some glass bottles,0.2161,"a man stands in a kitchen holding a closed plastic container , then shakes it and puts it down to open it .",3.0,3.0,2.0,2.6667,0.4335,0.8293,1.0,0.91,0.8882,0.8626,0.3038,0.3775,0.3871,0.3622,0.2609,0.2349,0.2161
+5,"in a kitchen , a man adds ingredients to a pan and explains the recipe .",0.4741,a man in a kitchen is demonstrating showing viewers how to cook a dish and is explaining the use of a plastic container .,4.0,2.0,3.0,3.0,0.7132,0.8572,0.9492,0.8627,0.8764,0.853,0.6655,0.5509,0.5918,0.5579,0.5144,0.4657,0.4741
+6,a man is showing how to put cook potatoes in ice water for an easy peel .,0.104,a man is making a tutorial on how to shake items from a plastic tupperware,2.0,2.0,2.0,2.0,0.3858,0.8403,0.9873,0.9798,0.977,0.9709,0.2516,0.2946,0.3282,0.2925,0.2005,0.1066,0.104

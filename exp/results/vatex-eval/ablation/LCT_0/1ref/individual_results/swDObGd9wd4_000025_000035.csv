@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people are in kayaks on a river .,0.2112,a lot of people are enjoying the weather as they are paddling their way into the waters .,5.0,5.0,5.0,5.0,0.4825,0.8258,0.9697,0.8,0.7945,0.7512,0.3733,0.3531,0.4663,0.3486,0.3537,0.2166,0.2112
+2,a group of people are riding on a kayak in the water .,0.3245,a lot of people are enjoying the weather as they are paddling their way into the waters .,5.0,5.0,5.0,5.0,0.5456,0.8479,0.95,0.8128,0.7935,0.7564,0.464,0.4409,0.5217,0.4273,0.4358,0.3406,0.3245
+3,a group of people are kayaking in a body of water .,0.2282,a lot of people are enjoying the weather as they are paddling their way into the waters .,5.0,4.0,5.0,4.6667,0.5785,0.8503,0.928,0.6807,0.6422,0.5792,0.5043,0.3809,0.5458,0.3438,0.4658,0.2718,0.2282
+4,people are kayaking in an orange kayak down a muddy river .,0.0,a lot of people are enjoying the weather as they are paddling their way into the waters .,5.0,3.0,4.0,4.0,0.3061,0.8096,0.9565,0.5887,0.548,0.4417,0.1429,0.0,0.2745,0.0,0.1039,0.0,0.0
+5,two people row in a kayak down a large muddy river .,0.0,a lot of people are enjoying the weather as they are paddling their way into the waters .,5.0,2.0,4.0,3.6667,0.2739,0.7969,0.8937,0.6179,0.7306,0.6619,0.0889,0.0,0.1875,0.0062,0.0,0.0,0.0
+6,two people kayak down a very muddy river .,0.0,a lot of people are enjoying the weather as they are paddling their way into the waters .,5.0,2.0,4.0,3.6667,0.2458,0.8098,0.9524,0.7165,0.6963,0.6249,0.0687,0.0,0.2081,0.0,0.0221,0.0,0.0

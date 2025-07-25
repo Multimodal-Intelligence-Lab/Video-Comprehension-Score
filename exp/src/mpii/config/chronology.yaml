@@ -1,0 +1,41 @@
+# VCS Evaluation Framework Configuration - Chronology Experiments
+# Only experiment-specific settings (inherits from _base.yaml)
+
+# ============================================================================
+# EXPERIMENT SETTINGS
+# ============================================================================
+experiment:
+  # Custom experiment ID (if empty, auto-generates timestamp)
+  # Each experiment should have its own ID for parallel execution
+  experiment_id: ""
+
+# ============================================================================
+# EXPERIMENT-SPECIFIC PATHS
+# ============================================================================
+paths:
+  # Input data directory containing JSON files
+  data_dir: "/mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/chronology/aug_dataset"
+  
+  # Base output directory for results
+  results_dir: "/mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/results/mpii/chronology"
+
+# ============================================================================
+# CHRONOLOGY SPECIFIC SETTINGS
+# ============================================================================
+chronology:
+  # Subfolders to process (both beginning and end)
+  subfolders: ["beginning", "end"]
+  
+  # Number of iterations per JSON file
+  num_iterations: 13
+  
+  # Selected metrics to compute
+  selected_metrics:
+    - "BLEU-1"
+    - "BLEU-4"
+    - "METEOR"
+    - "ROUGE-1"
+    - "ROUGE-4"
+    - "ROUGE-L"
+    - "ROUGE-Lsum"
+    - "VCS"

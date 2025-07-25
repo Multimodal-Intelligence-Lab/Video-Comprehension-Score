@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy lines up to throw a frisbee into the middle of the target .,0.4165,a student in shorts and a tshirt throws a frisbee at a three legged goal .,5.0,5.0,5.0,5.0,0.5433,0.835,1.0,1.0,1.0,1.0,0.4485,0.5128,0.5128,0.5128,0.4165,0.4165,0.4165
+2,a man is throwing a frisbee at a wooden target .,0.351,a student in shorts and a tshirt throws a frisbee at a three legged goal .,4.0,4.0,5.0,4.3333,0.5728,0.8614,0.9538,1.0,0.9526,0.9425,0.504,0.4919,0.4814,0.4657,0.3972,0.4101,0.351
+3,a man is throwing a frisbee at a target .,0.4978,a young man stands and tosses a frisbee at a pole .,5.0,5.0,5.0,5.0,0.61,0.8773,1.0,1.0,1.0,1.0,0.5554,0.61,0.5625,0.5594,0.5013,0.5554,0.4978
+4,a man is throwing a frisbee in the park,0.4257,a young man stands and tosses a frisbee at a pole .,5.0,4.0,5.0,4.6667,0.6659,0.8949,0.9744,1.0,0.9805,0.9763,0.6266,0.5529,0.5371,0.4949,0.4827,0.4916,0.4257
+5,a boy and an older man throw a frisbee to each other in the backyard .,0.2568,a young man stands and tosses a frisbee at a pole .,3.0,3.0,4.0,3.3333,0.5168,0.8571,0.9667,0.8366,0.836,0.8087,0.4138,0.3916,0.4611,0.363,0.3516,0.2733,0.2568
+6,a male focusing and aiming to throw his frisbee for a long distance .,0.3115,a couple of guys outside with one guy tossing a frisbee onto an empty field,5.0,5.0,5.0,5.0,0.5352,0.8394,1.0,0.9045,0.9138,0.8911,0.4341,0.4166,0.5186,0.4405,0.4105,0.2821,0.3115

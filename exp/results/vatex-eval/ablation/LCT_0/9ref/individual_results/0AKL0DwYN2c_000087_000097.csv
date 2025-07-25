@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two children pick apples from an orchard outside and talk to the camera .,0.6236,two young children are picking apples in an orchard .,5.0,5.0,4.0,4.6667,0.8324,0.9223,0.9495,0.8659,0.8332,0.7997,0.8182,0.7895,0.7197,0.63,0.7148,0.7796,0.6236
+2,a little girl is picking up apples from a tree .,0.7531,a young child is seen picking an apple from a tree .,5.0,1.0,4.0,3.3333,0.7767,0.9607,1.0,1.0,1.0,1.0,0.7531,0.7767,0.7767,0.7767,0.7531,0.7531,0.7531
+3,a man and a young girl are picking apples from a tree .,0.683,a young child is seen picking an apple from a tree .,5.0,3.0,3.0,3.6667,0.7838,0.9507,1.0,1.0,1.0,1.0,0.7726,0.6948,0.7701,0.7077,0.7582,0.6637,0.683
+4,a man carrying a child in an apple orchard and stopping to let her pick an apple .,0.2454,a young child is seen picking an apple from a tree .,4.0,1.0,3.0,2.6667,0.6295,0.8737,0.8831,0.5996,0.5999,0.5182,0.5759,0.3375,0.5567,0.3159,0.4917,0.2627,0.2454
+5,a child helps some adults pick fruit in an orchard pushing through the trees and carrying a fruit picker,0.2846,"several young children pick apples in a large orchard , then show their apples to an adult .",4.0,3.0,2.0,3.0,0.6624,0.8666,0.8882,0.7762,0.7794,0.7283,0.6063,0.3697,0.5914,0.3613,0.5235,0.263,0.2846
+6,a person is on a trail and picking fruits from a tree with kids .,0.1853,a young child is seen picking an apple from a tree .,5.0,1.0,4.0,3.3333,0.5355,0.8821,0.9599,0.6875,0.75,0.6971,0.4734,0.1874,0.4149,0.2814,0.3143,0.0749,0.1853

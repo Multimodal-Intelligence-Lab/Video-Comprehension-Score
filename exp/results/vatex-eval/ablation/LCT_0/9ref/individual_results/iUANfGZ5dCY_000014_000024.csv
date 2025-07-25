@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person picks up a set of very heavy weights and throws them over his /her head and immediately drops them to the floor .,0.6528,someone is doing some heavy weight lifts and throws it back down .,5.0,4.0,5.0,4.6667,0.785,0.8717,0.9888,0.9135,0.9329,0.923,0.7502,0.6447,0.7638,0.6682,0.7255,0.6283,0.6528
+2,a man in a gym is lifting a heavy barbell over his head .,0.6753,a man lifts a heavy barbell up and over his head and then drops it to the ground .,5.0,5.0,4.0,4.6667,0.7708,0.9295,0.9333,0.8723,0.7909,0.7554,0.7534,0.7372,0.7271,0.6879,0.7063,0.7173,0.6753
+3,a man in a gym lifts a heavy barbell over his head .,0.6877,a man lifts a heavy barbell up and over his head and then drops it to the ground .,5.0,5.0,4.0,4.6667,0.7836,0.9417,0.9333,0.8723,0.7909,0.7503,0.7702,0.7519,0.7423,0.693,0.7263,0.7366,0.6877
+4,a man in a gym lifts a heavy amount of weight over his head and then drops it .,0.633,in a gym a man lifted a very heavy set of weights of the ground while standing .,5.0,5.0,4.0,4.6667,0.791,0.9203,0.943,0.6927,0.7987,0.7733,0.7729,0.5847,0.7712,0.6742,0.7514,0.5653,0.633
+5,a young man is jerk-lifting a barbell loaded with weights over his head and then dropping them .,0.3635,a man lifts a heavy barbell up and over his head and then drops it to the ground .,5.0,5.0,5.0,5.0,0.7649,0.8932,0.9658,0.856,0.9076,0.8868,0.7368,0.4425,0.7342,0.4742,0.7025,0.4057,0.3635
+6,"a man is squatting and then lifts a barbell above his head , then he drops the barbell .",0.4941,a man lifts a heavy barbell up and over his head and then drops it to the ground .,5.0,5.0,4.0,4.6667,0.8236,0.9466,0.9599,0.8633,0.8411,0.8135,0.8137,0.4996,0.7812,0.5002,0.7727,0.4129,0.4941

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young girl uses a wand to blow bubbles in the kitchen while a boy watches .,0.3969,a young woman grabs something above the camera and blows bubbles in the camera before the young boy filming shows himself .,5.0,5.0,5.0,5.0,0.5455,0.8476,0.9565,0.8703,0.8892,0.8693,0.4637,0.4777,0.5248,0.4888,0.4394,0.3838,0.3969
+2,a young boy is playing with a fidget spinner .,0.0,a young woman grabs something above the camera and blows bubbles in the camera before the young boy filming shows himself .,4.0,2.0,3.0,3.0,0.2645,0.8064,0.837,0.7553,0.6568,0.5744,0.088,0.0263,0.1213,0.0,0.0,0.0,0.0
+3,a young girl is blowing a bubble with her mouth .,0.2596,a young woman grabs something above the camera and blows bubbles in the camera before the young boy filming shows himself .,5.0,5.0,3.0,4.3333,0.5496,0.8512,0.8732,0.7888,0.7147,0.6649,0.4708,0.429,0.4841,0.3698,0.394,0.3291,0.2596
+4,a young teen boy blows a large bubble with pink bubble gum .,0.0,a young woman grabs something above the camera and blows bubbles in the camera before the young boy filming shows himself .,4.0,4.0,1.0,3.0,0.4624,0.8545,0.846,0.4567,0.4915,0.4049,0.3709,0.0,0.3646,0.0,0.2564,0.0,0.0
+5,a seated toddler dips and blows soap bubbles from a wand while others watch .,0.0,a young woman grabs something above the camera and blows bubbles in the camera before the young boy filming shows himself .,4.0,4.0,4.0,4.0,0.4214,0.7859,0.9719,0.6265,0.7024,0.6213,0.2638,0.0765,0.4047,0.1763,0.2426,0.0,0.0
+6,"a baby boy is drinking out of a sipping cup , while a woman is talking about it .",0.0,a young woman grabs something above the camera and blows bubbles in the camera before the young boy filming shows himself .,1.0,1.0,1.0,1.0,0.2273,0.7952,0.7387,0.41,0.4091,0.2569,0.0283,0.0,0.0,0.0,0.0,0.0,0.0

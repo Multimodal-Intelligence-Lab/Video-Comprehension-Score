@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl is sitting down and getting make up apllied to her face,0.0,a makeup artist uses a pencil to draw an almost nude outline around a woman's lips .,5.0,5.0,5.0,5.0,0.3209,0.7469,0.8458,0.6608,0.6682,0.5558,0.0908,0.0,0.1971,0.0,0.0,0.0,0.0
+2,a woman is applying makeup to her face with a brush .,0.0,a makeup artist uses a pencil to draw an almost nude outline around a woman's lips .,4.0,4.0,5.0,4.3333,0.3984,0.8164,0.7186,0.5372,0.3067,0.1508,0.2631,0.0,0.1628,0.0,0.0,0.0,0.0
+3,a woman is applying makeup to her face with a brush .,0.0,a makeup artist uses a pencil to draw an almost nude outline around a woman's lips .,4.0,4.0,5.0,4.3333,0.3984,0.8164,0.7186,0.5372,0.3067,0.1508,0.2631,0.0,0.1628,0.0,0.0,0.0,0.0
+4,a woman applies various shades of lip gloss onto her lips .,0.0,a makeup artist uses a pencil to draw an almost nude outline around a woman's lips .,4.0,4.0,4.0,4.0,0.415,0.8159,0.8242,0.5456,0.5585,0.4589,0.283,0.0,0.2902,0.0,0.1301,0.0,0.0
+5,a girl applies make-up to her lips using a brush .,0.0,a makeup artist uses a pencil to draw an almost nude outline around a woman's lips .,4.0,4.0,5.0,4.3333,0.5048,0.8229,0.7883,0.3627,0.353,0.2137,0.3982,0.0,0.3718,0.0,0.2366,0.0,0.0
+6,a woman using a lip brush to apply lipstick to her lips .,0.0573,a makeup artist uses a pencil to draw an almost nude outline around a woman's lips .,4.0,4.0,5.0,4.3333,0.5183,0.8348,0.7368,0.6637,0.6121,0.5354,0.4229,0.2742,0.3462,0.2131,0.2168,0.1305,0.0573

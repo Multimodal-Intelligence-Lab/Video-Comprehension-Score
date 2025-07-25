@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two men are shaking their fists while sitting in a car,0.2532,one man with eyeglasses annd one man in sunglasses ride in a car,5.0,5.0,5.0,5.0,0.4692,0.8084,0.9697,0.8638,0.8792,0.8506,0.3434,0.3855,0.4526,0.3963,0.3229,0.2399,0.2532
+2,a group of people are in a car and they are dancing to music .,0.0,one man with eyeglasses annd one man in sunglasses ride in a car,5.0,3.0,4.0,4.0,0.3241,0.7909,0.8221,0.5449,0.5176,0.3901,0.1455,0.0,0.1779,0.0,0.0,0.0,0.0
+3,a group of people are in a car and dancing to music .,0.0,one man with eyeglasses annd one man in sunglasses ride in a car,5.0,3.0,4.0,4.0,0.3189,0.7909,0.8221,0.5449,0.5176,0.3901,0.1388,0.0,0.1715,0.0,0.0,0.0,0.0
+4,a man is dancing to some loud music outside of his car at a gas station .,0.0,one man with eyeglasses annd one man in sunglasses ride in a car,3.0,3.0,3.0,3.0,0.1346,0.8207,0.9116,0.3953,0.372,0.2349,0.0,0.0,0.0507,0.0,0.0,0.0,0.0
+5,two men are asleep in a car and it moves around showing their faces .,0.0,one man with eyeglasses annd one man in sunglasses ride in a car,4.0,4.0,4.0,4.0,0.4727,0.7996,0.8791,0.6094,0.6078,0.5095,0.3406,0.1348,0.4002,0.1324,0.2499,0.0,0.0
+6,a man is driving a car and a traffic officer is dancing in the street .,0.0,one man with eyeglasses annd one man in sunglasses ride in a car,3.0,2.0,3.0,2.6667,0.2464,0.8182,0.7607,0.4374,0.3775,0.2393,0.079,0.0,0.0092,0.0,0.0,0.0,0.0

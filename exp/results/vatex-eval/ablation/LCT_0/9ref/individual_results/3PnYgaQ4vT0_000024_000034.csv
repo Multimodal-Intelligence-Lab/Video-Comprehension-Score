@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy in a gym is yelling as he lift and very large weight .,0.329,a man in a gym lifts a heavy amount of weight over his head and then drops it .,5.0,5.0,5.0,5.0,0.8019,0.8987,0.9084,0.8681,0.8073,0.7654,0.7795,0.4714,0.6628,0.4163,0.6113,0.4563,0.329
+2,a man is in a gym and is lifting a heavy weight .,0.7974,a man in a gym lifts a heavy amount of weight over his head and then drops it .,5.0,5.0,5.0,5.0,0.8286,0.9514,0.9052,1.0,0.9021,0.8956,0.8172,0.8286,0.8047,0.81,0.7917,0.8172,0.7974
+3,a man in a gym is lifting a barbell over his head .,0.7347,a man in a gym lifts a heavy amount of weight over his head and then drops it .,5.0,5.0,5.0,5.0,0.7695,0.8966,0.9677,1.0,0.9687,0.9651,0.743,0.7695,0.7597,0.7621,0.732,0.743,0.7347
+4,a guy in a gym is lifting a heavy weight .,0.7569,a man in a gym lifts a heavy amount of weight over his head and then drops it .,5.0,5.0,5.0,5.0,0.7994,0.9269,0.9649,1.0,0.9021,0.893,0.7807,0.7994,0.7714,0.7777,0.7501,0.7807,0.7569
+5,in a gym a man lifts a barbell with weights and performs a clean lift .,0.3576,a man is lifting heavy weights into the air above his head .,5.0,5.0,5.0,5.0,0.6667,0.8877,0.898,0.7824,0.7524,0.7092,0.6204,0.4817,0.6011,0.4446,0.5456,0.4005,0.3576
+6,"in a gym , a man is lifting a heavy barbell over his head .",0.6462,a man is lifting heavy weights into the air above his head .,5.0,5.0,5.0,5.0,0.8048,0.9258,1.0,0.9786,0.9644,0.9581,0.7891,0.6146,0.7908,0.6743,0.7741,0.6032,0.6462

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is shown playing chess while explaining something on camera .,0.9022,a man is seen playing chess and talking to the camera,5.0,5.0,5.0,5.0,0.909,0.9309,1.0,1.0,1.0,1.0,0.9022,0.909,0.909,0.909,0.9022,0.9022,0.9022
+2,a group of people are sitting at a table and playing chess .,0.2523,a group of people gathering around to watch a chess match between other people .,5.0,5.0,5.0,5.0,0.6561,0.879,0.941,0.7486,0.6693,0.6014,0.6088,0.39,0.5765,0.3229,0.5182,0.3026,0.2523
+3,a group of people are sitting at a table and one man is talking .,0.0,a man is talking about his experiences while at a chess tournament .,5.0,5.0,5.0,5.0,0.4766,0.8436,0.9254,0.8451,0.7819,0.739,0.3769,0.2459,0.1586,0.0359,0.0,0.0601,0.0
+4,a group of people are sitting down and playing a chess match together .,0.5022,a group of people gathering around to watch a chess match between other people .,5.0,5.0,5.0,5.0,0.6533,0.9028,1.0,1.0,1.0,1.0,0.616,0.5633,0.6187,0.5506,0.5776,0.5163,0.5022
+5,"a man is playing with a rubik's cube , and talking about it .",0.3329,a man is seen playing chess and talking to the camera,4.0,4.0,1.0,3.0,0.5276,0.8911,1.0,0.8819,0.8784,0.8413,0.4597,0.4152,0.5083,0.4055,0.4482,0.3438,0.3329
+6,a person who is sitting down playing chess with someone .,0.4305,"a man talks about playing chess , he is a chess player in a competiton .",5.0,5.0,5.0,5.0,0.571,0.8748,1.0,0.8644,0.8611,0.8412,0.5096,0.5037,0.5603,0.5018,0.4973,0.4327,0.4305

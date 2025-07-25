@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,demonstration and narration of a man changing a tire on a vehicle .,0.4281,"a man is changing a tire by first removing the hubcap , then removing the tire .",5.0,5.0,5.0,5.0,0.7512,0.9296,0.941,0.9679,0.7761,0.7532,0.7246,0.5748,0.6264,0.4777,0.6127,0.5426,0.4281
+2,a man is demonstrating how to properly clean a bicycle .,0.0,a man is in a shop changing the tires on a car,4.0,4.0,4.0,4.0,0.2656,0.7946,0.9756,0.962,0.9649,0.9552,0.0747,0.2006,0.2328,0.203,0.0345,0.0,0.0
+3,a man is showing how to fix a tire on a wheel .,0.5149,a man gets to work on a tire that is located in front of him,5.0,5.0,4.0,4.6667,0.6588,0.88,1.0,1.0,1.0,1.0,0.5988,0.5942,0.6588,0.5874,0.5988,0.5228,0.5149
+4,a man is changing a car tire while another man is trying to put the old tire in the boot .,0.3922,"a man is changing a tire by first removing the hubcap , then removing the tire .",4.0,2.0,2.0,2.6667,0.5817,0.922,0.9477,0.7603,0.782,0.7505,0.5409,0.431,0.5585,0.4629,0.5005,0.3561,0.3922
+5,several men quickly remove a tire from a race car and replace it with another tire .,0.5039,a man removes a tire from a car using tools .,4.0,4.0,4.0,4.0,0.6331,0.8739,0.948,0.9527,0.9338,0.9189,0.5644,0.5806,0.6115,0.5678,0.5387,0.5186,0.5039
+6,a man digging in the trunk of a car while another man changes a tire .,0.0,a man is in a shop changing the tires on a car,2.0,3.0,3.0,2.6667,0.4796,0.9168,0.8986,0.5895,0.5535,0.4905,0.4311,0.0629,0.3847,0.0136,0.2733,0.0,0.0

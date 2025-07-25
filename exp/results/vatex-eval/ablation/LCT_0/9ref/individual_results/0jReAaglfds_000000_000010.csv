@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man smoking from a bong or hookah and blowing smoke rings out his mouth .,0.8153,a man is smoking out of a hookah and blowing rings of smoke .,4.0,4.0,5.0,4.3333,0.8465,0.9731,0.9667,0.8465,0.8539,0.8499,0.8423,0.8187,0.8412,0.8202,0.8368,0.8137,0.8153
+2,a man is blowing smoke from a hookah pipe .,0.8322,a man blows smoke rings from a glass hookah pipe .,5.0,4.0,5.0,4.6667,0.8826,0.9443,1.0,1.0,0.9893,0.9871,0.8753,0.8342,0.8619,0.8416,0.8537,0.8294,0.8322
+3,a man is smoking a pipe and blowing smoke out of his mouth .,0.5094,a man is smoking out of a hookah and blowing rings of smoke .,4.0,4.0,5.0,4.3333,0.758,0.9237,1.0,0.8725,0.8893,0.8795,0.7352,0.5169,0.7353,0.5494,0.7103,0.474,0.5094
+4,a man blows smoke from his mouth while having a smoking pipe in his mouth .,0.5312,a man blows smoke rings from a glass hookah pipe .,4.0,3.0,4.0,3.6667,0.7498,0.9129,1.0,1.0,1.0,1.0,0.7201,0.548,0.6779,0.5721,0.6397,0.4884,0.5312
+5,a man is smoking on his hookah and exhales the smoke .,0.8348,a man is smoking out of a hookah and blowing rings of smoke .,4.0,4.0,5.0,4.3333,0.8474,0.9288,1.0,1.0,1.0,1.0,0.8348,0.8474,0.8474,0.8474,0.8348,0.8348,0.8348
+6,"two males are blowing out smoke from a hookah , at the same time .",0.4329,a man blows smoke rings from a glass hookah pipe .,4.0,3.0,4.0,3.6667,0.6938,0.8985,0.96,0.8776,0.8893,0.8627,0.6592,0.5474,0.6137,0.5131,0.5563,0.4728,0.4329

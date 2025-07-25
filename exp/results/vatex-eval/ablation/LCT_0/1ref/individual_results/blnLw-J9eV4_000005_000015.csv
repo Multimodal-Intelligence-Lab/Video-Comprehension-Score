@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a team of football players gather together for a prayer and chant before the game starts .,0.0,miami dolphins in a huddle chanting and getting ready,5.0,5.0,5.0,5.0,0.5376,0.7751,0.9108,0.5793,0.5915,0.473,0.4034,0.2018,0.4923,0.2182,0.345,0.0,0.0
+2,a group of people are playing a game of football .,0.0,miami dolphins in a huddle chanting and getting ready,3.0,4.0,1.0,2.6667,0.2173,0.7238,0.9084,0.797,0.6982,0.583,0.0,0.0179,0.1383,0.0,0.0,0.0,0.0
+3,a group of people are in a football game in a stadium .,0.0,miami dolphins in a huddle chanting and getting ready,5.0,5.0,5.0,5.0,0.2441,0.7257,0.941,0.797,0.7261,0.6225,0.0,0.0516,0.1967,0.0,0.0,0.0,0.0
+4,football officials are clapping at a football game before the scene cuts to the audience who are also clapping in team colours .,0.0,miami dolphins in a huddle chanting and getting ready,1.0,3.0,1.0,1.6667,0.2739,0.7161,0.9124,0.7126,0.7503,0.6513,0.0,0.0,0.2042,0.0322,0.0,0.0,0.0
+5,a football game is shown and two uniformed teams are playing while the crowd cheers .,0.0,miami dolphins in a huddle chanting and getting ready,1.0,1.0,1.0,1.0,0.2225,0.7186,0.8554,0.6241,0.6103,0.4578,0.0,0.0,0.0911,0.0,0.0,0.0,0.0
+6,people are cheering so loudly as they watch the entire game in the field .,0.0,miami dolphins in a huddle chanting and getting ready,3.0,1.0,1.0,1.6667,0.1662,0.7243,0.8766,0.6796,0.6094,0.4607,0.0,0.0,0.0488,0.0,0.0,0.0,0.0

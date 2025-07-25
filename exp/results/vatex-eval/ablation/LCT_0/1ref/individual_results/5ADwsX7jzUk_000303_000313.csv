@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young man in a room rhythmically strums an electric guitar with his fingers .,0.1116,a young man pretends to play the guitar and hums and nods his head .,5.0,5.0,5.0,5.0,0.4999,0.8411,0.8976,0.5335,0.6692,0.6067,0.4055,0.0627,0.4429,0.2528,0.3376,0.0,0.1116
+2,a man is sitting on a couch and playing a guitar .,0.0,a young man pretends to play the guitar and hums and nods his head .,4.0,3.0,4.0,3.6667,0.3512,0.8509,0.7653,0.7285,0.6196,0.5529,0.2375,0.1094,0.1522,0.0,0.0036,0.0,0.0
+3,a young man is playing a guitar and singing a song .,0.555,a young man pretends to play the guitar and hums and nods his head .,4.0,5.0,5.0,4.6667,0.6097,0.8771,1.0,1.0,1.0,1.0,0.555,0.6097,0.6097,0.6097,0.555,0.555,0.555
+4,a man plays electric guitar alone in a room to rousing music .,0.0,a young man pretends to play the guitar and hums and nods his head .,5.0,4.0,5.0,4.6667,0.3708,0.8336,0.7896,0.435,0.5609,0.4733,0.2452,0.0,0.2032,0.0,0.0441,0.0,0.0
+5,a young man is rocking out to his electric guitar while sitting on his bed .,0.1988,a young man pretends to play the guitar and hums and nods his head .,4.0,4.0,4.0,4.0,0.4998,0.8327,0.9846,0.722,0.7497,0.6994,0.3993,0.3073,0.492,0.3328,0.3899,0.1681,0.1988
+6,a boy is sitting on the edge of a bed playing a song on the electric guitar .,0.0,a young man pretends to play the guitar and hums and nods his head .,4.0,4.0,4.0,4.0,0.3573,0.8099,0.8281,0.3889,0.5293,0.4188,0.2064,0.0,0.2239,0.0,0.0418,0.0,0.0

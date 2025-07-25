@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a little girl plays a harp for the camera , sitting in a room .",0.62,a young girl playing the harp then smiling at the camera .,4.0,4.0,5.0,4.3333,0.7287,0.8897,0.9599,0.8571,0.8186,0.7928,0.695,0.667,0.7173,0.6619,0.6823,0.6257,0.62
+2,a woman is playing a harp while sitting on the floor .,0.4005,a young girl playing the harp then smiling at the camera .,4.0,4.0,4.0,4.0,0.5705,0.8501,1.0,1.0,1.0,1.0,0.4762,0.4966,0.5436,0.4966,0.4433,0.4005,0.4005
+3,a woman is playing a harp while a man plays the harp .,0.2147,a young girl playing the harp then smiling at the camera .,4.0,4.0,4.0,4.0,0.5768,0.8794,0.8915,0.8394,0.7669,0.7313,0.5135,0.3775,0.4651,0.3186,0.3759,0.2825,0.2147
+4,a woman is strumming a beautiful song on a harp .,0.5017,a young girl plays a gentle harmony on a harp .,5.0,5.0,4.0,4.6667,0.7225,0.8772,1.0,0.8408,0.827,0.7889,0.6735,0.5984,0.6759,0.5917,0.6305,0.5098,0.5017
+5,a girl plays some sort of flute as she is recorded .,0.3093,a girl plays a song on the harp by plucking the strings .,4.0,4.0,4.0,4.0,0.4252,0.8522,1.0,1.0,1.0,1.0,0.3093,0.4252,0.4252,0.4252,0.3093,0.3093,0.3093
+6,a young woman plays the strings on a small harp while sitting on a bed .,0.5203,a young girl plays a tune on a harp and smiles .,4.0,4.0,4.0,4.0,0.6699,0.8795,0.9831,0.9234,0.9284,0.9169,0.6246,0.5847,0.6383,0.587,0.5888,0.5177,0.5203

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a male is playing basketball and teaching a drill with a chair .,0.4093,a man in black basketball clothes is explaining how to dribble a basketball between his legs with the use of a chair as a block .,5.0,2.0,5.0,4.0,0.7565,0.8409,0.948,0.8776,0.882,0.8516,0.7104,0.4634,0.6616,0.4992,0.6106,0.3653,0.4093
+2,a man is demonstrating how to do a basketball in a gym .,0.1239,a guy that is in a gym dribbling the basketball .,5.0,4.0,4.0,4.3333,0.7234,0.8905,0.9045,0.846,0.6803,0.6206,0.6893,0.4098,0.5853,0.2402,0.5562,0.3025,0.1239
+3,a man in a gym is demonstrating how to do a basketball move .,0.5353,a guy that is in a gym dribbling the basketball .,5.0,4.0,5.0,4.6667,0.7187,0.8749,0.9375,0.8946,0.8384,0.8084,0.6785,0.6856,0.6875,0.5712,0.6428,0.6406,0.5353
+4,a man sitting on the gym floor tosses a basketball to a man dribbling .,0.1945,a man is speaking and then begins to bounce a basketball .,4.0,2.0,4.0,3.3333,0.6299,0.9053,0.8809,0.8694,0.8061,0.7707,0.5912,0.3685,0.5279,0.3189,0.4676,0.2532,0.1945
+5,a man discusses how important basketball techniques while two players are on the court .,0.2737,a man is speaking and then begins to bounce a basketball .,4.0,3.0,4.0,3.6667,0.5981,0.8468,0.939,0.8103,0.7771,0.731,0.5253,0.4228,0.4998,0.3982,0.4093,0.3034,0.2737
+6,a man talks about basketball technique while shots of men playing play .,0.0887,a man is on an indoor basketball court giving instructions in a foreign language and then dribbles the basketball .,3.0,4.0,3.0,3.3333,0.608,0.8554,0.9125,0.5649,0.5468,0.4501,0.5417,0.2843,0.5301,0.2309,0.4299,0.1887,0.0887

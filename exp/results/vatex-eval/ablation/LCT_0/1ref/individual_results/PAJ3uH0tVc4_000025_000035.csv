@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a stage performer swings back and fourth and then falls .,0.0692,a man swings outdoors on a trapeze before he does a flip and falls to the net below .,4.0,5.0,5.0,4.6667,0.5551,0.8209,0.9386,0.6236,0.5822,0.4911,0.458,0.2866,0.526,0.2359,0.4226,0.1309,0.0692
+2,a man is swinging on a trapeze while another man watches .,0.4668,a man swings outdoors on a trapeze before he does a flip and falls to the net below .,5.0,5.0,5.0,5.0,0.6371,0.8727,0.8929,0.8444,0.7799,0.7478,0.5841,0.5702,0.5935,0.5347,0.5342,0.5075,0.4668
+3,a woman is swinging on a trapeze and then falls down .,0.581,a man swings outdoors on a trapeze before he does a flip and falls to the net below .,4.0,4.0,4.0,4.0,0.6314,0.8798,1.0,1.0,1.0,1.0,0.581,0.6314,0.6314,0.6314,0.581,0.581,0.581
+4,a person flipping off of a trapeze and landing in a net below .,0.1994,a man swings outdoors on a trapeze before he does a flip and falls to the net below .,5.0,5.0,5.0,5.0,0.7412,0.8883,0.8803,0.5274,0.4327,0.3613,0.7086,0.3623,0.706,0.2345,0.669,0.333,0.1994
+5,a man swings and then jumps off a trapeze into a trampoline .,0.4154,a man swings outdoors on a trapeze before he does a flip and falls to the net below .,5.0,5.0,4.0,4.6667,0.7049,0.8794,0.8327,0.7108,0.6116,0.5583,0.6644,0.5849,0.6456,0.449,0.597,0.5279,0.4154
+6,"a person swinging on a trapeze lets go , does a flip and is caught by another person",0.1092,a man swings outdoors on a trapeze before he does a flip and falls to the net below .,4.0,4.0,4.0,4.0,0.6618,0.858,0.8789,0.4724,0.4603,0.371,0.6058,0.2028,0.6152,0.1846,0.5515,0.1292,0.1092

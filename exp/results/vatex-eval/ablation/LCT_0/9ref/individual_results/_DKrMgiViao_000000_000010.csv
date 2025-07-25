@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a mean wearing a white and navy uniform twists his body into various positions .,0.2498,a guy shows off his flexibility by contorting his arms in different ways .,5.0,4.0,4.0,4.3333,0.5049,0.8287,1.0,1.0,1.0,1.0,0.377,0.3878,0.4856,0.4038,0.3526,0.2296,0.2498
+2,a man is dancing to music in a living room .,0.0,a man wearing a black tie move his arms in really weird ways around his body .,2.0,3.0,4.0,3.0,0.2662,0.8016,1.0,0.9149,0.9076,0.8834,0.0769,0.1812,0.2395,0.1746,0.0404,0.0,0.0
+3,a man is standing in front of a robot and dancing .,0.0274,a man wearing a black tie move his arms in really weird ways around his body .,4.0,3.0,4.0,3.6667,0.2657,0.7994,0.9756,0.9819,0.9565,0.9456,0.0698,0.2521,0.2427,0.2322,0.0408,0.0527,0.0274
+4,a guy is demonstrating how to correctly stretch his arms .,0.6309,a guy shows off his flexibility by contorting his arms in different ways .,5.0,5.0,4.0,4.6667,0.7433,0.8639,1.0,1.0,1.0,1.0,0.7029,0.7031,0.7155,0.6811,0.6707,0.6563,0.6309
+5,a man moves his arms while demonstrating a few stretches .,0.2203,a man wearing a black tie move his arms in really weird ways around his body .,5.0,5.0,5.0,5.0,0.7073,0.8806,0.928,0.8812,0.8026,0.7681,0.6466,0.3818,0.6575,0.3361,0.5864,0.274,0.2203
+6,a man has twisted his fingers to look weird and moves it around .,0.3805,a guy shows off his flexibility by contorting his arms in different ways .,4.0,4.0,4.0,4.0,0.6337,0.8853,0.9599,0.7915,0.8611,0.8293,0.5399,0.427,0.61,0.5067,0.5103,0.2955,0.3805

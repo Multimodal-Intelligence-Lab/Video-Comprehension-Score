@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person stands on a segway and slowly moves around a sand lot .,0.186,a woman is in the yard practicing how to ride a segway .,5.0,5.0,5.0,5.0,0.5624,0.8063,0.8367,0.7268,0.6668,0.5867,0.4572,0.3978,0.4769,0.3436,0.3512,0.2532,0.186
+2,a man is riding on a segway while a man is talking to him .,0.0295,a woman is in the yard practicing how to ride a segway .,4.0,4.0,4.0,4.0,0.4595,0.8297,0.7174,0.6306,0.6712,0.6037,0.3486,0.1429,0.2466,0.1948,0.092,0.0,0.0295
+3,a man is riding a segway down a paved road .,0.0146,a woman is in the yard practicing how to ride a segway .,4.0,4.0,4.0,4.0,0.4867,0.8365,0.6875,0.569,0.6227,0.5489,0.3864,0.098,0.2534,0.1757,0.1075,0.0,0.0146
+4,a woman is using a segway on a sidewalk while being filmed .,0.4213,a woman is in the yard practicing how to ride a segway .,4.0,4.0,4.0,4.0,0.683,0.8286,0.8426,0.544,0.6611,0.5911,0.6174,0.3323,0.6237,0.5038,0.5459,0.2614,0.4213
+5,"a man on a segway talks to the camera person , then rides away .",0.0,a woman is in the yard practicing how to ride a segway .,3.0,5.0,3.0,3.6667,0.4643,0.8235,0.785,0.4714,0.3151,0.1684,0.3495,0.0,0.3176,0.0,0.1714,0.0,0.0
+6,a man riding on a segway on the sidewalk talking to someone .,0.0,a woman is in the yard practicing how to ride a segway .,5.0,5.0,4.0,4.6667,0.4508,0.8256,0.7299,0.7302,0.4601,0.3461,0.3348,0.248,0.2476,0.0,0.0886,0.0891,0.0

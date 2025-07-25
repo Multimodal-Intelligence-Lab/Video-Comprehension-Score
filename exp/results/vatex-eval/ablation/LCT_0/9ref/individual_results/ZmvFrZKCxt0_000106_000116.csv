@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person points to a dry erase board as part of a lesson explaining equations .,0.3742,someone is using a whiteboard to explain how to do a math equation .,5.0,5.0,5.0,5.0,0.7616,0.8929,0.9482,0.7453,0.7641,0.7141,0.733,0.4406,0.6666,0.4544,0.6421,0.3355,0.3742
+2,a person is demonstrating how to solve a math problem .,0.5483,someone is using a whiteboard to explain how to do a math equation .,5.0,5.0,5.0,5.0,0.7177,0.8664,0.9756,0.8954,0.8885,0.8713,0.6604,0.646,0.7094,0.6245,0.6504,0.5742,0.5483
+3,a man is demonstrating how to solve a math problem .,0.4334,someone is using a whiteboard to explain how to do a math equation .,4.0,4.0,4.0,4.0,0.6533,0.8422,0.9714,0.8954,0.8885,0.8676,0.574,0.5652,0.6431,0.5388,0.5615,0.4658,0.4334
+4,a person telling about mathematics and writing the equations in the paper .,0.3263,someone is using a whiteboard to explain how to do a math equation .,4.0,4.0,3.0,3.6667,0.656,0.8493,0.9404,0.6258,0.7432,0.6808,0.5911,0.3196,0.583,0.4008,0.5044,0.1843,0.3263
+5,a person shows how to do a complex math problem with a pen .,0.5343,there is a person holding a marker and using it to point to math problems on a white board .,5.0,5.0,5.0,5.0,0.6327,0.851,1.0,1.0,1.0,1.0,0.5538,0.6037,0.6037,0.6037,0.5343,0.5343,0.5343
+6,a man is describing a math formula on the chalkboard .,0.405,there is a person holding a marker and using it to point to math problems on a white board .,4.0,4.0,3.0,3.6667,0.6171,0.8471,1.0,0.9782,0.9601,0.9508,0.548,0.5269,0.5204,0.518,0.408,0.4161,0.405

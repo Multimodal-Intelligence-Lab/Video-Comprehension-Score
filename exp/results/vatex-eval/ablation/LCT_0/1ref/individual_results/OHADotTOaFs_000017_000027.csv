@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man pours a bottle of beer into a large beer glass .,0.0,a man standing in a kitchen is demonstrating how to poor a beer .,5.0,5.0,4.0,4.6667,0.5184,0.8383,0.84,0.6135,0.5152,0.4217,0.4255,0.215,0.4266,0.0647,0.316,0.0635,0.0
+2,a man is demonstrating how to use a bottle of wine .,0.0,a man standing in a kitchen is demonstrating how to poor a beer .,4.0,3.0,4.0,3.6667,0.3851,0.8473,0.9084,0.438,0.1821,0.0346,0.2743,0.0,0.3231,0.0,0.2011,0.0,0.0
+3,a man is demonstrating how to open a bottle of wine .,0.0,a man standing in a kitchen is demonstrating how to poor a beer .,4.0,3.0,4.0,3.6667,0.3521,0.8508,0.9084,0.438,0.1821,0.0386,0.2385,0.0,0.2868,0.0,0.1617,0.0,0.0
+4,a man with a small glass as he pours himself beer while he has a bunch of beer bottles next to him,0.2081,a man standing in a kitchen is demonstrating how to poor a beer .,5.0,4.0,2.0,3.6667,0.4765,0.818,0.891,0.8366,0.8082,0.7655,0.36,0.3743,0.4125,0.3522,0.2818,0.2351,0.2081
+5,a man pours beer into another bottle with a larger volume .,0.0,a man standing in a kitchen is demonstrating how to poor a beer .,5.0,4.0,2.0,3.6667,0.4842,0.8062,0.8397,0.4605,0.3247,0.1623,0.3602,0.0,0.3857,0.0,0.238,0.0,0.0
+6,a man recording himself taking sips of beer that is in a glass bottle .,0.0,a man standing in a kitchen is demonstrating how to poor a beer .,4.0,4.0,4.0,4.0,0.4095,0.8301,0.8798,0.6034,0.5264,0.4295,0.2886,0.0214,0.3288,0.0,0.1914,0.0,0.0

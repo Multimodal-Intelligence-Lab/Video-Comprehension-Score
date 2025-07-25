@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a scuba diver is diving underwater when another scuba diver swims nearby and then another scuba diver is holding the arm of the first scuba diver mentioned .,0.2059,"a scuba diver looks to their right before resuming swimming when they are joined by two more divers , then two divers are floating side by side .",5.0,5.0,5.0,5.0,0.6783,0.8794,0.9333,0.8828,0.8765,0.834,0.6238,0.3008,0.6366,0.2958,0.575,0.123,0.2059
+2,a group of people are scuba diving in the ocean .,0.5197,a couple of people are scuba diving in a large body of water .,5.0,4.0,5.0,4.6667,0.6659,0.9006,1.0,1.0,1.0,1.0,0.6291,0.5861,0.64,0.5674,0.6003,0.5405,0.5197
+3,a group of people are scuba diving in the ocean .,0.5197,a couple of people are scuba diving in a large body of water .,5.0,4.0,5.0,4.6667,0.6659,0.9006,1.0,1.0,1.0,1.0,0.6291,0.5861,0.64,0.5674,0.6003,0.5405,0.5197
+4,a small group of people are going scuba diving together .,0.133,a couple of people are scuba diving in a large body of water .,5.0,4.0,5.0,4.6667,0.5432,0.8746,0.925,0.5947,0.6431,0.5883,0.4777,0.1358,0.412,0.2484,0.2711,0.0032,0.133
+5,the scuba divers are swimming through the water as the fish swim by them .,0.3886,a scuba diver is swimming under water and a second one shows up later,4.0,3.0,4.0,3.6667,0.5829,0.8957,0.9497,0.8515,0.78,0.7544,0.5231,0.4983,0.5608,0.4523,0.454,0.4399,0.3886
+6,a scuba diver is underwater swimming among a lot of fish .,0.1622,people are scubadiving at the bottom of the ocean near plants .,4.0,3.0,4.0,3.6667,0.5624,0.8735,0.9199,0.803,0.7115,0.6433,0.499,0.3997,0.5193,0.3226,0.4497,0.2576,0.1622

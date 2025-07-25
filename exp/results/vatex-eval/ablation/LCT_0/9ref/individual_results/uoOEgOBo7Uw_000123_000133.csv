@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man lifts a baby out of the swimming pool and then drops the baby into the water while a child swims nearby .,0.726,"a man is holding a baby in a public pool , then drops the baby into the water .",5.0,5.0,5.0,5.0,0.835,0.9281,0.9499,0.813,0.8407,0.8268,0.8222,0.7502,0.8065,0.7473,0.7915,0.7277,0.726
+2,a man and a little boy are playing in a pool .,0.3065,a man holds a little baby in a swimming pool and then drops him on purpose .,5.0,5.0,5.0,5.0,0.5455,0.8887,0.95,0.8819,0.8642,0.8472,0.4869,0.396,0.4587,0.3837,0.3703,0.3204,0.3065
+3,a man and a boy are swimming in a swimming pool .,0.3848,a man is teaching a baby to swim by dunking him in the water of a pool .,5.0,4.0,5.0,4.6667,0.5022,0.9032,0.9756,0.9023,0.8959,0.8848,0.4489,0.4483,0.4898,0.4444,0.4351,0.3892,0.3848
+4,"a young boy holds a large mop , puts it into the bucket and pushes it down .",0.0,"a man is holding a baby in a swimming pool , holds the baby aloft , then drops the baby into the water .",4.0,2.0,2.0,2.6667,0.1727,0.8025,0.9846,1.0,0.9884,0.9847,0.0,0.1042,0.1407,0.0937,0.0,0.0,0.0
+5,a young man jumps off of a diving board and into a pool .,0.0,"a man is holding a baby in a swimming pool , holds the baby aloft , then drops the baby into the water .",3.0,3.0,2.0,2.6667,0.3555,0.837,0.92,0.7213,0.7327,0.6756,0.2212,0.1065,0.2915,0.1203,0.1535,0.0,0.0
+6,a little boy is trying to dive in the pool,0.0,"a man is holding a baby in a swimming pool , holds the baby aloft , then drops the baby into the water .",4.0,3.0,4.0,3.6667,0.3715,0.8499,0.928,0.7735,0.7215,0.6623,0.255,0.1307,0.3227,0.0682,0.1849,0.0,0.0

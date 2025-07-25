@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a person rolls a marble down a track on a table , made of books and folded newspaper and finally off the table into a bucket .",0.3602,someone rolls a marble down a home made track and into a dish on the floor .,5.0,5.0,5.0,5.0,0.7044,0.8657,0.8984,0.5253,0.5787,0.5133,0.6586,0.3261,0.671,0.4019,0.6199,0.2792,0.3602
+2,a person is showing how to use a plastic bottle .,0.0,someone rolls a marble down a home made track and into a dish on the floor .,2.0,3.0,4.0,3.0,0.1524,0.7722,0.9583,0.8047,0.8123,0.7569,0.0,0.0,0.1156,0.0,0.0,0.0,0.0
+3,a person picks up a stack of cards and places them on a table .,0.0,someone rolls a marble down a home made track and into a dish on the floor .,2.0,2.0,4.0,2.6667,0.1652,0.773,1.0,0.8879,0.911,0.8848,0.0,0.0598,0.1652,0.0836,0.0,0.0,0.0
+4,a pair of marbles come out of a track made out of cardboard and are collected at the bottom .,0.2787,someone rolls a marble down a home made track and into a dish on the floor .,4.0,4.0,4.0,4.0,0.6637,0.8466,0.8737,0.4177,0.5652,0.4864,0.6027,0.1227,0.6151,0.3449,0.5453,0.034,0.2787
+5,a very young child repeatedly puts a marble on a wooden ramp catching the marble at the bottom of the ramp .,0.0905,someone rolls a marble down a home made track and into a dish on the floor .,4.0,2.0,4.0,3.3333,0.5348,0.7993,0.9295,0.5876,0.64,0.5496,0.418,0.2082,0.4995,0.2731,0.3738,0.0094,0.0905
+6,someone is shaking marbles in their hand and drops one a couple times .,0.296,someone rolls a marble down a home made track and into a dish on the floor .,4.0,2.0,3.0,3.0,0.4855,0.7977,0.9647,0.8723,0.9162,0.8949,0.355,0.4101,0.4667,0.4384,0.3314,0.2606,0.296

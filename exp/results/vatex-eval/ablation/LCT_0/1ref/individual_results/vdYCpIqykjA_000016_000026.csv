@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young child crawls on the floor and then lies down .,0.3117,voices are heard conversing while a little kid lies on the floor on her stomach .,5.0,5.0,5.0,5.0,0.6341,0.8704,0.7925,0.6948,0.6106,0.5527,0.5797,0.4734,0.5383,0.386,0.4696,0.395,0.3117
+2,a baby is crawling on the floor with a pacifier .,0.0,voices are heard conversing while a little kid lies on the floor on her stomach .,5.0,4.0,5.0,4.6667,0.3491,0.8121,0.8242,0.8098,0.7254,0.6619,0.1985,0.1962,0.2103,0.1028,0.0276,0.0103,0.0
+3,a baby is crawling on the floor while a woman talks to him .,0.0,voices are heard conversing while a little kid lies on the floor on her stomach .,4.0,4.0,5.0,4.3333,0.4859,0.8216,0.6316,0.0,0.0,0.0,0.3743,0.0,0.1861,0.0,0.0093,0.0,0.0
+4,a baby crawling on a floor while another person is watching her .,0.0,voices are heard conversing while a little kid lies on the floor on her stomach .,5.0,4.0,5.0,4.6667,0.4471,0.8031,0.8163,0.501,0.4314,0.292,0.3116,0.0,0.3227,0.0,0.1567,0.0,0.0
+5,"young child baby sounds , crawling across a floor to a large pillow .",0.0,voices are heard conversing while a little kid lies on the floor on her stomach .,4.0,4.0,4.0,4.0,0.4571,0.8166,0.8778,0.578,0.5759,0.4806,0.3352,0.0608,0.3816,0.0573,0.2426,0.0,0.0
+6,a very young child is seen crawling on a tiled floor .,0.008,voices are heard conversing while a little kid lies on the floor on her stomach .,5.0,5.0,5.0,5.0,0.4599,0.8335,0.8497,0.702,0.6532,0.5839,0.352,0.2307,0.3644,0.1732,0.2374,0.0769,0.008

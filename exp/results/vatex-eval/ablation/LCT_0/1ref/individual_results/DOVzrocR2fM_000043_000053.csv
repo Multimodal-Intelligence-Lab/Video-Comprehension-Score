@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is washing their hands with the proper technique .,0.538,someone washing their hands and a narrator explaining how to do so .,5.0,5.0,5.0,5.0,0.6879,0.8835,0.8966,0.6667,0.7647,0.7337,0.6467,0.5154,0.6519,0.5918,0.6059,0.4701,0.538
+2,a woman is washing her hands in a sink in a sink .,0.3694,someone washing their hands and a narrator explaining how to do so .,5.0,5.0,5.0,5.0,0.4684,0.843,1.0,1.0,1.0,1.0,0.3694,0.4684,0.4684,0.4684,0.3694,0.3694,0.3694
+3,a person is washing their hands in a sink with soap .,0.3847,someone washing their hands and a narrator explaining how to do so .,5.0,4.0,5.0,4.6667,0.6062,0.8766,0.8333,0.6496,0.7301,0.6921,0.5508,0.3938,0.5275,0.4606,0.461,0.3085,0.3847
+4,a female talks as they demonstrate washing their hands and using soap .,0.0,someone washing their hands and a narrator explaining how to do so .,4.0,4.0,4.0,4.0,0.687,0.8323,0.8803,0.4302,0.2966,0.1549,0.6239,0.1706,0.6444,0.0,0.5728,0.0867,0.0
+5,a woman demonstrates how to wash hands using a sink and small bottle of soap .,0.4619,someone washing their hands and a narrator explaining how to do so .,5.0,5.0,5.0,5.0,0.5845,0.8054,0.963,0.9781,0.9586,0.9487,0.4842,0.5752,0.5686,0.5666,0.4643,0.4726,0.4619
+6,a person wetting their hands and washing then with soap,0.0,someone washing their hands and a narrator explaining how to do so .,5.0,4.0,5.0,4.6667,0.6474,0.8872,0.7065,0.0,0.0,0.0,0.6026,0.0,0.501,0.0,0.4375,0.0,0.0

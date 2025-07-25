@@ -1,0 +1,86 @@
+# MPII Ablation Study Configuration
+
+# ============================================================================
+# EXPERIMENT SETTINGS
+# ============================================================================
+experiment:
+  # Custom experiment ID (if empty, auto-generates timestamp)
+  experiment_id: ""
+
+# ============================================================================
+# PATHS CONFIGURATION
+# ============================================================================
+paths:
+  # Input data directory containing JSON test case files
+  data_dir: "../data"
+  
+  # Base output directory for results
+  results_dir: "../results"
+  
+  # Logs directory
+  logs_dir: "logs"
+
+# ============================================================================
+# MODELS CONFIGURATION
+# ============================================================================
+models:
+  # Path to downloaded NV-Embed model directory
+  nv_embed_path: "/mmfs1/scratch/jacks.local/mali9292/VAD-LLM2Vec/nv-embed"
+  
+  # SAT model for text segmentation (auto-downloaded via wtpsplit)
+  sat_model: "sat-12l-sm"
+  
+  nvembed:
+    name: "nvidia/NV-Embed-v1"
+    device: "cuda:0" 
+    max_length: 32768
+    trust_remote_code: true
+    
+  sat:
+    name: "segment-any-text/sat-3l-sm"
+
+# ============================================================================
+# VCS COMPUTATION PARAMETERS  
+# ============================================================================
+vcs:
+  chunk_size: 1
+  context_cutoff_value: 0.6
+  context_window_control: 4.0
+  lct: 0
+  return_all_metrics: true
+  return_internals: false
+
+# ============================================================================
+# PROCESSING CONFIGURATION
+# ============================================================================
+processing:
+  max_workers: 12
+  resume_from_checkpoint: true
+  checkpoint_interval: 5
+
+# ============================================================================
+# LOGGING CONFIGURATION
+# ============================================================================
+logging:
+  level: "INFO"
+  verbose: false
+  structured_format: true
+
+# ============================================================================
+# OUTPUT CONFIGURATION
+# ============================================================================
+output:
+  decimal_precision: 3
+  save_individual_results: true
+  save_aggregated_results: true
+
+# ============================================================================
+# ABLATION STUDY CONFIGURATION
+# ============================================================================
+ablation:
+  # Enable/disable specific ablation types
+  run_ablation_1: true  # All VCS metrics (return_all_metrics=True)
+  run_ablation_2: true  # Custom ablation metrics with scaled combinations
+  
+  # Experiment notes
+  experiment_notes: "Initial ablation study on 3 test cases (126.json, 704.json, 947.json)"

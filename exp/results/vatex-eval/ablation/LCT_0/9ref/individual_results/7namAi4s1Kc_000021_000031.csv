@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl in a purple shirt is crying while someone tells her to pick up the pizza .,0.3221,"a little girl in a purple frozen shirt whined and cried , because she didn't want to do what her mom told her to do .",5.0,5.0,5.0,5.0,0.5529,0.8733,0.971,0.8853,0.88,0.8587,0.4881,0.3854,0.5101,0.4079,0.439,0.2963,0.3221
+2,a little girl is sitting on the floor and she is crying .,0.2945,a little girl is throwing a fit because she wants something .,4.0,4.0,3.0,3.6667,0.5313,0.8632,0.9714,0.864,0.8247,0.7687,0.4512,0.4425,0.5175,0.4161,0.4169,0.3263,0.2945
+3,a young girl is talking to the camera and then laughs .,0.0,"a little girl in a purple frozen shirt whined and cried , because she didn't want to do what her mom told her to do .",2.0,2.0,2.0,2.0,0.4168,0.8481,0.9756,0.9454,0.9357,0.9188,0.3123,0.2113,0.2771,0.1527,0.1476,0.0011,0.0
+4,"a baby on the floor cries , pushing itself up on its hands and knees and crying momma .",0.0592,a young child is in the kitchen and is in tears because her mother asked her to do something perfectly reasonable .,2.0,2.0,3.0,2.3333,0.4376,0.8254,0.9497,0.8248,0.8003,0.7515,0.3055,0.2644,0.3521,0.2381,0.1999,0.0916,0.0592
+5,"the baby is in distress , crying for his mother and tossing an item off the bed",0.1714,a young child is in the kitchen and is in tears because her mother asked her to do something perfectly reasonable .,2.0,4.0,3.0,3.0,0.4329,0.8296,0.9873,0.8803,0.8876,0.8641,0.2949,0.3072,0.4092,0.3126,0.2558,0.1648,0.1714
+6,a young boy is a diaper is crying for his mommy while lying on a bed and then he sits up and throws something .,0.2096,a young girl is crying with her mom as she gives a fit and tantrum,1.0,2.0,3.0,2.0,0.4717,0.8406,0.9827,0.7616,0.7966,0.7576,0.3704,0.3063,0.4468,0.3368,0.3407,0.1733,0.2096

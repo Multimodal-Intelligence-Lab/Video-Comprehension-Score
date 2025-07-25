@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,some men and women out on the ocean fishing and pulling in a fish .,0.004,a group of people sit on a boat as another person is reeling in the fishing line .,4.0,4.0,4.0,4.0,0.613,0.8122,0.9262,0.4745,0.4785,0.358,0.5235,0.1427,0.5822,0.1493,0.4856,0.0,0.004
+2,a group of people are standing on a boat and they are standing in the water .,0.1954,a group of people sit on a boat as another person is reeling in the fishing line .,4.0,4.0,5.0,4.3333,0.5419,0.8572,0.9118,0.6517,0.6642,0.6082,0.4656,0.2971,0.4976,0.3103,0.4139,0.18,0.1954
+3,a group of people are standing on the edge of a body of water .,0.0,a group of people sit on a boat as another person is reeling in the fishing line .,4.0,4.0,4.0,4.0,0.3315,0.8301,0.9262,0.7175,0.7321,0.6772,0.1947,0.0684,0.2783,0.0869,0.1306,0.0,0.0
+4,a man wearing a floppy fisherman's hat stands on the shore of a small river and reels in his fishing line .,0.0,a group of people sit on a boat as another person is reeling in the fishing line .,4.0,4.0,4.0,4.0,0.3689,0.8273,0.9228,0.6747,0.7244,0.6668,0.2371,0.0646,0.316,0.1287,0.1732,0.0,0.0
+5,a boy sits in a boat while reeling in a fishing line from his fishing pole .,0.3439,a group of people sit on a boat as another person is reeling in the fishing line .,4.0,4.0,1.0,3.0,0.6623,0.9097,0.8885,0.5847,0.5874,0.5464,0.6288,0.373,0.62,0.3771,0.5822,0.3396,0.3439
+6,a man is navigating a small sail boat through open sea waters .,0.0,a group of people sit on a boat as another person is reeling in the fishing line .,4.0,5.0,5.0,4.6667,0.2192,0.79,0.9673,0.5765,0.6114,0.5081,0.0116,0.0,0.1927,0.0,0.0,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man with long , curly hair gets ready to get a buzz cut from his barber .",0.324,a man is sitting down nervous getting his head shaved .,4.0,4.0,4.0,4.0,0.5186,0.8326,0.9614,0.9258,0.9133,0.8943,0.418,0.4435,0.4732,0.4455,0.3578,0.3216,0.324
+2,a man is getting his head shaved by another man .,0.495,a man uses an electric razor to shave a section of another man's head .,5.0,5.0,5.0,5.0,0.7905,0.9366,0.9032,0.9737,0.8634,0.8256,0.7751,0.5192,0.689,0.5163,0.6585,0.498,0.495
+3,a group of people are standing in a field and one man is holding a microphone .,0.0,the man is having a haircut done while in the backyard,4.0,4.0,2.0,3.3333,0.1772,0.8215,0.9318,0.7138,0.7372,0.6701,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,a young man has his head shaved by a stylist in a salon .,0.2122,a man is sitting down nervous getting his head shaved .,4.0,4.0,4.0,4.0,0.5588,0.8702,0.9851,0.9319,0.9408,0.9238,0.4837,0.2944,0.4807,0.3145,0.3924,0.1305,0.2122
+5,a boy is having his hair shaved off by two men standing next to him .,0.3489,a man has his hair clipped by another man while a woman watches out of frame .,4.0,4.0,4.0,4.0,0.52,0.8498,1.0,0.8933,0.9155,0.8967,0.4148,0.4543,0.5125,0.4676,0.404,0.3328,0.3489
+6,a man is shaving his head with a set of electric clippers .,0.3405,a man is sitting in a chair while another man shaves his head with clippers .,4.0,5.0,4.0,4.3333,0.7424,0.8998,0.9565,0.8723,0.7939,0.7394,0.7137,0.4756,0.671,0.366,0.6344,0.4546,0.3405

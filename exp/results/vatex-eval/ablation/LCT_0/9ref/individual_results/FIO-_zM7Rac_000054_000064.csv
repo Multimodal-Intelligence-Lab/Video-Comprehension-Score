@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy is seated in a chair while talking and smoking a pipe .,0.7462,a guy is sitting outside in a chair and smoking a pipe .,5.0,5.0,5.0,5.0,0.8009,0.9386,1.0,1.0,1.0,1.0,0.7878,0.6771,0.7922,0.7618,0.7786,0.6718,0.7462
+2,a woman is sitting in a chair and is smoking a cigarette .,0.4374,a guy is sitting outside in a chair and smoking a pipe .,4.0,4.0,4.0,4.0,0.4961,0.8956,1.0,1.0,1.0,1.0,0.4374,0.4961,0.4961,0.4961,0.4374,0.4374,0.4374
+3,a woman is sitting in a chair and smoking a cigarette .,0.4442,a guy is sitting outside in a chair and smoking a pipe .,4.0,4.0,4.0,4.0,0.5022,0.8956,1.0,1.0,1.0,1.0,0.4442,0.5022,0.5022,0.5022,0.4442,0.4442,0.4442
+4,a man smokes a pipe as he sets there with no shirt on .,0.4563,a man smokes a pipe on a porch and talks about his movie preferences .,4.0,4.0,4.0,4.0,0.6013,0.8811,1.0,1.0,1.0,1.0,0.5294,0.5226,0.5233,0.5226,0.4563,0.4563,0.4563
+5,a man is smoking a pipe and then begins talking .,0.6819,a man smoking a pipe outside and talking about the movies he likes .,4.0,5.0,5.0,4.6667,0.7546,0.9213,0.9524,0.8644,0.8438,0.8291,0.7316,0.7161,0.7423,0.7092,0.7182,0.6895,0.6819
+6,a man blows smoke from his mouth while having a smoking pipe in his mouth .,0.437,a man with a blue huddle on smoking a pipe .,5.0,5.0,5.0,5.0,0.6774,0.8983,0.9599,0.7119,0.6959,0.6585,0.6409,0.508,0.6605,0.4674,0.622,0.4614,0.437

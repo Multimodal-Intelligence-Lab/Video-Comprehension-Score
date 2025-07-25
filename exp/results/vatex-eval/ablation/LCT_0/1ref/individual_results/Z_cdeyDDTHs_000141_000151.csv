@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man lays face down as a woman waxes his back .,0.0,a man gets his back waxed by some girls while lying down .,5.0,5.0,5.0,5.0,0.7688,0.8644,0.6985,0.0,0.0,0.0,0.7325,0.0,0.6079,0.0,0.5884,0.0,0.0
+2,a man is laying on a table while another man is waxing his back .,0.0,a man gets his back waxed by some girls while lying down .,4.0,4.0,4.0,4.0,0.688,0.8886,0.6,0.0,0.0,0.0,0.6489,0.0,0.4186,0.0,0.3836,0.0,0.0
+3,a man is laying on a table while a woman waxes his hair .,0.0,a man gets his back waxed by some girls while lying down .,5.0,5.0,5.0,5.0,0.6082,0.8394,0.7083,0.1657,0.2686,0.1287,0.5332,0.0,0.4469,0.0,0.3411,0.0,0.0
+4,a man is laying down while being waxed on the stomach by a woman .,0.0,a man gets his back waxed by some girls while lying down .,4.0,4.0,4.0,4.0,0.6769,0.8626,0.8228,0.5115,0.2616,0.144,0.6255,0.2783,0.6074,0.0,0.5448,0.2189,0.0
+5,a man is laying down on his back shirtless while a woman uses wax strips to help remove the hair .,0.0,a man gets his back waxed by some girls while lying down .,5.0,5.0,5.0,5.0,0.7023,0.8524,0.664,0.1662,0.056,0.0,0.6508,0.0,0.5216,0.0,0.4741,0.0,0.0
+6,a man in a clown nose is laying down while a woman waxes his back .,0.0,a man gets his back waxed by some girls while lying down .,4.0,4.0,4.0,4.0,0.6016,0.8748,0.7595,0.181,0.0,0.0,0.5446,0.0,0.4754,0.0,0.4003,0.0,0.0

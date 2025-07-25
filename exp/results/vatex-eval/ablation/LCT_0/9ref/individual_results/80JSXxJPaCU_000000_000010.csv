@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a traffic director is out on the street directing vehicles along the way .,0.3392,someone says action then a policeman in the middle of a street begind directing traffic instructing people to proceed forwards .,5.0,5.0,5.0,5.0,0.674,0.8817,0.9279,0.7727,0.6903,0.6265,0.6282,0.4892,0.5364,0.4406,0.4523,0.4329,0.3392
+2,a man is riding a unicycle down the street while a man talks to him .,0.0,"a man in a yellow vest walks into the street , another man says , "" action , "" then the man in the yellow vest starts directing traffic .",3.0,3.0,2.0,2.6667,0.2357,0.8393,0.9787,0.8879,0.9107,0.8841,0.0894,0.059,0.1339,0.0692,0.0,0.0,0.0
+3,a man is riding on a scooter down the street .,0.0,"a man in a yellow vest walks into the street , another man says , "" action , "" then the man in the yellow vest starts directing traffic .",4.0,3.0,2.0,3.0,0.25,0.835,0.9375,0.8753,0.8487,0.7918,0.0828,0.0398,0.1587,0.0,0.0,0.0,0.0
+4,a policeman dances around in the street in a high-viz jacket as they direct traffic .,0.2985,a police officer in the middle of the road is directing traffic,4.0,4.0,4.0,4.0,0.5946,0.8597,1.0,0.827,0.8262,0.7966,0.4925,0.4011,0.5045,0.4005,0.3897,0.2992,0.2985
+5,cars drive through a crosswalk while a traffic guard dances .,0.1161,someone says action then a policeman in the middle of a street begind directing traffic instructing people to proceed forwards .,4.0,4.0,4.0,4.0,0.3968,0.7941,0.9474,0.9062,0.8842,0.85,0.2225,0.3343,0.3633,0.3178,0.1751,0.1376,0.1161
+6,"a person in the passenger seat of a vehicle is recording a traffic officer in the street , who is dancing while directing traffic .",0.0117,an officer is standing in the middle of a street directing traffic .,4.0,4.0,4.0,4.0,0.6261,0.8828,0.9178,0.6727,0.7125,0.6647,0.5637,0.1078,0.552,0.1275,0.4773,0.0,0.0117

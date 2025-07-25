@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,an electric screwdriver is hooked up to an apple peeler and is demonstrated .,0.5714,someone uses an electric apple peeler and talks about it .,5.0,5.0,5.0,5.0,0.7137,0.8515,0.9599,0.6857,0.7845,0.747,0.6638,0.5597,0.6877,0.6351,0.6332,0.5097,0.5714
+2,a person is using a machine to peel an apple .,0.8115,a woman is using an electric machine to peel apples .,5.0,5.0,5.0,5.0,0.8383,0.9411,1.0,1.0,1.0,1.0,0.821,0.8226,0.8226,0.8226,0.8115,0.8115,0.8115
+3,a person is using a machine to peel an apple .,0.8115,a woman is using an electric machine to peel apples .,5.0,5.0,5.0,5.0,0.8383,0.9411,1.0,1.0,1.0,1.0,0.821,0.8226,0.8226,0.8226,0.8115,0.8115,0.8115
+4,the person is using a drill and a hand peeler to peel an apple .,0.5758,a woman is using an electric machine to peel apples .,4.0,4.0,5.0,4.3333,0.845,0.917,1.0,1.0,1.0,1.0,0.831,0.6253,0.716,0.6253,0.7112,0.5758,0.5758
+5,a person is using a drill to quickly peel up an apple .,0.584,a person putting an apple on a drill to automatically peel it,5.0,5.0,5.0,5.0,0.8777,0.9228,0.9787,0.8515,0.9107,0.8979,0.8675,0.734,0.6907,0.6118,0.6871,0.7205,0.584
+6,a girl is showing how to peel an apple in one solid peel,0.2599,woman attaches apple to a machine that peels it .,4.0,5.0,3.0,4.0,0.6242,0.8823,0.95,0.7876,0.7545,0.7118,0.574,0.385,0.541,0.3695,0.4797,0.278,0.2599

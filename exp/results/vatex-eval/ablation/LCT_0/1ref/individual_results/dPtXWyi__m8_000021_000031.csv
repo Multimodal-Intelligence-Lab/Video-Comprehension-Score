@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is standing at a kitchen counter and he is rolling bread dough,0.7804,a man standing at a kitchen counter kneads dough and describes it .,4.0,3.0,4.0,3.6667,0.8144,0.9342,0.9543,0.8598,0.9046,0.8979,0.8013,0.7842,0.8055,0.7949,0.7918,0.769,0.7804
+2,a man is demonstrating how to make a dough crust .,0.2559,a man standing at a kitchen counter kneads dough and describes it .,4.0,5.0,5.0,4.6667,0.5206,0.8353,0.9756,0.7735,0.7714,0.7263,0.426,0.3801,0.5086,0.3785,0.4117,0.2579,0.2559
+3,a man is demonstrating how to make a pie crust .,0.0508,a man standing at a kitchen counter kneads dough and describes it .,4.0,4.0,4.0,4.0,0.418,0.7948,0.9756,0.7735,0.7714,0.7124,0.2678,0.2476,0.4035,0.2456,0.2495,0.0533,0.0508
+4,a man is folding over a piece of dough before spreading flour under it and then rolling out the dough .,0.0403,a man standing at a kitchen counter kneads dough and describes it .,4.0,2.0,2.0,2.6667,0.4897,0.833,0.9424,0.6352,0.6383,0.5658,0.3874,0.1966,0.4586,0.2006,0.35,0.0355,0.0403
+5,a man and a little boy are each kneading dough while standing at a kitchen table .,0.0,a man standing at a kitchen counter kneads dough and describes it .,4.0,4.0,4.0,4.0,0.6271,0.9056,0.7538,0.4151,0.3031,0.2304,0.5882,0.0673,0.5053,0.0,0.4537,0.0056,0.0
+6,a chief in a kitchen demonstrating how to properly roll a bread dough .,0.0,a man standing at a kitchen counter kneads dough and describes it .,4.0,5.0,4.0,4.3333,0.5342,0.8238,0.8937,0.349,0.5019,0.3955,0.4346,0.0,0.4788,0.0676,0.3673,0.0,0.0

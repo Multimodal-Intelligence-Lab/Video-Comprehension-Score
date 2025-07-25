@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a child is slowly riding a horse around a corral .,0.5998,a child is riding a horse in a fenced in area .,5.0,5.0,5.0,5.0,0.7152,0.9228,1.0,0.8515,0.9107,0.9,0.6846,0.6445,0.7011,0.6386,0.669,0.6064,0.5998
+2,a woman is riding a horse in a field while a woman is talking to her .,0.6116,a kid riding on a horse while a woman is talking .,4.0,4.0,4.0,4.0,0.7081,0.9517,0.9706,0.9002,0.9077,0.8841,0.6932,0.6687,0.6789,0.6304,0.6626,0.6519,0.6116
+3,a woman is riding a horse around a fenced area .,0.5309,a child is riding a horse in a fenced in area .,4.0,4.0,4.0,4.0,0.6773,0.9439,0.9714,0.7785,0.8111,0.7694,0.6582,0.5855,0.6678,0.5572,0.6481,0.5609,0.5309
+4,a guy and a child are sitting on top of a horse .,0.1919,a young kid riding around on a horse in a circle,4.0,4.0,4.0,4.0,0.5772,0.8936,0.9412,0.8812,0.8204,0.7897,0.5269,0.3574,0.4866,0.3098,0.4255,0.2477,0.1919
+5,a woman talks to a child as they ride a horse together .,0.1957,a young kid riding around on a horse in a circle,4.0,4.0,2.0,3.3333,0.867,0.9417,0.873,0.9112,0.846,0.8162,0.8587,0.669,0.508,0.3017,0.4359,0.6659,0.1957
+6,a woman is riding a horse while a toddler sits in front of her in the saddle .,0.0305,a young child rides a horse slowly while a car passes behind the fence .,4.0,4.0,2.0,3.3333,0.5975,0.8875,0.9623,0.7377,0.7692,0.7149,0.5465,0.1817,0.4309,0.2152,0.3162,0.0,0.0305

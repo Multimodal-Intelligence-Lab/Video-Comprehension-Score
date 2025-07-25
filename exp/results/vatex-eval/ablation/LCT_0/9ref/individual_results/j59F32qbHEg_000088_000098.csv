@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman and a boy are brushing and grooming a horse .,0.6461,a woman shows a boy with golden locks how to properly groom a horse .,5.0,4.0,5.0,4.6667,0.7701,0.9148,0.9388,0.8819,0.8642,0.845,0.7468,0.6962,0.7325,0.6899,0.7055,0.6532,0.6461
+2,a young girl is brushing a horse ' s mane with a brush .,0.3369,a woman sprays a horse's hair and then rubs it in .,5.0,5.0,4.0,4.6667,0.6458,0.9071,1.0,1.0,1.0,1.0,0.6096,0.4732,0.5875,0.4732,0.5453,0.3369,0.3369
+3,a young girl is brushing a horse ' s tail with a brush .,0.3037,a woman sprays a horse's hair and then rubs it in .,4.0,4.0,4.0,4.0,0.6393,0.8936,1.0,1.0,1.0,1.0,0.5964,0.4508,0.5771,0.4508,0.5268,0.3037,0.3037
+4,a horse in a barn is getting a brushing by a young girl .,0.0,a small boy and older girl are standing in a horse stable . the girl is grooming the horse by brushing its mane as she converses with the boy .,5.0,5.0,4.0,4.6667,0.6794,0.8698,0.9404,0.6445,0.6081,0.5023,0.6314,0.3871,0.5176,0.1488,0.4443,0.3406,0.0
+5,a young girl brushing down the hind end of a horse .,0.1709,a young woman shows a young boy how to care for and brush a horse in the stables .,4.0,5.0,4.0,4.3333,0.6452,0.8778,1.0,0.8153,0.8161,0.7716,0.5958,0.3238,0.6035,0.3245,0.5483,0.1722,0.1709
+6,a young girl works on her horse and tells about how hard it is clean the horse,0.2783,a young woman shows a young boy how to care for and brush a horse in the stables .,3.0,4.0,4.0,3.6667,0.5747,0.88,0.9583,0.9387,0.9226,0.9018,0.5167,0.3645,0.5341,0.3755,0.4706,0.2657,0.2783

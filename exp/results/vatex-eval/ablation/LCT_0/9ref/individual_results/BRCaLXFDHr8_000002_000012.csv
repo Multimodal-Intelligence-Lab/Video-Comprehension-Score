@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,little pipes which are cut are assembled in an height increasing order and held together .,0.0,a woman tests a wind instrument with her fingers before blowing into it .,5.0,5.0,5.0,5.0,0.3329,0.7697,0.9697,0.9002,0.8967,0.8583,0.1107,0.0712,0.2805,0.1758,0.0409,0.0,0.0
+2,a man is demonstrating how to play a musical instrument .,0.6916,a person is demonstrating how to use a homemade musical instrument .,4.0,4.0,5.0,4.3333,0.7179,0.9147,1.0,1.0,1.0,1.0,0.6916,0.7179,0.7179,0.7179,0.6916,0.6916,0.6916
+3,a man is demonstrating how to use a wooden tool .,0.4555,a person is demonstrating how to use a homemade musical instrument .,4.0,4.0,4.0,4.0,0.5218,0.8784,1.0,1.0,1.0,1.0,0.4555,0.5218,0.5218,0.5218,0.4555,0.4555,0.4555
+4,a man is blowing into an instrument and playing musical tunes .,0.2375,"a person taps a leveled instrument up and down , then plays it with their mouth .",4.0,4.0,5.0,4.3333,0.6619,0.8641,0.883,0.5601,0.6564,0.5921,0.5989,0.2312,0.6017,0.3575,0.5275,0.1154,0.2375
+5,a group of people playing insturments for an orchestra as other people listen to them play,0.0,a woman tests a wind instrument with her fingers before blowing into it .,1.0,1.0,2.0,1.3333,0.1914,0.8558,0.9667,0.8879,0.8884,0.8564,0.0552,0.0522,0.1294,0.0528,0.0,0.0,0.0
+6,members of the flute and tuba sections of a band play their instruments during a performance .,0.0,a woman tests a wind instrument with her fingers before blowing into it .,1.0,1.0,2.0,1.3333,0.454,0.8355,0.9321,0.6711,0.7324,0.6587,0.3167,0.0,0.3296,0.1577,0.153,0.0,0.0

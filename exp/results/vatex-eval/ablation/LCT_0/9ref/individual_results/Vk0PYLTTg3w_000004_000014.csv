@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is doing martial arts moves on a pier .,0.4262,a woman in white clothing does traditional oriental dance moves on a lake pier .,4.0,5.0,5.0,4.6667,0.5892,0.8639,1.0,1.0,1.0,1.0,0.5085,0.5043,0.5316,0.5043,0.4417,0.4262,0.4262
+2,a man is standing on the ground doing tai chi .,0.2842,a woman moves gracefully through exercises of tai chi while on a dock .,4.0,4.0,4.0,4.0,0.4786,0.8713,1.0,1.0,1.0,1.0,0.371,0.3968,0.4786,0.4067,0.371,0.2723,0.2842
+3,a man is standing in the middle of a lake and doing tai chi .,0.18,a woman moves gracefully through exercises of tai chi while on a dock .,2.0,3.0,2.0,2.3333,0.541,0.8563,1.0,0.753,0.7792,0.7169,0.446,0.3233,0.5252,0.3299,0.4269,0.1719,0.18
+4,a group of several women learning and practicing line dancing .,0.0,an older korean woman wearing white demonstrates the art of taekwondo,2.0,1.0,1.0,1.3333,0.2139,0.8098,0.9424,0.6352,0.6383,0.5138,0.0113,0.0,0.1659,0.0,0.0,0.0,0.0
+5,"a woman in a bikini on a beach performs a hand stand ,",0.0,an older korean woman wearing white demonstrates the art of taekwondo,2.0,2.0,2.0,2.0,0.3365,0.8158,0.9557,0.827,0.8296,0.7869,0.139,0.1264,0.2393,0.1256,0.0676,0.0,0.0
+6,a man and a woman perform advanced yoga leg exercises outdoors by a pool,0.0,an older korean woman wearing white demonstrates the art of taekwondo,4.0,2.0,2.0,2.6667,0.4855,0.8238,1.0,0.9045,0.9298,0.9093,0.3754,0.1533,0.4445,0.1764,0.3257,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is skiing on the snowy road,0.2561,a person is cross country skiing on a wide path in the woods,5.0,5.0,5.0,5.0,0.7027,0.8835,0.9286,0.8664,0.7781,0.7428,0.6635,0.4377,0.5673,0.3581,0.5044,0.356,0.2561
+2,a person is skiing down a snowy hill in the snow .,0.2231,a person is skiing down hill by using ski poles on both of his hands .,4.0,4.0,5.0,4.3333,0.6957,0.9038,1.0,0.8408,0.827,0.7935,0.6633,0.4492,0.6124,0.2954,0.5711,0.4223,0.2231
+3,a person is skiing down a snowy hill in the snow .,0.2231,a person is skiing down hill by using ski poles on both of his hands .,4.0,4.0,5.0,4.3333,0.6957,0.9038,1.0,0.8408,0.827,0.7935,0.6633,0.4492,0.6124,0.2954,0.5711,0.4223,0.2231
+4,an individual is skiing down a snowy hill on two skis and with two ski poles .,0.6726,a person is skiing down hill by using ski poles on both of his hands .,4.0,4.0,5.0,4.3333,0.8014,0.9022,0.936,0.7258,0.7502,0.7222,0.7799,0.6578,0.7878,0.6814,0.7648,0.6484,0.6726
+5,someone is skiing down a snow kill and around ski poles .,0.5643,a person is skiing down hill by using ski poles on both of his hands .,4.0,4.0,4.0,4.0,0.6602,0.8813,0.9623,0.8598,0.8908,0.8752,0.6119,0.6048,0.6322,0.6185,0.5799,0.5486,0.5643
+6,someone is skiing down a snowy mountain on skis .,0.0875,a person is skiing down hill by using ski poles on both of his hands .,4.0,4.0,5.0,4.3333,0.6062,0.8867,0.9115,0.6754,0.6154,0.5512,0.5559,0.3283,0.5152,0.1931,0.4368,0.2197,0.0875

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two girls create an old time dancing video while wearing white dresses .,0.3604,two girls with white dress are dancing together with same steps,5.0,5.0,5.0,5.0,0.7129,0.9041,0.9202,0.7428,0.7627,0.7231,0.6823,0.3929,0.655,0.3913,0.6136,0.3621,0.3604
+2,a woman is dancing to music in a living room .,0.2272,two women dance to music in a black and white video .,4.0,4.0,4.0,4.0,0.45,0.8642,1.0,1.0,1.0,1.0,0.3636,0.34,0.3418,0.34,0.2272,0.2272,0.2272
+3,a woman and a woman are dancing to music in a kitchen .,0.286,two women dance to music in a black and white video .,4.0,2.0,4.0,3.3333,0.5552,0.8641,0.9524,0.8284,0.7923,0.7596,0.4689,0.4099,0.4732,0.383,0.3904,0.3171,0.286
+4,"two little girls , performing a dance routine in front of a bar .",0.3498,two young girls are standing in their slips doing a dance together,4.0,4.0,4.0,4.0,0.5042,0.8677,0.9859,0.9515,0.8958,0.8776,0.4175,0.445,0.4893,0.4465,0.4001,0.348,0.3498
+5,two young girls are dressed in costume performing a dance routine to the music playing in the background .,0.3583,two girls with white dress are dancing together with same steps,5.0,5.0,4.0,4.6667,0.5928,0.8699,0.9604,0.921,0.917,0.9031,0.5288,0.4522,0.5624,0.4498,0.4936,0.3611,0.3583
+6,two young girls dance together in their dark lit room at the same time .,0.376,"two teenage girls dance side by side by alternating steps , kicking feet backwards and lifting palms .",5.0,4.0,4.0,4.3333,0.6311,0.9073,1.0,1.0,1.0,1.0,0.5848,0.4878,0.4887,0.4796,0.4245,0.3858,0.376

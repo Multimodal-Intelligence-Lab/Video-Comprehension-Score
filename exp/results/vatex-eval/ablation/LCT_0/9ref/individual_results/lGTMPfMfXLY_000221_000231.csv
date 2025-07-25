@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a child , together with mom is feeding the fish in the pond .",0.7672,a boy and woman are feeding fishes in the pond .,5.0,4.0,5.0,4.6667,0.7872,0.9143,1.0,1.0,1.0,1.0,0.7672,0.7872,0.7872,0.7872,0.7672,0.7672,0.7672
+2,a group of people are feeding fish in a pond .,0.692,a boy and woman are feeding fishes in the pond .,5.0,2.0,4.0,3.6667,0.7235,0.8977,1.0,1.0,1.0,1.0,0.692,0.7235,0.7235,0.7235,0.692,0.692,0.692
+3,a group of people are feeding fish in a pond .,0.692,a boy and woman are feeding fishes in the pond .,5.0,2.0,4.0,3.6667,0.7235,0.8977,1.0,1.0,1.0,1.0,0.692,0.7235,0.7235,0.7235,0.692,0.692,0.692
+4,"a woman , a young girl , and a toddler girl sit around a fish pond .",0.4323,a woman and child sit by the water with fish and ducks .,4.0,3.0,4.0,3.6667,0.6845,0.8901,0.9278,0.7926,0.7872,0.7609,0.6338,0.4982,0.5788,0.4947,0.5111,0.4362,0.4323
+5,a girl sits at the edge of a pond and watches a large number of fish swim below her .,0.4879,a female adult and a child are sitting at the side of a pond where fish are seen swimming and ducks and a couple of ducklings walking near them .,5.0,3.0,4.0,4.0,0.6585,0.8898,0.9398,0.7634,0.8023,0.7588,0.5963,0.5527,0.6181,0.5668,0.5485,0.4712,0.4879
+6,a seated young girl feeds gather coi in a pond as running water is heard .,0.202,a boy and woman are feeding fishes in the pond .,4.0,4.0,2.0,3.3333,0.6037,0.8667,0.9571,0.7346,0.7486,0.6912,0.5427,0.3379,0.5579,0.3503,0.4899,0.1868,0.202

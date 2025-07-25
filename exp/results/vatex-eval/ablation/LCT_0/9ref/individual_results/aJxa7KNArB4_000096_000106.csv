@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,meat is being placed into a grinder and the end result is shown as trays of ground meat,0.4174,"people are putting chunks of meat into a grinder , and then they are weighing portions of the ground meat .",5.0,5.0,5.0,5.0,0.7212,0.8635,0.9041,0.755,0.752,0.6876,0.6771,0.3496,0.6846,0.453,0.6347,0.2108,0.4174
+2,a man is using a meat grinder to grind meat .,0.4687,"people are putting chunks of meat into a grinder , and then they are weighing portions of the ground meat .",5.0,5.0,5.0,5.0,0.6585,0.8843,0.9412,0.7106,0.7337,0.696,0.6101,0.5194,0.6371,0.5346,0.5858,0.4514,0.4687
+3,a person is using a meat grinder to grind meat .,0.491,"people are putting chunks of meat into a grinder , and then they are weighing portions of the ground meat .",5.0,5.0,5.0,5.0,0.6686,0.8872,0.9412,0.7106,0.7337,0.6999,0.6265,0.5337,0.6479,0.5484,0.6032,0.4744,0.491
+4,"a man cuts meat on a cutting board , places the cut meat into a container , and pulls out another piece of meat .",0.0716,a group of workers are weighing and separating portions of raw meat .,4.0,4.0,4.0,4.0,0.5569,0.8652,0.9426,0.7574,0.7927,0.7408,0.4878,0.2227,0.5051,0.2573,0.428,0.0283,0.0716
+5,a man in a large kitchen is cutting up big pieces of meat and putting those pieces in a container,0.0336,a group of men are grinding up meat and putting it into portions .,4.0,4.0,4.0,4.0,0.4722,0.8632,0.9511,0.6074,0.6423,0.5857,0.3792,0.1177,0.4196,0.1658,0.3254,0.0,0.0336
+6,a man is pushing meat through a meat grinder,0.3323,"people are putting chunks of meat into a grinder , and then they are weighing portions of the ground meat .",4.0,5.0,5.0,4.6667,0.5996,0.8841,0.9714,0.9679,0.9393,0.9266,0.5443,0.4477,0.52,0.4132,0.4539,0.3753,0.3323

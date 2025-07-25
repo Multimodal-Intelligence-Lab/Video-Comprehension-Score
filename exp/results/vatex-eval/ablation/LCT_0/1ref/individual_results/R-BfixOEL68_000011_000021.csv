@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,someone is playing the game of bowling and all are clapping with the performance,0.0,a strike occurs at the bowling alley followed by a massive outpouring of screams and cheers .,5.0,5.0,5.0,5.0,0.5777,0.7672,0.8968,0.4237,0.4057,0.2253,0.4495,0.0024,0.5291,0.0,0.3862,0.0,0.0
+2,a person is throwing a bowling ball down a lane .,0.0,a strike occurs at the bowling alley followed by a massive outpouring of screams and cheers .,5.0,5.0,5.0,5.0,0.4089,0.7793,0.8061,0.6467,0.6047,0.4927,0.2415,0.086,0.2667,0.0225,0.0591,0.0,0.0
+3,a person throws a bowling ball down a lane and knocks it down .,0.0,a strike occurs at the bowling alley followed by a massive outpouring of screams and cheers .,5.0,5.0,5.0,5.0,0.4864,0.7764,0.8824,0.3603,0.3163,0.1195,0.3385,0.0,0.4179,0.0,0.2503,0.0,0.0
+4,a person throws a ball very forcefully and plays the game of bowling,0.0,a strike occurs at the bowling alley followed by a massive outpouring of screams and cheers .,5.0,5.0,5.0,5.0,0.4825,0.7796,0.85,0.5817,0.567,0.4446,0.3362,0.1103,0.3912,0.0873,0.2191,0.0,0.0
+5,"in a crowded bowling alley someone bowls a strike , it is dark .",0.2254,a strike occurs at the bowling alley followed by a massive outpouring of screams and cheers .,4.0,3.0,4.0,3.6667,0.6728,0.8452,0.8108,0.5578,0.5252,0.4383,0.6129,0.3427,0.5965,0.2944,0.5226,0.2785,0.2254
+6,several people are in a bowling alley rolling the ball down the lane .,0.2592,a strike occurs at the bowling alley followed by a massive outpouring of screams and cheers .,4.0,4.0,5.0,4.3333,0.5198,0.8038,0.9223,0.8087,0.8065,0.7592,0.4026,0.4061,0.4793,0.4045,0.3522,0.2612,0.2592

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is holding dumbbells then lifts the dumbbells with each arm .,0.4938,a man in a workout facility is alternately raising and lowering dumbells in front of himself .,5.0,5.0,5.0,5.0,0.7052,0.8463,0.9333,0.7212,0.7093,0.6459,0.6409,0.5913,0.6775,0.5844,0.6071,0.5021,0.4938
+2,a man in a gym is lifting weights in a gym .,0.568,a man in a workout facility is alternately raising and lowering dumbells in front of himself .,5.0,5.0,5.0,5.0,0.713,0.8677,0.9592,0.838,0.8417,0.7922,0.6544,0.6434,0.6943,0.6412,0.6319,0.5706,0.568
+3,in a gym a man is lifting weights with his arms .,0.4052,"in a workout tutorial , a man shows how he works his arms out .",5.0,5.0,5.0,5.0,0.759,0.9095,1.0,0.9041,0.881,0.8451,0.735,0.4956,0.7189,0.4872,0.6909,0.4149,0.4052
+4,a man is at a gym giving exercise tips on using barbells .,0.4674,a man at the gym explaining the proper way to perform free weight shoulder raises .,4.0,4.0,4.0,4.0,0.6478,0.8376,0.9655,0.8059,0.8096,0.7669,0.5688,0.547,0.6312,0.5649,0.5485,0.4454,0.4674
+5,in a gym a man lifts a barbell with weights and performs a clean lift .,0.2417,a fit male is lifting his arms using free weights .,4.0,4.0,4.0,4.0,0.5995,0.8637,0.9321,0.6747,0.6475,0.583,0.509,0.3848,0.53,0.3589,0.4441,0.2723,0.2417
+6,a man in the gym working out using their arms to lift weights,0.6099,a man in a workout facility is alternately raising and lowering dumbells in front of himself .,5.0,5.0,5.0,5.0,0.7752,0.9142,0.9846,0.8723,0.8876,0.8603,0.7541,0.6805,0.717,0.686,0.6879,0.6031,0.6099

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man climbing down a rock with the help of a rope .,0.4352,a man descending on a rock climbing wall while another man watches .,5.0,5.0,5.0,5.0,0.672,0.9165,1.0,1.0,0.9839,0.9798,0.6346,0.5531,0.5666,0.5458,0.5138,0.4888,0.4352
+2,a young boy is climbing up a tree with a rope .,0.0,two men together outdoors practicing mountain climbing with ropes,4.0,4.0,3.0,3.6667,0.3648,0.8362,1.0,0.9781,0.947,0.9292,0.2257,0.1947,0.3648,0.1068,0.2224,0.0142,0.0
+3,a group of people are climbing up a rock wall .,0.0827,the man wears a helmet and uses a rope to climb the side of a rock face .,4.0,5.0,4.0,4.3333,0.4191,0.8774,1.0,1.0,1.0,1.0,0.3029,0.2535,0.3507,0.241,0.2152,0.0978,0.0827
+4,a man uses ropes to help him climb safely down a small cliff .,0.2452,the man wears a helmet and uses a rope to climb the side of a rock face .,5.0,5.0,5.0,5.0,0.6079,0.8721,0.9474,0.8753,0.8648,0.8285,0.5503,0.3731,0.5666,0.3656,0.5009,0.2211,0.2452
+5,two men are climbing the face of a cliff and then one of them moves quickly laterally across the side of the cliff at the end of his rope .,0.2585,two men together outdoors practicing mountain climbing with ropes,4.0,5.0,3.0,4.0,0.6131,0.8748,0.9706,1.0,0.9701,0.9622,0.54,0.3454,0.5055,0.3737,0.4229,0.225,0.2585
+6,a man is seen climbing a rock face and swinging on a rope .,0.1438,a man is slowly lowering himself down from a tree .,5.0,4.0,4.0,4.3333,0.6786,0.8965,1.0,1.0,0.9744,0.9678,0.6414,0.3361,0.5709,0.3187,0.5214,0.1658,0.1438

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,five adults work together to mash fruits or vegetables to make juice .,0.3222,"five people sitting in an elevated , round tub pump hard with their bodies as juice pours from tub into bucket .",5.0,4.0,5.0,4.6667,0.5734,0.8132,0.9851,0.979,0.9748,0.9671,0.4755,0.4419,0.5535,0.4488,0.451,0.3093,0.3222
+2,a group of people are stomping on grapes in a bucket .,0.3939,a group of people in a barrel shaped device squishing grapes while liquid pours out .,5.0,4.0,4.0,4.3333,0.663,0.8794,1.0,0.8766,0.8611,0.8274,0.6167,0.4622,0.6203,0.4454,0.5682,0.3923,0.3939
+3,a group of people are stomping grapes in a bucket .,0.3655,a group of people in a barrel shaped device squishing grapes while liquid pours out .,5.0,4.0,2.0,3.6667,0.6472,0.8794,1.0,0.8766,0.8611,0.8274,0.5988,0.451,0.6025,0.4319,0.548,0.3638,0.3655
+4,a group of people are standing in a box and smashing grapes with their feet .,0.5523,a group of people in a barrel shaped device squishing grapes while liquid pours out .,4.0,4.0,3.0,3.6667,0.6467,0.8576,1.0,1.0,0.9936,0.9923,0.5873,0.6094,0.6422,0.6167,0.582,0.5438,0.5523
+5,these people set up a long chain reaction and is rolling a marble down through it,0.0,"five people sitting in an elevated , round tub pump hard with their bodies as juice pours from tub into bucket .",3.0,4.0,2.0,3.0,0.2514,0.8084,0.9873,0.9777,0.9727,0.9642,0.0573,0.2092,0.2418,0.2051,0.0335,0.0,0.0
+6,multiple people stomp around in a box full of various kinds of fruits,0.3111,a group of people are in a competition trying to crush fruit .,5.0,4.0,2.0,3.6667,0.5462,0.836,1.0,0.9045,0.9298,0.9119,0.4571,0.4062,0.5242,0.4241,0.4308,0.2897,0.3111

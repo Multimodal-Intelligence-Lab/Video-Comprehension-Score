@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"in a game of kickball , a kick is made and one of the players gets a run which garners light applause .",0.1373,two teams play kickball at a diamond and as a play takes place a man walks away holding his head .,4.0,5.0,5.0,4.6667,0.5591,0.8147,0.9739,0.7486,0.8124,0.7643,0.4588,0.2551,0.4682,0.3136,0.3472,0.0638,0.1373
+2,a group of people are playing a game of baseball .,0.3354,a group of people were playing and do practice on the play ground,5.0,4.0,4.0,4.3333,0.6213,0.9179,0.9714,0.9679,0.9393,0.9339,0.5552,0.4079,0.455,0.3899,0.3862,0.355,0.3354
+3,a group of people are playing a game of baseball .,0.3354,a group of people were playing and do practice on the play ground,5.0,4.0,4.0,4.3333,0.6213,0.9179,0.9714,0.9679,0.9393,0.9339,0.5552,0.4079,0.455,0.3899,0.3862,0.355,0.3354
+4,"two guys playing with a ball , one kicking and the other trying to catch it with a light jump , followed by a light clap by the ball catcher .",0.0,people play a game while a crowd cheer and a man clutches his eye outside .,4.0,5.0,4.0,4.3333,0.3948,0.8231,0.9781,0.7874,0.8493,0.808,0.2546,0.0388,0.3387,0.1088,0.1855,0.0,0.0
+5,group of men standing around while one of them runs up hops and throws a cricket ball,0.0,people play a game while a crowd cheer and a man clutches his eye outside .,5.0,4.0,2.0,3.6667,0.394,0.8615,0.9614,0.91,0.9133,0.8899,0.2965,0.1058,0.2556,0.109,0.1359,0.0,0.0
+6,"a man throws a cricket ball , another man hits the ball , and then several people run .",0.1363,"a group of men are outside and they are playing kickball , the man hits the ball and other people run the bases .",5.0,4.0,4.0,4.3333,0.4965,0.896,0.9451,0.794,0.8326,0.7916,0.4319,0.073,0.4091,0.2261,0.3333,0.0,0.1363

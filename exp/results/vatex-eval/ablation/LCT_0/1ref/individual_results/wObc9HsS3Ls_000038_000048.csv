@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is preparing a slide and then places it under the microscope on the microscope holder .,0.0,a woman narrates and demonstrates viewing a slide under a microscope .,5.0,5.0,5.0,5.0,0.5542,0.8516,0.8365,0.4386,0.2925,0.1692,0.4765,0.0,0.4671,0.0,0.3742,0.0,0.0
+2,a person is demonstrating how to properly use a microscope .,0.3913,a woman narrates and demonstrates viewing a slide under a microscope .,5.0,5.0,5.0,5.0,0.5721,0.85,1.0,0.8408,0.827,0.7965,0.4965,0.491,0.5721,0.4826,0.4965,0.4012,0.3913
+3,a person is demonstrating how to use a piece of paper .,0.0,a woman narrates and demonstrates viewing a slide under a microscope .,4.0,4.0,3.0,3.6667,0.2045,0.8116,1.0,0.8408,0.827,0.7869,0.0198,0.0539,0.2045,0.0381,0.0198,0.0,0.0
+4,a woman explains the use of a microscope and then how to place the slides .,0.5847,a woman narrates and demonstrates viewing a slide under a microscope .,5.0,4.0,5.0,4.6667,0.7776,0.8792,0.875,0.5692,0.6897,0.6471,0.747,0.446,0.7458,0.601,0.7109,0.4233,0.5847
+5,a woman explains and demonstrates how to view a slide with a microscope .,0.8888,a woman narrates and demonstrates viewing a slide under a microscope .,5.0,5.0,5.0,5.0,0.8932,0.9608,1.0,1.0,1.0,1.0,0.8888,0.8932,0.8932,0.8932,0.8888,0.8888,0.8888
+6,a woman holds a slide and gestures towards a microscope .,0.6298,a woman narrates and demonstrates viewing a slide under a microscope .,5.0,4.0,5.0,4.6667,0.7764,0.8672,0.9167,0.6,0.7253,0.6832,0.7421,0.4848,0.756,0.6461,0.7187,0.461,0.6298

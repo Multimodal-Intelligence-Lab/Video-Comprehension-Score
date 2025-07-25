@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man attempting to break a board in martial arts , he misses .",0.0,a man in a karate studio tries to break a block of wood with his foot while people watch .,4.0,5.0,5.0,4.6667,0.5014,0.8398,0.7665,0.4069,0.3755,0.2564,0.4063,0.0,0.3495,0.0,0.2254,0.0,0.0
+2,a man is in a martial arts studio practicing karate moves .,0.0,a man in a karate studio tries to break a block of wood with his foot while people watch .,5.0,5.0,4.0,4.6667,0.6252,0.8408,0.7529,0.2447,0.1591,0.0,0.5542,0.0,0.5022,0.0,0.408,0.0,0.0
+3,a young boy in a karate uniform breaks a piece of wood in half .,0.0,a man in a karate studio tries to break a block of wood with his foot while people watch .,4.0,4.0,3.0,3.6667,0.5579,0.8402,0.9034,0.3574,0.3496,0.226,0.4738,0.0,0.5106,0.0,0.4176,0.0,0.0
+4,"a young karate student breaks a wooden board , being held by another student . he then starts to demonstrate another karate move .",0.1612,a man in a karate studio tries to break a block of wood with his foot while people watch .,4.0,4.0,3.0,3.6667,0.5546,0.8175,0.8936,0.5862,0.6496,0.5714,0.4551,0.2402,0.5015,0.3143,0.3903,0.0705,0.1612
+5,a karate instructor holds a board in his hand while a child breaks the board by kicking it .,0.0,a man in a karate studio tries to break a block of wood with his foot while people watch .,4.0,4.0,4.0,4.0,0.5362,0.8041,0.9138,0.3547,0.348,0.1891,0.4232,0.0,0.4924,0.0,0.3687,0.0,0.0
+6,the karate student kicks a wooden board held by another student while others watch .,0.3716,a man in a karate studio tries to break a block of wood with his foot while people watch .,5.0,5.0,5.0,5.0,0.6296,0.8303,0.8998,0.5862,0.7099,0.6506,0.5539,0.3427,0.5884,0.4782,0.5042,0.239,0.3716

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two boys dance outdoors with synchronized movements on a covered walkway .,0.5837,two boys are dancing in the same fashion in unison with one another,5.0,5.0,4.0,4.6667,0.6531,0.8334,1.0,1.0,1.0,1.0,0.5837,0.6531,0.6531,0.6531,0.5837,0.5837,0.5837
+2,a young man is dancing to music in a room .,0.0027,two boys are dancing in the same fashion in unison with one another,4.0,3.0,4.0,3.6667,0.2943,0.8053,1.0,0.8644,0.8788,0.8495,0.1236,0.1836,0.2943,0.1969,0.1236,0.0,0.0027
+3,two young men are dancing to music in a living room .,0.2215,two boys are dancing in the same fashion in unison with one another,4.0,4.0,4.0,4.0,0.44,0.8353,0.9543,0.7845,0.8611,0.8337,0.3296,0.2862,0.4132,0.3497,0.2975,0.1454,0.2215
+4,two children are shown dancing in unison to lively music .,0.4814,two boys are dancing in the same fashion in unison with one another,5.0,5.0,5.0,5.0,0.6643,0.869,0.9543,0.6107,0.7448,0.7063,0.6137,0.4141,0.6483,0.5493,0.5952,0.3657,0.4814
+5,two kids dance back and forth to music on their tiled living room floor .,0.2506,two boys are dancing in the same fashion in unison with one another,4.0,3.0,4.0,3.6667,0.4406,0.8207,0.9773,0.8911,0.9096,0.8898,0.3183,0.3722,0.4276,0.385,0.3025,0.235,0.2506
+6,two young people dance in sync to the music .,0.4855,two boys are dancing in the same fashion in unison with one another,5.0,5.0,5.0,5.0,0.6351,0.8278,0.9599,0.8723,0.8567,0.8269,0.5592,0.5817,0.6199,0.5741,0.5408,0.4947,0.4855

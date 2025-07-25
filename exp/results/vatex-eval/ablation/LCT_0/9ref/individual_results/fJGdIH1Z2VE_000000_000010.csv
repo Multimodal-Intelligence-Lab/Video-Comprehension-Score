@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy is climbing up a rope while a crowd of people watch .,0.7019,a man climbing a rope in a large room with an audience watching .,5.0,5.0,5.0,5.0,0.77,0.8872,1.0,1.0,1.0,1.0,0.7407,0.7404,0.7632,0.7418,0.7323,0.7026,0.7019
+2,a woman is climbing up a rope in a gym .,0.5944,a man climbing a rope in a gym while others look .,4.0,4.0,4.0,4.0,0.7051,0.9053,0.9243,0.9706,0.8948,0.8733,0.6743,0.6898,0.656,0.6328,0.62,0.6574,0.5944
+3,a young girl is climbing up a rope in a gym .,0.4104,a man in an indoor gym climbs a rope hanging from the ceiling .,4.0,4.0,4.0,4.0,0.6412,0.8809,0.898,0.8047,0.7732,0.7222,0.5923,0.5376,0.5924,0.4933,0.5257,0.4691,0.4104
+4,"a man in a gym climbing to the top of a rope , barefoot .",0.5781,a man in an indoor gym climbs a rope hanging from the ceiling .,4.0,4.0,4.0,4.0,0.8004,0.9117,0.9804,0.8387,0.84,0.8196,0.7789,0.653,0.6794,0.6258,0.6665,0.6434,0.5781
+5,a man is practicing rope climbing along with other people in the video,0.4219,a man climbing a rope in a gym while others look .,5.0,5.0,4.0,4.6667,0.6551,0.8728,0.971,0.7008,0.7799,0.7444,0.6048,0.5078,0.6407,0.4954,0.5883,0.4361,0.4219
+6,a young man and woman are trying to climb rope ladders hung over covered bleachers .,0.2213,a man in an indoor gym climbs a rope hanging from the ceiling .,3.0,2.0,3.0,2.6667,0.4359,0.8533,0.9888,0.9135,0.9329,0.9202,0.3233,0.3309,0.3971,0.3448,0.2768,0.2048,0.2213

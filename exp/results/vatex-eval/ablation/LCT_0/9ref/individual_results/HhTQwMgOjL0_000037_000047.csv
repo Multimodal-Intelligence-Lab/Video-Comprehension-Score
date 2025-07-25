@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person tries to open a bottle that is in front of them,0.5043,a man is shown trying to open a bottle using a screw driver .,5.0,5.0,5.0,5.0,0.7812,0.9286,1.0,0.9827,0.9148,0.903,0.7644,0.5648,0.7519,0.562,0.7329,0.5552,0.5043
+2,a man is using a tool to open a bottle of wine .,0.773,a man is using a screw driver to open a bottle of wine,5.0,5.0,5.0,5.0,0.7839,0.9576,1.0,1.0,1.0,1.0,0.773,0.7839,0.7839,0.7839,0.773,0.773,0.773
+3,a man is using a tool to open a bottle of wine .,0.773,a man is using a screw driver to open a bottle of wine,5.0,5.0,5.0,5.0,0.7839,0.9576,1.0,1.0,1.0,1.0,0.773,0.7839,0.7839,0.7839,0.773,0.773,0.773
+4,a person opens a bottle cap that has a pop-top feature,0.2236,a person is using a tool to open the cap of a bottle .,4.0,3.0,4.0,3.6667,0.7311,0.8999,0.9333,0.7988,0.7912,0.7466,0.7012,0.3019,0.6288,0.2952,0.5899,0.1526,0.2236
+5,someone uses a crank to help them open a large plastic bottle .,0.4682,a person is using a tool to open the cap of a bottle .,5.0,4.0,5.0,4.6667,0.5817,0.8711,1.0,0.8879,0.911,0.8969,0.5156,0.5289,0.5817,0.5409,0.5156,0.4545,0.4682
+6,a guy opens a bottle cap with his teeth and then takes a drink .,0.0,a person is showing how they open a beer with a screw driver indoors .,3.0,3.0,4.0,3.3333,0.601,0.8713,0.9104,0.7017,0.693,0.6208,0.5421,0.1713,0.4747,0.1317,0.3971,0.0812,0.0

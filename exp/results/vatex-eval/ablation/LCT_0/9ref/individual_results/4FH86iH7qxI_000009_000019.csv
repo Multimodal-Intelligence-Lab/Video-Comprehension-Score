@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy ties his shoelaces and jumps up to his feet .,0.4269,a boy messed with his shoe and then got up and jumped .,5.0,4.0,5.0,4.6667,0.7045,0.8478,0.9714,0.7974,0.7618,0.7053,0.6499,0.4065,0.6493,0.4714,0.5845,0.3189,0.4269
+2,a little boy is playing with a toy on the floor .,0.0695,a little boy putting on his shoes while sitting on the step in front of a house .,2.0,4.0,3.0,3.0,0.2675,0.8438,1.0,0.965,0.9425,0.9311,0.1286,0.241,0.2647,0.2228,0.1286,0.0912,0.0695
+3,a little girl is sitting on the ground and playing a game of hopscotch .,0.065,a little boy sits on some red bricks that are outside,2.0,2.0,1.0,1.6667,0.3111,0.8314,1.0,0.8723,0.8863,0.8632,0.1713,0.2102,0.3111,0.2227,0.1713,0.05,0.065
+4,"a little kid is standing in front of a chair , and trying to put on his shoes .",0.216,a little boy putting on his shoes while sitting on the step in front of a house .,4.0,4.0,3.0,3.6667,0.5888,0.8851,1.0,0.8933,0.9155,0.897,0.5354,0.3359,0.5046,0.3362,0.413,0.2132,0.216
+5,a little boy is sitting on a floor playing with a shoe .,0.3118,a young boy sitting on a porch where he hops off after checking his shoes,5.0,4.0,4.0,4.3333,0.5389,0.8866,1.0,1.0,1.0,1.0,0.4799,0.4062,0.4757,0.4062,0.4019,0.3118,0.3118
+6,a little boy plays with his shoe as he is trying to put it on and a man's voice is in the background discouraging playing with the shoe .,0.1616,a young boy is sitting on his front step putting on his tan colored deck shoes .,3.0,3.0,2.0,2.6667,0.5704,0.8494,0.9469,0.8763,0.8848,0.8585,0.4676,0.3106,0.5096,0.3172,0.3997,0.1535,0.1616

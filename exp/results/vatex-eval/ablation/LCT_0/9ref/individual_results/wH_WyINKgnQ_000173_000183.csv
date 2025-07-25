@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"children play monopoly , one landing on the same space as another after rolling an eight .",0.1094,a boy rolls die in a game of monopoly and then counts out the corresponding eight spaces .,5.0,3.0,5.0,4.3333,0.759,0.8841,0.95,0.6602,0.6369,0.5469,0.7231,0.2923,0.6995,0.2221,0.6547,0.2195,0.1094
+2,a group of people are playing a game of monopoly .,0.552,a boy is showing and telling how to play the game monopoly .,4.0,5.0,5.0,4.6667,0.644,0.901,1.0,1.0,1.0,1.0,0.5698,0.6047,0.6047,0.6047,0.552,0.552,0.552
+3,a group of people are playing a game of monopoly .,0.552,a boy is showing and telling how to play the game monopoly .,4.0,5.0,5.0,4.6667,0.644,0.901,1.0,1.0,1.0,1.0,0.5698,0.6047,0.6047,0.6047,0.552,0.552,0.552
+4,a group of kids are playing monopoly while seated around a table .,0.2261,a boy demonstrates moving a monopoly piece after the dice are rolled .,2.0,3.0,4.0,3.0,0.578,0.8556,0.971,0.7268,0.8033,0.754,0.4945,0.3135,0.5095,0.3812,0.4125,0.1453,0.2261
+5,a young child demonstrates a turn in the board game monopoly .,0.6416,a boy is showing and telling how to play the game monopoly .,5.0,3.0,5.0,4.3333,0.721,0.8941,0.9787,0.8723,0.8707,0.8554,0.6879,0.6801,0.7149,0.6795,0.6811,0.6422,0.6416
+6,a group of kids are sitting in the floor playing a game of monopoly,0.4168,a boy is showing and telling how to play the game monopoly .,2.0,5.0,5.0,4.0,0.5481,0.8896,1.0,0.8723,0.8863,0.8699,0.4831,0.4819,0.5481,0.4901,0.4831,0.4074,0.4168

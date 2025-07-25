@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,people roll lots of marbles around back and fourth on a red table .,0.2124,a child is playing with marbles on a red plastic top .,5.0,5.0,5.0,5.0,0.6304,0.8393,0.9262,0.5437,0.5593,0.4749,0.5596,0.2761,0.6009,0.3008,0.5245,0.1846,0.2124
+2,a person is playing a game of marbles on a table .,0.1811,a child is playing with marbles on a red plastic top .,5.0,5.0,5.0,5.0,0.5883,0.8671,0.941,0.6806,0.5798,0.5154,0.5252,0.3951,0.5625,0.2857,0.4954,0.3024,0.1811
+3,a person is playing a game of marbles on a table .,0.1811,a child is playing with marbles on a red plastic top .,5.0,5.0,5.0,5.0,0.5883,0.8671,0.941,0.6806,0.5798,0.5154,0.5252,0.3951,0.5625,0.2857,0.4954,0.3024,0.1811
+4,a child speaking a foreign language is showing marbles on a bedspread .,0.0,a child is playing with marbles on a red plastic top .,4.0,4.0,3.0,3.6667,0.5033,0.8345,0.84,0.5607,0.4541,0.3459,0.4048,0.114,0.4087,0.0,0.2914,0.0,0.0
+5,a child is playing with marbles on a colorful blanket spread out on the floor .,0.5707,a child is playing with marbles on a red plastic top .,4.0,3.0,4.0,3.6667,0.6633,0.885,1.0,0.8723,0.8863,0.8715,0.6195,0.614,0.6633,0.6201,0.6195,0.5638,0.5707
+6,a young child is shown doing something with marbles and talking about it .,0.0559,a child is playing with marbles on a red plastic top .,5.0,5.0,5.0,5.0,0.5847,0.8496,0.8537,0.3716,0.5178,0.4324,0.5112,0.0,0.5135,0.1753,0.4274,0.0,0.0559

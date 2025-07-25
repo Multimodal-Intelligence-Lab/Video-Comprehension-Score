@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two men eat side by side as they share each others food .,0.46,two men eat beside of one another when one of the men steals the other's plate .,5.0,5.0,5.0,5.0,0.7182,0.9096,0.9518,0.8651,0.8752,0.8523,0.6902,0.5381,0.6749,0.5434,0.6426,0.4534,0.46
+2,a group of people are sitting at a table and eating food .,0.4035,a group of people are sitting around a dining table eating cake and laughing .,5.0,5.0,5.0,5.0,0.6255,0.9321,0.9403,0.6877,0.7767,0.7313,0.5761,0.4243,0.5789,0.444,0.5482,0.3823,0.4035
+3,two men are sitting at a table eating a hot dog .,0.1954,men sit at a table and while one man's eating the other takes his food .,4.0,4.0,4.0,4.0,0.5529,0.8884,0.9697,0.827,0.8673,0.8437,0.4967,0.3401,0.4681,0.3047,0.4013,0.2572,0.1954
+4,a man is sitting next to another man at a table eating something with a spoon,0.2427,men sit at a table and while one man's eating the other takes his food .,5.0,5.0,5.0,5.0,0.5933,0.8878,0.9851,0.8638,0.8887,0.8629,0.5405,0.2891,0.5746,0.332,0.5178,0.2026,0.2427
+5,a young man chews and puts pieces of food in his mouth .,0.0,a man is eating food at a table with his friends and smiling .,5.0,5.0,5.0,5.0,0.4659,0.8426,0.9787,0.8441,0.8583,0.8183,0.36,0.0,0.3748,0.0101,0.2509,0.0,0.0
+6,a group of young men are seen partaking in an eating contest .,0.0,a man is eating food at a table with his friends and smiling .,5.0,4.0,3.0,4.0,0.4517,0.8283,0.9599,0.593,0.7043,0.6389,0.3343,0.0,0.4143,0.1303,0.2774,0.0,0.0

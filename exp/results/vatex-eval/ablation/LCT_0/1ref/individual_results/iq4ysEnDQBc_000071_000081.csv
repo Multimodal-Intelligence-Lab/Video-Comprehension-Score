@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"the woman cracks her back , neck and then cracks her hands .",0.363,a woman is stretching and cracking her neck .,5.0,5.0,5.0,5.0,0.7128,0.8997,0.8075,0.7603,0.5663,0.518,0.6808,0.6223,0.6443,0.3916,0.6047,0.5801,0.363
+2,a woman is standing in front of a mirror and is rubbing her hair .,0.0,a woman is stretching and cracking her neck .,2.0,2.0,2.0,2.0,0.2912,0.7916,0.9231,0.6389,0.5102,0.3813,0.1046,0.0,0.2321,0.0,0.0299,0.0,0.0
+3,a woman is standing in a bathroom and is shaving her hair .,0.0,a woman is stretching and cracking her neck .,3.0,2.0,3.0,2.6667,0.1846,0.7874,0.9524,0.6306,0.2764,0.081,0.0,0.0,0.1439,0.0,0.0,0.0,0.0
+4,a woman stretches her arms and fingers until her bones pop .,0.3575,a woman is stretching and cracking her neck .,5.0,5.0,5.0,5.0,0.6273,0.8511,1.0,0.7253,0.6816,0.6259,0.5621,0.4862,0.6273,0.4532,0.5621,0.3963,0.3575
+5,a young woman in a gray jacket does some stretches and pops her knuckles .,0.1994,a woman is stretching and cracking her neck .,4.0,4.0,4.0,4.0,0.5052,0.8208,0.9108,0.8,0.753,0.6991,0.3971,0.3814,0.4567,0.3429,0.3381,0.2464,0.1994
+6,a woman looks towards the camera and adjust her neck back and forth,0.4258,a woman is stretching and cracking her neck .,5.0,4.0,3.0,4.0,0.6123,0.8329,0.9243,0.8284,0.8106,0.7726,0.5345,0.532,0.5806,0.5217,0.4964,0.4381,0.4258

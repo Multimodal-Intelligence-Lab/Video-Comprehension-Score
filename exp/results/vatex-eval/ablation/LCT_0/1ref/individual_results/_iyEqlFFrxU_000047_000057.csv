@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the pretty little girl is walking on the pavement pushing her toy cart .,0.1761,a little girl wearing a dress is pushing a toy stroller with a toy inside it down the street .,5.0,5.0,5.0,5.0,0.6316,0.8813,0.8749,0.505,0.5205,0.4559,0.582,0.2162,0.5789,0.2408,0.5222,0.1494,0.1761
+2,a little girl is pushing a toy cart across the street .,0.513,a little girl wearing a dress is pushing a toy stroller with a toy inside it down the street .,5.0,5.0,4.0,4.6667,0.694,0.9204,0.9433,0.6392,0.6827,0.6553,0.6675,0.4801,0.6755,0.5428,0.6475,0.4595,0.513
+3,a little girl is pushing a toy car down the street .,0.7177,a little girl wearing a dress is pushing a toy stroller with a toy inside it down the street .,5.0,5.0,4.0,4.6667,0.7575,0.9326,0.9737,0.91,0.921,0.9153,0.74,0.7335,0.751,0.7367,0.733,0.7143,0.7177
+4,a kid is pushing another kid in a cart down a sidewalk .,0.197,a little girl wearing a dress is pushing a toy stroller with a toy inside it down the street .,4.0,4.0,4.0,4.0,0.4142,0.8195,0.9614,0.8776,0.8901,0.8659,0.2852,0.3326,0.3907,0.3419,0.2565,0.1856,0.197
+5,"on a road , a girl is pushing another girl sitting on a three-wheel wheelbarrow .",0.0,a little girl wearing a dress is pushing a toy stroller with a toy inside it down the street .,4.0,3.0,2.0,3.0,0.4178,0.8281,0.7585,0.3482,0.3031,0.1584,0.2969,0.0,0.2324,0.0,0.0731,0.0,0.0
+6,a young girl with a basket walks across her back yard,0.0,a little girl wearing a dress is pushing a toy stroller with a toy inside it down the street .,4.0,4.0,2.0,3.3333,0.283,0.7862,0.9655,0.817,0.8468,0.8051,0.0881,0.1224,0.2574,0.1533,0.0555,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two young women are expressing themselves on video with their opinion,0.0,two young girls are being really goofy with they're eyes crossed .,5.0,5.0,5.0,5.0,0.3478,0.8454,0.9667,0.7361,0.7537,0.7087,0.2286,0.114,0.3253,0.1347,0.202,0.0,0.0
+2,two young girls are talking to each other in a room .,0.0,two young girls are being really goofy with they're eyes crossed .,2.0,3.0,4.0,3.0,0.375,0.8649,0.9183,0.6496,0.6414,0.5854,0.2774,0.0378,0.3194,0.0255,0.2131,0.0,0.0
+3,two girls are sitting in front of a camera and making funny faces .,0.1402,two young girls are being really goofy with they're eyes crossed .,2.0,3.0,4.0,3.0,0.6234,0.8262,0.8583,0.3855,0.532,0.4336,0.5443,0.0143,0.5613,0.2494,0.469,0.0,0.1402
+4,a little girl is making faces and laughing as somebody talks .,0.0,two young girls are being really goofy with they're eyes crossed .,2.0,2.0,4.0,2.6667,0.3536,0.7775,0.9555,0.6369,0.6465,0.5454,0.1686,0.0,0.3235,0.0002,0.1299,0.0,0.0
+5,"two teenage girls are showing the top of their ears , which are very red and irritated , to the camera .",0.1293,two young girls are being really goofy with they're eyes crossed .,2.0,2.0,2.0,2.0,0.3805,0.8338,0.9783,0.8253,0.8534,0.8242,0.257,0.2493,0.3667,0.274,0.2405,0.0997,0.1293
+6,a young girl is crossing her eyes and making funny faces .,0.0,two young girls are being really goofy with they're eyes crossed .,2.0,4.0,5.0,3.6667,0.7444,0.8724,0.7966,0.3474,0.2257,0.1125,0.7071,0.1233,0.6792,0.0,0.6323,0.077,0.0

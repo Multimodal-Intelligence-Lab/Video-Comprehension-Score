@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person who is teaching how to relax and make new sewing knots .,0.0,"a woman is demonstrating how to knit and saying that before you know it , your muscle memory kicks in .",4.0,3.0,5.0,4.0,0.4882,0.775,0.8845,0.5292,0.4933,0.3463,0.3397,0.033,0.4214,0.0,0.2534,0.0,0.0
+2,a woman is demonstrating how to knit a piece of yarn .,0.5159,"a woman is demonstrating how to knit and saying that before you know it , your muscle memory kicks in .",5.0,5.0,5.0,5.0,0.6744,0.8917,0.8151,0.8586,0.7544,0.7246,0.6348,0.6207,0.6005,0.5684,0.552,0.5746,0.5159
+3,a woman is demonstrating how to knit with knitting needles .,0.4299,"a woman is demonstrating how to knit and saying that before you know it , your muscle memory kicks in .",5.0,5.0,5.0,5.0,0.6714,0.8786,0.8969,0.6757,0.6561,0.6086,0.6259,0.5136,0.6336,0.4878,0.583,0.4464,0.4299
+4,a woman holds needle and yarn and she demonstrates how to knit .,0.0,"a woman is demonstrating how to knit and saying that before you know it , your muscle memory kicks in .",5.0,5.0,5.0,5.0,0.631,0.8573,0.6496,0.4013,0.2442,0.1183,0.5696,0.0512,0.432,0.0,0.3374,0.0,0.0
+5,a woman is showing how to knit using needles and blue thread .,0.4051,"a woman is demonstrating how to knit and saying that before you know it , your muscle memory kicks in .",4.0,5.0,4.0,4.3333,0.5563,0.8447,0.9859,0.8659,0.8831,0.8616,0.4747,0.4876,0.5499,0.4975,0.4672,0.3934,0.4051
+6,a woman is demonstrating how she is knitting with two needles and a yellow yarn .,0.3707,"a woman is demonstrating how to knit and saying that before you know it , your muscle memory kicks in .",4.0,4.0,4.0,4.0,0.5566,0.845,0.9231,0.8576,0.8337,0.8032,0.4753,0.483,0.5197,0.4682,0.4316,0.3882,0.3707

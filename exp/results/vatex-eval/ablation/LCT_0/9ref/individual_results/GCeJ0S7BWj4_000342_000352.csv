@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man wears pads on his hands as another man with boxing gloves hit the pads .,0.6846,"a man with pads on his hands holds out his hand , talks and gestures as another man wearing boxing gloves punches the first man's hand .",5.0,5.0,5.0,5.0,0.868,0.9428,0.9429,0.7584,0.8324,0.8,0.86,0.7217,0.7855,0.6887,0.7827,0.7191,0.6846
+2,a man is demonstrating how to punch a punching bag .,0.2206,a man is teaching another man how to punch using kickboxing gloves .,4.0,4.0,4.0,4.0,0.5699,0.8702,0.9756,0.8964,0.8971,0.8736,0.5058,0.3462,0.5162,0.3403,0.444,0.2487,0.2206
+3,two men are in a gym and one of them is punching a punching bag .,0.3044,two men wearing boxing gloves face each other and practice throwing punches .,4.0,4.0,4.0,4.0,0.6793,0.8681,0.9243,0.7925,0.7947,0.7568,0.6229,0.4112,0.5934,0.4129,0.5219,0.3024,0.3044
+4,a man is indoors and using boxing gloves to hit a punching bag .,0.3668,two men wearing boxing gloves face each other and practice throwing punches .,4.0,4.0,4.0,4.0,0.6047,0.8928,0.978,0.8007,0.8327,0.801,0.5478,0.4463,0.5467,0.4676,0.4609,0.3415,0.3668
+5,a man boxing vigorously with boxing gloves and with a punching bag,0.3654,two men wearing boxing gloves face each other and practice throwing punches .,4.0,4.0,3.0,3.6667,0.5771,0.8843,0.9123,0.7777,0.7755,0.7399,0.5217,0.4539,0.5345,0.4524,0.4606,0.3672,0.3654
+6,"during a spar , one fighter throws punches and the other covers face with gloves .",0.1865,two men wearing boxing gloves face each other and practice throwing punches .,2.0,2.0,1.0,1.6667,0.6172,0.8506,0.9495,0.8184,0.8388,0.7821,0.5499,0.3587,0.5091,0.3122,0.4229,0.2551,0.1865

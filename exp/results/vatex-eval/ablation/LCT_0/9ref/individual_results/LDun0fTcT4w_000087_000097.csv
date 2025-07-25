@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man shows how to properly change oil in the car and fill it with clean one,0.5402,"a man pours oil into a car oil tank , explaining what he's doing .",5.0,4.0,5.0,4.6667,0.7039,0.8618,0.9665,0.749,0.7657,0.7163,0.6529,0.5884,0.6936,0.6077,0.6409,0.5175,0.5402
+2,a man is demonstrating how to use a wrench on a car .,0.1334,a person is pouring oil into the engine of a vehicle .,4.0,3.0,3.0,3.3333,0.4458,0.8238,1.0,1.0,1.0,1.0,0.3273,0.3131,0.3131,0.3131,0.1334,0.1334,0.1334
+3,a man is demonstrating how to use a wrench to tighten bolts .,0.0,"a man pours oil into an engine then puts the cap on , and closes the trunk .",3.0,2.0,3.0,2.6667,0.2923,0.7897,1.0,0.8723,0.8707,0.8363,0.0765,0.1554,0.2473,0.1539,0.0468,0.0,0.0
+4,a man adding oil to his car using a funnel,0.3465,a person pours oil down his car's engine and tightens the cap .,5.0,5.0,5.0,5.0,0.6364,0.8645,1.0,0.8723,0.8863,0.8589,0.5795,0.4536,0.6136,0.4589,0.5334,0.3401,0.3465
+5,"a person working on a car , and filling the oil reservoir with a funnel and oil .",0.3726,a person is pouring oil into the engine of a vehicle .,3.0,4.0,4.0,3.6667,0.6856,0.8778,0.9333,0.6769,0.6727,0.6099,0.6418,0.5287,0.6051,0.4127,0.5499,0.4708,0.3726
+6,a person is changing the oil of her car from the bottom .,0.3178,a person explaining how he is pouring the oil inside the engine value,4.0,4.0,4.0,4.0,0.5872,0.9283,1.0,1.0,1.0,1.0,0.5321,0.4267,0.5439,0.4243,0.4831,0.3417,0.3178

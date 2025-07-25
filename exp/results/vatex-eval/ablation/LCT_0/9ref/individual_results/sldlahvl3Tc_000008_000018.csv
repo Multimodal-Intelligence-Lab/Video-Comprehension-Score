@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person using their fingers to wrap string around a hook,0.4399,a person is demonstrating how to tie a fishing string to a hook .,5.0,4.0,5.0,4.6667,0.7341,0.8948,1.0,1.0,1.0,1.0,0.7028,0.5148,0.7061,0.5111,0.6715,0.4441,0.4399
+2,a person is demonstrating how to make a fishing lure .,0.3793,a man is showing how and explaining how to tie a line to a fishhook .,4.0,4.0,4.0,4.0,0.7028,0.8963,0.9677,0.8291,0.8802,0.8524,0.6684,0.5412,0.6604,0.4964,0.621,0.4345,0.3793
+3,a person is demonstrating how to tie a fishing lure .,0.7149,a man demonstrates how to tie a fishing hook to a fishing line .,4.0,5.0,4.0,4.3333,0.8574,0.9401,0.9756,0.8408,0.8802,0.8549,0.8483,0.743,0.8532,0.7426,0.8439,0.7389,0.7149
+4,a man begins to tie a piece of material on a fish hook .,0.6675,a person is shown tying a fishing hook to a fishing line .,5.0,5.0,5.0,5.0,0.7966,0.8852,1.0,0.8723,0.8788,0.8537,0.7615,0.7187,0.7724,0.7136,0.7331,0.6727,0.6675
+5,a man is carefully wrapping the hook with some thread .,0.6204,a man is demonstrating how to wrap a hook with string .,5.0,4.0,5.0,4.6667,0.7022,0.8913,0.9756,0.9032,0.8906,0.8675,0.6658,0.631,0.6922,0.6616,0.6547,0.586,0.6204
+6,an instructional video of how to wind up wire on a fish hook,0.5043,a man is showing how to tie a string arond a small fish hook so it stays tight .,5.0,4.0,5.0,4.6667,0.6069,0.8408,0.9744,0.9757,0.9667,0.9594,0.5208,0.5971,0.5966,0.5934,0.5082,0.5089,0.5043

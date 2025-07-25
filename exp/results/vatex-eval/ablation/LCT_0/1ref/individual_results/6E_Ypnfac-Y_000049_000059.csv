@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man and a woman are dancing on stage to a big band group .,0.0,a band on a stage and an entire audience dancing to the music .,5.0,5.0,5.0,5.0,0.5201,0.8666,0.7194,0.2213,0.0,0.0,0.4463,0.0,0.333,0.0,0.2303,0.0,0.0
+2,a group of people are on a stage and a man is singing a song .,0.0,a band on a stage and an entire audience dancing to the music .,4.0,4.0,4.0,4.0,0.4164,0.8357,0.8915,0.2375,0.3751,0.2522,0.3016,0.0,0.3454,0.0,0.2166,0.0,0.0
+3,a group of people are on a stage and a group of people are cheering .,0.0,a band on a stage and an entire audience dancing to the music .,4.0,4.0,4.0,4.0,0.4597,0.805,0.825,0.4,0.5388,0.4271,0.3288,0.0,0.3451,0.0,0.1865,0.0,0.0
+4,people are dancing on a stage with a band behind them,0.0,a band on a stage and an entire audience dancing to the music .,5.0,5.0,5.0,5.0,0.7416,0.8922,0.55,0.2843,0.0,0.0,0.7104,0.0348,0.3932,0.0,0.3665,0.0,0.0
+5,a group of people on stage dancing and playing music together while others watch,0.0,a band on a stage and an entire audience dancing to the music .,4.0,5.0,4.0,4.3333,0.7007,0.8574,0.8086,0.1737,0.0004,0.0,0.6509,0.0,0.6299,0.0,0.5683,0.0,0.0
+6,a bunch of people are doing a dance together on a stage while people watch .,0.0,a band on a stage and an entire audience dancing to the music .,4.0,4.0,3.0,3.6667,0.6125,0.8309,0.7803,0.3871,0.1958,0.0322,0.5337,0.0,0.5034,0.0,0.4024,0.0,0.0

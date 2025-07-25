@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of girls dressed in black are performing some ballet .,0.3203,four girls do a coordinated ballet routine with one another .,5.0,5.0,5.0,5.0,0.6501,0.8657,0.9321,0.8481,0.836,0.7819,0.5781,0.5014,0.5925,0.4164,0.5087,0.3989,0.3203
+2,a group of people are doing a dance routine in a gym .,0.3717,in a studio a group of women are dancing around during a competition,5.0,5.0,5.0,5.0,0.5888,0.8652,0.9714,0.9679,0.9393,0.9285,0.5012,0.4825,0.5509,0.4668,0.4746,0.3902,0.3717
+3,a group of people are performing a dance routine in a gym .,0.5369,four girls are performing a ballet dance inside of a gym .,5.0,5.0,5.0,5.0,0.594,0.8848,1.0,1.0,1.0,1.0,0.5369,0.5903,0.5903,0.5903,0.5369,0.5369,0.5369
+4,women in matching outfits perform a dance routine to loud pop music in a dance hall .,0.2042,four women jump and dance together to music that is playing .,4.0,5.0,4.0,4.3333,0.4998,0.8484,0.9692,0.8189,0.8446,0.7983,0.3994,0.2959,0.4447,0.3248,0.3455,0.1701,0.2042
+5,some rows of ladies in a room dancing in choreography,0.3764,a group of four women start in a line then move to dance in a circle .,4.0,3.0,3.0,3.3333,0.5919,0.8394,0.9841,1.0,0.9893,0.9869,0.5138,0.5005,0.522,0.4923,0.4305,0.3864,0.3764
+6,several women are outside performing a coordinated dance routine .,0.3999,a group of four women start in a line then move to dance in a circle .,4.0,4.0,4.0,4.0,0.5612,0.8541,0.9859,0.8803,0.8873,0.8588,0.47,0.4933,0.5549,0.5031,0.4625,0.388,0.3999

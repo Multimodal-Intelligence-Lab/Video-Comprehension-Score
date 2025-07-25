@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is driving on a road and two pedestrians back up then walk on the road .,0.3165,a person drives their car down a road and then waits as two people cross the street .,5.0,5.0,5.0,5.0,0.6396,0.8841,0.943,0.7233,0.7544,0.7015,0.5924,0.3965,0.5742,0.369,0.5184,0.3362,0.3165
+2,a person is driving a car in a parking lot and a man is talking .,0.1503,a person drives their car down a road and then waits as two people cross the street .,3.0,3.0,3.0,3.0,0.4034,0.8598,0.9873,0.8441,0.8742,0.8442,0.3061,0.2771,0.3659,0.2897,0.2415,0.1352,0.1503
+3,a person is driving a car down the road while a man is talking in the background .,0.265,a person drives their car down a road and then waits as two people cross the street .,4.0,3.0,3.0,3.3333,0.4983,0.8777,0.9474,0.7938,0.7832,0.7467,0.4284,0.3367,0.4704,0.3549,0.3966,0.2443,0.265
+4,a vehicle going down the road and stopping to view a dancing traffic officer .,0.098,a car is driving down the street and stop for two people trying to cross the street .,4.0,4.0,4.0,4.0,0.4402,0.8202,0.9892,0.8007,0.8261,0.7769,0.2931,0.2331,0.4028,0.273,0.259,0.0485,0.098
+5,a vehicle is backin up out of a busy intersection and another vehicle moves forward .,0.0,someone is driving down the street and has to stop for two people in the middle of the road waiting to cross .,4.0,2.0,1.0,2.3333,0.3974,0.7884,0.978,0.6903,0.7311,0.6519,0.233,0.1173,0.3673,0.1553,0.1947,0.0,0.0
+6,"viewed through the windshield of an automobile , motor vehicle traffic passes by and a black car reverses somewhat so that the observation car can pull out into traffic .",0.0,someone is driving down the street and has to stop for two people in the middle of the road waiting to cross .,4.0,3.0,2.0,3.0,0.3827,0.7987,0.9753,0.8757,0.9071,0.8788,0.2196,0.1896,0.3392,0.2176,0.1647,0.0,0.0

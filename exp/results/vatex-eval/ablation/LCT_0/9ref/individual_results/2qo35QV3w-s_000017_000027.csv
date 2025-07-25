@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl runs and then does a series of flips at a gymnastics competition .,0.4525,people are running and turning flips in front of judges who are watching them .,5.0,5.0,5.0,5.0,0.719,0.8601,0.9787,0.8723,0.8707,0.8396,0.6732,0.5596,0.6351,0.5588,0.5758,0.4535,0.4525
+2,a group of people are in a gym and they are doing a routine .,0.3902,a group of people do a series of gymnast moves in a gym setting,3.0,2.0,5.0,3.3333,0.8525,0.9212,0.9744,1.0,0.9805,0.975,0.8399,0.4977,0.8321,0.3992,0.8177,0.4902,0.3902
+3,a group of people are in a gym and a girl is doing a high jump .,0.0,people are running and turning flips in front of judges who are watching them .,4.0,3.0,4.0,3.6667,0.5962,0.8741,0.9412,0.6107,0.6075,0.4997,0.5381,0.0077,0.5411,0.0024,0.4749,0.0,0.0
+4,a girl is roller skating on a gym floor and is doing a routine and people are watching .,0.0327,a young girl performs a gymnastics tumbling routine in front of judges .,4.0,4.0,3.0,3.6667,0.5104,0.8264,0.9134,0.5362,0.6646,0.5849,0.3983,0.0314,0.4444,0.2184,0.3173,0.0,0.0327
+5,the little girl is learning and practicing a gymnastic movement .,0.3485,a young girl is competing at gymnastics event inside a gymnasium .,4.0,4.0,2.0,3.3333,0.5913,0.8391,0.9333,0.8879,0.8651,0.8362,0.5129,0.481,0.5557,0.4534,0.4705,0.3815,0.3485
+6,a lady demonstrating a spinning dance move in a gym,0.0,people are running and turning flips in front of judges who are watching them .,4.0,4.0,4.0,4.0,0.4903,0.8215,0.96,0.7636,0.76,0.6895,0.3795,0.1506,0.469,0.1465,0.3537,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person opens a door and then the person closes the door .,0.0,a door is shown being opened by a person and then closed .,5.0,5.0,5.0,5.0,0.9106,0.9434,0.6364,0.3428,0.0,0.0,0.9053,0.2783,0.6007,0.0,0.5983,0.274,0.0
+2,a person opens a door and then opens the door .,0.0,a door is shown being opened by a person and then closed .,4.0,4.0,4.0,4.0,0.7639,0.9251,0.4167,0.0,0.0,0.0,0.7448,0.0,0.2364,0.0,0.2168,0.0,0.0
+3,a person opens a door and opens the door .,0.0,a door is shown being opened by a person and then closed .,4.0,4.0,4.0,4.0,0.7902,0.9251,0.4167,0.0,0.0,0.0,0.7732,0.0,0.2618,0.0,0.2455,0.0,0.0
+4,the person opens and slams shut the door to a refriderator and a freezer .,0.0,a door is shown being opened by a person and then closed .,3.0,4.0,3.0,3.3333,0.5614,0.8791,0.5466,0.2265,0.0,0.0,0.501,0.0,0.1923,0.0,0.0871,0.0,0.0
+5,a hand reaches down to use a door knob to open a bathroom door .,0.0,a door is shown being opened by a person and then closed .,4.0,4.0,5.0,4.3333,0.4083,0.8487,0.7489,0.3582,0.2269,0.089,0.3028,0.0,0.2099,0.0,0.069,0.0,0.0
+6,a very close up angle shows a guy picking the lock to a door .,0.0,a door is shown being opened by a person and then closed .,4.0,5.0,5.0,4.6667,0.3966,0.8627,0.5466,0.2532,0.0,0.0,0.3006,0.0,0.0,0.0,0.0,0.0,0.0

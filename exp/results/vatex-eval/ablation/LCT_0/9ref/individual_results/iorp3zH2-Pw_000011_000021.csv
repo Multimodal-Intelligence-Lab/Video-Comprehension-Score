@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is driving a forklift and removing an object form a truck .,0.7932,a man driving a forklift is removing a heavy object from the back of a trailer .,5.0,5.0,5.0,5.0,0.8588,0.9283,1.0,1.0,1.0,1.0,0.8436,0.808,0.8409,0.808,0.8238,0.7932,0.7932
+2,a group of people are working on a construction site .,0.0,man uses forklift to remove a large item from the back of a trailer .,5.0,5.0,2.0,4.0,0.1366,0.768,1.0,1.0,1.0,1.0,0.0,0.0966,0.1169,0.0966,0.0,0.0,0.0
+3,a man is operating a large piece of machinery in a warehouse .,0.0741,a man uses a fork lift to load a trailer .,4.0,4.0,4.0,4.0,0.4,0.8723,0.9787,0.8515,0.9107,0.8864,0.2923,0.2216,0.3285,0.2722,0.1971,0.0098,0.0741
+4,"a man handles a large object on the loading platform of a truck , jumps to the ground then begins to pull the object off of the platform .",0.2313,a man is using a forklift to unload equipment off a truck .,4.0,4.0,4.0,4.0,0.5228,0.846,0.9378,0.8698,0.8399,0.8028,0.4359,0.4072,0.4385,0.3806,0.3046,0.2642,0.2313
+5,a man drives and operates the can lifting/dumping mechanism on a garbage truck .,0.1488,a man uses a forklift to remove a large item from a truck .,4.0,5.0,2.0,3.6667,0.395,0.8512,1.0,0.8933,0.8958,0.8689,0.2691,0.278,0.3761,0.3024,0.2387,0.1175,0.1488
+6,workers are unloading equipment off of a truck in a construction yard .,0.2695,a man is using a forklift to unload equipment off a truck .,5.0,5.0,4.0,4.6667,0.5927,0.8596,0.9333,0.7109,0.8001,0.7295,0.5262,0.3212,0.423,0.3721,0.3288,0.2103,0.2695

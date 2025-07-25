@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is building a wall with brick and cement .,0.4893,"a bricklayer at work , steadily placing the bricks on top of each other and cements them .",5.0,5.0,5.0,5.0,0.629,0.8277,0.9231,0.9301,0.8777,0.8522,0.5518,0.6012,0.5981,0.5773,0.5145,0.5181,0.4893
+2,a man is using a trowel to smooth down a wall .,0.0,"a bricklayer at work , steadily placing the bricks on top of each other and cements them .",5.0,5.0,3.0,4.3333,0.271,0.7467,0.9231,0.6667,0.6237,0.496,0.0236,0.0,0.2102,0.0,0.0,0.0,0.0
+3,a man is using a power tool to clean a wall .,0.0,"a bricklayer at work , steadily placing the bricks on top of each other and cements them .",2.0,2.0,2.0,2.0,0.1506,0.7487,1.0,0.8723,0.8863,0.8481,0.0,0.0263,0.1506,0.0417,0.0,0.0,0.0
+4,a man putting up bricks on a wall .,0.4916,"a bricklayer at work , steadily placing the bricks on top of each other and cements them .",5.0,5.0,5.0,5.0,0.6461,0.8328,0.8784,0.9258,0.8359,0.8029,0.5751,0.6178,0.5971,0.5766,0.5163,0.541,0.4916
+5,a man is laying brick in a brick wall using a trowel .,0.0,"a bricklayer at work , steadily placing the bricks on top of each other and cements them .",5.0,5.0,5.0,5.0,0.5882,0.8022,0.8331,0.2718,0.4098,0.2643,0.4867,0.0,0.5057,0.0,0.3838,0.0,0.0
+6,a man is laying bricks in a line that has writing on them .,0.0,"a bricklayer at work , steadily placing the bricks on top of each other and cements them .",4.0,4.0,4.0,4.0,0.5398,0.8141,0.7983,0.5395,0.4065,0.271,0.4347,0.1469,0.4235,0.0,0.2919,0.0,0.0

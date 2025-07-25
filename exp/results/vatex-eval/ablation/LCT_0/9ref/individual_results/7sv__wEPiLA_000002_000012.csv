@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,through a front window of a car a busy street with traffic is shown as someone drives .,0.3917,a person is driving through the busy street as people of walking by .,5.0,5.0,5.0,5.0,0.7071,0.8731,0.9374,0.8375,0.7846,0.7304,0.6645,0.5188,0.647,0.4751,0.5885,0.4266,0.3917
+2,a group of people are walking around a street and a man is directing traffic .,0.2628,different people are driving down the road while a man waits to cross .,1.0,4.0,3.0,2.6667,0.4387,0.8798,1.0,0.9777,0.9374,0.9166,0.3415,0.3717,0.4387,0.3869,0.3251,0.2445,0.2628
+3,a group of people are standing in a parking lot and a car is driving down the street .,0.0,a vehicle driving down a road and slowing for a pedestrian .,2.0,3.0,3.0,2.6667,0.3844,0.8719,0.9231,0.8659,0.8404,0.7869,0.259,0.0699,0.2679,0.0251,0.1187,0.0,0.0
+4,traffic driving by and people walking across a crosswalk on a large city street .,0.0,a vehicle driving down a road and slowing for a pedestrian .,4.0,4.0,4.0,4.0,0.5556,0.8991,0.961,0.6667,0.7021,0.6044,0.5057,0.0266,0.4452,0.0757,0.3428,0.0,0.0
+5,a busy intersection in a downtown section where pedestrians are crossing the street with cars all around .,0.0,a vehicle driving down a road and slowing for a pedestrian .,2.0,5.0,4.0,3.6667,0.5109,0.8364,0.8746,0.5518,0.6767,0.5815,0.4041,0.0,0.3767,0.1509,0.2351,0.0,0.0
+6,cars drive through a crosswalk while a traffic guard dances .,0.0,a vehicle driving down a road and slowing for a pedestrian .,2.0,2.0,2.0,2.0,0.5283,0.8392,1.0,0.8408,0.827,0.7777,0.4201,0.2322,0.4507,0.2169,0.3247,0.0625,0.0

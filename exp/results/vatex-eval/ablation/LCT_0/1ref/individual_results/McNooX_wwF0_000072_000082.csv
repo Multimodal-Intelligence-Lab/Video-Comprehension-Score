@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is using a wooden spoon to stir a white substance that is being heated in a stainless steel tub .,0.3901,somepne is calmly stirring a frothy mixture in a pan over a stove,5.0,4.0,5.0,4.6667,0.5144,0.7962,1.0,1.0,1.0,1.0,0.3901,0.5144,0.5144,0.5144,0.3901,0.3901,0.3901
+2,a person is demonstrating how to make a recipe .,0.0,somepne is calmly stirring a frothy mixture in a pan over a stove,5.0,5.0,3.0,4.3333,0.3444,0.7728,0.9375,0.7574,0.7298,0.6503,0.1517,0.1344,0.3007,0.1017,0.0952,0.0,0.0
+3,a person is demonstrating how to make a recipe with a spatula .,0.0,somepne is calmly stirring a frothy mixture in a pan over a stove,5.0,4.0,4.0,4.3333,0.3667,0.7822,0.928,0.8284,0.7923,0.7344,0.1904,0.2356,0.3175,0.2007,0.1275,0.0227,0.0
+4,"a person is dipping their hands in a large , heated pot .",0.0,somepne is calmly stirring a frothy mixture in a pan over a stove,4.0,4.0,3.0,3.6667,0.2961,0.7816,1.0,0.8723,0.8863,0.8545,0.0993,0.193,0.2961,0.2058,0.0993,0.0,0.0
+5,a person works on a piece of pottery spinning on a potter's wheel .,0.0,somepne is calmly stirring a frothy mixture in a pan over a stove,2.0,2.0,2.0,2.0,0.1554,0.7627,0.9081,0.7105,0.7972,0.7341,0.0,0.0,0.07,0.0,0.0,0.0,0.0
+6,a person using a wooden spoon to sift something throw a sieve,0.0,somepne is calmly stirring a frothy mixture in a pan over a stove,3.0,2.0,3.0,2.6667,0.2879,0.775,1.0,0.8933,0.9155,0.891,0.0811,0.2029,0.2879,0.2222,0.0811,0.0,0.0

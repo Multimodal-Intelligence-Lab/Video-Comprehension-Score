@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is watching a man using a pottery wheel to make a small vase .,0.5325,a person is sitting in front of a pottery wheel and is making a small pot,5.0,5.0,5.0,5.0,0.7732,0.9269,0.9547,0.9006,0.8976,0.8837,0.7553,0.5899,0.708,0.5886,0.6849,0.5341,0.5325
+2,a group of people are sitting at a table and a man is showing how to make a piece of leather .,0.0,"a potter dits at his wheel as it slows and lift a pot off it and hands it to a woman sitting opposite him , as both pose for the camera .",4.0,4.0,2.0,3.3333,0.3048,0.826,0.934,0.7528,0.7544,0.6807,0.1173,0.0,0.1833,0.0,0.0112,0.0,0.0
+3,a group of people are sitting around a table and a man is making a small .,0.0,"a potter dits at his wheel as it slows and lift a pot off it and hands it to a woman sitting opposite him , as both pose for the camera .",4.0,4.0,3.0,3.6667,0.4479,0.8657,0.8904,0.81,0.72,0.6515,0.3207,0.0234,0.2695,0.0863,0.1388,0.0,0.0
+4,a man is sitting down and using his hands and a spinning machine to make a pottery vase .,0.3557,a person is sitting in front of a pottery wheel and is making a small pot,5.0,5.0,5.0,5.0,0.6133,0.8578,0.9224,0.7225,0.7289,0.6565,0.5478,0.4366,0.5807,0.449,0.5097,0.3411,0.3557
+5,a man is spinning a vase out of clay on a pottery wheel .,0.1131,a woman is talking to a male who has just made her a small pottery vase on a pottery wheel .,5.0,5.0,5.0,5.0,0.6009,0.8935,0.9164,0.7827,0.7878,0.736,0.5534,0.211,0.5472,0.2161,0.4933,0.122,0.1131
+6,a man is using a pottery wheel to make a large vase .,0.3036,a person is sitting in front of a pottery wheel and is making a small pot,4.0,4.0,4.0,4.0,0.5549,0.8923,0.9412,0.9194,0.8953,0.8782,0.4997,0.4168,0.4303,0.4011,0.3375,0.3219,0.3036

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman attached to a harness walks tip toed on a beam .,0.782,a woman with a harness and paddle is walking tip toed on a balance beam .,5.0,4.0,4.0,4.3333,0.8166,0.9391,0.9804,0.8933,0.8958,0.889,0.8047,0.7947,0.8111,0.7953,0.7989,0.7814,0.782
+2,a group of people are standing on a stage and a man is holding a sword .,0.0,a girl in door was walking on a rope on the tip on her toes,2.0,1.0,3.0,2.0,0.0935,0.7869,1.0,0.9135,0.9329,0.9147,0.0,0.0077,0.0832,0.0283,0.0,0.0,0.0
+3,a group of people are dancing on a stage in front of a crowd .,0.0,a girl in door was walking on a rope on the tip on her toes,1.0,1.0,3.0,1.6667,0.134,0.7615,1.0,0.9234,0.9284,0.9029,0.0,0.0,0.0784,0.0,0.0,0.0,0.0
+4,"a young girl is walking on a tight rope , and balances herself with a pole .",0.5895,a young woman is walking across a tightrope doing ballet toe steps .,4.0,4.0,5.0,4.3333,0.7015,0.8736,1.0,1.0,1.0,1.0,0.6502,0.6466,0.6843,0.6552,0.6268,0.5794,0.5895
+5,a little girl is walking on a tight rope in an outdoor setting .,0.6499,a girl is walking over a tightrope low to the ground with a protective rope attached to her back .,4.0,4.0,4.0,4.0,0.7424,0.881,1.0,1.0,1.0,1.0,0.7026,0.6976,0.7252,0.6968,0.6827,0.6508,0.6499
+6,a girl is performing a tightrope several meters high in a public area .,0.2751,a girl in door was walking on a rope on the tip on her toes,5.0,5.0,5.0,5.0,0.6116,0.8067,0.9903,0.8879,0.8529,0.8113,0.5186,0.4571,0.603,0.4348,0.5079,0.3037,0.2751

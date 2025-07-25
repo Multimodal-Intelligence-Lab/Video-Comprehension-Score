@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,girls are playing soccer on a field with a coach or referee running along the side .,0.5184,a group of girls playing soccer and trying to make a goal with the ball .,5.0,5.0,5.0,5.0,0.7018,0.876,0.9885,1.0,0.9919,0.9898,0.6596,0.6019,0.6736,0.5965,0.6274,0.5248,0.5184
+2,a group of people are playing soccer on a field .,0.5776,a bunch of kids outside playing a game of socceer together on the field,5.0,5.0,5.0,5.0,0.709,0.917,0.9592,0.9323,0.8398,0.8097,0.6662,0.6242,0.6636,0.619,0.6271,0.5834,0.5776
+3,a group of people are playing a game of soccer on a field .,0.6133,a bunch of kids outside playing a game of socceer together on the field,5.0,5.0,5.0,5.0,0.7049,0.9174,0.9831,0.8465,0.8645,0.8523,0.6657,0.6377,0.688,0.6452,0.6599,0.605,0.6133
+4,a teenage boy runs and kicks a soccer ball half way down the field to the goal .,0.2653,a group of people are kicking a ball and they then turn to run towards a goal .,5.0,4.0,4.0,4.3333,0.6016,0.9026,0.9423,0.7578,0.7711,0.7364,0.5586,0.3508,0.5134,0.362,0.4609,0.2524,0.2653
+5,kids are lining up for their chance to kick a soccer ball at the goal .,0.3884,a bunch of kids outside playing a game of socceer together on the field,4.0,3.0,1.0,2.6667,0.6182,0.8952,1.0,0.7612,0.7974,0.7589,0.5537,0.4658,0.6068,0.4896,0.5403,0.3599,0.3884
+6,a boy kicks soccer balls towards a goal making one in and missing two .,0.0735,as the soccer play progresses a youth in a white shirt takes a shot on net .,4.0,2.0,3.0,3.0,0.4907,0.864,0.9571,0.7668,0.8019,0.7473,0.4051,0.2406,0.4366,0.2739,0.3379,0.0311,0.0735

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a teenager in a hoodie tries to snap his fingers a few times .,0.0,a person is sitting there and then he is snapping his fingers .,5.0,5.0,5.0,5.0,0.4744,0.8402,0.8914,0.4531,0.2016,0.0498,0.3745,0.0,0.4104,0.0,0.2983,0.0,0.0
+2,a woman is sitting in front of a camera and talking to the camera .,0.0,a person is sitting there and then he is snapping his fingers .,3.0,4.0,1.0,2.6667,0.1192,0.8264,0.963,0.7603,0.6994,0.6363,0.0,0.0,0.0853,0.0,0.0,0.0,0.0
+3,a young girl is sitting in front of a camera and talking to the camera .,0.0,a person is sitting there and then he is snapping his fingers .,4.0,4.0,1.0,3.0,0.1119,0.8213,0.9697,0.8,0.7945,0.7498,0.0,0.0,0.0841,0.0,0.0,0.0,0.0
+4,a baby is trying to learn to snap his fingers while him and his dad laugh .,0.1786,a person is sitting there and then he is snapping his fingers .,4.0,4.0,3.0,3.6667,0.4398,0.8483,0.9108,0.8555,0.8039,0.7688,0.3397,0.3453,0.385,0.3032,0.275,0.2282,0.1786
+5,a little boy talking and showing his fidget spinner .,0.0,a person is sitting there and then he is snapping his fingers .,3.0,4.0,4.0,3.6667,0.1733,0.7826,0.963,0.8284,0.7813,0.7205,0.0,0.0021,0.1415,0.0,0.0,0.0,0.0
+6,a boy is tapping his hands and making music sounds .,0.0,a person is sitting there and then he is snapping his fingers .,4.0,4.0,3.0,3.6667,0.308,0.7859,0.8914,0.7762,0.6597,0.567,0.1195,0.1085,0.2237,0.0,0.0122,0.0,0.0

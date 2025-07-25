@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is dancing around the kitchen dressed up like superman .,0.0,a young woman in a costume dances back and forth in a room .,5.0,5.0,5.0,5.0,0.4242,0.795,0.7832,0.3431,0.4772,0.3424,0.2758,0.0,0.2649,0.0,0.0753,0.0,0.0
+2,a young girl is dancing to music in a room .,0.6132,a young woman in a costume dances back and forth in a room .,5.0,5.0,5.0,5.0,0.665,0.8662,1.0,1.0,1.0,1.0,0.6132,0.665,0.665,0.665,0.6132,0.6132,0.6132
+3,a young girl is dancing to music in a room .,0.6132,a young woman in a costume dances back and forth in a room .,5.0,5.0,5.0,5.0,0.665,0.8662,1.0,1.0,1.0,1.0,0.6132,0.665,0.665,0.665,0.6132,0.6132,0.6132
+4,a tutorial of a man performing a trick called board off superman in the air,0.0,a young woman in a costume dances back and forth in a room .,2.0,1.0,3.0,2.0,0.0147,0.7478,1.0,0.7612,0.7966,0.728,0.0,0.0,0.0147,0.0,0.0,0.0,0.0
+5,a person with white shorts on is doing a dance in a kitchen .,0.0,a young woman in a costume dances back and forth in a room .,4.0,4.0,4.0,4.0,0.3517,0.7929,0.9524,0.7165,0.6963,0.617,0.1824,0.0952,0.3193,0.069,0.1415,0.0,0.0
+6,"girl wearing shorts and socks , while spinning around a dance studio .",0.0,a young woman in a costume dances back and forth in a room .,3.0,2.0,4.0,3.0,0.388,0.7882,0.9264,0.5168,0.4953,0.3596,0.2236,0.0,0.3394,0.0,0.1619,0.0,0.0

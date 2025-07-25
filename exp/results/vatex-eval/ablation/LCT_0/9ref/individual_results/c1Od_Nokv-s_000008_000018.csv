@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,people play outside as a girl runs in an attempt to knock a man down .,0.5004,some people are playing in a local neighbourhood with grassy areas as one child runs and barges into a larger person making them fall down .,5.0,5.0,5.0,5.0,0.6233,0.885,0.9605,0.87,0.8956,0.876,0.5525,0.567,0.6078,0.5794,0.5341,0.4857,0.5004
+2,a group of people are running around in a field and one of them throws a frisbee .,0.305,people running and playing outdoors in a grassy area .,3.0,1.0,4.0,2.6667,0.573,0.8628,1.0,0.8879,0.911,0.8889,0.4866,0.4156,0.5504,0.422,0.4594,0.2972,0.305
+3,a group of people are playing a game of frisbee in a park .,0.0084,people running and playing outdoors in a grassy area .,4.0,2.0,3.0,3.0,0.4132,0.8536,0.9497,0.6878,0.6996,0.6449,0.3063,0.0,0.3598,0.1612,0.2432,0.0,0.0084
+4,a girl running with another person runs into a tree and falls to the ground,0.2049,a woman runs towards another person and she knocks that person down to the ground .,4.0,3.0,3.0,3.3333,0.5784,0.9083,1.0,0.7475,0.764,0.6926,0.5135,0.2321,0.5053,0.313,0.4367,0.1275,0.2049
+5,"a kid runs across a street , attempts to catch a ball , and trips and falls .",0.1851,"a child runs and hits another person , knocking them down .",4.0,2.0,2.0,2.6667,0.5024,0.8168,0.9783,0.8253,0.8534,0.816,0.3909,0.325,0.4793,0.3343,0.3626,0.1615,0.1851
+6,"a person falls down in dirt , then another runs and flips over a swing .",0.063,some people are playing in a local neighbourhood with grassy areas as one child runs and barges into a larger person making them fall down .,4.0,2.0,3.0,3.0,0.4599,0.8762,0.9787,0.883,0.8229,0.7809,0.3584,0.2656,0.3437,0.2203,0.1789,0.1173,0.063

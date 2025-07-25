@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man is lifting a very large , heavy-looking barbell on his back .",0.3821,a man is in the gym squatting and lifting heavy weights on a bar .,5.0,5.0,5.0,5.0,0.6359,0.8865,0.9599,0.8119,0.8259,0.793,0.5893,0.4965,0.5955,0.4679,0.5437,0.4153,0.3821
+2,a man is in a gym and is lifting a heavy weight .,0.7994,a man is in the gym squatting and lifting heavy weights on a bar .,5.0,5.0,5.0,5.0,0.9132,0.9523,1.0,1.0,1.0,1.0,0.9088,0.8095,0.8095,0.8095,0.7994,0.7994,0.7994
+3,a man in a gym is lifting weights while another man spots him .,0.5689,a man is in a gym lifting a heavy set of weights while two others watch him closely .,5.0,5.0,5.0,5.0,0.7673,0.9139,1.0,1.0,1.0,1.0,0.7435,0.5578,0.7395,0.5823,0.7129,0.5437,0.5689
+4,a man is weight lifting weights while in a gym setting .,0.5387,a guy is doing bench presses at the gym .,5.0,5.0,5.0,5.0,0.9166,0.9508,1.0,1.0,1.0,1.0,0.9123,0.6237,0.8251,0.6237,0.8243,0.5387,0.5387
+5,an man in the gym squats down and attempts to lift a weight up .,0.8036,a man is in the gym squatting and lifting heavy weights on a bar .,5.0,5.0,5.0,5.0,0.848,0.9265,0.9404,0.8723,0.8417,0.8279,0.8347,0.8257,0.8383,0.8134,0.8242,0.8105,0.8036
+6,a guy in a gym is lifting a heavy weight .,0.7473,a man is in the gym squatting and lifting heavy weights on a bar .,5.0,5.0,5.0,5.0,0.8636,0.9446,1.0,1.0,1.0,1.0,0.853,0.7663,0.7663,0.7663,0.7484,0.7473,0.7473

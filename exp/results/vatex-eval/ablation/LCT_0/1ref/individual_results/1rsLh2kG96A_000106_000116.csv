@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,an individual is doing country dancing steps to country music .,0.2876,"as the country music plays , the man does a dance move .",5.0,5.0,5.0,5.0,0.8282,0.8928,0.5617,0.3414,0.4247,0.3556,0.8076,0.2048,0.4708,0.3053,0.4573,0.1845,0.2876
+2,a man is dancing to music in a dance studio .,0.0,"as the country music plays , the man does a dance move .",5.0,5.0,5.0,5.0,0.5044,0.9082,0.7299,0.3636,0.0,0.0,0.4542,0.0,0.3209,0.0,0.2522,0.0,0.0
+3,a person is doing a dance routine on a wooden floor .,0.0,"as the country music plays , the man does a dance move .",5.0,3.0,4.0,4.0,0.3739,0.818,0.7636,0.6806,0.4395,0.3148,0.2346,0.0802,0.1801,0.0,0.0,0.0,0.0
+4,several people dance to country music inside a dance studio .,0.1516,"as the country music plays , the man does a dance move .",4.0,4.0,4.0,4.0,0.6326,0.881,0.7944,0.5796,0.5054,0.4385,0.583,0.3355,0.5376,0.2181,0.4751,0.279,0.1516
+5,a group of people are dancing in unison to a country song .,0.1119,"as the country music plays , the man does a dance move .",4.0,3.0,4.0,3.6667,0.6753,0.8582,0.4365,0.4601,0.448,0.3568,0.6216,0.2004,0.1655,0.1825,0.0935,0.1314,0.1119
+6,a group of couples are square dancing to some country music .,0.0764,"as the country music plays , the man does a dance move .",4.0,2.0,3.0,3.0,0.5611,0.8617,0.5617,0.5414,0.5514,0.4794,0.4907,0.1828,0.2187,0.2005,0.0934,0.0594,0.0764

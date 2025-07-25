@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man in white robes does a tai chi routine on a stony surface .,0.5326,a man is performing slow moving tai chi maneuvers in a quiet outdoor area .,5.0,4.0,4.0,4.3333,0.7848,0.9125,1.0,0.7988,0.8221,0.7728,0.7642,0.5844,0.7521,0.607,0.7284,0.547,0.5326
+2,a man is demonstrating how to do a martial arts routine .,0.3559,a young man moves in various martial arts motions in a garden setting .,4.0,5.0,4.0,4.3333,0.4937,0.8706,1.0,0.9023,0.9113,0.8981,0.413,0.4293,0.4795,0.4392,0.4021,0.3445,0.3559
+3,a man is demonstrating how to do a martial arts routine .,0.3559,a young man moves in various martial arts motions in a garden setting .,4.0,5.0,4.0,4.3333,0.4937,0.8706,1.0,0.9023,0.9113,0.8981,0.413,0.4293,0.4795,0.4392,0.4021,0.3445,0.3559
+4,a guy is in a park practicing an ancient chinese dance .,0.5504,a man outdoor was performing some tai chi moves,4.0,4.0,3.0,3.6667,0.6652,0.8445,1.0,1.0,1.0,1.0,0.6036,0.6389,0.6389,0.6389,0.5504,0.5504,0.5504
+5,in a park a man is practicing tai chi dressed all in white,0.4953,"a man dressed all in white poses , presumably doing tai chi , while chinese flute music plays .",5.0,5.0,5.0,5.0,0.7627,0.887,1.0,0.7655,0.714,0.6494,0.732,0.5971,0.6407,0.5503,0.6257,0.5458,0.4953
+6,a man practicing martial arts poses in a park while music plays in the background .,0.464,a man practices asian type stretches in a park .,4.0,5.0,5.0,4.6667,0.6706,0.8401,0.9706,0.9002,0.9077,0.8859,0.6048,0.5563,0.6327,0.5532,0.5594,0.4677,0.464

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is showing off a tie dyed shirt and another checks the tag .,0.5671,a person holds out a red shirt while another looks at its tag .,5.0,5.0,5.0,5.0,0.6444,0.8972,1.0,1.0,1.0,1.0,0.6036,0.6019,0.6444,0.6116,0.6036,0.5563,0.5671
+2,a woman is showing how to properly wrap a present .,0.0,a man opens the scarf and shows the tag on the camera while speaking,2.0,1.0,3.0,2.0,0.2781,0.824,1.0,1.0,1.0,1.0,0.1238,0.1414,0.2781,0.1271,0.1238,0.0,0.0
+3,a person is showing how to wrap a piece of clothing .,0.2305,a man shows a clean piece of colorful clothing in a loud setting .,3.0,1.0,4.0,2.6667,0.4222,0.9036,1.0,1.0,1.0,1.0,0.3462,0.3449,0.3708,0.32,0.288,0.2587,0.2305
+4,a man ties a necktie around his neck with his collar upturned,0.0,a man opens the scarf and shows the tag on the camera while speaking,1.0,1.0,1.0,1.0,0.338,0.8221,0.9756,0.8644,0.9115,0.8868,0.1947,0.163,0.2578,0.2104,0.0508,0.0,0.0
+5,a man in a red shirt interacts with a long rope that he is waving,0.0264,a person holds out a red shirt while another looks at its tag .,2.0,1.0,2.0,1.6667,0.4449,0.8484,0.9846,0.975,0.9798,0.9741,0.3457,0.16,0.3124,0.1914,0.1603,0.0,0.0264
+6,bearded manin white shirt demonstrates steps to tying necktie,0.0156,a man in a factory shows off a tie-dyed cloth .,1.0,1.0,1.0,1.0,0.4011,0.8508,1.0,0.9938,0.8955,0.8679,0.2961,0.2982,0.2754,0.2212,0.1483,0.1129,0.0156

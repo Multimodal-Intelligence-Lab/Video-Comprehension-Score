@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young girl is giving a tap dancing performance while music plays in the background .,0.8042,a young girl is on a stage tap dancing around the stage to music .,5.0,5.0,5.0,5.0,0.8781,0.9102,1.0,1.0,0.975,0.9703,0.864,0.7704,0.8753,0.8073,0.8609,0.7667,0.8042
+2,a young girl is performing a dance routine on a stage .,0.6993,a young girl is on a stage tap dancing around the stage to music .,5.0,5.0,5.0,5.0,0.7797,0.9133,1.0,0.8723,0.8863,0.8627,0.7587,0.7298,0.7627,0.7254,0.7402,0.7041,0.6993
+3,a young girl is dancing on a stage in front of a crowd .,0.5008,a girl is tap dancing on a stage to music .,5.0,3.0,4.0,4.0,0.7451,0.9135,1.0,0.8408,0.827,0.8041,0.721,0.5664,0.7164,0.5592,0.6896,0.5089,0.5008
+4,a scantily clad girl is cavorting on a stage to a song in a foreign tongue .,0.0,a young girl is on a stage tap dancing around the stage to music .,5.0,3.0,3.0,3.6667,0.4495,0.8533,0.9424,0.7823,0.7806,0.7216,0.3498,0.1822,0.3626,0.1805,0.2337,0.0,0.0
+5,a group of young ballerinas dance in a circle on stage to music .,0.2512,a girl is tap dancing on a stage to music .,1.0,2.0,2.0,1.6667,0.5121,0.9063,1.0,0.8644,0.8788,0.8611,0.4616,0.3358,0.4658,0.3466,0.4106,0.2387,0.2512
+6,a group of little girls in pink tutus dancing in a circle on stage .,0.0,a young girl is on a stage tap dancing around the stage to music .,1.0,2.0,2.0,1.6667,0.4541,0.8615,1.0,0.8933,0.9155,0.8892,0.3542,0.114,0.3963,0.1354,0.2857,0.0,0.0

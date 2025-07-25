@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is walking looking like he is giving a tour that pans to two kids walking down a path .,0.0,"a group of kids consults a man in nature , then follows a path , looking at a gps , probably .",4.0,4.0,5.0,4.3333,0.4945,0.8395,0.7431,0.1965,0.1139,0.0,0.3979,0.0,0.3197,0.0,0.1896,0.0,0.0
+2,a group of people are walking around in a wooded area .,0.1857,"a group of kids consults a man in nature , then follows a path , looking at a gps , probably .",5.0,5.0,5.0,5.0,0.4415,0.7918,0.9231,0.8776,0.8664,0.8312,0.2946,0.3636,0.3949,0.3553,0.2358,0.1962,0.1857
+3,a man and a little girl are walking around a yard .,0.0,"a group of kids consults a man in nature , then follows a path , looking at a gps , probably .",3.0,3.0,3.0,3.0,0.1812,0.7869,0.8967,0.6634,0.6834,0.5977,0.0,0.0,0.0869,0.0,0.0,0.0,0.0
+4,an adult and a kid carry a tree while the kid talks .,0.0,"a group of kids consults a man in nature , then follows a path , looking at a gps , probably .",2.0,2.0,2.0,2.0,0.2278,0.7974,0.8331,0.6919,0.6746,0.592,0.0316,0.0,0.0732,0.0,0.0,0.0,0.0
+5,a man and two woman walking through a path near trees looking at the surroundings .,0.0,"a group of kids consults a man in nature , then follows a path , looking at a gps , probably .",4.0,3.0,5.0,4.0,0.3808,0.8418,0.9046,0.6057,0.6341,0.5653,0.2644,0.0,0.3155,0.0236,0.1868,0.0,0.0
+6,a woman and a child are walking down the sidewalk .,0.0,"a group of kids consults a man in nature , then follows a path , looking at a gps , probably .",4.0,5.0,4.0,4.3333,0.0368,0.7687,0.8415,0.5558,0.3389,0.1399,0.0,0.0,0.0,0.0,0.0,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a black man is demonstrating how to install a drawer .,0.5733,a man demonstrates applying hardware and installing a cabinet drawer .,5.0,5.0,5.0,5.0,0.6925,0.901,0.9524,0.8818,0.8576,0.8123,0.6587,0.6504,0.6506,0.6156,0.6123,0.612,0.5733
+2,a man is demonstrating how to install a cabinet in a room .,0.6108,a man is showing how to assemble an office cabinet with drawers .,5.0,5.0,4.0,4.6667,0.7127,0.9009,1.0,1.0,1.0,1.0,0.6811,0.6576,0.6984,0.6576,0.6652,0.6108,0.6108
+3,a man is demonstrating how to install a cabinet cabinet .,0.6971,a man demonstrates applying hardware and installing a cabinet drawer .,5.0,5.0,4.0,4.6667,0.7792,0.9232,1.0,1.0,1.0,1.0,0.7608,0.7265,0.7682,0.7204,0.7489,0.7037,0.6971
+4,a guy opens a box and removes black boards then follows instructions to put them together .,0.1229,a man is showing how to assemble an office cabinet with drawers .,4.0,4.0,2.0,3.3333,0.4658,0.792,0.9831,0.8417,0.8633,0.8227,0.2975,0.3246,0.4195,0.333,0.2366,0.1119,0.1229
+5,a man in a wood shop demonstrates how to use one of the machines .,0.1984,a man wearing a blue shirt shows how to build a cabinet with a sliding drawer .,5.0,5.0,2.0,4.0,0.4768,0.8176,1.0,1.0,1.0,1.0,0.3601,0.3587,0.4177,0.3587,0.2879,0.1984,0.1984
+6,a guys is showing people how to pick a lock and how it works .,0.0,a man wearing a blue shirt shows how to build a cabinet with a sliding drawer .,4.0,4.0,3.0,3.6667,0.3135,0.795,0.9667,0.8775,0.8791,0.8408,0.1364,0.1349,0.2599,0.1454,0.0664,0.0,0.0

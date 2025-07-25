@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is adjusting their binoculars using only one hand .,0.0,a person is testing and fumbling with the buttons of a game pad controller .,5.0,4.0,3.0,4.0,0.4035,0.875,0.9804,0.8505,0.84,0.8024,0.3183,0.1969,0.2317,0.1033,0.0275,0.0822,0.0
+2,a person is showing how to use a remote control controller .,0.4177,a person is using one hand to control their remote control that goes to a game console .,5.0,4.0,2.0,3.6667,0.6185,0.8831,0.9787,0.8723,0.9107,0.8958,0.568,0.4615,0.5923,0.4857,0.5384,0.3902,0.4177
+3,a person is using a remote control to play a video game .,0.4045,a person is using one hand to control their remote control that goes to a game console .,3.0,4.0,2.0,3.0,0.8011,0.9272,0.9221,0.7483,0.6913,0.6504,0.7854,0.4121,0.7842,0.4162,0.7673,0.3647,0.4045
+4,an individual is using a remote control to play a game on a portable game console .,0.4344,a person is using one hand to control their remote control that goes to a game console .,4.0,4.0,3.0,3.6667,0.8007,0.9348,0.9783,0.6306,0.6322,0.5624,0.7868,0.4177,0.7774,0.4442,0.7618,0.4033,0.4344
+5,a man pushes various buttons on some type of gaming console .,0.5409,a person pushes the buttons on a detached game controller .,5.0,5.0,5.0,5.0,0.7139,0.8785,1.0,0.9135,0.9397,0.9268,0.6546,0.5968,0.684,0.5967,0.6403,0.5411,0.5409
+6,a person uses a video game controller to operate a handheld gaming system .,0.441,a person is using one hand to control their remote control that goes to a game console .,3.0,3.0,3.0,3.0,0.8014,0.9108,0.9563,0.6477,0.6383,0.5795,0.782,0.4741,0.7654,0.4786,0.7424,0.4075,0.441

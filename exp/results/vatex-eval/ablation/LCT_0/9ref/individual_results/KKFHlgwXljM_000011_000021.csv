@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman pulls an item out of a box and tries to get a little girl excited about it .,0.5845,a woman opens up a box and shows the contents of the box to a young girl .,4.0,4.0,5.0,4.3333,0.7015,0.8823,1.0,0.9084,0.9328,0.9228,0.6617,0.6276,0.6827,0.6388,0.6349,0.5715,0.5845
+2,a little boy is sitting on the floor playing with a toy .,0.0,a woman opens up a box and shows the contents of the box to a young girl .,4.0,4.0,2.0,3.3333,0.393,0.8756,0.9804,0.7414,0.8278,0.7773,0.3068,0.0869,0.3407,0.1085,0.247,0.0,0.0
+3,a group of people are sitting around a table and a woman is holding a book .,0.0,a woman opens up a box and shows the contents of the box to a young girl .,2.0,4.0,1.0,2.3333,0.2038,0.8157,0.9846,0.7612,0.7879,0.7236,0.0163,0.0,0.0974,0.0,0.0,0.0,0.0
+4,baby that is being recorded opens its presents with the help of a woman .,0.261,small child receiving a gift and adults commenting on what she got .,4.0,2.0,5.0,3.6667,0.6186,0.8784,0.9386,0.8383,0.8093,0.7604,0.5658,0.4323,0.4929,0.412,0.3627,0.2865,0.261
+5,a toddler and an adult are unwrapping a gift to the surprise of a woman's voice in the background .,0.1764,"a young girl gets a computer as a gift , her mother opening it .",5.0,4.0,5.0,4.6667,0.5951,0.8414,0.9424,0.8371,0.83,0.7911,0.513,0.3357,0.5344,0.3299,0.4399,0.1841,0.1764
+6,a baby and mother unwrap a special gift and exclaim .,0.2895,small child receiving a gift and adults commenting on what she got .,5.0,4.0,5.0,4.6667,0.5513,0.8449,0.9667,0.8747,0.8776,0.839,0.4664,0.4412,0.5123,0.4116,0.4111,0.3253,0.2895

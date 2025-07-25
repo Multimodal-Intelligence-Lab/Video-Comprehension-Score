@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is puttin on sari and there eare beats of a music in the background .,0.0,a woman demonstrates wearing a long rectangular piece of fabric .,5.0,5.0,5.0,5.0,0.3174,0.7726,0.8485,0.349,0.4945,0.3458,0.1165,0.0,0.1956,0.0,0.0,0.0,0.0
+2,a woman is demonstrating how to put on a sari .,0.5158,a woman demonstrates wearing a long rectangular piece of fabric .,5.0,5.0,5.0,5.0,0.6062,0.8347,0.9697,1.0,0.9744,0.9693,0.5282,0.6062,0.5939,0.5959,0.5135,0.5282,0.5158
+3,a woman is demonstrating how to properly wrap a sari .,0.5535,a woman demonstrates wearing a long rectangular piece of fabric .,5.0,5.0,5.0,5.0,0.6299,0.8289,1.0,1.0,1.0,1.0,0.5535,0.6299,0.6299,0.6299,0.5535,0.5535,0.5535
+4,a woman wraps her skirt around her waist and then works with some fabric .,0.1561,a woman demonstrates wearing a long rectangular piece of fabric .,3.0,5.0,4.0,4.0,0.4656,0.8237,0.9081,0.6667,0.7689,0.7194,0.3511,0.1983,0.4115,0.3049,0.2855,0.0267,0.1561
+5,a woman wearing a yellow sari demonstrates how to wrap it .,0.0,a woman demonstrates wearing a long rectangular piece of fabric .,5.0,5.0,4.0,4.6667,0.5179,0.8755,0.8397,0.5723,0.4678,0.3921,0.4493,0.1575,0.4258,0.0,0.3442,0.0378,0.0
+6,a woman is shown beginning to wrap a sari around herself .,0.3012,a woman demonstrates wearing a long rectangular piece of fabric .,5.0,5.0,5.0,5.0,0.4953,0.8149,1.0,0.8723,0.8863,0.8605,0.3806,0.4214,0.4953,0.4306,0.3806,0.2899,0.3012

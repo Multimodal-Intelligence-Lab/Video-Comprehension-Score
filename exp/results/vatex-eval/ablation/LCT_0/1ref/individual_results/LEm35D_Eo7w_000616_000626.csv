@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is showing some cloth on the table and then folding it .,0.2283,a woman is demonstrating how to work with a piece of fabric .,5.0,5.0,5.0,5.0,0.5462,0.8302,0.8077,0.6306,0.7082,0.6486,0.4534,0.2804,0.4382,0.3593,0.3233,0.1332,0.2283
+2,a woman is demonstrating how to fold a piece of fabric .,0.8738,a woman is demonstrating how to work with a piece of fabric .,5.0,5.0,5.0,5.0,0.8796,0.9539,1.0,1.0,1.0,1.0,0.8738,0.8796,0.8796,0.8796,0.8738,0.8738,0.8738
+3,a woman is demonstrating how to make a piece of fabric .,0.949,a woman is demonstrating how to work with a piece of fabric .,5.0,4.0,5.0,4.6667,0.9516,0.949,1.0,1.0,1.0,1.0,0.949,0.9516,0.9516,0.9516,0.949,0.949,0.949
+4,a woman lays down a cloth and then begins to fold it .,0.0,a woman is demonstrating how to work with a piece of fabric .,5.0,5.0,5.0,5.0,0.4757,0.8201,0.78,0.4605,0.5791,0.4867,0.3606,0.0,0.3278,0.0946,0.1803,0.0,0.0
+5,a woman sew a cloth under the sewing machine and cut of the thread,0.0,a woman is demonstrating how to work with a piece of fabric .,2.0,2.0,2.0,2.0,0.3421,0.8186,0.8327,0.5953,0.4904,0.3775,0.1964,0.0,0.2099,0.0,0.0349,0.0,0.0
+6,a women is showing how she is folding the material that she is holding .,0.5922,a woman is demonstrating how to work with a piece of fabric .,5.0,5.0,5.0,5.0,0.7186,0.8278,0.9333,0.7528,0.8334,0.7987,0.6601,0.6262,0.6985,0.6624,0.6358,0.5485,0.5922

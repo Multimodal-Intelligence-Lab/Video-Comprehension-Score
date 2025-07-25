@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young girl at a petting zoo as she feeds a young calf with a bottle,0.4684,a little girl is feeding a sheep through a fence with a bottle .,5.0,5.0,5.0,5.0,0.7638,0.8745,0.9497,0.8948,0.8822,0.8583,0.7281,0.5644,0.6983,0.5581,0.6527,0.4759,0.4684
+2,a little girl is feeding a goat through a fence .,0.8216,a person is showing how a little girl is baby feedings a goat through a fence .,5.0,5.0,4.0,4.6667,0.8794,0.9476,1.0,1.0,1.0,1.0,0.8723,0.875,0.8143,0.823,0.8127,0.8677,0.8216
+3,a little girl is feeding a goat from a fence .,0.8179,a person is showing how a little girl is baby feedings a goat through a fence .,5.0,5.0,4.0,4.6667,0.8628,0.9476,1.0,1.0,1.0,1.0,0.8547,0.8578,0.8107,0.8196,0.8089,0.8494,0.8179
+4,two small girls are feeding several goats through a fence .,0.6537,a person is showing how a little girl is baby feedings a goat through a fence .,4.0,4.0,4.0,4.0,0.7249,0.8868,0.971,0.9737,0.91,0.8985,0.6898,0.6921,0.7167,0.6929,0.6805,0.6527,0.6537
+5,two little girls are feeding goats through a metal fence .,0.6776,a person is showing how a little girl is baby feedings a goat through a fence .,4.0,4.0,4.0,4.0,0.7469,0.8996,1.0,1.0,1.0,1.0,0.7178,0.7167,0.7313,0.7109,0.7004,0.6841,0.6776
+6,a group of sheep are feeding on the feed which is coming from a grass feeder,0.0,"a girl is giving milk to a cow , a woman is instructing her how to do it in the background .",4.0,4.0,1.0,3.0,0.4796,0.8479,0.9394,0.7059,0.7625,0.6872,0.3858,0.0209,0.3778,0.0351,0.2657,0.0,0.0

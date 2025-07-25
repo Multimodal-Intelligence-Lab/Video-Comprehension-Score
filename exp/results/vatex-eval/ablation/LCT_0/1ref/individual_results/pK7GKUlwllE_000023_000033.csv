@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young boy is feeding a billy goat at a petting zoo .,0.0926,two people stood hand the fence and fed the goat .,5.0,5.0,4.0,4.6667,0.5517,0.7888,0.8331,0.5018,0.6264,0.5263,0.4317,0.0971,0.4619,0.2843,0.3178,0.0,0.0926
+2,a man is feeding a goat through a fence while a man watches .,0.1657,two people stood hand the fence and fed the goat .,4.0,5.0,4.0,4.3333,0.7622,0.8441,0.7711,0.5476,0.4007,0.2901,0.7182,0.4065,0.6916,0.2137,0.6346,0.3702,0.1657
+3,a young boy is feeding a goat through a fence .,0.0532,two people stood hand the fence and fed the goat .,5.0,5.0,5.0,5.0,0.6918,0.8494,0.8545,0.509,0.3967,0.2898,0.6372,0.2903,0.6393,0.1279,0.5754,0.2295,0.0532
+4,a girl is offering food to a goat in a petting zoo .,0.0922,two people stood hand the fence and fed the goat .,4.0,4.0,4.0,4.0,0.6055,0.7792,0.8798,0.6306,0.5578,0.4324,0.4937,0.3744,0.5516,0.2696,0.4245,0.1971,0.0922
+5,two little kids are feeding some goats through a fence .,0.2208,two people stood hand the fence and fed the goat .,4.0,4.0,4.0,4.0,0.7331,0.8689,0.8984,0.542,0.4601,0.3786,0.6929,0.3752,0.703,0.2636,0.6581,0.3389,0.2208
+6,a girl feeds a mountain goat in a petting zoo .,0.0,two people stood hand the fence and fed the goat .,4.0,4.0,2.0,3.3333,0.5567,0.794,0.7778,0.0,0.0,0.0,0.4417,0.0,0.4301,0.0,0.2822,0.0,0.0

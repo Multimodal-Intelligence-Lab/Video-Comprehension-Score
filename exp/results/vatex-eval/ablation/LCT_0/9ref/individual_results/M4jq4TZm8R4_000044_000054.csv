@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,man fixing the white horse shoe while the other one watch .,0.1932,a man cleans a horse's rear foot while a young girl watches .,5.0,5.0,5.0,5.0,0.5977,0.8514,0.971,0.741,0.7655,0.7144,0.4998,0.2935,0.5259,0.3131,0.4105,0.1702,0.1932
+2,a woman is using a brush to brush a horse .,0.2328,a person anda helper works on the rear quarter of a horse,3.0,2.0,1.0,2.0,0.4702,0.821,1.0,1.0,1.0,1.0,0.3428,0.3879,0.4546,0.3879,0.3235,0.2328,0.2328
+3,a young girl is brushing a horse with a brush .,0.4954,someone is showing a girl how to clean a horse's hoof .,2.0,2.0,1.0,1.6667,0.5803,0.8564,1.0,1.0,1.0,1.0,0.4954,0.5803,0.5803,0.5803,0.4954,0.4954,0.4954
+4,a woman shows a boy with golden locks how to properly groom a horse .,0.2857,a man is showing a girl how to clean the hooves of horses .,4.0,2.0,1.0,2.3333,0.5139,0.8243,0.9831,1.0,0.9872,0.9841,0.4092,0.4224,0.4971,0.4149,0.3888,0.2849,0.2857
+5,a woman and a boy are brushing and grooming a horse .,0.2892,two people work to clean out the horseshoes of a patient horse .,2.0,2.0,1.0,1.6667,0.5112,0.8332,1.0,0.8644,0.8611,0.826,0.3897,0.4346,0.5068,0.4324,0.3897,0.2919,0.2892
+6,a woman shows the proper way to clean and rub down a horse .,0.3232,two people work to clean out the horseshoes of a patient horse .,3.0,3.0,1.0,2.3333,0.672,0.8619,0.9565,0.8723,0.8541,0.8269,0.6179,0.4318,0.642,0.4387,0.583,0.326,0.3232

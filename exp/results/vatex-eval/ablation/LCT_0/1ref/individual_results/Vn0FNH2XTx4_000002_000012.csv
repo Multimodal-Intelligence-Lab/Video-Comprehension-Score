@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a video shows blocks of ice from an ice carving competition .,0.5118,text is shown about what the clip will be about and then three blocks of ice are shown and a man using a chainsaw the carve the ice .,5.0,5.0,5.0,5.0,0.7041,0.8792,0.9269,0.6319,0.6894,0.6467,0.6634,0.4773,0.6808,0.5589,0.6369,0.4452,0.5118
+2,a person is using a chainsaw to cut through a block of ice .,0.0,text is shown about what the clip will be about and then three blocks of ice are shown and a man using a chainsaw the carve the ice .,5.0,4.0,4.0,4.3333,0.6554,0.9008,0.6561,0.3867,0.3582,0.2876,0.6175,0.0643,0.4748,0.0209,0.417,0.0068,0.0
+3,a person is using a chainsaw to cut a large piece of wood .,0.0,text is shown about what the clip will be about and then three blocks of ice are shown and a man using a chainsaw the carve the ice .,4.0,4.0,1.0,3.0,0.387,0.8295,0.7385,0.3298,0.32,0.1802,0.261,0.0,0.17,0.0,0.0,0.0,0.0
+4,one person carving an ice block with a tool and another person holding a ice carving machine,0.0602,text is shown about what the clip will be about and then three blocks of ice are shown and a man using a chainsaw the carve the ice .,3.0,3.0,3.0,3.0,0.5367,0.8483,0.8912,0.431,0.5811,0.5061,0.4539,0.0,0.4802,0.2027,0.3872,0.0,0.0602
+5,a man makes an ice sculpture using a carving saw .,0.2121,text is shown about what the clip will be about and then three blocks of ice are shown and a man using a chainsaw the carve the ice .,5.0,5.0,5.0,5.0,0.5955,0.8705,0.8016,0.5782,0.5898,0.5287,0.5353,0.2916,0.4954,0.3111,0.4203,0.1963,0.2121
+6,a person is creating an ice sculpture as viewers take it all in .,0.2071,text is shown about what the clip will be about and then three blocks of ice are shown and a man using a chainsaw the carve the ice .,5.0,3.0,4.0,4.0,0.4943,0.7961,0.9213,0.7735,0.8012,0.7503,0.3648,0.3462,0.4511,0.3688,0.3105,0.1787,0.2071

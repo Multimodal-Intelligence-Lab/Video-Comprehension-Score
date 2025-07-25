@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people are playing some game in the open playground and a person hits a ball and runs,0.0,on a field someone is standing at the base and hits the baseball with the bat .,5.0,5.0,5.0,5.0,0.5248,0.8896,0.9388,0.6895,0.6991,0.6172,0.4659,0.0,0.4374,0.0142,0.3676,0.0,0.0
+2,a group of people are playing baseball in a field .,0.2055,a crowd cheers while watching kids play baseball out on the field .,5.0,5.0,5.0,5.0,0.5971,0.8889,1.0,0.8819,0.8624,0.8254,0.5253,0.3434,0.4805,0.2937,0.4156,0.2614,0.2055
+3,a group of people are playing a game of baseball on a baseball field .,0.3533,a crowd cheers while watching kids play baseball out on the field .,5.0,5.0,5.0,5.0,0.608,0.8851,0.9804,0.7325,0.8097,0.785,0.5381,0.3673,0.5024,0.434,0.4215,0.2852,0.3533
+4,a baseball player swings hard and hurls the bat into the crowd past first base .,0.2498,"at a baseball game , a person throws the ball , the batter hits it and then starts running .",5.0,4.0,4.0,4.3333,0.5095,0.8426,0.9744,0.9527,0.9418,0.924,0.4178,0.3652,0.4473,0.3852,0.3255,0.2253,0.2498
+5,"some women are playing softball , the pitcher pitches and someone is safe on base .",0.2874,in a female softball game the pitcher throws the ball and is a hit .,5.0,4.0,5.0,4.6667,0.7114,0.8558,0.971,0.6633,0.6952,0.5948,0.6628,0.3384,0.7028,0.3362,0.6527,0.2899,0.2874
+6,a pitcher pitches a ball and the batter hits it and runs to first base .,0.5272,"at a baseball game , a person throws the ball , the batter hits it and then starts running .",5.0,5.0,5.0,5.0,0.7229,0.8734,0.9326,0.6926,0.6778,0.6298,0.6815,0.5748,0.6801,0.5543,0.6325,0.5402,0.5272

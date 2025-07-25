@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is working out a gym in a room doing mountain climbers on floor mats .,0.3551,"in a gym , a man is bent over on the ground doing mountain climbers .",5.0,5.0,5.0,5.0,0.8053,0.903,0.8136,0.5591,0.4941,0.4398,0.7844,0.4525,0.7607,0.3718,0.735,0.4379,0.3551
+2,a woman is doing push ups on a mat in a gym .,0.0,"in a gym , a man is bent over on the ground doing mountain climbers .",4.0,2.0,1.0,2.3333,0.4068,0.8055,0.7636,0.6435,0.3968,0.2512,0.2636,0.0781,0.2232,0.0,0.0357,0.0,0.0
+3,a man is in a gym doing a leg exercise .,0.0,"in a gym , a man is bent over on the ground doing mountain climbers .",5.0,5.0,5.0,5.0,0.6005,0.8699,0.7347,0.0,0.0,0.0,0.5407,0.0,0.4562,0.0,0.3749,0.0,0.0
+4,a male is at the gym and performing a exercise at the gym .,0.0,"in a gym , a man is bent over on the ground doing mountain climbers .",5.0,5.0,5.0,5.0,0.5846,0.8378,0.64,0.2781,0.0,0.0,0.5042,0.0,0.351,0.0,0.2254,0.0,0.0
+5,a man in doing his workout in a gym and concentrating on it .,0.0,"in a gym , a man is bent over on the ground doing mountain climbers .",5.0,5.0,5.0,5.0,0.5384,0.8458,0.7143,0.35,0.0,0.0,0.4542,0.0,0.3538,0.0,0.2359,0.0,0.0
+6,a guy is at a gym doing a workout routine with weights .,0.0,"in a gym , a man is bent over on the ground doing mountain climbers .",4.0,4.0,4.0,4.0,0.4923,0.8237,0.849,0.4853,0.2351,0.0714,0.3837,0.0,0.402,0.0,0.274,0.0,0.0

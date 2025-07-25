@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy is stacking playing cards very carefully in a pyramid .,0.491,a youth is using playing cards to build a tower and it begins to fall .,5.0,5.0,5.0,5.0,0.788,0.8909,0.9804,1.0,0.9613,0.9531,0.7621,0.5963,0.7349,0.58,0.7024,0.5107,0.491
+2,a person is showing how to make a box of cards .,0.2642,a young boy tries to build a house of cards on the table .,4.0,4.0,4.0,4.0,0.4669,0.8299,1.0,1.0,1.0,1.0,0.3441,0.3893,0.4669,0.3893,0.3441,0.2642,0.2642
+3,a man is holding a stack of cards in his hands .,0.3384,a young man speaks while looking through the holes and a house of cards before the top layer falls down .,4.0,4.0,2.0,3.3333,0.5049,0.8281,1.0,1.0,0.9893,0.9871,0.3772,0.458,0.5049,0.4521,0.3772,0.3455,0.3384
+4,a boy sitting on the floor uses cards to stack up on top of each other .,0.5418,"a boy is sitting at a table , building a pyramid with playing cards .",5.0,3.0,3.0,3.6667,0.6638,0.8561,0.9744,0.8106,0.857,0.833,0.6073,0.5852,0.6302,0.6077,0.568,0.5155,0.5418
+5,a young boys sitting on the floor picks up a deck of playing cards and splits them .,0.2945,"a boy is sitting at a table , building a pyramid with playing cards .",5.0,3.0,3.0,3.6667,0.5688,0.8737,0.9744,0.9045,0.9134,0.8874,0.4991,0.3675,0.5169,0.3836,0.4458,0.2761,0.2945
+6,a boy is shuffling a deck of cards with the bridge going up and down in slow motion .,0.1764,a youth is using playing cards to build a tower and it begins to fall .,5.0,3.0,1.0,3.0,0.4794,0.8276,0.9545,0.7112,0.8151,0.768,0.3683,0.2477,0.4395,0.3436,0.2968,0.0561,0.1764

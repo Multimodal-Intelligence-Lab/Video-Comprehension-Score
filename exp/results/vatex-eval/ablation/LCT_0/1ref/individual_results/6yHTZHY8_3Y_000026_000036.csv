@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person wearing gloves uses a knife to slice up a piece of meat .,0.0826,a man using a knife and gloves to display his smoked meat,5.0,5.0,5.0,5.0,0.7226,0.8759,0.9129,0.4273,0.3732,0.2843,0.6833,0.2074,0.6961,0.1325,0.653,0.1618,0.0826
+2,a person is using a knife to cut a piece of meat .,0.369,a man using a knife and gloves to display his smoked meat,5.0,5.0,5.0,5.0,0.5098,0.8922,0.9787,0.8723,0.8707,0.8551,0.4506,0.438,0.4992,0.437,0.4387,0.3702,0.369
+3,a person is using a knife to cut a piece of meat .,0.369,a man using a knife and gloves to display his smoked meat,5.0,5.0,5.0,5.0,0.5098,0.8922,0.9787,0.8723,0.8707,0.8551,0.4506,0.438,0.4992,0.437,0.4387,0.3702,0.369
+4,a man takes some pieces of meat and cuts it on a cutting board .,0.0,a man using a knife and gloves to display his smoked meat,5.0,5.0,5.0,5.0,0.4348,0.8228,0.7867,0.5215,0.6272,0.547,0.3131,0.0,0.2816,0.099,0.1269,0.0,0.0
+5,someone in a butcher shops cuts and rips apart a cut of meat .,0.0,a man using a knife and gloves to display his smoked meat,5.0,4.0,4.0,4.3333,0.3446,0.7919,0.971,0.6619,0.6807,0.5969,0.1723,0.0097,0.325,0.0372,0.1476,0.0,0.0
+6,someone is grinding and displaying meat through a meat grinder .,0.0,a man using a knife and gloves to display his smoked meat,1.0,3.0,4.0,2.6667,0.3437,0.8392,0.8759,0.5945,0.5138,0.4207,0.2179,0.0,0.2507,0.0,0.1071,0.0,0.0

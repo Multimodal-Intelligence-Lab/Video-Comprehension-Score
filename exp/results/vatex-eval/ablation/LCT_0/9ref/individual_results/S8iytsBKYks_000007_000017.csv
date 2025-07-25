@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is using his cell phone to text someone a message .,0.4621,a person is sitting at a table and using a phone to text someone,5.0,4.0,5.0,4.6667,0.8473,0.9458,0.8988,0.671,0.643,0.5968,0.8323,0.538,0.8301,0.4737,0.8134,0.5297,0.4621
+2,a person is demonstrating how to use a cell phone .,0.3413,view of a person using their thumb to type and text on a cell phone .,5.0,4.0,2.0,3.6667,0.6277,0.9025,1.0,0.8819,0.8642,0.8471,0.5875,0.4269,0.4616,0.4151,0.3936,0.3545,0.3413
+3,a person is demonstrating how to use a cell phone .,0.3413,view of a person using their thumb to type and text on a cell phone .,5.0,4.0,2.0,3.6667,0.6277,0.9025,1.0,0.8819,0.8642,0.8471,0.5875,0.4269,0.4616,0.4151,0.3936,0.3545,0.3413
+4,a person uses their finger to type on a cell phone .,0.7723,view of a person using their thumb to type and text on a cell phone .,5.0,4.0,5.0,4.6667,0.7881,0.9304,1.0,1.0,1.0,1.0,0.7723,0.7881,0.7881,0.7881,0.7723,0.7723,0.7723
+5,a person texts on a phone with a cracked screen .,0.2882,a person is typing a text message on their iphone .,4.0,4.0,3.0,3.6667,0.6352,0.8841,0.8819,0.7391,0.7541,0.7109,0.577,0.4135,0.557,0.3945,0.4864,0.3259,0.2882
+6,a person sending a text message with a phone with a cracked screen .,0.3404,a person is typing a text message on their iphone .,4.0,3.0,4.0,3.6667,0.6508,0.899,0.9599,0.7735,0.7057,0.672,0.6054,0.4601,0.5932,0.4083,0.5402,0.3982,0.3404

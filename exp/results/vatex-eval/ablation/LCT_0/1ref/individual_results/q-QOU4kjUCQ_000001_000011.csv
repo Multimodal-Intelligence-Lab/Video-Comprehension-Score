@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a little boy was riding on a scooter in a circle,0.6549,a young boy dressed in blue is riding a scooter around in circles .,5.0,5.0,5.0,5.0,0.6887,0.9163,0.9796,1.0,0.9845,0.9831,0.6603,0.6887,0.6822,0.6838,0.6532,0.6603,0.6549
+2,a little girl is riding a scooter on the sidewalk .,0.198,a young boy dressed in blue is riding a scooter around in circles .,4.0,3.0,4.0,3.6667,0.3339,0.8437,0.9796,1.0,0.9845,0.9817,0.2104,0.3339,0.32,0.3234,0.194,0.2104,0.198
+3,a little boy is riding a scooter in a driveway .,0.4695,a young boy dressed in blue is riding a scooter around in circles .,4.0,4.0,4.0,4.0,0.5456,0.87,0.9796,1.0,0.9845,0.9822,0.4777,0.5456,0.5361,0.5384,0.4668,0.4777,0.4695
+4,a little boy is riding a scooter and does several tricks outside in the street .,0.1422,a young boy dressed in blue is riding a scooter around in circles .,5.0,4.0,4.0,4.3333,0.5318,0.8576,0.8521,0.5078,0.6364,0.576,0.4541,0.0745,0.4506,0.2643,0.3593,0.0,0.1422
+5,a young boy riding down the street on a scooter being pulled along by his dog .,0.1231,a young boy dressed in blue is riding a scooter around in circles .,2.0,3.0,4.0,3.0,0.4696,0.8788,0.9203,0.5497,0.6883,0.6453,0.3964,0.0351,0.4236,0.2293,0.3441,0.0,0.1231
+6,a kid is doing some tricks with a scooter while riding it around .,0.0026,a young boy dressed in blue is riding a scooter around in circles .,5.0,4.0,4.0,4.3333,0.565,0.9,0.9388,0.5046,0.4846,0.4274,0.5167,0.1233,0.5367,0.0879,0.4852,0.0413,0.0026

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a garbage truck picking up cans with a arm on the truck .,0.7006,a garbage truck is driving down the street and picking up garbage using a mechanical arm on the side .,5.0,5.0,5.0,5.0,0.7834,0.9324,0.9333,0.8536,0.8317,0.8165,0.7635,0.7462,0.7465,0.7258,0.7236,0.7229,0.7006
+2,a garbage truck is picking up a garbage truck and dumping it into the truck .,0.618,a garbage truck is picking up trash containers and dumping them in the compacter .,4.0,5.0,5.0,4.6667,0.7264,0.9526,0.8621,0.773,0.7519,0.7395,0.7128,0.5411,0.6826,0.6361,0.6669,0.5324,0.618
+3,a garbage truck is driving down the street and a garbage truck .,0.605,a garbage truck is driving down the street and picking up garbage using a mechanical arm on the side .,5.0,5.0,4.0,4.6667,0.7484,0.9258,0.8427,0.7804,0.7124,0.6893,0.7282,0.6699,0.6885,0.6157,0.6635,0.6434,0.605
+4,a trash pick-up truck is going down a row of trash cans and emptying them .,0.5752,a trash truck is putting down a trash can and moving up the street .,5.0,5.0,5.0,5.0,0.8232,0.9159,0.934,0.8084,0.796,0.7652,0.8069,0.6265,0.7114,0.6119,0.6687,0.5815,0.5752
+5,a garbage truck is lifting and dumping a garbage bin in the back of it .,0.4401,a garbage truck is picking up trash containers and dumping them in the compacter .,4.0,4.0,4.0,4.0,0.7065,0.8966,0.9804,0.921,0.9292,0.9169,0.6726,0.5115,0.6771,0.5158,0.6399,0.4267,0.4401
+6,the man is emptying a dumpster into a garbage truck .,0.4823,a man drives and operates the can lifting/dumping mechanism on a garbage truck .,4.0,4.0,5.0,4.3333,0.6483,0.8962,0.9524,0.7905,0.7732,0.7419,0.5997,0.555,0.6307,0.5451,0.5797,0.4936,0.4823

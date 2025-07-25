@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,one man is standing while putting spackle on the upper part of the wall while another is on the ground putting spackle on the lower part of the wall .,0.3453,a man and a boy applied plaster to a wall with a paint tool .,5.0,5.0,5.0,5.0,0.6588,0.8482,0.9557,0.8303,0.8344,0.7939,0.5977,0.4473,0.6286,0.4614,0.5621,0.3281,0.3453
+2,a man is using a trowel to paint a wall with a trowel .,0.2223,a man and a boy are using some spackle to patch up a wall to music .,5.0,5.0,5.0,5.0,0.5959,0.8975,1.0,0.9766,0.9617,0.9561,0.5383,0.3817,0.4949,0.3607,0.4229,0.2474,0.2223
+3,a man is using a trowel to apply plaster to a wall .,0.4864,a man and a boy applied plaster to a wall with a paint tool .,5.0,5.0,5.0,5.0,0.7504,0.9403,1.0,1.0,1.0,1.0,0.7346,0.5786,0.6029,0.538,0.5585,0.5316,0.4864
+4,a man uses a paint roller and trowel to apply paint to a wall .,0.308,a man is painting a wall by plastering the white colored paint on it .,4.0,4.0,4.0,4.0,0.5788,0.8922,0.9655,0.7757,0.7904,0.734,0.5187,0.4197,0.5235,0.3945,0.4554,0.3368,0.308
+5,a man is applying white spackle to a wall with a rolling brush before straightening it out .,0.2812,a man and a boy are using some spackle to patch up a wall to music .,4.0,4.0,5.0,4.3333,0.6765,0.8644,0.9831,0.7268,0.7307,0.6825,0.6252,0.387,0.6456,0.3903,0.5895,0.2773,0.2812
+6,a man with a paint brush is painting on a painting,0.2767,a man is painting a wall by plastering the white colored paint on it .,4.0,4.0,4.0,4.0,0.4879,0.8787,1.0,1.0,1.0,1.0,0.4172,0.3656,0.4751,0.3645,0.4026,0.278,0.2767

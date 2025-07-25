@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the lady is drawing some art on the board with a special pen on her hands .,0.0872,a child is drawing some letters on a piece of paper using a blue marker,3.0,4.0,4.0,3.6667,0.2717,0.7978,1.0,1.0,1.0,1.0,0.0872,0.2717,0.2717,0.2717,0.0872,0.0872,0.0872
+2,a person is using a pencil to draw on a piece of paper .,0.0,a child is drawing some letters on a piece of paper using a blue marker,4.0,4.0,4.0,4.0,0.385,0.91,0.6984,0.3888,0.2493,0.175,0.3242,0.0,0.1194,0.0,0.0323,0.0,0.0
+3,a person is drawing a picture on a piece of paper .,0.1706,a child is drawing some letters on a piece of paper using a blue marker,5.0,5.0,5.0,5.0,0.4177,0.8992,0.8969,0.8147,0.7807,0.7562,0.3525,0.2853,0.3508,0.2542,0.2781,0.2052,0.1706
+4,a child is using a marker to color in the picture on the piece of paper .,0.0,a child is drawing some letters on a piece of paper using a blue marker,5.0,4.0,4.0,4.3333,0.6522,0.9313,0.6525,0.2409,0.0279,0.0,0.6266,0.0,0.467,0.0,0.4277,0.0,0.0
+5,a person is drawing a design with markers on a piece of white board .,0.0,a child is drawing some letters on a piece of paper using a blue marker,4.0,4.0,4.0,4.0,0.4344,0.8711,0.8838,0.6144,0.5874,0.5263,0.3507,0.0794,0.36,0.037,0.2653,0.0,0.0
+6,a person draws a very colorful picture on some paper in front of them,0.1706,a child is drawing some letters on a piece of paper using a blue marker,3.0,4.0,2.0,3.0,0.3806,0.8407,0.9667,0.8879,0.8884,0.8673,0.2632,0.3024,0.3592,0.3028,0.2378,0.1702,0.1706

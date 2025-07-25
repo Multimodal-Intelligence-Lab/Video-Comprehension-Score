@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a splash and a pair of boy jump into a body of water .,0.3934,two young men are jumping from rocks into the water .,5.0,5.0,5.0,5.0,0.5531,0.8508,0.8671,0.865,0.866,0.8425,0.4747,0.4833,0.4845,0.4839,0.3941,0.3927,0.3934
+2,a man jumps off of a cliff into a body of water .,0.0684,two young men are jumping from rocks into the water .,5.0,5.0,5.0,5.0,0.483,0.8607,0.849,0.7974,0.6448,0.5873,0.3993,0.3516,0.391,0.1981,0.2925,0.2467,0.0684
+3,a man jumps off a cliff into a body of water .,0.0618,two young men are jumping from rocks into the water .,5.0,5.0,5.0,5.0,0.4793,0.8607,0.849,0.7974,0.6448,0.5873,0.3951,0.347,0.3867,0.1925,0.2874,0.2414,0.0618
+4,a boy does a backflip off a precipice into a body of water,0.0,two young men are jumping from rocks into the water .,5.0,5.0,5.0,5.0,0.3959,0.8079,0.941,0.7974,0.7265,0.6615,0.2522,0.2424,0.358,0.1685,0.2053,0.0623,0.0
+5,one of the men from the top of the cliff jumped off and landed in the water,0.0,two young men are jumping from rocks into the water .,5.0,5.0,5.0,5.0,0.5593,0.8596,0.9404,0.4798,0.3924,0.2932,0.4873,0.07,0.5314,0.0,0.4548,0.0,0.0
+6,a young man walking towards the end of a diving board and jumping off doing a flip into the pool below .,0.0,two young men are jumping from rocks into the water .,4.0,4.0,4.0,4.0,0.3703,0.8377,0.8844,0.597,0.6171,0.5429,0.2484,0.0,0.2881,0.0,0.1501,0.0,0.0

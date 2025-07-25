@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a game of dodgeball broke out between small children and teenagers .,0.1497,a group of men are playing dodgeball against a group of children .,5.0,4.0,5.0,4.6667,0.6409,0.8599,0.9386,0.6765,0.6438,0.5541,0.5631,0.2163,0.5627,0.2606,0.4681,0.085,0.1497
+2,a group of people are playing a game of dodge ball .,1.0,a group of people are playing a game of dodge ball .,5.0,5.0,5.0,5.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+3,a group of people are playing a game of soccer .,0.4568,a group of people are playing a game of dodge ball .,4.0,4.0,4.0,4.0,0.4872,0.9442,1.0,1.0,1.0,1.0,0.4568,0.4872,0.4872,0.4872,0.4568,0.4568,0.4568
+4,a group of people play dodgeball and throw and kick the ball .,0.5935,adults and children play dodgeball as as adult tosses balls at a child .,4.0,4.0,4.0,4.0,0.8878,0.9286,1.0,0.8933,0.9155,0.9033,0.8791,0.636,0.8804,0.6448,0.8712,0.5903,0.5935
+5,a group of young men play a game of dodgeball .,0.6143,a group of people are playing a game of dodge ball .,5.0,3.0,5.0,4.3333,0.787,0.9326,1.0,0.8408,0.827,0.7804,0.7583,0.4725,0.7621,0.6284,0.7301,0.4525,0.6143
+6,a group of people are standing in a large area and playing dodgeball .,0.3289,a group of adults and kids playing dodge ball on a turf field .,5.0,4.0,5.0,4.6667,0.8306,0.898,0.95,0.8884,0.9132,0.8908,0.8082,0.478,0.8115,0.4079,0.7865,0.4147,0.3289

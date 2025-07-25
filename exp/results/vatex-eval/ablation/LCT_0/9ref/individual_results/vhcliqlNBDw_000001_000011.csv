@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is riding a mechanical bull in a dark room with other people present .,0.6652,a woman rides a mechanical bull . the crowd cheers her on .,5.0,4.0,5.0,4.6667,0.7443,0.9152,0.9913,0.929,0.9475,0.9376,0.7113,0.7063,0.7308,0.7036,0.696,0.6683,0.6652
+2,a man is riding on a mechanical bull while others watch .,0.6887,a person is riding the mechanical bull in a crowded and loud area .,4.0,4.0,4.0,4.0,0.7559,0.9016,1.0,1.0,0.9743,0.9698,0.7241,0.7202,0.7559,0.7246,0.7241,0.6837,0.6887
+3,a woman is riding a mechanical bull in a bar .,0.7853,a woman rides a mechanical bull . the crowd cheers her on .,4.0,4.0,4.0,4.0,0.8053,0.9392,1.0,1.0,1.0,1.0,0.7853,0.8053,0.8053,0.8053,0.7853,0.7853,0.7853
+4,a woman is riding a mechanical bull in an arena .,0.8233,a woman rides a mechanical bull . the crowd cheers her on .,5.0,4.0,5.0,4.6667,0.8492,0.9379,0.9714,0.9679,0.9393,0.9332,0.834,0.8442,0.8448,0.8395,0.8291,0.8285,0.8233
+5,"a woman in a cowboy hat , rides a mechanical bull .",0.6981,a woman is trying to stay on a moving mechanical bull .,4.0,4.0,4.0,4.0,0.8094,0.9184,1.0,1.0,1.0,1.0,0.7924,0.7111,0.7614,0.7361,0.727,0.6809,0.6981
+6,a girl is riding a mechanical bull with people watching her .,0.6623,a woman rides a mechanical bull . the crowd cheers her on .,5.0,4.0,5.0,4.6667,0.7355,0.9003,0.9831,1.0,0.9521,0.9419,0.6962,0.6943,0.7178,0.706,0.6758,0.6488,0.6623

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is using a electric razor to shave a dogs under hair .,0.6082,a woman is using shears to groom a dog's fur .,5.0,5.0,5.0,5.0,0.7703,0.8922,1.0,1.0,1.0,1.0,0.7308,0.6588,0.7588,0.6588,0.7173,0.6121,0.6082
+2,a woman is grooming a dog ' s hair with a brush .,0.657,a woman is grooming a dog with nice music playing .,4.0,4.0,3.0,3.6667,0.6976,0.9044,1.0,1.0,1.0,1.0,0.657,0.6976,0.6976,0.6976,0.657,0.657,0.657
+3,a woman is grooming a dog ' s hair with a brush .,0.657,a woman is grooming a dog with nice music playing .,4.0,4.0,3.0,3.6667,0.6976,0.9044,1.0,1.0,1.0,1.0,0.657,0.6976,0.6976,0.6976,0.657,0.657,0.657
+4,a woman stands besides a horse and carefully shaves his hair .,0.0798,a woman give a small dog a trim and talks to it while doing it .,4.0,4.0,4.0,4.0,0.5269,0.8799,1.0,0.8723,0.8863,0.8551,0.4624,0.2661,0.4187,0.2777,0.2887,0.065,0.0798
+5,"while standing next to a horse , a woman shaves the fur of the horse .",0.0,a woman is grooming a dog with nice music playing .,4.0,3.0,4.0,3.6667,0.55,0.8373,0.8766,0.6595,0.6703,0.5898,0.4613,0.2029,0.4225,0.0739,0.3086,0.0419,0.0
+6,woman grooming a leashed white and tan dog on a table,0.1848,a woman is grooming a dog with nice music playing .,5.0,5.0,4.0,4.6667,0.5379,0.86,0.95,0.8528,0.8545,0.8162,0.4627,0.3405,0.4976,0.3005,0.4158,0.2332,0.1848

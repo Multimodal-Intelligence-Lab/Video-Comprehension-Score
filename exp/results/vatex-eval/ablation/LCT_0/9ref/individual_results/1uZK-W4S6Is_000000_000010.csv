@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a matador and several picadors taunt a bull in an arena .,0.4138,a bullfighter and his assistants duel with a wounded bull in the arena .,5.0,5.0,5.0,5.0,0.6853,0.8505,0.9422,0.8018,0.7767,0.7359,0.6228,0.4197,0.6647,0.5045,0.5981,0.3367,0.4138
+2,a matador is taunting a bull in a bull fight .,0.4259,three bullfighters use red and pink capes to entice a bull to charge at them in front of a crowd .,5.0,5.0,5.0,5.0,0.6654,0.9401,0.9697,0.9552,0.9323,0.9169,0.6441,0.5431,0.5642,0.5319,0.5364,0.4397,0.4259
+3,a matador is taunting a bull with a bull in front of a bull .,0.3541,three bullfighters use red and pink capes to entice a bull to charge at them in front of a crowd .,4.0,5.0,3.0,4.0,0.6832,0.8875,0.9139,0.734,0.7213,0.6719,0.643,0.4393,0.6308,0.4477,0.584,0.3442,0.3541
+4,a bull fighter taunts a bull with a red cloth in an arena .,0.2577,several bull fighters challenge the large animal in front of many spectators .,5.0,5.0,5.0,5.0,0.6059,0.8619,0.9744,0.6815,0.7228,0.6661,0.5227,0.3465,0.5847,0.3839,0.4939,0.2127,0.2577
+5,a large crowd is watching bull fighting inside of an arena .,0.1982,three clowns are in a ring with a bull and the bull is charging the red capes .,5.0,5.0,5.0,5.0,0.6793,0.8513,1.0,0.8933,0.9155,0.8933,0.6232,0.3489,0.5529,0.3647,0.4671,0.1783,0.1982
+6,a bull fighter is fighting a bull in a stadium with people watching .,0.4594,several bull fighters challenge the large animal in front of many spectators .,5.0,4.0,5.0,4.6667,0.76,0.8915,0.9623,0.691,0.7171,0.6673,0.7308,0.5163,0.7277,0.5404,0.6946,0.4311,0.4594

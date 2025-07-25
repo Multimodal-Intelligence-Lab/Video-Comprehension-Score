@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young man in a black shirt uses a gas pump to put gas in his car .,0.3264,a man tells how to use a gas pump and get the gas for cars .,5.0,5.0,5.0,5.0,0.5633,0.9068,0.9615,0.8061,0.836,0.8191,0.5081,0.3665,0.5318,0.3892,0.4727,0.3014,0.3264
+2,a man is using a gas pump to open a gas pump .,0.6807,a man is demonstrating how to use the gas pump at a self serve gas station .,4.0,4.0,4.0,4.0,0.7185,0.9158,0.9688,1.0,0.9722,0.9693,0.6896,0.7185,0.7071,0.7104,0.677,0.6896,0.6807
+3,a man is showing how to use a gas pump .,0.7715,a man tells how to use a gas pump and get the gas for cars .,5.0,5.0,5.0,5.0,0.909,0.9435,1.0,1.0,1.0,1.0,0.9035,0.8622,0.8474,0.7866,0.8305,0.8521,0.7715
+4,a man demonstrates how to do an oil change on a car .,0.3223,a man is demonstrating how to use the gas pump at a self serve gas station .,5.0,4.0,4.0,4.3333,0.5101,0.8465,0.9818,0.8571,0.8814,0.8577,0.4059,0.4189,0.4937,0.4349,0.3917,0.3032,0.3223
+5,"a man pours oil into a car oil tank , explaining what he's doing .",0.1551,a person is showing how they fill up a car gas in a station .,5.0,5.0,5.0,5.0,0.6003,0.8484,0.9116,0.7475,0.7129,0.6488,0.5144,0.3413,0.5405,0.3093,0.4418,0.1943,0.1551
+6,a young man demonstrates checking tire pressure while explaining the process on a car tire .,0.3178,the guy is doing a demonstration on the steps to filling up your gas tank .,2.0,3.0,2.0,2.3333,0.5959,0.8769,1.0,1.0,1.0,1.0,0.5392,0.4517,0.5618,0.4517,0.5003,0.3178,0.3178

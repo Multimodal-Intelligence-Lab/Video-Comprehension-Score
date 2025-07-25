@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a toddler sits on a bed and plays with maracas .,0.0039,a baby is moving toward the camera and then begin to shake some moroccos in his hand .,5.0,5.0,5.0,5.0,0.4066,0.7334,0.9583,0.8047,0.8123,0.744,0.1909,0.2626,0.3808,0.2695,0.1557,0.0,0.0039
+2,a little boy is sitting on the floor and playing with a toy .,0.0,a baby is moving toward the camera and then begin to shake some moroccos in his hand .,4.0,4.0,4.0,4.0,0.1782,0.7613,0.9333,0.7226,0.7218,0.6346,0.0,0.0,0.1195,0.0,0.0,0.0,0.0
+3,a little boy is sitting on the floor and playing with maracas .,0.0,a baby is moving toward the camera and then begin to shake some moroccos in his hand .,4.0,4.0,4.0,4.0,0.3567,0.7461,0.9497,0.7285,0.7368,0.6472,0.1377,0.1169,0.3226,0.1269,0.0921,0.0,0.0
+4,a little baby holds his head up and shakes it back and forth along with sounds and music coming from a baby toy .,0.0,a baby is moving toward the camera and then begin to shake some moroccos in his hand .,4.0,2.0,3.0,3.0,0.547,0.8167,0.8399,0.4228,0.4652,0.3452,0.4454,0.0,0.4606,0.0223,0.3396,0.0,0.0
+5,a little boy is playing with a toy drum set in a room .,0.0,a baby is moving toward the camera and then begin to shake some moroccos in his hand .,4.0,4.0,4.0,4.0,0.2084,0.764,0.9419,0.5184,0.5031,0.3496,0.0,0.0,0.1596,0.0,0.0,0.0,0.0
+6,a toddler boy is standing on a carpet and playing a plastic harmonica .,0.0,a baby is moving toward the camera and then begin to shake some moroccos in his hand .,3.0,2.0,3.0,2.6667,0.2366,0.7466,0.9846,0.8933,0.9051,0.8729,0.0,0.1454,0.2247,0.1566,0.0,0.0,0.0

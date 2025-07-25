@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl is playing a musical instrument in a while occupying room .,0.0,a woman with postcards on the wall behind is skilfully playing the bass guitar and fretting well .,5.0,3.0,5.0,4.3333,0.3208,0.7843,0.7545,0.3594,0.3159,0.1277,0.134,0.0,0.0998,0.0,0.0,0.0,0.0
+2,a woman is playing a guitar while playing the guitar .,0.1028,a woman with postcards on the wall behind is skilfully playing the bass guitar and fretting well .,5.0,5.0,5.0,5.0,0.4879,0.883,0.8568,0.6433,0.6465,0.5996,0.42,0.2038,0.4023,0.2078,0.3231,0.0984,0.1028
+3,a woman is playing a song on a bass guitar .,0.3174,a woman with postcards on the wall behind is skilfully playing the bass guitar and fretting well .,5.0,5.0,5.0,5.0,0.6602,0.8834,0.8904,0.5566,0.58,0.5246,0.6153,0.3284,0.6183,0.3638,0.5679,0.2794,0.3174
+4,a girl sitting down and playing a string musical instrument by herself,0.0,a woman with postcards on the wall behind is skilfully playing the bass guitar and fretting well .,4.0,4.0,5.0,4.3333,0.2636,0.7837,0.9614,0.91,0.9133,0.8894,0.0604,0.1907,0.234,0.1937,0.0226,0.0,0.0
+5,"a couple of girls singing a song , one of the girls is playing a guitar as they sing .",0.0,a woman with postcards on the wall behind is skilfully playing the bass guitar and fretting well .,4.0,2.0,3.0,3.0,0.2601,0.7938,0.8776,0.5858,0.6035,0.5005,0.0679,0.0,0.1569,0.0,0.0,0.0,0.0
+6,the teenage girl sits on the bed while she sings and strums her guitar .,0.0,a woman with postcards on the wall behind is skilfully playing the bass guitar and fretting well .,4.0,3.0,4.0,3.6667,0.2808,0.7543,0.8883,0.454,0.4678,0.2945,0.0466,0.0,0.1904,0.0,0.0,0.0,0.0

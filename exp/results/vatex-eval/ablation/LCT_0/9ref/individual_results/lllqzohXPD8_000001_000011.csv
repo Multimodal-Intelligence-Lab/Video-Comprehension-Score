@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy rides a large riding mower across the yard,0.6145,"a young boy is shown driving a riding lawnmower with a bagger , across a yard .",5.0,5.0,4.0,4.6667,0.8179,0.9087,0.9744,0.8426,0.8652,0.8517,0.7954,0.6403,0.7588,0.6497,0.7451,0.6042,0.6145
+2,a young boy is riding a lawnmower in a yard .,0.7935,"a young boy is shown driving a riding lawnmower with a bagger , across a yard .",5.0,5.0,5.0,5.0,0.8323,0.9415,0.9818,1.0,0.9872,0.9864,0.8135,0.8081,0.8235,0.8056,0.8037,0.7961,0.7935
+3,a man is mowing a lawn with a lawn mower .,0.3577,a child on a riding lawnmower outside cutting the grass .,4.0,4.0,4.0,4.0,0.5434,0.8911,0.941,0.9401,0.8734,0.848,0.4766,0.5031,0.4995,0.4652,0.3989,0.4032,0.3577
+4,a young boy pushes the lawnmower across the lawn for the first time .,0.6268,a young boy is outside driving a large lawn mower .,4.0,3.0,4.0,3.6667,0.745,0.873,1.0,1.0,1.0,1.0,0.7042,0.6788,0.7294,0.6783,0.6861,0.6274,0.6268
+5,small boy was trimming the lawn grass with rolling the trimmer machine,0.3073,"a young child rides a lawnmower that is green , yellow , and black",4.0,3.0,2.0,3.0,0.6129,0.856,1.0,0.8933,0.9155,0.8945,0.547,0.4313,0.5471,0.4451,0.47,0.3171,0.3073
+6,a young boy with a trucker hat is mowing grass in mowing truck .,0.2957,a young boy is outside driving a large lawn mower .,4.0,4.0,4.0,4.0,0.6093,0.8664,0.9665,0.6747,0.6869,0.6273,0.5491,0.3866,0.5855,0.3898,0.5216,0.2921,0.2957

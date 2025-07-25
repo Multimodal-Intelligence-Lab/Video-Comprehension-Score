@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman stands in front of a map backdrop and provides a weather forecast,0.188,"a young lady is showing the weather forecast on the television , the weather shows that there will be cold weather inbound .",5.0,5.0,5.0,5.0,0.5395,0.8426,0.8773,0.6485,0.6731,0.612,0.4534,0.2899,0.475,0.3158,0.377,0.1572,0.188
+2,a woman is giving a weather report on the weather .,0.5916,"a young lady is showing the weather forecast on the television , the weather shows that there will be cold weather inbound .",5.0,5.0,5.0,5.0,0.6506,0.8672,0.9851,1.0,0.9865,0.9844,0.5971,0.6506,0.6453,0.6458,0.591,0.5971,0.5916
+3,a woman is giving a weather report on the weather .,0.5916,"a young lady is showing the weather forecast on the television , the weather shows that there will be cold weather inbound .",5.0,5.0,5.0,5.0,0.6506,0.8672,0.9851,1.0,0.9865,0.9844,0.5971,0.6506,0.6453,0.6458,0.591,0.5971,0.5916
+4,a woman is presenting weather forecast while standing and talking .,0.3162,"a young lady is showing the weather forecast on the television , the weather shows that there will be cold weather inbound .",5.0,5.0,5.0,5.0,0.5959,0.8627,0.9018,0.6493,0.685,0.6349,0.5316,0.3776,0.5519,0.4101,0.4806,0.2786,0.3162
+5,a weather woman stands in front of a map and talks about the forecast .,0.0,"a young lady is showing the weather forecast on the television , the weather shows that there will be cold weather inbound .",5.0,5.0,5.0,5.0,0.5616,0.8499,0.7554,0.4388,0.428,0.3271,0.4841,0.0007,0.4196,0.0,0.3171,0.0,0.0
+6,a woman is standing in front of a weather map and talking about the data .,0.13,"a young lady is showing the weather forecast on the television , the weather shows that there will be cold weather inbound .",5.0,4.0,5.0,4.6667,0.4975,0.8229,0.9394,0.6497,0.7019,0.6378,0.3894,0.2266,0.4651,0.2841,0.3499,0.0602,0.13

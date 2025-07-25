@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman making a tutorial for how she performs yoga in her room as she lifts her back up,0.0,a young woman doing yoga poses on a yoga mat,5.0,5.0,5.0,5.0,0.5427,0.84,0.9,0.4232,0.3635,0.2422,0.4556,0.0,0.4919,0.0,0.3951,0.0,0.0
+2,a woman is demonstrating how to do a yoga pose .,0.0,a young woman doing yoga poses on a yoga mat,5.0,5.0,5.0,5.0,0.6656,0.9097,0.8914,0.3405,0.0,0.0,0.6324,0.0092,0.6249,0.0,0.5877,0.0,0.0
+3,a woman is demonstrating how to do a yoga pose .,0.0,a young woman doing yoga poses on a yoga mat,5.0,5.0,5.0,5.0,0.6656,0.9097,0.8914,0.3405,0.0,0.0,0.6324,0.0092,0.6249,0.0,0.5877,0.0,0.0
+4,a woman shows off how specific yoga positions should be performed,0.2746,a young woman doing yoga poses on a yoga mat,5.0,5.0,5.0,5.0,0.6425,0.857,0.8333,0.4414,0.5771,0.5066,0.5829,0.1307,0.571,0.3419,0.4995,0.0417,0.2746
+5,a woman is on a mat doing yoga positions and explaining it as she goes .,0.1828,a young woman doing yoga poses on a yoga mat,5.0,5.0,5.0,5.0,0.6869,0.9069,0.7286,0.3414,0.465,0.41,0.6547,0.0412,0.5702,0.2211,0.5261,0.0,0.1828
+6,a woman is showing a certain yoga move on her mat .,0.3185,a young woman doing yoga poses on a yoga mat,5.0,5.0,5.0,5.0,0.7802,0.8958,0.8537,0.3394,0.4857,0.4259,0.7547,0.1533,0.7426,0.3408,0.7126,0.1247,0.3185

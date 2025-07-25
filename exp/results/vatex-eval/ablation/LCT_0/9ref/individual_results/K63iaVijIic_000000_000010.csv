@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a gentleman dressed in black and gray demonstrates arm exercises .,0.2623,the man is doing some hand and arm exercises as he lifts weights .,5.0,4.0,5.0,4.6667,0.5712,0.8442,0.9231,0.8057,0.7264,0.6759,0.4899,0.4583,0.4894,0.3799,0.3926,0.3556,0.2623
+2,a man in a gym is lifting weights in a gym .,0.8063,a man is in a gym and is using free weights to strengthen his upper body .,5.0,5.0,5.0,5.0,0.8543,0.9462,0.909,0.9252,0.8433,0.8243,0.8367,0.8425,0.8321,0.8166,0.8118,0.8234,0.8063
+3,a man in a gym is demonstrating how to lift weights .,0.6243,a man is in a gym and is using free weights to strengthen his upper body .,5.0,5.0,5.0,5.0,0.7434,0.9067,0.9474,0.8284,0.7923,0.755,0.7065,0.6851,0.7143,0.6717,0.6731,0.6397,0.6243
+4,"in a gym , a man is doing various exercises while holding weights .",0.4192,in a gym a man does free weight arm exercises .,5.0,5.0,5.0,5.0,0.8176,0.9125,0.9,0.6387,0.7292,0.6803,0.791,0.4117,0.7974,0.4833,0.7661,0.3873,0.4192
+5,a man in a gym exercises his arms by pulling weights on a machine .,0.6886,a man is in a gym and is using free weights to strengthen his upper body .,4.0,4.0,4.0,4.0,0.8027,0.9248,0.971,0.9258,0.8638,0.8432,0.7867,0.7298,0.7663,0.7334,0.7271,0.6845,0.6886
+6,the man is doing his exercises as he pulls weights in the gym .,0.554,a man is in a gym and is using free weights to strengthen his upper body .,5.0,5.0,5.0,5.0,0.7691,0.9215,0.8752,0.7502,0.672,0.6243,0.7355,0.6752,0.7167,0.5735,0.6755,0.6475,0.554

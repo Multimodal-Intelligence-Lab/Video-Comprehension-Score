@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is banging a metal basket in which food is being cooked over a grill .,0.3297,a man demonstrates how to cook some food over a grill .,5.0,5.0,5.0,5.0,0.574,0.8815,0.928,0.755,0.721,0.6834,0.5168,0.4358,0.5409,0.4091,0.4792,0.3599,0.3297
+2,a person is roasting marshmallows on a grill in a fire .,0.0057,a man demonstrates how to cook some food over a grill .,4.0,3.0,4.0,3.6667,0.4373,0.8241,0.8125,0.5947,0.6867,0.6198,0.3172,0.0538,0.3075,0.1806,0.1596,0.0,0.0057
+3,a person is roasting a marshmallow on a campfire .,0.0,a man demonstrates how to cook some food over a grill .,4.0,2.0,3.0,3.0,0.2095,0.7613,0.8421,0.9142,0.63,0.514,0.0,0.1354,0.0613,0.0,0.0,0.0,0.0
+4,a man shows a plate of food and then begins putting ingredients in a cooking pan .,0.202,a man demonstrates how to cook some food over a grill .,2.0,2.0,2.0,2.0,0.5509,0.8599,0.9115,0.6417,0.6544,0.5981,0.4777,0.3001,0.5073,0.3138,0.4271,0.1861,0.202
+5,"a man talks about what food he is cooking on the stove , and then shows it .",0.0,a man demonstrates how to cook some food over a grill .,5.0,4.0,3.0,4.0,0.5278,0.9015,0.7636,0.392,0.0361,0.0,0.4761,0.0,0.3816,0.0,0.314,0.0,0.0
+6,a man opens a bbq lid and comments about the smell of the food cooking .,0.0,a man demonstrates how to cook some food over a grill .,4.0,4.0,4.0,4.0,0.4381,0.8488,0.8571,0.5912,0.5497,0.4694,0.338,0.0496,0.3445,0.0,0.2277,0.0,0.0

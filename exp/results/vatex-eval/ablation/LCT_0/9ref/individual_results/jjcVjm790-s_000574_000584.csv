@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,an expert is cleaning the toilet and speaking in the background about the process .,0.3832,"someone is running water into a toilet and then shows of a hose , whilst explaining what they are doing .",5.0,5.0,5.0,5.0,0.6314,0.8446,1.0,1.0,1.0,1.0,0.5636,0.5102,0.5948,0.5178,0.4817,0.3735,0.3832
+2,a person is using a tool to clean a piece of clothing .,0.3576,a person is trying to clean out the inside of a toilet .,4.0,3.0,1.0,2.6667,0.4517,0.8663,1.0,1.0,1.0,1.0,0.3576,0.4517,0.4517,0.4517,0.3576,0.3576,0.3576
+3,a person is demonstrating how to use a machine to make a mess .,0.1432,a person is trying to clean out the inside of a toilet .,4.0,5.0,1.0,3.3333,0.4839,0.8269,1.0,1.0,1.0,1.0,0.3759,0.3047,0.4054,0.3047,0.2271,0.1432,0.1432
+4,a person describes the best method on how to clean and sanitize a toilet .,0.3212,a person is trying to clean out the inside of a toilet .,4.0,5.0,5.0,4.6667,0.6064,0.8942,1.0,0.7845,0.8673,0.8402,0.5599,0.4265,0.5759,0.393,0.5257,0.3587,0.3212
+5,a woman demonstrates a steam cleaning device as she kneels on the floor to clean around a toilet with a brush attachment .,0.1886,a person is trying to clean out the inside of a toilet .,1.0,1.0,1.0,1.0,0.4991,0.8431,0.9449,0.7819,0.8197,0.7695,0.4059,0.3447,0.4618,0.3159,0.3617,0.2227,0.1886
+6,a woman is demonstrating how to clean a bathroom toilet .,0.5353,a person is trying to clean out the inside of a toilet .,4.0,4.0,4.0,4.0,0.5912,0.8796,1.0,1.0,1.0,1.0,0.5353,0.5912,0.5912,0.5912,0.5353,0.5353,0.5353

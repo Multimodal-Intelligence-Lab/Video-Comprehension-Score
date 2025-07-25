@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"in a high-speed video , a worker treats wood flooring in an empty room",0.4151,someone is stripping a hard wood floor in time lapse photography .,5.0,5.0,5.0,5.0,0.6469,0.8251,0.9831,0.8153,0.837,0.8025,0.557,0.4719,0.5958,0.5339,0.4929,0.3462,0.4151
+2,a man is using a machine to sand a hardwood floor .,0.9429,a man using a machine to sand down a wooden floor .,5.0,5.0,5.0,5.0,0.9443,0.9764,1.0,1.0,1.0,1.0,0.9429,0.9443,0.9443,0.9443,0.9429,0.9429,0.9429
+3,a man is using a machine to sand a hardwood floor .,0.9429,a man using a machine to sand down a wooden floor .,5.0,5.0,5.0,5.0,0.9443,0.9764,1.0,1.0,1.0,1.0,0.9429,0.9443,0.9443,0.9443,0.9429,0.9429,0.9429
+4,a man is polishing hardwood floors with a large machine .,0.6725,a man vacuums a hardwood floor with a large object,4.0,5.0,4.0,4.3333,0.7348,0.9056,1.0,1.0,1.0,1.0,0.6953,0.7035,0.7035,0.7035,0.6725,0.6725,0.6725
+5,a person uses a sander to sand and refinish wooden floors,0.7246,a man using a machine to sand down a wooden floor .,5.0,5.0,5.0,5.0,0.8196,0.9189,0.9804,0.9737,0.872,0.8556,0.8037,0.7559,0.8142,0.7559,0.7978,0.7247,0.7246
+6,a person polishing wood floor with a polishing machine,0.8018,a person sanding a wood floor with a sanding machine,4.0,5.0,3.0,4.0,0.8174,0.9216,1.0,1.0,1.0,1.0,0.8018,0.8174,0.8174,0.8174,0.8018,0.8018,0.8018

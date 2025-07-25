@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man performing a sad scene in a poorly lit room .,0.3712,a man is acting scared while standing on a small dark stage .,5.0,4.0,5.0,4.6667,0.5207,0.84,1.0,0.8792,0.929,0.9134,0.4274,0.4549,0.5132,0.4841,0.4068,0.3357,0.3712
+2,a man is standing on a stage and is playing a song on a stage .,0.2856,a man performs under the spot light during a play performance in front of an audience .,2.0,3.0,5.0,3.3333,0.495,0.889,1.0,1.0,0.9821,0.9774,0.4038,0.3998,0.472,0.4149,0.3743,0.2671,0.2856
+3,a man is standing in front of a camera and he is doing a trick .,0.399,a man standing on his own in front of a light shining on him,4.0,4.0,4.0,4.0,0.4575,0.9026,1.0,1.0,1.0,1.0,0.399,0.4575,0.4575,0.4575,0.399,0.399,0.399
+4,a boy is on the stage performing and the boy is not using words .,0.0,a young boy in front of a black curtain breaths heavily and acts scared .,4.0,5.0,5.0,4.6667,0.4754,0.8312,0.9787,0.8879,0.8884,0.8554,0.3688,0.0786,0.3592,0.0792,0.229,0.0,0.0
+5,in the dark a man can be heard out of breath while a flash light can be seen moving around .,0.2865,"a young man is standing with a bright light put on him , breathing very heavily .",5.0,4.0,3.0,4.0,0.6005,0.852,1.0,1.0,1.0,1.0,0.5311,0.3981,0.5233,0.3974,0.4405,0.2872,0.2865
+6,a man shows a clean piece of colorful clothing in a loud setting .,0.0709,a man performs under the spot light during a play performance in front of an audience .,4.0,4.0,4.0,4.0,0.354,0.8103,1.0,0.8983,0.9412,0.9257,0.193,0.2294,0.3145,0.2646,0.1438,0.0298,0.0709

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a large huddle of a lacross team is being recorded on the tv .,0.0,a group of foot ball player having a group meeting .,5.0,5.0,5.0,5.0,0.2771,0.7626,0.9091,0.7025,0.7926,0.728,0.052,0.0,0.2048,0.0878,0.0,0.0,0.0
+2,a group of people are playing a game of laser tag .,0.0,a group of foot ball player having a group meeting .,4.0,3.0,2.0,3.0,0.2217,0.8432,0.873,0.6387,0.7377,0.689,0.077,0.0,0.1085,0.0,0.0,0.0,0.0
+3,a group of people are watching a group of people on a stage .,0.0,a group of foot ball player having a group meeting .,5.0,2.0,2.0,3.0,0.1141,0.8407,0.937,0.5848,0.7202,0.6672,0.0,0.0,0.0546,0.0,0.0,0.0,0.0
+4,two teams are on a field playing lacrosse and they start scuffling .,0.0,a group of foot ball player having a group meeting .,4.0,4.0,4.0,4.0,0.1385,0.7797,0.9167,0.5945,0.5354,0.4042,0.0,0.0,0.0602,0.0,0.0,0.0,0.0
+5,a group of soccer players huddle together before the start of a game .,0.0,a group of foot ball player having a group meeting .,5.0,2.0,5.0,4.0,0.5308,0.8507,0.8276,0.4355,0.2845,0.159,0.4485,0.0,0.433,0.0,0.3336,0.0,0.0
+6,a male commentator speaks about an ongoing lacrosse game while the game is being filmed .,0.0,a group of foot ball player having a group meeting .,5.0,5.0,4.0,4.6667,0.0917,0.7618,0.9655,0.8115,0.8228,0.7674,0.0,0.0,0.0593,0.0,0.0,0.0,0.0

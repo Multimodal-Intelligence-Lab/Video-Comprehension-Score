@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man is hitting a tire with a mallet , repeatedly .",0.6197,a man is using a hammer to hit a black tire back and forth .,5.0,4.0,5.0,4.6667,0.7915,0.917,0.941,0.9679,0.9085,0.8949,0.7726,0.6865,0.7696,0.6685,0.7487,0.6404,0.6197
+2,a man is hitting a large tire with a sledge hammer .,0.8623,a man hits a large tire repeatedly with a heavy hammer .,5.0,5.0,5.0,5.0,0.8866,0.9292,1.0,0.8723,0.8863,0.8776,0.8779,0.8559,0.8866,0.8717,0.8779,0.8545,0.8623
+3,a man is hitting a tire with a sledge hammer .,0.8726,a man is exercising by pounding a tire with a sledge hammer .,5.0,5.0,5.0,5.0,0.8925,0.943,1.0,1.0,1.0,1.0,0.8842,0.8799,0.8799,0.8799,0.8726,0.8726,0.8726
+4,a man rapidly swings a sledge hammer over his head and repeatedly strikes a large rubber tire with it .,0.8631,"a man is hefting a sledge hammer over his head and striking a tire , over and over .",5.0,5.0,5.0,5.0,0.885,0.91,0.9851,0.921,0.9232,0.9156,0.8736,0.8751,0.8803,0.8754,0.8684,0.8628,0.8631
+5,a man keeps hitting a tire that is in front of him with a sledgehammer,0.7187,a man hits a large tire repeatedly with a heavy hammer .,5.0,5.0,5.0,5.0,0.8557,0.8747,0.9599,0.8723,0.8567,0.8355,0.8332,0.7593,0.8044,0.7549,0.7753,0.7237,0.7187
+6,a man is hitting a very large rubber tire with a sledge hammer .,0.7358,a man hits a large tire repeatedly with a heavy hammer .,5.0,5.0,5.0,5.0,0.8456,0.9219,0.9599,0.7804,0.7801,0.7614,0.8325,0.7241,0.8382,0.7399,0.8245,0.7144,0.7358

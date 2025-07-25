@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a little girl is enjoying riding her pink bike past another kid and keeps using the bike bell,0.5371,a small girl riding her small pink bike while a bell clinks,5.0,5.0,5.0,5.0,0.7758,0.9083,0.9363,0.7434,0.7774,0.7375,0.7532,0.4837,0.7466,0.5506,0.721,0.4682,0.5371
+2,a little girl is riding a scooter on a sidewalk .,0.3954,a little girl wearing a helmet is riding a small bike with training wheels down the sidewalk .,4.0,4.0,5.0,4.3333,0.6306,0.8976,0.9231,0.8571,0.8444,0.8036,0.5844,0.4492,0.5932,0.4573,0.5424,0.3804,0.3954
+3,a little girl is riding a tricycle on a sidewalk .,0.5857,a little girl wearing a helmet is riding a small bike with training wheels down the sidewalk .,4.0,5.0,4.0,4.3333,0.7022,0.9003,0.9365,0.8723,0.871,0.8567,0.6648,0.6276,0.679,0.627,0.6387,0.5863,0.5857
+4,a girl wearing a helmet is riding her bike with other kids on the sidewalk and street .,0.6069,a little girl wearing a helmet is riding a small bike with training wheels down the sidewalk .,5.0,4.0,5.0,4.6667,0.7355,0.9215,0.9711,0.7283,0.7576,0.7154,0.713,0.5606,0.7276,0.6332,0.7044,0.5467,0.6069
+5,a couple of little girls riding their bicycles on the side walk and street around homes,0.3187,a little girl riding a small bike with training wheels on it down the side walk,4.0,3.0,4.0,3.6667,0.5923,0.8995,0.9818,0.8961,0.916,0.8942,0.5468,0.358,0.5533,0.3872,0.5034,0.2863,0.3187
+6,two young girls wearing safety helmets ride small bicycles without training wheels down the street .,0.6992,a little girl wearing a helmet is riding a small bike with training wheels down the sidewalk .,4.0,4.0,4.0,4.0,0.7385,0.908,0.9528,0.9777,0.9573,0.953,0.7121,0.7326,0.7256,0.7269,0.6978,0.7055,0.6992

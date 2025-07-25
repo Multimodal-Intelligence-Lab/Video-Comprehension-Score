@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group plays stringed instruments on a stage together .,0.342,a group of people sitting down playing musical instruments in front of other people,5.0,5.0,5.0,5.0,0.5924,0.887,0.9655,0.7992,0.7916,0.7588,0.5363,0.4387,0.518,0.4317,0.4419,0.3581,0.342
+2,a group of people are playing a song on stage .,0.461,a group of three--two men and a woman--are playing acoustic instruments on a stage .,5.0,5.0,5.0,5.0,0.6571,0.9235,0.9796,1.0,0.9845,0.9824,0.6287,0.5328,0.5231,0.5255,0.474,0.4693,0.461
+3,a group of people are playing music on a stage .,0.4878,a group of three--two men and a woman--are playing acoustic instruments on a stage .,5.0,5.0,5.0,5.0,0.7168,0.931,0.9583,1.0,0.9681,0.964,0.6958,0.5599,0.5897,0.5453,0.569,0.5042,0.4878
+4,"a group of people are playing instruments , led by a conductor , on stage .",0.3146,a group of people sitting down playing musical instruments in front of other people,4.0,4.0,4.0,4.0,0.6229,0.9231,0.9569,0.8659,0.8126,0.7872,0.5914,0.4071,0.5003,0.3832,0.4587,0.3412,0.3146
+5,a group of musicians are playing on a stage with instruments .,0.2769,a trio of people are playing on stage as a woman blocks the view of them .,5.0,5.0,5.0,5.0,0.703,0.9085,0.9524,1.0,0.9573,0.9493,0.673,0.4098,0.5793,0.3954,0.5368,0.2941,0.2769
+6,three artists on stages with their instruments are seen creating music with these instruments .,0.3765,three men sit on a stage area and play musical instruments for a group of people,4.0,5.0,5.0,4.6667,0.6143,0.8575,0.9569,0.8552,0.8548,0.8265,0.5502,0.4477,0.5861,0.4654,0.5173,0.3456,0.3765

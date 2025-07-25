@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a rock band is playing on a stage with three cellos and a drum set .,0.2233,a band with several large cellos are playing on a stage .,5.0,5.0,5.0,5.0,0.7489,0.8921,0.783,0.5241,0.4419,0.3744,0.7186,0.3646,0.6793,0.2548,0.6405,0.3377,0.2233
+2,a group of people are playing a song on stage .,0.0,a band with several large cellos are playing on a stage .,5.0,5.0,5.0,5.0,0.4715,0.8492,0.9084,0.4846,0.2641,0.1335,0.3777,0.0,0.4182,0.0,0.315,0.0,0.0
+3,a man is playing a violin while another man is playing the cello .,0.0,a band with several large cellos are playing on a stage .,4.0,4.0,4.0,4.0,0.3846,0.8416,0.7964,0.1754,0.0,0.0,0.2688,0.0,0.2273,0.0,0.0819,0.0,0.0
+4,"a group of people are playing instruments , led by a conductor , on stage .",0.0,a band with several large cellos are playing on a stage .,4.0,4.0,4.0,4.0,0.4698,0.8251,0.9004,0.4189,0.2863,0.1349,0.3573,0.0,0.4111,0.0,0.2862,0.0,0.0
+5,a musical band performing onstage with musical instruments,0.0,a band with several large cellos are playing on a stage .,5.0,5.0,5.0,5.0,0.509,0.7954,0.7917,0.4757,0.5943,0.49,0.3826,0.0,0.3797,0.1738,0.2201,0.0,0.0
+6,a group plays stringed instruments on a stage together .,0.0,a band with several large cellos are playing on a stage .,5.0,5.0,4.0,4.6667,0.5885,0.8234,0.7703,0.2828,0.4138,0.2881,0.5003,0.0,0.4658,0.0039,0.3513,0.0,0.0

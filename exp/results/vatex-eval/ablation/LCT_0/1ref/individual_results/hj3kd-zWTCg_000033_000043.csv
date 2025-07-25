@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a small tired child tries to eat while falling asleep .,0.0,a young child who is falling asleep is eating a hamburger while in a car seat .,5.0,5.0,5.0,5.0,0.6108,0.8831,0.7536,0.3944,0.2767,0.1809,0.5592,0.0084,0.4835,0.0,0.4151,0.0,0.0
+2,a little boy is sitting in a car seat eating a donut .,0.0,a young child who is falling asleep is eating a hamburger while in a car seat .,4.0,4.0,4.0,4.0,0.4738,0.8708,0.7886,0.6144,0.536,0.4672,0.3957,0.1435,0.3326,0.0183,0.2336,0.0164,0.0
+3,a young boy is sitting in a car seat and eating a snack .,0.0,a young child who is falling asleep is eating a hamburger while in a car seat .,5.0,4.0,5.0,4.6667,0.5418,0.9024,0.7515,0.5513,0.4541,0.395,0.4922,0.1689,0.3903,0.0,0.3244,0.079,0.0
+4,a boy eating food loudly while chewing with their mouth open .,0.0,a young child who is falling asleep is eating a hamburger while in a car seat .,4.0,4.0,3.0,3.6667,0.3055,0.8154,0.9264,0.5895,0.5807,0.4858,0.1482,0.0,0.2503,0.0,0.0806,0.0,0.0
+5,a little boy is sitting in a food court eating a hamburger .,0.0,a young child who is falling asleep is eating a hamburger while in a car seat .,4.0,4.0,4.0,4.0,0.5389,0.8563,0.7966,0.5642,0.4908,0.4054,0.4616,0.1828,0.4212,0.0553,0.3241,0.0457,0.0
+6,a man and child are laying down eating food with a spoon,0.0,a young child who is falling asleep is eating a hamburger while in a car seat .,3.0,2.0,3.0,2.6667,0.26,0.844,0.9667,0.8698,0.8735,0.8502,0.1233,0.1493,0.2345,0.1529,0.093,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,in a scenario there are four puppets making a presentation that amuses the people who are there .,0.0,some people are putting on a puppet show by hiding behind a sheet and sticking their hands with puppets under the sheet .,4.0,4.0,5.0,4.3333,0.5495,0.8158,0.9804,0.7876,0.7891,0.7216,0.4461,0.2451,0.4461,0.2168,0.3046,0.058,0.0
+2,a woman is showing how to properly fold a piece of cloth .,0.0,some people are putting on a puppet show by hiding behind a sheet and sticking their hands with puppets under the sheet .,1.0,2.0,1.0,1.3333,0.2173,0.794,0.9737,1.0,0.9822,0.9761,0.0142,0.0223,0.1446,0.0306,0.0,0.0,0.0
+3,a woman is demonstrating how to use a machine to wash clothes .,0.0,some people are putting on a puppet show by hiding behind a sheet and sticking their hands with puppets under the sheet .,1.0,2.0,1.0,1.3333,0.1883,0.7844,1.0,1.0,1.0,1.0,0.0,0.1185,0.1137,0.1108,0.0,0.0,0.0
+4,a group of children are putting on a puppet show .,0.6043,children with high pitched voices are putting on a puppet show behind a sheet and some stacked chairs .,5.0,4.0,5.0,4.6667,0.7062,0.8926,0.9084,0.9552,0.8318,0.8115,0.6709,0.6924,0.6594,0.6468,0.6185,0.6554,0.6043
+5,behind a blanket someone is putting on a puppet show .,0.3124,a boy has a sheet draped over a stack of chairs and is putting on a puppet show .,5.0,5.0,5.0,5.0,0.7034,0.9001,0.9667,0.8515,0.8582,0.8346,0.6658,0.4058,0.6411,0.4104,0.6012,0.307,0.3124
+6,a group of people performing a puppet act for a audience .,0.7249,several people perform a sock puppet show while an audience watches,5.0,3.0,5.0,4.3333,0.7555,0.9087,0.9831,1.0,0.9872,0.9858,0.7284,0.7555,0.7513,0.7523,0.7237,0.7284,0.7249

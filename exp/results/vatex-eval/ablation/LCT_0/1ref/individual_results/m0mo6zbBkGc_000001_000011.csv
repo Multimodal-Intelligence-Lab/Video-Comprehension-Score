@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy is outside and he jumps on wood and he falls to the ground .,0.2319,a man in red flannel runs and jumps on a piece of wood and breaks it .,5.0,5.0,5.0,5.0,0.5128,0.8432,0.9333,0.7551,0.7522,0.7061,0.4223,0.3548,0.478,0.3523,0.381,0.2349,0.2319
+2,a man is throwing a knife at a wooden target .,0.0,a man in red flannel runs and jumps on a piece of wood and breaks it .,4.0,2.0,3.0,3.0,0.2654,0.8147,0.9183,0.6757,0.6678,0.5922,0.0983,0.0,0.2,0.0,0.0181,0.0,0.0
+3,a man is throwing a knife at a wooden target .,0.0,a man in red flannel runs and jumps on a piece of wood and breaks it .,4.0,2.0,3.0,3.0,0.2654,0.8147,0.9183,0.6757,0.6678,0.5922,0.0983,0.0,0.2,0.0,0.0181,0.0,0.0
+4,two young men throw a piece of wood furniture off a deck and it breaks on the ground .,0.0,a man in red flannel runs and jumps on a piece of wood and breaks it .,4.0,2.0,2.0,2.6667,0.3949,0.8512,0.8749,0.4957,0.5104,0.4248,0.2891,0.0,0.3083,0.0,0.1874,0.0,0.0
+5,"a man swings an axe at tree that is nearly ready to fall , before walking a few steps away and throwing the axe at the tree .",0.0,a man in red flannel runs and jumps on a piece of wood and breaks it .,3.0,3.0,2.0,2.6667,0.2326,0.775,0.942,0.7949,0.8316,0.7827,0.0099,0.0347,0.1854,0.0772,0.0,0.0,0.0
+6,a guy is setting up of piece of wood and then he crushes it .,0.1726,a man in red flannel runs and jumps on a piece of wood and breaks it .,5.0,5.0,4.0,4.6667,0.4558,0.8484,0.9183,0.7914,0.7753,0.7351,0.3585,0.3124,0.4074,0.298,0.3015,0.1895,0.1726

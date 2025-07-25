@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,outside on a field are a team of players all dressed in white exercising to prepare to play a game of cricket .,0.0,a group of people stand around a field then one of them runs and jumps in the air,4.0,5.0,5.0,4.6667,0.3399,0.78,0.9382,0.5722,0.6283,0.5234,0.1537,0.0,0.2964,0.0,0.098,0.0,0.0
+2,a group of people are in a field playing a game of baseball .,0.0,a group of people stand around a field then one of them runs and jumps in the air,4.0,4.0,4.0,4.0,0.4789,0.8516,0.9557,0.5558,0.584,0.5115,0.3881,0.0625,0.4547,0.1077,0.3597,0.0,0.0
+3,a group of people are playing a game of cricket .,0.1227,a group of people stand around a field then one of them runs and jumps in the air,5.0,5.0,5.0,5.0,0.3143,0.8274,0.9434,0.9781,0.9446,0.933,0.1713,0.299,0.2732,0.2741,0.1216,0.1528,0.1227
+4,"a group of men are playing cricket , and a man hits the ball to the right side of the field .",0.0,a group of people stand around a field then one of them runs and jumps in the air,5.0,3.0,4.0,4.0,0.2757,0.8087,0.9137,0.5239,0.5546,0.4493,0.1044,0.0,0.2073,0.0,0.0198,0.0,0.0
+5,during a baseball game a man hit the ball with the bat and the others run the bases .,0.0,a group of people stand around a field then one of them runs and jumps in the air,4.0,1.0,3.0,2.6667,0.2634,0.7866,0.9189,0.6787,0.7807,0.7212,0.0636,0.0,0.1984,0.0566,0.0,0.0,0.0
+6,several men play cricket on a large field while a man broadcasts the action .,0.0,a group of people stand around a field then one of them runs and jumps in the air,5.0,3.0,3.0,3.6667,0.2618,0.79,0.9643,0.8197,0.8861,0.8558,0.0655,0.0994,0.2345,0.167,0.0309,0.0,0.0

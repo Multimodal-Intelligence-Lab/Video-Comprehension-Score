@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,in an indoor rock climbing gym a boy is climbing a rock wall .,0.0,a small boy doing rock climbing while attached to a rope .,5.0,5.0,5.0,5.0,0.6159,0.8904,0.8471,0.2141,0.0126,0.0,0.5686,0.0,0.5465,0.0,0.4907,0.0,0.0
+2,a man is climbing up a rope in a gym .,0.0927,a small boy doing rock climbing while attached to a rope .,2.0,4.0,4.0,3.3333,0.3602,0.8638,0.8571,0.9657,0.8164,0.7874,0.2593,0.3375,0.2536,0.2163,0.1359,0.233,0.0927
+3,a group of people are climbing up a rock wall .,0.0,a small boy doing rock climbing while attached to a rope .,4.0,4.0,4.0,4.0,0.4526,0.8501,0.941,0.4569,0.2302,0.0945,0.3561,0.0,0.4183,0.0,0.3157,0.0,0.0
+4,a cute little boy is climbing a ladder in the dresser .,0.1806,a small boy doing rock climbing while attached to a rope .,2.0,3.0,4.0,3.0,0.4391,0.8548,0.9167,0.7109,0.8008,0.767,0.3438,0.211,0.3881,0.2995,0.2842,0.077,0.1806
+5,a man performs a ladder climb while in a gymnasium .,0.0,a small boy doing rock climbing while attached to a rope .,3.0,4.0,3.0,3.3333,0.2398,0.7865,0.9714,0.7974,0.7517,0.6843,0.0334,0.0467,0.2174,0.0,0.0049,0.0,0.0
+6,a small child climbs up a ladder at the side of a closet .,0.2338,a small boy doing rock climbing while attached to a rope .,2.0,3.0,3.0,2.6667,0.461,0.8499,0.937,0.7414,0.8278,0.7974,0.3657,0.273,0.4248,0.3489,0.3231,0.1445,0.2338

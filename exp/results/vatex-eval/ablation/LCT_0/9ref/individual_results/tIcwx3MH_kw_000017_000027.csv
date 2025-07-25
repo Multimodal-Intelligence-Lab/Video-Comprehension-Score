@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is giving instruction on how to use a sewing machine .,0.7995,a woman is describing how to needle a sewing machine .,5.0,4.0,5.0,4.6667,0.881,0.9084,1.0,1.0,1.0,1.0,0.869,0.855,0.8635,0.8183,0.8511,0.8498,0.7995
+2,a woman is demonstrating how to use a sewing machine .,0.8353,a woman explains how to use a sewing machine to make a stitch .,5.0,5.0,5.0,5.0,0.8618,0.9192,1.0,1.0,1.0,1.0,0.849,0.8618,0.8472,0.8492,0.8332,0.849,0.8353
+3,a woman is demonstrating how to use a sewing machine .,0.8353,a woman explains how to use a sewing machine to make a stitch .,5.0,5.0,5.0,5.0,0.8618,0.9192,1.0,1.0,1.0,1.0,0.849,0.8618,0.8472,0.8492,0.8332,0.849,0.8353
+4,a woman is demonstrating how to use a sewing machine and sew .,0.8563,a woman explains how to use a sewing machine to make a stitch .,5.0,5.0,5.0,5.0,0.8682,0.9196,1.0,1.0,1.0,1.0,0.8563,0.8682,0.8682,0.8682,0.8563,0.8563,0.8563
+5,someone is threading thread through a sewing machine and explaining what she is doing .,0.5972,a woman demonstrates threading a needle in a sewing machine .,5.0,5.0,5.0,5.0,0.862,0.9531,0.9199,0.803,0.7481,0.6954,0.8552,0.6562,0.7754,0.6106,0.7448,0.642,0.5972
+6,a person is threading thread on her sewing machine and explaining how she does it .,0.6027,a woman demonstrates threading a needle in a sewing machine .,5.0,5.0,5.0,5.0,0.8614,0.9725,0.9199,0.803,0.7481,0.6991,0.8466,0.6616,0.783,0.6138,0.7572,0.6498,0.6027

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,men play instruments all together for a special performance of sorts .,0.4075,a group of men play some music together dressed in white,5.0,5.0,5.0,5.0,0.629,0.8629,0.8634,0.6256,0.7255,0.6819,0.5701,0.4048,0.5703,0.4887,0.5021,0.3128,0.4075
+2,a man and a woman are playing a game of chess .,0.0,a group of men play some music together dressed in white,2.0,1.0,2.0,1.6667,0.0231,0.8143,0.95,0.6733,0.6467,0.5662,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a group of men are sitting on a stage and playing instruments .,0.0578,a group of men play some music together dressed in white,4.0,4.0,4.0,4.0,0.5604,0.8614,0.8397,0.6378,0.5416,0.4679,0.4897,0.3108,0.4765,0.182,0.3922,0.1999,0.0578
+4,several young men and women playing musical instruments together as a band .,0.2474,a group of men play some music together dressed in white,5.0,4.0,4.0,4.3333,0.4532,0.8724,0.858,0.9045,0.8329,0.8084,0.3732,0.3954,0.3626,0.3434,0.2695,0.307,0.2474
+5,a man seated outside on a sidewalk playing multiple instruments while playing a song .,0.0,a group of men play some music together dressed in white,5.0,4.0,4.0,4.3333,0.1966,0.8229,0.822,0.526,0.4981,0.3901,0.0237,0.0,0.0226,0.0,0.0,0.0,0.0
+6,a few men are in a band and playing some music with accordions,0.2663,a group of men play some music together dressed in white,5.0,4.0,4.0,4.3333,0.5127,0.865,0.9023,0.8228,0.7678,0.7316,0.4367,0.4078,0.46,0.3654,0.3756,0.3154,0.2663

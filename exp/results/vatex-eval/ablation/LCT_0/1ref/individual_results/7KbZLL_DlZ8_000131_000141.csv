@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,they are cleaning up old pieces of metal and stonefrom along time ago .,0.0,man in purple shirt knees outside while taking about artefacts dig from a site .,5.0,5.0,5.0,5.0,0.2762,0.746,0.9556,0.7283,0.7573,0.6746,0.0298,0.0063,0.2426,0.0442,0.0,0.0,0.0
+2,a man and a woman are sitting in front of a fire and talking to each other .,0.0,man in purple shirt knees outside while taking about artefacts dig from a site .,4.0,4.0,3.0,3.6667,0.0664,0.7873,0.9262,0.7252,0.7389,0.6684,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a man and a young boy are cooking food on a grill .,0.0,man in purple shirt knees outside while taking about artefacts dig from a site .,3.0,2.0,1.0,2.0,0.0551,0.7657,0.9375,0.5276,0.5453,0.4062,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,a person at an excavation site brushing away dirt to reveal artifacts .,0.0,man in purple shirt knees outside while taking about artefacts dig from a site .,5.0,4.0,5.0,4.6667,0.4148,0.8365,0.8123,0.2678,0.164,0.0005,0.3004,0.0,0.2795,0.0,0.1387,0.0,0.0
+5,a peson is showing a rock from an archiological dig and then brushing sand and dirt away from rocks and then another man is talking .,0.0,man in purple shirt knees outside while taking about artefacts dig from a site .,5.0,5.0,5.0,5.0,0.4125,0.816,0.7324,0.4923,0.4975,0.3842,0.2801,0.0,0.1978,0.0,0.017,0.0,0.0
+6,a man with gloves pours cleaner on a sponge and then cleans the side of the swimming pool .,0.0,man in purple shirt knees outside while taking about artefacts dig from a site .,4.0,2.0,1.0,2.3333,0.1424,0.7681,0.8817,0.6477,0.7468,0.6703,0.0,0.0,0.0273,0.0,0.0,0.0,0.0

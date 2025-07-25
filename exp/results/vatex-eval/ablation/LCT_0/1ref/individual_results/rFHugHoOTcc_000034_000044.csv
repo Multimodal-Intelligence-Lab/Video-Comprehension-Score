@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy opens a door and walks out then goes to the atm .,0.0,a person approaches an automatic teller machine and places their hands on it .,5.0,4.0,5.0,4.6667,0.5311,0.7606,0.92,0.6557,0.6095,0.4865,0.3835,0.2849,0.4904,0.2307,0.3299,0.0598,0.0
+2,a man is showing how to use an atm machine .,0.325,a person approaches an automatic teller machine and places their hands on it .,5.0,3.0,3.0,3.6667,0.5354,0.8157,0.9524,0.8644,0.8438,0.8085,0.4304,0.4625,0.5122,0.4494,0.4019,0.3411,0.325
+3,a man is standing in front of a door and is talking about it .,0.0,a person approaches an automatic teller machine and places their hands on it .,4.0,4.0,3.0,3.6667,0.1589,0.7679,0.9756,0.8644,0.8611,0.8191,0.0,0.0269,0.1378,0.0232,0.0,0.0,0.0
+4,"a man is using at atm machine , slides his card in to make some sort of transaction .",0.0746,a person approaches an automatic teller machine and places their hands on it .,5.0,2.0,2.0,3.0,0.5463,0.8056,0.95,0.5801,0.6085,0.5141,0.4369,0.218,0.5225,0.2545,0.4073,0.0294,0.0746
+5,a man stands in a room and uses a large machine to do something,0.0,a person approaches an automatic teller machine and places their hands on it .,4.0,4.0,3.0,3.6667,0.1892,0.8029,0.9543,0.6596,0.7801,0.7261,0.0,0.0,0.1504,0.0,0.0,0.0,0.0
+6,"money is being counted by a machine , and a man repeatedly takes it out .",0.0,a person approaches an automatic teller machine and places their hands on it .,1.0,2.0,2.0,1.6667,0.3604,0.8001,0.8984,0.542,0.4601,0.3253,0.2006,0.0,0.288,0.0,0.1102,0.0,0.0

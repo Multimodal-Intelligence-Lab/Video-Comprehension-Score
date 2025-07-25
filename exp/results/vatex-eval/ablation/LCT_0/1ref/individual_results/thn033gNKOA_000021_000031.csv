@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman wearing a swimsuit is swimming inside a pool .,0.0,a underwater view of woman swimmer in a pool swimming slow .,5.0,5.0,5.0,5.0,0.6022,0.8808,0.8187,0.2162,0.0,0.0,0.5483,0.0,0.5141,0.0,0.4483,0.0,0.0
+2,a woman swims in a pool while a man narrates .,0.0,a underwater view of woman swimmer in a pool swimming slow .,4.0,3.0,3.0,3.3333,0.538,0.841,0.8067,0.563,0.4387,0.3326,0.4507,0.1794,0.4273,0.0,0.319,0.0243,0.0
+3,a person is swimming in a pool while a man narrates .,0.0,a underwater view of woman swimmer in a pool swimming slow .,4.0,4.0,4.0,4.0,0.4204,0.854,0.7312,0.5336,0.3616,0.2525,0.3213,0.0,0.2073,0.0,0.0718,0.0,0.0
+4,a bunch of people swim in a coordinated fashion in a swimming pool .,0.0,a underwater view of woman swimmer in a pool swimming slow .,2.0,2.0,3.0,2.3333,0.3913,0.8347,0.8331,0.5033,0.6275,0.5537,0.2708,0.0,0.2693,0.03,0.1246,0.0,0.0
+5,a woman leaps until a pool while fully-clothed after having been wet .,0.0,a underwater view of woman swimmer in a pool swimming slow .,4.0,2.0,2.0,2.6667,0.3439,0.8276,0.8545,0.3586,0.1754,0.0037,0.2073,0.0,0.2322,0.0,0.0723,0.0,0.0
+6,a scan of a pool during a swimming competition with multiple swimmers .,0.0,a underwater view of woman swimmer in a pool swimming slow .,2.0,4.0,4.0,3.3333,0.456,0.8483,0.8,0.5493,0.4189,0.315,0.3588,0.0096,0.32,0.0,0.1985,0.0,0.0

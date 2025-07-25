@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a bunch of guys play dodgeball indoors at a trampoline place .,0.6976,people are playing a game of dodge ball at a trampoline park .,5.0,5.0,5.0,5.0,0.7994,0.9079,0.9804,0.8812,0.879,0.8574,0.7641,0.5742,0.7898,0.7249,0.7528,0.5545,0.6976
+2,a group of people are jumping up and down on a trampoline .,0.4377,a group of people are bouncing and throw balls at each other .,5.0,5.0,5.0,5.0,0.7304,0.8821,1.0,1.0,1.0,1.0,0.6923,0.5421,0.6765,0.512,0.6307,0.4657,0.4377
+3,a group of people are jumping on a trampoline .,0.4277,a group of men bounce around on some different trampolines with each other,5.0,5.0,5.0,5.0,0.7319,0.8821,1.0,1.0,1.0,1.0,0.6939,0.5415,0.6783,0.5096,0.6327,0.465,0.4277
+4,a group of children are jumping on a trampoline and playing basketball .,0.3934,a group of kids running in squares and throwing basketballs .,4.0,3.0,4.0,3.6667,0.5861,0.8847,1.0,0.8515,0.9107,0.8941,0.5216,0.4529,0.524,0.4885,0.4529,0.3512,0.3934
+5,"a young boy jumps on a trampoline to gain momentum , then attempts to jump and kick another boy off the trampoline .",0.2659,a group of guys are at a trampoline place playing a game with a ball .,4.0,4.0,4.0,4.0,0.4997,0.8641,0.9434,0.9615,0.9404,0.9261,0.421,0.4214,0.4103,0.4085,0.2787,0.282,0.2659
+6,players on a basketball court were throwing different balls to each other,0.0,people are playing a game of dodge ball at a trampoline park .,4.0,4.0,4.0,4.0,0.5906,0.8349,0.9599,0.6625,0.7593,0.694,0.5097,0.1686,0.5204,0.1007,0.4256,0.0365,0.0

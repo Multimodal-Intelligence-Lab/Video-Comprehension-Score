@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a girl walks across a tennis court carrying a tennis racket , which she uses to nudge a tennis ball on the ground while another person on the other side of the tennis net faces her .",0.5402,a child walks across a tennis court and hits a tennis ball on the ground with her racket while a woman laughs .,5.0,5.0,5.0,5.0,0.8479,0.9131,0.902,0.5942,0.6786,0.6481,0.8334,0.4404,0.8209,0.5568,0.8038,0.4194,0.5402
+2,a young boy is playing tennis on a tennis court .,0.3253,a young girl is laughing at another one who is on a tennis court .,4.0,4.0,4.0,4.0,0.6005,0.8911,0.9787,0.7804,0.7807,0.7539,0.5449,0.4379,0.5432,0.3988,0.4796,0.3683,0.3253
+3,a young boy is playing tennis on a tennis court .,0.3253,a young girl is laughing at another one who is on a tennis court .,4.0,4.0,4.0,4.0,0.6005,0.8911,0.9787,0.7804,0.7807,0.7539,0.5449,0.4379,0.5432,0.3988,0.4796,0.3683,0.3253
+4,a girl holding a tennis racket hits three fly balls in a row .,0.2472,a girl holding a tennis racked passed the ball with a racket to the other side,4.0,3.0,4.0,3.6667,0.5955,0.8998,0.912,0.5913,0.611,0.5674,0.5504,0.3019,0.5564,0.3226,0.507,0.2306,0.2472
+5,a tennis player is in front of the wall trying to hit balls with his racket .,0.0,a young girl is laughing at another one who is on a tennis court .,4.0,2.0,3.0,3.0,0.4602,0.8519,0.9213,0.7258,0.6775,0.5913,0.3547,0.0114,0.3749,0.1585,0.2528,0.0,0.0
+6,two people playing tennis on a tennis court use their tennis rackets to volley the ball back and forth .,0.2304,a woman at a tennis court moves a ball with her racket towards the net .,4.0,4.0,4.0,4.0,0.543,0.8712,0.981,0.7289,0.8,0.7661,0.4755,0.2719,0.4921,0.3295,0.417,0.1642,0.2304

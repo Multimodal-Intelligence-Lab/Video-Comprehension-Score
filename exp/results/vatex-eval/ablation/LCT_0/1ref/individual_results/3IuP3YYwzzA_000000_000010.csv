@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man in a blue hat and glasses burps loudly while his friends chuckle at him .,0.759,a boy with a blue hat and wearing glasses burped loud,5.0,5.0,5.0,5.0,0.8115,0.9157,0.9129,0.8933,0.8545,0.8411,0.7941,0.7889,0.7935,0.7794,0.7744,0.7695,0.759
+2,a man is sitting in a car and smoking a cigarette .,0.0,a boy with a blue hat and wearing glasses burped loud,3.0,2.0,4.0,3.0,0.0642,0.7366,1.0,0.8644,0.8788,0.8354,0.0,0.0,0.0642,0.0,0.0,0.0,0.0
+3,a man is sitting in a chair and talking to the camera .,0.0,a boy with a blue hat and wearing glasses burped loud,4.0,3.0,4.0,3.6667,0.0457,0.7429,1.0,0.8644,0.8788,0.8369,0.0,0.0,0.0457,0.0,0.0,0.0,0.0
+4,"boy inhales , swallows many times , repeatedly opens mouth , and then opens throat to burp .",0.0478,a boy with a blue hat and wearing glasses burped loud,3.0,4.0,4.0,3.6667,0.4396,0.8013,0.9305,0.6917,0.7345,0.6687,0.3006,0.1898,0.3977,0.237,0.2483,0.0,0.0478
+5,a young man in glasses first seated then standing doing multiple burps .,0.0,a boy with a blue hat and wearing glasses burped loud,4.0,4.0,4.0,4.0,0.5323,0.8271,0.8973,0.4645,0.4182,0.2965,0.4346,0.0,0.4788,0.0,0.3699,0.0,0.0
+6,the same man is shown burping continuously in different environments .,0.0,a boy with a blue hat and wearing glasses burped loud,4.0,4.0,4.0,4.0,0.3694,0.7977,0.88,0.5269,0.432,0.2879,0.2094,0.0,0.2834,0.0,0.1016,0.0,0.0

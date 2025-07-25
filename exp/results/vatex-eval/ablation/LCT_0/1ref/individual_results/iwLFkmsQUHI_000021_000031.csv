@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young girl sitting on a counter sections of an egg into an empty water bottle .,0.5811,a young girl is sucking an egg yolk into a water bottle .,5.0,5.0,5.0,5.0,0.7006,0.9092,0.975,0.749,0.7861,0.7647,0.6707,0.6003,0.6929,0.6191,0.6622,0.5603,0.5811
+2,a woman is demonstrating how to make a dish in a kitchen .,0.0,a young girl is sucking an egg yolk into a water bottle .,4.0,4.0,4.0,4.0,0.1155,0.7294,1.0,1.0,1.0,1.0,0.0,0.1155,0.1155,0.1155,0.0,0.0,0.0
+3,a woman is standing in front of a sink and she is washing a dish .,0.0,a young girl is sucking an egg yolk into a water bottle .,4.0,2.0,3.0,3.0,0.162,0.7594,0.9804,0.8387,0.84,0.7893,0.0,0.0008,0.1452,0.0024,0.0,0.0,0.0
+4,a person uses a bottle to suck up an egg yolk from a bowl .,0.4368,a young girl is sucking an egg yolk into a water bottle .,4.0,4.0,4.0,4.0,0.7679,0.894,0.7564,0.4743,0.583,0.5336,0.7404,0.3154,0.6827,0.457,0.6567,0.29,0.4368
+5,a woman uses an emply soda bottle to suck up the yolk from a broken egg .,0.0,a young girl is sucking an egg yolk into a water bottle .,5.0,5.0,5.0,5.0,0.6963,0.8734,0.75,0.2545,0.1321,0.0063,0.6523,0.0,0.5951,0.0,0.5364,0.0,0.0
+6,a person is sucking an egg up with a bottle out of a bowl .,0.6242,a young girl is sucking an egg yolk into a water bottle .,4.0,4.0,4.0,4.0,0.7424,0.9082,0.928,0.789,0.7548,0.73,0.7164,0.6735,0.7224,0.6587,0.6943,0.6405,0.6242

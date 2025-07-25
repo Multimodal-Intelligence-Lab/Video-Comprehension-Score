@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a bunch of people standing ina gym watching a couple kids practice,0.0,two children demonstrate martial art kicks in front of a group of people .,5.0,5.0,4.0,4.6667,0.4261,0.8013,0.6487,0.3764,0.4764,0.3465,0.2838,0.0,0.1154,0.0,0.0,0.0,0.0
+2,a group of people are performing a dance routine in front of a crowd .,0.0,two children demonstrate martial art kicks in front of a group of people .,4.0,4.0,4.0,4.0,0.3407,0.8529,0.7241,0.94,0.7453,0.7014,0.227,0.2986,0.0896,0.1154,0.0,0.1777,0.0
+3,a group of people are dancing in a circle while others watch .,0.0,two children demonstrate martial art kicks in front of a group of people .,4.0,3.0,4.0,3.6667,0.2136,0.8196,0.6884,0.5402,0.4475,0.3259,0.0406,0.0,0.0,0.0,0.0,0.0,0.0
+4,young boys and girls practice techniques in a karate class .,0.0,two children demonstrate martial art kicks in front of a group of people .,5.0,5.0,4.0,4.6667,0.5222,0.7862,0.9243,0.3537,0.3163,0.1303,0.3922,0.0,0.4831,0.0,0.3425,0.0,0.0
+5,small boys and girls are learning how to drop kick from karate instructors .,0.0,two children demonstrate martial art kicks in front of a group of people .,5.0,1.0,2.0,2.6667,0.5703,0.796,0.934,0.4482,0.4481,0.3067,0.4602,0.0325,0.5399,0.0322,0.422,0.0,0.0
+6,the kids in uniform are practicing their dance in the gym .,0.0,two children demonstrate martial art kicks in front of a group of people .,4.0,4.0,4.0,4.0,0.3354,0.7727,0.8085,0.7853,0.7154,0.6317,0.1399,0.1537,0.178,0.071,0.0,0.0,0.0

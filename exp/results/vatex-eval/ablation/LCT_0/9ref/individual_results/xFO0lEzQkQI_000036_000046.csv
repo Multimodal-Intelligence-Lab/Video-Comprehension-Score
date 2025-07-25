@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man shows a young boy how to knead dough .,0.6548,there is a man and what appears to be his child standing in the kitchen kneading dough .,5.0,4.0,4.0,4.3333,0.7502,0.9107,0.9787,0.9679,0.879,0.8641,0.7203,0.732,0.7239,0.6925,0.69,0.7057,0.6548
+2,a group of people are in a kitchen making a pizza .,0.2931,there is a man and what appears to be his child standing in the kitchen kneading dough .,4.0,2.0,3.0,3.0,0.4594,0.8156,1.0,1.0,1.0,1.0,0.3371,0.4594,0.4174,0.4235,0.2857,0.3371,0.2931
+3,a young boy and a young boy are making dough on a table .,0.5092,a man and a little boy are each kneading dough while standing at a kitchen table .,5.0,4.0,4.0,4.3333,0.7436,0.892,0.9804,0.8387,0.84,0.8034,0.7109,0.5449,0.7193,0.5308,0.6835,0.524,0.5092
+4,a man is folding over a piece of dough before spreading flour under it and then rolling out the dough .,0.3003,a dad and son are patting down dough on a floured surface in a kitchen .,5.0,4.0,4.0,4.3333,0.5928,0.8717,0.9565,0.834,0.8662,0.8312,0.5208,0.4148,0.5615,0.4204,0.484,0.2936,0.3003
+5,a man is preparing some dough for cooking in the kitchen .,0.3871,a man and a child are kneading dough on a counter .,5.0,5.0,4.0,4.6667,0.7071,0.8941,0.9524,0.755,0.7485,0.7062,0.6724,0.4792,0.6269,0.4753,0.5827,0.3855,0.3871
+6,a man is rolling out dough on a wooden counter .,0.4653,a man and a child are kneading dough on a counter .,5.0,4.0,5.0,4.6667,0.6177,0.9096,0.9796,1.0,0.9845,0.9814,0.5797,0.505,0.5922,0.5136,0.5517,0.4047,0.4653

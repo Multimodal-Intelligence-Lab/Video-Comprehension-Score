@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a large construction vehicle picks up dirt and places it in the back of another vehicle,0.5735,a large tractor pours dirt and soil into the back of a truck .,2.0,5.0,5.0,4.0,0.6928,0.8766,0.9438,0.8661,0.8556,0.826,0.6496,0.6241,0.6718,0.6261,0.6256,0.5711,0.5735
+2,a bulldozer is being driven through the back of a truck .,0.701,a bulldozer picked up dirt and emptied it in the back of a truck,5.0,4.0,2.0,3.6667,0.7296,0.9044,1.0,1.0,1.0,1.0,0.701,0.7296,0.7296,0.7296,0.701,0.701,0.701
+3,a bulldozer is being driven by a truck and a man is talking .,0.3053,a large bulldozer scoops dirt from a pile and loads it into a dump truck .,2.0,1.0,2.0,1.6667,0.616,0.8395,0.9125,0.7754,0.733,0.6774,0.5426,0.463,0.5646,0.4249,0.4814,0.3604,0.3053
+4,"a man operating a dump truck , dumping dirt into a large pile .",0.4885,outside someone is driving heavy machinery and dumping dirt into a dump truck .,4.0,5.0,4.0,4.3333,0.7662,0.9097,0.868,0.7448,0.6821,0.6271,0.7333,0.521,0.7307,0.5105,0.6927,0.4995,0.4885
+5,a garbage truck is lifting and dumping a garbage bin in the back of it .,0.0581,outside someone is driving heavy machinery and dumping dirt into a dump truck .,2.0,1.0,3.0,2.0,0.4845,0.8738,0.8218,0.7662,0.6688,0.6119,0.3908,0.2984,0.3129,0.1962,0.192,0.1779,0.0581
+6,a garbage truck is using a tool to pick up garbage and drive off .,0.0,a bulldozer picked up dirt and emptied it in the back of a truck,1.0,1.0,5.0,2.3333,0.5415,0.8524,0.8416,0.6468,0.6547,0.5662,0.4621,0.0415,0.2634,0.0531,0.1099,0.0,0.0

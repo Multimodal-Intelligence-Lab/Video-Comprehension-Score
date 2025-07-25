@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is sitting outside in front of a dirt area and is working with two stones shaping one by hitting it with the other stone .,0.0,a person holding two different shaped rocks in each of their hands,5.0,5.0,5.0,5.0,0.3394,0.8422,0.901,0.5079,0.5717,0.4915,0.2157,0.0,0.2668,0.0,0.1295,0.0,0.0
+2,a man is demonstrating how to make a piece of rock .,0.0581,a person holding two different shaped rocks in each of their hands,5.0,5.0,5.0,5.0,0.3827,0.8106,0.95,0.8284,0.8084,0.7637,0.2385,0.2549,0.3503,0.2365,0.1985,0.0808,0.0581
+3,a man is using a tool to break a piece of flint .,0.0,a person holding two different shaped rocks in each of their hands,5.0,5.0,4.0,4.6667,0.2277,0.7873,0.9599,0.753,0.7399,0.6697,0.0192,0.0,0.1955,0.0,0.0,0.0,0.0
+4,"a man is holding a rock , and using it to describe something .",0.0,a person holding two different shaped rocks in each of their hands,5.0,5.0,4.0,4.6667,0.4769,0.8422,0.9004,0.2848,0.0546,0.0,0.3789,0.0,0.419,0.0,0.3101,0.0,0.0
+5,a man breaks apart a large rock with a smaller rock .,0.0,a person holding two different shaped rocks in each of their hands,4.0,5.0,5.0,4.6667,0.4009,0.8263,0.8777,0.3764,0.5269,0.4274,0.275,0.0,0.3175,0.0,0.174,0.0,0.0
+6,"a man uses a rock to break a bigger rock , while someone talks in the background .",0.0,a person holding two different shaped rocks in each of their hands,5.0,4.0,3.0,4.0,0.327,0.8132,0.8789,0.4755,0.464,0.3409,0.1725,0.0,0.2343,0.0,0.0584,0.0,0.0

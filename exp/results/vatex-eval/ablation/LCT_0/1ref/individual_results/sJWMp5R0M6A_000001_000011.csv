@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"someone is shown skiing down a large , steep snow-covered mountain .",0.4727,a person is snowboarding down a steep snowy slope .,5.0,5.0,5.0,5.0,0.5616,0.8668,0.9524,1.0,0.9593,0.9531,0.4942,0.5616,0.5396,0.543,0.4689,0.4942,0.4727
+2,a group of people are snowboarding down a snowy hill .,0.0,a person is snowboarding down a steep snowy slope .,4.0,4.0,3.0,3.6667,0.5258,0.8961,0.8426,0.3651,0.5095,0.4526,0.4708,0.0,0.4372,0.0671,0.372,0.0,0.0
+3,a person is snowboarding down a hill and does a jump .,0.0,a person is snowboarding down a steep snowy slope .,5.0,5.0,4.0,4.6667,0.6154,0.8832,0.9524,0.7009,0.4225,0.3461,0.5646,0.4513,0.5962,0.0616,0.5428,0.3787,0.0
+4,someone is skiing down a snow kill and around ski poles .,0.0,a person is snowboarding down a steep snowy slope .,5.0,5.0,5.0,5.0,0.301,0.8261,0.9048,0.559,0.485,0.3767,0.154,0.0,0.2275,0.0,0.0649,0.0,0.0
+5,a person skis down a steep slope on a sunny day .,0.0,a person is snowboarding down a steep snowy slope .,4.0,4.0,4.0,4.0,0.5264,0.8854,0.8824,0.3483,0.0,0.0,0.465,0.0,0.4632,0.0,0.3937,0.0,0.0
+6,a person on a pair of skis slides down a mountain fast,0.0629,a person is snowboarding down a steep snowy slope .,5.0,5.0,5.0,5.0,0.4413,0.8204,0.9412,0.7974,0.7267,0.6669,0.319,0.2993,0.4064,0.2312,0.2764,0.146,0.0629

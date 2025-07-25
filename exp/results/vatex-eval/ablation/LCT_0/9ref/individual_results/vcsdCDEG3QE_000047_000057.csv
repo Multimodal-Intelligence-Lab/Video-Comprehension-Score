@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of men are standing on stage and a woman hands the man a mic .,0.2217,two ladies walk off stage and one of them gives a man a microphone .,5.0,5.0,4.0,4.6667,0.6752,0.9008,0.978,0.7574,0.7675,0.7189,0.6319,0.2068,0.5041,0.3429,0.4126,0.0409,0.2217
+2,a group of people are performing a dance routine in front of a crowd .,0.2815,a group of people on stage dancing and playing music together while others watch,4.0,4.0,3.0,3.6667,0.558,0.8491,0.9873,0.7696,0.8184,0.7672,0.4795,0.3472,0.5524,0.39,0.4728,0.2311,0.2815
+3,a group of people are performing a dance routine on a stage .,0.0,"two women in tight mini-dresses hold microphones on a stage next to a band of men dressed in black , then they hand the microphones to the men and walk away while shouting .",5.0,4.0,3.0,4.0,0.6767,0.8929,0.9206,0.7071,0.6468,0.5441,0.638,0.0,0.6142,0.0,0.5679,0.0,0.0
+4,a woman is dancing on a stage under a blue light while a man sings .,0.0,"two women in tight mini-dresses hold microphones on a stage next to a band of men dressed in black , then they hand the microphones to the men and walk away while shouting .",4.0,2.0,2.0,2.6667,0.3859,0.8363,0.9859,0.7775,0.7916,0.7393,0.2658,0.0262,0.3274,0.0435,0.1752,0.0,0.0
+5,"one man plays a guitar , a woman sings and another woman starts dancing .",0.0,"two women in tight mini-dresses hold microphones on a stage next to a band of men dressed in black , then they hand the microphones to the men and walk away while shouting .",4.0,4.0,4.0,4.0,0.35,0.8448,0.8999,0.6705,0.681,0.6224,0.2054,0.0,0.2177,0.0,0.074,0.0,0.0
+6,"a group of performers begin to sing and play instruments on stage , a young lady stands up to begin dancing .",0.0445,a group of people on stage dancing and playing music together while others watch,4.0,4.0,3.0,3.6667,0.5949,0.8706,0.8899,0.7289,0.7283,0.664,0.5265,0.096,0.5206,0.1543,0.4396,0.0,0.0445

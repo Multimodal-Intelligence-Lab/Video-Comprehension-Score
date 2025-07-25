@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young man is demonstrating how to check tire pressure on a car wheel using a tire gauge .,0.5509,a guy is showing how to take the tire air cap off and then putting a gauge on it .,5.0,5.0,5.0,5.0,0.6571,0.8528,0.9643,0.8769,0.8952,0.8771,0.5979,0.609,0.6444,0.617,0.583,0.5415,0.5509
+2,a man is demonstrating how to check the tire of a tire .,0.5308,a guy is showing how to take the tire air cap off and then putting a gauge on it .,4.0,5.0,5.0,4.6667,0.6569,0.8616,0.8745,0.9252,0.8487,0.8244,0.6018,0.6292,0.6077,0.5958,0.5447,0.5696,0.5308
+3,a man is demonstrating how to check a tire pressure .,0.6017,a guy is showing how to take the tire air cap off and then putting a gauge on it .,5.0,5.0,5.0,5.0,0.7219,0.8517,0.9388,0.8279,0.8198,0.7884,0.6734,0.6641,0.7037,0.6607,0.6521,0.6056,0.6017
+4,man demonstrates how to put air in a tire and discusses the importance of tire pressure .,0.0,a guy is showing how to take the tire air cap off and then putting a gauge on it .,3.0,4.0,4.0,3.6667,0.6508,0.8785,0.8571,0.3131,0.2421,0.1374,0.6026,0.0,0.5926,0.0,0.5363,0.0,0.0
+5,a man is explaining how to service and check the tread on tires .,0.0697,a guy is showing how to take the tire air cap off and then putting a gauge on it .,4.0,4.0,3.0,3.6667,0.5301,0.8045,0.883,0.6547,0.6278,0.5374,0.416,0.2822,0.4679,0.2516,0.3386,0.1079,0.0697
+6,a man showing how to put air on a car tire as he holds tha air hose .,0.0,a guy is showing how to take the tire air cap off and then putting a gauge on it .,4.0,4.0,4.0,4.0,0.6116,0.8845,0.8462,0.2863,0.2371,0.1375,0.5609,0.0,0.541,0.0,0.4811,0.0,0.0

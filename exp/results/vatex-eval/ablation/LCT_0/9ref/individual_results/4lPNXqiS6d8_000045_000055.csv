@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a copy machine is making copies and someone takes the copies from the machine .,0.4207,"an office printing machine is shown , followed by a person taking a paper from it .",5.0,5.0,5.0,5.0,0.7822,0.8918,0.9903,0.8083,0.8534,0.8096,0.7533,0.4902,0.7257,0.5076,0.6892,0.4624,0.4207
+2,a woman is demonstrating how to use a copy machine .,0.2412,a person removing a copy from a copy machine and looking at it .,5.0,4.0,3.0,4.0,0.5503,0.879,0.9677,0.8408,0.8802,0.8559,0.4404,0.4056,0.5154,0.3688,0.397,0.2993,0.2412
+3,a man is demonstrating how to use a copy machine .,0.5435,the man is making a few copies in the copy room .,4.0,5.0,2.0,3.6667,0.6476,0.8844,0.9677,0.8408,0.8802,0.8634,0.5982,0.5635,0.6359,0.5997,0.5848,0.5023,0.5435
+4,a person enters a document into a machine that generates a file on a computer .,0.0113,the man is making a few copies in the copy room .,2.0,4.0,3.0,3.0,0.4996,0.8486,1.0,0.8644,0.8788,0.8435,0.4102,0.2214,0.3551,0.2341,0.2354,0.0085,0.0113
+5,a machine wraps stacks of paper in plastic sheeting and someone removes the product .,0.0,a person removing a copy from a copy machine and looking at it .,1.0,3.0,3.0,2.3333,0.5167,0.8429,1.0,0.8661,0.8726,0.8349,0.4132,0.1829,0.4476,0.2269,0.3447,0.0,0.0
+6,a person puts a page into the photocopier then goes to the touch screen to type in what they want .,0.4592,a person makes a photocopy and retrieves the paper from the machine,3.0,4.0,2.0,3.0,0.65,0.8157,0.9851,0.9002,0.917,0.8964,0.5691,0.5421,0.6391,0.5608,0.5556,0.4362,0.4592

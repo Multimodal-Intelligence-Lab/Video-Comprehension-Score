@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two women are playing instruments in a building near windows while people conversate at low tones in the background .,0.6045,two women are playing a musical piece in a quiet area .,5.0,5.0,4.0,4.6667,0.7023,0.8628,0.9278,0.8863,0.8832,0.8629,0.6507,0.6641,0.6792,0.663,0.6235,0.6058,0.6045
+2,a woman is playing a song on a harp in a room .,0.3705,two women play music on a flute and a harp .,5.0,4.0,5.0,4.6667,0.5198,0.9129,0.9756,0.9517,0.8611,0.8413,0.4592,0.4954,0.4788,0.441,0.4047,0.4317,0.3705
+3,a woman is playing a harp while a woman plays the piano .,0.4101,a woman is playing a flute and another woman is playing the harp,4.0,4.0,4.0,4.0,0.711,0.9375,0.9138,0.803,0.7133,0.6655,0.6917,0.5612,0.6459,0.45,0.6156,0.5301,0.4101
+4,a young woman plays the strings on a small harp while sitting on a bed .,0.1253,two women are playing a musical piece in a quiet area .,4.0,4.0,4.0,4.0,0.4617,0.8556,1.0,1.0,1.0,1.0,0.3562,0.3082,0.3983,0.3082,0.2737,0.1253,0.1253
+5,a girl plays a song on the harp by plucking the strings .,0.0134,two women play music on a flute and a harp .,5.0,4.0,5.0,4.6667,0.469,0.8455,0.9804,0.8387,0.84,0.7971,0.36,0.1472,0.3771,0.1731,0.2403,0.0,0.0134
+6,a woman is playing a mini harp while sitting in her bed,0.0,a woman plays a flute while another woman is playing a harp instrument .,3.0,4.0,4.0,3.6667,0.4461,0.8952,0.9787,0.8723,0.8707,0.841,0.3598,0.176,0.3727,0.1745,0.275,0.0,0.0

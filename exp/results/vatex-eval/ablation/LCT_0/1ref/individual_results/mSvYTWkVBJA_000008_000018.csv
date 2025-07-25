@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman jumps up and down in front of a group of students as the crowd cheers .,0.0,a couple of people out in the open doing a routine together,4.0,4.0,5.0,4.3333,0.048,0.7691,0.9756,0.2869,0.0724,0.0,0.0,0.0,0.0242,0.0,0.0,0.0,0.0
+2,a group of people are performing a dance routine in front of a crowd .,0.0,a couple of people out in the open doing a routine together,4.0,1.0,5.0,3.3333,0.3039,0.8531,0.9756,0.7528,0.7497,0.7066,0.184,0.0753,0.2865,0.0716,0.1636,0.0,0.0
+3,a group of people are performing a dance routine in front of a crowd .,0.0,a couple of people out in the open doing a routine together,4.0,1.0,5.0,3.3333,0.3039,0.8531,0.9756,0.7528,0.7497,0.7066,0.184,0.0753,0.2865,0.0716,0.1636,0.0,0.0
+4,a young woman walks towards the front of the stage as the crowd cheers .,0.0,a couple of people out in the open doing a routine together,4.0,4.0,5.0,4.3333,-0.0717,0.7755,0.9378,1.0,0.9519,0.938,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5,people cheer as the girl does her dance exhibition in front of them .,0.0,a couple of people out in the open doing a routine together,4.0,4.0,5.0,4.3333,0.1003,0.8201,0.9084,0.6435,0.5066,0.3984,0.0,0.0,0.0096,0.0,0.0,0.0,0.0
+6,a woman walks up to the front of a stage while a crowd cheers for her .,0.0,a couple of people out in the open doing a routine together,4.0,4.0,5.0,4.3333,-0.0752,0.765,0.9677,0.6213,0.5135,0.3641,0.0,0.0,0.0,0.0,0.0,0.0,0.0

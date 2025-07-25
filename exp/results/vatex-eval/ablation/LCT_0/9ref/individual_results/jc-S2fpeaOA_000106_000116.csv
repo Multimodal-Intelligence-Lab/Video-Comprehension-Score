@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a bull fight in a ring fighting a bull while others watch .,0.6883,a bull fighter is fighting a bull in a stadium with people watching .,5.0,5.0,5.0,5.0,0.7577,0.9089,0.9888,0.7876,0.855,0.8405,0.7335,0.6912,0.7421,0.7166,0.7163,0.6602,0.6883
+2,a group of people are playing a game of baseball on a field .,0.0,a matador waves his red cape in front of a bull as they both go around and around in circles .,4.0,3.0,1.0,2.6667,0.2084,0.8166,1.0,0.8022,0.832,0.7773,0.0256,0.0,0.0897,0.0,0.0,0.0,0.0
+3,a man is throwing a ball into a sand pit .,0.0,a matador waves his red cape in front of a bull as they both go around and around in circles .,2.0,2.0,2.0,2.0,0.139,0.7729,1.0,1.0,1.0,1.0,0.0,0.1336,0.1336,0.1336,0.0,0.0,0.0
+4,a bullfighter and his assistants duel with a wounded bull in the arena .,0.1383,a professional bull rider gets into trouble with a bull in front a large group of people .,3.0,4.0,4.0,3.6667,0.5984,0.8485,0.9206,0.8536,0.8192,0.7712,0.5118,0.3464,0.5148,0.319,0.4282,0.173,0.1383
+5,a bullfighter uses a red cape to lure a large pull into charging into it in front of a large audience in an arena .,0.5462,a bull fighter taunts a bull with a red cloth in an arena .,4.0,5.0,5.0,4.6667,0.7082,0.8339,1.0,0.8941,0.9301,0.9126,0.6421,0.6152,0.6824,0.63,0.6105,0.5281,0.5462
+6,a man in a bullring with a red rag intimidating a bull,0.3648,a matador is using a red flag to fight a bull in an outdoor bull ring .,4.0,5.0,5.0,4.6667,0.7345,0.866,0.9108,0.6577,0.693,0.6219,0.6934,0.3935,0.6782,0.4101,0.6229,0.3469,0.3648

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person swims in an ice covered hole outside in a frozen field .,0.5703,a woman is swimming in the icy water of a frozen lake .,4.0,4.0,5.0,4.3333,0.7914,0.9057,1.0,0.8515,0.8797,0.8581,0.7606,0.6236,0.7717,0.6356,0.738,0.5561,0.5703
+2,a group of people are swimming in a swimming pool .,0.0,a woman is outside swimming in a pool created and surrounded by snow .,2.0,2.0,2.0,2.0,0.4681,0.8768,0.9524,0.755,0.7371,0.6824,0.3912,0.1453,0.3224,0.1245,0.1877,0.0,0.0
+3,a group of people are swimming in a swimming pool .,0.0,a woman is outside swimming in a pool created and surrounded by snow .,2.0,2.0,2.0,2.0,0.4681,0.8768,0.9524,0.755,0.7371,0.6824,0.3912,0.1453,0.3224,0.1245,0.1877,0.0,0.0
+4,a man is outside and swimming through water that has iced over .,0.6705,a person is seen swimming in a pool of water in what appears to be a frozen lake .,5.0,4.0,5.0,4.6667,0.7833,0.8913,1.0,1.0,1.0,1.0,0.7563,0.7184,0.7697,0.7089,0.741,0.6813,0.6705
+5,a person is using a snowboard to sail on a frozen lake while it is cold,0.0881,a woman is swimming in the icy water of a frozen lake .,4.0,3.0,4.0,3.6667,0.4817,0.8569,0.9386,0.6995,0.7902,0.7325,0.3948,0.2536,0.4478,0.2191,0.3552,0.1284,0.0881
+6,a person is wind surfing on ice on a frozen lake .,0.2214,a woman is swimming in the icy water of a frozen lake .,3.0,2.0,3.0,2.6667,0.5469,0.8848,0.9599,0.7804,0.7681,0.7035,0.488,0.221,0.494,0.3111,0.4281,0.1116,0.2214

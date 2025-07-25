@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a bunch of people standing ina gym watching a couple kids practice,0.064,two kids practicing karate moves in the middle of a circle with adults around them .,5.0,5.0,4.0,4.6667,0.4825,0.821,0.8947,0.7148,0.6881,0.6119,0.3559,0.1779,0.3666,0.2479,0.2206,0.0,0.064
+2,a group of people are performing a dance routine in front of a crowd .,0.2342,a couple of young children are performing a karate routine in front of others .,4.0,4.0,4.0,4.0,0.3407,0.8632,1.0,1.0,1.0,1.0,0.2342,0.339,0.339,0.339,0.2342,0.2342,0.2342
+3,a group of people are dancing in a circle while others watch .,0.0596,two kids practicing karate moves in the middle of a circle with adults around them .,4.0,3.0,4.0,3.6667,0.3537,0.8196,1.0,0.9766,0.9574,0.947,0.1893,0.2424,0.3237,0.2503,0.1517,0.0497,0.0596
+4,young boys and girls practice techniques in a karate class .,0.4607,in a room a group of kids are learning how to fight .,5.0,5.0,4.0,4.6667,0.7172,0.8499,0.9555,0.9428,0.8881,0.8588,0.6673,0.5972,0.704,0.5724,0.6518,0.492,0.4607
+5,small boys and girls are learning how to drop kick from karate instructors .,0.2175,young children dressed in white perform a martial arts dance in an gymnasium .,5.0,1.0,2.0,2.6667,0.6034,0.8234,0.9767,0.9084,0.9179,0.8931,0.5092,0.3929,0.569,0.3991,0.4667,0.2094,0.2175
+6,the kids in uniform are practicing their dance in the gym .,0.5402,young children dressed in white perform a martial arts dance in an gymnasium .,4.0,4.0,4.0,4.0,0.6239,0.8506,1.0,1.0,0.9617,0.9549,0.5578,0.6239,0.6027,0.6089,0.5329,0.5578,0.5402

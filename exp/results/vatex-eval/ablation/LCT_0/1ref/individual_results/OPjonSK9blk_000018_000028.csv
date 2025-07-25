@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,kids at a karate gym running towards some punching bags and jump kicking them,0.0,group of boys practicing kick boxing running and kicking a pole as instructed,5.0,5.0,5.0,5.0,0.5596,0.8441,0.7674,0.1464,0.246,0.1067,0.4783,0.0,0.4261,0.0,0.3202,0.0,0.0
+2,a man is in a gym and he is doing a kick kick .,0.0907,group of boys practicing kick boxing running and kicking a pole as instructed,4.0,4.0,5.0,4.3333,0.3044,0.8196,0.9756,0.9673,0.9333,0.9186,0.1513,0.2809,0.287,0.2547,0.1301,0.1226,0.0907
+3,a group of people are in a gym and one of them is doing a kick .,0.0,group of boys practicing kick boxing running and kicking a pole as instructed,5.0,4.0,5.0,4.6667,0.3772,0.8284,0.9115,0.6,0.6131,0.533,0.2481,0.0,0.3167,0.0,0.1751,0.0,0.0
+4,small boys and girls are learning how to drop kick from karate instructors .,0.0493,group of boys practicing kick boxing running and kicking a pole as instructed,5.0,5.0,5.0,5.0,0.4701,0.8353,0.9231,0.6492,0.6672,0.6016,0.3656,0.1838,0.4259,0.2058,0.3128,0.0229,0.0493
+5,a young man in a gym practices martial arts moves where he tries to kick a mannequin in the face .,0.0,group of boys practicing kick boxing running and kicking a pole as instructed,4.0,3.0,4.0,3.6667,0.3599,0.7974,0.9536,0.6964,0.7492,0.6855,0.1973,0.0808,0.3287,0.1456,0.1582,0.0,0.0
+6,a lad in a gym trying to kick a dummy,0.0,group of boys practicing kick boxing running and kicking a pole as instructed,4.0,4.0,5.0,4.3333,0.3861,0.7946,0.9434,0.7528,0.7723,0.7135,0.2274,0.1845,0.3493,0.2051,0.1811,0.0,0.0

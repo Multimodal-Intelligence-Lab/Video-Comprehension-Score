@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is holding a bottle of wine and wine bottle cork .,0.1918,a person has uncorked a bottle of wine using common household items .,5.0,5.0,5.0,5.0,0.6561,0.8808,0.7803,0.5895,0.5074,0.4407,0.6095,0.3743,0.5592,0.2491,0.4996,0.3265,0.1918
+2,a person is demonstrating how to open a bottle of wine .,0.0,a person has uncorked a bottle of wine using common household items .,5.0,5.0,4.0,4.6667,0.6454,0.8793,0.6906,0.4914,0.3613,0.2736,0.5967,0.2119,0.4866,0.0104,0.4161,0.1476,0.0
+3,a person is using a bottle opener to open a bottle of wine .,0.0,a person has uncorked a bottle of wine using common household items .,4.0,5.0,4.0,4.3333,0.6577,0.9093,0.7675,0.4575,0.3599,0.296,0.6235,0.1751,0.554,0.0267,0.5095,0.1299,0.0
+4,a person is trying to remove a cork from a bottle with a screwdriver .,0.0,a person has uncorked a bottle of wine using common household items .,4.0,4.0,4.0,4.0,0.5996,0.8312,0.6977,0.2991,0.1281,0.0,0.5183,0.0,0.4261,0.0,0.3095,0.0,0.0
+5,a person attempts to use a corkscrew to open a bottle,0.0,a person has uncorked a bottle of wine using common household items .,4.0,5.0,4.0,4.3333,0.604,0.8482,0.7496,0.3366,0.1968,0.0531,0.5332,0.0,0.4718,0.0,0.3772,0.0,0.0
+6,a man talks about opening a bottle of wine and getting the cork out .,0.2568,a person has uncorked a bottle of wine using common household items .,4.0,4.0,4.0,4.0,0.5528,0.8295,0.8973,0.7498,0.7255,0.6691,0.4608,0.4036,0.5016,0.3835,0.3992,0.281,0.2568

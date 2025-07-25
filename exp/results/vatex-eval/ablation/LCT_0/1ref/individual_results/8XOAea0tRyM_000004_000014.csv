@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is twirling fiery balls on chains while out in the snow .,0.2081,a man is walking around on a snow covered area twirling some chains with fire at the ends from each hand .,5.0,5.0,5.0,5.0,0.8299,0.8942,0.742,0.3784,0.3587,0.2828,0.8098,0.251,0.6892,0.2273,0.6815,0.2324,0.2081
+2,a man is standing in a yard and is throwing a ball at the camera .,0.0,a man is walking around on a snow covered area twirling some chains with fire at the ends from each hand .,2.0,4.0,2.0,2.6667,0.1395,0.7775,0.9882,1.0,0.9924,0.9902,0.0,0.1395,0.1293,0.1329,0.0,0.0,0.0
+3,two people are outside in the snow and one of them is holding a stick of fire .,0.1354,a man is walking around on a snow covered area twirling some chains with fire at the ends from each hand .,4.0,4.0,4.0,4.0,0.4874,0.824,0.9125,0.6839,0.7195,0.6596,0.3779,0.2504,0.4382,0.2875,0.3183,0.0904,0.1354
+4,a man is spinning in a circle over and over before releasing ball that flies over the snow,0.0,a man is walking around on a snow covered area twirling some chains with fire at the ends from each hand .,2.0,4.0,4.0,3.3333,0.493,0.8306,0.8012,0.5511,0.5539,0.4629,0.3895,0.08,0.3671,0.0846,0.238,0.0,0.0
+5,a man is juggling three lit fire sticks from hand to hand .,0.0,a man is walking around on a snow covered area twirling some chains with fire at the ends from each hand .,2.0,4.0,4.0,3.3333,0.4555,0.8433,0.9192,0.1638,0.0717,0.0,0.3544,0.0,0.4077,0.0,0.2976,0.0,0.0
+6,a man is playing with two fire sticks in a very dark setting .,0.0402,a man is walking around on a snow covered area twirling some chains with fire at the ends from each hand .,4.0,4.0,4.0,4.0,0.4282,0.8083,0.9406,0.6891,0.737,0.6747,0.2926,0.1703,0.3921,0.2242,0.2479,0.0,0.0402

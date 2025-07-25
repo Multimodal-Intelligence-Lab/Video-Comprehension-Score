@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,an individual uses a leaf blower to get rid of several leaves .,0.0,a guy is outdoors at night using some kind of vacuum in the yard .,5.0,2.0,2.0,3.0,0.3611,0.7741,0.9279,0.4536,0.414,0.2431,0.1748,0.0,0.3115,0.0,0.1106,0.0,0.0
+2,a person is playing with a ball with a hammer .,0.0,a guy is outdoors at night using some kind of vacuum in the yard .,3.0,2.0,2.0,2.3333,0.0833,0.7749,0.9697,0.8555,0.8484,0.8044,0.0,0.0,0.0547,0.0,0.0,0.0,0.0
+3,a man is walking around a house and is playing with a flashlight .,0.0,a guy is outdoors at night using some kind of vacuum in the yard .,2.0,2.0,2.0,2.0,0.3601,0.7778,0.96,0.7876,0.7754,0.7113,0.1772,0.1874,0.3334,0.1747,0.1429,0.0,0.0
+4,workers do construction on a house with tools making loud noise in the background .,0.0,a guy is outdoors at night using some kind of vacuum in the yard .,4.0,5.0,5.0,4.6667,0.1426,0.7629,0.9846,0.893,0.9049,0.8753,0.0,0.0399,0.1292,0.0525,0.0,0.0,0.0
+5,a man is cleaning windows using a window cleaner and there is some noise in the background .,0.0,a guy is outdoors at night using some kind of vacuum in the yard .,4.0,3.0,2.0,3.0,0.2959,0.8045,0.9424,0.7258,0.73,0.6644,0.1248,0.0299,0.2529,0.0355,0.0713,0.0,0.0
+6,music plays while a man uses a long pipe to clean out gutters on a house .,0.0,a guy is outdoors at night using some kind of vacuum in the yard .,4.0,4.0,1.0,3.0,0.3253,0.7937,0.9623,0.6504,0.6867,0.6053,0.1499,0.0,0.2988,0.0174,0.1166,0.0,0.0

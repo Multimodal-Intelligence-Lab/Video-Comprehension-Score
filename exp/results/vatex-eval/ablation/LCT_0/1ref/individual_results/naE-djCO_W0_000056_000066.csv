@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a lady with red top and white trousers is practising headstand of yoga,0.0,a woman standing on her head demonstrating different leg positions,4.0,5.0,5.0,4.6667,0.5941,0.778,0.8521,0.3949,0.3096,0.1126,0.4783,0.0,0.5236,0.0,0.3877,0.0,0.0
+2,a man is demonstrating how to do a yoga pose .,0.138,a woman standing on her head demonstrating different leg positions,5.0,4.0,4.0,4.3333,0.3482,0.8199,0.9108,1.0,0.9222,0.9051,0.205,0.3482,0.2844,0.2932,0.1272,0.205,0.138
+3,a man is demonstrating how to do a yoga pose .,0.138,a woman standing on her head demonstrating different leg positions,5.0,4.0,4.0,4.3333,0.3482,0.8199,0.9108,1.0,0.9222,0.9051,0.205,0.3482,0.2844,0.2932,0.1272,0.205,0.138
+4,a woman in workout clothes does a headstand in a yoga studio .,0.094,a woman standing on her head demonstrating different leg positions,5.0,5.0,5.0,5.0,0.6478,0.7877,0.9599,0.5502,0.4991,0.3641,0.5529,0.3056,0.6331,0.2268,0.5343,0.1864,0.094
+5,a woman is seen indoors on a yoga mat performing a yoga pose .,0.1476,a woman standing on her head demonstrating different leg positions,5.0,5.0,5.0,5.0,0.448,0.7908,0.9688,0.805,0.8189,0.771,0.3019,0.3142,0.4302,0.3259,0.2794,0.1328,0.1476
+6,a woman stretches and performs poses on a yoga mat .,0.0,a woman standing on her head demonstrating different leg positions,4.0,5.0,5.0,4.6667,0.4418,0.7883,0.9388,0.542,0.4787,0.3387,0.292,0.0,0.4054,0.0,0.2458,0.0,0.0

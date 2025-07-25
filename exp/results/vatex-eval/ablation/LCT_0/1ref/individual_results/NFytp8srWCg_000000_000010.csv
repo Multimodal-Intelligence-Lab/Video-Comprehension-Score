@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man outdoor in the dark drank a flammable drink and spat it on the fire,0.0,outside a man is holding a fire and blows into the fire and it enlarges .,5.0,5.0,5.0,5.0,0.5083,0.8549,0.8218,0.3473,0.2324,0.1021,0.4248,0.0,0.4017,0.0,0.3001,0.0,0.0
+2,a man is standing in a dark lit lit lit lit lit fire and he is holding a torch .,0.0,outside a man is holding a fire and blows into the fire and it enlarges .,4.0,4.0,4.0,4.0,0.4951,0.8543,0.8193,0.3198,0.3058,0.1874,0.4091,0.0,0.3838,0.0,0.2787,0.0,0.0
+3,a man is holding a torch in the dark and blows it out .,0.2646,outside a man is holding a fire and blows into the fire and it enlarges .,5.0,2.0,3.0,3.3333,0.5038,0.8896,0.9524,0.776,0.7586,0.7286,0.4421,0.3605,0.4789,0.3459,0.4143,0.2811,0.2646
+4,a man with a burning torch blows flames into the night .,0.4665,outside a man is holding a fire and blows into the fire and it enlarges .,5.0,2.0,5.0,4.0,0.5986,0.8651,0.9404,0.904,0.8697,0.8494,0.536,0.556,0.5732,0.5385,0.5066,0.4867,0.4665
+5,a person holds a flame and then a group of people hold flames in the darkness .,0.0,outside a man is holding a fire and blows into the fire and it enlarges .,3.0,3.0,3.0,3.0,0.4531,0.8403,0.8406,0.614,0.5645,0.4817,0.3492,0.1094,0.3494,0.0312,0.2258,0.0,0.0
+6,a man is playing with and performing with fire in front of an audience .,0.0981,outside a man is holding a fire and blows into the fire and it enlarges .,5.0,4.0,5.0,4.6667,0.4755,0.8276,0.9804,0.7071,0.7027,0.6408,0.3662,0.2582,0.465,0.2536,0.3535,0.1037,0.0981

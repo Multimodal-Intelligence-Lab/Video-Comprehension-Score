@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a beautiful woman in an orange costume performing a belly dance in a contest .,0.5397,a woman in costume belly dancing on stage .,5.0,5.0,5.0,5.0,0.6735,0.9025,0.956,0.8415,0.8531,0.8371,0.6383,0.6104,0.6279,0.5846,0.5878,0.5683,0.5397
+2,a woman is performing a dance routine in front of a crowd .,0.5002,a woman is belly dancing in front of a crowd as they look on,5.0,4.0,5.0,4.6667,0.6634,0.9036,0.9557,0.7429,0.7704,0.7181,0.6275,0.4548,0.6241,0.5484,0.584,0.4165,0.5002
+3,a woman is belly dancing in front of a crowd of people .,0.9657,a woman is belly dancing in front of a crowd as they look on,5.0,5.0,5.0,5.0,0.9678,0.963,0.9831,0.9698,0.9743,0.9733,0.9666,0.9668,0.9671,0.9669,0.9658,0.9655,0.9657
+4,a woman is on a stage and doing belly dancing in front of a crowd,0.8118,a woman is belly dancing in front of a crowd as they look on,5.0,4.0,5.0,4.6667,0.9,0.9566,1.0,1.0,1.0,1.0,0.8955,0.8106,0.8148,0.8127,0.8139,0.8096,0.8118
+5,a woman is on a balcony type stage and she is doing belly dancing,0.4238,a woman is belly dancing in front of a crowd as they look on,5.0,4.0,4.0,4.3333,0.7759,0.9249,0.9108,0.6667,0.6431,0.5834,0.7577,0.4541,0.718,0.4562,0.6951,0.3827,0.4238
+6,a woman is doing a belly dance in a costume to music .,0.743,one women is doing a belly dance to music on a stage .,5.0,5.0,5.0,5.0,0.8379,0.9389,1.0,1.0,1.0,1.0,0.8274,0.7686,0.8055,0.7648,0.7875,0.7472,0.743

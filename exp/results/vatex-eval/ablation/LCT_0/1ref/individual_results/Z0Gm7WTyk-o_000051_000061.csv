@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman applies makeup while sitting behind the wheel of a car .,0.0,the woman was doing something to her face and then said tada when she finished .,4.0,4.0,4.0,4.0,0.2899,0.7895,0.96,0.7876,0.7754,0.7156,0.1005,0.0983,0.2603,0.0842,0.063,0.0,0.0
+2,a woman is demonstrating how to apply makeup to her face .,0.0,the woman was doing something to her face and then said tada when she finished .,4.0,5.0,5.0,4.6667,0.496,0.8437,0.849,0.4531,0.1817,0.03,0.4027,0.0,0.4064,0.0,0.2964,0.0,0.0
+3,a woman is demonstrating how to apply cream to her face .,0.0,the woman was doing something to her face and then said tada when she finished .,5.0,5.0,5.0,5.0,0.4366,0.8375,0.8819,0.6279,0.467,0.3636,0.3272,0.1026,0.3611,0.0,0.2371,0.0,0.0
+4,a women is applying moisturising cream on her face,0.0,the woman was doing something to her face and then said tada when she finished .,5.0,5.0,5.0,5.0,0.3609,0.8214,0.8819,0.6724,0.526,0.423,0.222,0.0495,0.2753,0.0,0.1178,0.0,0.0
+5,a moisturizing cream is displayed and then a woman applies it to her under eyes .,0.0,the woman was doing something to her face and then said tada when she finished .,4.0,2.0,5.0,3.6667,0.3544,0.8109,0.7083,0.2522,0.372,0.2255,0.2039,0.0,0.0886,0.0,0.0,0.0,0.0
+6,a woman is shown applying a tiny amount of facial cream to her face by dabbing under her eyes .,0.0,the woman was doing something to her face and then said tada when she finished .,5.0,4.0,5.0,4.6667,0.4128,0.8237,0.8908,0.696,0.7086,0.6462,0.2871,0.1563,0.3409,0.1713,0.1997,0.0,0.0

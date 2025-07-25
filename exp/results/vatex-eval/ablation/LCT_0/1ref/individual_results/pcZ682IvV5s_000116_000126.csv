@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,someone in a butcher shops cuts and rips apart a cut of meat .,0.564,a butcher shows how to break down a piece of beef .,5.0,5.0,5.0,5.0,0.6396,0.8266,1.0,1.0,1.0,1.0,0.564,0.6396,0.6396,0.6396,0.564,0.564,0.564
+2,a man is using a knife to cut a piece of meat .,0.1297,a butcher shows how to break down a piece of beef .,5.0,5.0,5.0,5.0,0.4939,0.841,0.941,0.768,0.6914,0.6331,0.3982,0.341,0.4621,0.268,0.3605,0.2164,0.1297
+3,a man is using a knife to cut a piece of meat .,0.1297,a butcher shows how to break down a piece of beef .,5.0,5.0,5.0,5.0,0.4939,0.841,0.941,0.768,0.6914,0.6331,0.3982,0.341,0.4621,0.268,0.3605,0.2164,0.1297
+4,a group of men are grinding up meat and putting it into portions .,0.0,a butcher shows how to break down a piece of beef .,2.0,2.0,1.0,1.6667,0.3858,0.7863,0.8228,0.6026,0.3913,0.2259,0.2189,0.0,0.2535,0.0,0.0507,0.0,0.0
+5,a person is carefully slicing meat on a cutting board .,0.0,a butcher shows how to break down a piece of beef .,4.0,5.0,5.0,4.6667,0.4271,0.7796,0.8819,0.6435,0.4881,0.3433,0.2651,0.1096,0.3504,0.0,0.1667,0.0,0.0
+6,a man is heard telling how to slice meat off as you can see hands cutting meat off a large chunk that has just been cooked .,0.0,a butcher shows how to break down a piece of beef .,4.0,4.0,3.0,3.6667,0.467,0.8001,0.8911,0.5228,0.4317,0.2897,0.3338,0.0,0.4018,0.0,0.2524,0.0,0.0

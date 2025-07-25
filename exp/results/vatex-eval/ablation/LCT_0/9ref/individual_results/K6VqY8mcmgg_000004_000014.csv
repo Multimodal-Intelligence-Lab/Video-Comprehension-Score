@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a video is explaining on how to keep your cell phone working good all year long with simple maintenance .,0.2116,a tutorial begins on tips for using a smart phone,5.0,5.0,5.0,5.0,0.6,0.8042,0.9932,0.8448,0.8738,0.8364,0.5002,0.4086,0.5705,0.3659,0.4634,0.2646,0.2116
+2,a woman is texting on a cell phone while a woman is talking to her .,0.0,"an app is shown , then people talk on their phones in the city , followed by another view of an app .",2.0,2.0,1.0,1.6667,0.4061,0.8765,0.9032,0.7308,0.6974,0.6174,0.3224,0.0058,0.2758,0.0,0.1363,0.0,0.0
+3,a man and a woman are texting on a cell phone .,0.0,"an app is shown , then people talk on their phones in the city , followed by another view of an app .",1.0,3.0,2.0,2.0,0.2974,0.8355,0.9677,0.7644,0.7083,0.6307,0.1391,0.0,0.2047,0.0,0.0338,0.0,0.0
+4,"a montage of people using their phones is set to music , it displays some stats about peoples phone use .",0.0708,a woman talks about smart phone while various clips are shown .,5.0,3.0,3.0,3.6667,0.5763,0.8405,0.9759,0.6738,0.7566,0.69,0.4872,0.2355,0.5273,0.2685,0.4257,0.0295,0.0708
+5,a hand is shown using a cell phone while a young person talks about it's features .,0.1451,"a person's hands are shown sliding the pages of their smart phone , which transitioned into shots of people using their smart phones on the streets .",5.0,4.0,3.0,4.0,0.5371,0.863,0.8991,0.7194,0.7565,0.7124,0.4637,0.2398,0.3944,0.2677,0.2749,0.1126,0.1451
+6,cell phone users are looking at their phones in different areas of a city with writing stating cell phone usage statistics .,0.0,"an app is shown , then people talk on their phones in the city , followed by another view of an app .",4.0,2.0,2.0,2.6667,0.5726,0.8238,0.942,0.7388,0.714,0.6322,0.4811,0.1163,0.5323,0.1196,0.4322,0.0,0.0

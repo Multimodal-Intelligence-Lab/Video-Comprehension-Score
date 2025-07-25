@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two people are snow skiing with mountains in the background .,0.0,two snow skiiers start to slowly ski down the slope .,5.0,5.0,5.0,5.0,0.6071,0.8644,0.8798,0.2823,0.0457,0.0,0.5455,0.0,0.5534,0.0,0.4834,0.0,0.0
+2,a group of people are skiing down a snowy hill .,0.0,two snow skiiers start to slowly ski down the slope .,5.0,4.0,4.0,4.3333,0.4579,0.8357,0.7589,0.0,0.0,0.0,0.3512,0.0,0.2856,0.0,0.1452,0.0,0.0
+3,a person is skiing down a snowy hill with a stick .,0.0,two snow skiiers start to slowly ski down the slope .,5.0,5.0,4.0,4.6667,0.3518,0.8441,0.785,0.1502,0.0,0.0,0.2321,0.0,0.1743,0.0,0.0218,0.0,0.0
+4,"someone is skiing cross country down a road , using two ski poles .",0.0,two snow skiiers start to slowly ski down the slope .,4.0,3.0,4.0,3.6667,0.3583,0.8336,0.8242,0.4716,0.44,0.3282,0.2302,0.0,0.2214,0.0,0.066,0.0,0.0
+5,a person is skiing on the snowy road,0.0,two snow skiiers start to slowly ski down the slope .,5.0,5.0,2.0,4.0,0.3312,0.8384,0.7059,0.0,0.0,0.0,0.2023,0.0,0.0525,0.0,0.0,0.0,0.0
+6,someone is going down a snowy slope on skis at a high rate of speed while others are also skiing .,0.0593,two snow skiiers start to slowly ski down the slope .,4.0,3.0,4.0,3.6667,0.4814,0.8532,0.8416,0.6365,0.6462,0.5853,0.3921,0.1852,0.3838,0.1974,0.2777,0.045,0.0593

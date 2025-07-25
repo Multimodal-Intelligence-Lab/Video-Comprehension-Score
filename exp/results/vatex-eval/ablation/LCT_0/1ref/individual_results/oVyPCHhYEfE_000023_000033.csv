@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a skiier is floating down a hill in a plank-like poisition before landing .,0.0,"a person is in the air from a ski-jump , then lands upright on the ski-slope .",5.0,5.0,5.0,5.0,0.5665,0.8016,0.6562,0.1886,0.2929,0.1179,0.4592,0.0,0.3395,0.0,0.1759,0.0,0.0
+2,a person skis down a hill and jumps into the air .,0.0,"a person is in the air from a ski-jump , then lands upright on the ski-slope .",5.0,5.0,5.0,5.0,0.6864,0.8787,0.7324,0.3428,0.0,0.0,0.6431,0.0425,0.5718,0.0,0.5127,0.0,0.0
+3,a person skis down a ramp and jumps into the air .,0.0,"a person is in the air from a ski-jump , then lands upright on the ski-slope .",5.0,5.0,5.0,5.0,0.642,0.8734,0.7324,0.3428,0.0,0.0,0.5901,0.0,0.5111,0.0,0.4403,0.0,0.0
+4,a skier travels down a slope and off a jump,0.0,"a person is in the air from a ski-jump , then lands upright on the ski-slope .",5.0,5.0,5.0,5.0,0.6283,0.7765,0.8512,0.3163,0.0,0.0,0.5213,0.0,0.5633,0.0,0.4376,0.0,0.0
+5,someone is skiing down a snowy mountain on skis .,0.0,"a person is in the air from a ski-jump , then lands upright on the ski-slope .",5.0,5.0,5.0,5.0,0.4664,0.8286,0.9677,0.7105,0.6388,0.5641,0.356,0.249,0.4486,0.1647,0.3345,0.0936,0.0
+6,a person skis down a small slope up a ramp and jumps landing on a large air pillow .,0.0,"a person is in the air from a ski-jump , then lands upright on the ski-slope .",4.0,4.0,4.0,4.0,0.586,0.8629,0.6838,0.1861,0.0567,0.0,0.5202,0.0,0.3945,0.0,0.2982,0.0,0.0

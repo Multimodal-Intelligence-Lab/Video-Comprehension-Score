@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two hockey teams are competing for the puck .,0.2639,two hockey teams skate on the ice rink trying to make a score .,5.0,5.0,5.0,5.0,0.7285,0.87,0.8947,0.4961,0.4935,0.4179,0.688,0.3083,0.6966,0.3048,0.6513,0.2675,0.2639
+2,a group of people are playing a game of ice hockey .,0.0,two hockey teams skate on the ice rink trying to make a score .,5.0,5.0,5.0,5.0,0.6131,0.8234,0.7474,0.3316,0.2431,0.0807,0.5302,0.0,0.4824,0.0,0.3714,0.0,0.0
+3,a group of people are playing a game of ice hockey .,0.0,two hockey teams skate on the ice rink trying to make a score .,5.0,5.0,5.0,5.0,0.6131,0.8234,0.7474,0.3316,0.2431,0.0807,0.5302,0.0,0.4824,0.0,0.3714,0.0,0.0
+4,a group of ice hockey players are playing a game while spectators watch .,0.0,two hockey teams skate on the ice rink trying to make a score .,4.0,5.0,5.0,4.6667,0.5589,0.8178,0.8885,0.2963,0.2222,0.049,0.4607,0.0,0.5036,0.0,0.393,0.0,0.0
+5,a crowd watches as two hockey teams duke it out on the ice rink .,0.4486,two hockey teams skate on the ice rink trying to make a score .,4.0,4.0,4.0,4.0,0.6947,0.889,0.7253,0.7583,0.638,0.5928,0.6565,0.5974,0.579,0.4789,0.5264,0.5471,0.4486
+6,a group of people are playing hockey by skating on an ice arena .,0.0,two hockey teams skate on the ice rink trying to make a score .,5.0,5.0,5.0,5.0,0.6741,0.8378,0.875,0.3204,0.2566,0.1127,0.611,0.0,0.6275,0.0,0.5554,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,woman paragliding and come bown very close to grass on the ground .,0.4488,a woman in a parachute veers very close to another person before landing elsewhere .,5.0,5.0,5.0,5.0,0.6364,0.8456,1.0,1.0,1.0,1.0,0.57,0.5223,0.6255,0.5339,0.5571,0.4351,0.4488
+2,a person is parachuting in the air with a parachute .,0.0931,a person in a parachute comes over other people and barely misses impact .,5.0,5.0,5.0,5.0,0.6199,0.9312,0.9045,0.7739,0.4922,0.4209,0.5918,0.4158,0.4875,0.1732,0.4227,0.3337,0.0931
+3,a person is parachuting in the air with a parachute .,0.0931,a person in a parachute comes over other people and barely misses impact .,5.0,5.0,5.0,5.0,0.6199,0.9312,0.9045,0.7739,0.4922,0.4209,0.5918,0.4158,0.4875,0.1732,0.4227,0.3337,0.0931
+4,a person afar was dropping from the sky using a parachute,0.0,a person in a parachute comes over other people and barely misses impact .,5.0,5.0,4.0,4.6667,0.6317,0.846,0.9714,0.7974,0.7517,0.6804,0.5532,0.3269,0.4857,0.208,0.3762,0.2124,0.0
+5,a group of people in one parachute landing into the ocean,0.0,a person in a parachute comes over other people and barely misses impact .,4.0,4.0,2.0,3.3333,0.5374,0.8432,1.0,0.8723,0.8541,0.8169,0.4453,0.1989,0.414,0.1818,0.2974,0.0,0.0
+6,a person is on the ocean using a parachute to surf at very high heights .,0.1308,a person sails through the air on a parachute while a man laughs .,4.0,3.0,3.0,3.3333,0.553,0.83,0.9756,0.8644,0.8611,0.8202,0.4614,0.3363,0.4922,0.3006,0.3882,0.1962,0.1308

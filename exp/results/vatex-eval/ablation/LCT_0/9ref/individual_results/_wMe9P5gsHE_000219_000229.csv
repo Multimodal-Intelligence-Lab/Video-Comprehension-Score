@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of adults and children are playing drums together .,0.4807,"a group of people , including a small child , playing drums .",5.0,5.0,4.0,4.6667,0.8259,0.9259,0.9162,0.7636,0.7647,0.7145,0.8083,0.6072,0.788,0.4924,0.7659,0.5981,0.4807
+2,a young boy is playing the drums with his hands .,0.5359,a young boy drums with his hands in a group of drummers while a lady dances .,5.0,5.0,5.0,5.0,0.7577,0.9172,0.9333,1.0,0.9355,0.9225,0.7358,0.6703,0.6955,0.5493,0.668,0.6478,0.5359
+3,a man and a little boy are sitting on the floor playing drums .,0.1651,"a group of people , including a small child , playing drums .",4.0,4.0,4.0,4.0,0.5366,0.881,0.9384,0.8908,0.7568,0.699,0.4605,0.1815,0.4475,0.2806,0.3588,0.0208,0.1651
+4,a group of kids dance on stage as others play drum behind them .,0.0928,some young kids are beating out a tune on some drums with their hands while a young girl is dancing in front of them .,4.0,3.0,1.0,2.6667,0.6603,0.8828,0.9859,0.7587,0.7017,0.6369,0.5998,0.2863,0.5606,0.248,0.4823,0.1323,0.0928
+5,a young man plays drums and cymbals while music plays .,0.044,a group of people are playing on drums including a small child .,4.0,4.0,3.0,3.6667,0.5596,0.8407,0.9167,0.7938,0.7546,0.7063,0.4699,0.1915,0.51,0.2112,0.4103,0.0303,0.044
+6,a girl is playing drums along with a music and with dancing,0.309,a group of people are playing on drums including a small child .,4.0,4.0,4.0,4.0,0.6434,0.8716,0.9497,0.9245,0.8792,0.855,0.5909,0.4707,0.5439,0.4244,0.4767,0.3646,0.309

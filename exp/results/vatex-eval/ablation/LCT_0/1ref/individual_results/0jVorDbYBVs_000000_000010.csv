@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of children in a band practice playing the flute along with drums .,0.0831,a group of children are playing a musical piece using a band of instruments .,5.0,5.0,5.0,5.0,0.6763,0.872,0.8176,0.2857,0.4234,0.3388,0.6288,0.0,0.6041,0.1475,0.546,0.0,0.0831
+2,a group of children are playing a song on a flute .,0.6218,a group of children are playing a musical piece using a band of instruments .,5.0,5.0,5.0,5.0,0.6851,0.8901,0.9175,1.0,0.9355,0.9275,0.6462,0.6851,0.6568,0.6634,0.6144,0.6462,0.6218
+3,a young boy and a girl are playing a song on a flute .,0.0,a group of children are playing a musical piece using a band of instruments .,5.0,5.0,5.0,5.0,0.3955,0.8226,0.883,0.7361,0.7044,0.6406,0.2652,0.1789,0.3155,0.1418,0.1678,0.0018,0.0
+4,a girl plays some sort of flute as she is recorded .,0.0,a group of children are playing a musical piece using a band of instruments .,5.0,5.0,5.0,5.0,0.224,0.7817,0.9796,0.8819,0.8923,0.8622,0.0073,0.1201,0.2078,0.1303,0.0,0.0,0.0
+5,a girl plays a song on the harp by plucking the strings .,0.0,a group of children are playing a musical piece using a band of instruments .,3.0,3.0,2.0,2.6667,0.2389,0.801,0.9497,0.7471,0.7544,0.6934,0.0499,0.0,0.1986,0.0,0.0,0.0,0.0
+6,a young girl is playing a song on a small instrument .,0.0,a group of children are playing a musical piece using a band of instruments .,5.0,5.0,5.0,5.0,0.3648,0.8486,0.9667,0.6833,0.701,0.6477,0.2515,0.0704,0.3429,0.0938,0.2257,0.0,0.0

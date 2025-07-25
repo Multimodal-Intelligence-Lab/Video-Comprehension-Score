@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man and a woman are sitting at a table and are taking several liquor shots,0.0,a male is taking a liquor shot and female getting ready to place something in his mouth .,5.0,5.0,4.0,4.6667,0.6025,0.8871,0.9326,0.6294,0.6688,0.5765,0.5378,0.1273,0.4479,0.0908,0.3725,0.0327,0.0
+2,a group of people are sitting at a table and drinking beer .,0.0,a male is taking a liquor shot and female getting ready to place something in his mouth .,5.0,4.0,5.0,4.6667,0.3406,0.844,0.9667,0.734,0.7405,0.6484,0.2187,0.0,0.114,0.0,0.0,0.0,0.0
+3,a group of men are sitting at a table and drinking beer .,0.0,a male is taking a liquor shot and female getting ready to place something in his mouth .,4.0,4.0,5.0,4.3333,0.2765,0.8317,0.9333,0.6863,0.6376,0.5324,0.1301,0.0,0.0636,0.0,0.0,0.0,0.0
+4,a man is spiting large fireballs from his mouth due to an open flame and alcohol .,0.2715,a man tilts back his head with a substance in his mouth while a lady puts a flame in his mouth .,4.0,2.0,3.0,3.0,0.6165,0.8503,0.9552,0.7688,0.7303,0.6682,0.5424,0.3451,0.5619,0.3806,0.4847,0.2298,0.2715
+5,a woman is kneeling in front of a man and uses only her mouth to pick up a shot glass from his lap and drink it .,0.1416,a woman holds a lighter to the mouth of a man who has just taken a shot .,2.0,1.0,1.0,1.3333,0.6362,0.8631,0.9511,0.626,0.6729,0.6006,0.5678,0.2246,0.4865,0.2593,0.39,0.1014,0.1416
+6,a man is sitting and talking and then smells his drink in a bottle .,0.0,a male is taking a liquor shot and female getting ready to place something in his mouth .,4.0,5.0,5.0,4.6667,0.3282,0.8381,0.9744,0.9183,0.9269,0.9069,0.1773,0.165,0.2169,0.1727,0.0657,0.0,0.0

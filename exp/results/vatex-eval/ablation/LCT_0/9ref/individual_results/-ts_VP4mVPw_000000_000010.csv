@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person wearing black pants and sneakers dances in front of a white door,0.0,a man is showing his feet as he dances the tap dance .,5.0,5.0,5.0,5.0,0.7153,0.9067,0.9697,0.7134,0.7792,0.7292,0.686,0.1214,0.3268,0.1495,0.2782,0.0839,0.0
+2,a person is tap dancing on a stage while music plays in the background .,0.4328,a person is dancing on the floor with music .,4.0,4.0,3.0,3.6667,0.6111,0.8988,0.96,1.0,0.9495,0.9438,0.5398,0.516,0.4857,0.4902,0.4278,0.4615,0.4328
+3,a person moonwalks across a tile floor while music plays in the background .,0.0,a man is showing his feet as he dances the tap dance .,4.0,4.0,4.0,4.0,0.5711,0.8843,0.9164,0.8075,0.7293,0.6531,0.5149,0.2718,0.4954,0.1938,0.4293,0.0669,0.0
+4,a person out on the dance floor showing off different dance moves .,0.6196,a person is dancing on the floor with music .,5.0,4.0,4.0,4.3333,0.7604,0.9299,0.92,0.8398,0.7363,0.7086,0.737,0.6982,0.7064,0.6468,0.6843,0.6664,0.6196
+5,a group of persons were performing some dance by moving their hands and legs,0.3831,a person performing dance moves with the focus on footwork,3.0,4.0,3.0,3.3333,0.4507,0.8903,1.0,1.0,1.0,1.0,0.3831,0.4507,0.4507,0.4507,0.3831,0.3831,0.3831
+6,two people are doing a foot dance together on camera .,0.4469,a man is showing his feet as he dances the tap dance .,4.0,3.0,4.0,3.6667,0.5707,0.8668,1.0,0.8889,0.9215,0.9068,0.4904,0.517,0.5512,0.5341,0.4672,0.4266,0.4469

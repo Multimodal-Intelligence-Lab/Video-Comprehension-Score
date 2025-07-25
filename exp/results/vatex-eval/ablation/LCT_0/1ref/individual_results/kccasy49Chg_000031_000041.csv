@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two womens' baskell teams are playing against each other .,0.0,various teams compete in a high school aged volleyball tournament .,4.0,4.0,4.0,4.0,0.2631,0.7719,0.8358,0.7233,0.6632,0.5637,0.0453,0.0,0.1183,0.0,0.0,0.0,0.0
+2,a group of girls are playing volleyball in a gym .,0.1608,various teams compete in a high school aged volleyball tournament .,5.0,4.0,4.0,4.3333,0.5327,0.7953,0.7955,0.8047,0.7002,0.623,0.4124,0.4193,0.4126,0.3326,0.2614,0.2699,0.1608
+3,a group of girls are playing volleyball in a gym .,0.1608,various teams compete in a high school aged volleyball tournament .,5.0,4.0,4.0,4.3333,0.5327,0.7953,0.7955,0.8047,0.7002,0.623,0.4124,0.4193,0.4126,0.3326,0.2614,0.2699,0.1608
+4,a team of two girls play a match of volleyball with another team of two girls .,0.0,various teams compete in a high school aged volleyball tournament .,5.0,3.0,4.0,4.0,0.5151,0.8171,0.8933,0.5674,0.592,0.5006,0.4066,0.1454,0.4572,0.1809,0.3357,0.0,0.0
+5,a girl is serving the ball during a volleyball game in a school gym .,0.0,various teams compete in a high school aged volleyball tournament .,5.0,3.0,4.0,4.0,0.5324,0.8152,0.8383,0.3531,0.2453,0.0743,0.4265,0.0,0.4423,0.0,0.3159,0.0,0.0
+6,the girls high school volleyball team is in the middle of a match .,0.0,various teams compete in a high school aged volleyball tournament .,5.0,5.0,5.0,5.0,0.7213,0.8935,0.7536,0.4058,0.2913,0.2068,0.6881,0.1762,0.6302,0.0175,0.5861,0.1364,0.0

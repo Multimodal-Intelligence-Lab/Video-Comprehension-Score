@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person points to a dry erase board as part of a lesson explaining equations .,0.0,a woman is teaching a class using a whiteboard to explain a shown formula .,5.0,5.0,5.0,5.0,0.5545,0.805,0.8885,0.3992,0.3712,0.219,0.4467,0.0,0.4987,0.0,0.3772,0.0,0.0
+2,a person is demonstrating how to solve a math problem .,0.0,a woman is teaching a class using a whiteboard to explain a shown formula .,5.0,5.0,5.0,5.0,0.4332,0.7861,0.7958,0.4888,0.4084,0.2474,0.279,0.0,0.2878,0.0,0.094,0.0,0.0
+3,a man is demonstrating how to solve a math problem .,0.0,a woman is teaching a class using a whiteboard to explain a shown formula .,4.0,4.0,4.0,4.0,0.3368,0.7708,0.7958,0.4332,0.3415,0.1457,0.1396,0.0,0.1666,0.0,0.0,0.0,0.0
+4,a person telling about mathematics and writing the equations in the paper .,0.0,a woman is teaching a class using a whiteboard to explain a shown formula .,4.0,4.0,3.0,3.6667,0.4129,0.7799,0.9321,0.5795,0.572,0.4513,0.2472,0.0,0.3701,0.0,0.1924,0.0,0.0
+5,a person shows how to do a complex math problem with a pen .,0.0,a woman is teaching a class using a whiteboard to explain a shown formula .,5.0,5.0,5.0,5.0,0.3947,0.7904,0.8497,0.6107,0.566,0.4509,0.2342,0.0088,0.2876,0.0,0.0987,0.0,0.0
+6,a man is describing a math formula on the chalkboard .,0.0,a woman is teaching a class using a whiteboard to explain a shown formula .,4.0,4.0,3.0,3.6667,0.5148,0.813,0.795,0.6503,0.5731,0.475,0.4032,0.2539,0.3896,0.1534,0.2493,0.0823,0.0

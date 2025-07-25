@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman peels a potato with an extra large peeler than can also be used on zucchini .,0.4377,a woman is demonstrating how to peel potatoes with a peeler .,5.0,3.0,5.0,4.3333,0.7388,0.8828,0.8972,0.7179,0.621,0.5654,0.7042,0.5343,0.6469,0.4705,0.595,0.5055,0.4377
+2,a woman is demonstrating how to properly peel a potato .,0.7139,a woman is demonstrating how to peel potatoes with a peeler .,5.0,5.0,5.0,5.0,0.9344,0.9526,0.9714,0.8408,0.8028,0.7706,0.9312,0.7144,0.8315,0.7149,0.831,0.6874,0.7139
+3,a woman in a kitchen is showing how to make a dish .,0.3374,the woman stands in the kitchen and explains as she peels a potato .,4.0,4.0,4.0,4.0,0.5458,0.8355,1.0,0.8408,0.827,0.7913,0.452,0.4598,0.5458,0.4508,0.452,0.3482,0.3374
+4,a little girl is trying to peel a potato with a peeler .,0.5692,a woman is demonstrating how to peel potatoes with a peeler .,4.0,4.0,4.0,4.0,0.636,0.8854,1.0,1.0,1.0,1.0,0.5692,0.6186,0.6186,0.6186,0.5692,0.5692,0.5692
+5,a woman holding a potato and a knife explains how to peel potatoes with boiling water .,0.5527,the woman stands in the kitchen and explains as she peels a potato .,4.0,4.0,4.0,4.0,0.7353,0.8978,0.8993,0.8638,0.8195,0.799,0.7005,0.619,0.6913,0.5984,0.6506,0.5757,0.5527
+6,a young woman uses a knife to take the skin off of a boiled potato .,0.7326,a woman uses a peeler to remove the skin from a potato .,4.0,4.0,4.0,4.0,0.7589,0.9018,1.0,1.0,1.0,1.0,0.7326,0.7589,0.7589,0.7589,0.7326,0.7326,0.7326

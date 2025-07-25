@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two men dressed all in white are performing a dance like fight while other people are watching .,0.6262,two men are outside performing a dance or mock fighting while others look on .,5.0,5.0,5.0,5.0,0.6654,0.895,1.0,1.0,1.0,1.0,0.6262,0.6654,0.6654,0.6654,0.6262,0.6262,0.6262
+2,a group of people are doing a martial arts routine in front of a crowd .,0.0,two men are outside performing a dance or mock fighting while others look on .,5.0,4.0,5.0,4.6667,0.3889,0.7726,0.95,0.6966,0.7253,0.6445,0.2091,0.1228,0.3568,0.1575,0.1675,0.0,0.0
+3,two men are fighting each other in a martial arts match .,0.0488,two men are outside performing a dance or mock fighting while others look on .,5.0,2.0,4.0,3.6667,0.4273,0.8556,0.9412,0.6782,0.7037,0.6537,0.3307,0.1556,0.3915,0.1862,0.2889,0.0131,0.0488
+4,two men perform capoeira outside surrounded by spectators who clap to a drumbeat .,0.1975,two men are outside performing a dance or mock fighting while others look on .,5.0,4.0,5.0,4.6667,0.582,0.852,0.8378,0.4813,0.6114,0.5438,0.5094,0.1088,0.5011,0.3163,0.4144,0.0,0.1975
+5,two men are dancing in a karate patterned dance in front of a crowd .,0.3531,two men are outside performing a dance or mock fighting while others look on .,5.0,4.0,4.0,4.3333,0.6408,0.8438,0.9665,0.6204,0.658,0.5947,0.5744,0.4077,0.6284,0.4542,0.5596,0.314,0.3531
+6,two men are dancing to music with a group of people looking on .,0.4895,two men are outside performing a dance or mock fighting while others look on .,5.0,4.0,5.0,4.6667,0.6653,0.8731,0.975,0.7107,0.751,0.7148,0.6166,0.529,0.6567,0.5542,0.6068,0.4605,0.4895

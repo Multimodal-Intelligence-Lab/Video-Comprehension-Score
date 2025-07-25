@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a hand with a ring on the ring finger is waving from side to side .,0.0,a person in a room waving their hand back and forth at a camera,5.0,5.0,5.0,5.0,0.4889,0.8506,0.8027,0.3096,0.4469,0.3498,0.3991,0.0,0.3633,0.0,0.2515,0.0,0.0
+2,a young boy is standing in front of a camera and throws a dart .,0.0,a person in a room waving their hand back and forth at a camera,3.0,2.0,2.0,2.3333,0.181,0.8088,0.8485,0.508,0.6355,0.5494,0.0,0.0,0.0348,0.0,0.0,0.0,0.0
+3,a young boy is demonstrating how to throw a card .,0.0,a person in a room waving their hand back and forth at a camera,1.0,1.0,1.0,1.0,0.1272,0.766,0.9524,0.9023,0.8778,0.8405,0.0,0.0327,0.0835,0.0057,0.0,0.0,0.0
+4,a person puts their hand in front of the camera and moves it a lot,0.2754,a person in a room waving their hand back and forth at a camera,5.0,5.0,5.0,5.0,0.7056,0.8668,0.8485,0.3764,0.5215,0.4479,0.6604,0.1162,0.6531,0.3218,0.5998,0.0557,0.2754
+5,"a person makes a fist , moves their fingers around and sticks their thumb out .",0.0637,a person in a room waving their hand back and forth at a camera,3.0,2.0,3.0,2.6667,0.3565,0.8096,0.9714,0.8371,0.8489,0.8134,0.2052,0.2313,0.3376,0.242,0.1818,0.0505,0.0637
+6,a man is in a room making hand gestures in front of a camera .,0.6019,a person in a room waving their hand back and forth at a camera,5.0,4.0,3.0,4.0,0.7597,0.8952,0.9394,0.569,0.7087,0.6747,0.7316,0.4327,0.7442,0.6166,0.7143,0.4109,0.6019

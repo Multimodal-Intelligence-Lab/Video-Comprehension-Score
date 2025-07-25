@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man and women are dancing together while a band plays behind them .,0.4213,two men and a woman dance in front of a big band playing ragtime music .,5.0,5.0,5.0,5.0,0.6523,0.9033,1.0,0.9023,0.9155,0.8977,0.6138,0.5008,0.5902,0.5017,0.5448,0.4202,0.4213
+2,a group of people are dancing in a dance studio .,0.0,"a man , a woman , and a boy dance in front of a playing band .",4.0,1.0,4.0,3.0,0.3435,0.845,0.9474,0.8187,0.7433,0.6848,0.2025,0.1219,0.307,0.0329,0.1371,0.0,0.0
+3,a group of men and women are dancing to music .,0.0,"a man , a woman , and a boy dance in front of a playing band .",5.0,4.0,3.0,4.0,0.4897,0.8862,0.8728,0.7664,0.6691,0.5721,0.4242,0.2112,0.3462,0.0836,0.228,0.0663,0.0
+4,a jazz band plays dixieland while a guy and gal shimmy and shake on stage and the audience dances .,0.0,"a man , a woman , and a boy dance in front of a playing band .",4.0,4.0,4.0,4.0,0.5155,0.8488,0.882,0.737,0.7467,0.6928,0.4292,0.1236,0.2677,0.135,0.1117,0.0,0.0
+5,a man and a woman are dancing on stage to a big band group .,0.473,two men and a woman dance in front of a big band playing ragtime music .,5.0,5.0,4.0,4.6667,0.5969,0.8928,1.0,0.8933,0.9155,0.9001,0.5425,0.5223,0.5829,0.5356,0.5267,0.4579,0.473
+6,a man was dancing with a woman on stage and other girls around them dancing too .,0.0,"a man , a woman , and a boy dance in front of a playing band .",3.0,4.0,3.0,3.3333,0.4933,0.8678,0.9089,0.7595,0.7679,0.7117,0.3882,0.1611,0.4114,0.1702,0.2893,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man uses a long tool to wash a number of windows .,0.6086,a man is outdoors and he is washing the windows .,5.0,5.0,5.0,5.0,0.9401,0.9428,0.9697,0.8,0.7945,0.7669,0.9364,0.6574,0.7173,0.655,0.6793,0.6113,0.6086
+2,a man is using a tool to clean the window of a window .,0.609,a man is outdoors and he is washing the windows .,5.0,5.0,5.0,5.0,0.8019,0.9306,1.0,1.0,1.0,1.0,0.782,0.6653,0.6961,0.6653,0.6884,0.609,0.609
+3,a man is cleaning a window with a squeegee .,0.7433,a man takes his time to clean windows on a business with a squeegie .,5.0,5.0,5.0,5.0,0.7859,0.911,0.9524,1.0,0.9222,0.914,0.7633,0.7859,0.7649,0.7678,0.7401,0.7633,0.7433
+4,a man cleans the window with a squeegee and wipes it dry .,0.4249,a man is washing windows using a roller and squeegee .,5.0,5.0,5.0,5.0,0.7422,0.8849,0.9804,0.8723,0.872,0.8475,0.7087,0.5111,0.6657,0.5109,0.6222,0.4354,0.4249
+5,a man is using a long scrub brush to clean the windows .,0.5888,a man is outdoors and he is washing the windows .,5.0,4.0,5.0,4.6667,0.7726,0.8943,1.0,1.0,1.0,1.0,0.7372,0.6523,0.7186,0.6523,0.6748,0.5888,0.5888
+6,a man is washing a window and then drying the window with a towel .,0.4062,a man is washing windows using a roller and squeegee .,3.0,4.0,5.0,4.0,0.6534,0.9213,0.9714,0.7785,0.7809,0.7361,0.6182,0.4441,0.5986,0.4805,0.5643,0.37,0.4062

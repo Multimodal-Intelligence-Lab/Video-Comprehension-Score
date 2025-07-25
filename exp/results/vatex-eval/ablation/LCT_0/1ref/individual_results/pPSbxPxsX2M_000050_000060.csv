@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person takes a wheel of cycle and then the body of it and the seat and explains all about it,0.0,a man reviews the parts that were in the box for a child's bike .,5.0,5.0,5.0,5.0,0.4226,0.7898,0.9004,0.5152,0.4256,0.2727,0.2689,0.0,0.3587,0.0,0.188,0.0,0.0
+2,a man is demonstrating how to use a bicycle wheel .,0.0,a man reviews the parts that were in the box for a child's bike .,2.0,2.0,4.0,2.6667,0.3333,0.8348,0.941,0.4621,0.2396,0.0891,0.2014,0.0,0.2915,0.0,0.1512,0.0,0.0
+3,a young boy is demonstrating how to fix a bicycle .,0.0,a man reviews the parts that were in the box for a child's bike .,1.0,1.0,3.0,1.6667,0.3263,0.8075,0.8824,0.438,0.1708,0.0,0.1657,0.0,0.2364,0.0,0.0544,0.0,0.0
+4,a young boy is giving instructions on how to fix a bicycle and what tools to use .,0.0,a man reviews the parts that were in the box for a child's bike .,1.0,1.0,2.0,1.3333,0.3438,0.8066,0.9321,0.815,0.8044,0.7576,0.1865,0.1948,0.296,0.1843,0.1273,0.0018,0.0
+5,the boy is opening up his nintendo and explaining all about whats in the box .,0.0,a man reviews the parts that were in the box for a child's bike .,4.0,3.0,3.0,3.3333,0.3596,0.8065,0.7991,0.4786,0.5987,0.5024,0.2059,0.0,0.1986,0.0,0.0064,0.0,0.0
+6,a man is demonstrating how to adjust or repair bicycle components .,0.0,a man reviews the parts that were in the box for a child's bike .,5.0,2.0,4.0,3.6667,0.4382,0.8399,0.7895,0.0,0.0,0.0,0.3312,0.0,0.2884,0.0,0.1528,0.0,0.0

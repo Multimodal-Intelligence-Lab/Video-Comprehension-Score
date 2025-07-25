@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a large huddle of a lacross team is being recorded on the tv .,0.2113,a television view of a college lacrosse team as they huddle-up and break near the end of a 9-7 game .,5.0,5.0,5.0,5.0,0.7746,0.892,0.9333,0.7025,0.7926,0.728,0.7473,0.3085,0.6385,0.2723,0.6253,0.2506,0.2113
+2,a group of people are playing a game of laser tag .,0.0,a group of foot ball player having a group meeting .,4.0,3.0,2.0,3.0,0.3133,0.8795,0.9497,0.6833,0.7377,0.689,0.2081,0.0,0.2098,0.0,0.0634,0.0,0.0
+3,a group of people are watching a group of people on a stage .,0.0,a group of foot ball player having a group meeting .,5.0,2.0,2.0,3.0,0.2041,0.8723,0.9831,0.9568,0.9039,0.8746,0.0242,0.0557,0.092,0.0005,0.0,0.0,0.0
+4,two teams are on a field playing lacrosse and they start scuffling .,0.0,a group of foot ball player having a group meeting .,4.0,4.0,4.0,4.0,0.5026,0.8345,0.9167,0.6122,0.6503,0.5412,0.404,0.1449,0.4347,0.1503,0.3225,0.0,0.0
+5,a group of soccer players huddle together before the start of a game .,0.5704,a team of players are huddling for some instructions before resuming to play .,5.0,2.0,5.0,4.0,0.6702,0.8892,1.0,0.9699,0.9547,0.9455,0.6193,0.6219,0.6702,0.6279,0.6193,0.5635,0.5704
+6,a male commentator speaks about an ongoing lacrosse game while the game is being filmed .,0.0209,a television view of a college lacrosse team as they huddle-up and break near the end of a 9-7 game .,5.0,5.0,4.0,4.6667,0.5386,0.8503,0.9655,0.8115,0.8228,0.7674,0.4459,0.1973,0.4681,0.2079,0.3611,0.0359,0.0209

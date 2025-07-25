@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man uses a long tool to wash a number of windows .,0.0,a man is washing the windows outside of a restaurant .,5.0,5.0,5.0,5.0,0.6007,0.8629,0.785,0.3719,0.1745,0.0432,0.5372,0.0,0.4913,0.0,0.4105,0.0,0.0
+2,a man is using a tool to clean the window of a window .,0.0,a man is washing the windows outside of a restaurant .,5.0,5.0,5.0,5.0,0.5591,0.8444,0.8537,0.5259,0.3016,0.1729,0.4778,0.152,0.4835,0.0,0.3883,0.007,0.0
+3,a man is cleaning a window with a squeegee .,0.3615,a man is washing the windows outside of a restaurant .,5.0,5.0,5.0,5.0,0.523,0.8619,0.9524,0.9589,0.8668,0.8455,0.4466,0.5026,0.4992,0.4497,0.4189,0.4228,0.3615
+4,a man cleans the window with a squeegee and wipes it dry .,0.0,a man is washing the windows outside of a restaurant .,5.0,5.0,5.0,5.0,0.4891,0.8348,0.8824,0.6806,0.537,0.4453,0.388,0.2494,0.421,0.0486,0.3065,0.1009,0.0
+5,a man is using a long scrub brush to clean the windows .,0.0,a man is washing the windows outside of a restaurant .,5.0,4.0,5.0,4.6667,0.5591,0.8339,0.8327,0.2555,0.0,0.0,0.4713,0.0,0.4705,0.0,0.365,0.0,0.0
+6,a man is washing a window and then drying the window with a towel .,0.3269,a man is washing the windows outside of a restaurant .,3.0,4.0,5.0,4.0,0.5672,0.8823,0.9714,0.7785,0.7287,0.6925,0.5095,0.4441,0.5545,0.4061,0.4951,0.37,0.3269

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man using a shovel clears the driveway of snow .,0.0,a man shovels his snow covered drive way whilie chatting with a woman .,5.0,5.0,5.0,5.0,0.7021,0.8532,0.6752,0.1499,0.0,0.0,0.6509,0.0,0.5374,0.0,0.4829,0.0,0.0
+2,a man is shoveling snow with a shovel in the snow .,0.2673,a man shovels his snow covered drive way whilie chatting with a woman .,5.0,5.0,5.0,5.0,0.611,0.8796,0.7289,0.7052,0.6036,0.5493,0.5578,0.4483,0.4663,0.3512,0.3933,0.3729,0.2673
+3,a man is shoveling snow with a shovel shovel .,0.1904,a man shovels his snow covered drive way whilie chatting with a woman .,5.0,5.0,5.0,5.0,0.6047,0.8764,0.7071,0.6617,0.5571,0.4947,0.549,0.4026,0.441,0.2676,0.3621,0.3184,0.1904
+4,a man on a riding snow blower clears snow from a driveway .,0.0007,a man shovels his snow covered drive way whilie chatting with a woman .,4.0,4.0,4.0,4.0,0.547,0.8305,0.7857,0.5925,0.5458,0.4531,0.4546,0.2355,0.4235,0.1697,0.3058,0.0795,0.0007
+5,a man uses a bulldozer to clear snow off his road .,0.0,a man shovels his snow covered drive way whilie chatting with a woman .,4.0,4.0,4.0,4.0,0.4183,0.8198,0.7203,0.3603,0.2725,0.1126,0.2904,0.0,0.1924,0.0,0.0149,0.0,0.0
+6,the man is scraping and shoveling some snow in the backyard .,0.1184,a man shovels his snow covered drive way whilie chatting with a woman .,5.0,5.0,4.0,4.6667,0.5105,0.833,0.7164,0.8135,0.6666,0.5997,0.4123,0.3982,0.3167,0.2656,0.1797,0.2776,0.1184

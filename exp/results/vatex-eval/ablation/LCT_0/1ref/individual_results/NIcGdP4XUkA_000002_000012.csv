@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a lady wearing a helmet is talking as she's riding around in a vehicle .,0.0,a helmeted woman and a man move across an expanse of ground in an unseen vehicle .,5.0,5.0,5.0,5.0,0.5486,0.8258,0.89,0.5115,0.5095,0.4061,0.4534,0.1096,0.4928,0.106,0.3858,0.0,0.0
+2,a man is riding a scooter on a windy day .,0.0,a helmeted woman and a man move across an expanse of ground in an unseen vehicle .,4.0,2.0,4.0,3.3333,0.1757,0.7677,0.84,0.4379,0.406,0.2262,0.0,0.0,0.0187,0.0,0.0,0.0,0.0
+3,a man with a helmet is riding a a vehicle in the desert .,0.0,a helmeted woman and a man move across an expanse of ground in an unseen vehicle .,4.0,4.0,4.0,4.0,0.5237,0.8494,0.8239,0.3934,0.3455,0.2295,0.4393,0.0,0.4219,0.0,0.3194,0.0,0.0
+4,a man with a hat and glasses on is driving a car while talking to passengers .,0.0,a helmeted woman and a man move across an expanse of ground in an unseen vehicle .,4.0,4.0,4.0,4.0,0.2137,0.8001,0.8609,0.606,0.5958,0.4948,0.0172,0.0,0.0866,0.0,0.0,0.0,0.0
+5,a woman is shown exiting a car into a wheelchair and describing how she does it .,0.0,a helmeted woman and a man move across an expanse of ground in an unseen vehicle .,3.0,2.0,5.0,3.3333,0.2279,0.8007,0.8674,0.5948,0.5879,0.4854,0.0357,0.0,0.1099,0.0,0.0,0.0,0.0
+6,"a woman sits in a car and comments , with a fire and either fire or police vehicle flashers in the background .",0.0,a helmeted woman and a man move across an expanse of ground in an unseen vehicle .,3.0,2.0,4.0,3.0,0.2584,0.796,0.8813,0.609,0.6403,0.5482,0.0684,0.0,0.1586,0.0,0.0,0.0,0.0

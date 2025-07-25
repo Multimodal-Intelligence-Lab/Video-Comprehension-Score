@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is moving his eyes back and forth really fast .,0.429,"a person is flicking their eyes quickly to the side and back repeatedly , and someone else is laughing .",5.0,5.0,5.0,5.0,0.6669,0.8553,0.8776,0.6725,0.682,0.6282,0.6106,0.5047,0.6205,0.5116,0.5563,0.4209,0.429
+2,a man is showing how to put a contact lens on his eye .,0.0,"a person is flicking their eyes quickly to the side and back repeatedly , and someone else is laughing .",2.0,3.0,3.0,2.6667,0.247,0.8101,0.843,0.7248,0.706,0.637,0.0705,0.0,0.1068,0.0,0.0,0.0,0.0
+3,a man is looking at the camera and making funny faces .,0.0085,"a person is flicking their eyes quickly to the side and back repeatedly , and someone else is laughing .",2.0,2.0,2.0,2.0,0.3978,0.796,0.8755,0.7753,0.7631,0.7024,0.2434,0.2232,0.3121,0.2108,0.1358,0.024,0.0085
+4,a boy is watching something and then begins to laugh .,0.0392,"a person is flicking their eyes quickly to the side and back repeatedly , and someone else is laughing .",5.0,4.0,1.0,3.3333,0.4028,0.8222,0.9529,0.7149,0.7559,0.7031,0.2737,0.1647,0.3733,0.21,0.2378,0.0,0.0392
+5,a man is holding a glass circular object and moving it from side to side .,0.0,"a person is flicking their eyes quickly to the side and back repeatedly , and someone else is laughing .",2.0,2.0,2.0,2.0,0.2846,0.8177,0.8933,0.7638,0.7647,0.7122,0.1251,0.0634,0.1992,0.0644,0.0206,0.0,0.0
+6,a man in glasses making a funny face and pretending to sneeze .,0.0916,"a person is flicking their eyes quickly to the side and back repeatedly , and someone else is laughing .",2.0,2.0,1.0,1.6667,0.3897,0.7928,0.9221,0.8518,0.8474,0.8076,0.2302,0.2835,0.3381,0.2798,0.1651,0.0963,0.0916

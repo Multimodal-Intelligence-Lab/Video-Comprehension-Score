@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the little boy is having fun as he tries to build an aircraft as shown in the book .,0.0,a boy is building a lego set in fast motion while music is playing .,5.0,5.0,5.0,5.0,0.3592,0.8073,0.8054,0.4371,0.5666,0.4632,0.2062,0.0,0.2043,0.0,0.0144,0.0,0.0
+2,a group of people are playing a game of monopoly .,0.0,a boy is building a lego set in fast motion while music is playing .,1.0,1.0,1.0,1.0,0.0671,0.7968,0.8163,0.467,0.3912,0.236,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a young boy is sitting at a table and playing a puzzle .,0.0,a boy is building a lego set in fast motion while music is playing .,4.0,4.0,4.0,4.0,0.2849,0.822,0.8805,0.5065,0.4646,0.3486,0.1301,0.0,0.1879,0.0,0.012,0.0,0.0
+4,a boy playing with legos tries to build something special .,0.0,a boy is building a lego set in fast motion while music is playing .,5.0,5.0,5.0,5.0,0.645,0.8739,0.7675,0.4289,0.3255,0.2281,0.5937,0.1146,0.5375,0.0,0.4707,0.0382,0.0
+5,a young boy shows off his lego collection while sitting at the top of a staircase .,0.0,a boy is building a lego set in fast motion while music is playing .,2.0,2.0,4.0,2.6667,0.5008,0.8133,0.8864,0.4531,0.5996,0.5078,0.3863,0.0,0.4368,0.1675,0.3076,0.0,0.0
+6,a kid squatting in a room is building lego structure while talking .,0.0907,a boy is building a lego set in fast motion while music is playing .,4.0,4.0,4.0,4.0,0.501,0.8329,0.8838,0.6862,0.6588,0.5904,0.401,0.2728,0.4354,0.2426,0.3222,0.127,0.0907

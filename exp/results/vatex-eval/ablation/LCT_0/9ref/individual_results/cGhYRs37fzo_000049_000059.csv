@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,poeple are talking in the background and others are drinking wine .,0.185,several people are drinking wine as one man walks into a kitchen area and grabs two glasses of wine .,5.0,5.0,5.0,5.0,0.593,0.8551,0.937,0.7109,0.8085,0.7633,0.5154,0.396,0.5104,0.3404,0.4171,0.2795,0.185
+2,a man is standing in front of a group of people in a restaurant .,0.0,a guy is given two glasses of wine then two guys turn and look .,5.0,4.0,4.0,4.3333,0.4304,0.8761,0.9787,0.8515,0.9107,0.887,0.3499,0.0695,0.2985,0.13,0.1993,0.0,0.0
+3,a man is standing in front of a group of people and talking .,0.0,a guy is given two glasses of wine then two guys turn and look .,4.0,5.0,4.0,4.3333,0.389,0.8812,0.9851,0.9002,0.917,0.8921,0.3065,0.0441,0.2474,0.1062,0.1459,0.0,0.0
+4,there are two men sitting at a table drinking different bottles of wine out of multiple wine glasses .,0.0,a guy is given two glasses of wine then two guys turn and look .,4.0,4.0,4.0,4.0,0.6629,0.9087,0.8966,0.6457,0.6791,0.6044,0.629,0.0863,0.4529,0.1334,0.4179,0.0,0.0
+5,two guys appear to be at a table tasting some wines .,0.1252,a man hands someone a glass of wine at an event .,4.0,5.0,5.0,4.6667,0.5995,0.8633,1.0,1.0,1.0,1.0,0.5332,0.3036,0.504,0.3091,0.3983,0.1348,0.1252
+6,several people are interacting with each other and tasting wine at an event .,0.5301,a man hands someone a glass of wine at an event .,5.0,5.0,4.0,4.6667,0.6327,0.8536,1.0,1.0,1.0,1.0,0.5697,0.6044,0.6044,0.6044,0.5301,0.5301,0.5301

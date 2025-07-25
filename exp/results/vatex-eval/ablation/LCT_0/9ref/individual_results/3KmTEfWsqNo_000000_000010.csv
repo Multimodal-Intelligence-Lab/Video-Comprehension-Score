@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man daunted by the task of folding clothes looks up a video on how to fold a shirt , then fails as he demonstrates",0.6198,"someone tries to fold a shirt , looks at an example and fails at folding it .",5.0,5.0,5.0,5.0,0.7832,0.888,0.9107,0.7343,0.7334,0.6861,0.7559,0.5983,0.7579,0.633,0.7274,0.5837,0.6198
+2,a woman is demonstrating how to properly fold a shirt .,0.6758,a person hasx demonstrated a proper way to fold a shirt on a bed .,4.0,3.0,4.0,3.6667,0.7503,0.901,0.9796,0.838,0.8549,0.8389,0.7228,0.702,0.7451,0.7079,0.717,0.6692,0.6758
+3,a man is showing how to properly fold a shirt .,0.7229,a person hasx demonstrated a proper way to fold a shirt on a bed .,5.0,4.0,5.0,4.6667,0.7515,0.9032,1.0,1.0,1.0,1.0,0.7229,0.7515,0.7515,0.7515,0.7229,0.7229,0.7229
+4,a guy shows his shirts and then proceeds to iron them out .,0.2879,a man try to learn how to fold cloths the proper way .,4.0,4.0,3.0,3.6667,0.4937,0.8286,0.963,1.0,0.9593,0.9479,0.3577,0.4667,0.4404,0.4441,0.2901,0.3168,0.2879
+5,a man is showing how to properly lay out the clothes and get them ready for ironing,0.2898,a man is watching a video clip of how to fold clothes and he tries to use the same trick on his clothes .,4.0,4.0,4.0,4.0,0.5995,0.8498,0.9859,0.8423,0.869,0.8434,0.5288,0.387,0.5472,0.4058,0.4672,0.2673,0.2898
+6,a man is using a cardboard folding guide to be able to quickly and efficiently fold a man's shirt .,0.181,a person hasx demonstrated a proper way to fold a shirt on a bed .,4.0,4.0,3.0,3.6667,0.5807,0.8536,0.9149,0.7236,0.7399,0.663,0.5088,0.3016,0.5019,0.3205,0.4022,0.1631,0.181

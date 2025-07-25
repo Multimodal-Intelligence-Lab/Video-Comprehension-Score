@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl used a wheelbarrow to carry another girl until the wheelbarrow fell over .,0.5227,one girls pushes another girl in a wheelbarrow but it tips over before long .,5.0,5.0,5.0,5.0,0.8444,0.8803,0.7948,0.4911,0.6071,0.5536,0.8232,0.3973,0.757,0.5346,0.7507,0.3818,0.5227
+2,a woman is pushing a wheelbarrow in a parking lot .,0.0,one girls pushes another girl in a wheelbarrow but it tips over before long .,4.0,4.0,4.0,4.0,0.4493,0.8317,0.8767,0.6754,0.6445,0.5726,0.3378,0.1846,0.3718,0.1455,0.2447,0.0196,0.0
+3,a woman is pushing a wheelbarrow in a parking lot .,0.0,one girls pushes another girl in a wheelbarrow but it tips over before long .,4.0,4.0,4.0,4.0,0.4493,0.8317,0.8767,0.6754,0.6445,0.5726,0.3378,0.1846,0.3718,0.1455,0.2447,0.0196,0.0
+4,a young girl is pushing another young girl that is sitting in a wheel barrow .,0.6721,one girls pushes another girl in a wheelbarrow but it tips over before long .,5.0,5.0,5.0,5.0,0.7661,0.8685,0.934,0.8185,0.8215,0.7944,0.7306,0.7142,0.7495,0.7152,0.7116,0.6709,0.6721
+5,one girl pushes another girl in a wheel barrow in a circle .,0.7209,one girls pushes another girl in a wheelbarrow but it tips over before long .,4.0,4.0,4.0,4.0,0.7736,0.9123,0.9773,0.8153,0.889,0.8783,0.7519,0.7224,0.7684,0.7454,0.7461,0.6956,0.7209
+6,one young girl pushes another in a wheelbarrow going in circles,0.5716,one girls pushes another girl in a wheelbarrow but it tips over before long .,4.0,4.0,4.0,4.0,0.6983,0.9117,0.9085,0.6719,0.7725,0.7505,0.6691,0.5302,0.6679,0.6094,0.6357,0.5075,0.5716

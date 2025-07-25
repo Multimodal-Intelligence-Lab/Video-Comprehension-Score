@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people are engaged in a watermelon eating contest where they cannot use their hands .,0.5387,various people are on their knees competing in a watermelon eating contest .,5.0,5.0,5.0,5.0,0.7784,0.8926,0.8242,0.6919,0.6532,0.6115,0.7517,0.6042,0.7311,0.5545,0.6988,0.5901,0.5387
+2,a group of people are eating a watermelon eating contest .,0.4416,various people are on their knees competing in a watermelon eating contest .,5.0,5.0,5.0,5.0,0.8071,0.9417,0.9199,0.6101,0.556,0.5285,0.7952,0.5169,0.7903,0.4499,0.7773,0.5096,0.4416
+3,a group of people are eating a watermelon eating contest .,0.4416,various people are on their knees competing in a watermelon eating contest .,5.0,5.0,5.0,5.0,0.8071,0.9417,0.9199,0.6101,0.556,0.5285,0.7952,0.5169,0.7903,0.4499,0.7773,0.5096,0.4416
+4,"a man and a woman hold watermelon for their male partners , who are eating from their hands , in a watermelon eating contest .",0.3416,various people are on their knees competing in a watermelon eating contest .,4.0,4.0,4.0,4.0,0.7052,0.8751,0.871,0.5319,0.5635,0.5011,0.6631,0.3362,0.6615,0.3809,0.6132,0.294,0.3416
+5,a woman holding a watermelon for a man who is in the process of an eating competition .,0.1745,various people are on their knees competing in a watermelon eating contest .,4.0,4.0,4.0,4.0,0.6578,0.8548,0.8309,0.3627,0.5049,0.4209,0.5997,0.0311,0.5882,0.2474,0.5182,0.0,0.1745
+6,three people are sitting at a small table in a living room eating watermelon .,0.0083,various people are on their knees competing in a watermelon eating contest .,4.0,3.0,4.0,3.6667,0.5185,0.8406,0.8993,0.5707,0.5776,0.4975,0.4272,0.1564,0.4646,0.1664,0.3631,0.0,0.0083

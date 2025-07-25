@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman wearing wearing black spandex quietly working out at a gym by doing armraises while wearing headphones .,0.0,"a woman in a gym is lifting hand-held weights , working her right side .",5.0,5.0,5.0,5.0,0.4877,0.815,0.8261,0.4751,0.4899,0.374,0.3713,0.0,0.3798,0.0,0.239,0.0,0.0
+2,a woman is in a gym lifting weights in a gym .,0.6682,"a woman in a gym is lifting hand-held weights , working her right side .",5.0,5.0,5.0,5.0,0.7611,0.927,0.8263,0.8775,0.7767,0.7591,0.7423,0.7277,0.7109,0.6924,0.6881,0.7063,0.6682
+3,a woman is lifting weights in a gym while music is playing in the background .,0.2021,"a woman in a gym is lifting hand-held weights , working her right side .",3.0,4.0,3.0,3.3333,0.6733,0.8831,0.9129,0.5228,0.4973,0.4308,0.63,0.2913,0.6421,0.2534,0.5947,0.2427,0.2021
+4,a female bodybuilder is shown to lift a sizeable amount of weight in a gym,0.0,"a woman in a gym is lifting hand-held weights , working her right side .",4.0,4.0,4.0,4.0,0.5867,0.8409,0.7612,0.3125,0.4431,0.3378,0.5085,0.0,0.457,0.0508,0.3543,0.0,0.0
+5,a woman at a gym lifting arm weights as a demonstration .,0.2713,"a woman in a gym is lifting hand-held weights , working her right side .",5.0,4.0,4.0,4.3333,0.7061,0.8914,0.9667,0.5178,0.5115,0.452,0.6703,0.3171,0.696,0.3082,0.6589,0.2806,0.2713
+6,a woman at the gym doing front arm extensions with dumbbells .,0.0914,"a woman in a gym is lifting hand-held weights , working her right side .",5.0,5.0,5.0,5.0,0.6153,0.8253,0.8654,0.5555,0.515,0.4123,0.5339,0.2775,0.5554,0.2117,0.4614,0.1608,0.0914

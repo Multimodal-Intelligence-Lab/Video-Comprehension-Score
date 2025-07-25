@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman gives instructions while she ties her shoe laces on her tennis shoe .,0.7799,a woman is talking as she ties her tennis shoe .,5.0,5.0,5.0,5.0,0.8277,0.9328,0.9497,0.8694,0.8392,0.8276,0.8153,0.8018,0.8122,0.7947,0.7987,0.7875,0.7799
+2,a person is demonstrating how to tie a shoe lace .,0.7982,a woman is demonstrating how to tie your shoes .,5.0,5.0,5.0,5.0,0.8481,0.9266,1.0,1.0,1.0,1.0,0.8293,0.813,0.8436,0.813,0.8243,0.7982,0.7982
+3,a woman is demonstrating how to tie a shoe lace .,0.9469,a woman is demonstrating how to tie your shoes .,5.0,5.0,5.0,5.0,0.9489,0.9631,1.0,1.0,1.0,1.0,0.9469,0.9489,0.9489,0.9489,0.9469,0.9469,0.9469
+4,a woman is showing how to tie shoelaces in a foreign language .,0.6882,a woman is demonstrating how to tie your shoes .,5.0,4.0,5.0,4.6667,0.7746,0.9001,1.0,1.0,1.0,1.0,0.7496,0.763,0.7371,0.7194,0.7079,0.7366,0.6882
+5,a woman is demonstrating how to tie a shoe in slow motion .,0.7474,a woman is demonstrating how to tie your shoes .,5.0,4.0,5.0,4.6667,0.8078,0.9477,0.9599,0.9508,0.8031,0.7922,0.7972,0.7978,0.7758,0.7562,0.7634,0.7867,0.7474
+6,a person tells how to tie a shoe string the right way,0.656,a person is demonstrating how to make and tie the loops on shoestrings .,5.0,5.0,5.0,5.0,0.7821,0.8552,1.0,0.8571,0.8718,0.8419,0.7377,0.7286,0.7631,0.6962,0.7149,0.6734,0.656

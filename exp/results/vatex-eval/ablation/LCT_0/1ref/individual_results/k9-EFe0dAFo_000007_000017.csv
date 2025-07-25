@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,there are three women sitting on the floor of a fitness class with legs open .,0.3694,a group of ladies stretching out on the floor while one talks to them .,5.0,5.0,5.0,5.0,0.5466,0.805,0.9497,0.9086,0.893,0.8671,0.4368,0.501,0.5226,0.4923,0.407,0.3801,0.3694
+2,a woman is demonstrating how to do a yoga exercise .,0.0535,a group of ladies stretching out on the floor while one talks to them .,5.0,5.0,5.0,5.0,0.449,0.745,0.963,0.8284,0.7813,0.7064,0.2605,0.3349,0.4279,0.2948,0.2321,0.1073,0.0535
+3,a woman is demonstrating how to do an exercise with a ball .,0.0,a group of ladies stretching out on the floor while one talks to them .,4.0,4.0,4.0,4.0,0.3228,0.7557,0.963,0.8284,0.7813,0.7106,0.1039,0.1826,0.2968,0.1333,0.0695,0.0,0.0
+4,a woman demonstrates a single leg stretch while lying on a floor mat .,0.0,a group of ladies stretching out on the floor while one talks to them .,3.0,2.0,3.0,2.6667,0.5811,0.8217,0.8667,0.3456,0.2412,0.0766,0.4902,0.0,0.5166,0.0,0.4117,0.0,0.0
+5,three women are doing a dance based exercise routine in a workout facility .,0.0,a group of ladies stretching out on the floor while one talks to them .,3.0,3.0,4.0,3.3333,0.3237,0.7708,0.9497,0.827,0.8262,0.7745,0.1226,0.1822,0.2879,0.1814,0.0762,0.0,0.0
+6,a woman demonstrates the use of a workout machine in a gym,0.0,a group of ladies stretching out on the floor while one talks to them .,4.0,2.0,4.0,3.3333,0.2946,0.7462,0.8537,0.5445,0.6649,0.551,0.0548,0.0,0.1737,0.0,0.0,0.0,0.0

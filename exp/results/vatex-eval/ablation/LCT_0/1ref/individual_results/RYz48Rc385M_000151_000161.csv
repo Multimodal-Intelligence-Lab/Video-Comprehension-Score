@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a baby is talking gibberish to a phone and mummy laughing in the background,0.0,a little kid sits in a chair with a cellphone while talking with his mom .,5.0,5.0,5.0,5.0,0.4329,0.8269,0.7421,0.2357,0.3578,0.2233,0.3142,0.0,0.2359,0.0,0.0759,0.0,0.0
+2,a little girl is sitting on the floor playing with her phone .,0.2327,a little kid sits in a chair with a cellphone while talking with his mom .,4.0,3.0,5.0,4.0,0.4993,0.8509,0.9599,0.7791,0.7669,0.726,0.4116,0.3573,0.4784,0.3471,0.387,0.2447,0.2327
+3,a little girl is sitting on a couch and holding a cell phone .,0.3635,a little kid sits in a chair with a cellphone while talking with his mom .,5.0,4.0,5.0,4.6667,0.5689,0.8572,0.922,0.6913,0.7901,0.7552,0.4971,0.3763,0.5324,0.4544,0.4545,0.2725,0.3635
+4,a young female toddler is talking on a cell phone .,0.0,a little kid sits in a chair with a cellphone while talking with his mom .,5.0,4.0,5.0,4.6667,0.537,0.8442,0.8603,0.4941,0.3796,0.2651,0.4516,0.058,0.4619,0.0,0.3625,0.0,0.0
+5,a young boy is talking on a cell phone while sitting in a restaurant .,0.0,a little kid sits in a chair with a cellphone while talking with his mom .,4.0,4.0,4.0,4.0,0.5728,0.8617,0.7879,0.2102,0.3319,0.2247,0.5042,0.0,0.4578,0.0,0.3708,0.0,0.0
+6,a young boy in a restaurant on a mobile phone to someone .,0.2979,a little kid sits in a chair with a cellphone while talking with his mom .,3.0,4.0,4.0,3.6667,0.4982,0.8064,1.0,0.8723,0.8863,0.859,0.3777,0.4247,0.4982,0.4338,0.3777,0.2866,0.2979

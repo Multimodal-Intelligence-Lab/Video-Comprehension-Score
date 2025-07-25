@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man wearing a yellow shirt , standing up , plays a trombone",0.1638,a guy in a pink shirt is playing a song on a trumpet .,5.0,5.0,5.0,5.0,0.6842,0.904,0.9599,0.8723,0.8567,0.8307,0.6507,0.379,0.6099,0.2919,0.5685,0.347,0.1638
+2,a man is playing a song on a trombone in a room .,0.4785,a man is standing and playing a tune on a trombone,5.0,4.0,5.0,4.6667,0.6585,0.9239,0.941,0.8047,0.7867,0.7518,0.6303,0.4864,0.5621,0.5182,0.5261,0.4309,0.4785
+3,a man is playing a song on a trombone in a room .,0.4785,a man is standing and playing a tune on a trombone,5.0,4.0,5.0,4.6667,0.6585,0.9239,0.941,0.8047,0.7867,0.7518,0.6303,0.4864,0.5621,0.5182,0.5261,0.4309,0.4785
+4,"young man plays a few notes on trombone , pauses to look at sheet music on stand and plays more notes .",0.2855,a young man plays several different notes in sequence on a trombone .,5.0,4.0,4.0,4.3333,0.7602,0.9099,0.9333,0.7735,0.8074,0.7601,0.7365,0.2767,0.7045,0.3078,0.6752,0.2534,0.2855
+5,a man is playing a trombone in a concert hall .,0.0469,a person playing a trumpet in an empty living room .,4.0,4.0,4.0,4.0,0.6399,0.9024,0.9714,0.8408,0.8028,0.7649,0.6009,0.2368,0.5383,0.2007,0.4884,0.0899,0.0469
+6,a young man is playing the trombone and reading music from the sheet music on the stand .,0.4595,a young man plays several different notes in sequence on a trombone .,5.0,3.0,5.0,4.3333,0.7032,0.9217,1.0,1.0,1.0,1.0,0.6588,0.4821,0.6707,0.4936,0.6215,0.4472,0.4595

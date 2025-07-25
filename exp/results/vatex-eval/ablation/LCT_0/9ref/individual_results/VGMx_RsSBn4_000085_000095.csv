@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a rock band is playing on a stage with three cellos and a drum set .,0.6533,a band playing rock and roll on cellos and drums .,5.0,5.0,5.0,5.0,0.8509,0.9292,0.9333,0.7465,0.7136,0.6918,0.8356,0.6977,0.817,0.6584,0.8031,0.6932,0.6533
+2,a group of people are playing a song on stage .,0.6608,a group of musicians are rocking out to their instruments on stage .,5.0,5.0,5.0,5.0,0.7436,0.9167,0.9677,0.9517,0.8802,0.8605,0.7014,0.6824,0.7351,0.7087,0.6914,0.6301,0.6608
+3,a man is playing a violin while another man is playing the cello .,0.0,a band with several large cellos are playing on a stage .,4.0,4.0,4.0,4.0,0.4409,0.8638,0.9787,0.8241,0.7802,0.7069,0.3527,0.115,0.3245,0.0692,0.1909,0.0,0.0
+4,"a group of people are playing instruments , led by a conductor , on stage .",0.0056,multiple members of a rock group are performing on stage .,4.0,4.0,4.0,4.0,0.6739,0.9138,0.928,0.9041,0.8197,0.7729,0.6431,0.3545,0.6172,0.1869,0.5635,0.3236,0.0056
+5,a musical band performing onstage with musical instruments,0.3672,multiple members of a rock group are performing on stage .,5.0,5.0,5.0,5.0,0.8362,0.9153,0.9404,0.7109,0.7837,0.7132,0.821,0.3306,0.6755,0.4551,0.6186,0.2493,0.3672
+6,a group plays stringed instruments on a stage together .,0.5336,a band playing all their musical instruments on a stage as a group .,5.0,5.0,4.0,4.6667,0.661,0.9133,0.941,0.8828,0.8789,0.8447,0.6289,0.5763,0.6257,0.5741,0.5792,0.5361,0.5336

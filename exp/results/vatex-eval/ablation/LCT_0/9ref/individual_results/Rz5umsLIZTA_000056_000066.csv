@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy is standing at a table blowing out candles on a cake .,0.4433,a young man blowing out candles on his birthday cake .,5.0,5.0,4.0,4.6667,0.7361,0.8935,0.9139,0.7109,0.7758,0.749,0.7008,0.4573,0.6832,0.5026,0.6409,0.3926,0.4433
+2,a young boy blows out candles on a cake while a woman watches .,0.6325,a young man blowing out candles on his birthday cake .,5.0,5.0,5.0,5.0,0.7314,0.9007,0.9599,0.8241,0.8114,0.7907,0.7018,0.6741,0.7202,0.669,0.6894,0.6382,0.6325
+3,a woman is sitting at a table and blowing out candles on a cake .,0.3113,the lady surprises the guy and has him blow his candles .,4.0,4.0,4.0,4.0,0.5917,0.8719,1.0,0.8408,0.827,0.7919,0.5148,0.437,0.5266,0.4276,0.4304,0.3226,0.3113
+4,a man is sitting in front of a birthday cake and blows the candles .,0.5288,a man is standing near a table on which is a birthday cake with many lit canldes and he blows on them .,5.0,4.0,5.0,4.6667,0.7283,0.9296,0.9665,0.7408,0.691,0.6373,0.7077,0.4797,0.7078,0.5547,0.6683,0.4505,0.5288
+5,a man is blowing out the candle on a cake .,0.7426,a young man blowing out candles on his birthday cake .,5.0,5.0,5.0,5.0,0.7559,0.9481,1.0,1.0,1.0,1.0,0.7426,0.7559,0.7559,0.7559,0.7426,0.7426,0.7426
+6,a man sits at a table and blows out the candle on his cake .,0.4979,a young man blowing out candles on his birthday cake .,5.0,4.0,5.0,4.6667,0.719,0.8863,0.9321,0.6828,0.7588,0.7278,0.683,0.5056,0.6572,0.555,0.6132,0.4421,0.4979

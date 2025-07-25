@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"some men remove a long item from the large bed of a yellow truck , while engine noises are heard in the background",0.0,several people are working in a metal yard loading and unloading strips of metal .,5.0,4.0,5.0,4.6667,0.3345,0.7612,0.9579,0.6194,0.6904,0.5934,0.1258,0.0,0.3053,0.0362,0.0874,0.0,0.0
+2,a group of people are unloadinging a garbage truck in a parking lot .,0.0,several people are working in a metal yard loading and unloading strips of metal .,2.0,4.0,4.0,3.3333,0.3599,0.8176,0.9243,0.6059,0.6248,0.5411,0.2171,0.0,0.3075,0.0,0.153,0.0,0.0
+3,a group of people are loading a garbage truck into the back of a truck .,0.0,several people are working in a metal yard loading and unloading strips of metal .,3.0,3.0,2.0,2.6667,0.3369,0.8227,0.9243,0.7224,0.7354,0.6783,0.194,0.0821,0.2826,0.0983,0.128,0.0,0.0
+4,a truck lifts and empties the contents of a dumpster as a man looks on .,0.0,several people are working in a metal yard loading and unloading strips of metal .,2.0,1.0,4.0,2.3333,0.1996,0.7386,0.9493,0.7591,0.7811,0.7036,0.0,0.0,0.1568,0.0,0.0,0.0,0.0
+5,a man uses a forklift to remove a large item from a truck .,0.0,several people are working in a metal yard loading and unloading strips of metal .,4.0,4.0,4.0,4.0,0.1839,0.7464,0.9744,0.6667,0.7083,0.6092,0.0,0.0,0.1624,0.0,0.0,0.0,0.0
+6,a man is operating a forklift to unload a semi truck trailer .,0.0,several people are working in a metal yard loading and unloading strips of metal .,1.0,1.0,2.0,1.3333,0.2511,0.7893,0.8831,0.5008,0.4948,0.3599,0.0511,0.0,0.1519,0.0,0.0,0.0,0.0

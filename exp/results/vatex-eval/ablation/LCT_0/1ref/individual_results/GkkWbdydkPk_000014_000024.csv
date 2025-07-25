@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man explains how to create balloon animals by squeezing and twisting a balloon .,0.6747,a man explains how to make balloon art by twisting a long purple balloon into shapes .,5.0,4.0,4.0,4.3333,0.7558,0.9033,0.9518,0.8067,0.831,0.8129,0.7297,0.6973,0.7435,0.7062,0.716,0.6649,0.6747
+2,a person is demonstrating how to make a balloon animal .,0.3144,a man explains how to make balloon art by twisting a long purple balloon into shapes .,5.0,4.0,4.0,4.3333,0.628,0.8514,0.8426,0.6407,0.6372,0.5739,0.5631,0.4194,0.5585,0.4162,0.4815,0.3181,0.3144
+3,a man is demonstrating how to make a piece of paper .,0.0,a man explains how to make balloon art by twisting a long purple balloon into shapes .,4.0,4.0,4.0,4.0,0.4083,0.8308,0.8904,0.6125,0.6343,0.5598,0.2877,0.0339,0.3354,0.0672,0.2,0.0,0.0
+4,a mans walks viewers through how to create a balloon animal .,0.3831,a man explains how to make balloon art by twisting a long purple balloon into shapes .,5.0,3.0,3.0,3.6667,0.6305,0.8239,0.871,0.7316,0.727,0.6687,0.5515,0.4949,0.5758,0.4917,0.4851,0.387,0.3831
+5,the guy is demonstrating how to make balloon animals and discussing the technique .,0.5332,a man explains how to make balloon art by twisting a long purple balloon into shapes .,5.0,4.0,4.0,4.3333,0.6581,0.8229,0.955,0.8826,0.8898,0.8661,0.5846,0.6127,0.6421,0.6158,0.565,0.5293,0.5332
+6,a balloon maker demonstrating how to make different items with balloons,0.2009,a man explains how to make balloon art by twisting a long purple balloon into shapes .,5.0,5.0,5.0,5.0,0.6299,0.8443,0.8889,0.5292,0.5512,0.4684,0.5617,0.2526,0.5837,0.2875,0.5069,0.1617,0.2009

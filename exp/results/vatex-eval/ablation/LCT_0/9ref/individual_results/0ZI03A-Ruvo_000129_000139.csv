@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman in a chair at a beauty parlor while a worker applies wax to her eyebrow area,0.3018,woman getting her eyebrows waxed by a man while talking .,5.0,5.0,5.0,5.0,0.7747,0.8526,0.9885,0.7984,0.8367,0.7921,0.7357,0.3906,0.7527,0.3905,0.7099,0.3019,0.3018
+2,a woman is sitting in a chair and she is getting her hair pierced .,0.3838,a woman is sitting in a chair in a salon getting her face waxed .,3.0,4.0,3.0,3.3333,0.5373,0.9093,0.9831,0.9766,0.9697,0.9606,0.4911,0.4385,0.528,0.4397,0.4809,0.3825,0.3838
+3,a man is sitting on a chair and getting his hair shaved .,0.1913,a woman is sitting in a chair in a salon getting her face waxed .,3.0,4.0,2.0,3.0,0.4148,0.8762,0.9804,0.8241,0.8258,0.8012,0.3321,0.2899,0.4031,0.2914,0.3188,0.1896,0.1913
+4,a man seated down on a couch is having his eyebrow waxed .,0.2666,a woman is sitting in a chair in a salon getting her face waxed .,2.0,4.0,3.0,3.0,0.6313,0.8749,1.0,0.8819,0.8778,0.8519,0.5786,0.3731,0.4627,0.3837,0.3775,0.2541,0.2666
+5,a woman gets her eyebrows cleaned in preparation for waxing presumably .,0.4676,woman getting her eyebrows waxed by a man while talking .,5.0,5.0,5.0,5.0,0.6677,0.8729,0.9599,0.7296,0.7574,0.6839,0.6193,0.5445,0.6538,0.5353,0.6034,0.4782,0.4676
+6,a man at at a medical office is laying back and smiling while a woman is applying some wax,0.0,a woman is laying down and she is getting teased in a wax room .,4.0,4.0,4.0,4.0,0.5738,0.8473,0.95,0.8216,0.8336,0.7844,0.4969,0.1529,0.4418,0.1651,0.3412,0.0,0.0

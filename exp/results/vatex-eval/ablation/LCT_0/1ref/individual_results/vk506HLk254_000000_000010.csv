@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,kids are seen pointing toy light flashing pistols against each other .,0.1062,several young children are playing laser tag in a dark room .,5.0,5.0,5.0,5.0,0.4346,0.7965,0.9275,0.8066,0.7943,0.7417,0.2901,0.299,0.3904,0.2881,0.2347,0.1199,0.1062
+2,a group of people are playing a game of laser tag .,0.5506,several young children are playing laser tag in a dark room .,4.0,5.0,5.0,4.6667,0.6585,0.8783,0.9333,0.8879,0.8651,0.8464,0.6112,0.6154,0.6341,0.6053,0.5835,0.5622,0.5506
+3,a group of kids are playing a game of laser tag .,0.7104,several young children are playing laser tag in a dark room .,5.0,5.0,5.0,5.0,0.774,0.9024,0.9333,0.8879,0.8651,0.8505,0.7495,0.7454,0.7578,0.7387,0.7316,0.7179,0.7104
+4,several kids are in a yard playing laser tag around obstacles .,0.5408,several young children are playing laser tag in a dark room .,5.0,5.0,4.0,4.6667,0.6297,0.9072,0.9773,0.8153,0.889,0.8776,0.5918,0.5458,0.6211,0.5834,0.5823,0.4993,0.5408
+5,several toddlers are in a yard playing team laser tag,0.3802,several young children are playing laser tag in a dark room .,4.0,4.0,3.0,3.6667,0.574,0.9009,0.9419,0.7612,0.763,0.7369,0.5272,0.4404,0.5477,0.4416,0.498,0.3788,0.3802
+6,a group of kids playing dodgeball in a indoor field .,0.1845,several young children are playing laser tag in a dark room .,2.0,4.0,3.0,3.0,0.4154,0.83,0.9655,0.8589,0.8637,0.8358,0.2957,0.3194,0.3945,0.3232,0.2705,0.18,0.1845

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man is lifting a very large , heavy-looking barbell on his back .",0.0597,"in a gym with someone spotting him , a man is lifting weights performing squats in a squat rack .",5.0,5.0,5.0,5.0,0.4448,0.8175,0.8974,0.7084,0.7224,0.6604,0.3208,0.2162,0.3813,0.2314,0.2431,0.0411,0.0597
+2,a man is in a gym and is lifting a heavy weight .,0.0,"in a gym with someone spotting him , a man is lifting weights performing squats in a squat rack .",5.0,5.0,5.0,5.0,0.6911,0.8932,0.78,0.3253,0.2788,0.1926,0.6542,0.0238,0.604,0.0,0.5567,0.0,0.0
+3,a man in a gym is lifting weights while another man spots him .,0.0582,"in a gym with someone spotting him , a man is lifting weights performing squats in a squat rack .",5.0,5.0,5.0,5.0,0.7627,0.9036,0.7226,0.3584,0.3055,0.2314,0.7374,0.1588,0.6363,0.0895,0.6238,0.1299,0.0582
+4,a man is weight lifting weights while in a gym setting .,0.0167,"in a gym with someone spotting him , a man is lifting weights performing squats in a squat rack .",5.0,5.0,5.0,5.0,0.7048,0.9001,0.7545,0.3788,0.3392,0.2659,0.672,0.1187,0.6087,0.0624,0.5653,0.0757,0.0167
+5,an man in the gym squats down and attempts to lift a weight up .,0.0,"in a gym with someone spotting him , a man is lifting weights performing squats in a squat rack .",5.0,5.0,5.0,5.0,0.7824,0.9066,0.7049,0.2209,0.1152,0.024,0.76,0.0042,0.6228,0.0,0.6117,0.0,0.0
+6,a guy in a gym is lifting a heavy weight .,0.0,"in a gym with someone spotting him , a man is lifting weights performing squats in a squat rack .",5.0,5.0,5.0,5.0,0.6581,0.8651,0.8125,0.3253,0.2861,0.1749,0.6049,0.0,0.5793,0.0,0.5137,0.0,0.0

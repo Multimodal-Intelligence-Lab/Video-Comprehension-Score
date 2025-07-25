@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of sportsmen and women cheering a javelin game . a man throws the stone,0.0,a man holds a ball and throws it far onto a field .,4.0,3.0,4.0,3.6667,0.335,0.8099,0.7607,0.4432,0.3841,0.2395,0.1789,0.0,0.1258,0.0,0.0,0.0,0.0
+2,a group of people are playing a game of baseball .,0.0,a man holds a ball and throws it far onto a field .,4.0,2.0,4.0,3.3333,0.2441,0.7723,0.8272,0.6325,0.5281,0.3889,0.0211,0.0,0.0861,0.0,0.0,0.0,0.0
+3,a man is throwing a javelin at a track and field event .,0.1211,a man holds a ball and throws it far onto a field .,4.0,4.0,4.0,4.0,0.5053,0.8523,0.9199,0.7018,0.6603,0.6015,0.4196,0.2952,0.4622,0.2509,0.3691,0.1731,0.1211
+4,a man throws a ball while another hits the ball and others chase it .,0.0,a man holds a ball and throws it far onto a field .,4.0,2.0,2.0,2.6667,0.5833,0.8645,0.9134,0.4867,0.4526,0.3668,0.5179,0.12,0.5438,0.0615,0.4722,0.009,0.0
+5,a man throws a ball in a track and field competition and is congratulated by another man .,0.0,a man holds a ball and throws it far onto a field .,5.0,5.0,5.0,5.0,0.5568,0.8861,0.793,0.4214,0.3704,0.2895,0.4998,0.0,0.441,0.0,0.3692,0.0,0.0
+6,a guy throws a ball for a track and field match .,0.3486,a man holds a ball and throws it far onto a field .,5.0,5.0,5.0,5.0,0.6693,0.8819,0.9199,0.6413,0.5928,0.5383,0.625,0.464,0.6405,0.3917,0.5924,0.4153,0.3486

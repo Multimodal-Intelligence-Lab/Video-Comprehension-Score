@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,someone is showing the inside tag and outside of a hat .,0.0,"a baseball cap with the logo "" obey "" in the inside tag",5.0,5.0,5.0,5.0,0.4737,0.8427,0.7703,0.4601,0.5761,0.497,0.3754,0.0,0.3167,0.0863,0.1891,0.0,0.0
+2,a man is demonstrating how to use a baseball cap .,0.0,"a baseball cap with the logo "" obey "" in the inside tag",5.0,4.0,2.0,3.6667,0.4174,0.8486,0.6452,0.65,0.2951,0.1693,0.3135,0.1037,0.097,0.0,0.0,0.0,0.0
+3,a person is showing off a hat that is on a table .,0.0,"a baseball cap with the logo "" obey "" in the inside tag",4.0,4.0,4.0,4.0,0.2323,0.7645,0.963,0.6408,0.539,0.397,0.0,0.0,0.2028,0.0,0.0,0.0,0.0
+4,a person picks up a fitted hat off a bed and examines it,0.0,"a baseball cap with the logo "" obey "" in the inside tag",4.0,4.0,4.0,4.0,0.289,0.7645,0.8333,0.5445,0.6587,0.5535,0.07,0.0,0.1468,0.0,0.0,0.0,0.0
+5,a person is showing and talking about some baseball caps they own .,0.0,"a baseball cap with the logo "" obey "" in the inside tag",4.0,4.0,2.0,3.3333,0.4,0.8408,0.618,0.6978,0.3109,0.1804,0.2864,0.1401,0.0291,0.0,0.0,0.0,0.0
+6,a man is showing off two hats he has and is talking about them .,0.0,"a baseball cap with the logo "" obey "" in the inside tag",4.0,4.0,3.0,3.6667,0.1846,0.7532,0.9677,0.8408,0.7996,0.734,0.0,0.0302,0.1574,0.0,0.0,0.0,0.0

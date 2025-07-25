@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is using some large piece of material to build a she in the yard,0.3514,a guy is in his yard putting together a shed .,5.0,5.0,5.0,5.0,0.6712,0.8347,1.0,0.8792,0.929,0.9149,0.5973,0.5436,0.6051,0.435,0.5164,0.441,0.3514
+2,a man is standing in front of a dumpster and talking about it .,0.0,a man puts together the a building utilizing a snap together kit .,4.0,1.0,2.0,2.3333,0.1461,0.8345,1.0,1.0,1.0,1.0,0.0,0.0818,0.1407,0.0818,0.0,0.0,0.0
+3,a man is opening a box with a box and a box .,0.0907,a man is handling s large panel and another person is watching .,2.0,1.0,2.0,1.6667,0.2547,0.8196,1.0,1.0,1.0,1.0,0.0907,0.2547,0.2547,0.2547,0.0907,0.0907,0.0907
+4,"a time lapse shows a group of men outside , in the process of building a shed .",0.202,a guy is in his yard putting together a shed .,5.0,4.0,4.0,4.3333,0.4647,0.8465,0.975,0.8954,0.8676,0.8247,0.3454,0.4022,0.4229,0.3622,0.2993,0.252,0.202
+5,a group of people are fast framed as the build a shed in a yard .,0.2214,a group of people place metal paneling on the side of a structure .,4.0,1.0,3.0,2.6667,0.5711,0.8321,1.0,1.0,1.0,1.0,0.4846,0.3277,0.4702,0.3626,0.3633,0.192,0.2214
+6,two men begin work on installing a small shed adjacent to a building .,0.2406,two people are trying to install and put up several fence panels .,5.0,4.0,4.0,4.3333,0.4775,0.8262,1.0,1.0,1.0,1.0,0.3435,0.3595,0.438,0.3763,0.293,0.2203,0.2406

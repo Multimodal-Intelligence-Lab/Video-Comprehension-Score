@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a baby crawls on a floor and grabs a building block with his hand .,0.6294,a baby crawling on the floor towards some leggo toys,5.0,5.0,5.0,5.0,0.7195,0.854,1.0,0.8723,0.8863,0.8669,0.6716,0.6784,0.7195,0.6835,0.6716,0.6235,0.6294
+2,a little girl is playing with marbles on the floor .,0.0,a baby crawling on the floor towards some leggo toys,3.0,1.0,4.0,2.6667,0.3348,0.8058,0.8136,0.5954,0.3752,0.2246,0.1745,0.0,0.1824,0.0,0.0,0.0,0.0
+3,a little boy is sitting on the floor and playing with a toy .,0.0,a baby crawling on the floor towards some leggo toys,4.0,4.0,4.0,4.0,0.4051,0.8412,0.8953,0.4517,0.6004,0.525,0.2929,0.0,0.3356,0.0093,0.2102,0.0,0.0
+4,a baby smiles as he walks behind a toy then crawls .,0.0,a baby crawling on the floor towards some leggo toys,4.0,1.0,5.0,3.3333,0.5325,0.8634,0.75,0.4,0.5217,0.446,0.4585,0.0,0.3767,0.1019,0.278,0.0,0.0
+5,a child is sitting on the floor next to a good-size pile of legos .,0.1713,a baby crawling on the floor towards some leggo toys,4.0,4.0,4.0,4.0,0.5476,0.8353,0.9787,0.6652,0.6535,0.5851,0.4585,0.32,0.5378,0.3077,0.4467,0.1859,0.1713
+6,a baby throws a ball and crawls after it on the ground,0.0,a baby crawling on the floor towards some leggo toys,2.0,1.0,4.0,2.3333,0.5691,0.839,0.7636,0.4569,0.1434,0.0,0.4864,0.0457,0.4357,0.0,0.3275,0.0,0.0

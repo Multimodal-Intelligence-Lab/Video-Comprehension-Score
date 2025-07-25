@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman sings karaoke in another language in a bar .,0.304,a woman sings into a microphone in a crowded place .,5.0,5.0,5.0,5.0,0.5114,0.8488,1.0,0.8408,0.827,0.7962,0.4244,0.4189,0.5114,0.4092,0.4244,0.3154,0.304
+2,a group of people are dancing in a dark room .,0.0,a woman sings into a microphone in a crowded place .,4.0,4.0,4.0,4.0,0.0991,0.7445,0.9375,0.6768,0.7861,0.7127,0.0,0.0,0.039,0.0,0.0,0.0,0.0
+3,a group of people are in a dark room and a woman is singing karaoke .,0.0,a woman sings into a microphone in a crowded place .,5.0,5.0,5.0,5.0,0.4727,0.8179,0.5943,0.6416,0.3617,0.2196,0.3554,0.1782,0.1128,0.0,0.0,0.0,0.0
+4,a woman is singing a song into a microphone while a crowd watches her .,0.8269,a woman sings into a microphone in a crowded place .,5.0,5.0,5.0,5.0,0.8445,0.8983,1.0,1.0,1.0,1.0,0.8269,0.8445,0.8445,0.8445,0.8269,0.8269,0.8269
+5,a woman is singing on stage to a crowd of folks,0.7113,a woman sings into a microphone in a crowded place .,4.0,4.0,4.0,4.0,0.7511,0.8621,1.0,1.0,1.0,1.0,0.7113,0.7511,0.7511,0.7511,0.7113,0.7113,0.7113
+6,a woman is singing in front of a large crowd .,0.7078,a woman sings into a microphone in a crowded place .,5.0,5.0,5.0,5.0,0.7865,0.8568,0.9375,0.7823,0.8529,0.8283,0.7508,0.7232,0.7722,0.7496,0.7342,0.6814,0.7078

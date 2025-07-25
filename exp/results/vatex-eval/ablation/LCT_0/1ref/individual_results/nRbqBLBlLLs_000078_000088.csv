@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a pair of hands showing an atm withdrawal made by an attacker .,0.1986,a person stands at an atm holding money and then presses an atm button to receive a receipt and card .,5.0,5.0,5.0,5.0,0.5201,0.8011,0.9109,0.719,0.7475,0.6848,0.4009,0.3325,0.4731,0.358,0.3423,0.1667,0.1986
+2,a man is demonstrating how to use an atm machine .,0.3545,a person stands at an atm holding money and then presses an atm button to receive a receipt and card .,4.0,5.0,5.0,4.6667,0.5473,0.8105,0.9697,0.8845,0.8652,0.8337,0.4415,0.4882,0.5332,0.4768,0.4241,0.3686,0.3545
+3,a man is demonstrating how to use an atm machine .,0.3545,a person stands at an atm holding money and then presses an atm button to receive a receipt and card .,4.0,5.0,5.0,4.6667,0.5473,0.8105,0.9697,0.8845,0.8652,0.8337,0.4415,0.4882,0.5332,0.4768,0.4241,0.3686,0.3545
+4,a money counting machine operates while a person off camera takes the counted bills from it .,0.0,a person stands at an atm holding money and then presses an atm button to receive a receipt and card .,4.0,5.0,4.0,4.3333,0.3977,0.798,0.8538,0.3743,0.3834,0.2274,0.2453,0.0,0.2946,0.0,0.116,0.0,0.0
+5,"a hand reaches for bundles of dollar bills after counting machines separates , counts and records money .",0.0,a person stands at an atm holding money and then presses an atm button to receive a receipt and card .,4.0,3.0,3.0,3.3333,0.4118,0.7901,0.8706,0.4395,0.5841,0.4736,0.2556,0.0,0.3244,0.0,0.1449,0.0,0.0
+6,money flips in a machine as it is counted with stacks of counted bills around it .,0.0,a person stands at an atm holding money and then presses an atm button to receive a receipt and card .,3.0,3.0,2.0,2.6667,0.3372,0.7731,0.9478,0.7797,0.8143,0.7599,0.1427,0.15,0.3007,0.1861,0.0955,0.0,0.0

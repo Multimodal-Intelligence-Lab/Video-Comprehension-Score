@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two boys out side at a park flying a kite in the sky .,0.0,a couple of people flying kites at a park outside,5.0,5.0,4.0,4.6667,0.7256,0.8859,0.8603,0.3841,0.2185,0.1178,0.6903,0.1512,0.6811,0.0,0.64,0.1077,0.0
+2,a person is flying a kite in the air with a kite .,0.3934,a couple of people flying kites at a park outside,5.0,4.0,5.0,4.6667,0.551,0.8949,0.9333,0.8946,0.8271,0.8068,0.4983,0.4981,0.5189,0.4571,0.4624,0.4392,0.3934
+3,a person is flying a kite on a windy day .,0.3484,a couple of people flying kites at a park outside,5.0,5.0,5.0,5.0,0.5298,0.8726,1.0,0.8408,0.827,0.8018,0.4611,0.4408,0.5298,0.4315,0.4611,0.3591,0.3484
+4,a young boy drops the handle to a kite that could fly away .,0.0,a couple of people flying kites at a park outside,4.0,4.0,4.0,4.0,0.3315,0.8211,0.9164,0.6937,0.6844,0.6157,0.1858,0.0363,0.2705,0.0233,0.1115,0.0,0.0
+5,in a field a boy is winding the propleer of a kite and letting it fly .,0.0,a couple of people flying kites at a park outside,5.0,4.0,4.0,4.3333,0.4592,0.8213,0.7964,0.5199,0.3818,0.2474,0.3416,0.0,0.321,0.0,0.1733,0.0,0.0
+6,the camera man is at a park with a group of people filming a kite flyer .,0.0,a couple of people flying kites at a park outside,4.0,4.0,4.0,4.0,0.6484,0.8697,0.6829,0.5108,0.3767,0.2833,0.5957,0.2456,0.4852,0.0387,0.408,0.1788,0.0

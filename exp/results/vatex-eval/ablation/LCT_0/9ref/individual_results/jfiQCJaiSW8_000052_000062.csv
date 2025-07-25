@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,someone uses a vacuum cleaner to clean crumbs off the floor .,0.6081,a person was using a vacuum cleaner to clean the grains off the carpet,5.0,5.0,5.0,5.0,0.6468,0.9013,1.0,1.0,1.0,1.0,0.6081,0.6468,0.6468,0.6468,0.6081,0.6081,0.6081
+2,a person is using a vacuum cleaner to clean a carpet .,0.7164,a person was using a vacuum cleaner to clean the grains off the carpet,5.0,5.0,5.0,5.0,0.7219,0.9804,1.0,1.0,1.0,1.0,0.7164,0.7219,0.7219,0.7219,0.7164,0.7164,0.7164
+3,a person is using a vacuum cleaner to clean the carpet .,0.7158,a person was using a vacuum cleaner to clean the grains off the carpet,5.0,5.0,5.0,5.0,0.7214,0.9804,1.0,1.0,1.0,1.0,0.7158,0.7214,0.7214,0.7214,0.7158,0.7158,0.7158
+4,a person is vacuuming the hardwood floors with their vacuum .,0.1257,a person is vacuuming what appears to be small rocks or pebbles on a carpet floor .,4.0,4.0,4.0,4.0,0.544,0.8934,0.8545,0.8512,0.7312,0.6749,0.4754,0.3629,0.4113,0.2396,0.3061,0.2675,0.1257
+5,a person is using a vacuum to clean a light colored carpet .,0.5891,a person was using a vacuum cleaner to clean the grains off the carpet,5.0,5.0,4.0,4.6667,0.665,0.9398,1.0,0.7888,0.8673,0.8588,0.6436,0.573,0.6546,0.6138,0.6324,0.5457,0.5891
+6,a person uses a small vacuum cleaner to sweep up dust on a dark brown hardwood floor .,0.3538,a person was using a vacuum cleaner to clean the grains off the carpet,4.0,4.0,4.0,4.0,0.5548,0.8675,0.9738,0.893,0.9099,0.8961,0.478,0.4288,0.5259,0.4395,0.4441,0.3415,0.3538

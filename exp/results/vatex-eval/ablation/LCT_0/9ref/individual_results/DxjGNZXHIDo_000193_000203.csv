@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person touches illuminated buttons on a large electronic machine .,0.3977,a man pushes various buttons on some type of gaming console .,4.0,5.0,4.0,4.3333,0.6188,0.8507,1.0,0.8792,0.929,0.9124,0.5506,0.4838,0.539,0.5114,0.4528,0.3727,0.3977
+2,a person is showing how to use a remote control controller .,0.476,a man is demonstrating how to operate an electronic gadget .,4.0,5.0,4.0,4.3333,0.5835,0.8137,1.0,1.0,1.0,1.0,0.476,0.5835,0.5835,0.5835,0.476,0.476,0.476
+3,a person is showing how to use a video game controller .,0.489,a man is hitting buttons on a video game and showing how to play,5.0,5.0,5.0,5.0,0.7196,0.8935,1.0,1.0,1.0,1.0,0.6862,0.6157,0.6741,0.5269,0.6353,0.5699,0.489
+4,a person presses keys on a gaming controller that is attached to a small video screen .,0.3703,person pressing several keys on a joystick as the buttons light up .,4.0,3.0,5.0,4.0,0.6391,0.8373,0.975,0.8284,0.8371,0.7831,0.569,0.4705,0.5978,0.4728,0.5196,0.3676,0.3703
+5,a man is playing a pinball machine and the lights are activated,0.2951,the man is playing music based on what lights light up on his board .,4.0,4.0,4.0,4.0,0.4543,0.8735,1.0,1.0,1.0,1.0,0.3753,0.3945,0.4543,0.3843,0.3753,0.2838,0.2951
+6,a person is showing a device with a joystick and multiple colored buttons .,0.3091,someone with a very strange console tries to press a sequence of buttons .,5.0,4.0,5.0,4.6667,0.6791,0.8824,0.9697,0.8228,0.8673,0.8376,0.6363,0.456,0.6213,0.4357,0.5708,0.3243,0.3091

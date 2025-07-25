@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person uses a machine to press wrinkles out of a piece of fabric .,0.6513,someone is using a large machine that pushes down and irons your clothes .,5.0,5.0,5.0,5.0,0.8095,0.9026,1.0,1.0,1.0,1.0,0.7889,0.6815,0.7829,0.7098,0.7595,0.6173,0.6513
+2,a woman is demonstrating how to fold a piece of clothing .,0.1443,someone is using a large machine that pushes down and irons your clothes .,4.0,5.0,4.0,4.3333,0.4253,0.853,1.0,1.0,1.0,1.0,0.3263,0.3269,0.3274,0.3269,0.2115,0.1443,0.1443
+3,a woman is demonstrating how to properly fold a piece of paper .,0.0,a person puts a sheet into a machine then pushes the machine down to press the sheet .,3.0,4.0,4.0,3.6667,0.3317,0.838,1.0,1.0,1.0,1.0,0.2025,0.1916,0.2011,0.1916,0.0466,0.0,0.0
+4,a man is ironing his clothes on a ironing board .,0.3964,using an iron press a woman irons out a piece of fabric .,4.0,5.0,4.0,4.3333,0.6377,0.8866,1.0,1.0,1.0,1.0,0.5913,0.5175,0.6118,0.5175,0.5621,0.3964,0.3964
+5,a man was showing how he was pressing the clothes and folding the clothes,0.2503,a person lifts up the upper part of a steam press and flips the fabric that was in it to its other side .,4.0,5.0,4.0,4.3333,0.5623,0.8669,1.0,0.9478,0.9216,0.9013,0.4951,0.3979,0.5247,0.3993,0.4236,0.2699,0.2503
+6,a woman is standing in front of an ironing board and ironing a shirt .,0.071,using an iron press a woman irons out a piece of fabric .,5.0,4.0,5.0,4.6667,0.6184,0.8577,0.9744,0.8441,0.8664,0.8257,0.5408,0.1493,0.5128,0.1876,0.4137,0.0,0.071

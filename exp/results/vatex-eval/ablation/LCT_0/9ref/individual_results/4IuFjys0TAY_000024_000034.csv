@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,four boys are shooting a basketball into the basket as they bounce on a trampoline .,0.6602,four young boys play a game of basketball while jumping on a trampoline .,5.0,5.0,5.0,5.0,0.9678,0.9632,0.9569,0.6747,0.6871,0.6517,0.9666,0.6498,0.9257,0.6631,0.9173,0.6467,0.6602
+2,two girls are jumping on a trampoline and one of them is jumping on the trampoline .,0.3865,a group of children are jumping on a trampoline and playing basketball .,4.0,4.0,4.0,4.0,0.5549,0.8754,0.9388,0.9638,0.882,0.8609,0.4882,0.5235,0.4882,0.4666,0.4114,0.452,0.3865
+3,a group of kids are playing on a trampoline and playing a game .,0.6536,a group of children are jumping on a trampoline and playing basketball .,5.0,5.0,5.0,5.0,0.7799,0.9346,0.9557,0.7025,0.8016,0.7877,0.7521,0.5982,0.7485,0.6762,0.7167,0.5881,0.6536
+4,a small boy throws a basketball into a hoop at an indoor court .,0.1069,four young boys play basketball on top of a trampoline,4.0,4.0,4.0,4.0,0.4648,0.8451,0.9555,0.8393,0.8581,0.8257,0.3486,0.2565,0.3619,0.2728,0.2069,0.0869,0.1069
+5,a young boy jumps and dunks a basketball into a backyard basketball net .,0.2146,four young boys bounce on a trampoline outside and one throws a basketball into a basketball net .,5.0,5.0,4.0,4.6667,0.5503,0.8873,0.9665,0.7223,0.7552,0.7077,0.4932,0.2546,0.5073,0.3031,0.4448,0.1554,0.2146
+6,a boy holds a basketball and shoots it at the hoop,0.0,a group of boys jumping on a trampoline play a game of basketball and one of the boys score a basket .,5.0,5.0,5.0,5.0,0.4922,0.8843,0.8775,0.6796,0.5448,0.4426,0.4258,0.1285,0.3757,0.0,0.2941,0.0,0.0

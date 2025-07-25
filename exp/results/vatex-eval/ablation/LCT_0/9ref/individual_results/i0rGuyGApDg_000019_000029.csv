@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a hand is shown with a skinny object while the holder opines on what it is,0.0,a man is taking a piece on metal form a tire .,5.0,2.0,5.0,4.0,0.2746,0.7952,0.9404,0.8284,0.8135,0.7569,0.0735,0.1244,0.2188,0.1083,0.0,0.0,0.0
+2,a person is using a tool to open a piece of wood .,0.0,a man is taking a piece on metal form a tire .,2.0,2.0,2.0,2.0,0.3005,0.8363,1.0,0.8879,0.911,0.8884,0.1636,0.1364,0.2713,0.1582,0.1286,0.0,0.0
+3,a person is using a hammer to break a piece of wood .,0.0,a man is taking a piece on metal form a tire .,2.0,2.0,2.0,2.0,0.1896,0.8356,1.0,0.8879,0.911,0.8878,0.0157,0.0664,0.171,0.09,0.0,0.0,0.0
+4,a man removes a tire from a car using tools .,0.4771,a man is taking a piece on metal form a tire .,2.0,2.0,2.0,2.0,0.7175,0.8426,0.9831,0.8153,0.837,0.7964,0.6569,0.4549,0.6691,0.5213,0.5981,0.4087,0.4771
+5,"a man is changing a tire by first removing the hubcap , then removing the tire .",0.3026,a man is taking a piece on metal form a tire .,3.0,2.0,2.0,2.3333,0.6211,0.8467,0.9412,0.6747,0.6867,0.6158,0.5524,0.4213,0.5833,0.4097,0.5077,0.3164,0.3026
+6,a guy is putting a boot on one tire and removing one off from another tire .,0.3013,a man is taking a piece on metal form a tire .,3.0,2.0,2.0,2.3333,0.5463,0.8402,0.9885,0.7653,0.8051,0.7519,0.4488,0.4071,0.5243,0.4249,0.4221,0.2797,0.3013

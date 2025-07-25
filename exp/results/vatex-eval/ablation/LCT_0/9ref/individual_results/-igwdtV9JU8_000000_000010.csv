@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man is walking his dog in the snow , he is talking to the camera and then lets his dog loose",0.4187,a man walks outside while it is snowing and throws his small dog into the snow .,5.0,4.0,5.0,4.6667,0.7516,0.9026,0.9298,0.7583,0.7258,0.6874,0.7248,0.5121,0.7264,0.4902,0.6969,0.4437,0.4187
+2,a man is walking in the snow with a dog in the snow .,0.8117,a man walks his dog outside in the snow and the dog jumps into the snow .,5.0,4.0,5.0,4.6667,0.8508,0.9545,0.9583,1.0,0.9078,0.8991,0.8437,0.8095,0.8443,0.8133,0.8369,0.8079,0.8117
+3,a man is walking in the snow and then walks away .,0.4228,a man walks his dog outside in the snow and the dog jumps into the snow .,4.0,4.0,4.0,4.0,0.5994,0.9142,0.9677,0.9387,0.8184,0.7987,0.5617,0.5461,0.586,0.4794,0.5471,0.4968,0.4228
+4,a man wearing a coat is kicking snow on the ground .,0.1187,a man takes his dog out side for a walk and throws the dog in to the snow the dog sinks .,4.0,3.0,4.0,3.6667,0.4234,0.8399,0.9202,0.8873,0.8713,0.8406,0.3083,0.3011,0.3691,0.2883,0.2367,0.1346,0.1187
+5,a man ran forward jumped and drop kicked the other man standing in the snow,0.0,a man walks his dog outside in the snow and the dog jumps into the snow .,2.0,2.0,2.0,2.0,0.4384,0.8542,0.9438,0.6711,0.7056,0.6392,0.336,0.0854,0.405,0.1247,0.2839,0.0,0.0
+6,a guy is walking around kicking balls of snow .,0.22,a man walks his dog outside in the snow and the dog jumps into the snow .,4.0,3.0,3.0,3.3333,0.5457,0.8491,0.9655,0.8465,0.8411,0.8105,0.465,0.3464,0.4357,0.3423,0.3326,0.2204,0.22

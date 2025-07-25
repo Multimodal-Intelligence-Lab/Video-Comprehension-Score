@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man performs a deadlift with various weights of different amounts .,0.1946,a young man is jerk-lifting a barbell loaded with weights over his head and then dropping them .,3.0,3.0,2.0,2.6667,0.496,0.8287,0.9859,0.7268,0.7551,0.7045,0.3918,0.3065,0.4888,0.3325,0.3832,0.1632,0.1946
+2,a man in a gym is lifting a heavy barbell over his head .,0.0,a young man is jerk-lifting a barbell loaded with weights over his head and then dropping them .,5.0,5.0,5.0,5.0,0.6435,0.8775,0.9333,0.4401,0.3972,0.3131,0.5937,0.13,0.6181,0.0633,0.5647,0.057,0.0
+3,a man in a gym lifts a heavy barbell over his head .,0.0,a young man is jerk-lifting a barbell loaded with weights over his head and then dropping them .,5.0,5.0,5.0,5.0,0.6461,0.8719,0.9333,0.4401,0.3972,0.3087,0.5941,0.1334,0.6208,0.067,0.5651,0.0575,0.0
+4,a man is lifting heavy weights into the air above his head .,0.5128,a young man is jerk-lifting a barbell loaded with weights over his head and then dropping them .,5.0,5.0,5.0,5.0,0.6176,0.8726,0.9831,0.8879,0.8996,0.8849,0.5617,0.5693,0.611,0.5749,0.5541,0.5064,0.5128
+5,a man is lifting a heavy set of weights inside of a gym .,0.2966,a young man is jerk-lifting a barbell loaded with weights over his head and then dropping them .,5.0,5.0,5.0,5.0,0.5089,0.8324,0.9555,0.8372,0.8387,0.8062,0.41,0.4134,0.486,0.4145,0.3826,0.2953,0.2966
+6,a man in a gym is lifting a heavy set of weights off the ground .,0.2885,a young man is jerk-lifting a barbell loaded with weights over his head and then dropping them .,5.0,5.0,5.0,5.0,0.5254,0.8374,1.0,0.7612,0.7966,0.7571,0.4332,0.3765,0.5254,0.4042,0.4332,0.2554,0.2885

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is using both hands to fluff up a girls' hair and give it volume .,0.0,"a man holds the top of a woman's head , and pulls his hand through her hair as he massages her scalp .",5.0,4.0,5.0,4.6667,0.4501,0.8288,0.8842,0.4936,0.5114,0.4104,0.3365,0.0,0.3781,0.0,0.2496,0.0,0.0
+2,a woman is massaging a woman ' s head while another woman is talking .,0.0,"a man holds the top of a woman's head , and pulls his hand through her hair as he massages her scalp .",4.0,3.0,4.0,3.6667,0.4779,0.857,0.743,0.4556,0.4198,0.323,0.3908,0.0,0.2972,0.0,0.18,0.0,0.0
+3,a woman is massaging another woman ' s head and neck .,0.0,"a man holds the top of a woman's head , and pulls his hand through her hair as he massages her scalp .",4.0,4.0,4.0,4.0,0.5819,0.8532,0.717,0.2365,0.141,0.0,0.51,0.0,0.4169,0.0,0.3166,0.0,0.0
+4,a man sitting in a chair has his head and hair massaged .,0.4355,"a man holds the top of a woman's head , and pulls his hand through her hair as he massages her scalp .",4.0,4.0,4.0,4.0,0.5753,0.8702,0.948,0.8536,0.8644,0.8442,0.512,0.5025,0.5521,0.5087,0.4853,0.4283,0.4355
+5,a man rubs and massages another mans head while sitting .,0.0,"a man holds the top of a woman's head , and pulls his hand through her hair as he massages her scalp .",4.0,4.0,4.0,4.0,0.5634,0.8551,0.7273,0.1813,0.0536,0.0,0.4894,0.0,0.3997,0.0,0.298,0.0,0.0
+6,a man is giving a massage to a woman .,0.0,"a man holds the top of a woman's head , and pulls his hand through her hair as he massages her scalp .",5.0,5.0,5.0,5.0,0.5562,0.8552,0.812,0.484,0.2129,0.0796,0.4811,0.0723,0.4535,0.0,0.3609,0.0,0.0

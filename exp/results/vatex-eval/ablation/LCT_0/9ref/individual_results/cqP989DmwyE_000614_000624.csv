@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman shows and explains the floral arrangement she has made .,0.861,a woman demonstrates and explains an elaborate floral arrangement .,4.0,5.0,5.0,4.6667,0.9328,0.9371,1.0,1.0,1.0,1.0,0.9283,0.8173,0.9107,0.8616,0.9102,0.8164,0.861
+2,a woman is demonstrating how to make a flower arrangement .,0.7995,a woman demonstrates and explains an elaborate floral arrangement .,5.0,5.0,5.0,5.0,0.9745,0.9654,1.0,1.0,1.0,1.0,0.9736,0.8183,0.876,0.8026,0.8626,0.8154,0.7995
+3,a man is demonstrating how to arrange a flower arrangement .,0.4911,a woman is describing how to properly set up a flower bouquet .,4.0,4.0,4.0,4.0,0.7274,0.8991,1.0,1.0,1.0,1.0,0.6968,0.5804,0.6809,0.5804,0.6451,0.4911,0.4911
+4,a woman is demostrating to viewers how to arrage flowers,0.7685,a woman demonstrates and explains an elaborate floral arrangement .,5.0,5.0,5.0,5.0,0.8984,0.8915,1.0,1.0,1.0,1.0,0.886,0.8094,0.8139,0.7963,0.8111,0.7835,0.7685
+5,a woman demonstrates the correct method of putting flowers into a vase .,0.6312,a woman is describing how to properly set up a flower bouquet .,2.0,5.0,5.0,4.0,0.7621,0.8545,1.0,1.0,1.0,1.0,0.7182,0.6848,0.7028,0.6848,0.6479,0.6312,0.6312
+6,a lady is in a flower shop explaining how to make a flower arrangement with sunflowers .,0.3399,a woman is describing how to properly set up a flower bouquet .,4.0,4.0,4.0,4.0,0.6615,0.8885,0.9139,0.6197,0.6542,0.5881,0.6102,0.4251,0.6296,0.4072,0.561,0.3525,0.3399

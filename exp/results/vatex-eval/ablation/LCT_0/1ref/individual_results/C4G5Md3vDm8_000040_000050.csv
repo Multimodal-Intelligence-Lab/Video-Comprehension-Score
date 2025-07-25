@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,multiple first responder vehicles are on the scene of a raging fire .,0.0,two people discuss a very large building fire that lights up the night sky .,5.0,5.0,5.0,5.0,0.3585,0.7862,0.9373,0.5925,0.6165,0.5122,0.184,0.0,0.3156,0.0,0.1295,0.0,0.0
+2,a group of people are standing around a fire fire .,0.0,two people discuss a very large building fire that lights up the night sky .,4.0,5.0,1.0,3.3333,0.361,0.8411,0.9262,0.6445,0.6641,0.6007,0.2403,0.0085,0.3101,0.0378,0.1798,0.0,0.0
+3,a fire is on fire and a man is blowing out the fire .,0.0,two people discuss a very large building fire that lights up the night sky .,4.0,3.0,2.0,3.0,0.2239,0.8339,0.7782,0.5703,0.5215,0.4262,0.0693,0.0,0.0027,0.0,0.0,0.0,0.0
+4,people are standing in a group around fire and then it lights up .,0.0699,two people discuss a very large building fire that lights up the night sky .,4.0,5.0,1.0,3.3333,0.3866,0.856,0.9262,0.7618,0.7704,0.7318,0.2835,0.1948,0.3378,0.2038,0.2264,0.0594,0.0699
+5,a group of fire fighters are extinguishing a large fire with a water hose .,0.0,two people discuss a very large building fire that lights up the night sky .,4.0,2.0,1.0,2.3333,0.2965,0.8312,0.9081,0.6817,0.6903,0.6275,0.1537,0.0,0.2253,0.0,0.068,0.0,0.0
+6,a fire burning out side in a open field and cloudy day .,0.0,two people discuss a very large building fire that lights up the night sky .,4.0,3.0,4.0,3.6667,0.3143,0.8108,0.8471,0.4762,0.4535,0.326,0.1543,0.0,0.1905,0.0,0.0017,0.0,0.0

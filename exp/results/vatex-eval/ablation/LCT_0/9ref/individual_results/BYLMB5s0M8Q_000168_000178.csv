@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of guys are sitting and one is presented with a basket by a woman .,0.1715,people are sitting on chairs and a man is handed flowers .,5.0,5.0,5.0,5.0,0.4017,0.8411,1.0,0.8723,0.8863,0.8604,0.2834,0.3141,0.4017,0.325,0.2657,0.1582,0.1715
+2,a man is standing in front of a group of people in a church .,0.0,a man has his name called by someone on a microphone and stands to receive a bouqet of flowers .,5.0,2.0,4.0,3.6667,0.3097,0.8386,0.9583,0.7414,0.836,0.7993,0.1664,0.0119,0.2384,0.098,0.0886,0.0,0.0
+3,a man is standing in front of a group of people in a church .,0.0,a man has his name called by someone on a microphone and stands to receive a bouqet of flowers .,5.0,4.0,4.0,4.3333,0.3097,0.8386,0.9583,0.7414,0.836,0.7993,0.1664,0.0119,0.2384,0.098,0.0886,0.0,0.0
+4,a group of men are standing on stage and a woman hands the man a mic .,0.0,a man has his name called by someone on a microphone and stands to receive a bouqet of flowers .,4.0,3.0,4.0,3.6667,0.4002,0.8874,0.954,0.9368,0.9453,0.9299,0.2747,0.1842,0.2296,0.1916,0.0608,0.0,0.0
+5,a woman hands a microphone to a guy that stands in front of a band .,0.0,a man has his name called by someone on a microphone and stands to receive a bouqet of flowers .,4.0,2.0,4.0,3.3333,0.349,0.8711,1.0,0.8723,0.8863,0.8476,0.2526,0.0188,0.2915,0.0343,0.1339,0.0,0.0
+6,"a man sits in an audience and speaks , a woman runs down a corridor and the man stands with a bunch of flowers next to a crowd .",0.1921,in a room a woman is is passing out flowers to the group .,4.0,4.0,4.0,4.0,0.5026,0.8804,0.9753,1.0,0.9804,0.976,0.4053,0.3504,0.4027,0.3373,0.269,0.2079,0.1921

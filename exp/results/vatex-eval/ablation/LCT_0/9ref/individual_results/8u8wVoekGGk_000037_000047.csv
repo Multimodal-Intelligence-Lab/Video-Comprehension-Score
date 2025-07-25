@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man with a black hoodie and sunglasses on sailboat .,0.0,a man records himself smiling while showing that he and his sailboat are successfully sailing across open water .,4.0,4.0,5.0,4.3333,0.5679,0.8739,0.928,0.7735,0.7395,0.6739,0.5056,0.114,0.4918,0.091,0.4185,0.0,0.0
+2,a group of people are in the ocean and they are parasailing in the ocean .,0.0,a man records himself smiling while showing that he and his sailboat are successfully sailing across open water .,3.0,4.0,3.0,3.3333,0.306,0.8159,1.0,0.8532,0.8764,0.838,0.1495,0.0988,0.2063,0.1227,0.0,0.0,0.0
+3,a man is parasailing in the ocean while a boat .,0.0472,a man is riding across the water in a boat .,4.0,4.0,4.0,4.0,0.5696,0.8795,1.0,0.8284,0.7513,0.7079,0.5051,0.3859,0.4978,0.1758,0.4226,0.2939,0.0472
+4,a man is on the choppy waters using a sail surfing piece of equipment,0.3032,a man on a small boat checks his sail and looks at the horizon .,5.0,5.0,3.0,4.3333,0.632,0.8295,1.0,1.0,1.0,1.0,0.5522,0.4319,0.5993,0.4319,0.5124,0.3032,0.3032
+5,a man is on the water in a boat trying to maneuver his way around .,0.2078,"a guy is driving a boat on open water , panning from his face , over the ocean and to the boat .",5.0,4.0,4.0,4.3333,0.7754,0.8982,0.9231,0.7071,0.7016,0.64,0.7499,0.3541,0.6965,0.3328,0.673,0.2744,0.2078
+6,a man is sailing on a boat as the sea is pretty quiet,0.6577,a man is sailing on a boat and the wind is blowing .,4.0,4.0,4.0,4.0,0.6957,0.889,1.0,1.0,1.0,1.0,0.6577,0.6957,0.6957,0.6957,0.6577,0.6577,0.6577

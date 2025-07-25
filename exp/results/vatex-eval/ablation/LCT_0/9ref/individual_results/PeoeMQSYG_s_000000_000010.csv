@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man tosses a frisbee across a field and hops on his all terrain four wheel vehicle in an attempt to catch the frisbee he threw .,0.6326,a man throws a frisbee some distance away and takes off after it on his atv .,5.0,5.0,5.0,5.0,0.8439,0.8768,0.8797,0.7108,0.7203,0.6672,0.8214,0.6382,0.786,0.6501,0.7776,0.6201,0.6326
+2,a man is driving a tractor on a dirt field .,0.0804,a man standing between an suv and an atv that is turned on throws a frisbee into an empty field .,4.0,4.0,4.0,4.0,0.352,0.8279,0.9818,1.0,0.9872,0.9843,0.2112,0.2552,0.244,0.2455,0.0797,0.0922,0.0804
+3,a man is riding a lawn mower on a dirt road .,0.0,a man standing between an suv and an atv that is turned on throws a frisbee into an empty field .,4.0,3.0,5.0,4.0,0.2789,0.7822,0.9804,0.9568,0.9568,0.9424,0.0769,0.1688,0.2461,0.1688,0.0327,0.0,0.0
+4,"a little boy catches a frisbee then throws it back to the man , who catches it and celebrates .",0.0,a man standing between an suv and an atv that is turned on throws a frisbee into an empty field .,1.0,2.0,1.0,1.3333,0.5256,0.8566,0.8382,0.5447,0.5241,0.4377,0.4395,0.1291,0.4334,0.0945,0.3306,0.0,0.0
+5,a man throws a frisbee toward a goal for frisbee golf .,0.5519,a man throws a frisbee in a field while another on a four-wheeler chases after it .,5.0,3.0,3.0,3.6667,0.6812,0.8827,0.9404,0.8542,0.8238,0.7945,0.6332,0.6083,0.6549,0.6105,0.6091,0.5431,0.5519
+6,"a group of men throw frisbees at each other , and one catches a frisbee and dances .",0.2426,a man throws a frisbee into the distance and chases it on an atv .,3.0,2.0,3.0,2.6667,0.5522,0.8466,0.9412,0.8015,0.7512,0.7062,0.4617,0.3843,0.5103,0.3587,0.4167,0.2567,0.2426

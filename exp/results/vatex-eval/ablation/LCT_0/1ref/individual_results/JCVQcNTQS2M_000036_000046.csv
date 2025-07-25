@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a person sits on a tractor , begins to drive the tractor forward and then stops the tractor .",0.0,a man is riding a very small tractor and then he stops .,5.0,5.0,5.0,5.0,0.6319,0.8651,0.8375,0.4185,0.3814,0.285,0.5745,0.0798,0.5604,0.021,0.4919,0.0,0.0
+2,a man is driving a tractor with a tractor on the grass .,0.2594,a man is riding a very small tractor and then he stops .,4.0,4.0,4.0,4.0,0.5416,0.8801,0.9052,0.5751,0.7033,0.6629,0.4791,0.2029,0.4935,0.3482,0.4245,0.0943,0.2594
+3,a man is driving a tractor with a large tractor .,0.1205,a man is riding a very small tractor and then he stops .,5.0,5.0,5.0,5.0,0.5158,0.8892,0.8125,0.5,0.619,0.5716,0.4555,0.0307,0.4041,0.2179,0.3299,0.0,0.1205
+4,man triving a tractor with a snow-blower attached down a long driveway .,0.0,a man is riding a very small tractor and then he stops .,5.0,4.0,5.0,4.6667,0.4186,0.8135,0.8803,0.3764,0.2122,0.0315,0.2853,0.0,0.3396,0.0,0.1881,0.0,0.0
+5,a man is driving a tractor with a plow in front of it to move dirt around .,0.0,a man is riding a very small tractor and then he stops .,3.0,4.0,4.0,3.6667,0.4561,0.8439,0.8767,0.5923,0.5604,0.4791,0.3555,0.0817,0.3796,0.0295,0.2648,0.0,0.0
+6,a man is driving a large snow blowing tractor on the side of a highway .,0.2249,a man is riding a very small tractor and then he stops .,4.0,4.0,4.0,4.0,0.3625,0.8354,0.9796,1.0,0.9845,0.9815,0.2368,0.3625,0.3492,0.3525,0.2209,0.2368,0.2249

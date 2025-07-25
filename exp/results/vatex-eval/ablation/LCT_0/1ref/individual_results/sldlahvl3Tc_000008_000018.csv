@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person using their fingers to wrap string around a hook,0.3729,a man is demonstrating how to secure wire to a hook .,5.0,4.0,5.0,4.6667,0.4908,0.812,1.0,1.0,1.0,1.0,0.3729,0.4908,0.4908,0.4908,0.3729,0.3729,0.3729
+2,a person is demonstrating how to make a fishing lure .,0.2624,a man is demonstrating how to secure wire to a hook .,4.0,4.0,4.0,4.0,0.473,0.8117,0.9677,0.8072,0.8802,0.8524,0.3507,0.3471,0.4554,0.4013,0.3291,0.1957,0.2624
+3,a person is demonstrating how to tie a fishing lure .,0.3193,a man is demonstrating how to secure wire to a hook .,4.0,5.0,4.0,4.3333,0.5054,0.8255,0.9677,0.8072,0.8802,0.8549,0.4008,0.3873,0.4889,0.4381,0.3809,0.2577,0.3193
+4,a man begins to tie a piece of material on a fish hook .,0.3094,a man is demonstrating how to secure wire to a hook .,5.0,5.0,5.0,5.0,0.4971,0.8285,1.0,0.8644,0.8788,0.8537,0.3931,0.4183,0.4971,0.4278,0.3931,0.2979,0.3094
+5,a man is carefully wrapping the hook with some thread .,0.089,a man is demonstrating how to secure wire to a hook .,5.0,4.0,5.0,4.6667,0.5398,0.8552,0.875,0.4459,0.5908,0.5215,0.4618,0.0,0.474,0.2209,0.385,0.0,0.089
+6,an instructional video of how to wind up wire on a fish hook,0.3191,a man is demonstrating how to secure wire to a hook .,5.0,4.0,5.0,4.6667,0.5696,0.8408,0.9714,0.7974,0.7517,0.7047,0.4881,0.4603,0.5569,0.4275,0.4731,0.3581,0.3191

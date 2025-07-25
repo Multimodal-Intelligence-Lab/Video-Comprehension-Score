@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man pops a large red balloon while others watch and laugh .,0.7261,a man pops a giant red balloon over an empty long table as people laugh in the background .,5.0,5.0,5.0,5.0,0.8076,0.9051,0.9796,0.838,0.8549,0.8291,0.7874,0.6804,0.797,0.733,0.7757,0.6722,0.7261
+2,a group of people are playing a game of beer pong .,0.0,a man popping a balloon that is tied to a car .,4.0,3.0,4.0,3.6667,0.1505,0.7779,0.9851,0.8669,0.8628,0.8159,0.0,0.0,0.1377,0.0038,0.0,0.0,0.0
+3,a man is standing in front of a group of people playing a game of cards .,0.0095,a man standing near a balloon with a piecing object pieces through a balloon which bursts .,3.0,4.0,4.0,3.6667,0.2476,0.8229,1.0,0.9084,0.9328,0.9184,0.076,0.163,0.2396,0.1849,0.076,0.0,0.0095
+4,a man is blowing up a red balloon with more balloons in the background .,0.3714,a man pops a giant red balloon over an empty long table as people laugh in the background .,4.0,4.0,5.0,4.3333,0.6092,0.8863,0.9714,0.8408,0.8028,0.768,0.5591,0.4124,0.5696,0.4428,0.5144,0.337,0.3714
+5,a group of people talk excitedly in a room and one person attempts to pop a balloon .,0.3252,a man is in an office around a table as he gets ready to pop a balloon .,4.0,5.0,5.0,4.6667,0.5217,0.8333,0.9916,0.8256,0.868,0.8321,0.4186,0.4156,0.517,0.4449,0.4129,0.2897,0.3252
+6,a young man pops a yellow balloon with a large needle like object .,0.4035,a man popping a balloon that is tied to a car .,4.0,4.0,4.0,4.0,0.5787,0.8749,1.0,1.0,1.0,1.0,0.5068,0.4929,0.5076,0.4929,0.4236,0.4035,0.4035

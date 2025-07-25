@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,an unseen woman directs a toddler to wash his hair and he obeys .,0.3977,a toddler is washing its hair in a bathtub per their mother's request .,5.0,5.0,5.0,5.0,0.7354,0.8412,0.6179,0.5593,0.5872,0.5092,0.6854,0.4008,0.4804,0.4386,0.4425,0.3571,0.3977
+2,a little boy is standing in a bathtub and is washing his hair .,0.3467,a toddler is washing its hair in a bathtub per their mother's request .,4.0,4.0,4.0,4.0,0.6675,0.8637,0.7595,0.7584,0.5982,0.5348,0.615,0.5615,0.5622,0.3981,0.4931,0.4923,0.3467
+3,a little boy is standing in a bathtub and washing his hair .,0.3472,a toddler is washing its hair in a bathtub per their mother's request .,4.0,4.0,4.0,4.0,0.6679,0.8637,0.7595,0.7584,0.5982,0.5348,0.6154,0.562,0.5627,0.3984,0.4937,0.4929,0.3472
+4,a girl gets her hair washed by a hairdresser who sprays water on the girl's hair .,0.0,a toddler is washing its hair in a bathtub per their mother's request .,2.0,2.0,1.0,1.6667,0.4473,0.8243,0.8434,0.4036,0.3643,0.2289,0.3296,0.0,0.3447,0.0,0.2051,0.0,0.0
+5,a child is leaning over a sink and an adult is pouring water over their head and washing their hair .,0.0153,a toddler is washing its hair in a bathtub per their mother's request .,2.0,2.0,1.0,1.6667,0.5676,0.8212,0.7356,0.6112,0.5347,0.4334,0.4735,0.2925,0.4122,0.1802,0.2842,0.1385,0.0153
+6,"a child bends over a sink while an adult stands behind them and pours water over their head , to rinse their hair",0.0,a toddler is washing its hair in a bathtub per their mother's request .,2.0,2.0,2.0,2.0,0.5157,0.7907,0.782,0.5863,0.5759,0.4636,0.3876,0.174,0.3807,0.1591,0.2168,0.0,0.0

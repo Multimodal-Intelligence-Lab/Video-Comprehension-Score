@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is interviewing elon musk and asking him who is favorite astronaut is .,0.0,a woman asks a question and a man is shown answering it .,5.0,5.0,5.0,5.0,0.4222,0.8275,0.8582,0.5192,0.4116,0.289,0.3017,0.0,0.3267,0.0,0.1864,0.0,0.0
+2,a man is talking about how to use a knife to clean a piece of ice .,0.0,a woman asks a question and a man is shown answering it .,2.0,2.0,2.0,2.0,0.233,0.7935,0.8798,0.6777,0.6094,0.5077,0.0334,0.0,0.1282,0.0,0.0,0.0,0.0
+3,a man and a woman are talking about a conference .,0.0,a woman asks a question and a man is shown answering it .,4.0,4.0,4.0,4.0,0.4548,0.8529,0.7857,0.4873,0.203,0.0655,0.3608,0.0,0.3061,0.0,0.1864,0.0,0.0
+4,a man shows how he makes blown glass while a woman narrates .,0.0,a woman asks a question and a man is shown answering it .,3.0,2.0,2.0,2.3333,0.3893,0.8526,0.5989,0.4699,0.2111,0.0747,0.2837,0.0,0.0,0.0,0.0,0.0,0.0
+5,a man in a red and white hat is being interviewed as well as a woman in a red shirt .,0.0,a woman asks a question and a man is shown answering it .,4.0,4.0,3.0,3.6667,0.3826,0.821,0.7497,0.2004,0.0428,0.0,0.248,0.0,0.1765,0.0,0.0,0.0,0.0
+6,a man is speaking to another man then a video of a woman with a lighted vest is shown .,0.0,a woman asks a question and a man is shown answering it .,4.0,2.0,4.0,3.3333,0.372,0.8746,0.7047,0.0,0.0,0.0,0.2819,0.0,0.1087,0.0,0.0,0.0,0.0

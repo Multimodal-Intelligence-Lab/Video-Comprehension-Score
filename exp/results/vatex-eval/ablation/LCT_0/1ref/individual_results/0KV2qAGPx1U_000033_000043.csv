@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two men are standing on a court and tossing a soccer ball at a wall .,0.0235,a man is tossing a soccer ball and trying to catch with when it rebound while another man supervise,5.0,5.0,5.0,5.0,0.6512,0.8542,0.7303,0.463,0.4222,0.3236,0.5917,0.1753,0.5223,0.1127,0.4408,0.0923,0.0235
+2,a man is practicing kicking a soccer ball in a gym .,0.0,a man is tossing a soccer ball and trying to catch with when it rebound while another man supervise,4.0,3.0,4.0,3.6667,0.4105,0.8595,0.7401,0.2365,0.1447,0.0049,0.3141,0.0,0.2034,0.0,0.0732,0.0,0.0
+3,a man is juggling a soccer ball with his feet .,0.0404,a man is tossing a soccer ball and trying to catch with when it rebound while another man supervise,4.0,1.0,4.0,3.0,0.5391,0.8674,0.7762,0.582,0.5537,0.4854,0.4687,0.2082,0.4063,0.1676,0.3156,0.0872,0.0404
+4,a man is throwing an exercise ball at a wall and catching it .,0.0,a man is tossing a soccer ball and trying to catch with when it rebound while another man supervise,5.0,5.0,4.0,4.6667,0.4394,0.8775,0.8026,0.417,0.3985,0.3145,0.3611,0.0,0.3015,0.0,0.2039,0.0,0.0
+5,a man tosses a ball into a red cup by bouncing the ball off of a nearby wall .,0.1237,a man is tossing a soccer ball and trying to catch with when it rebound while another man supervise,4.0,3.0,4.0,3.6667,0.4192,0.8669,0.9048,0.7554,0.7645,0.7283,0.3301,0.2311,0.3581,0.2403,0.2596,0.1131,0.1237
+6,man in an exercise area throwing a ball agaisnt the wall and catching it,0.0,a man is tossing a soccer ball and trying to catch with when it rebound while another man supervise,5.0,5.0,4.0,4.6667,0.4196,0.8613,0.7924,0.448,0.4299,0.338,0.3261,0.0,0.2675,0.0,0.1495,0.0,0.0

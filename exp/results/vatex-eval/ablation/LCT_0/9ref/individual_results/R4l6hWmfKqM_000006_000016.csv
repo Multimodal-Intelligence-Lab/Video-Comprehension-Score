@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a young boy crawls onto a treadmill while his friend stands over him , and eventually crashes into a wall .",0.5275,a boy is playing on a treadmill and goes headfirst into a wall .,5.0,5.0,5.0,5.0,0.785,0.851,0.9623,0.7737,0.8222,0.7695,0.745,0.5073,0.7664,0.5516,0.7229,0.4808,0.5275
+2,a young boy is running on a treadmill and then falls off .,0.4001,"one young man walks on a treadmill while another young man runs to the front of the treadmill and slides onto it , right through his friends legs .",4.0,4.0,4.0,4.0,0.7403,0.8848,1.0,1.0,1.0,1.0,0.6904,0.5251,0.7056,0.5063,0.649,0.449,0.4001
+3,a group of people are running and jumping in a room .,0.1003,a group of young people play on exercise equipment and one of them flies across the treadmill .,5.0,4.0,5.0,4.6667,0.5101,0.834,0.9756,1.0,0.9672,0.9564,0.3855,0.2436,0.3923,0.2638,0.2573,0.0757,0.1003
+4,a small child plays on a running treadmill while some adults comment about it,0.5643,"a kid is playing around on a treadmill , while others watch .",4.0,4.0,4.0,4.0,0.7475,0.8631,0.9787,0.7827,0.8014,0.7566,0.706,0.5971,0.742,0.5885,0.6996,0.5734,0.5643
+5,a young man is running on a treadmill and another man turns up the speed .,0.2877,"one young man walks on a treadmill while another young man runs to the front of the treadmill and slides onto it , right through his friends legs .",3.0,4.0,4.0,3.6667,0.6517,0.9015,0.9831,0.7475,0.7739,0.7148,0.6136,0.3301,0.582,0.352,0.5363,0.1865,0.2877
+6,a little kid is running and jumping while on a treadmill,0.2912,teenagers are in a room playing around on a treadmill .,5.0,5.0,5.0,5.0,0.7195,0.8619,0.9375,0.9268,0.9321,0.9147,0.6681,0.4326,0.6294,0.4358,0.5614,0.2871,0.2912

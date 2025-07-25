@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of children are having a water balloon fight in the back yard .,0.785,six little children having a water balloon fight in the backyard .,5.0,5.0,5.0,5.0,0.9032,0.926,1.0,1.0,1.0,1.0,0.8945,0.7436,0.8151,0.7883,0.8003,0.7396,0.785
+2,a group of kids are playing with a toy in a backyard .,0.3918,six little children having a water balloon fight in the backyard .,4.0,4.0,4.0,4.0,0.5855,0.89,1.0,1.0,1.0,1.0,0.5342,0.4896,0.5144,0.4896,0.4544,0.3918,0.3918
+3,a group of kids are having a water balloon fight in a yard .,0.7295,six little children having a water balloon fight in the backyard .,5.0,5.0,5.0,5.0,0.87,0.9401,1.0,1.0,1.0,1.0,0.8605,0.7499,0.7499,0.7499,0.7295,0.7295,0.7295
+4,a couple of kids in the grassy area of an apartment complex appearing to have a water balloon fight .,0.4678,a group of kids in the backyard are throwing water balloons at each other .,5.0,4.0,5.0,4.6667,0.6318,0.8644,0.9737,0.8536,0.8796,0.8569,0.5693,0.5385,0.5954,0.5521,0.5193,0.4516,0.4678
+5,a boy and a girl picked a balloon filled with water from a bucket and threw it against each other,0.4768,children take waterballoons from a wagon and have a waterballoon fight,5.0,5.0,4.0,4.6667,0.6315,0.8752,1.0,1.0,1.0,1.0,0.579,0.5906,0.6029,0.5906,0.5463,0.4768,0.4768
+6,a girl throws a water balloon at another child and the other child throws one back .,0.0875,a group of children have a water balloon fight surrounding a toy wagon filled with balloons .,5.0,5.0,5.0,5.0,0.6346,0.8881,0.8901,0.5602,0.6641,0.5982,0.5886,0.1366,0.4484,0.2372,0.3707,0.0,0.0875

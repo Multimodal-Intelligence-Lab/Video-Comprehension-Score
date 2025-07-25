@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a group of women , some holding children , watch two man dance in front of them .",0.1873,"surrounded by a group of girls , two men take turns dancing by themselves .",5.0,5.0,5.0,5.0,0.6547,0.8921,0.9123,0.7884,0.7187,0.6728,0.6024,0.3699,0.4646,0.3064,0.3878,0.2498,0.1873
+2,a group of people are dancing to music in a room .,0.0993,"at a family gathering and party of some ethnic group , two men showing their dance skills by doing some 80s style robotic moves .",4.0,5.0,5.0,4.6667,0.4986,0.926,0.9356,0.9503,0.9032,0.8828,0.4586,0.3807,0.3049,0.2558,0.2149,0.3312,0.0993
+3,a group of people are doing a dance routine in a room .,0.1449,"at a family gathering and party of some ethnic group , two men showing their dance skills by doing some 80s style robotic moves .",4.0,5.0,5.0,4.6667,0.4105,0.881,0.9434,0.9231,0.8974,0.8736,0.3309,0.3166,0.3435,0.2856,0.2373,0.1819,0.1449
+4,several men are outside while two dance and spin in a circle .,0.2497,two men are dancing to music with a group of people looking on .,2.0,3.0,3.0,2.6667,0.7426,0.9135,0.9469,0.8296,0.8612,0.8325,0.7182,0.348,0.6781,0.372,0.6476,0.262,0.2497
+5,a man and a woman are doing a dance routine in front of people .,0.1875,two men are dancing to music with a group of people looking on .,4.0,4.0,4.0,4.0,0.5072,0.8765,1.0,0.7071,0.714,0.6634,0.4198,0.303,0.5072,0.3098,0.4198,0.1795,0.1875
+6,a man is doing some type of dance in front of an audience .,0.3167,two men are dancing to music with a group of people looking on .,5.0,4.0,5.0,4.6667,0.5404,0.8472,0.9756,0.962,0.9098,0.8883,0.4456,0.4472,0.5069,0.4413,0.4108,0.3406,0.3167

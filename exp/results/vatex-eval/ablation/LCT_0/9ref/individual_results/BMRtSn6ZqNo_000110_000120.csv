@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is stirring ingredients in a bowl with a spoon .,0.6733,a person is stirring a dry mixture in a bowl on a table .,5.0,5.0,5.0,5.0,0.7867,0.9099,1.0,1.0,1.0,1.0,0.7655,0.7034,0.7701,0.7034,0.7473,0.6733,0.6733
+2,a person is demonstrating how to make a recipe in a kitchen .,0.0454,a bowl on a counter with food ingredients mixing the ingredients in the glass bowl .,5.0,4.0,4.0,4.3333,0.4029,0.8307,0.9714,0.8512,0.7812,0.7268,0.2596,0.2985,0.3246,0.2357,0.1533,0.1238,0.0454
+3,a person is mixing some ingredients in a bowl with a spatula .,0.596,a woman mixes food ingredients in a glass bowl with a small spoon .,5.0,4.0,4.0,4.3333,0.6697,0.9153,0.9796,1.0,0.9845,0.983,0.6247,0.6386,0.644,0.6329,0.5956,0.6022,0.596
+4,a woman adding ingredients to a bowl while in a kitchen .,0.6013,a woman is mixing food that is in a bowl and talking .,5.0,4.0,4.0,4.3333,0.6843,0.8859,1.0,1.0,1.0,1.0,0.6437,0.6393,0.6618,0.6468,0.6182,0.5898,0.6013
+5,a person kneading pieces of dough and placing them in bowls .,0.2757,someone is stirring several ingredients together in a glass bowl .,2.0,2.0,3.0,2.3333,0.4159,0.8353,1.0,1.0,1.0,1.0,0.2852,0.4019,0.4019,0.4019,0.2757,0.2757,0.2757
+6,somepne is calmly stirring a frothy mixture in a pan over a stove,0.2548,a person is stirring a dry mixture in a bowl on a table .,4.0,4.0,3.0,3.6667,0.511,0.8463,1.0,0.8723,0.8863,0.8656,0.4131,0.3593,0.479,0.3694,0.3746,0.2429,0.2548

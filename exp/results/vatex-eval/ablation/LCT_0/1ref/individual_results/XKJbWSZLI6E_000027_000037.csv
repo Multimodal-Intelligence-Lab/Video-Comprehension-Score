@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two little boys are each wrapping christmas presents on a coffee table .,0.3094,two children open presents and a boy asks what his is .,5.0,5.0,5.0,5.0,0.499,0.8514,0.9139,0.8892,0.8521,0.8263,0.4115,0.4366,0.4518,0.4121,0.3561,0.3382,0.3094
+2,a little boy is sitting on the floor playing with a toy .,0.0,two children open presents and a boy asks what his is .,4.0,4.0,4.0,4.0,0.2466,0.8023,0.7895,0.2921,0.4264,0.2851,0.0609,0.0,0.0456,0.0,0.0,0.0,0.0
+3,a little boy is sitting on the floor and opening a present .,0.0192,two children open presents and a boy asks what his is .,5.0,4.0,4.0,4.3333,0.5718,0.8539,0.7083,0.4,0.5113,0.4276,0.4985,0.0,0.3955,0.1453,0.292,0.0,0.0192
+4,a girl and boy are decorating a christmas tree as an adult gives them the decorations .,0.0,two children open presents and a boy asks what his is .,2.0,2.0,2.0,2.0,0.3916,0.8103,0.783,0.5108,0.4274,0.2933,0.2492,0.0,0.223,0.0,0.0411,0.0,0.0
+5,a young boy and his little brother decorate a christmas tree while music plays in the background .,0.0,two children open presents and a boy asks what his is .,3.0,2.0,2.0,2.3333,0.347,0.8001,0.8588,0.6647,0.6659,0.5824,0.1839,0.0177,0.2397,0.0194,0.0497,0.0,0.0
+6,a kid seated in a room is opening a present while a woman is talking in the background .,0.0,two children open presents and a boy asks what his is .,5.0,4.0,4.0,4.3333,0.5444,0.8314,0.8615,0.4963,0.4448,0.3322,0.4521,0.0749,0.4712,0.0,0.364,0.0,0.0

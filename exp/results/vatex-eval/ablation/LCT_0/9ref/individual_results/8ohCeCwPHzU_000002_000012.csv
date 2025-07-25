@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"two white sneakers are on a hoverboard , which is riding around on concrete .",0.2462,a person films their shoes as they ride along the road on a hover board .,5.0,5.0,5.0,5.0,0.6541,0.8707,0.9599,0.65,0.6459,0.5629,0.5764,0.3933,0.6209,0.3895,0.5357,0.2509,0.2462
+2,a person is riding a scooter on a sidewalk with a dog .,0.0,a kid is talking while he looks down while he rides a hover board .,4.0,4.0,4.0,4.0,0.2957,0.8256,0.9231,0.7131,0.6743,0.5926,0.1437,0.0,0.1763,0.0,0.0,0.0,0.0
+3,a person is riding a scooter down the street .,0.0,a kid is talking while he looks down while he rides a hover board .,5.0,4.0,5.0,4.6667,0.4034,0.8476,0.9524,0.7574,0.6806,0.6138,0.2811,0.1147,0.3736,0.0148,0.2451,0.0,0.0
+4,a person riding a hoverboard and stepping off as the board moves a little then stops .,0.4537,an individual is riding a hover board down a path .,4.0,3.0,4.0,3.6667,0.619,0.8569,0.971,0.838,0.8139,0.7828,0.5554,0.5454,0.5848,0.5319,0.5154,0.4694,0.4537
+5,a young man in a studio riding a hoverboard as he goes up and down a ramp,0.4074,a man films himself riding on a hoverboard .,3.0,3.0,4.0,3.3333,0.593,0.8885,0.9804,0.8497,0.8271,0.778,0.5419,0.5209,0.5366,0.4734,0.4785,0.4608,0.4074
+6,a boy is riding a hoverboard indoors up and down a curved wooden ramp .,0.2855,an individual is riding a hover board down a path .,2.0,3.0,3.0,2.6667,0.5668,0.8463,1.0,0.8571,0.8718,0.8412,0.478,0.4131,0.5312,0.423,0.435,0.2732,0.2855

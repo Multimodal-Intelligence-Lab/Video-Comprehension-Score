@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy in a black shirt is sitting in a chair and playing an electric guitar .,0.6941,a man sits in a chair and plays the electric guitar .,5.0,5.0,5.0,5.0,0.7972,0.9323,0.9497,1.0,0.8659,0.8561,0.779,0.7058,0.7827,0.7011,0.7632,0.699,0.6941
+2,a man is playing a song on an electric guitar .,0.6433,a man is sitting down and playing his electric guitar .,4.0,5.0,5.0,4.6667,0.8088,0.9449,0.941,0.8663,0.7745,0.7613,0.7896,0.723,0.7704,0.6629,0.7474,0.7163,0.6433
+3,a man is sitting down and playing a song on a guitar .,0.7422,a man is sitting down and playing his electric guitar .,5.0,5.0,5.0,5.0,0.8361,0.9829,1.0,1.0,1.0,1.0,0.8332,0.7557,0.8142,0.7557,0.811,0.7422,0.7422
+4,a man is playing an electric guitar using his fingers .,0.7701,a man plays an electric guitar with great skill and harmony .,5.0,5.0,5.0,5.0,0.7959,0.9269,1.0,1.0,1.0,1.0,0.7701,0.7959,0.7959,0.7959,0.7701,0.7701,0.7701
+5,a man plays electric guitar alone in a room to rousing music .,0.6475,a man plays an electric guitar with great skill and harmony .,5.0,5.0,5.0,5.0,0.6856,0.8986,1.0,1.0,1.0,1.0,0.6475,0.6856,0.6856,0.6856,0.6475,0.6475,0.6475
+6,a male is leaning against a wall playing an electric guitar .,0.4285,a guy sits on a stool as he plays his electric guitar .,4.0,4.0,4.0,4.0,0.5845,0.911,0.9787,0.8515,0.9107,0.8978,0.5267,0.4717,0.5561,0.506,0.5128,0.392,0.4285

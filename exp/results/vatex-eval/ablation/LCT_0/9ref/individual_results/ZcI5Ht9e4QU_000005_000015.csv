@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a family plays a game of kickball together in a green grassed yard .,0.1778,two men and a child are playing kickball outside in summer .,5.0,5.0,5.0,5.0,0.6306,0.814,0.973,0.846,0.8651,0.8256,0.5461,0.3281,0.5889,0.3429,0.4949,0.2108,0.1778
+2,a man throws a frisbee in a field and then throws a frisbee .,0.0,an middle-aged man rolls a ball to a younger man who kicks it while a small child jumps around behind the older man .,4.0,4.0,4.0,4.0,0.3361,0.8542,0.9307,0.8545,0.8365,0.7835,0.2228,0.0251,0.184,0.0,0.0447,0.0,0.0
+3,a group of people are playing frisbee in a park .,0.1062,a group of people practicing and kicking a ball in a large field as they change spots,4.0,4.0,4.0,4.0,0.3407,0.8323,1.0,1.0,1.0,1.0,0.2078,0.2637,0.3012,0.2561,0.1603,0.1153,0.1062
+4,"a young boy kicks a ball towards another boy , who tries to hit or block the ball .",0.2562,three guys are outside kicking a ball out and back and one guy catches the ball .,5.0,5.0,4.0,4.6667,0.54,0.8733,0.9583,0.8463,0.8699,0.8428,0.4644,0.3676,0.4651,0.3848,0.3875,0.2354,0.2562
+5,"a young boy runs across a street and someone throws him a ball to catch , but he drops it .",0.0,an middle-aged man rolls a ball to a younger man who kicks it while a small child jumps around behind the older man .,4.0,4.0,3.0,3.6667,0.4164,0.8548,0.9252,0.7456,0.7589,0.692,0.3172,0.0,0.2774,0.0206,0.1546,0.0,0.0
+6,a group of people play kickball with a large red ball . a man with long hair makes a play by catching the kicked ball .,0.1294,a group of people practicing and kicking a ball in a large field as they change spots,4.0,4.0,5.0,4.3333,0.5139,0.8678,0.9304,0.7417,0.7716,0.7368,0.4076,0.229,0.4498,0.2445,0.3396,0.0943,0.1294

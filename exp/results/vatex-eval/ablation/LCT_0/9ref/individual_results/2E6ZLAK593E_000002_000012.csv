@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,several people are swimming in a river as it plays in reverse and a boy comes out of the water and back to the wall beside the water .,0.0135,a reversed video of a young boy jumping off a cliff into a pond .,4.0,4.0,5.0,4.3333,0.603,0.8727,0.9277,0.7618,0.7427,0.6843,0.5359,0.1545,0.5249,0.2013,0.4446,0.0,0.0135
+2,a person jumps off of a cliff into a body of water .,0.2668,people are jumping off a small cliff at the edge of water and swimming back to the edge of the water .,4.0,3.0,5.0,4.0,0.5885,0.917,0.9388,0.7382,0.6782,0.5919,0.5368,0.3374,0.5219,0.3449,0.4649,0.258,0.2668
+3,a man jumps off a cliff into the water while others watch .,0.4395,people are jumping off a small cliff at the edge of water and swimming back to the edge of the water .,4.0,4.0,5.0,4.3333,0.6347,0.9138,1.0,0.8879,0.911,0.8848,0.5708,0.4977,0.5722,0.5135,0.5071,0.4324,0.4395
+4,a boy is riding on artificial waves but the water pushes him out .,0.0,a splash is made as a kid surfaces in the water then the camera reqinds showing a kid standing on a cliff above the water .,3.0,2.0,3.0,2.6667,0.2919,0.852,1.0,0.9181,0.9309,0.9133,0.1293,0.1177,0.1702,0.1298,0.0,0.0,0.0
+5,boys are diving into a lake from the edge of a cliff .,0.5254,"people are swimming in the lake , and somebody jumps into it from a cliff .",4.0,4.0,4.0,4.0,0.675,0.8534,0.9677,0.8819,0.8778,0.8437,0.6187,0.615,0.6642,0.5955,0.606,0.5483,0.5254
+6,a man is jumping into a swimming pool off of a ledge,0.0,a splash is made as a kid surfaces in the water then the camera reqinds showing a kid standing on a cliff above the water .,3.0,3.0,4.0,3.3333,0.4066,0.8706,0.9583,0.9589,0.9305,0.9099,0.3093,0.2331,0.3656,0.1523,0.2323,0.0719,0.0

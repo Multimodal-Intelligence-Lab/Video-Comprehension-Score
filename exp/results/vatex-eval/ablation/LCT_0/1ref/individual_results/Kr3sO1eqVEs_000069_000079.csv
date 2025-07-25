@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person moves fabric through a sewing machine as a time counts up .,0.2202,a person using a sewing machine to put a hem in a piece of grey material .,5.0,5.0,5.0,5.0,0.5833,0.8567,0.8993,0.6161,0.6237,0.5608,0.5136,0.3237,0.5367,0.3319,0.4592,0.2106,0.2202
+2,a woman is using a sewing machine to sew a piece of fabric .,0.5697,a person using a sewing machine to put a hem in a piece of grey material .,4.0,5.0,5.0,4.6667,0.6552,0.9153,0.961,0.8659,0.8754,0.8639,0.6233,0.6018,0.6412,0.6061,0.608,0.565,0.5697
+3,a person is using a sewing machine to sew a piece of fabric .,0.6803,a person using a sewing machine to put a hem in a piece of grey material .,5.0,5.0,5.0,5.0,0.7381,0.9359,0.961,0.8659,0.8754,0.8669,0.7202,0.6975,0.7275,0.7008,0.7088,0.6768,0.6803
+4,a person is using a sewing machine to sew together a string of fabric .,0.5319,a person using a sewing machine to put a hem in a piece of grey material .,5.0,5.0,4.0,4.6667,0.6787,0.9011,0.9767,0.7212,0.7616,0.7355,0.6435,0.5545,0.6711,0.5782,0.635,0.5056,0.5319
+5,a person is sewing braided material into a circle using a sewing machine .,0.0,a person using a sewing machine to put a hem in a piece of grey material .,4.0,4.0,3.0,3.6667,0.513,0.9205,0.6771,0.2893,0.1675,0.0957,0.4709,0.0,0.2807,0.0,0.2186,0.0,0.0
+6,a women is inserting a piece of fabric into a sewing machine .,0.0,a person using a sewing machine to put a hem in a piece of grey material .,4.0,5.0,5.0,4.6667,0.5705,0.8618,0.7179,0.3853,0.3021,0.1902,0.5016,0.0,0.4017,0.0,0.3058,0.0,0.0

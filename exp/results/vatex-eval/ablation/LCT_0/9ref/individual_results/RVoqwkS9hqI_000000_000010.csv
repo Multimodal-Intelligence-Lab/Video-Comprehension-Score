@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a couple of girls are tickling a boy inside of a vehicle .,0.7438,several females attempting to tickle a third person while traveling in a vehicle .,5.0,5.0,5.0,5.0,0.818,0.896,1.0,0.8879,0.911,0.8967,0.7969,0.7733,0.7987,0.7791,0.7666,0.7371,0.7438
+2,a man and a woman are sitting on a couch and one of them is getting her hair waxed .,0.0,two kids are playing with another kid by tickling him .,2.0,3.0,1.0,2.0,0.1589,0.7959,1.0,1.0,1.0,1.0,0.0,0.0653,0.1075,0.0653,0.0,0.0,0.0
+3,a group of people are having a conversation while one of them is laughing .,0.0,two kids are playing with another kid by tickling him .,3.0,4.0,4.0,3.6667,0.2892,0.8372,1.0,1.0,1.0,1.0,0.1231,0.1335,0.2108,0.1335,0.039,0.0,0.0
+4,a man tickles a baby and tries to get them to play with them .,0.0816,people are tickling a boy in a vehicle driving down the street .,1.0,3.0,1.0,1.6667,0.4884,0.8418,0.9787,0.8515,0.9107,0.8887,0.3922,0.2084,0.4156,0.2667,0.2944,0.013,0.0816
+5,a girl leaning over a baby and tickling him to make him laugh .,0.0836,"a group of people in a vehicle , while two women tickle a young man on his neck",2.0,3.0,4.0,3.0,0.4576,0.8271,0.9787,0.9002,0.8979,0.8707,0.3314,0.2782,0.436,0.2763,0.2999,0.0859,0.0836
+6,a person is tickling a little boy who is laughing hard .,0.2865,people are tickling a boy in a vehicle driving down the street .,4.0,5.0,5.0,4.6667,0.5798,0.8688,1.0,1.0,1.0,1.0,0.5164,0.2822,0.4961,0.3891,0.4114,0.1616,0.2865

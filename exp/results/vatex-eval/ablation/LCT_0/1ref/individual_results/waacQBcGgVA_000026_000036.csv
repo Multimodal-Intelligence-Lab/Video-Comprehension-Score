@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,in an underground sewer system people walk through submerged in water .,0.0,a group of people wearing headlamps wade through chest deep water in a stone tunnel .,4.0,5.0,5.0,4.6667,0.568,0.8119,0.7111,0.4851,0.4357,0.3049,0.4679,0.0935,0.3925,0.0064,0.2517,0.0,0.0
+2,a group of people are exploring a cave with a flashlight .,0.0,a group of people wearing headlamps wade through chest deep water in a stone tunnel .,5.0,5.0,4.0,4.6667,0.4886,0.8416,0.8125,0.4725,0.4633,0.3623,0.3923,0.0,0.3705,0.0,0.2521,0.0,0.0
+3,a group of people are walking through a dark cave .,0.2736,a group of people wearing headlamps wade through chest deep water in a stone tunnel .,5.0,5.0,4.0,4.6667,0.5261,0.8448,0.9195,0.7551,0.7723,0.7305,0.439,0.3723,0.4846,0.3863,0.3899,0.257,0.2736
+4,people with mining caps traverse a dark area with water .,0.237,a group of people wearing headlamps wade through chest deep water in a stone tunnel .,5.0,5.0,5.0,5.0,0.5827,0.8211,0.955,0.6168,0.6661,0.5933,0.4918,0.3235,0.5631,0.3735,0.4679,0.1761,0.237
+5,three divers work under water as one diver holds a mechanism while another holds a tube and the third watches .,0.0,a group of people wearing headlamps wade through chest deep water in a stone tunnel .,2.0,4.0,1.0,2.3333,0.2823,0.7701,0.9138,0.6961,0.7436,0.667,0.0681,0.0,0.2146,0.0348,0.0,0.0,0.0
+6,a man is sperlunking in a dimly lit cave that is lit up with flashlights .,0.0,a group of people wearing headlamps wade through chest deep water in a stone tunnel .,4.0,4.0,3.0,3.6667,0.3508,0.77,0.8198,0.6422,0.627,0.5155,0.1568,0.0,0.2081,0.0,0.0,0.0,0.0

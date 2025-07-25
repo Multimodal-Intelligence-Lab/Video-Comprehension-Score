@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two children and an adult are playing outside with a bucket of water balloons .,0.4204,a mother and her kids are outside having a water fight .,5.0,5.0,5.0,5.0,0.6392,0.8919,0.9388,0.9755,0.9352,0.9256,0.5949,0.522,0.6129,0.4953,0.566,0.4444,0.4204
+2,a little girl and a little girl are playing with water balloons .,0.0,two little girls and a woman are using water balls from a container to have a fun fight,5.0,5.0,5.0,5.0,0.5999,0.8871,0.95,0.6512,0.666,0.5967,0.549,0.0924,0.5061,0.1351,0.4432,0.0,0.0
+3,a little girl is picking up easter eggs and putting them in a basket .,0.0,two little girls and a woman are using water balls from a container to have a fun fight,3.0,2.0,2.0,2.3333,0.1889,0.7988,1.0,1.0,1.0,1.0,0.0,0.0552,0.1608,0.0567,0.0,0.0,0.0
+4,two children are having a water balloon fight in the yard of a apartment complex .,0.4043,a woman and two kids are having a water balloon fight in a backyard .,5.0,4.0,4.0,4.3333,0.564,0.9288,0.9615,0.9194,0.83,0.7776,0.5274,0.5226,0.4593,0.4467,0.4178,0.4859,0.4043
+5,a group of kids in the backyard are throwing water balloons at each other .,0.6368,kids in a yard on a deck throwing water balloons at each other and being squirted with a hose .,5.0,5.0,4.0,4.6667,0.7386,0.9196,0.9787,0.9679,0.9393,0.9296,0.7114,0.7101,0.6926,0.6696,0.6598,0.6848,0.6368
+6,a group of children and adults engage in a water balloon toss .,0.2614,a group of people are playing with a bucket of balls and thowing them at eachother .,5.0,5.0,4.0,4.6667,0.6612,0.863,0.9556,0.7357,0.807,0.7665,0.601,0.3305,0.6229,0.3897,0.5559,0.2129,0.2614

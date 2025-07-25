@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is putting a contact lens into her right eye and talking .,0.5631,a person is putting a contact lens in their eye with their fingers .,5.0,5.0,5.0,5.0,0.5954,0.9261,1.0,1.0,1.0,1.0,0.5631,0.5954,0.5954,0.5954,0.5631,0.5631,0.5631
+2,a woman is demonstrating how to put a contact lens on her eye .,0.5635,a person is putting a contact lens in their eye with their fingers .,5.0,5.0,5.0,5.0,0.6705,0.92,0.812,0.8295,0.8207,0.8051,0.6418,0.6027,0.5941,0.5984,0.5589,0.5682,0.5635
+3,a woman is demonstrating how to put a contact lens in her eye .,0.5725,a person is putting a contact lens in their eye with their fingers .,5.0,5.0,5.0,5.0,0.6772,0.92,0.812,0.8295,0.8207,0.8051,0.6492,0.6109,0.6025,0.6067,0.5679,0.5771,0.5725
+4,a girl pulls open her eye and inserts a contact lens into it .,0.0,a person is putting a contact lens in their eye with their fingers .,5.0,5.0,5.0,5.0,0.6488,0.8806,0.7996,0.3871,0.2027,0.0946,0.6012,0.0553,0.5608,0.0,0.5012,0.0,0.0
+5,a woman sitting on a chair with a contact lenses in her hand getting ready to put it in her eye .,0.0,a person is putting a contact lens in their eye with their fingers .,4.0,3.0,4.0,3.6667,0.618,0.8851,0.794,0.3823,0.3549,0.2711,0.5685,0.0006,0.519,0.0,0.4565,0.0,0.0
+6,a woman centers a contact lens on her finger in order to insert it into her eye .,0.0,a person is putting a contact lens in their eye with their fingers .,5.0,5.0,5.0,5.0,0.7911,0.9037,0.8136,0.2835,0.1307,0.038,0.7688,0.0943,0.7432,0.0,0.7159,0.068,0.0

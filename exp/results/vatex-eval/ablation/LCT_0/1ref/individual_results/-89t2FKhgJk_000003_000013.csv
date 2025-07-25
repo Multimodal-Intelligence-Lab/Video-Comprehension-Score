@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,man wearing shorts and tshirt throwing ball at wall and catching it as it comes back .,0.4622,a man is throwing an exercise ball at a wall and catching it .,5.0,5.0,5.0,5.0,0.7085,0.908,0.9231,0.5984,0.6348,0.5978,0.679,0.4332,0.6842,0.4846,0.6522,0.4086,0.4622
+2,a man is demonstrating how to do a lunge in a gym .,0.0,a man is throwing an exercise ball at a wall and catching it .,4.0,2.0,5.0,3.6667,0.2979,0.8008,0.8199,0.781,0.6,0.5005,0.1233,0.1011,0.1437,0.0,0.0,0.0,0.0
+3,a man is standing in a gym and he throws a ball on the ground .,0.0735,a man is throwing an exercise ball at a wall and catching it .,4.0,4.0,4.0,4.0,0.5777,0.8793,0.875,0.3684,0.5185,0.4524,0.5197,0.0,0.5173,0.1664,0.4511,0.0,0.0735
+4,a guy bounces a ball off a wall and it goes past him while another guy grabs it and brings it back .,0.0744,a man is throwing an exercise ball at a wall and catching it .,3.0,2.0,3.0,2.6667,0.5636,0.8258,0.815,0.5634,0.5709,0.4804,0.4715,0.2254,0.4645,0.2356,0.3516,0.0621,0.0744
+5,two guys throwing a ball against a wall .,0.2486,a man is throwing an exercise ball at a wall and catching it .,4.0,4.0,4.0,4.0,0.5989,0.8927,0.8819,0.7302,0.5979,0.5496,0.5507,0.4508,0.5452,0.3286,0.4906,0.3848,0.2486
+6,two chinese men are playing ball by bouncing it off of the wall,0.0,a man is throwing an exercise ball at a wall and catching it .,4.0,4.0,4.0,4.0,0.4555,0.8426,0.8984,0.528,0.4418,0.3376,0.3538,0.0,0.3939,0.0,0.2808,0.0,0.0

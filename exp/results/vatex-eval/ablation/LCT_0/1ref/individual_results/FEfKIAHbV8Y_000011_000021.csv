@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,man wearing red lowes vest talking as he builds a driveway with bricks,0.0,a person shows how to lay stone and where to go and get the stone .,5.0,5.0,5.0,5.0,0.2439,0.7727,0.936,0.5696,0.5916,0.4714,0.0215,0.0,0.1922,0.0,0.0,0.0,0.0
+2,a man uses a trowel to cut down a brick wall .,0.0,a person shows how to lay stone and where to go and get the stone .,3.0,4.0,2.0,3.0,0.2031,0.7889,0.9787,0.8094,0.8101,0.7592,0.0,0.0155,0.1858,0.0163,0.0,0.0,0.0
+3,a man is using a trowel to spread cement on the ground .,0.0,a person shows how to lay stone and where to go and get the stone .,3.0,4.0,2.0,3.0,0.1965,0.785,0.9599,0.6002,0.5643,0.445,0.0,0.0,0.163,0.0,0.0,0.0,0.0
+4,a man is demonstrating to the viewers the art of stone laying in construction .,0.5145,a person shows how to lay stone and where to go and get the stone .,5.0,5.0,5.0,5.0,0.7229,0.8512,0.8309,0.5648,0.6725,0.6153,0.6745,0.3981,0.6665,0.547,0.6082,0.3548,0.5145
+5,a man gives instructions on how to lay down pavers .,0.1757,a person shows how to lay stone and where to go and get the stone .,5.0,5.0,5.0,5.0,0.5729,0.8303,0.928,0.6644,0.624,0.5471,0.4856,0.3572,0.5398,0.3156,0.4457,0.2258,0.1757
+6,a man is sweeping rocks out of the dirt while another explains digging down through layers .,0.0,a person shows how to lay stone and where to go and get the stone .,2.0,2.0,2.0,2.0,0.3417,0.7935,0.8229,0.6424,0.5823,0.4736,0.1704,0.0,0.2,0.0,0.0,0.0,0.0

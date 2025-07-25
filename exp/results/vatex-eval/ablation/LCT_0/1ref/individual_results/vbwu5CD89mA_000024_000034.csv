@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman stands and twirls and uses her hands to unwrap a veil from her waist .,0.0,a woman is shown beginning to wrap a sari around herself .,4.0,5.0,4.0,4.3333,0.4136,0.7959,0.9831,0.6948,0.7212,0.6497,0.2633,0.156,0.4035,0.187,0.2506,0.0,0.0
+2,a woman is showing how to do a belly dance routine .,0.2096,a woman is shown beginning to wrap a sari around herself .,4.0,2.0,3.0,3.0,0.3325,0.8444,1.0,1.0,1.0,1.0,0.2096,0.3325,0.3325,0.3325,0.2096,0.2096,0.2096
+3,a woman is demonstrating how to do a belly dance .,0.1871,a woman is shown beginning to wrap a sari around herself .,4.0,2.0,3.0,3.0,0.334,0.8193,1.0,1.0,1.0,1.0,0.1871,0.334,0.334,0.334,0.1871,0.1871,0.1871
+4,a woman demonstrates the proper way to gather and put on a sari .,0.6289,a woman is shown beginning to wrap a sari around herself .,5.0,2.0,5.0,4.0,0.75,0.8688,0.9599,0.7876,0.7754,0.7415,0.7122,0.6825,0.7395,0.6776,0.7002,0.6346,0.6289
+5,a woman displays a large piece of fabric that is partially wrapped around her waist .,0.3214,a woman is shown beginning to wrap a sari around herself .,5.0,5.0,5.0,5.0,0.5222,0.8569,0.9706,0.7926,0.8217,0.7919,0.4424,0.3971,0.5077,0.4185,0.4255,0.2965,0.3214
+6,a woman was putting on a sari around her shoulder,0.4479,a woman is shown beginning to wrap a sari around herself .,4.0,2.0,4.0,3.3333,0.7571,0.8941,0.8819,0.7302,0.5979,0.5503,0.7284,0.6437,0.7246,0.4689,0.692,0.628,0.4479

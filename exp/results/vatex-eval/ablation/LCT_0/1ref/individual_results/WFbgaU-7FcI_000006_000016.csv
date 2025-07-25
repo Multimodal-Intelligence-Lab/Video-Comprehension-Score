@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two people play tennis together while they both hit a ball back and forth,0.1463,two men hit a ball back and forth using paddles,5.0,5.0,4.0,4.6667,0.4817,0.9079,0.8123,0.72,0.6687,0.6351,0.4291,0.2802,0.3619,0.2249,0.2972,0.2071,0.1463
+2,a man throws a frisbee into a net and then throws it .,0.0,two men hit a ball back and forth using paddles,3.0,4.0,1.0,2.6667,0.1239,0.7643,1.0,1.0,1.0,1.0,0.0,0.1239,0.1239,0.1239,0.0,0.0,0.0
+3,a man throws a frisbee into a net while another man watches .,0.0,two men hit a ball back and forth using paddles,4.0,4.0,1.0,3.0,0.2084,0.7808,0.9355,0.7503,0.7491,0.6786,0.0,0.0,0.1538,0.0,0.0,0.0,0.0
+4,two men playing ping pong with each other as the ball constantly falls of,0.4215,two men hit a ball back and forth using paddles,4.0,4.0,4.0,4.0,0.6548,0.8341,0.8864,0.5996,0.7153,0.6586,0.5862,0.3885,0.6106,0.5175,0.5331,0.3098,0.4215
+5,a man hitting another man with a ping pong paddle .,0.0,two men hit a ball back and forth using paddles,3.0,2.0,3.0,2.6667,0.6429,0.8338,0.9129,0.3889,0.3182,0.1823,0.5717,0.0496,0.6089,0.0,0.5309,0.0,0.0
+6,a man strikes another man on his bare back with a ping pong paddle,0.3009,two men hit a ball back and forth using paddles,3.0,4.0,1.0,2.6667,0.5738,0.8366,0.9563,0.6969,0.7287,0.6757,0.4905,0.3883,0.5543,0.4151,0.4672,0.2689,0.3009

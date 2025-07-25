@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is demostrating a technique to sand wooden floors by using a machine .,0.6192,a man is polishing hardwood floors with a large machine .,5.0,5.0,5.0,5.0,0.8127,0.8883,1.0,1.0,1.0,1.0,0.7891,0.6732,0.773,0.6732,0.7444,0.619,0.6192
+2,a person is using a machine to clean a hardwood floor .,0.7747,a person in a room using a machine to clean and make the wood look nice,5.0,5.0,4.0,4.6667,0.8325,0.9191,1.0,0.9478,0.9324,0.9258,0.8178,0.7979,0.7996,0.7946,0.7802,0.7783,0.7747
+3,a man is using a machine to sand a wood floor .,0.6825,a man uses an industrial sanding machine on a wood floor .,5.0,5.0,5.0,5.0,0.9036,0.9397,0.9851,1.0,0.9895,0.9879,0.8974,0.7115,0.8996,0.7084,0.8931,0.6987,0.6825
+4,"indoors , a person is using a machine to polish and buff a wooden floor .",0.6731,a person in a room using a machine to clean and make the wood look nice,5.0,5.0,5.0,5.0,0.8281,0.9034,0.971,0.8253,0.82,0.7805,0.8098,0.6496,0.809,0.6863,0.7886,0.6349,0.6731
+5,a man vacuums a hardwood floor with a large object,0.6725,a man is polishing hardwood floors with a large machine .,5.0,4.0,4.0,4.3333,0.7565,0.9056,1.0,1.0,1.0,1.0,0.7144,0.7035,0.7035,0.7035,0.6725,0.6725,0.6725
+6,inside a person is using a machine to sand a wooden floor .,0.6391,a person in a room using a machine to clean and make the wood look nice,5.0,5.0,5.0,5.0,0.85,0.895,0.9804,0.8387,0.84,0.8212,0.8321,0.6508,0.8321,0.6532,0.8121,0.6098,0.6391

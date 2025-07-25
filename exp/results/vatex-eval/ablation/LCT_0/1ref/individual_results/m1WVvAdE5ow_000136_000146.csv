@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person begins to wrap a present and quietly explains what he is doing .,0.0,some gift wrapping paper is unrolled and a box is placed on top of the gift wrapping paper .,5.0,4.0,5.0,4.6667,0.457,0.8102,0.865,0.5917,0.6036,0.5108,0.3297,0.0823,0.3722,0.1004,0.2251,0.0,0.0
+2,a woman is demonstrating how to wrap a piece of paper .,0.0,some gift wrapping paper is unrolled and a box is placed on top of the gift wrapping paper .,4.0,4.0,4.0,4.0,0.4537,0.8484,0.7819,0.5285,0.5076,0.4195,0.356,0.0,0.3013,0.0,0.1764,0.0,0.0
+3,a woman is demonstrating how to make a piece of fabric .,0.0,some gift wrapping paper is unrolled and a box is placed on top of the gift wrapping paper .,1.0,2.0,3.0,2.0,0.1626,0.77,0.8148,0.8206,0.7569,0.6843,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,a person wraps up a sealed gift with white wrapping paper .,0.0026,some gift wrapping paper is unrolled and a box is placed on top of the gift wrapping paper .,4.0,4.0,4.0,4.0,0.4933,0.896,0.8709,0.5514,0.567,0.5167,0.4345,0.081,0.4182,0.1064,0.3506,0.0,0.0026
+5,"people are gathered in a room , wrapping holiday toys in holiday wrapping paper .",0.0,some gift wrapping paper is unrolled and a box is placed on top of the gift wrapping paper .,2.0,2.0,4.0,2.6667,0.4515,0.8593,0.8966,0.5831,0.6088,0.5448,0.3617,0.0594,0.3882,0.0991,0.288,0.0,0.0
+6,a person is demonstrating how to wrap an item in white paper,0.0,some gift wrapping paper is unrolled and a box is placed on top of the gift wrapping paper .,4.0,4.0,4.0,4.0,0.4633,0.8489,0.865,0.5528,0.566,0.4888,0.3678,0.0291,0.3795,0.0518,0.2691,0.0,0.0

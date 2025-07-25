@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man picks something up in a forest area and is then pouring water through a metal pipe attached to a gate .,0.2589,"a man walking in the woods turns over a pinecomb , finds a magnet , uses magnet on water bottle to pour water in one part of the gate and it comes out the other end .",5.0,5.0,5.0,5.0,0.5714,0.8379,0.9487,0.5918,0.6902,0.6302,0.4885,0.2758,0.5483,0.379,0.4608,0.1357,0.2589
+2,a person is showing how to open a bag of wine .,0.0,"a man walking in the woods turns over a pinecomb , finds a magnet , uses magnet on water bottle to pour water in one part of the gate and it comes out the other end .",3.0,3.0,2.0,2.6667,0.2166,0.7755,0.9553,0.9888,0.9548,0.9417,0.0,0.2077,0.1799,0.1795,0.0,0.0,0.0
+3,a person is using a tool to open up a box .,0.0,"a man walking in the woods turns over a pinecomb , finds a magnet , uses magnet on water bottle to pour water in one part of the gate and it comes out the other end .",2.0,2.0,2.0,2.0,0.1789,0.7878,0.9823,1.0,0.9857,0.9819,0.0,0.1789,0.1641,0.167,0.0,0.0,0.0
+4,a man had his are in a boiling pot of water and picks up something from the bottom .,0.0,"a man walking in the woods turns over a pinecomb , finds a magnet , uses magnet on water bottle to pour water in one part of the gate and it comes out the other end .",3.0,3.0,2.0,2.6667,0.2846,0.8219,0.9516,0.7696,0.8013,0.7583,0.1295,0.0704,0.2482,0.1072,0.0853,0.0,0.0
+5,older gentlemen scooping a rake looking device out of the water to see what he caught .,0.0,"a man walking in the woods turns over a pinecomb , finds a magnet , uses magnet on water bottle to pour water in one part of the gate and it comes out the other end .",2.0,2.0,1.0,1.6667,0.3136,0.7745,0.9093,0.717,0.7734,0.7075,0.1138,0.0426,0.2452,0.1125,0.0254,0.0,0.0
+6,a man pulls a tree and root ball out of a hole .,0.0,"a man walking in the woods turns over a pinecomb , finds a magnet , uses magnet on water bottle to pour water in one part of the gate and it comes out the other end .",2.0,2.0,2.0,2.0,0.1965,0.7888,0.9575,0.7866,0.8183,0.7696,0.0,0.0,0.1608,0.018,0.0,0.0,0.0

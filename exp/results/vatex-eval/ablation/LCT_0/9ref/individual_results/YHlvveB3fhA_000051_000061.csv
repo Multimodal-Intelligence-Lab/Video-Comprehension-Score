@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person shapes glass using a hot furnace and then rolling the glass .,0.2128,"a man is rolling glass in a furnace , explaining what he's doing , as a news anchors voice over also explains what the man is doing .",5.0,5.0,5.0,5.0,0.8064,0.9019,0.971,0.7387,0.7872,0.7305,0.7836,0.3209,0.731,0.2778,0.7226,0.2599,0.2128
+2,a man is using a machine to shape a piece of metal .,0.3326,a man is using tools and extreme heat to shape glass into an object .,4.0,4.0,4.0,4.0,0.4972,0.8821,1.0,0.9766,0.9574,0.9437,0.43,0.3975,0.4885,0.4113,0.4202,0.317,0.3326
+3,a man is using a tool to shape a piece of metal .,0.4712,a man is using tools and extreme heat to shape glass into an object .,4.0,4.0,4.0,4.0,0.5924,0.9024,1.0,0.9766,0.9574,0.9439,0.5483,0.5116,0.5854,0.5228,0.5405,0.4588,0.4712
+4,a man inserts glass on the tip of a blowpipe into a furnace,0.3673,a person rolls around a glass creation inside a furnace .,5.0,5.0,4.0,4.6667,0.6965,0.8599,0.9787,0.8094,0.8101,0.7764,0.6471,0.4703,0.6563,0.4624,0.6003,0.3667,0.3673
+5,image of glass blower twirlinga blown glass orb in a super heated furnace .,0.4205,a person rolls around a glass creation inside a furnace .,5.0,4.0,4.0,4.3333,0.6478,0.8386,0.9888,0.8596,0.8862,0.8638,0.58,0.5007,0.597,0.5157,0.5195,0.4025,0.4205
+6,a glass blower is using a tool to shape the heated glass into a shape .,0.1644,a person is showing how to heat glass and roll it into a round object .,5.0,5.0,5.0,5.0,0.783,0.9222,1.0,0.8933,0.9155,0.8919,0.7647,0.3273,0.7267,0.284,0.7036,0.2522,0.1644

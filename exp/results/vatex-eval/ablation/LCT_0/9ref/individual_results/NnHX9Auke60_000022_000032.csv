@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man is using a wrench , then another man is holding a product .",0.0811,a man demonstrates the capabilities of a socket wrench and 3-d renderings of the sockets are shown .,4.0,4.0,5.0,4.3333,0.5185,0.8393,0.9697,0.7845,0.8673,0.8218,0.4263,0.2668,0.4166,0.2594,0.2796,0.0903,0.0811
+2,a man is demonstrating how to use a wrench on a car .,0.3464,a man demonstrates the capabilities of a socket wrench and 3-d renderings of the sockets are shown .,5.0,4.0,4.0,4.3333,0.5948,0.8675,0.9756,0.8983,0.8611,0.828,0.5232,0.4781,0.5522,0.4466,0.473,0.3837,0.3464
+3,a man is demonstrating how to use a socket wrench .,0.6723,a man demonstrates the capabilities of a socket wrench and 3-d renderings of the sockets are shown .,5.0,5.0,4.0,4.6667,0.8135,0.902,0.9756,0.9105,0.7515,0.7118,0.7933,0.7952,0.6761,0.6805,0.6678,0.7729,0.6723
+4,a man shows how to correctly use a large wrench on large items .,0.3616,a man describes the advantage of owning a special wrench .,5.0,3.0,4.0,4.0,0.6434,0.8667,0.9859,0.8933,0.906,0.8798,0.5836,0.4728,0.6157,0.4704,0.5513,0.3645,0.3616
+5,a wrench is placed around a pipe fitting while someone explains its design .,0.0,a male is describing a multi-fit socket tool and is showing the different places the tool would be useful to use .,5.0,4.0,4.0,4.3333,0.6056,0.8221,0.954,0.6838,0.7966,0.7273,0.5105,0.2815,0.4323,0.1268,0.2662,0.1334,0.0
+6,a man demonstrates how to use a wrench to tighten or loosen a bolt .,0.4642,a man demonstrates the capabilities of a socket wrench and 3-d renderings of the sockets are shown .,5.0,4.0,4.0,4.3333,0.6277,0.8428,0.9846,0.8441,0.8673,0.8255,0.5543,0.5589,0.5948,0.5525,0.515,0.472,0.4642

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is showing how people play in a lacrosse game against each other .,0.4132,two teams are on a field playing lacrosse and they start scuffling .,4.0,4.0,4.0,4.0,0.6744,0.8635,0.9787,0.8723,0.8707,0.8445,0.6074,0.5129,0.6345,0.512,0.5593,0.4146,0.4132
+2,a group of people are playing a game of lacrosse on a field .,0.4137,during a lacrosse match one of the players strikes a player on the opposing team with his lacrosse stick .,5.0,5.0,5.0,5.0,0.6489,0.8797,0.9706,0.9527,0.8943,0.8718,0.6009,0.5464,0.582,0.5168,0.5249,0.4496,0.4137
+3,a group of people are playing a game of lacrosse on a field .,0.4137,during a lacrosse match one of the players strikes a player on the opposing team with his lacrosse stick .,5.0,5.0,5.0,5.0,0.6489,0.8797,0.9706,0.9527,0.8943,0.8718,0.6009,0.5464,0.582,0.5168,0.5249,0.4496,0.4137
+4,two teams are playing lacrosse against one another and try to catch the ball .,0.4077,two teams are on a field playing lacrosse and they start scuffling .,5.0,5.0,5.0,5.0,0.6597,0.8846,0.9399,0.6545,0.6992,0.631,0.6143,0.4705,0.6165,0.4711,0.5653,0.4073,0.4077
+5,two teams are playing lacrosse against each other on a lacrosse field .,0.1767,two teams are on a field playing lacrosse and they start scuffling .,5.0,5.0,5.0,5.0,0.7684,0.9571,0.9706,0.7346,0.6827,0.6376,0.758,0.3573,0.7171,0.2351,0.7044,0.3485,0.1767
+6,"athletes play a game of lacrosse and run down the field with their sticks , making passes and plays .",0.1542,a lacrosse player who has the ball swings his lacrosse stick at another player and receives a penalty .,5.0,4.0,5.0,4.6667,0.6252,0.8515,0.9655,0.6427,0.6933,0.6259,0.5506,0.0924,0.5307,0.2932,0.4489,0.0,0.1542

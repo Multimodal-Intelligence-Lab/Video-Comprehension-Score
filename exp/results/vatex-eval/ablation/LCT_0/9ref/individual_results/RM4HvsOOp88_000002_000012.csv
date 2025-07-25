@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy doing a flip off of a stone wall then running a metal attachment on the same wall .,0.4294,a man doing a trick on a wall and running into a metal box .,5.0,5.0,5.0,5.0,0.6997,0.9207,0.9474,0.9417,0.9168,0.9075,0.6739,0.5001,0.6426,0.4865,0.6119,0.4445,0.4294
+2,a man jumps off of a wall and does a back flip .,0.2697,a person is doing some flips on a wall before hitting a storage and falling to the ground .,5.0,4.0,4.0,4.3333,0.7119,0.8848,0.9677,1.0,0.9526,0.9387,0.6742,0.4652,0.6439,0.381,0.5973,0.369,0.2697
+3,a person jumps off a wall with a parachute .,0.3386,a person is doing some flips on a wall before hitting a storage and falling to the ground .,4.0,3.0,2.0,3.0,0.4651,0.8517,1.0,1.0,1.0,1.0,0.372,0.4651,0.4513,0.4513,0.3349,0.372,0.3386
+4,a boy stands on a fence then successfully does a backflip and lands on the ground below .,0.2021,a teenage boy uses a rock wall to do a trick flip and then runs face first into a metal box .,4.0,3.0,4.0,3.6667,0.4046,0.8156,0.9859,0.9778,0.9748,0.9684,0.2531,0.364,0.379,0.362,0.2248,0.2046,0.2021
+5,"a boy in a hallway , smashes his head against the wall then falls to the floor .",0.2514,a teenage boy does a flip against a rock wall and then smashes his head into a metal box .,4.0,4.0,4.0,4.0,0.5698,0.8796,0.9412,0.8,0.7748,0.7384,0.5109,0.3639,0.4934,0.3432,0.4241,0.2758,0.2514
+6,a boy is doing a trick with his bike and tumbles to the ground .,0.1266,a teenage boy uses a rock wall to do a trick flip and then runs face first into a metal box .,3.0,4.0,4.0,3.6667,0.4443,0.823,0.9714,0.9221,0.8892,0.8654,0.3056,0.3069,0.4134,0.2939,0.267,0.1578,0.1266

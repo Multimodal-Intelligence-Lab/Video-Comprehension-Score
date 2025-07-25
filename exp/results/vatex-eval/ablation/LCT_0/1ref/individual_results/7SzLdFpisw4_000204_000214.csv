@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a women and a man are bond together and are sky diving,0.0887,a man and woman shown jumping out of an airplane making gestures at the camera .,5.0,5.0,5.0,5.0,0.6245,0.8095,0.883,0.5453,0.5114,0.3964,0.5362,0.272,0.5748,0.2177,0.4747,0.1494,0.0887
+2,two people are skydiving in the sky with a parachute .,0.374,a man and woman shown jumping out of an airplane making gestures at the camera .,5.0,4.0,5.0,4.6667,0.5308,0.7496,1.0,1.0,1.0,1.0,0.374,0.5308,0.5308,0.5308,0.374,0.374,0.374
+3,two people are skydiving in the air with a parachute .,0.4394,a man and woman shown jumping out of an airplane making gestures at the camera .,5.0,4.0,5.0,4.6667,0.5667,0.7729,1.0,1.0,1.0,1.0,0.4394,0.5667,0.5667,0.5667,0.4394,0.4394,0.4394
+4,a man and woman are parachuting high over some water .,0.4267,a man and woman shown jumping out of an airplane making gestures at the camera .,4.0,3.0,4.0,3.6667,0.5319,0.8166,1.0,1.0,1.0,1.0,0.4267,0.5319,0.5319,0.5319,0.4267,0.4267,0.4267
+5,two men are holding on to each other as they are skydiving .,0.0,a man and woman shown jumping out of an airplane making gestures at the camera .,4.0,4.0,4.0,4.0,0.4644,0.7585,0.7467,0.2579,0.0751,0.0,0.2939,0.0,0.2826,0.0,0.0543,0.0,0.0
+6,in the air two men are skydiving in tandem and releasing a parachute .,0.0,a man and woman shown jumping out of an airplane making gestures at the camera .,4.0,4.0,4.0,4.0,0.4892,0.7818,0.8548,0.5642,0.5196,0.3855,0.3467,0.0947,0.4024,0.017,0.2357,0.0,0.0

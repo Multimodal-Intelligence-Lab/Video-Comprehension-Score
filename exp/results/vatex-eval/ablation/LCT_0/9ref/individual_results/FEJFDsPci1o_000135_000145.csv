@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a middle-aged man rides a wakeboard behind a speedboat and takes a sip of a beverage .,0.3033,a man is riding on a board in the water behind a boat .,5.0,5.0,5.0,5.0,0.5363,0.8392,0.963,0.8222,0.801,0.7629,0.4419,0.4304,0.5185,0.4153,0.4079,0.3212,0.3033
+2,a man is standing on a boat and is holding a rope in the water .,0.0,a man rides a water ski right behind a motor boat as people talk and he laughs .,2.0,4.0,4.0,3.3333,0.5152,0.8757,0.9386,0.6234,0.6126,0.542,0.4464,0.0133,0.3774,0.1049,0.289,0.0,0.0
+3,a man is using a rope to get out of the water .,0.0,a man rides a water ski right behind a motor boat as people talk and he laughs .,2.0,2.0,2.0,2.0,0.4703,0.855,0.9524,0.7504,0.6735,0.5896,0.3777,0.1093,0.3996,0.0213,0.2947,0.0,0.0
+4,a man was sliding on the water using a surfing board while being dragged along with rope,0.4886,a man rides a surfboard while being towed by a boat,5.0,4.0,5.0,4.6667,0.6794,0.8687,0.9434,0.8161,0.8252,0.7878,0.6209,0.574,0.6314,0.5786,0.5527,0.4829,0.4886
+5,a man on a board being pulled and lifted by a parachute in the sea .,0.4508,a man is on a waterboard being pulled by someone in a water vessel .,4.0,4.0,4.0,4.0,0.6545,0.8599,0.941,0.7974,0.7432,0.6907,0.5961,0.4283,0.6124,0.5302,0.5469,0.3546,0.4508
+6,a man is being hoisted in the air by a sail as he is attached to a surfboard riding the waves .,0.0,a man rides a water ski right behind a motor boat as people talk and he laughs .,4.0,4.0,3.0,3.6667,0.5758,0.8569,0.9264,0.7112,0.707,0.6288,0.505,0.0779,0.453,0.0724,0.3617,0.0,0.0

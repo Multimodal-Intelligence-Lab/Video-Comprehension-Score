@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a gentleman dressed in black and gray demonstrates arm exercises .,0.2623,the man is doing some hand and arm exercises as he lifts weights .,5.0,4.0,5.0,4.6667,0.5712,0.8406,0.8397,0.7915,0.6915,0.633,0.4899,0.4583,0.4894,0.3799,0.3926,0.3556,0.2623
+2,a man in a gym is lifting weights in a gym .,0.0,the man is doing some hand and arm exercises as he lifts weights .,5.0,5.0,5.0,5.0,0.6694,0.8954,0.8136,0.5567,0.3222,0.243,0.6307,0.3378,0.5936,0.0,0.5461,0.2972,0.0
+3,a man in a gym is demonstrating how to lift weights .,0.3367,the man is doing some hand and arm exercises as he lifts weights .,5.0,5.0,5.0,5.0,0.6216,0.8893,0.941,0.7278,0.6415,0.5969,0.5745,0.48,0.5978,0.4101,0.5478,0.4153,0.3367
+4,"in a gym , a man is doing various exercises while holding weights .",0.1718,the man is doing some hand and arm exercises as he lifts weights .,5.0,5.0,5.0,5.0,0.7033,0.896,0.7991,0.3094,0.4461,0.3818,0.6689,0.018,0.6287,0.2124,0.5856,0.0,0.1718
+5,a man in a gym exercises his arms by pulling weights on a machine .,0.0,the man is doing some hand and arm exercises as he lifts weights .,4.0,4.0,4.0,4.0,0.7101,0.9051,0.9004,0.3513,0.1758,0.0893,0.6797,0.0865,0.678,0.0,0.6443,0.0457,0.0
+6,the man is doing his exercises as he pulls weights in the gym .,0.1529,the man is doing some hand and arm exercises as he lifts weights .,5.0,5.0,5.0,5.0,0.6746,0.9009,0.849,0.6394,0.4588,0.3993,0.6388,0.4654,0.6168,0.1978,0.5746,0.4351,0.1529

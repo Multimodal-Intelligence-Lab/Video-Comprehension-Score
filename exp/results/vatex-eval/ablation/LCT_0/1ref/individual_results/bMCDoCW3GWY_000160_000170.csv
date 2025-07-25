@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman from germany is throwing a frisbee on a course,0.0,a man in a red and white hat is being interviewed as well as a woman in a red shirt .,4.0,5.0,5.0,4.6667,0.0395,0.7757,0.7709,0.4282,0.3709,0.189,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,a man throws a frisbee and then throws a frisbee .,0.0,a man in a red and white hat is being interviewed as well as a woman in a red shirt .,2.0,3.0,4.0,3.0,0.1357,0.7743,0.7179,0.4547,0.3795,0.1987,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a man is throwing a frisbee in a park .,0.0,a man in a red and white hat is being interviewed as well as a woman in a red shirt .,4.0,4.0,4.0,4.0,0.0907,0.7836,0.8742,0.6464,0.4009,0.2355,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,a man is throwing a frisbee in the park,0.0,a man in a red and white hat is being interviewed as well as a woman in a red shirt .,4.0,4.0,4.0,4.0,0.077,0.7836,0.8742,0.6464,0.4009,0.2355,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5,a man holds a frisbee and throws them at his friend .,0.0,a man in a red and white hat is being interviewed as well as a woman in a red shirt .,3.0,2.0,4.0,3.0,0.1239,0.7878,0.8664,0.6963,0.6809,0.5949,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6,"a man and boy are playing frisbee outside , the man is talking and makes a face at the camera .",0.0,a man in a red and white hat is being interviewed as well as a woman in a red shirt .,3.0,4.0,4.0,3.6667,0.1741,0.7961,0.9399,0.6089,0.652,0.5629,0.0,0.0,0.1213,0.0,0.0,0.0,0.0

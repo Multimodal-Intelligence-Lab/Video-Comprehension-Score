@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man in a red shirt plays the saxaphone at a fuction in church .,0.4702,"in a church , a young man is playing the saxophone in front of the church .",5.0,5.0,5.0,5.0,0.76,0.909,0.9404,0.7671,0.7415,0.7125,0.7349,0.6158,0.7253,0.5253,0.69,0.6022,0.4702
+2,a man is playing a saxophone while another man plays the saxophone .,0.2728,a man playing a saxophone in a church for a congregation .,4.0,4.0,3.0,3.6667,0.5284,0.9183,0.8,0.9602,0.8033,0.7703,0.4801,0.4872,0.366,0.3322,0.3053,0.4416,0.2728
+3,a man is playing a saxophone in front of a group of people .,0.5894,a man playing a saxophone in a church for a congregation .,5.0,5.0,5.0,5.0,0.6321,0.9067,1.0,1.0,1.0,1.0,0.5894,0.6321,0.6321,0.6321,0.5894,0.5894,0.5894
+4,a man is sitting at an organ playing music at church .,0.1087,"in a church , a young man is playing the saxophone in front of the church .",3.0,4.0,4.0,3.6667,0.6386,0.8969,0.8988,0.7486,0.683,0.6177,0.5924,0.3407,0.5359,0.2134,0.4765,0.2477,0.1087
+5,a man plays the organ at a church ceremony while women sing .,0.2968,a man playing a saxophone in a church for a congregation .,4.0,4.0,4.0,4.0,0.5847,0.8632,0.9599,0.8644,0.8069,0.7751,0.5005,0.4364,0.5252,0.3963,0.4289,0.3436,0.2968
+6,a man playing a saxophone solo while being accompanied by a group of musicians in an orchestra .,0.4425,a man playing a saxophone in a church for a congregation .,5.0,4.0,4.0,4.3333,0.5466,0.8728,0.9497,1.0,0.9519,0.9439,0.4697,0.5446,0.5197,0.5216,0.4341,0.4693,0.4425

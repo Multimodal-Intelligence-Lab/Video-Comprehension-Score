@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,someone is using an atm while lots of static can be heard .,0.0,a demonstration is shown as to how the electronic machine is being operated .,5.0,5.0,5.0,5.0,0.308,0.7472,0.9412,0.7974,0.7267,0.6343,0.0739,0.1322,0.2648,0.0478,0.016,0.0,0.0
+2,a man is demonstrating how to use an atm machine .,0.1163,a demonstration is shown as to how the electronic machine is being operated .,5.0,5.0,5.0,5.0,0.4662,0.8456,0.875,0.6036,0.7144,0.6622,0.3687,0.1156,0.39,0.2528,0.2786,0.0,0.1163
+3,a person is demonstrating how to use an atm machine .,0.2085,a demonstration is shown as to how the electronic machine is being operated .,5.0,5.0,5.0,5.0,0.5199,0.8491,0.875,0.6036,0.7144,0.6636,0.4346,0.2046,0.4513,0.328,0.3538,0.0632,0.2085
+4,a person approaches an automatic teller machine and places their hands on it .,0.0,a demonstration is shown as to how the electronic machine is being operated .,5.0,4.0,4.0,4.3333,0.2506,0.8006,0.9048,0.9722,0.8954,0.8694,0.0639,0.2292,0.1717,0.1631,0.0,0.0372,0.0
+5,someone is using a bit coin machine that is similar to an atm .,0.1742,a demonstration is shown as to how the electronic machine is being operated .,5.0,4.0,4.0,4.3333,0.3779,0.7875,0.9756,0.9722,0.9565,0.9448,0.2101,0.3601,0.3624,0.3496,0.1903,0.1875,0.1742
+6,a person typing briskly the keys of an atm and the card came out,0.0,a demonstration is shown as to how the electronic machine is being operated .,4.0,4.0,4.0,4.0,0.215,0.7503,0.9524,0.7603,0.7426,0.6569,0.0,0.0,0.1757,0.0,0.0,0.0,0.0

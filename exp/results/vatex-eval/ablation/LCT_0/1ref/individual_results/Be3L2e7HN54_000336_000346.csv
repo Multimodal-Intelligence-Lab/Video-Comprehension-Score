@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is using a razor to shave her legs and thighs .,0.3664,a woman is sitting on the side of a tub and shaves her leg with a manual razor .,5.0,4.0,5.0,4.6667,0.6124,0.8788,0.8654,0.7393,0.6961,0.6542,0.559,0.4758,0.5522,0.4432,0.4904,0.4035,0.3664
+2,a man is laying on a table while another person is waxing his legs .,0.0,a woman is sitting on the side of a tub and shaves her leg with a manual razor .,1.0,1.0,1.0,1.0,0.2823,0.7871,0.8768,0.5622,0.5276,0.3998,0.0881,0.0,0.1814,0.0,0.0,0.0,0.0
+3,a woman is laying on a table while another woman is waxing her chest .,0.0,a woman is sitting on the side of a tub and shaves her leg with a manual razor .,2.0,1.0,2.0,1.6667,0.2421,0.7971,0.9231,0.7574,0.7482,0.6841,0.0492,0.0,0.179,0.0,0.0,0.0,0.0
+4,a woman showing a shaved leg and reviewing a shaving product .,0.0,a woman is sitting on the side of a tub and shaves her leg with a manual razor .,5.0,4.0,2.0,3.6667,0.5177,0.8547,0.9129,0.4058,0.3427,0.231,0.4357,0.0,0.4717,0.0,0.3818,0.0,0.0
+5,"a woman is rubbing her leg and hssaa can of shaving cream next to her , as she talk about shaving her leg .",0.0,a woman is sitting on the side of a tub and shaves her leg with a manual razor .,4.0,3.0,4.0,3.6667,0.5283,0.8543,0.8615,0.2834,0.2353,0.1049,0.4479,0.0,0.4525,0.0,0.3591,0.0,0.0
+6,a woman is in a bathroom shaving a youg guys legs .,0.1432,a woman is sitting on the side of a tub and shaves her leg with a manual razor .,4.0,4.0,3.0,3.6667,0.5842,0.8447,0.8471,0.6205,0.5745,0.4962,0.5078,0.33,0.5092,0.2716,0.4189,0.2068,0.1432

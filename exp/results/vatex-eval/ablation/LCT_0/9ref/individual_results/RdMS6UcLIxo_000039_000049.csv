@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl is sitting down and getting make up apllied to her face,0.183,a woman is seated and a man is applying makeup to her lips .,5.0,5.0,5.0,5.0,0.5536,0.8236,0.9599,0.8387,0.8253,0.7704,0.4581,0.1324,0.5131,0.3271,0.4088,0.0,0.183
+2,a woman is applying makeup to her face with a brush .,0.1587,a woman is having lip gloss applied and the make up artist gives a commentary .,4.0,4.0,5.0,4.3333,0.5258,0.8902,1.0,1.0,1.0,1.0,0.4673,0.3485,0.4623,0.3097,0.396,0.2681,0.1587
+3,a woman is applying makeup to her face with a brush .,0.1587,a woman is having lip gloss applied and the make up artist gives a commentary .,4.0,4.0,5.0,4.3333,0.5258,0.8902,1.0,1.0,1.0,1.0,0.4673,0.3485,0.4623,0.3097,0.396,0.2681,0.1587
+4,a woman applies various shades of lip gloss onto her lips .,0.3092,a man demonstrates applying lip gloss to another person's lips .,4.0,4.0,4.0,4.0,0.6856,0.8693,0.9321,0.6948,0.7833,0.7507,0.6379,0.323,0.5639,0.3995,0.4977,0.2212,0.3092
+5,a girl applies make-up to her lips using a brush .,0.2087,a man applies likp color to a mode's lips .,4.0,4.0,5.0,4.3333,0.558,0.8579,0.9599,0.6435,0.6996,0.642,0.4848,0.2235,0.4886,0.3279,0.3849,0.0949,0.2087
+6,a woman using a lip brush to apply lipstick to her lips .,0.163,a man applies likp color to a mode's lips .,4.0,4.0,5.0,4.3333,0.5895,0.8828,0.9264,0.7008,0.6597,0.6013,0.535,0.327,0.5522,0.2846,0.4928,0.2127,0.163

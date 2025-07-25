@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman tells how to do a rope like stitch on a embroidery hoop .,0.4931,a woman is showing how to do a project with a needle and thread .,4.0,2.0,2.0,2.6667,0.5989,0.8353,0.9787,1.0,0.9794,0.9745,0.5036,0.5989,0.5889,0.5905,0.4912,0.5036,0.4931
+2,a person is using a needle to make a design on a piece of fabric .,0.6848,a woman is using the skill of embroidery to put a design onto a piece of fabric .,5.0,5.0,5.0,5.0,0.7182,0.8941,1.0,1.0,1.0,1.0,0.6848,0.7182,0.7182,0.7182,0.6848,0.6848,0.6848
+3,a person is embroidering a design on a piece of fabric .,0.8343,a woman is using the skill of embroidery to put a design onto a piece of fabric .,5.0,5.0,5.0,5.0,0.8624,0.9148,1.0,1.0,1.0,1.0,0.8496,0.8624,0.843,0.8484,0.8284,0.8496,0.8343
+4,a women making a tutorial on how to thread and weave needles together,0.405,a woman is demonstrating stitching a flower pattern .,5.0,2.0,2.0,3.0,0.7447,0.8662,1.0,1.0,1.0,1.0,0.7053,0.5336,0.7179,0.5336,0.6743,0.405,0.405
+5,a woman is tying a single thread around a sewing needle .,0.4577,a woman is using a needle and thread to do embroidery work .,4.0,3.0,2.0,3.0,0.633,0.8804,0.9697,0.8535,0.8673,0.8395,0.5784,0.57,0.5829,0.5279,0.5208,0.5061,0.4577
+6,a woman teaches how to do the sewing on the flowers in embroidery .,0.7248,a woman is demonstrating stitching a flower pattern .,5.0,5.0,5.0,5.0,0.7871,0.8864,0.9756,0.9301,0.8999,0.8861,0.7549,0.7516,0.7719,0.7617,0.7365,0.7131,0.7248

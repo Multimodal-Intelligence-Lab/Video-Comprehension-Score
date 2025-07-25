@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person was walking around in a store and then slapped a mannequin,0.0,there is a man walking into a store and hitting a dummy used for training,5.0,4.0,5.0,4.6667,0.5919,0.85,0.7595,0.6175,0.4686,0.3748,0.5199,0.339,0.4626,0.1021,0.3678,0.2224,0.0
+2,a group of people are in a room and one of them is holding a punching bag .,0.0,there is a man walking into a store and hitting a dummy used for training,4.0,1.0,1.0,2.0,0.2929,0.7659,0.8937,0.4512,0.5996,0.4773,0.0767,0.0,0.2087,0.0,0.0,0.0,0.0
+3,a man is standing in front of a group of people in a store .,0.0,there is a man walking into a store and hitting a dummy used for training,4.0,2.0,2.0,2.6667,0.3436,0.8282,0.7867,0.6435,0.5132,0.4122,0.2074,0.0,0.1656,0.0,0.0,0.0,0.0
+4,a young man stands in a corner as another young man walks up to him and taps him in a prank .,0.0,there is a man walking into a store and hitting a dummy used for training,4.0,4.0,1.0,3.0,0.1716,0.8045,0.832,0.6085,0.6039,0.5076,0.0,0.0,0.0043,0.0,0.0,0.0,0.0
+5,a guy walks up to a television on a trash can and breaks it with a bat .,0.0,there is a man walking into a store and hitting a dummy used for training,2.0,2.0,2.0,2.0,0.2931,0.795,1.0,0.8723,0.8863,0.857,0.1108,0.1895,0.2931,0.2024,0.1108,0.0,0.0
+6,a boy with bat in hand walks over to a trashed tv and smashes the sceen .,0.0,there is a man walking into a store and hitting a dummy used for training,3.0,1.0,1.0,1.6667,0.2404,0.7836,0.9275,0.6023,0.5955,0.4837,0.0305,0.0,0.181,0.0,0.0,0.0,0.0

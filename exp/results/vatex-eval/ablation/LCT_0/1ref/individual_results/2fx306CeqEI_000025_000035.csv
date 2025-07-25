@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person sliding down a very long slide and people watching them slid .,0.0,a man is sliding down backwards on a very tall infatable waterslide .,5.0,5.0,4.0,4.6667,0.4764,0.8493,0.7364,0.2848,0.018,0.0,0.3835,0.0,0.2889,0.0,0.1628,0.0,0.0
+2,a group of people are sliding down a water slide .,0.0,a man is sliding down backwards on a very tall infatable waterslide .,4.0,4.0,4.0,4.0,0.4471,0.8259,0.7957,0.5633,0.3193,0.1759,0.3306,0.0186,0.3052,0.0,0.1588,0.0,0.0
+3,a group of people are sliding down a water slide .,0.0,a man is sliding down backwards on a very tall infatable waterslide .,4.0,4.0,4.0,4.0,0.4471,0.8259,0.7957,0.5633,0.3193,0.1759,0.3306,0.0186,0.3052,0.0,0.1588,0.0,0.0
+4,"a child slides down a waterslide , stops in the middle then pushes themselves down the rest of the way into shallow water .",0.137,a man is sliding down backwards on a very tall infatable waterslide .,4.0,2.0,1.0,2.3333,0.4216,0.8224,0.8454,0.8776,0.8149,0.775,0.2967,0.3409,0.3158,0.2902,0.168,0.1986,0.137
+5,several people slide down a large water slide into a pool while a crowd watches .,0.0,a man is sliding down backwards on a very tall infatable waterslide .,4.0,4.0,4.0,4.0,0.4446,0.8095,0.8814,0.4262,0.4044,0.2643,0.314,0.0,0.3699,0.0,0.2216,0.0,0.0
+6,several people lay on floaties and slide down a water slide into the pool below .,0.0,a man is sliding down backwards on a very tall infatable waterslide .,4.0,2.0,4.0,3.3333,0.4024,0.8052,0.828,0.1635,0.0,0.0,0.2578,0.0,0.2783,0.0,0.1036,0.0,0.0

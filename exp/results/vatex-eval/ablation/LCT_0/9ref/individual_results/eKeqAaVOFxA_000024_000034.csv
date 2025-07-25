@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a little girl reads a book and chatters away in her car seat .,0.5044,a little girl is looking at a picture book while sitting in a carseat .,5.0,5.0,5.0,5.0,0.8999,0.9211,0.9555,0.7792,0.7028,0.6522,0.8907,0.5211,0.8301,0.5244,0.8283,0.5029,0.5044
+2,a young boy is sitting in a chair and eating a newspaper .,0.0,a girl is reading a book while sitting in a car seat and she is mumbling .,3.0,2.0,3.0,2.6667,0.2611,0.8045,1.0,0.8723,0.8707,0.8312,0.0641,0.0881,0.2527,0.0535,0.0602,0.0,0.0
+3,a young man is sitting in a chair and eating chips .,0.0,a girl is reading a book while sitting in a car seat and she is mumbling .,3.0,2.0,1.0,2.0,0.1158,0.793,1.0,0.8723,0.8863,0.85,0.0,0.0,0.0801,0.0,0.0,0.0,0.0
+4,a little baby is looking at a book that a woman is showing to him,0.2387,a little girl is looking at a picture book while sitting in a carseat .,3.0,3.0,4.0,3.3333,0.5258,0.8777,0.9125,0.8115,0.7376,0.684,0.4588,0.41,0.4753,0.3332,0.385,0.3054,0.2387
+5,a young baby listens to her mom reading a book .,0.5362,a young toddler pretends to read a book .,4.0,3.0,2.0,3.0,0.5913,0.8812,1.0,1.0,1.0,1.0,0.5362,0.5913,0.5913,0.5913,0.5362,0.5362,0.5362
+6,the children are sitting playing with their books and blowing bubbles .,0.0,a girl is reading a book while sitting in a car seat and she is mumbling .,3.0,4.0,4.0,3.6667,0.3757,0.8237,0.9599,0.8238,0.8382,0.7942,0.2311,0.1485,0.3317,0.1631,0.1678,0.0,0.0

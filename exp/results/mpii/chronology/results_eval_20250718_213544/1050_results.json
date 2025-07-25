@@ -1,0 +1,210 @@
+[
+  {
+    "iteration_id": "1",
+    "file_name": "1050.json",
+    "subfolder": "beginning",
+    "metrics": {
+      "BLEU-1": 1.0,
+      "BLEU-4": 1.0,
+      "METEOR": 0.9999999067055394,
+      "ROUGE-1": 1.0,
+      "ROUGE-4": 1.0,
+      "ROUGE-L": 1.0,
+      "ROUGE-Lsum": 1.0,
+      "VCS_LCT0": 0.9999999999999998,
+      "VCS_LCT1": 0.9999999999999998
+    }
+  },
+  {
+    "iteration_id": "2",
+    "file_name": "1050.json",
+    "subfolder": "beginning",
+    "metrics": {
+      "BLEU-1": 1.0,
+      "BLEU-4": 0.9906390532962042,
+      "METEOR": 0.9485604198250729,
+      "ROUGE-1": 1.0,
+      "ROUGE-4": 0.98125,
+      "ROUGE-L": 0.8834355828220859,
+      "ROUGE-Lsum": 1.0,
+      "VCS_LCT0": 0.8390003032672333,
+      "VCS_LCT1": 0.8985885136364116
+    }
+  },
+  {
+    "iteration_id": "3",
+    "file_name": "1050.json",
+    "subfolder": "beginning",
+    "metrics": {
+      "BLEU-1": 1.0,
+      "BLEU-4": 0.9906390532962042,
+      "METEOR": 0.9094764781341108,
+      "ROUGE-1": 1.0,
+      "ROUGE-4": 0.98125,
+      "ROUGE-L": 0.8220858895705522,
+      "ROUGE-Lsum": 1.0,
+      "VCS_LCT0": 0.7223211565206591,
+      "VCS_LCT1": 0.7223211565206591
+    }
+  },
+  {
+    "iteration_id": "4",
+    "file_name": "1050.json",
+    "subfolder": "beginning",
+    "metrics": {
+      "BLEU-1": 1.0,
+      "BLEU-4": 0.9906390532962042,
+      "METEOR": 0.8505783790087463,
+      "ROUGE-1": 1.0,
+      "ROUGE-4": 0.98125,
+      "ROUGE-L": 0.7361963190184049,
+      "ROUGE-Lsum": 1.0,
+      "VCS_LCT0": 0.6106248100708219,
+      "VCS_LCT1": 0.6106248100708219
+    }
+  },
+  {
+    "iteration_id": "5",
+    "file_name": "1050.json",
+    "subfolder": "beginning",
+    "metrics": {
+      "BLEU-1": 1.0,
+      "BLEU-4": 0.9906390532962042,
+      "METEOR": 0.8305914402332362,
+      "ROUGE-1": 1.0,
+      "ROUGE-4": 0.98125,
+      "ROUGE-L": 0.6809815950920245,
+      "ROUGE-Lsum": 1.0,
+      "VCS_LCT0": 0.5169132232478504,
+      "VCS_LCT1": 0.5169132232478504
+    }
+  },
+  {
+    "iteration_id": "6",
+    "file_name": "1050.json",
+    "subfolder": "beginning",
+    "metrics": {
+      "BLEU-1": 1.0,
+      "BLEU-4": 0.9906390532962042,
+      "METEOR": 0.8043473352769679,
+      "ROUGE-1": 1.0,
+      "ROUGE-4": 0.98125,
+      "ROUGE-L": 0.5828220858895705,
+      "ROUGE-Lsum": 1.0,
+      "VCS_LCT0": 0.4519326478387261,
+      "VCS_LCT1": 0.4519326478387261
+    }
+  },
+  {
+    "iteration_id": "7",
+    "file_name": "1050.json",
+    "subfolder": "beginning",
+    "metrics": {
+      "BLEU-1": 1.0,
+      "BLEU-4": 0.9906390532962042,
+      "METEOR": 0.8043473352769679,
+      "ROUGE-1": 1.0,
+      "ROUGE-4": 0.98125,
+      "ROUGE-L": 0.5030674846625767,
+      "ROUGE-Lsum": 1.0,
+      "VCS_LCT0": 0.43126565097687825,
+      "VCS_LCT1": 0.43126565097687825
+    }
+  },
+  {
+    "iteration_id": "8",
+    "file_name": "1050.json",
+    "subfolder": "beginning",
+    "metrics": {
+      "BLEU-1": 1.0,
+      "BLEU-4": 0.9906390532962042,
+      "METEOR": 0.7854257259475218,
+      "ROUGE-1": 1.0,
+      "ROUGE-4": 0.98125,
+      "ROUGE-L": 0.5521472392638037,
+      "ROUGE-Lsum": 1.0,
+      "VCS_LCT0": 0.4508067973593394,
+      "VCS_LCT1": 0.4508067973593394
+    }
+  },
+  {
+    "iteration_id": "9",
+    "file_name": "1050.json",
+    "subfolder": "beginning",
+    "metrics": {
+      "BLEU-1": 1.0,
+      "BLEU-4": 0.9906390532962042,
+      "METEOR": 0.8088972128279883,
+      "ROUGE-1": 1.0,
+      "ROUGE-4": 0.98125,
+      "ROUGE-L": 0.6503067484662577,
+      "ROUGE-Lsum": 1.0,
+      "VCS_LCT0": 0.5179795057755716,
+      "VCS_LCT1": 0.5179795057755716
+    }
+  },
+  {
+    "iteration_id": "10",
+    "file_name": "1050.json",
+    "subfolder": "beginning",
+    "metrics": {
+      "BLEU-1": 1.0,
+      "BLEU-4": 0.9906390532962042,
+      "METEOR": 0.8347231720116618,
+      "ROUGE-1": 1.0,
+      "ROUGE-4": 0.98125,
+      "ROUGE-L": 0.7484662576687117,
+      "ROUGE-Lsum": 1.0,
+      "VCS_LCT0": 0.612155209753553,
+      "VCS_LCT1": 0.612155209753553
+    }
+  },
+  {
+    "iteration_id": "11",
+    "file_name": "1050.json",
+    "subfolder": "beginning",
+    "metrics": {
+      "BLEU-1": 1.0,
+      "BLEU-4": 0.9906390532962042,
+      "METEOR": 0.8689279999999999,
+      "ROUGE-1": 1.0,
+      "ROUGE-4": 0.98125,
+      "ROUGE-L": 0.7914110429447851,
+      "ROUGE-Lsum": 1.0,
+      "VCS_LCT0": 0.7219951232525631,
+      "VCS_LCT1": 0.7219951232525631
+    }
+  },
+  {
+    "iteration_id": "12",
+    "file_name": "1050.json",
+    "subfolder": "beginning",
+    "metrics": {
+      "BLEU-1": 1.0,
+      "BLEU-4": 0.9906390532962042,
+      "METEOR": 0.9009951720116618,
+      "ROUGE-1": 1.0,
+      "ROUGE-4": 0.98125,
+      "ROUGE-L": 0.8466257668711656,
+      "ROUGE-Lsum": 1.0,
+      "VCS_LCT0": 0.8389811127542485,
+      "VCS_LCT1": 0.8985764257972083
+    }
+  },
+  {
+    "iteration_id": "13",
+    "file_name": "1050.json",
+    "subfolder": "beginning",
+    "metrics": {
+      "BLEU-1": 1.0,
+      "BLEU-4": 1.0,
+      "METEOR": 0.9999999067055394,
+      "ROUGE-1": 1.0,
+      "ROUGE-4": 1.0,
+      "ROUGE-L": 1.0,
+      "ROUGE-Lsum": 1.0,
+      "VCS_LCT0": 0.9999999999999998,
+      "VCS_LCT1": 0.9999999999999998
+    }
+  }
+]

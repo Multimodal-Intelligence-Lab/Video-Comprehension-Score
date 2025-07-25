@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is putting meat from the plastic bowl into the meat grinder .,0.4553,someone putting ground meat into a meat grinder as it pours out the bottom .,5.0,5.0,5.0,5.0,0.6184,0.8842,0.9419,0.7938,0.7923,0.7651,0.5684,0.5192,0.5948,0.5183,0.5418,0.4563,0.4553
+2,a person is using a meat grinder to grind meat .,0.7017,someone putting ground meat into a meat grinder as it pours out the bottom .,5.0,5.0,5.0,5.0,0.7709,0.8846,0.9497,0.8775,0.8682,0.8511,0.741,0.7389,0.7587,0.7361,0.7273,0.7048,0.7017
+3,a man is using a meat grinder to grind meat .,0.6825,someone putting ground meat into a meat grinder as it pours out the bottom .,5.0,5.0,5.0,5.0,0.7367,0.8714,0.9497,0.9868,0.9518,0.9447,0.6978,0.7331,0.7227,0.7233,0.6818,0.6937,0.6825
+4,meat is being placed into a meat grinder and ground out into a bowl .,0.505,someone putting ground meat into a meat grinder as it pours out the bottom .,5.0,5.0,5.0,5.0,0.8015,0.9051,0.8497,0.6591,0.6136,0.5731,0.7807,0.5747,0.7664,0.5179,0.7419,0.5634,0.505
+5,a person is inserting different kinds of meat into a meat grinder as they spin it .,0.6601,someone putting ground meat into a meat grinder as it pours out the bottom .,5.0,4.0,4.0,4.3333,0.7597,0.8719,0.943,0.7112,0.8108,0.7831,0.7244,0.6198,0.7452,0.7036,0.7078,0.6013,0.6601
+6,someone is putting chunked meat into a grinder that turns it into ground meat .,0.5106,someone putting ground meat into a meat grinder as it pours out the bottom .,5.0,4.0,5.0,4.6667,0.8563,0.9373,0.8176,0.4562,0.5857,0.558,0.8467,0.365,0.7869,0.5161,0.7845,0.3578,0.5106

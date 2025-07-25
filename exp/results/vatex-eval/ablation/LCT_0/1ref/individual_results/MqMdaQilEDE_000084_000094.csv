@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy sits at a clay table spinning a clay pot .,0.1801,a person is sitting at a spinning circle and forming a pot from clay .,5.0,4.0,5.0,4.6667,0.8125,0.9092,0.8137,0.2222,0.3491,0.2841,0.7938,0.0428,0.7696,0.1989,0.7466,0.0202,0.1801
+2,a man is using a pottery wheel to make a clay pot .,0.2183,a person is sitting at a spinning circle and forming a pot from clay .,5.0,5.0,5.0,5.0,0.7141,0.8589,0.8474,0.3333,0.4785,0.3928,0.6672,0.0665,0.6627,0.2697,0.6072,0.0007,0.2183
+3,a man is using a pottery wheel to make pottery .,0.4185,a person is sitting at a spinning circle and forming a pot from clay .,5.0,5.0,5.0,5.0,0.663,0.8121,0.9386,0.741,0.7136,0.6473,0.5851,0.5452,0.641,0.5278,0.5579,0.44,0.4185
+4,a man uses a pottery wheel to construct a large clay vase .,0.3234,a person is sitting at a spinning circle and forming a pot from clay .,5.0,5.0,5.0,5.0,0.587,0.8297,0.9424,0.7318,0.7358,0.6816,0.5022,0.4356,0.5617,0.4386,0.4718,0.3197,0.3234
+5,a potter sculpts the clay pot while it's on the turnstile .,0.0,a person is sitting at a spinning circle and forming a pot from clay .,5.0,4.0,5.0,4.6667,0.6937,0.829,0.6502,0.0,0.0,0.0,0.6306,0.0,0.4958,0.0,0.4318,0.0,0.0
+6,a man molds a vase of clay that is spinning on a fast machine .,0.0,a person is sitting at a spinning circle and forming a pot from clay .,5.0,5.0,5.0,5.0,0.6033,0.8359,0.7879,0.2845,0.4181,0.3038,0.5254,0.0,0.4964,0.0353,0.3976,0.0,0.0

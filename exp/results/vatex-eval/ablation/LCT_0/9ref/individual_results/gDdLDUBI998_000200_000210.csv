@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young lady singing and dancing to music while straightening her hair .,0.7109,a girl is dancing to music while straightening her hair .,5.0,4.0,5.0,4.6667,0.8585,0.935,0.96,0.8128,0.7775,0.7439,0.8474,0.777,0.8224,0.7147,0.8101,0.774,0.7109
+2,a young girl is demonstrating how to make a balloon animal .,0.0094,a young girl is fixing her hair with a hot curling iron .,2.0,2.0,4.0,2.6667,0.3558,0.8241,0.9804,0.7876,0.7891,0.7441,0.2183,0.182,0.3429,0.1836,0.2027,0.0074,0.0094
+3,a boy is sitting in a chair and he is playing with a fidget spinner .,0.0,a young girl is fixing her hair with a hot curling iron .,1.0,3.0,1.0,1.6667,0.1958,0.7743,1.0,1.0,0.9791,0.973,0.0,0.1958,0.1714,0.1786,0.0,0.0,0.0
+4,a girl in her bedroom is curling her hair with a straightening iron .,0.2788,a girl uses electric hair straighteners while singing along to the radio .,4.0,4.0,4.0,4.0,0.7161,0.9144,0.9599,0.8153,0.7943,0.7517,0.6895,0.4179,0.6619,0.4026,0.6302,0.2973,0.2788
+5,a girl is using a straightening iron to straighten another girl's hair in the back .,0.3829,a girl uses a hair flattener on her hair .,4.0,4.0,4.0,4.0,0.6543,0.871,0.9243,0.6646,0.6495,0.5936,0.5992,0.4799,0.5979,0.4643,0.5338,0.397,0.3829
+6,a young woman styles her hair with a straightener and describes how to do it .,0.4193,a young girl is fixing her hair with a hot curling iron .,4.0,4.0,4.0,4.0,0.6342,0.8665,0.9804,0.8723,0.872,0.8461,0.5779,0.517,0.5703,0.5169,0.4874,0.4195,0.4193

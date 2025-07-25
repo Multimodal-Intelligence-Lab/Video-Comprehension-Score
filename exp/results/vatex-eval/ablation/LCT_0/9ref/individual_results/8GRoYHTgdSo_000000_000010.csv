@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is singing and doing the macarena in the dark .,0.3218,a man is dancing and moving his arms in a darkly lit room .,4.0,5.0,5.0,4.6667,0.6427,0.8747,0.963,0.7574,0.689,0.6278,0.5895,0.4845,0.6021,0.4334,0.5324,0.383,0.3218
+2,a young boy is dancing to music in a room .,0.2719,a man dances by himself in a dimly lit room .,4.0,4.0,5.0,4.3333,0.582,0.8665,0.9714,0.9679,0.8888,0.8627,0.5023,0.3112,0.5039,0.3886,0.4093,0.2051,0.2719
+3,a young boy is standing in front of a camera and he is dancing to music .,0.0502,a man stands in a dark room and dances around to a song .,4.0,4.0,4.0,4.0,0.414,0.8318,0.9756,0.8128,0.8114,0.7651,0.2955,0.1438,0.3332,0.21,0.1983,0.0,0.0502
+4,a man is dancing outside vigorously while music playing in the background .,0.6051,a man does a popular dance with music playing in the background .,4.0,4.0,4.0,4.0,0.7225,0.9311,1.0,1.0,1.0,1.0,0.702,0.6383,0.7109,0.6323,0.6896,0.6115,0.6051
+5,a man dances to an electronic song whilst it plays in the background .,0.4049,a man does a popular dance with music playing in the background .,5.0,5.0,5.0,5.0,0.696,0.8959,0.9688,0.8477,0.9042,0.8802,0.6607,0.4877,0.6767,0.5155,0.6392,0.4603,0.4049
+6,a man is performing dance moves in the middle of a partially lit street .,0.4871,a man is dancing and moving his arms in a darkly lit room .,4.0,3.0,4.0,3.6667,0.5995,0.8693,1.0,0.8933,0.9155,0.9028,0.5356,0.5458,0.5918,0.5541,0.5304,0.4743,0.4871

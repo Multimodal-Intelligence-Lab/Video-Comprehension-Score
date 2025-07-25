@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"laying on a carpet , a baby his his hair combed by a little girl .",0.2761,a young child is having their hair brushed by another person .,4.0,4.0,3.0,3.6667,0.5896,0.8791,0.9599,0.8387,0.8253,0.791,0.5263,0.4047,0.5104,0.3951,0.4183,0.2876,0.2761
+2,a woman is combing a baby ' s hair with a brush .,0.5338,a person is brushing a baby's hair with a hair brush .,5.0,4.0,5.0,4.6667,0.8285,0.9289,0.9091,0.765,0.6198,0.5907,0.8154,0.6744,0.8114,0.5411,0.7969,0.6692,0.5338
+3,a baby is sitting in a chair while a woman is brushing her hair .,0.6209,a baby is shown in a seat where a person brushes the hair of the baby .,4.0,3.0,3.0,3.3333,0.8138,0.9366,0.8936,0.8371,0.7287,0.6998,0.8012,0.7776,0.7207,0.6385,0.6909,0.7626,0.6209
+4,a child is brushing the hair of a small doll .,0.2765,a woman brushes the hair of a small baby laying in a chair .,3.0,4.0,3.0,3.3333,0.6221,0.9052,0.941,0.8571,0.7597,0.7266,0.5739,0.4363,0.5984,0.364,0.5471,0.3587,0.2765
+5,a baby is combing a womans wet hair with a hair brush .,0.2326,a person is brushing a baby's hair with a hair brush .,4.0,3.0,2.0,3.0,0.6728,0.9191,0.8276,0.7653,0.6199,0.5608,0.644,0.4229,0.6047,0.2654,0.5699,0.3971,0.2326
+6,a woman holds a baby then runs her hands through the baby's hair .,0.3429,a woman gently brushes a baby's hair and the baby reacts with a smile .,2.0,3.0,3.0,2.6667,0.6605,0.8706,0.9129,0.6568,0.6019,0.5378,0.6059,0.4165,0.6281,0.3973,0.5682,0.3587,0.3429

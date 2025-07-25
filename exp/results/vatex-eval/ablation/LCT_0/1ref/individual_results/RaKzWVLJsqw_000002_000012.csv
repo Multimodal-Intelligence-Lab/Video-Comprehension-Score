@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a crowd of people holds up their phones with lights on them at a concert .,0.2814,people hold up their hands and lit lighters at a night concert or gathering .,5.0,5.0,5.0,5.0,0.6927,0.8786,0.7745,0.6197,0.5327,0.4682,0.6502,0.451,0.6032,0.3254,0.5484,0.4151,0.2814
+2,a large crowd of people are cheering and cheering and cheering .,0.0,people hold up their hands and lit lighters at a night concert or gathering .,5.0,5.0,5.0,5.0,0.2745,0.7811,0.7467,0.4795,0.3759,0.2011,0.0712,0.0,0.0283,0.0,0.0,0.0,0.0
+3,a group of people are clapping their hands at a concert .,0.0328,people hold up their hands and lit lighters at a night concert or gathering .,5.0,5.0,5.0,5.0,0.5667,0.8783,0.8163,0.573,0.51,0.4421,0.5067,0.2439,0.4693,0.1354,0.3957,0.1391,0.0328
+4,thousands of people fill a facility to attend a concert while many raise their hands in the air .,0.0,people hold up their hands and lit lighters at a night concert or gathering .,5.0,5.0,5.0,5.0,0.5733,0.8359,0.8457,0.3819,0.3683,0.2442,0.4895,0.0,0.4954,0.0,0.3964,0.0,0.0
+5,several people are on stage clapping and cheering as a crowd also starts to clap .,0.0,people hold up their hands and lit lighters at a night concert or gathering .,3.0,4.0,3.0,3.3333,0.309,0.7729,0.9343,0.6331,0.6566,0.5557,0.106,0.0,0.2604,0.0,0.0431,0.0,0.0
+6,music plays from a stage while a large crowd raises their hands .,0.0,people hold up their hands and lit lighters at a night concert or gathering .,3.0,4.0,5.0,4.0,0.5205,0.8076,0.5234,0.1688,0.0,0.0,0.4063,0.0,0.0839,0.0,0.0,0.0,0.0

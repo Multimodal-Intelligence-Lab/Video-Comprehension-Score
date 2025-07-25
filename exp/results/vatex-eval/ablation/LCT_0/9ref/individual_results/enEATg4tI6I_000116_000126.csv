@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is wearing a hat and swimming in a hole in some ice,0.493,a man with a hat on swimming in a ice pool and getting back out,5.0,5.0,4.0,4.6667,0.8574,0.915,0.9538,0.7332,0.7607,0.7288,0.8441,0.6112,0.813,0.5009,0.8101,0.6051,0.493
+2,a man is standing on the ground in a dark area with a lot of water .,0.0,a man gets into cold water surrounded by snow in the darkness as his friends laugh .,5.0,5.0,4.0,4.6667,0.407,0.8451,0.9485,0.8723,0.8827,0.8561,0.2982,0.1053,0.3217,0.1189,0.1973,0.0,0.0
+3,a man is standing in a dark with a bottle of water .,0.0,a man gets into cold water surrounded by snow in the darkness as his friends laugh .,3.0,4.0,4.0,3.6667,0.3003,0.8616,0.9231,0.7504,0.6883,0.6223,0.1865,0.0,0.1571,0.0,0.0,0.0,0.0
+4,a man is swimming in a hole in a lake covered by ice .,0.423,a man wearing swimming trunks goes for a swim in freezing cold water .,5.0,5.0,5.0,5.0,0.6547,0.8838,0.9538,0.8081,0.8249,0.7941,0.5987,0.5022,0.601,0.5094,0.5363,0.4215,0.423
+5,a man in a bathing suit pulls himself out of a very icy body of water .,0.5988,a man was swimming in icy water and then came out,5.0,5.0,5.0,5.0,0.7476,0.8771,0.961,0.7672,0.8091,0.7673,0.7123,0.6711,0.7211,0.6217,0.682,0.625,0.5988
+6,"two men walk into freezing cold water , one having to get right back out .",0.4743,a man walked into a cold pool of water and walked back out while talking to another person .,4.0,4.0,4.0,4.0,0.6889,0.8772,0.9665,0.7871,0.8235,0.7923,0.6453,0.3606,0.6338,0.5278,0.5825,0.3175,0.4743

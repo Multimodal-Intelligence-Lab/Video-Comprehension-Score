@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man driving inside the river with a jeep and followed by another jeep,0.0886,two men are talking about a jeep that is stranded in a flooded area .,3.0,5.0,4.0,4.0,0.5243,0.8489,0.8699,0.7793,0.7331,0.673,0.4136,0.3002,0.4231,0.2562,0.2972,0.1426,0.0886
+2,a person is driving a jeep through a river with a river .,0.1953,two men are talking about a jeep that is stranded in a flooded area .,5.0,5.0,4.0,4.6667,0.6032,0.8493,0.9756,0.8644,0.8611,0.8267,0.5143,0.4295,0.5278,0.3548,0.4395,0.3227,0.1953
+3,a man is driving a jeep through a shallow river .,0.4531,someone is video taping a jeep that is stuck in water .,5.0,5.0,4.0,4.6667,0.5865,0.8209,1.0,1.0,1.0,1.0,0.485,0.5526,0.5526,0.5526,0.4531,0.4531,0.4531
+4,a man is on a boat and the boat goes under water .,0.0952,a jeep with occupants inside is stuck in a deep body of water .,2.0,2.0,2.0,2.0,0.3345,0.8131,1.0,1.0,1.0,1.0,0.169,0.2919,0.2919,0.2919,0.0952,0.0952,0.0952
+5,the front of a kayak behind another kayak in a lake .,0.0,"a jeep sits semi-submerged in a lake as two men discuss how its motor is full of water and say maybe they should , "" give him a push "" .",3.0,4.0,3.0,3.3333,0.2977,0.7953,0.9787,0.9336,0.8424,0.8018,0.1169,0.2478,0.2275,0.1663,0.0286,0.0542,0.0
+6,a man is wading into a body of lake water .,0.0,"a jeep sits semi-submerged in a lake as two men discuss how its motor is full of water and say maybe they should , "" give him a push "" .",4.0,4.0,2.0,3.3333,0.3764,0.8534,1.0,0.6733,0.7262,0.6646,0.2693,0.0,0.1921,0.0,0.0247,0.0,0.0

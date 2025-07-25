@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is showing how they play with a flash light in the dark .,0.0,someone flashes a bright white light in a completely dark place .,5.0,5.0,5.0,5.0,0.6538,0.8766,0.8497,0.3961,0.3104,0.2134,0.605,0.0762,0.5925,0.0,0.5351,0.0018,0.0
+2,a person is using a flashlight to light a light in a dark room .,0.4011,someone flashes a bright white light in a completely dark place .,5.0,5.0,5.0,5.0,0.6164,0.8808,0.9569,0.7144,0.7271,0.6902,0.5645,0.4631,0.5992,0.4725,0.5449,0.3904,0.4011
+3,a person is using a flashlight to shine a light in the dark .,0.3194,someone flashes a bright white light in a completely dark place .,5.0,5.0,5.0,5.0,0.6371,0.8713,0.8988,0.6307,0.6119,0.5546,0.5835,0.4204,0.5962,0.3908,0.5366,0.3397,0.3194
+4,on a pitch black night all that is seen is some glowing lights .,0.0,someone flashes a bright white light in a completely dark place .,5.0,5.0,5.0,5.0,0.5204,0.7925,0.8163,0.327,0.2004,0.0,0.3948,0.0,0.4125,0.0,0.2587,0.0,0.0
+5,someone is seen flashing a flashlight against a wall and quickly turning it off and on over and over again .,0.0,someone flashes a bright white light in a completely dark place .,4.0,4.0,5.0,4.3333,0.5798,0.8255,0.9569,0.3864,0.3258,0.1832,0.491,0.0,0.5609,0.0,0.468,0.0,0.0
+6,one person is spinning two lights on poles while outside in the dark .,0.0,someone flashes a bright white light in a completely dark place .,4.0,3.0,4.0,3.6667,0.3188,0.819,0.9318,0.609,0.7366,0.6783,0.1682,0.0,0.269,0.0752,0.1074,0.0,0.0

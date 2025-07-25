@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a baby was sitting on the chair with tube on his nose and band on his hand and another boy kissing him,0.029,"a little boy in a rocking chair is being hugged by another boy and then he turns away , and a woman asks him if he is going to dance for us .",4.0,4.0,4.0,4.0,0.5683,0.8666,0.8776,0.6881,0.7101,0.6506,0.4873,0.1686,0.4135,0.1944,0.2719,0.0171,0.029
+2,a group of children are playing with a baby in a basket .,0.0,a brother hugged his sick brother while he was in a chair .,2.0,1.0,1.0,1.3333,0.345,0.7988,0.9796,0.8819,0.8923,0.8652,0.1793,0.1226,0.2798,0.0702,0.0855,0.0,0.0
+3,a little boy is sitting in a chair and playing with a toy .,0.0909,"a little boy gives a baby girl , sitting in a rocking chair , a gentle hug .",3.0,4.0,4.0,3.6667,0.4942,0.896,0.9487,0.7777,0.7878,0.7451,0.3904,0.3109,0.4276,0.245,0.3102,0.1696,0.0909
+4,a young boy is shown hugging and burping a baby that is laying on the couch .,0.3141,a little boy hugs an infant and then proceeds to dance .,4.0,4.0,4.0,4.0,0.4856,0.8495,0.9892,1.0,0.9519,0.9403,0.383,0.4206,0.4767,0.4281,0.3724,0.3051,0.3141
+5,a little boy is hugging his mom while sitting in her lap,0.3207,a small child is talking while he hugs another child sitting in a chair .,2.0,2.0,2.0,2.0,0.41,0.8868,1.0,1.0,1.0,1.0,0.3207,0.4095,0.4095,0.4095,0.3207,0.3207,0.3207
+6,a young boy is hugging and patting the back of a sleeping baby .,0.2309,a young boy gives a hug to another young boy who is wearing a cast on his hand and an ice pack on his head .,3.0,3.0,3.0,3.0,0.5368,0.8529,0.971,1.0,0.9573,0.9465,0.4546,0.3416,0.4965,0.3512,0.4071,0.2218,0.2309

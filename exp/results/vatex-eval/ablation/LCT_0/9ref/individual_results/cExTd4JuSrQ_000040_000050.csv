@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,this is outside on a road in mid day of a boy wearing a blue hemlet riding his bike,0.2217,a young boy wearing a blue helmet is riding his bicycle outside .,5.0,5.0,5.0,5.0,0.7614,0.9149,0.8071,0.6283,0.5743,0.4731,0.7393,0.3407,0.5564,0.2444,0.5431,0.3209,0.2217
+2,a young boy is riding a bike down a street and then falls down .,0.4278,a young boy in a blue helmet rides a bicycle down a suburban street .,4.0,4.0,4.0,4.0,0.5471,0.9032,1.0,0.9698,0.9743,0.9686,0.4981,0.4987,0.5148,0.4837,0.4622,0.4444,0.4278
+3,a young boy is riding his bike down the street and a man is talking to him .,0.5934,a kid rides on a bike in the street while a man encourages him .,5.0,5.0,5.0,5.0,0.6717,0.9183,0.9804,0.9737,0.9617,0.9578,0.6425,0.6351,0.6376,0.6306,0.6012,0.5984,0.5934
+4,a boy sits on a bicycle and rides off across a field,0.1913,a little boy is pedaling his bike down the road toward his parents .,5.0,4.0,4.0,4.3333,0.4676,0.8548,1.0,0.8723,0.8863,0.8625,0.3713,0.3203,0.4072,0.3311,0.2833,0.1783,0.1913
+5,a group of children ride bikes through a neighborhood on sidewalks .,0.1634,a young boy in a blue helmet rides a bicycle down a suburban street .,4.0,4.0,4.0,4.0,0.4149,0.8383,0.9667,0.9459,0.9215,0.9064,0.282,0.3128,0.3947,0.3181,0.2573,0.1568,0.1634
+6,two young boys ride their bikes in a circle on a small concrete area .,0.0848,a small child rides a bicycle while a parent cheers him on .,4.0,3.0,1.0,2.6667,0.4433,0.8475,0.978,0.8638,0.8308,0.7918,0.3361,0.2979,0.3449,0.2332,0.2187,0.162,0.0848

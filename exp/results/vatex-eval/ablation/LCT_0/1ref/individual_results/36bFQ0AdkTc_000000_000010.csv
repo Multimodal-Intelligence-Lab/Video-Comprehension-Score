@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a surfer on the water during a contest to see who is the best .,0.3305,a surf boarder is rinding the waves and does a 360 on the waves and lands back on their board .,5.0,3.0,5.0,4.3333,0.4875,0.7973,0.9649,0.9782,0.9601,0.95,0.3572,0.4761,0.4689,0.4662,0.3338,0.3429,0.3305
+2,a man is riding a surfboard on a wave and then falls off .,0.004,a surf boarder is rinding the waves and does a 360 on the waves and lands back on their board .,4.0,4.0,4.0,4.0,0.5111,0.8235,0.8573,0.608,0.5961,0.5095,0.4063,0.1959,0.4298,0.1798,0.3075,0.0236,0.004
+3,a man is surfing on a surfboard in the ocean .,0.0,a surf boarder is rinding the waves and does a 360 on the waves and lands back on their board .,5.0,5.0,5.0,5.0,0.5127,0.8121,0.7727,0.3233,0.0,0.0,0.4,0.0,0.3694,0.0,0.2234,0.0,0.0
+4,a man is seen surfing on a small wave before multiple surfers are seen surfing on a huge wave .,0.0,a surf boarder is rinding the waves and does a 360 on the waves and lands back on their board .,3.0,3.0,3.0,3.0,0.4172,0.8199,0.8421,0.4401,0.4575,0.3383,0.2892,0.0,0.308,0.0,0.156,0.0,0.0
+5,go-pro footage on a surf board as a guy surfs .,0.0,a surf boarder is rinding the waves and does a 360 on the waves and lands back on their board .,5.0,5.0,2.0,4.0,0.4747,0.8353,0.6834,0.3669,0.2685,0.1242,0.3712,0.0,0.2313,0.0,0.0798,0.0,0.0
+6,a man is on a surfboard and riding through waves of water .,0.4402,a surf boarder is rinding the waves and does a 360 on the waves and lands back on their board .,5.0,5.0,5.0,5.0,0.5824,0.8466,0.8596,0.9781,0.881,0.8595,0.5068,0.5731,0.5142,0.5261,0.4262,0.4957,0.4402

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a gardener is showing how to trim parts of a hedge,0.091,a man is trimming various branches off a long bush with hand held shears .,5.0,5.0,5.0,5.0,0.6406,0.8387,0.9298,0.8271,0.7431,0.6712,0.5714,0.5654,0.5532,0.2899,0.4673,0.4818,0.091
+2,a man is using a chainsaw to trim a tree .,0.2761,a man is standing and using clippers to trim a bush .,4.0,4.0,4.0,4.0,0.5433,0.8972,1.0,0.8408,0.8412,0.8151,0.4576,0.3612,0.4629,0.3506,0.4013,0.288,0.2761
+3,a man is using a chainsaw to trim a bush .,0.5653,a man is standing and using clippers to trim a bush .,4.0,4.0,5.0,4.3333,0.664,0.9346,1.0,1.0,0.9526,0.9426,0.6405,0.6004,0.664,0.5938,0.6405,0.5724,0.5653
+4,a guy stands outside as he snips away at the branches in a bush .,0.7095,a man is standing and using clippers to trim a bush .,5.0,5.0,5.0,5.0,0.7821,0.8462,1.0,0.8933,0.906,0.8877,0.7425,0.7502,0.7821,0.7542,0.7425,0.7048,0.7095
+5,man explains how to use shears to trim a tree,0.2378,a man uses a gardening tool to cut shrubbery as he details the process .,5.0,5.0,5.0,5.0,0.6765,0.8642,0.9804,0.7414,0.836,0.8089,0.6257,0.3813,0.6193,0.3717,0.5594,0.2494,0.2378
+6,a man with a cutting tool is giving instructions on how to trim a tree correctly .,0.3907,a man cutting plants it lengthy branches and give instruction to other .,5.0,5.0,5.0,5.0,0.6617,0.8804,0.9474,0.7503,0.7786,0.7274,0.6157,0.4818,0.6172,0.4418,0.5652,0.4152,0.3907

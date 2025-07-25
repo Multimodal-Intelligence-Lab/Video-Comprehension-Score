@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young man is kicking a football that is being held by a young lady through a goal post using each of his feet .,0.0,a young girl holds a football while a man practices kicking it through a field goal .,4.0,3.0,4.0,3.6667,0.6675,0.9049,0.7988,0.148,0.0353,0.0,0.6326,0.0,0.5838,0.0,0.5401,0.0,0.0
+2,a man is practicing kicking a soccer ball on a field .,0.0,a young girl holds a football while a man practices kicking it through a field goal .,5.0,5.0,5.0,5.0,0.3737,0.8923,0.7497,0.5278,0.4672,0.403,0.2982,0.0,0.1647,0.0,0.0639,0.0,0.0
+3,a man is kicking a football to another man who kicks it .,0.0,a young girl holds a football while a man practices kicking it through a field goal .,3.0,3.0,3.0,3.0,0.422,0.8766,0.7957,0.4883,0.4473,0.3694,0.3406,0.0,0.2737,0.0,0.1714,0.0,0.0
+4,a person runs and kicks a football between the uprights while another person looks on .,0.0,a young girl holds a football while a man practices kicking it through a field goal .,4.0,5.0,5.0,4.6667,0.49,0.8149,0.9013,0.4419,0.4303,0.3008,0.3742,0.0,0.4342,0.0,0.3057,0.0,0.0
+5,a guy is throwing a football to another guy in a field .,0.0,a young girl holds a football while a man practices kicking it through a field goal .,2.0,4.0,3.0,3.0,0.3677,0.8354,0.8784,0.4002,0.3699,0.2457,0.2432,0.0,0.2802,0.0,0.1384,0.0,0.0
+6,football team makes a field goal during a game with fans in the bleachers .,0.0,a young girl holds a football while a man practices kicking it through a field goal .,3.0,3.0,2.0,2.6667,0.4169,0.8352,0.8019,0.4737,0.4339,0.3221,0.3018,0.0,0.2728,0.0,0.1294,0.0,0.0

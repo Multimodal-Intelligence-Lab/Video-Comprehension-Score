@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people practicing their shot put on a sunny day .,0.3082,a group of people throwing a large metal ball into the sand and then measuring distance,3.0,4.0,4.0,3.6667,0.5598,0.8623,1.0,0.9369,0.9544,0.9436,0.4895,0.4309,0.5433,0.4413,0.4704,0.2953,0.3082
+2,a group of people are watching a man throw a discus .,0.1476,a group of people are outside and one of them throws a heavy ball that is then being measured for distance by someone else .,4.0,4.0,4.0,4.0,0.4732,0.8527,0.9895,1.0,0.9934,0.9911,0.3713,0.2758,0.4122,0.2858,0.2985,0.1217,0.1476
+3,a group of people are watching a man throw a javelin .,0.128,a group of people are outside and one of them throws a heavy ball that is then being measured for distance by someone else .,4.0,4.0,4.0,4.0,0.464,0.8555,0.9677,0.9839,0.9697,0.9589,0.3568,0.2511,0.4019,0.2733,0.2823,0.1014,0.128
+4,a male prepares to throw a shot put at an outdoor field .,0.4337,a boy dressed in black gear attempts a shot put in a field near mountains on a sunny day .,4.0,5.0,5.0,4.6667,0.6418,0.8867,1.0,0.8291,0.8692,0.8302,0.596,0.4949,0.5805,0.5149,0.5102,0.4103,0.4337
+5,a girl spins with a shot put then throws it while a man watches and people clap .,0.3521,the boy is doing the shot put in the track and field competition .,5.0,4.0,3.0,4.0,0.591,0.8338,0.9851,0.9002,0.917,0.8983,0.5065,0.4612,0.5184,0.4711,0.4189,0.34,0.3521
+6,a young man spins around and throws a shot put while others watch and clap .,0.3592,at a field a young woman is throwing a shot put .,4.0,4.0,4.0,4.0,0.6644,0.8688,1.0,0.9198,0.9443,0.9291,0.5918,0.4681,0.6023,0.4473,0.5163,0.3878,0.3592

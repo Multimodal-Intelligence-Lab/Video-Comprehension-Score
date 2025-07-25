@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young girl is holding a comb and practicing combing her hair .,0.423,a baby is holding a comb and putting it against their head .,5.0,5.0,5.0,5.0,0.6224,0.8654,0.9846,0.8792,0.929,0.9107,0.5585,0.5016,0.5976,0.5007,0.5295,0.4241,0.423
+2,a little girl is sitting on the floor and brushing her hair .,0.443,a baby is sitting on a bed combing her hair .,4.0,4.0,4.0,4.0,0.618,0.8675,1.0,1.0,1.0,1.0,0.5597,0.5186,0.6104,0.5186,0.5509,0.443,0.443
+3,a baby is sitting in a chair while a woman is combing her hair .,0.7399,a baby is sitting on a bed combing her hair .,4.0,3.0,4.0,3.6667,0.7564,0.9368,1.0,1.0,1.0,1.0,0.7399,0.7564,0.7564,0.7564,0.7399,0.7399,0.7399
+4,a baby brushes her mothers hair and plays with the brush,0.2537,a little baby uses a brush and attempts to brush her own hair .,4.0,4.0,4.0,4.0,0.7167,0.9027,0.9714,0.7507,0.6592,0.5894,0.6847,0.4031,0.678,0.287,0.6416,0.3752,0.2537
+5,"laying on a carpet , a baby his his hair combed by a little girl .",0.0,a little baby uses a brush and attempts to brush her own hair .,4.0,3.0,5.0,4.0,0.6378,0.8675,0.8331,0.5858,0.4919,0.3642,0.5824,0.2583,0.5352,0.0099,0.4641,0.1453,0.0
+6,a young child is using a brush to brush the hair of an adult sitting in front of them .,0.4447,a baby attempts to brush her own hair while her parent laughs .,4.0,4.0,4.0,4.0,0.8056,0.9056,0.9818,1.0,0.9872,0.9851,0.7853,0.5307,0.704,0.5238,0.6963,0.4528,0.4447

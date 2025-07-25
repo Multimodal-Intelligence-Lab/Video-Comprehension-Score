@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is giving a speech about being a welfare working and needing to find out if something is going on .,0.0119,"a man , whilst seated , is talking in front of a group of people .",5.0,5.0,5.0,5.0,0.3597,0.8271,0.9873,0.8441,0.8742,0.8393,0.2017,0.1959,0.3149,0.2196,0.1326,0.0,0.0119
+2,a man is giving instructions on how to use a wine bottle .,0.0,a man is talking at a table as someone sits to his left and listens .,2.0,4.0,3.0,3.0,0.2457,0.8024,0.9655,0.8723,0.8531,0.8121,0.0293,0.084,0.1584,0.0293,0.0,0.0,0.0
+3,a man is talking about a glass of wine in a restaurant .,0.0,a man is talking at a table as someone sits to his left and listens .,3.0,3.0,2.0,2.6667,0.4129,0.8176,0.9183,0.8162,0.7827,0.72,0.2775,0.2062,0.3439,0.1405,0.1925,0.0231,0.0
+4,a man sits in front of a laptop computer and talks about a topic .,0.2167,a man is sitting with others at a table in front of a group and speaking about wellness .,4.0,4.0,4.0,4.0,0.5396,0.8561,0.9778,0.8598,0.9115,0.8893,0.4587,0.3245,0.4474,0.3534,0.3502,0.2031,0.2167
+5,a man is giving a speech and two people are sitting behind him,0.0941,a man is talking at a table as someone sits to his left and listens .,3.0,3.0,3.0,3.0,0.5142,0.863,0.9555,0.6995,0.7664,0.7169,0.432,0.181,0.3587,0.2525,0.2503,0.0075,0.0941
+6,a group of young men sit at a table eating and talking with one another .,0.2243,a male is sitting on a table discussing information to people .,4.0,3.0,2.0,3.0,0.4601,0.8803,0.9546,0.8979,0.8529,0.821,0.3731,0.3987,0.3541,0.3352,0.2464,0.2984,0.2243

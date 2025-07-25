@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is sitting at a table showing how to peel a fruits,0.581,a woman sits at a table peeling a vegetable with a sharp tool .,5.0,5.0,4.0,4.6667,0.7344,0.92,0.9404,0.7804,0.755,0.7234,0.7113,0.6409,0.702,0.6288,0.6636,0.5947,0.581
+2,a woman is using an apple peeler to peel an apple .,0.078,a woman is slicing through a piece of fruit with a small knife .,4.0,3.0,2.0,3.0,0.5626,0.8791,0.9091,0.7974,0.7701,0.7183,0.5024,0.1699,0.5142,0.2475,0.4474,0.0,0.078
+3,a person is using an apple peeler to peel an apple .,0.0,a woman is slicing through a piece of fruit with a small knife .,4.0,3.0,2.0,3.0,0.47,0.891,0.9091,0.7974,0.7104,0.64,0.3739,0.1462,0.4061,0.0416,0.3046,0.0,0.0
+4,a woman uses a knife to cut up an orange and remove the rind .,0.2117,someone is peeling an orange around the circumference with some sort of tool .,5.0,4.0,3.0,4.0,0.6452,0.8949,0.9424,0.6747,0.6796,0.5907,0.5712,0.3995,0.5753,0.3743,0.5001,0.295,0.2117
+5,a woman picks up an orange and cuts a slice around it then uses a spoon to peel it .,0.1132,someone is peeling an orange around the circumference with some sort of tool .,5.0,3.0,3.0,3.6667,0.6505,0.864,0.911,0.7853,0.7791,0.7322,0.5955,0.2518,0.5563,0.246,0.4864,0.1516,0.1132
+6,a person that is cutting the skin of a piece of fruit,0.6434,a person is cutting up some fruit using a tool .,5.0,5.0,5.0,5.0,0.801,0.9102,1.0,0.8376,0.8273,0.7975,0.7814,0.5388,0.7638,0.6521,0.7405,0.5272,0.6434

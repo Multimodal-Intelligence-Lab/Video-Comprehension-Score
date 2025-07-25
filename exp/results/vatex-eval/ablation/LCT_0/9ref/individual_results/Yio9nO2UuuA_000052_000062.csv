@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a baby boy sitting in front of a cake together with his parents a flowing the candle,0.1686,a toddler blows out the candles of a cake as the family cheers .,4.0,4.0,4.0,4.0,0.5302,0.8359,0.912,0.7103,0.6846,0.6178,0.4309,0.3386,0.4486,0.3138,0.3319,0.1987,0.1686
+2,a little girl is blowing out candles on a birthday cake .,0.7459,a little girl blows out candles on a fruit covered cake .,5.0,5.0,5.0,5.0,0.791,0.929,1.0,1.0,1.0,1.0,0.7682,0.7639,0.7639,0.7639,0.7459,0.7459,0.7459
+3,a little boy is blowing out candles on a birthday cake .,0.5745,a little girl blows out candles on a fruit covered cake .,4.0,5.0,4.0,4.3333,0.6276,0.9027,1.0,1.0,1.0,1.0,0.5745,0.6159,0.6159,0.6159,0.5745,0.5745,0.5745
+4,"party guests sing "" happy birthday "" and a little girl blows out the candles on a large cake .",0.4891,"a little girl takes a drink from her cup , and then blows out a candle on a cake .",4.0,4.0,4.0,4.0,0.64,0.8855,0.9307,0.8562,0.8125,0.7838,0.5849,0.5796,0.5776,0.557,0.5129,0.5152,0.4891
+5,a boy blows out a birthday candle on a cake,0.3612,a toddler blows out the candles of a cake as the family cheers .,4.0,5.0,4.0,4.3333,0.602,0.8855,0.928,0.8286,0.7088,0.6687,0.5473,0.5196,0.5487,0.4384,0.4866,0.4536,0.3612
+6,a girl sitting in front of a birthday cake blew out the cake after they sang for her,0.2894,"a little girl takes a drink from her cup , and then blows out a candle on a cake .",4.0,4.0,4.0,4.0,0.6294,0.855,0.9318,0.6475,0.6657,0.5919,0.5579,0.3464,0.5855,0.3997,0.5056,0.2021,0.2894

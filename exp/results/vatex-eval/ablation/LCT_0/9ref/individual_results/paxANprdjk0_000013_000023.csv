@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a little girl is eating some chips as she looks at the camera .,0.6696,a girl eats some chips and looks at the camera and makes a face,5.0,5.0,4.0,4.6667,0.8316,0.9314,0.92,0.9459,0.888,0.8752,0.8192,0.8138,0.7358,0.6745,0.7318,0.8,0.6696
+2,a young boy is sitting at a table eating a sandwich .,0.0831,a girl is making faces while sitting at a table and eating doritos .,4.0,4.0,4.0,4.0,0.3292,0.8722,0.9787,0.8408,0.8409,0.8176,0.229,0.2002,0.3129,0.2003,0.2122,0.083,0.0831
+3,a young girl is eating a piece of food and talking about it .,0.1201,a girl eats some chips and looks at the camera and makes a face,4.0,4.0,3.0,3.6667,0.5074,0.8451,1.0,0.8723,0.8863,0.8584,0.3993,0.3326,0.4202,0.283,0.2929,0.1809,0.1201
+4,a girl is eating a lollipop and tasting its flavor in a kitchen .,0.1859,a girl is eating a snackchip while enjoyng something off screen,4.0,3.0,4.0,3.6667,0.5021,0.8644,0.9787,0.9698,0.9743,0.969,0.424,0.3208,0.4814,0.3239,0.4,0.1821,0.1859
+5,a little girl eats food as someone sits next to her .,0.2733,the girl is munching on some snacks while watching something on the screen .,4.0,4.0,3.0,3.6667,0.4716,0.8417,1.0,1.0,1.0,1.0,0.356,0.3943,0.4716,0.4039,0.356,0.2616,0.2733
+6,a girl is seen eating the sandwich in hand while looking at something .,0.3339,a girl is eating a snackchip while enjoyng something off screen,4.0,4.0,4.0,4.0,0.5218,0.8699,1.0,0.8387,0.8253,0.7992,0.4503,0.4298,0.5018,0.4206,0.4273,0.3445,0.3339

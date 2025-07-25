@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a seated person in glasses is seen playing a music piece with the guitar .,0.0,a man in a private room playing a guitar without singing,4.0,4.0,4.0,4.0,0.3929,0.8468,0.9264,0.6144,0.6083,0.5374,0.283,0.0119,0.3447,0.0019,0.226,0.0,0.0
+2,a man is sitting on a chair and playing a stringed instrument .,0.1091,a man in a private room playing a guitar without singing,5.0,5.0,5.0,5.0,0.3512,0.8363,0.9787,0.8723,0.8707,0.8454,0.2243,0.2562,0.3371,0.2549,0.2074,0.1107,0.1091
+3,a man is sitting in a room playing a musical instrument .,0.4278,a man in a private room playing a guitar without singing,5.0,5.0,5.0,5.0,0.6107,0.8775,0.9599,0.7876,0.7754,0.7441,0.5563,0.5056,0.5944,0.4979,0.5378,0.4366,0.4278
+4,a man holds a stringed instrument and plays a song on it .,0.0,a man in a private room playing a guitar without singing,5.0,5.0,5.0,5.0,0.3512,0.8382,0.9199,0.5119,0.4296,0.3195,0.2259,0.0,0.2947,0.0,0.1585,0.0,0.0
+5,a man plays a small guitar and sings a song .,0.0,a man in a private room playing a guitar without singing,4.0,2.0,2.0,2.6667,0.4055,0.8757,0.9386,0.3808,0.2363,0.128,0.3211,0.0,0.3666,0.0,0.2767,0.0,0.0
+6,a man plays a song on a large stringed instrument while reading music .,0.0,a man in a private room playing a guitar without singing,5.0,5.0,5.0,5.0,0.2583,0.8293,0.8832,0.3293,0.2196,0.059,0.1056,0.0,0.1602,0.0,0.0,0.0,0.0

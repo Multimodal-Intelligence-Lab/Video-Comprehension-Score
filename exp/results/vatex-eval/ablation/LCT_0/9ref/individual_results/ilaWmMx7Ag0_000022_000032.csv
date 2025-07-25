@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the group of men were operating a type of saw to cut the tree logs .,0.7945,a group of men use a machine to saw down logs .,5.0,5.0,5.0,5.0,0.858,0.9067,1.0,0.9084,0.9328,0.9238,0.8434,0.7845,0.8531,0.798,0.838,0.7808,0.7945
+2,a group of people are working on a bulldozer in a field .,0.0602,a group of men pushing a wood shredder to shred a log of wood .,4.0,4.0,4.0,4.0,0.2578,0.8359,1.0,1.0,1.0,1.0,0.1108,0.2578,0.2578,0.2578,0.0886,0.0602,0.0602
+3,a group of people are riding on a large tractor .,0.0,men help each other as they operate machine that is cutting trees .,4.0,3.0,2.0,3.0,0.2941,0.812,1.0,0.8954,0.8863,0.8434,0.1307,0.1874,0.2292,0.1408,0.028,0.0,0.0
+4,a man is using a wood cutting machine to cut a block of wood,0.3425,a group of men use a machine to saw down logs .,5.0,5.0,4.0,4.6667,0.5194,0.8618,0.9711,0.9034,0.8772,0.8526,0.4233,0.468,0.4851,0.4521,0.3821,0.3616,0.3425
+5,the man uses a circular saw to cut a piece of lumber .,0.4012,a group of men work together to saw and process logs into lumber .,4.0,4.0,4.0,4.0,0.5572,0.85,1.0,1.0,1.0,1.0,0.4724,0.4784,0.5341,0.4911,0.4518,0.3864,0.4012
+6,a person is using a log splitting machine to cut wood .,0.2084,people are assembling logs on a straight line while a person pushes a machine to dissect the log .,5.0,5.0,4.0,4.6667,0.6104,0.8583,0.9873,0.7876,0.8252,0.7684,0.5459,0.2965,0.5374,0.3016,0.4607,0.2041,0.2084

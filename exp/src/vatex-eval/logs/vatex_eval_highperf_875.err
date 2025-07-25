@@ -1,0 +1,9 @@
+/mmfs1/scratch/jacks.local/mali9292/vcs/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1142: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  2.40it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  2.61it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  2.38it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  3.15it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  2.85it/s]
+/mmfs2/home/jacks.local/mali9292/.cache/huggingface/modules/transformers_modules/nv-embed/modeling_nvembed.py:349: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  'input_ids': torch.tensor(batch_dict.get('input_ids').to(batch_dict.get('input_ids')).long()),
+/mmfs1/cm/shared/apps_local/python/3.11/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/ces/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/src/vatex-eval/utils/core.py:423: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  embeddings = torch.tensor(embeddings_np, device=device, dtype=torch.float)

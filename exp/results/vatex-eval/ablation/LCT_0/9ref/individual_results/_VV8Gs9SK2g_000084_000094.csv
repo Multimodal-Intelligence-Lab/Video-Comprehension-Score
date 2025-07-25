@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,in a dance studio a man and woman are teaching the steps for the charleston dance .,0.4368,a man and a woman are showing how to do a type of dance .,5.0,5.0,4.0,4.6667,0.5883,0.9276,0.831,0.9387,0.8224,0.8002,0.5468,0.5614,0.5046,0.4994,0.4426,0.5066,0.4368
+2,a woman and a woman are dancing in a dance studio .,0.5851,a man and woman slowly do a dance together in a dance studio .,5.0,5.0,5.0,5.0,0.6139,0.9306,1.0,1.0,1.0,1.0,0.5851,0.6139,0.6139,0.6139,0.5851,0.5851,0.5851
+3,a man and a woman are dancing in a dance studio .,0.822,a man and woman slowly do a dance together in a dance studio .,5.0,5.0,5.0,5.0,0.8311,0.9486,1.0,1.0,1.0,1.0,0.822,0.8311,0.8311,0.8311,0.822,0.822,0.822
+4,a group of women and men practicing dancing with each other at a large hall,0.0,a man and a woman dance next to each other on a hardwood floor,5.0,4.0,4.0,4.3333,0.4739,0.8321,0.924,0.8057,0.7492,0.6734,0.363,0.2405,0.3892,0.1833,0.2604,0.011,0.0
+5,a group of men and woman line dance to music while someone instructs .,0.1285,a man and a woman show off a dance routine on a wooden floor .,5.0,4.0,4.0,4.3333,0.577,0.8855,0.9859,0.9522,0.906,0.8871,0.5223,0.2797,0.4605,0.2744,0.3661,0.1414,0.1285
+6,a man and a woman are doing a dance routine in front of people .,0.5793,a man and a woman show off a dance routine on a wooden floor .,4.0,4.0,4.0,4.0,0.7192,0.9057,0.9787,1.0,0.9821,0.9802,0.6868,0.6268,0.659,0.62,0.6197,0.5869,0.5793

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person attempts to sweep the floor while a dog chases the broom .,0.6953,a person is moving a broom while a dog chases the broom .,5.0,5.0,5.0,5.0,0.8728,0.9344,0.9697,0.7845,0.8673,0.8465,0.8639,0.7331,0.8638,0.6984,0.8542,0.7304,0.6953
+2,a dog is walking around a room with a dog on the floor .,0.0,a dog plays with a broom while a woman sweeps the floor .,4.0,5.0,4.0,4.3333,0.4058,0.8867,0.9139,0.7341,0.7354,0.675,0.326,0.0,0.3251,0.0,0.2345,0.0,0.0
+3,a small dog is being trained by a dog while a dog walks around him .,0.0,a dog plays with a broom while a woman sweeps the floor .,4.0,2.0,4.0,3.3333,0.2057,0.8514,0.9524,0.704,0.746,0.6866,0.0628,0.0,0.1134,0.0,0.0,0.0,0.0
+4,a person is moving a broom outside of a window .,0.47,a person is moving a broom while a dog chases the broom .,4.0,4.0,4.0,4.0,0.6193,0.9056,1.0,1.0,0.9736,0.9671,0.5796,0.5679,0.5828,0.52,0.5393,0.5229,0.47
+5,a woman is using a dust pan to clean a mess up off of the floor .,0.1288,a dog chasing around a broom that someone is moving along the floor .,4.0,4.0,4.0,4.0,0.4834,0.8323,1.0,0.8933,0.929,0.9064,0.3752,0.2935,0.3915,0.3106,0.2689,0.1072,0.1288
+6,there is a girl sweeping into a dustpan while someone off camera hands her something .,0.0051,"at a house , a woman sweeps the floor but a dog wants to bite it .",4.0,4.0,3.0,3.6667,0.3289,0.8315,0.975,0.9499,0.9472,0.9312,0.1632,0.1667,0.2968,0.2207,0.1022,0.0,0.0051

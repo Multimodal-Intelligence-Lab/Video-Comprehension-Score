@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman of mature age is milking a cow which is standing next to a calf .,0.442,a woman is outside milking a cow talking to someone else .,5.0,4.0,4.0,4.3333,0.7316,0.8895,0.9565,0.8248,0.8287,0.8003,0.6855,0.5191,0.7057,0.5214,0.6553,0.4394,0.442
+2,a man is milking a cow while another man watches him .,0.3892,an elderly woman milks a cow while conversing with someone off screen .,4.0,2.0,4.0,3.3333,0.6084,0.8887,1.0,1.0,1.0,1.0,0.5515,0.5021,0.5586,0.5021,0.4773,0.3892,0.3892
+3,a man is milking a cow while another man is talking to him .,0.4617,a woman is outside milking a cow talking to someone else .,4.0,4.0,4.0,4.0,0.8086,0.9195,0.9599,0.7584,0.7456,0.6992,0.7919,0.543,0.761,0.4815,0.7299,0.5256,0.4617
+4,"a girl is giving milk to a cow , a woman is instructing her how to do it in the background .",0.3486,a woman is outside milking a cow talking to someone else .,2.0,4.0,4.0,3.3333,0.6421,0.8891,0.8788,0.6179,0.715,0.6658,0.5975,0.3572,0.5319,0.4445,0.451,0.2461,0.3486
+5,"a woman is shown milking a cow , the woman is asked if she's smiling or grimacing .",0.4417,a woman is outside milking a cow talking to someone else .,4.0,3.0,4.0,3.6667,0.6725,0.8743,0.9243,0.8441,0.8353,0.8056,0.6244,0.5321,0.5727,0.5272,0.4954,0.4475,0.4417
+6,"the toddler is milking the cow , with the assistance of the woman who is demonstrating .",0.0,a woman is squating down on the ground and milking a spotted cow,2.0,3.0,4.0,3.0,0.5695,0.8891,0.84,0.6676,0.5464,0.4725,0.5157,0.2918,0.409,0.1347,0.3128,0.1765,0.0

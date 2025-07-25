@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two men playing ping pong with each other as the ball constantly falls of,0.2251,two boys playing table tennis inside of a small room .,3.0,4.0,4.0,3.6667,0.3725,0.8097,1.0,1.0,1.0,1.0,0.2251,0.3725,0.3725,0.3725,0.2251,0.2251,0.2251
+2,a group of people are playing a game of ping pong .,0.0149,two boys playing table tennis inside of a small room .,4.0,5.0,4.0,4.3333,0.4404,0.7928,0.9321,0.7177,0.7165,0.6424,0.2942,0.2204,0.3997,0.219,0.2428,0.0166,0.0149
+3,two people are playing ping pong on a ping pong table .,0.2418,two boys playing table tennis inside of a small room .,5.0,5.0,5.0,5.0,0.5263,0.8389,0.8864,0.6421,0.7447,0.6957,0.4354,0.2623,0.4656,0.3639,0.363,0.1206,0.2418
+4,a couple of boys play ping pong on a small table out side .,0.4277,two boys playing table tennis inside of a small room .,4.0,4.0,4.0,4.0,0.6547,0.8808,0.9091,0.5497,0.6851,0.6425,0.6079,0.3122,0.6201,0.496,0.5687,0.2593,0.4277
+5,two young boys are playing ping pong on a patio table outside .,0.3462,two boys playing table tennis inside of a small room .,4.0,4.0,4.0,4.0,0.6006,0.8712,0.9106,0.6924,0.7013,0.6571,0.5415,0.4231,0.5613,0.4304,0.4965,0.3378,0.3462
+6,two boys are playing the game of table tennis by hitting the ball each other,0.6999,two boys playing table tennis inside of a small room .,5.0,5.0,5.0,5.0,0.7626,0.9098,0.9313,0.8153,0.8694,0.8565,0.7391,0.7089,0.7451,0.727,0.7199,0.68,0.6999

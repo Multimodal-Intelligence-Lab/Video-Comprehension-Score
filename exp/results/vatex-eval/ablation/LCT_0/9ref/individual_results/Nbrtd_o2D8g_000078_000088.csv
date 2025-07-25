@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man is juggling four balls in his room while his birds in a cage watch ,",0.5475,a male is juggling in a room as music plays .,4.0,4.0,4.0,4.0,0.6343,0.8927,0.9831,1.0,0.9681,0.9622,0.5798,0.6299,0.6138,0.6176,0.5429,0.562,0.5475
+2,a young boy is playing with a ball in a room .,0.6038,a young guy is juggling three balls in a room .,4.0,4.0,5.0,4.3333,0.651,0.8835,1.0,1.0,1.0,1.0,0.6038,0.651,0.651,0.651,0.6038,0.6038,0.6038
+3,a young boy is juggling three balls in the air .,0.7358,a young guy is juggling three balls in a room .,5.0,5.0,5.0,5.0,0.7531,0.9345,1.0,1.0,1.0,1.0,0.7358,0.7531,0.7531,0.7531,0.7358,0.7358,0.7358
+4,a man is doing juggling with three balls with music .,0.6843,"in a house , a man is juggling three balls in the air .",5.0,5.0,5.0,5.0,0.7965,0.9358,1.0,1.0,1.0,1.0,0.7735,0.7046,0.7674,0.7046,0.7412,0.6843,0.6843
+5,teo men standing on medicine balls balance themselves and juggle balls .,0.2754,"a young man is standing in a room , and he is juggling balls .",2.0,2.0,3.0,2.3333,0.5133,0.8877,0.9474,0.7682,0.7726,0.7438,0.4435,0.3531,0.4755,0.3568,0.4091,0.2712,0.2754
+6,a man attempts to juggle balls in a corridor and then tosses some of them to another person .,0.3416,a man is juggling in the middle of a room with music playing .,2.0,3.0,3.0,2.6667,0.551,0.8625,0.9796,0.9155,0.9097,0.8905,0.479,0.4608,0.5011,0.4574,0.4211,0.3458,0.3416

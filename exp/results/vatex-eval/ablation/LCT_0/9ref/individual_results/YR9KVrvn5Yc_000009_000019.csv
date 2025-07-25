@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy throws a rock off of a cliff and then a guy jupms off a cliff wearing a flight suit .,0.6531,a guy throws something off a cliff and then another guy jumps off the cliff with a parachute .,5.0,5.0,5.0,5.0,0.7669,0.8872,0.9313,0.7295,0.7576,0.7267,0.7372,0.6473,0.7497,0.6839,0.7179,0.6332,0.6531
+2,a man jumps off of a cliff and jumps off of a cliff .,0.32,a guy throws something off a cliff and then another guy jumps off the cliff with a parachute .,5.0,5.0,5.0,5.0,0.6983,0.9189,0.928,0.8048,0.7747,0.7143,0.6682,0.4215,0.649,0.3991,0.614,0.3359,0.32
+3,a man jumps off a cliff and jumps off a cliff .,0.3204,a guy throws something off a cliff and then another guy jumps off the cliff with a parachute .,5.0,5.0,5.0,5.0,0.6987,0.9189,0.928,0.8048,0.7747,0.7143,0.6686,0.415,0.6495,0.3923,0.6145,0.3364,0.3204
+4,several men dressed in oriental wear they are jumping off of a cliff one by one,0.1346,this is a video of a man bass jumping off a cliff to rock music .,4.0,2.0,3.0,3.0,0.4541,0.8274,0.975,0.9369,0.9378,0.9241,0.3301,0.2903,0.3816,0.291,0.2395,0.1337,0.1346
+5,a man jumps off a rock into a lake and then does a flip into the water .,0.222,a man throws a rock off a mountain and another man jumps off the mountain .,2.0,2.0,2.0,2.0,0.5229,0.8801,0.9404,0.7801,0.7222,0.6603,0.458,0.3884,0.4156,0.3152,0.336,0.3051,0.222
+6,a man propells down the side of a cliff and gets really close to the bottom .,0.3714,a man throws a rock down a cliff before a daredevil jumps from a high mountain .,5.0,5.0,3.0,4.3333,0.6079,0.8363,0.9545,0.8153,0.8794,0.8527,0.5312,0.4451,0.556,0.4855,0.469,0.322,0.3714

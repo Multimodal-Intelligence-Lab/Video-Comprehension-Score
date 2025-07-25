@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man , dressing in a gown , is waving his hands and thanking people who are cheering him on .",0.1407,a man with a sword in his throat bows and says thank you as a crowd outside cheers for him .,5.0,5.0,4.0,4.6667,0.4222,0.8215,1.0,0.8879,0.8884,0.8639,0.2966,0.2568,0.4154,0.2941,0.2884,0.0953,0.1407
+2,"a man is standing in front of a large group of people , and a woman is standing in front of him .",0.0,"outside there is a man that is preforming tricks , one in particular is that he stuck a sword in his mouth",4.0,4.0,4.0,4.0,0.3559,0.8245,0.9783,0.8509,0.8742,0.8408,0.2188,0.0876,0.2837,0.1043,0.1313,0.0,0.0
+3,a man is standing in front of a crowd and swallows a sword .,0.4803,a man was performing some show by keeping the sword inside his mouth and gets applause from people,5.0,5.0,5.0,5.0,0.8875,0.918,0.9851,0.8366,0.7691,0.7172,0.8774,0.5796,0.6901,0.5757,0.6412,0.4851,0.4803
+4,a man swallows a sword and pulls it out of his mouth during a live performance .,0.6261,a man with a sword in his mouth is cheered by an audience before he removes it .,5.0,5.0,5.0,5.0,0.761,0.915,0.9859,0.8659,0.8831,0.859,0.7258,0.6902,0.7332,0.6735,0.7085,0.6453,0.6261
+5,a a man is performing the art of swallowing a sword while people are talking in the background .,0.6912,a man is performing a sword swallowing routine in front of a crowd .,5.0,5.0,4.0,4.6667,0.7841,0.8839,0.971,0.773,0.8114,0.7684,0.7557,0.7105,0.7776,0.7271,0.7484,0.684,0.6912
+6,outside a man is pushing a curved sword down his throat then pulls it out .,0.5057,"outside there is a man that is preforming tricks , one in particular is that he stuck a sword in his mouth",4.0,5.0,3.0,4.0,0.7552,0.8887,0.9623,0.8928,0.8968,0.8791,0.7233,0.5762,0.7079,0.578,0.6567,0.5035,0.5057

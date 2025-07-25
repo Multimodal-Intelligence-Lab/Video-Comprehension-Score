@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of men are playing baseball in a parking lot .,0.5704,a group of men playing baseball like game in a park,3.0,1.0,4.0,2.6667,0.7543,0.9295,0.9804,0.8295,0.8314,0.812,0.7357,0.6181,0.7388,0.581,0.719,0.6085,0.5704
+2,a group of people are playing a game of cricket .,0.4453,a group of young men playing cricket in the park .,5.0,5.0,5.0,5.0,0.6995,0.9099,0.9714,0.9722,0.937,0.9294,0.6619,0.5387,0.6532,0.4953,0.6189,0.493,0.4453
+3,a group of people are playing a game of cricket .,0.4453,a group of young men playing cricket in the park .,5.0,5.0,5.0,5.0,0.6995,0.9099,0.9714,0.9722,0.937,0.9294,0.6619,0.5387,0.6532,0.4953,0.6189,0.493,0.4453
+4,a group of men play a game of cricket outdoors .,0.6854,a group of young men playing cricket in the park .,5.0,5.0,5.0,5.0,0.7729,0.9239,1.0,0.8723,0.8863,0.8749,0.7474,0.6605,0.7432,0.7093,0.7186,0.6515,0.6854
+5,men are playing cricket on a television in a field .,0.5165,"a group of men are playing cricket , and a man hits the ball to the right side of the field .",4.0,4.0,4.0,4.0,0.6569,0.9063,1.0,1.0,1.0,1.0,0.6215,0.5608,0.6196,0.5618,0.5803,0.5154,0.5165
+6,group of men standing around while one of them runs up hops and throws a cricket ball,0.2823,men on pavement get ready to play a game of cricket .,5.0,5.0,4.0,4.6667,0.599,0.8552,0.9778,0.7098,0.7634,0.7084,0.5312,0.3736,0.5453,0.4176,0.4397,0.2282,0.2823

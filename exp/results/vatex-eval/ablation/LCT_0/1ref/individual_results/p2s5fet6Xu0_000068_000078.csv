@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl is eating a piece of watermelon and then takes a bite out of someone else's .,0.0,"outside at a farmer's market , a woman tastes a man's watermelon and shrieks in disgust .",5.0,5.0,5.0,5.0,0.5413,0.7759,0.8763,0.4436,0.4246,0.2584,0.4087,0.0,0.4765,0.0,0.3253,0.0,0.0
+2,a group of people are eating a watermelon eating contest .,0.0,"outside at a farmer's market , a woman tastes a man's watermelon and shrieks in disgust .",2.0,2.0,4.0,2.6667,0.4867,0.7938,0.8824,0.5141,0.5096,0.3821,0.3533,0.0016,0.4183,0.0,0.2671,0.0,0.0
+3,a group of people are eating watermelon at a table .,0.0,"outside at a farmer's market , a woman tastes a man's watermelon and shrieks in disgust .",2.0,2.0,3.0,2.3333,0.4385,0.784,0.8664,0.6667,0.6549,0.5599,0.2839,0.1578,0.3519,0.1427,0.1734,0.0,0.0
+4,people are holding pieces of watermelon while other people bite into the watermelon .,0.0,"outside at a farmer's market , a woman tastes a man's watermelon and shrieks in disgust .",5.0,4.0,5.0,4.6667,0.4911,0.8079,0.8993,0.3814,0.3499,0.1954,0.3701,0.0,0.4341,0.0,0.2996,0.0,0.0
+5,a woman holding a watermelon for a man who is in the process of an eating competition .,0.0,"outside at a farmer's market , a woman tastes a man's watermelon and shrieks in disgust .",2.0,2.0,3.0,2.3333,0.5908,0.8223,0.7992,0.1457,0.0,0.0,0.5024,0.0,0.488,0.0,0.3774,0.0,0.0
+6,a group of middle aged men and women are eating watermelon from the floor,0.0039,"outside at a farmer's market , a woman tastes a man's watermelon and shrieks in disgust .",2.0,2.0,3.0,2.3333,0.419,0.8071,0.9445,0.6969,0.7228,0.6565,0.2801,0.1662,0.3848,0.1961,0.2377,0.0,0.0039

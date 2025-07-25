@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man daunted by the task of folding clothes looks up a video on how to fold a shirt , then fails as he demonstrates",0.1298,"words appear followed by a pile of clothes , and then , a man scratches his face shortly before words appear quickly on a screen before showing a person folding a red shirt , and then another person starts folding a blue shirt .",5.0,5.0,5.0,5.0,0.5291,0.8486,0.8894,0.582,0.6377,0.5731,0.4451,0.1909,0.4705,0.2616,0.376,0.0466,0.1298
+2,a woman is demonstrating how to properly fold a shirt .,0.0,"words appear followed by a pile of clothes , and then , a man scratches his face shortly before words appear quickly on a screen before showing a person folding a red shirt , and then another person starts folding a blue shirt .",4.0,3.0,4.0,3.6667,0.4016,0.8412,0.8483,0.7219,0.6544,0.5891,0.2887,0.1711,0.2946,0.0855,0.1615,0.0147,0.0
+3,a man is showing how to properly fold a shirt .,0.2125,"words appear followed by a pile of clothes , and then , a man scratches his face shortly before words appear quickly on a screen before showing a person folding a red shirt , and then another person starts folding a blue shirt .",5.0,4.0,5.0,4.6667,0.4594,0.8786,0.8944,0.8298,0.7815,0.7512,0.3846,0.3485,0.3956,0.3082,0.312,0.2584,0.2125
+4,a guy shows his shirts and then proceeds to iron them out .,0.0,"words appear followed by a pile of clothes , and then , a man scratches his face shortly before words appear quickly on a screen before showing a person folding a red shirt , and then another person starts folding a blue shirt .",4.0,4.0,3.0,3.6667,0.4166,0.812,0.8206,0.7042,0.6196,0.5316,0.2815,0.1716,0.289,0.0585,0.1244,0.0,0.0
+5,a man is showing how to properly lay out the clothes and get them ready for ironing,0.0,"words appear followed by a pile of clothes , and then , a man scratches his face shortly before words appear quickly on a screen before showing a person folding a red shirt , and then another person starts folding a blue shirt .",4.0,4.0,4.0,4.0,0.3495,0.8222,0.8636,0.4197,0.4682,0.3532,0.2088,0.0,0.2467,0.0,0.0838,0.0,0.0
+6,a man is using a cardboard folding guide to be able to quickly and efficiently fold a man's shirt .,0.0,"words appear followed by a pile of clothes , and then , a man scratches his face shortly before words appear quickly on a screen before showing a person folding a red shirt , and then another person starts folding a blue shirt .",4.0,4.0,3.0,3.6667,0.421,0.8504,0.8525,0.4004,0.4438,0.3459,0.3191,0.0,0.3208,0.0,0.2013,0.0,0.0

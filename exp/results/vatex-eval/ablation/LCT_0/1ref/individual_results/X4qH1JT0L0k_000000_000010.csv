@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man in a room as he uses a small oyster knife to remove the food and then puts lemon on seafood,0.415,a man shucks some oysters then sprinkles juice from a lemon onto them .,5.0,5.0,4.0,4.6667,0.642,0.8318,0.9064,0.7071,0.7357,0.6823,0.5696,0.4938,0.6051,0.5135,0.5252,0.3914,0.415
+2,a man is demonstrating how to make sushi with a knife .,0.0,a man shucks some oysters then sprinkles juice from a lemon onto them .,4.0,4.0,3.0,3.6667,0.2432,0.7821,0.8803,0.6512,0.5811,0.4643,0.0323,0.0,0.1403,0.0,0.0,0.0,0.0
+3,a man is showing how to make a sandwich in a kitchen .,0.0,a man shucks some oysters then sprinkles juice from a lemon onto them .,4.0,4.0,3.0,3.6667,0.1798,0.7909,0.8803,0.6273,0.5543,0.4365,0.0,0.0,0.0683,0.0,0.0,0.0,0.0
+4,a man shows how to take oysters out of a shell with a knife .,0.0,a man shucks some oysters then sprinkles juice from a lemon onto them .,5.0,5.0,5.0,5.0,0.5796,0.8209,0.9386,0.4938,0.4119,0.2835,0.4879,0.1267,0.5521,0.0,0.4544,0.0,0.0
+5,a man explaining how to open up and remove an oyster for consumption .,0.0,a man shucks some oysters then sprinkles juice from a lemon onto them .,4.0,4.0,3.0,3.6667,0.5548,0.8128,0.8984,0.3905,0.2407,0.0658,0.4522,0.0,0.5044,0.0,0.3903,0.0,0.0
+6,the man opens oysters and places them on a tray at an oyster bar .,0.1052,a man shucks some oysters then sprinkles juice from a lemon onto them .,5.0,4.0,4.0,4.3333,0.6195,0.8313,0.8875,0.3625,0.5147,0.4163,0.5423,0.0,0.5713,0.2167,0.4843,0.0,0.1052

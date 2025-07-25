@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is getting a tattoo on her wrist by a man at a tattoo parlor .,0.4286,a woman gets a tattoo on her arm while talking to her friend .,5.0,5.0,5.0,5.0,0.634,0.9017,0.96,0.8728,0.8575,0.8204,0.5788,0.5048,0.5748,0.497,0.517,0.4374,0.4286
+2,a man is getting a tattoo on a woman ' s arm .,0.635,a man places a tatoo on the inside of a womans forearm .,5.0,4.0,5.0,4.6667,0.7327,0.9169,1.0,0.8819,0.8496,0.8173,0.6982,0.6821,0.7327,0.6768,0.6982,0.641,0.635
+3,a man is getting his ear pierced by a woman .,0.0,a girl is in florida and getting a tattoo on her forearm by a tattoo artist .,2.0,2.0,1.0,1.6667,0.433,0.8773,0.9714,1.0,0.8792,0.847,0.3134,0.2063,0.3381,0.0973,0.1976,0.0,0.0
+4,a tattoo artist applies a tatoo to the upper chest area of a young woman .,0.1576,a woman gets a tattoo on her arm while talking to her friend .,4.0,4.0,4.0,4.0,0.6152,0.871,0.967,0.811,0.7235,0.6702,0.5582,0.3698,0.4834,0.2935,0.3601,0.2485,0.1576
+5,"a young girl lying on her back , is getting a tattoo on her upper right chest by a technician who is talking to her .",0.4269,a woman is laying in a chair getting a tattoo done by a man .,5.0,2.0,4.0,3.6667,0.6535,0.8578,0.9802,1.0,0.9871,0.9846,0.596,0.5284,0.5715,0.5223,0.5005,0.4343,0.4269
+6,a woman is having her eyebrow drawn or tattooed by another person .,0.1661,a women is seated while inking a tattoo performed by a man .,4.0,4.0,4.0,4.0,0.5407,0.8673,0.9804,0.6435,0.6676,0.6167,0.4467,0.2072,0.4797,0.3078,0.3742,0.0465,0.1661

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman draws a very large map of the world on a wall and colors them all different colors .,0.2133,a young girl uses magic markers to color a large map of all the countries in the world .,4.0,4.0,4.0,4.0,0.717,0.8996,0.9233,0.613,0.5687,0.4981,0.68,0.3705,0.6546,0.2984,0.6094,0.2686,0.2133
+2,a person is drawing on a piece of paper with a marker .,0.1155,a person is coloring a map of the world while music plays in the background .,5.0,4.0,5.0,4.6667,0.3664,0.8098,1.0,1.0,1.0,1.0,0.2075,0.2888,0.3447,0.2837,0.1877,0.1218,0.1155
+3,a person is drawing a picture of a cartoon character .,0.1913,a person is coloring a map of the world while music plays in the background .,4.0,4.0,4.0,4.0,0.3393,0.817,1.0,1.0,1.0,1.0,0.1913,0.3393,0.3393,0.3393,0.1913,0.1913,0.1913
+4,the lady is drawing some art on the board with a special pen on her hands .,0.1266,a woman is coloring in a map of the world as music plays .,4.0,5.0,5.0,4.6667,0.3215,0.7964,1.0,1.0,1.0,1.0,0.1266,0.3215,0.3215,0.3215,0.1266,0.1266,0.1266
+5,a girl makes a pretty piece of artwork with lots of pretty colors .,0.176,girl uses different colored-markers to color the different countries on a map .,4.0,5.0,5.0,4.6667,0.5678,0.8407,0.9545,0.7801,0.7595,0.6897,0.4833,0.2844,0.4928,0.3146,0.3936,0.1351,0.176
+6,a person coloring a drawing of a cartoon characters with color markers .,0.1712,a person is coloring a map of the world while music plays in the background .,4.0,3.0,4.0,3.6667,0.4834,0.8431,1.0,0.904,0.9155,0.8908,0.3807,0.3238,0.4341,0.3078,0.3216,0.1808,0.1712

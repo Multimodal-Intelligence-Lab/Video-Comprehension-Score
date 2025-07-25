@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person uses a circular saw to cut a metal plate clamped to a workbench .,0.6947,the person is using a handheld electric circular saw to cut a piece of metal that is on the workbench .,4.0,4.0,4.0,4.0,0.8309,0.9191,0.9892,1.0,0.9823,0.9793,0.816,0.6781,0.8149,0.7002,0.7986,0.6722,0.6947
+2,a man is using a power saw to cut a piece of wood .,0.7035,a person is using a skill saw to cut through a piece of wood .,5.0,4.0,5.0,4.6667,0.7182,0.9505,1.0,1.0,1.0,1.0,0.7035,0.7182,0.7182,0.7182,0.7035,0.7035,0.7035
+3,a man is using a tool to cut a piece of wood .,0.6154,a person is using a skill saw to cut through a piece of wood .,5.0,5.0,5.0,5.0,0.6407,0.9342,1.0,1.0,1.0,1.0,0.6154,0.6407,0.6407,0.6407,0.6154,0.6154,0.6154
+4,a person uses a table saw to saw some wood indoors .,0.5098,a carpenter is using a table saw to cut through a piece of thin wood .,4.0,5.0,5.0,4.6667,0.6454,0.8912,0.9555,0.8229,0.8264,0.8017,0.5949,0.5691,0.6289,0.5709,0.5761,0.5078,0.5098
+5,a person uses an electric saw to cut through a piece of wood .,0.8851,a person uses an electric saw to cut into a board .,5.0,4.0,5.0,4.6667,0.8906,0.9516,1.0,1.0,1.0,1.0,0.8851,0.8906,0.8906,0.8906,0.8851,0.8851,0.8851
+6,a person cutting a wooden board on a flat table saw,0.3061,a table saw is slow pushed through a board clamped to a table .,4.0,5.0,5.0,4.6667,0.6496,0.9022,0.8554,0.5842,0.624,0.5698,0.6108,0.3128,0.5129,0.3935,0.459,0.2442,0.3061

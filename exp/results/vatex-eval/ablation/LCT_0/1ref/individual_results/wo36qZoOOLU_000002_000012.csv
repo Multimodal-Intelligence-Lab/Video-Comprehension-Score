@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a tea jar is kept on the table and a person puts the tea bag in that jar,0.0,a person takes the top off of a blue teapot and then touches another item,5.0,5.0,5.0,5.0,0.4174,0.8109,0.8676,0.3045,0.2311,0.0518,0.2816,0.0,0.3285,0.0,0.1719,0.0,0.0
+2,a person is demonstrating how to use a sewing machine .,0.0,a person takes the top off of a blue teapot and then touches another item,4.0,3.0,4.0,3.6667,0.1246,0.7983,0.8953,0.5147,0.4805,0.3492,0.0,0.0,0.0222,0.0,0.0,0.0,0.0
+3,a person is showing how to use a plastic bottle .,0.0,a person takes the top off of a blue teapot and then touches another item,3.0,3.0,3.0,3.0,0.1825,0.7971,0.9583,0.838,0.8412,0.8008,0.0,0.0245,0.147,0.0282,0.0,0.0,0.0
+4,water being boiled in an item for a small amount of time then tea leaves being dropped into a cup,0.0,a person takes the top off of a blue teapot and then touches another item,4.0,3.0,4.0,3.6667,0.3421,0.8016,0.8846,0.4882,0.5055,0.3832,0.1793,0.0,0.2563,0.0,0.0723,0.0,0.0
+5,"a person is demonstrating how to make tea , and a hand is shown dropping tea into a teapot .",0.0,a person takes the top off of a blue teapot and then touches another item,5.0,5.0,5.0,5.0,0.492,0.8265,0.8793,0.3765,0.3382,0.1993,0.3854,0.0,0.4222,0.0,0.301,0.0,0.0
+6,an instructional video about how to make tea shows boiling water and a hand adding loose tea leaves to a pot .,0.0,a person takes the top off of a blue teapot and then touches another item,4.0,4.0,4.0,4.0,0.3936,0.7905,0.9141,0.5567,0.6235,0.5237,0.2328,0.0,0.3366,0.0274,0.1607,0.0,0.0

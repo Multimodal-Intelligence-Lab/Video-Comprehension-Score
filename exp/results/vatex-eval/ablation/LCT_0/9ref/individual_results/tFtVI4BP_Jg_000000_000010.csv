@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person opens the door with a metal latch to the bathroom .,0.5134,a person opens a door handle and walks into a bathroom .,5.0,4.0,5.0,4.6667,0.7632,0.9142,0.96,0.7876,0.8317,0.8093,0.7367,0.4955,0.7309,0.545,0.7008,0.4283,0.5134
+2,a person is opening a door and then opens the door .,0.3711,a person opens a door handle and walks into a bathroom .,3.0,3.0,3.0,3.0,0.5922,0.9185,0.95,0.9111,0.8068,0.7825,0.5545,0.5151,0.5707,0.4224,0.531,0.4721,0.3711
+3,a person opens a door and then opens the door .,0.3172,a person opens a door handle and walks into a bathroom .,3.0,5.0,3.0,3.6667,0.5404,0.9324,0.95,0.8946,0.8068,0.7824,0.5016,0.4656,0.5162,0.3634,0.4754,0.4269,0.3172
+4,a person opens and closes a door with the focus being on the door nob,0.3339,a person opens a door by turning a knob and goes into a bathroom .,4.0,4.0,4.0,4.0,0.5982,0.8878,0.9555,0.904,0.8505,0.8316,0.5464,0.4191,0.4981,0.41,0.4334,0.3457,0.3339
+5,"someone turns the handle of a door , opens it , and then shuts back the door .",0.1347,a hand reaches down to use a door knob to open a bathroom door .,4.0,4.0,4.0,4.0,0.5647,0.9153,0.9419,0.665,0.7662,0.725,0.5244,0.1341,0.5378,0.2644,0.4951,0.0,0.1347
+6,a person using their hand to open a door and to close a door,0.1347,a person opens a door by turning a knob and goes into a bathroom .,4.0,4.0,4.0,4.0,0.5529,0.9031,0.8973,0.741,0.672,0.6164,0.5049,0.251,0.4941,0.2527,0.4398,0.1497,0.1347

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is playing with a baby on the ground as they all laugh and smile together .,0.5669,a woman is playing with a baby trying to get him to giggle .,5.0,5.0,5.0,5.0,0.7244,0.8764,1.0,1.0,1.0,1.0,0.6855,0.6229,0.6774,0.6235,0.6289,0.5662,0.5669
+2,a man and a little girl are playing with each other .,0.107,a woman is trying to make a baby giggle while playing on the floor .,4.0,4.0,4.0,4.0,0.347,0.8234,0.9744,1.0,0.9744,0.9684,0.207,0.2945,0.2725,0.276,0.1027,0.1299,0.107
+3,two toddlers are playing with each other in a living room .,0.0,a little boy smiling and shaking their head in front of a woman,4.0,4.0,4.0,4.0,0.3759,0.8089,1.0,1.0,1.0,1.0,0.2285,0.2126,0.2738,0.2126,0.0999,0.0,0.0
+4,a baby fusses and cries while a woman talks and laughs .,0.1452,a woman is playing with a baby trying to get him to giggle .,4.0,4.0,4.0,4.0,0.5998,0.8499,0.873,0.6167,0.6074,0.5256,0.5291,0.351,0.5234,0.2745,0.4392,0.2364,0.1452
+5,a young baby makes faces and starts to cry while a woman laughs .,0.0549,a woman is playing with a baby trying to get him to giggle .,4.0,4.0,3.0,3.6667,0.6328,0.869,0.9275,0.6747,0.6717,0.5953,0.5774,0.2636,0.5451,0.1598,0.4596,0.1716,0.0549
+6,a cute baby is laughing hysterically while a woman is making funny noises in the background .,0.1666,a woman handles in a baby in a way trying to make it laugh .,5.0,3.0,4.0,4.0,0.7342,0.8734,0.9403,0.6901,0.7144,0.6366,0.6872,0.3323,0.5994,0.2217,0.5568,0.285,0.1666

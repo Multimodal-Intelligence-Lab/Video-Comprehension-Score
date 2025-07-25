@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a on his knees man is working outside with a hammer .,0.0,a man kneels while pounding bricks into place in a patio .,5.0,5.0,5.0,5.0,0.5363,0.833,0.8235,0.2843,0.0,0.0,0.4434,0.0,0.437,0.0,0.3241,0.0,0.0
+2,a man is using a hammer to cut a piece of wood .,0.0,a man kneels while pounding bricks into place in a patio .,3.0,3.0,3.0,3.0,0.1875,0.797,0.9583,0.7414,0.836,0.7943,0.0,0.0,0.1522,0.0282,0.0,0.0,0.0
+3,a man is using a sledgehammer to hit a ball on the ground .,0.0,a man kneels while pounding bricks into place in a patio .,4.0,4.0,4.0,4.0,0.2168,0.7931,0.9583,0.7414,0.836,0.7933,0.0124,0.0,0.1827,0.0632,0.0,0.0,0.0
+4,a group of men in demonstrating bricks layed out on the ground,0.0,a man kneels while pounding bricks into place in a patio .,4.0,4.0,4.0,4.0,0.4282,0.8015,0.8146,0.4095,0.545,0.4323,0.2866,0.0,0.2981,0.0,0.1242,0.0,0.0
+5,a man wearing a hi-viz jacket lays bricks on a wall using a trowel and mortar .,0.2445,a man kneels while pounding bricks into place in a patio .,5.0,2.0,2.0,3.0,0.4493,0.7982,0.9614,0.91,0.9133,0.8914,0.31,0.3948,0.4272,0.397,0.2823,0.2418,0.2445
+6,a man is place bricks and mortar on a brick wall and talking .,0.0,a man kneels while pounding bricks into place in a patio .,5.0,3.0,4.0,4.0,0.4681,0.8699,0.8397,0.4516,0.3122,0.2093,0.3885,0.0,0.3666,0.0,0.2718,0.0,0.0

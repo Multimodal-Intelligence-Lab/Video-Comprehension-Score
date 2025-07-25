@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,old people on a bench are complaining while some people laugh .,0.0,a person is filming a group of elderly people and then swings the camera around to face another direction .,4.0,5.0,5.0,4.6667,0.3203,0.8199,0.8706,0.6756,0.6925,0.625,0.171,0.0,0.2193,0.0185,0.0478,0.0,0.0
+2,a group of people are walking around a sidewalk and a man is walking around .,0.0,a person is filming a group of elderly people and then swings the camera around to face another direction .,5.0,5.0,5.0,5.0,0.2285,0.8456,0.8603,0.4377,0.4603,0.3617,0.0875,0.0,0.1032,0.0,0.0,0.0,0.0
+3,a group of people are walking around a house and one man throws a package into the ground .,0.0,a person is filming a group of elderly people and then swings the camera around to face another direction .,4.0,1.0,3.0,2.6667,0.1645,0.8234,0.8955,0.2713,0.2496,0.0887,0.0,0.0,0.0669,0.0,0.0,0.0,0.0
+4,a man is talking to another man and a man is talking to a woman on the sidewalk .,0.0,a person is filming a group of elderly people and then swings the camera around to face another direction .,4.0,4.0,4.0,4.0,0.0833,0.7963,0.8646,0.4402,0.4644,0.3274,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5,a man speaks at an outdoor function while three people on a couch look on .,0.0,a person is filming a group of elderly people and then swings the camera around to face another direction .,4.0,1.0,4.0,3.0,0.0745,0.795,0.9042,0.3844,0.4079,0.2552,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6,a man in an audience is holding a microphone whilst describing a video of a woman running out into a crowd of people .,0.0,a person is filming a group of elderly people and then swings the camera around to face another direction .,4.0,1.0,2.0,2.3333,0.1853,0.7896,0.8058,0.3448,0.4829,0.3452,0.0,0.0,0.0,0.0,0.0,0.0,0.0

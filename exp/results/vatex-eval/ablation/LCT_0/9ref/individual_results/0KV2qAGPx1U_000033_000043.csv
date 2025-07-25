@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two men are standing on a court and tossing a soccer ball at a wall .,0.592,two guys throwing a ball against a wall .,5.0,5.0,5.0,5.0,0.7781,0.9149,0.9279,0.965,0.911,0.9027,0.7435,0.6477,0.7164,0.6268,0.6723,0.6149,0.592
+2,a man is practicing kicking a soccer ball in a gym .,0.2088,a man throws a soccer ball off the wall to himself but he drops it .,4.0,3.0,4.0,3.6667,0.4987,0.8765,0.9677,1.0,0.9672,0.9593,0.421,0.2315,0.3985,0.315,0.3052,0.1123,0.2088
+3,a man is juggling a soccer ball with his feet .,0.4697,a man throws a soccer ball off the wall to himself but he drops it .,4.0,1.0,4.0,3.0,0.6125,0.8834,1.0,0.8408,0.827,0.8042,0.5614,0.5392,0.6125,0.5315,0.5614,0.4784,0.4697
+4,a man is throwing an exercise ball at a wall and catching it .,0.5216,a man throws a soccer ball off the wall to himself but he drops it .,5.0,5.0,4.0,4.6667,0.6308,0.9079,0.9804,0.8723,0.9107,0.9011,0.585,0.5378,0.5979,0.5679,0.5548,0.4883,0.5216
+5,a man tosses a ball into a red cup by bouncing the ball off of a nearby wall .,0.2071,a man throws a soccer ball off the wall to himself but he drops it .,4.0,3.0,4.0,3.6667,0.5504,0.8952,0.9048,0.7554,0.7645,0.7283,0.4845,0.3061,0.4608,0.297,0.3977,0.2035,0.2071
+6,man in an exercise area throwing a ball agaisnt the wall and catching it,0.4782,two guys throwing a ball against a wall .,5.0,5.0,4.0,4.6667,0.6012,0.8913,0.9592,0.9387,0.9232,0.9118,0.5428,0.5534,0.5727,0.5459,0.5102,0.4868,0.4782

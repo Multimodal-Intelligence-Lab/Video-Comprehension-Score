@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,focused shot of organ player jamming out with a band .,0.3634,a man is sitting at an organ playing music at church .,3.0,5.0,2.0,3.3333,0.7771,0.8438,0.9565,0.8889,0.9215,0.8961,0.7358,0.473,0.7467,0.4873,0.6998,0.3456,0.3634
+2,a man is sitting in a chair and playing a piano .,0.4527,a man is inside of a church playing an electric piano .,5.0,4.0,5.0,4.6667,0.6498,0.911,1.0,0.9188,0.8313,0.8148,0.5891,0.5159,0.593,0.5079,0.5474,0.4617,0.4527
+3,a man is sitting at a piano and playing the piano .,0.444,a man is sitting at an organ playing music at church .,5.0,2.0,5.0,4.0,0.6692,0.912,1.0,1.0,1.0,1.0,0.6336,0.4945,0.5755,0.4945,0.5297,0.444,0.444
+4,a man plays the drums as part of a band performing in a church .,0.2844,a man playing music in a church for other people to listen to and dance .,4.0,4.0,4.0,4.0,0.6362,0.8735,0.924,0.9455,0.7779,0.7229,0.5675,0.2743,0.5633,0.3783,0.4808,0.139,0.2844
+5,a man sits on a bench in the corner of a church and plays an organ .,0.4056,a man is inside of a church playing an electric piano .,5.0,5.0,4.0,4.6667,0.8003,0.908,0.9004,0.8723,0.8101,0.7772,0.7801,0.5297,0.7496,0.4936,0.725,0.4479,0.4056
+6,a man is performing and playing a musical piece using an organ .,0.4017,a seated man is playing an organ in a large showroom .,5.0,4.0,4.0,4.3333,0.7492,0.8904,0.924,0.7845,0.8486,0.821,0.7184,0.5346,0.6864,0.488,0.6478,0.4562,0.4017

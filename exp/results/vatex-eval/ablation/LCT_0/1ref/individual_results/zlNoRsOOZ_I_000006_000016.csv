@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a woman stands and talks about her move while playing monopoly , while another player looks on",0.161,"some girls play a game of "" monopoly "" , with one of them describing how she is winning .",4.0,4.0,5.0,4.3333,0.5886,0.8311,0.8859,0.5884,0.59,0.5067,0.505,0.3007,0.5356,0.3027,0.4413,0.1587,0.161
+2,a group of people are playing monopoly on a table .,0.2741,"some girls play a game of "" monopoly "" , with one of them describing how she is winning .",5.0,5.0,5.0,5.0,0.5746,0.8303,0.8803,0.7735,0.7057,0.6456,0.4877,0.45,0.5168,0.3972,0.418,0.3376,0.2741
+3,a group of people are playing a game of monopoly .,0.317,"some girls play a game of "" monopoly "" , with one of them describing how she is winning .",5.0,5.0,5.0,5.0,0.644,0.879,0.7619,0.7505,0.5936,0.5377,0.595,0.5256,0.5327,0.369,0.4684,0.4603,0.317
+4,a family sits on the floor of a living room and plays monopoly together .,0.0,"some girls play a game of "" monopoly "" , with one of them describing how she is winning .",4.0,5.0,4.0,4.3333,0.4911,0.8053,0.8391,0.1896,0.0,0.0,0.368,0.0,0.3935,0.0,0.2468,0.0,0.0
+5,a group of people are playing the game of monopoly .,0.2969,"some girls play a game of "" monopoly "" , with one of them describing how she is winning .",5.0,5.0,5.0,5.0,0.6331,0.879,0.7619,0.7505,0.5936,0.5377,0.5826,0.5111,0.5184,0.3581,0.4522,0.4439,0.2969
+6,people sitting on the floor playing a game of monopoly .,0.0346,"some girls play a game of "" monopoly "" , with one of them describing how she is winning .",4.0,5.0,4.0,4.3333,0.5544,0.8634,0.7403,0.7022,0.5345,0.4609,0.484,0.3655,0.3981,0.1604,0.3029,0.2651,0.0346

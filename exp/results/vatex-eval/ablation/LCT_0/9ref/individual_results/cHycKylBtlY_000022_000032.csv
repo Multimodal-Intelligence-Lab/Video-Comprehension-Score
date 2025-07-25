@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man with a bat is preparing to hit a tee ball inside a practice ring,0.2082,the coach is giving directions on how to take a swing at a baseball sitting on a stationery tee,5.0,5.0,5.0,5.0,0.6608,0.8788,0.956,0.8083,0.7779,0.7334,0.614,0.3463,0.5646,0.3811,0.5046,0.2195,0.2082
+2,a man in a batting cage hits a baseball with a bat .,0.4903,a man at a batting cage instructs how to hit a baseball while holding a baseball bat and vocalizing how to correctly hit the ball .,4.0,4.0,5.0,4.3333,0.7795,0.9377,0.9655,0.8151,0.8259,0.796,0.7648,0.6213,0.7263,0.4999,0.7082,0.614,0.4903
+3,a man is in a batting cage hitting a ball with a bat .,0.2764,a man uses a stand for a baseball to demonstrate proper hitting technique when using a baseball bat .,4.0,4.0,5.0,4.3333,0.7376,0.9256,0.9655,0.8334,0.838,0.809,0.7165,0.4099,0.6745,0.386,0.6483,0.3925,0.2764
+4,a man is swinging a baseball bat as another man explains how to swing .,0.2054,a man at a batting cage instructs how to hit a baseball while holding a baseball bat and vocalizing how to correctly hit the ball .,4.0,4.0,4.0,4.0,0.817,0.9238,0.9412,0.6747,0.6789,0.6112,0.8019,0.3693,0.6208,0.2651,0.5631,0.3334,0.2054
+5,a man is showing some people how to properly throw a baseball .,0.5947,there is a man showing the viewer how to hit a baseball .,4.0,4.0,4.0,4.0,0.7004,0.8938,1.0,0.8436,0.827,0.8065,0.6648,0.6437,0.7004,0.6377,0.6648,0.6014,0.5947
+6,a man showing to properly showing how to take a good baseball swing,0.7715,there is a man showing the viewer how to hit a baseball .,5.0,5.0,5.0,5.0,0.8699,0.907,0.9714,0.827,0.8146,0.7919,0.8566,0.7673,0.832,0.7762,0.8137,0.7623,0.7715

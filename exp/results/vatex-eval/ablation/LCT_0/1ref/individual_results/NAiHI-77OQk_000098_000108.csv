@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a baby is pointing a lit flashlight at the sole of their left foot .,0.0,a little girl examines her toes using a small flashlight .,5.0,5.0,5.0,5.0,0.6317,0.8104,0.7653,0.1823,0.2945,0.1294,0.5455,0.0,0.5187,0.0,0.4061,0.0,0.0
+2,a little girl is sitting on the floor and playing with a toy .,0.0,a little girl examines her toes using a small flashlight .,4.0,4.0,4.0,4.0,0.4081,0.8326,0.7907,0.4605,0.3034,0.1633,0.2891,0.0,0.2514,0.0,0.1009,0.0,0.0
+3,a little girl is sitting on the floor and playing with a toy .,0.0,a little girl examines her toes using a small flashlight .,4.0,4.0,4.0,4.0,0.4081,0.8326,0.7907,0.4605,0.3034,0.1633,0.2891,0.0,0.2514,0.0,0.1009,0.0,0.0
+4,a little girl is trying to put her foot in the mouth,0.0,a little girl examines her toes using a small flashlight .,4.0,5.0,5.0,4.6667,0.4301,0.8547,0.8766,0.519,0.42,0.3214,0.3333,0.0,0.3499,0.0,0.2394,0.0,0.0
+5,a young girl standing by herself then bending all the way back to touch the ground .,0.0,a little girl examines her toes using a small flashlight .,2.0,4.0,2.0,2.6667,0.3242,0.7806,0.971,0.6569,0.6754,0.5842,0.1342,0.0,0.304,0.0,0.1084,0.0,0.0
+6,"at home , a little girl tries to walk in a circle on her tippy toes .",0.0,a little girl examines her toes using a small flashlight .,3.0,4.0,3.0,3.3333,0.4265,0.8557,0.8474,0.3998,0.3149,0.1994,0.3298,0.0,0.3232,0.0,0.2091,0.0,0.0

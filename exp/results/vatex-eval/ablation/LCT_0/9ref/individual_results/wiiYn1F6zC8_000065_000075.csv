@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"an office worker is going crazy beating and kicking a copy machine , while his co-workers stand up staring at him .",0.532,a man in an office punching and kicking a copier .,5.0,5.0,5.0,5.0,0.8015,0.8589,0.9427,0.8345,0.719,0.6537,0.7684,0.7621,0.736,0.5513,0.6987,0.7225,0.532
+2,a group of people are in a room and they are dancing to music .,0.0,a person in an office hitting and smashing a machine in anger,4.0,4.0,3.0,3.6667,0.1668,0.7685,1.0,0.8742,0.8359,0.7798,0.0,0.0469,0.1047,0.0032,0.0,0.0,0.0
+3,a group of people are dancing to music in a church .,0.0,a person in an office hitting and smashing a machine in anger,2.0,2.0,2.0,2.0,0.1309,0.7634,0.9677,0.8742,0.821,0.7547,0.0,0.0,0.0547,0.0,0.0,0.0,0.0
+4,"a man sleeps in an office chair , someone slaps a notebook loudly on the table in front of him , and he jumps up after them .",0.2247,a man in an office trying to destroy a copy machine .,2.0,1.0,3.0,2.0,0.4716,0.8102,0.9882,1.0,0.9924,0.9906,0.34,0.3794,0.4179,0.3747,0.2729,0.2306,0.2247
+5,a guy is in his garage throwing punches at his punching bag .,0.0245,a man in an office punching and kicking a copier .,3.0,1.0,2.0,2.0,0.357,0.8211,0.9787,0.9172,0.9107,0.8837,0.2169,0.2353,0.3381,0.1991,0.1938,0.0686,0.0245
+6,a man is asleep at his desk and someone slams something to wake him up .,0.1284,a man in an office trying to destroy a copy machine .,2.0,1.0,3.0,2.0,0.4284,0.8185,1.0,0.8723,0.8863,0.8609,0.2836,0.2828,0.3772,0.2942,0.231,0.1143,0.1284

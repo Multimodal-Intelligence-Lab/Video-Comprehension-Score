@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,three people are parasailing and get dipped into the water .,0.8061,three people are parasailing and then come down and land in the water .,5.0,5.0,5.0,5.0,0.8599,0.927,0.9583,1.0,0.9692,0.9622,0.8486,0.6983,0.8509,0.8087,0.8389,0.6942,0.8061
+2,a group of people are parasailing in the ocean .,0.655,a group of people in one parachute landing into the ocean,5.0,5.0,5.0,5.0,0.7315,0.9193,1.0,1.0,1.0,1.0,0.6971,0.6829,0.6829,0.6829,0.655,0.655,0.655
+3,a group of people are parasailing in the ocean .,0.655,a group of people in one parachute landing into the ocean,5.0,5.0,5.0,5.0,0.7315,0.9193,1.0,1.0,1.0,1.0,0.6971,0.6829,0.6829,0.6829,0.655,0.655,0.655
+4,three divers with scuba gear are in the water looking around .,0.0,three people are parasailing and the boat operator dips them in the open water .,2.0,2.0,1.0,1.6667,0.4018,0.818,0.9404,0.7378,0.7596,0.6972,0.2687,0.0141,0.3405,0.0624,0.1872,0.0,0.0
+5,"three men stand on an upside down boat , jump into the sea , and turn the boat over .",0.1541,three children are shown sitting under a para sail tied to a rope and are slowly lowered into the water .,2.0,1.0,2.0,1.6667,0.4535,0.8315,0.9844,0.9123,0.9318,0.9146,0.3375,0.3101,0.3854,0.3246,0.2609,0.1359,0.1541
+6,three people are swimming in a high tide ocean,0.1258,three people are parasailing and then come down and land in the water .,2.0,2.0,4.0,2.6667,0.4537,0.8538,0.9851,0.8196,0.8527,0.8186,0.3602,0.1835,0.418,0.26,0.3183,0.0306,0.1258

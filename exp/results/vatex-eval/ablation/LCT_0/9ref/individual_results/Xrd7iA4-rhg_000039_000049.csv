@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man washes a large dog while several people comment,0.3236,a man washes a dog to make her look bright white in color and talks about washing the dog .,5.0,4.0,3.0,4.0,0.613,0.8545,0.971,0.8241,0.8028,0.762,0.5471,0.4289,0.591,0.422,0.5179,0.3129,0.3236
+2,a dog is being washed by a dog in a bathtub .,0.2258,a woman is spraying a water hose all over a dog during a bath .,3.0,4.0,3.0,3.3333,0.5792,0.8624,0.88,0.925,0.8038,0.7699,0.5114,0.4552,0.5056,0.3398,0.4259,0.3675,0.2258
+3,a person is using a hose to wash a dog ' s fur .,0.7778,a woman is shown using a hose to wash a dog outdoors .,5.0,5.0,5.0,5.0,0.8474,0.9272,1.0,1.0,1.0,1.0,0.8324,0.794,0.794,0.794,0.7778,0.7778,0.7778
+4,people are scrubbing down a dog with water and soap .,0.5796,person washing a white dog outside with a water hose and soap .,5.0,4.0,4.0,4.3333,0.6795,0.9061,1.0,1.0,1.0,1.0,0.6463,0.6425,0.6656,0.6435,0.631,0.578,0.5796
+5,someone is giving a big dog a bath outside using a hose pipe .,0.5457,person washing a white dog outside with a water hose and soap .,5.0,5.0,5.0,5.0,0.6644,0.8774,1.0,0.9084,0.9328,0.9217,0.6175,0.5998,0.6365,0.6103,0.5762,0.5335,0.5457
+6,a dog with soap lathered in his fur being washed off with a hose .,0.0585,a white furry dog getting washed by a woman outside .,5.0,5.0,4.0,4.6667,0.7307,0.8904,0.8582,0.6016,0.5122,0.4274,0.6975,0.3175,0.6561,0.1725,0.5986,0.2019,0.0585

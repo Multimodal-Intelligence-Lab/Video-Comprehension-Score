@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is having a rough time riding on his surfboard .,0.0,a man rests on his stomach on a surf board as a wave begins to swell .,4.0,4.0,5.0,4.3333,0.4978,0.8142,0.8358,0.4268,0.3475,0.1986,0.3832,0.0,0.3992,0.0,0.2621,0.0,0.0
+2,a man is riding a surfboard in the ocean and then falls off .,0.3045,a man rests on his stomach on a surf board as a wave begins to swell .,4.0,4.0,5.0,4.3333,0.4892,0.8231,0.9796,0.8819,0.8923,0.8691,0.3794,0.4208,0.4786,0.4276,0.3665,0.2964,0.3045
+3,a person is surfing in the ocean and a wave .,0.3578,a man rests on his stomach on a surf board as a wave begins to swell .,5.0,5.0,5.0,5.0,0.4757,0.8675,0.9243,1.0,0.941,0.932,0.3956,0.4757,0.4328,0.4428,0.3462,0.3956,0.3578
+4,a man is on a surfboard and riding through waves of water .,0.4412,a man rests on his stomach on a surf board as a wave begins to swell .,4.0,4.0,5.0,4.3333,0.5921,0.8446,0.9388,0.8819,0.8642,0.8392,0.5171,0.5375,0.5655,0.528,0.4856,0.4524,0.4412
+5,a man on a surfboard skimming the waves in the ocean .,0.3793,a man rests on his stomach on a surf board as a wave begins to swell .,4.0,4.0,5.0,4.3333,0.5475,0.8436,0.9388,0.8819,0.8642,0.839,0.4636,0.4869,0.518,0.4764,0.4286,0.3918,0.3793
+6,a few men body surfing on big waves at the beach .,0.2547,a man rests on his stomach on a surf board as a wave begins to swell .,4.0,4.0,5.0,4.3333,0.3914,0.842,0.9831,0.9766,0.9697,0.9641,0.2773,0.3769,0.3809,0.3725,0.2648,0.26,0.2547

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is doing exercises while hanging from a chin up bar .,0.0,a woman is trying to pull herself up on a pull up machine at the gym .,5.0,5.0,5.0,5.0,0.6066,0.8094,0.8228,0.5567,0.3282,0.17,0.5139,0.2693,0.5219,0.0,0.4092,0.1269,0.0
+2,a man is doing pull ups on a bar in a gym .,0.3453,a woman is trying to pull herself up on a pull up machine at the gym .,4.0,4.0,4.0,4.0,0.5436,0.8683,0.9714,0.8408,0.8028,0.7729,0.4744,0.4572,0.5302,0.4315,0.4589,0.3749,0.3453
+3,a man is doing pull ups on a bar in a gym .,0.3453,a woman is trying to pull herself up on a pull up machine at the gym .,4.0,4.0,4.0,4.0,0.5436,0.8683,0.9714,0.8408,0.8028,0.7729,0.4744,0.4572,0.5302,0.4315,0.4589,0.3749,0.3453
+4,a woman demonstrates how to do a certain type of pull up .,0.0038,a woman is trying to pull herself up on a pull up machine at the gym .,5.0,5.0,5.0,5.0,0.7373,0.8564,0.8502,0.5323,0.3094,0.1936,0.6933,0.3657,0.691,0.0633,0.6392,0.3254,0.0038
+5,a girl gets on her knees and tries to do a headstand,0.0,a woman is trying to pull herself up on a pull up machine at the gym .,4.0,4.0,2.0,3.3333,0.2232,0.7808,0.8235,0.5033,0.2496,0.0388,0.0051,0.0,0.0568,0.0,0.0,0.0,0.0
+6,a woman in a black tank top and black pants is doing arm curls with a barbell in a gym .,0.315,a woman is trying to pull herself up on a pull up machine at the gym .,4.0,4.0,4.0,4.0,0.4369,0.8221,1.0,1.0,1.0,1.0,0.315,0.4369,0.4369,0.4369,0.315,0.315,0.315

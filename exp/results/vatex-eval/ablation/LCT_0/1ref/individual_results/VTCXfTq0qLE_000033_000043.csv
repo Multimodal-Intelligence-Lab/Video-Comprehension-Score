@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"boy inhales , swallows many times , repeatedly opens mouth , and then opens throat to burp .",0.0316,a boy sitting on a bed makes noises with his throat over and over .,5.0,5.0,5.0,5.0,0.4481,0.8097,0.9408,0.6512,0.7039,0.6343,0.3183,0.1525,0.4133,0.2159,0.2755,0.0,0.0316
+2,a man is sitting on a couch and playing a song on a keyboard .,0.0,a boy sitting on a bed makes noises with his throat over and over .,3.0,4.0,3.0,3.3333,0.2011,0.8065,0.9583,0.7414,0.836,0.7967,0.0094,0.0,0.1663,0.0444,0.0,0.0,0.0
+3,a man is sitting on a couch and playing with his fingers .,0.0,a boy sitting on a bed makes noises with his throat over and over .,3.0,4.0,4.0,3.6667,0.2679,0.8189,1.0,0.8408,0.827,0.7888,0.106,0.1293,0.2679,0.1148,0.106,0.0,0.0
+4,a young man in glasses first seated then standing doing multiple burps .,0.0,a boy sitting on a bed makes noises with his throat over and over .,4.0,4.0,4.0,4.0,0.3253,0.7799,0.9164,0.3577,0.2719,0.0664,0.1349,0.0,0.2637,0.0,0.0559,0.0,0.0
+5,a boy with a blue hat and wearing glasses burped loud,0.0,a boy sitting on a bed makes noises with his throat over and over .,2.0,3.0,3.0,2.6667,0.3041,0.7954,0.9599,0.5945,0.5571,0.4433,0.1252,0.0,0.2751,0.0,0.0886,0.0,0.0
+6,two boys make mouth noises together while sitting on their couch .,0.0,a boy sitting on a bed makes noises with his throat over and over .,3.0,4.0,4.0,3.6667,0.5449,0.8797,0.7132,0.2598,0.0713,0.0,0.4827,0.0,0.3619,0.0,0.2746,0.0,0.0

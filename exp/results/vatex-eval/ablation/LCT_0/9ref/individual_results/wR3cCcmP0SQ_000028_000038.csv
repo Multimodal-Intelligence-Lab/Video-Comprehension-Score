@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a baby drinking water from a water hose and laughing because he got wet and mommy praising him .,0.542,a little boy drinks water from a hose and laughs and shakes the hose .,5.0,5.0,5.0,5.0,0.8178,0.8982,0.9062,0.7513,0.7161,0.6799,0.7971,0.6128,0.7289,0.5938,0.6922,0.5634,0.542
+2,a little boy is using a watering hose to clean the plants .,0.6099,a little boy is drinking water out of a hose and then sprays with it .,4.0,5.0,4.0,4.3333,0.6978,0.8738,1.0,0.8723,0.8863,0.8699,0.6542,0.6536,0.6978,0.6591,0.6542,0.6036,0.6099
+3,a little boy is using a garden hose to water plants .,0.4275,a baby drinks water out of the garden hose and waters the plants .,5.0,5.0,5.0,5.0,0.7287,0.9159,0.9599,0.6913,0.7702,0.7491,0.6981,0.4159,0.7039,0.4757,0.6705,0.3622,0.4275
+4,a person is watering a plant with a hose as a small child comes to help .,0.0,a little boy is trying to drink water out of a hose and is smiling .,3.0,5.0,3.0,3.6667,0.6466,0.8708,0.8426,0.5241,0.4217,0.2822,0.5905,0.2641,0.4673,0.0387,0.3827,0.1941,0.0
+5,a seated toddler dips and blows soap bubbles from a wand while others watch .,0.0,a little boy is trying to drink water out of a hose and is smiling .,1.0,4.0,1.0,2.0,0.3665,0.7773,0.9873,0.9589,0.9532,0.9374,0.185,0.2229,0.3131,0.2183,0.1163,0.0,0.0
+6,kids in a yard on a deck throwing water balloons at each other and being squirted with a hose .,0.0,a little boy is trying to drink water out of a hose and is smiling .,1.0,3.0,2.0,2.0,0.4265,0.8418,0.9321,0.5586,0.5747,0.4816,0.3142,0.0,0.3847,0.0,0.2643,0.0,0.0

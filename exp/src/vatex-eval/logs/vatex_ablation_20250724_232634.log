@@ -1,0 +1,792 @@
+2025-07-24 23:26:34 [INFO] Initializing models...
+2025-07-24 23:26:42 [INFO] Models initialized successfully
+2025-07-24 23:26:42 [INFO] Starting ablation study pipeline
+2025-07-24 23:26:42 [INFO] Output folder: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/results/vatex-eval
+2025-07-24 23:26:42 [INFO] Experiment ID: ablation_20250724_232634
+2025-07-24 23:26:42 [INFO] Loading VATEX-EVAL data from: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/vatex-eval/vid_cans_score_dict.json
+2025-07-24 23:26:43 [INFO] Loaded 18000 candidates from 3000 videos
+2025-07-24 23:26:43 [INFO] Starting ablation experiment: LCT=0 with 1 references
+2025-07-24 23:26:43 [INFO] Total candidates to process: 18000
+2025-07-24 23:27:01 [INFO] Processing LCT_0_nrefs_1: 100/18000 (0.6%)
+2025-07-24 23:27:01 [INFO] ETA: 55.5 minutes
+2025-07-24 23:27:16 [INFO] Processing LCT_0_nrefs_1: 200/18000 (1.1%)
+2025-07-24 23:27:16 [INFO] ETA: 50.0 minutes
+2025-07-24 23:27:32 [INFO] Processing LCT_0_nrefs_1: 300/18000 (1.7%)
+2025-07-24 23:27:32 [INFO] ETA: 48.8 minutes
+2025-07-24 23:27:48 [INFO] Processing LCT_0_nrefs_1: 400/18000 (2.2%)
+2025-07-24 23:27:48 [INFO] ETA: 47.7 minutes
+2025-07-24 23:28:03 [INFO] Processing LCT_0_nrefs_1: 500/18000 (2.8%)
+2025-07-24 23:28:03 [INFO] ETA: 46.7 minutes
+2025-07-24 23:28:18 [INFO] Processing LCT_0_nrefs_1: 600/18000 (3.3%)
+2025-07-24 23:28:18 [INFO] ETA: 46.1 minutes
+2025-07-24 23:28:34 [INFO] Processing LCT_0_nrefs_1: 700/18000 (3.9%)
+2025-07-24 23:28:34 [INFO] ETA: 45.8 minutes
+2025-07-24 23:28:48 [INFO] Processing LCT_0_nrefs_1: 800/18000 (4.4%)
+2025-07-24 23:28:48 [INFO] ETA: 45.1 minutes
+2025-07-24 23:29:04 [INFO] Processing LCT_0_nrefs_1: 900/18000 (5.0%)
+2025-07-24 23:29:04 [INFO] ETA: 44.7 minutes
+2025-07-24 23:29:19 [INFO] Processing LCT_0_nrefs_1: 1000/18000 (5.6%)
+2025-07-24 23:29:19 [INFO] ETA: 44.4 minutes
+2025-07-24 23:29:35 [INFO] Processing LCT_0_nrefs_1: 1100/18000 (6.1%)
+2025-07-24 23:29:35 [INFO] ETA: 44.2 minutes
+2025-07-24 23:29:51 [INFO] Processing LCT_0_nrefs_1: 1200/18000 (6.7%)
+2025-07-24 23:29:51 [INFO] ETA: 43.9 minutes
+2025-07-24 23:30:06 [INFO] Processing LCT_0_nrefs_1: 1300/18000 (7.2%)
+2025-07-24 23:30:06 [INFO] ETA: 43.6 minutes
+2025-07-24 23:30:21 [INFO] Processing LCT_0_nrefs_1: 1400/18000 (7.8%)
+2025-07-24 23:30:21 [INFO] ETA: 43.2 minutes
+2025-07-24 23:30:37 [INFO] Processing LCT_0_nrefs_1: 1500/18000 (8.3%)
+2025-07-24 23:30:37 [INFO] ETA: 43.0 minutes
+2025-07-24 23:30:53 [INFO] Processing LCT_0_nrefs_1: 1600/18000 (8.9%)
+2025-07-24 23:30:53 [INFO] ETA: 42.8 minutes
+2025-07-24 23:31:08 [INFO] Processing LCT_0_nrefs_1: 1700/18000 (9.4%)
+2025-07-24 23:31:08 [INFO] ETA: 42.4 minutes
+2025-07-24 23:31:24 [INFO] Processing LCT_0_nrefs_1: 1800/18000 (10.0%)
+2025-07-24 23:31:24 [INFO] ETA: 42.2 minutes
+2025-07-24 23:31:40 [INFO] Processing LCT_0_nrefs_1: 1900/18000 (10.6%)
+2025-07-24 23:31:40 [INFO] ETA: 42.0 minutes
+2025-07-24 23:31:55 [INFO] Processing LCT_0_nrefs_1: 2000/18000 (11.1%)
+2025-07-24 23:31:55 [INFO] ETA: 41.6 minutes
+2025-07-24 23:32:10 [INFO] Processing LCT_0_nrefs_1: 2100/18000 (11.7%)
+2025-07-24 23:32:10 [INFO] ETA: 41.3 minutes
+2025-07-24 23:32:26 [INFO] Processing LCT_0_nrefs_1: 2200/18000 (12.2%)
+2025-07-24 23:32:26 [INFO] ETA: 41.2 minutes
+2025-07-24 23:32:42 [INFO] Processing LCT_0_nrefs_1: 2300/18000 (12.8%)
+2025-07-24 23:32:42 [INFO] ETA: 40.9 minutes
+2025-07-24 23:32:58 [INFO] Processing LCT_0_nrefs_1: 2400/18000 (13.3%)
+2025-07-24 23:32:58 [INFO] ETA: 40.6 minutes
+2025-07-24 23:33:12 [INFO] Processing LCT_0_nrefs_1: 2500/18000 (13.9%)
+2025-07-24 23:33:12 [INFO] ETA: 40.3 minutes
+2025-07-24 23:33:28 [INFO] Processing LCT_0_nrefs_1: 2600/18000 (14.4%)
+2025-07-24 23:33:28 [INFO] ETA: 40.0 minutes
+2025-07-24 23:33:43 [INFO] Processing LCT_0_nrefs_1: 2700/18000 (15.0%)
+2025-07-24 23:33:43 [INFO] ETA: 39.7 minutes
+2025-07-24 23:33:59 [INFO] Processing LCT_0_nrefs_1: 2800/18000 (15.6%)
+2025-07-24 23:33:59 [INFO] ETA: 39.5 minutes
+2025-07-24 23:34:15 [INFO] Processing LCT_0_nrefs_1: 2900/18000 (16.1%)
+2025-07-24 23:34:15 [INFO] ETA: 39.2 minutes
+2025-07-24 23:34:30 [INFO] Processing LCT_0_nrefs_1: 3000/18000 (16.7%)
+2025-07-24 23:34:30 [INFO] ETA: 38.9 minutes
+2025-07-24 23:34:45 [INFO] Processing LCT_0_nrefs_1: 3100/18000 (17.2%)
+2025-07-24 23:34:45 [INFO] ETA: 38.7 minutes
+2025-07-24 23:35:02 [INFO] Processing LCT_0_nrefs_1: 3200/18000 (17.8%)
+2025-07-24 23:35:02 [INFO] ETA: 38.5 minutes
+2025-07-24 23:35:17 [INFO] Processing LCT_0_nrefs_1: 3300/18000 (18.3%)
+2025-07-24 23:35:17 [INFO] ETA: 38.2 minutes
+2025-07-24 23:35:33 [INFO] Processing LCT_0_nrefs_1: 3400/18000 (18.9%)
+2025-07-24 23:35:33 [INFO] ETA: 37.9 minutes
+2025-07-24 23:35:47 [INFO] Processing LCT_0_nrefs_1: 3500/18000 (19.4%)
+2025-07-24 23:35:47 [INFO] ETA: 37.6 minutes
+2025-07-24 23:36:02 [INFO] Processing LCT_0_nrefs_1: 3600/18000 (20.0%)
+2025-07-24 23:36:02 [INFO] ETA: 37.3 minutes
+2025-07-24 23:36:17 [INFO] Processing LCT_0_nrefs_1: 3700/18000 (20.6%)
+2025-07-24 23:36:17 [INFO] ETA: 37.0 minutes
+2025-07-24 23:36:32 [INFO] Processing LCT_0_nrefs_1: 3800/18000 (21.1%)
+2025-07-24 23:36:32 [INFO] ETA: 36.7 minutes
+2025-07-24 23:36:47 [INFO] Processing LCT_0_nrefs_1: 3900/18000 (21.7%)
+2025-07-24 23:36:47 [INFO] ETA: 36.4 minutes
+2025-07-24 23:37:03 [INFO] Processing LCT_0_nrefs_1: 4000/18000 (22.2%)
+2025-07-24 23:37:03 [INFO] ETA: 36.2 minutes
+2025-07-24 23:37:18 [INFO] Processing LCT_0_nrefs_1: 4100/18000 (22.8%)
+2025-07-24 23:37:18 [INFO] ETA: 35.9 minutes
+2025-07-24 23:37:32 [INFO] Processing LCT_0_nrefs_1: 4200/18000 (23.3%)
+2025-07-24 23:37:32 [INFO] ETA: 35.6 minutes
+2025-07-24 23:37:47 [INFO] Processing LCT_0_nrefs_1: 4300/18000 (23.9%)
+2025-07-24 23:37:47 [INFO] ETA: 35.3 minutes
+2025-07-24 23:38:03 [INFO] Processing LCT_0_nrefs_1: 4400/18000 (24.4%)
+2025-07-24 23:38:03 [INFO] ETA: 35.0 minutes
+2025-07-24 23:38:18 [INFO] Processing LCT_0_nrefs_1: 4500/18000 (25.0%)
+2025-07-24 23:38:18 [INFO] ETA: 34.8 minutes
+2025-07-24 23:38:34 [INFO] Processing LCT_0_nrefs_1: 4600/18000 (25.6%)
+2025-07-24 23:38:34 [INFO] ETA: 34.5 minutes
+2025-07-24 23:38:48 [INFO] Processing LCT_0_nrefs_1: 4700/18000 (26.1%)
+2025-07-24 23:38:48 [INFO] ETA: 34.2 minutes
+2025-07-24 23:39:03 [INFO] Processing LCT_0_nrefs_1: 4800/18000 (26.7%)
+2025-07-24 23:39:03 [INFO] ETA: 33.9 minutes
+2025-07-24 23:39:18 [INFO] Processing LCT_0_nrefs_1: 4900/18000 (27.2%)
+2025-07-24 23:39:18 [INFO] ETA: 33.7 minutes
+2025-07-24 23:39:34 [INFO] Processing LCT_0_nrefs_1: 5000/18000 (27.8%)
+2025-07-24 23:39:34 [INFO] ETA: 33.4 minutes
+2025-07-24 23:39:49 [INFO] Processing LCT_0_nrefs_1: 5100/18000 (28.3%)
+2025-07-24 23:39:49 [INFO] ETA: 33.2 minutes
+2025-07-24 23:40:06 [INFO] Processing LCT_0_nrefs_1: 5200/18000 (28.9%)
+2025-07-24 23:40:06 [INFO] ETA: 33.0 minutes
+2025-07-24 23:40:21 [INFO] Processing LCT_0_nrefs_1: 5300/18000 (29.4%)
+2025-07-24 23:40:21 [INFO] ETA: 32.7 minutes
+2025-07-24 23:40:37 [INFO] Processing LCT_0_nrefs_1: 5400/18000 (30.0%)
+2025-07-24 23:40:37 [INFO] ETA: 32.4 minutes
+2025-07-24 23:40:52 [INFO] Processing LCT_0_nrefs_1: 5500/18000 (30.6%)
+2025-07-24 23:40:52 [INFO] ETA: 32.2 minutes
+2025-07-24 23:41:07 [INFO] Processing LCT_0_nrefs_1: 5600/18000 (31.1%)
+2025-07-24 23:41:07 [INFO] ETA: 31.9 minutes
+2025-07-24 23:41:24 [INFO] Processing LCT_0_nrefs_1: 5700/18000 (31.7%)
+2025-07-24 23:41:24 [INFO] ETA: 31.7 minutes
+2025-07-24 23:41:39 [INFO] Processing LCT_0_nrefs_1: 5800/18000 (32.2%)
+2025-07-24 23:41:39 [INFO] ETA: 31.4 minutes
+2025-07-24 23:41:54 [INFO] Processing LCT_0_nrefs_1: 5900/18000 (32.8%)
+2025-07-24 23:41:54 [INFO] ETA: 31.2 minutes
+2025-07-24 23:42:10 [INFO] Processing LCT_0_nrefs_1: 6000/18000 (33.3%)
+2025-07-24 23:42:10 [INFO] ETA: 30.9 minutes
+2025-07-24 23:42:25 [INFO] Processing LCT_0_nrefs_1: 6100/18000 (33.9%)
+2025-07-24 23:42:25 [INFO] ETA: 30.6 minutes
+2025-07-24 23:42:40 [INFO] Processing LCT_0_nrefs_1: 6200/18000 (34.4%)
+2025-07-24 23:42:40 [INFO] ETA: 30.4 minutes
+2025-07-24 23:42:55 [INFO] Processing LCT_0_nrefs_1: 6300/18000 (35.0%)
+2025-07-24 23:42:55 [INFO] ETA: 30.1 minutes
+2025-07-24 23:43:10 [INFO] Processing LCT_0_nrefs_1: 6400/18000 (35.6%)
+2025-07-24 23:43:10 [INFO] ETA: 29.8 minutes
+2025-07-24 23:43:26 [INFO] Processing LCT_0_nrefs_1: 6500/18000 (36.1%)
+2025-07-24 23:43:26 [INFO] ETA: 29.6 minutes
+2025-07-24 23:43:41 [INFO] Processing LCT_0_nrefs_1: 6600/18000 (36.7%)
+2025-07-24 23:43:41 [INFO] ETA: 29.3 minutes
+2025-07-24 23:43:57 [INFO] Processing LCT_0_nrefs_1: 6700/18000 (37.2%)
+2025-07-24 23:43:57 [INFO] ETA: 29.1 minutes
+2025-07-24 23:44:13 [INFO] Processing LCT_0_nrefs_1: 6800/18000 (37.8%)
+2025-07-24 23:44:13 [INFO] ETA: 28.8 minutes
+2025-07-24 23:44:28 [INFO] Processing LCT_0_nrefs_1: 6900/18000 (38.3%)
+2025-07-24 23:44:28 [INFO] ETA: 28.6 minutes
+2025-07-24 23:44:45 [INFO] Processing LCT_0_nrefs_1: 7000/18000 (38.9%)
+2025-07-24 23:44:45 [INFO] ETA: 28.3 minutes
+2025-07-24 23:45:01 [INFO] Processing LCT_0_nrefs_1: 7100/18000 (39.4%)
+2025-07-24 23:45:01 [INFO] ETA: 28.1 minutes
+2025-07-24 23:45:16 [INFO] Processing LCT_0_nrefs_1: 7200/18000 (40.0%)
+2025-07-24 23:45:16 [INFO] ETA: 27.8 minutes
+2025-07-24 23:45:32 [INFO] Processing LCT_0_nrefs_1: 7300/18000 (40.6%)
+2025-07-24 23:45:32 [INFO] ETA: 27.6 minutes
+2025-07-24 23:45:47 [INFO] Processing LCT_0_nrefs_1: 7400/18000 (41.1%)
+2025-07-24 23:45:47 [INFO] ETA: 27.3 minutes
+2025-07-24 23:46:03 [INFO] Processing LCT_0_nrefs_1: 7500/18000 (41.7%)
+2025-07-24 23:46:03 [INFO] ETA: 27.1 minutes
+2025-07-24 23:46:18 [INFO] Processing LCT_0_nrefs_1: 7600/18000 (42.2%)
+2025-07-24 23:46:18 [INFO] ETA: 26.8 minutes
+2025-07-24 23:46:34 [INFO] Processing LCT_0_nrefs_1: 7700/18000 (42.8%)
+2025-07-24 23:46:34 [INFO] ETA: 26.6 minutes
+2025-07-24 23:46:50 [INFO] Processing LCT_0_nrefs_1: 7800/18000 (43.3%)
+2025-07-24 23:46:50 [INFO] ETA: 26.3 minutes
+2025-07-24 23:47:05 [INFO] Processing LCT_0_nrefs_1: 7900/18000 (43.9%)
+2025-07-24 23:47:05 [INFO] ETA: 26.1 minutes
+2025-07-24 23:47:21 [INFO] Processing LCT_0_nrefs_1: 8000/18000 (44.4%)
+2025-07-24 23:47:21 [INFO] ETA: 25.8 minutes
+2025-07-24 23:47:36 [INFO] Processing LCT_0_nrefs_1: 8100/18000 (45.0%)
+2025-07-24 23:47:36 [INFO] ETA: 25.5 minutes
+2025-07-24 23:47:52 [INFO] Processing LCT_0_nrefs_1: 8200/18000 (45.6%)
+2025-07-24 23:47:52 [INFO] ETA: 25.3 minutes
+2025-07-24 23:48:08 [INFO] Processing LCT_0_nrefs_1: 8300/18000 (46.1%)
+2025-07-24 23:48:08 [INFO] ETA: 25.0 minutes
+2025-07-24 23:48:24 [INFO] Processing LCT_0_nrefs_1: 8400/18000 (46.7%)
+2025-07-24 23:48:24 [INFO] ETA: 24.8 minutes
+2025-07-24 23:48:39 [INFO] Processing LCT_0_nrefs_1: 8500/18000 (47.2%)
+2025-07-24 23:48:39 [INFO] ETA: 24.5 minutes
+2025-07-24 23:48:55 [INFO] Processing LCT_0_nrefs_1: 8600/18000 (47.8%)
+2025-07-24 23:48:55 [INFO] ETA: 24.3 minutes
+2025-07-24 23:49:10 [INFO] Processing LCT_0_nrefs_1: 8700/18000 (48.3%)
+2025-07-24 23:49:10 [INFO] ETA: 24.0 minutes
+2025-07-24 23:49:25 [INFO] Processing LCT_0_nrefs_1: 8800/18000 (48.9%)
+2025-07-24 23:49:25 [INFO] ETA: 23.7 minutes
+2025-07-24 23:49:41 [INFO] Processing LCT_0_nrefs_1: 8900/18000 (49.4%)
+2025-07-24 23:49:41 [INFO] ETA: 23.5 minutes
+2025-07-24 23:49:57 [INFO] Processing LCT_0_nrefs_1: 9000/18000 (50.0%)
+2025-07-24 23:49:57 [INFO] ETA: 23.2 minutes
+2025-07-24 23:50:12 [INFO] Processing LCT_0_nrefs_1: 9100/18000 (50.6%)
+2025-07-24 23:50:12 [INFO] ETA: 23.0 minutes
+2025-07-24 23:50:27 [INFO] Processing LCT_0_nrefs_1: 9200/18000 (51.1%)
+2025-07-24 23:50:27 [INFO] ETA: 22.7 minutes
+2025-07-24 23:50:42 [INFO] Processing LCT_0_nrefs_1: 9300/18000 (51.7%)
+2025-07-24 23:50:42 [INFO] ETA: 22.4 minutes
+2025-07-24 23:50:58 [INFO] Processing LCT_0_nrefs_1: 9400/18000 (52.2%)
+2025-07-24 23:50:58 [INFO] ETA: 22.2 minutes
+2025-07-24 23:51:15 [INFO] Processing LCT_0_nrefs_1: 9500/18000 (52.8%)
+2025-07-24 23:51:15 [INFO] ETA: 22.0 minutes
+2025-07-24 23:51:31 [INFO] Processing LCT_0_nrefs_1: 9600/18000 (53.3%)
+2025-07-24 23:51:31 [INFO] ETA: 21.7 minutes
+2025-07-24 23:51:46 [INFO] Processing LCT_0_nrefs_1: 9700/18000 (53.9%)
+2025-07-24 23:51:46 [INFO] ETA: 21.4 minutes
+2025-07-24 23:52:01 [INFO] Processing LCT_0_nrefs_1: 9800/18000 (54.4%)
+2025-07-24 23:52:01 [INFO] ETA: 21.2 minutes
+2025-07-24 23:52:17 [INFO] Processing LCT_0_nrefs_1: 9900/18000 (55.0%)
+2025-07-24 23:52:17 [INFO] ETA: 20.9 minutes
+2025-07-24 23:52:33 [INFO] Processing LCT_0_nrefs_1: 10000/18000 (55.6%)
+2025-07-24 23:52:33 [INFO] ETA: 20.7 minutes
+2025-07-24 23:52:49 [INFO] Processing LCT_0_nrefs_1: 10100/18000 (56.1%)
+2025-07-24 23:52:49 [INFO] ETA: 20.4 minutes
+2025-07-24 23:53:05 [INFO] Processing LCT_0_nrefs_1: 10200/18000 (56.7%)
+2025-07-24 23:53:05 [INFO] ETA: 20.2 minutes
+2025-07-24 23:53:20 [INFO] Processing LCT_0_nrefs_1: 10300/18000 (57.2%)
+2025-07-24 23:53:20 [INFO] ETA: 19.9 minutes
+2025-07-24 23:53:35 [INFO] Processing LCT_0_nrefs_1: 10400/18000 (57.8%)
+2025-07-24 23:53:35 [INFO] ETA: 19.6 minutes
+2025-07-24 23:53:50 [INFO] Processing LCT_0_nrefs_1: 10500/18000 (58.3%)
+2025-07-24 23:53:50 [INFO] ETA: 19.4 minutes
+2025-07-24 23:54:06 [INFO] Processing LCT_0_nrefs_1: 10600/18000 (58.9%)
+2025-07-24 23:54:06 [INFO] ETA: 19.1 minutes
+2025-07-24 23:54:21 [INFO] Processing LCT_0_nrefs_1: 10700/18000 (59.4%)
+2025-07-24 23:54:21 [INFO] ETA: 18.9 minutes
+2025-07-24 23:54:38 [INFO] Processing LCT_0_nrefs_1: 10800/18000 (60.0%)
+2025-07-24 23:54:38 [INFO] ETA: 18.6 minutes
+2025-07-24 23:54:53 [INFO] Processing LCT_0_nrefs_1: 10900/18000 (60.6%)
+2025-07-24 23:54:53 [INFO] ETA: 18.3 minutes
+2025-07-24 23:55:08 [INFO] Processing LCT_0_nrefs_1: 11000/18000 (61.1%)
+2025-07-24 23:55:08 [INFO] ETA: 18.1 minutes
+2025-07-24 23:55:23 [INFO] Processing LCT_0_nrefs_1: 11100/18000 (61.7%)
+2025-07-24 23:55:23 [INFO] ETA: 17.8 minutes
+2025-07-24 23:55:39 [INFO] Processing LCT_0_nrefs_1: 11200/18000 (62.2%)
+2025-07-24 23:55:39 [INFO] ETA: 17.6 minutes
+2025-07-24 23:55:55 [INFO] Processing LCT_0_nrefs_1: 11300/18000 (62.8%)
+2025-07-24 23:55:55 [INFO] ETA: 17.3 minutes
+2025-07-24 23:56:11 [INFO] Processing LCT_0_nrefs_1: 11400/18000 (63.3%)
+2025-07-24 23:56:11 [INFO] ETA: 17.1 minutes
+2025-07-24 23:56:27 [INFO] Processing LCT_0_nrefs_1: 11500/18000 (63.9%)
+2025-07-24 23:56:27 [INFO] ETA: 16.8 minutes
+2025-07-24 23:56:43 [INFO] Processing LCT_0_nrefs_1: 11600/18000 (64.4%)
+2025-07-24 23:56:43 [INFO] ETA: 16.6 minutes
+2025-07-24 23:56:59 [INFO] Processing LCT_0_nrefs_1: 11700/18000 (65.0%)
+2025-07-24 23:56:59 [INFO] ETA: 16.3 minutes
+2025-07-24 23:57:14 [INFO] Processing LCT_0_nrefs_1: 11800/18000 (65.6%)
+2025-07-24 23:57:14 [INFO] ETA: 16.0 minutes
+2025-07-24 23:57:30 [INFO] Processing LCT_0_nrefs_1: 11900/18000 (66.1%)
+2025-07-24 23:57:30 [INFO] ETA: 15.8 minutes
+2025-07-24 23:57:45 [INFO] Processing LCT_0_nrefs_1: 12000/18000 (66.7%)
+2025-07-24 23:57:45 [INFO] ETA: 15.5 minutes
+2025-07-24 23:57:59 [INFO] Processing LCT_0_nrefs_1: 12100/18000 (67.2%)
+2025-07-24 23:57:59 [INFO] ETA: 15.3 minutes
+2025-07-24 23:58:15 [INFO] Processing LCT_0_nrefs_1: 12200/18000 (67.8%)
+2025-07-24 23:58:15 [INFO] ETA: 15.0 minutes
+2025-07-24 23:58:30 [INFO] Processing LCT_0_nrefs_1: 12300/18000 (68.3%)
+2025-07-24 23:58:30 [INFO] ETA: 14.7 minutes
+2025-07-24 23:58:46 [INFO] Processing LCT_0_nrefs_1: 12400/18000 (68.9%)
+2025-07-24 23:58:46 [INFO] ETA: 14.5 minutes
+2025-07-24 23:59:02 [INFO] Processing LCT_0_nrefs_1: 12500/18000 (69.4%)
+2025-07-24 23:59:02 [INFO] ETA: 14.2 minutes
+2025-07-24 23:59:16 [INFO] Processing LCT_0_nrefs_1: 12600/18000 (70.0%)
+2025-07-24 23:59:16 [INFO] ETA: 14.0 minutes
+2025-07-24 23:59:32 [INFO] Processing LCT_0_nrefs_1: 12700/18000 (70.6%)
+2025-07-24 23:59:32 [INFO] ETA: 13.7 minutes
+2025-07-24 23:59:49 [INFO] Processing LCT_0_nrefs_1: 12800/18000 (71.1%)
+2025-07-24 23:59:49 [INFO] ETA: 13.4 minutes
+2025-07-25 00:00:04 [INFO] Processing LCT_0_nrefs_1: 12900/18000 (71.7%)
+2025-07-25 00:00:04 [INFO] ETA: 13.2 minutes
+2025-07-25 00:00:19 [INFO] Processing LCT_0_nrefs_1: 13000/18000 (72.2%)
+2025-07-25 00:00:19 [INFO] ETA: 12.9 minutes
+2025-07-25 00:00:34 [INFO] Processing LCT_0_nrefs_1: 13100/18000 (72.8%)
+2025-07-25 00:00:34 [INFO] ETA: 12.7 minutes
+2025-07-25 00:00:50 [INFO] Processing LCT_0_nrefs_1: 13200/18000 (73.3%)
+2025-07-25 00:00:50 [INFO] ETA: 12.4 minutes
+2025-07-25 00:01:05 [INFO] Processing LCT_0_nrefs_1: 13300/18000 (73.9%)
+2025-07-25 00:01:05 [INFO] ETA: 12.1 minutes
+2025-07-25 00:01:20 [INFO] Processing LCT_0_nrefs_1: 13400/18000 (74.4%)
+2025-07-25 00:01:20 [INFO] ETA: 11.9 minutes
+2025-07-25 00:01:36 [INFO] Processing LCT_0_nrefs_1: 13500/18000 (75.0%)
+2025-07-25 00:01:36 [INFO] ETA: 11.6 minutes
+2025-07-25 00:01:51 [INFO] Processing LCT_0_nrefs_1: 13600/18000 (75.6%)
+2025-07-25 00:01:51 [INFO] ETA: 11.4 minutes
+2025-07-25 00:02:06 [INFO] Processing LCT_0_nrefs_1: 13700/18000 (76.1%)
+2025-07-25 00:02:06 [INFO] ETA: 11.1 minutes
+2025-07-25 00:02:22 [INFO] Processing LCT_0_nrefs_1: 13800/18000 (76.7%)
+2025-07-25 00:02:22 [INFO] ETA: 10.9 minutes
+2025-07-25 00:02:37 [INFO] Processing LCT_0_nrefs_1: 13900/18000 (77.2%)
+2025-07-25 00:02:37 [INFO] ETA: 10.6 minutes
+2025-07-25 00:02:53 [INFO] Processing LCT_0_nrefs_1: 14000/18000 (77.8%)
+2025-07-25 00:02:53 [INFO] ETA: 10.3 minutes
+2025-07-25 00:03:08 [INFO] Processing LCT_0_nrefs_1: 14100/18000 (78.3%)
+2025-07-25 00:03:08 [INFO] ETA: 10.1 minutes
+2025-07-25 00:03:24 [INFO] Processing LCT_0_nrefs_1: 14200/18000 (78.9%)
+2025-07-25 00:03:24 [INFO] ETA: 9.8 minutes
+2025-07-25 00:03:39 [INFO] Processing LCT_0_nrefs_1: 14300/18000 (79.4%)
+2025-07-25 00:03:39 [INFO] ETA: 9.6 minutes
+2025-07-25 00:03:56 [INFO] Processing LCT_0_nrefs_1: 14400/18000 (80.0%)
+2025-07-25 00:03:56 [INFO] ETA: 9.3 minutes
+2025-07-25 00:04:11 [INFO] Processing LCT_0_nrefs_1: 14500/18000 (80.6%)
+2025-07-25 00:04:11 [INFO] ETA: 9.0 minutes
+2025-07-25 00:04:27 [INFO] Processing LCT_0_nrefs_1: 14600/18000 (81.1%)
+2025-07-25 00:04:27 [INFO] ETA: 8.8 minutes
+2025-07-25 00:04:43 [INFO] Processing LCT_0_nrefs_1: 14700/18000 (81.7%)
+2025-07-25 00:04:43 [INFO] ETA: 8.5 minutes
+2025-07-25 00:04:58 [INFO] Processing LCT_0_nrefs_1: 14800/18000 (82.2%)
+2025-07-25 00:04:58 [INFO] ETA: 8.3 minutes
+2025-07-25 00:05:13 [INFO] Processing LCT_0_nrefs_1: 14900/18000 (82.8%)
+2025-07-25 00:05:13 [INFO] ETA: 8.0 minutes
+2025-07-25 00:05:28 [INFO] Processing LCT_0_nrefs_1: 15000/18000 (83.3%)
+2025-07-25 00:05:28 [INFO] ETA: 7.8 minutes
+2025-07-25 00:05:44 [INFO] Processing LCT_0_nrefs_1: 15100/18000 (83.9%)
+2025-07-25 00:05:44 [INFO] ETA: 7.5 minutes
+2025-07-25 00:05:59 [INFO] Processing LCT_0_nrefs_1: 15200/18000 (84.4%)
+2025-07-25 00:05:59 [INFO] ETA: 7.2 minutes
+2025-07-25 00:06:14 [INFO] Processing LCT_0_nrefs_1: 15300/18000 (85.0%)
+2025-07-25 00:06:14 [INFO] ETA: 7.0 minutes
+2025-07-25 00:06:30 [INFO] Processing LCT_0_nrefs_1: 15400/18000 (85.6%)
+2025-07-25 00:06:30 [INFO] ETA: 6.7 minutes
+2025-07-25 00:06:45 [INFO] Processing LCT_0_nrefs_1: 15500/18000 (86.1%)
+2025-07-25 00:06:45 [INFO] ETA: 6.5 minutes
+2025-07-25 00:06:59 [INFO] Processing LCT_0_nrefs_1: 15600/18000 (86.7%)
+2025-07-25 00:06:59 [INFO] ETA: 6.2 minutes
+2025-07-25 00:07:15 [INFO] Processing LCT_0_nrefs_1: 15700/18000 (87.2%)
+2025-07-25 00:07:15 [INFO] ETA: 5.9 minutes
+2025-07-25 00:07:30 [INFO] Processing LCT_0_nrefs_1: 15800/18000 (87.8%)
+2025-07-25 00:07:30 [INFO] ETA: 5.7 minutes
+2025-07-25 00:07:45 [INFO] Processing LCT_0_nrefs_1: 15900/18000 (88.3%)
+2025-07-25 00:07:45 [INFO] ETA: 5.4 minutes
+2025-07-25 00:08:00 [INFO] Processing LCT_0_nrefs_1: 16000/18000 (88.9%)
+2025-07-25 00:08:00 [INFO] ETA: 5.2 minutes
+2025-07-25 00:08:16 [INFO] Processing LCT_0_nrefs_1: 16100/18000 (89.4%)
+2025-07-25 00:08:16 [INFO] ETA: 4.9 minutes
+2025-07-25 00:08:31 [INFO] Processing LCT_0_nrefs_1: 16200/18000 (90.0%)
+2025-07-25 00:08:31 [INFO] ETA: 4.6 minutes
+2025-07-25 00:08:47 [INFO] Processing LCT_0_nrefs_1: 16300/18000 (90.6%)
+2025-07-25 00:08:47 [INFO] ETA: 4.4 minutes
+2025-07-25 00:09:03 [INFO] Processing LCT_0_nrefs_1: 16400/18000 (91.1%)
+2025-07-25 00:09:03 [INFO] ETA: 4.1 minutes
+2025-07-25 00:09:18 [INFO] Processing LCT_0_nrefs_1: 16500/18000 (91.7%)
+2025-07-25 00:09:18 [INFO] ETA: 3.9 minutes
+2025-07-25 00:09:34 [INFO] Processing LCT_0_nrefs_1: 16600/18000 (92.2%)
+2025-07-25 00:09:34 [INFO] ETA: 3.6 minutes
+2025-07-25 00:09:49 [INFO] Processing LCT_0_nrefs_1: 16700/18000 (92.8%)
+2025-07-25 00:09:49 [INFO] ETA: 3.4 minutes
+2025-07-25 00:10:04 [INFO] Processing LCT_0_nrefs_1: 16800/18000 (93.3%)
+2025-07-25 00:10:04 [INFO] ETA: 3.1 minutes
+2025-07-25 00:10:20 [INFO] Processing LCT_0_nrefs_1: 16900/18000 (93.9%)
+2025-07-25 00:10:20 [INFO] ETA: 2.8 minutes
+2025-07-25 00:10:37 [INFO] Processing LCT_0_nrefs_1: 17000/18000 (94.4%)
+2025-07-25 00:10:37 [INFO] ETA: 2.6 minutes
+2025-07-25 00:10:53 [INFO] Processing LCT_0_nrefs_1: 17100/18000 (95.0%)
+2025-07-25 00:10:53 [INFO] ETA: 2.3 minutes
+2025-07-25 00:11:09 [INFO] Processing LCT_0_nrefs_1: 17200/18000 (95.6%)
+2025-07-25 00:11:09 [INFO] ETA: 2.1 minutes
+2025-07-25 00:11:25 [INFO] Processing LCT_0_nrefs_1: 17300/18000 (96.1%)
+2025-07-25 00:11:25 [INFO] ETA: 1.8 minutes
+2025-07-25 00:11:40 [INFO] Processing LCT_0_nrefs_1: 17400/18000 (96.7%)
+2025-07-25 00:11:40 [INFO] ETA: 1.6 minutes
+2025-07-25 00:11:56 [INFO] Processing LCT_0_nrefs_1: 17500/18000 (97.2%)
+2025-07-25 00:11:56 [INFO] ETA: 1.3 minutes
+2025-07-25 00:12:12 [INFO] Processing LCT_0_nrefs_1: 17600/18000 (97.8%)
+2025-07-25 00:12:12 [INFO] ETA: 1.0 minutes
+2025-07-25 00:12:26 [INFO] Processing LCT_0_nrefs_1: 17700/18000 (98.3%)
+2025-07-25 00:12:26 [INFO] ETA: 0.8 minutes
+2025-07-25 00:12:41 [INFO] Processing LCT_0_nrefs_1: 17800/18000 (98.9%)
+2025-07-25 00:12:41 [INFO] ETA: 0.5 minutes
+2025-07-25 00:12:57 [INFO] Processing LCT_0_nrefs_1: 17900/18000 (99.4%)
+2025-07-25 00:12:57 [INFO] ETA: 0.3 minutes
+2025-07-25 00:13:12 [INFO] Processing LCT_0_nrefs_1: 18000/18000 (100.0%)
+2025-07-25 00:13:12 [INFO] ETA: 0.0 minutes
+2025-07-25 00:13:12 [INFO] VCS(GAS) LCT_0_1ref - Kendall: 0.3223, Spearman: 0.4151
+2025-07-25 00:13:12 [INFO] VCS(LAS) LCT_0_1ref - Kendall: 0.2289, Spearman: 0.2976
+2025-07-25 00:13:12 [INFO] VCS(NAS-D) LCT_0_1ref - Kendall: -0.053, Spearman: -0.0694
+2025-07-25 00:13:12 [INFO] VCS(NAS-L) LCT_0_1ref - Kendall: -0.0249, Spearman: -0.0325
+2025-07-25 00:13:12 [INFO] VCS(NAS) LCT_0_1ref - Kendall: -0.0343, Spearman: -0.0449
+2025-07-25 00:13:12 [INFO] VCS(NAS
++LAS(S)) LCT_0_1ref - Kendall: -0.0185, Spearman: -0.0242
+2025-07-25 00:13:12 [INFO] VCS(GAS
++LAS(S)) LCT_0_1ref - Kendall: 0.3197, Spearman: 0.4106
+2025-07-25 00:13:12 [INFO] VCS(GAS
++NAS-L(S)) LCT_0_1ref - Kendall: 0.2053, Spearman: 0.2544
+2025-07-25 00:13:12 [INFO] VCS(GAS
++NAS-D(S)) LCT_0_1ref - Kendall: 0.3029, Spearman: 0.3911
+2025-07-25 00:13:13 [INFO] VCS(GAS
++NAS(S)) LCT_0_1ref - Kendall: 0.1859, Spearman: 0.2291
+2025-07-25 00:13:13 [INFO] VCS(GAS
++LAS(S)
++NAS-D(S)) LCT_0_1ref - Kendall: 0.307, Spearman: 0.3915
+2025-07-25 00:13:13 [INFO] VCS(GAS
++LAS(S)
++NAS-L(S)) LCT_0_1ref - Kendall: 0.2311, Spearman: 0.2751
+2025-07-25 00:13:13 [INFO] VCS(GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)) LCT_0_1ref - Kendall: 0.2196, Spearman: 0.2604
+2025-07-25 00:13:20 [INFO] Saved 3000 individual video CSV files to: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/results/vatex-eval/ablation/LCT_0/1ref/individual_results
+2025-07-25 00:13:20 [INFO] Saved correlation summary to: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/results/vatex-eval/ablation/LCT_0/1ref/aggregated_results/correlation_summary.csv
+2025-07-25 00:13:20 [INFO] Completed LCT=0 with 1 references
+2025-07-25 00:13:20 [INFO] Processed 18000 candidates in 2797.30s
+2025-07-25 00:13:20 [INFO] VCS(X,X*) correlation results: {'GAS': np.float64(0.4151), 'LAS': np.float64(0.2976), 'NAS-D': np.float64(-0.0694), 'NAS-L': np.float64(-0.0325), 'NAS': np.float64(-0.0449), 'NAS\n+LAS(S)': np.float64(-0.0242), 'GAS\n+LAS(S)': np.float64(0.4106), 'GAS\n+NAS-L(S)': np.float64(0.2544), 'GAS\n+NAS-D(S)': np.float64(0.3911), 'GAS\n+NAS(S)': np.float64(0.2291), 'GAS\n+LAS(S)\n+NAS-D(S)': np.float64(0.3915), 'GAS\n+LAS(S)\n+NAS-L(S)': np.float64(0.2751), 'GAS\n+LAS(S)\n+(NAS-D\n+NAS-L)(S)': np.float64(0.2604)}
+2025-07-25 00:13:20 [INFO] Starting ablation experiment: LCT=0 with 9 references
+2025-07-25 00:13:20 [INFO] Total candidates to process: 18000
+2025-07-25 00:15:40 [INFO] Processing LCT_0_nrefs_9: 100/18000 (0.6%)
+2025-07-25 00:15:40 [INFO] ETA: 417.2 minutes
+2025-07-25 00:17:57 [INFO] Processing LCT_0_nrefs_9: 200/18000 (1.1%)
+2025-07-25 00:17:57 [INFO] ETA: 411.3 minutes
+2025-07-25 00:20:14 [INFO] Processing LCT_0_nrefs_9: 300/18000 (1.7%)
+2025-07-25 00:20:14 [INFO] ETA: 406.9 minutes
+2025-07-25 00:22:34 [INFO] Processing LCT_0_nrefs_9: 400/18000 (2.2%)
+2025-07-25 00:22:34 [INFO] ETA: 406.4 minutes
+2025-07-25 00:24:54 [INFO] Processing LCT_0_nrefs_9: 500/18000 (2.8%)
+2025-07-25 00:24:54 [INFO] ETA: 404.6 minutes
+2025-07-25 00:27:09 [INFO] Processing LCT_0_nrefs_9: 600/18000 (3.3%)
+2025-07-25 00:27:09 [INFO] ETA: 401.0 minutes
+2025-07-25 00:29:30 [INFO] Processing LCT_0_nrefs_9: 700/18000 (3.9%)
+2025-07-25 00:29:30 [INFO] ETA: 399.6 minutes
+2025-07-25 00:31:49 [INFO] Processing LCT_0_nrefs_9: 800/18000 (4.4%)
+2025-07-25 00:31:49 [INFO] ETA: 397.5 minutes
+2025-07-25 00:34:13 [INFO] Processing LCT_0_nrefs_9: 900/18000 (5.0%)
+2025-07-25 00:34:13 [INFO] ETA: 396.9 minutes
+2025-07-25 00:36:32 [INFO] Processing LCT_0_nrefs_9: 1000/18000 (5.6%)
+2025-07-25 00:36:32 [INFO] ETA: 394.5 minutes
+2025-07-25 00:38:51 [INFO] Processing LCT_0_nrefs_9: 1100/18000 (6.1%)
+2025-07-25 00:38:51 [INFO] ETA: 392.2 minutes
+2025-07-25 00:41:11 [INFO] Processing LCT_0_nrefs_9: 1200/18000 (6.7%)
+2025-07-25 00:41:11 [INFO] ETA: 389.9 minutes
+2025-07-25 00:43:31 [INFO] Processing LCT_0_nrefs_9: 1300/18000 (7.2%)
+2025-07-25 00:43:31 [INFO] ETA: 387.7 minutes
+2025-07-25 00:45:49 [INFO] Processing LCT_0_nrefs_9: 1400/18000 (7.8%)
+2025-07-25 00:45:49 [INFO] ETA: 385.1 minutes
+2025-07-25 00:48:09 [INFO] Processing LCT_0_nrefs_9: 1500/18000 (8.3%)
+2025-07-25 00:48:09 [INFO] ETA: 383.0 minutes
+2025-07-25 00:50:27 [INFO] Processing LCT_0_nrefs_9: 1600/18000 (8.9%)
+2025-07-25 00:50:27 [INFO] ETA: 380.5 minutes
+2025-07-25 00:52:44 [INFO] Processing LCT_0_nrefs_9: 1700/18000 (9.4%)
+2025-07-25 00:52:44 [INFO] ETA: 377.8 minutes
+2025-07-25 00:55:07 [INFO] Processing LCT_0_nrefs_9: 1800/18000 (10.0%)
+2025-07-25 00:55:07 [INFO] ETA: 376.1 minutes
+2025-07-25 00:57:25 [INFO] Processing LCT_0_nrefs_9: 1900/18000 (10.6%)
+2025-07-25 00:57:25 [INFO] ETA: 373.6 minutes
+2025-07-25 00:59:41 [INFO] Processing LCT_0_nrefs_9: 2000/18000 (11.1%)
+2025-07-25 00:59:41 [INFO] ETA: 370.8 minutes
+2025-07-25 01:02:02 [INFO] Processing LCT_0_nrefs_9: 2100/18000 (11.7%)
+2025-07-25 01:02:02 [INFO] ETA: 368.8 minutes
+2025-07-25 01:04:21 [INFO] Processing LCT_0_nrefs_9: 2200/18000 (12.2%)
+2025-07-25 01:04:21 [INFO] ETA: 366.5 minutes
+2025-07-25 01:06:42 [INFO] Processing LCT_0_nrefs_9: 2300/18000 (12.8%)
+2025-07-25 01:06:42 [INFO] ETA: 364.3 minutes
+2025-07-25 01:09:03 [INFO] Processing LCT_0_nrefs_9: 2400/18000 (13.3%)
+2025-07-25 01:09:03 [INFO] ETA: 362.2 minutes
+2025-07-25 01:11:19 [INFO] Processing LCT_0_nrefs_9: 2500/18000 (13.9%)
+2025-07-25 01:11:19 [INFO] ETA: 359.5 minutes
+2025-07-25 01:13:37 [INFO] Processing LCT_0_nrefs_9: 2600/18000 (14.4%)
+2025-07-25 01:13:37 [INFO] ETA: 357.1 minutes
+2025-07-25 01:15:52 [INFO] Processing LCT_0_nrefs_9: 2700/18000 (15.0%)
+2025-07-25 01:15:52 [INFO] ETA: 354.4 minutes
+2025-07-25 01:18:09 [INFO] Processing LCT_0_nrefs_9: 2800/18000 (15.6%)
+2025-07-25 01:18:09 [INFO] ETA: 351.9 minutes
+2025-07-25 01:20:32 [INFO] Processing LCT_0_nrefs_9: 2900/18000 (16.1%)
+2025-07-25 01:20:32 [INFO] ETA: 349.9 minutes
+2025-07-25 01:22:51 [INFO] Processing LCT_0_nrefs_9: 3000/18000 (16.7%)
+2025-07-25 01:22:51 [INFO] ETA: 347.6 minutes
+2025-07-25 01:25:10 [INFO] Processing LCT_0_nrefs_9: 3100/18000 (17.2%)
+2025-07-25 01:25:10 [INFO] ETA: 345.2 minutes
+2025-07-25 01:27:32 [INFO] Processing LCT_0_nrefs_9: 3200/18000 (17.8%)
+2025-07-25 01:27:32 [INFO] ETA: 343.1 minutes
+2025-07-25 01:29:49 [INFO] Processing LCT_0_nrefs_9: 3300/18000 (18.3%)
+2025-07-25 01:29:49 [INFO] ETA: 340.7 minutes
+2025-07-25 01:32:07 [INFO] Processing LCT_0_nrefs_9: 3400/18000 (18.9%)
+2025-07-25 01:32:07 [INFO] ETA: 338.3 minutes
+2025-07-25 01:34:22 [INFO] Processing LCT_0_nrefs_9: 3500/18000 (19.4%)
+2025-07-25 01:34:22 [INFO] ETA: 335.7 minutes
+2025-07-25 01:36:41 [INFO] Processing LCT_0_nrefs_9: 3600/18000 (20.0%)
+2025-07-25 01:36:41 [INFO] ETA: 333.4 minutes
+2025-07-25 01:38:56 [INFO] Processing LCT_0_nrefs_9: 3700/18000 (20.6%)
+2025-07-25 01:38:56 [INFO] ETA: 330.9 minutes
+2025-07-25 01:41:10 [INFO] Processing LCT_0_nrefs_9: 3800/18000 (21.1%)
+2025-07-25 01:41:10 [INFO] ETA: 328.2 minutes
+2025-07-25 01:43:29 [INFO] Processing LCT_0_nrefs_9: 3900/18000 (21.7%)
+2025-07-25 01:43:29 [INFO] ETA: 325.9 minutes
+2025-07-25 01:45:46 [INFO] Processing LCT_0_nrefs_9: 4000/18000 (22.2%)
+2025-07-25 01:45:46 [INFO] ETA: 323.5 minutes
+2025-07-25 01:48:05 [INFO] Processing LCT_0_nrefs_9: 4100/18000 (22.8%)
+2025-07-25 01:48:05 [INFO] ETA: 321.2 minutes
+2025-07-25 01:50:23 [INFO] Processing LCT_0_nrefs_9: 4200/18000 (23.3%)
+2025-07-25 01:50:23 [INFO] ETA: 318.9 minutes
+2025-07-25 01:52:39 [INFO] Processing LCT_0_nrefs_9: 4300/18000 (23.9%)
+2025-07-25 01:52:39 [INFO] ETA: 316.4 minutes
+2025-07-25 01:54:56 [INFO] Processing LCT_0_nrefs_9: 4400/18000 (24.4%)
+2025-07-25 01:54:56 [INFO] ETA: 314.1 minutes
+2025-07-25 01:57:14 [INFO] Processing LCT_0_nrefs_9: 4500/18000 (25.0%)
+2025-07-25 01:57:14 [INFO] ETA: 311.7 minutes
+2025-07-25 01:59:33 [INFO] Processing LCT_0_nrefs_9: 4600/18000 (25.6%)
+2025-07-25 01:59:33 [INFO] ETA: 309.4 minutes
+2025-07-25 02:01:50 [INFO] Processing LCT_0_nrefs_9: 4700/18000 (26.1%)
+2025-07-25 02:01:50 [INFO] ETA: 307.0 minutes
+2025-07-25 02:04:04 [INFO] Processing LCT_0_nrefs_9: 4800/18000 (26.7%)
+2025-07-25 02:04:04 [INFO] ETA: 304.5 minutes
+2025-07-25 02:06:22 [INFO] Processing LCT_0_nrefs_9: 4900/18000 (27.2%)
+2025-07-25 02:06:22 [INFO] ETA: 302.2 minutes
+2025-07-25 02:08:43 [INFO] Processing LCT_0_nrefs_9: 5000/18000 (27.8%)
+2025-07-25 02:08:43 [INFO] ETA: 300.0 minutes
+2025-07-25 02:10:58 [INFO] Processing LCT_0_nrefs_9: 5100/18000 (28.3%)
+2025-07-25 02:10:58 [INFO] ETA: 297.5 minutes
+2025-07-25 02:13:20 [INFO] Processing LCT_0_nrefs_9: 5200/18000 (28.9%)
+2025-07-25 02:13:20 [INFO] ETA: 295.4 minutes
+2025-07-25 02:15:38 [INFO] Processing LCT_0_nrefs_9: 5300/18000 (29.4%)
+2025-07-25 02:15:38 [INFO] ETA: 293.1 minutes
+2025-07-25 02:17:57 [INFO] Processing LCT_0_nrefs_9: 5400/18000 (30.0%)
+2025-07-25 02:17:57 [INFO] ETA: 290.8 minutes
+2025-07-25 02:20:16 [INFO] Processing LCT_0_nrefs_9: 5500/18000 (30.6%)
+2025-07-25 02:20:16 [INFO] ETA: 288.5 minutes
+2025-07-25 02:22:31 [INFO] Processing LCT_0_nrefs_9: 5600/18000 (31.1%)
+2025-07-25 02:22:31 [INFO] ETA: 286.1 minutes
+2025-07-25 02:24:50 [INFO] Processing LCT_0_nrefs_9: 5700/18000 (31.7%)
+2025-07-25 02:24:50 [INFO] ETA: 283.8 minutes
+2025-07-25 02:27:09 [INFO] Processing LCT_0_nrefs_9: 5800/18000 (32.2%)
+2025-07-25 02:27:09 [INFO] ETA: 281.5 minutes
+2025-07-25 02:29:29 [INFO] Processing LCT_0_nrefs_9: 5900/18000 (32.8%)
+2025-07-25 02:29:29 [INFO] ETA: 279.2 minutes
+2025-07-25 02:31:51 [INFO] Processing LCT_0_nrefs_9: 6000/18000 (33.3%)
+2025-07-25 02:31:51 [INFO] ETA: 277.1 minutes
+2025-07-25 02:34:09 [INFO] Processing LCT_0_nrefs_9: 6100/18000 (33.9%)
+2025-07-25 02:34:09 [INFO] ETA: 274.7 minutes
+2025-07-25 02:36:26 [INFO] Processing LCT_0_nrefs_9: 6200/18000 (34.4%)
+2025-07-25 02:36:26 [INFO] ETA: 272.3 minutes
+2025-07-25 02:38:45 [INFO] Processing LCT_0_nrefs_9: 6300/18000 (35.0%)
+2025-07-25 02:38:45 [INFO] ETA: 270.1 minutes
+2025-07-25 02:40:58 [INFO] Processing LCT_0_nrefs_9: 6400/18000 (35.6%)
+2025-07-25 02:40:58 [INFO] ETA: 267.6 minutes
+2025-07-25 02:43:16 [INFO] Processing LCT_0_nrefs_9: 6500/18000 (36.1%)
+2025-07-25 02:43:16 [INFO] ETA: 265.3 minutes
+2025-07-25 02:45:36 [INFO] Processing LCT_0_nrefs_9: 6600/18000 (36.7%)
+2025-07-25 02:45:36 [INFO] ETA: 263.0 minutes
+2025-07-25 02:47:55 [INFO] Processing LCT_0_nrefs_9: 6700/18000 (37.2%)
+2025-07-25 02:47:55 [INFO] ETA: 260.7 minutes
+2025-07-25 02:50:15 [INFO] Processing LCT_0_nrefs_9: 6800/18000 (37.8%)
+2025-07-25 02:50:15 [INFO] ETA: 258.4 minutes
+2025-07-25 02:52:31 [INFO] Processing LCT_0_nrefs_9: 6900/18000 (38.3%)
+2025-07-25 02:52:31 [INFO] ETA: 256.1 minutes
+2025-07-25 02:54:56 [INFO] Processing LCT_0_nrefs_9: 7000/18000 (38.9%)
+2025-07-25 02:54:56 [INFO] ETA: 254.0 minutes
+2025-07-25 02:57:14 [INFO] Processing LCT_0_nrefs_9: 7100/18000 (39.4%)
+2025-07-25 02:57:14 [INFO] ETA: 251.6 minutes
+2025-07-25 02:59:34 [INFO] Processing LCT_0_nrefs_9: 7200/18000 (40.0%)
+2025-07-25 02:59:34 [INFO] ETA: 249.4 minutes
+2025-07-25 03:01:51 [INFO] Processing LCT_0_nrefs_9: 7300/18000 (40.6%)
+2025-07-25 03:01:51 [INFO] ETA: 247.0 minutes
+2025-07-25 03:04:14 [INFO] Processing LCT_0_nrefs_9: 7400/18000 (41.1%)
+2025-07-25 03:04:14 [INFO] ETA: 244.8 minutes
+2025-07-25 03:06:32 [INFO] Processing LCT_0_nrefs_9: 7500/18000 (41.7%)
+2025-07-25 03:06:32 [INFO] ETA: 242.5 minutes
+2025-07-25 03:08:49 [INFO] Processing LCT_0_nrefs_9: 7600/18000 (42.2%)
+2025-07-25 03:08:49 [INFO] ETA: 240.1 minutes
+2025-07-25 03:11:09 [INFO] Processing LCT_0_nrefs_9: 7700/18000 (42.8%)
+2025-07-25 03:11:09 [INFO] ETA: 237.9 minutes
+2025-07-25 03:13:31 [INFO] Processing LCT_0_nrefs_9: 7800/18000 (43.3%)
+2025-07-25 03:13:31 [INFO] ETA: 235.6 minutes
+2025-07-25 03:15:52 [INFO] Processing LCT_0_nrefs_9: 7900/18000 (43.9%)
+2025-07-25 03:15:52 [INFO] ETA: 233.4 minutes
+2025-07-25 03:18:09 [INFO] Processing LCT_0_nrefs_9: 8000/18000 (44.4%)
+2025-07-25 03:18:09 [INFO] ETA: 231.0 minutes
+2025-07-25 03:20:27 [INFO] Processing LCT_0_nrefs_9: 8100/18000 (45.0%)
+2025-07-25 03:20:27 [INFO] ETA: 228.7 minutes
+2025-07-25 03:22:45 [INFO] Processing LCT_0_nrefs_9: 8200/18000 (45.6%)
+2025-07-25 03:22:45 [INFO] ETA: 226.4 minutes
+2025-07-25 03:25:02 [INFO] Processing LCT_0_nrefs_9: 8300/18000 (46.1%)
+2025-07-25 03:25:02 [INFO] ETA: 224.0 minutes
+2025-07-25 03:27:20 [INFO] Processing LCT_0_nrefs_9: 8400/18000 (46.7%)
+2025-07-25 03:27:20 [INFO] ETA: 221.7 minutes
+2025-07-25 03:29:37 [INFO] Processing LCT_0_nrefs_9: 8500/18000 (47.2%)
+2025-07-25 03:29:37 [INFO] ETA: 219.4 minutes
+2025-07-25 03:31:57 [INFO] Processing LCT_0_nrefs_9: 8600/18000 (47.8%)
+2025-07-25 03:31:57 [INFO] ETA: 217.1 minutes
+2025-07-25 03:34:12 [INFO] Processing LCT_0_nrefs_9: 8700/18000 (48.3%)
+2025-07-25 03:34:12 [INFO] ETA: 214.7 minutes
+2025-07-25 03:36:31 [INFO] Processing LCT_0_nrefs_9: 8800/18000 (48.9%)
+2025-07-25 03:36:31 [INFO] ETA: 212.4 minutes
+2025-07-25 03:38:49 [INFO] Processing LCT_0_nrefs_9: 8900/18000 (49.4%)
+2025-07-25 03:38:49 [INFO] ETA: 210.1 minutes
+2025-07-25 03:41:05 [INFO] Processing LCT_0_nrefs_9: 9000/18000 (50.0%)
+2025-07-25 03:41:05 [INFO] ETA: 207.8 minutes
+2025-07-25 03:43:25 [INFO] Processing LCT_0_nrefs_9: 9100/18000 (50.6%)
+2025-07-25 03:43:25 [INFO] ETA: 205.5 minutes
+2025-07-25 03:45:40 [INFO] Processing LCT_0_nrefs_9: 9200/18000 (51.1%)
+2025-07-25 03:45:40 [INFO] ETA: 203.1 minutes
+2025-07-25 03:47:59 [INFO] Processing LCT_0_nrefs_9: 9300/18000 (51.7%)
+2025-07-25 03:47:59 [INFO] ETA: 200.8 minutes
+2025-07-25 03:50:18 [INFO] Processing LCT_0_nrefs_9: 9400/18000 (52.2%)
+2025-07-25 03:50:18 [INFO] ETA: 198.5 minutes
+2025-07-25 03:52:41 [INFO] Processing LCT_0_nrefs_9: 9500/18000 (52.8%)
+2025-07-25 03:52:41 [INFO] ETA: 196.3 minutes
+2025-07-25 03:55:00 [INFO] Processing LCT_0_nrefs_9: 9600/18000 (53.3%)
+2025-07-25 03:55:00 [INFO] ETA: 194.0 minutes
+2025-07-25 03:57:18 [INFO] Processing LCT_0_nrefs_9: 9700/18000 (53.9%)
+2025-07-25 03:57:18 [INFO] ETA: 191.6 minutes
+2025-07-25 03:59:34 [INFO] Processing LCT_0_nrefs_9: 9800/18000 (54.4%)
+2025-07-25 03:59:34 [INFO] ETA: 189.3 minutes
+2025-07-25 04:01:50 [INFO] Processing LCT_0_nrefs_9: 9900/18000 (55.0%)
+2025-07-25 04:01:50 [INFO] ETA: 187.0 minutes
+2025-07-25 04:04:09 [INFO] Processing LCT_0_nrefs_9: 10000/18000 (55.6%)
+2025-07-25 04:04:09 [INFO] ETA: 184.7 minutes
+2025-07-25 04:06:36 [INFO] Processing LCT_0_nrefs_9: 10100/18000 (56.1%)
+2025-07-25 04:06:36 [INFO] ETA: 182.5 minutes
+2025-07-25 04:08:58 [INFO] Processing LCT_0_nrefs_9: 10200/18000 (56.7%)
+2025-07-25 04:08:58 [INFO] ETA: 180.2 minutes
+2025-07-25 04:11:12 [INFO] Processing LCT_0_nrefs_9: 10300/18000 (57.2%)
+2025-07-25 04:11:12 [INFO] ETA: 177.8 minutes
+2025-07-25 04:13:26 [INFO] Processing LCT_0_nrefs_9: 10400/18000 (57.8%)
+2025-07-25 04:13:26 [INFO] ETA: 175.5 minutes
+2025-07-25 04:15:43 [INFO] Processing LCT_0_nrefs_9: 10500/18000 (58.3%)
+2025-07-25 04:15:43 [INFO] ETA: 173.1 minutes
+2025-07-25 04:18:00 [INFO] Processing LCT_0_nrefs_9: 10600/18000 (58.9%)
+2025-07-25 04:18:00 [INFO] ETA: 170.8 minutes
+2025-07-25 04:20:19 [INFO] Processing LCT_0_nrefs_9: 10700/18000 (59.4%)
+2025-07-25 04:20:19 [INFO] ETA: 168.5 minutes
+2025-07-25 04:22:43 [INFO] Processing LCT_0_nrefs_9: 10800/18000 (60.0%)
+2025-07-25 04:22:43 [INFO] ETA: 166.3 minutes
+2025-07-25 04:25:03 [INFO] Processing LCT_0_nrefs_9: 10900/18000 (60.6%)
+2025-07-25 04:25:03 [INFO] ETA: 164.0 minutes
+2025-07-25 04:27:25 [INFO] Processing LCT_0_nrefs_9: 11000/18000 (61.1%)
+2025-07-25 04:27:25 [INFO] ETA: 161.7 minutes
+2025-07-25 04:29:46 [INFO] Processing LCT_0_nrefs_9: 11100/18000 (61.7%)
+2025-07-25 04:29:46 [INFO] ETA: 159.4 minutes
+2025-07-25 04:32:07 [INFO] Processing LCT_0_nrefs_9: 11200/18000 (62.2%)
+2025-07-25 04:32:07 [INFO] ETA: 157.1 minutes
+2025-07-25 04:34:25 [INFO] Processing LCT_0_nrefs_9: 11300/18000 (62.8%)
+2025-07-25 04:34:25 [INFO] ETA: 154.8 minutes
+2025-07-25 04:36:40 [INFO] Processing LCT_0_nrefs_9: 11400/18000 (63.3%)
+2025-07-25 04:36:40 [INFO] ETA: 152.5 minutes
+2025-07-25 04:39:00 [INFO] Processing LCT_0_nrefs_9: 11500/18000 (63.9%)
+2025-07-25 04:39:00 [INFO] ETA: 150.2 minutes
+2025-07-25 04:41:22 [INFO] Processing LCT_0_nrefs_9: 11600/18000 (64.4%)
+2025-07-25 04:41:22 [INFO] ETA: 147.9 minutes
+2025-07-25 04:43:43 [INFO] Processing LCT_0_nrefs_9: 11700/18000 (65.0%)
+2025-07-25 04:43:43 [INFO] ETA: 145.6 minutes
+2025-07-25 04:46:06 [INFO] Processing LCT_0_nrefs_9: 11800/18000 (65.6%)
+2025-07-25 04:46:06 [INFO] ETA: 143.3 minutes
+2025-07-25 04:48:24 [INFO] Processing LCT_0_nrefs_9: 11900/18000 (66.1%)
+2025-07-25 04:48:24 [INFO] ETA: 141.0 minutes
+2025-07-25 04:50:40 [INFO] Processing LCT_0_nrefs_9: 12000/18000 (66.7%)
+2025-07-25 04:50:40 [INFO] ETA: 138.7 minutes
+2025-07-25 04:52:56 [INFO] Processing LCT_0_nrefs_9: 12100/18000 (67.2%)
+2025-07-25 04:52:56 [INFO] ETA: 136.3 minutes
+2025-07-25 04:55:14 [INFO] Processing LCT_0_nrefs_9: 12200/18000 (67.8%)
+2025-07-25 04:55:14 [INFO] ETA: 134.0 minutes
+2025-07-25 04:57:36 [INFO] Processing LCT_0_nrefs_9: 12300/18000 (68.3%)
+2025-07-25 04:57:36 [INFO] ETA: 131.7 minutes
+2025-07-25 04:59:53 [INFO] Processing LCT_0_nrefs_9: 12400/18000 (68.9%)
+2025-07-25 04:59:53 [INFO] ETA: 129.4 minutes
+2025-07-25 05:02:13 [INFO] Processing LCT_0_nrefs_9: 12500/18000 (69.4%)
+2025-07-25 05:02:13 [INFO] ETA: 127.1 minutes
+2025-07-25 05:04:32 [INFO] Processing LCT_0_nrefs_9: 12600/18000 (70.0%)
+2025-07-25 05:04:32 [INFO] ETA: 124.8 minutes
+2025-07-25 05:06:48 [INFO] Processing LCT_0_nrefs_9: 12700/18000 (70.6%)
+2025-07-25 05:06:48 [INFO] ETA: 122.5 minutes
+2025-07-25 05:09:07 [INFO] Processing LCT_0_nrefs_9: 12800/18000 (71.1%)
+2025-07-25 05:09:07 [INFO] ETA: 120.2 minutes
+2025-07-25 05:11:21 [INFO] Processing LCT_0_nrefs_9: 12900/18000 (71.7%)
+2025-07-25 05:11:21 [INFO] ETA: 117.8 minutes
+2025-07-25 05:13:38 [INFO] Processing LCT_0_nrefs_9: 13000/18000 (72.2%)
+2025-07-25 05:13:38 [INFO] ETA: 115.5 minutes
+2025-07-25 05:15:57 [INFO] Processing LCT_0_nrefs_9: 13100/18000 (72.8%)
+2025-07-25 05:15:57 [INFO] ETA: 113.2 minutes
+2025-07-25 05:18:16 [INFO] Processing LCT_0_nrefs_9: 13200/18000 (73.3%)
+2025-07-25 05:18:16 [INFO] ETA: 110.9 minutes
+2025-07-25 05:20:35 [INFO] Processing LCT_0_nrefs_9: 13300/18000 (73.9%)
+2025-07-25 05:20:35 [INFO] ETA: 108.6 minutes
+2025-07-25 05:22:52 [INFO] Processing LCT_0_nrefs_9: 13400/18000 (74.4%)
+2025-07-25 05:22:52 [INFO] ETA: 106.3 minutes
+2025-07-25 05:25:09 [INFO] Processing LCT_0_nrefs_9: 13500/18000 (75.0%)
+2025-07-25 05:25:09 [INFO] ETA: 103.9 minutes
+2025-07-25 05:27:30 [INFO] Processing LCT_0_nrefs_9: 13600/18000 (75.6%)
+2025-07-25 05:27:30 [INFO] ETA: 101.6 minutes
+2025-07-25 05:29:47 [INFO] Processing LCT_0_nrefs_9: 13700/18000 (76.1%)
+2025-07-25 05:29:47 [INFO] ETA: 99.3 minutes
+2025-07-25 05:32:08 [INFO] Processing LCT_0_nrefs_9: 13800/18000 (76.7%)
+2025-07-25 05:32:08 [INFO] ETA: 97.0 minutes
+2025-07-25 05:34:25 [INFO] Processing LCT_0_nrefs_9: 13900/18000 (77.2%)
+2025-07-25 05:34:25 [INFO] ETA: 94.7 minutes
+2025-07-25 05:36:44 [INFO] Processing LCT_0_nrefs_9: 14000/18000 (77.8%)
+2025-07-25 05:36:44 [INFO] ETA: 92.4 minutes
+2025-07-25 05:39:02 [INFO] Processing LCT_0_nrefs_9: 14100/18000 (78.3%)
+2025-07-25 05:39:02 [INFO] ETA: 90.1 minutes
+2025-07-25 05:41:22 [INFO] Processing LCT_0_nrefs_9: 14200/18000 (78.9%)
+2025-07-25 05:41:22 [INFO] ETA: 87.8 minutes
+2025-07-25 05:43:38 [INFO] Processing LCT_0_nrefs_9: 14300/18000 (79.4%)
+2025-07-25 05:43:38 [INFO] ETA: 85.5 minutes
+2025-07-25 05:45:58 [INFO] Processing LCT_0_nrefs_9: 14400/18000 (80.0%)
+2025-07-25 05:45:58 [INFO] ETA: 83.2 minutes
+2025-07-25 05:48:16 [INFO] Processing LCT_0_nrefs_9: 14500/18000 (80.6%)
+2025-07-25 05:48:16 [INFO] ETA: 80.8 minutes
+2025-07-25 05:50:36 [INFO] Processing LCT_0_nrefs_9: 14600/18000 (81.1%)
+2025-07-25 05:50:36 [INFO] ETA: 78.5 minutes
+2025-07-25 05:52:58 [INFO] Processing LCT_0_nrefs_9: 14700/18000 (81.7%)
+2025-07-25 05:52:58 [INFO] ETA: 76.2 minutes
+2025-07-25 05:55:17 [INFO] Processing LCT_0_nrefs_9: 14800/18000 (82.2%)
+2025-07-25 05:55:17 [INFO] ETA: 73.9 minutes
+2025-07-25 05:57:32 [INFO] Processing LCT_0_nrefs_9: 14900/18000 (82.8%)
+2025-07-25 05:57:32 [INFO] ETA: 71.6 minutes
+2025-07-25 05:59:47 [INFO] Processing LCT_0_nrefs_9: 15000/18000 (83.3%)
+2025-07-25 05:59:47 [INFO] ETA: 69.3 minutes
+2025-07-25 06:02:06 [INFO] Processing LCT_0_nrefs_9: 15100/18000 (83.9%)
+2025-07-25 06:02:06 [INFO] ETA: 67.0 minutes
+2025-07-25 06:04:24 [INFO] Processing LCT_0_nrefs_9: 15200/18000 (84.4%)
+2025-07-25 06:04:24 [INFO] ETA: 64.7 minutes
+2025-07-25 06:06:39 [INFO] Processing LCT_0_nrefs_9: 15300/18000 (85.0%)
+2025-07-25 06:06:39 [INFO] ETA: 62.4 minutes
+2025-07-25 06:08:54 [INFO] Processing LCT_0_nrefs_9: 15400/18000 (85.6%)
+2025-07-25 06:08:54 [INFO] ETA: 60.0 minutes
+2025-07-25 06:11:12 [INFO] Processing LCT_0_nrefs_9: 15500/18000 (86.1%)
+2025-07-25 06:11:12 [INFO] ETA: 57.7 minutes
+2025-07-25 06:13:29 [INFO] Processing LCT_0_nrefs_9: 15600/18000 (86.7%)
+2025-07-25 06:13:29 [INFO] ETA: 55.4 minutes
+2025-07-25 06:15:50 [INFO] Processing LCT_0_nrefs_9: 15700/18000 (87.2%)
+2025-07-25 06:15:50 [INFO] ETA: 53.1 minutes
+2025-07-25 06:18:11 [INFO] Processing LCT_0_nrefs_9: 15800/18000 (87.8%)
+2025-07-25 06:18:11 [INFO] ETA: 50.8 minutes
+2025-07-25 06:20:28 [INFO] Processing LCT_0_nrefs_9: 15900/18000 (88.3%)
+2025-07-25 06:20:28 [INFO] ETA: 48.5 minutes
+2025-07-25 06:22:47 [INFO] Processing LCT_0_nrefs_9: 16000/18000 (88.9%)
+2025-07-25 06:22:47 [INFO] ETA: 46.2 minutes
+2025-07-25 06:25:04 [INFO] Processing LCT_0_nrefs_9: 16100/18000 (89.4%)
+2025-07-25 06:25:04 [INFO] ETA: 43.9 minutes
+2025-07-25 06:27:18 [INFO] Processing LCT_0_nrefs_9: 16200/18000 (90.0%)
+2025-07-25 06:27:18 [INFO] ETA: 41.6 minutes
+2025-07-25 06:29:36 [INFO] Processing LCT_0_nrefs_9: 16300/18000 (90.6%)
+2025-07-25 06:29:36 [INFO] ETA: 39.2 minutes
+2025-07-25 06:31:59 [INFO] Processing LCT_0_nrefs_9: 16400/18000 (91.1%)
+2025-07-25 06:31:59 [INFO] ETA: 36.9 minutes
+2025-07-25 06:34:21 [INFO] Processing LCT_0_nrefs_9: 16500/18000 (91.7%)
+2025-07-25 06:34:21 [INFO] ETA: 34.6 minutes
+2025-07-25 06:36:41 [INFO] Processing LCT_0_nrefs_9: 16600/18000 (92.2%)
+2025-07-25 06:36:41 [INFO] ETA: 32.3 minutes
+2025-07-25 06:38:58 [INFO] Processing LCT_0_nrefs_9: 16700/18000 (92.8%)
+2025-07-25 06:38:58 [INFO] ETA: 30.0 minutes
+2025-07-25 06:41:15 [INFO] Processing LCT_0_nrefs_9: 16800/18000 (93.3%)
+2025-07-25 06:41:15 [INFO] ETA: 27.7 minutes
+2025-07-25 06:43:35 [INFO] Processing LCT_0_nrefs_9: 16900/18000 (93.9%)
+2025-07-25 06:43:35 [INFO] ETA: 25.4 minutes
+2025-07-25 06:45:56 [INFO] Processing LCT_0_nrefs_9: 17000/18000 (94.4%)
+2025-07-25 06:45:56 [INFO] ETA: 23.1 minutes
+2025-07-25 06:48:18 [INFO] Processing LCT_0_nrefs_9: 17100/18000 (95.0%)
+2025-07-25 06:48:18 [INFO] ETA: 20.8 minutes
+2025-07-25 06:50:39 [INFO] Processing LCT_0_nrefs_9: 17200/18000 (95.6%)
+2025-07-25 06:50:39 [INFO] ETA: 18.5 minutes
+2025-07-25 06:53:00 [INFO] Processing LCT_0_nrefs_9: 17300/18000 (96.1%)
+2025-07-25 06:53:00 [INFO] ETA: 16.2 minutes
+2025-07-25 06:55:15 [INFO] Processing LCT_0_nrefs_9: 17400/18000 (96.7%)
+2025-07-25 06:55:15 [INFO] ETA: 13.9 minutes
+2025-07-25 06:57:35 [INFO] Processing LCT_0_nrefs_9: 17500/18000 (97.2%)
+2025-07-25 06:57:35 [INFO] ETA: 11.5 minutes
+2025-07-25 06:59:58 [INFO] Processing LCT_0_nrefs_9: 17600/18000 (97.8%)
+2025-07-25 06:59:58 [INFO] ETA: 9.2 minutes
+2025-07-25 07:02:16 [INFO] Processing LCT_0_nrefs_9: 17700/18000 (98.3%)
+2025-07-25 07:02:16 [INFO] ETA: 6.9 minutes
+2025-07-25 07:04:36 [INFO] Processing LCT_0_nrefs_9: 17800/18000 (98.9%)
+2025-07-25 07:04:36 [INFO] ETA: 4.6 minutes
+2025-07-25 07:06:55 [INFO] Processing LCT_0_nrefs_9: 17900/18000 (99.4%)
+2025-07-25 07:06:55 [INFO] ETA: 2.3 minutes
+2025-07-25 07:09:14 [INFO] Processing LCT_0_nrefs_9: 18000/18000 (100.0%)
+2025-07-25 07:09:14 [INFO] ETA: 0.0 minutes
+2025-07-25 07:09:14 [INFO] VCS(GAS) LCT_0_9ref - Kendall: 0.4239, Spearman: 0.539
+2025-07-25 07:09:14 [INFO] VCS(LAS) LCT_0_9ref - Kendall: 0.3394, Spearman: 0.4356
+2025-07-25 07:09:14 [INFO] VCS(NAS-D) LCT_0_9ref - Kendall: -0.0031, Spearman: -0.0038
+2025-07-25 07:09:14 [INFO] VCS(NAS-L) LCT_0_9ref - Kendall: 0.028, Spearman: 0.0359
+2025-07-25 07:09:14 [INFO] VCS(NAS) LCT_0_9ref - Kendall: 0.0186, Spearman: 0.0241
+2025-07-25 07:09:14 [INFO] VCS(NAS
++LAS(S)) LCT_0_9ref - Kendall: 0.0309, Spearman: 0.04
+2025-07-25 07:09:14 [INFO] VCS(GAS
++LAS(S)) LCT_0_9ref - Kendall: 0.4236, Spearman: 0.5384
+2025-07-25 07:09:14 [INFO] VCS(GAS
++NAS-L(S)) LCT_0_9ref - Kendall: 0.3624, Spearman: 0.4648
+2025-07-25 07:09:14 [INFO] VCS(GAS
++NAS-D(S)) LCT_0_9ref - Kendall: 0.416, Spearman: 0.5295
+2025-07-25 07:09:14 [INFO] VCS(GAS
++NAS(S)) LCT_0_9ref - Kendall: 0.3564, Spearman: 0.4571
+2025-07-25 07:09:14 [INFO] VCS(GAS
++LAS(S)
++NAS-D(S)) LCT_0_9ref - Kendall: 0.4173, Spearman: 0.5306
+2025-07-25 07:09:14 [INFO] VCS(GAS
++LAS(S)
++NAS-L(S)) LCT_0_9ref - Kendall: 0.3738, Spearman: 0.4756
+2025-07-25 07:09:14 [INFO] VCS(GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)) LCT_0_9ref - Kendall: 0.3693, Spearman: 0.4698
+2025-07-25 07:09:22 [INFO] Saved 3000 individual video CSV files to: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/results/vatex-eval/ablation/LCT_0/9ref/individual_results
+2025-07-25 07:09:22 [INFO] Saved correlation summary to: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/results/vatex-eval/ablation/LCT_0/9ref/aggregated_results/correlation_summary.csv
+2025-07-25 07:09:22 [INFO] Completed LCT=0 with 9 references
+2025-07-25 07:09:22 [INFO] Processed 18000 candidates in 24962.58s
+2025-07-25 07:09:22 [INFO] VCS(X,X*) correlation results: {'GAS': np.float64(0.539), 'LAS': np.float64(0.4356), 'NAS-D': np.float64(-0.0038), 'NAS-L': np.float64(0.0359), 'NAS': np.float64(0.0241), 'NAS\n+LAS(S)': np.float64(0.04), 'GAS\n+LAS(S)': np.float64(0.5384), 'GAS\n+NAS-L(S)': np.float64(0.4648), 'GAS\n+NAS-D(S)': np.float64(0.5295), 'GAS\n+NAS(S)': np.float64(0.4571), 'GAS\n+LAS(S)\n+NAS-D(S)': np.float64(0.5306), 'GAS\n+LAS(S)\n+NAS-L(S)': np.float64(0.4756), 'GAS\n+LAS(S)\n+(NAS-D\n+NAS-L)(S)': np.float64(0.4698)}
+2025-07-25 07:09:22 [INFO] Ablation study completed in 27760.00 seconds

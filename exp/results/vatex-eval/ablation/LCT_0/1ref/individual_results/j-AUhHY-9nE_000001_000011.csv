@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy stands at an xylophone and plays a song on it .,0.1758,"a child is standing next to a door , playing a tune on a xylophone .",5.0,5.0,5.0,5.0,0.6933,0.8908,0.8571,0.5578,0.4596,0.3934,0.6557,0.3621,0.6421,0.2205,0.5983,0.3255,0.1758
+2,a young boy is playing a xylophone on the floor .,0.1337,"a child is standing next to a door , playing a tune on a xylophone .",4.0,5.0,4.0,4.3333,0.5315,0.8574,0.8571,0.7129,0.6307,0.5693,0.4536,0.3429,0.4534,0.2572,0.3625,0.2336,0.1337
+3,a young boy is playing a song on a xylophone .,0.3986,"a child is standing next to a door , playing a tune on a xylophone .",5.0,5.0,5.0,5.0,0.5985,0.8837,0.9048,0.8072,0.7554,0.7232,0.5457,0.5027,0.5563,0.4685,0.4979,0.4372,0.3986
+4,a teenage boy plays a few notes on an ocarina .,0.0,"a child is standing next to a door , playing a tune on a xylophone .",4.0,4.0,3.0,3.6667,0.2694,0.8106,0.9048,0.6416,0.5846,0.4876,0.0987,0.0,0.1925,0.0,0.0038,0.0,0.0
+5,a young boy plays the cello while reading music from a music stand .,0.0,"a child is standing next to a door , playing a tune on a xylophone .",4.0,2.0,2.0,2.6667,0.3186,0.8357,0.7685,0.479,0.3852,0.2643,0.1846,0.0,0.1133,0.0,0.0,0.0,0.0
+6,a boy is playing a trombone while reading some sheet music .,0.0,"a child is standing next to a door , playing a tune on a xylophone .",2.0,3.0,2.0,2.3333,0.2328,0.8262,0.8759,0.4875,0.3773,0.2462,0.0714,0.0,0.1241,0.0,0.0,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a little boy is mowing the lawn for the first time while his dad encourages him .,0.8746,a young boy mows the lawn by his house for the first time while his father encourages him,5.0,4.0,5.0,4.6667,0.881,0.9485,1.0,1.0,1.0,1.0,0.8746,0.881,0.881,0.881,0.8746,0.8746,0.8746
+2,a man is mowing a lawn with a lawn mower .,0.3765,a kid wearing shorts is mowing the lawn in front of his house with a push lawn mower .,5.0,4.0,4.0,4.3333,0.5075,0.9047,0.9787,1.0,0.9839,0.9809,0.4556,0.4291,0.4916,0.4359,0.438,0.3587,0.3765
+3,a man is mowing the lawn with a lawn mower .,0.384,a kid wearing shorts is mowing the lawn in front of his house with a push lawn mower .,5.0,4.0,4.0,4.3333,0.5134,0.9047,0.9787,1.0,0.9839,0.9809,0.4621,0.4318,0.4977,0.4427,0.4448,0.3664,0.384
+4,outside a little boy is driving a riding lawn mower .,0.4056,a young boy uses a push lawnmower for the first time .,4.0,5.0,4.0,4.3333,0.6974,0.8546,0.8986,0.5904,0.6787,0.6033,0.6331,0.4126,0.6632,0.5186,0.5916,0.3529,0.4056
+5,a young boy is pushing a lawn mower while his family encourages him .,0.7062,a young boy uses a push lawnmower for the first time .,5.0,4.0,5.0,4.6667,0.8028,0.9048,0.9424,0.8598,0.856,0.8328,0.7789,0.6647,0.7794,0.7415,0.7526,0.6519,0.7062
+6,a man is mowing his yard on a riding lawnmower with his small child sitting on his lap .,0.1412,a young boy mows the lawn for the first time while his father narrates the action .,4.0,4.0,4.0,4.0,0.5056,0.8383,0.893,0.6809,0.7096,0.642,0.4022,0.2692,0.4406,0.3032,0.3106,0.122,0.1412

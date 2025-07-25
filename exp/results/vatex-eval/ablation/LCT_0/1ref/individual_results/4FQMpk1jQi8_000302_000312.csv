@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young woman explaining her hair curling-straightening technique,0.1985,a woman gives a beauty tutorial using a flat iron .,5.0,5.0,5.0,5.0,0.626,0.7874,0.9162,0.6429,0.5927,0.4827,0.525,0.4182,0.5918,0.3493,0.4816,0.2611,0.1985
+2,a woman is using a curling iron to curl her hair .,0.0,a woman gives a beauty tutorial using a flat iron .,4.0,4.0,5.0,4.3333,0.5742,0.8588,0.8203,0.2303,0.0,0.0,0.5042,0.0,0.481,0.0,0.3956,0.0,0.0
+3,a woman is using a curling iron to curl her hair .,0.0,a woman gives a beauty tutorial using a flat iron .,4.0,4.0,5.0,4.3333,0.5742,0.8588,0.8203,0.2303,0.0,0.0,0.5042,0.0,0.481,0.0,0.3956,0.0,0.0
+4,a woman demonstrates how to straighten her hair with a comb and a flat iron .,0.7036,a woman gives a beauty tutorial using a flat iron .,4.0,4.0,4.0,4.0,0.7647,0.8547,0.9846,0.8792,0.929,0.9169,0.7247,0.7324,0.761,0.7467,0.7204,0.6869,0.7036
+5,a woman is shown braiding a piece of her hair while explaining the process .,0.1949,a woman gives a beauty tutorial using a flat iron .,5.0,4.0,4.0,4.3333,0.4658,0.7905,0.9384,0.7593,0.8394,0.7969,0.3242,0.2964,0.4307,0.3636,0.2798,0.1099,0.1949
+6,a woman is braiding her hair and explaining how it is done,0.2506,a woman gives a beauty tutorial using a flat iron .,5.0,4.0,4.0,4.3333,0.4937,0.8007,0.9524,0.8644,0.8438,0.8049,0.3676,0.4143,0.4684,0.3999,0.336,0.2685,0.2506

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the person has a mask on and is spraying the piece of equipment to clean or paint it .,0.2256,a man in a mask power cleans a portable machine .,5.0,5.0,4.0,4.6667,0.6021,0.8468,0.9404,0.6435,0.6068,0.5357,0.5301,0.3816,0.5768,0.3442,0.5003,0.2697,0.2256
+2,a person is using a tool to carve a piece of metal .,0.0,a man in a mask power cleans a portable machine .,4.0,3.0,3.0,3.3333,0.1491,0.7744,0.9565,0.6512,0.7749,0.7093,0.0,0.0,0.1105,0.0,0.0,0.0,0.0
+3,a man is using a power tool to carve a piece of metal .,0.0,a man in a mask power cleans a portable machine .,4.0,3.0,2.0,3.0,0.3299,0.8321,1.0,0.7071,0.714,0.6563,0.1947,0.0524,0.3299,0.0616,0.1947,0.0,0.0
+4,a man wearing a jacket and a mask outside of building using painting spray,0.1182,a man in a mask power cleans a portable machine .,5.0,4.0,4.0,4.3333,0.3854,0.8148,0.9557,0.8446,0.8554,0.8225,0.2457,0.2723,0.3569,0.2815,0.2107,0.1069,0.1182
+5,a man in a respirator is spray painting an interior wall .,0.0,a man in a mask power cleans a portable machine .,4.0,2.0,4.0,3.3333,0.2954,0.7912,0.9583,0.7414,0.836,0.7928,0.1095,0.0497,0.2648,0.1572,0.0708,0.0,0.0
+6,man with a protective mask on welding a pipe with a blowtorch .,0.0,a man in a mask power cleans a portable machine .,4.0,4.0,3.0,3.6667,0.3505,0.8208,0.8953,0.5397,0.6735,0.6021,0.2087,0.0,0.2746,0.0356,0.1162,0.0,0.0

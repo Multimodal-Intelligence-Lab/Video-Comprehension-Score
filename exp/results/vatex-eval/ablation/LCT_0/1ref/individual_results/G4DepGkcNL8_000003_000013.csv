@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a little girl is pushing another little girl in a toy car .,0.6166,a little girl is pushing another girl in a push car .,5.0,4.0,5.0,4.6667,0.9303,0.9827,0.9129,0.6547,0.6437,0.6375,0.9291,0.6288,0.9063,0.6171,0.9062,0.6283,0.6166
+2,a little boy is pushing a toy car across the floor .,0.2662,a little girl is pushing another girl in a push car .,4.0,4.0,4.0,4.0,0.5194,0.885,0.8746,0.6413,0.74,0.7062,0.457,0.2507,0.4505,0.3506,0.3791,0.1533,0.2662
+3,a toddler is pushing a toy car across the floor .,0.0363,a little girl is pushing another girl in a push car .,4.0,5.0,5.0,4.6667,0.5186,0.8449,0.8587,0.6732,0.5912,0.5161,0.4303,0.285,0.4395,0.1858,0.3365,0.1537,0.0363
+4,a little baby is pushing a toy car on the grass .,0.1402,a little girl is pushing another girl in a push car .,4.0,3.0,4.0,3.6667,0.5424,0.894,0.92,0.6434,0.5954,0.5474,0.4881,0.2887,0.5026,0.2314,0.4436,0.2044,0.1402
+5,a little kid pushes an item with wheels on it indoors,0.0842,a little girl is pushing another girl in a push car .,4.0,4.0,4.0,4.0,0.411,0.8452,0.9388,0.7876,0.7609,0.7171,0.3032,0.2521,0.3726,0.226,0.2577,0.1152,0.0842
+6,a baby girl pushing a toy riding car and talking .,0.4286,a little girl is pushing another girl in a push car .,4.0,3.0,4.0,3.6667,0.6252,0.8998,0.8442,0.6413,0.7289,0.6987,0.5835,0.4156,0.556,0.4858,0.5066,0.3506,0.4286

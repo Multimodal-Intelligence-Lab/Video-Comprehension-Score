@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is holding a young girl between her legs as she roasts a marshmallow over a fire .,0.7469,a woman guides a little girl to roast a marshmallow over a fire .,5.0,5.0,5.0,5.0,0.7892,0.91,1.0,0.8933,0.9155,0.9071,0.7683,0.764,0.7892,0.7697,0.7683,0.7406,0.7469
+2,a group of people are roasting marshmallows on a fire .,0.487,a woman guides a little girl to roast a marshmallow over a fire .,5.0,5.0,5.0,5.0,0.6599,0.8584,0.928,0.8072,0.7723,0.7348,0.6038,0.5787,0.6335,0.5597,0.573,0.5092,0.487
+3,a group of people are roasting marshmallows on a fire .,0.487,a woman guides a little girl to roast a marshmallow over a fire .,5.0,5.0,5.0,5.0,0.6599,0.8584,0.928,0.8072,0.7723,0.7348,0.6038,0.5787,0.6335,0.5597,0.573,0.5092,0.487
+4,a young girl laying on the ground is roasting a marshmellow on a small campfire while a larger bonfire blazes a few feet away .,0.2693,a woman guides a little girl to roast a marshmallow over a fire .,3.0,3.0,4.0,3.3333,0.6538,0.855,0.7863,0.5456,0.5651,0.4914,0.5951,0.305,0.5597,0.3349,0.485,0.2365,0.2693
+5,a little girl is shown laying on her belly in front of a small bonfire roasting a marshmallow .,0.2408,a woman guides a little girl to roast a marshmallow over a fire .,4.0,4.0,4.0,4.0,0.7017,0.882,0.8,0.5103,0.4975,0.4303,0.6618,0.3022,0.6272,0.284,0.5773,0.2601,0.2408
+6,"a girl toasts a marshmallow on an open fire at night , then the marshmallow catches fire and she blows it out",0.3507,a woman guides a little girl to roast a marshmallow over a fire .,4.0,4.0,4.0,4.0,0.6514,0.8652,0.7676,0.6699,0.6206,0.5614,0.5971,0.4796,0.5459,0.4175,0.4751,0.3985,0.3507

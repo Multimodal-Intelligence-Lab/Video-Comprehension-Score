@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is driving a car and a traffic officer is dancing in the street .,0.3823,"a person is driving in traffic , and a person is seen through the windshield dancing in the street .",5.0,5.0,5.0,5.0,0.7242,0.904,0.9279,0.58,0.5707,0.5252,0.6949,0.42,0.7027,0.4072,0.6712,0.3956,0.3823
+2,a person is walking down the street and is directing traffic .,0.0,"a person is driving in traffic , and a person is seen through the windshield dancing in the street .",4.0,3.0,5.0,4.0,0.3998,0.8749,0.6724,0.2923,0.1112,0.0,0.314,0.0,0.1074,0.0,0.0,0.0,0.0
+3,a person is standing in the middle of the street directing traffic .,0.0,"a person is driving in traffic , and a person is seen through the windshield dancing in the street .",5.0,5.0,5.0,5.0,0.3808,0.8728,0.6984,0.2119,0.0,0.0,0.2905,0.0,0.1134,0.0,0.0,0.0,0.0
+4,a police officer is directing traffic in an intersection then begins dancing .,0.0,"a person is driving in traffic , and a person is seen through the windshield dancing in the street .",5.0,5.0,5.0,5.0,0.5646,0.8218,0.8989,0.3864,0.3107,0.1613,0.4702,0.0,0.5156,0.0,0.4106,0.0,0.0
+5,a man in uniform standing in the middle of the street directing traffic using dance-like moves .,0.0,"a person is driving in traffic , and a person is seen through the windshield dancing in the street .",5.0,5.0,5.0,5.0,0.5168,0.8331,0.8265,0.3562,0.3305,0.1964,0.42,0.0,0.4154,0.0,0.2983,0.0,0.0
+6,a person driving a car is showing a driver in another car texting while driving .,0.0,"a person is driving in traffic , and a person is seen through the windshield dancing in the street .",3.0,2.0,3.0,2.6667,0.446,0.8522,0.8438,0.3458,0.2868,0.1631,0.3499,0.0,0.3434,0.0,0.2295,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is sitting behind a table sharpening the blade of a knife .,0.0,"a man sharpens a small knife on a sharpening block , and then feels the edge .",5.0,5.0,5.0,5.0,0.5128,0.862,0.8555,0.5251,0.4762,0.3923,0.4348,0.0722,0.4305,0.0,0.3393,0.0,0.0
+2,a man is demonstrating how to use a tool to tighten a bolt .,0.0,"a man sharpens a small knife on a sharpening block , and then feels the edge .",4.0,1.0,4.0,3.0,0.2211,0.7876,0.9497,0.6209,0.6264,0.5256,0.011,0.0,0.1798,0.0,0.0,0.0,0.0
+3,a man is sitting at a table and talking about a pair of glasses .,0.0,"a man sharpens a small knife on a sharpening block , and then feels the edge .",4.0,3.0,4.0,3.6667,0.1223,0.7759,0.9831,0.8153,0.837,0.79,0.0,0.0,0.1072,0.0,0.0,0.0,0.0
+4,a man sharpens a blade with a sharpening tool and sets the blade by other blades .,0.3249,"a man sharpens a small knife on a sharpening block , and then feels the edge .",4.0,4.0,4.0,4.0,0.5284,0.8573,0.954,0.7112,0.8149,0.7841,0.4499,0.3369,0.5057,0.4213,0.4234,0.2265,0.3249
+5,a man holding a honing steel and a knife as he explains and shows how to hone a knife .,0.1601,"a man sharpens a small knife on a sharpening block , and then feels the edge .",5.0,4.0,5.0,4.6667,0.4946,0.8389,0.9336,0.6969,0.7172,0.6629,0.3976,0.2747,0.4586,0.2954,0.3547,0.1355,0.1601
+6,a man prepares to sharpen a knife with a honing steel .,0.0144,"a man sharpens a small knife on a sharpening block , and then feels the edge .",5.0,5.0,5.0,5.0,0.5775,0.8665,0.883,0.5311,0.4949,0.4171,0.5125,0.1881,0.5216,0.1255,0.4479,0.0821,0.0144

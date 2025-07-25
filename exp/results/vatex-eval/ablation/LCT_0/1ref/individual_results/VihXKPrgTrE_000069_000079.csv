@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,an individual is standing on a wooden floor and only on their tip toes .,0.1564,a woman stands on tip toe on a wooden deck,5.0,5.0,5.0,5.0,0.6118,0.8965,0.75,0.4,0.5217,0.4665,0.5669,0.0192,0.4823,0.2182,0.4226,0.0,0.1564
+2,a person is sitting on the floor with their feet on the floor .,0.0,a woman stands on tip toe on a wooden deck,4.0,4.0,2.0,3.3333,0.06,0.7842,0.9714,0.7974,0.7517,0.6834,0.0,0.0,0.0324,0.0,0.0,0.0,0.0
+3,a person is sitting on the floor and doing a trick with their feet .,0.0,a woman stands on tip toe on a wooden deck,4.0,4.0,2.0,3.3333,0.0921,0.7837,0.941,0.7974,0.7265,0.6511,0.0,0.0,0.0352,0.0,0.0,0.0,0.0
+4,a lady stood on her leg and elbow and raised up her legs,0.1625,a woman stands on tip toe on a wooden deck,3.0,3.0,3.0,3.0,0.3315,0.7982,1.0,1.0,1.0,1.0,0.1625,0.3315,0.3315,0.3315,0.1625,0.1625,0.1625
+5,a person is dancing and moving their feet while wearing shoes .,0.0,a woman stands on tip toe on a wooden deck,3.0,4.0,3.0,3.3333,0.1283,0.7697,0.9148,0.6258,0.7432,0.6664,0.0,0.0,0.047,0.0,0.0,0.0,0.0
+6,a woman standing on her head demonstrating different leg positions,0.0166,a woman stands on tip toe on a wooden deck,4.0,2.0,2.0,2.6667,0.2837,0.8219,1.0,0.8723,0.8863,0.8616,0.1284,0.1788,0.2837,0.1918,0.1284,0.0008,0.0166

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"two small children are standing by a christmas tree and possibly looking at packages , and one of them says , 'wow . '",0.2194,two children help to decorate a christmas tree .,5.0,5.0,5.0,5.0,0.4982,0.8632,0.9312,0.8134,0.7778,0.7253,0.4187,0.3413,0.4108,0.3262,0.302,0.237,0.2194
+2,a little girl is decorating a christmas tree in front of a christmas tree .,0.2809,two people are working on putting ornaments on a christmas tree,5.0,4.0,4.0,4.3333,0.6465,0.8907,0.9605,0.8127,0.8369,0.7977,0.603,0.4112,0.5915,0.3893,0.5413,0.3068,0.2809
+3,a little boy is decorating a christmas tree with a christmas tree .,0.7193,the boy is putting decorations on the christmas tree with his family .,4.0,4.0,5.0,4.3333,0.8143,0.9297,0.9621,0.7876,0.8142,0.7886,0.8,0.7391,0.8066,0.7242,0.7916,0.7344,0.7193
+4,a boy wraps a christmas gift along with another boy .,0.2366,two boys look at a christmas tree and hang ornaments on it .,4.0,3.0,3.0,3.3333,0.596,0.8551,0.868,0.7942,0.7954,0.7399,0.5089,0.3544,0.5036,0.3721,0.3964,0.1794,0.2366
+5,two children help their mom decorate their christmas tree with lights and ornaments .,0.7423,two children help to decorate a christmas tree .,5.0,4.0,2.0,3.6667,0.7805,0.9569,0.9645,0.9478,0.8902,0.8853,0.7706,0.7684,0.7552,0.7534,0.7442,0.758,0.7423
+6,a girl and boy are decorating a christmas tree as an adult gives them the decorations .,0.6,the boy is putting decorations on the christmas tree with his family .,3.0,1.0,2.0,2.0,0.7599,0.8991,0.9859,0.8933,0.906,0.89,0.724,0.6604,0.6934,0.6404,0.6502,0.6223,0.6

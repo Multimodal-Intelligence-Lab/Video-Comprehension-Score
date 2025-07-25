@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person using a small tool and a towl to show how to open a shell with a knife,0.3678,a man is instructing viewers how to open an oyster shell .,5.0,5.0,5.0,5.0,0.7026,0.8397,0.9885,0.8954,0.9047,0.886,0.6428,0.4542,0.6745,0.4705,0.6091,0.3447,0.3678
+2,a person is using a toothbrush to clean the bottom of a shoe .,0.0,a man is cutting open an oyster that he has placed on a towel .,2.0,2.0,2.0,2.0,0.1575,0.8145,0.9804,0.8873,0.8876,0.8538,0.0,0.0131,0.1327,0.0134,0.0,0.0,0.0
+3,a person is using a tool to clean a shoe .,0.0302,a man is using a knife and explaining how to properly shuck an oyster .,4.0,4.0,4.0,4.0,0.2031,0.8302,1.0,1.0,1.0,1.0,0.0302,0.1949,0.1949,0.1949,0.0302,0.0302,0.0302
+4,a man is cracking open oysters with a tool and towel .,0.7827,a man is cutting open an oyster that he has placed on a towel .,5.0,5.0,5.0,5.0,0.8019,0.9115,1.0,1.0,1.0,1.0,0.7827,0.8019,0.8019,0.8019,0.7827,0.7827,0.7827
+5,a man is talking and sharing how to properly shuck some oysters,0.8241,a man is using a knife and explaining how to properly shuck an oyster .,5.0,5.0,5.0,5.0,0.8413,0.902,1.0,1.0,1.0,1.0,0.8241,0.8413,0.8413,0.8413,0.8241,0.8241,0.8241
+6,"a man is in the kitchen using a cutting board , a towel and a knife opening oysters .",0.4542,a man wrapped an oyster with a towel and then shucked it,5.0,4.0,5.0,4.6667,0.8189,0.9083,0.9482,0.8599,0.8146,0.7784,0.8006,0.5674,0.6944,0.5368,0.6874,0.4902,0.4542

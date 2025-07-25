@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man attempting to break a board in martial arts , he misses .",0.5129,a man is attempting to break a board with a karate kick at a competition as others looked on .,4.0,5.0,5.0,4.6667,0.5748,0.8807,0.9873,1.0,0.9911,0.9899,0.5172,0.5748,0.5694,0.571,0.511,0.5172,0.5129
+2,a man is in a martial arts studio practicing karate moves .,0.3959,a man in instructing a karate class in different karate kicks .,5.0,5.0,4.0,4.6667,0.6252,0.8408,0.9355,0.6218,0.7471,0.6986,0.5542,0.3909,0.5951,0.493,0.5176,0.2742,0.3959
+3,a young boy in a karate uniform breaks a piece of wood in half .,0.2129,a man is doing karate and tries to break a piece of concrete with his foot .,4.0,4.0,3.0,3.6667,0.5579,0.8559,0.9846,0.8371,0.7879,0.7522,0.4738,0.3027,0.5106,0.3263,0.4176,0.1853,0.2129
+4,"a young karate student breaks a wooden board , being held by another student . he then starts to demonstrate another karate move .",0.3479,a guy does a kick to brake a board held by another person while people watch .,4.0,4.0,3.0,3.6667,0.6797,0.8871,0.9512,0.8263,0.8613,0.8347,0.6389,0.4295,0.5926,0.4526,0.5407,0.3204,0.3479
+5,a karate instructor holds a board in his hand while a child breaks the board by kicking it .,0.0645,a man is attempting to break a board with a karate kick at a competition as others looked on .,4.0,4.0,4.0,4.0,0.7335,0.8923,0.9243,0.6307,0.658,0.5629,0.7014,0.0939,0.6464,0.1627,0.6037,0.0,0.0645
+6,the karate student kicks a wooden board held by another student while others watch .,0.5779,a man karate kicks a board in front of a class .,5.0,5.0,5.0,5.0,0.8221,0.9106,0.955,0.8536,0.8412,0.8137,0.8046,0.6455,0.6675,0.6402,0.6532,0.584,0.5779

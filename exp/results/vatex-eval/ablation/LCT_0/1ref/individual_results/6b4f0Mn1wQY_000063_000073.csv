@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,started out with jet skis in the water then lots of big waves .,0.2273,people are riding their jet skis while huge waves are shown crashing inn .,5.0,5.0,5.0,5.0,0.577,0.8696,0.8471,0.6496,0.6294,0.5739,0.5136,0.3489,0.5007,0.328,0.4258,0.2513,0.2273
+2,a person is riding on a jet ski in the snow .,0.0,people are riding their jet skis while huge waves are shown crashing inn .,4.0,4.0,4.0,4.0,0.4079,0.8766,0.8375,0.5614,0.541,0.4765,0.3246,0.0,0.293,0.0,0.1935,0.0,0.0
+3,a group of people are riding a skis on a sunny day .,0.0,people are riding their jet skis while huge waves are shown crashing inn .,5.0,5.0,5.0,5.0,0.34,0.8522,0.8519,0.7884,0.7465,0.7026,0.2256,0.1629,0.2253,0.1159,0.091,0.0177,0.0
+4,a person on a jet ski going across the water and jumps off,0.0614,people are riding their jet skis while huge waves are shown crashing inn .,4.0,4.0,4.0,4.0,0.4297,0.8233,0.9493,0.7107,0.738,0.6818,0.3073,0.1975,0.3993,0.2272,0.2704,0.0254,0.0614
+5,a person is showing off his jet skiing skills in the water .,0.0,people are riding their jet skis while huge waves are shown crashing inn .,5.0,4.0,2.0,3.6667,0.5162,0.8625,0.7791,0.2717,0.164,0.0308,0.4391,0.0,0.3791,0.0,0.2801,0.0,0.0
+6,a person is water skiing across a large body of water .,0.0,people are riding their jet skis while huge waves are shown crashing inn .,5.0,5.0,5.0,5.0,0.362,0.8239,0.8972,0.6588,0.6636,0.5917,0.2257,0.0316,0.289,0.0387,0.137,0.0,0.0

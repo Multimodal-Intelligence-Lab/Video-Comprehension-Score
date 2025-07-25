@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,someone is putting chunked meat into a grinder that turns it into ground meat .,0.1303,close up of the parts of a grinder then footage of chunks of meets being ground up into mince .,5.0,5.0,5.0,5.0,0.6192,0.8429,0.8864,0.3712,0.5232,0.4344,0.5482,0.0,0.5703,0.23,0.4903,0.0,0.1303
+2,a person is using a meat grinder to grind meat .,0.0,close up of the parts of a grinder then footage of chunks of meets being ground up into mince .,5.0,5.0,5.0,5.0,0.5001,0.8245,0.8615,0.3387,0.2294,0.0653,0.3937,0.0,0.4197,0.0,0.2962,0.0,0.0
+3,a person is using a meat grinder to grind meat .,0.0,close up of the parts of a grinder then footage of chunks of meets being ground up into mince .,5.0,5.0,5.0,5.0,0.5001,0.8245,0.8615,0.3387,0.2294,0.0653,0.3937,0.0,0.4197,0.0,0.2962,0.0,0.0
+4,someone is grinding and displaying meat through a meat grinder .,0.2652,close up of the parts of a grinder then footage of chunks of meets being ground up into mince .,5.0,5.0,5.0,5.0,0.5717,0.8022,0.9139,0.7399,0.7266,0.6592,0.4661,0.4211,0.5314,0.4106,0.4158,0.2784,0.2652
+5,a man is pushing meat through a meat grinder,0.0,close up of the parts of a grinder then footage of chunks of meets being ground up into mince .,5.0,3.0,4.0,4.0,0.3848,0.808,0.8367,0.6562,0.6033,0.509,0.2387,0.0625,0.2647,0.0,0.09,0.0,0.0
+6,a man grinding meat through a meat grinder . into his hand .,0.0853,close up of the parts of a grinder then footage of chunks of meets being ground up into mince .,4.0,4.0,4.0,4.0,0.5127,0.8145,0.8988,0.6726,0.6541,0.5753,0.4017,0.2754,0.4578,0.255,0.3343,0.1105,0.0853

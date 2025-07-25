@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a product was packed with the liquid with the brand cover and name,0.1417,a machine is packing a bag and then seals the bag and moves on to the next bag .,4.0,2.0,4.0,3.3333,0.3644,0.7991,1.0,1.0,1.0,1.0,0.1887,0.3189,0.3517,0.3189,0.1725,0.1417,0.1417
+2,a man is using a machine to cut a piece of metal .,0.0,a machine is packing a bag and then seals the bag and moves on to the next bag .,2.0,2.0,2.0,2.0,0.3333,0.8393,1.0,0.9809,0.9697,0.9603,0.2056,0.1022,0.3333,0.0918,0.2056,0.0,0.0
+3,a man is operating a machine to make a large piece of metal .,0.0944,an automated device at a factory seals a large bag .,2.0,2.0,2.0,2.0,0.3676,0.8255,1.0,0.8723,0.8972,0.864,0.234,0.2608,0.3552,0.2725,0.1974,0.0798,0.0944
+4,a package is going along a conveyor belt in a factory and is sealed by the machinery .,0.3353,an automated device at a factory seals a large bag .,5.0,5.0,5.0,5.0,0.6679,0.829,0.9129,0.7212,0.6785,0.591,0.5976,0.5131,0.5854,0.4748,0.4753,0.3838,0.3353
+5,a group of factory workers are sealing bags of new product .,0.6327,a factory machine is seen sealing up bags with product to sell in them .,3.0,3.0,3.0,3.0,0.7635,0.8953,0.9091,0.7788,0.7331,0.6981,0.7359,0.5606,0.7399,0.646,0.7095,0.478,0.6327
+6,two people in a machine room are packing products into bags .,0.2963,a machine picking up and filling a bag and then sealing it .,4.0,4.0,4.0,4.0,0.6146,0.8587,0.9404,0.817,0.7771,0.72,0.5512,0.4813,0.5067,0.4159,0.4237,0.3751,0.2963

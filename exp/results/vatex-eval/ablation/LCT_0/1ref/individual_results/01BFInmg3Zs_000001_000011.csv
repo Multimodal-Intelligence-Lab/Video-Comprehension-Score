@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is sitting in a wheelchair and trying to move but is staying in place .,0.3734,the lady on a wheelchair is trying to do a wheelie exhibition at the party .,5.0,5.0,5.0,5.0,0.541,0.8413,0.9787,0.8723,0.8707,0.8463,0.4544,0.4738,0.531,0.4729,0.4425,0.3745,0.3734
+2,a man in a wheelchair is pushing a wheelbarrow in a wheelchair .,0.0,the lady on a wheelchair is trying to do a wheelie exhibition at the party .,5.0,4.0,5.0,4.6667,0.4803,0.8358,0.8228,0.7983,0.6207,0.5462,0.3782,0.349,0.3684,0.1627,0.2443,0.2211,0.0
+3,a boy is sitting in a wheelchair in a wheelchair and falls over .,0.0,the lady on a wheelchair is trying to do a wheelie exhibition at the party .,4.0,4.0,4.0,4.0,0.4352,0.8095,0.8735,0.4569,0.1999,0.0117,0.3022,0.0,0.3534,0.0,0.2012,0.0,0.0
+4,"the man in the wheelchair is walking his dog , while he pushes himself in the wheelchair .",0.0,the lady on a wheelchair is trying to do a wheelie exhibition at the party .,4.0,4.0,4.0,4.0,0.3671,0.7999,0.8312,0.5414,0.6557,0.5696,0.2089,0.0,0.2387,0.0349,0.0483,0.0,0.0
+5,"a woman in a wheel chair , talks about how she gets out of her vehicle into her wheelchair .",0.0,the lady on a wheelchair is trying to do a wheelie exhibition at the party .,2.0,2.0,2.0,2.0,0.5196,0.8247,0.7952,0.2401,0.0,0.0,0.4175,0.0,0.3959,0.0,0.2675,0.0,0.0
+6,a man with a dog attached to the front wheel of his wheelchair is rolling himself down a path .,0.0,the lady on a wheelchair is trying to do a wheelie exhibition at the party .,2.0,2.0,4.0,2.6667,0.3646,0.8029,0.9164,0.6307,0.6208,0.5277,0.2087,0.0,0.3066,0.0,0.1365,0.0,0.0

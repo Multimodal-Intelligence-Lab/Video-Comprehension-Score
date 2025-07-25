@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young child is in a chair while a man uses clippers to shave her head and she is using scissors to cut the other side .,0.3721,a young girl on stage is having her head shaved as spectators cheer on .,5.0,4.0,5.0,4.6667,0.7103,0.9082,0.973,0.7845,0.8358,0.8025,0.6663,0.4438,0.6344,0.4779,0.5789,0.331,0.3721
+2,a woman is getting her hair cut by a woman .,0.3175,a person is sitting down and getting their hair shaved by two other people .,4.0,4.0,4.0,4.0,0.4546,0.8781,1.0,1.0,1.0,1.0,0.3789,0.4175,0.4175,0.4175,0.3175,0.3175,0.3175
+3,a woman is sitting in a chair and getting her hair cut .,0.2698,a person is sitting down and getting their hair shaved by two other people .,5.0,5.0,4.0,4.6667,0.5546,0.8772,1.0,0.7876,0.8278,0.7682,0.4643,0.4034,0.5192,0.3595,0.4192,0.3198,0.2698
+4,a man in front of a mirror is trimming his facial hair .,0.0,a boy is having his hair shaved off by two men standing next to him .,4.0,3.0,1.0,2.6667,0.3042,0.8407,0.9787,1.0,0.9821,0.9761,0.1724,0.1148,0.199,0.0986,0.0006,0.0,0.0
+5,people are sitting in chair getting their hair shaved bald while others watch,0.5315,a person sitting in a chair having their head shaved by two others standing behind them .,5.0,5.0,4.0,4.6667,0.6923,0.9249,1.0,1.0,1.0,1.0,0.6472,0.5624,0.6717,0.5914,0.6236,0.5269,0.5315
+6,a woman gives a little boy who is sitting down a haircut using clippers .,0.129,a young person is sitting down having their hair shaved by two men .,4.0,3.0,4.0,3.6667,0.6163,0.8612,0.9419,0.7684,0.7305,0.643,0.5544,0.3762,0.4343,0.2859,0.3431,0.2392,0.129

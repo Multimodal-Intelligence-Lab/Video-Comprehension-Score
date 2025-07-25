@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,an assembly line with people being timed as they make pizzas,0.0,young kids are making a pizza and making a mess .,5.0,5.0,5.0,5.0,0.3999,0.8181,0.7703,0.3414,0.4731,0.356,0.2666,0.0,0.221,0.0,0.0478,0.0,0.0
+2,a little boy is eating a pizza with a fork and a knife .,0.2199,young kids are making a pizza and making a mess .,3.0,2.0,2.0,2.3333,0.421,0.815,0.9787,0.8515,0.9107,0.8904,0.2895,0.32,0.4084,0.3642,0.2741,0.1656,0.2199
+3,a young boy is making a pizza with his hands .,0.5265,young kids are making a pizza and making a mess .,5.0,4.0,4.0,4.3333,0.6785,0.9317,0.9714,0.7785,0.7287,0.7088,0.655,0.5871,0.6691,0.5588,0.6448,0.5568,0.5265
+4,a man folds and stretches pizza dough out on a kitchen table .,0.0,young kids are making a pizza and making a mess .,4.0,4.0,4.0,4.0,0.3746,0.7866,1.0,0.7071,0.714,0.6365,0.205,0.1156,0.3746,0.1242,0.205,0.0,0.0
+5,a family is home making pizza and adding sauce to the crust .,0.2394,young kids are making a pizza and making a mess .,4.0,5.0,4.0,4.3333,0.5292,0.8673,0.9565,0.7302,0.7137,0.6699,0.4572,0.3553,0.5078,0.3404,0.4325,0.2567,0.2394
+6,a chef uses a pizza roller to roll pizza dough .,0.0,young kids are making a pizza and making a mess .,4.0,4.0,4.0,4.0,0.3889,0.8046,0.92,0.5945,0.5372,0.4248,0.2405,0.0,0.3357,0.0,0.1744,0.0,0.0

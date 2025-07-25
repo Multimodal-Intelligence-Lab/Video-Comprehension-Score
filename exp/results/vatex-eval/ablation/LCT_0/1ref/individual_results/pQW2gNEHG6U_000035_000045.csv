@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two guys throwing hatchets at a wood wall trying to get them to stick .,0.0,in an area surrounded by wire to men or throwing access to the target,5.0,5.0,5.0,5.0,0.3051,0.7999,0.85,0.5,0.4815,0.3518,0.1313,0.0,0.1825,0.0,0.0,0.0,0.0
+2,a man is throwing a hatchet at a wooden target .,0.0,in an area surrounded by wire to men or throwing access to the target,5.0,5.0,5.0,5.0,0.2346,0.8598,0.785,0.4361,0.2679,0.1485,0.1098,0.0,0.025,0.0,0.0,0.0,0.0
+3,a group of people are throwing axes at a target .,0.0,in an area surrounded by wire to men or throwing access to the target,5.0,5.0,5.0,5.0,0.2398,0.8485,0.928,0.7556,0.7216,0.6718,0.104,0.0,0.1807,0.0,0.0344,0.0,0.0
+4,"a man does a two handed , over the head throw of an ax at a target and gets a bullseye as people cheer .",0.0,in an area surrounded by wire to men or throwing access to the target,5.0,4.0,4.0,4.3333,0.2433,0.8253,0.8408,0.5511,0.5704,0.4794,0.0831,0.0,0.1,0.0,0.0,0.0,0.0
+5,a man throws an ax at a target and nearly hits the center .,0.0,in an area surrounded by wire to men or throwing access to the target,3.0,5.0,5.0,4.3333,0.3033,0.8402,0.697,0.349,0.4651,0.3633,0.1707,0.0,0.0003,0.0,0.0,0.0,0.0
+6,a man in the woods with an ax hits the wood and then throw the ax to hit the wood again .,0.0,in an area surrounded by wire to men or throwing access to the target,5.0,5.0,5.0,5.0,0.2039,0.8076,0.9123,0.6431,0.6562,0.5743,0.0142,0.0,0.1273,0.0,0.0,0.0,0.0

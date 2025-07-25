@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person picks up a set of very heavy weights and throws them over his /her head and immediately drops them to the floor .,0.274,a man is performing an overhead lift with heavy weights .,5.0,4.0,5.0,4.6667,0.5632,0.8266,0.8205,0.7728,0.7279,0.6709,0.4715,0.4348,0.4676,0.3999,0.3559,0.3162,0.274
+2,a man in a gym is lifting a heavy barbell over his head .,0.5042,a man is performing an overhead lift with heavy weights .,5.0,5.0,4.0,4.6667,0.688,0.8608,0.8312,0.6522,0.7309,0.6874,0.6376,0.4946,0.6247,0.5732,0.564,0.4443,0.5042
+3,a man in a gym lifts a heavy barbell over his head .,0.4589,a man is performing an overhead lift with heavy weights .,5.0,5.0,4.0,4.6667,0.6899,0.8614,0.8077,0.5657,0.6654,0.6115,0.64,0.3705,0.616,0.5149,0.5543,0.3214,0.4589
+4,a man in a gym lifts a heavy amount of weight over his head and then drops it .,0.4125,a man is performing an overhead lift with heavy weights .,5.0,5.0,4.0,4.6667,0.686,0.8692,0.8471,0.6726,0.6247,0.5682,0.6388,0.5227,0.6293,0.4529,0.5735,0.4629,0.4125
+5,a young man is jerk-lifting a barbell loaded with weights over his head and then dropping them .,0.0397,a man is performing an overhead lift with heavy weights .,5.0,5.0,5.0,5.0,0.5803,0.8286,0.9164,0.5469,0.5275,0.4297,0.4935,0.2192,0.542,0.1858,0.4472,0.0738,0.0397
+6,"a man is squatting and then lifts a barbell above his head , then he drops the barbell .",0.1755,a man is performing an overhead lift with heavy weights .,5.0,5.0,4.0,4.6667,0.5108,0.8164,0.9162,0.7689,0.7268,0.6654,0.4007,0.3637,0.466,0.3269,0.346,0.2206,0.1755

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is pounding on a large tire with a sledge hammer in his swimming trunks .,0.6617,a man is striking a giant tire with a sledgehammer or exercise .,5.0,5.0,5.0,5.0,0.7168,0.8853,0.9497,1.0,0.9613,0.9556,0.6747,0.7168,0.7018,0.7054,0.6575,0.6747,0.6617
+2,a man is hitting a large tire with a sledge hammer .,0.8711,a man is striking a giant tire with a sledgehammer or exercise .,5.0,5.0,5.0,5.0,0.8864,0.938,1.0,1.0,1.0,1.0,0.8744,0.8828,0.8839,0.8834,0.8717,0.8705,0.8711
+3,a man is hitting a tire with a sledge hammer .,0.9105,a man hits a tire over and over with a sledgehammer,5.0,5.0,5.0,5.0,0.917,0.9409,1.0,1.0,1.0,1.0,0.9105,0.9158,0.9158,0.9158,0.9105,0.9105,0.9105
+4,a man is hitting a very large rubber tire with a sledge hammer .,0.8318,a man is striking a giant tire with a sledgehammer or exercise .,5.0,5.0,5.0,5.0,0.8545,0.9276,1.0,1.0,1.0,1.0,0.8382,0.8506,0.8516,0.8487,0.835,0.8338,0.8318
+5,"a man is hefting a sledge hammer over his head and striking a tire , over and over .",0.3468,a man hits a tire over and over with a sledgehammer,5.0,5.0,5.0,5.0,0.8876,0.8994,0.8798,0.6408,0.5888,0.5249,0.8739,0.5953,0.6727,0.3939,0.6593,0.5889,0.3468
+6,a man rapidly swings a sledge hammer over his head and repeatedly strikes a large rubber tire with it .,0.5462,a shirtless man swings a hammer at a tire again and again in a yard .,5.0,4.0,5.0,4.6667,0.8098,0.8882,0.8962,0.7852,0.7774,0.7479,0.7817,0.6033,0.7234,0.5994,0.7135,0.5507,0.5462

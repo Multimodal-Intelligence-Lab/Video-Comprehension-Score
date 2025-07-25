@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"in a bedroom , an individual is playing guitar without singing",0.0,a boy sitting on his bed playing a white electric guitar .,5.0,5.0,5.0,5.0,0.5305,0.8378,0.8798,0.4189,0.2792,0.1397,0.4396,0.0,0.4663,0.0,0.363,0.0,0.0
+2,a woman is sitting on a chair and playing a guitar .,0.0509,a boy sitting on his bed playing a white electric guitar .,3.0,2.0,4.0,3.0,0.4312,0.8807,0.928,0.7159,0.6804,0.6371,0.3542,0.2055,0.3871,0.1641,0.3041,0.0979,0.0509
+3,a woman is sitting on a bed and playing a guitar .,0.3617,a boy sitting on his bed playing a white electric guitar .,4.0,4.0,4.0,4.0,0.6015,0.9177,0.928,0.7159,0.6804,0.6517,0.5657,0.4433,0.5705,0.4143,0.532,0.3934,0.3617
+4,a man is playing an electric guitar in a house,0.0,a boy sitting on his bed playing a white electric guitar .,5.0,5.0,5.0,5.0,0.5142,0.8919,0.785,0.6379,0.5064,0.4466,0.4553,0.2383,0.3811,0.0399,0.3061,0.1461,0.0
+5,a man plays electric guitar alone in a room to rousing music .,0.0,a boy sitting on his bed playing a white electric guitar .,5.0,4.0,5.0,4.6667,0.5129,0.8559,0.7179,0.3882,0.2558,0.1306,0.4308,0.0,0.3215,0.0,0.2072,0.0,0.0
+6,a man is playing an electric guitar inside of a building .,0.0,a boy sitting on his bed playing a white electric guitar .,5.0,4.0,5.0,4.6667,0.4672,0.8788,0.7803,0.6698,0.5347,0.4706,0.3937,0.2046,0.3172,0.0036,0.223,0.0949,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man stabbed a balloon with a stick without getting it burst,0.3704,"a boy is holding a balloon with a stick in it , removes the stick , and then pops it .",5.0,5.0,4.0,4.6667,0.6725,0.8749,0.9623,0.689,0.6802,0.6259,0.6248,0.2963,0.6336,0.4618,0.5801,0.1923,0.3704
+2,a young boy is blowing up a balloon with his hands .,0.3182,a young person is seen demonstrating a stick going through a balloon without it popping .,4.0,3.0,4.0,3.6667,0.5689,0.8635,1.0,0.9654,0.9375,0.9247,0.5008,0.4535,0.5689,0.4335,0.5008,0.3671,0.3182
+3,a young boy is blowing up a yellow balloon with his hands .,0.4126,the boy doing a demonstrating on a balloon and pop it .,4.0,3.0,4.0,3.6667,0.6098,0.866,1.0,1.0,1.0,1.0,0.5494,0.5,0.5787,0.5,0.5135,0.4126,0.4126
+4,boys pop balloons very quickly while inside of a room .,0.2861,a young man pops a yellow balloon with a large needle like object .,5.0,5.0,5.0,5.0,0.5678,0.8779,0.9851,1.0,0.9895,0.9871,0.5033,0.424,0.4153,0.4179,0.2829,0.2936,0.2861
+5,two young boys pull two sticks out of a bucket with strings attached and it blows a bubble .,0.1686,a young person is seen demonstrating a stick going through a balloon without it popping .,2.0,1.0,2.0,1.6667,0.4501,0.8112,0.9922,0.9263,0.9462,0.9321,0.3143,0.3263,0.409,0.3404,0.263,0.1507,0.1686
+6,one guy is holding on to a bunch of balloons and another is popping them as fast as he can .,0.3418,the boy doing a demonstrating on a balloon and pop it .,4.0,3.0,4.0,3.6667,0.5683,0.8449,0.9859,0.8284,0.8432,0.8103,0.489,0.4463,0.5488,0.456,0.466,0.3301,0.3418

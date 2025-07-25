@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a group of women in a large room are moving rhythmically in unison to music , either exercising or line dancing",0.5983,a group of women are in a large room and watching a leader and follow aerobics move .,5.0,5.0,5.0,5.0,0.7462,0.8781,0.9187,0.8295,0.8398,0.7984,0.707,0.5942,0.7163,0.6375,0.6724,0.5717,0.5983
+2,a group of women are dancing in a dance studio .,0.5636,a large group of women dancing and clapping in a gym .,5.0,4.0,5.0,4.6667,0.825,0.9522,1.0,1.0,1.0,1.0,0.8162,0.6088,0.7613,0.6088,0.7377,0.5636,0.5636
+3,a group of women are doing a dance routine in a studio .,0.5182,a large group of women dancing and clapping in a gym .,5.0,5.0,5.0,5.0,0.8313,0.932,0.9756,1.0,0.9672,0.9622,0.819,0.7943,0.7793,0.5818,0.7584,0.7817,0.5182
+4,a group of women are in a gym doing a dancing class,0.4906,a group of women are in a studio and they are doing aerobics .,5.0,4.0,5.0,4.6667,0.8067,0.9318,0.9677,0.8946,0.8571,0.8357,0.7872,0.66,0.762,0.5645,0.7381,0.6022,0.4906
+5,an open air gym shows a large group of women particpating in a dance or excercise class .,0.2678,a group of middle age women taking an aerobics class .,4.0,4.0,4.0,4.0,0.6747,0.9025,0.8508,0.7603,0.7467,0.7021,0.6395,0.3886,0.5239,0.3775,0.4293,0.2809,0.2678
+6,a group of people are taking a group fitness dance class indoors .,0.5295,a group of people are doing an exercise dance together .,5.0,5.0,5.0,5.0,0.6669,0.911,0.9497,0.8512,0.7805,0.7554,0.6343,0.5889,0.6286,0.5713,0.5923,0.5487,0.5295

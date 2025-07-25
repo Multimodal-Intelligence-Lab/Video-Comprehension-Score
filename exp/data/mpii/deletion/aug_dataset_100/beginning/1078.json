@@ -1,0 +1,15 @@
+{
+  "ground_truth": "They stand next to each other guiltily, as Nullah climbs down from the tree. Sarah stares at him curiously, as he moves pensively away from her. She looks shocked. He eyes her steadily. He draws near her, and she looks up at him. She smiles and looks down at the ground. He gives a tight smile and walks off. She hesitates, then wanders through the long grass. In daylight, a steer lies dead next to a watering hole. Magarri checks the water. Drover, Sarah, and Nullah ride up. Magarri looks thoughtful.",
+  "iterations": {
+    "1": "Sarah stares at him curiously, as he moves pensively away from her. She looks shocked. He eyes her steadily. He draws near her, and she looks up at him. She smiles and looks down at the ground. He gives a tight smile and walks off. She hesitates, then wanders through the long grass. In daylight, a steer lies dead next to a watering hole. Magarri checks the water. Drover, Sarah, and Nullah ride up. Magarri looks thoughtful.",
+    "2": "She looks shocked. He eyes her steadily. He draws near her, and she looks up at him. She smiles and looks down at the ground. He gives a tight smile and walks off. She hesitates, then wanders through the long grass. In daylight, a steer lies dead next to a watering hole. Magarri checks the water. Drover, Sarah, and Nullah ride up. Magarri looks thoughtful.",
+    "3": "He eyes her steadily. He draws near her, and she looks up at him. She smiles and looks down at the ground. He gives a tight smile and walks off. She hesitates, then wanders through the long grass. In daylight, a steer lies dead next to a watering hole. Magarri checks the water. Drover, Sarah, and Nullah ride up. Magarri looks thoughtful.",
+    "4": "He draws near her, and she looks up at him. She smiles and looks down at the ground. He gives a tight smile and walks off. She hesitates, then wanders through the long grass. In daylight, a steer lies dead next to a watering hole. Magarri checks the water. Drover, Sarah, and Nullah ride up. Magarri looks thoughtful.",
+    "5": "She smiles and looks down at the ground. He gives a tight smile and walks off. She hesitates, then wanders through the long grass. In daylight, a steer lies dead next to a watering hole. Magarri checks the water. Drover, Sarah, and Nullah ride up. Magarri looks thoughtful.",
+    "6": "He gives a tight smile and walks off. She hesitates, then wanders through the long grass. In daylight, a steer lies dead next to a watering hole. Magarri checks the water. Drover, Sarah, and Nullah ride up. Magarri looks thoughtful.",
+    "7": "She hesitates, then wanders through the long grass. In daylight, a steer lies dead next to a watering hole. Magarri checks the water. Drover, Sarah, and Nullah ride up. Magarri looks thoughtful.",
+    "8": "In daylight, a steer lies dead next to a watering hole. Magarri checks the water. Drover, Sarah, and Nullah ride up. Magarri looks thoughtful.",
+    "9": "Magarri checks the water. Drover, Sarah, and Nullah ride up. Magarri looks thoughtful.",
+    "10": "Drover, Sarah, and Nullah ride up. Magarri looks thoughtful."
+  }
+}

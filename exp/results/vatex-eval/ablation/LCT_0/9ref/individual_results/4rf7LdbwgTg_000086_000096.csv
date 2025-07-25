@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person etches a design on the top of a wooden box .,0.6643,a man is carving a picture into the wooden box,5.0,5.0,5.0,5.0,0.7566,0.9015,1.0,1.0,1.0,1.0,0.7146,0.7078,0.7078,0.7078,0.6643,0.6643,0.6643
+2,a person is using a tool to carve a piece of wood .,0.4061,a man is using a tool to sketch an image on the front a wooden case .,5.0,3.0,4.0,4.0,0.5724,0.8733,0.9831,0.8879,0.8996,0.885,0.4997,0.4745,0.5253,0.4813,0.4565,0.3983,0.4061
+3,a person is using a tool to carve a design on a piece of wood .,0.4714,a man is using a tool to sketch an image on the front a wooden case .,5.0,3.0,4.0,4.0,0.5903,0.8652,1.0,0.8933,0.9155,0.9023,0.5184,0.5313,0.5813,0.5427,0.5161,0.4583,0.4714
+4,a person is drawing a design into a piece of wood with a wood burner .,0.5211,a person uses a woodburning technique to decorate a small wooden box .,5.0,3.0,4.0,4.0,0.71,0.8754,0.9756,0.8644,0.8684,0.8436,0.6521,0.5984,0.6923,0.6008,0.6308,0.5181,0.5211
+5,a man is using a tool to carve designs into a piece of wood .,0.5526,a man is using a tool to sketch an image on the front a wooden case .,5.0,3.0,4.0,4.0,0.6677,0.8798,1.0,0.8933,0.9155,0.904,0.6186,0.5966,0.6397,0.6064,0.5904,0.5415,0.5526
+6,a man carves the rest of the display sign into wood while outdoors .,0.4236,a man is carving a picture into the wooden box,3.0,2.0,4.0,3.0,0.511,0.8661,1.0,1.0,0.9794,0.9762,0.4355,0.511,0.4988,0.5008,0.4213,0.4355,0.4236

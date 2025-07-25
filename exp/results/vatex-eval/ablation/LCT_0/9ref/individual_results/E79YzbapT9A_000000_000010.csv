@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is running a brush through her blonde hair continulously .,0.7602,a woman is using a brush to brush her blonde hair .,5.0,5.0,5.0,5.0,0.847,0.9306,1.0,1.0,1.0,1.0,0.8356,0.7707,0.8032,0.7791,0.8005,0.751,0.7602
+2,a woman is brushing her hair with a curling iron .,0.4283,in an apartment a lady is brushing her hair hair,4.0,4.0,4.0,4.0,0.6153,0.9114,1.0,0.8887,0.827,0.8013,0.5673,0.5549,0.5638,0.487,0.4989,0.4993,0.4283
+3,a woman is brushing her hair with a blow dryer .,0.4774,a woman brushes her long hair in front of the camera .,4.0,1.0,4.0,3.0,0.7081,0.9056,0.9714,0.9679,0.9393,0.9298,0.6732,0.5616,0.6581,0.5483,0.6172,0.4928,0.4774
+4,a woman uses a brush and a blow dryer to style her hair .,0.6075,a woman is using a brush to brush her blonde hair .,4.0,4.0,4.0,4.0,0.7282,0.9041,0.9565,0.7804,0.7659,0.7411,0.6994,0.6518,0.7159,0.6452,0.6857,0.6148,0.6075
+5,a woman is blow drying her hair and styling with a brush .,0.2869,a woman with long blonde hair brushes it incessantly .,4.0,4.0,4.0,4.0,0.6949,0.9009,1.0,0.8408,0.827,0.7947,0.6613,0.3703,0.5678,0.3821,0.5202,0.2525,0.2869
+6,a lady is combing her long silky hair with a brush,0.4281,a person brushes their long blonde hair with a brush .,5.0,5.0,5.0,5.0,0.7009,0.9122,0.941,0.509,0.646,0.6073,0.6639,0.2638,0.6231,0.4692,0.5819,0.2214,0.4281

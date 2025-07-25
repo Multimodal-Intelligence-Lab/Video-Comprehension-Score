@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person rubs a piece of metal on some wood that is below them,0.0,carpenter in a wooodwork shop uses a handheld pane to shave down a length of wood .,5.0,4.0,4.0,4.3333,0.4125,0.793,0.7951,0.4628,0.4191,0.2675,0.2592,0.0,0.2611,0.0,0.0683,0.0,0.0
+2,a man is using a wood saw to cut a piece of wood .,0.0,carpenter in a wooodwork shop uses a handheld pane to shave down a length of wood .,4.0,5.0,3.0,4.0,0.4447,0.8111,0.9243,0.6404,0.6592,0.5798,0.3153,0.1328,0.3992,0.1576,0.2592,0.0,0.0
+3,a man is using a tool to cut a piece of wood .,0.2517,carpenter in a wooodwork shop uses a handheld pane to shave down a length of wood .,5.0,5.0,4.0,4.6667,0.5291,0.7966,0.891,0.8125,0.79,0.7363,0.4088,0.4204,0.4715,0.4038,0.3365,0.2724,0.2517
+4,the person is cutting wood and doing some intricate wood works on the table .,0.0,carpenter in a wooodwork shop uses a handheld pane to shave down a length of wood .,4.0,5.0,4.0,4.3333,0.4872,0.7902,0.7969,0.2588,0.147,0.0,0.3511,0.0,0.3565,0.0,0.1857,0.0,0.0
+5,a man is shaving off wood from a piece of wood to make it smooth .,0.0,carpenter in a wooodwork shop uses a handheld pane to shave down a length of wood .,5.0,5.0,5.0,5.0,0.6433,0.8241,0.7873,0.349,0.277,0.1227,0.5672,0.0,0.547,0.0,0.4503,0.0,0.0
+6,a person is using a skill saw to cut through a piece of wood .,0.0,carpenter in a wooodwork shop uses a handheld pane to shave down a length of wood .,4.0,4.0,3.0,3.6667,0.416,0.8012,0.8831,0.5664,0.5663,0.4586,0.271,0.0,0.3387,0.0,0.1745,0.0,0.0

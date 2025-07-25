@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man is sitting on the ground , feeding pigeons bread crumbs",0.7185,a man is sitting down outside and feeding the birds some food .,5.0,5.0,5.0,5.0,0.7435,0.9113,1.0,1.0,1.0,1.0,0.7185,0.7435,0.7435,0.7435,0.7185,0.7185,0.7185
+2,a group of people are sitting on the ground eating a flock of pigeons .,0.3347,a man is sitting on the ground tossing food to a flock of seagulls .,4.0,4.0,4.0,4.0,0.5014,0.8832,1.0,1.0,1.0,1.0,0.4354,0.3853,0.4604,0.4124,0.389,0.2985,0.3347
+3,a man is feeding a flock of pigeons in the street .,0.0,a man is surrounded by tons of birds while eating lunch .,5.0,4.0,5.0,4.6667,0.6187,0.8737,0.8228,0.5603,0.4265,0.3135,0.5636,0.1364,0.5013,0.0,0.4293,0.052,0.0
+4,a person is feeding the birds that are floating in the water .,0.0055,a man is sitting on a sidewalk and feeding seagulls .,4.0,4.0,3.0,3.6667,0.5845,0.8705,0.8819,0.6213,0.6796,0.6092,0.5227,0.1184,0.5289,0.1848,0.4588,0.0141,0.0055
+5,"someone is feeding the dog treats , while a man is mowing his own lawn in the back .",0.0,a man is surrounded by tons of birds while eating lunch .,3.0,3.0,2.0,2.6667,0.2424,0.8366,0.8784,0.6228,0.5875,0.4693,0.0945,0.0,0.0873,0.0,0.0,0.0,0.0
+6,a person feeding treats to a dog while a man is mowing the grass in the background .,0.0,a man is surrounded by tons of birds while eating lunch .,3.0,3.0,2.0,2.6667,0.2807,0.834,0.8684,0.4621,0.3996,0.2286,0.1375,0.0,0.1248,0.0,0.0,0.0,0.0

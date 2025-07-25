@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy is outside and tosses a frisbee to the adult by the swing set .,0.5839,a child plays frisbee with an adult in the backyard .,5.0,5.0,5.0,5.0,0.6988,0.874,1.0,0.9199,0.9298,0.9166,0.6553,0.6725,0.6735,0.6363,0.6132,0.6253,0.5839
+2,a man is throwing a frisbee in the air and then throws it in the air .,0.3743,a kid is playing frisbee in the backyard outside with his dad . .,4.0,4.0,4.0,4.0,0.6054,0.8851,0.9787,0.8515,0.9107,0.8884,0.5542,0.4643,0.5686,0.4992,0.4941,0.3308,0.3743
+3,a man is throwing a frisbee at a man who is in the yard .,0.4765,a child plays frisbee with an adult in the backyard .,4.0,4.0,4.0,4.0,0.7085,0.9337,1.0,1.0,1.0,1.0,0.6878,0.5272,0.6307,0.5606,0.6045,0.4457,0.4765
+4,an adult throws a frisbee to a small child and the child throws it back to him .,0.5595,a small child throws a frisbee to an older man that has difficulty walking .,5.0,3.0,2.0,3.3333,0.8257,0.9132,0.8133,0.6927,0.6895,0.66,0.8071,0.5794,0.5705,0.5749,0.5549,0.5641,0.5595
+5,a child and his father are playing frisbee in the backyard .,0.6879,a boy and an older man throw a frisbee to each other in the backyard .,5.0,5.0,4.0,4.6667,0.8921,0.9639,1.0,0.8408,0.827,0.8032,0.888,0.7302,0.7732,0.7257,0.7419,0.693,0.6879
+6,the boy is throwing a disc in front of a crowd of people .,0.6277,a little boy throws a disc to another person outside .,4.0,3.0,2.0,3.0,0.7083,0.8841,1.0,1.0,1.0,1.0,0.67,0.6656,0.7083,0.6709,0.67,0.6217,0.6277

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a bunch of people are at a rock concert and a mosh pit starts to open up .,0.0,people jamming out to music at a rock concert outside .,5.0,4.0,3.0,4.0,0.5588,0.8755,0.883,0.5374,0.5022,0.4315,0.4961,0.1721,0.5003,0.1092,0.4293,0.0623,0.0
+2,a large crowd of people are gathered around in a circle .,0.0,people jamming out to music at a rock concert outside .,4.0,4.0,4.0,4.0,0.204,0.7941,0.873,0.5545,0.6782,0.5948,0.0,0.0,0.0882,0.0,0.0,0.0,0.0
+3,a large group of people are dancing in a mosh pit .,0.0,people jamming out to music at a rock concert outside .,5.0,5.0,5.0,5.0,0.3454,0.7916,0.7917,0.4828,0.5998,0.4945,0.1731,0.0,0.1731,0.0,0.0,0.0,0.0
+4,a group of people are at a concert and they are all dancing in a mosh pit .,0.0,people jamming out to music at a rock concert outside .,5.0,4.0,5.0,4.6667,0.4646,0.8459,0.7917,0.4414,0.5668,0.4879,0.367,0.0,0.3237,0.0553,0.2005,0.0,0.0
+5,a group of people are dancing in a mosh pit at a show .,0.0,people jamming out to music at a rock concert outside .,5.0,5.0,5.0,5.0,0.3336,0.7946,0.8953,0.4,0.553,0.4374,0.1613,0.0,0.2557,0.0,0.0633,0.0,0.0
+6,a mosh pit full of people go crazy dancing at a concert .,0.0,people jamming out to music at a rock concert outside .,5.0,5.0,5.0,5.0,0.4531,0.8195,0.8136,0.3366,0.2142,0.0412,0.3326,0.0,0.3278,0.0,0.1798,0.0,0.0

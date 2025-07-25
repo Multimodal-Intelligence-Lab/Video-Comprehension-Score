@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a child wearing a ladybug bike helmet dribbles a basketball out of doors .,0.4486,a girl with a pink helmet is dribbling a basketball .,5.0,5.0,5.0,5.0,0.762,0.937,0.9583,0.9387,0.9226,0.9111,0.7317,0.5281,0.6935,0.5198,0.6596,0.458,0.4486
+2,a young boy is dribbling a soccer ball in a driveway .,0.2522,a little kid dribbling a basketball in a side street wall,4.0,4.0,3.0,3.6667,0.5141,0.837,0.9804,1.0,0.9672,0.9582,0.4099,0.383,0.5044,0.3842,0.3981,0.2508,0.2522
+3,a young boy is dribbling a basketball on a basketball court .,0.4283,a child is dribbling a basketball while wearing a helmet .,4.0,3.0,4.0,3.6667,0.599,0.8893,0.9599,0.9336,0.8567,0.8376,0.5343,0.5582,0.5434,0.4936,0.4826,0.5012,0.4283
+4,videos of kids bouncing a basketball and try to slam dunk the ball .,0.142,a kid with a basketball in their hand and then bouncing it on the floor .,3.0,3.0,4.0,3.3333,0.5643,0.858,0.9783,0.8612,0.8824,0.849,0.4921,0.3112,0.4916,0.2655,0.4075,0.1972,0.142
+5,a group of kids running in squares and throwing basketballs .,0.2524,a little girl is moving her feet while bouncing a basketball .,3.0,1.0,4.0,2.6667,0.4539,0.8128,0.9787,0.9698,0.9743,0.9676,0.3281,0.403,0.4084,0.4057,0.2559,0.249,0.2524
+6,a group of people are watching while two kids dribble basketballs .,0.15,a little girl is moving her feet while bouncing a basketball .,2.0,2.0,4.0,2.6667,0.5001,0.8557,0.9565,0.8619,0.8446,0.8031,0.4158,0.3427,0.4077,0.3292,0.2495,0.2106,0.15

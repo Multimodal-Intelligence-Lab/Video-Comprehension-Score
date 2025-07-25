@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"three children , a girl and two boys , film themselves , then one of the boys falls off his chair backwards .",0.6368,three children are watching a video when a boy falls backward with his chair .,5.0,5.0,5.0,5.0,0.8001,0.9169,0.9391,0.6656,0.716,0.6902,0.782,0.5821,0.7872,0.645,0.7679,0.5724,0.6368
+2,a little girl is walking on a treadmill while a woman is talking to her .,0.0,three children are watching a video when a boy falls backward with his chair .,2.0,2.0,1.0,1.6667,0.1152,0.7941,0.9831,0.9234,0.9284,0.9025,0.0,0.0,0.0663,0.0,0.0,0.0,0.0
+3,two young girls are sitting in a chair and one of them falls down .,0.54,a group of children are sitting in chairs and then one falls backwards .,4.0,4.0,4.0,4.0,0.6452,0.8951,0.9419,0.8598,0.8616,0.8454,0.6037,0.5874,0.5961,0.5882,0.5436,0.5391,0.54
+4,a boy pulls a chair out from under another boy who is seated at a table with other children .,0.0,three children are watching a video when a boy falls backward with his chair .,4.0,2.0,4.0,3.3333,0.5347,0.866,0.8596,0.6012,0.6544,0.5872,0.4523,0.0817,0.4108,0.1563,0.3063,0.0,0.0
+5,a boy is sitting on a desk looking a screen when another boy comes up behind him and slaps the back of the other boy's head .,0.0,three children are watching a video when a boy falls backward with his chair .,3.0,3.0,3.0,3.0,0.4683,0.841,0.9487,0.834,0.8627,0.8218,0.3678,0.139,0.3993,0.1664,0.2858,0.0,0.0
+6,a young girl is sitting down on a chair and then the chair collapses while a young man looks on and they are talking .,0.4456,a young boy is sat on a chair and the chair falls backwards on him,4.0,2.0,4.0,3.3333,0.6486,0.8766,0.9773,0.8826,0.9033,0.8824,0.5991,0.5185,0.5944,0.514,0.5373,0.4507,0.4456

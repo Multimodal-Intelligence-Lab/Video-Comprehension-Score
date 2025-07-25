@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person moves on water with the aid of the ladder like object being held unto .,0.1091,a person rides on water gripping onto a floating parachute .,5.0,5.0,4.0,4.6667,0.5468,0.8337,0.975,0.7464,0.7837,0.7357,0.4564,0.2473,0.4965,0.2572,0.3961,0.0972,0.1091
+2,a man is water skiing on a lake with a parachute .,0.3651,a man is on water and is water skiing with one ski .,4.0,4.0,4.0,4.0,0.5848,0.9239,0.9677,0.8812,0.8576,0.8312,0.5183,0.472,0.5384,0.4414,0.4705,0.4285,0.3651
+3,a man is water skiing on a lake while music is playing in the background .,0.4555,a person is water surfing as loud music is played in the background .,5.0,5.0,5.0,5.0,0.6041,0.8997,1.0,1.0,1.0,1.0,0.5434,0.5143,0.554,0.5143,0.4803,0.4555,0.4555
+4,a person is towed behind a speed boat riding one waterski and reaches down and touches the water with one hand .,0.2582,a person is showing how they skiing in the water alone .,4.0,2.0,4.0,3.3333,0.5501,0.8625,0.9503,0.8766,0.8617,0.8334,0.4683,0.3944,0.4688,0.3839,0.3543,0.2708,0.2582
+5,a person is water skiing behind a boat and only using one ski .,0.5474,a man is on water and is water skiing with one ski .,5.0,4.0,5.0,4.6667,0.873,0.933,0.9569,0.7268,0.7392,0.6762,0.8638,0.5643,0.8614,0.5522,0.8514,0.5597,0.5474
+6,someone is water skiing on a ski board and does a jump with it .,0.4226,a person is participating in water skiing on a nice sunny day .,4.0,4.0,4.0,4.0,0.5574,0.8985,1.0,0.8723,0.8863,0.8685,0.4981,0.4926,0.5574,0.5007,0.4882,0.4133,0.4226

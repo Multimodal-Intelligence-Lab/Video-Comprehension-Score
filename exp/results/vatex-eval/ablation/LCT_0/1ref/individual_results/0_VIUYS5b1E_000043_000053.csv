@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a toddler is playing a keyboard using high pitched keys .,0.0,a young child is sitting at an organ playing the keys while a beat plays in the background .,5.0,5.0,5.0,5.0,0.5645,0.8439,0.8242,0.3198,0.2452,0.1055,0.4839,0.0,0.4716,0.0,0.3738,0.0,0.0
+2,a person is playing a song on a keyboard with a piano .,0.0,a young child is sitting at an organ playing the keys while a beat plays in the background .,4.0,4.0,4.0,4.0,0.4158,0.8421,0.8728,0.6667,0.6583,0.5942,0.3062,0.1237,0.3307,0.1126,0.2051,0.0,0.0
+3,a person is playing a song on an electric keyboard .,0.0,a young child is sitting at an organ playing the keys while a beat plays in the background .,5.0,5.0,5.0,5.0,0.4141,0.8453,0.8413,0.544,0.525,0.4381,0.3068,0.0,0.3035,0.0,0.1761,0.0,0.0
+4,a small female child is playing a keyboard inside of the house .,0.262,a young child is sitting at an organ playing the keys while a beat plays in the background .,5.0,5.0,5.0,5.0,0.5436,0.8555,0.9493,0.6943,0.7228,0.676,0.4665,0.3426,0.5193,0.3686,0.4381,0.2316,0.262
+5,a very young child tematively taps the keys on a keyboard,0.3584,a young child is sitting at an organ playing the keys while a beat plays in the background .,5.0,5.0,5.0,5.0,0.5403,0.8625,0.9262,0.8363,0.8306,0.8036,0.4671,0.4504,0.5037,0.4466,0.4246,0.3628,0.3584
+6,a little girl plinks out a series of notes on a piano .,0.0668,a young child is sitting at an organ playing the keys while a beat plays in the background .,5.0,5.0,4.0,4.6667,0.481,0.775,0.9706,0.678,0.7176,0.6357,0.3303,0.2344,0.4652,0.2767,0.31,0.0122,0.0668

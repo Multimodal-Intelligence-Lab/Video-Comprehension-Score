@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is dancing around the kitchen dressed up like superman .,0.0582,a person is wearing a halloween costume and is jumping with the legs in the kitchen,5.0,5.0,5.0,5.0,0.9407,0.9524,0.8182,0.4798,0.5394,0.4367,0.9378,0.3918,0.6048,0.2122,0.6014,0.386,0.0582
+2,a young girl is dancing to music in a room .,0.6132,a young woman in a costume dances back and forth in a room .,5.0,5.0,5.0,5.0,0.665,0.9118,1.0,1.0,1.0,1.0,0.6132,0.665,0.665,0.665,0.6132,0.6132,0.6132
+3,a young girl is dancing to music in a room .,0.6132,a young woman in a costume dances back and forth in a room .,5.0,5.0,5.0,5.0,0.665,0.9118,1.0,1.0,1.0,1.0,0.6132,0.665,0.665,0.665,0.6132,0.6132,0.6132
+4,a tutorial of a man performing a trick called board off superman in the air,0.0,a young woman in a costume dances back and forth in a room .,2.0,1.0,3.0,2.0,0.3057,0.8001,1.0,0.7612,0.7966,0.728,0.1178,0.0,0.1955,0.0,0.0,0.0,0.0
+5,a person with white shorts on is doing a dance in a kitchen .,0.4476,a person dressed in a superman costume does a dance to music across a kitchen .,4.0,4.0,4.0,4.0,0.5805,0.8761,1.0,1.0,1.0,1.0,0.5212,0.5227,0.5665,0.5203,0.5052,0.4504,0.4476
+6,"girl wearing shorts and socks , while spinning around a dance studio .",0.0716,"a boy dressed as superman , jumping around dancing in his room .",3.0,2.0,4.0,3.0,0.4064,0.8549,1.0,0.8933,0.9155,0.8984,0.3057,0.2086,0.375,0.2277,0.2689,0.0486,0.0716

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the video displays an overhead view of a large body of water with boats on it .,0.2773,upbeat electronic music plays over footage of a large body of water .,4.0,5.0,5.0,4.6667,0.5872,0.8502,1.0,1.0,1.0,1.0,0.5144,0.3785,0.4882,0.3856,0.398,0.195,0.2773
+2,a person is standing on the edge of a body of water with a fishing pole .,0.0,"people ride water vehicles on a body of water , and another person stands on the shore of the water .",2.0,2.0,2.0,2.0,0.3179,0.8859,0.9756,1.0,0.9794,0.9734,0.23,0.1838,0.1646,0.1666,0.0,0.0,0.0
+3,a man jumps off a cliff into a body of water .,0.0,"people ride water vehicles on a body of water , and another person stands on the shore of the water .",3.0,2.0,2.0,2.3333,0.2527,0.8572,0.9677,0.8819,0.8802,0.8423,0.0989,0.1464,0.1617,0.0982,0.0,0.0,0.0
+4,in a large body of water a group of people are floating .,0.1959,music plays as a body of water is shown from up high as if someone is flying .,5.0,3.0,3.0,3.6667,0.5113,0.9041,0.9831,1.0,0.9872,0.9847,0.4594,0.3332,0.3217,0.3246,0.1951,0.2062,0.1959
+5,a small boat moves in the water in the ocean outside with people in it,0.0,"people ride water vehicles on a body of water , and another person stands on the shore of the water .",5.0,3.0,4.0,4.0,0.3073,0.8555,0.9569,0.6904,0.6947,0.6269,0.1807,0.0,0.1855,0.0,0.0,0.0,0.0
+6,some people were floating around on the surface of the water,0.2214,a series of areas with spreading ripples on a river .,5.0,3.0,4.0,4.0,0.5028,0.8693,1.0,1.0,1.0,1.0,0.4281,0.392,0.4263,0.392,0.3401,0.2534,0.2214

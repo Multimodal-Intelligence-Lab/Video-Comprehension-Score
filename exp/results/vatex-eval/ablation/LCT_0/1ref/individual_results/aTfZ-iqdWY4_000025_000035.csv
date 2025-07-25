@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is playing frisbee golf and can be seen from a few different angles .,0.0,a man prepares to kick a ball at a great distance .,5.0,5.0,5.0,5.0,0.2453,0.7955,0.9565,0.6982,0.6787,0.5961,0.0512,0.0,0.211,0.0,0.0081,0.0,0.0
+2,a man is throwing a ball at a target in a park .,0.0368,a man prepares to kick a ball at a great distance .,4.0,3.0,2.0,3.0,0.33,0.841,1.0,0.8408,0.827,0.7943,0.2034,0.2032,0.33,0.1899,0.2034,0.0526,0.0368
+3,a man throws a frisbee and then throws it into a basket .,0.0,a man prepares to kick a ball at a great distance .,4.0,3.0,4.0,3.6667,0.1595,0.7908,0.941,0.7974,0.7265,0.6542,0.0,0.0,0.1068,0.0,0.0,0.0,0.0
+4,a man throws a ball into the air then attemps to juggle several balls,0.0,a man prepares to kick a ball at a great distance .,3.0,2.0,4.0,3.0,0.2878,0.8309,0.8988,0.5217,0.4902,0.3865,0.1428,0.0,0.2076,0.0,0.0462,0.0,0.0
+5,a guy with glasses is trying to juggle multiple balls .,0.0,a man prepares to kick a ball at a great distance .,2.0,2.0,2.0,2.0,0.178,0.7981,0.875,0.4188,0.5664,0.4568,0.0,0.0,0.0606,0.0,0.0,0.0,0.0
+6,at a field a young man is spinning around and throwing a discus .,0.0,a man prepares to kick a ball at a great distance .,5.0,2.0,4.0,3.6667,0.2384,0.7816,0.9599,0.7071,0.6906,0.6041,0.0256,0.0,0.2066,0.0,0.0,0.0,0.0

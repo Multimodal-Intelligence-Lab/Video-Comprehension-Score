@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man covers some bread in a red sauce he has,0.5153,a man is spreading a red sauce over two pieces of meat .,4.0,4.0,5.0,4.3333,0.7111,0.8924,1.0,0.8408,0.827,0.7831,0.6763,0.6277,0.6531,0.539,0.6113,0.5829,0.5153
+2,a man is demonstrating how to make a meal in a kitchen .,0.4133,a chef showing how he prepares a certain kind of dish .,5.0,5.0,5.0,5.0,0.6378,0.824,0.9796,0.8819,0.8923,0.8671,0.5366,0.589,0.6016,0.5415,0.4903,0.4741,0.4133
+3,a man is demonstrating how to cook scallops in a frying pan .,0.3594,a chef is putting tomato sauce on scallops in a frying pan .,4.0,4.0,4.0,4.0,0.6768,0.8775,1.0,0.7071,0.714,0.6445,0.6317,0.4731,0.6487,0.402,0.5996,0.4276,0.3594
+4,a man is seasoning a pan of food that he is cooking on the stove .,0.2169,a man uses a spoon to apply sauce on top of cooked chicken .,4.0,3.0,5.0,4.0,0.53,0.8503,1.0,0.8879,0.911,0.8933,0.4457,0.3786,0.4523,0.3464,0.3542,0.2673,0.2169
+5,an alarm beeps in the background while a man flips a piece of meat in a pan with a white sauce and uses a spoon to pour the sauce over the top of the meat .,0.1221,a chef in a hat and apron puts tomato sauce on a scallop .,4.0,3.0,4.0,3.6667,0.5885,0.8823,0.9508,0.912,0.9034,0.8766,0.5325,0.3192,0.4819,0.3127,0.4114,0.1304,0.1221
+6,a person puts veggies and different types of meat in a frying pan and fries them .,0.1921,a chef is putting tomato sauce on scallops in a frying pan .,2.0,3.0,4.0,3.0,0.4727,0.8406,0.9885,0.8815,0.9047,0.8784,0.3684,0.303,0.4375,0.321,0.3262,0.1708,0.1921

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a scene of two men while one is lifting a weight , the other is watching",0.2301,two men are in a exercise area one is laying on a machine while one assists him,5.0,5.0,5.0,5.0,0.7779,0.8575,0.9386,0.7326,0.7377,0.6754,0.7363,0.3405,0.7135,0.3433,0.6607,0.2309,0.2301
+2,a man is laying on a bench bench pressing a heavy weight .,0.6979,a man is laying down on a bench and raises the dumbbell over his head .,5.0,5.0,5.0,5.0,0.7627,0.9084,1.0,0.8723,0.8863,0.8717,0.7322,0.728,0.7627,0.7323,0.7322,0.693,0.6979
+3,a man is laying on a weight bench while another man spots him .,0.3991,a man is laying down on a bench and raises the dumbbell over his head .,5.0,5.0,5.0,5.0,0.8268,0.9446,0.9333,0.7876,0.7468,0.6929,0.8166,0.5211,0.7901,0.4487,0.7781,0.4566,0.3991
+4,a man in workout clothing is lifting weights in a benchpress machine at the gym .,0.1042,two men are in a exercise area one is laying on a machine while one assists him,5.0,5.0,4.0,4.6667,0.669,0.8575,0.9205,0.8369,0.8274,0.7888,0.6079,0.2762,0.5918,0.2679,0.5145,0.1143,0.1042
+5,a man stands over another man lying on a bench lifting up heavy weights .,0.3686,a man is laying down on a bench and raises the dumbbell over his head .,5.0,4.0,4.0,4.3333,0.7059,0.8989,0.8838,0.709,0.7007,0.65,0.6728,0.4665,0.5713,0.4602,0.5239,0.376,0.3686
+6,a man lifts weights and grunts as he exercises because the weights are heavy .,0.2891,a man lifts a barbell and then puts it back and flexes .,5.0,5.0,5.0,5.0,0.6316,0.9019,0.9404,0.803,0.7771,0.7281,0.5916,0.4359,0.551,0.4172,0.5021,0.3386,0.2891

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person continuously hits a punching bag hanging from the ceiling .,0.151,a thin individual punching a black and white punching bag .,5.0,5.0,5.0,5.0,0.5081,0.8578,0.8309,0.569,0.6755,0.6216,0.4265,0.1356,0.408,0.2718,0.3098,0.0,0.151
+2,a man is punching a punching bag in a room .,0.0,a thin individual punching a black and white punching bag .,5.0,5.0,5.0,5.0,0.4991,0.8917,0.9023,0.6168,0.5545,0.5004,0.4383,0.1879,0.4449,0.0967,0.3774,0.0893,0.0
+3,a man is punching a punching bag with his hands .,0.116,a thin individual punching a black and white punching bag .,5.0,1.0,5.0,3.6667,0.5631,0.8912,0.9023,0.6168,0.5545,0.5001,0.5098,0.2917,0.5158,0.2089,0.4567,0.2053,0.116
+4,"a man at at arcade or amusement facility , punching a bag on a punching machine .",0.0,a thin individual punching a black and white punching bag .,2.0,3.0,3.0,2.6667,0.4628,0.8526,0.9264,0.5751,0.5645,0.4892,0.3699,0.0659,0.4201,0.0484,0.3199,0.0,0.0
+5,a couple of people hitting a punching bag at the same time as it swings back and forth,0.1338,a thin individual punching a black and white punching bag .,4.0,2.0,3.0,3.0,0.4257,0.8383,0.8859,0.8182,0.791,0.7507,0.3149,0.2981,0.3517,0.2739,0.2267,0.1626,0.1338
+6,a man is punching a punching bag in an arcade with another man .,0.0,a thin individual punching a black and white punching bag .,3.0,3.0,3.0,3.0,0.379,0.8627,0.8005,0.3096,0.4465,0.3585,0.2802,0.0,0.2242,0.0,0.1007,0.0,0.0

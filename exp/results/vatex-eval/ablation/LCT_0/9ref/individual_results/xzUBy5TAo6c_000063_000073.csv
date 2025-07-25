@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy spins a fidget spinner and tries to toss it to a different finger .,0.5965,a kid spins a fidget spinner twice and tries to catch it but drops it both times .,5.0,5.0,5.0,5.0,0.7357,0.9115,1.0,1.0,1.0,1.0,0.7101,0.6364,0.6629,0.6364,0.6301,0.5965,0.5965
+2,a young boy is demonstrating how to shuffle a deck of cards .,0.2488,a young boy doing tricks with a fidget spinning devise .,4.0,4.0,4.0,4.0,0.447,0.8279,1.0,0.9737,0.9446,0.9303,0.332,0.3334,0.423,0.3782,0.3029,0.1947,0.2488
+3,a young boy is showing how to do a magic trick .,0.3323,a young boy playing with a spinning top style toy .,4.0,4.0,4.0,4.0,0.5438,0.8774,1.0,1.0,1.0,1.0,0.4801,0.4293,0.4827,0.4293,0.4105,0.3323,0.3323
+4,a boy shows off his fidget spinner while in his bedroom .,0.4541,a young boy doing tricks with a fidget spinning devise .,5.0,5.0,5.0,5.0,0.6582,0.8887,0.95,0.9387,0.892,0.8755,0.6154,0.5929,0.5951,0.5236,0.5361,0.5336,0.4541
+5,a closeup of a child playing with a fidget spinner,0.5589,a boy is sitting and playing with a fidget spinner .,5.0,5.0,4.0,4.6667,0.6513,0.9268,0.9714,0.8366,0.8529,0.8413,0.6238,0.5543,0.6281,0.5912,0.5987,0.5191,0.5589
+6,a little boy talking and showing his fidget spinner .,0.6337,a boy is sitting and playing with a fidget spinner .,4.0,4.0,4.0,4.0,0.6728,0.8933,1.0,1.0,1.0,1.0,0.6337,0.6728,0.6728,0.6728,0.6337,0.6337,0.6337

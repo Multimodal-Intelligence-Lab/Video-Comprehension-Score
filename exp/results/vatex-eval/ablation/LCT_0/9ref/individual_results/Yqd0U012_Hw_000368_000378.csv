@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a chess board is shown and as hands move the pieces around a beep sounds .,0.3401,a timer going off and someone makes a move on the chess board then clicks the timer .,5.0,4.0,5.0,4.6667,0.6771,0.8655,0.9373,0.693,0.7156,0.6382,0.6001,0.3918,0.6378,0.4504,0.5514,0.2698,0.3401
+2,a person is playing a game of chess on a table .,0.3281,a person playing chess moves a piece and takes a piece from the other player .,5.0,5.0,5.0,5.0,0.6817,0.8894,0.9298,0.8156,0.8165,0.7744,0.6421,0.4475,0.617,0.3671,0.5694,0.4134,0.3281
+3,a person is playing a game of chess on a table .,0.3281,a person playing chess moves a piece and takes a piece from the other player .,5.0,5.0,5.0,5.0,0.6817,0.8894,0.9298,0.8156,0.8165,0.7744,0.6421,0.4475,0.617,0.3671,0.5694,0.4134,0.3281
+4,a black and white chess board with white pieces is shown as someone places their hands on one of the pieces .,0.2182,a man is playing some chess versus what looks to be like a computer,5.0,5.0,4.0,4.6667,0.6134,0.8929,0.982,0.9273,0.9423,0.9267,0.567,0.375,0.522,0.3849,0.4302,0.2055,0.2182
+5,a group of men are sitting at a table and they are playing a game of chess,0.133,four red lights flash on a square as one person moves chess pieces on the chessboard .,4.0,4.0,4.0,4.0,0.4561,0.8419,0.9697,0.8723,0.8951,0.8674,0.354,0.296,0.3667,0.3139,0.1997,0.1103,0.133
+6,a group of people are sitting down and playing a chess match together .,0.2327,someone in a white long sleeve shirt is playing chess and makes a move using the white ponds .,4.0,4.0,4.0,4.0,0.4664,0.8427,0.975,0.9273,0.937,0.9221,0.3667,0.3726,0.4021,0.3791,0.2611,0.2247,0.2327

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a puzzle is being assembled piece by piece while music plays .,0.5343,a person working a puzzle with music playing in the background,5.0,5.0,5.0,5.0,0.8125,0.8784,0.9404,0.8383,0.8107,0.7667,0.7865,0.4564,0.7686,0.5492,0.7371,0.3893,0.5343
+2,a woman is showing how to make a balloon animal .,0.0,young girl playing yellow puzzle in fast motion over a green backgroung,1.0,3.0,3.0,2.3333,0.1583,0.783,1.0,1.0,1.0,1.0,0.0,0.1583,0.1583,0.1583,0.0,0.0,0.0
+3,a person is showing how to play a game of marbles .,0.0,young girl playing yellow puzzle in fast motion over a green backgroung,3.0,4.0,4.0,3.6667,0.2474,0.8516,1.0,1.0,1.0,1.0,0.0777,0.2025,0.2409,0.2025,0.0658,0.0,0.0
+4,a fast forward video of people putting together a puzzle .,0.0674,young girl playing yellow puzzle in fast motion over a green backgroung,5.0,5.0,5.0,5.0,0.7313,0.929,0.8171,0.6505,0.6657,0.5959,0.7107,0.2829,0.445,0.2389,0.32,0.1213,0.0674
+5,a group of people work on putting together a very large puzzle .,0.0,young girl playing yellow puzzle in fast motion over a green backgroung,4.0,3.0,4.0,3.6667,0.4946,0.897,0.925,0.6957,0.7468,0.6763,0.4366,0.1193,0.4044,0.1137,0.336,0.0,0.0
+6,a girl puts puzzle pieces together to complete a picture puzzle,0.5749,a young person putting a puzzle together piece by piece,5.0,4.0,4.0,4.3333,0.7298,0.9127,0.9412,0.8248,0.8187,0.7902,0.7039,0.6418,0.6993,0.6293,0.6705,0.5892,0.5749

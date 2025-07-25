@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a factory worker is monitoring a line where bottles of alcohol are getting labels applied .,0.4683,a person puts bottles on a machine that places labels on them .,5.0,5.0,5.0,5.0,0.662,0.8437,0.9557,0.8366,0.8491,0.8178,0.5993,0.553,0.6087,0.5596,0.5353,0.4604,0.4683
+2,a man is using a machine to fill up bottles of bottles .,0.5321,a man is operating a machinery that seals the bottles of wine,3.0,5.0,4.0,4.0,0.6898,0.8744,0.9787,0.8115,0.8781,0.8606,0.6429,0.5573,0.6244,0.5909,0.5705,0.4937,0.5321
+3,a man is using a machine to fill up bottles of wine .,0.7539,a man is operating a machinery that seals the bottles of wine,3.0,5.0,4.0,4.0,0.8,0.8922,0.9787,0.8515,0.9107,0.8999,0.7759,0.7652,0.7957,0.7804,0.771,0.7368,0.7539
+4,a machine is filling bottle with liquid and putting caps on bottles .,0.3937,an automated machine in a factory installs labels on bottles of liquid .,2.0,5.0,4.0,3.6667,0.7251,0.8688,0.9388,0.8892,0.7432,0.6835,0.6836,0.3914,0.6441,0.4284,0.5904,0.2497,0.3937
+5,several bottles of liquid are being created on an assembly line .,0.4595,glass bottles move along a manufacturing track while a person supervises a part of it .,4.0,5.0,4.0,4.3333,0.6764,0.8708,0.9697,0.979,0.9641,0.9547,0.6183,0.5781,0.5741,0.5716,0.4626,0.4677,0.4595
+6,bottles run through a bottling machine having the caps put on then back up at the end of the machine .,0.1283,a bottle of wine is in a factory and being processed,4.0,4.0,4.0,4.0,0.6063,0.8601,0.9756,0.9245,0.8612,0.8181,0.531,0.3469,0.5501,0.3069,0.4605,0.1786,0.1283

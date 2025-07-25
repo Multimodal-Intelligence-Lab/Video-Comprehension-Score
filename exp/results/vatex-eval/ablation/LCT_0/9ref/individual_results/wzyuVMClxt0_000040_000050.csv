@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is using a computerized mirror to try on clothing .,0.8102,a woman is using a digital screen to try on clothes .,5.0,5.0,5.0,5.0,0.9083,0.9304,1.0,1.0,1.0,1.0,0.8965,0.8253,0.8657,0.8253,0.8557,0.8102,0.8102
+2,a woman is demonstrating how to do a certain exercise .,0.0668,a woman is looking in the mirror at different clothing options .,3.0,2.0,2.0,2.3333,0.2949,0.8106,1.0,1.0,1.0,1.0,0.1194,0.2435,0.2435,0.2435,0.0668,0.0668,0.0668
+3,a woman is demonstrating how to use a piece of paper .,0.0227,woman at a store using new technology to see how various outfits would look without actually trying the garments on,3.0,2.0,2.0,2.3333,0.305,0.8346,1.0,1.0,1.0,1.0,0.1568,0.2555,0.2664,0.2237,0.121,0.0627,0.0227
+4,a woman looks through an assortment of clothing hanging up in a store .,0.4857,a woman is looking in the mirror at different clothing options .,4.0,4.0,4.0,4.0,0.6299,0.8692,0.9497,0.8673,0.8531,0.8268,0.5743,0.5009,0.6051,0.553,0.5456,0.4258,0.4857
+5,several women are looking at lingerie at a department store .,0.0762,a young woman using an electronic clothing display inside a clothing store as music plays .,4.0,3.0,4.0,3.6667,0.3384,0.8314,0.9281,0.9181,0.9011,0.8759,0.1974,0.2773,0.2852,0.2637,0.1031,0.0932,0.0762
+6,a young lady is looking through a pile of clothing as the person next to her hold a drink .,0.1521,a young woman using an electronic clothing display inside a clothing store as music plays .,4.0,3.0,4.0,3.6667,0.425,0.852,0.978,0.8321,0.8695,0.8417,0.325,0.2694,0.389,0.3008,0.2829,0.1141,0.1521

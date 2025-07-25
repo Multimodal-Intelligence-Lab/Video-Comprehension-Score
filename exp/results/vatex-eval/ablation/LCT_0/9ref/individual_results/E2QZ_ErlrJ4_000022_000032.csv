@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man dressed warmly is running on the ice and comes across a metal stand in the group which he picks up .,0.3963,a person running on the ice to a while where he reels the fishing line .,4.0,5.0,4.0,4.3333,0.6368,0.8453,0.9851,0.8845,0.8777,0.8505,0.5612,0.4991,0.5802,0.5078,0.4904,0.3856,0.3963
+2,a man is ice fishing in a frozen lake with a fishing pole .,0.2776,man and boy run across a frozen lake to a hold cut in the ice to check their catch .,4.0,5.0,4.0,4.3333,0.666,0.9255,0.95,0.8284,0.8084,0.7551,0.6219,0.4109,0.5748,0.3791,0.507,0.3199,0.2776
+3,a group of people are ice fishing in a frozen lake .,0.1116,a man is running towards something on a frozen lake .,4.0,4.0,4.0,4.0,0.6444,0.9093,0.9714,0.7974,0.7517,0.6958,0.6089,0.2875,0.5225,0.2501,0.4424,0.2116,0.1116
+4,a team of dogs is pulling the man on the sled over the snow and the frozen lake .,0.0,the man is running as he detects a catch in the hole .,3.0,2.0,2.0,2.3333,0.4746,0.8623,0.9419,0.8162,0.7827,0.7181,0.3907,0.0213,0.4371,0.0251,0.3472,0.0,0.0
+5,a guy is running through the snow in order to go attack a snowman .,0.2281,a person runs on ice to a drilled hole in the ice's center .,3.0,2.0,3.0,2.6667,0.5687,0.8233,0.9602,0.9583,0.9476,0.9352,0.4761,0.3593,0.5312,0.3872,0.4305,0.2218,0.2281
+6,a man is snow boarding using a large kite to pull him .,0.0,the man is running as he detects a catch in the hole .,2.0,2.0,1.0,1.6667,0.2321,0.7955,0.9756,0.9023,0.8959,0.8664,0.0152,0.0243,0.1593,0.0173,0.0,0.0,0.0

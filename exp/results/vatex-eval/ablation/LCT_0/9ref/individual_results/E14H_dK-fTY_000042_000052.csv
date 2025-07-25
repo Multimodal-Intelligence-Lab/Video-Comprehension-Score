@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man puts watermelon on a cutting board and talks about how to cut it .,0.8055,a man puts two halves of a watermelon face down on a cutting board and begins to explain what to do next .,5.0,5.0,5.0,5.0,0.8513,0.9123,0.9305,0.8241,0.838,0.8225,0.837,0.7933,0.8402,0.8098,0.8248,0.7898,0.8055
+2,a person is using a knife to cut a watermelon .,0.5291,a man is in a kitchen giving a tutorial on how to cut a watermelon,5.0,4.0,5.0,4.6667,0.7695,0.8891,0.9714,0.8408,0.7861,0.7447,0.7359,0.6187,0.7123,0.587,0.6764,0.5653,0.5291
+3,a person is using a knife to cut a watermelon .,0.5291,a man is in a kitchen giving a tutorial on how to cut a watermelon,5.0,4.0,5.0,4.6667,0.7695,0.8891,0.9714,0.8408,0.7861,0.7447,0.7359,0.6187,0.7123,0.587,0.6764,0.5653,0.5291
+4,someone is showing how to cut a watermelon with a watermelon knife .,0.7311,a man demonstrates how to trim a watermelon before serving it .,5.0,4.0,5.0,4.6667,0.7692,0.8835,1.0,1.0,1.0,1.0,0.7311,0.7692,0.7692,0.7692,0.7311,0.7311,0.7311
+5,a person use a particular technique to cut into a watermelon and then take a slice of watermelon sets it on a plate .,0.5909,a man demonstrates how to trim a watermelon before serving it .,4.0,4.0,4.0,4.0,0.7185,0.8854,0.9697,0.9742,0.9495,0.9385,0.6757,0.6729,0.6746,0.6644,0.6149,0.6013,0.5909
+6,a person is slicing a watermelon on a table and turns the melon and slices it again .,0.1796,a man has cut a watermelon in half and is now demonstrating a technique to serve it .,4.0,4.0,5.0,4.3333,0.7112,0.8883,0.95,0.6807,0.5912,0.506,0.6749,0.3849,0.6517,0.317,0.6079,0.2873,0.1796

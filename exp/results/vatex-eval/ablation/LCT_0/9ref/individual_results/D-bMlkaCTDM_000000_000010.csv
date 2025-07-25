@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy is showing how to do a back arch while on a blue mat .,0.2831,a man is in gym class and trying to tumble on some blue floor mats .,5.0,5.0,5.0,5.0,0.6839,0.8782,1.0,0.8723,0.8863,0.8542,0.64,0.4217,0.6235,0.4146,0.5713,0.3166,0.2831
+2,a man is doing push ups on a mat in a gym .,0.3148,a young man falls forward on a mat and then rolls over and does a bridge .,4.0,5.0,4.0,4.3333,0.5834,0.8711,0.9714,0.9722,0.937,0.9253,0.5108,0.4431,0.5126,0.4222,0.423,0.3396,0.3148
+3,a man does a series of flips on a mat in a gym .,0.4239,a young man falls forward on a mat and then rolls over and does a bridge .,5.0,4.0,3.0,4.0,0.687,0.8785,1.0,1.0,1.0,1.0,0.6367,0.585,0.5912,0.5244,0.5346,0.5184,0.4239
+4,a group of people together as a man shows his students how to stretch on a mat,0.0092,a man is in gym class and trying to tumble on some blue floor mats .,5.0,4.0,4.0,4.3333,0.4602,0.8365,0.9524,0.845,0.8955,0.8609,0.3325,0.169,0.413,0.2108,0.2741,0.0,0.0092
+5,a small boy takes a tumble off of an object while playing at the gym .,0.1815,a young boy falls on the floor and then arches his back like a crab .,4.0,3.0,1.0,2.6667,0.5386,0.8292,0.9599,0.8383,0.825,0.7708,0.4436,0.3611,0.4589,0.3657,0.3018,0.1755,0.1815
+6,to boys practice doing flips from the edge of a jumping mat .,0.2073,a young teen boy jumps on a mat and does a back bend .,4.0,4.0,1.0,3.0,0.5572,0.8493,1.0,0.803,0.7908,0.739,0.4786,0.3888,0.4967,0.3267,0.4074,0.2804,0.2073

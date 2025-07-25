@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man and woman have a rope climbing race but the guy is unable to climb the rope .,0.0,a man and a woman are racing to climb a rope and the woman wins .,5.0,5.0,5.0,5.0,0.7798,0.9406,0.7607,0.206,0.0539,0.0,0.7659,0.0,0.6931,0.0,0.6875,0.0,0.0
+2,a young girl is climbing up a rope in a park .,0.0867,a man and a woman are racing to climb a rope and the woman wins .,5.0,5.0,5.0,5.0,0.3967,0.8325,0.95,0.8128,0.7935,0.7519,0.2753,0.2578,0.3649,0.2397,0.2372,0.1085,0.0867
+3,a man is climbing up a rope in a gym .,0.1759,a man and a woman are racing to climb a rope and the woman wins .,4.0,4.0,4.0,4.0,0.494,0.8745,0.8438,0.8,0.7022,0.6595,0.4213,0.3674,0.4003,0.2793,0.3142,0.2767,0.1759
+4,a man jumps up and grabs the rope ; climbing it to the top .,0.0,a man and a woman are racing to climb a rope and the woman wins .,4.0,4.0,4.0,4.0,0.5355,0.8544,0.9199,0.3905,0.2471,0.1188,0.4563,0.0,0.495,0.0,0.4089,0.0,0.0
+5,a man is practicing rope climbing along with other people in the video,0.0,a man and a woman are racing to climb a rope and the woman wins .,5.0,5.0,4.0,4.6667,0.4812,0.8462,0.8937,0.4512,0.5996,0.5269,0.3869,0.0,0.4195,0.1348,0.314,0.0,0.0
+6,a man pulls himself up a rope to the top most part .,0.0,a man and a woman are racing to climb a rope and the woman wins .,2.0,4.0,4.0,3.3333,0.4854,0.8315,0.928,0.5897,0.5352,0.441,0.3811,0.1273,0.4455,0.0385,0.3331,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person creates a stacatto drum beat with their hands on wood,0.5536,"a person plays a drum beat on a table first with the palms of their hands , then the tips of their fingers .",5.0,4.0,5.0,4.6667,0.6899,0.8848,0.9756,0.8644,0.8611,0.8326,0.6495,0.6097,0.6509,0.605,0.6055,0.5589,0.5536
+2,a person is using a pen to make a beat on a table .,0.6128,a person taps out a musical beat on a table .,4.0,4.0,4.0,4.0,0.7499,0.9173,1.0,1.0,1.0,1.0,0.7186,0.6864,0.7342,0.641,0.701,0.6472,0.6128
+3,a person is sitting at a table and playing a beat with his hands .,0.6957,a person is hitting a table outside and is producing a beat with his hands .,5.0,5.0,5.0,5.0,0.8008,0.9188,1.0,0.8723,0.8863,0.8739,0.7796,0.7211,0.7633,0.7255,0.7304,0.6908,0.6957
+4,the person is beating their hands on the table to the beat of the music .,0.3804,a boy is tapping his hands and making music sounds .,5.0,4.0,4.0,4.3333,0.793,0.9406,0.9386,0.7915,0.8582,0.8352,0.7799,0.422,0.7007,0.4668,0.6744,0.3282,0.3804
+5,a person is making musical sounds by tapping with an object in their hand .,0.3867,a single person using their hands and fingers to drum a beat on top of a table .,5.0,4.0,4.0,4.3333,0.7415,0.9383,1.0,0.7612,0.7966,0.7457,0.7042,0.4994,0.7063,0.5029,0.664,0.3824,0.3867
+6,a person using a pen in his hand is making some music on the table,0.6594,a person is using their fingers and hands to make music on a table .,4.0,4.0,4.0,4.0,0.6999,0.9486,1.0,0.8792,0.929,0.9251,0.6836,0.6587,0.6952,0.6769,0.6787,0.6402,0.6594

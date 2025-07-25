@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two guitarists riffing and jamming on a stage with the band behind them .,0.0,three men are on a stage playng heavy metal music .,4.0,5.0,5.0,4.6667,0.3819,0.787,0.8137,0.3794,0.5175,0.3869,0.2146,0.0,0.2404,0.0,0.0348,0.0,0.0
+2,a group of people are playing instruments on a stage .,0.0,three men are on a stage playng heavy metal music .,5.0,5.0,5.0,5.0,0.4882,0.8534,0.8327,0.5999,0.4956,0.409,0.4003,0.1469,0.3853,0.0,0.2798,0.0003,0.0
+3,a man is playing a guitar while another man is playing the guitar .,0.0,three men are on a stage playng heavy metal music .,5.0,5.0,5.0,5.0,0.2522,0.8335,0.7273,0.0,0.0,0.0,0.1028,0.0,0.0,0.0,0.0,0.0,0.0
+4,"a man plays an electric guitar on a stage , whipping his hair around while a drummer plays drums in the background .",0.0,three men are on a stage playng heavy metal music .,4.0,3.0,4.0,3.6667,0.3883,0.8081,0.8531,0.407,0.4388,0.3055,0.243,0.0,0.283,0.0,0.1127,0.0,0.0
+5,a man is on stage playing a musical instrument while a song plays,0.0,three men are on a stage playng heavy metal music .,5.0,5.0,5.0,5.0,0.3832,0.8817,0.7382,0.6417,0.6866,0.6445,0.3004,0.0388,0.1644,0.1016,0.0523,0.0,0.0
+6,three people are strumming two guitars and a ukulele up on stage for an audience .,0.0,three men are on a stage playng heavy metal music .,3.0,3.0,5.0,3.6667,0.4025,0.8197,0.8406,0.3313,0.2129,0.0397,0.2711,0.0,0.2892,0.0,0.1329,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a couple of young boys petting a small donkey before going over to pet the deer .,0.4607,two children petting a donkey while an adult suggests that they go pet the deer afterwards .,4.0,5.0,3.0,4.0,0.8178,0.8969,0.9623,0.8045,0.827,0.7986,0.7968,0.4337,0.7824,0.4799,0.7574,0.4128,0.4607
+2,a little girl is petting a goat in a petting zoo .,0.2647,two young brothers are petting animals at a zoo outside .,4.0,4.0,3.0,3.6667,0.5167,0.8762,0.9787,0.8723,0.8707,0.8491,0.4485,0.3711,0.4395,0.37,0.3459,0.266,0.2647
+3,a little girl is petting a goat in a petting zoo .,0.2647,two young brothers are petting animals at a zoo outside .,4.0,4.0,3.0,3.6667,0.5167,0.8762,0.9787,0.8723,0.8707,0.8491,0.4485,0.3711,0.4395,0.37,0.3459,0.266,0.2647
+4,a man guides a child's hand to pet a goat .,0.1352,a pair of small boys are seen petting what appears to be a donkey .,5.0,3.0,3.0,3.6667,0.4688,0.8373,1.0,0.8723,0.8863,0.8565,0.3589,0.3036,0.4025,0.3146,0.2863,0.1213,0.1352
+5,a child and its father are petting a calm goat together whil the child laughs .,0.0,a couple of little kids are petting a animal outside,4.0,2.0,3.0,3.0,0.3837,0.8351,0.9482,0.7407,0.7756,0.7222,0.2541,0.0678,0.3054,0.1098,0.1594,0.0,0.0
+6,a young boy with his dad get a hug from mickey mouse .,0.0,a couple of little kids are petting a animal outside,3.0,3.0,2.0,2.6667,0.2343,0.8456,1.0,0.7273,0.7149,0.6455,0.0795,0.0,0.2148,0.0,0.0367,0.0,0.0

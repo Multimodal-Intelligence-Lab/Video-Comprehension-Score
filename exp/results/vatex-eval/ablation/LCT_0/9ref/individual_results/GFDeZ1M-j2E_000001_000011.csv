@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two women are in a tent and one woman licks the other woman's chest before taking a shot .,0.5248,"two women are shown , one licks the other's chest and then takes a shot , people talk about it .",5.0,5.0,5.0,5.0,0.7723,0.9232,0.9111,0.6454,0.642,0.6122,0.7533,0.4985,0.7405,0.5364,0.7189,0.4859,0.5248
+2,a man and a woman are standing in a room and one of them is laughing .,0.0,a woman lick another woman and then drinks a shot of alcohol,4.0,4.0,4.0,4.0,0.2466,0.8196,1.0,1.0,0.9913,0.9886,0.071,0.1363,0.2466,0.1499,0.071,0.0,0.0
+3,a man and a woman are standing in front of a wall and they are laughing .,0.0,a woman lick another woman and then drinks a shot of alcohol,4.0,4.0,4.0,4.0,0.1282,0.8191,0.9787,0.8536,0.8715,0.8313,0.0,0.0,0.0956,0.0,0.0,0.0,0.0
+4,a woman is looking into the camera while drinking a beer and burping .,0.0016,one woman licks another's chest as several people play a drinking game .,4.0,4.0,1.0,3.0,0.4097,0.8405,0.9655,0.8589,0.8637,0.8178,0.2627,0.2224,0.3105,0.2007,0.1796,0.0287,0.0016
+5,at a bar woman is taking shot off of a man .,0.3849,two young women are in a room taking shot of liquor,3.0,4.0,4.0,3.6667,0.539,0.8627,1.0,1.0,1.0,1.0,0.459,0.5047,0.4882,0.4743,0.4067,0.4205,0.3849
+6,at a bar a man takes a shot of alcohol and then a woman holds a lighter to his mouth .,0.0,a woman lick another woman and then drinks a shot of alcohol,1.0,2.0,3.0,2.0,0.448,0.864,0.934,0.5673,0.5882,0.4939,0.3575,0.0,0.3597,0.0,0.2131,0.0,0.0

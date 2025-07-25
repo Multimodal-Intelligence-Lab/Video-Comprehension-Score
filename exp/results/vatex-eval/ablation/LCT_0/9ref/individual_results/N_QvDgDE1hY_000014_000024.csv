@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two men work with sheet metal placed in heavy equipment in fast motion as music plays .,0.2613,two men are working on a production line for a sheet metal company .,5.0,5.0,5.0,5.0,0.6234,0.874,0.9685,0.7831,0.8308,0.7972,0.5691,0.3168,0.5446,0.356,0.479,0.224,0.2613
+2,a man is showing how to use a machine to work on a machine .,0.0272,two guys placing a metal tray in a machine and the machine bends it .,4.0,5.0,5.0,4.6667,0.4154,0.8688,1.0,0.7361,0.772,0.7267,0.3206,0.1489,0.3735,0.1884,0.249,0.0,0.0272
+3,a person is using a machine to fill a piece of metal .,0.0937,upbeat music plays as factory workers demonstrate how sheet metal is made .,3.0,4.0,5.0,4.0,0.5274,0.8548,0.9851,0.9002,0.917,0.8966,0.4219,0.259,0.4306,0.2726,0.3281,0.0768,0.0937
+4,a worker bends metal on a machine and explains his techniques .,0.3783,two workers bend sheet metal into a box using guides and a press .,3.0,4.0,4.0,3.6667,0.6672,0.8977,0.9851,0.9002,0.917,0.9012,0.6192,0.468,0.5419,0.4777,0.4747,0.3666,0.3783
+5,a man welds some metal tubes in slow motion,0.0,two workers bend sheet metal into a box using guides and a press .,3.0,2.0,4.0,3.0,0.2635,0.801,0.9851,0.9002,0.917,0.8944,0.0678,0.0715,0.1992,0.0885,0.0,0.0,0.0
+6,a man is operating some type of machine at a workshop .,0.219,men are working in a factory on a machine that bends metal .,4.0,5.0,5.0,4.6667,0.4322,0.8324,0.9796,1.0,0.9845,0.9809,0.3179,0.3961,0.3917,0.35,0.2692,0.2744,0.219

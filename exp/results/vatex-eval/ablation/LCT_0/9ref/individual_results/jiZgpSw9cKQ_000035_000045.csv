@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two young women passionately kissing each other as one touches the others cheek .,0.6666,two women kiss passionately as they look into each others eyes .,5.0,5.0,5.0,5.0,0.7863,0.9151,1.0,1.0,1.0,1.0,0.7665,0.6969,0.7808,0.6969,0.7605,0.6529,0.6666
+2,a man and a woman are kissing and kissing each other .,0.3454,two women kiss each other on the lips while outside .,4.0,4.0,4.0,4.0,0.5077,0.8639,0.9474,1.0,0.9189,0.9061,0.43,0.4804,0.4515,0.4345,0.3651,0.3985,0.3454
+3,a man and a woman are kissing and kissing each other .,0.3454,two women kiss each other on the lips while outside .,4.0,4.0,4.0,4.0,0.5077,0.8639,0.9474,1.0,0.9189,0.9061,0.43,0.4804,0.4515,0.4345,0.3651,0.3985,0.3454
+4,two women facing each other kiss while somebody in the background takes a picture .,0.5934,two women kiss passionately as they look into each others eyes .,3.0,3.0,3.0,3.0,0.6824,0.8863,1.0,1.0,0.9872,0.9847,0.6417,0.6392,0.6777,0.648,0.6278,0.5833,0.5934
+5,two ladies making out and one grabbing the others breasts,0.5045,two girls are kissing each other on the lip and one is grabbing the other one with her hand .,4.0,3.0,2.0,3.0,0.6344,0.8803,1.0,1.0,1.0,1.0,0.5847,0.5705,0.6236,0.5725,0.5725,0.4965,0.5045
+6,two women sit on a couch together and passionately kiss each other .,0.6131,two women with long hair tenderly kiss one another .,4.0,4.0,4.0,4.0,0.7665,0.9017,0.971,0.8933,0.8958,0.8793,0.7411,0.665,0.7146,0.6659,0.6835,0.6121,0.6131

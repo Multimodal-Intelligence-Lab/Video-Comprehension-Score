@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two women are petting a goat while a kid is talking in the background .,0.4548,a young girl pets a goat butt and her mom brushes it .,5.0,4.0,5.0,4.6667,0.6951,0.8561,0.8621,0.7253,0.7878,0.742,0.6259,0.5129,0.6345,0.5516,0.5515,0.4079,0.4548
+2,a group of children are walking around a small fence .,0.0684,a little girl walks towards a small black goat and pets it .,2.0,2.0,4.0,2.6667,0.3473,0.8425,1.0,0.9155,0.8863,0.8487,0.2253,0.287,0.2424,0.2151,0.1008,0.1538,0.0684
+3,a group of children are walking around a petting zoo .,0.0,a toddler girl dressed in a green and top and white shorts excitedly meets a baby goat .,2.0,2.0,4.0,2.6667,0.485,0.8221,0.9599,0.7341,0.7403,0.6571,0.3736,0.2312,0.4085,0.1701,0.2783,0.0383,0.0
+4,young girl walks up to pet a small goat where there are other small children .,0.4721,a young child attempts to pet a goat while adults watch .,4.0,5.0,5.0,4.6667,0.801,0.9383,0.9569,0.6839,0.7319,0.6703,0.7853,0.5432,0.7566,0.5026,0.7373,0.5127,0.4721
+5,"a little baby girl pet's a goat , and proceeds to talk to it .",0.4364,a young child attempts to pet a goat while adults watch .,5.0,4.0,5.0,4.6667,0.6679,0.8946,0.9543,0.6596,0.7801,0.7391,0.627,0.4381,0.6421,0.5249,0.5999,0.3335,0.4364
+6,a little girl brushes a goat and a woman talks to her .,0.4874,a young girl pets a goat butt and her mom brushes it .,4.0,3.0,4.0,3.6667,0.8185,0.9334,1.0,1.0,1.0,1.0,0.8025,0.5905,0.7792,0.5701,0.7596,0.533,0.4874

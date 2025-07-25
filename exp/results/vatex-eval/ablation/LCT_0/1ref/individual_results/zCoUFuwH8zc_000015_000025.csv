@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young child laying next to then patting a sleeping baby .,0.4832,a little boy lays on a baby and then pats the baby on the back .,5.0,5.0,5.0,5.0,0.6679,0.8735,0.922,0.612,0.7357,0.6974,0.6197,0.4191,0.6398,0.5485,0.5876,0.374,0.4832
+2,a baby is laying on a bed and playing with a baby .,0.2251,a little boy lays on a baby and then pats the baby on the back .,3.0,3.0,2.0,2.6667,0.5552,0.8655,0.9048,0.7137,0.6633,0.6109,0.4861,0.3768,0.5084,0.3294,0.432,0.2799,0.2251
+3,a baby is laying on a bed and a woman is talking to him .,0.0,a little boy lays on a baby and then pats the baby on the back .,3.0,2.0,2.0,2.3333,0.4497,0.8481,0.7983,0.4558,0.3005,0.1751,0.3511,0.0,0.3107,0.0,0.1872,0.0,0.0
+4,a baby crawls on the carpet and then someone leans down to kiss them .,0.0,a little boy lays on a baby and then pats the baby on the back .,4.0,5.0,5.0,4.6667,0.3761,0.8105,0.8365,0.4336,0.2852,0.1181,0.2302,0.0,0.2542,0.0,0.0798,0.0,0.0
+5,a baby is sleeping peacefully on a baby chair and holding on the side,0.0,a little boy lays on a baby and then pats the baby on the back .,4.0,3.0,4.0,3.6667,0.2263,0.8292,0.8634,0.4024,0.5489,0.456,0.067,0.0,0.1039,0.0,0.0,0.0,0.0
+6,a young boy gives a hug to an even younger child with a cast and bandages sitting in a chair .,0.0,a little boy lays on a baby and then pats the baby on the back .,3.0,3.0,3.0,3.0,0.2472,0.7982,0.9604,0.7802,0.8212,0.776,0.0568,0.035,0.2161,0.0833,0.0179,0.0,0.0

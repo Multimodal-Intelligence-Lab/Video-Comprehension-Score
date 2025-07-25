@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl wearing black and purple is riding on a jet ski in a river .,0.2828,a young girl is riding a jet ski on a river while music is playing in the background .,4.0,5.0,5.0,4.6667,0.6674,0.896,0.9859,0.8933,0.906,0.8791,0.6288,0.4449,0.5599,0.3457,0.5088,0.3871,0.2828
+2,a person is riding on a jet ski in a lake .,0.3655,a woman is standing on a jet ski skiing on water in a river .,5.0,5.0,5.0,5.0,0.6622,0.8965,0.9756,0.8983,0.8611,0.8409,0.6187,0.4481,0.511,0.446,0.44,0.3679,0.3655
+3,a man is riding a jet ski on a lake .,0.2781,a woman is riding jet ski out on a river and then she is squatting and takes off again .,4.0,4.0,4.0,4.0,0.5769,0.8817,1.0,1.0,1.0,1.0,0.5131,0.4126,0.4398,0.3653,0.3487,0.3338,0.2781
+4,a person rides off in to very strong waves on a water jetski .,0.1456,"a woman rides a jet ski round a body of water , with the handlebars raised and lowered .",4.0,4.0,4.0,4.0,0.5287,0.8622,0.9388,0.7486,0.7216,0.6426,0.4508,0.3192,0.4323,0.2668,0.3416,0.2067,0.1456
+5,a girl is holding a handle connected to a boat and water skiing .,0.3085,a girl is riding a personal water craft in a body of water .,5.0,2.0,5.0,4.0,0.544,0.8492,0.9384,0.755,0.7992,0.7539,0.4495,0.3404,0.5141,0.4272,0.4134,0.2037,0.3085
+6,someone is skiing in water behind a boat that is speeding .,0.1478,a lady is jet skiing in a lake or river while music is playing .,4.0,2.0,3.0,3.0,0.4746,0.841,1.0,0.8723,0.8863,0.8557,0.3625,0.3177,0.4049,0.3285,0.2447,0.134,0.1478

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man cuts pieces out of a pumpkin to make a jack o lantern .,0.4896,a person has drawn a face on a pumpkin and is carving pieces out to make a jack o lantern .,5.0,5.0,4.0,4.6667,0.7544,0.9216,0.971,0.904,0.8852,0.8591,0.7336,0.5237,0.7415,0.5136,0.7195,0.4494,0.4896
+2,a person is using a knife to carve a pumpkin .,0.5357,a man is using a knife to carve out square shapes on a large pumpkin .,5.0,5.0,5.0,5.0,0.775,0.9281,0.898,0.6864,0.6671,0.6413,0.7422,0.5747,0.7076,0.5485,0.6849,0.5627,0.5357
+3,a woman is carving a pumpkin on a table with a pumpkin .,0.6048,the young man is carving a pumpkin on the table for halloween .,5.0,4.0,4.0,4.3333,0.6872,0.921,0.9677,0.9387,0.8594,0.8474,0.6603,0.655,0.6767,0.636,0.649,0.6203,0.6048
+4,a large group of people is seen carving pumpkins together .,0.1539,the young man is carving a pumpkin on the table for halloween .,4.0,2.0,4.0,3.3333,0.683,0.8647,0.8937,0.7791,0.7107,0.6546,0.6334,0.3536,0.5829,0.2913,0.5177,0.2283,0.1539
+5,a pumpkin is shown as someone carves it out in fast motion .,0.5449,"a pumpkin is carved witha knife in time lapse , and a square is cut out of a drawn on pattern .",5.0,5.0,5.0,5.0,0.7379,0.8472,0.9101,0.6895,0.7128,0.6446,0.6756,0.5792,0.712,0.6108,0.6436,0.5296,0.5449
+6,a group of asian people carving pumpkins on a table in a large room .,0.4734,the young man is carving a pumpkin on the table for halloween .,4.0,3.0,3.0,3.3333,0.5724,0.8628,0.9655,0.9563,0.9413,0.932,0.5043,0.5528,0.5571,0.5457,0.4866,0.4817,0.4734

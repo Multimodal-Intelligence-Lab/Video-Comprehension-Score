@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,in a stadium a large group of people do formations together .,0.0,a female dance squad is performing a routing in front of a crowd at a gym .,5.0,5.0,4.0,4.6667,0.3525,0.8319,0.9497,0.8286,0.7298,0.6499,0.2081,0.2049,0.3182,0.1127,0.1021,0.0442,0.0
+2,a group of cheerleaders are performing a routine in front of a crowd .,0.5412,the group of people performed in front of a crowd .,5.0,5.0,4.0,4.6667,0.5898,0.9245,0.9831,1.0,0.9672,0.9645,0.5563,0.5898,0.5761,0.5759,0.5415,0.5563,0.5412
+3,a group of people are performing a dance routine in front of a crowd .,0.6527,the group of people performed in front of a crowd .,5.0,5.0,5.0,5.0,0.7115,0.9528,1.0,0.8644,0.8718,0.8654,0.6972,0.6634,0.7115,0.669,0.6972,0.6467,0.6527
+4,a dance troupe performs a routine in a school gymnasium .,0.6129,a female dance squad is performing a routing in front of a crowd at a gym .,5.0,5.0,4.0,4.6667,0.681,0.8857,1.0,1.0,1.0,1.0,0.6399,0.6706,0.6706,0.6706,0.6129,0.6129,0.6129
+5,a group of dancers are in a school gym doing a routine .,0.2726,"a dance team is laying on the floor of a gym , then rises , and each do a high kick .",5.0,4.0,4.0,4.3333,0.6304,0.8399,1.0,0.8819,0.8784,0.8439,0.5449,0.4055,0.5515,0.4078,0.4491,0.2697,0.2726
+6,a cheerleading squad performs in front of a crowd in a basketball court .,0.4839,a female dance squad is performing a routing in front of a crowd at a gym .,5.0,4.0,4.0,4.3333,0.6407,0.8766,1.0,1.0,1.0,1.0,0.5827,0.5671,0.5872,0.5535,0.5291,0.4996,0.4839

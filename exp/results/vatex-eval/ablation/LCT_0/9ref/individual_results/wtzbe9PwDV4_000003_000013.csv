@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man balances and rolls balls on his hands on a beach .,0.6276,a man contact juggling two balls while standing on the beach .,5.0,5.0,5.0,5.0,0.7853,0.9633,0.9787,0.8723,0.8707,0.851,0.7771,0.6775,0.7356,0.6769,0.7255,0.6282,0.6276
+2,a man is standing in front of a wall and doing tai arts .,0.1746,a man in a karate outfit waving his hands and arms around while balancing two balls .,2.0,3.0,2.0,2.3333,0.3709,0.8513,1.0,1.0,1.0,1.0,0.2611,0.3706,0.3536,0.3592,0.1674,0.1893,0.1746
+3,a man is standing on a beach and doing tricks with his arms .,0.4739,a man on the beach performs tricks with red balls .,4.0,4.0,4.0,4.0,0.6476,0.8925,0.9818,0.921,0.9146,0.8915,0.6052,0.5809,0.6139,0.5304,0.5674,0.5304,0.4739
+4,two men stand on exercise balls and throw smaller balls to each other .,0.1955,a young man in martial arts gear stands on a beach and rhythmically flips a red ball back and forth from the front and back of each hand at the same time .,2.0,2.0,2.0,2.0,0.4517,0.8659,0.9656,1.0,0.9761,0.9704,0.3364,0.3667,0.4001,0.3512,0.2689,0.2148,0.1955
+5,two men are using what appears to be ping-pong paddles to lob a ball back and forth .,0.0,a man in a karate outfit twirls around two red balls on his hands .,1.0,3.0,3.0,2.3333,0.2609,0.8217,0.9362,0.8776,0.8734,0.8386,0.0724,0.0623,0.1826,0.0578,0.0052,0.0,0.0
+6,the men are juggling balls while standing on workout balls .,0.3217,a man contact juggling two balls while standing on the beach .,3.0,4.0,4.0,3.6667,0.5054,0.9018,0.9244,0.8723,0.8554,0.8225,0.4516,0.433,0.4495,0.3883,0.3895,0.3712,0.3217

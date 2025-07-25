@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is pushing something accross the floor to the other side,0.428,a person pushes something across what look to be a ice platform,2.0,1.0,5.0,2.6667,0.499,0.8759,1.0,1.0,1.0,1.0,0.428,0.499,0.499,0.499,0.428,0.428,0.428
+2,a group of people are playing a game of curling .,0.3975,a group of people in a curling arena and man pushing a stone down the board .,1.0,5.0,3.0,3.0,0.7255,0.875,0.928,0.8284,0.7923,0.7339,0.6863,0.519,0.6637,0.4301,0.6157,0.4915,0.3975
+3,a group of people are playing a game of dodge ball .,0.0,a man pushes curling stones down a curling board to the other end .,4.0,1.0,2.0,2.3333,0.1975,0.8246,0.9831,0.8879,0.8996,0.8782,0.0269,0.0962,0.1837,0.108,0.0101,0.0,0.0
+4,a man roller skating down a driveway into a street .,0.0,a man pushes curling stones down a curling board to the other end .,2.0,2.0,2.0,2.0,0.2521,0.8092,0.9756,0.8644,0.8611,0.8227,0.0757,0.0544,0.2052,0.0507,0.0177,0.0,0.0
+5,a man uses roller skates to skate down his driveway and into a street .,0.0,a man pushes curling stones down a curling board to the other end .,5.0,1.0,2.0,2.6667,0.2639,0.7959,0.9846,0.8792,0.929,0.907,0.0751,0.0825,0.1965,0.1316,0.0,0.0,0.0
+6,several men on an ice rink with curling equipment practicing curling .,0.1448,a man pushes curling stones down a curling board to the other end .,1.0,4.0,4.0,3.0,0.5942,0.887,0.9569,0.6747,0.6871,0.6212,0.4991,0.2804,0.5508,0.2934,0.455,0.1291,0.1448

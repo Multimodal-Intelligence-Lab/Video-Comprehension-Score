@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a person is sitting at a table eating orange slices , while another places a foil pouch next to a fire .",0.0,outside a woman demonstrates how to properly cook food outdoors .,5.0,5.0,5.0,5.0,0.2363,0.7675,0.8733,0.3196,0.3349,0.1334,0.005,0.0,0.1255,0.0,0.0,0.0,0.0
+2,a group of people are roasting marshmallows over a fire .,0.0,outside a woman demonstrates how to properly cook food outdoors .,3.0,1.0,2.0,2.0,0.2445,0.7441,0.928,0.7556,0.7216,0.6258,0.0,0.0001,0.1859,0.0,0.0,0.0,0.0
+3,a group of people are roasting marshmallows over a fire .,0.0,outside a woman demonstrates how to properly cook food outdoors .,3.0,1.0,2.0,2.0,0.2445,0.7441,0.928,0.7556,0.7216,0.6258,0.0,0.0001,0.1859,0.0,0.0,0.0,0.0
+4,a woman is removing fried vegetables from a pan and putting them onto a plate .,0.0,outside a woman demonstrates how to properly cook food outdoors .,2.0,1.0,3.0,2.0,0.3181,0.7793,0.8832,0.4357,0.3753,0.1983,0.1249,0.0,0.2279,0.0,0.0092,0.0,0.0
+5,a woman is cooking vegetables on a stove's burner with a frying pan .,0.0,outside a woman demonstrates how to properly cook food outdoors .,3.0,1.0,4.0,2.6667,0.3974,0.8079,0.8171,0.5075,0.6261,0.5372,0.2541,0.0,0.2624,0.0374,0.0871,0.0,0.0
+6,a woman providing a demonstration of cooking techniques for vegetables on a hot stove .,0.0,outside a woman demonstrates how to properly cook food outdoors .,4.0,1.0,4.0,3.0,0.5982,0.8438,0.9129,0.3483,0.2563,0.1186,0.5238,0.0,0.5598,0.0,0.4783,0.0,0.0

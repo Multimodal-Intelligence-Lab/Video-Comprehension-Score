@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man rides a boogie board on a wave simulator,0.2178,person lying on boogie board riding a wave at the water park .,5.0,5.0,4.0,4.6667,0.6207,0.894,0.9474,0.7824,0.7855,0.7477,0.5757,0.3225,0.5704,0.2744,0.5195,0.2678,0.2178
+2,a person is sliding down a water slide in the water .,0.0092,a man laying down riding a wake board in a pool as the water flows .,5.0,5.0,5.0,5.0,0.42,0.8533,1.0,0.8943,0.8923,0.8642,0.3202,0.1889,0.3936,0.1754,0.2893,0.0032,0.0092
+3,a man is sliding down a water slide and falls into the water .,0.0816,a man being pushed into a wave pool by a lifeguard and body surfing .,3.0,4.0,4.0,3.6667,0.3758,0.8543,1.0,1.0,0.986,0.982,0.2693,0.2547,0.3624,0.2559,0.2288,0.0801,0.0816
+4,a man body surfing flow with the tide to the coast,0.3882,a young man is body surfing on an amusement park wave machine .,4.0,4.0,3.0,3.6667,0.5184,0.8747,0.9831,0.9766,0.9697,0.9654,0.4481,0.4686,0.472,0.4648,0.3964,0.3925,0.3882
+5,a man on a surfboard skimming the waves in the ocean .,0.4459,a man is on a board riding the wave at a swim park .,4.0,4.0,4.0,4.0,0.5405,0.8596,1.0,1.0,1.0,1.0,0.4459,0.5405,0.5405,0.5405,0.4459,0.4459,0.4459
+6,a man is on a surfboard and riding through waves of water .,0.6069,a man is on a board riding the wave at a swim park .,5.0,5.0,4.0,4.6667,0.6478,0.8957,1.0,1.0,1.0,1.0,0.6069,0.6478,0.6478,0.6478,0.6069,0.6069,0.6069

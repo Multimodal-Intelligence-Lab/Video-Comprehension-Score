@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a baby is sitting and staring as it leans forward .,0.3897,a little baby is sitting still while making baby noises .,5.0,5.0,5.0,5.0,0.6239,0.8606,0.8947,0.7735,0.7161,0.6702,0.563,0.5137,0.5796,0.4748,0.5115,0.435,0.3897
+2,a baby is sitting in a high chair and a woman is talking to him .,0.0,a little baby is sitting still while making baby noises .,4.0,2.0,2.0,2.6667,0.4836,0.8602,0.8766,0.5199,0.4211,0.3271,0.3997,0.0068,0.411,0.0,0.3152,0.0,0.0
+3,a baby is sitting in a chair and a woman is talking to him .,0.0,a little baby is sitting still while making baby noises .,4.0,2.0,2.0,2.6667,0.5401,0.8662,0.8947,0.5469,0.4648,0.3821,0.4691,0.1591,0.486,0.009,0.4066,0.0292,0.0
+4,"a baby is laying down and making noises and faces , while someone talks to it .",0.0,a little baby is sitting still while making baby noises .,4.0,3.0,3.0,3.3333,0.5695,0.8778,0.7159,0.349,0.4692,0.3953,0.5095,0.0,0.3986,0.0679,0.3149,0.0,0.0
+5,a baby is being held by someone while making noises with her mouth .,0.0335,a little baby is sitting still while making baby noises .,4.0,4.0,3.0,3.6667,0.5646,0.8937,0.8587,0.5945,0.5044,0.4454,0.5128,0.2676,0.493,0.1221,0.4326,0.1805,0.0335
+6,a baby is making noises and slobbering while being held by and adult .,0.0,a little baby is sitting still while making baby noises .,4.0,4.0,4.0,4.0,0.4934,0.8836,0.6986,0.6016,0.4108,0.3331,0.4267,0.1579,0.2749,0.0,0.1793,0.0469,0.0

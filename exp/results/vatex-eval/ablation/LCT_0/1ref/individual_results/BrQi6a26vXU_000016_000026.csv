@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is standing outside holding a spool of yarn .,0.0,"an elderly woman creating wool yarn with her fingers , along with a group of other people .",5.0,5.0,5.0,5.0,0.4255,0.8124,0.8654,0.5296,0.5199,0.409,0.2928,0.0,0.3362,0.0,0.1828,0.0,0.0
+2,a group of people are on a stage and they are weaving a large animal .,0.0,"an elderly woman creating wool yarn with her fingers , along with a group of other people .",2.0,1.0,3.0,2.0,0.2894,0.8162,0.6884,0.5793,0.4808,0.3639,0.1294,0.0,0.0,0.0,0.0,0.0,0.0
+3,a large group of people are gathered around a large group of people .,0.0,"an elderly woman creating wool yarn with her fingers , along with a group of other people .",5.0,4.0,5.0,4.6667,0.1869,0.8461,0.8492,0.6826,0.6596,0.5977,0.039,0.0,0.0426,0.0,0.0,0.0,0.0
+4,a woman is using a tool to roll up string while others are talking .,0.1241,"an elderly woman creating wool yarn with her fingers , along with a group of other people .",3.0,4.0,5.0,4.0,0.3531,0.7944,1.0,0.9045,0.9298,0.9116,0.1856,0.2848,0.3531,0.3042,0.1856,0.0996,0.1241
+5,"young woman shakes folded scarf lengthwise , moves scarf around head and drapes scarf over one shoulder .",0.0,"an elderly woman creating wool yarn with her fingers , along with a group of other people .",2.0,1.0,3.0,2.0,0.1798,0.7762,0.9212,0.6485,0.7134,0.6308,0.0,0.0,0.1097,0.0,0.0,0.0,0.0
+6,a woman is talking and holding a cardboard of yarn .,0.0,"an elderly woman creating wool yarn with her fingers , along with a group of other people .",3.0,2.0,5.0,3.3333,0.4404,0.8239,0.8021,0.6467,0.6025,0.5175,0.3209,0.1347,0.3024,0.0713,0.1534,0.0,0.0

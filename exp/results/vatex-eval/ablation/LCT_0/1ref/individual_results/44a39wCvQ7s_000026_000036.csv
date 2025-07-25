@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a large man is in a living room , holding a child face down on the floor and shoving his weigh into the child's shoulders .",0.0,a man does chiropractic work on a boy while in their living room .,5.0,5.0,5.0,5.0,0.4467,0.8617,0.7174,0.379,0.37,0.2689,0.3579,0.0,0.2288,0.0,0.105,0.0,0.0
+2,a man is standing in a living room and a woman is laughing .,0.0,a man does chiropractic work on a boy while in their living room .,3.0,1.0,1.0,1.6667,0.3966,0.8663,0.7917,0.5414,0.6431,0.588,0.3035,0.0,0.2379,0.0617,0.1202,0.0,0.0
+3,a man is standing in front of a tv and is trying to do a trick .,0.0,a man does chiropractic work on a boy while in their living room .,3.0,1.0,2.0,2.0,0.213,0.7935,0.8915,0.4675,0.6134,0.5128,0.0082,0.0,0.1172,0.0,0.0,0.0,0.0
+4,a man doing a flip onto cushions while in a living room .,0.146,a man does chiropractic work on a boy while in their living room .,4.0,1.0,4.0,3.0,0.4299,0.8594,0.937,0.6633,0.7767,0.7402,0.3367,0.1405,0.3916,0.2661,0.2921,0.0,0.146
+5,a guy lays on bed as a toddler stands and head butts his back .,0.0,a man does chiropractic work on a boy while in their living room .,2.0,1.0,1.0,1.3333,0.2801,0.7548,0.8988,0.6632,0.6449,0.5295,0.0462,0.0,0.199,0.0,0.0,0.0,0.0
+6,"two boys are having a pillow fight , while another little boy lays on the floor and watches .",0.0,a man does chiropractic work on a boy while in their living room .,2.0,1.0,1.0,1.3333,0.2511,0.7962,0.96,0.791,0.8231,0.7778,0.0594,0.0532,0.2199,0.0902,0.0202,0.0,0.0

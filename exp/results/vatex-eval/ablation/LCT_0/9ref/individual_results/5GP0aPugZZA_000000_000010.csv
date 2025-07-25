@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is demonstrating how to crack a woman's neck .,0.3333,a chiropractor slowly uses both hands to turn a woman's head to crack her neck .,5.0,4.0,4.0,4.3333,0.7866,0.908,0.898,0.847,0.7995,0.7613,0.765,0.4514,0.6787,0.4188,0.6302,0.3503,0.3333
+2,a woman is getting her hair cut by a woman .,0.0,a girl sits in a chair while another person adjusts her head .,2.0,4.0,2.0,2.6667,0.3092,0.8598,0.9796,1.0,0.9845,0.9795,0.1965,0.2243,0.2144,0.1416,0.0126,0.0627,0.0
+3,a man is getting his hair cut by a woman .,0.0,a girl sits in a chair while another person adjusts her head .,1.0,3.0,2.0,2.0,0.3702,0.8403,0.9796,1.0,0.9845,0.9798,0.2435,0.1819,0.2292,0.1674,0.0636,0.0122,0.0
+4,a woman looks towards the camera and adjust her neck back and forth,0.0666,a man holds the head and neck of a black woman and adjusts her neck with a slow movement .,3.0,3.0,4.0,3.3333,0.4779,0.8484,1.0,0.7984,0.8431,0.8027,0.3846,0.2048,0.4199,0.2208,0.3162,0.0606,0.0666
+5,a woman stretches and then pops her neck and fingers .,0.2145,a young woman with long braids getting her necked cracked by someone else .,2.0,4.0,4.0,3.3333,0.5436,0.8404,0.9756,0.8954,0.8992,0.8748,0.4569,0.3648,0.4654,0.3675,0.3639,0.2112,0.2145
+6,a woman talks about how to properly massage the neck area .,0.1659,a woman has her neck cracked by a person standing behind her .,4.0,4.0,2.0,3.3333,0.5052,0.8333,1.0,0.8723,0.8863,0.8499,0.4062,0.1763,0.4346,0.305,0.3214,0.0104,0.1659

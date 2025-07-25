@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of youngsters are competing in a race on riding lawnmowers .,0.0,a first person view of various people riding interesting go carts on a dirt track .,5.0,5.0,5.0,5.0,0.3515,0.7882,0.892,0.5376,0.5769,0.4632,0.1772,0.0,0.273,0.0,0.0776,0.0,0.0
+2,a group of people are racing around on a dirt track .,0.5015,a first person view of various people riding interesting go carts on a dirt track .,5.0,5.0,5.0,5.0,0.6184,0.8594,0.9425,0.8889,0.8906,0.8727,0.556,0.5707,0.5951,0.5715,0.5289,0.5005,0.5015
+3,a group of people are racing lawnmowers on a dirt track .,0.2729,a first person view of various people riding interesting go carts on a dirt track .,5.0,5.0,5.0,5.0,0.5491,0.8516,0.8966,0.7038,0.7281,0.6807,0.4705,0.3593,0.4971,0.3808,0.4095,0.2477,0.2729
+4,"the participants are riding atop small tractors , as they race around the track .",0.0,a first person view of various people riding interesting go carts on a dirt track .,5.0,5.0,5.0,5.0,0.4669,0.8171,0.9042,0.5906,0.6329,0.5507,0.3476,0.0974,0.4104,0.1578,0.2784,0.0,0.0
+5,a group of lawnmower gocarts race in a circle on a dirt track .,0.3417,a first person view of various people riding interesting go carts on a dirt track .,5.0,5.0,5.0,5.0,0.6662,0.8249,0.8799,0.5816,0.6147,0.5329,0.5954,0.372,0.6207,0.4217,0.5401,0.2973,0.3417
+6,riding lawn mower drag racing on a down town street .,0.0,a first person view of various people riding interesting go carts on a dirt track .,3.0,3.0,3.0,3.0,0.308,0.777,0.901,0.6651,0.6982,0.6116,0.1095,0.0,0.232,0.0089,0.0116,0.0,0.0

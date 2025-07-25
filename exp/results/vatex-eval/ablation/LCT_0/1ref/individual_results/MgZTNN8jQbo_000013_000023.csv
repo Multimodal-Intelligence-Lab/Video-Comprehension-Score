@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two men argue over a word while playing a game of scrabble .,0.0,two men playing scrabble while talking and making up funny words .,5.0,5.0,5.0,5.0,0.7602,0.9207,0.7517,0.2076,0.0,0.0,0.7396,0.0,0.6734,0.0,0.6535,0.0,0.0
+2,two men are sitting at a table playing a game of chess .,0.0919,two men playing scrabble while talking and making up funny words .,4.0,4.0,4.0,4.0,0.4286,0.8566,0.9134,0.7489,0.7345,0.6901,0.333,0.237,0.3745,0.2221,0.2698,0.1093,0.0919
+3,two men are sitting at a table playing a game of scrabble .,0.3748,two men playing scrabble while talking and making up funny words .,5.0,5.0,5.0,5.0,0.7589,0.887,0.8548,0.5877,0.5448,0.4868,0.7281,0.4567,0.7179,0.4001,0.6819,0.4338,0.3748
+4,a group of young men are talking and playing a game of scrabble .,0.0,two men playing scrabble while talking and making up funny words .,4.0,4.0,4.0,4.0,0.7243,0.8912,0.8257,0.2511,0.0777,0.0,0.6906,0.0,0.6661,0.0,0.6253,0.0,0.0
+5,two men are playing scrabble and being quite loud about the outcome .,0.7498,two men playing scrabble while talking and making up funny words .,5.0,5.0,5.0,5.0,0.7771,0.8912,1.0,1.0,1.0,1.0,0.7498,0.7771,0.7771,0.7771,0.7498,0.7498,0.7498
+6,two men are playing a game scrabble at the kitchen table .,0.1398,two men playing scrabble while talking and making up funny words .,5.0,5.0,4.0,4.6667,0.7043,0.887,0.9424,0.4594,0.4265,0.3535,0.6667,0.2325,0.6863,0.1858,0.6463,0.1891,0.1398

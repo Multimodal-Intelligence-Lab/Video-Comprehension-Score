@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is shown climbing in a tree while a loud machine hums .,0.4932,a man climbing down a tree with a chainsaw on his waist .,5.0,5.0,5.0,5.0,0.5591,0.8699,1.0,1.0,1.0,1.0,0.4932,0.5591,0.5591,0.5591,0.4932,0.4932,0.4932
+2,a man is climbing up a tree with a chainsaw .,0.7898,a man climbing down a tree with a chainsaw on his waist .,4.0,4.0,4.0,4.0,0.7957,0.9718,1.0,1.0,1.0,1.0,0.7898,0.7957,0.7957,0.7957,0.7898,0.7898,0.7898
+3,a man is climbing up a tree with a chainsaw .,0.7898,a man climbing down a tree with a chainsaw on his waist .,4.0,4.0,4.0,4.0,0.7957,0.9718,1.0,1.0,1.0,1.0,0.7898,0.7957,0.7957,0.7957,0.7898,0.7898,0.7898
+4,a man using a chainsaw high up in a tree to cut it down .,0.0,a man climbing down a tree with a chainsaw on his waist .,4.0,5.0,3.0,4.0,0.728,0.8821,0.8819,0.4444,0.1819,0.0726,0.6917,0.2368,0.6916,0.0,0.6504,0.1967,0.0
+5,"an man cuts the top off of a very tall tree , while he is secured to the trunk at a great height .",0.384,a man climbing down a tree with a chainsaw on his waist .,4.0,4.0,4.0,4.0,0.5547,0.8202,0.9818,0.8571,0.8814,0.8553,0.4571,0.4805,0.5465,0.4948,0.447,0.3666,0.384
+6,man with on a ladder cutting limbs off a tree with a chainsaw .,0.1869,a man climbing down a tree with a chainsaw on his waist .,4.0,4.0,3.0,3.6667,0.6087,0.8958,0.8819,0.685,0.5421,0.4889,0.5632,0.4287,0.5562,0.2477,0.5046,0.3622,0.1869

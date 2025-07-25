@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is putting together a box for an iphone while speaking in a foreign language .,0.4412,a person reviewing an electronic device in a foreign language .,4.0,5.0,4.0,4.3333,0.5221,0.8553,1.0,1.0,1.0,1.0,0.4412,0.5221,0.5221,0.5221,0.4412,0.4412,0.4412
+2,a person is showing how to open a deck of cards .,0.0,"a male puts back together the packaging of an item , while talking .",4.0,1.0,4.0,3.0,0.4142,0.8181,1.0,1.0,1.0,1.0,0.2614,0.2081,0.4142,0.2081,0.2614,0.0,0.0
+3,a man is showing how to open a card card .,0.2156,an individual is talking about the process of removing something from its packaging .,4.0,1.0,4.0,3.0,0.3896,0.8075,1.0,1.0,1.0,1.0,0.2156,0.3896,0.3896,0.3896,0.2156,0.2156,0.2156
+4,a man unboxes a bicycle and explains how it was packaged .,0.0,"a male puts back together the packaging of an item , while talking .",4.0,1.0,4.0,3.0,0.545,0.8134,0.9412,0.7507,0.6704,0.5569,0.4099,0.333,0.5165,0.2128,0.3729,0.18,0.0
+5,a man taking out a bunch of paper that was wrapped by a machine,0.1861,an individual is talking about the process of removing something from its packaging .,4.0,1.0,2.0,2.3333,0.3752,0.8293,1.0,1.0,1.0,1.0,0.2457,0.3752,0.3752,0.3752,0.2114,0.1861,0.1861
+6,a machine is wrapping reams of paper in clear plastic wrap and a man is removing them at the end .,0.1076,a guy holding a box putting a plastic thing on it then moving out of the way,4.0,1.0,3.0,2.6667,0.4017,0.8032,0.9711,0.8423,0.8347,0.7942,0.2551,0.2896,0.3444,0.2832,0.1837,0.1156,0.1076

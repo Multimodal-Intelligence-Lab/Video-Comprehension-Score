@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a lady is standing and doing dishes in front of a row of candles .,0.0572,two woman are standing at the kitchen sink washing dishes .,5.0,4.0,4.0,4.3333,0.4911,0.8445,0.84,0.7341,0.6392,0.5727,0.3974,0.3068,0.3942,0.2038,0.2826,0.1792,0.0572
+2,a young boy is sitting at a table eating a sandwich .,0.0,two woman are standing at the kitchen sink washing dishes .,1.0,3.0,1.0,1.6667,0.0774,0.7409,0.9804,0.8723,0.872,0.8272,0.0,0.0,0.0589,0.0,0.0,0.0,0.0
+3,a man is sitting at a table with a bottle of beer and then takes a drink .,0.0,two woman are standing at the kitchen sink washing dishes .,1.0,1.0,1.0,1.0,-0.0067,0.7278,0.924,0.6596,0.7697,0.6836,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,"in a kitchen , a woman and a young child are washing dishes together .",0.307,two woman are standing at the kitchen sink washing dishes .,5.0,4.0,3.0,4.0,0.6639,0.8872,0.7879,0.4459,0.5695,0.5148,0.6212,0.1654,0.5734,0.3516,0.5192,0.108,0.307
+5,a child and a women are both washing dishes in the kitchen sink .,0.301,two woman are standing at the kitchen sink washing dishes .,4.0,4.0,4.0,4.0,0.7107,0.9332,0.7595,0.6676,0.5176,0.4831,0.69,0.5323,0.6191,0.3213,0.5919,0.5183,0.301
+6,a person is cleaning their dishes in the sink in the kitchen .,0.0,two woman are standing at the kitchen sink washing dishes .,4.0,5.0,5.0,4.6667,0.6125,0.9158,0.642,0.3204,0.0457,0.0,0.5769,0.0,0.3964,0.0,0.3409,0.0,0.0

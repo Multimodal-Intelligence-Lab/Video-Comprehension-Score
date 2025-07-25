@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a hand is shown writing with nice handwriting on a piece of paper .,0.1811,"somebody is using a marker to write on a piece of paper , before picking up the paper and examining it .",5.0,5.0,5.0,5.0,0.4681,0.8588,0.9243,0.7465,0.7563,0.7163,0.3807,0.2875,0.4246,0.2968,0.33,0.1704,0.1811
+2,a person is using a pen to write on a piece of paper .,0.4634,"somebody is using a marker to write on a piece of paper , before picking up the paper and examining it .",5.0,5.0,5.0,5.0,0.6265,0.9215,0.8968,0.7643,0.7554,0.7345,0.5947,0.5113,0.5835,0.5055,0.548,0.4697,0.4634
+3,a person is using a pencil to write on a piece of paper .,0.3185,"somebody is using a marker to write on a piece of paper , before picking up the paper and examining it .",4.0,4.0,4.0,4.0,0.5268,0.9191,0.8968,0.7643,0.7554,0.7339,0.4852,0.3809,0.4724,0.3736,0.4259,0.3264,0.3185
+4,someone uses a pen and demonstrates how to make letters using calligraphy .,0.0,"somebody is using a marker to write on a piece of paper , before picking up the paper and examining it .",5.0,5.0,5.0,5.0,0.4247,0.8237,0.8684,0.6373,0.6291,0.5497,0.3016,0.0973,0.3375,0.0856,0.1957,0.0,0.0
+5,someone is using a calligraphy pen to write on a piece of paper,0.2966,"somebody is using a marker to write on a piece of paper , before picking up the paper and examining it .",5.0,5.0,5.0,5.0,0.5056,0.9239,0.8873,0.7781,0.7607,0.741,0.4649,0.3645,0.4428,0.3501,0.3969,0.3122,0.2966
+6,a person writes on a paper with a calligraphy pen,0.2883,"somebody is using a marker to write on a piece of paper , before picking up the paper and examining it .",5.0,5.0,5.0,5.0,0.4996,0.8546,0.8522,0.8954,0.8226,0.7924,0.4145,0.4412,0.4129,0.3918,0.313,0.3462,0.2883

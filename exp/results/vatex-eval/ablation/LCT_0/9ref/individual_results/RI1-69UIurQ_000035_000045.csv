@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is sitting at a computer pretending to play drums to music .,0.6996,a man is sitting by his computer listening to rock while playing air drums .,5.0,5.0,5.0,5.0,0.7836,0.915,1.0,1.0,1.0,1.0,0.7635,0.718,0.7735,0.7252,0.7525,0.6964,0.6996
+2,a man is sitting in front of a camera and is talking to the camera .,0.0,"the young man at the computer listens to loud rock music , playing air drums , not hearing the room door open",3.0,2.0,3.0,2.6667,0.2772,0.817,0.9831,0.8507,0.8523,0.8164,0.1119,0.1007,0.2523,0.1092,0.0813,0.0,0.0
+3,a man is sitting in front of a computer and is talking to the camera .,0.036,a man is sitting by his computer listening to rock while playing air drums .,4.0,4.0,4.0,4.0,0.487,0.8527,0.9831,0.9305,0.9284,0.9068,0.3984,0.1805,0.4503,0.178,0.3554,0.039,0.036
+4,a man sits at a drum set and plays the drums to a song that's also playing .,0.0763,a man is sitting at some monitors with headphones on and air drumming with his eyes closed .,4.0,2.0,4.0,3.3333,0.5958,0.8722,0.9195,0.7917,0.7918,0.7248,0.5135,0.1813,0.5405,0.2385,0.4372,0.0184,0.0763
+5,a man in headphones is drumming as music is played in the backgrown .,0.5045,"a young man in a blue shirt and headphones acts out a drum section , as a rock and roll song plays in the background .",4.0,4.0,5.0,4.3333,0.7738,0.9098,0.9287,0.8807,0.8492,0.8298,0.7449,0.5768,0.7179,0.5611,0.6899,0.5222,0.5045
+6,"a man listening to a track , plays along with it on an electronic drum set .",0.3603,"a man with headphones on , pretending to play the drums",4.0,3.0,4.0,3.6667,0.6782,0.8585,0.9419,0.7471,0.7901,0.7177,0.6078,0.4587,0.6287,0.4514,0.5474,0.3688,0.3603

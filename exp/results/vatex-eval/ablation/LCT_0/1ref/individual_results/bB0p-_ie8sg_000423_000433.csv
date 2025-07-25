@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is driving a motorcycle through a muddy rut in the road .,0.3755,someone rides a mountain bike down a muddy wooded trail .,5.0,5.0,5.0,5.0,0.4879,0.8201,1.0,1.0,1.0,1.0,0.3755,0.4879,0.4879,0.4879,0.3755,0.3755,0.3755
+2,a group of people are riding on a trail on a trail .,0.0,someone rides a mountain bike down a muddy wooded trail .,4.0,5.0,5.0,4.6667,0.3876,0.8431,0.928,0.4828,0.392,0.2788,0.2736,0.0,0.3401,0.0,0.2172,0.0,0.0
+3,a man is riding a motorcycle down a dirt road .,0.143,someone rides a mountain bike down a muddy wooded trail .,5.0,5.0,5.0,5.0,0.3044,0.8117,1.0,1.0,1.0,1.0,0.143,0.3044,0.3044,0.3044,0.143,0.143,0.143
+4,a motorycycle travels down a dirt road then the motorycle is seen traveling across a rough pathway section .,0.0,someone rides a mountain bike down a muddy wooded trail .,5.0,5.0,4.0,4.6667,0.355,0.7747,0.8978,0.5246,0.5657,0.4395,0.1675,0.0,0.2816,0.0,0.0727,0.0,0.0
+5,"a man is riding a motorcycle down a dirt road , through a corridor of trees , and then he rides off road .",0.0,someone rides a mountain bike down a muddy wooded trail .,5.0,5.0,5.0,5.0,0.3853,0.8271,0.8493,0.5186,0.5015,0.3973,0.2567,0.0,0.2762,0.0,0.1248,0.0,0.0
+6,"a person is riding a motorbike up a steep dirt hill , but the bike stalls near the top of the hill .",0.0,someone rides a mountain bike down a muddy wooded trail .,3.0,2.0,3.0,2.6667,0.2372,0.8305,0.9404,0.893,0.8921,0.8701,0.0815,0.1457,0.1888,0.1449,0.0233,0.0,0.0

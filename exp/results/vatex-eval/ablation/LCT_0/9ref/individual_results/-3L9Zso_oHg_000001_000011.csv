@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy in an auto shop picks up a donuts from a box and stuffs the whole thing in his mouth .,0.7054,a boy takes a doughnut out of a box and stuffs the whole thing in his mouth .,5.0,5.0,5.0,5.0,0.7711,0.9409,0.9737,0.8604,0.8848,0.8598,0.7567,0.7163,0.7571,0.7228,0.7418,0.6985,0.7054
+2,a young boy is eating a donut while a man talks to him .,0.3261,a boy takes a donut out of the box and eats the entire donuts in one bite,5.0,4.0,5.0,4.6667,0.6102,0.9004,0.8974,0.7106,0.7119,0.68,0.5417,0.4514,0.538,0.4268,0.4568,0.355,0.3261
+3,a young man is eating a donut while sitting in a chair .,0.6134,a young man eats a doughnut all at once in front of his friends .,4.0,3.0,4.0,3.6667,0.6583,0.8838,1.0,1.0,1.0,1.0,0.6134,0.6583,0.6583,0.6583,0.6134,0.6134,0.6134
+4,a small boy in a high chair is eating a messy donut .,0.0,a boy takes a donut out of the box and eats the entire donuts in one bite,4.0,4.0,4.0,4.0,0.5453,0.8348,0.9199,0.6578,0.6745,0.5928,0.4553,0.1378,0.47,0.1592,0.3651,0.0,0.0
+5,a child is sitting at a highchair picking pieces off a donut and eating them .,0.0393,a person get s doughnut and sticks the whole doughnut in his mouth .,3.0,2.0,3.0,2.6667,0.5037,0.8197,0.8999,0.6417,0.7414,0.6833,0.3946,0.0936,0.4235,0.2155,0.2967,0.0,0.0393
+6,a man and a little boy are each kneading dough while standing at a kitchen table .,0.0,a boy takes a donut out of the box and eats the entire donuts in one bite,3.0,1.0,2.0,2.0,0.3083,0.8135,0.9885,0.8879,0.8996,0.8722,0.1498,0.0965,0.1939,0.1083,0.0,0.0,0.0

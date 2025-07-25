@@ -1,0 +1,15 @@
+{
+  "ground_truth": "She finds the right page. Hermione glares at him. Xenophilius stares out of a window. Animated shadow puppets act out the story. Xenophilius moves from the window and finds a piece of paper. He takes a pen and draws a vertical straight line. He looks up, brushing back his long, straggly hair. Next, he draws a circle which contains the bottom half of the wand. Finally, he draws a triangle, surrounding the wand and the stone. Harry nods. Hermione looks anxious. He examines the teapot.",
+  "iterations": {
+    "1": "She finds the right page. Hermione glares at him. Xenophilius stares out of a window. Animated shadow puppets act out the story. Xenophilius moves from the window and finds a piece of paper. He takes a pen and draws a vertical straight line. Next, he draws a circle which contains the bottom half of the wand. Finally, he draws a triangle, surrounding the wand and the stone. Harry nods. Hermione looks anxious. He examines the teapot.",
+    "2": "She finds the right page. Hermione glares at him. Xenophilius stares out of a window. Animated shadow puppets act out the story. Xenophilius moves from the window and finds a piece of paper. Next, he draws a circle which contains the bottom half of the wand. Finally, he draws a triangle, surrounding the wand and the stone. Harry nods. Hermione looks anxious. He examines the teapot.",
+    "3": "She finds the right page. Hermione glares at him. Xenophilius stares out of a window. Animated shadow puppets act out the story. Xenophilius moves from the window and finds a piece of paper. Finally, he draws a triangle, surrounding the wand and the stone. Harry nods. Hermione looks anxious. He examines the teapot.",
+    "4": "She finds the right page. Hermione glares at him. Xenophilius stares out of a window. Animated shadow puppets act out the story. Finally, he draws a triangle, surrounding the wand and the stone. Harry nods. Hermione looks anxious. He examines the teapot.",
+    "5": "She finds the right page. Hermione glares at him. Xenophilius stares out of a window. Animated shadow puppets act out the story. Harry nods. Hermione looks anxious. He examines the teapot.",
+    "6": "She finds the right page. Hermione glares at him. Xenophilius stares out of a window. Harry nods. Hermione looks anxious. He examines the teapot.",
+    "7": "She finds the right page. Hermione glares at him. Xenophilius stares out of a window. Hermione looks anxious. He examines the teapot.",
+    "8": "She finds the right page. Hermione glares at him. Hermione looks anxious. He examines the teapot.",
+    "9": "She finds the right page. Hermione glares at him. He examines the teapot.",
+    "10": "She finds the right page. He examines the teapot."
+  }
+}

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is demonstrating how to apply nail polish to her hands .,0.2331,a female holds a bottle of nail varnish then starts to paint a nail that color .,5.0,4.0,5.0,4.6667,0.6313,0.8197,0.8735,0.5904,0.5865,0.4955,0.5502,0.3513,0.578,0.345,0.4851,0.2383,0.2331
+2,a woman is showing how to apply a nail to her nails .,0.3378,a female holds a bottle of nail varnish then starts to paint a nail that color .,5.0,4.0,5.0,4.6667,0.5969,0.8391,0.9649,0.6889,0.7254,0.6728,0.5197,0.4149,0.5823,0.4444,0.5022,0.3027,0.3378
+3,a woman demonstrates how to apply nail polish to her nails .,0.5521,a female holds a bottle of nail varnish then starts to paint a nail that color .,5.0,5.0,5.0,5.0,0.6849,0.8302,0.9557,0.8344,0.8473,0.8161,0.6205,0.6224,0.6703,0.6281,0.6029,0.5452,0.5521
+4,someone is getting their nails done . nail polish is carefully applied .,0.2792,a female holds a bottle of nail varnish then starts to paint a nail that color .,5.0,5.0,5.0,5.0,0.5836,0.7998,0.9673,0.6844,0.7223,0.6528,0.4794,0.3916,0.5695,0.4235,0.4617,0.2393,0.2792
+5,a person gets more nail polish and applies it to a toe nail .,0.5276,a female holds a bottle of nail varnish then starts to paint a nail that color .,4.0,4.0,4.0,4.0,0.6048,0.8365,1.0,1.0,1.0,1.0,0.5276,0.6048,0.6048,0.6048,0.5276,0.5276,0.5276
+6,a woman getting her toe and finger nails painted is shown at various steps throughout the process .,0.1653,a female holds a bottle of nail varnish then starts to paint a nail that color .,4.0,3.0,4.0,3.6667,0.5693,0.822,0.9302,0.5746,0.6276,0.547,0.4761,0.2505,0.537,0.3138,0.4368,0.0882,0.1653

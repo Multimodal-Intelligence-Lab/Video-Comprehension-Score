@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a small child in a cowboy hat riding a tractor .,0.8305,a little boy wearing a cowboy hat was driving a tractor,5.0,5.0,5.0,5.0,0.866,0.927,1.0,1.0,1.0,1.0,0.8555,0.8438,0.8438,0.8438,0.8305,0.8305,0.8305
+2,a young boy is driving a tractor on a lawnmower .,0.5803,a small kid is driving a gas tractor on a lawn and then stops .,4.0,5.0,5.0,4.6667,0.7585,0.913,0.95,0.9301,0.8999,0.8873,0.7261,0.6394,0.6987,0.6273,0.6583,0.594,0.5803
+3,a young boy is driving a lawnmower while a man talks to him .,0.7473,a young boy drives a riding lawnmower to meet an adult who is guiding him .,4.0,5.0,5.0,4.6667,0.7763,0.8854,1.0,1.0,1.0,1.0,0.7473,0.7763,0.7763,0.7763,0.7473,0.7473,0.7473
+4,a little boy is sitting and riding on a toy tractor .,0.2998,a young boy wearing a cowboy hat drives a grass-cutter type small tractor .,5.0,4.0,4.0,4.3333,0.7114,0.886,0.9404,0.763,0.7285,0.6653,0.6742,0.4484,0.6931,0.4162,0.6536,0.3384,0.2998
+5,a little boy rides and drives his toy tractor truck . around .,0.4032,a small kid is driving a gas tractor on a lawn and then stops .,5.0,4.0,4.0,4.3333,0.7322,0.8745,0.9859,0.8933,0.906,0.8898,0.6938,0.4837,0.7021,0.4909,0.6594,0.3947,0.4032
+6,a young boy is outside driving a large lawn mower .,0.3823,a young boy drives a riding lawnmower to meet an adult who is guiding him .,4.0,4.0,5.0,4.3333,0.7404,0.8669,0.971,0.6547,0.7297,0.6819,0.7005,0.4663,0.7107,0.457,0.6663,0.414,0.3823

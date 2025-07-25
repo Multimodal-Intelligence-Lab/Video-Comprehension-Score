@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man holds a tiny puppy and demonstrates trimming it's claws and talking .,0.5416,a woman holds a small puppy and shows its feet and holds nail clippers .,5.0,5.0,5.0,5.0,0.7166,0.8709,0.9783,0.8723,0.9216,0.9061,0.6746,0.5749,0.6926,0.5954,0.647,0.5321,0.5416
+2,a man is showing how to make a rock with his fingers .,0.0,the man in a gree sweater checks and trims the toenails of a small animal .,4.0,3.0,2.0,3.0,0.2213,0.8187,1.0,1.0,0.9687,0.9599,0.0488,0.0763,0.2213,0.0585,0.0488,0.0,0.0
+3,a person is demonstrating how to make something with their fingers .,0.0,the man in a gree sweater checks and trims the toenails of a small animal .,5.0,4.0,3.0,4.0,0.3168,0.8321,0.9583,0.8512,0.8524,0.8137,0.1736,0.0,0.2513,0.0,0.0944,0.0,0.0
+4,a person takes their pet's nail in their hand and slowly cuts it .,0.3129,a woman holds a small puppy and shows its feet and holds nail clippers .,5.0,5.0,5.0,5.0,0.6446,0.851,0.95,0.79,0.8003,0.7561,0.574,0.4302,0.5798,0.4376,0.4921,0.3039,0.3129
+5,a person carefully clipping the nails of a dog who is laying on the ground .,0.42,a man is trying to clip the nails on the paws of a tiny animal .,4.0,4.0,4.0,4.0,0.6208,0.8655,0.9873,0.8241,0.8696,0.8473,0.5578,0.4614,0.5476,0.5045,0.4704,0.3696,0.42
+6,someone is holding nail clippers and trying to clip a dog's nails .,0.3603,a man is holding a baby animal and is preparing to clip the animals nails .,5.0,5.0,5.0,5.0,0.7206,0.9159,0.967,0.8509,0.8674,0.8361,0.6896,0.3256,0.6717,0.4206,0.6352,0.2554,0.3603

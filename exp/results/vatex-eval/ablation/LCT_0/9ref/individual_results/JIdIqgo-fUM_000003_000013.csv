@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people playing a basketball game in front of other people,0.4868,a group of teenagers playing basketball while one person in the crowd cheers,5.0,5.0,5.0,5.0,0.6043,0.8763,0.971,0.8933,0.8958,0.8811,0.543,0.549,0.5851,0.5502,0.5265,0.4853,0.4868
+2,a group of people are playing basketball in a gym .,0.0742,a group of teenagers playing basketball while one person in the crowd cheers,5.0,5.0,5.0,5.0,0.5283,0.8848,0.8728,0.9111,0.6581,0.6136,0.4421,0.4083,0.3893,0.1808,0.2778,0.3312,0.0742
+3,a group of people are playing basketball in a gym .,0.0742,a group of teenagers playing basketball while one person in the crowd cheers,5.0,5.0,5.0,5.0,0.5283,0.8848,0.8728,0.9111,0.6581,0.6136,0.4421,0.4083,0.3893,0.1808,0.2778,0.3312,0.0742
+4,a basketball game is in progress and one team member make a basket .,0.4427,a basketball game is underway and someone makes a shot for their team .,5.0,5.0,5.0,5.0,0.8734,0.8908,0.8571,0.5972,0.6159,0.5398,0.8579,0.5388,0.7628,0.4526,0.7585,0.5305,0.4427
+5,a man dunks a basketball on the court while others are watching .,0.2372,a white basketball player on the black team landed a dunk in a basketball game against the white team and the crowd cheered,5.0,5.0,5.0,5.0,0.6624,0.8723,0.9244,0.814,0.7698,0.7194,0.613,0.4081,0.5398,0.3741,0.4339,0.2786,0.2372
+6,two teams of basketball players are gathered under the net and one player throw the ball and gets a basket .,0.6166,two teams are playing basketball on a court when one player gets a basket .,5.0,5.0,5.0,5.0,0.7355,0.9313,0.958,0.7649,0.7955,0.7625,0.716,0.5594,0.7239,0.643,0.7035,0.5474,0.6166

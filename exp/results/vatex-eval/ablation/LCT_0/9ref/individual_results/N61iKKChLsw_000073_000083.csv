@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two girls are in a room hitting each other with pillows and one falls onto the bed,0.6603,two girls are having a pillow fight and one falls on the bed .,5.0,5.0,5.0,5.0,0.8919,0.9408,0.9623,0.9428,0.8169,0.7901,0.885,0.7137,0.8876,0.6696,0.8805,0.6718,0.6603
+2,a group of people are having a pillow fight in a living room .,0.4931,two women have a pillow fight inside a dimly lit bedroom .,2.0,4.0,4.0,3.3333,0.7145,0.9029,1.0,1.0,1.0,1.0,0.6837,0.5744,0.6297,0.5712,0.5899,0.4969,0.4931
+3,two girls are having a pillow fight in a bedroom .,0.733,two girls are having a pillow fight and one falls on the bed .,5.0,5.0,5.0,5.0,0.8984,0.9764,0.9524,0.9301,0.8409,0.8277,0.8929,0.8322,0.8403,0.7477,0.8365,0.8311,0.733
+4,a little girl is on a bed pillow fighting with another girl .,0.7241,two girls are having a pillow fight with each other .,4.0,4.0,5.0,4.3333,0.8025,0.8961,0.924,0.9258,0.8049,0.7806,0.7779,0.7867,0.766,0.7547,0.7368,0.7601,0.7241
+5,a couple of girls inside of a room having a pillow fight then dancing,0.6965,two girls are having a pillow fight with each other .,4.0,4.0,4.0,4.0,0.7468,0.9115,1.0,1.0,1.0,1.0,0.7092,0.7251,0.7251,0.7251,0.6965,0.6965,0.6965
+6,"the girls , together with mom are playing pillow fight in the room .",0.4895,a woman and her friend have a raucous pillow fight with each other .,4.0,4.0,4.0,4.0,0.6926,0.8989,1.0,1.0,1.0,1.0,0.645,0.5686,0.6498,0.5686,0.5811,0.4895,0.4895

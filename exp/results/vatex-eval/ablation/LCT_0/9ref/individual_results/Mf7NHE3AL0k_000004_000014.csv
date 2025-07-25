@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a children's swimming race is happening while adults watch .,0.5725,children swim in a pool in their lanes while parents cheer them on .,5.0,5.0,5.0,5.0,0.702,0.8474,1.0,1.0,1.0,1.0,0.6426,0.598,0.689,0.6435,0.6271,0.518,0.5725
+2,a group of people are competing in a swimming competition .,0.3151,a group of swimmers are racing in a pool and finish at the end of the pool,5.0,5.0,5.0,5.0,0.6922,0.885,0.8764,0.6667,0.5639,0.4854,0.6447,0.5184,0.6454,0.3699,0.5909,0.4553,0.3151
+3,a group of people are competing in a swimming competition .,0.3151,a group of swimmers are racing in a pool and finish at the end of the pool,5.0,5.0,5.0,5.0,0.6922,0.885,0.8764,0.6667,0.5639,0.4854,0.6447,0.5184,0.6454,0.3699,0.5909,0.4553,0.3151
+4,a group of people are taking part in a swimming race .,0.2824,several people are swimming in a race while people at the edge of the pool scream encouragement .,5.0,5.0,5.0,5.0,0.7178,0.8848,0.8988,0.7359,0.6821,0.6046,0.6803,0.4039,0.6378,0.3343,0.5897,0.3525,0.2824
+5,swimmers compete against one another in a large indoor olympic sized pool .,0.24,3 swimmers race for the wall at the end of their laps .,5.0,4.0,4.0,4.3333,0.6282,0.8243,0.9262,0.7612,0.7629,0.7014,0.5489,0.3885,0.5865,0.3965,0.4984,0.2299,0.24
+6,several swimmers compete in a race by swimming in their lanes .,0.4129,3 swimmers race for the wall at the end of their laps .,5.0,5.0,5.0,5.0,0.7755,0.9215,0.88,0.7876,0.7187,0.6671,0.7564,0.5788,0.6251,0.5004,0.6013,0.5682,0.4129

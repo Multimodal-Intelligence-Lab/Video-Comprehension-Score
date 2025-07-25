@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man walked to the track and wore his mask when taking position to start a fencing fight with the opponents,0.0,two men in a break in a usa fencing match .,5.0,5.0,5.0,5.0,0.3778,0.8016,0.9281,0.6122,0.6629,0.5794,0.2238,0.0,0.3296,0.0613,0.1637,0.0,0.0
+2,a group of people are in a gym and they are fencing .,0.0,two men in a break in a usa fencing match .,5.0,5.0,5.0,5.0,0.398,0.8013,0.963,0.5657,0.4254,0.2829,0.2487,0.0,0.3748,0.0,0.2198,0.0,0.0
+3,a group of people are fencing in a gym .,0.0,two men in a break in a usa fencing match .,5.0,5.0,5.0,5.0,0.3762,0.8058,0.963,0.7253,0.6548,0.5717,0.2259,0.14,0.3522,0.0475,0.1961,0.0,0.0
+4,"indoors , at a competition two people are fencing while others watch on .",0.0,two men in a break in a usa fencing match .,4.0,5.0,5.0,4.6667,0.4733,0.8351,0.8365,0.6378,0.5396,0.4487,0.3693,0.1742,0.3703,0.0239,0.246,0.0111,0.0
+5,a pair of people compete in a fencing match in a gym .,0.0822,two men in a break in a usa fencing match .,4.0,5.0,5.0,4.6667,0.4701,0.8544,0.8312,0.5692,0.6757,0.6205,0.3798,0.069,0.3625,0.2158,0.2539,0.0,0.0822
+6,"in a gymnasium two students are engaged in a fencing match , as other students look on .",0.0995,two men in a break in a usa fencing match .,4.0,5.0,5.0,4.6667,0.4404,0.8477,0.8615,0.786,0.7331,0.6851,0.3399,0.2881,0.3505,0.2367,0.2338,0.1602,0.0995

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people are in kayaks on a river .,0.5948,a group of people in small kayaks with oars going down a river with some small rapids .,5.0,5.0,5.0,5.0,0.8013,0.9262,1.0,1.0,1.0,1.0,0.7849,0.7656,0.7803,0.6028,0.7579,0.7469,0.5948
+2,a group of people are riding on a kayak in the water .,0.475,a group of people on kayaks are taking a stroll on the water with the sun beaming out of the sky .,5.0,5.0,5.0,5.0,0.7246,0.9132,0.9756,1.0,0.9794,0.976,0.6913,0.5185,0.6794,0.4991,0.6406,0.4953,0.475
+3,a group of people are kayaking in a body of water .,0.6636,a group of people on kayaks are taking a stroll on the water with the sun beaming out of the sky .,5.0,4.0,5.0,4.6667,0.737,0.8998,1.0,1.0,1.0,1.0,0.7055,0.7227,0.6999,0.6995,0.664,0.6895,0.6636
+4,people are kayaking in an orange kayak down a muddy river .,0.3461,a bunch of people are in kayaks and riding down a rough river .,5.0,3.0,4.0,4.0,0.5765,0.8864,0.9599,0.8366,0.8209,0.7879,0.5222,0.363,0.5038,0.4204,0.4403,0.2519,0.3461
+5,two people row in a kayak down a large muddy river .,0.1645,a bunch of people are in kayaks and riding down a rough river .,5.0,2.0,4.0,3.6667,0.5441,0.8685,0.9804,0.6863,0.7669,0.7166,0.475,0.2914,0.5349,0.2743,0.4645,0.1842,0.1645
+6,two people kayak down a very muddy river .,0.4701,a bunch of people are in kayaks and riding down a rough river .,5.0,2.0,4.0,3.6667,0.5305,0.8861,1.0,1.0,1.0,1.0,0.4701,0.5305,0.5305,0.5305,0.4701,0.4701,0.4701

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"two ladies appear to be having fun outside sharing a secret handshake ,",0.0,two young girls in a park practice a dance or cheerleader routine .,4.0,5.0,5.0,4.6667,0.2996,0.7933,0.9085,0.5757,0.7048,0.6279,0.117,0.0,0.2291,0.0062,0.0281,0.0,0.0
+2,a group of people are playing a game of patty cake .,0.0,two young girls in a park practice a dance or cheerleader routine .,4.0,4.0,4.0,4.0,0.0578,0.7457,0.9655,0.8589,0.8637,0.8172,0.0,0.0,0.0242,0.0,0.0,0.0,0.0
+3,two girls are playing a game of patty cake with each other .,0.01,two young girls in a park practice a dance or cheerleader routine .,5.0,5.0,5.0,5.0,0.3107,0.8177,0.9474,0.8589,0.8515,0.8184,0.157,0.1975,0.2724,0.1905,0.1102,0.0186,0.01
+4,a woman plays hand-clapping games with two young girls .,0.0,two young girls in a park practice a dance or cheerleader routine .,4.0,3.0,4.0,3.6667,0.1715,0.8341,0.6179,0.5845,0.4011,0.282,0.0068,0.0,0.0,0.0,0.0,0.0,0.0
+5,two little girls are playing a hand game while on a trampoline .,0.0,two young girls in a park practice a dance or cheerleader routine .,4.0,4.0,4.0,4.0,0.2798,0.8207,0.9714,0.8659,0.8735,0.8458,0.1225,0.1683,0.2587,0.1755,0.0967,0.0,0.0
+6,two young girls are in a park showing dance moves .,0.801,two young girls in a park practice a dance or cheerleader routine .,4.0,4.0,4.0,4.0,0.8326,0.9189,1.0,0.8933,0.9155,0.908,0.8178,0.8126,0.8326,0.8171,0.8178,0.796,0.801

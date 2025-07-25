@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a matador and several picadors taunt a bull in an arena .,0.1298,three clowns are in a ring with a bull and the bull is charging the red capes .,5.0,5.0,5.0,5.0,0.4923,0.8081,0.828,0.8018,0.722,0.656,0.3717,0.3667,0.3868,0.2968,0.2412,0.2164,0.1298
+2,a matador is taunting a bull in a bull fight .,0.216,three clowns are in a ring with a bull and the bull is charging the red capes .,5.0,5.0,5.0,5.0,0.4482,0.8332,0.9378,0.8586,0.8447,0.8136,0.3378,0.3573,0.4116,0.3467,0.2939,0.2287,0.216
+3,a matador is taunting a bull with a bull in front of a bull .,0.2003,three clowns are in a ring with a bull and the bull is charging the red capes .,4.0,5.0,3.0,4.0,0.5099,0.8496,0.9139,0.734,0.7213,0.6719,0.4232,0.3324,0.4638,0.3205,0.3689,0.2142,0.2003
+4,a bull fighter taunts a bull with a red cloth in an arena .,0.0476,three clowns are in a ring with a bull and the bull is charging the red capes .,5.0,5.0,5.0,5.0,0.5604,0.8462,0.9264,0.5586,0.5454,0.4629,0.4805,0.2124,0.5255,0.1889,0.4393,0.07,0.0476
+5,a large crowd is watching bull fighting inside of an arena .,0.1982,three clowns are in a ring with a bull and the bull is charging the red capes .,5.0,5.0,5.0,5.0,0.4184,0.7923,1.0,0.8933,0.9155,0.8933,0.2659,0.3489,0.4184,0.3647,0.2659,0.1783,0.1982
+6,a bull fighter is fighting a bull in a stadium with people watching .,0.0,three clowns are in a ring with a bull and the bull is charging the red capes .,5.0,4.0,5.0,4.6667,0.4288,0.8138,0.9134,0.691,0.6802,0.607,0.298,0.1733,0.3746,0.1602,0.2315,0.0,0.0

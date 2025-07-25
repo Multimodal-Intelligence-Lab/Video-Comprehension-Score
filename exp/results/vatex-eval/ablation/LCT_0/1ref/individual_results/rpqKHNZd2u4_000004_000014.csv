@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a gymnast prepares and does a floor tumble on specialist flooring in a managed environment .,0.1438,the girl did several front flips and then landed on the mat .,5.0,3.0,4.0,4.0,0.4275,0.7294,0.9667,0.9234,0.9168,0.8859,0.2151,0.3799,0.4077,0.3755,0.188,0.1499,0.1438
+2,a man is jumping on a trampoline and does a back flip .,0.0,the girl did several front flips and then landed on the mat .,4.0,4.0,4.0,4.0,0.253,0.7915,0.8819,0.6724,0.526,0.4012,0.0562,0.0,0.153,0.0,0.0,0.0,0.0
+3,a boy runs and jumps over a trampoline and lands on a trampoline .,0.0,the girl did several front flips and then landed on the mat .,4.0,3.0,4.0,3.6667,0.2283,0.7686,0.9148,0.5397,0.6789,0.5822,0.0,0.0,0.1564,0.0,0.0,0.0,0.0
+4,"a girl is doing fast back-flips on an indoor trampoline , and then jumps into a ball pit .",0.0,the girl did several front flips and then landed on the mat .,4.0,4.0,4.0,4.0,0.4969,0.8123,0.9321,0.5884,0.5821,0.4855,0.3807,0.145,0.4603,0.1358,0.3356,0.0,0.0
+5,a lady was swing and do some gymnastic and practicing that by falling down with the swing,0.0,the girl did several front flips and then landed on the mat .,5.0,3.0,3.0,3.6667,0.2943,0.7416,0.9167,0.5045,0.6508,0.5291,0.0484,0.0,0.2302,0.0,0.0,0.0,0.0
+6,"a girl does several back flips , in a row , off of a trampoline into a foam pit .",0.3847,the girl did several front flips and then landed on the mat .,4.0,5.0,5.0,4.6667,0.5844,0.8755,0.9497,0.7655,0.7716,0.7391,0.5252,0.457,0.5624,0.4613,0.5001,0.3798,0.3847

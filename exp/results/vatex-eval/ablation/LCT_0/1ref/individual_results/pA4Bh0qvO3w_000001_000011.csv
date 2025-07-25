@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a kid is kicking a ball and claps after a woman complements him .,0.0,a young baby kicks a greenish yellow colored ball while a woman filming the child praises her kick .,5.0,5.0,5.0,5.0,0.5645,0.8731,0.804,0.3828,0.3983,0.3109,0.5011,0.0,0.4582,0.0,0.3795,0.0,0.0
+2,a toddler is walking around in a living room with a toy .,0.0,a young baby kicks a greenish yellow colored ball while a woman filming the child praises her kick .,5.0,5.0,5.0,5.0,0.1977,0.7645,0.9686,0.8037,0.8481,0.8013,0.0,0.0017,0.1717,0.054,0.0,0.0,0.0
+3,a toddler is standing on the floor and shaking his hands .,0.0,a young baby kicks a greenish yellow colored ball while a woman filming the child praises her kick .,5.0,5.0,5.0,5.0,0.1812,0.7588,0.9722,0.9221,0.9109,0.8825,0.0,0.1121,0.1578,0.1011,0.0,0.0,0.0
+4,a young girl is kicking a ball across a field of grass .,0.1134,a young baby kicks a greenish yellow colored ball while a woman filming the child praises her kick .,4.0,4.0,3.0,3.6667,0.4916,0.8419,0.8618,0.656,0.6812,0.6213,0.3961,0.2249,0.41,0.2536,0.2992,0.0794,0.1134
+5,a baby on the floor chasing a ball around the floor,0.0,a young baby kicks a greenish yellow colored ball while a woman filming the child praises her kick .,4.0,4.0,4.0,4.0,0.4101,0.8072,0.8881,0.5858,0.6324,0.5446,0.2692,0.0,0.3358,0.0673,0.1771,0.0,0.0
+6,"a toddler says "" kick "" and kicks a ball inside while a grownup claims to know nothing .",0.1333,a young baby kicks a greenish yellow colored ball while a woman filming the child praises her kick .,4.0,4.0,4.0,4.0,0.5446,0.8189,0.9302,0.5784,0.6416,0.5624,0.4439,0.2127,0.5104,0.2902,0.4022,0.0386,0.1333

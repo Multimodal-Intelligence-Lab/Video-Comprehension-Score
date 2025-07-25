@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,person demonstrating and giving instructions on how to sharpen a knife,0.5332,a person uses a device to sharpen a kitchen knife .,5.0,5.0,5.0,5.0,0.7459,0.9003,0.9882,0.8889,0.9176,0.9046,0.709,0.5813,0.7071,0.5875,0.6645,0.535,0.5332
+2,a person is using a knife to cut an orange with a knife .,0.0331,a woman demonstrating how to use a blade sharpener to sharpen a knife .,1.0,2.0,2.0,1.6667,0.4361,0.888,1.0,0.8252,0.7932,0.755,0.3575,0.2155,0.3674,0.1839,0.2793,0.0705,0.0331
+3,a person is using a knife to cut a piece of fruit .,0.0858,a woman is using a tool to sharpen a kitchen knife and explaining how the tool works .,1.0,2.0,2.0,1.6667,0.4722,0.8663,1.0,0.8535,0.7968,0.7614,0.3853,0.2641,0.4198,0.2212,0.3236,0.11,0.0858
+4,a chef is teaching how he sharpens knives with a tool .,0.5771,a woman demonstrates how to sharpen a knife using a tool .,5.0,5.0,4.0,4.6667,0.683,0.8754,0.9375,1.0,0.9475,0.9376,0.6379,0.6604,0.6579,0.6344,0.6043,0.6071,0.5771
+5,a man demonstrates how to use a knife sharpener on a kitchen knife,0.6417,a person uses a device to sharpen a kitchen knife .,4.0,4.0,4.0,4.0,0.7464,0.9274,0.96,0.8103,0.8223,0.7938,0.7222,0.678,0.7359,0.673,0.7106,0.6473,0.6417
+6,a man shows and describes the proper technique for sharpening a knife .,0.4053,"a woman demonstrates a truly "" cutting edge "" tool to swiftly sharpen dull knife blades .",4.0,5.0,4.0,4.3333,0.6733,0.8626,0.9697,0.8723,0.8951,0.8726,0.6178,0.5414,0.6176,0.5102,0.553,0.4605,0.4053

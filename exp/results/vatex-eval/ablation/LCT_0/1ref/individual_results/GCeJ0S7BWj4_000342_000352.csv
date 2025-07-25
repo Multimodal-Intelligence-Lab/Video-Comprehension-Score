@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man wears pads on his hands as another man with boxing gloves hit the pads .,0.0,a guy with black t shirt is coaching a guy with red topped black bottom boxing,5.0,5.0,5.0,5.0,0.4086,0.7963,0.8998,0.4868,0.6318,0.5376,0.2573,0.0,0.3428,0.064,0.1746,0.0,0.0
+2,a man is demonstrating how to punch a punching bag .,0.0,a guy with black t shirt is coaching a guy with red topped black bottom boxing,4.0,4.0,4.0,4.0,0.3076,0.7883,0.8705,0.5759,0.5909,0.4811,0.1216,0.0,0.2046,0.0,0.0,0.0,0.0
+3,two men are in a gym and one of them is punching a punching bag .,0.0,a guy with black t shirt is coaching a guy with red topped black bottom boxing,4.0,4.0,4.0,4.0,0.3574,0.777,0.8999,0.5287,0.5547,0.427,0.1729,0.0,0.2859,0.0,0.0809,0.0,0.0
+4,a man is indoors and using boxing gloves to hit a punching bag .,0.0,a guy with black t shirt is coaching a guy with red topped black bottom boxing,4.0,4.0,4.0,4.0,0.3135,0.8022,0.865,0.5109,0.5232,0.4056,0.1443,0.0,0.2064,0.0,0.0107,0.0,0.0
+5,a man boxing vigorously with boxing gloves and with a punching bag,0.0,a guy with black t shirt is coaching a guy with red topped black bottom boxing,4.0,4.0,3.0,3.6667,0.3431,0.8186,0.7752,0.0,0.0,0.0,0.1975,0.0,0.1526,0.0,0.0,0.0,0.0
+6,"during a spar , one fighter throws punches and the other covers face with gloves .",0.0,a guy with black t shirt is coaching a guy with red topped black bottom boxing,2.0,2.0,1.0,1.6667,0.3099,0.7398,0.9495,0.8184,0.8388,0.7821,0.0671,0.1568,0.2731,0.1772,0.0175,0.0,0.0

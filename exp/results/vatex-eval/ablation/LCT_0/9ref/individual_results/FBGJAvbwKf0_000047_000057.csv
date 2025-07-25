@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is putting out a fire that is in a wheelbarrow .,0.9184,a man tries top put a fire out in a that is burning in a wheelbarrow .,5.0,5.0,5.0,5.0,0.9564,0.934,0.9744,1.0,0.9222,0.9165,0.9532,0.9564,0.9067,0.9187,0.9064,0.9532,0.9184
+2,a person is using a fire to put on a fire .,0.1506,a man suppresses a small fire that is burning in a barrel with a hand held extinguisher .,4.0,4.0,4.0,4.0,0.4987,0.9245,0.9756,0.8676,0.8329,0.8008,0.423,0.316,0.4628,0.2875,0.3818,0.1879,0.1506
+3,a man is using a fire to put out a fire .,0.3721,"a man sprays a fire with a powder , slowly putting out the flame .",4.0,4.0,4.0,4.0,0.6636,0.9488,0.9756,0.8316,0.7953,0.7676,0.6236,0.4774,0.6355,0.4263,0.5922,0.4238,0.3721
+4,"a man walks from behind a cubicle containing a barbecue fire , bends and presses a button to trigger a gas release which extinguishes the fire",0.2462,a man suppresses a small fire that is burning in a barrel with a hand held extinguisher .,5.0,2.0,2.0,3.0,0.5006,0.8358,0.9615,0.8638,0.878,0.8484,0.3892,0.3747,0.4626,0.3836,0.3428,0.2262,0.2462
+5,a police officer works with a fire hydrant as a house burns in the distance,0.0,"a man spraying water into a flaming wheelbarrow , effectively distinguishing the fire .",1.0,2.0,1.0,1.3333,0.3371,0.8166,0.9569,0.7457,0.7573,0.6985,0.1537,0.052,0.2746,0.0665,0.0822,0.0,0.0
+6,a man sitting around a fire is trying to put out a fire by spitting water on it .,0.2043,a man wearing a red orange shirt is trying to put out a fire .,4.0,3.0,4.0,3.6667,0.5084,0.8921,0.9538,0.8253,0.8249,0.7973,0.4255,0.3165,0.4755,0.306,0.3871,0.2299,0.2043

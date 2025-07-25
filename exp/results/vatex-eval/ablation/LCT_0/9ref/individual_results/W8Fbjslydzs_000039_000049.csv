@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a girl scooters by a little boy throwing a ball , then the girl takes the ball and shows how to throw it .",0.4432,a boy is throwing a ball against a wall and a girl takes the ball and throws it .,5.0,5.0,5.0,5.0,0.6036,0.9424,0.9455,0.8257,0.8477,0.8147,0.5794,0.477,0.5438,0.4752,0.516,0.4451,0.4432
+2,two young girls are playing with each other in a room .,0.058,a boy and girl playing inside the house with a baseball,4.0,4.0,2.0,3.3333,0.4461,0.8469,0.9125,0.9552,0.7593,0.7064,0.3459,0.3412,0.3511,0.2023,0.2338,0.2221,0.058
+3,a young girl and a young boy are playing a game of pillow fight .,0.1248,a young girl and boy throw a ball and try to catch it on its return .,4.0,4.0,3.0,3.6667,0.4772,0.8752,0.9474,0.9728,0.7855,0.7375,0.3976,0.191,0.432,0.2405,0.3454,0.0165,0.1248
+4,a little boy is playing hopscotch while a little girl looks on .,0.0,a boy and girl playing inside the house with a baseball,4.0,4.0,3.0,3.6667,0.3477,0.8618,1.0,0.921,0.9155,0.8884,0.1952,0.2138,0.2858,0.1693,0.1189,0.0337,0.0
+5,a boy plays hopscotch in a yard while a little girl watches .,0.0,a boy and girl playing inside the house with a baseball,4.0,4.0,3.0,3.6667,0.3238,0.8452,0.9714,0.921,0.8489,0.8005,0.1578,0.1495,0.2934,0.0669,0.1199,0.0,0.0
+6,a boy sitting on a gym floor tosses a ball to a standing boy,0.0156,two children in a house throw a ball towards the wall over some stairs .,3.0,2.0,4.0,3.0,0.3835,0.8727,0.8858,0.9728,0.794,0.7439,0.2936,0.1262,0.2903,0.2082,0.1176,0.0,0.0156

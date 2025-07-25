@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy in a green shirt kicks two soccer balls towards the goal and the goalie catches one .,0.4318,a man kicks a ball towards a net and the goalie reacts,5.0,4.0,4.0,4.3333,0.5509,0.9086,0.9278,0.9273,0.9038,0.8901,0.502,0.5156,0.5112,0.5031,0.4411,0.4462,0.4318
+2,a boy is kicking a soccer ball across the field .,0.1499,a group of men are playing soccer in the field and one man scores a goal after shooting .,5.0,5.0,5.0,5.0,0.5069,0.8966,0.9599,0.8089,0.8087,0.7678,0.45,0.2997,0.4325,0.2995,0.3258,0.1501,0.1499
+3,a young boy kicks a soccer ball into a goal .,0.2748,a young man kicks his shoe off while practicing soccer and then kicks a goal .,5.0,5.0,5.0,5.0,0.6339,0.9224,0.9474,0.7591,0.7842,0.738,0.6032,0.3149,0.6136,0.31,0.5811,0.28,0.2748
+4,a man is tossing a soccer ball and trying to catch with when it rebound while another man supervise,0.0,a man kicks to balls at his oponent and then runs away from the game .,2.0,2.0,4.0,2.6667,0.4787,0.84,0.9286,0.7735,0.7919,0.7462,0.3641,0.1591,0.4281,0.1665,0.3023,0.0,0.0
+5,a man kicks a ball into a goal net then starts running towards the goal .,0.5621,a man kicks to balls at his oponent and then runs away from the game .,4.0,4.0,4.0,4.0,0.7412,0.9448,1.0,0.9091,0.9333,0.9245,0.7261,0.6029,0.6952,0.6132,0.6708,0.5504,0.5621
+6,a man kicks a soccer ball back and forth on a field with someone behind the camera .,0.254,a man kicks a ball towards a net and the goalie reacts,3.0,3.0,4.0,3.3333,0.6746,0.8763,0.9665,0.7616,0.8026,0.7672,0.6287,0.3396,0.6069,0.3615,0.5514,0.2284,0.254

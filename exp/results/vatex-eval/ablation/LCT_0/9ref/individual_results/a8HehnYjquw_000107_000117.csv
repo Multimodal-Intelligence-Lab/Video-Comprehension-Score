@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is sitting on an alligator while also holding the alligator's mouth .,0.7225,"a man is sitting on an alligator , holding it's mouth and talking .",5.0,5.0,5.0,5.0,0.9228,0.96,0.9524,0.7876,0.7965,0.7465,0.9188,0.7673,0.9052,0.7236,0.9013,0.7663,0.7225
+2,a man is sitting on a boat and is sitting on the ground .,0.0,a person is sitting next to a canal full of very dirty water .,4.0,4.0,2.0,3.3333,0.3385,0.8694,0.95,0.7009,0.6011,0.5412,0.2236,0.0012,0.2499,0.0,0.1373,0.0,0.0
+3,a man is sitting on top of an alligator and holding its mouth .,0.7086,"a man is sitting on an alligator , holding it's mouth and talking .",5.0,5.0,5.0,5.0,0.9277,0.9669,0.9804,0.8723,0.872,0.8522,0.9241,0.6753,0.8472,0.7097,0.8466,0.6741,0.7086
+4,a man is staring into an alligator's mouth and touching his tail and there is a person talking in the background .,0.5648,"a man is sitting on an alligator , holding it's mouth and talking .",4.0,4.0,3.0,3.6667,0.7433,0.8965,0.9679,0.8571,0.8982,0.877,0.7137,0.6105,0.7091,0.6283,0.6755,0.574,0.5648
+5,a man is in an alligator pit sitting on the back of an alligator and has his chin on the alligators nose .,0.1337,a man sits on the back of an alligator holding it's head and discusses safe handling practices .,4.0,4.0,3.0,3.6667,0.7141,0.8951,0.975,0.7193,0.759,0.6976,0.6806,0.1929,0.679,0.1875,0.6252,0.1395,0.1337
+6,a man in an alligator terrarium holds alligator's mouth as it moves around .,0.4667,"a man is sitting on an alligator , holding it's mouth and talking .",4.0,4.0,4.0,4.0,0.6811,0.8994,0.9423,0.7707,0.8072,0.7706,0.6417,0.5331,0.6614,0.5203,0.6196,0.4809,0.4667

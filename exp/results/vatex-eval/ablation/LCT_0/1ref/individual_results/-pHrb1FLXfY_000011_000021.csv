@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a kid playing in the water slide is being videotaped by a man in the swimming pool .,0.0,a child slides down a pool slide at intervals while a person makes a comment .,5.0,5.0,4.0,4.6667,0.5867,0.8665,0.7839,0.306,0.4402,0.354,0.5231,0.0,0.4728,0.0459,0.3916,0.0,0.0
+2,a group of people are playing in a water slide .,0.0,a child slides down a pool slide at intervals while a person makes a comment .,4.0,4.0,4.0,4.0,0.3845,0.8323,0.7347,0.1731,0.0,0.0,0.2605,0.0,0.1622,0.0,0.0,0.0,0.0
+3,a group of kids are sliding down a water slide .,0.198,a child slides down a pool slide at intervals while a person makes a comment .,4.0,4.0,4.0,4.0,0.4154,0.8532,0.8745,0.9332,0.8544,0.8293,0.3148,0.3736,0.3315,0.3158,0.2165,0.2658,0.198
+4,a young child slides down an inflatable water slide backwards .,0.0,a child slides down a pool slide at intervals while a person makes a comment .,4.0,4.0,4.0,4.0,0.4405,0.858,0.9264,0.5168,0.4953,0.4117,0.3479,0.0,0.396,0.0,0.2961,0.0,0.0
+5,a couple of kids slide down a water slide into a lake .,0.0333,a child slides down a pool slide at intervals while a person makes a comment .,4.0,4.0,3.0,3.6667,0.3705,0.8509,0.883,0.8075,0.7653,0.7242,0.2602,0.2203,0.2871,0.1774,0.1622,0.0838,0.0333
+6,two children slide down a water park slide as onlookers watch .,0.0017,a child slides down a pool slide at intervals while a person makes a comment .,4.0,4.0,3.0,3.6667,0.5104,0.837,0.8976,0.435,0.586,0.5053,0.415,0.0,0.4545,0.1645,0.3483,0.0,0.0017

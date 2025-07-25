@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"just snow boot covered feet are visible while they slide down a hill at fast speeds , just the sound of the wind .",0.0,someone is toboganning down a worn path while steering it with leads and filming at the same time .,5.0,5.0,5.0,5.0,0.4516,0.8546,0.9826,0.8291,0.7579,0.6746,0.346,0.2385,0.3881,0.1581,0.2703,0.0693,0.0
+2,a person is riding a sled down a snowy hill .,0.7535,"someone is riding on a sled , and is snow sledding down a snowy path .",5.0,5.0,5.0,5.0,0.8145,0.9315,0.9714,0.8278,0.8078,0.7937,0.8009,0.776,0.8048,0.764,0.7904,0.7595,0.7535
+3,a person is riding a sled down a snowy hill .,0.7535,"someone is riding on a sled , and is snow sledding down a snowy path .",5.0,5.0,5.0,5.0,0.8145,0.9315,0.9714,0.8278,0.8078,0.7937,0.8009,0.776,0.8048,0.764,0.7904,0.7595,0.7535
+4,someone pilots a wind-driven sled with a sail on it across the snow .,0.1458,an individual sledding down a bunch of hills and going around several curves in the snow,4.0,4.0,3.0,3.6667,0.6452,0.864,0.9599,0.7038,0.7117,0.6452,0.5774,0.2981,0.6143,0.3059,0.5406,0.1362,0.1458
+5,two people ride on a red sled down a hill in the snow .,0.0,someone is toboganning down a worn path while steering it with leads and filming at the same time .,4.0,4.0,4.0,4.0,0.545,0.8737,0.9199,0.6377,0.6183,0.4924,0.479,0.0825,0.4495,0.0,0.3696,0.0,0.0
+6,two people are on sleds and sliding down a snow covered terrain .,0.3125,somebody is sledding down a hill as the wind blows past .,4.0,4.0,4.0,4.0,0.638,0.8592,1.0,0.8723,0.8863,0.8615,0.5742,0.4545,0.5861,0.4536,0.5132,0.3137,0.3125

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,many koi fish are swimming in a pond while being fed .,0.0,a person is putting food in the water to feed the fish .,5.0,5.0,5.0,5.0,0.4486,0.8394,0.6985,0.4,0.5087,0.4147,0.3431,0.0,0.2106,0.0,0.0596,0.0,0.0
+2,a group of people are feeding fish in a pond .,0.0,a person is putting food in the water to feed the fish .,3.0,4.0,5.0,4.0,0.6141,0.8617,0.849,0.6108,0.4209,0.328,0.5521,0.3662,0.5454,0.057,0.4725,0.2668,0.0
+3,a person is feeding a fish in a fish tank .,0.0337,a person is putting food in the water to feed the fish .,5.0,5.0,5.0,5.0,0.7039,0.9066,0.7534,0.6108,0.3493,0.2823,0.6734,0.4471,0.607,0.0756,0.5665,0.422,0.0337
+4,a person scuba diving underwater is feeding a school of fish .,0.2129,a person is putting food in the water to feed the fish .,4.0,3.0,4.0,3.6667,0.5358,0.8662,0.9386,0.7102,0.6809,0.6316,0.4641,0.3463,0.5054,0.3182,0.429,0.2453,0.2129
+5,a person is recorded underwater as they snorkel and feed the fish .,0.2432,a person is putting food in the water to feed the fish .,4.0,3.0,4.0,3.6667,0.5958,0.8926,0.873,0.4552,0.5984,0.5501,0.5471,0.0856,0.537,0.3245,0.4813,0.0043,0.2432
+6,a woman swimming in the sea with fishes and trying to feed them .,0.0,a person is putting food in the water to feed the fish .,2.0,3.0,4.0,3.0,0.4867,0.8559,0.6818,0.2343,0.3488,0.2391,0.4002,0.0,0.2471,0.0,0.1203,0.0,0.0

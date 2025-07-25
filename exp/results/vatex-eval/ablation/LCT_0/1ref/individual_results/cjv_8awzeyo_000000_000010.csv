@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man tries his best to open a coke bottle that is tightly secured .,0.0,a young man wearing a windbreaker is talking and opening a bottle of soda .,5.0,5.0,5.0,5.0,0.3676,0.8365,0.7948,0.3788,0.5131,0.4179,0.244,0.0,0.2044,0.0,0.0489,0.0,0.0
+2,a man is sitting in a chair and is holding a bottle of wine .,0.0,a young man wearing a windbreaker is talking and opening a bottle of soda .,4.0,4.0,4.0,4.0,0.2305,0.8188,1.0,0.8115,0.8439,0.8094,0.0602,0.0518,0.2305,0.0882,0.0602,0.0,0.0
+3,a man is sitting in a chair and is smoking a cigarette .,0.0,a young man wearing a windbreaker is talking and opening a bottle of soda .,4.0,4.0,3.0,3.6667,0.0558,0.7775,1.0,1.0,1.0,1.0,0.0,0.0558,0.0558,0.0558,0.0,0.0,0.0
+4,a male is at a restaurant trying to open a bottle with a stick .,0.0,a young man wearing a windbreaker is talking and opening a bottle of soda .,4.0,4.0,3.0,3.6667,0.2408,0.8314,0.9655,0.7161,0.7335,0.6794,0.0869,0.0,0.2137,0.0,0.0543,0.0,0.0
+5,a man is shown trying to open a bottle using a screw driver .,0.0,a young man wearing a windbreaker is talking and opening a bottle of soda .,4.0,4.0,4.0,4.0,0.3176,0.8325,0.8409,0.5576,0.6706,0.6043,0.1803,0.0,0.1885,0.0,0.0253,0.0,0.0
+6,a man opens a bottle that has a blue ring pull top .,0.0,a young man wearing a windbreaker is talking and opening a bottle of soda .,4.0,4.0,3.0,3.6667,0.3731,0.8392,0.7685,0.6268,0.5356,0.4466,0.2529,0.0,0.1842,0.0,0.0279,0.0,0.0

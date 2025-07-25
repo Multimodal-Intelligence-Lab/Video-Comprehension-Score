@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man plays a ukulele in a bar and begins to sing along .,0.7099,a man plays finger style ukulele in a bar and sings a long to a song .,5.0,5.0,5.0,5.0,0.8905,0.9081,0.9404,0.8441,0.8276,0.7946,0.8794,0.6915,0.8832,0.7135,0.8714,0.6876,0.7099
+2,a man is playing a song on a musical instrument .,0.2776,a man playing the guitar and singing a song possibly at open mike night .,5.0,2.0,5.0,4.0,0.4982,0.8933,0.9714,0.8434,0.8802,0.8608,0.4345,0.3983,0.4122,0.3593,0.3376,0.3216,0.2776
+3,a man is standing in a room playing a musical instrument .,0.0,a man plays a small guitar and then sings into a microphone .,5.0,5.0,5.0,5.0,0.4354,0.8832,0.9199,0.6951,0.5954,0.5418,0.3607,0.1226,0.3862,0.0517,0.305,0.0065,0.0
+4,a man at a recording studio is playing an electric guitar while someone sings .,0.0,a man plays a small guitar and then sings into a microphone .,2.0,3.0,4.0,3.0,0.4599,0.8853,0.9129,0.6617,0.6065,0.549,0.381,0.1838,0.3519,0.1095,0.2572,0.0645,0.0
+5,a young man playing a guitar and singing at the same time,0.4152,a man plays a small guitar and sings a song .,4.0,2.0,5.0,3.6667,0.6215,0.9135,1.0,1.0,1.0,1.0,0.5736,0.461,0.5665,0.4809,0.5116,0.4095,0.4152
+6,a man sings and plays guitar at a beach venue .,0.0154,a man is playing the guitar and singing in probably a bar .,3.0,4.0,3.0,3.3333,0.5819,0.9097,0.8819,0.5269,0.5068,0.4377,0.5331,0.0,0.4769,0.1229,0.425,0.0,0.0154

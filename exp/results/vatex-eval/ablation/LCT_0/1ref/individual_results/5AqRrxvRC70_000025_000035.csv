@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,one man is standing while putting spackle on the upper part of the wall while another is on the ground putting spackle on the lower part of the wall .,0.2382,two people are applying mud to a wall and spreading it around .,5.0,5.0,5.0,5.0,0.4892,0.8037,0.9481,0.8303,0.8344,0.7939,0.3644,0.3848,0.4612,0.3878,0.3296,0.2345,0.2382
+2,a man is using a trowel to paint a wall with a trowel .,0.0997,two people are applying mud to a wall and spreading it around .,5.0,5.0,5.0,5.0,0.36,0.8021,1.0,0.8723,0.8863,0.8582,0.2021,0.2663,0.36,0.2779,0.2021,0.0852,0.0997
+3,a man is using a trowel to apply plaster to a wall .,0.0,two people are applying mud to a wall and spreading it around .,5.0,5.0,5.0,5.0,0.4159,0.8362,0.9199,0.528,0.4515,0.344,0.3015,0.0,0.365,0.0,0.2406,0.0,0.0
+4,a man uses a paint roller and trowel to apply paint to a wall .,0.0,two people are applying mud to a wall and spreading it around .,4.0,4.0,4.0,4.0,0.3603,0.8152,0.8838,0.4975,0.4549,0.3313,0.2153,0.0,0.2762,0.0,0.1121,0.0,0.0
+5,a man is applying white spackle to a wall with a rolling brush before straightening it out .,0.0,two people are applying mud to a wall and spreading it around .,4.0,4.0,5.0,4.3333,0.3989,0.8283,0.9555,0.6447,0.6549,0.5834,0.2743,0.0676,0.3709,0.0822,0.2405,0.0,0.0
+6,a man with a paint brush is painting on a painting,0.0,two people are applying mud to a wall and spreading it around .,4.0,4.0,4.0,4.0,0.1463,0.7636,1.0,0.8644,0.8788,0.8413,0.0,0.0124,0.1463,0.0286,0.0,0.0,0.0

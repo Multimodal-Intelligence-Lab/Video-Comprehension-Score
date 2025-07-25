@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a bearded man on a beach is holding a torch while spraying liquid in the air and causing five fireballs to emit from the torch .,0.3975,a man with a burning torch blows flames into the night .,4.0,4.0,4.0,4.0,0.6021,0.838,0.9745,0.9235,0.8983,0.8786,0.5045,0.5089,0.5811,0.5079,0.4784,0.414,0.3975
+2,a man is juggling fire torches in a dark area .,0.368,a man with a burning torch blows flames into the night .,5.0,5.0,4.0,4.6667,0.5857,0.8554,0.9667,0.7566,0.8278,0.7951,0.5157,0.3989,0.5255,0.4617,0.4453,0.2908,0.368
+3,a man is juggling three sticks that are on fire .,0.1986,a man is playing with and performing with fire in front of an audience .,3.0,4.0,3.0,3.3333,0.5155,0.8459,0.95,0.8284,0.8351,0.7963,0.4177,0.3925,0.4851,0.3332,0.3812,0.2698,0.1986
+4,a torch with a flame is being held in mid air in front of someone before it is fuelled and engulfs the man .,0.0,a man is playing with and performing with fire in front of an audience .,4.0,5.0,4.0,4.3333,0.5891,0.8526,0.7697,0.4445,0.4073,0.2813,0.5181,0.0,0.376,0.0,0.2305,0.0,0.0
+5,outside a man is holding a fire and blows into the fire and it enlarges .,0.5479,a man is holding a rod with fire in his hand and blowing it several times,5.0,5.0,5.0,5.0,0.7123,0.8845,0.9804,0.904,0.8697,0.8494,0.6747,0.6128,0.6794,0.6001,0.6375,0.5623,0.5479
+6,a man outdoor in the dark drank a flammable drink and spat it on the fire,0.3221,a person is dancing in the dark and spitting on a stick of fire to create a larger flame .,5.0,5.0,2.0,4.0,0.7036,0.8698,0.912,0.8032,0.7958,0.7544,0.6582,0.4281,0.5847,0.4249,0.5212,0.3258,0.3221

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is threading thread on her sewing machine and explaining how she does it .,0.4232,a woman explains how to thread a piece of thread into a sewing machine .,5.0,5.0,5.0,5.0,0.9041,0.9433,0.7403,0.6445,0.4818,0.4507,0.8983,0.6068,0.7127,0.4268,0.7109,0.6043,0.4232
+2,a woman is demonstrating how to thread a sewing machine .,0.8385,a woman explains how to thread a piece of thread into a sewing machine .,5.0,5.0,5.0,5.0,0.9088,0.9353,0.9756,0.8571,0.8542,0.8442,0.9025,0.8428,0.9065,0.8396,0.9,0.8417,0.8385
+3,a woman is demonstrating how to thread a sewing machine .,0.8385,a woman explains how to thread a piece of thread into a sewing machine .,5.0,5.0,5.0,5.0,0.9088,0.9353,0.9756,0.8571,0.8542,0.8442,0.9025,0.8428,0.9065,0.8396,0.9,0.8417,0.8385
+4,a woman demonstrates threading a needle in a sewing machine .,0.7857,a woman explains how to thread a piece of thread into a sewing machine .,5.0,4.0,5.0,4.6667,0.8384,0.9132,0.9804,0.8241,0.8258,0.8093,0.8231,0.7902,0.8352,0.7923,0.8195,0.7853,0.7857
+5,someone is demonstrating how to thread a sewing machine .,0.6986,a woman explains how to thread a piece of thread into a sewing machine .,5.0,5.0,5.0,5.0,0.8393,0.8954,0.9756,0.7556,0.7527,0.7238,0.8205,0.7087,0.8353,0.7053,0.816,0.7021,0.6986
+6,a woman describes how to set up a needle and thread for an electric sewing machine .,0.5936,a woman explains how to thread a piece of thread into a sewing machine .,5.0,4.0,5.0,4.6667,0.8188,0.9269,0.971,0.6547,0.6731,0.6473,0.8046,0.5783,0.8134,0.6007,0.7987,0.5708,0.5936

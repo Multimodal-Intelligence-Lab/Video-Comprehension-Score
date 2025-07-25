@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,young men dance in the mosh pit area of a musical performance setting as the crowd watches and music plays .,0.3618,a crowd of people mosh together in a circle at a loud concert .,5.0,5.0,5.0,5.0,0.5858,0.8249,0.8688,0.7864,0.7868,0.7415,0.4979,0.4733,0.5233,0.4736,0.4221,0.3615,0.3618
+2,a group of people are dancing in the middle of a street .,0.0,a crowd of people mosh together in a circle at a loud concert .,4.0,3.0,4.0,3.6667,0.173,0.8011,0.95,0.8644,0.842,0.8028,0.0,0.0432,0.1294,0.0178,0.0,0.0,0.0
+3,a group of people are dancing in a mosh pit at a concert .,0.4392,a crowd of people mosh together in a circle at a loud concert .,5.0,5.0,5.0,5.0,0.7361,0.8828,0.9404,0.6435,0.6068,0.5546,0.7011,0.5157,0.7194,0.4659,0.6821,0.4914,0.4392
+4,a group boys are drumming while a group of girls are dancing on stage during a performance .,0.0,a crowd of people mosh together in a circle at a loud concert .,3.0,1.0,4.0,2.6667,0.1948,0.7656,0.9424,0.6437,0.6474,0.5395,0.0,0.0,0.1456,0.0,0.0,0.0,0.0
+5,a group of people are at a concert and they are all dancing in a mosh pit .,0.0,a crowd of people mosh together in a circle at a loud concert .,5.0,5.0,4.0,4.6667,0.759,0.8822,0.76,0.2,0.0,0.0,0.7268,0.0,0.6829,0.0,0.6406,0.0,0.0
+6,a crowd of people at a concert are shown in a mosh pit,0.0,a crowd of people mosh together in a circle at a loud concert .,1.0,5.0,5.0,3.6667,0.8219,0.912,0.7996,0.2484,0.0,0.0,0.8047,0.0856,0.7562,0.0,0.751,0.0661,0.0

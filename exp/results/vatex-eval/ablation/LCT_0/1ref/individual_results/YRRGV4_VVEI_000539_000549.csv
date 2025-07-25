@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people run up and down dirt hill .,0.0045,several men are outdoors a night attempting to climb over sand dune,5.0,5.0,5.0,5.0,0.2401,0.7633,1.0,1.0,1.0,1.0,0.0045,0.2401,0.2401,0.2401,0.0045,0.0045,0.0045
+2,a group of people are walking around in a dark area .,0.0,several men are outdoors a night attempting to climb over sand dune,5.0,5.0,5.0,5.0,0.3165,0.7864,0.9333,0.7249,0.7241,0.6491,0.1309,0.0572,0.2677,0.056,0.0688,0.0,0.0
+3,a group of people are outside in a dark area and they are dancing .,0.0313,several men are outdoors a night attempting to climb over sand dune,4.0,4.0,4.0,4.0,0.3462,0.8,0.9667,0.8345,0.8436,0.8045,0.1828,0.2166,0.3237,0.225,0.1546,0.0208,0.0313
+4,a person trying to climb and run up a mountain while falling down,0.0,several men are outdoors a night attempting to climb over sand dune,4.0,5.0,4.0,4.3333,0.1866,0.8287,0.8667,0.5683,0.5297,0.4324,0.0184,0.0,0.0615,0.0,0.0,0.0,0.0
+5,people of carrying things and a person is climbing a ladder on the side of the building .,0.0,several men are outdoors a night attempting to climb over sand dune,3.0,4.0,2.0,3.0,0.1496,0.7916,0.9203,0.6525,0.7636,0.7013,0.0,0.0,0.0759,0.0,0.0,0.0,0.0
+6,a person climbing a ladder as another person tries to get the other person off of the ladder,0.0,several men are outdoors a night attempting to climb over sand dune,2.0,2.0,1.0,1.6667,0.1613,0.808,0.8339,0.5216,0.4984,0.3792,0.0,0.0,0.0,0.0,0.0,0.0,0.0

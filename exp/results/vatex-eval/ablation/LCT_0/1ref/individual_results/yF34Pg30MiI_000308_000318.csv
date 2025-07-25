@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person pours some salt into a pan that is near them,0.0,someone is crooking some mixed vegetables in a frying pan in the kitchen .,5.0,5.0,5.0,5.0,0.363,0.8227,1.0,0.755,0.7673,0.7172,0.2258,0.1563,0.363,0.1699,0.2258,0.0,0.0
+2,a woman is cooking vegetables in a frying pan in a frying pan .,0.5581,someone is crooking some mixed vegetables in a frying pan in the kitchen .,5.0,5.0,5.0,5.0,0.758,0.9047,0.7576,0.6107,0.6763,0.6422,0.7325,0.4865,0.6802,0.5729,0.6469,0.4686,0.5581
+3,a woman is frying vegetables in a pan on a stove .,0.4147,someone is crooking some mixed vegetables in a frying pan in the kitchen .,5.0,5.0,5.0,5.0,0.7023,0.8909,0.9048,0.6644,0.6103,0.5626,0.6658,0.5221,0.6709,0.4451,0.6306,0.496,0.4147
+4,a person is scooping mixed vegetables out of a frying pan and onto a plate .,0.7334,someone is crooking some mixed vegetables in a frying pan in the kitchen .,3.0,2.0,3.0,2.6667,0.7658,0.9031,0.9859,0.9777,0.9727,0.9697,0.7407,0.7605,0.7625,0.7592,0.737,0.7348,0.7334
+5,the lady is cooking a dish of vegetables and scoops it on a serving plate .,0.0,someone is crooking some mixed vegetables in a frying pan in the kitchen .,4.0,4.0,4.0,4.0,0.4579,0.8064,0.8005,0.4459,0.5727,0.4702,0.3277,0.0,0.3227,0.0535,0.1601,0.0,0.0
+6,a person is pouring sauce into a bowl of vegetables .,0.0,someone is crooking some mixed vegetables in a frying pan in the kitchen .,4.0,4.0,4.0,4.0,0.4614,0.824,0.8803,0.6667,0.5979,0.512,0.3463,0.192,0.3881,0.0991,0.2574,0.0194,0.0

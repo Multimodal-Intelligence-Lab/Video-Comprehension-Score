@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a topless man throws darts at a dart board while voices are being heard .,0.8272,a topless man walks over to throw a dart at a target while others chatter and murmur .,5.0,5.0,5.0,5.0,0.8574,0.9211,1.0,0.9084,0.9328,0.9241,0.8388,0.843,0.8574,0.8472,0.8388,0.8225,0.8272
+2,a group of people are playing a game of laser tag .,0.0,two men are in a room doing darts on a wall while one of them films it .,3.0,3.0,2.0,2.6667,0.1521,0.7897,1.0,0.7981,0.8177,0.7591,0.0,0.0,0.1521,0.0,0.0,0.0,0.0
+3,a man and a woman are throwing darts at a dart board .,0.3623,a topless man in a room threw a dart arrow at the board,4.0,4.0,4.0,4.0,0.5906,0.9039,1.0,0.8723,0.8863,0.8742,0.5276,0.4143,0.5817,0.4236,0.5174,0.352,0.3623
+4,a young man is showing off his dart to another person as he aims and hits the dartboard mounted on a wall .,0.4206,a guy is shown throwing a dart at a dartboard attached to a wall .,4.0,5.0,3.0,4.0,0.688,0.8684,1.0,0.8408,0.8888,0.8559,0.6408,0.3894,0.6607,0.4604,0.6093,0.3443,0.4206
+5,a man is showing a dart to the camera then shows the dartboard,0.2796,a topless man in a room threw a dart arrow at the board,2.0,4.0,2.0,2.6667,0.5998,0.8767,0.9538,0.8366,0.8364,0.7882,0.5435,0.4317,0.5431,0.399,0.4788,0.3189,0.2796
+6,a man is showing a dart that he has thrown against a dart board .,0.4506,a topless man in a room threw a dart arrow at the board,4.0,5.0,3.0,4.0,0.7212,0.9185,0.9787,0.8723,0.8707,0.8592,0.6883,0.4963,0.7029,0.4954,0.6679,0.4515,0.4506

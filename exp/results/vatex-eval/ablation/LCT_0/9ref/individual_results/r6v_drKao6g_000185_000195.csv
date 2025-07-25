@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person throws some cards on a table that is in front of them,0.1072,a man shows off how to deal a hand of poker .,5.0,5.0,5.0,5.0,0.4851,0.8695,0.898,0.755,0.8086,0.7593,0.4047,0.2397,0.3918,0.2902,0.2967,0.0769,0.1072
+2,a group of people are playing poker at a casino .,0.3566,man showing how to deal a poker game while sitting at a poker table .,4.0,4.0,2.0,3.3333,0.5604,0.8641,0.9388,0.8723,0.8617,0.8321,0.4789,0.4718,0.5285,0.4656,0.4324,0.3641,0.3566
+3,a man is sitting at a poker table playing a card game .,0.811,a man is sitting at a poker table and playing cards and teaching how to play .,5.0,5.0,4.0,4.6667,0.8238,0.962,1.0,1.0,1.0,1.0,0.8121,0.8181,0.8202,0.8181,0.811,0.811,0.811
+4,a man narrates a game of poker while a group of players act out the game .,0.3961,a man shows off how to deal a hand of poker .,4.0,4.0,3.0,3.6667,0.7632,0.8767,0.9831,0.7612,0.7247,0.6741,0.7248,0.5215,0.7132,0.49,0.6667,0.4533,0.3961
+5,a man surrounded by people at a poker table in a casino .,0.4166,man showing how to deal a poker game while sitting at a poker table .,4.0,4.0,4.0,4.0,0.6598,0.9129,0.941,0.7486,0.6958,0.6668,0.618,0.5048,0.622,0.4767,0.5756,0.4358,0.4166
+6,a man is teaching tactics about a table card game and betting .,0.4605,a man shows off how to deal a hand of poker .,4.0,5.0,5.0,4.6667,0.7699,0.9038,1.0,0.8723,0.8863,0.8629,0.7454,0.5477,0.7441,0.5551,0.7053,0.4515,0.4605

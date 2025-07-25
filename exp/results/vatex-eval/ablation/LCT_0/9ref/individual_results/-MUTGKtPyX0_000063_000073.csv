@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a person hold a smartphone in front of a machine , the machine prints out a slip of paper .",0.4234,a person opening their phone using an app and scanning a bar code to then get a receipt from a machine,5.0,5.0,5.0,5.0,0.6324,0.8384,1.0,0.9084,0.9328,0.9133,0.5585,0.5033,0.5977,0.5199,0.5168,0.4034,0.4234
+2,a man is demonstrating how to use an atm machine .,0.6609,the lady is doing a demonstration on the proper way to use the atm machine .,4.0,5.0,4.0,4.3333,0.7395,0.9177,1.0,1.0,1.0,1.0,0.7161,0.6961,0.7265,0.6888,0.7019,0.6688,0.6609
+3,a person is showing how to use an atm machine .,0.7754,the lady is doing a demonstration on the proper way to use the atm machine .,5.0,5.0,5.0,5.0,0.8277,0.9433,1.0,1.0,1.0,1.0,0.812,0.799,0.8191,0.7942,0.8026,0.7807,0.7754
+4,"a card is pulled out of atm machine , then selects a button on atm .",0.0068,someone is using a bit coin machine that is similar to an atm .,3.0,3.0,3.0,3.0,0.5072,0.8528,1.0,0.7262,0.7483,0.6786,0.4221,0.1566,0.414,0.1708,0.3121,0.0,0.0068
+5,"a man is using at atm machine , slides his card in to make some sort of transaction .",0.2709,a person uses a bar code for a atm to check accounts .,2.0,3.0,3.0,2.6667,0.5628,0.8659,0.9509,0.7224,0.7423,0.6855,0.4823,0.3862,0.527,0.4027,0.4226,0.2729,0.2709
+6,"a person stands by an atm with some money in their hand , takes their receipt and then their card",0.1253,a person opening their phone using an app and scanning a bar code to then get a receipt from a machine,3.0,3.0,3.0,3.0,0.5256,0.8515,0.9825,0.8348,0.8748,0.8447,0.4247,0.2615,0.474,0.2953,0.3608,0.0834,0.1253

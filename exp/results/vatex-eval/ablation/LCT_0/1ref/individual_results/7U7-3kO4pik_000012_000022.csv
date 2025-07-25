@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man dead lifts weights in a crowded gym,0.0722,a man drops a barbell and then checks and adjusts the weights attached .,5.0,4.0,5.0,4.6667,0.3962,0.8178,0.92,0.8387,0.7957,0.7502,0.2617,0.28,0.3437,0.2412,0.1975,0.1197,0.0722
+2,a man in a gym is lifting a heavy barbell over his head .,0.0,a man drops a barbell and then checks and adjusts the weights attached .,5.0,5.0,5.0,5.0,0.5122,0.8246,0.8798,0.4213,0.2829,0.1303,0.4084,0.0,0.4455,0.0,0.3275,0.0,0.0
+3,a man in a gym is lifting a heavy weight over his head .,0.1059,a man drops a barbell and then checks and adjusts the weights attached .,5.0,5.0,5.0,5.0,0.4111,0.8132,0.9787,0.8094,0.8101,0.7664,0.2758,0.2724,0.3983,0.273,0.26,0.1052,0.1059
+4,"a man is in a gym , he lifts a heavy barbell from it's stand and lifts it above his head , he then returns it to the stand .",0.291,a man drops a barbell and then checks and adjusts the weights attached .,5.0,5.0,5.0,5.0,0.5654,0.8067,0.921,0.7388,0.7599,0.7023,0.4612,0.4118,0.5281,0.4281,0.415,0.2708,0.291
+5,"in a gym , a man is lifting a heavy barbell over his head .",0.0,a man drops a barbell and then checks and adjusts the weights attached .,5.0,5.0,5.0,5.0,0.5175,0.8207,0.8397,0.4213,0.2684,0.1086,0.4121,0.0,0.4254,0.0,0.2998,0.0,0.0
+6,a man is lifting a heavy set of weights inside of a gym .,0.0,a man drops a barbell and then checks and adjusts the weights attached .,5.0,5.0,5.0,5.0,0.4643,0.8184,0.8746,0.4937,0.6311,0.5492,0.3454,0.0,0.3875,0.1512,0.2516,0.0,0.0

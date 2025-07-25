@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man playing a musical instrument on the street during the day .,0.6324,a man is playing a musical instrument on a street outside a park,5.0,5.0,5.0,5.0,0.6688,0.9531,1.0,1.0,1.0,1.0,0.6364,0.6496,0.6496,0.6496,0.6324,0.6324,0.6324
+2,a woman is sitting in a chair and smoking a pipe .,0.0,a man plays a pipe instrument and while sitting on a speaker .,3.0,4.0,1.0,2.6667,0.4259,0.8325,1.0,1.0,1.0,1.0,0.3104,0.1245,0.2134,0.121,0.0551,0.0,0.0
+3,a woman is using a device to smoke out a pipe .,0.0,a man plays a pipe instrument and while sitting on a speaker .,3.0,4.0,1.0,2.6667,0.3384,0.8165,1.0,1.0,1.0,1.0,0.1604,0.2001,0.2497,0.1785,0.0479,0.0,0.0
+4,a man is shown blowing into a musical instrument then pans to include another man playing an instrument in the shot .,0.0303,a printer is printing a sheet of paper while a man blows into a musical pipe .,3.0,4.0,3.0,3.3333,0.5101,0.8822,0.9181,0.7904,0.7492,0.713,0.4054,0.1961,0.385,0.201,0.2535,0.0243,0.0303
+5,the man is playing a music piece on the instrument .,0.1845,a male is sitting in the streets playing music with different instrument .,5.0,5.0,5.0,5.0,0.5168,0.9345,0.95,0.7785,0.7861,0.7127,0.4829,0.3217,0.4865,0.2605,0.4505,0.2419,0.1845
+6,a music group consisting of men are performing by playing various musical instruments .,0.0,a man plays a pipe instrument and while sitting on a speaker .,4.0,2.0,1.0,2.3333,0.31,0.8813,0.9467,0.7134,0.7391,0.6493,0.217,0.0,0.1764,0.0,0.025,0.0,0.0

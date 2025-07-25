@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a baby is playing with her parent on the floor with a piece of colored paper .,0.2897,a baby sits on the floor opening a present and is won't let go of the wrapping paper .,5.0,4.0,4.0,4.3333,0.6995,0.8794,1.0,0.8387,0.84,0.7965,0.6566,0.3763,0.6289,0.407,0.5759,0.253,0.2897
+2,a baby is sitting on the floor and playing with a toy .,0.3502,a baby sits on the floor opening a present and is won't let go of the wrapping paper .,4.0,4.0,4.0,4.0,0.6225,0.8753,0.9756,1.0,0.9681,0.9601,0.5541,0.4533,0.5594,0.4499,0.4796,0.3542,0.3502
+3,a baby is sitting on the floor and playing with a toy .,0.3502,a baby sits on the floor opening a present and is won't let go of the wrapping paper .,4.0,4.0,4.0,4.0,0.6225,0.8753,0.9756,1.0,0.9681,0.9601,0.5541,0.4533,0.5594,0.4499,0.4796,0.3542,0.3502
+4,a toddler is standing in a living room opening up presents .,0.3427,a kid seated in a room is opening a present while a woman is talking in the background .,3.0,3.0,4.0,3.3333,0.5812,0.8568,1.0,0.8879,0.911,0.8907,0.5111,0.5028,0.4869,0.4368,0.4012,0.4197,0.3427
+5,kids are wrapping presents and they want to know if mom has seen it .,0.0,a baby holds a piece of wrapping paper as a present is being unwrapped .,2.0,4.0,1.0,2.3333,0.4434,0.851,1.0,0.8723,0.8863,0.8535,0.3385,0.0266,0.3451,0.0093,0.2004,0.0,0.0
+6,"in a living room , a young girl is unwrapping a present .",0.0,a baby holds a piece of wrapping paper as a present is being unwrapped .,5.0,3.0,4.0,4.0,0.6171,0.8379,0.9831,0.801,0.8318,0.7798,0.543,0.177,0.5651,0.1678,0.481,0.0647,0.0

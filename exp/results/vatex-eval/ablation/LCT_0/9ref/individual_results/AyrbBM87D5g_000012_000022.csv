@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a fit looking young man practices dead weight lifting with extremely heavy weight .,0.3717,a fit young man is lifting weights at the gym .,5.0,5.0,5.0,5.0,0.7373,0.9153,0.8955,0.6684,0.6334,0.569,0.713,0.3762,0.68,0.3924,0.6504,0.355,0.3717
+2,a man is in a gym and he is lifting a heavy weight .,0.8882,a man in a gym is lifting a heavy set of weights off the ground .,5.0,5.0,5.0,5.0,0.8977,0.9542,0.9841,1.0,0.9893,0.9884,0.8927,0.8977,0.8925,0.8933,0.8874,0.8927,0.8882
+3,a man in a gym lifts a heavy weight over his head .,0.8101,a man in a gym is lifting a heavy set of weights off the ground .,4.0,4.0,4.0,4.0,0.824,0.9269,1.0,1.0,1.0,1.0,0.8101,0.824,0.824,0.824,0.8101,0.8101,0.8101
+4,a man is lifting a heavy set of weights inside of a gym .,0.5979,a man in a gym is lifting a heavy set of weights off the ground .,5.0,5.0,5.0,5.0,0.9133,0.9674,0.9569,0.7237,0.6871,0.6563,0.9104,0.6009,0.7257,0.5992,0.6853,0.5789,0.5979
+5,a young man weightlifts a very large amount of weight in the gym .,0.7734,a fit young man is lifting weights at the gym .,5.0,5.0,5.0,5.0,0.8181,0.9174,1.0,1.0,1.0,1.0,0.7978,0.8131,0.7979,0.7962,0.7754,0.7923,0.7734
+6,a man is weight lifting weights while in a gym setting .,0.4765,a fit young man is lifting weights at the gym .,5.0,5.0,5.0,5.0,0.8693,0.9468,0.9655,0.8003,0.8208,0.7833,0.862,0.4125,0.7444,0.4888,0.7422,0.3799,0.4765

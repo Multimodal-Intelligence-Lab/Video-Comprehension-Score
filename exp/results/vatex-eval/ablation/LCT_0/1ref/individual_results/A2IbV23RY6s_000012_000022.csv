@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is getting a tattoo on her wrist by a man at a tattoo parlor .,0.2403,a girl is in florida and getting a tattoo on her forearm by a tattoo artist .,5.0,5.0,5.0,5.0,0.5444,0.8597,0.8916,0.5729,0.6976,0.6482,0.4701,0.2047,0.489,0.3469,0.4057,0.075,0.2403
+2,a man is getting a tattoo on a woman ' s arm .,0.0,a girl is in florida and getting a tattoo on her forearm by a tattoo artist .,5.0,4.0,5.0,4.6667,0.5562,0.867,0.8272,0.5634,0.4505,0.3662,0.4882,0.2124,0.4635,0.0121,0.3813,0.0916,0.0
+3,a man is getting his ear pierced by a woman .,0.0,a girl is in florida and getting a tattoo on her forearm by a tattoo artist .,2.0,2.0,1.0,1.6667,0.2063,0.7893,0.8649,1.0,0.8792,0.847,0.0,0.2063,0.0823,0.0973,0.0,0.0,0.0
+4,a tattoo artist applies a tatoo to the upper chest area of a young woman .,0.0,a girl is in florida and getting a tattoo on her forearm by a tattoo artist .,4.0,4.0,4.0,4.0,0.4868,0.8295,0.6102,0.5961,0.4443,0.3301,0.3813,0.139,0.1589,0.0,0.0,0.0,0.0
+5,"a young girl lying on her back , is getting a tattoo on her upper right chest by a technician who is talking to her .",0.2356,a girl is in florida and getting a tattoo on her forearm by a tattoo artist .,5.0,2.0,4.0,3.6667,0.5164,0.8424,0.9503,0.7002,0.751,0.7044,0.4259,0.3093,0.4911,0.356,0.3959,0.1802,0.2356
+6,a woman is having her eyebrow drawn or tattooed by another person .,0.0,a girl is in florida and getting a tattoo on her forearm by a tattoo artist .,4.0,4.0,4.0,4.0,0.401,0.7997,0.8936,0.519,0.4277,0.2844,0.251,0.0,0.3297,0.0,0.1619,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy is practicing his card throwing skills by throwing them at the wall .,0.0,a boy was flinging a card to the wall of the room,5.0,5.0,5.0,5.0,0.674,0.8725,0.8545,0.1502,0.0,0.0,0.6264,0.0,0.6185,0.0,0.5628,0.0,0.0
+2,a young boy is throwing darts at a dart board .,0.0,a boy was flinging a card to the wall of the room,2.0,3.0,3.0,2.6667,0.3112,0.8236,0.9333,0.8209,0.7471,0.6929,0.1638,0.161,0.262,0.0781,0.104,0.0,0.0
+3,a group of people are playing a game of darts .,0.0,a boy was flinging a card to the wall of the room,1.0,1.0,1.0,1.0,0.1875,0.7595,0.8333,0.5947,0.6941,0.5972,0.0,0.0,0.025,0.0,0.0,0.0,0.0
+4,a guy is throwing a heavy medicine ball at a wall .,0.105,a boy was flinging a card to the wall of the room,2.0,3.0,4.0,3.0,0.3245,0.8308,0.941,0.9679,0.9085,0.8898,0.1869,0.3021,0.2821,0.2564,0.1359,0.1599,0.105
+5,a standing man juggles several small balls in a dimly lit room,0.0,a boy was flinging a card to the wall of the room,2.0,2.0,4.0,2.6667,0.2146,0.7833,1.0,1.0,1.0,1.0,0.0,0.2146,0.2146,0.2146,0.0,0.0,0.0
+6,a man seated is throwing a ball to a man standing indoors .,0.0803,a boy was flinging a card to the wall of the room,1.0,2.0,3.0,2.0,0.2742,0.7892,1.0,1.0,1.0,1.0,0.0803,0.2742,0.2742,0.2742,0.0803,0.0803,0.0803

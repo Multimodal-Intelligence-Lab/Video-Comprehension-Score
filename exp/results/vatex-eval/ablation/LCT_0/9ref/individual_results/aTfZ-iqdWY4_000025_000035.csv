@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is playing frisbee golf and can be seen from a few different angles .,0.4494,a man throws a frisbee toward a goal for frisbee golf .,5.0,5.0,5.0,5.0,0.7775,0.8739,1.0,0.8933,0.929,0.9148,0.7454,0.4994,0.7172,0.5262,0.6764,0.3996,0.4494
+2,a man is throwing a ball at a target in a park .,0.5452,a man is throwing a ball into the basket in the middle of a place full of trees,4.0,3.0,2.0,3.0,0.6079,0.8901,1.0,1.0,1.0,1.0,0.5595,0.6079,0.5912,0.5952,0.5407,0.5595,0.5452
+3,a man throws a frisbee and then throws it into a basket .,0.3703,a young man is shown using a disc and trying to make it into a metal basket .,4.0,3.0,4.0,3.6667,0.7737,0.9113,1.0,1.0,1.0,1.0,0.7517,0.4979,0.7429,0.4818,0.7179,0.3898,0.3703
+4,a man throws a ball into the air then attemps to juggle several balls,0.1569,a man is throwing a ball into the basket in the middle of a place full of trees,3.0,2.0,4.0,3.0,0.4569,0.8501,0.9859,0.7612,0.7887,0.7408,0.3611,0.1655,0.4011,0.2833,0.2955,0.0184,0.1569
+5,a guy with glasses is trying to juggle multiple balls .,0.0,a man prepares to kick a ball at a great distance .,2.0,2.0,2.0,2.0,0.2498,0.8061,1.0,1.0,1.0,1.0,0.0658,0.1076,0.215,0.1076,0.0117,0.0,0.0
+6,at a field a young man is spinning around and throwing a discus .,0.0,a man prepares to kick a ball at a great distance .,5.0,2.0,4.0,3.6667,0.5807,0.8322,0.9599,0.8022,0.8123,0.7584,0.4956,0.1072,0.5138,0.0791,0.415,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person sets a shirt on a piece of cardboard and folds it .,0.0469,a person cuts a square of cardboard and then uses it to fold a shirt .,5.0,5.0,5.0,5.0,0.8001,0.9044,0.8397,0.4139,0.2575,0.179,0.779,0.2675,0.762,0.0721,0.7368,0.2477,0.0469
+2,a woman is demonstrating how to fold a shirt on a table .,0.0,a person cuts a square of cardboard and then uses it to fold a shirt .,5.0,4.0,4.0,4.3333,0.4825,0.8506,0.8327,0.509,0.3864,0.2786,0.3916,0.0,0.3785,0.0,0.2693,0.0,0.0
+3,a person is demonstrating how to properly fold a shirt .,0.3654,a person cuts a square of cardboard and then uses it to fold a shirt .,5.0,5.0,5.0,5.0,0.5697,0.8769,0.9524,0.7905,0.7732,0.7413,0.5093,0.4557,0.5482,0.4435,0.4848,0.3793,0.3654
+4,a man maneuvers a shirt on an ironing board until a sleeve is laid out straight and then demonstrates and announces ironing the cuff .,0.0,a person cuts a square of cardboard and then uses it to fold a shirt .,4.0,1.0,2.0,2.3333,0.4315,0.7925,0.8192,0.5155,0.541,0.4209,0.2826,0.0,0.306,0.0,0.1243,0.0,0.0
+5,a person shows how to fold a piece of paper folding in the different corners and then the top .,0.093,a person cuts a square of cardboard and then uses it to fold a shirt .,5.0,4.0,4.0,4.3333,0.4619,0.8493,0.936,0.6754,0.6985,0.645,0.3665,0.2033,0.4252,0.2297,0.3232,0.062,0.093
+6,a person is folding and refolding a small piece of paper .,0.0,a person cuts a square of cardboard and then uses it to fold a shirt .,4.0,2.0,4.0,3.3333,0.4496,0.844,0.7803,0.3342,0.1132,0.0,0.3479,0.0,0.2947,0.0,0.1643,0.0,0.0

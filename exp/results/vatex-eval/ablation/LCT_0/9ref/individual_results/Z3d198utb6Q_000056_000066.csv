@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman demonstrates how to clean her face and remove makeup .,0.7039,woman demonstrating and instructing on the proper way to wash and exfoliate your face .,5.0,5.0,4.0,4.6667,0.7875,0.8703,1.0,1.0,1.0,1.0,0.7558,0.7464,0.7723,0.7423,0.7384,0.7087,0.7039
+2,a woman is demonstrating how to apply a face to her face .,0.6359,woman demonstrating and instructing on the proper way to wash and exfoliate your face .,5.0,4.0,4.0,4.3333,0.6825,0.9135,1.0,1.0,0.9672,0.963,0.648,0.6825,0.6681,0.6716,0.632,0.648,0.6359
+3,a woman is applying cream to her face and rubbing it .,0.5756,a woman puts moisturizer on her face in the mirror .,5.0,4.0,5.0,4.6667,0.791,0.9602,0.9714,0.7974,0.8529,0.8252,0.7823,0.6106,0.6751,0.6429,0.6246,0.5373,0.5756
+4,a woman demonstrates on her face the places to spread a cleansing product .,0.5431,woman demonstrating and instructing on the proper way to wash and exfoliate your face .,5.0,5.0,5.0,5.0,0.7548,0.8599,0.92,0.8387,0.7957,0.7497,0.7148,0.6048,0.7226,0.5673,0.6773,0.5827,0.5431
+5,a women with smooth skin demostrating how she applies lotion to her face,0.4743,a woman rubbing lotion on her face while talking about using it .,5.0,4.0,5.0,4.6667,0.6824,0.869,0.9859,0.8641,0.829,0.8032,0.6257,0.6203,0.6117,0.5539,0.5424,0.5526,0.4743
+6,a lady is showing how to apply face cream on her face .,0.4862,a woman rubbing lotion on her face while talking about using it .,5.0,4.0,5.0,4.6667,0.676,0.8914,0.9714,0.8151,0.8569,0.827,0.6366,0.5515,0.6466,0.575,0.6035,0.4765,0.4862

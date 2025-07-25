@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl spoons batter into a mickey mouse shaped waffle iron .,0.6563,a woman is spooning pancake batter into a mickey mouse pancake maker .,5.0,5.0,5.0,5.0,0.8014,0.8776,0.9831,0.9766,0.9697,0.9634,0.7737,0.5811,0.762,0.6931,0.7288,0.5552,0.6563
+2,a woman is using a knife to clean the dishes in a kitchen .,0.0,a person is scooping batter from a bowl into a waffle maker .,3.0,3.0,2.0,2.6667,0.1989,0.7716,0.9851,1.0,0.9895,0.9859,0.0,0.084,0.1506,0.0742,0.0,0.0,0.0
+3,a woman and a child are washing dishes in a sink .,0.0,a person is scooping batter from a bowl into a waffle maker .,3.0,2.0,2.0,2.3333,0.1899,0.7943,0.9796,0.9062,0.8588,0.8134,0.0,0.0241,0.1345,0.0083,0.0,0.0,0.0
+4,a person dips food into beaten egg then flour then puts it into a saute pan .,0.0,a person is scooping batter from a bowl into a waffle maker .,4.0,2.0,2.0,2.6667,0.3672,0.7827,0.975,0.8124,0.8218,0.7646,0.1916,0.1556,0.2723,0.1652,0.0581,0.0,0.0
+5,a lady is gently flipping a pancake from one side to another to ensure it is fully cooked .,0.2414,a woman is pouring pancake batter into a character themed pancake batter .,3.0,2.0,2.0,2.3333,0.5466,0.8054,0.9419,0.7053,0.7422,0.6799,0.437,0.3571,0.5186,0.389,0.4023,0.2018,0.2414
+6,a woman cooks a pancake in a frying pan and places it in a plate .,0.0,a person is scooping batter from a bowl into a waffle maker .,5.0,2.0,2.0,3.0,0.5905,0.8192,0.9412,0.6014,0.6718,0.5781,0.4997,0.109,0.5575,0.1633,0.4594,0.0,0.0

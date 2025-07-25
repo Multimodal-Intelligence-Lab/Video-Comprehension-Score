@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a craftsman demonstrates the use of a wood lathe in a shop .,0.5895,man demonstrating and narrating the proper use of a wood lathe .,5.0,5.0,5.0,5.0,0.7704,0.9001,0.9583,0.8345,0.836,0.7909,0.7433,0.6916,0.739,0.6039,0.7082,0.6633,0.5895
+2,a man is using a machine to cut a piece of meat .,0.3263,a man uses a moving machine part to grind down an object while he talks .,4.0,4.0,4.0,4.0,0.4866,0.8653,1.0,1.0,1.0,1.0,0.4067,0.4287,0.4287,0.4287,0.3263,0.3263,0.3263
+3,a man is using a machine to cut a piece of metal .,0.3809,a man uses a moving machine part to grind down an object while he talks .,4.0,4.0,4.0,4.0,0.5275,0.8666,0.9831,0.9766,0.9697,0.9644,0.4359,0.4781,0.4846,0.4744,0.3892,0.3852,0.3809
+4,a man places a wood object on a table and slides a woodworking machine across the top .,0.3562,a man in a wood shop demonstrates how to use one of the machines .,5.0,5.0,5.0,5.0,0.6026,0.8407,0.9903,0.8651,0.898,0.8738,0.5262,0.4357,0.5732,0.46,0.4912,0.3272,0.3562
+5,in a tool shop a man is working on different types of ply wood,0.0,a man with an apron cutting wood that rotates in a machine .,4.0,4.0,4.0,4.0,0.5629,0.8584,0.9655,0.7797,0.7745,0.7297,0.4908,0.1425,0.4513,0.1573,0.3608,0.0,0.0
+6,a man is using a wood cutting machine to cut a block of wood,0.2385,a man is operating a grinding machine and holding an object against it .,5.0,5.0,5.0,5.0,0.6464,0.9156,1.0,0.8879,0.911,0.8924,0.6137,0.3532,0.5749,0.3695,0.5357,0.2187,0.2385

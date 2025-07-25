@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is sitting outside in front of a dirt area and is working with two stones shaping one by hitting it with the other stone .,0.4163,a man demonstrates the art of reshaping stones using another stone as the shaping tool .,5.0,5.0,5.0,5.0,0.6753,0.8834,0.9796,0.9632,0.9549,0.9445,0.6155,0.3971,0.6466,0.4946,0.5816,0.3386,0.4163
+2,a man is demonstrating how to make a piece of rock .,0.4572,"a man showing two rocks , his fingers and then hitting one rock with the other .",5.0,5.0,5.0,5.0,0.6649,0.8735,0.963,0.8284,0.8469,0.8125,0.6107,0.5251,0.6367,0.5258,0.5841,0.4563,0.4572
+3,a man is using a tool to break a piece of flint .,0.3283,"a man showing two rocks , his fingers and then hitting one rock with the other .",5.0,5.0,4.0,4.6667,0.521,0.8548,1.0,0.9766,0.9574,0.9469,0.4292,0.4507,0.5138,0.4646,0.4077,0.3109,0.3283
+4,"a man is holding a rock , and using it to describe something .",0.219,a man shows and describes some rocks he has and their unique features .,5.0,5.0,4.0,4.6667,0.707,0.8538,0.96,0.6076,0.6485,0.5816,0.6559,0.3226,0.6567,0.3105,0.5969,0.1941,0.219
+5,a man breaks apart a large rock with a smaller rock .,0.4445,a man holds two rocks in his hand before cracking them together .,4.0,5.0,5.0,4.6667,0.6824,0.8445,0.9846,0.904,0.8852,0.8632,0.6239,0.4727,0.6729,0.5413,0.6126,0.3615,0.4445
+6,"a man uses a rock to break a bigger rock , while someone talks in the background .",0.2759,a man shows and describes some rocks he has and their unique features .,5.0,4.0,3.0,4.0,0.6043,0.8499,0.9892,0.8638,0.8792,0.8549,0.5249,0.3863,0.581,0.397,0.497,0.263,0.2759

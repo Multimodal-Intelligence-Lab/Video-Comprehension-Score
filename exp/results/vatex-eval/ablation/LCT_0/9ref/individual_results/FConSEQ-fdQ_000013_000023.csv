@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is pole vaulting while another in the background comments .,0.5387,"a young man is doing a pole vault action in slow motion , while another man talks about it .",5.0,5.0,5.0,5.0,0.7017,0.893,1.0,0.8295,0.88,0.8529,0.6659,0.5827,0.6651,0.5881,0.625,0.5327,0.5387
+2,a man is pole vaulting over a pole and lands on the ground .,0.2961,"an athlete is shown in slow motion as he plants a pole in the dirt , and then does a pole vault jump and clears the bar .",4.0,4.0,4.0,4.0,0.6175,0.8718,0.9667,0.7341,0.7412,0.6869,0.5314,0.4072,0.5962,0.4181,0.5054,0.2738,0.2961
+3,a man is pole vaulting over a bar on a mat .,0.5976,an athlete does a pole vault jump and he clears the bar without knocking it down .,5.0,5.0,5.0,5.0,0.6719,0.8697,1.0,1.0,0.9845,0.9797,0.6102,0.6719,0.658,0.6614,0.5936,0.6102,0.5976
+4,"a pole vaulter completes a successful vault , followed by slow motion footage .",0.3557,"a young man is doing a pole vault action in slow motion , while another man talks about it .",5.0,4.0,5.0,4.6667,0.7172,0.858,0.9375,0.6067,0.6317,0.5708,0.667,0.3957,0.6106,0.4341,0.5462,0.3292,0.3557
+5,a young man performs a pole vault at a track meet .,0.3337,"an athlete is shown in slow motion as he plants a pole in the dirt , and then does a pole vault jump and clears the bar .",5.0,5.0,5.0,5.0,0.6478,0.8808,1.0,0.9093,0.9085,0.8863,0.6001,0.4643,0.5933,0.4638,0.5383,0.3343,0.3337
+6,a man is at a track and field event and he jumps over the pole .,0.4216,a man wearing black shorts and shirt is jumping over a pole,5.0,5.0,5.0,5.0,0.6648,0.8708,1.0,0.8723,0.8863,0.8664,0.6151,0.4997,0.5636,0.5076,0.4874,0.4123,0.4216

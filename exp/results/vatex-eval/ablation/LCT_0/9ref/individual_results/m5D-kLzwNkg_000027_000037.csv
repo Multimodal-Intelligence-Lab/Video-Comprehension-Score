@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person in the yard of a house shoveling the snow,0.2733,a woman is standing outside preparing to shovel snow from her yard .,5.0,4.0,4.0,4.3333,0.6796,0.9092,0.8819,0.7408,0.64,0.5958,0.6475,0.4409,0.5354,0.3529,0.4889,0.3721,0.2733
+2,a man is shoveling snow with a shovel in the snow .,0.3706,a person is shoveling snow away from her driveway .,4.0,4.0,4.0,4.0,0.5719,0.9092,0.8966,0.8571,0.8571,0.8429,0.5208,0.4278,0.4494,0.4278,0.3755,0.3706,0.3706
+3,a man is shoveling snow from a driveway with a shovel .,0.5314,a person is shoveling snow away from her driveway .,4.0,4.0,4.0,4.0,0.6784,0.9399,0.9023,0.685,0.7301,0.7128,0.6579,0.4927,0.6208,0.5595,0.5895,0.4673,0.5314
+4,a girl is standing outside with a big shovel shoveling the snow .,0.4949,a woman is standing outside preparing to shovel snow from her yard .,5.0,5.0,5.0,5.0,0.6544,0.915,0.921,0.7839,0.8343,0.8189,0.5985,0.5081,0.5675,0.5378,0.5273,0.4624,0.4949
+5,a man shovels his snow covered drive way whilie chatting with a woman .,0.585,a girl is shovelling snow in a driveway while a man in the background talks to her .,3.0,3.0,4.0,3.3333,0.7453,0.871,0.9,0.8845,0.8405,0.8008,0.7028,0.6528,0.7046,0.619,0.6554,0.599,0.585
+6,a man using a shovel clears the driveway of snow .,0.1346,a person is shoveling snow away from her driveway .,4.0,4.0,4.0,4.0,0.6844,0.8987,0.9386,0.7728,0.7665,0.7114,0.6459,0.4323,0.6053,0.2045,0.5608,0.3851,0.1346

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,footage of a person tandem skydiving ; their parachute successfully deploys .,0.3903,music plays as a pair of skydivers are sen in the air and then their parachute deploys .,5.0,5.0,4.0,4.6667,0.7165,0.8585,0.9569,0.8041,0.7887,0.7348,0.6698,0.4887,0.6531,0.4848,0.5959,0.3791,0.3903
+2,a group of people are skydiving in the sky .,0.3887,two persons doing a parachute jump while in the air flying,4.0,4.0,4.0,4.0,0.6207,0.8619,0.9286,1.0,0.9259,0.9113,0.56,0.527,0.5682,0.4892,0.4991,0.434,0.3887
+3,two people are skydiving in the air with a parachute .,0.7569,two people skydive in tandem and one of them pulls the parachute .,5.0,5.0,4.0,4.6667,0.8664,0.9395,0.9756,1.0,0.9794,0.9776,0.8578,0.7817,0.8311,0.7772,0.8294,0.7619,0.7569
+4,two people parachuting are flying over a large lake together .,0.4085,two persons doing a parachute jump while in the air flying,4.0,4.0,4.0,4.0,0.6491,0.908,0.9565,0.7407,0.8163,0.7977,0.6074,0.5196,0.6011,0.4713,0.5538,0.4626,0.4085
+5,a duo of people jump from a cliff and glide in a blue parachute,0.476,two people are shown tandem style falling from the air with a parachute .,4.0,4.0,3.0,3.6667,0.6809,0.8773,1.0,0.8933,0.9155,0.8926,0.6363,0.5551,0.62,0.5638,0.5669,0.4656,0.476
+6,two men are skydiving and then they release their parachute .,0.7083,two men are sky diving in tandem and begin to open their chute .,5.0,5.0,5.0,5.0,0.7954,0.8825,0.95,0.9447,0.8717,0.8484,0.7626,0.7559,0.777,0.7487,0.7412,0.7167,0.7083

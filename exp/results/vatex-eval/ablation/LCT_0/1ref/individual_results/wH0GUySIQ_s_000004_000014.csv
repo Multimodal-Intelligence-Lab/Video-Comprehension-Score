@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young man lays down on the floor while another person tears a hair waxing strip off his lower back,0.0,a kid with a large rash on his back laying on the floor while others look and laugh at him .,5.0,5.0,5.0,5.0,0.3522,0.8337,0.7898,0.5167,0.5309,0.4373,0.223,0.0,0.1798,0.0,0.0162,0.0,0.0
+2,a man is laying on a table while another person is waxing his leg .,0.0,a kid with a large rash on his back laying on the floor while others look and laugh at him .,4.0,4.0,4.0,4.0,0.1725,0.8086,0.9123,0.3916,0.3673,0.2174,0.0,0.0,0.093,0.0,0.0,0.0,0.0
+3,a man is laying on a table while another man is waxing his hair .,0.0,a kid with a large rash on his back laying on the floor while others look and laugh at him .,4.0,4.0,4.0,4.0,0.1858,0.8044,0.9,0.3502,0.3058,0.1371,0.0,0.0,0.0953,0.0,0.0,0.0,0.0
+4,a man lies on the table and screams as he is being waxed .,0.0,a kid with a large rash on his back laying on the floor while others look and laugh at him .,3.0,4.0,4.0,3.6667,0.2293,0.7545,0.9298,0.6417,0.6631,0.5534,0.0,0.0,0.1711,0.0,0.0,0.0,0.0
+5,a man lays face down as a woman waxes his back .,0.0,a kid with a large rash on his back laying on the floor while others look and laugh at him .,5.0,5.0,5.0,5.0,0.3147,0.8057,0.838,0.4708,0.444,0.31,0.1494,0.0,0.1822,0.0,0.0,0.0,0.0
+6,a man lays down and moans before a wax pad is ripped off his left leg .,0.0,a kid with a large rash on his back laying on the floor while others look and laugh at him .,4.0,4.0,4.0,4.0,0.2748,0.7787,0.9453,0.5351,0.5567,0.4307,0.0687,0.0,0.2328,0.0,0.0148,0.0,0.0

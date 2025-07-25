@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,different people pay for the gas at a gas station and pump gas into their car .,0.4239,multiple individuals putting gas in their vehicles while be presented with alternative cheaper way to put gas their car,5.0,5.0,4.0,4.6667,0.7104,0.9106,0.9846,0.7647,0.7706,0.7257,0.6726,0.4161,0.6539,0.461,0.604,0.3834,0.4239
+2,a woman is showing how to use a gas pump .,0.3263,a few people are shown getting gas and the gas prices differences,4.0,1.0,3.0,2.6667,0.6336,0.8782,1.0,1.0,1.0,1.0,0.569,0.4665,0.539,0.4262,0.4563,0.3708,0.3263
+3,a woman is talking about a gas station and then a man is pumping gas .,0.4608,a man is talking about the price of gas and showing people filling up their gas tanks .,4.0,4.0,4.0,4.0,0.7914,0.8987,0.991,0.9017,0.9303,0.913,0.7679,0.5319,0.587,0.5227,0.5355,0.4734,0.4608
+4,a person is showing how they fill up a car gas in a station .,0.3489,a few people are shown getting gas and the gas prices differences,3.0,4.0,4.0,3.6667,0.645,0.8946,1.0,0.8723,0.8863,0.8597,0.6032,0.4471,0.546,0.4386,0.4875,0.3588,0.3489
+5,several different people are shown getting gas during a news broadcast .,0.3306,a news video is featuring a story about a gas rewards program .,5.0,5.0,5.0,5.0,0.7081,0.9257,0.9135,0.6747,0.6639,0.5926,0.6847,0.4829,0.6116,0.4285,0.5805,0.3738,0.3306
+6,the news is doing a story on gas and shows a bunch of gas stations .,0.5028,a man is talking about the price of gas and showing people filling up their gas tanks .,5.0,5.0,5.0,5.0,0.6994,0.8789,1.0,1.0,1.0,1.0,0.6568,0.5778,0.6575,0.5778,0.609,0.5028,0.5028

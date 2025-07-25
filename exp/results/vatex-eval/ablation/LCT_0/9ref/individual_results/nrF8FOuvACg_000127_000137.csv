@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"three young men , sitting down are playing a song on three accordions .",0.7908,three adult men are sitting down playing music in an accordion group .,4.0,5.0,4.0,4.3333,0.8386,0.9433,1.0,1.0,1.0,1.0,0.8289,0.7155,0.8215,0.7932,0.8107,0.7122,0.7908
+2,a man is playing a song on a musical instrument .,0.0,three adult men are sitting down playing music in an accordion group .,5.0,5.0,4.0,4.6667,0.2658,0.8886,1.0,0.8644,0.8788,0.8426,0.1456,0.073,0.2205,0.0781,0.1016,0.0,0.0
+3,a man is playing a song on a accordion while a man plays the accordion .,0.3008,two men sit and perform on stage using accordions .,5.0,5.0,5.0,5.0,0.6978,0.919,0.8506,0.6891,0.5602,0.4991,0.629,0.3585,0.6447,0.3697,0.5639,0.2828,0.3008
+4,a man is on stage playing a musical instrument while a song plays,0.2176,a couple on stage playing music for a group of people,5.0,5.0,4.0,4.6667,0.5225,0.8994,0.9231,0.8619,0.7323,0.7018,0.4659,0.4033,0.3712,0.2977,0.2996,0.3352,0.2176
+5,a group of three--two men and a woman--are playing acoustic instruments on a stage .,0.5243,three people are playing a song with accordions on a stage .,5.0,5.0,5.0,5.0,0.6067,0.8783,0.9583,1.0,0.9681,0.9637,0.5427,0.6067,0.5859,0.5909,0.5185,0.5427,0.5243
+6,a man is performing a song on stage using a harmonica .,0.0,three adult men are sitting down playing music in an accordion group .,4.0,4.0,4.0,4.0,0.4416,0.8918,0.9599,0.7212,0.7285,0.6463,0.3072,0.0411,0.3564,0.0506,0.2783,0.0,0.0

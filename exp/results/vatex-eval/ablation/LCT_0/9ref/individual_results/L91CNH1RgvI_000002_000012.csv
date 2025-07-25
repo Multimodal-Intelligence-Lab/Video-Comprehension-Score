@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl is standing on a boy's back and asks him what she should do .,0.4924,a young woman stands and balances on a man's back and asks for instructions .,5.0,5.0,5.0,5.0,0.6208,0.8738,0.9796,1.0,0.9681,0.9618,0.566,0.5475,0.6129,0.5564,0.557,0.4821,0.4924
+2,a man is laying on the floor and another man is laying on the floor .,0.4267,a man is laying down on the floor and a woman is standing on top of his back .,3.0,4.0,2.0,3.0,0.6035,0.9194,0.9524,0.7845,0.7752,0.7399,0.5616,0.4946,0.4684,0.4815,0.4122,0.4412,0.4267
+3,a man is laying on the floor while another man is on his back .,0.3337,a man is laying down on the floor and a woman is standing on top of his back .,4.0,4.0,4.0,4.0,0.74,0.9318,0.9162,0.8325,0.7909,0.7405,0.72,0.4546,0.7058,0.3517,0.6832,0.4395,0.3337
+4,"a woman holds herself aloft by laying back against a standing man and wrapping her arms around his torso above her head , she lifts and lowers her legs .",0.2688,a woman walks on a man's back in order to crack his spine .,3.0,1.0,1.0,1.6667,0.5612,0.8838,0.9557,0.9813,0.9542,0.9439,0.5035,0.4194,0.4971,0.4029,0.404,0.2889,0.2688
+5,a young girl lies on her stomach with her arms bent back to hold her feet and then stands up and does a back bend .,0.0286,"woman leans forward in bare feet , as she stands on the back of a man lying on the floor .",2.0,3.0,1.0,2.0,0.5102,0.8614,0.9529,0.7819,0.8201,0.7761,0.428,0.1339,0.4383,0.1681,0.3273,0.0,0.0286
+6,a girl stands on her bed and bends backwards and then lays down .,0.0587,a girl is stepping on a man's back while the man is laying on the floor .,2.0,3.0,2.0,2.3333,0.4381,0.8274,0.9655,0.803,0.79,0.7412,0.3197,0.2495,0.4025,0.2225,0.2766,0.0913,0.0587

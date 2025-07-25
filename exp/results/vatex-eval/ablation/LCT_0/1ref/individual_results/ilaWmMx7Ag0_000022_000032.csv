@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the group of men were operating a type of saw to cut the tree logs .,0.6219,men help each other as they operate machine that is cutting trees .,5.0,5.0,5.0,5.0,0.7476,0.8749,0.9831,0.7361,0.7628,0.7289,0.7116,0.6471,0.7433,0.6691,0.7066,0.6082,0.6219
+2,a group of people are working on a bulldozer in a field .,0.0,men help each other as they operate machine that is cutting trees .,4.0,4.0,4.0,4.0,0.25,0.7615,1.0,0.6213,0.5329,0.3866,0.0151,0.0,0.25,0.0,0.0151,0.0,0.0
+3,a group of people are riding on a large tractor .,0.0,men help each other as they operate machine that is cutting trees .,4.0,3.0,2.0,3.0,0.2112,0.7402,1.0,0.8408,0.827,0.7663,0.0,0.0618,0.2112,0.0462,0.0,0.0,0.0
+4,a man is using a wood cutting machine to cut a block of wood,0.2065,men help each other as they operate machine that is cutting trees .,5.0,5.0,4.0,4.6667,0.4641,0.8618,0.9321,0.7909,0.7836,0.7489,0.3782,0.3225,0.4251,0.3162,0.3329,0.2138,0.2065
+5,the man uses a circular saw to cut a piece of lumber .,0.0983,men help each other as they operate machine that is cutting trees .,4.0,4.0,4.0,4.0,0.3554,0.8066,1.0,0.8723,0.8863,0.859,0.2008,0.261,0.3554,0.2727,0.2008,0.0838,0.0983
+6,a person is using a log splitting machine to cut wood .,0.1122,men help each other as they operate machine that is cutting trees .,5.0,5.0,4.0,4.6667,0.4186,0.8445,0.9599,0.7876,0.7754,0.7341,0.3116,0.2618,0.3944,0.2502,0.2829,0.1259,0.1122

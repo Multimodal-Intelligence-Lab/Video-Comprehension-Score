@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,matador uses red cape to make the bull in a bullfight run pass him many times,0.4735,a bullfighter uses a red cape to lure a large pull into charging into it in front of a large audience in an arena .,5.0,5.0,5.0,5.0,0.6585,0.8417,0.9422,0.8723,0.8476,0.8119,0.5944,0.5323,0.6312,0.5569,0.5618,0.4444,0.4735
+2,a man is in a field and is running around a bull .,0.3366,a man has a red object in his hand that the bull is following .,4.0,4.0,3.0,3.6667,0.5316,0.8621,1.0,0.8742,0.827,0.7974,0.4513,0.4429,0.5316,0.4337,0.4513,0.3474,0.3366
+3,a group of people are watching a bull fight in a field .,0.1895,in an arena someone has a red cloth and a bull is chasing it in circles .,5.0,5.0,5.0,5.0,0.5734,0.8355,0.9804,0.8723,0.872,0.8415,0.4894,0.3456,0.4178,0.3454,0.2792,0.1898,0.1895
+4,a matador is using a red flag to fight a bull in an outdoor bull ring .,0.6023,a bullfighter holds a red flag and spins around in circles .,5.0,4.0,5.0,4.6667,0.7267,0.8607,1.0,0.9571,0.9377,0.9261,0.6737,0.6535,0.7195,0.6669,0.6651,0.5863,0.6023
+5,a crowd of people watch the bull master waving the red flag at the bull .,0.1746,a bullfighter holds a red flag and spins around in circles .,5.0,4.0,5.0,4.6667,0.6313,0.8563,0.8814,0.6964,0.6893,0.6179,0.5668,0.35,0.5683,0.2864,0.4958,0.2295,0.1746
+6,a man fights a bull in a ring while people watch to see what happens .,0.4315,"at a stadium , a bullfighter fights a bull while the spectators cheer him on .",5.0,5.0,5.0,5.0,0.6673,0.8429,0.9569,0.7936,0.8195,0.7606,0.6034,0.5594,0.6072,0.5231,0.5318,0.4748,0.4315

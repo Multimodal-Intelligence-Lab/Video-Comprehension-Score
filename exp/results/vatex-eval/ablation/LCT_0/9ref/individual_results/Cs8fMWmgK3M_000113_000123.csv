@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is playing an organ while a cartoon face and exclamation points flash on the screen .,0.854,a person is playing an electric organ while cartoonish pictures of a face and exclamation marks appear .,5.0,5.0,5.0,5.0,0.8734,0.9086,0.9873,0.9829,0.9539,0.9493,0.8607,0.8712,0.8666,0.8673,0.8532,0.8583,0.854
+2,a person is playing a song on an electric keyboard .,0.3611,a person plays a song on an ornately decorated church organ .,4.0,4.0,4.0,4.0,0.5743,0.8612,1.0,1.0,1.0,1.0,0.4911,0.4561,0.5333,0.4561,0.4422,0.3611,0.3611
+3,a person is playing a song on an organ while a man plays the piano .,0.2481,a person plays a song on an ornately decorated church organ .,4.0,3.0,4.0,3.6667,0.6134,0.9072,0.8296,0.6732,0.6644,0.6162,0.5739,0.3244,0.5086,0.2965,0.4503,0.243,0.2481
+4,an organist is demonstrating different controls and sounds on an organ .,0.0863,a person is playing an electric organ while cartoonish pictures of a face and exclamation marks appear .,5.0,5.0,5.0,5.0,0.603,0.8437,0.8205,0.7835,0.6965,0.6069,0.5101,0.3858,0.4685,0.2703,0.3383,0.2368,0.0863
+5,a seated man is playing an organ in a large showroom .,0.3211,a person plays an organ with three rows of keys .,4.0,5.0,4.0,4.3333,0.6179,0.8733,0.9487,0.9809,0.9527,0.9409,0.5625,0.486,0.5294,0.4404,0.4611,0.3908,0.3211
+6,a person playing the organ while the rest of the band plays in the background .,0.2148,someone is playing an organ while funny graphics are displayed on screen .,4.0,2.0,5.0,3.6667,0.6204,0.872,0.9004,0.6163,0.645,0.5825,0.564,0.2966,0.5784,0.3324,0.5158,0.1971,0.2148

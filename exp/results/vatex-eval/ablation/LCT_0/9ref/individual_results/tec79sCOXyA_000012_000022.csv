@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a person with a machine , grinds meat in an outdoor environment .",0.2962,a person drops raw meat into a grinder and turns the handle to create sausage .,5.0,5.0,5.0,5.0,0.6364,0.8929,0.9403,0.8026,0.7946,0.7479,0.5786,0.3864,0.6033,0.4063,0.538,0.2804,0.2962
+2,a person is using a meat grinder to grind meat .,0.6829,a person is using a meat grinder and spinning the handle to pour out meat .,5.0,5.0,5.0,5.0,0.8721,0.9407,0.954,1.0,0.9697,0.9659,0.864,0.7027,0.8604,0.6934,0.8516,0.6963,0.6829
+3,a person is using a grinder to grind meat into a bowl .,0.4877,"outside , you see a man using a hand held grinder . he is feeding small pieces of meat through the grinder to make ground meat , like hamburger meat .",4.0,5.0,5.0,4.6667,0.8227,0.9237,0.9321,0.7819,0.7968,0.7695,0.8041,0.5398,0.7361,0.5484,0.73,0.492,0.4877
+4,a man is pushing meat through a meat grinder,0.6783,a person is inserting different kinds of meat into a meat grinder as they spin it .,5.0,4.0,4.0,4.3333,0.7197,0.9116,1.0,1.0,1.0,1.0,0.686,0.7125,0.7125,0.7125,0.6783,0.6783,0.6783
+5,a man grinding meat through a meat grinder . into his hand .,0.5045,a person is inserting different kinds of meat into a meat grinder as they spin it .,4.0,4.0,4.0,4.0,0.7433,0.911,0.9164,0.7935,0.771,0.7434,0.7166,0.5775,0.7137,0.5579,0.6839,0.5363,0.5045
+6,meat is being placed into a grinder and the end result is shown as trays of ground meat,0.2915,meat is being placed into a meat grinder and ground out into a bowl .,5.0,5.0,5.0,5.0,0.7551,0.9218,0.9233,0.578,0.5953,0.5193,0.7343,0.3414,0.7078,0.311,0.6829,0.3227,0.2915

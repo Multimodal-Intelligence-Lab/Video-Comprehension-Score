@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two people playing tennis on a tennis court use their tennis rackets to volley the ball back and forth .,0.679,two men are on a tennis court hitting tennis balls back and forth .,5.0,5.0,5.0,5.0,0.762,0.9305,0.9808,0.9596,0.9634,0.9605,0.7419,0.7018,0.729,0.703,0.706,0.6777,0.679
+2,a man is playing tennis on a tennis court .,0.5126,two men are playing tennis hitting the ball back and forth .,5.0,4.0,5.0,4.6667,0.662,0.9089,0.9796,1.0,0.9845,0.9828,0.62,0.5776,0.5957,0.5707,0.5455,0.5204,0.5126
+3,two men are playing a game of tennis on a tennis court .,0.7231,two men are playing leisure tennis in an outdoor tennis field,5.0,5.0,5.0,5.0,0.8907,0.9299,1.0,1.0,1.0,1.0,0.8805,0.7425,0.8597,0.7425,0.858,0.7231,0.7231
+4,two men playing tennis with one another on a sunny day outside .,0.7298,two men are playing tennis hitting the ball back and forth .,5.0,4.0,5.0,4.6667,0.7657,0.9196,1.0,1.0,1.0,1.0,0.7298,0.7657,0.7657,0.7657,0.7298,0.7298,0.7298
+5,two men playing tennis in a small room back and forth .,0.6215,two men are playing tennis hitting the ball back and forth .,4.0,4.0,4.0,4.0,0.6666,0.9359,0.9885,0.9194,0.9412,0.9372,0.6437,0.6288,0.6627,0.6457,0.6396,0.6034,0.6215
+6,two men are seen playing tennis against the wall while taking turns .,0.5964,two men are playing tennis hitting the ball back and forth .,5.0,3.0,4.0,4.0,0.6892,0.8922,0.9783,0.9777,0.9618,0.9552,0.645,0.6188,0.6744,0.6466,0.6281,0.5646,0.5964

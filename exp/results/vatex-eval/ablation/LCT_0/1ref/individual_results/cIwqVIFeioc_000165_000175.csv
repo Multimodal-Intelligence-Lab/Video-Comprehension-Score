@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person with gloved hands digs through a bag of trash .,0.2726,a person was checking through the garbage in the dumpster,5.0,5.0,5.0,5.0,0.4931,0.8467,0.963,0.8654,0.8232,0.7911,0.4013,0.4142,0.4736,0.3842,0.3782,0.3082,0.2726
+2,a person is using a machine to clean a trash bin .,0.0,a person was checking through the garbage in the dumpster,2.0,3.0,2.0,2.3333,0.3501,0.8743,1.0,0.7253,0.6816,0.6358,0.2567,0.104,0.3501,0.0466,0.2567,0.0,0.0
+3,a person is sorting through a pile of trash .,0.531,a person was checking through the garbage in the dumpster,5.0,5.0,4.0,4.6667,0.6582,0.887,0.9474,0.7253,0.8216,0.7989,0.6146,0.5287,0.6392,0.584,0.5932,0.4687,0.531
+4,a trash collector is standing at the rear of a large trash truck that is emptying a trash dumpster .,0.288,a person was checking through the garbage in the dumpster,4.0,1.0,2.0,2.3333,0.4487,0.8554,0.9565,0.9487,0.9052,0.8891,0.3555,0.4189,0.4236,0.391,0.3262,0.3207,0.288
+5,a garbage truck is picking up trash containers and dumping them in the compacter .,0.2785,a person was checking through the garbage in the dumpster,1.0,1.0,1.0,1.0,0.4578,0.8482,0.9375,0.9258,0.8861,0.8657,0.3607,0.4143,0.4216,0.3881,0.3181,0.3095,0.2785
+6,a man is searching through trash in a dumpster and finds some comic books .,0.2752,a person was checking through the garbage in the dumpster,4.0,4.0,4.0,4.0,0.6182,0.8689,0.8193,0.7153,0.6063,0.5469,0.5606,0.4662,0.534,0.3631,0.4637,0.3857,0.2752

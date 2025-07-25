@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is barbecuing on a grill while a bee is flying around .,0.503,a man cooking sausages and white onions on a grill outdoors shows a bee buzzing around and explains that it's coming at him again .,5.0,5.0,5.0,5.0,0.7177,0.8653,0.9599,0.7153,0.7164,0.67,0.669,0.5723,0.681,0.5729,0.6288,0.5023,0.503
+2,a man is showing how to cook meat on a grill .,0.3602,a guy is cooking sausages and onions on a grill .,5.0,4.0,3.0,4.0,0.574,0.8752,0.9375,0.8574,0.8609,0.8227,0.5045,0.3705,0.5293,0.4499,0.4526,0.2678,0.3602
+3,a man is talking about how to cook sausages on a grill .,0.5689,a guy is cooking sausages and onions on a grill .,5.0,5.0,3.0,4.3333,0.7019,0.9109,0.9375,0.8574,0.8609,0.8279,0.671,0.5395,0.6593,0.6094,0.624,0.5139,0.5689
+4,a man cooking a hot dog over the open flame of a campfire .,0.3267,a man is outside grilling onions and hot dogs . a large insect flies nearby .,4.0,4.0,4.0,4.0,0.4556,0.8451,1.0,1.0,1.0,1.0,0.3551,0.4455,0.4303,0.4317,0.3251,0.343,0.3267
+5,a man lifts the cover of a grill and shows a cooked whole chicken .,0.0,a man is filming his grill and then pans up to show a bird that is on his house .,4.0,3.0,2.0,3.0,0.3822,0.8471,0.9711,0.7442,0.7901,0.7362,0.2686,0.0398,0.3441,0.0957,0.2235,0.0,0.0
+6,a man puts a hotdog on a stick and roasts it over a campfire,0.0,a man is filming his grill and then pans up to show a bird that is on his house .,4.0,4.0,4.0,4.0,0.3557,0.8087,1.0,0.8408,0.827,0.771,0.186,0.2222,0.2797,0.2081,0.09,0.0174,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is tying a tie and explaining how it is done .,0.4811,a man is demonstrating how to properly tie a tie .,5.0,5.0,5.0,5.0,0.8872,0.8921,0.7065,0.4459,0.5467,0.4919,0.8735,0.3754,0.6692,0.4891,0.664,0.3657,0.4811
+2,a man is demonstrating how to tie a neck tie .,0.7721,a man is demonstrating how to properly tie a tie .,5.0,5.0,5.0,5.0,0.9417,0.9527,0.9375,0.6768,0.7861,0.7755,0.9388,0.6568,0.9336,0.7728,0.9334,0.6557,0.7721
+3,a man is standing in front of a wall and shaking his neck .,0.0,a man is demonstrating how to properly tie a tie .,4.0,4.0,4.0,4.0,0.2207,0.7973,1.0,0.8408,0.827,0.7831,0.0225,0.0731,0.2207,0.0577,0.0225,0.0,0.0
+4,a man demonstrates how to properly tie a bow tie .,0.8865,a man is demonstrating how to properly tie a tie .,4.0,5.0,4.0,4.3333,0.8899,0.9702,1.0,1.0,1.0,1.0,0.8865,0.8899,0.8899,0.8899,0.8865,0.8865,0.8865
+5,a man clearly demonstrates the proper way to tie a tie .,0.8019,a man is demonstrating how to properly tie a tie .,5.0,5.0,5.0,5.0,0.9548,0.9488,0.9756,0.8128,0.8114,0.8012,0.9524,0.804,0.9537,0.8024,0.9512,0.8035,0.8019
+6,a man is demonstrating and explaining how to tie a neck tie .,0.81,a man is demonstrating how to properly tie a tie .,5.0,5.0,5.0,5.0,0.9157,0.9385,1.0,0.8408,0.827,0.8157,0.9102,0.8262,0.9157,0.8111,0.9102,0.8251,0.81

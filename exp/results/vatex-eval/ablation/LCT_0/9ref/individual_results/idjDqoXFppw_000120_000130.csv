@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person used a black marker to write on a white paper in calligraphy,0.7481,a person is using a black marker to create intricate letter designs on paper .,5.0,5.0,5.0,5.0,0.8685,0.9319,1.0,0.9806,0.971,0.9672,0.8589,0.7796,0.779,0.7775,0.7499,0.7506,0.7481
+2,a person is using a marker to write on a piece of paper .,0.6084,a person is using a black marker to create intricate letter designs on paper .,5.0,5.0,5.0,5.0,0.7123,0.9529,0.9851,0.8723,0.9107,0.8985,0.698,0.6348,0.6798,0.645,0.6467,0.5971,0.6084
+3,a person is writing words on a piece of paper .,0.6217,a person print letters on a white piece of paper .,5.0,5.0,5.0,5.0,0.7109,0.924,1.0,1.0,1.0,1.0,0.6872,0.6562,0.7109,0.6505,0.6872,0.6279,0.6217
+4,a person is using a marker to make some prints on a paper .,0.5654,a person is using a black marker to create intricate letter designs on paper .,4.0,4.0,4.0,4.0,0.6912,0.909,0.9804,0.7568,0.8085,0.764,0.6603,0.5921,0.6763,0.605,0.6439,0.5512,0.5654
+5,someone uses a pen and demonstrates how to make letters using calligraphy .,0.2228,someone is using a calligraphy pen to write on a piece of paper,5.0,4.0,5.0,4.6667,0.7924,0.9,0.9497,0.7285,0.7368,0.6832,0.7693,0.388,0.6777,0.3169,0.6472,0.3696,0.2228
+6,someone is writing on a piece of paper with a pen .,0.6439,a person writes on a paper with a calligraphy pen,5.0,4.0,4.0,4.3333,0.745,0.9542,0.9649,1.0,0.975,0.9719,0.7201,0.5662,0.728,0.6756,0.7014,0.5511,0.6439

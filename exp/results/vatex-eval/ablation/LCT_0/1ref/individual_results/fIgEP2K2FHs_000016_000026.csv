@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a girl circles a table setting plates , cups , silverware , a bowl of oranges and candles .",0.1688,a fancy table is set once peice at a time and a bowl of oranges is placed with a couple of candle sticks at the end .,5.0,5.0,5.0,5.0,0.6805,0.847,0.8562,0.4453,0.4823,0.3888,0.6228,0.1848,0.6268,0.2393,0.5594,0.1093,0.1688
+2,a person is showing how to set up a table setting .,0.0,a fancy table is set once peice at a time and a bowl of oranges is placed with a couple of candle sticks at the end .,5.0,5.0,5.0,5.0,0.4678,0.8455,0.6956,0.5791,0.3867,0.2746,0.3705,0.0809,0.2348,0.0,0.095,0.0,0.0
+3,a person is showing how to set a table with a table .,0.0,a fancy table is set once peice at a time and a bowl of oranges is placed with a couple of candle sticks at the end .,4.0,4.0,4.0,4.0,0.4553,0.8527,0.6385,0.4891,0.2565,0.1281,0.3612,0.0,0.147,0.0,0.0,0.0,0.0
+4,a woman is demonstrating table etiquette and where to place eating utensils at a dining table .,0.0,a fancy table is set once peice at a time and a bowl of oranges is placed with a couple of candle sticks at the end .,4.0,4.0,4.0,4.0,0.3462,0.7858,0.8156,0.4647,0.4901,0.3511,0.168,0.0,0.1984,0.0,0.0,0.0,0.0
+5,a woman is preparing the plating and silverware at a dinner table .,0.0,a fancy table is set once peice at a time and a bowl of oranges is placed with a couple of candle sticks at the end .,5.0,5.0,5.0,5.0,0.3771,0.7626,0.7911,0.6284,0.6256,0.509,0.1833,0.0088,0.2127,0.0043,0.0,0.0,0.0
+6,a little girl helps set the dining room table before the dinner .,0.0,a fancy table is set once peice at a time and a bowl of oranges is placed with a couple of candle sticks at the end .,4.0,5.0,5.0,4.6667,0.3371,0.7923,0.8582,0.2096,0.1711,0.0,0.1634,0.0,0.2276,0.0,0.0252,0.0,0.0

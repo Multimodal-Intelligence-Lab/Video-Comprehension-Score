@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is showing how they exercise with a jump rope .,0.0107,a shirtless man is jumping rope really fast in a lush backyard .,5.0,5.0,5.0,5.0,0.4822,0.8371,0.8151,0.6948,0.6253,0.5524,0.3815,0.2548,0.3647,0.1719,0.2412,0.1098,0.0107
+2,a man in a gym is doing tricks with a rope .,0.0,a shirtless man is jumping rope really fast in a lush backyard .,4.0,4.0,4.0,4.0,0.4121,0.83,0.8743,0.7325,0.6957,0.6334,0.2917,0.1974,0.3276,0.1549,0.1899,0.033,0.0
+3,a man is in a gym and doing a jump rope routine .,0.2852,a shirtless man is jumping rope really fast in a lush backyard .,4.0,4.0,4.0,4.0,0.5222,0.8563,0.8969,0.8147,0.7807,0.7439,0.442,0.4134,0.4672,0.388,0.3778,0.315,0.2852
+4,on a field a group of men are jumping hurdles and running .,0.0,a shirtless man is jumping rope really fast in a lush backyard .,3.0,1.0,1.0,1.6667,0.2693,0.7859,0.7745,0.6547,0.5643,0.4456,0.0702,0.0,0.0566,0.0,0.0,0.0,0.0
+5,a young man is walking on a rope then does several extreme jumps across playground equipment .,0.0,a shirtless man is jumping rope really fast in a lush backyard .,4.0,3.0,2.0,3.0,0.4394,0.8262,0.9326,0.6326,0.6718,0.6028,0.3215,0.1138,0.3989,0.1655,0.2724,0.0,0.0
+6,"at an ocean beach , a man jumps up and down on a tight rope .",0.0,a shirtless man is jumping rope really fast in a lush backyard .,4.0,3.0,3.0,3.3333,0.4286,0.8518,0.7652,0.5514,0.4614,0.3676,0.3292,0.0,0.2533,0.0,0.1233,0.0,0.0

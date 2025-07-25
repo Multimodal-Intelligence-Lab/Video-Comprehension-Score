@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is swimming on his back while videotaping himself with the camera in one hand,0.2186,a man shows of his swimming ability in the pool using only one hand and both feet .,5.0,5.0,5.0,5.0,0.4846,0.8731,0.9623,0.7224,0.7554,0.7198,0.4097,0.2866,0.4645,0.3177,0.3866,0.1829,0.2186
+2,a man is swimming in a swimming pool while others watch .,0.4622,a man shows of his swimming ability in the pool using only one hand and both feet .,4.0,4.0,5.0,4.3333,0.5707,0.8793,0.9706,0.9002,0.9077,0.895,0.5118,0.5231,0.5577,0.5271,0.497,0.4577,0.4622
+3,a young boy jumps into a pool and swims into the water .,0.0,a man shows of his swimming ability in the pool using only one hand and both feet .,4.0,4.0,4.0,4.0,0.3424,0.8077,0.8674,0.3899,0.3532,0.1992,0.1859,0.0,0.2419,0.0,0.0614,0.0,0.0
+4,a man in a large swimming pool doing the freestyle swim stroke .,0.3572,a man shows of his swimming ability in the pool using only one hand and both feet .,4.0,4.0,5.0,4.3333,0.5772,0.8604,0.9474,0.7413,0.7645,0.7263,0.5086,0.4297,0.5537,0.447,0.4813,0.3372,0.3572
+5,a man with a swim cap is swimming in a swimming pool .,0.1782,a man shows of his swimming ability in the pool using only one hand and both feet .,4.0,4.0,4.0,4.0,0.527,0.8946,0.8021,0.6959,0.6433,0.6013,0.4713,0.3203,0.4104,0.2648,0.3409,0.2403,0.1782
+6,a man is swimming in a pool while others watch .,0.5229,a man shows of his swimming ability in the pool using only one hand and both feet .,4.0,4.0,5.0,4.3333,0.5836,0.8729,1.0,1.0,1.0,1.0,0.5229,0.5836,0.5836,0.5836,0.5229,0.5229,0.5229

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is riding a horse on a trail behind another person .,0.0,a group of people slowly riding thier horses around a mountain .,5.0,5.0,5.0,5.0,0.4351,0.8517,0.7813,0.5815,0.5001,0.4131,0.3368,0.0286,0.277,0.0,0.1512,0.0,0.0
+2,a group of people are riding horses on a snowy trail .,0.3638,a group of people slowly riding thier horses around a mountain .,4.0,4.0,4.0,4.0,0.5963,0.9018,0.9497,0.6948,0.7037,0.6714,0.5523,0.4189,0.5749,0.4263,0.5286,0.3556,0.3638
+3,a group of people are riding horses on a trail .,0.5804,a group of people slowly riding thier horses around a mountain .,5.0,5.0,5.0,5.0,0.6719,0.9146,0.9796,0.838,0.8549,0.8413,0.6413,0.6085,0.6651,0.6163,0.6339,0.572,0.5804
+4,people are riding on a horse across a fenced in area .,0.0,a group of people slowly riding thier horses around a mountain .,4.0,3.0,4.0,3.6667,0.4927,0.8712,0.883,0.3613,0.2692,0.1611,0.4177,0.0,0.4255,0.0,0.3405,0.0,0.0
+5,two people are riding horses in a wooded area as a dog goes across their path .,0.0,a group of people slowly riding thier horses around a mountain .,4.0,1.0,3.0,2.6667,0.4598,0.8444,0.874,0.5549,0.5718,0.4928,0.3603,0.0265,0.382,0.0553,0.2681,0.0,0.0
+6,two people on horses trot ahead as a third documents their adventure .,0.0,a group of people slowly riding thier horses around a mountain .,4.0,5.0,3.0,4.0,0.4755,0.8284,0.8636,0.3483,0.4964,0.3921,0.3669,0.0,0.3927,0.0,0.267,0.0,0.0

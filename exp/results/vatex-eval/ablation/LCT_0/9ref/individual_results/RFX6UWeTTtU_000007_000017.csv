@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young adult male dancing in a style referred to as a shuffle .,0.0365,a man does a dance on concrete without music while remaining in one spot .,5.0,5.0,5.0,5.0,0.5179,0.8249,0.9264,0.7904,0.7517,0.6858,0.3905,0.2758,0.4796,0.2386,0.3421,0.0836,0.0365
+2,a man is dancing to music in a dance studio .,0.2622,a man is dancing with the new steps on the street,4.0,2.0,2.0,2.6667,0.5334,0.8788,0.9677,0.9284,0.891,0.8669,0.469,0.3972,0.4903,0.372,0.4201,0.2644,0.2622
+3,a man is dancing to music on a dance floor .,0.2973,a man does a dance on concrete without music while remaining in one spot .,4.0,3.0,2.0,3.0,0.5654,0.8797,0.9677,0.9284,0.891,0.8677,0.5059,0.4273,0.5253,0.4033,0.4603,0.3077,0.2973
+4,a man is dancing outside vigorously while music playing in the background .,0.4864,a man does a dance on concrete without music while remaining in one spot .,5.0,3.0,3.0,3.6667,0.6985,0.8411,1.0,0.9295,0.9155,0.8995,0.6405,0.5573,0.663,0.568,0.5982,0.4737,0.4864
+5,a man doing a few dance steps in what looks to be a studio,0.4543,a man is performing dance moves in the middle of a partially lit street .,4.0,3.0,4.0,3.6667,0.5858,0.8959,1.0,1.0,1.0,1.0,0.5223,0.5754,0.5435,0.5393,0.4905,0.4898,0.4543
+6,a young man dances around a bedroom to dance music while different colored lights flash .,0.1947,a man is performing dance moves in the middle of a partially lit street .,2.0,2.0,2.0,2.0,0.4605,0.8472,0.9793,0.7611,0.8085,0.7739,0.3491,0.2909,0.4409,0.3325,0.3255,0.1445,0.1947

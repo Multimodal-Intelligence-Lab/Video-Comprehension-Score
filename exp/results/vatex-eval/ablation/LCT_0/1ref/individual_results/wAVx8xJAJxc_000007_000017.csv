@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person puts their hand in front of the camera and moves it a lot,0.0,it is dark and the person is using their thumb to crack the joints by their fingers .,5.0,5.0,4.0,4.6667,0.367,0.7991,0.8916,0.6716,0.7662,0.7074,0.2078,0.0576,0.2901,0.1738,0.1116,0.0,0.0
+2,a person is sitting on a bed and is rubbing their fingers .,0.0,it is dark and the person is using their thumb to crack the joints by their fingers .,4.0,2.0,3.0,3.0,0.4104,0.8487,0.8752,0.6976,0.6273,0.5609,0.3053,0.1549,0.3263,0.0601,0.2062,0.0043,0.0
+3,a person is using their fingers to crack their fingers .,0.5486,it is dark and the person is using their thumb to crack the joints by their fingers .,5.0,5.0,5.0,5.0,0.6776,0.9562,0.9231,0.7844,0.7468,0.7352,0.6629,0.589,0.6508,0.5684,0.6348,0.5702,0.5486
+4,a person is cracking many of the knuckle bones in their hands one by one .,0.0,it is dark and the person is using their thumb to crack the joints by their fingers .,5.0,5.0,4.0,4.6667,0.5815,0.839,0.8548,0.4754,0.4165,0.3046,0.5012,0.0978,0.5103,0.0,0.4164,0.0,0.0
+5,"a woman is cracking each of her knuckles repeatedly , one after another .",0.0,it is dark and the person is using their thumb to crack the joints by their fingers .,5.0,4.0,4.0,4.3333,0.4151,0.7946,0.9004,0.3658,0.2004,0.0,0.2639,0.0,0.3504,0.0,0.1825,0.0,0.0
+6,a woman in a green shirt cracks the knuckles of the fingers on each hand .,0.0,it is dark and the person is using their thumb to crack the joints by their fingers .,4.0,3.0,5.0,4.0,0.366,0.8293,0.8777,0.4776,0.6186,0.5401,0.2355,0.0,0.2777,0.0,0.129,0.0,0.0

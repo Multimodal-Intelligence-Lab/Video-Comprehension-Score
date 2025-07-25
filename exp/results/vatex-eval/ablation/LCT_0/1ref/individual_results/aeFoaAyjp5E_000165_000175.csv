@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman helps tie the shoes of another woman in a dress .,0.2433,a woman is tying the tennis shoe for a bride in a wedding gown .,5.0,5.0,5.0,5.0,0.5999,0.8693,0.857,0.4714,0.6082,0.5493,0.5397,0.1189,0.5331,0.3422,0.4629,0.0206,0.2433
+2,a little girl is sitting on the floor and a woman is talking to her .,0.0,a woman is tying the tennis shoe for a bride in a wedding gown .,4.0,3.0,4.0,3.6667,0.0813,0.7726,0.818,0.244,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a little boy is laying on the floor and a woman is talking to him .,0.0,a woman is tying the tennis shoe for a bride in a wedding gown .,3.0,2.0,4.0,3.0,0.0537,0.7692,0.8397,0.6167,0.5185,0.3741,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,a young girl is tying a knot in a shoestring in a shoe .,0.035,a woman is tying the tennis shoe for a bride in a wedding gown .,5.0,5.0,5.0,5.0,0.4915,0.8364,0.7548,0.8027,0.63,0.5576,0.3921,0.3665,0.3263,0.1928,0.1946,0.2426,0.035
+5,a female is sitting in a bed and tying shoe laces from a pair of sneakers .,0.0,a woman is tying the tennis shoe for a bride in a wedding gown .,4.0,3.0,4.0,3.6667,0.5376,0.8384,0.8986,0.5418,0.514,0.4203,0.4485,0.1466,0.4854,0.096,0.3862,0.0,0.0
+6,a woman is demonstrating how to tie your shoes .,0.2438,a woman is tying the tennis shoe for a bride in a wedding gown .,5.0,1.0,3.0,3.0,0.5844,0.8617,0.793,0.7725,0.6377,0.5796,0.5177,0.462,0.476,0.3483,0.3919,0.3757,0.2438

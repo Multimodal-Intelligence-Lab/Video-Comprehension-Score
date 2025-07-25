@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man writes an algebra problem on a peice of paper and is explaining it in spanish .,0.5247,a man speaks in spanish as he writes a math equation on graph paper in black marker .,4.0,5.0,4.0,4.3333,0.7513,0.8811,0.9313,0.8933,0.8654,0.846,0.7178,0.5697,0.6991,0.5459,0.6585,0.5496,0.5247
+2,a person is writing on a piece of paper with a marker .,0.3104,a man speaks in spanish as he writes a math equation on graph paper in black marker .,5.0,4.0,5.0,4.6667,0.4853,0.9054,1.0,1.0,1.0,1.0,0.4315,0.4029,0.4154,0.4029,0.3542,0.3104,0.3104
+3,a person is demonstrating how to do a math problem .,0.8372,a person is showing how they solve a math problem by hand .,5.0,5.0,4.0,4.6667,0.852,0.9449,1.0,1.0,0.9623,0.9601,0.8433,0.852,0.8463,0.8462,0.8373,0.8433,0.8372
+4,a man is holding a pen and explaining a math problem .,0.6372,a man is talking and showing the steps to solve a math problem .,5.0,5.0,4.0,4.6667,0.7188,0.8949,1.0,0.8879,0.911,0.8971,0.6785,0.6777,0.7188,0.6828,0.6785,0.6314,0.6372
+5,a man is describing a math formula on the chalkboard .,0.4362,a man is talking and showing the steps to solve a math problem .,4.0,2.0,4.0,3.3333,0.6599,0.86,0.9841,1.0,0.9893,0.9871,0.599,0.5531,0.6241,0.5217,0.5568,0.4732,0.4362
+6,a man is explaining the various steps involved in solving a mathematical equation .,0.8591,a man is talking and showing the steps to solve a math problem .,5.0,5.0,4.0,4.6667,0.8785,0.8965,1.0,0.9777,0.9615,0.957,0.8645,0.8757,0.8749,0.8736,0.8604,0.8614,0.8591

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person uses a bottle to suck up an egg yolk from a bowl .,0.8071,"the lady uses a plastic bottle to suck an egg yolk from a plate , depositing it into a cup afterwards .",4.0,5.0,5.0,4.6667,0.899,0.9644,0.9301,0.8416,0.8504,0.8343,0.8952,0.8141,0.8407,0.8244,0.8237,0.8051,0.8071
+2,a person is demonstrating how to separate a egg yolk .,0.4711,a person holding a plastic bottle is removing some egg yolks .,5.0,4.0,5.0,4.6667,0.6732,0.8741,0.9756,0.8035,0.7527,0.7163,0.6262,0.5406,0.6442,0.5388,0.592,0.4731,0.4711
+3,a person is using a plastic bottle to suck up egg yolks from a bowl .,0.7805,a person holding a plastic bottle is removing some egg yolks .,4.0,5.0,5.0,4.6667,0.8773,0.948,0.971,0.8248,0.8379,0.8234,0.8637,0.7892,0.8643,0.7985,0.8478,0.777,0.7805
+4,there are some eggs in a bowl and person is using a bottle to suck up the yolks from the whites then putting the yolks in another bowl .,0.4785,a raw egg is shown in a bowl and a woman speaks and laughs as someone uses a bottle to separate the yolk and add it to another bowl .,4.0,4.0,5.0,4.3333,0.8292,0.9253,0.8916,0.6848,0.7273,0.6914,0.8116,0.5524,0.7635,0.5393,0.7584,0.5424,0.4785
+5,a woman sucks an egg yolk into a water bottle and then pours it into a bowl .,0.7587,a person is sucking an egg up with a bottle out of a bowl .,4.0,4.0,4.0,4.0,0.851,0.9132,0.9592,1.0,0.9687,0.9657,0.8368,0.787,0.8379,0.7802,0.8225,0.7663,0.7587
+6,a woman is suctioning a egg yolk into an empty bottle,0.6639,a person sucks an egg yolk lying in a white plate out using a plastic bottle .,5.0,5.0,4.0,4.6667,0.8396,0.9084,0.941,0.8776,0.8664,0.8431,0.8126,0.7174,0.7936,0.7137,0.7733,0.6682,0.6639

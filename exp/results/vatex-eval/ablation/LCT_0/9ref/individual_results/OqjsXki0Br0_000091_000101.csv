@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a toddler boy is enjoying his mother reading letters from a book .,0.3826,a young baby listens to her mom reading a book .,4.0,5.0,5.0,4.6667,0.6229,0.8801,0.9599,0.7102,0.7095,0.6599,0.5716,0.469,0.6072,0.467,0.5537,0.3967,0.3826
+2,a baby is sitting on the floor and playing with a book .,0.4602,a little baby boy sits on the floor while his mother reads to him .,4.0,5.0,4.0,4.3333,0.7122,0.8855,1.0,0.7735,0.7319,0.6499,0.675,0.6157,0.6276,0.4917,0.5769,0.5626,0.4602
+3,a baby is sitting on the floor and reading a book .,0.5227,"a woman holds a book open for a baby sitting on the floor , waving his arms in reaction to her reading it out loud .",5.0,5.0,5.0,5.0,0.7643,0.9178,1.0,0.8489,0.827,0.7929,0.7402,0.6952,0.6729,0.5385,0.6536,0.6641,0.5227
+4,"a baby girl sits in her car seat , with a bottle of water , and "" reads "" her book with baby talk .",0.1242,a little baby is looking at a book that a woman is showing to him,3.0,4.0,3.0,3.3333,0.5523,0.8664,0.9233,0.7322,0.7376,0.684,0.4735,0.2674,0.4492,0.2727,0.3522,0.1178,0.1242
+5,a toddler is sitting on the floor looking at a book,0.4454,a little baby boy sits on the floor while his mother reads to him .,4.0,5.0,5.0,4.6667,0.6448,0.8671,1.0,0.8723,0.8798,0.8476,0.5782,0.5631,0.6075,0.533,0.5338,0.4811,0.4454
+6,"a little boy reads a book , a female voice is heard",0.4263,a little baby is looking at a book that a woman is showing to him,4.0,5.0,5.0,4.6667,0.595,0.874,1.0,1.0,1.0,1.0,0.5159,0.5023,0.5293,0.5023,0.4374,0.4263,0.4263

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"inside the factory , the men are fabricating a type of enclosure , sealing fabric over a long backbone and ribs of piping",0.0312,a man is a warehouse building something out of plywood .,4.0,5.0,2.0,3.6667,0.3831,0.7907,0.973,0.9763,0.9577,0.9447,0.2146,0.2733,0.2944,0.2592,0.0777,0.0496,0.0312
+2,a group of people are working on building a shed .,0.0105,men are building some kind of shed with wood in a time lapse video .,4.0,5.0,5.0,4.6667,0.5585,0.8488,1.0,1.0,1.0,1.0,0.4685,0.2801,0.4429,0.1912,0.3293,0.1333,0.0105
+3,a group of people are working together to build a shed .,0.0,men are building some kind of shed with wood in a time lapse video .,4.0,5.0,5.0,4.6667,0.5446,0.9034,1.0,1.0,1.0,1.0,0.4585,0.1866,0.4184,0.1866,0.2884,0.0,0.0
+4,a group of men are working together to build a wooden shed in the yard,0.0,men are building some kind of shed with wood in a time lapse video .,4.0,4.0,4.0,4.0,0.6298,0.8634,0.971,0.7832,0.781,0.7308,0.5713,0.0662,0.5346,0.1164,0.461,0.0,0.0
+5,a guy is in his yard putting together a shed .,0.0991,in a room mean are putting together sheds all different sizes .,5.0,4.0,2.0,3.6667,0.6433,0.8754,0.9796,0.9251,0.8923,0.8556,0.5618,0.2685,0.6157,0.2242,0.5278,0.1644,0.0991
+6,a group of men build a shed over time .,0.5844,men are building some kind of shed with wood in a time lapse video .,4.0,5.0,5.0,4.6667,0.7321,0.9017,1.0,1.0,0.9687,0.9623,0.7029,0.6671,0.6714,0.6105,0.6356,0.6309,0.5844

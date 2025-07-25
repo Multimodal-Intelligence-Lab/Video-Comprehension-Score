@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man on one knee performing tricks with a dog .,0.0,a man is playing with a german shepherd dog outside .,5.0,5.0,5.0,5.0,0.2988,0.8269,0.8537,0.4,0.5447,0.4494,0.152,0.0,0.1786,0.0,0.0067,0.0,0.0
+2,a man is trying to push a little boy in a wheelbarrow .,0.0,a man is playing with a german shepherd dog outside .,2.0,2.0,2.0,2.0,0.0679,0.7807,0.9148,0.6258,0.7432,0.6711,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a man is trying to kick a boy in the head with his head .,0.0,a man is playing with a german shepherd dog outside .,2.0,2.0,2.0,2.0,0.0819,0.7874,0.9565,0.8115,0.8781,0.8452,0.0,0.0,0.0401,0.0,0.0,0.0,0.0
+4,man teaches a young husky some basic dog tricks .,0.0,a man is playing with a german shepherd dog outside .,4.0,5.0,4.0,4.3333,0.3033,0.8162,0.9804,0.7071,0.7027,0.6358,0.1465,0.0148,0.2894,0.0086,0.1294,0.0,0.0
+5,a man with his feet on an exercise ball bends his knees and draws the ball closer and returns to his original position .,0.0,a man is playing with a german shepherd dog outside .,3.0,3.0,2.0,2.6667,0.136,0.768,0.9091,0.8284,0.8336,0.7834,0.0,0.0,0.0496,0.0,0.0,0.0,0.0
+6,a man feeds a pit bull a bite of food and then asks him to lay down .,0.0,a man is playing with a german shepherd dog outside .,4.0,4.0,4.0,4.0,0.2311,0.7777,0.9286,0.8284,0.8135,0.7602,0.0114,0.0719,0.172,0.0548,0.0,0.0,0.0

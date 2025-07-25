@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"two postmen are standing at a front porch , one is trying to snatch the parcel from another while he does everything to prevent him from getting it .",0.213,two mail carriers are playing around as they deliver a package to a house .,5.0,5.0,5.0,5.0,0.5899,0.8237,0.9487,0.7657,0.8135,0.7585,0.4763,0.3544,0.4855,0.3923,0.3487,0.1639,0.213
+2,a group of men are having a pillow fight in a parking lot .,0.0,a man tries to get pass another man but is being blocked .,2.0,3.0,1.0,2.0,0.2689,0.7795,0.9831,0.9248,0.9263,0.9003,0.0,0.092,0.253,0.1139,0.0,0.0,0.0
+3,a man is dancing in the middle of the street with a man in the background .,0.0,a man tries to get pass another man but is being blocked .,2.0,2.0,1.0,1.6667,0.2745,0.831,0.9787,0.8446,0.8554,0.8241,0.1176,0.141,0.2496,0.1519,0.097,0.0,0.0
+4,a mailman opens a door and starts putting mail into the boxes,0.1153,a man is outside in front of a house trying to get a package from a mail carrier,2.0,1.0,1.0,1.3333,0.4203,0.7881,0.9846,0.8792,0.929,0.9043,0.2645,0.3201,0.3618,0.3027,0.1902,0.1374,0.1153
+5,a mailman opens the door to a lobby and delivers the mail to put it in different mailboxes .,0.0,a man tries to get pass another man but is being blocked .,2.0,1.0,1.0,1.3333,0.4047,0.8241,0.975,0.8041,0.8339,0.781,0.2776,0.0,0.2946,0.0,0.1102,0.0,0.0
+6,"a dog is inside at the front door while a postman posts mail , the dog grabs it and throws it about .",0.0,a man tries to get pass another man but is being blocked .,1.0,1.0,1.0,1.0,0.4054,0.8115,0.9665,0.8104,0.8422,0.7879,0.2427,0.1142,0.3456,0.1476,0.1665,0.0,0.0

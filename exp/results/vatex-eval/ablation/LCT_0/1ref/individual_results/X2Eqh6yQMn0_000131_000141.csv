@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young man with a foreign accent is showing how to prepare a certain type of food .,0.0,"a man in a kitchen shows how to prepare a dish , and adds ingredients into a frying pan .",5.0,5.0,5.0,5.0,0.4866,0.8428,0.7594,0.3536,0.4825,0.3859,0.3908,0.0,0.3239,0.0,0.1978,0.0,0.0
+2,a man is demonstrating how to make a meal in a kitchen .,0.6017,"a man in a kitchen shows how to prepare a dish , and adds ingredients into a frying pan .",5.0,5.0,5.0,5.0,0.7408,0.8577,0.8239,0.8316,0.7588,0.7188,0.6977,0.6883,0.6853,0.6584,0.6331,0.6365,0.6017
+3,a man is demonstrating how to cook a meal in a kitchen .,0.6018,"a man in a kitchen shows how to prepare a dish , and adds ingredients into a frying pan .",5.0,5.0,5.0,5.0,0.7391,0.8553,0.84,0.8259,0.7661,0.7265,0.6949,0.6841,0.6894,0.6594,0.6368,0.6306,0.6018
+4,a man cooks up food in a frying pan and describes the recipe as he narrates .,0.6045,"a man in a kitchen shows how to prepare a dish , and adds ingredients into a frying pan .",5.0,5.0,5.0,5.0,0.7503,0.8646,0.8563,0.7637,0.7303,0.6881,0.7111,0.673,0.7084,0.6406,0.6627,0.6218,0.6045
+5,a man is cooking food inside of a skillet on top of the stove in a kitchen .,0.2426,"a man in a kitchen shows how to prepare a dish , and adds ingredients into a frying pan .",5.0,5.0,5.0,5.0,0.6055,0.8333,0.846,0.6454,0.6251,0.5501,0.5266,0.3887,0.5336,0.3688,0.4403,0.2664,0.2426
+6,"a man holding a frying pan , flipping a food item up and over the pan .",0.0,"a man in a kitchen shows how to prepare a dish , and adds ingredients into a frying pan .",2.0,2.0,2.0,2.0,0.5882,0.8683,0.8343,0.1675,0.0,0.0,0.5257,0.0,0.5064,0.0,0.4315,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man shows how to access the ram inside a computer tower .,0.2928,a person has their hands in the back of a computer .,5.0,5.0,5.0,5.0,0.8951,0.9265,1.0,1.0,1.0,1.0,0.8868,0.4262,0.5425,0.4073,0.5382,0.3964,0.2928
+2,a person is demonstrating how to install a computer tower .,0.2518,a person is conducting maintenance on their desktop computer system .,5.0,5.0,5.0,5.0,0.6422,0.8836,1.0,0.8819,0.8784,0.8518,0.5848,0.3833,0.5098,0.3731,0.4287,0.2892,0.2518
+3,a person is using a screwdriver to remove a screw into a computer .,0.3051,a person has their hands in the back of a computer .,2.0,2.0,3.0,2.3333,0.5409,0.8672,0.9667,0.8879,0.8884,0.857,0.4417,0.4268,0.4849,0.3974,0.406,0.3391,0.3051
+4,a man puts together a computer tower while explaining himself .,0.3146,a man is working inside of a large computer and pointing out different parts .,5.0,4.0,4.0,4.3333,0.682,0.8682,1.0,0.91,0.911,0.8931,0.6308,0.4141,0.5542,0.4319,0.4823,0.2968,0.3146
+5,a man is showing how to assemble an office cabinet with drawers .,0.1048,a man reaches into touch small computer components at bottom and sides of metal box .,4.0,3.0,4.0,3.6667,0.3276,0.8236,1.0,1.0,1.0,1.0,0.1699,0.314,0.2955,0.3016,0.0969,0.1207,0.1048
+6,a man is seen acting in a weird manner in the office as he places a computer in a copymachine .,0.2418,a person has their hands in the back of a computer .,2.0,2.0,4.0,2.6667,0.3718,0.8306,1.0,1.0,1.0,1.0,0.2418,0.3718,0.3718,0.3718,0.2418,0.2418,0.2418

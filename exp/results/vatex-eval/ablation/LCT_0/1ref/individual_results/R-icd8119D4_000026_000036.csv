@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a yacht cruising on the ocean with writings scent linq with a motto scent speaks louder than words,0.0251,a boat is passing by with a lot of people in it .,5.0,4.0,4.0,4.3333,0.2783,0.772,0.9811,0.9733,0.9589,0.9468,0.0652,0.2585,0.2644,0.2474,0.0472,0.0395,0.0251
+2,a group of people are riding on a sailboat in the ocean .,0.0,a boat is passing by with a lot of people in it .,5.0,5.0,5.0,5.0,0.4453,0.8399,0.2667,0.515,0.0,0.0,0.3395,0.0,0.0,0.0,0.0,0.0,0.0
+3,a group of people are on a sailboat in the ocean .,0.0,a boat is passing by with a lot of people in it .,5.0,5.0,5.0,5.0,0.4427,0.8466,0.1667,0.0,0.0,0.0,0.3418,0.0,0.0,0.0,0.0,0.0,0.0
+4,a small boat moves in the water in the ocean outside with people in it,0.2578,a boat is passing by with a lot of people in it .,5.0,5.0,5.0,5.0,0.5118,0.8518,0.9375,0.8,0.7722,0.7325,0.4269,0.3898,0.4793,0.3678,0.3886,0.2836,0.2578
+5,a group of people sit in a boat that is on the water,0.0,a boat is passing by with a lot of people in it .,4.0,4.0,4.0,4.0,0.5569,0.8634,0.5172,0.3118,0.0,0.0,0.4868,0.0,0.1332,0.0,0.0079,0.0,0.0
+6,a person is in a boat as they float across the water .,0.0,a boat is passing by with a lot of people in it .,5.0,4.0,4.0,4.3333,0.4972,0.8336,0.7134,0.5674,0.0,0.0,0.3968,0.1137,0.2951,0.0,0.1545,0.0,0.0

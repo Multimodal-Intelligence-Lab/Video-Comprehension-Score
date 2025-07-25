@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young male using his breath to inflate a red balloon .,0.626,a man using all of his oxygen in attempts to blow up a red balloon .,5.0,4.0,5.0,4.6667,0.8417,0.9185,0.9599,0.8723,0.8979,0.8804,0.8277,0.6584,0.7296,0.6643,0.725,0.6156,0.626
+2,a man is blowing up a balloon with a yellow balloon .,0.498,a man is shown blowing up a red balloon to a large size .,4.0,4.0,4.0,4.0,0.6647,0.9387,0.9677,0.8408,0.7996,0.7832,0.6428,0.5805,0.6436,0.5405,0.6204,0.5417,0.498
+3,a man is blowing up a balloon with his hands .,0.6954,a man blows up a red balloon with his mouth .,4.0,5.0,5.0,4.6667,0.7209,0.9223,1.0,1.0,1.0,1.0,0.6954,0.7209,0.7209,0.7209,0.6954,0.6954,0.6954
+4,a man stares at a balloon for a while and then pops it .,0.3217,a man blows up a red balloon with his mouth .,3.0,2.0,5.0,3.3333,0.5101,0.8587,0.9524,0.9589,0.8668,0.8449,0.412,0.4734,0.4699,0.4175,0.3826,0.3868,0.3217
+5,a young man pops a yellow balloon with a large needle like object .,0.2258,a man blows up a red balloon with his mouth .,2.0,2.0,4.0,2.6667,0.4812,0.8617,0.975,1.0,0.975,0.9705,0.397,0.3596,0.4679,0.3432,0.3816,0.2451,0.2258
+6,a man standing next to two people is popping a bunch of balloons in succession .,0.0945,a man is blowing up a red balloon with more balloons in the background .,2.0,2.0,4.0,2.6667,0.4639,0.8341,0.9744,0.7728,0.7964,0.748,0.3573,0.2176,0.4299,0.2447,0.3165,0.0619,0.0945

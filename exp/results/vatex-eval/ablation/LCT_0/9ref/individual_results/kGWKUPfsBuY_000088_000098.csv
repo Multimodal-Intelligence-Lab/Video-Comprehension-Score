@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two people are on surfboards that are connected to a small parachute in the ocean .,0.1198,a man is surfing while holding onto a parachute and pulls himself off the water .,4.0,4.0,5.0,4.3333,0.63,0.8864,0.8937,0.7071,0.7119,0.6293,0.5825,0.2521,0.5688,0.2396,0.4754,0.0619,0.1198
+2,a man is parasailing on the ocean and is being pulled by a parachute .,0.3842,a man sails in the ocean on some kind of board and get airborne,5.0,5.0,5.0,5.0,0.7229,0.9215,0.9756,0.8811,0.8542,0.8249,0.6993,0.4891,0.6035,0.4873,0.5785,0.3863,0.3842
+3,a group of people are kite surfing in the ocean .,0.4193,a man is parachute surfing over the ocean .,4.0,4.0,4.0,4.0,0.5568,0.8811,1.0,1.0,1.0,1.0,0.4638,0.4884,0.4884,0.4884,0.4193,0.4193,0.4193
+4,a man is surfing in the ocean near a beach using a parachute to pull him up off of the water .,0.7235,a man is surfing while holding onto a parachute and pulls himself off the water .,4.0,4.0,5.0,4.3333,0.8507,0.9277,0.961,0.7381,0.7689,0.7457,0.8357,0.6921,0.8446,0.7284,0.8291,0.6866,0.7235
+5,a man para-sails on a surf board and jumps into the air,0.5072,a man sails in the ocean on some kind of board and get airborne,5.0,5.0,5.0,5.0,0.6652,0.8721,1.0,0.8723,0.8863,0.8696,0.6118,0.5681,0.6245,0.575,0.5645,0.4993,0.5072
+6,a person is on the ocean using a parachute to surf at very high heights .,0.5127,a man is parachute surfing over the ocean .,5.0,5.0,5.0,5.0,0.8284,0.8947,0.924,0.7673,0.752,0.6882,0.8082,0.7191,0.7105,0.5246,0.7033,0.712,0.5127

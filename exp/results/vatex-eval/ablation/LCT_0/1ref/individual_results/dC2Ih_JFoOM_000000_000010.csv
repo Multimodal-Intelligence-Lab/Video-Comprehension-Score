@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two men in underwear step into a pond and one of the men dips under the water very quickly and immediately heads to get out of the pond .,0.6247,two men in their underwear walk out into a cold pond .,5.0,4.0,5.0,4.6667,0.7528,0.8881,0.8958,0.7694,0.7417,0.7091,0.7217,0.6787,0.724,0.6568,0.6893,0.6382,0.6247
+2,a group of people are in a pool and one of them is throwing a rock into the water .,0.0,two men in their underwear walk out into a cold pond .,4.0,3.0,2.0,3.0,0.1976,0.7734,0.96,0.7876,0.7754,0.7097,0.0,0.0,0.1641,0.0,0.0,0.0,0.0
+3,a group of people are in a pool and one of them falls into the water .,0.0,two men in their underwear walk out into a cold pond .,4.0,4.0,3.0,3.6667,0.1991,0.7699,0.9565,0.75,0.8408,0.7932,0.0,0.0,0.1627,0.0474,0.0,0.0,0.0
+4,a man was swimming in icy water and then came out,0.0,two men in their underwear walk out into a cold pond .,4.0,5.0,4.0,4.3333,0.3731,0.8047,0.9125,0.7302,0.6226,0.531,0.2209,0.1415,0.313,0.0,0.1463,0.0,0.0
+5,the shirtless man swam in the icy water and tried to pull himself out .,0.0,two men in their underwear walk out into a cold pond .,4.0,4.0,5.0,4.3333,0.4255,0.7934,0.9004,0.7222,0.6692,0.583,0.276,0.2046,0.362,0.1416,0.1958,0.0,0.0
+6,a man in a bathing suit pulls himself out of a very icy body of water .,0.0397,two men in their underwear walk out into a cold pond .,5.0,5.0,4.0,4.6667,0.4157,0.7985,0.9404,0.7876,0.762,0.702,0.2683,0.2581,0.3786,0.2332,0.2219,0.0709,0.0397

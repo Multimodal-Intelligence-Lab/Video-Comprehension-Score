@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is embroidering a green frog to a dark blue cloth .,0.6965,a person is carefully stitching a frog onto a piece of clothing .,5.0,5.0,4.0,4.6667,0.7761,0.877,1.0,0.8723,0.8863,0.8613,0.7405,0.7146,0.7616,0.7381,0.7238,0.6693,0.6965
+2,a person is using a needle to make a piece of fabric .,0.3978,the lady is doing some unique needle work as she does a frog design .,5.0,5.0,4.0,4.6667,0.5429,0.8708,1.0,1.0,1.0,1.0,0.468,0.5132,0.5411,0.5132,0.4536,0.3978,0.3978
+3,a person is using a needle to make a design on a piece of fabric .,0.4146,the lady is doing some unique needle work as she does a frog design .,5.0,5.0,5.0,5.0,0.5848,0.8933,1.0,1.0,1.0,1.0,0.5352,0.5145,0.5588,0.5056,0.4776,0.4251,0.4146
+4,a human is demonstrating how to fold paper into a leap frog .,0.3052,a person is using cloth to design an image of a frog .,4.0,4.0,3.0,3.6667,0.4902,0.8246,1.0,0.8879,0.911,0.8909,0.3817,0.3936,0.4724,0.433,0.3535,0.2569,0.3052
+5,a person flips an origami frog and then begins to show how to fold the paper to create origami objects .,0.1748,a person is carefully stitching a frog onto a piece of clothing .,3.0,3.0,2.0,2.6667,0.4839,0.8229,0.9602,0.921,0.9231,0.9053,0.3616,0.3286,0.4376,0.3301,0.2832,0.1729,0.1748
+6,a person adds green thread to a piece of cloth in needlepoint .,0.3612,a person uses different colored threads to make a depiction of a frog .,5.0,5.0,4.0,4.6667,0.5621,0.8502,0.9565,0.8371,0.83,0.7941,0.4698,0.477,0.5354,0.4725,0.4374,0.3666,0.3612

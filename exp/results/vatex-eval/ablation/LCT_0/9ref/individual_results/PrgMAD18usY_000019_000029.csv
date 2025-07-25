@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,an athletic woman stands on her foreams on a yoga mat .,0.3875,a young woman is holding herself up on her forearms with her feet raised above her head .,3.0,4.0,4.0,3.6667,0.7051,0.8758,0.9804,0.8387,0.84,0.8008,0.6523,0.5071,0.638,0.5079,0.5866,0.3865,0.3875
+2,a woman is demonstrating how to do a yoga pose .,0.5242,a woman is seen indoors on a yoga mat performing a yoga pose .,5.0,5.0,5.0,5.0,0.6994,0.8972,1.0,1.0,1.0,1.0,0.6642,0.5959,0.6562,0.5741,0.616,0.5486,0.5242
+3,a woman is doing a handstand on a yoga mat .,0.6096,a woman is seen indoors on a yoga mat performing a yoga pose .,5.0,5.0,5.0,5.0,0.8802,0.904,1.0,1.0,1.0,1.0,0.8645,0.76,0.8802,0.6519,0.8645,0.7557,0.6096
+4,a woman on a yoga mat balances on her head using her arms .,0.6649,a woman in a yoga pose that requires her to balance on both fore arms .,4.0,2.0,2.0,2.6667,0.7658,0.933,1.0,1.0,1.0,1.0,0.749,0.6855,0.7318,0.7028,0.6976,0.6322,0.6649
+5,a woman is showing a certain yoga move on her mat .,0.6532,a woman is balancing her body by using her arms on the mat .,5.0,5.0,5.0,5.0,0.8201,0.8877,1.0,0.8723,0.9107,0.8928,0.7973,0.691,0.776,0.7111,0.7517,0.6291,0.6532
+6,a woman in workout clothes does a headstand in a yoga studio .,0.4973,a woman is doing a hand stand on a mat on the floor .,4.0,5.0,5.0,4.6667,0.7826,0.8724,1.0,1.0,1.0,1.0,0.7508,0.6015,0.7391,0.6015,0.701,0.4973,0.4973

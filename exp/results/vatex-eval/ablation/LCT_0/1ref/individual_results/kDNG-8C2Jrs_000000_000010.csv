@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a child plays with a mallet and xylophone on the floor .,0.0,a child bangs on a toy and makes music with the stick .,5.0,5.0,5.0,5.0,0.5116,0.7965,0.9714,0.5323,0.3755,0.2159,0.3868,0.0825,0.4972,0.0,0.3688,0.0,0.0
+2,a little girl is sitting on the floor playing with a toy toy .,0.0,a child bangs on a toy and makes music with the stick .,3.0,4.0,5.0,4.0,0.3435,0.8221,0.8587,0.4693,0.3448,0.203,0.2014,0.0,0.2355,0.0,0.0701,0.0,0.0
+3,a toddler is playing with a toy toy on the floor .,0.028,a child bangs on a toy and makes music with the stick .,4.0,5.0,5.0,4.6667,0.4408,0.8373,0.941,0.7644,0.6871,0.6263,0.3321,0.2685,0.4057,0.1861,0.2902,0.1263,0.028
+4,a young child is busily hammering away on a xylophone playset .,0.0,a child bangs on a toy and makes music with the stick .,4.0,5.0,5.0,4.6667,0.5875,0.7992,0.88,0.431,0.2977,0.1212,0.4838,0.0315,0.5312,0.0,0.4134,0.0,0.0
+5,a kid sits at a table playing a musical toy by pressing the buttons .,0.0,a child bangs on a toy and makes music with the stick .,4.0,3.0,4.0,3.6667,0.5288,0.8388,0.8988,0.4262,0.3673,0.2457,0.4382,0.0,0.4757,0.0,0.3749,0.0,0.0
+6,a woman holds a toy xylophone as a toddler uses an instrument tap on the xylophone keys .,0.3282,a child bangs on a toy and makes music with the stick .,4.0,4.0,4.0,4.0,0.5061,0.805,0.9614,0.91,0.9133,0.8923,0.3865,0.4573,0.4863,0.4592,0.3618,0.3258,0.3282

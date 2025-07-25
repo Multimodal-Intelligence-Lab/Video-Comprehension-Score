@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a woman sitting on the ledge of a bathtub , shaving another person's leg .",0.4137,a woman is in a bathroom shaving a youg guys legs .,4.0,5.0,4.0,4.3333,0.8593,0.9134,0.8805,0.6711,0.6425,0.59,0.846,0.5102,0.7355,0.4676,0.7313,0.4387,0.4137
+2,a man is laying on the floor while another person shaves his legs .,0.3933,two people are sitting on the edge of a bathtub and one is shaving the legs of the other .,4.0,3.0,4.0,3.6667,0.6943,0.8982,1.0,0.8933,0.9155,0.8975,0.6499,0.4874,0.6215,0.4998,0.5665,0.3783,0.3933
+3,a man is shaving a man ' s leg with a razor .,0.2936,a group of two men are in a bathroom and one man is shaving the other man's legs .,5.0,4.0,5.0,4.6667,0.7028,0.9216,0.9,0.7974,0.6326,0.5624,0.6713,0.5227,0.5217,0.3253,0.4906,0.5003,0.2936
+4,a girl shaves her leg in a bathroom setting indoors somewhere,0.7175,a person shaves their leg while they are in a bathroom,4.0,4.0,4.0,4.0,0.8196,0.9112,0.9048,0.8765,0.7734,0.7514,0.802,0.7942,0.7883,0.7236,0.7676,0.7742,0.7175
+5,a woman is sitting on a bed while shaving her legs .,0.4142,two people are sitting on the edge of a bathtub and one is shaving the legs of the other .,3.0,4.0,4.0,3.6667,0.6162,0.8879,1.0,0.8571,0.8814,0.8557,0.5629,0.4959,0.5775,0.49,0.5188,0.421,0.4142
+6,a woman is sitting on the side of a tub and shaves her leg with a manual razor .,0.5305,two people are sitting on the edge of a bathtub and one is shaving the legs of the other .,4.0,4.0,4.0,4.0,0.7176,0.8778,0.912,0.8153,0.7717,0.7291,0.6715,0.4674,0.6499,0.5815,0.5927,0.4308,0.5305

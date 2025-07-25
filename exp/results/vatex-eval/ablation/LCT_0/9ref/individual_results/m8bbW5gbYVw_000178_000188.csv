@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of kids dancing a routine in a gym in front of a audience,0.5547,a group of dancers are in a school gym doing a routine .,5.0,4.0,5.0,4.6667,0.7262,0.9037,1.0,0.7845,0.8611,0.841,0.6957,0.63,0.6974,0.5931,0.6637,0.5888,0.5547
+2,a group of girls are performing a dance routine in a gym .,0.7541,a group of girls in uniform are doing a dance routine on a gym floor .,5.0,5.0,5.0,5.0,0.8662,0.9413,1.0,0.8723,0.8863,0.871,0.8578,0.7547,0.8635,0.7565,0.855,0.7523,0.7541
+3,a group of cheerleaders are performing a routine in front of a crowd .,0.3311,a cheer team performs a routine during an assembly in a school gym .,5.0,5.0,5.0,5.0,0.6731,0.8639,1.0,0.8723,0.9107,0.8911,0.6217,0.4555,0.6153,0.436,0.5547,0.3542,0.3311
+4,a group of cheerleaders do a series of moves in a gymnasium,0.5157,a group of girls in uniform are doing a dance routine on a gym floor .,5.0,5.0,5.0,5.0,0.7427,0.8506,1.0,0.8644,0.8788,0.8525,0.6975,0.5954,0.6883,0.6021,0.618,0.5076,0.5157
+5,an ornately costumed dance squad is performing on the gymnasium floor .,0.5458,a group of girls in uniform are doing a dance routine on a gym floor .,5.0,5.0,5.0,5.0,0.7141,0.8357,0.928,0.6596,0.7532,0.7047,0.6579,0.5233,0.6743,0.6204,0.6102,0.4813,0.5458
+6,a squad of adolescents do a dance routine in a gym .,0.6199,a group of girls in uniform are doing a dance routine on a gym floor .,5.0,5.0,5.0,5.0,0.768,0.8933,1.0,0.9301,0.9206,0.9062,0.7316,0.6749,0.7176,0.6715,0.6839,0.6206,0.6199

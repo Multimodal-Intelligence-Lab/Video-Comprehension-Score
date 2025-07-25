@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people are having a good time taking lessions on roping an artifical cow .,0.0,a little girl is with a lady whp is giving her instructions,5.0,5.0,5.0,5.0,0.059,0.7486,0.8814,0.7429,0.7288,0.6377,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,a group of people are in a room and a man is using a tool to make a piece of fabric .,0.0,a little girl is with a lady whp is giving her instructions,2.0,1.0,5.0,2.6667,-0.0077,0.754,0.9697,0.9002,0.9071,0.8768,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a group of kids are in a yard and one boy is playing with a toy .,0.0,a little girl is with a lady whp is giving her instructions,3.0,1.0,4.0,2.6667,-0.0598,0.769,0.9388,0.6891,0.658,0.5552,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,a girl explains how to tie a rope into a knot .,0.0,a little girl is with a lady whp is giving her instructions,3.0,1.0,5.0,3.0,0.4045,0.7942,0.8735,0.6571,0.5,0.3705,0.2501,0.0937,0.3182,0.0,0.1416,0.0,0.0
+5,a girl is being told how to climb a rope ladder in a park .,0.0,a little girl is with a lady whp is giving her instructions,3.0,1.0,3.0,2.3333,0.4171,0.7934,0.8077,0.5105,0.6256,0.528,0.2653,0.0,0.2784,0.0683,0.0904,0.0,0.0
+6,a young girl tries to sink a put in a hold with a red flag .,0.0,a little girl is with a lady whp is giving her instructions,3.0,1.0,3.0,2.3333,0.1876,0.7993,0.9139,0.7123,0.7009,0.6259,0.0,0.0,0.1111,0.0,0.0,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a person hold a smartphone in front of a machine , the machine prints out a slip of paper .",0.0956,a woman holds a phone near a bitcoin atm and takes a receipt while another woman explains the process .,5.0,5.0,5.0,5.0,0.4416,0.8,0.922,0.7342,0.7718,0.7147,0.302,0.2394,0.3944,0.2765,0.243,0.0492,0.0956
+2,a man is demonstrating how to use an atm machine .,0.0,a woman holds a phone near a bitcoin atm and takes a receipt while another woman explains the process .,4.0,5.0,4.0,4.3333,0.3507,0.7852,0.9459,0.7984,0.7765,0.7154,0.173,0.1867,0.3136,0.1638,0.1258,0.0,0.0
+3,a person is showing how to use an atm machine .,0.0,a woman holds a phone near a bitcoin atm and takes a receipt while another woman explains the process .,5.0,5.0,5.0,5.0,0.4326,0.809,0.9036,0.6629,0.6079,0.5154,0.2987,0.1441,0.372,0.0667,0.2238,0.0,0.0
+4,"a card is pulled out of atm machine , then selects a button on atm .",0.0,a woman holds a phone near a bitcoin atm and takes a receipt while another woman explains the process .,3.0,3.0,3.0,3.0,0.3129,0.7907,0.8817,0.6162,0.6568,0.5659,0.131,0.0,0.2207,0.0,0.0145,0.0,0.0
+5,"a man is using at atm machine , slides his card in to make some sort of transaction .",0.0,a woman holds a phone near a bitcoin atm and takes a receipt while another woman explains the process .,2.0,3.0,3.0,2.6667,0.2494,0.7737,0.9509,0.537,0.608,0.4934,0.0298,0.0,0.2106,0.0,0.0,0.0,0.0
+6,"a person stands by an atm with some money in their hand , takes their receipt and then their card",0.0,a woman holds a phone near a bitcoin atm and takes a receipt while another woman explains the process .,3.0,3.0,3.0,3.0,0.439,0.8515,0.8725,0.2971,0.304,0.1826,0.3412,0.0,0.357,0.0,0.2449,0.0,0.0

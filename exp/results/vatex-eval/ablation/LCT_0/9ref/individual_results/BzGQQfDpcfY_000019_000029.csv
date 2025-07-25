@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the athletes are doing their best as they run the meter hurdle .,0.1268,"at an outdoor athletics event , people are running the 110 metre hurdles when one person falls while a crowd watch on from the stand .",5.0,5.0,5.0,5.0,0.6322,0.8471,1.0,0.7731,0.6883,0.6064,0.5484,0.3328,0.5695,0.2604,0.4715,0.2189,0.1268
+2,a group of people are running on a track in a race .,0.3989,a group of people are running and jumping over obstacles in a competition .,5.0,5.0,5.0,5.0,0.5548,0.897,1.0,0.8408,0.827,0.8072,0.5029,0.4697,0.5541,0.4608,0.5029,0.4087,0.3989
+3,a group of people are watching a race race on a track .,0.1586,several athletes are competing in a hurdling event while fans look on .,5.0,5.0,4.0,4.6667,0.6908,0.9103,0.9599,0.896,0.8893,0.8676,0.6603,0.3719,0.5699,0.3591,0.5275,0.3219,0.1586
+4,an ongoing competition reveals a sportman running up a distance to perform his high jump .,0.0401,"at an outdoor athletics event , people are running the 110 metre hurdles when one person falls while a crowd watch on from the stand .",5.0,1.0,4.0,3.3333,0.4867,0.8412,0.9474,0.7832,0.8201,0.772,0.3899,0.2067,0.3315,0.2424,0.2009,0.0,0.0401
+5,people on an indoor track run a hurdles event surrounded by spectators,0.4457,several athletes are competing in a hurdling event while fans look on .,4.0,4.0,4.0,4.0,0.594,0.8487,1.0,0.8933,0.9155,0.8944,0.4925,0.5456,0.594,0.5566,0.4925,0.4319,0.4457
+6,a man running and participating in the long jump track and field event .,0.0745,a group of people are running and jumping over obstacles in a competition .,3.0,4.0,4.0,3.6667,0.4844,0.8634,0.954,0.8449,0.8753,0.8457,0.4029,0.2321,0.3605,0.2357,0.2256,0.0702,0.0745

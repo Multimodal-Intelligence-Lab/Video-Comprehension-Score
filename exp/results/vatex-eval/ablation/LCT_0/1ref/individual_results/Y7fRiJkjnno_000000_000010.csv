@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman throws a frisbee but it does not go very far !,0.0,a women is holding a green plate in her hand and then flings it across the ground into a bush .,5.0,5.0,4.0,4.6667,0.3865,0.7649,0.9298,0.6702,0.6905,0.5954,0.1979,0.0847,0.3402,0.1116,0.1374,0.0,0.0
+2,a young boy is throwing a frisbee in a field .,0.0,a women is holding a green plate in her hand and then flings it across the ground into a bush .,4.0,4.0,5.0,4.3333,0.2088,0.7476,0.9818,1.0,0.9872,0.9828,0.0,0.2088,0.1942,0.1985,0.0,0.0,0.0
+3,a young boy is throwing a frisbee in the air .,0.0,a women is holding a green plate in her hand and then flings it across the ground into a bush .,4.0,4.0,5.0,4.3333,0.1902,0.7462,0.963,1.0,0.9736,0.9646,0.0,0.1902,0.159,0.1682,0.0,0.0,0.0
+4,several people are in a field and one throws a frisbee .,0.0,a women is holding a green plate in her hand and then flings it across the ground into a bush .,4.0,4.0,4.0,4.0,0.2554,0.7463,0.9244,0.387,0.3638,0.1475,0.0023,0.0,0.1945,0.0,0.0,0.0,0.0
+5,a couple of people outside and one of them throwing a frisbee at a pole,0.0,a women is holding a green plate in her hand and then flings it across the ground into a bush .,4.0,3.0,4.0,3.6667,0.2268,0.7538,0.9873,0.8441,0.8742,0.8331,0.0,0.084,0.2169,0.1155,0.0,0.0,0.0
+6,a girl is holding a ball attatched to a string and throws it onto a field .,0.0,a women is holding a green plate in her hand and then flings it across the ground into a bush .,3.0,3.0,3.0,3.0,0.2559,0.795,1.0,0.9084,0.9328,0.9155,0.064,0.1809,0.2559,0.2023,0.064,0.0,0.0

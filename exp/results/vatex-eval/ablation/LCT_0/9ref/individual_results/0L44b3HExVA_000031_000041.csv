@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the singer pink is standing on stage performing at a show .,0.0404,pink is in concert she is wearing a black leather jacket and the people have really close seats .,5.0,4.0,5.0,4.6667,0.5454,0.8428,0.9125,0.6443,0.6607,0.5637,0.4606,0.2348,0.4425,0.2537,0.3106,0.016,0.0404
+2,a group of people are singing a song on a stage .,0.0431,a female in black leather is singing on stage at a concert .,4.0,2.0,4.0,3.3333,0.6028,0.915,1.0,0.8408,0.827,0.7969,0.5526,0.1986,0.3262,0.1853,0.2155,0.0587,0.0431
+3,a group of people are on a stage singing a song .,0.0013,a female performer is on stage dancing and singing in front of a crowd .,4.0,2.0,4.0,3.3333,0.5898,0.9109,0.941,0.7635,0.6879,0.6143,0.538,0.2848,0.3232,0.148,0.2433,0.1617,0.0013
+4,a person is shown singing on stage in front a crowd .,0.5212,a woman is singing on stage to a crowd of folks,5.0,5.0,5.0,5.0,0.7942,0.9265,1.0,0.8408,0.827,0.7877,0.7778,0.6478,0.7701,0.555,0.7519,0.6365,0.5212
+5,a group of individuals are playing instruments and singing on stage .,0.0,a person on stage singing and dancing in front of other people,2.0,2.0,2.0,2.0,0.4917,0.8682,0.937,0.7915,0.8403,0.8066,0.4146,0.1177,0.2337,0.1688,0.0665,0.0,0.0
+6,"on a stage , a group of musicians are performing a song while a conductor leads them .",0.0,a person on stage singing and dancing in front of other people,2.0,4.0,3.0,3.0,0.4127,0.8193,0.8123,0.4851,0.4594,0.2816,0.2816,0.0,0.1801,0.0,0.0,0.0,0.0

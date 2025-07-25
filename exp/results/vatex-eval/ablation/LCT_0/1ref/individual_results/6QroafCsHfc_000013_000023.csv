@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman speaks into a microphone and raises her left arm in front of a group of people .,0.5897,a woman is speaking among a group of people,5.0,5.0,5.0,5.0,0.6422,0.8946,0.9649,1.0,0.975,0.972,0.6,0.6422,0.6292,0.633,0.5854,0.6,0.5897
+2,a group of people are in a room and a man is talking to a group of people .,0.0,a woman is speaking among a group of people,4.0,4.0,4.0,4.0,0.4835,0.9049,0.7351,0.3445,0.1153,0.0224,0.4293,0.0,0.2974,0.0,0.2236,0.0,0.0
+3,a group of people are standing in a room and a man is talking .,0.0,a woman is speaking among a group of people,4.0,4.0,4.0,4.0,0.4624,0.8863,0.4667,0.33,0.0,0.0,0.3934,0.0,0.0,0.0,0.0,0.0,0.0
+4,"an auctioneer at at an event calls out the bids on an item , excitably running up to the crowd that's milling around while doing so .",0.0,a woman is speaking among a group of people,5.0,3.0,4.0,4.0,0.201,0.7685,0.8626,0.6633,0.5499,0.4143,0.0,0.0,0.0738,0.0,0.0,0.0,0.0
+5,an auctioneer is calling out prices in a banquet hall .,0.0,a woman is speaking among a group of people,5.0,5.0,5.0,5.0,0.1485,0.7325,0.9375,0.9268,0.9321,0.9073,0.0,0.0812,0.0917,0.0865,0.0,0.0,0.0
+6,women and men are seated in an audience at tables during an auction .,0.0,a woman is speaking among a group of people,5.0,5.0,4.0,4.6667,0.1718,0.7847,0.9125,0.5323,0.3448,0.1649,0.0,0.0,0.0924,0.0,0.0,0.0,0.0

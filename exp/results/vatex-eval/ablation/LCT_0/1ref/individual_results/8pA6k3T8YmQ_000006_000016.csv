@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two people are fencing while others stand and watch on a court .,0.7146,two people in protective gear are fencing with one another while similar people stand by watching .,5.0,4.0,5.0,4.6667,0.7793,0.9118,0.8706,0.893,0.8479,0.8331,0.758,0.7529,0.7465,0.7397,0.722,0.729,0.7146
+2,a group of people are in a gym doing a dance routine .,0.0,two people in protective gear are fencing with one another while similar people stand by watching .,4.0,4.0,4.0,4.0,0.1053,0.8006,0.9072,0.727,0.6528,0.5664,0.0,0.0,0.0137,0.0,0.0,0.0,0.0
+3,a group of people are in a gym doing a dance routine .,0.0,two people in protective gear are fencing with one another while similar people stand by watching .,4.0,4.0,4.0,4.0,0.1053,0.8006,0.9072,0.727,0.6528,0.5664,0.0,0.0,0.0137,0.0,0.0,0.0,0.0
+4,"indoors , at a competition two people are fencing while others watch on .",0.2344,two people in protective gear are fencing with one another while similar people stand by watching .,5.0,5.0,5.0,5.0,0.6552,0.8753,0.8416,0.5152,0.536,0.4699,0.6061,0.2601,0.5903,0.2918,0.532,0.2001,0.2344
+5,two students at an academy are fencing with each other .,0.0086,two people in protective gear are fencing with one another while similar people stand by watching .,5.0,5.0,5.0,5.0,0.528,0.8283,0.8148,0.7187,0.5748,0.4866,0.4302,0.3433,0.4207,0.1788,0.3007,0.2072,0.0086
+6,two people are shown dueling at fencing in a large auditorium .,0.0608,two people in protective gear are fencing with one another while similar people stand by watching .,4.0,4.0,4.0,4.0,0.5399,0.8434,0.8513,0.5578,0.5808,0.503,0.4545,0.1752,0.4596,0.2079,0.3592,0.022,0.0608

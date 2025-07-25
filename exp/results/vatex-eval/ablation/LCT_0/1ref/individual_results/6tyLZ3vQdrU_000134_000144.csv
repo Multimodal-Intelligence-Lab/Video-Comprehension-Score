@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a small child is handling a snale while indian music plays,0.6977,a young boy is outside playing with a snake while some indian sounding music plays in the background,5.0,5.0,5.0,5.0,0.7811,0.8909,0.9286,0.8,0.8127,0.7897,0.7543,0.7264,0.7643,0.7307,0.7354,0.6929,0.6977
+2,a little girl is standing in a yard and is holding a small snake .,0.0,a young boy is outside playing with a snake while some indian sounding music plays in the background,4.0,4.0,1.0,3.0,0.4188,0.782,0.8867,0.6444,0.6618,0.5675,0.2567,0.0979,0.3445,0.1217,0.1617,0.0,0.0
+3,a little girl is trying to pick up an egg from a tree .,0.0,a young boy is outside playing with a snake while some indian sounding music plays in the background,1.0,1.0,1.0,1.0,0.1289,0.7578,0.9614,1.0,0.9737,0.9653,0.0,0.1289,0.0939,0.1054,0.0,0.0,0.0
+4,a young boy holding a snake and then petting it,0.3821,a young boy is outside playing with a snake while some indian sounding music plays in the background,5.0,4.0,4.0,4.3333,0.6315,0.843,0.7941,0.7675,0.7074,0.653,0.5629,0.5199,0.536,0.4791,0.4496,0.4305,0.3821
+5,a young boy holding and petting a brown and yellow snake in a store .,0.1858,a young boy is outside playing with a snake while some indian sounding music plays in the background,3.0,3.0,4.0,3.3333,0.4786,0.8225,0.9126,0.7678,0.7786,0.7308,0.366,0.3209,0.4286,0.3303,0.3053,0.1744,0.1858
+6,the kids are playing outside and finds a small snake on a twig .,0.0,a young boy is outside playing with a snake while some indian sounding music plays in the background,4.0,3.0,4.0,3.6667,0.4311,0.8533,0.8543,0.4165,0.4133,0.3125,0.3333,0.0,0.3341,0.0,0.2196,0.0,0.0

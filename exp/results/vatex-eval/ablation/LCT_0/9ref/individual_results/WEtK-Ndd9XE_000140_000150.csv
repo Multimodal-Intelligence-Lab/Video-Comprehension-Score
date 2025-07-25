@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people are attempting to bounce yellow balls into red cups while inebriated .,0.3289,many men were playing with small ball by throwing in the paper cups .,5.0,5.0,5.0,5.0,0.5834,0.8792,1.0,0.9084,0.9328,0.9177,0.5068,0.4378,0.5246,0.4525,0.4371,0.3109,0.3289
+2,a group of people are playing beer pong on a table .,0.7574,a group of people are yelling and playing beer pong .,5.0,5.0,5.0,5.0,0.8799,0.9496,0.9333,0.8545,0.8517,0.8438,0.8696,0.7635,0.864,0.7697,0.8523,0.751,0.7574
+3,a group of men are playing beer pong with one another .,0.6044,a group of people are yelling and playing beer pong .,5.0,5.0,5.0,5.0,0.7785,0.9063,1.0,1.0,1.0,1.0,0.7527,0.6737,0.7595,0.6415,0.7315,0.6399,0.6044
+4,two guys are playing beer pong when one guy misses and then belly flops on the table .,0.4036,a group of people are playing beer pong trying to get the pong ball to go in .,5.0,5.0,4.0,4.6667,0.6,0.8374,0.9881,0.8534,0.8392,0.8059,0.5224,0.4794,0.5728,0.5059,0.4843,0.3715,0.4036
+5,the man was playing the game beer pong and dove on the table .,0.1962,a noisy crowd cheering for a man who is playing beer pong,4.0,4.0,5.0,4.3333,0.5643,0.8893,0.9888,0.7876,0.7932,0.7368,0.5101,0.3605,0.4688,0.2852,0.3892,0.266,0.1962
+6,a group of people play beer pong and one throws the ball and misses the cup .,0.7555,a group of people are playing beer pong trying to get the pong ball to go in .,5.0,5.0,5.0,5.0,0.8139,0.9053,0.975,0.7972,0.8408,0.8241,0.7944,0.7103,0.8008,0.7787,0.78,0.7032,0.7555

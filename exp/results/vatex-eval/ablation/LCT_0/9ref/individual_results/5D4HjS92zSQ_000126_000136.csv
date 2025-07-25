@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young man is doing a backflip off the side of a cliff into a body of water .,0.7184,a boy does a backflip off a precipice into a body of water,5.0,5.0,5.0,5.0,0.7891,0.9162,0.9599,1.0,0.9593,0.9556,0.7628,0.7525,0.7526,0.742,0.7287,0.7298,0.7184
+2,a man jumps off of a cliff into a body of water .,0.5756,"a man does a back-flip off of a cliff , while his friend watches from the water below .",5.0,5.0,5.0,5.0,0.6305,0.8898,1.0,1.0,1.0,1.0,0.5756,0.6223,0.6223,0.6223,0.5756,0.5756,0.5756
+3,a person jumps off a cliff into a body of water .,0.5293,a person does a backflip off a cliff into water while others are already in the water .,5.0,5.0,5.0,5.0,0.6657,0.8951,1.0,1.0,1.0,1.0,0.6265,0.5887,0.6481,0.5833,0.6069,0.5405,0.5293
+4,one of the men from the top of the cliff jumped off and landed in the water,0.3432,a person stood on the cliff and flipped over into the river,4.0,5.0,5.0,4.6667,0.6222,0.8755,1.0,1.0,1.0,1.0,0.5686,0.4506,0.5786,0.4596,0.4999,0.3323,0.3432
+5,a man jumps off a rock into a lake and then does a flip into the water .,0.0151,"a man does a back-flip off of a cliff , while his friend watches from the water below .",5.0,4.0,5.0,4.6667,0.7524,0.8799,0.9714,0.5323,0.5028,0.4219,0.7186,0.1039,0.698,0.134,0.6567,0.0159,0.0151
+6,people are jumping off a small cliff at the edge of water and swimming back to the edge of the water .,0.3614,a person does a backflip off a cliff into water while others are already in the water .,4.0,4.0,4.0,4.0,0.5791,0.8741,0.9106,0.7591,0.7616,0.7245,0.5137,0.4372,0.5378,0.4474,0.4659,0.3496,0.3614

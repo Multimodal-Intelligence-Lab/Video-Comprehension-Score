@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,child holds spool of string while running between streaming kite and mother .,0.0,a little girl is walking across the beach flying a kite .,5.0,5.0,5.0,5.0,0.327,0.783,0.9264,0.4297,0.3806,0.209,0.1405,0.0,0.2735,0.0,0.0722,0.0,0.0
+2,a group of people are on the beach and they are playing with a kite .,0.0,a little girl is walking across the beach flying a kite .,5.0,5.0,4.0,4.6667,0.4975,0.8353,0.9524,0.5897,0.5473,0.458,0.3984,0.1478,0.4724,0.0818,0.3684,0.0,0.0
+3,a group of people are on a beach playing a game of sand .,0.0,a little girl is walking across the beach flying a kite .,1.0,4.0,4.0,3.0,0.2197,0.7926,0.9162,0.5294,0.4517,0.3083,0.0156,0.0,0.1484,0.0,0.0,0.0,0.0
+4,a woman is trying to help a young boy fly a kite .,0.0,a little girl is walking across the beach flying a kite .,5.0,5.0,3.0,4.3333,0.3566,0.8177,0.8264,0.3988,0.538,0.435,0.2132,0.0,0.2215,0.0,0.048,0.0,0.0
+5,a kid running outside and jumping on a blow up toy,0.0,a little girl is walking across the beach flying a kite .,3.0,3.0,3.0,3.0,0.1433,0.7804,0.9787,0.5994,0.5725,0.4522,0.0,0.0,0.1247,0.0,0.0,0.0,0.0
+6,a kid playing with a lightweight floating ball back and forth .,0.0,a little girl is walking across the beach flying a kite .,2.0,2.0,2.0,2.0,0.1416,0.769,0.8027,0.3679,0.5045,0.3557,0.0,0.0,0.0,0.0,0.0,0.0,0.0

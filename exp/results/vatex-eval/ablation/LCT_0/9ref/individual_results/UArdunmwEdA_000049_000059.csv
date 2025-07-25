@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,an ice sculptor shows how he begins a typical project .,0.2465,a man chiseling and picking at a large block of ice .,5.0,4.0,5.0,4.6667,0.5353,0.8251,0.9199,0.8,0.7958,0.7365,0.4289,0.4191,0.4522,0.416,0.3239,0.2505,0.2465
+2,a man is using a chainsaw to carve a block of ice .,0.7019,a man is using a tool to cut up a block of ice .,4.0,4.0,4.0,4.0,0.7248,0.9232,1.0,1.0,1.0,1.0,0.7019,0.7248,0.7248,0.7248,0.7019,0.7019,0.7019
+3,a man is using a chainsaw to carve a block of ice .,0.7019,a man is using a tool to cut up a block of ice .,5.0,4.0,4.0,4.3333,0.7248,0.9232,1.0,1.0,1.0,1.0,0.7019,0.7248,0.7248,0.7248,0.7019,0.7019,0.7019
+4,a man showing his skills in an outdoor ice carving competition .,0.2892,one person carving an ice block with a tool and another person holding a ice carving machine,4.0,3.0,4.0,3.6667,0.6495,0.882,0.9744,0.8441,0.8664,0.8342,0.6026,0.409,0.5462,0.4011,0.4855,0.3036,0.2892
+5,a man carves a piece of ice and talks about ice carving to a group of people watching .,0.3826,a man is chipping and scraping at an ice block while others are looking on .,4.0,4.0,5.0,4.3333,0.6396,0.8703,0.9773,0.6749,0.7199,0.6732,0.5678,0.4388,0.6312,0.4852,0.5577,0.3269,0.3826
+6,a man is using a machine to make a ice sculpture outside .,0.4504,a man is using a tool to cut up a block of ice .,5.0,4.0,5.0,4.6667,0.7463,0.9257,0.961,0.8387,0.8253,0.8008,0.7259,0.6292,0.5856,0.518,0.5595,0.6188,0.4504

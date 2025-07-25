@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person ties a knot in a rope and then lays it flat on a surface .,0.6194,someone ties two knots in a rope that is folded together .,5.0,5.0,5.0,5.0,0.7188,0.886,0.9623,0.8284,0.859,0.828,0.677,0.6416,0.6957,0.6687,0.6504,0.5883,0.6194
+2,a man is demonstrating how to make a fishing lure .,0.0,a person wearing a bracelet carefully demonstrates how to tie a knot,4.0,4.0,4.0,4.0,0.3425,0.7819,0.9524,0.7905,0.7999,0.7308,0.1591,0.0685,0.2569,0.0824,0.0294,0.0,0.0
+3,a man is demonstrating how to tie a pair of glasses .,0.3301,a person demonstrates how to tie a specific kind of knot while suspenseful music plays .,4.0,4.0,4.0,4.0,0.4612,0.861,0.9818,1.0,0.9872,0.9836,0.3653,0.4533,0.4334,0.4393,0.3231,0.3469,0.3301
+4,a person shows a string and shows how to make tight knot in to a string .,0.2667,someone seems to be weaving something together by means of knottig two thin ropes .,5.0,5.0,5.0,5.0,0.6272,0.8558,0.9808,0.7831,0.8278,0.7803,0.5577,0.3924,0.5863,0.4252,0.5091,0.2248,0.2667
+5,someone is sewing together some rope and making something .,0.2712,"a person displays rope knotting skills using thin , white cord .",5.0,4.0,4.0,4.3333,0.6582,0.8775,1.0,0.9002,0.917,0.894,0.6089,0.425,0.5759,0.4229,0.5147,0.2659,0.2712
+6,a person using their fingers to wrap string around a hook,0.1353,someone ties two knots in a rope that is folded together .,4.0,4.0,4.0,4.0,0.3985,0.8423,1.0,1.0,1.0,1.0,0.2859,0.3301,0.3619,0.3301,0.2424,0.1353,0.1353

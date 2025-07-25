@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a tractor loaded with crushed metal unloads into a warehouse full of scrap .,0.1886,a tractor loads a large object to a conveyer belt .,4.0,4.0,4.0,4.0,0.5582,0.8065,0.9831,0.8485,0.8842,0.8476,0.4522,0.3556,0.5166,0.3541,0.4006,0.2009,0.1886
+2,a man is picking up trash from a trash bin .,0.036,a man is picking up metal with a forklift and moving into a pile .,2.0,4.0,3.0,3.0,0.3526,0.8419,1.0,1.0,1.0,1.0,0.2112,0.2414,0.3288,0.2366,0.2027,0.0518,0.036
+3,a person is picking up trash from a dumpster .,0.1249,"in a foreign language , a woman is describing the disposal of garbage while a fork lift moves paper garbage around .",2.0,4.0,4.0,3.3333,0.3969,0.8414,1.0,1.0,1.0,1.0,0.2832,0.3139,0.3378,0.2736,0.213,0.1762,0.1249
+4,a tractor loader scoops up some dirt and then loads it into a dump truck .,0.0,a person is driving a forklift carrying bales of garbage for recycling .,4.0,4.0,4.0,4.0,0.5838,0.8375,0.9623,0.8633,0.8607,0.8204,0.5031,0.167,0.4883,0.1773,0.389,0.0,0.0
+5,a garbage truck is picking up a row of trash cans and emptying them .,0.0,a person is driving a forklift carrying bales of garbage for recycling .,4.0,5.0,4.0,4.3333,0.3773,0.8043,0.96,0.7486,0.8252,0.7667,0.2017,0.1385,0.3161,0.1214,0.1231,0.0,0.0
+6,a garbage truck picks up cans and empties them in the truck as it goes down a street .,0.0,a person is driving a forklift carrying bales of garbage for recycling .,4.0,4.0,4.0,4.0,0.3831,0.7924,1.0,0.8933,0.9155,0.887,0.2215,0.1664,0.3066,0.1807,0.0893,0.0,0.0

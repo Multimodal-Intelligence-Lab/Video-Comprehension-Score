@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"out in his backyard , a teen boy winds up and throws a spear with all his strength .",0.0,a young man standing in the yard throwing a stick .,5.0,5.0,5.0,5.0,0.4448,0.8299,0.8798,0.6101,0.5342,0.4387,0.331,0.09,0.369,0.0,0.2396,0.0,0.0
+2,a man is standing in a yard and doing a dance routine .,0.194,a young man standing in the yard throwing a stick .,4.0,4.0,4.0,4.0,0.4074,0.8891,1.0,0.8408,0.827,0.8055,0.3334,0.2952,0.4074,0.2834,0.3334,0.2072,0.194
+3,a man is standing in a yard and he is doing a back flip .,0.2518,a young man standing in the yard throwing a stick .,4.0,4.0,4.0,4.0,0.4471,0.8935,1.0,0.8408,0.827,0.8064,0.3812,0.3424,0.4471,0.3314,0.3812,0.264,0.2518
+4,a young man performs multiple trials of a javelin throw .,0.1662,a young man standing in the yard throwing a stick .,4.0,4.0,4.0,4.0,0.454,0.8525,0.9599,0.7804,0.7681,0.728,0.3595,0.3003,0.4312,0.2891,0.3328,0.1792,0.1662
+5,"in front of onlookers , a man throws a small javelin across a grassy field .",0.0,a young man standing in the yard throwing a stick .,4.0,4.0,4.0,4.0,0.3308,0.7998,0.9118,0.5669,0.5787,0.4733,0.1633,0.0,0.2661,0.0,0.0823,0.0,0.0
+6,a young man is standing inside a target ring while he throw a javelin,0.3855,a young man standing in the yard throwing a stick .,4.0,4.0,4.0,4.0,0.4691,0.891,0.9831,0.9766,0.9697,0.966,0.4041,0.4564,0.4599,0.4525,0.3939,0.3899,0.3855

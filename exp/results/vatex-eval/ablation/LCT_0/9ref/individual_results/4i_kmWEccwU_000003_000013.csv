@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,work man strapped high on a pole is trimming the very tall tree,0.2455,someone is near the top of a tree cutting the top off with a chainsaw .,5.0,5.0,4.0,4.6667,0.6726,0.8947,0.9129,0.7981,0.7774,0.731,0.6222,0.3918,0.5973,0.3757,0.5355,0.265,0.2455
+2,a man is using a chainsaw to cut off a tree .,0.4428,a man using a chainsaw high up in a tree to cut it down .,5.0,5.0,5.0,5.0,0.8086,0.9796,0.9583,0.838,0.8412,0.8094,0.8046,0.5795,0.7966,0.4455,0.7924,0.5774,0.4428
+3,a man is using a chainsaw to cut down a tree .,0.4604,a man using a chainsaw high up in a tree to cut it down .,5.0,5.0,4.0,4.6667,0.8344,0.9796,0.9583,0.838,0.8412,0.8094,0.831,0.5925,0.824,0.4627,0.8203,0.5908,0.4604
+4,a man is on a big ladder using a chain saw to cut down tree branches .,0.2018,"a man is standing very high up on a tree , cutting the treetop off with a chainsaw . as the treetop falls he sways with the trunk .",4.0,4.0,4.0,4.0,0.7299,0.9199,0.9303,0.5591,0.5778,0.508,0.7064,0.2301,0.6777,0.2669,0.6497,0.1616,0.2018
+5,man with on a ladder cutting limbs off a tree with a chainsaw .,0.505,"a man is standing very high up on a tree , cutting the treetop off with a chainsaw . as the treetop falls he sways with the trunk .",4.0,4.0,4.0,4.0,0.7393,0.8999,0.9321,0.8776,0.8571,0.8277,0.7077,0.5435,0.7166,0.5516,0.6823,0.5009,0.505
+6,a man is up in a tree cutting branches with a buzz saw .,0.609,a man is high up in the tree and cuts off the top portion with a chainsaw .,5.0,5.0,4.0,4.6667,0.6973,0.8805,1.0,0.8723,0.8863,0.8698,0.6541,0.653,0.6973,0.6585,0.6535,0.6027,0.609

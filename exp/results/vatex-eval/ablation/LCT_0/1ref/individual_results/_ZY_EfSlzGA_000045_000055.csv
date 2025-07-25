@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young woman plays the strings on a small harp while sitting on a bed .,0.1717,a woman is sitting and playing a melody on a harp .,5.0,4.0,5.0,4.6667,0.6598,0.8903,0.7347,0.5971,0.4882,0.4251,0.6179,0.3894,0.537,0.2243,0.4799,0.348,0.1717
+2,a woman is sitting in a chair playing a harp .,0.7329,a woman is sitting and playing a melody on a harp .,4.0,4.0,4.0,4.0,0.852,0.9501,0.9052,0.6768,0.7745,0.7627,0.8442,0.6206,0.8364,0.7353,0.8279,0.6171,0.7329
+3,a woman is sitting in a chair and playing a harp .,0.7334,a woman is sitting and playing a melody on a harp .,4.0,4.0,4.0,4.0,0.8536,0.9501,0.9052,0.6768,0.7745,0.7627,0.8459,0.6213,0.8383,0.7358,0.8298,0.6179,0.7334
+4,"a little girl plays a harp for the camera , sitting in a room .",0.0,a woman is sitting and playing a melody on a harp .,4.0,4.0,4.0,4.0,0.555,0.8585,0.7589,0.2,0.0,0.0,0.4816,0.0,0.4136,0.0,0.317,0.0,0.0
+5,a woman is strumming a beautiful song on a harp .,0.7175,a woman is sitting and playing a melody on a harp .,5.0,5.0,5.0,5.0,0.8264,0.8603,0.9052,0.6768,0.7745,0.7379,0.7982,0.6089,0.8082,0.7271,0.777,0.595,0.7175
+6,a young woman sitting and playing the end of a song on a harp .,0.7314,a woman is sitting and playing a melody on a harp .,5.0,5.0,4.0,4.6667,0.7485,0.9365,1.0,1.0,1.0,1.0,0.7314,0.7485,0.7485,0.7485,0.7314,0.7314,0.7314

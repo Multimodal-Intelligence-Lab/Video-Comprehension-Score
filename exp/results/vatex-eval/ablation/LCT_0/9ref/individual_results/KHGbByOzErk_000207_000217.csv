@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman in a costume dances while four other men are beside her and congratulate her .,0.4378,a woman dances in the middle of the floor and the 4 guys around her highlight her performance .,5.0,4.0,4.0,4.3333,0.6077,0.8809,0.9859,0.7934,0.8176,0.7863,0.5507,0.5055,0.5924,0.5202,0.5224,0.4206,0.4378
+2,a group of people are performing a dance routine on stage .,0.2261,five performers dance in front of an audience at a function .,4.0,5.0,5.0,4.6667,0.5475,0.9026,0.92,0.7395,0.7827,0.7282,0.4882,0.2948,0.5073,0.3695,0.4306,0.1829,0.2261
+3,a group of people are performing a dance routine on a stage .,0.2129,five performers dance in front of an audience at a function .,4.0,5.0,5.0,4.6667,0.5411,0.9026,0.92,0.7395,0.7827,0.7282,0.491,0.2921,0.5012,0.3588,0.4335,0.1798,0.2129
+4,a guy is doing a whole bunch of dance moves while a bunch of people are watching and cheering him on .,0.0874,a group of teenagers finish a dance routine and the crowd begins to applause .,4.0,1.0,4.0,3.0,0.4917,0.8482,0.978,0.7704,0.8066,0.7639,0.3792,0.2174,0.4291,0.2526,0.3027,0.0445,0.0874
+5,there are four pairs of men and women dancing while being watched by an audience .,0.6731,four men and a women are dancing in front of others .,4.0,2.0,4.0,3.3333,0.7039,0.9059,1.0,1.0,1.0,1.0,0.6731,0.7039,0.7039,0.7039,0.6731,0.6731,0.6731
+6,a man and a woman are doing a dance routine in front of people .,0.4923,four men and a women are dancing in front of others .,5.0,4.0,4.0,4.3333,0.6225,0.8835,0.96,0.8723,0.8567,0.8208,0.5728,0.545,0.5578,0.5514,0.4995,0.485,0.4923

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,carpeted stairs are shown and a cleaning machine moving over them noticeably cleans them .,0.0,a man is steam cleaning carpeted stairs inside a home .,5.0,5.0,5.0,5.0,0.674,0.8636,0.7222,0.482,0.3672,0.2673,0.6226,0.2315,0.5487,0.0612,0.4774,0.168,0.0
+2,a person is using a tool to clean a piece of wood .,0.0,a man is steam cleaning carpeted stairs inside a home .,4.0,4.0,4.0,4.0,0.2415,0.7914,0.9599,0.7804,0.7681,0.707,0.0415,0.028,0.2098,0.0125,0.0014,0.0,0.0
+3,a person is using a tool to clean a carpet .,0.177,a man is steam cleaning carpeted stairs inside a home .,5.0,5.0,5.0,5.0,0.5441,0.8273,0.8327,0.7731,0.6696,0.6007,0.4489,0.4103,0.4524,0.3191,0.3381,0.2871,0.177
+4,a person was using a vacuum cleaner to clean the grains off the carpet,0.0,a man is steam cleaning carpeted stairs inside a home .,4.0,5.0,4.0,4.3333,0.4015,0.8251,0.8331,0.3794,0.5213,0.4199,0.2746,0.0,0.2816,0.0,0.1293,0.0,0.0
+5,a person uses a small vacuum cleaner to sweep up dust on a dark brown hardwood floor .,0.0,a man is steam cleaning carpeted stairs inside a home .,5.0,5.0,4.0,4.6667,0.32,0.7932,0.9294,0.7934,0.8149,0.7666,0.1426,0.1429,0.2683,0.1655,0.0775,0.0,0.0
+6,a person is vacuuming the hardwood floors with their vacuum .,0.0,a man is steam cleaning carpeted stairs inside a home .,5.0,5.0,4.0,4.6667,0.3402,0.79,0.928,0.7905,0.7562,0.6914,0.1648,0.1652,0.2889,0.1274,0.0999,0.0,0.0

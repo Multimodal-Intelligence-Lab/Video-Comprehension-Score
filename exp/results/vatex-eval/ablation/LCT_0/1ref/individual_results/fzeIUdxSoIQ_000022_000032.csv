@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy stands with two other people and then swings his hands in a smooth way .,0.0,a man is on a tv show and makes noises with his mouth .,5.0,5.0,5.0,5.0,0.177,0.7677,1.0,0.8879,0.911,0.884,0.0,0.0731,0.177,0.0965,0.0,0.0,0.0
+2,a man and a woman are playing a game of beer pong .,0.0,a man is on a tv show and makes noises with his mouth .,1.0,2.0,5.0,2.6667,0.0437,0.7732,0.9787,0.9698,0.9743,0.9667,0.0,0.0139,0.0229,0.0184,0.0,0.0,0.0
+3,a man is standing in front of a camera and another man is talking .,0.0,a man is on a tv show and makes noises with his mouth .,2.0,2.0,4.0,2.6667,0.312,0.8199,0.9167,0.3972,0.257,0.0938,0.1609,0.0,0.2495,0.0,0.0846,0.0,0.0
+4,a man had a mic to his mouth and beat box with it while on stage,0.1599,a man is on a tv show and makes noises with his mouth .,3.0,3.0,5.0,3.6667,0.4612,0.8342,0.875,0.6857,0.7689,0.7229,0.3541,0.2142,0.3842,0.2992,0.2618,0.0581,0.1599
+5,a man holds up an instrument and plays a tune using his mouth .,0.1706,a man is on a tv show and makes noises with his mouth .,4.0,4.0,5.0,4.3333,0.3923,0.8267,1.0,0.8723,0.8863,0.8625,0.2649,0.3033,0.3923,0.3143,0.2649,0.1573,0.1706
+6,"a man in a studio audience is speaking into a microphone in a foreign language , and then a crowd is making noise .",0.0,a man is on a tv show and makes noises with his mouth .,2.0,2.0,4.0,2.6667,0.4639,0.8356,0.871,0.623,0.6352,0.5634,0.3584,0.1394,0.3845,0.156,0.2635,0.0,0.0

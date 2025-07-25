@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is using a long handled object to clean a part of someone's roof .,0.4207,a person using a powered brush to clean the outside eaves of a house .,5.0,5.0,5.0,5.0,0.5872,0.8512,0.9892,0.7984,0.8371,0.8086,0.515,0.483,0.5827,0.5069,0.5098,0.3926,0.4207
+2,a man is using a leaf blower to clean a window .,0.1811,a person using a powered brush to clean the outside eaves of a house .,3.0,2.0,3.0,2.6667,0.4287,0.8439,0.9667,0.8151,0.8266,0.7946,0.3231,0.2991,0.409,0.3089,0.2997,0.1695,0.1811
+3,a man is using a hose to clean the gutters of a house .,0.4261,a person using a powered brush to clean the outside eaves of a house .,4.0,4.0,4.0,4.0,0.5713,0.8861,0.9655,0.8347,0.843,0.8228,0.5162,0.4864,0.556,0.4915,0.4989,0.4204,0.4261
+4,a man is walking along the edge of a house cleaning the gutters with a power washer .,0.0,a person using a powered brush to clean the outside eaves of a house .,5.0,4.0,4.0,4.3333,0.6022,0.845,0.8353,0.2852,0.1952,0.0476,0.5292,0.0,0.5237,0.0,0.4364,0.0,0.0
+5,a person standing carefully on a roof uses a pressure washer to clean gutters .,0.0,a person using a powered brush to clean the outside eaves of a house .,3.0,3.0,3.0,3.0,0.5445,0.8256,0.9013,0.3823,0.3516,0.2145,0.4482,0.0,0.4946,0.0,0.3878,0.0,0.0
+6,brush with water coming out of it being sprayed on the house window to clean it .,0.0,a person using a powered brush to clean the outside eaves of a house .,4.0,2.0,2.0,2.6667,0.5499,0.8553,0.81,0.3257,0.1969,0.0611,0.4737,0.0,0.4443,0.0,0.3503,0.0,0.0

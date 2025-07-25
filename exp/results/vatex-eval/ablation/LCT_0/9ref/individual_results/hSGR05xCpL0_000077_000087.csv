@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,an adult has a running water hose and starts to give it to a little boy .,0.2685,a toddler is being handed a garden hose outside by an adult .,5.0,5.0,5.0,5.0,0.7112,0.9156,0.8749,0.8065,0.6229,0.5432,0.6846,0.5335,0.5465,0.3954,0.459,0.435,0.2685
+2,a little boy is holding a bird in his hand and is holding it in his hand .,0.0,a young child using a hose to help an adult water the flowers,4.0,4.0,4.0,4.0,0.375,0.8463,1.0,0.7888,0.8347,0.7934,0.2615,0.1266,0.3111,0.1746,0.1428,0.0,0.0
+3,a young girl is using a garden hose to water a plant .,0.2919,a toddler is being handed a garden hose outside by an adult .,4.0,4.0,4.0,4.0,0.6742,0.9023,0.9396,0.904,0.8684,0.843,0.6389,0.5011,0.6532,0.4066,0.6157,0.4111,0.2919
+4,a toddler is holding and hose outside and watering some plants .,0.5552,a young child using a hose to help an adult water the flowers,5.0,4.0,5.0,4.6667,0.8951,0.9004,1.0,0.8879,0.911,0.8926,0.8836,0.6215,0.851,0.6311,0.8491,0.5436,0.5552
+5,a little boy waters various plants with a water hose .,0.3554,someone is helping a little boy water plants with a garden hose .,5.0,4.0,5.0,4.6667,0.8547,0.9442,0.9081,0.6913,0.785,0.7541,0.8448,0.4125,0.8356,0.424,0.8244,0.4056,0.3554
+6,a toddler wearing a diaper is holding a hose and helping his mom water the plants .,0.4542,a wet little boy gets handed a hose and helps water plants outside .,4.0,4.0,4.0,4.0,0.7528,0.9181,0.9673,0.8127,0.8366,0.8082,0.7308,0.518,0.6957,0.5332,0.6685,0.4364,0.4542

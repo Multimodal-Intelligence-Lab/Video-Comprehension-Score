@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two teenagers playing arm wrestling with each other in their home .,0.5623,two boys are engaged in an arm wrestling match .,5.0,5.0,5.0,5.0,0.6266,0.8792,1.0,1.0,1.0,1.0,0.5634,0.6152,0.6152,0.6152,0.5623,0.5623,0.5623
+2,a man and a woman are arm wrestling in a kitchen .,0.5662,"two men are standing in what looks like a kitchen , with their arms on a countertop , and arm wrestling .",4.0,4.0,4.0,4.0,0.7509,0.9136,0.9714,0.8644,0.8438,0.8127,0.7241,0.6521,0.7253,0.5855,0.6993,0.6175,0.5662
+3,two men are arm wrestling and one of them wins .,0.4369,two boys are engaged in an arm wrestling match .,5.0,3.0,4.0,4.0,0.594,0.9019,0.9497,0.9766,0.9445,0.9369,0.5475,0.5009,0.5451,0.4978,0.4898,0.4329,0.4369
+4,two boys are wrestling in a living room against another younger looking boy .,0.0,two young men are smiling and laughing while arm wrestling each other,3.0,2.0,3.0,2.6667,0.4775,0.8704,0.8781,0.7025,0.684,0.6104,0.3987,0.1048,0.3634,0.0614,0.2616,0.0,0.0
+5,two men sitting at a bistro table arm wrestle each other .,0.4816,two boys sit and laugh while arm wrestling each other on a table .,4.0,5.0,5.0,4.6667,0.6403,0.9151,0.9888,0.8444,0.8812,0.8627,0.607,0.4884,0.5907,0.5256,0.5528,0.4239,0.4816
+6,two men are arm wrestling while seated at an outdoor table .,0.3561,two young men arm wrestle on kitchen table with one man relaxed and the other moving head around .,4.0,4.0,4.0,4.0,0.6222,0.9166,0.9104,0.8531,0.8213,0.7928,0.5854,0.3937,0.5595,0.4276,0.5045,0.318,0.3561

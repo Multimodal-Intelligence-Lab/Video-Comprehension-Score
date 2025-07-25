@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young girl rides a razor scooter through a suburban neighborhood .,0.8333,a young girl rides a scooter in a neighborhood .,5.0,5.0,5.0,5.0,0.8399,0.9608,1.0,1.0,1.0,1.0,0.8333,0.8399,0.8399,0.8399,0.8333,0.8333,0.8333
+2,a young girl is riding a scooter down a street .,0.8446,a young girl rides a scooter in a neighborhood .,5.0,5.0,5.0,5.0,0.8549,0.9437,1.0,1.0,1.0,1.0,0.8446,0.8549,0.8549,0.8549,0.8446,0.8446,0.8446
+3,a young girl is riding a scooter down a driveway .,0.7884,a young girl rides a scooter in a neighborhood .,5.0,5.0,5.0,5.0,0.8053,0.9204,1.0,1.0,1.0,1.0,0.7884,0.8053,0.8053,0.8053,0.7884,0.7884,0.7884
+4,a little girl is pushing herself on a toy scooter along a concrete driveway .,0.5977,a little girl rides a scooter in an asphalt cul-de-sac .,5.0,4.0,5.0,4.6667,0.6547,0.8646,1.0,1.0,1.0,1.0,0.5978,0.653,0.653,0.653,0.5977,0.5977,0.5977
+5,a kid is doing some tricks with a scooter while riding it around .,0.0614,kid on a scooter outside in the street riding around the cul-de-sac,4.0,5.0,4.0,4.3333,0.6156,0.9185,0.941,0.6616,0.5286,0.4579,0.5815,0.2322,0.5857,0.1134,0.549,0.1872,0.0614
+6,a small kid is riding a scooter while a woman is speaking in the background .,0.2581,a little girl riding a scooter down the street in a neighborhood .,4.0,4.0,3.0,3.6667,0.5414,0.8688,0.96,0.8241,0.8115,0.773,0.4594,0.3708,0.4794,0.361,0.4008,0.2695,0.2581

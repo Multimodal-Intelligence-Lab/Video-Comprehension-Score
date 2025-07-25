@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy is wearing gloves and washing a bowl in a kitchen .,0.4374,a small child is wearing gloves as he tries to wash the dishes .,5.0,5.0,5.0,5.0,0.7713,0.8821,0.9599,0.7302,0.8085,0.746,0.733,0.5032,0.7111,0.467,0.6666,0.4757,0.4374
+2,a young boy is washing dishes in a kitchen sink .,0.8285,a little boy is washing dishes by hand in a sink .,5.0,5.0,4.0,4.6667,0.8646,0.9392,1.0,1.0,1.0,1.0,0.853,0.8264,0.8524,0.8414,0.8404,0.8165,0.8285
+3,a person is washing dishes in a kitchen sink .,0.4722,a little boy is washing dishes by hand in a sink .,5.0,5.0,4.0,4.6667,0.6306,0.9291,1.0,1.0,1.0,1.0,0.6024,0.5271,0.6024,0.5193,0.5635,0.4808,0.4722
+4,a young girl washes her hands in the bathroom with water from the sink .,0.3117,a young boy washes a bowl in a sink full of dirty dishes .,2.0,3.0,3.0,2.6667,0.5144,0.8772,0.9804,0.8723,0.8785,0.8478,0.4414,0.4066,0.4804,0.4026,0.4013,0.3163,0.3117
+5,"a child bends over a sink while an adult stands behind them and pours water over their head , to rinse their hair",0.0826,a little boy is washing a stainless steel bowl with a sponge and then he rinses the bowl .,2.0,2.0,2.0,2.0,0.4867,0.859,0.9846,0.8782,0.9079,0.8808,0.4025,0.2672,0.4146,0.2912,0.3185,0.147,0.0826
+6,a boy and his mom washed the dishes in a sink .,0.6883,a little boy is washing dishes by hand in a sink .,4.0,4.0,4.0,4.0,0.762,0.9235,1.0,0.8571,0.8698,0.8313,0.7422,0.7169,0.762,0.7122,0.7422,0.6934,0.6883

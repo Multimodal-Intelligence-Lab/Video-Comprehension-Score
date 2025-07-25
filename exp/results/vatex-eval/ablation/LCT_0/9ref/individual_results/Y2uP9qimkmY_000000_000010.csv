@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two girsl standing outside in the wind perform a dance to music,0.3664,two females are facing the camera in a park and dancing to a song being played in the background .,5.0,5.0,5.0,5.0,0.525,0.8865,0.9688,1.0,0.9687,0.9604,0.438,0.4635,0.5032,0.4645,0.4121,0.3652,0.3664
+2,a group of people are doing a dance in the middle of the street .,0.0154,two women do the same dance at the same time as music plays .,3.0,4.0,2.0,3.0,0.3375,0.8327,1.0,1.0,1.0,1.0,0.2044,0.2207,0.3093,0.2207,0.1705,0.0154,0.0154
+3,a group of people are doing a dance routine on the sidewalk .,0.0459,two girls perform a choreographed dance to the 'gangnam style' song .,5.0,4.0,4.0,4.3333,0.3434,0.8459,1.0,1.0,1.0,1.0,0.222,0.2721,0.2541,0.2391,0.0701,0.0873,0.0459
+4,two young girls are dancing to music at a restaurant .,0.1313,two females are facing the camera in a park and dancing to a song being played in the background .,2.0,4.0,4.0,3.3333,0.5509,0.8865,1.0,0.8723,0.8863,0.8611,0.4934,0.2378,0.5321,0.2617,0.4722,0.1167,0.1313
+5,two women dance to music in a black and white video .,0.4297,two women do the same dance at the same time as music plays .,4.0,3.0,4.0,3.6667,0.6266,0.8993,0.9846,0.8366,0.8347,0.792,0.5848,0.4965,0.611,0.4871,0.5674,0.4402,0.4297
+6,two girls attempting to do a weird dance routine in sync .,0.5143,two girls perform a choreographed dance to the 'gangnam style' song .,1.0,5.0,5.0,3.6667,0.6228,0.8572,1.0,1.0,1.0,1.0,0.56,0.5778,0.6174,0.5837,0.5537,0.5075,0.5143

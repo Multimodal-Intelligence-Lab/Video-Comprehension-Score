@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the guy is dancing around with his partner on a wheelchair . .,0.7355,a man is dancing with a woman in a wheel chair .,5.0,5.0,5.0,5.0,0.8388,0.9041,0.9677,0.8408,0.7996,0.7579,0.8088,0.6856,0.8281,0.745,0.796,0.632,0.7355
+2,a man and a woman are performing a dance routine on a stage .,0.1989,a man and woman perform a ball room dance while the woman is in a wheel chair .,4.0,4.0,5.0,4.3333,0.4763,0.8975,1.0,0.7643,0.7619,0.7348,0.3918,0.2832,0.3966,0.281,0.3278,0.2014,0.1989
+3,a man and a woman are performing a dance routine in front of a crowd .,0.2085,a man and woman perform a ball room dance while the woman is in a wheel chair .,5.0,5.0,5.0,5.0,0.5571,0.9036,1.0,0.8644,0.8788,0.8528,0.5052,0.2917,0.4378,0.2987,0.3734,0.2006,0.2085
+4,a man and a woman dancing in a hall while other people look on,0.0,"two people dancing a waltz , the man standing and the woman in a wheelchair , before an audience .",5.0,5.0,5.0,5.0,0.4625,0.889,1.0,0.8408,0.827,0.7918,0.3724,0.1557,0.389,0.1416,0.2867,0.0,0.0
+5,a woman does a dance in front of a bunch of people in a room with tables .,0.0,"two people dancing a waltz , the man standing and the woman in a wheelchair , before an audience .",4.0,4.0,5.0,4.3333,0.3983,0.8664,0.8803,0.8644,0.7657,0.7156,0.2785,0.2406,0.3165,0.1427,0.1805,0.0783,0.0
+6,a woman is dancing with a man on the floor while other people watch .,0.2024,a woman in a wheelchair dancing with a man for a crowd .,5.0,5.0,5.0,5.0,0.4881,0.8892,0.9125,0.8408,0.7217,0.687,0.4243,0.3912,0.4196,0.2907,0.3472,0.3153,0.2024

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,some brush is being burned on an asphalt surface next to a field .,0.4578,pile of organic debris burns with tall flames on paved area bordering a meadow .,4.0,5.0,5.0,4.6667,0.7376,0.8377,1.0,1.0,1.0,1.0,0.68,0.5741,0.7085,0.5719,0.6445,0.4606,0.4578
+2,a group of people are standing around a fire fire .,0.0,a small pile of vegetation is actively burning in a paved area of a field .,2.0,1.0,2.0,1.6667,0.3895,0.834,0.883,0.8094,0.7449,0.6817,0.268,0.2386,0.3035,0.0801,0.1649,0.0791,0.0
+3,a firefighter is on fire and a man is spraying it out .,0.0,a small pile of vegetation is actively burning in a paved area of a field .,2.0,1.0,1.0,1.3333,0.2959,0.8242,0.8915,0.9289,0.8196,0.7731,0.1195,0.2299,0.1945,0.1221,0.0,0.0261,0.0
+4,outside someone started a fire and is cooking food on top of it .,0.2268,a fire that is going in the middle of the day with the fire growing slowly,3.0,1.0,2.0,2.0,0.5111,0.8263,0.936,0.6913,0.7901,0.7378,0.3891,0.2927,0.4697,0.3812,0.3374,0.1163,0.2268
+5,man holding something throwing a flame near his face making it look like he was breathing fire .,0.0,a small pile of vegetation is actively burning in a paved area of a field .,3.0,1.0,1.0,1.6667,0.3034,0.8148,0.9434,0.9134,0.877,0.8455,0.124,0.14,0.2617,0.1282,0.0715,0.0,0.0
+6,a group of people are standing outside around a very large fire in a firepit .,0.0,a small pile of vegetation is actively burning in a paved area of a field .,3.0,1.0,2.0,2.0,0.4465,0.8395,0.8684,0.6849,0.586,0.4737,0.3366,0.1161,0.2241,0.0,0.0236,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,in a gym a man is doing some stretches with his whole body,0.4188,man stretches arm in gym by bending elbow next to head and pulling elbow with other arm .,4.0,4.0,3.0,3.6667,0.7745,0.9066,0.8775,0.7319,0.6836,0.6236,0.7512,0.6056,0.6588,0.4555,0.6057,0.5443,0.4188
+2,a man is demonstrating how to do a dance routine .,0.0,a man is stretching out his upper body while standing on a basketball court .,4.0,4.0,4.0,4.0,0.2458,0.7938,1.0,1.0,0.9805,0.9753,0.0499,0.1646,0.2458,0.148,0.0499,0.0,0.0
+3,a man is standing in front of a mirror and he is demonstrating how to do .,0.037,a man stands in a gym and does over head stretches .,4.0,4.0,4.0,4.0,0.3584,0.8301,1.0,1.0,1.0,1.0,0.2211,0.2361,0.2905,0.2361,0.1395,0.0,0.037
+4,a man stands with his arm over his shoulder and performs an intense arm stretch .,0.4063,a man stands in a gym and does over head stretches .,5.0,5.0,5.0,5.0,0.7039,0.8774,0.9583,0.7161,0.7905,0.7474,0.6625,0.4789,0.6106,0.4885,0.5481,0.3952,0.4063
+5,a man in the gym working out using their arms to lift weights,0.2003,man stretches arm in gym by bending elbow next to head and pulling elbow with other arm .,4.0,4.0,4.0,4.0,0.648,0.8527,0.971,0.6644,0.7625,0.6973,0.5792,0.3226,0.5267,0.3249,0.4295,0.1977,0.2003
+6,a man is in a gym and is using free weights to strengthen his upper body .,0.1378,a person stretches their arms behind their head in a gym .,4.0,2.0,2.0,2.6667,0.6208,0.8442,0.9796,0.8819,0.8923,0.8606,0.528,0.3733,0.534,0.298,0.4387,0.2302,0.1378

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman demonstrates how to hold the bottom of a long red skirt .,0.1651,a female is showing off the same piece of red fabric she is wearing around her waste .,5.0,5.0,5.0,5.0,0.599,0.85,0.9744,0.8477,0.9042,0.876,0.5143,0.3151,0.5679,0.3217,0.4766,0.1765,0.1651
+2,a woman is demonstrating how to wrap a sari .,0.1976,a female is showing off the same piece of red fabric she is wearing around her waste .,5.0,5.0,4.0,4.6667,0.5439,0.8649,0.904,0.9742,0.8705,0.8346,0.4521,0.4268,0.4782,0.3443,0.3732,0.2985,0.1976
+3,a woman is demonstrating how to properly wrap a sari .,0.3942,a woman displays a large piece of fabric that is partially wrapped around her waist .,5.0,5.0,4.0,4.6667,0.5362,0.8458,0.95,0.9819,0.9331,0.9169,0.4368,0.5259,0.4976,0.5012,0.3898,0.4242,0.3942
+4,a woman with exposed midriff seems like she's going to take off her skirt but wraps a sheer piece of material around herself instead,0.0,a female is showing off the same piece of red fabric she is wearing around her waste .,4.0,5.0,2.0,3.6667,0.4983,0.8381,0.9731,0.7664,0.8108,0.7499,0.4014,0.214,0.3881,0.2068,0.269,0.0,0.0
+5,a woman in a beautiful dress is placing part of an outfit on another woman who is beautifully adorned .,0.0,a female is showing off the same piece of red fabric she is wearing around her waste .,4.0,2.0,2.0,2.6667,0.3634,0.8163,0.9495,0.7668,0.7924,0.7423,0.2168,0.0826,0.2689,0.1209,0.0702,0.0,0.0
+6,a woman wraps her skirt around her waist and then works with some fabric .,0.0221,a woman holds up a red and white blanket in front of her body .,4.0,4.0,5.0,4.3333,0.631,0.8998,0.9873,0.9045,0.929,0.9089,0.59,0.2117,0.4729,0.2375,0.4142,0.0002,0.0221

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,an entertainer leads the crowd in an amusement park type setting with a pool of water behind him .,0.0242,a man is talking and addressing a large audience while standing in front of a large pool area,5.0,5.0,5.0,5.0,0.6376,0.8466,0.9614,0.7778,0.8035,0.7413,0.5685,0.0468,0.5997,0.2301,0.5233,0.0,0.0242
+2,a group of people are in a pool and a man is standing in the water .,0.1656,a group of people are following a mans instructions and actions .,4.0,3.0,4.0,3.6667,0.4854,0.8588,1.0,1.0,1.0,1.0,0.3975,0.2835,0.3403,0.2835,0.2278,0.1656,0.1656
+3,a large group of people are standing in a large swimming pool .,0.0759,a man is talking and addressing a large audience while standing in front of a large pool area,4.0,3.0,4.0,3.6667,0.4536,0.8825,1.0,0.9045,0.9298,0.912,0.3809,0.1828,0.4003,0.205,0.3205,0.034,0.0759
+4,a man narrates while a swimmer demonstrates a swimming stroke .,0.0,people putting on a presentation with sea animlas asks the audience to make a hand signal .,4.0,2.0,5.0,3.6667,0.412,0.7932,0.9565,0.8022,0.8254,0.7628,0.2587,0.0964,0.2929,0.0471,0.1086,0.0,0.0
+5,a person demonstrates proper swimming technique as a man narrates .,0.0392,someone standing in front of a water tank lectures a large crowd .,4.0,3.0,5.0,4.0,0.4126,0.8014,1.0,0.8933,0.9155,0.8916,0.267,0.2487,0.33,0.2549,0.1359,0.0311,0.0392
+6,a man is demonstrating how to swim and another one is explaining in the background .,0.0,people putting on a presentation with sea animlas asks the audience to make a hand signal .,4.0,2.0,5.0,3.6667,0.4382,0.7989,1.0,1.0,1.0,1.0,0.2968,0.2313,0.3676,0.2313,0.2084,0.0,0.0

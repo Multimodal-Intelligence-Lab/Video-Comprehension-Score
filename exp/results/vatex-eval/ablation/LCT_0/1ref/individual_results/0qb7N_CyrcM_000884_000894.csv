@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,several people are on a stage playing a variety of musical instruments in a band .,0.0,a member of a band is playing the saxophone and doing a solo .,5.0,5.0,5.0,5.0,0.3648,0.8204,0.8335,0.6884,0.631,0.5503,0.2258,0.0772,0.2379,0.0,0.0711,0.0,0.0
+2,a man is playing a saxophone while another man plays the saxophone .,0.0,a member of a band is playing the saxophone and doing a solo .,4.0,4.0,3.0,3.6667,0.5236,0.8511,0.7983,0.3819,0.1944,0.0535,0.4403,0.0,0.4033,0.0,0.2989,0.0,0.0
+3,a man is playing a clarinet while another man is playing the clarinet .,0.0,a member of a band is playing the saxophone and doing a solo .,4.0,4.0,2.0,3.3333,0.1847,0.8051,0.8272,0.2792,0.0292,0.0,0.0,0.0,0.0144,0.0,0.0,0.0,0.0
+4,a man plays a harmonica while other people play instruments with him on stage .,0.0,a member of a band is playing the saxophone and doing a solo .,4.0,5.0,4.0,4.3333,0.2924,0.7851,0.9048,0.5129,0.4244,0.2669,0.0987,0.0,0.2179,0.0,0.0038,0.0,0.0
+5,a band playing on a stage as the frontman plays the saxophone .,0.0,a member of a band is playing the saxophone and doing a solo .,5.0,4.0,5.0,4.6667,0.7258,0.8903,0.7647,0.442,0.1204,0.0119,0.692,0.2311,0.6414,0.0,0.5972,0.1936,0.0
+6,"a man on stage solos on the saxophone , while his band members in the back watch .",0.0,a member of a band is playing the saxophone and doing a solo .,4.0,4.0,3.0,3.6667,0.7585,0.886,0.5763,0.2449,0.0156,0.0,0.7274,0.0044,0.4413,0.0,0.4175,0.0,0.0

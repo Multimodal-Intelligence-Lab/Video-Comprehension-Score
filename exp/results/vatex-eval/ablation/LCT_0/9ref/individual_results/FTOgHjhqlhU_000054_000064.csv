@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"in what looks like a college fraternity , a group of people are outside behind a picnic table and drinking bottles of water and one of them stands on the table .",0.3646,the young men are drinking water and one man is standing on the table .,5.0,5.0,5.0,5.0,0.6256,0.8693,0.9452,0.7153,0.7775,0.7113,0.5693,0.4202,0.5453,0.4476,0.4769,0.333,0.3646
+2,a group of people are gathered around a table while a group of people watch .,0.1485,a group of people near a table having a competition together and then standing on the table,5.0,5.0,5.0,5.0,0.5166,0.9147,0.9859,0.7268,0.7927,0.7373,0.4715,0.0766,0.3657,0.2211,0.3065,0.0,0.1485
+3,a group of people are gathered around a table eating a hot dog eating contest .,0.4567,several men dressed in costumes are having a hot dog eating contest .,4.0,5.0,4.0,4.3333,0.7526,0.932,0.96,0.82,0.8122,0.7799,0.7345,0.4951,0.6846,0.5194,0.6616,0.4293,0.4567
+4,a few men are at a restaurant and one of them takes a bite of something .,0.0,"men in various costumes are being cheered on as they drink water , and one of them stands up on the table in victory .",5.0,4.0,4.0,4.3333,0.4555,0.8305,1.0,0.7123,0.714,0.636,0.3246,0.011,0.4267,0.0548,0.2791,0.0,0.0
+5,"three boys sit at a crowded cafeteria table , eating and drinking water while another man stands in the background .",0.0,"men in various costumes are being cheered on as they drink water , and one of them stands up on the table in victory .",4.0,5.0,4.0,4.3333,0.5165,0.8805,0.9409,0.9472,0.9145,0.8947,0.4508,0.1786,0.3989,0.1492,0.3173,0.0,0.0
+6,a group of men have drinks and wait outside a restaurant .,0.0,"men in various costumes are being cheered on as they drink water , and one of them stands up on the table in victory .",5.0,4.0,4.0,4.3333,0.3372,0.8536,1.0,1.0,1.0,1.0,0.2235,0.1643,0.2626,0.1643,0.1361,0.0,0.0

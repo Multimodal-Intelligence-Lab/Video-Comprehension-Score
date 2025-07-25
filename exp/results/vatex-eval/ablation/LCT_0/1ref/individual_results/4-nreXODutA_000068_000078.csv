@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two men play squash at the court whilst the camera man calls out the score .,0.0,a man slams a glass window as another hits a ball with a racket,4.0,5.0,5.0,4.6667,0.4029,0.7877,0.8842,0.6492,0.665,0.5746,0.2419,0.0802,0.3247,0.102,0.1426,0.0,0.0
+2,two men are playing a game of racquetball on a court .,0.0,a man slams a glass window as another hits a ball with a racket,5.0,5.0,5.0,5.0,0.3961,0.7909,0.8988,0.661,0.6426,0.5481,0.2365,0.0863,0.3281,0.0602,0.1504,0.0,0.0
+3,two men are playing a game of racquetball in a racquetball court .,0.0,a man slams a glass window as another hits a ball with a racket,5.0,5.0,5.0,5.0,0.3938,0.7914,0.8989,0.5456,0.5186,0.3917,0.234,0.0,0.3256,0.0,0.1478,0.0,0.0
+4,two men are playing a game of racquetball in a racquetball court .,0.0,a man slams a glass window as another hits a ball with a racket,5.0,5.0,5.0,5.0,0.3938,0.7914,0.8989,0.5456,0.5186,0.3917,0.234,0.0,0.3256,0.0,0.1478,0.0,0.0
+5,two men playing a game of racquetball on a court .,0.0,a man slams a glass window as another hits a ball with a racket,5.0,5.0,5.0,5.0,0.3932,0.7909,0.8988,0.661,0.6426,0.5481,0.2328,0.0819,0.3248,0.0557,0.1463,0.0,0.0
+6,a man and a boy play racquetball against each other in an indoor racquetball court .,0.0,a man slams a glass window as another hits a ball with a racket,5.0,5.0,5.0,5.0,0.3826,0.8039,0.9396,0.6669,0.6702,0.5897,0.232,0.0743,0.3429,0.0788,0.1827,0.0,0.0

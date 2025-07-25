@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a little baby is sitting in a couch with her father and playing with a toy,0.0663,a man holds his child on top of a couch and hands her a hair brush to brush her hair with .,4.0,4.0,4.0,4.0,0.4597,0.8103,0.9333,0.6783,0.7142,0.6473,0.3332,0.2034,0.4211,0.2434,0.2856,0.0169,0.0663
+2,a baby is sitting on a couch and playing with a baby .,0.0,a man holds his child on top of a couch and hands her a hair brush to brush her hair with .,4.0,3.0,4.0,3.6667,0.3634,0.8232,0.8077,0.5157,0.506,0.3999,0.2266,0.0,0.2118,0.0,0.0425,0.0,0.0
+3,a baby is sitting on a couch and a woman is talking to him .,0.0684,a man holds his child on top of a couch and hands her a hair brush to brush her hair with .,4.0,4.0,4.0,4.0,0.4138,0.8083,0.9365,0.7515,0.7784,0.7259,0.2748,0.2199,0.374,0.2469,0.2256,0.0349,0.0684
+4,a cute baby is brushing mom's hair on the living room,0.0306,a man holds his child on top of a couch and hands her a hair brush to brush her hair with .,4.0,4.0,4.0,4.0,0.541,0.847,0.8296,0.5609,0.559,0.4794,0.4581,0.1817,0.4468,0.179,0.3468,0.0338,0.0306
+5,"laying on a carpet , a baby his his hair combed by a little girl .",0.0,a man holds his child on top of a couch and hands her a hair brush to brush her hair with .,4.0,2.0,3.0,3.0,0.417,0.8187,0.8126,0.5605,0.5512,0.4519,0.2879,0.0,0.2826,0.0,0.1237,0.0,0.0
+6,a young child is using a brush to brush the hair of an adult sitting in front of them .,0.0,a man holds his child on top of a couch and hands her a hair brush to brush her hair with .,4.0,4.0,4.0,4.0,0.5849,0.876,0.8434,0.4681,0.4694,0.3943,0.5262,0.0907,0.5079,0.0929,0.4382,0.0,0.0

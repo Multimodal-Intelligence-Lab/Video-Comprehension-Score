@@ -1,0 +1,15 @@
+{
+  "ground_truth": "She blinks. He raises his legs higher. Debbie rolls her eyes and crosses her arms. Pete stares at her with his legs spread. She takes a brief look, then walks away. He sits up. At the boutique, Debbie watches Desi while she folds clothing with Jodi. She looks back at Desi. Jodi's eyes follow. Debbie strolls over to Desi. Desi pulls a brown top from a clothing rack. She steps over to a dressing area.",
+  "iterations": {
+    "1": "She blinks. Debbie rolls her eyes and crosses her arms. Pete stares at her with his legs spread. She takes a brief look, then walks away. He sits up. At the boutique, Debbie watches Desi while she folds clothing with Jodi. She looks back at Desi. Jodi's eyes follow. Debbie strolls over to Desi. Desi pulls a brown top from a clothing rack. She steps over to a dressing area.",
+    "2": "She blinks. Debbie rolls her eyes and crosses her arms. Pete stares at her with his legs spread. She takes a brief look, then walks away. He sits up. At the boutique, Debbie watches Desi while she folds clothing with Jodi. She looks back at Desi. Debbie strolls over to Desi. Desi pulls a brown top from a clothing rack. She steps over to a dressing area.",
+    "3": "Debbie rolls her eyes and crosses her arms. Pete stares at her with his legs spread. She takes a brief look, then walks away. He sits up. At the boutique, Debbie watches Desi while she folds clothing with Jodi. She looks back at Desi. Debbie strolls over to Desi. Desi pulls a brown top from a clothing rack. She steps over to a dressing area.",
+    "4": "Debbie rolls her eyes and crosses her arms. Pete stares at her with his legs spread. She takes a brief look, then walks away. He sits up. At the boutique, Debbie watches Desi while she folds clothing with Jodi. She looks back at Desi. Debbie strolls over to Desi. Desi pulls a brown top from a clothing rack.",
+    "5": "Pete stares at her with his legs spread. She takes a brief look, then walks away. He sits up. At the boutique, Debbie watches Desi while she folds clothing with Jodi. She looks back at Desi. Debbie strolls over to Desi. Desi pulls a brown top from a clothing rack.",
+    "6": "Pete stares at her with his legs spread. She takes a brief look, then walks away. At the boutique, Debbie watches Desi while she folds clothing with Jodi. She looks back at Desi. Debbie strolls over to Desi. Desi pulls a brown top from a clothing rack.",
+    "7": "Pete stares at her with his legs spread. At the boutique, Debbie watches Desi while she folds clothing with Jodi. She looks back at Desi. Debbie strolls over to Desi. Desi pulls a brown top from a clothing rack.",
+    "8": "At the boutique, Debbie watches Desi while she folds clothing with Jodi. She looks back at Desi. Debbie strolls over to Desi. Desi pulls a brown top from a clothing rack.",
+    "9": "She looks back at Desi. Debbie strolls over to Desi. Desi pulls a brown top from a clothing rack.",
+    "10": "Debbie strolls over to Desi. Desi pulls a brown top from a clothing rack."
+  }
+}

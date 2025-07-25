@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,three men work on a wooden frame next to a house and ladders .,0.7538,three men outside working on a wooden frame building project .,5.0,5.0,5.0,5.0,0.813,0.9087,1.0,1.0,1.0,1.0,0.7942,0.7214,0.7943,0.7763,0.7737,0.7148,0.7538
+2,a group of people are building a shed in a yard .,0.4468,a group of men are working on an wooden object outside in the yard,5.0,5.0,5.0,5.0,0.5873,0.8703,1.0,1.0,0.9845,0.9806,0.5177,0.5185,0.5873,0.5266,0.5177,0.4374,0.4468
+3,a group of men are working together to build a shed .,0.6461,a group of men are outside trying to build something .,5.0,5.0,5.0,5.0,0.6878,0.8823,1.0,1.0,1.0,1.0,0.6461,0.6878,0.6878,0.6878,0.6461,0.6461,0.6461
+4,"a time lapse shows a group of men outside , in the process of building a shed .",0.5743,a time lapse shows a group of men using a ladder to do work on a house .,5.0,5.0,5.0,5.0,0.6406,0.8989,0.9818,0.9121,0.9457,0.9393,0.5974,0.6047,0.6328,0.6188,0.59,0.5586,0.5743
+5,a group of men build a shed over time .,0.5203,a group of men are outside building an additional structure on a building .,5.0,5.0,4.0,4.6667,0.7031,0.8922,0.9756,1.0,0.9519,0.942,0.6672,0.592,0.6844,0.5784,0.6463,0.5427,0.5203
+6,outside of building that has wood siding a man is working .,0.0,a time lapse shows a group of men using a ladder to do work on a house .,4.0,4.0,4.0,4.0,0.4689,0.9094,0.8554,0.5311,0.4731,0.3411,0.416,0.0,0.1874,0.0,0.0237,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man lays a comforter on the top of a bed as he describes what he is doing .,0.2745,a man demonstrates how he lays his blanket onto his bed .,5.0,5.0,4.0,4.6667,0.7278,0.9018,0.9599,0.8387,0.8253,0.7838,0.6981,0.4204,0.5881,0.411,0.5689,0.2825,0.2745
+2,a woman is demonstrating how to make a bed on a bed .,0.7183,a person is showing hot to make a bed properly with a sheet,4.0,3.0,4.0,3.6667,0.753,0.8955,1.0,1.0,1.0,1.0,0.7241,0.753,0.7468,0.7478,0.7172,0.7241,0.7183
+3,a man is demonstrating how to properly fold a bed .,0.7272,a man gives a tutorial on how to properly make a bed .,5.0,5.0,4.0,4.6667,0.7996,0.9143,1.0,1.0,1.0,1.0,0.7744,0.7617,0.7996,0.7577,0.7744,0.7316,0.7272
+4,a man is looking at a pil of clothes on a bed then he looks online how to fold them before he folds them,0.4182,a man is shown standing next to a bed and showing how to fold a blanket while describing it .,4.0,2.0,2.0,2.6667,0.5475,0.8452,0.964,0.8804,0.9203,0.9057,0.4646,0.486,0.5306,0.5083,0.4446,0.3919,0.4182
+5,a man is showing how to stretch a carpet when first laying it .,0.2435,"in a bedroom , a man is showing the viewers how to extend a blanket over the bed from the side .",4.0,4.0,3.0,3.6667,0.4907,0.8382,1.0,1.0,1.0,1.0,0.3919,0.374,0.4147,0.3659,0.3017,0.2531,0.2435
+6,a woman shows how to make a bed with sheets .,0.811,a person is showing hot to make a bed properly with a sheet,4.0,3.0,3.0,3.3333,0.8282,0.909,1.0,1.0,1.0,1.0,0.811,0.8282,0.8282,0.8282,0.811,0.811,0.811

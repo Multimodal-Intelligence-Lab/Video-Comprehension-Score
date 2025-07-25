@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a chef with a hat on prepares some food as people sit around,0.4203,a chef is preparing food while guests at the bar watch .,5.0,5.0,5.0,5.0,0.6564,0.8678,1.0,0.8933,0.9051,0.8778,0.6041,0.4971,0.5614,0.5051,0.4862,0.411,0.4203
+2,a group of people are in a kitchen and they are shucking oysters .,0.0,restaurant worker opens oysters with knife behind counter and places open oysters on tray .,4.0,3.0,3.0,3.3333,0.5783,0.8469,0.875,0.8812,0.7561,0.7118,0.4878,0.2563,0.4396,0.1333,0.3013,0.1212,0.0
+3,a group of people are in a kitchen and they are cutting oysters .,0.2218,restaurant worker opens oysters with knife behind counter and places open oysters on tray .,4.0,3.0,3.0,3.3333,0.5903,0.8521,0.9412,0.8812,0.8204,0.7892,0.4944,0.4454,0.5372,0.3694,0.4288,0.3156,0.2218
+4,a man opens up an oyster by using a knife and a table napkin .,0.5316,the man opens oysters and places them on a tray at an oyster bar .,4.0,4.0,4.0,4.0,0.7425,0.8667,0.9599,0.9737,0.9446,0.9246,0.7005,0.589,0.7135,0.594,0.6667,0.5053,0.5316
+5,in a room a man is opening oysters and setting them on a plate with lemon juice .,0.5909,the man opens oysters and places them on a tray at an oyster bar .,2.0,3.0,4.0,3.0,0.7003,0.8765,0.9885,0.9766,0.9697,0.96,0.658,0.6363,0.6906,0.6414,0.647,0.5851,0.5909
+6,a man shows how to take oysters out of a shell with a knife .,0.703,a person was repeatedly picking an oyster shell and used a knife to shuck it out,5.0,5.0,4.0,4.6667,0.7548,0.8706,0.9787,1.0,0.9483,0.9406,0.7183,0.7548,0.7372,0.7414,0.6982,0.7183,0.703

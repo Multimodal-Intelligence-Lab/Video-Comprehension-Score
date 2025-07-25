@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the little boys are swaying and dancing to the beat of the music .,0.1638,two people dancing to a beat in a bedroom .,4.0,4.0,4.0,4.0,0.3835,0.8475,1.0,0.9679,0.9393,0.9284,0.2401,0.3123,0.3444,0.2913,0.1919,0.1885,0.1638
+2,a group of people are dancing to music in a dark room .,0.4481,two young girls dance together in their dark lit room at the same time .,4.0,5.0,5.0,4.6667,0.5986,0.8846,1.0,1.0,1.0,1.0,0.5314,0.5202,0.5799,0.5272,0.5096,0.4399,0.4481
+3,a man is dancing in front of a group of people .,0.216,a person dances in front of a bed and then is joined by another person .,1.0,3.0,1.0,1.6667,0.406,0.8691,1.0,1.0,0.9617,0.9515,0.3165,0.307,0.406,0.3186,0.3165,0.2026,0.216
+4,in a room two young women are dancing to a coordinated dance routine,0.1961,two people dancing to a beat in a bedroom .,5.0,4.0,5.0,4.6667,0.6311,0.8885,0.9655,0.8647,0.7312,0.6807,0.5848,0.47,0.4887,0.3002,0.4245,0.3912,0.1961
+5,two young people dance in sync to the music .,0.4327,two people dancing to a beat in a bedroom .,5.0,5.0,5.0,5.0,0.5506,0.8852,0.9714,0.9679,0.9393,0.9314,0.4671,0.5127,0.5145,0.4979,0.4515,0.4495,0.4327
+6,a couple of people at night doing a dance routine together in front of others,0.2503,two people dancing to a beat in a bedroom .,4.0,4.0,4.0,4.0,0.5487,0.9027,1.0,0.9387,0.9381,0.9261,0.5001,0.3725,0.4793,0.372,0.4231,0.2804,0.2503

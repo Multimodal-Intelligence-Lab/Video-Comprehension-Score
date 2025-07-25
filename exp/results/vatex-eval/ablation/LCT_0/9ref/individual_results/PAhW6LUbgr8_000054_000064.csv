@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,hands turn rows of rubik's cube and hands turns entire cube while pointing out square colors .,0.3922,a child twists a rubix cube so that the side matches the center .,5.0,5.0,5.0,5.0,0.6018,0.851,0.9638,0.9093,0.9146,0.8979,0.5277,0.4848,0.5374,0.4921,0.4457,0.3835,0.3922
+2,a person is demonstrating how to solve a rubik cube .,0.9799,a person is demonstrating how to solve a rubik's cube puzzle .,5.0,5.0,5.0,5.0,0.9803,0.9804,1.0,1.0,1.0,1.0,0.9799,0.9803,0.9803,0.9803,0.9799,0.9799,0.9799
+3,a person is demonstrating how to solve a rubik ' s cube .,0.9748,a person is demonstrating how to solve a rubik's cube puzzle .,5.0,5.0,5.0,5.0,0.9753,0.9804,1.0,1.0,1.0,1.0,0.9748,0.9753,0.9753,0.9753,0.9748,0.9748,0.9748
+4,a young guy is showing and explaining how to solve a rubik's cube .,0.701,a person is demonstrating how to solve a rubik's cube puzzle .,5.0,5.0,5.0,5.0,0.8098,0.9346,1.0,0.9737,0.9155,0.9,0.7965,0.7551,0.7374,0.7271,0.7087,0.7316,0.701
+5,boy works a rubik's cube and explains what to do with it .,0.8082,a boy works on a rubix cube and shows how it works .,5.0,5.0,5.0,5.0,0.9034,0.945,1.0,1.0,1.0,1.0,0.8977,0.8948,0.8937,0.8094,0.8875,0.8887,0.8082
+6,a person works on quickly solving a rubik's cube puzzle .,0.7611,a person discussing and works on solving a rubik's cube .,5.0,5.0,5.0,5.0,0.8065,0.9456,0.9787,0.8723,0.8567,0.8484,0.7953,0.7781,0.7984,0.7741,0.7868,0.7653,0.7611

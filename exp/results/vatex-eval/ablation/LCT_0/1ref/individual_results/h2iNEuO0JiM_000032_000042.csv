@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is holding dumbbells then lifts the dumbbells with each arm .,0.0,a heavily muscled man demonstrates working out with two large barbells .,5.0,5.0,5.0,5.0,0.5618,0.7967,0.832,0.2142,0.011,0.0,0.45,0.0,0.4733,0.0,0.3389,0.0,0.0
+2,a man in a gym is lifting weights in a gym .,0.0,a heavily muscled man demonstrates working out with two large barbells .,5.0,5.0,5.0,5.0,0.5063,0.7853,0.7742,0.5686,0.4834,0.3422,0.3714,0.1317,0.3623,0.0,0.188,0.0,0.0
+3,in a gym a man is lifting weights with his arms .,0.1402,a heavily muscled man demonstrates working out with two large barbells .,5.0,5.0,5.0,5.0,0.5276,0.7857,0.8098,0.7894,0.6992,0.6172,0.3988,0.4016,0.4167,0.3244,0.2576,0.2384,0.1402
+4,a man is at a gym giving exercise tips on using barbells .,0.3568,a heavily muscled man demonstrates working out with two large barbells .,4.0,4.0,4.0,4.0,0.6017,0.8065,0.8886,0.8059,0.7678,0.7121,0.5061,0.5057,0.5517,0.4812,0.4442,0.3872,0.3568
+5,in a gym a man lifts a barbell with weights and performs a clean lift .,0.0,a heavily muscled man demonstrates working out with two large barbells .,4.0,4.0,4.0,4.0,0.5401,0.8006,0.7209,0.2424,0.3628,0.2041,0.4256,0.0,0.3621,0.0,0.2032,0.0,0.0
+6,a man in the gym working out using their arms to lift weights,0.0762,a heavily muscled man demonstrates working out with two large barbells .,5.0,5.0,5.0,5.0,0.5532,0.8171,0.8591,0.6315,0.5919,0.5006,0.4532,0.2925,0.4799,0.2451,0.3635,0.1341,0.0762

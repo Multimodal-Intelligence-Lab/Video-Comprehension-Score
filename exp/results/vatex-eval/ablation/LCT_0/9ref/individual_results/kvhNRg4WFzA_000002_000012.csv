@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person peels back and then proceeds to fold away at several layers of fabric .,0.0398,a person is demonstrating the folding of a piece of red fabric .,5.0,5.0,5.0,5.0,0.5975,0.873,0.9697,0.7423,0.7718,0.7212,0.539,0.1829,0.5182,0.2065,0.4481,0.0,0.0398
+2,a person is demonstrating how to fold a napkin .,0.4511,a person is using a table to fold a napkin into a design .,5.0,5.0,4.0,4.6667,0.8201,0.9018,0.9286,0.8,0.719,0.6883,0.796,0.6109,0.7322,0.4867,0.703,0.5965,0.4511
+3,a person is demonstrating how to fold a piece of paper .,0.6365,a person is demonstrating the folding of a piece of red fabric .,4.0,4.0,4.0,4.0,0.6598,0.9356,1.0,1.0,1.0,1.0,0.6365,0.6598,0.6598,0.6598,0.6365,0.6365,0.6365
+4,a napkin is placed out in front of someone and folded .,0.0,someone folding a red cloth napkin on a wooden table,5.0,5.0,5.0,5.0,0.7223,0.8661,0.8367,0.7564,0.6918,0.618,0.6735,0.0995,0.317,0.0606,0.2155,0.0,0.0
+5,a woman lays a white napkin out and begins to fold it .,0.4211,a person unfolds a red napkin and then begins to re-fold it .,4.0,4.0,4.0,4.0,0.7156,0.877,0.9333,0.75,0.8317,0.8081,0.6638,0.437,0.6544,0.4923,0.5913,0.3581,0.4211
+6,a woman demonstrates the steps to fold a cloth napkin .,0.3271,a person is demonstrating the folding of a piece of red fabric .,5.0,5.0,4.0,4.6667,0.6987,0.8575,0.9333,0.6828,0.7827,0.7455,0.6474,0.4856,0.6162,0.4254,0.5447,0.4449,0.3271

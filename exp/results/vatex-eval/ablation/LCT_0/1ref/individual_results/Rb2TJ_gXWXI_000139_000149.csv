@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a toddler sits in a chair wearing a face mask as another person applies eye shadow to her eyes .,0.0,a person is painting and brushing a kids face and micky mouse song is heard in the background .,4.0,5.0,5.0,4.6667,0.3315,0.8082,0.9062,0.5355,0.5915,0.4945,0.1729,0.0,0.2623,0.0,0.0872,0.0,0.0
+2,a woman is using a paint brush to paint her face .,0.0,a person is painting and brushing a kids face and micky mouse song is heard in the background .,4.0,1.0,4.0,3.0,0.4591,0.8627,0.7126,0.6622,0.582,0.5154,0.373,0.1832,0.2409,0.0706,0.1201,0.0532,0.0
+3,a woman is using a paint brush to paint a picture of a woman ' s face .,0.0,a person is painting and brushing a kids face and micky mouse song is heard in the background .,4.0,1.0,3.0,2.6667,0.4593,0.8546,0.7519,0.4322,0.3985,0.2962,0.3673,0.0,0.2809,0.0,0.1585,0.0,0.0
+4,a girl is beautifying her eyes with an eye pencil in the eyelid and eyelash,0.0,a person is painting and brushing a kids face and micky mouse song is heard in the background .,4.0,4.0,4.0,4.0,0.1416,0.7715,0.921,0.9344,0.9035,0.875,0.0,0.0813,0.0679,0.0499,0.0,0.0,0.0
+5,a girl is showing how to apply the eyeliner on her eyelids .,0.0,a person is painting and brushing a kids face and micky mouse song is heard in the background .,4.0,2.0,4.0,3.3333,0.124,0.7398,0.8705,0.9416,0.8729,0.8282,0.0,0.0697,0.0,0.0,0.0,0.0,0.0
+6,a woman is applying face makeup to a boy's face .,0.0,a person is painting and brushing a kids face and micky mouse song is heard in the background .,4.0,4.0,4.0,4.0,0.3126,0.8262,0.88,0.8504,0.8199,0.782,0.168,0.1917,0.2188,0.1616,0.0545,0.0216,0.0

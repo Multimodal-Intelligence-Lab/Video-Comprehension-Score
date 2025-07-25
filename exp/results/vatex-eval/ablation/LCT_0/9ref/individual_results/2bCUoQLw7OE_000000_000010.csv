@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,members of the flute and tuba sections of a band play their instruments during a performance .,0.067,several students play the tuba and flute in a school concert performance .,5.0,5.0,5.0,5.0,0.7514,0.8768,0.8845,0.838,0.7853,0.7442,0.7165,0.2606,0.6918,0.211,0.6486,0.1188,0.067
+2,a group of people are on stage playing a song on stage .,0.4005,a band of men and women are playing instruments and performing together .,4.0,5.0,5.0,4.6667,0.5669,0.9048,1.0,0.8723,0.8863,0.865,0.5001,0.5034,0.5669,0.5113,0.4687,0.3909,0.4005
+3,a group of people are playing a song on a stage .,0.4726,a band of men and women are playing instruments and performing together .,4.0,5.0,5.0,4.6667,0.5653,0.8981,1.0,1.0,1.0,1.0,0.5016,0.5653,0.5653,0.5653,0.4726,0.4726,0.4726
+4,a group of children are playing a musical piece using a band of instruments .,0.5084,a group of kids are sitting on a stage and playing instruments .,5.0,5.0,5.0,5.0,0.7004,0.8917,0.9658,0.8153,0.8842,0.8528,0.664,0.5867,0.6538,0.548,0.6118,0.5365,0.5084
+5,a musical band performing onstage with musical instruments,0.2331,a musical group playing various instruments during an event or show .,5.0,5.0,5.0,5.0,0.6694,0.8743,0.9125,0.8094,0.7415,0.6718,0.616,0.4292,0.5959,0.3496,0.5306,0.327,0.2331
+6,a music group consisting of men are performing by playing various musical instruments .,0.3056,a musical group playing various instruments during an event or show .,4.0,4.0,5.0,4.3333,0.693,0.915,0.9375,0.9478,0.9196,0.9042,0.6558,0.4002,0.6214,0.3391,0.5755,0.371,0.3056

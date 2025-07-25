@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two teenage boys stand on balls and juggle with tennis balls back and forth .,0.3549,two people balancing themselves and trowing balls back forth to each other .,5.0,4.0,5.0,4.6667,0.5174,0.8894,0.9443,0.8255,0.8412,0.8215,0.4574,0.4154,0.4889,0.4263,0.4254,0.3427,0.3549
+2,a man and a woman are playing with a ball in a gym .,0.1952,two people balancing themselves and trowing balls back forth to each other .,4.0,4.0,4.0,4.0,0.4544,0.7876,0.9756,0.864,0.8607,0.8231,0.3073,0.3686,0.4408,0.3661,0.29,0.1983,0.1952
+3,a man and a woman are demonstrating how to use a medicine ball .,0.0,two people balancing themselves and trowing balls back forth to each other .,4.0,2.0,3.0,3.0,0.4653,0.7837,0.92,0.5418,0.47,0.3236,0.3177,0.0132,0.4188,0.0,0.2584,0.0,0.0
+4,"a man is trying to juggle balls , then tosses the balls to another person .",0.0,two people balancing themselves and trowing balls back forth to each other .,5.0,5.0,4.0,4.6667,0.598,0.8451,0.8964,0.4058,0.338,0.2166,0.5243,0.0063,0.5515,0.0,0.4693,0.0,0.0
+5,two men are using what appears to be ping-pong paddles to lob a ball back and forth .,0.1686,two people balancing themselves and trowing balls back forth to each other .,4.0,3.0,4.0,3.6667,0.4833,0.8615,0.9221,0.6925,0.7213,0.6765,0.4003,0.2539,0.4396,0.2837,0.3496,0.134,0.1686
+6,a man throws a ball into the air then attemps to juggle several balls,0.0,two people balancing themselves and trowing balls back forth to each other .,5.0,4.0,4.0,4.3333,0.4528,0.8209,0.8408,0.4563,0.3874,0.2537,0.3334,0.0,0.3492,0.0,0.2072,0.0,0.0

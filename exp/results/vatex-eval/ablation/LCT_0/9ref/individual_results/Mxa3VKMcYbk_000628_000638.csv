@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl is playing a pinball machine while a man stands behind talking to her and watching .,0.9211,"a girl is playing a pinball machine , and a man is standing behind her asking her questions .",5.0,5.0,5.0,5.0,0.9257,0.9416,1.0,1.0,1.0,1.0,0.9211,0.9257,0.9257,0.9257,0.9211,0.9211,0.9211
+2,a group of people are playing a game of pinball .,0.4165,a man coaches a young girl on playing a pinball machine .,4.0,4.0,4.0,4.0,0.5914,0.8556,0.9756,0.8819,0.8642,0.8387,0.5185,0.5273,0.5597,0.5048,0.4812,0.443,0.4165
+3,two men are playing a game of pinball on a pinball machine .,0.3753,a man coaches a young girl on playing a pinball machine .,4.0,4.0,4.0,4.0,0.6046,0.8968,0.9419,0.6505,0.7574,0.7182,0.5462,0.3564,0.5405,0.4397,0.4825,0.2824,0.3753
+4,a man is playing a pinball game while other people look on and people are talking .,0.4853,a woman plays a pinball machine while talking to a man standing next to her .,4.0,3.0,4.0,3.6667,0.6855,0.8733,0.9224,0.7283,0.7396,0.6913,0.6399,0.4871,0.6101,0.5505,0.5535,0.4027,0.4853
+5,the boy and girl are playing ping pong inside the room while two other students watch,0.0669,at an arcade a girl is playing a video game while a man watches .,4.0,1.0,4.0,3.0,0.3341,0.8472,0.991,0.8372,0.8563,0.8304,0.2099,0.1914,0.2912,0.2095,0.1633,0.0455,0.0669
+6,a middles aged man at an arcade talking about a pinball machine .,0.1014,a man watches a young girl play on a pinball machine in an arcade .,5.0,5.0,5.0,5.0,0.5536,0.8869,0.9129,0.6115,0.5906,0.5269,0.4945,0.2579,0.469,0.2031,0.4013,0.1633,0.1014

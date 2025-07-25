@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the girl is hesitant as she holds a piece of liver with her chop sticks .,0.5433,two young girls are sitting at a table in a restaurant and using chopsticks to eat pieces of liver and a man is asking one of them is she likes it .,5.0,5.0,5.0,5.0,0.717,0.8025,0.9873,0.8803,0.903,0.8785,0.6474,0.644,0.684,0.6335,0.6063,0.5564,0.5433
+2,a group of people are eating food in a restaurant .,0.525,in a restaurant a group of people are sitting at a table eating food with chop sticks .,5.0,5.0,5.0,5.0,0.7872,0.9585,0.9565,0.967,0.9426,0.9287,0.778,0.665,0.7517,0.5368,0.741,0.6413,0.525
+3,a group of people are sitting at a table eating food .,0.5981,in a restaurant a group of people are sitting at a table eating food with chop sticks .,5.0,5.0,5.0,5.0,0.679,0.9609,0.9831,0.8983,0.8648,0.8505,0.6659,0.6426,0.6273,0.6138,0.6121,0.6281,0.5981
+4,a group of culinary students are observing a female prepare a dish .,0.0,some people are taste testing a food and asked if it tastes like liver .,1.0,1.0,4.0,2.0,0.2754,0.812,0.9873,0.9045,0.9217,0.901,0.0775,0.1305,0.2035,0.1468,0.0,0.0,0.0
+5,a girl shows off a bowl of fruit salad and then proceeds to eat one of the pieces .,0.0,some people are taste testing a food and asked if it tastes like liver .,2.0,2.0,4.0,2.6667,0.261,0.8258,0.9673,0.7283,0.7399,0.6591,0.105,0.0,0.2,0.0,0.0312,0.0,0.0
+6,a few men are at a restaurant and one of them takes a bite of something .,0.2185,a group of people are eating at a restaurant and are trying a new food .,4.0,4.0,4.0,4.0,0.5755,0.8322,0.9655,0.7486,0.7312,0.659,0.4791,0.4329,0.5056,0.363,0.3935,0.3042,0.2185

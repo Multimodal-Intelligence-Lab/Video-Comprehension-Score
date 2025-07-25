@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,there snow riders all wearing protective helmets are preparing to participate in a bobsled race and are sitting in their bobsled waiting for their ride to begin .,0.59,a group of people in helmets sit in a bobsled on a track .,4.0,5.0,5.0,4.6667,0.752,0.8338,0.9515,0.9224,0.905,0.8791,0.7026,0.6298,0.7365,0.6347,0.684,0.5879,0.59
+2,a man is riding a sled down a snowy hill with a woman .,0.0,a group of people in helmets sit in a bobsled on a track .,4.0,2.0,4.0,3.3333,0.388,0.7999,0.8936,0.7404,0.7401,0.6592,0.2349,0.0,0.2907,0.0,0.1059,0.0,0.0
+3,a group of people are riding a sled down a hill .,0.4054,a group of people in helmets sit in a bobsled on a track .,4.0,4.0,4.0,4.0,0.5885,0.8509,1.0,1.0,1.0,1.0,0.5163,0.4995,0.5782,0.4995,0.5042,0.4054,0.4054
+4,a man with a camera capturing a bobsledder as he races past him .,0.0647,a group of men are setting in a bobsled before going down the luge .,4.0,3.0,5.0,4.0,0.4486,0.8282,0.9831,0.7475,0.7739,0.6953,0.3325,0.1067,0.3757,0.2401,0.2316,0.0,0.0647
+5,a person speeds by on a bobsled while others watch and cheer .,0.1067,a man is pulling back a bobsled with three men seated in it .,4.0,1.0,5.0,3.3333,0.58,0.8261,0.9804,0.8723,0.7849,0.7313,0.4743,0.3564,0.4479,0.2847,0.3091,0.1963,0.1067
+6,a bobsledder attaches a go pro camera to himself as he and his team mates go down the slide .,0.0,a group of people in helmets sit in a bobsled on a track .,4.0,5.0,5.0,4.6667,0.5008,0.8182,0.8813,0.7884,0.7271,0.6422,0.3899,0.1808,0.3211,0.1117,0.1703,0.0,0.0

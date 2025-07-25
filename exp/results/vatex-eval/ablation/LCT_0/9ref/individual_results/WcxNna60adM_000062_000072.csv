@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is using a electric razor to shave a horses hair .,0.5855,a woman uses a razor to shave and groom a tan horse .,5.0,5.0,5.0,5.0,0.9435,0.9458,0.8937,0.5761,0.688,0.6495,0.9402,0.5398,0.7605,0.5999,0.7582,0.5365,0.5855
+2,a man is using a brush to brush the hair of a horse .,0.3362,a woman uses a razor to shave and groom a tan horse .,3.0,3.0,3.0,3.0,0.5485,0.8249,1.0,1.0,1.0,1.0,0.4526,0.4638,0.4868,0.4638,0.3778,0.3362,0.3362
+3,a person is using a brush to brush a horse ' s mane .,0.1305,a woman uses a razor to shave and groom a tan horse .,4.0,4.0,3.0,3.6667,0.4852,0.8259,0.9599,0.806,0.8569,0.8197,0.3609,0.328,0.4525,0.288,0.3203,0.1652,0.1305
+4,a little girl is standing with a horse and is grooming him with a brush,0.3889,a woman stands besides a horse and carefully shaves his hair .,4.0,4.0,2.0,3.3333,0.5551,0.8592,0.96,0.9737,0.8909,0.8664,0.4556,0.5431,0.5048,0.5006,0.394,0.4408,0.3889
+5,out in a stable a woman is grooming a horse,0.2755,"while standing next to a horse , a woman shaves the fur of the horse .",4.0,4.0,4.0,4.0,0.6034,0.9115,0.8784,0.8,0.7086,0.6658,0.5649,0.4404,0.5233,0.3682,0.4479,0.3583,0.2755
+6,a young lady is demonstrating how and why to brush a horse .,0.0,a woman uses a razor to shave and groom a tan horse .,4.0,4.0,4.0,4.0,0.5945,0.8652,0.9023,0.6777,0.6097,0.5198,0.5166,0.2345,0.4987,0.1094,0.4024,0.1129,0.0

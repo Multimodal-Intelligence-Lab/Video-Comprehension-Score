@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man performs a deadlift with various weights of different amounts .,0.485,a man lifts a bar with heavy weights up above his head .,3.0,3.0,2.0,2.6667,0.619,0.8346,1.0,0.8723,0.8863,0.8638,0.5436,0.5632,0.619,0.5702,0.5436,0.4767,0.485
+2,a man in a gym is lifting a heavy barbell over his head .,0.7074,a man is squatting and lifting a weighted barbell over his head .,5.0,5.0,5.0,5.0,0.7962,0.9282,0.9831,0.8515,0.9107,0.9038,0.7777,0.7096,0.7613,0.7284,0.7396,0.6871,0.7074
+3,a man in a gym lifts a heavy barbell over his head .,0.697,a man is squatting and lifting a weighted barbell over his head .,5.0,5.0,5.0,5.0,0.8075,0.93,0.9831,0.8515,0.9107,0.9024,0.793,0.7035,0.7745,0.7227,0.7575,0.6759,0.697
+4,a man is lifting heavy weights into the air above his head .,0.7912,a man lifts a bar with heavy weights up above his head .,5.0,5.0,5.0,5.0,0.8709,0.9427,1.0,1.0,1.0,1.0,0.863,0.7031,0.8591,0.7931,0.8506,0.7004,0.7912
+5,a man is lifting a heavy set of weights inside of a gym .,0.6454,a young man lifts a heavy weight inside a garage gym .,5.0,5.0,5.0,5.0,0.6966,0.9346,1.0,0.8933,0.9155,0.9096,0.6754,0.6604,0.6966,0.6686,0.6754,0.6366,0.6454
+6,a man in a gym is lifting a heavy set of weights off the ground .,0.6008,a man lifts a bar with heavy weights up above his head .,5.0,5.0,5.0,5.0,0.6844,0.9059,1.0,0.8723,0.8863,0.8725,0.6462,0.6382,0.6844,0.6439,0.6462,0.5944,0.6008

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two people are standing on the floor and begin to dance to the loud music when it comes on .,0.0,two people are listening to music in a kitchen while doing dances on the tiles .,5.0,5.0,5.0,5.0,0.5513,0.8653,0.8373,0.4142,0.3759,0.2788,0.4814,0.0,0.4641,0.0,0.3807,0.0,0.0
+2,two girls are doing a dance routine in a living room .,0.0,two people are listening to music in a kitchen while doing dances on the tiles .,4.0,4.0,4.0,4.0,0.4794,0.8266,0.9004,0.2848,0.0546,0.0,0.3703,0.0,0.4218,0.0,0.3006,0.0,0.0
+3,two girls are dancing to music in a living room .,0.0,two people are listening to music in a kitchen while doing dances on the tiles .,4.0,4.0,4.0,4.0,0.5289,0.861,0.9004,0.5843,0.5145,0.4362,0.4529,0.1938,0.4768,0.0822,0.3923,0.0637,0.0
+4,two individuals do a choreographed dance with one another while music plays .,0.0,two people are listening to music in a kitchen while doing dances on the tiles .,5.0,5.0,4.0,4.6667,0.5583,0.8549,0.8116,0.275,0.1162,0.0,0.4833,0.0,0.4558,0.0,0.3634,0.0,0.0
+5,two kids are dancing together in unison as a song is playing .,0.0,two people are listening to music in a kitchen while doing dances on the tiles .,4.0,5.0,4.0,4.3333,0.4685,0.8414,0.7701,0.3646,0.4949,0.3997,0.3683,0.0,0.3098,0.0,0.1797,0.0,0.0
+6,two men doing a dance routine with their hands and hips with music playing .,0.0,two people are listening to music in a kitchen while doing dances on the tiles .,5.0,3.0,3.0,3.6667,0.4627,0.8437,0.8548,0.3594,0.2591,0.1218,0.3632,0.0,0.3714,0.0,0.255,0.0,0.0

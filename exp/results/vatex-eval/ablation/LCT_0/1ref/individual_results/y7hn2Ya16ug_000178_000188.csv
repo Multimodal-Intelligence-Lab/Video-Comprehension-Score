@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young girl uses a very large knife to cut a tomato,0.0,a girl cuts off the top of an apple and slices it in half .,4.0,4.0,4.0,4.0,0.4132,0.8355,0.8798,0.5199,0.4226,0.3089,0.2976,0.0,0.333,0.0,0.2017,0.0,0.0
+2,a woman is showing how to use a knife to peel a potato .,0.0,a girl cuts off the top of an apple and slices it in half .,4.0,4.0,4.0,4.0,0.2907,0.7585,0.9787,0.8515,0.9107,0.8823,0.0649,0.167,0.2753,0.2211,0.0446,0.0,0.0
+3,a woman is showing how to play a card game .,0.0,a girl cuts off the top of an apple and slices it in half .,3.0,2.0,4.0,3.0,0.1036,0.7642,1.0,1.0,1.0,1.0,0.0,0.1036,0.1036,0.1036,0.0,0.0,0.0
+4,a woman is using a large knife to peel an apple .,0.0,a girl cuts off the top of an apple and slices it in half .,4.0,4.0,4.0,4.0,0.4794,0.8028,0.873,0.32,0.4683,0.3377,0.3515,0.0,0.4036,0.0,0.2571,0.0,0.0
+5,a woman is standing in front of a table in her kitchen and demonstrating for others the proper way to cut an apple as she cuts an apple and puts the pieces on a plate .,0.1148,a girl cuts off the top of an apple and slices it in half .,5.0,4.0,4.0,4.3333,0.5881,0.8341,0.8878,0.5566,0.5579,0.4699,0.5061,0.246,0.536,0.2482,0.4437,0.1127,0.1148
+6,one woman cuts apples with a knife and the other woman cuts with an easier tool .,0.0,a girl cuts off the top of an apple and slices it in half .,3.0,2.0,4.0,3.0,0.5814,0.8476,0.8367,0.4774,0.4511,0.3525,0.5061,0.1012,0.4997,0.056,0.4098,0.0,0.0

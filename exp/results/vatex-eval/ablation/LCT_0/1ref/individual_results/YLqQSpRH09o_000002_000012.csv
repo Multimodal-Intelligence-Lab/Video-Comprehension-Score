@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young child jumps into a pool to an adult woman then she picks him up like yay !,0.6785,a young child jumps into a pool and then swims into a person's arms .,5.0,5.0,5.0,5.0,0.7975,0.8894,0.9373,0.733,0.7517,0.7208,0.7724,0.6652,0.784,0.6887,0.7571,0.6543,0.6785
+2,a person jumps off of a water slide into a lake .,0.0,a young child jumps into a pool and then swims into a person's arms .,4.0,3.0,3.0,3.3333,0.3412,0.8362,0.8649,0.7735,0.6944,0.6345,0.2122,0.1483,0.2383,0.0513,0.0891,0.0,0.0
+3,a man jumps off a ramp into a pool of water .,0.0548,a young child jumps into a pool and then swims into a person's arms .,4.0,3.0,4.0,3.6667,0.4414,0.8487,0.9524,0.7165,0.6963,0.6421,0.3418,0.2204,0.4135,0.1978,0.3089,0.0814,0.0548
+4,a small child is standing by the edge of a pool with floats on and is being encouraged and then pulled into the pool .,0.1889,a young child jumps into a pool and then swims into a person's arms .,4.0,3.0,2.0,3.0,0.5476,0.8337,0.9243,0.6504,0.669,0.603,0.4574,0.3044,0.5106,0.3237,0.413,0.1657,0.1889
+5,a little girl is wearing goggles and then jumping into a swimming pool of her house,0.0,a young child jumps into a pool and then swims into a person's arms .,4.0,4.0,4.0,4.0,0.4377,0.843,0.9129,0.3865,0.3146,0.1869,0.333,0.0,0.384,0.0,0.2693,0.0,0.0
+6,"lifeguard watches as man dives into large pool , woman uses ladder to leave pool , and child jumps into pool .",0.0,a young child jumps into a pool and then swims into a person's arms .,2.0,3.0,2.0,2.3333,0.4857,0.8633,0.6265,0.4745,0.448,0.3606,0.4042,0.0,0.179,0.0,0.0491,0.0,0.0

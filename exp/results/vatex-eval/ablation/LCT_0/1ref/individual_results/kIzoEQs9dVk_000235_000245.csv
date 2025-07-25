@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a showcase of shoes in a glass case and clothes on a rack as a boy at the end talks about it .,0.0,a man is showing shoes on a shelf and jackets on a clothing rack .,4.0,5.0,5.0,4.6667,0.5338,0.8675,0.8108,0.4743,0.4379,0.3521,0.4626,0.0152,0.4249,0.0,0.3371,0.0,0.0
+2,a group of people are standing in a circle and they are having a conversation .,0.0,a man is showing shoes on a shelf and jackets on a clothing rack .,1.0,1.0,1.0,1.0,-0.0227,0.7502,0.9756,0.7528,0.7497,0.6664,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a group of people are standing in front of a store .,0.0,a man is showing shoes on a shelf and jackets on a clothing rack .,1.0,1.0,2.0,1.3333,0.1066,0.7508,0.9524,0.7165,0.6963,0.5955,0.0,0.0,0.0619,0.0,0.0,0.0,0.0
+4,"in front of a door , a young man wearing sneakers is dancing .",0.0,a man is showing shoes on a shelf and jackets on a clothing rack .,2.0,2.0,2.0,2.0,0.2045,0.8121,0.7092,0.307,0.4285,0.2963,0.0205,0.0,0.0,0.0,0.0,0.0,0.0
+5,"in his room , a young boy is explainging the best way to clean sport sneakers .",0.0,a man is showing shoes on a shelf and jackets on a clothing rack .,4.0,2.0,2.0,2.6667,0.2609,0.7657,0.8623,0.6312,0.6204,0.5042,0.0347,0.0,0.1429,0.0,0.0,0.0,0.0
+6,a man placing a cloth into shoe shine and demonstrating how to shine a shoe .,0.0,a man is showing shoes on a shelf and jackets on a clothing rack .,2.0,2.0,3.0,2.3333,0.4618,0.8695,0.7672,0.2987,0.1449,0.0165,0.381,0.0,0.2985,0.0,0.1932,0.0,0.0

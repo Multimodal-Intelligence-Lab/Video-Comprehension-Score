@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is showing how they check there mail every day .,0.0,a woman is stuffing letters in a series of mailboxes at a post office .,4.0,4.0,4.0,4.0,0.3128,0.794,1.0,0.7071,0.714,0.6399,0.1346,0.0282,0.3128,0.0376,0.1346,0.0,0.0
+2,a man is using a tool to paint a piece of wood .,0.0,a woman is stuffing letters in a series of mailboxes at a post office .,3.0,1.0,1.0,1.6667,-0.0009,0.7559,1.0,0.7071,0.714,0.6217,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a man is using a paint roller to paint a wall .,0.0,a woman is stuffing letters in a series of mailboxes at a post office .,1.0,1.0,1.0,1.0,0.0459,0.7489,1.0,0.7071,0.714,0.6182,0.0,0.0,0.0459,0.0,0.0,0.0,0.0
+4,a woman shows off her packed suitcase then closes the lid,0.0,a woman is stuffing letters in a series of mailboxes at a post office .,2.0,2.0,2.0,2.0,0.238,0.7772,0.9804,0.6435,0.6283,0.5218,0.0196,0.0,0.2228,0.0,0.0,0.0,0.0
+5,a mailman opens a door and starts putting mail into the boxes,0.0,a woman is stuffing letters in a series of mailboxes at a post office .,5.0,3.0,5.0,4.3333,0.4734,0.778,0.7701,0.4024,0.5286,0.394,0.3231,0.0,0.3161,0.0037,0.121,0.0,0.0
+6,a lady explaining something to her child about putting all the pieces in her box,0.0,a woman is stuffing letters in a series of mailboxes at a post office .,4.0,2.0,2.0,2.6667,0.2585,0.7815,0.9384,0.5729,0.7115,0.6308,0.0512,0.0,0.2098,0.0,0.0,0.0,0.0

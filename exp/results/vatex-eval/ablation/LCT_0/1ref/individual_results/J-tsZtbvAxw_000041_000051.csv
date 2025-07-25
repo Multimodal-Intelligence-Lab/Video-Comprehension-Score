@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a chubby baby sitting upright looking very curiously into the camera and rocking slightly back and forth .,0.0,there is an infant chewing on their hands while being held by another person .,5.0,4.0,5.0,4.6667,0.3458,0.7765,0.9639,0.694,0.7518,0.6804,0.1576,0.0574,0.3213,0.1299,0.126,0.0,0.0
+2,a baby is sitting on the floor and playing with a toy .,0.0,there is an infant chewing on their hands while being held by another person .,2.0,2.0,2.0,2.0,0.286,0.7859,1.0,0.6213,0.5329,0.4056,0.0915,0.0,0.286,0.0,0.0915,0.0,0.0
+3,a baby is sitting on the floor and is trying to talk to the camera .,0.0352,there is an infant chewing on their hands while being held by another person .,3.0,2.0,2.0,2.3333,0.317,0.7773,0.9787,0.8515,0.9107,0.8851,0.1214,0.1979,0.3022,0.2501,0.1023,0.0,0.0352
+4,someone holding a baby in their hands which is making baby type noices,0.0,there is an infant chewing on their hands while being held by another person .,4.0,5.0,5.0,4.6667,0.6192,0.8669,0.7197,0.3027,0.1393,0.0072,0.5608,0.0,0.4709,0.0,0.3897,0.0,0.0
+5,a baby is making noises and slobbering while being held by and adult .,0.2443,there is an infant chewing on their hands while being held by another person .,3.0,5.0,4.0,4.0,0.5856,0.8339,0.8953,0.5196,0.6576,0.5894,0.503,0.1797,0.5372,0.3699,0.445,0.0437,0.2443
+6,a baby is looking at a camera and sticking out the tongue .,0.0298,there is an infant chewing on their hands while being held by another person .,3.0,4.0,3.0,3.3333,0.3588,0.7991,1.0,0.8408,0.827,0.7835,0.1976,0.2374,0.3588,0.2247,0.1976,0.0457,0.0298

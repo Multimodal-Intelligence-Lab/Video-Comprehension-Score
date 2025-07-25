@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is drumming pens along with he music that he is listening to .,0.7716,a person beats the pens in their hands along to the beat of the music .,5.0,5.0,5.0,5.0,0.804,0.9087,0.9599,0.9737,0.9446,0.939,0.7843,0.7987,0.7958,0.7925,0.7753,0.7784,0.7716
+2,a person is using a pen to make a beat on a table .,0.4414,person holding a pen in each hand and hitting them on a table top like drum sticks,4.0,5.0,5.0,4.6667,0.7752,0.9207,0.96,0.7876,0.7754,0.7377,0.7383,0.4534,0.7419,0.468,0.6995,0.4205,0.4414
+3,a person is using a pencil to make a beat on a table .,0.3017,person holding a pen in each hand and hitting them on a table top like drum sticks,4.0,5.0,5.0,4.6667,0.6555,0.8991,0.96,0.7876,0.7754,0.7339,0.591,0.3474,0.6045,0.3708,0.53,0.2757,0.3017
+4,a person holding a pen in each hand tapping them on a table to music .,0.4796,a person beats the pens in their hands along to the beat of the music .,5.0,5.0,5.0,5.0,0.8604,0.9055,0.924,0.5936,0.6844,0.6402,0.8452,0.4275,0.8447,0.5411,0.8277,0.4035,0.4796
+5,person sitting at a table making music with a pen on the table .,0.2319,someone taps out a beat on a table using two pens as rap music plays in the background .,4.0,5.0,5.0,4.6667,0.7056,0.9431,0.9108,0.6239,0.5675,0.5009,0.6878,0.2661,0.6464,0.3041,0.6251,0.1899,0.2319
+6,a person uses two pens to make a drum beat on top of a table .,0.6497,a man uses a couple of pens to make musical sounds .,5.0,5.0,5.0,5.0,0.8319,0.8892,0.9623,1.0,0.9731,0.9691,0.8098,0.7038,0.8031,0.6957,0.7771,0.6591,0.6497

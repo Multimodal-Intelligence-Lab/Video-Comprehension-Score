@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is weight training by performing repititions of standing upright and bending down while keeping the hands low .,0.4548,a woman is in a gym completing several dead lifts .,5.0,5.0,5.0,5.0,0.5979,0.8257,0.977,0.9568,0.9573,0.945,0.5128,0.5766,0.5853,0.5768,0.4658,0.4546,0.4548
+2,a man in a gym is lifting a heavy barbell over his head .,0.3963,a girl proceeds to workout at the gym by lifting a large barbell .,4.0,4.0,4.0,4.0,0.6194,0.8907,0.9333,0.8046,0.7193,0.6797,0.5658,0.527,0.5576,0.4708,0.4953,0.4604,0.3963
+3,a man in a gym lifts a heavy barbell over his head .,0.4043,a girl proceeds to workout at the gym by lifting a large barbell .,4.0,4.0,4.0,4.0,0.6296,0.8905,0.8654,0.8046,0.7193,0.6752,0.5715,0.5397,0.5695,0.4851,0.502,0.4675,0.4043
+4,a woman is performing weight exercises inside a gym .,0.2997,a girl proceeds to workout at the gym by lifting a large barbell .,5.0,5.0,5.0,5.0,0.7912,0.9106,0.9231,0.763,0.7806,0.7241,0.7496,0.489,0.704,0.4159,0.673,0.3684,0.2997
+5,a woman is working out in the gym using handweights .,0.4629,a girl proceeds to workout at the gym by lifting a large barbell .,4.0,4.0,4.0,4.0,0.6739,0.8604,1.0,1.0,1.0,1.0,0.6089,0.564,0.6534,0.564,0.5844,0.4629,0.4629
+6,"a woman in a gym is lifting hand-held weights , working her right side .",0.3316,a woman is in a gym completing several dead lifts .,3.0,3.0,3.0,3.0,0.6415,0.8999,0.8933,0.7187,0.6333,0.5671,0.5767,0.4569,0.594,0.4283,0.5206,0.3589,0.3316

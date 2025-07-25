@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man is hitting a tire with a mallet , repeatedly .",0.3447,a fit man works out by swinging a long handled hammer over his head to strike a tire .,5.0,4.0,5.0,4.6667,0.5882,0.8332,0.8904,0.7526,0.7542,0.705,0.5058,0.4528,0.5375,0.454,0.4449,0.3433,0.3447
+2,a man is hitting a large tire with a sledge hammer .,0.2213,a fit man works out by swinging a long handled hammer over his head to strike a tire .,5.0,5.0,5.0,5.0,0.6497,0.8676,0.8462,0.53,0.5357,0.4648,0.5962,0.2766,0.586,0.2853,0.5228,0.2117,0.2213
+3,a man is hitting a tire with a sledge hammer .,0.0714,a fit man works out by swinging a long handled hammer over his head to strike a tire .,5.0,5.0,5.0,5.0,0.6547,0.8693,0.8278,0.4466,0.4403,0.3561,0.6028,0.1547,0.5829,0.1451,0.5202,0.0819,0.0714
+4,a man rapidly swings a sledge hammer over his head and repeatedly strikes a large rubber tire with it .,0.0,a fit man works out by swinging a long handled hammer over his head to strike a tire .,5.0,5.0,5.0,5.0,0.7165,0.8912,0.8539,0.3226,0.3163,0.2329,0.6819,0.0545,0.668,0.0458,0.6275,0.0065,0.0
+5,a man keeps hitting a tire that is in front of him with a sledgehammer,0.0,a fit man works out by swinging a long handled hammer over his head to strike a tire .,5.0,5.0,5.0,5.0,0.5967,0.8429,0.8967,0.4418,0.4559,0.3546,0.5216,0.0646,0.5503,0.0882,0.4665,0.0,0.0
+6,a man is hitting a very large rubber tire with a sledge hammer .,0.2588,a fit man works out by swinging a long handled hammer over his head to strike a tire .,5.0,5.0,5.0,5.0,0.6219,0.8601,0.8216,0.602,0.5932,0.527,0.5603,0.36,0.5398,0.3458,0.4649,0.2697,0.2588

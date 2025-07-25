@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a crowd of people are watching while a person performs the high jump with a pole,0.0,"a girl starts at the other end of the track and runs as fast as she can , soaring over the pole vault but knocking the pole .",5.0,5.0,5.0,5.0,0.3079,0.7786,0.9651,0.6077,0.6731,0.5802,0.1112,0.0,0.2829,0.0,0.079,0.0,0.0
+2,a man runs down a track and jumps over a pole .,0.3561,"a girl starts at the other end of the track and runs as fast as she can , soaring over the pole vault but knocking the pole .",4.0,4.0,4.0,4.0,0.5284,0.8586,0.9548,0.8845,0.8529,0.8287,0.4508,0.4669,0.5061,0.4471,0.4248,0.379,0.3561
+3,a man is running and pole vaulting over a pole .,0.4151,"a girl starts at the other end of the track and runs as fast as she can , soaring over the pole vault but knocking the pole .",4.0,4.0,4.0,4.0,0.5228,0.8593,0.9697,0.9742,0.9495,0.9412,0.4446,0.5101,0.5078,0.4974,0.4272,0.4299,0.4151
+4,"a lot of people is in a track field , some of them running , some of them watching and a young woman is pole vaulting making the bar fall .",0.3052,"a girl starts at the other end of the track and runs as fast as she can , soaring over the pole vault but knocking the pole .",4.0,4.0,4.0,4.0,0.597,0.8286,0.937,0.6316,0.7001,0.638,0.5136,0.362,0.5699,0.4243,0.4809,0.23,0.3052
+5,a female pole vaulter competes in front of fans at an event .,0.0,"a girl starts at the other end of the track and runs as fast as she can , soaring over the pole vault but knocking the pole .",5.0,5.0,5.0,5.0,0.4343,0.7907,0.7699,0.4153,0.408,0.2513,0.2846,0.0,0.2652,0.0,0.0707,0.0,0.0
+6,a group of people are on a track field watching a girl vault over a pole .,0.3419,"a girl starts at the other end of the track and runs as fast as she can , soaring over the pole vault but knocking the pole .",5.0,5.0,5.0,5.0,0.6034,0.8596,0.887,0.6765,0.7012,0.6523,0.5386,0.4137,0.5528,0.4343,0.4798,0.3179,0.3419

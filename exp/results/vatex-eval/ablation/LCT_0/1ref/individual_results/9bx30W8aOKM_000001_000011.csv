@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young girl is holding a potato and trying to peel it .,0.0447,a young child is attempting to imitate an adult who is peeling a potato .,5.0,5.0,5.0,5.0,0.7521,0.9013,0.8397,0.4483,0.3075,0.2316,0.7249,0.2664,0.7048,0.0792,0.6724,0.2389,0.0447
+2,a little girl is sitting on the floor and she is trying to make a sandwich .,0.0,a young child is attempting to imitate an adult who is peeling a potato .,2.0,4.0,2.0,2.6667,0.2582,0.7933,0.8788,0.4063,0.5557,0.4399,0.0649,0.0,0.1559,0.0,0.0,0.0,0.0
+3,a little boy is using a spatula to mix something in a bowl .,0.0,a young child is attempting to imitate an adult who is peeling a potato .,1.0,4.0,1.0,2.0,0.3311,0.7803,0.9384,0.5729,0.7115,0.6302,0.1427,0.0,0.2872,0.0598,0.0865,0.0,0.0
+4,a woman is demonstrating how to peel potatoes with a peeler .,0.0693,a young child is attempting to imitate an adult who is peeling a potato .,5.0,5.0,5.0,5.0,0.5565,0.8279,0.9023,0.6349,0.5755,0.4873,0.4644,0.3015,0.5085,0.2295,0.4063,0.1563,0.0693
+5,a woman uses a peeler to remove the skin from a potato .,0.0,a young child is attempting to imitate an adult who is peeling a potato .,5.0,5.0,5.0,5.0,0.5425,0.8117,0.9199,0.5435,0.4722,0.3497,0.4363,0.1582,0.5026,0.027,0.3872,0.0,0.0
+6,a woman demonstrates the peeling of a potato of a pot of water in a sink .,0.0,a young child is attempting to imitate an adult who is peeling a potato .,1.0,4.0,4.0,3.0,0.4932,0.8184,0.7701,0.4512,0.569,0.4733,0.3807,0.0,0.3419,0.1093,0.1958,0.0,0.0

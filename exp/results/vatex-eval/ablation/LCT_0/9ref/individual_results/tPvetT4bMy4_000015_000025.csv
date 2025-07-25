@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,people dance while a marching band plays as part of a parade .,0.1154,a group of people are playing music in a marching band while another people dance .,4.0,5.0,5.0,4.6667,0.806,0.9212,0.8973,0.6694,0.6536,0.5716,0.7894,0.2494,0.6097,0.1336,0.6015,0.2336,0.1154
+2,a group of people are standing in the middle of a street and playing with swords .,0.332,a group of people in costume are dancing and they are using fake swords,5.0,5.0,4.0,4.6667,0.5185,0.8484,0.9697,0.7845,0.8673,0.8404,0.4206,0.3862,0.5034,0.4448,0.4025,0.2614,0.332
+3,a group of kids are in a park playing a game of drums .,0.0004,a group of school kids and a school band march to a happy tune .,1.0,3.0,1.0,1.6667,0.3968,0.8328,0.9599,0.7667,0.7908,0.7353,0.2411,0.2132,0.322,0.2005,0.1858,0.0061,0.0004
+4,a marching band preforming on a field with people surrounding,0.2764,a marching band are playing at a carnival and the leaders are dancing while spinning poles .,5.0,5.0,5.0,5.0,0.5435,0.8659,0.9667,1.0,0.9746,0.9688,0.4728,0.4257,0.4398,0.4108,0.3215,0.2948,0.2764
+5,a marching band is on a field playing a song in front of a crowd .,0.155,a marchinjg band stands in the street as girls twirl their sticks .,5.0,5.0,4.0,4.6667,0.5647,0.8835,0.9697,0.7845,0.8673,0.8333,0.5073,0.2563,0.4606,0.3273,0.379,0.0914,0.155
+6,a marching band and color guard perform on an athletic field for the crowd .,0.1634,a marchinjg band stands in the street as girls twirl their sticks .,4.0,5.0,5.0,4.6667,0.4722,0.8259,0.9688,0.8933,0.8943,0.8659,0.3609,0.3396,0.4346,0.3403,0.3154,0.1625,0.1634

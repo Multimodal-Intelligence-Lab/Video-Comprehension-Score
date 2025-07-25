@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man and a small child ride a sled down a snowy hill .,0.0963,a man and a baby sled down a snow covered hill in the winter .,5.0,5.0,4.0,4.6667,0.7603,0.9153,0.8005,0.2102,0.333,0.2713,0.7381,0.0,0.7005,0.1227,0.6728,0.0,0.0963
+2,a group of people are sledding down a snowy hill .,0.4563,a man and a baby sled down a snow covered hill in the winter .,4.0,5.0,3.0,4.0,0.5806,0.8748,0.928,0.9301,0.8817,0.8648,0.5206,0.5491,0.548,0.5243,0.4833,0.4845,0.4563
+3,a person is sliding down a snowy hill on a sled .,0.0939,a man and a baby sled down a snow covered hill in the winter .,4.0,5.0,3.0,4.0,0.5775,0.9105,0.8327,0.6168,0.5144,0.4666,0.5359,0.3149,0.4925,0.1591,0.4426,0.2476,0.0939
+4,a man and a child are sliding down a mountain on a sled with other people around them .,0.2499,a man and a baby sled down a snow covered hill in the winter .,4.0,3.0,4.0,3.6667,0.6249,0.8609,0.8331,0.4459,0.5809,0.5132,0.5643,0.1133,0.5497,0.3293,0.477,0.0181,0.2499
+5,an adult and child are together sledding down a snowy slope .,0.0211,a man and a baby sled down a snow covered hill in the winter .,5.0,5.0,5.0,5.0,0.648,0.8604,0.88,0.519,0.4215,0.3277,0.5909,0.2577,0.6,0.1073,0.5351,0.186,0.0211
+6,a little boy and his mom are sitting on a sled and are sleding down a snowy hill .,0.0,a man and a baby sled down a snow covered hill in the winter .,4.0,4.0,4.0,4.0,0.5484,0.8824,0.8548,0.3536,0.2504,0.1505,0.4883,0.0,0.4717,0.0,0.4013,0.0,0.0

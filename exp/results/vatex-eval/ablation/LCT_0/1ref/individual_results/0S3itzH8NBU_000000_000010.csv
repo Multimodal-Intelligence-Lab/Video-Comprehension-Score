@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a young girl in her room is singing and dancing to the song "" happy birthday """,0.0,an asian girl is singing happy birthday song in front of her shirtless father .,4.0,5.0,5.0,4.6667,0.4773,0.8914,0.846,0.6031,0.5859,0.5354,0.4136,0.1333,0.3821,0.1078,0.3068,0.0277,0.0
+2,a little girl is sitting on a couch and a woman is talking to her .,0.0,an asian girl is singing happy birthday song in front of her shirtless father .,2.0,2.0,2.0,2.0,0.1091,0.7714,0.8949,0.7252,0.7217,0.6392,0.0,0.0,0.0045,0.0,0.0,0.0,0.0
+3,a little girl is sitting on the floor and a woman is talking to her .,0.0,an asian girl is singing happy birthday song in front of her shirtless father .,3.0,3.0,2.0,2.6667,0.1627,0.7663,0.908,0.8189,0.8056,0.7463,0.0,0.0,0.0779,0.0,0.0,0.0,0.0
+4,a young man sings to a group of young women at a competition at a bowling alley .,0.0,an asian girl is singing happy birthday song in front of her shirtless father .,3.0,4.0,1.0,2.6667,0.2357,0.759,0.8199,0.4036,0.5409,0.3952,0.0,0.0,0.0677,0.0,0.0,0.0,0.0
+5,"in an bedroom , a little girl plays with a toy piano and sings .",0.0,an asian girl is singing happy birthday song in front of her shirtless father .,4.0,4.0,3.0,3.6667,0.3025,0.7889,0.8328,0.7141,0.6765,0.59,0.1159,0.0234,0.1625,0.0,0.0,0.0,0.0
+6,"music plays while in a room young men and women dance and laugh , one woman holds a microphone as if to sing .",0.0,an asian girl is singing happy birthday song in front of her shirtless father .,2.0,2.0,2.0,2.0,0.2033,0.7754,0.7703,0.1946,0.1575,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

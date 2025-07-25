@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a construction site with a person applying concrete to the exterior wall .,0.5034,a man is working at a construction site and applying cement to the outside of a building .,5.0,5.0,5.0,5.0,0.7685,0.9151,1.0,0.7872,0.7966,0.7498,0.7434,0.5667,0.7302,0.5194,0.7011,0.5522,0.5034
+2,a man is standing on the side of a building building a wall .,0.4327,a man is outside and he is applying convrete to a house wall .,5.0,4.0,5.0,4.6667,0.5613,0.8704,0.9787,0.9679,0.9107,0.8956,0.4834,0.4808,0.5483,0.5146,0.4722,0.3933,0.4327
+3,a man is using a tool to clean the top of a wall .,0.3206,someone is working on a construction site and doing something to a wall .,4.0,4.0,4.0,4.0,0.4528,0.8341,1.0,1.0,1.0,1.0,0.3206,0.4528,0.4528,0.4528,0.3206,0.3206,0.3206
+4,some home construction workers are working on making concrete sidewalks .,0.0,a man is working on a building site as he uses a machine to pour wet cement onto a wall .,4.0,4.0,4.0,4.0,0.4639,0.8784,0.96,0.6979,0.778,0.7254,0.3897,0.1207,0.4036,0.0874,0.3211,0.0,0.0
+5,a construction worker is putting bricks onto the side of a building .,0.0639,a man is outside and he is applying convrete to a house wall .,4.0,4.0,4.0,4.0,0.5431,0.8495,0.9787,0.8723,0.8707,0.8315,0.4621,0.2832,0.4995,0.2819,0.4107,0.0848,0.0639
+6,a man is working with bricks and a trowel to finish brickwork on a wall .,0.3543,someone is working on a construction site and doing something to a wall .,4.0,3.0,4.0,3.6667,0.5226,0.8674,1.0,0.921,0.9353,0.9227,0.4277,0.4527,0.5226,0.4614,0.4277,0.3439,0.3543

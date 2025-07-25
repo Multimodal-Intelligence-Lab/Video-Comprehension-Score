@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is in fast moving water in a canoe performing flips and turns fast .,0.1224,a man is kayaking through rough waters on a river .,5.0,4.0,5.0,4.6667,0.6761,0.9178,0.9547,0.7589,0.6715,0.5977,0.6471,0.366,0.6193,0.2834,0.5508,0.2235,0.1224
+2,a man is kayaking in a kayak in the middle of a river .,0.6294,a man is kayaking through rough waters on a river .,5.0,5.0,5.0,5.0,0.7353,0.9359,0.9434,0.8954,0.8863,0.8538,0.7171,0.5604,0.6974,0.6531,0.6767,0.5493,0.6294
+3,a person is kayaking in the middle of a body of water .,0.2861,a man is kayaking through rough waters on a river .,5.0,5.0,5.0,5.0,0.4704,0.8796,0.963,0.8571,0.8698,0.8418,0.3911,0.3153,0.4319,0.372,0.3505,0.2216,0.2861
+4,a man is on the water in a boat trying to maneuver his way around .,0.0649,a guys is white water rafting and is tossed around and upside down by the fierce waves .,5.0,4.0,4.0,4.3333,0.5112,0.8575,0.9744,0.8171,0.8223,0.7866,0.4136,0.2164,0.449,0.2214,0.3575,0.0589,0.0649
+5,a man is strapped into a boat as it appears to turn over .,0.2983,"a man is trying to paddle down a river , but keeps spinning around and flipping over .",5.0,4.0,5.0,4.6667,0.5337,0.8415,0.9583,0.8819,0.8778,0.8482,0.4441,0.4378,0.4826,0.4352,0.3573,0.3016,0.2983
+6,two jeeps were travelling on the river with more difficulty and river is full of water,0.0,two people are kayaking through dangerous rapids ; one kayak is continually capsizing .,5.0,2.0,4.0,3.6667,0.3915,0.8369,0.9665,0.7826,0.716,0.6511,0.2729,0.1689,0.3301,0.0915,0.1436,0.0,0.0

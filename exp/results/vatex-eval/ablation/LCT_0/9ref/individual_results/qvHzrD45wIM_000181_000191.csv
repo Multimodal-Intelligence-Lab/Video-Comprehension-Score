@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a young woman is brushing , straightening and blow drying her hair .",0.7559,a young woman brushing her hair while using a blow dryer at the same time .,5.0,5.0,5.0,5.0,0.857,0.9352,0.9756,0.8172,0.7936,0.7771,0.8456,0.7867,0.8434,0.7591,0.8309,0.7838,0.7559
+2,a woman is using a blow dryer to straighten her hair .,0.7819,a woman uses a brush and a blow dryer to style her hair .,5.0,5.0,5.0,5.0,0.8387,0.9476,1.0,0.8723,0.8863,0.8761,0.8297,0.7967,0.8226,0.7999,0.8067,0.7784,0.7819
+3,a woman is using a flat iron to straighten her hair .,0.3664,a woman uses a brush and a blow dryer to style her hair .,4.0,4.0,4.0,4.0,0.5874,0.8916,1.0,0.8723,0.8863,0.8641,0.5372,0.4614,0.5579,0.4699,0.5042,0.3562,0.3664
+4,a woman sits while a hairdresser dries and styles er hair with a hairdryer and brush .,0.3018,a woman uses a hairbrush to blow-dry her hair,4.0,4.0,4.0,4.0,0.7554,0.9083,0.875,0.5492,0.5303,0.4497,0.7307,0.3744,0.7082,0.3483,0.6787,0.3298,0.3018
+5,a person is styling a person's hair using a blow dryer and brush .,0.4048,a young woman brushing her hair while using a blow dryer at the same time .,5.0,4.0,5.0,4.6667,0.8139,0.9276,0.8497,0.5462,0.6001,0.5626,0.7975,0.2564,0.6529,0.4287,0.5991,0.2169,0.4048
+6,"a girl is getting her hair done by another person , who is using a blow dryer and comb .",0.4089,a young woman brushing her hair while using a blow dryer at the same time .,4.0,4.0,4.0,4.0,0.775,0.8864,0.9326,0.703,0.7356,0.6952,0.7462,0.4635,0.6237,0.4872,0.6091,0.3815,0.4089

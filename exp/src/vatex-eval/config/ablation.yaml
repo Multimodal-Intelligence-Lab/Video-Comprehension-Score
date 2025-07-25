@@ -1,0 +1,101 @@
+# VATEX-EVAL Ablation Configuration
+# Configuration for ablation studies with multiple segmenter functions and n_refs
+
+# ============================================================================
+# ESSENTIAL PATHS (MUST BE UPDATED FOR YOUR ENVIRONMENT)
+# ============================================================================
+models:
+  # Path to downloaded NV-Embed model directory
+  # Download from: https://huggingface.co/nvidia/NV-Embed-v1
+  nv_embed_path: "/mmfs1/scratch/jacks.local/mali9292/VAD-LLM2Vec/nv-embed"
+
+# ============================================================================
+# DATA AND OUTPUT PATHS
+# ============================================================================
+paths:
+  # Base output directory for results
+  results_dir: "/mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/results/vatex-eval"
+  
+  # Logs directory (relative to script location)
+  logs_dir: "logs"
+
+# ============================================================================
+# VATEX-EVAL SPECIFIC SETTINGS
+# ============================================================================
+vatex_eval:
+  # Path to VATEX-EVAL JSON data file
+  data_dir: "/mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/vatex-eval/vid_cans_score_dict.json"
+  
+  # Number of references to use for evaluation (list of integers)
+  # Each value will be evaluated separately
+  use_n_refs: [1, 9]
+  
+  # Segmenter function: uses segmenter_punc_stop with NLTK stopwords
+  # This is the only supported segmenter for VATEX-EVAL ablation analysis
+  
+
+# ============================================================================
+# VCS COMPUTATION SETTINGS
+# ============================================================================
+vcs:
+  # LCT (Line Chronological Tolerance) values to compute
+  # LCT = 0: Strict chronological order (DEFAULT)
+  # LCT > 0: Allow chronological flexibility
+  # Results will be saved in separate folders: results/vatex_eval/ablation/LCT_0/, LCT_1/, etc.
+  # Examples:
+  #   lct_values: [0]        # Only strict mode
+  #   lct_values: [0, 1, 2]  # Multiple LCT variants
+  #   lct_values: [1, 3]     # Non-consecutive values
+  lct_values: [0, 1]
+  
+  # VCS algorithm parameters
+  # chunk_size can be 1, 2, 3, etc. depending on computational requirements
+  chunk_size: 1
+  context_cutoff_value: 0.6
+  context_window_control: 4.0
+  
+  # Return detailed VCS internals for debugging
+  return_all_metrics: true
+  return_internals: false
+
+# ============================================================================
+# PARALLEL PROCESSING
+# ============================================================================
+processing:
+  # Number of parallel workers for candidate processing
+  # Recommendations:
+  #   - 1-2 workers: 8GB RAM systems
+  #   - 4 workers: 16GB RAM systems  
+  #   - 8+ workers: 32GB+ RAM systems
+  max_workers: 48
+  
+  # Checkpoint saving interval (save every N candidates processed)
+  checkpoint_interval: 100
+  
+  # Resume from checkpoint if available
+  resume_from_checkpoint: true
+
+# ============================================================================
+# OUTPUT FORMATTING
+# ============================================================================
+output:
+  # Decimal precision for metrics
+  decimal_precision: 4
+  
+  # Output options
+  save_correlation_summary: true
+  save_detailed_scores: true
+
+# ============================================================================
+# LOGGING AND VERBOSITY
+# ============================================================================
+logging:
+  # Enable verbose output to console
+  verbose: false
+
+# ============================================================================
+# EXPERIMENT SETTINGS
+# ============================================================================
+experiment:
+  # Custom experiment ID (if empty, auto-generates timestamp)
+  experiment_id: ""

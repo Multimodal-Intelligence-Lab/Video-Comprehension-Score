@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a couple of sitting tings on fire out side while others watch .,0.0,one young man lights a fire while another young man pours some kind of powder on the flame that quickly lights up .,4.0,4.0,3.0,3.6667,0.3645,0.7996,0.8939,0.4756,0.5451,0.431,0.2052,0.0,0.2891,0.0,0.1109,0.0,0.0
+2,a man is standing in front of a fire and blows fire from his mouth .,0.0,one young man lights a fire while another young man pours some kind of powder on the flame that quickly lights up .,4.0,4.0,2.0,3.3333,0.3846,0.8398,0.8858,0.4465,0.5125,0.4195,0.2672,0.0,0.3052,0.0,0.1727,0.0,0.0
+3,a group of people are playing a game of fire pong .,0.0,one young man lights a fire while another young man pours some kind of powder on the flame that quickly lights up .,5.0,5.0,5.0,5.0,0.3341,0.7934,0.8981,0.7185,0.6974,0.6187,0.1608,0.0732,0.2585,0.0452,0.0655,0.0,0.0
+4,a man is performing a trick with a ball that has been lit on fire .,0.0,one young man lights a fire while another young man pours some kind of powder on the flame that quickly lights up .,3.0,3.0,5.0,3.6667,0.3772,0.8346,0.8417,0.7283,0.6713,0.6062,0.2538,0.1449,0.2601,0.0724,0.1134,0.0,0.0
+5,a man is spiting large fireballs from his mouth due to an open flame and alcohol .,0.1081,one young man lights a fire while another young man pours some kind of powder on the flame that quickly lights up .,2.0,4.0,2.0,2.6667,0.3882,0.8202,0.9521,0.7903,0.8364,0.8005,0.254,0.2258,0.3574,0.2685,0.2165,0.056,0.1081
+6,a man is holding a rod with fire in his hand and blowing it several times,0.0,one young man lights a fire while another young man pours some kind of powder on the flame that quickly lights up .,2.0,4.0,2.0,2.6667,0.3558,0.8196,0.9048,0.6009,0.6666,0.5932,0.214,0.0,0.288,0.0336,0.1313,0.0,0.0

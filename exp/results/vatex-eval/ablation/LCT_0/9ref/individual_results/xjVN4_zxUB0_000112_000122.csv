@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a kid squatting in a room is building lego structure while talking .,0.5188,a kid sits on the floor playing with his lego toys .,4.0,5.0,4.0,4.3333,0.6446,0.8407,1.0,0.8933,0.9155,0.8995,0.5735,0.5926,0.6446,0.599,0.5735,0.511,0.5188
+2,a little boy is sitting on the floor playing with legos .,0.859,a small child is sitting on the floor playing with legos .,5.0,5.0,5.0,5.0,0.8859,0.9662,1.0,1.0,1.0,1.0,0.8765,0.8637,0.8637,0.8637,0.859,0.859,0.859
+3,a young child is demonstrating how to use a sewing machine .,0.0,a little boy plays with a grouping of toys on a tile floor .,4.0,4.0,4.0,4.0,0.2641,0.8147,1.0,0.7109,0.8085,0.7614,0.0927,0.0,0.208,0.0583,0.0279,0.0,0.0
+4,a child is sitting on the floor next to a good-size pile of legos .,0.5681,a kid sits on the floor playing with his lego toys .,4.0,5.0,4.0,4.3333,0.8437,0.9037,1.0,0.8723,0.8863,0.8651,0.8271,0.6175,0.8263,0.6033,0.8014,0.6065,0.5681
+5,a little boy is assembling things with his set of legos .,0.7122,"a young boy is playing and building with legos , one piece at a time .",5.0,5.0,5.0,5.0,0.8073,0.8586,0.9599,0.8295,0.88,0.8498,0.7714,0.7636,0.7897,0.7452,0.7505,0.7196,0.7122
+6,a young boy is assembling lego models of different aircrafts .,0.6293,"a young boy is playing and building with legos , one piece at a time .",4.0,4.0,4.0,4.0,0.7193,0.8575,0.9859,0.8659,0.8831,0.8636,0.6727,0.6759,0.7153,0.6821,0.668,0.622,0.6293

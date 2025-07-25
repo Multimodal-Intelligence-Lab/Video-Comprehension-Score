@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a red hot piece of bent steel is being formed with a metal sledge hammer on the end of a steel table .,0.4822,a man holds a red hot piece of metal and hammers it as he describes the steps of what he is doing .,5.0,5.0,5.0,5.0,0.6451,0.8736,0.9529,0.8089,0.7845,0.7534,0.5938,0.5452,0.5972,0.5476,0.539,0.4794,0.4822
+2,a person is using a torch to make a piece of metal .,0.534,a man using different hand tools on a very hot piece of glowing metal .,4.0,4.0,4.0,4.0,0.6242,0.8795,0.9851,0.9657,0.9286,0.9056,0.5727,0.5825,0.6185,0.5902,0.5662,0.5253,0.534
+3,a person is using a torch to heat a piece of metal .,0.5981,a man using different hand tools on a very hot piece of glowing metal .,4.0,4.0,4.0,4.0,0.6382,0.9011,1.0,1.0,1.0,1.0,0.5981,0.6382,0.6382,0.6382,0.5981,0.5981,0.5981
+4,a man shapes a horseshoe on an anvil with a blacksmith's hammer .,0.394,a man is explaining the making of a horseshoe as he shakes a piece of glowing metal .,4.0,3.0,4.0,3.6667,0.7173,0.8523,0.9667,0.7782,0.801,0.7563,0.6683,0.4893,0.6551,0.5018,0.5953,0.3788,0.394
+5,a metal worker is baging a hot horseshoe with a hammer .,0.3217,a man give details on how to make a brand while creating horse shoes .,4.0,4.0,4.0,4.0,0.7506,0.8756,0.9831,0.8879,0.8996,0.8665,0.7152,0.4832,0.6576,0.4899,0.564,0.3621,0.3217
+6,a man is forging steel on an anvil using a metal mallet .,0.2181,"a man is demonstrating how to forge horseshoes , and he is about to hammer a still red hot piece of metal .",5.0,4.0,5.0,4.6667,0.5815,0.8597,1.0,0.7612,0.7966,0.734,0.5055,0.3352,0.5181,0.3381,0.4199,0.2147,0.2181

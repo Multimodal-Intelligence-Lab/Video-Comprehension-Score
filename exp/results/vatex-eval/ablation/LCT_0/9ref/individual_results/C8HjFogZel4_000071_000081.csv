@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is showing how to attach a bicycle wheel to a bicycle .,0.6507,a woman demonstrates how to properly put a front tire on a bicycle .,5.0,2.0,5.0,4.0,0.7672,0.9252,0.9667,0.9737,0.9446,0.9344,0.7372,0.6964,0.7566,0.6771,0.7253,0.6574,0.6507
+2,a man is demonstrating how to fix a bicycle tire .,0.3866,a person's hand is demonstrating how to do something to a bike .,3.0,4.0,4.0,3.6667,0.6446,0.8878,1.0,0.8644,0.8788,0.8473,0.5982,0.4652,0.6156,0.4644,0.567,0.3875,0.3866
+3,a person is demonstrating how to fix a bike on a bicycle .,0.6517,a person's hand is demonstrating how to do something to a bike .,4.0,5.0,4.0,4.3333,0.7716,0.9169,0.9796,0.9023,0.8923,0.8712,0.7509,0.6414,0.7189,0.661,0.6934,0.6086,0.6517
+4,a man demonstrates how to attache a seat to a bike .,0.5401,a person demonstrating how to firmly attach a new wheel to their bicycle,3.0,3.0,3.0,3.0,0.6163,0.8592,1.0,1.0,1.0,1.0,0.5505,0.6049,0.6049,0.6049,0.5401,0.5401,0.5401
+5,a person is putting the rear wheel on a bike .,0.5688,a person demonstrating how to firmly attach a new wheel to their bicycle,4.0,2.0,4.0,3.3333,0.6702,0.8883,1.0,0.8644,0.8788,0.8607,0.621,0.6184,0.6702,0.6247,0.621,0.5616,0.5688
+6,a person showing a bike and explaining the tools required to grip the bike chain .,0.2978,a person demonstrating how to firmly attach a new wheel to their bicycle,3.0,5.0,5.0,4.3333,0.7022,0.8708,0.956,0.8702,0.8888,0.859,0.658,0.3968,0.6588,0.4047,0.6082,0.2885,0.2978

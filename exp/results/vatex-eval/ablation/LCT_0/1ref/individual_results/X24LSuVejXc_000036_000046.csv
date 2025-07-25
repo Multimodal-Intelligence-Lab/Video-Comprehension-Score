@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man held his waist with a hand while he was break dancing on the stage,0.0,michael jackson is dancing and doing his crotch grab on stage for an audience .,5.0,4.0,4.0,4.3333,0.419,0.8326,0.7832,0.3333,0.4676,0.3606,0.3021,0.0,0.2582,0.0,0.109,0.0,0.0
+2,a man is dancing on a stage while music plays in the background .,0.0,michael jackson is dancing and doing his crotch grab on stage for an audience .,5.0,5.0,5.0,5.0,0.4699,0.824,0.8984,0.5918,0.5226,0.4206,0.3566,0.1042,0.4099,0.0,0.2839,0.0,0.0
+3,a man is dancing on a stage in front of a crowd .,0.2097,michael jackson is dancing and doing his crotch grab on stage for an audience .,5.0,3.0,5.0,4.3333,0.5205,0.8511,0.928,0.7471,0.713,0.6627,0.4365,0.3582,0.4832,0.3274,0.3928,0.2458,0.2097
+4,one man is dancing like michael jackson in his room,0.0,michael jackson is dancing and doing his crotch grab on stage for an audience .,5.0,4.0,4.0,4.3333,0.4801,0.8617,0.697,0.3794,0.4913,0.4097,0.3967,0.0,0.2541,0.0,0.1344,0.0,0.0
+5,a man dances to some music while he is on stage .,0.2152,michael jackson is dancing and doing his crotch grab on stage for an audience .,5.0,5.0,5.0,5.0,0.4748,0.8325,0.9108,0.8555,0.8039,0.7644,0.3691,0.3862,0.4234,0.3467,0.3074,0.2626,0.2152
+6,a group of men are up on stage dancing to the song being played .,0.0,michael jackson is dancing and doing his crotch grab on stage for an audience .,4.0,4.0,4.0,4.0,0.3653,0.8151,0.8397,0.1754,0.0,0.0,0.2214,0.0,0.2441,0.0,0.0727,0.0,0.0

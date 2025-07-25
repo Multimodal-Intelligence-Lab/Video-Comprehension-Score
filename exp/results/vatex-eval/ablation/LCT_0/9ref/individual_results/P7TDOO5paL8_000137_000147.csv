@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is sanding metal with a metal disc while sparks are flying from it .,0.4343,a person is grinding down metal bars with a power tool .,5.0,5.0,4.0,4.6667,0.7232,0.887,1.0,0.8723,0.8863,0.8669,0.688,0.5091,0.6783,0.5168,0.6373,0.4252,0.4343
+2,a person is using a tool to cut a piece of metal .,0.5321,a man is using a smoothing tool to smooth out the edges of a piece of metal,4.0,4.0,4.0,4.0,0.6252,0.9169,1.0,1.0,1.0,1.0,0.5725,0.571,0.571,0.571,0.5321,0.5321,0.5321
+3,a man is using a power saw to cut a piece of wood .,0.3478,a person is using a chain saw against a metal piece trying to fix it .,3.0,2.0,2.0,2.3333,0.446,0.8732,1.0,0.9777,0.9727,0.9687,0.3656,0.4334,0.4381,0.4305,0.3565,0.3511,0.3478
+4,someone is using an electric sander/grinder to buff a piece of metal .,0.5843,a person uses a sanding machine against a metal structure .,5.0,5.0,5.0,5.0,0.736,0.8791,1.0,1.0,1.0,1.0,0.6838,0.6647,0.7187,0.6529,0.6631,0.5985,0.5843
+5,a person is using a sanding tool to smooth out the top of a metal frame .,0.6761,a person uses a sanding machine against a metal structure .,5.0,5.0,4.0,4.6667,0.7423,0.906,1.0,1.0,1.0,1.0,0.7084,0.7101,0.7379,0.7138,0.7034,0.6719,0.6761
+6,a person is bending sheet metal in a machine so that it cuts clean .,0.0673,"a person , in protective clothing is using a machine to file down an piece of steel or metal .",3.0,3.0,4.0,3.3333,0.5007,0.8615,1.0,0.7689,0.7966,0.755,0.4147,0.2394,0.4371,0.2126,0.3438,0.0937,0.0673

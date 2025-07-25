@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man expertly strums a guitar using his fingers to pinch the strings .,0.0,a person's hands are visible very skillfully playing an electric guitar .,5.0,5.0,5.0,5.0,0.5512,0.8321,0.6957,0.1667,0.0,0.0,0.4607,0.0,0.3549,0.0,0.2247,0.0,0.0
+2,a man is playing a song on a guitar in a room .,0.0,a person's hands are visible very skillfully playing an electric guitar .,5.0,5.0,5.0,5.0,0.3654,0.8443,0.8327,0.0,0.0,0.0,0.2484,0.0,0.2378,0.0,0.0973,0.0,0.0
+3,a man is playing a song on an electric guitar .,0.0,a person's hands are visible very skillfully playing an electric guitar .,5.0,5.0,5.0,5.0,0.6521,0.8877,0.8803,0.3204,0.1163,0.0046,0.6081,0.0,0.6048,0.0,0.5548,0.0,0.0
+4,musician plays electric guitar by pulling up on strings and forming chords by pressing with fingers .,0.0,a person's hands are visible very skillfully playing an electric guitar .,5.0,5.0,5.0,5.0,0.6217,0.8434,0.4553,0.3335,0.18,0.0277,0.5515,0.0,0.1239,0.0,0.0123,0.0,0.0
+5,a man is playing a guitar while seated and a sheet music stand,0.0,a person's hands are visible very skillfully playing an electric guitar .,4.0,3.0,4.0,3.6667,0.3327,0.8254,0.6815,0.2102,0.3213,0.1777,0.1915,0.0,0.0207,0.0,0.0,0.0,0.0
+6,a seated person in glasses is seen playing a music piece with the guitar .,0.1682,a person's hands are visible very skillfully playing an electric guitar .,4.0,4.0,4.0,4.0,0.4674,0.865,0.9859,0.7119,0.7402,0.6997,0.3843,0.252,0.4598,0.2806,0.3755,0.1352,0.1682

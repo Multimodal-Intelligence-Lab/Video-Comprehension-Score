@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is sitting at a computer pretending to play drums to music .,0.0,"the young man at the computer listens to loud rock music , playing air drums , not hearing the room door open",5.0,5.0,5.0,5.0,0.5816,0.8732,0.8333,0.4093,0.4588,0.3802,0.5208,0.0,0.4979,0.0695,0.425,0.0,0.0
+2,a man is sitting in front of a camera and is talking to the camera .,0.0,"the young man at the computer listens to loud rock music , playing air drums , not hearing the room door open",3.0,2.0,3.0,2.6667,0.1154,0.7729,0.9515,0.7388,0.7476,0.6735,0.0,0.0,0.0702,0.0,0.0,0.0,0.0
+3,a man is sitting in front of a computer and is talking to the camera .,0.0,"the young man at the computer listens to loud rock music , playing air drums , not hearing the room door open",4.0,4.0,4.0,4.0,0.3258,0.804,0.8885,0.5734,0.5455,0.4346,0.1614,0.0,0.2412,0.0,0.0562,0.0,0.0
+4,a man sits at a drum set and plays the drums to a song that's also playing .,0.0,"the young man at the computer listens to loud rock music , playing air drums , not hearing the room door open",4.0,2.0,4.0,3.3333,0.3614,0.8357,0.8571,0.4037,0.4587,0.3522,0.2359,0.0,0.2549,0.0,0.1085,0.0,0.0
+5,a man in headphones is drumming as music is played in the backgrown .,0.0,"the young man at the computer listens to loud rock music , playing air drums , not hearing the room door open",4.0,4.0,5.0,4.3333,0.4401,0.8453,0.8795,0.523,0.4839,0.3895,0.3375,0.0,0.3634,0.0,0.2468,0.0,0.0
+6,"a man listening to a track , plays along with it on an electronic drum set .",0.0666,"the young man at the computer listens to loud rock music , playing air drums , not hearing the room door open",4.0,3.0,4.0,3.6667,0.4186,0.8336,0.9048,0.7,0.7473,0.6968,0.3025,0.1694,0.3574,0.2219,0.2291,0.0036,0.0666

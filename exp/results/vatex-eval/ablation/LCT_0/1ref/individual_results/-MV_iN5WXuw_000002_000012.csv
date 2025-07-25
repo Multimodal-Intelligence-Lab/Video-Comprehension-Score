@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is riding a riding lawn mower and they are moving up and down to move leaves .,0.0369,"a person runs a red mower on grass near some leaves , the gusts from the mower blowing leaves .",5.0,5.0,4.0,4.6667,0.6371,0.8643,0.9121,0.4097,0.4413,0.3536,0.5801,0.0735,0.6021,0.123,0.5396,0.0,0.0369
+2,a man is using a leaf blower to blow leaves in a yard .,0.059,"a person runs a red mower on grass near some leaves , the gusts from the mower blowing leaves .",5.0,5.0,3.0,4.3333,0.4986,0.8553,0.85,0.6048,0.623,0.5592,0.4138,0.171,0.4102,0.1951,0.3104,0.0308,0.059
+3,a man is using a leaf blower to blow leaves in the yard .,0.0637,"a person runs a red mower on grass near some leaves , the gusts from the mower blowing leaves .",5.0,5.0,3.0,4.3333,0.5011,0.8553,0.85,0.6048,0.623,0.5592,0.4167,0.1751,0.4131,0.1991,0.3138,0.0356,0.0637
+4,an individual uses a leaf blower to get rid of several leaves .,0.0,"a person runs a red mower on grass near some leaves , the gusts from the mower blowing leaves .",5.0,5.0,3.0,4.3333,0.5258,0.8399,0.8416,0.3844,0.3929,0.2771,0.4354,0.0,0.4365,0.0,0.3291,0.0,0.0
+5,a man is mowing a yard with a lawnmower .,0.3086,"a person runs a red mower on grass near some leaves , the gusts from the mower blowing leaves .",4.0,5.0,5.0,4.6667,0.463,0.841,0.9615,0.9535,0.9235,0.909,0.3615,0.4368,0.4416,0.4185,0.336,0.3304,0.3086
+6,a man is using a riding lawnmower to cut the grass .,0.0,"a person runs a red mower on grass near some leaves , the gusts from the mower blowing leaves .",4.0,4.0,5.0,4.3333,0.4456,0.8233,0.8391,0.5035,0.5234,0.4211,0.3266,0.0,0.3392,0.0,0.1974,0.0,0.0

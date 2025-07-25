@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl is running and doing a long jump at a track meet .,0.7782,a girl does the long jump at a track and field event .,5.0,4.0,5.0,4.6667,0.898,0.9231,1.0,1.0,1.0,1.0,0.8895,0.7121,0.8608,0.7803,0.8595,0.7093,0.7782
+2,a man runs down a track and jumps into a sand pit .,0.5948,at a track meet a woman runs and jumps towards a sand pit .,4.0,3.0,2.0,3.0,0.7277,0.9336,1.0,0.8723,0.8863,0.8509,0.7084,0.6386,0.6916,0.6148,0.6697,0.6129,0.5948
+3,a young man runs down a track and jumps into a sand pit .,0.5064,at a track meet a woman runs and jumps towards a sand pit .,4.0,3.0,2.0,3.0,0.6774,0.9197,1.0,0.9499,0.9468,0.9386,0.6492,0.554,0.6466,0.546,0.6158,0.515,0.5064
+4,a woman in a track as she tries to run quickly and jump over the hurdle as people watch,0.3176,at a track meet a woman runs and jumps towards a sand pit .,4.0,4.0,4.0,4.0,0.6966,0.9154,0.9538,0.8638,0.8479,0.8,0.6686,0.3918,0.5888,0.4178,0.518,0.2871,0.3176
+5,a far away video of a girl doing a high jump at a track and field event .,0.4639,a girl does the long jump at a track and field event .,4.0,4.0,4.0,4.0,0.7493,0.9341,0.9538,0.7175,0.7466,0.6731,0.7316,0.4865,0.711,0.4766,0.6906,0.4741,0.4639
+6,"from a distance , a girl competes in a high jump track event .",0.1839,a girl does the long jump at a track and field event .,4.0,4.0,3.0,3.6667,0.7826,0.91,0.9599,0.6627,0.6402,0.547,0.7611,0.3451,0.7529,0.2146,0.7284,0.3266,0.1839

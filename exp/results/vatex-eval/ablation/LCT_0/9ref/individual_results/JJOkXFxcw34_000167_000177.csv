@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a couple of people on an ice rink going around in circles together,0.1949,a person is shown ice skating in an ice rink with slow motion .,5.0,3.0,5.0,4.3333,0.5976,0.879,0.971,0.6736,0.7364,0.6811,0.5139,0.204,0.5215,0.322,0.4219,0.0402,0.1949
+2,a group of people are ice skating in a rink .,0.6707,many individuals are skating with one another at a skating rink .,5.0,5.0,5.0,5.0,0.7694,0.9327,0.95,0.9062,0.8283,0.7986,0.7527,0.7152,0.7563,0.7083,0.7249,0.6785,0.6707
+3,a group of people are ice skating on an ice rink .,0.508,a bunch of people skate on an ice skating rink while music plays .,5.0,5.0,5.0,5.0,0.7726,0.9349,0.9497,0.6859,0.6964,0.6612,0.7568,0.5306,0.7519,0.5181,0.7346,0.5208,0.508
+4,a group of people are skating in an ice rink .,0.6698,a bunch of people skate on an ice skating rink while music plays .,5.0,5.0,5.0,5.0,0.8022,0.9327,0.9394,0.8845,0.84,0.8206,0.7782,0.7243,0.7869,0.6764,0.761,0.7044,0.6698
+5,two people skate on the ice together while music plays around them,0.5842,a bunch of people skate on an ice skating rink while music plays .,4.0,5.0,5.0,4.6667,0.7257,0.9261,1.0,0.8153,0.8794,0.8644,0.7038,0.5934,0.6738,0.623,0.6478,0.5428,0.5842
+6,a woman is performing ice skating moves on a skating rink .,0.1066,a woman takes a video while ice skating at a rink mostly videotaping feet .,5.0,4.0,3.0,4.0,0.6303,0.9089,0.924,0.6374,0.6269,0.5628,0.5842,0.1929,0.5771,0.194,0.5211,0.1391,0.1066

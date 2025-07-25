@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a hair stylist is blow drying and brushing hair of a female customer in a salon .,0.0,a girl sits in a chair as a beautician brushes her hair .,5.0,4.0,5.0,4.6667,0.5022,0.8293,0.6417,0.3899,0.2791,0.1307,0.3997,0.0,0.2242,0.0,0.0645,0.0,0.0
+2,a woman is using a blow dryer to straighten her hair .,0.0,a girl sits in a chair as a beautician brushes her hair .,4.0,4.0,5.0,4.3333,0.3034,0.7775,0.873,0.4517,0.5953,0.4795,0.1041,0.0,0.2021,0.0,0.0,0.0,0.0
+3,a woman is using a blow dryer to straighten her hair .,0.0,a girl sits in a chair as a beautician brushes her hair .,4.0,4.0,5.0,4.3333,0.3034,0.7775,0.873,0.4517,0.5953,0.4795,0.1041,0.0,0.2021,0.0,0.0,0.0,0.0
+4,a woman uses a hairbrush to blow-dry her hair,0.0,a girl sits in a chair as a beautician brushes her hair .,4.0,5.0,4.0,4.3333,0.4331,0.8114,0.9084,0.7974,0.6986,0.6286,0.3014,0.2891,0.3759,0.1885,0.2309,0.1239,0.0
+5,a woman looks in the mirror as she blowdries and brushes her hair .,0.0061,a girl sits in a chair as a beautician brushes her hair .,4.0,4.0,4.0,4.0,0.394,0.8407,0.9167,0.6,0.7253,0.6732,0.2792,0.0,0.3389,0.1645,0.2136,0.0,0.0061
+6,"a girl is getting her hair done by another person , who is using a blow dryer and comb .",0.0,a girl sits in a chair as a beautician brushes her hair .,5.0,4.0,5.0,4.6667,0.5381,0.8057,0.8173,0.4862,0.4796,0.3541,0.4268,0.0453,0.4349,0.033,0.2986,0.0,0.0

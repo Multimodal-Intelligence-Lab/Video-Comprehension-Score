@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the woman is eating a lollipop and talking into the camera .,0.7171,"a young girl is eating a lollipop , from there she begins to speak into the camera .",5.0,5.0,5.0,5.0,0.7505,0.9089,1.0,1.0,1.0,1.0,0.7171,0.7429,0.7429,0.7429,0.7171,0.7171,0.7171
+2,a young girl is eating a lollipop in her mouth .,0.7869,"a young girl is eating a lollipop , from there she begins to speak into the camera .",5.0,5.0,5.0,5.0,0.8128,0.937,1.0,1.0,1.0,1.0,0.8002,0.8128,0.7983,0.8004,0.7847,0.8002,0.7869
+3,a woman is sucking on a lollipop and is sucking on it .,0.4683,a lady sucking a loppop on a stick as she smile and take it out .,5.0,5.0,5.0,5.0,0.8046,0.9002,0.9286,0.8,0.639,0.5486,0.783,0.7155,0.7182,0.4918,0.6759,0.6729,0.4683
+4,a young girl shows her lollipop to the camera and sticks it in her mouth as she and another girl talk .,0.5001,a young woman sucks on a lollipop several times and then discusses it .,5.0,4.0,5.0,4.6667,0.808,0.9085,0.9333,0.8179,0.8278,0.7926,0.7879,0.58,0.776,0.585,0.7525,0.494,0.5001
+5,a girl is talking and licking a lollipop at a table .,0.3232,blonde attractive woman licking on a lollipop in front of other people .,4.0,4.0,4.0,4.0,0.7121,0.8901,0.9756,0.8644,0.8611,0.833,0.6766,0.4875,0.6,0.4369,0.5506,0.3807,0.3232
+6,a woman sucking a lollipop while staring into the camera .,0.704,a woman sucking a lollipop makes funny faces as she talks to another person .,5.0,5.0,5.0,5.0,0.7583,0.8698,1.0,1.0,1.0,1.0,0.7216,0.7505,0.7447,0.743,0.7059,0.7126,0.704

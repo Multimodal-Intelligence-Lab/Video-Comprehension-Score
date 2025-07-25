@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a baby wearing a diaper is helping load clothes into a washer or dryer .,0.2859,a toddler pulls clothes out of a hamper and puts them into a washing machine .,5.0,5.0,5.0,5.0,0.6733,0.8081,0.9129,0.5895,0.5745,0.4735,0.5958,0.3903,0.6422,0.3681,0.5572,0.3109,0.2859
+2,a little girl is sitting on the floor and is brushing her hair .,0.0,a toddler pulls clothes out of a hamper and puts them into a washing machine .,2.0,2.0,2.0,2.0,0.1294,0.7403,0.9787,0.8094,0.8101,0.7434,0.0,0.0,0.1105,0.0,0.0,0.0,0.0
+3,a toddler is sitting on the floor and trying to blow his hair .,0.0,a toddler pulls clothes out of a hamper and puts them into a washing machine .,2.0,2.0,1.0,1.6667,0.3158,0.7671,0.96,0.7876,0.7754,0.7073,0.1082,0.1313,0.2873,0.1177,0.071,0.0,0.0
+4,"a young girl reaches into a laundry basket , retrieves a piece of clothing and places it in an open washing machine .",0.2219,a toddler pulls clothes out of a hamper and puts them into a washing machine .,5.0,4.0,5.0,4.6667,0.6367,0.8344,0.9189,0.5011,0.5607,0.4735,0.5645,0.2165,0.6046,0.31,0.5261,0.1164,0.2219
+5,a young girl puts clothes in to a washing machine and a mother is helping her .,0.185,a toddler pulls clothes out of a hamper and puts them into a washing machine .,4.0,4.0,4.0,4.0,0.5628,0.8813,0.8838,0.6352,0.6087,0.556,0.5039,0.3117,0.5053,0.2817,0.4387,0.219,0.185
+6,a little girl is loading clothes into a washing machine .,0.1401,a toddler pulls clothes out of a hamper and puts them into a washing machine .,5.0,5.0,5.0,5.0,0.6316,0.8581,0.9404,0.5646,0.5093,0.4282,0.5706,0.3107,0.6082,0.2231,0.5434,0.2371,0.1401

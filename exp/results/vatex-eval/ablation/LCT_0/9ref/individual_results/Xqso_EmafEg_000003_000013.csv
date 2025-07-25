@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two young women are expressing themselves on video with their opinion,0.3841,two young women cross their eyes and talks very loudly .,5.0,5.0,5.0,5.0,0.61,0.8869,1.0,0.8723,0.8863,0.8718,0.5362,0.4449,0.5527,0.4537,0.468,0.3742,0.3841
+2,two young girls are talking to each other in a room .,0.3318,the two young girls are talking with their eyes crossed and are being funny .,2.0,3.0,4.0,3.0,0.4857,0.9195,1.0,0.8571,0.8718,0.8537,0.4406,0.4,0.46,0.3856,0.4127,0.3474,0.3318
+3,two girls are sitting in front of a camera and making funny faces .,0.536,two women talking and making funny faces at the camera .,2.0,3.0,4.0,3.0,0.8431,0.9469,0.971,1.0,0.9687,0.963,0.8343,0.6072,0.7707,0.5473,0.7683,0.5975,0.536
+4,a little girl is making faces and laughing as somebody talks .,0.0354,two women contort their faces and make exaggerated expressions while speaking .,2.0,2.0,4.0,2.6667,0.5765,0.8793,0.971,0.7408,0.7523,0.7024,0.5184,0.1892,0.4534,0.2114,0.3725,0.0083,0.0354
+5,"two teenage girls are showing the top of their ears , which are very red and irritated , to the camera .",0.2542,two girls are talking funny and making weird faces into the camera .,2.0,2.0,2.0,2.0,0.4644,0.8578,1.0,1.0,1.0,1.0,0.3757,0.3292,0.4586,0.3602,0.3689,0.2181,0.2542
+6,a young girl is crossing her eyes and making funny faces .,0.2637,two young women cross their eyes and talks very loudly .,2.0,4.0,5.0,3.6667,0.7444,0.914,1.0,1.0,1.0,1.0,0.7071,0.2818,0.6792,0.3693,0.6323,0.1615,0.2637

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a child and a women are both washing dishes in the kitchen sink .,0.7156,a boy and his mom washed the dishes in a sink .,5.0,5.0,5.0,5.0,0.8746,0.944,1.0,1.0,1.0,1.0,0.8661,0.7429,0.7688,0.7429,0.755,0.7156,0.7156
+2,a woman is washing dishes in a sink in a kitchen .,0.502,a woman and a toddler wash dishes at a kitchen sink .,5.0,5.0,5.0,5.0,0.724,0.9635,0.941,0.9755,0.9352,0.9208,0.7135,0.622,0.7067,0.5092,0.6956,0.6077,0.502
+3,a woman is washing a child ' s hair in a sink .,0.3035,"in stop motion , two children are filling a sink with water .",4.0,4.0,4.0,4.0,0.6384,0.9058,0.9677,0.9428,0.8881,0.8644,0.5922,0.4584,0.5782,0.425,0.5242,0.3824,0.3035
+4,a toddler scrubs and rinses dishes under the sink faucet .,0.6345,a woman and a toddler wash dishes at a kitchen sink .,5.0,5.0,4.0,4.6667,0.7475,0.8918,0.9677,0.8408,0.7996,0.767,0.7168,0.5757,0.718,0.6741,0.6837,0.5576,0.6345
+5,a young girl washes her hands in the bathroom with water from the sink .,0.0892,a young child helps a woman wash plates taken out of a sink .,5.0,3.0,3.0,3.6667,0.523,0.8516,1.0,0.749,0.7723,0.704,0.4399,0.215,0.5015,0.2244,0.4147,0.0783,0.0892
+6,a child is leaning over a sink getting their hair washed by a woman .,0.2629,a young boy is standing at the sink next to his mother washing a plate,4.0,3.0,4.0,3.6667,0.5996,0.8773,0.971,0.9145,0.9128,0.8963,0.5389,0.3811,0.4172,0.38,0.3071,0.2643,0.2629

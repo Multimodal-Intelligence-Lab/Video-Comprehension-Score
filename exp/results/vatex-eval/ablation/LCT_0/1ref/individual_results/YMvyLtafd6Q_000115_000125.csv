@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man opens up and unfolds a white sheet to put on a bed .,0.0,a healthcare worker is changing the sheets on a hospital bed while the patient is rolled on its side .,4.0,4.0,4.0,4.0,0.446,0.8055,0.858,0.3517,0.2985,0.1291,0.3122,0.0,0.3543,0.0,0.1983,0.0,0.0
+2,a woman is demonstrating how to properly fold a bed .,0.0023,a healthcare worker is changing the sheets on a hospital bed while the patient is rolled on its side .,5.0,3.0,2.0,3.3333,0.3985,0.7845,0.8926,0.7837,0.7684,0.7048,0.2333,0.2325,0.3261,0.2173,0.141,0.0217,0.0023
+3,a man is demonstrating how to properly fold a bed .,0.0,a healthcare worker is changing the sheets on a hospital bed while the patient is rolled on its side .,4.0,2.0,1.0,2.3333,0.3945,0.7857,0.8926,0.7837,0.7684,0.7053,0.2294,0.2274,0.3217,0.2121,0.1366,0.0167,0.0
+4,a group of ladies are sorting the bed out bu putting some new bedding sheet on,0.0,a healthcare worker is changing the sheets on a hospital bed while the patient is rolled on its side .,4.0,1.0,4.0,3.0,0.4372,0.7983,0.8116,0.223,0.3498,0.1855,0.295,0.0,0.3066,0.0,0.1314,0.0,0.0
+5,a person is showing hot to make a bed properly with a sheet,0.0,a healthcare worker is changing the sheets on a hospital bed while the patient is rolled on its side .,5.0,2.0,3.0,3.3333,0.4582,0.8188,0.8743,0.5698,0.5659,0.4698,0.3383,0.0492,0.3803,0.0427,0.2431,0.0,0.0
+6,a woman is on the side of her bed making the sheets and tucking them in .,0.0,a healthcare worker is changing the sheets on a hospital bed while the patient is rolled on its side .,5.0,4.0,4.0,4.3333,0.5363,0.8459,0.7306,0.2544,0.1283,0.0,0.4518,0.0,0.3653,0.0,0.2497,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is waxing a man's leg with waxing paper a few times in front of another man holding a camera and in front of people .,0.5009,a woman waxes a man's leg while a group of people film and watch .,5.0,5.0,5.0,5.0,0.8441,0.9137,0.9342,0.8723,0.7871,0.7419,0.8233,0.5443,0.8258,0.5228,0.8025,0.4511,0.5009
+2,a woman is laying on a table while another person is waxing her legs .,0.4828,a guy lays on a table as a woman uses a sticky strip to remove their leg hair .,4.0,4.0,4.0,4.0,0.7096,0.9103,0.96,0.6687,0.6881,0.637,0.681,0.5228,0.6601,0.5507,0.6265,0.4678,0.4828
+3,a woman is laying on a table while another woman is waxing her legs .,0.3184,a guy lays on a table as a woman uses a sticky strip to remove their leg hair .,4.0,4.0,4.0,4.0,0.7098,0.9055,0.9111,0.543,0.5831,0.5071,0.6796,0.3239,0.6486,0.3697,0.6119,0.2689,0.3184
+4,men seated in a public place have their bare legs waxed by women to remove hair .,0.5787,"a man is getting his legs and feet waxed , while others look on",5.0,4.0,4.0,4.3333,0.6976,0.8744,0.9665,0.8377,0.8634,0.8357,0.6362,0.639,0.6871,0.6497,0.6236,0.5658,0.5787
+5,a man on a cot as a woman waxes the hair on his legs .,0.4247,a guy lays on a table as a woman uses a sticky strip to remove their leg hair .,5.0,5.0,5.0,5.0,0.6326,0.8856,0.9614,0.7753,0.8111,0.7746,0.5848,0.4956,0.5932,0.5179,0.5146,0.3981,0.4247
+6,a man is getting his leg waxed by multiple people,0.7931,"a man is getting his legs and feet waxed , while others look on",4.0,4.0,4.0,4.0,0.8097,0.9198,1.0,1.0,1.0,1.0,0.7931,0.8097,0.8097,0.8097,0.7931,0.7931,0.7931

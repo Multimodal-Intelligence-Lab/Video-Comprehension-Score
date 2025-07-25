@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a bartender is flipping a glass and a bottle into the air .,0.7338,a bartender flips and juggles containers in front of a bar full of people .,5.0,5.0,5.0,5.0,0.8555,0.8877,1.0,1.0,1.0,1.0,0.8372,0.7795,0.8482,0.7795,0.829,0.7338,0.7338
+2,a man is juggling bottles of alcohol in a bar .,0.4851,a bartender performs a trick by juggling bottles in front of a crowd .,5.0,5.0,5.0,5.0,0.7655,0.8472,1.0,0.8408,0.827,0.7958,0.7198,0.6741,0.7093,0.5158,0.6527,0.6267,0.4851
+3,a man is standing behind a bar and juggling bottles of liquor .,0.362,a bartender behind a bar is flipping a cup and bottle with his hands,5.0,5.0,5.0,5.0,0.7188,0.847,0.9199,0.6135,0.6914,0.6357,0.6587,0.3487,0.5503,0.4596,0.4881,0.2549,0.362
+4,a bartender stands before and audience and acrobatically mixes drinks .,0.7088,a bartender entertains patrons while mixing drinks at a bar .,5.0,4.0,4.0,4.3333,0.7814,0.8621,1.0,0.9679,0.9085,0.892,0.7464,0.7364,0.7615,0.749,0.7233,0.6943,0.7088
+5,a bartender is clowning around behind a juice bar and people are watching .,0.3167,a bartender does special tricks with his drinks and bottles .,4.0,4.0,5.0,4.3333,0.6193,0.8622,0.9592,0.838,0.8417,0.8031,0.5405,0.4484,0.5746,0.4509,0.4866,0.3137,0.3167
+6,a bartender makes drinks and tosses a mixing glass behind his back and catches it with his other hand .,0.4684,a bartender performs a trick by juggling bottles in front of a crowd .,5.0,5.0,4.0,4.6667,0.7319,0.8557,0.9773,0.8826,0.9033,0.8789,0.6797,0.5656,0.6553,0.5756,0.5785,0.4559,0.4684

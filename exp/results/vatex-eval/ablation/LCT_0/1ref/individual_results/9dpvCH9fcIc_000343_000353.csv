@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man in an orange safety hat is suspended in a tree trimming off branches .,0.0,a tree trimmer is up in a tree and cutting down limbs with a chain saw .,5.0,5.0,5.0,5.0,0.5266,0.8273,0.7319,0.6069,0.4953,0.39,0.4277,0.2199,0.3531,0.0416,0.218,0.057,0.0
+2,a man is using a chainsaw to cut up a tree .,0.0,a tree trimmer is up in a tree and cutting down limbs with a chain saw .,4.0,5.0,5.0,4.6667,0.6606,0.8483,0.67,0.5307,0.3204,0.1989,0.5999,0.2895,0.4934,0.0,0.4028,0.2177,0.0
+3,a person is in a tree and picking up a large tree .,0.3571,a tree trimmer is up in a tree and cutting down limbs with a chain saw .,3.0,3.0,4.0,3.3333,0.5172,0.8407,0.9023,0.9722,0.8932,0.873,0.4258,0.5034,0.4649,0.4595,0.3636,0.4094,0.3571
+4,a man is high up in the tree and cuts off the top portion with a chainsaw .,0.5293,a tree trimmer is up in a tree and cutting down limbs with a chain saw .,4.0,5.0,4.0,4.3333,0.6773,0.8397,0.922,0.7325,0.8164,0.7813,0.6158,0.5595,0.65,0.6048,0.5833,0.4754,0.5293
+5,a man high up in a tree uses his safety line to hold him in place while he uses a chainsaw to cut down limbs .,0.3918,a tree trimmer is up in a tree and cutting down limbs with a chain saw .,5.0,5.0,5.0,5.0,0.706,0.8548,0.8539,0.566,0.601,0.5332,0.6561,0.3853,0.6557,0.4348,0.5973,0.3386,0.3918
+6,a man high up a tall tree cuts its top off with a chainsaw .,0.3758,a tree trimmer is up in a tree and cutting down limbs with a chain saw .,4.0,5.0,4.0,4.3333,0.6324,0.8459,0.8264,0.6016,0.6963,0.641,0.5654,0.3699,0.5552,0.472,0.4741,0.2775,0.3758

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is hugging a woman on the street in front of others and then another person holding a piece of paper in his hands is running towards them as they were walking away .,0.2709,"a man and a woman hug , and then the crowd disperses while a kid reacts .",4.0,5.0,5.0,4.6667,0.5764,0.8664,0.9307,0.733,0.7649,0.7068,0.5109,0.383,0.5438,0.3955,0.4733,0.2558,0.2709
+2,a group of people are walking around in a parking lot .,0.0,a woman hugs a woman then continues to walk and a child yells to the camera .,4.0,4.0,4.0,4.0,0.2578,0.8534,1.0,0.8637,0.861,0.8148,0.1303,0.1406,0.1487,0.0988,0.0024,0.0,0.0
+3,a group of people are walking around and talking to each other .,0.0832,"a girl hugs a guy , then a group of people walk away and a kid runs to catch up with them .",5.0,5.0,3.0,4.3333,0.2887,0.8623,0.9818,0.928,0.8998,0.8837,0.1751,0.2335,0.2282,0.2094,0.1049,0.1111,0.0832
+4,a man hugs an older lady while 2 girls laught at a video .,0.0723,a man in a red shirt hugs a woman and a little kid wearing a red shirt runs after the man .,3.0,4.0,3.0,3.3333,0.4055,0.8407,0.9673,0.8507,0.8587,0.8279,0.2841,0.2314,0.3688,0.2386,0.2399,0.0636,0.0723
+5,a person parks a car outside a house and then a man rings the bell of a house and a woman gets out and follows the man to the car that is parked .,0.0,a woman hugs a woman then continues to walk and a child yells to the camera .,1.0,1.0,2.0,1.3333,0.2173,0.818,0.9509,0.8248,0.8055,0.7606,0.0401,0.0409,0.1308,0.018,0.0,0.0,0.0
+6,"a young boy standing on a couch holds his foot up to a woman to smell , then laughs .",0.0,a woman hugs a woman then continues to walk and a child yells to the camera .,2.0,2.0,2.0,2.0,0.3324,0.8335,0.9655,0.7134,0.8135,0.7715,0.1991,0.0,0.1336,0.0,0.0,0.0,0.0

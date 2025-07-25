@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man and a woman are discussing wine while enjoying the wine .,0.0,"two people sit behind a bottle of wind , talk , and then drink .",5.0,5.0,5.0,5.0,0.4368,0.8021,0.9164,0.5594,0.542,0.429,0.2978,0.0,0.3854,0.0,0.2337,0.0,0.0
+2,a woman is demonstrating how to make a wine tasting .,0.0,"two people sit behind a bottle of wind , talk , and then drink .",5.0,1.0,1.0,2.3333,0.1992,0.7577,0.9592,0.8819,0.8784,0.8395,0.0,0.092,0.1651,0.0883,0.0,0.0,0.0
+3,a woman is sitting at a table and tasting a glass of wine .,0.0,"two people sit behind a bottle of wind , talk , and then drink .",5.0,4.0,5.0,4.6667,0.2512,0.7979,0.9831,0.8879,0.8996,0.8742,0.0617,0.1567,0.2383,0.1677,0.0455,0.0,0.0
+4,two men are sitting at a table while drinking wine and talking .,0.1266,"two people sit behind a bottle of wind , talk , and then drink .",4.0,3.0,4.0,3.6667,0.428,0.8713,0.9419,0.7489,0.7516,0.7149,0.3436,0.2362,0.3928,0.239,0.3031,0.1235,0.1266
+5,two middle-aged men chat and enjoy wine-tasting in a public setting .,0.0,"two people sit behind a bottle of wind , talk , and then drink .",4.0,4.0,2.0,3.3333,0.397,0.8029,0.863,0.55,0.6719,0.5914,0.2491,0.0,0.3014,0.1026,0.1299,0.0,0.0
+6,two men at a wine tasting are discussing their impressions of wine .,0.0,"two people sit behind a bottle of wind , talk , and then drink .",4.0,4.0,4.0,4.0,0.3517,0.8204,0.9555,0.6776,0.6893,0.6213,0.2098,0.0433,0.3216,0.0596,0.173,0.0,0.0

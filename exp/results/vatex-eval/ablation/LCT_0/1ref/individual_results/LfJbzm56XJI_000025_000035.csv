@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a kid eating spaghetti while looking at something at the dinner table .,0.0422,a kid is eating and is trying to be fed by the parent .,5.0,3.0,5.0,4.3333,0.3712,0.8442,0.928,0.8128,0.7777,0.7366,0.2551,0.2264,0.3224,0.1914,0.1973,0.0836,0.0422
+2,a little girl is sitting at a table and eating spaghetti .,0.0,a kid is eating and is trying to be fed by the parent .,5.0,5.0,5.0,5.0,0.2745,0.7937,0.849,0.3361,0.0,0.0,0.0859,0.0,0.1454,0.0,0.0,0.0,0.0
+3,a little girl is sitting at a table and eating a plate of food .,0.0,a kid is eating and is trying to be fed by the parent .,5.0,5.0,5.0,5.0,0.3636,0.8087,0.8272,0.3719,0.1885,0.0,0.2131,0.0,0.2307,0.0,0.0487,0.0,0.0
+4,"young child places face into bowl to eat spaghetti , grabs spaghetti with hand and eats with her fingers .",0.0,a kid is eating and is trying to be fed by the parent .,4.0,3.0,4.0,3.6667,0.3948,0.8132,0.7829,0.7888,0.643,0.561,0.2558,0.2328,0.227,0.0589,0.0494,0.0566,0.0
+5,a small child sits at a dinner table and uses a fork to eat spaghetti on his own .,0.0,a kid is eating and is trying to be fed by the parent .,5.0,5.0,5.0,5.0,0.3435,0.8133,0.7071,0.5492,0.4655,0.3427,0.1927,0.0,0.0715,0.0,0.0,0.0,0.0
+6,a baby in a high chair is sitting and eating spaghetti with her mouth and hands making a mess .,0.045,a kid is eating and is trying to be fed by the parent .,4.0,4.0,4.0,4.0,0.3713,0.8084,0.9216,0.8076,0.8144,0.7705,0.2222,0.2215,0.3178,0.228,0.1561,0.0369,0.045

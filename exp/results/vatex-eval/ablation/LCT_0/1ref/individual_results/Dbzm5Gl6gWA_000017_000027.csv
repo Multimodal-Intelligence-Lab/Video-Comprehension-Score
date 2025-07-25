@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man rides a riding lawnmower alongside a house and a cat runs in front of him .,0.1519,a man is mowing his yard on a riding lawnmower with his small child sitting on his lap .,5.0,5.0,5.0,5.0,0.5311,0.8494,0.8929,0.5121,0.6509,0.589,0.448,0.0815,0.4749,0.2797,0.3817,0.0,0.1519
+2,a man is riding a lawnmower in a yard while a man talks to him .,0.0,a man is mowing his yard on a riding lawnmower with his small child sitting on his lap .,4.0,4.0,4.0,4.0,0.5924,0.9149,0.8021,0.2929,0.2007,0.1264,0.5545,0.0,0.4919,0.0,0.4447,0.0,0.0
+3,a man is using a lawn mower to cut the grass .,0.3402,a man is mowing his yard on a riding lawnmower with his small child sitting on his lap .,5.0,5.0,5.0,5.0,0.5397,0.8409,0.9244,0.8366,0.8296,0.7974,0.4526,0.4498,0.502,0.4451,0.4078,0.3457,0.3402
+4,a man seated on a lawn mower drives it in circles as it cuts grass,0.0,a man is mowing his yard on a riding lawnmower with his small child sitting on his lap .,4.0,4.0,4.0,4.0,0.5495,0.8422,0.8573,0.441,0.4154,0.3058,0.4651,0.0,0.4745,0.0,0.376,0.0,0.0
+5,outside a little boy is driving a riding lawn mower .,0.0,a man is mowing his yard on a riding lawnmower with his small child sitting on his lap .,4.0,4.0,4.0,4.0,0.568,0.8675,0.6604,0.3828,0.2786,0.1684,0.5021,0.0,0.3459,0.0,0.246,0.0,0.0
+6,a man is using a riding lawnmower to cut the grass .,0.4993,a man is mowing his yard on a riding lawnmower with his small child sitting on his lap .,5.0,5.0,5.0,5.0,0.644,0.8679,0.908,0.8366,0.8192,0.7917,0.5899,0.5745,0.608,0.5655,0.5483,0.5098,0.4993

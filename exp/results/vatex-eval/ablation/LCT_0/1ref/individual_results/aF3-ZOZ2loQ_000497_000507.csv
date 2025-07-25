@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a child is sitting on the floor playing with his toy train set .,0.8459,a child is sitting on the ground and playing with a train set .,5.0,5.0,5.0,5.0,0.852,0.9606,1.0,1.0,1.0,1.0,0.8459,0.852,0.852,0.852,0.8459,0.8459,0.8459
+2,a little girl is pushing a toy cart on the floor .,0.0,a child is sitting on the ground and playing with a train set .,4.0,4.0,1.0,3.0,0.3104,0.7791,0.9091,0.7025,0.7926,0.7337,0.1148,0.0184,0.2414,0.1299,0.0263,0.0,0.0
+3,a person is playing with a toy train on a track .,0.0,a child is sitting on the ground and playing with a train set .,5.0,5.0,5.0,5.0,0.6128,0.8713,0.941,0.4659,0.2464,0.1351,0.5556,0.1284,0.5885,0.0,0.5277,0.0387,0.0
+4,kids pull trains out of a toy box and set up a train set together .,0.0,a child is sitting on the ground and playing with a train set .,2.0,2.0,1.0,1.6667,0.4584,0.8762,0.8949,0.3603,0.3193,0.2231,0.3819,0.0,0.3948,0.0,0.3093,0.0,0.0
+5,a child is playing with trains on a wooden train track .,0.2482,a child is sitting on the ground and playing with a train set .,4.0,4.0,4.0,4.0,0.6562,0.8853,0.8312,0.4,0.5401,0.4805,0.6117,0.0857,0.5865,0.2992,0.5329,0.0191,0.2482
+6,a person hands a toy train to a boy who places toy trains on a track .,0.0,a child is sitting on the ground and playing with a train set .,4.0,3.0,4.0,3.6667,0.4779,0.8183,0.9032,0.5278,0.5327,0.429,0.3621,0.0108,0.422,0.02,0.2937,0.0,0.0

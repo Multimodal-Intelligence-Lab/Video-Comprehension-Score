@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man and child are on a tennis court playing tennis,0.0,a man hits a yellow ball at a kid and he hits it back,5.0,5.0,5.0,5.0,0.5567,0.8308,0.8603,0.3779,0.2085,0.0473,0.4664,0.0,0.4848,0.0,0.3798,0.0,0.0
+2,a man is playing tennis on a tennis court with a tennis racket .,0.0,a man hits a yellow ball at a kid and he hits it back,5.0,5.0,5.0,5.0,0.3242,0.7828,0.9688,0.7253,0.8296,0.7823,0.1367,0.0683,0.3024,0.1854,0.1089,0.0,0.0
+3,two people are playing a game of tennis on a tennis court .,0.0,a man hits a yellow ball at a kid and he hits it back,5.0,5.0,5.0,5.0,0.3441,0.7687,0.9384,0.6256,0.7507,0.6757,0.1468,0.0,0.3011,0.1263,0.0908,0.0,0.0
+4,a couple of guys are playing a tennis match with other people .,0.0,a man hits a yellow ball at a kid and he hits it back,5.0,3.0,4.0,4.0,0.263,0.7727,0.9787,0.8723,0.8707,0.8327,0.0463,0.1551,0.247,0.1536,0.0256,0.0,0.0
+5,two guys are bothh inside playing tennis with each other,0.0,a man hits a yellow ball at a kid and he hits it back,5.0,4.0,5.0,4.6667,0.3387,0.759,0.9404,0.5945,0.5475,0.4038,0.1287,0.0,0.2968,0.0,0.0734,0.0,0.0
+6,two boys are playing the game of table tennis by hitting the ball each other,0.0,a man hits a yellow ball at a kid and he hits it back,4.0,4.0,3.0,3.6667,0.3207,0.8262,0.818,0.2727,0.1135,0.0,0.1778,0.0,0.1695,0.0,0.0,0.0,0.0

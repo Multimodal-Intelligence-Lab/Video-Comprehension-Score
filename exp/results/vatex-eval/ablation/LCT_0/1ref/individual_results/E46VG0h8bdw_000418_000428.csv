@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the two guys were standing close to each other trying to shoot each other with their laser guns .,0.3633,two guys are competing against each other playing a game .,5.0,5.0,5.0,5.0,0.5258,0.8347,0.9796,0.8819,0.8923,0.871,0.4318,0.4623,0.5159,0.4685,0.42,0.3558,0.3633
+2,a man and a woman are standing in front of a crowd and they are dancing .,0.0,two guys are competing against each other playing a game .,1.0,2.0,2.0,1.6667,0.004,0.7366,0.9677,0.5327,0.3743,0.1505,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a man is playing a guitar and singing a song in front of a crowd .,0.0,two guys are competing against each other playing a game .,1.0,2.0,1.0,1.3333,0.0812,0.8014,0.8327,0.5012,0.3762,0.2216,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,there is a man in a karate suit playing with 2 red balls .,0.0,two guys are competing against each other playing a game .,1.0,2.0,2.0,1.6667,0.1933,0.836,0.7111,0.1502,0.0,0.0,0.0351,0.0,0.0,0.0,0.0,0.0,0.0
+5,two men are standing in front of a television talking about a game of laser tag .,0.1256,two guys are competing against each other playing a game .,4.0,2.0,2.0,2.6667,0.3671,0.842,0.9467,0.8571,0.8596,0.8332,0.2484,0.2616,0.3315,0.2637,0.206,0.1231,0.1256
+6,two men crouch behind inflatable barriers while shooting paint-balls at each other .,0.0165,two guys are competing against each other playing a game .,2.0,2.0,2.0,2.0,0.3466,0.7898,0.9583,0.838,0.8412,0.7989,0.1727,0.2202,0.3182,0.2232,0.1367,0.0127,0.0165

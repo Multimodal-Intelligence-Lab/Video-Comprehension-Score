@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is twirling fiery balls on chains while out in the snow .,0.8177,a man twirls two flaming balls on ropes outside in the snow .,5.0,5.0,5.0,5.0,0.8336,0.9157,1.0,1.0,1.0,1.0,0.8177,0.8336,0.8336,0.8336,0.8177,0.8177,0.8177
+2,a man is standing in a yard and is throwing a ball at the camera .,0.1113,a man is outside on snow throwing flames around in his hands .,2.0,4.0,2.0,2.6667,0.2862,0.8373,1.0,1.0,0.9924,0.9902,0.1272,0.2692,0.2533,0.2559,0.1082,0.1272,0.1113
+3,two people are outside in the snow and one of them is holding a stick of fire .,0.1354,a man is walking around on a snow covered area twirling some chains with fire at the ends from each hand .,4.0,4.0,4.0,4.0,0.5426,0.8607,1.0,0.9168,0.9421,0.9238,0.4628,0.2504,0.507,0.2875,0.421,0.0904,0.1354
+4,a man is spinning in a circle over and over before releasing ball that flies over the snow,0.4856,a man twirls two flaming balls on ropes outside in the snow .,2.0,4.0,4.0,3.3333,0.5809,0.8559,1.0,1.0,1.0,1.0,0.5104,0.5615,0.5615,0.5615,0.4856,0.4856,0.4856
+5,a man is juggling three lit fire sticks from hand to hand .,0.2299,a man outside on a snowy day uses poi lit on fire and jumps around the snow .,2.0,4.0,4.0,3.3333,0.5101,0.8433,1.0,0.7938,0.8714,0.8395,0.412,0.3268,0.5025,0.3615,0.4028,0.1882,0.2299
+6,a man is playing with two fire sticks in a very dark setting .,0.266,a man swings around fireballs attached to chains in both hands .,4.0,4.0,4.0,4.0,0.4836,0.8445,1.0,0.8933,0.9155,0.8961,0.3568,0.3545,0.467,0.4107,0.3361,0.196,0.266

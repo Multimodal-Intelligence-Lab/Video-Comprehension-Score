@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a fit looking young man practices dead weight lifting with extremely heavy weight .,0.0,"a man is holding a heavy barbell up at shoulder height , then drops it to the floor and lifts it back to the same position .",5.0,5.0,5.0,5.0,0.5469,0.8193,0.7993,0.3958,0.5294,0.4256,0.4469,0.0,0.4331,0.1395,0.3081,0.0,0.0
+2,a man is in a gym and he is lifting a heavy weight .,0.1032,"a man is holding a heavy barbell up at shoulder height , then drops it to the floor and lifts it back to the same position .",5.0,5.0,5.0,5.0,0.5826,0.8525,0.8038,0.699,0.5459,0.4674,0.5104,0.4028,0.4807,0.2206,0.3909,0.2995,0.1032
+3,a man in a gym lifts a heavy weight over his head .,0.1994,"a man is holding a heavy barbell up at shoulder height , then drops it to the floor and lifts it back to the same position .",4.0,4.0,4.0,4.0,0.5663,0.8563,0.8245,0.63,0.6326,0.571,0.4935,0.3116,0.474,0.3144,0.3857,0.1961,0.1994
+4,a man is lifting a heavy set of weights inside of a gym .,0.0,"a man is holding a heavy barbell up at shoulder height , then drops it to the floor and lifts it back to the same position .",5.0,5.0,5.0,5.0,0.5408,0.8362,0.8408,0.4982,0.5187,0.4244,0.4508,0.0721,0.4539,0.11,0.3469,0.0,0.0
+5,a young man weightlifts a very large amount of weight in the gym .,0.214,"a man is holding a heavy barbell up at shoulder height , then drops it to the floor and lifts it back to the same position .",5.0,5.0,5.0,5.0,0.4775,0.7863,0.9109,0.8508,0.8455,0.8034,0.3355,0.3859,0.4264,0.382,0.2705,0.2189,0.214
+6,a man is weight lifting weights while in a gym setting .,0.3074,"a man is holding a heavy barbell up at shoulder height , then drops it to the floor and lifts it back to the same position .",5.0,5.0,5.0,5.0,0.5299,0.827,0.9308,0.8003,0.8208,0.7833,0.4315,0.4125,0.4949,0.4272,0.3892,0.2896,0.3074

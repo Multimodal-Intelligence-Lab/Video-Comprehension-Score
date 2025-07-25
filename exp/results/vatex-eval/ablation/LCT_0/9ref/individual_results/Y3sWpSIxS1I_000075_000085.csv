@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man is stand and showing off a tie he is wearing , as he talk about the things he likes about the tie .",0.5967,"a man is showing his outfit , specifically his tie to the camera .",5.0,2.0,3.0,3.3333,0.7581,0.8793,0.9474,0.9454,0.855,0.8317,0.7165,0.635,0.7419,0.6461,0.6976,0.5855,0.5967
+2,a man is demonstrating how to tie a neck tie .,0.6197,a guy in the bathroom demonstrating how to properly do a neck tie,5.0,5.0,3.0,4.3333,0.7367,0.9266,0.9677,0.8209,0.7615,0.7271,0.7159,0.6793,0.7179,0.6476,0.6956,0.6539,0.6197
+3,a man is demonstrating how to tie a neck tie .,0.6197,a guy in the bathroom demonstrating how to properly do a neck tie,5.0,5.0,3.0,4.3333,0.7367,0.9266,0.9677,0.8209,0.7615,0.7271,0.7159,0.6793,0.7179,0.6476,0.6956,0.6539,0.6197
+4,a man is talking while demonstrating how to tie a neck tie .,0.6378,a man begins to explain the knot in his necktie .,5.0,5.0,4.0,4.6667,0.7506,0.9053,1.0,0.8408,0.8408,0.8241,0.7103,0.7032,0.7504,0.6983,0.704,0.6437,0.6378
+5,a man demonstrates how to tie a tie while wearing it .,0.5294,"a man is showing his outfit , specifically his tie to the camera .",5.0,5.0,4.0,4.6667,0.6959,0.8808,0.9677,0.8681,0.7416,0.7041,0.6526,0.6226,0.6848,0.5869,0.641,0.5679,0.5294
+6,in a room a man is demonstrating how to tie a tie .,0.4066,"a man explaining how the way he knotted his tie displays nicely ,",4.0,5.0,4.0,4.3333,0.7014,0.8974,0.9375,0.8284,0.8529,0.8227,0.6672,0.5221,0.6712,0.4891,0.6336,0.445,0.4066

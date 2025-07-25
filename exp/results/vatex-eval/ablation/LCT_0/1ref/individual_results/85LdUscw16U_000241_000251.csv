@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a professional sports game is being played on an open grass field .,0.0109,a group of people are playing hurling in the field while someone is talking in the background .,5.0,4.0,5.0,4.6667,0.3572,0.81,0.9264,0.8169,0.8023,0.756,0.2064,0.2131,0.3061,0.1988,0.1434,0.0285,0.0109
+2,a group of people are playing a game of lacrosse on a field .,0.1018,a group of people are playing hurling in the field while someone is talking in the background .,5.0,5.0,5.0,5.0,0.4493,0.8947,0.9164,0.6945,0.6853,0.6482,0.3845,0.2071,0.3991,0.1964,0.3283,0.1138,0.1018
+3,a group of people are playing a game of lacrosse on a field .,0.1018,a group of people are playing hurling in the field while someone is talking in the background .,5.0,5.0,5.0,5.0,0.4493,0.8947,0.9164,0.6945,0.6853,0.6482,0.3845,0.2071,0.3991,0.1964,0.3283,0.1138,0.1018
+4,several sports players are playing a good game of lacrosse,0.0,a group of people are playing hurling in the field while someone is talking in the background .,5.0,5.0,5.0,5.0,0.2799,0.7973,0.8973,0.6352,0.6157,0.518,0.0968,0.0,0.1976,0.0,0.0,0.0,0.0
+5,two teams play against each other in a game of lacrosse and one man tries to take a shot .,0.0,a group of people are playing hurling in the field while someone is talking in the background .,5.0,4.0,5.0,4.6667,0.2313,0.7881,1.0,0.9168,0.9421,0.9265,0.0246,0.1616,0.2313,0.1841,0.0246,0.0,0.0
+6,lacrosse players run back and forth as they are playing a game .,0.0,a group of people are playing hurling in the field while someone is talking in the background .,5.0,5.0,5.0,5.0,0.2882,0.8054,0.7225,0.3114,0.1528,0.0,0.1163,0.0,0.0148,0.0,0.0,0.0,0.0

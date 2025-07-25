@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy is talking and demonstrating how to play a game of golf .,0.0,a gentleman on a golf course is putting a golf ball into a hole .,5.0,5.0,5.0,5.0,0.4506,0.829,0.8766,0.2982,0.075,0.0,0.3373,0.0,0.3733,0.0,0.244,0.0,0.0
+2,a man is giving instructions on how to put a golf ball .,0.4057,a gentleman on a golf course is putting a golf ball into a hole .,5.0,5.0,5.0,5.0,0.5954,0.8947,0.9388,0.7876,0.7609,0.7328,0.5478,0.4862,0.569,0.4682,0.5183,0.4258,0.4057
+3,a man is demonstrating how to properly hit a golf ball .,0.0,a gentleman on a golf course is putting a golf ball into a hole .,5.0,5.0,5.0,5.0,0.4882,0.8614,0.8988,0.5945,0.5261,0.4498,0.4058,0.1392,0.4306,0.0272,0.3389,0.0006,0.0
+4,a man is showing a golf putt and talking about how to do it .,0.0,a gentleman on a golf course is putting a golf ball into a hole .,5.0,5.0,5.0,5.0,0.5764,0.8391,0.9023,0.2242,0.0,0.0,0.4952,0.0,0.5305,0.0,0.4405,0.0,0.0
+5,an man explains a technique on how to putt a golf ball into the hole .,0.4921,a gentleman on a golf course is putting a golf ball into a hole .,5.0,5.0,5.0,5.0,0.6238,0.9085,0.9384,0.7208,0.8153,0.7967,0.5859,0.4781,0.5991,0.5386,0.5587,0.4255,0.4921
+6,a man is demonstrating the technique for hitting a golf ball across a green toward the hole and talking about it .,0.0,a gentleman on a golf course is putting a golf ball into a hole .,5.0,5.0,5.0,5.0,0.5179,0.8643,0.8713,0.4347,0.46,0.3753,0.4422,0.0,0.4467,0.0,0.3599,0.0,0.0

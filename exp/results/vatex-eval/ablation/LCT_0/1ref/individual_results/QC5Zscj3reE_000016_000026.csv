@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is waxing a man's leg with waxing paper a few times in front of another man holding a camera and in front of people .,0.1566,a woman waxes the feet of a man as a large crowd watches .,5.0,5.0,5.0,5.0,0.61,0.8458,0.8555,0.489,0.5467,0.4641,0.5389,0.1622,0.5441,0.2569,0.461,0.0518,0.1566
+2,a woman is laying on a table while another person is waxing her legs .,0.0,a woman waxes the feet of a man as a large crowd watches .,4.0,4.0,4.0,4.0,0.4556,0.8439,0.697,0.4714,0.5624,0.4815,0.3549,0.0,0.2189,0.032,0.0745,0.0,0.0
+3,a woman is laying on a table while another woman is waxing her legs .,0.0,a woman waxes the feet of a man as a large crowd watches .,4.0,4.0,4.0,4.0,0.4341,0.837,0.6612,0.5215,0.5831,0.5019,0.324,0.0,0.1441,0.0296,0.0,0.0,0.0
+4,men seated in a public place have their bare legs waxed by women to remove hair .,0.0,a woman waxes the feet of a man as a large crowd watches .,5.0,4.0,4.0,4.3333,0.4973,0.8087,0.6539,0.1422,0.0,0.0,0.3784,0.0,0.2312,0.0,0.0493,0.0,0.0
+5,a man on a cot as a woman waxes the hair on his legs .,0.0,a woman waxes the feet of a man as a large crowd watches .,5.0,5.0,5.0,5.0,0.5067,0.8773,0.6391,0.2935,0.0037,0.0,0.4377,0.0,0.2281,0.0,0.1202,0.0,0.0
+6,a man is getting his leg waxed by multiple people,0.0,a woman waxes the feet of a man as a large crowd watches .,4.0,4.0,4.0,4.0,0.5204,0.843,0.8397,0.3278,0.1193,0.0,0.4311,0.0,0.4289,0.0,0.3225,0.0,0.0

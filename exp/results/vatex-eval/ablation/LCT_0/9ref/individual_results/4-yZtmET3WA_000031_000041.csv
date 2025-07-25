@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a little boy with green top is sorting out the pants and socks and get priased,0.3772,a boy wearing a green shirt is folding clothes in front of his grandmother .,5.0,5.0,5.0,5.0,0.5672,0.8266,1.0,0.9002,0.917,0.8959,0.4749,0.4579,0.5672,0.4866,0.4749,0.3424,0.3772
+2,a little girl is sitting on the floor and she is trying to put on her shoes .,0.0,a young boy folds up some clothes that are laid out on a bed .,3.0,2.0,1.0,2.0,0.2298,0.8108,0.9396,0.6924,0.7027,0.6122,0.0501,0.0,0.0893,0.0,0.0,0.0,0.0
+3,a little girl is sitting on the floor and playing with a blanket .,0.0,a young boy folds up some clothes that are laid out on a bed .,3.0,1.0,1.0,1.6667,0.164,0.7712,1.0,0.7071,0.7219,0.6385,0.0,0.0,0.1363,0.0,0.0,0.0,0.0
+4,a man is looking at a pil of clothes on a bed then he looks online how to fold them before he folds them,0.3375,"a boy picks up items of clothing off a bed and folds them , and compliments him .",4.0,2.0,1.0,2.3333,0.5338,0.8676,0.975,0.9077,0.9162,0.8937,0.4621,0.4138,0.5068,0.4252,0.4315,0.3243,0.3375
+5,a young man is preparing a suitcase filled with clothes and is commenting on the lint roller he is also packing .,0.0852,a young boy folds up some clothes that are laid out on a bed .,3.0,1.0,1.0,1.6667,0.3309,0.8062,0.9762,0.8889,0.9106,0.8887,0.1669,0.2472,0.3146,0.2652,0.1466,0.0628,0.0852
+6,a man was showing how he was pressing the clothes and folding the clothes,0.2511,"a boy picks up items of clothing off a bed and folds them , and compliments him .",4.0,2.0,2.0,2.6667,0.46,0.8639,0.9804,0.8723,0.8541,0.8271,0.3604,0.3809,0.4355,0.3678,0.3313,0.2667,0.2511

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,different people pay for the gas at a gas station and pump gas into their car .,0.316,people are at a gas station putting gas in their car and a woman speaks .,5.0,5.0,4.0,4.6667,0.6241,0.9106,0.8571,0.6159,0.6034,0.5645,0.5872,0.3845,0.5615,0.3646,0.5184,0.3298,0.316
+2,a woman is showing how to use a gas pump .,0.0526,people are at a gas station putting gas in their car and a woman speaks .,4.0,1.0,3.0,2.6667,0.6336,0.8501,0.7333,0.5688,0.461,0.3659,0.569,0.3194,0.5003,0.1492,0.4122,0.2422,0.0526
+3,a woman is talking about a gas station and then a man is pumping gas .,0.1599,people are at a gas station putting gas in their car and a woman speaks .,4.0,4.0,4.0,4.0,0.7914,0.8987,0.5885,0.5525,0.3549,0.2822,0.7679,0.4345,0.48,0.1848,0.4641,0.4172,0.1599
+4,a person is showing how they fill up a car gas in a station .,0.0,people are at a gas station putting gas in their car and a woman speaks .,3.0,4.0,4.0,3.6667,0.645,0.8946,0.6977,0.2244,0.0093,0.0,0.6032,0.0,0.4912,0.0,0.4312,0.0,0.0
+5,several different people are shown getting gas during a news broadcast .,0.129,people are at a gas station putting gas in their car and a woman speaks .,5.0,5.0,5.0,5.0,0.5417,0.8282,0.8485,0.5078,0.6354,0.5597,0.4466,0.0914,0.4598,0.2786,0.3478,0.0,0.129
+6,the news is doing a story on gas and shows a bunch of gas stations .,0.0,people are at a gas station putting gas in their car and a woman speaks .,5.0,5.0,5.0,5.0,0.3954,0.8434,0.8118,0.3861,0.285,0.1523,0.2831,0.0,0.2552,0.0,0.117,0.0,0.0

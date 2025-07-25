@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young man is cleaning a piece of fabric on the floor while someone else is talking to him and music is playing .,0.0,"a girl is placing pieces of garbage onto a dustpan when a boy calls her "" cinderella "" and tosses something at her .",4.0,5.0,4.0,4.3333,0.3286,0.8347,1.0,0.8797,0.8843,0.8456,0.1956,0.0149,0.1804,0.0347,0.0,0.0,0.0
+2,a little girl is sitting on a table while a woman is eating a cake .,0.0,"a girl is placing pieces of garbage onto a dustpan when a boy calls her "" cinderella "" and tosses something at her .",1.0,1.0,1.0,1.0,0.2301,0.7825,0.9388,0.6262,0.7115,0.6208,0.0,0.0,0.1531,0.0,0.0,0.0,0.0
+3,a woman is holding a baby and she is blowing out candles on a cake .,0.0,"a girl is placing pieces of garbage onto a dustpan when a boy calls her "" cinderella "" and tosses something at her .",2.0,1.0,1.0,1.3333,0.1322,0.796,1.0,0.8723,0.9107,0.8878,0.0,0.0051,0.1322,0.0317,0.0,0.0,0.0
+4,a dog plays with a broom while a woman sweeps the floor .,0.0,"a girl is placing pieces of garbage onto a dustpan when a boy calls her "" cinderella "" and tosses something at her .",3.0,1.0,1.0,1.6667,0.4647,0.8323,0.9639,0.9751,0.9607,0.9471,0.3568,0.1767,0.3915,0.1643,0.2689,0.0,0.0
+5,a woman bending down and cleaning an object with a towel .,0.4287,a female is bend down on her knees picking things up off the floor .,2.0,4.0,4.0,3.3333,0.5234,0.8426,1.0,1.0,1.0,1.0,0.4287,0.5234,0.5234,0.5234,0.4287,0.4287,0.4287
+6,"at a house , a woman sweeps the floor but a dog wants to bite it .",0.0051,there is a girl sweeping into a dustpan while someone off camera hands her something .,3.0,1.0,4.0,2.6667,0.4834,0.8269,0.975,0.9013,0.9158,0.8882,0.3752,0.1446,0.3911,0.2207,0.2636,0.0,0.0051

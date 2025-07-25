@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of men working floating concert on a building site,0.405,a group of men are working on a project and pouring concrete .,4.0,4.0,4.0,4.0,0.5727,0.8701,0.9846,0.9722,0.9565,0.9457,0.5089,0.4906,0.5549,0.4823,0.4885,0.4145,0.405
+2,a group of people are riding on a horse while a man is talking .,0.0,a group of men work to lay and smooth out a cement foundation .,2.0,2.0,2.0,2.0,0.1481,0.8078,0.9804,0.8387,0.84,0.7876,0.0,0.0,0.0485,0.0,0.0,0.0,0.0
+3,a group of people are outside and a man is using a rope to cut a log .,0.0,a group of men work to lay and smooth out a cement foundation .,2.0,3.0,4.0,3.0,0.1892,0.8164,1.0,0.8589,0.8637,0.833,0.0069,0.0561,0.1673,0.0613,0.0,0.0,0.0
+4,a group of construction workers are laying concrete on a foundation .,0.81,a team of construction workers lay out cement into a foundation and smooth it out .,5.0,5.0,5.0,5.0,0.8233,0.9299,1.0,1.0,1.0,1.0,0.81,0.8233,0.8233,0.8233,0.81,0.81,0.81
+5,a man is working on a building site as he uses a machine to pour wet cement onto a wall .,0.3128,a group of men work to lay and smooth out a cement foundation .,4.0,4.0,4.0,4.0,0.5123,0.8468,0.9406,0.9831,0.9504,0.94,0.4241,0.4507,0.449,0.4317,0.3493,0.3357,0.3128
+6,a man is working at a construction site and applying cement to the outside of a building .,0.3448,a group of men work to lay and smooth out a cement foundation .,3.0,4.0,4.0,3.6667,0.5503,0.8383,0.9569,0.8659,0.8535,0.8249,0.4635,0.4596,0.53,0.4517,0.4393,0.3542,0.3448

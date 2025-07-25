@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two young boys are playing badminton on an indoor gym floor .,0.2988,two men is seen playing a game of batmanton in a indoor gym .,5.0,4.0,5.0,4.6667,0.5707,0.8857,0.9091,0.5576,0.6912,0.6514,0.5153,0.2249,0.5278,0.379,0.4668,0.1308,0.2988
+2,a group of people are playing a game of badminton .,0.0,two men is seen playing a game of batmanton in a indoor gym .,5.0,5.0,5.0,5.0,0.2547,0.8388,0.9183,0.9104,0.8715,0.8468,0.1114,0.1813,0.1884,0.1448,0.0324,0.0239,0.0
+3,two people are playing a game of tennis on a court .,0.1116,two men is seen playing a game of batmanton in a indoor gym .,4.0,4.0,4.0,4.0,0.2995,0.8655,1.0,0.8879,0.911,0.8971,0.1907,0.2111,0.2995,0.231,0.1907,0.0885,0.1116
+4,two men play a game of racquetball together on a court .,0.3887,two men is seen playing a game of batmanton in a indoor gym .,4.0,4.0,4.0,4.0,0.5088,0.8776,1.0,0.8933,0.9155,0.9037,0.4403,0.4502,0.5088,0.4635,0.4403,0.3735,0.3887
+5,a man and a boy play racquetball against each other in an indoor racquetball court .,0.0,two men is seen playing a game of batmanton in a indoor gym .,4.0,3.0,4.0,3.6667,0.4246,0.8347,0.9569,0.5932,0.5986,0.5191,0.3106,0.03,0.3986,0.0387,0.2796,0.0,0.0
+6,"two men play squash , which is an indoor racquetball game .",0.2931,two men is seen playing a game of batmanton in a indoor gym .,3.0,4.0,3.0,3.3333,0.5787,0.9082,0.8989,0.6747,0.6562,0.6215,0.5361,0.3755,0.5313,0.358,0.4839,0.3124,0.2931

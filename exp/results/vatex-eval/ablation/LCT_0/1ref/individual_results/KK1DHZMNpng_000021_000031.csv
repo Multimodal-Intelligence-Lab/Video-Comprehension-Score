@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is sitting playing three notes on a keyboard and slows the speed of the tune gradually .,0.4227,a woman is playing the same three notes on a piano with her left hand .,5.0,5.0,5.0,5.0,0.5084,0.858,0.9888,1.0,0.9925,0.9912,0.4271,0.5084,0.5028,0.5047,0.4206,0.4271,0.4227
+2,a woman is playing a song on a keyboard with her hands .,0.4151,a woman is playing the same three notes on a piano with her left hand .,5.0,5.0,4.0,4.6667,0.4804,0.8884,1.0,1.0,1.0,1.0,0.4151,0.4804,0.4804,0.4804,0.4151,0.4151,0.4151
+3,a woman is sitting on a piano and playing the piano .,0.0,a woman is playing the same three notes on a piano with her left hand .,5.0,5.0,3.0,4.3333,0.535,0.8935,0.8067,0.3052,0.0715,0.0,0.4796,0.0,0.4236,0.0,0.3549,0.0,0.0
+4,a person is playing beats on a virtual keyboard with their fingers .,0.0,a woman is playing the same three notes on a piano with her left hand .,5.0,4.0,4.0,4.3333,0.2645,0.8287,0.9804,0.6435,0.6283,0.5514,0.1125,0.0,0.2498,0.0,0.0947,0.0,0.0
+5,a woman playing a simple song on an electronic keyboard while looking at sheet music .,0.297,a woman is playing the same three notes on a piano with her left hand .,4.0,4.0,3.0,3.6667,0.4385,0.8435,0.9744,0.9499,0.9468,0.9369,0.3344,0.4089,0.4238,0.407,0.3169,0.2993,0.297
+6,"inside a room , a man sits and plays chords on an electronic keyboard .",0.0,a woman is playing the same three notes on a piano with her left hand .,5.0,4.0,4.0,4.3333,0.2519,0.7701,0.9279,0.4538,0.4142,0.2394,0.0286,0.0,0.1938,0.0,0.0,0.0,0.0

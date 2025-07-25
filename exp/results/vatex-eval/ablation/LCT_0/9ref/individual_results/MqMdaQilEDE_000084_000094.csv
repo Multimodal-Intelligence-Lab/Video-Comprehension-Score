@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy sits at a clay table spinning a clay pot .,0.6452,"a man works with clay pottery and water to spin a pot with his hands ,",5.0,4.0,5.0,4.6667,0.8125,0.9092,0.96,0.805,0.8087,0.7799,0.7938,0.6903,0.7696,0.6917,0.7466,0.6435,0.6452
+2,a man is using a pottery wheel to make a clay pot .,0.7055,a man is using a pottery wheel to make a large vase .,5.0,5.0,5.0,5.0,0.9004,0.9482,0.9123,0.8792,0.8803,0.8729,0.893,0.7223,0.7286,0.7226,0.7059,0.7052,0.7055
+3,a man is using a pottery wheel to make pottery .,0.743,a man is using a pottery wheel to make a large vase .,5.0,5.0,5.0,5.0,0.8387,0.9625,0.9403,0.9188,0.8767,0.8719,0.8187,0.764,0.7836,0.7527,0.7586,0.7548,0.743
+4,a man uses a pottery wheel to construct a large clay vase .,0.8448,a man is using a pottery wheel to make a large vase .,5.0,5.0,5.0,5.0,0.9461,0.9366,0.9565,0.8542,0.8537,0.8438,0.9425,0.8459,0.9437,0.8454,0.9398,0.8453,0.8448
+5,a potter sculpts the clay pot while it's on the turnstile .,0.5095,a man is making a clay pot on a turn wheel .,5.0,4.0,5.0,4.6667,0.7577,0.8581,0.8571,0.9111,0.8249,0.7915,0.7177,0.6958,0.7162,0.5355,0.6693,0.6455,0.5095
+6,a man molds a vase of clay that is spinning on a fast machine .,0.5071,a man is making a clay pot on a turn wheel .,5.0,5.0,5.0,5.0,0.8235,0.9157,1.0,0.8723,0.8863,0.8656,0.8073,0.5764,0.8036,0.5831,0.7855,0.4992,0.5071

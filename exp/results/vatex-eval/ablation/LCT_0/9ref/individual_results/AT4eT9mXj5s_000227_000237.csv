@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man moves earth on a road using a tractor .,0.2751,"a tractor is driven down over a small dirt hill , pushing away debris .",4.0,4.0,5.0,4.3333,0.7054,0.861,0.8966,0.8775,0.7554,0.6926,0.6557,0.5034,0.5511,0.4232,0.4962,0.3759,0.2751
+2,a man is driving a bulldozer in a field with a bulldozer .,0.3692,a man is driving a tractor with a plow in front of it to move dirt around .,5.0,5.0,5.0,5.0,0.6872,0.9066,0.9796,0.9387,0.9381,0.9257,0.655,0.4968,0.6447,0.4745,0.6081,0.472,0.3692
+3,a man is using a bulldozer to move a large pile of dirt .,0.4569,a man drives a tractor forward with a blade that moves a large amount of dirt .,5.0,5.0,5.0,5.0,0.6272,0.8708,0.9756,0.9722,0.9565,0.9476,0.5534,0.5266,0.6086,0.527,0.531,0.4564,0.4569
+4,a man in is dumping dirt with a tractor onto a mound of dirt .,0.2683,a man drives a tractor forward with a blade that moves a large amount of dirt .,3.0,2.0,4.0,3.0,0.6981,0.879,0.9543,0.7689,0.7448,0.6781,0.6565,0.4172,0.6455,0.3857,0.5967,0.3237,0.2683
+5,a man is using a small tractor to pour dirt into a large pile .,0.314,"a tractor is driven down over a small dirt hill , pushing away debris .",4.0,2.0,3.0,3.0,0.6479,0.8735,0.9563,0.815,0.7576,0.7103,0.5856,0.4501,0.5979,0.4008,0.5361,0.368,0.314
+6,a guy is using his tractor to run a snowblower down the street .,0.1002,a man is driving a tractor with a plow in front of it to move dirt around .,2.0,2.0,3.0,2.3333,0.5742,0.8139,0.9787,0.8515,0.9107,0.8862,0.4769,0.2682,0.5506,0.2917,0.4478,0.1009,0.1002

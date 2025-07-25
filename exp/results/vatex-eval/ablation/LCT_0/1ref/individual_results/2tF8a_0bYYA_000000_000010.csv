@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a child enjoying the sounds of an instrument while two women watch .,0.0,a small child bangs against a xylophone being held by a woman,4.0,5.0,5.0,4.6667,0.4374,0.8171,0.9404,0.6627,0.6292,0.5462,0.3115,0.1511,0.4017,0.1058,0.2678,0.0,0.0
+2,a little girl is playing with a toy xylophone .,0.0,a small child bangs against a xylophone being held by a woman,5.0,5.0,5.0,5.0,0.6528,0.8491,0.7636,0.5323,0.2546,0.1222,0.5911,0.2835,0.5453,0.0,0.4645,0.2087,0.0
+3,a little girl is playing with a xylophone while a woman is talking to her .,0.1691,a small child bangs against a xylophone being held by a woman,5.0,5.0,5.0,5.0,0.6731,0.8739,0.8077,0.3414,0.48,0.4049,0.6259,0.0216,0.5953,0.2274,0.5368,0.0,0.1691
+4,a litle girl is kneeling on the floor playing a toy xylophone .,0.0,a small child bangs against a xylophone being held by a woman,4.0,4.0,4.0,4.0,0.5612,0.8194,0.72,0.6034,0.4276,0.3015,0.4645,0.2728,0.3905,0.0,0.2562,0.1125,0.0
+5,"a young child sitting down , playing with his toy xylophone .",0.2103,a small child bangs against a xylophone being held by a woman,4.0,4.0,4.0,4.0,0.5831,0.8411,0.7407,0.5445,0.6277,0.5573,0.5043,0.2189,0.4372,0.3358,0.3309,0.0897,0.2103
+6,a toddler sits on her legs swaying side to side as she plays her musical toy .,0.0,a small child bangs against a xylophone being held by a woman,4.0,3.0,4.0,3.6667,0.3794,0.7559,0.7569,0.5517,0.4935,0.33,0.1789,0.0,0.1801,0.0,0.0,0.0,0.0

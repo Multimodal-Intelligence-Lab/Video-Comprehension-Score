@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two boys played rock paper scissors as they are filmed .,0.8017,a pair of boys are playing rock paper scissors together .,5.0,5.0,5.0,5.0,0.8357,0.9494,0.9846,0.9798,0.9798,0.978,0.8269,0.8166,0.8184,0.8175,0.8063,0.8007,0.8017
+2,two young men are playing rock paper scissors and one of them is laughing .,0.6308,a pair of boys are playing rock paper scissors together .,4.0,5.0,4.0,4.3333,0.6666,0.9166,1.0,1.0,1.0,1.0,0.6308,0.6666,0.6666,0.6666,0.6308,0.6308,0.6308
+3,"two boys are playing a game of rock , paper , scissors .",0.9822,"two boys play a game of rock , paper , scissors with each other .",5.0,5.0,5.0,5.0,0.9823,0.9915,1.0,1.0,1.0,1.0,0.9822,0.9823,0.9823,0.9823,0.9822,0.9822,0.9822
+4,"two boys play a quick game of rock paper scissors ; the boy on the right wins with scissors , while other individuals appear in the background .",0.6569,"two boys play rock , paper , scissors together before a similar shot .",4.0,4.0,4.0,4.0,0.795,0.9492,0.9587,0.7715,0.8267,0.8042,0.784,0.6686,0.73,0.6879,0.7163,0.6357,0.6569
+5,"a boy and women both play a game of rock , paper , scissors .",0.651,"two boys play a game of rock , paper , scissors with each other .",4.0,4.0,4.0,4.0,0.6978,0.9499,0.975,0.8748,0.9115,0.9068,0.6819,0.6485,0.6883,0.6684,0.6719,0.63,0.651
+6,"two men play a game of rock , scissors , and paper .",0.7188,"two boys play a game of rock , paper , scissors with each other .",5.0,4.0,4.0,4.3333,0.7884,0.9748,0.9846,0.8699,0.8872,0.8807,0.7829,0.5772,0.7747,0.7208,0.7689,0.5742,0.7188

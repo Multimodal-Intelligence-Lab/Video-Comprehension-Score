@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the little boy is having fun as he tries to build an aircraft as shown in the book .,0.4477,a boy is working on lego pieces building something from the design book .,5.0,5.0,5.0,5.0,0.5812,0.8355,0.9885,0.8983,0.9412,0.9279,0.4987,0.5107,0.5664,0.5386,0.481,0.4144,0.4477
+2,a group of people are playing a game of monopoly .,0.0,a boy is building a lego set in fast motion while music is playing .,1.0,1.0,1.0,1.0,0.103,0.7968,0.9756,0.9802,0.9652,0.9531,0.0,0.0386,0.0421,0.0094,0.0,0.0,0.0
+3,a young boy is sitting at a table and playing a puzzle .,0.0,a boy is building a lego set in fast motion while music is playing .,4.0,4.0,4.0,4.0,0.4635,0.8433,0.937,0.8119,0.8259,0.7812,0.3638,0.134,0.3562,0.1487,0.2366,0.0,0.0
+4,a boy playing with legos tries to build something special .,0.6476,a boy is working on lego pieces building something from the design book .,5.0,5.0,5.0,5.0,0.792,0.8739,1.0,0.8933,0.9155,0.9028,0.7577,0.686,0.7195,0.6936,0.681,0.6388,0.6476
+5,a young boy shows off his lego collection while sitting at the top of a staircase .,0.4105,a young boy is assembling lego models of different aircrafts .,2.0,2.0,4.0,2.6667,0.5592,0.8469,0.9859,0.8659,0.8831,0.8619,0.4795,0.4909,0.5529,0.5008,0.472,0.3989,0.4105
+6,a kid squatting in a room is building lego structure while talking .,0.3097,a kid is sitting at a table doing a fast speed lego build of s et .,4.0,4.0,4.0,4.0,0.5872,0.8557,1.0,0.7612,0.7966,0.7458,0.5126,0.4113,0.5617,0.4153,0.4826,0.3051,0.3097

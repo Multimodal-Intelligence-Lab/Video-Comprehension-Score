@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman talks to a little boy telling him to make funny faces .,0.2911,a woman is talking to a child in a stroller and asking them to raise each of there eyebrows one at a time .,5.0,5.0,5.0,5.0,0.4695,0.8373,0.9665,0.8853,0.8938,0.8731,0.3664,0.4008,0.4511,0.4064,0.3444,0.2843,0.2911
+2,a woman is sitting in front of a camera and talking to the camera .,0.0,a woman is talking to a child in a stroller and asking them to raise each of there eyebrows one at a time .,3.0,4.0,1.0,2.6667,0.2395,0.8125,1.0,0.9766,0.9697,0.9609,0.064,0.0636,0.1232,0.0569,0.0,0.0,0.0
+3,a young girl is looking at the camera and looking at the camera .,0.0589,a young boy makes his eyebrows move at the request of another person .,2.0,4.0,4.0,3.3333,0.3222,0.8115,1.0,1.0,1.0,1.0,0.1624,0.2363,0.2767,0.2363,0.1061,0.0589,0.0589
+4,a kid seated is laughing and rising her eyebrows while a woman is laughing in the background .,0.0,a woman is talking to a child in a stroller and asking them to raise each of there eyebrows one at a time .,4.0,5.0,4.0,4.3333,0.4359,0.8585,0.9783,0.7409,0.7805,0.7266,0.3337,0.1695,0.3513,0.1455,0.2033,0.0,0.0
+5,a kid is sitting in a stroller and people are poking their stomach .,0.3336,a kid sitting in a stroller winks his eyebrows several times while he is encouraged .,3.0,4.0,3.0,3.3333,0.5965,0.8603,0.9804,0.7109,0.8085,0.7687,0.531,0.4193,0.5752,0.4266,0.5062,0.325,0.3336
+6,a baby boy is making faces and a man is talking to him .,0.168,a boy in a stroller in the street is moving his eyebrows up and down for another person .,4.0,5.0,4.0,4.3333,0.4259,0.8419,0.9851,0.8622,0.8313,0.7992,0.3107,0.3262,0.4028,0.3012,0.2861,0.1979,0.168

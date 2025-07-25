@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,various pictures of food cooking on a fire are shown and then the finished result while music plays .,0.1742,a man is using an old cooking technique in order to make food outdoors .,5.0,5.0,5.0,5.0,0.708,0.8519,0.9046,0.791,0.792,0.7388,0.6572,0.3415,0.6201,0.3424,0.5541,0.1732,0.1742
+2,a man is showing how to cook a meal in a frying pan .,0.0335,a man is using an old cooking technique in order to make food outdoors .,4.0,4.0,2.0,3.3333,0.439,0.8447,1.0,0.7591,0.8045,0.752,0.326,0.1556,0.4129,0.1955,0.2947,0.0,0.0335
+3,a man is demonstrating how to cook sausages in a frying pan .,0.0,a man crouched beside a pot in the coal and a collection of pots of vegetables and soup on the table,2.0,3.0,2.0,2.3333,0.3627,0.8143,0.96,0.7337,0.7685,0.7019,0.2138,0.0,0.3222,0.0044,0.1638,0.0,0.0
+4,a man is sitting and stirring up some type of food while another man looks while he cooks .,0.0,a man crouched beside a pot in the coal and a collection of pots of vegetables and soup on the table,3.0,2.0,2.0,2.3333,0.3487,0.8314,0.9737,0.7423,0.76,0.6905,0.2102,0.0,0.2443,0.0,0.0456,0.0,0.0
+5,outside someone started a fire and is cooking food on top of it .,0.2486,"during a series of clips , images of a man near a campfire and food are shown .",5.0,5.0,4.0,4.6667,0.6886,0.8643,1.0,0.9199,0.9397,0.9212,0.6284,0.4044,0.6045,0.3905,0.5279,0.2658,0.2486
+6,a man is cooking a basket of food over a grill flame .,0.2542,a man makes several dishes over outdoor beds of coals .,5.0,4.0,2.0,3.6667,0.539,0.8447,0.9787,0.8094,0.8101,0.7627,0.4543,0.4025,0.5059,0.403,0.4015,0.2535,0.2542

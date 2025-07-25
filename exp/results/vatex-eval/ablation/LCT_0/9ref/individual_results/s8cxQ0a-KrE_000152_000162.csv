@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person standing in the bush was stretching a alien toy to another lady,0.185,"some teenagers are outdoors and one girl has a tiny , toy alien in her hand and says the other girl birthed it while the other girl says no .",4.0,5.0,5.0,4.6667,0.5474,0.8609,0.9612,0.8423,0.863,0.8329,0.4543,0.3287,0.4965,0.3362,0.3929,0.1758,0.185
+2,a woman is holding a cell phone and talking about it .,0.0,a group of strung out teenage girls blame each other when a martian baby is birthed .,2.0,2.0,1.0,1.6667,0.2234,0.8297,0.9697,0.9717,0.9384,0.9199,0.0298,0.1575,0.1991,0.1382,0.0,0.0,0.0
+3,a person is holding a snake in their hand and then they are talking to each other .,0.0,a group of strung out teenage girls blame each other when a martian baby is birthed .,4.0,4.0,1.0,3.0,0.2489,0.868,1.0,1.0,1.0,1.0,0.1346,0.0454,0.172,0.0454,0.0461,0.0,0.0
+4,a tiny baby girls sits in her toys and shakes her head around .,0.0,a group of strung out teenage girls blame each other when a martian baby is birthed .,1.0,1.0,1.0,1.0,0.3577,0.8448,0.9518,0.7061,0.7477,0.668,0.1997,0.0,0.2949,0.0,0.1214,0.0,0.0
+5,a woman holds a toy xylophone as a young boy bangs on it with the the wand and they both laugh .,0.0,a group of strung out teenage girls blame each other when a martian baby is birthed .,2.0,2.0,1.0,1.6667,0.3694,0.8376,0.9645,0.7229,0.7412,0.6574,0.2472,0.0,0.2631,0.0,0.1202,0.0,0.0
+6,"a child is jumping on a bouny castle with an adult female , she is laughing and jumbing and an unseen male is speaking to her .",0.0,a group of strung out teenage girls blame each other when a martian baby is birthed .,2.0,2.0,1.0,1.6667,0.1953,0.7919,0.91,0.8316,0.8104,0.7518,0.0,0.0,0.0826,0.0,0.0,0.0,0.0

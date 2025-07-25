@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man moonwalks across a stage as music plays and people scream .,0.4184,michael jackson is on stage dancing then moon walks backwards .,5.0,5.0,5.0,5.0,0.7093,0.8376,0.9555,0.7053,0.747,0.6786,0.6469,0.4934,0.6852,0.4987,0.6005,0.4151,0.4184
+2,a man is performing a dance routine in front of a crowd .,0.407,michael jackson in his element performinng a break dance on stage with the sound of a cheering crowd .,5.0,5.0,2.0,4.0,0.5828,0.8522,1.0,1.0,1.0,1.0,0.4897,0.5019,0.5705,0.4946,0.4747,0.4155,0.407
+3,a man is dancing on a stage in front of a crowd .,0.3001,a video of a popular music star dancing on stage adored by screaming fans .,5.0,5.0,3.0,4.3333,0.5274,0.8888,0.9677,0.8426,0.8264,0.7923,0.4492,0.4263,0.4785,0.4151,0.3923,0.3135,0.3001
+4,a man is shown dancing to music on a stage as the crowd cheers .,0.5259,a person is dancing to music while other people are enjoying it,5.0,5.0,5.0,5.0,0.6027,0.8706,1.0,1.0,1.0,1.0,0.5282,0.5872,0.5872,0.5872,0.5259,0.5259,0.5259
+5,a man does a popular dance with music playing in the background .,0.418,a person is dancing to music while other people are enjoying it,5.0,5.0,5.0,5.0,0.5993,0.861,1.0,0.9305,0.9284,0.9099,0.5346,0.5234,0.5859,0.4989,0.5191,0.4465,0.418
+6,one man is dancing like michael jackson in his room,0.0,"it is footage of a extremely famous legendary pop star , dancing around on stage in front of a huge crowd of people .",4.0,4.0,4.0,4.0,0.5439,0.8669,0.9623,0.6483,0.7163,0.6376,0.4571,0.2293,0.3861,0.0798,0.2612,0.111,0.0

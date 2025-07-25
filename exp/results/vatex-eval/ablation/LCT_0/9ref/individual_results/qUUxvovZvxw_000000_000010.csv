@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is sharpening a pencil that is being held in a vice .,0.7609,a man uses a saw to sharpen a pencil clamped in a vice,5.0,5.0,5.0,5.0,0.8486,0.9146,1.0,1.0,1.0,1.0,0.8344,0.8233,0.8339,0.7649,0.817,0.8068,0.7609
+2,a man is using a tool to sharpen a piece of wood .,0.4917,a man grabbing an iron tool and sanding a small piece of wood .,4.0,5.0,5.0,4.6667,0.5884,0.8891,1.0,1.0,1.0,1.0,0.537,0.5364,0.5884,0.5481,0.537,0.4786,0.4917
+3,a man is using a tool to carve a piece of wood .,0.3841,a guy stands at an anvil and shaves a piece of wood,4.0,5.0,5.0,4.6667,0.5235,0.8899,1.0,1.0,1.0,1.0,0.4646,0.4819,0.5071,0.4819,0.4461,0.3841,0.3841
+4,a man is shown using a drill and a hand sharpener to sharpen a pencil .,0.3832,a man uses a saw to sharpen a pencil clamped in a vice,5.0,3.0,4.0,4.0,0.67,0.8564,1.0,0.8933,0.9155,0.8856,0.6145,0.5103,0.5859,0.4718,0.5164,0.428,0.3832
+5,a man continuously sharpens a pencil until it's sharp .,0.4952,a man uses a saw to sharpen a pencil clamped in a vice,4.0,5.0,5.0,4.6667,0.6659,0.8971,1.0,1.0,1.0,1.0,0.6275,0.5685,0.5709,0.5532,0.5196,0.5125,0.4952
+6,a man is using a high powered drill to sharpen a pencil .,0.4346,a man uses a saw to sharpen a pencil clamped in a vice,4.0,4.0,4.0,4.0,0.6323,0.8636,0.9846,0.8792,0.929,0.9072,0.5743,0.4686,0.5633,0.516,0.4899,0.3794,0.4346

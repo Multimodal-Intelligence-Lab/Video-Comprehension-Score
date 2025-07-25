@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two people are fencing while others stand and watch on a court .,0.7406,two people are fencing each other in front of a crowd of people .,5.0,4.0,5.0,4.6667,0.7961,0.9118,0.955,0.9534,0.8846,0.8701,0.7705,0.7861,0.7757,0.7695,0.7476,0.7593,0.7406
+2,a group of people are in a gym doing a dance routine .,0.1861,people in a gym practice fencing as music plays in the background .,4.0,4.0,4.0,4.0,0.5279,0.8972,0.95,0.9188,0.8278,0.7875,0.4623,0.3681,0.4693,0.3062,0.4085,0.2637,0.1861
+3,a group of people are in a gym doing a dance routine .,0.1861,people in a gym practice fencing as music plays in the background .,4.0,4.0,4.0,4.0,0.5279,0.8972,0.95,0.9188,0.8278,0.7875,0.4623,0.3681,0.4693,0.3062,0.4085,0.2637,0.1861
+4,"indoors , at a competition two people are fencing while others watch on .",0.4998,"in a gymnasium two students are engaged in a fencing match , as other students look on .",5.0,5.0,5.0,5.0,0.6948,0.904,0.9104,0.8531,0.8213,0.7838,0.6564,0.602,0.6505,0.5866,0.5917,0.5185,0.4998
+5,two students at an academy are fencing with each other .,0.2358,"in a gymnasium two students are engaged in a fencing match , as other students look on .",5.0,5.0,5.0,5.0,0.6863,0.8955,0.9286,0.7187,0.5748,0.4866,0.6497,0.3902,0.6016,0.2766,0.5551,0.3559,0.2358
+6,two people are shown dueling at fencing in a large auditorium .,0.4916,a pair of people compete in a fencing match in a gym .,4.0,4.0,4.0,4.0,0.671,0.8895,1.0,0.8723,0.8863,0.8627,0.6288,0.5721,0.6268,0.5789,0.5615,0.4834,0.4916

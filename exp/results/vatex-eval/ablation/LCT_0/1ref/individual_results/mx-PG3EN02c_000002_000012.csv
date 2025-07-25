@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"on an empty track , a single person runs and jumps over two hurdles .",0.0,a young athlete is heard running before he comes into sight of a camera while he hurdles over obstacles in an athletic course .,5.0,5.0,4.0,4.6667,0.4996,0.8108,0.8485,0.1851,0.105,0.0,0.3829,0.0,0.4103,0.0,0.2727,0.0,0.0
+2,a man is running on a track and jumping over a hurdle .,0.3348,a young athlete is heard running before he comes into sight of a camera while he hurdles over obstacles in an athletic course .,5.0,5.0,5.0,5.0,0.5176,0.8106,0.9697,0.9149,0.8947,0.8701,0.4049,0.4727,0.5025,0.4608,0.3863,0.3495,0.3348
+3,a young man runs and jumps over a hurdle on a track .,0.5561,a young athlete is heard running before he comes into sight of a camera while he hurdles over obstacles in an athletic course .,5.0,5.0,5.0,5.0,0.6632,0.8333,0.9762,0.8889,0.9106,0.8928,0.5958,0.6211,0.655,0.6301,0.5859,0.5453,0.5561
+4,a man demonstrates the proper method of clearing hurdles in track .,0.1985,a young athlete is heard running before he comes into sight of a camera while he hurdles over obstacles in an athletic course .,5.0,4.0,5.0,4.6667,0.4963,0.7865,0.9305,0.7717,0.799,0.7445,0.3596,0.3473,0.4586,0.3696,0.3117,0.1701,0.1985
+5,a man runs down a track and takes a long jump .,0.0,a young athlete is heard running before he comes into sight of a camera while he hurdles over obstacles in an athletic course .,3.0,4.0,4.0,3.6667,0.3714,0.7685,0.9408,0.7759,0.8077,0.7497,0.182,0.1898,0.3318,0.2217,0.1305,0.0,0.0
+6,a man makes a high jump at a track meet with others watching .,0.0,a young athlete is heard running before he comes into sight of a camera while he hurdles over obstacles in an athletic course .,4.0,4.0,3.0,3.6667,0.2818,0.7508,0.9478,0.3668,0.3943,0.1932,0.0434,0.0,0.2423,0.0,0.0,0.0,0.0

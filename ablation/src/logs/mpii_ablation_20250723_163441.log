@@ -1,0 +1,130 @@
+2025-07-23 16:34:41 [INFO] Initializing models...
+2025-07-23 16:34:48 [INFO] Models initialized successfully
+2025-07-23 16:34:48 [INFO] Starting ablation study pipeline
+2025-07-23 16:34:48 [INFO] Data directory: /ces/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/ablation/src/../data
+2025-07-23 16:34:48 [INFO] Output folder: /ces/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/ablation/src/../results
+2025-07-23 16:34:48 [INFO] Experiment ID: ablation_20250723_163441
+2025-07-23 16:34:48 [INFO] Loading test cases from: /ces/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/ablation/src/../data
+2025-07-23 16:34:48 [INFO] Running Ablation 1 (all VCS metrics)
+2025-07-23 16:34:48 [INFO] Starting ablation_1 ablation study
+2025-07-23 16:34:48 [INFO] Total test cases to process: 260
+2025-07-23 16:35:02 [INFO] Processing ablation_1: 10/260 (3.8%)
+2025-07-23 16:35:02 [INFO] ETA: 5.8 minutes
+2025-07-23 16:35:08 [INFO] Processing ablation_1: 20/260 (7.7%)
+2025-07-23 16:35:08 [INFO] ETA: 3.9 minutes
+2025-07-23 16:35:13 [INFO] Processing ablation_1: 30/260 (11.5%)
+2025-07-23 16:35:13 [INFO] ETA: 3.2 minutes
+2025-07-23 16:35:19 [INFO] Processing ablation_1: 40/260 (15.4%)
+2025-07-23 16:35:19 [INFO] ETA: 2.9 minutes
+2025-07-23 16:35:26 [INFO] Processing ablation_1: 50/260 (19.2%)
+2025-07-23 16:35:26 [INFO] ETA: 2.7 minutes
+2025-07-23 16:35:31 [INFO] Processing ablation_1: 60/260 (23.1%)
+2025-07-23 16:35:31 [INFO] ETA: 2.3 minutes
+2025-07-23 16:35:36 [INFO] Processing ablation_1: 70/260 (26.9%)
+2025-07-23 16:35:36 [INFO] ETA: 2.2 minutes
+2025-07-23 16:35:42 [INFO] Processing ablation_1: 80/260 (30.8%)
+2025-07-23 16:35:42 [INFO] ETA: 2.0 minutes
+2025-07-23 16:35:49 [INFO] Processing ablation_1: 90/260 (34.6%)
+2025-07-23 16:35:49 [INFO] ETA: 1.9 minutes
+2025-07-23 16:35:54 [INFO] Processing ablation_1: 100/260 (38.5%)
+2025-07-23 16:35:54 [INFO] ETA: 1.8 minutes
+2025-07-23 16:36:00 [INFO] Processing ablation_1: 110/260 (42.3%)
+2025-07-23 16:36:00 [INFO] ETA: 1.6 minutes
+2025-07-23 16:36:07 [INFO] Processing ablation_1: 120/260 (46.2%)
+2025-07-23 16:36:07 [INFO] ETA: 1.5 minutes
+2025-07-23 16:36:14 [INFO] Processing ablation_1: 130/260 (50.0%)
+2025-07-23 16:36:14 [INFO] ETA: 1.4 minutes
+2025-07-23 16:36:20 [INFO] Processing ablation_1: 140/260 (53.8%)
+2025-07-23 16:36:20 [INFO] ETA: 1.3 minutes
+2025-07-23 16:36:26 [INFO] Processing ablation_1: 150/260 (57.7%)
+2025-07-23 16:36:26 [INFO] ETA: 1.2 minutes
+2025-07-23 16:36:31 [INFO] Processing ablation_1: 160/260 (61.5%)
+2025-07-23 16:36:31 [INFO] ETA: 1.1 minutes
+2025-07-23 16:36:39 [INFO] Processing ablation_1: 170/260 (65.4%)
+2025-07-23 16:36:39 [INFO] ETA: 1.0 minutes
+2025-07-23 16:36:45 [INFO] Processing ablation_1: 180/260 (69.2%)
+2025-07-23 16:36:45 [INFO] ETA: 0.9 minutes
+2025-07-23 16:36:52 [INFO] Processing ablation_1: 190/260 (73.1%)
+2025-07-23 16:36:52 [INFO] ETA: 0.8 minutes
+2025-07-23 16:37:00 [INFO] Processing ablation_1: 200/260 (76.9%)
+2025-07-23 16:37:00 [INFO] ETA: 0.7 minutes
+2025-07-23 16:37:07 [INFO] Processing ablation_1: 210/260 (80.8%)
+2025-07-23 16:37:07 [INFO] ETA: 0.6 minutes
+2025-07-23 16:37:15 [INFO] Processing ablation_1: 220/260 (84.6%)
+2025-07-23 16:37:15 [INFO] ETA: 0.4 minutes
+2025-07-23 16:37:21 [INFO] Processing ablation_1: 230/260 (88.5%)
+2025-07-23 16:37:21 [INFO] ETA: 0.3 minutes
+2025-07-23 16:37:25 [INFO] Processing ablation_1: 240/260 (92.3%)
+2025-07-23 16:37:25 [INFO] ETA: 0.2 minutes
+2025-07-23 16:37:31 [INFO] Processing ablation_1: 250/260 (96.2%)
+2025-07-23 16:37:31 [INFO] ETA: 0.1 minutes
+2025-07-23 16:37:33 [INFO] Processing ablation_1: 260/260 (100.0%)
+2025-07-23 16:37:33 [INFO] ETA: 0.0 minutes
+2025-07-23 16:37:33 [INFO] Completed ablation_1 ablation study
+2025-07-23 16:37:33 [INFO] Processed 260 test cases in 165.02s
+2025-07-23 16:37:33 [INFO] Average processing time per test case: 0.63s
+2025-07-23 16:37:33 [INFO] Key metric averages: {'Precision NAS-D': np.float64(0.8615433441419839), 'Recall NAS-D': np.float64(0.8585593630195485), 'NAS-D': np.float64(0.8586101486584976), 'Precision NAS-L': np.float64(0.7952283292115798), 'Recall NAS-L': np.float64(0.7838078930033996), 'NAS-L': np.float64(0.7809226883099804), 'NAS': np.float64(0.7735307904248631), 'Precision LAS': np.float64(0.7722914065349397), 'Recall LAS': np.float64(0.7718917970122379), 'LAS': np.float64(0.7661512916685187), 'GAS': np.float64(0.8221528694606745), 'GAS-LAS-Scaled': np.float64(0.7371866006205783), 'VCS': np.float64(0.5876309348718328)}
+2025-07-23 16:37:34 [INFO] Saved 10 individual ablation_1 CSV files to: /ces/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/ablation/src/../results/ablation_1/individual_results
+2025-07-23 16:37:34 [INFO] Saved ablation_1 aggregated results to: /ces/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/ablation/src/../results/ablation_1/aggregated_results/aggregated_results.csv
+2025-07-23 16:37:34 [INFO] Running Ablation 2 (custom ablation metrics)
+2025-07-23 16:37:34 [INFO] Starting ablation_2 ablation study
+2025-07-23 16:37:34 [INFO] Total test cases to process: 260
+2025-07-23 16:37:47 [INFO] Processing ablation_2: 10/260 (3.8%)
+2025-07-23 16:37:47 [INFO] ETA: 5.5 minutes
+2025-07-23 16:37:52 [INFO] Processing ablation_2: 20/260 (7.7%)
+2025-07-23 16:37:52 [INFO] ETA: 3.7 minutes
+2025-07-23 16:37:56 [INFO] Processing ablation_2: 30/260 (11.5%)
+2025-07-23 16:37:56 [INFO] ETA: 2.8 minutes
+2025-07-23 16:38:04 [INFO] Processing ablation_2: 40/260 (15.4%)
+2025-07-23 16:38:04 [INFO] ETA: 2.8 minutes
+2025-07-23 16:38:09 [INFO] Processing ablation_2: 50/260 (19.2%)
+2025-07-23 16:38:09 [INFO] ETA: 2.5 minutes
+2025-07-23 16:38:14 [INFO] Processing ablation_2: 60/260 (23.1%)
+2025-07-23 16:38:14 [INFO] ETA: 2.2 minutes
+2025-07-23 16:38:19 [INFO] Processing ablation_2: 70/260 (26.9%)
+2025-07-23 16:38:19 [INFO] ETA: 2.1 minutes
+2025-07-23 16:38:25 [INFO] Processing ablation_2: 80/260 (30.8%)
+2025-07-23 16:38:25 [INFO] ETA: 1.9 minutes
+2025-07-23 16:38:30 [INFO] Processing ablation_2: 90/260 (34.6%)
+2025-07-23 16:38:30 [INFO] ETA: 1.8 minutes
+2025-07-23 16:38:36 [INFO] Processing ablation_2: 100/260 (38.5%)
+2025-07-23 16:38:36 [INFO] ETA: 1.7 minutes
+2025-07-23 16:38:44 [INFO] Processing ablation_2: 110/260 (42.3%)
+2025-07-23 16:38:44 [INFO] ETA: 1.6 minutes
+2025-07-23 16:38:51 [INFO] Processing ablation_2: 120/260 (46.2%)
+2025-07-23 16:38:51 [INFO] ETA: 1.5 minutes
+2025-07-23 16:38:56 [INFO] Processing ablation_2: 130/260 (50.0%)
+2025-07-23 16:38:56 [INFO] ETA: 1.4 minutes
+2025-07-23 16:39:03 [INFO] Processing ablation_2: 140/260 (53.8%)
+2025-07-23 16:39:03 [INFO] ETA: 1.3 minutes
+2025-07-23 16:39:07 [INFO] Processing ablation_2: 150/260 (57.7%)
+2025-07-23 16:39:07 [INFO] ETA: 1.1 minutes
+2025-07-23 16:39:13 [INFO] Processing ablation_2: 160/260 (61.5%)
+2025-07-23 16:39:13 [INFO] ETA: 1.0 minutes
+2025-07-23 16:39:21 [INFO] Processing ablation_2: 170/260 (65.4%)
+2025-07-23 16:39:21 [INFO] ETA: 0.9 minutes
+2025-07-23 16:39:27 [INFO] Processing ablation_2: 180/260 (69.2%)
+2025-07-23 16:39:27 [INFO] ETA: 0.8 minutes
+2025-07-23 16:39:33 [INFO] Processing ablation_2: 190/260 (73.1%)
+2025-07-23 16:39:33 [INFO] ETA: 0.7 minutes
+2025-07-23 16:39:41 [INFO] Processing ablation_2: 200/260 (76.9%)
+2025-07-23 16:39:41 [INFO] ETA: 0.6 minutes
+2025-07-23 16:39:48 [INFO] Processing ablation_2: 210/260 (80.8%)
+2025-07-23 16:39:48 [INFO] ETA: 0.5 minutes
+2025-07-23 16:39:56 [INFO] Processing ablation_2: 220/260 (84.6%)
+2025-07-23 16:39:56 [INFO] ETA: 0.4 minutes
+2025-07-23 16:40:02 [INFO] Processing ablation_2: 230/260 (88.5%)
+2025-07-23 16:40:02 [INFO] ETA: 0.3 minutes
+2025-07-23 16:40:07 [INFO] Processing ablation_2: 240/260 (92.3%)
+2025-07-23 16:40:07 [INFO] ETA: 0.2 minutes
+2025-07-23 16:40:13 [INFO] Processing ablation_2: 250/260 (96.2%)
+2025-07-23 16:40:13 [INFO] ETA: 0.1 minutes
+2025-07-23 16:40:15 [INFO] Processing ablation_2: 260/260 (100.0%)
+2025-07-23 16:40:15 [INFO] ETA: 0.0 minutes
+2025-07-23 16:40:15 [INFO] Completed ablation_2 ablation study
+2025-07-23 16:40:15 [INFO] Processed 260 test cases in 161.33s
+2025-07-23 16:40:15 [INFO] Average processing time per test case: 0.62s
+2025-07-23 16:40:15 [INFO] Key metric averages: {'GAS': np.float64(0.8221528694606745), 'LAS': np.float64(0.7661512916685187), 'NAS-D': np.float64(0.8586101486584976), 'NAS-L': np.float64(0.7809226883099804), 'NAS': np.float64(0.7735307904248631), 'NAS\n+LAS(S)': np.float64(0.723213960886239), 'GAS\n+LAS(S)': np.float64(0.7371866006205783), 'GAS\n+NAS-L(S)': np.float64(0.6655290599539234), 'GAS\n+NAS-D(S)': np.float64(0.7248209384193078), 'GAS\n+NAS(S)': np.float64(0.6555637758356325), 'GAS\n+LAS(S)\n+NAS-D(S)': np.float64(0.648213754193199), 'GAS\n+LAS(S)\n+NAS-L(S)': np.float64(0.5972304022541826), 'GAS\n+LAS(S)\n+(NAS-D\n+NAS-L)(S)': np.float64(0.5876309348718328)}
+2025-07-23 16:40:15 [INFO] Saved 10 individual ablation_2 CSV files to: /ces/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/ablation/src/../results/ablation_2/individual_results
+2025-07-23 16:40:15 [INFO] Saved ablation_2 aggregated results to: /ces/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/ablation/src/../results/ablation_2/aggregated_results/aggregated_results.csv
+2025-07-23 16:40:15 [INFO] Ablation study completed in 327.15 seconds

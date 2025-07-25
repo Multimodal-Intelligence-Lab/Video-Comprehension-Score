@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,an asian baby gets talked to and played with .,0.0707,"adult uses finger to rub the cheek of a baby , baby responds with facial expressions , and baby makes sounds with lips and tongue .",5.0,5.0,5.0,5.0,0.5102,0.8419,0.9125,0.7713,0.7453,0.6822,0.4182,0.2805,0.4401,0.2554,0.2996,0.102,0.0707
+2,a baby is laying on a bed while a woman talks to him .,0.0,a woman strokes a baby's cheek with her finger and talks to him .,5.0,5.0,5.0,5.0,0.5363,0.8652,0.9714,0.9062,0.8729,0.8385,0.4641,0.2351,0.3928,0.2059,0.2982,0.0277,0.0
+3,a baby is laying on a blanket and a woman is talking to him .,0.0881,a small child is lying on the floor struggling and moaning as an adult tries to comfort it by rubbing its cheek .,5.0,4.0,4.0,4.3333,0.5591,0.869,0.9851,1.0,0.9865,0.9829,0.4856,0.2888,0.4227,0.2791,0.3264,0.1004,0.0881
+4,a baby makes cooing noises as a woman baby talks him .,0.2447,"a baby is having its face tickled by someone that is off camera , the baby laughs .",5.0,5.0,4.0,4.6667,0.6956,0.871,0.9846,0.8792,0.929,0.9125,0.6428,0.352,0.4903,0.3867,0.4278,0.202,0.2447
+5,a young baby is sitting and fussing while someone is talking in the background .,0.1316,a small child is lying on the floor struggling and moaning as an adult tries to comfort it by rubbing its cheek .,5.0,4.0,4.0,4.3333,0.4283,0.8362,0.9901,1.0,0.9936,0.9918,0.2784,0.3291,0.3997,0.3248,0.2423,0.1372,0.1316
+6,a baby sits on a bed and slobbers as it coos and tries to talk .,0.0,a woman strokes a baby's cheek with her finger and talks to him .,4.0,4.0,4.0,4.0,0.4629,0.836,0.9386,0.8027,0.7512,0.6825,0.3576,0.1647,0.3464,0.1074,0.2181,0.0,0.0

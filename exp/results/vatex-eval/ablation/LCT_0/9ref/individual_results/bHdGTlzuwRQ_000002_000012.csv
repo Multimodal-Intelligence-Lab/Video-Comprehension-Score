@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,bystanders watch a man perform a practice discus throw .,0.2487,a man in a video tutorial teaching on how to play short put and discus throw,4.0,5.0,4.0,4.3333,0.7372,0.8986,0.95,0.8112,0.8251,0.7969,0.7075,0.3421,0.6435,0.3533,0.6033,0.2357,0.2487
+2,a man is standing in a circle and throws a discus .,0.5364,a man winds up and tosses a discus during practice .,5.0,4.0,4.0,4.3333,0.7265,0.8745,0.9851,0.9149,0.9076,0.8835,0.6795,0.4904,0.6433,0.5946,0.5921,0.4587,0.5364
+3,a woman is throwing a discus at a track and field event .,0.4741,a male is throwing the discus at a sporting event .,5.0,4.0,3.0,4.0,0.6147,0.8859,1.0,1.0,1.0,1.0,0.5651,0.5418,0.6147,0.5341,0.5651,0.4827,0.4741
+4,a young man throws an item at a track and field for practice .,0.6435,teenage male practicing throwing a disc for track and field competition .,5.0,5.0,5.0,5.0,0.8167,0.9169,1.0,0.8644,0.8788,0.8586,0.8001,0.6964,0.7817,0.6776,0.7619,0.6643,0.6435
+5,at a field a young man is spinning around and throwing a discus .,0.4617,"info regarding event , and a young man at a athletic competition throws a disk .",5.0,5.0,5.0,5.0,0.6797,0.8652,0.95,0.7464,0.7704,0.7301,0.6241,0.5273,0.6286,0.542,0.5635,0.4444,0.4617
+6,a young man is practicing throwing a javelin in a field .,0.4633,a guy does a practice throw outside for track and field .,4.0,4.0,4.0,4.0,0.6509,0.8897,0.9333,0.8879,0.8651,0.8484,0.6019,0.5112,0.57,0.5293,0.5097,0.4506,0.4633

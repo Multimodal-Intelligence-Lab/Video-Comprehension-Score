@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman shows a how to die your hair the right way and safe way .,0.1681,"a woman applies hair dye to her hair with her hands , sweeping it back from the temple .",5.0,4.0,5.0,4.6667,0.5384,0.8397,0.9892,0.6961,0.6905,0.6197,0.4503,0.2482,0.5334,0.3014,0.4443,0.1047,0.1681
+2,a young girl is brushing her hair in a bathroom .,0.4499,a young woman looks into the mirror as she apply hair product to her hair .,4.0,4.0,4.0,4.0,0.6204,0.8824,0.9796,0.9387,0.9381,0.9266,0.5698,0.5362,0.5556,0.5359,0.4732,0.4502,0.4499
+3,a girl is dying her hair in front of a mirror .,0.4355,"a girl is shown putting hair dye in her hair , purple staining her towel .",5.0,4.0,5.0,4.6667,0.7109,0.8546,0.9756,1.0,0.9593,0.952,0.6617,0.5216,0.6214,0.5207,0.5569,0.4407,0.4355
+4,"a girl is getting her hair done by another person , who is using a blow dryer and comb .",0.13,a girl begins to put gel on her hair then adds more .,1.0,3.0,2.0,2.0,0.4717,0.8227,0.9398,0.8522,0.843,0.799,0.3549,0.312,0.4113,0.2907,0.2812,0.1525,0.13
+5,a girl gets her hair washed by a hairdresser who sprays water on the girl's hair .,0.0,a girl with a towel around her neck is putting chemicals into her hair .,1.0,4.0,2.0,2.3333,0.4601,0.8522,0.9231,0.775,0.8408,0.8034,0.3664,0.0914,0.2991,0.1625,0.1702,0.0,0.0
+6,a woman looks in the mirror as she blowdries and brushes her hair .,0.5493,a young woman looks into the mirror as she apply hair product to her hair .,3.0,3.0,4.0,3.3333,0.6449,0.9123,0.9655,0.8589,0.8637,0.8506,0.6107,0.5866,0.6322,0.5888,0.5968,0.5468,0.5493

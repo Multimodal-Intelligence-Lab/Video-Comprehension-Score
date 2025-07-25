@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of cheerleaders are performing on a basketball court .,0.3969,school cheerleaders are performing a routine in front of a crowd .,5.0,5.0,5.0,5.0,0.8645,0.9074,1.0,0.8408,0.827,0.7959,0.8506,0.4974,0.8451,0.4891,0.8293,0.4068,0.3969
+2,a group of people are performing a dance routine in front of a crowd .,0.4591,school cheerleaders are performing a routine in front of a crowd .,5.0,5.0,5.0,5.0,0.5664,0.9045,1.0,0.9459,0.9039,0.8847,0.5206,0.5029,0.5664,0.5107,0.5206,0.4504,0.4591
+3,a group of cheerleaders are performing a routine in front of a crowd .,0.8709,school cheerleaders are performing a routine in front of a crowd .,5.0,5.0,5.0,5.0,0.8755,0.9644,1.0,1.0,1.0,1.0,0.8709,0.8755,0.8755,0.8755,0.8709,0.8709,0.8709
+4,cheerleaders are being recorded at a stadium performing a dance routine .,0.0,school cheerleaders are performing a routine in front of a crowd .,5.0,5.0,5.0,5.0,0.5647,0.8664,0.9388,0.803,0.8085,0.7359,0.4976,0.2355,0.4349,0.1469,0.3478,0.0731,0.0
+5,cheerleaders perform their routine to a crowd in a stadium with music in the background .,0.3362,a cheerleading squad performs in front of a crowd in a basketball court .,5.0,5.0,5.0,5.0,0.7156,0.9001,0.8777,0.77,0.7203,0.6665,0.684,0.3841,0.6231,0.4432,0.5813,0.3115,0.3362
+6,"several people in school gym , members of the band , cheerleaders practicing .",0.0,school cheerleaders are performing a routine in front of a crowd .,4.0,5.0,4.0,4.3333,0.6684,0.8372,0.9419,0.6862,0.6909,0.6308,0.6033,0.1422,0.4947,0.1481,0.3793,0.0,0.0

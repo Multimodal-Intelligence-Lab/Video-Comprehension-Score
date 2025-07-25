@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a slow motion capture of a person riding and jumping their bike .,0.3704,"in slow motion , a boy dressed in red , wearing a red helmet does a jump and lands on the trail .",5.0,5.0,5.0,5.0,0.7393,0.9185,0.98,0.921,0.9352,0.923,0.7162,0.4615,0.4939,0.4696,0.3992,0.3607,0.3704
+2,a man is riding a bike in a wooded area and then a man is talking .,0.1592,a boy rides a mountain bike on a trail and jumps a few feet off the ground when he comes over a hill .,4.0,4.0,4.0,4.0,0.549,0.8635,1.0,1.0,1.0,1.0,0.4777,0.3255,0.4602,0.3255,0.3749,0.1592,0.1592
+3,a man is riding a bike down a hill and then falls off the bike .,0.2287,a person is riding a bicycle on a dirt trail when he ramps the bike into the air .,4.0,3.0,4.0,3.6667,0.4755,0.8954,1.0,0.8879,0.911,0.8983,0.4143,0.3074,0.3963,0.3249,0.3258,0.2087,0.2287
+4,a person appears to try and ride a dirt bike up a steep hill .,0.0,a young by is on a bicycle riding in he woods and jumps a big hurdle .,4.0,4.0,4.0,4.0,0.4805,0.8791,0.9825,0.9048,0.9255,0.9039,0.4043,0.0504,0.3934,0.0554,0.3043,0.0,0.0
+5,a person rides a bike down a road in a mountainous area .,0.1801,a person is riding a bicycle on a dirt trail when he ramps the bike into the air .,5.0,5.0,5.0,5.0,0.443,0.8694,0.9655,0.9728,0.947,0.9363,0.3594,0.2861,0.3972,0.2955,0.2985,0.1693,0.1801
+6,a boy is riding a bike and rode up on a ramp to jump .,0.2604,a boy rides a mountain bike on a trail and jumps a few feet off the ground when he comes over a hill .,5.0,5.0,5.0,5.0,0.5811,0.8862,0.9422,0.8297,0.8488,0.8149,0.5141,0.3261,0.5458,0.3624,0.4732,0.2184,0.2604

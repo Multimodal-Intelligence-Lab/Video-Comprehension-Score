@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a child plays outside on a soccer and stumbles off before getting back on .,0.0,a young child rolls around on a three-wheeled scooter .,5.0,4.0,4.0,4.3333,0.3648,0.7997,0.7711,0.7458,0.5971,0.4962,0.2058,0.1483,0.1763,0.0,0.0,0.0,0.0
+2,a young boy is riding a scooter down the street .,0.4023,a young child rolls around on a three-wheeled scooter .,5.0,5.0,5.0,5.0,0.5506,0.8599,0.9084,0.9679,0.8744,0.8539,0.4774,0.5357,0.5053,0.486,0.4247,0.46,0.4023
+3,a young boy is riding a unicycle down the street .,0.1283,a young child rolls around on a three-wheeled scooter .,4.0,4.0,4.0,4.0,0.3361,0.8015,0.9677,0.9827,0.9503,0.938,0.1716,0.3244,0.3139,0.3014,0.144,0.157,0.1283
+4,some children are at play with an scooter .,0.4699,a young child rolls around on a three-wheeled scooter .,4.0,4.0,4.0,4.0,0.5385,0.8706,1.0,1.0,1.0,1.0,0.4699,0.5385,0.5385,0.5385,0.4699,0.4699,0.4699
+5,kid on a scooter outside in the street riding around the cul-de-sac,0.0,a young child rolls around on a three-wheeled scooter .,5.0,4.0,4.0,4.3333,0.4942,0.8574,0.7595,0.3283,0.0973,0.0,0.4101,0.0,0.334,0.0,0.2233,0.0,0.0
+6,a young boy rides in a circle on a foot powered scooter .,0.3637,a young child rolls around on a three-wheeled scooter .,4.0,5.0,4.0,4.3333,0.5756,0.8684,0.9599,0.7804,0.7682,0.7331,0.5112,0.4561,0.5578,0.4475,0.4908,0.3737,0.3637

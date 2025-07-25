@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person takes off from the beach to parasail behind a boat .,0.0712,a person is attached to a parachute and lifted into the air .,5.0,5.0,4.0,4.6667,0.7196,0.8658,0.9677,0.7278,0.6616,0.5846,0.6729,0.3121,0.6326,0.2432,0.5756,0.1557,0.0712
+2,a group of people are parasailing on the ocean .,0.5723,a group of people launch a man that is parasailing from a beach .,5.0,5.0,4.0,4.6667,0.7032,0.928,1.0,1.0,1.0,1.0,0.6802,0.629,0.6918,0.6031,0.6679,0.6002,0.5723
+3,two people are parasailing over a body of water .,0.0286,a person is being helped by others in paragliding on a sea shore,4.0,4.0,4.0,4.0,0.6556,0.8778,0.941,0.7974,0.7265,0.6656,0.6077,0.2763,0.5944,0.2057,0.5379,0.115,0.0286
+4,an individual flies over the beach on a parachute while others do the same .,0.2436,a group of people at the beach where they all go sky diving by running off a parachute,4.0,4.0,4.0,4.0,0.6874,0.8637,0.9048,0.5999,0.6068,0.5221,0.6242,0.3795,0.6327,0.3131,0.5649,0.3168,0.2436
+5,a person is on the ocean using a parachute to surf at very high heights .,0.4045,a person is attached to a parachute and lifted into the air .,5.0,5.0,4.0,4.6667,0.5879,0.8311,1.0,1.0,1.0,1.0,0.5033,0.5051,0.5317,0.5051,0.4356,0.4045,0.4045
+6,a person attached to a para-sail gets it up into the air and then runs to edge of the cliff and begins to fly .,0.0524,a person is being helped by others in paragliding on a sea shore,4.0,4.0,4.0,4.0,0.6434,0.876,0.9231,0.6655,0.6979,0.6211,0.5829,0.2077,0.591,0.2445,0.5216,0.0063,0.0524

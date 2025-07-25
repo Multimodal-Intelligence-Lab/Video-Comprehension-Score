@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman wears a baby sling while the baby cries .,0.0288,a woman demonstrates using a wrap to hold a baby close to her .,5.0,5.0,5.0,5.0,0.4183,0.8344,0.9565,0.7341,0.7178,0.6618,0.3029,0.2076,0.3919,0.1896,0.2712,0.0504,0.0288
+2,a man is demonstrating how to properly wrap a baby .,0.6093,a woman demonstrates using a wrap to hold a baby close to her .,4.0,4.0,4.0,4.0,0.6735,0.8709,0.9524,1.0,0.9593,0.9533,0.6251,0.6735,0.6572,0.6597,0.6064,0.6251,0.6093
+3,a man is demonstrating how to properly hold a baby .,0.5007,a woman demonstrates using a wrap to hold a baby close to her .,4.0,3.0,4.0,3.6667,0.5658,0.8696,1.0,1.0,1.0,1.0,0.5007,0.5658,0.5658,0.5658,0.5007,0.5007,0.5007
+4,a woman in room demonstrating on how to wrap a baby to one's body .,0.6091,a woman demonstrates using a wrap to hold a baby close to her .,4.0,4.0,4.0,4.0,0.785,0.8825,0.924,0.569,0.7043,0.665,0.7564,0.451,0.7674,0.6234,0.7364,0.4303,0.6091
+5,a woman is holding a baby in a baby wrap that goes around her neck and shoulders .,0.4989,a woman demonstrates using a wrap to hold a baby close to her .,5.0,5.0,5.0,5.0,0.7446,0.8797,0.8123,0.6897,0.6444,0.5958,0.7097,0.5833,0.6856,0.5224,0.6426,0.5628,0.4989
+6,a women holds an infant in one hand and ties a cradle with a cloth wound around her shoulder,0.1262,a woman demonstrates using a wrap to hold a baby close to her .,5.0,5.0,4.0,4.6667,0.5192,0.8253,0.821,0.6748,0.6667,0.5962,0.4174,0.2875,0.4144,0.2789,0.2904,0.1367,0.1262

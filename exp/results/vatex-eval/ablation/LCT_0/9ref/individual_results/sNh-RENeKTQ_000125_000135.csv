@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,close up of someones shoes being shined by a man .,0.2983,"a man is sitting down , getting his shoes shined .",5.0,5.0,5.0,5.0,0.689,0.8945,0.8819,0.6327,0.5423,0.4883,0.6523,0.3953,0.5872,0.3357,0.5163,0.2808,0.2983
+2,a man is polishing a pair of shoes with a rag .,0.5248,a person is polishing the shiny black shoes of another person .,5.0,5.0,4.0,4.6667,0.6273,0.8767,0.9714,0.9301,0.8999,0.8852,0.5723,0.5993,0.6077,0.5859,0.5498,0.5402,0.5248
+3,a man is shining a man ' s shoes with a cloth .,0.6844,a man is shining another man's shoes while there is noise in the background .,5.0,5.0,4.0,4.6667,0.7524,0.9284,1.0,1.0,1.0,1.0,0.7332,0.7146,0.7146,0.7146,0.6875,0.6844,0.6844
+4,a man shines a black shoe with a cloth and polish .,0.0732,a person is polishing the shiny black shoes of another person .,5.0,5.0,4.0,4.6667,0.7521,0.9147,0.92,0.6978,0.6032,0.5322,0.7216,0.3434,0.6447,0.1858,0.62,0.3156,0.0732
+5,a man is teaching how to clean and polish a shoe,0.1755,"a man is sitting down , getting his shoes shined .",4.0,4.0,3.0,3.6667,0.5705,0.8595,0.9052,0.8046,0.7636,0.7092,0.4943,0.3416,0.4296,0.3103,0.3182,0.1901,0.1755
+6,a man is polishing his black boots with shoe polish .,0.4614,a person is polishing the shiny black shoes of another person .,4.0,4.0,4.0,4.0,0.743,0.9097,0.9714,0.8408,0.8028,0.763,0.7175,0.6261,0.6867,0.4799,0.6556,0.6088,0.4614

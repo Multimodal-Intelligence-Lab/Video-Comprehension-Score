@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people are dancing in a gym in unison .,0.6231,a squad of adolescents do a dance routine in a gym .,4.0,5.0,5.0,4.6667,0.8532,0.8961,0.9524,0.7165,0.7745,0.7483,0.8335,0.5377,0.8383,0.6786,0.8167,0.5098,0.6231
+2,a group of people are doing a dance routine in a gym .,0.8024,a squad of adolescents do a dance routine in a gym .,5.0,5.0,5.0,5.0,0.8365,0.938,1.0,1.0,1.0,1.0,0.8257,0.8204,0.8204,0.8204,0.8024,0.8024,0.8024
+3,a group of young girls are doing a dance routine together .,0.5272,a squad of adolescents do a dance routine in a gym .,5.0,5.0,5.0,5.0,0.6145,0.8967,1.0,0.9679,0.9393,0.9301,0.5559,0.6018,0.6032,0.5896,0.5428,0.5412,0.5272
+4,a group of women are in a gym doing a dancing class,0.5206,a group all wearing the same outfit are in a gym doing a dance routine .,5.0,4.0,5.0,4.6667,0.6551,0.87,1.0,0.8644,0.8611,0.8321,0.6035,0.5898,0.6551,0.583,0.6035,0.5285,0.5206
+5,a group of people are taking a group fitness dance class indoors .,0.4846,a group of people in a room doing a dance together,5.0,5.0,5.0,5.0,0.7146,0.9007,0.9655,0.838,0.8412,0.8144,0.6831,0.5679,0.667,0.5541,0.6303,0.5416,0.4846
+6,a dance troupe performs a routine in a school gymnasium .,0.1909,a squad of adolescents do a dance routine in a gym .,4.0,5.0,5.0,4.6667,0.75,0.8759,1.0,0.8261,0.8254,0.7688,0.7146,0.4606,0.7166,0.2291,0.6764,0.4339,0.1909

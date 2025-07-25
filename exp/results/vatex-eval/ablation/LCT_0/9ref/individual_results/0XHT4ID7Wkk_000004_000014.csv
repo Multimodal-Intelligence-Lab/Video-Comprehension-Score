@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy is walking back and forth in a gym while he dribbles two basketballs .,0.7022,"a man walking back and forth , while double dribbling two basketballs .",5.0,4.0,5.0,4.6667,0.857,0.935,0.9885,0.8983,0.9412,0.9371,0.8398,0.7083,0.7349,0.7216,0.7204,0.688,0.7022
+2,a young boy is dribbling a basketball in a gym .,0.2246,a young man in basketball clothes dribbles two balls at once in a gym .,5.0,3.0,4.0,4.0,0.7468,0.9238,0.872,0.7161,0.6796,0.6074,0.726,0.4303,0.6231,0.2582,0.5887,0.414,0.2246
+3,a man is dribbling two basketballs at the same time .,0.8259,a man is walking around as he dribbles two basketballs with one in each hand .,5.0,4.0,5.0,4.6667,0.8911,0.9285,0.9677,1.0,0.9526,0.9476,0.8827,0.85,0.8402,0.8425,0.8233,0.8341,0.8259
+4,a young man skillfully dribbles basketballs using both hands at the same time .,0.5071,a boy is in a gym and is dribbling basketballs one in each hand .,5.0,5.0,5.0,5.0,0.792,0.881,0.9655,0.8153,0.8261,0.7958,0.7639,0.5748,0.7635,0.5804,0.7315,0.5006,0.5071
+5,"two boys play basketball inside an indoor gymnasium , making shots at the basket and juking past each other .",0.0,a young man in basketball clothes dribbles two balls at once in a gym .,3.0,3.0,2.0,2.6667,0.6223,0.8444,0.8466,0.4654,0.4844,0.3802,0.5527,0.046,0.5082,0.1026,0.3996,0.0,0.0
+6,two young individuals dribble two basketballs each at the same time with a large group of others at a basketball court .,0.2503,a man is walking around as he dribbles two basketballs with one in each hand .,3.0,3.0,4.0,3.3333,0.7232,0.8789,0.8811,0.6842,0.702,0.6314,0.6805,0.3315,0.6638,0.3776,0.612,0.1925,0.2503

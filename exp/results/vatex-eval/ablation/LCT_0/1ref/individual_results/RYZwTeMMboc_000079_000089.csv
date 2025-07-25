@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,on the news two people are sitting and talking to each other .,0.0976,two new anchors giving the news and laughing while moving papers .,5.0,5.0,4.0,4.6667,0.47,0.8356,0.856,0.7544,0.703,0.6445,0.3657,0.2974,0.3808,0.246,0.259,0.1591,0.0976
+2,a man and a woman are sitting at a table and talking .,0.0,two new anchors giving the news and laughing while moving papers .,5.0,5.0,5.0,5.0,0.128,0.747,0.913,0.7696,0.7528,0.669,0.0,0.0,0.045,0.0,0.0,0.0,0.0
+3,a man and a woman are sitting at a desk and talking .,0.0,two new anchors giving the news and laughing while moving papers .,5.0,5.0,5.0,5.0,0.241,0.751,0.913,0.7696,0.7528,0.6708,0.0,0.0137,0.1687,0.0,0.0,0.0,0.0
+4,a female news anchor is doing a broadcast while two scenes of the town are shown .,0.0,two new anchors giving the news and laughing while moving papers .,4.0,3.0,4.0,3.6667,0.3676,0.8369,0.8176,0.4286,0.5624,0.477,0.2443,0.0,0.2264,0.0,0.0757,0.0,0.0
+5,a woman in a news segment as she talks about the current news while looking at a teleprompter,0.0,two new anchors giving the news and laughing while moving papers .,4.0,4.0,4.0,4.0,0.3196,0.7999,0.884,0.5156,0.6514,0.5641,0.1494,0.0,0.2303,0.0,0.0378,0.0,0.0
+6,two people are sitting in a radio booth and the man is giving a news report .,0.0,two new anchors giving the news and laughing while moving papers .,4.0,4.0,4.0,4.0,0.3851,0.8445,0.8417,0.46,0.4329,0.3284,0.2718,0.0,0.2694,0.0,0.1348,0.0,0.0

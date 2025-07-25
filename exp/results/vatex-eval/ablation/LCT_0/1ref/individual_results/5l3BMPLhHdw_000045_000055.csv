@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two young boys are doing soccer tricks with a soccer ball and their feet and then a boy walks away .,0.0,a boy was using his leg to raise the ball while walking behind a man holding a ball,5.0,5.0,4.0,4.6667,0.472,0.842,0.8056,0.329,0.3149,0.1863,0.3729,0.0,0.3446,0.0,0.2216,0.0,0.0
+2,a young man is kicking a soccer ball with a soccer ball .,0.0,a boy was using his leg to raise the ball while walking behind a man holding a ball,5.0,4.0,5.0,4.6667,0.3871,0.8468,0.8661,0.5156,0.5285,0.4432,0.2762,0.0,0.2923,0.0,0.1643,0.0,0.0
+3,a boy is kicking a soccer ball with his feet .,0.0,a boy was using his leg to raise the ball while walking behind a man holding a ball,5.0,5.0,5.0,5.0,0.4021,0.8458,0.8077,0.6083,0.592,0.5176,0.2932,0.0172,0.2598,0.0,0.1249,0.0,0.0
+4,a boy is practicing with a soccer ball by kicking it back and forth between both of his legs,0.0,a boy was using his leg to raise the ball while walking behind a man holding a ball,5.0,5.0,5.0,5.0,0.5177,0.8456,0.8145,0.5773,0.5676,0.4886,0.4297,0.1646,0.4079,0.1503,0.2997,0.012,0.0
+5,a boy at a park is kicking a soccer ball in the air back and forth between his two feet repeatedly .,0.0,a boy was using his leg to raise the ball while walking behind a man holding a ball,4.0,4.0,4.0,4.0,0.4063,0.8238,0.9166,0.5102,0.5571,0.4624,0.2794,0.0,0.3523,0.0,0.2138,0.0,0.0
+6,a boy juggles a soccer ball between his two feet in a park .,0.0,a boy was using his leg to raise the ball while walking behind a man holding a ball,4.0,4.0,4.0,4.0,0.399,0.8189,0.8661,0.6008,0.6126,0.527,0.266,0.0,0.3061,0.0189,0.1526,0.0,0.0

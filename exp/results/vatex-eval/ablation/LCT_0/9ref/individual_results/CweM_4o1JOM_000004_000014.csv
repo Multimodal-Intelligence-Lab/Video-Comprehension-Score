@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy is doing a standing trick on a moped while going in circles .,0.3163,a man is standing on a motorbike while doing a wheelie around a course .,5.0,5.0,5.0,5.0,0.5819,0.8348,1.0,1.0,1.0,1.0,0.4992,0.4008,0.5374,0.438,0.4453,0.2341,0.3163
+2,a man is riding a skateboard down a street and then falls off .,0.0,a man has a motorcycle up on the back wheel as he stands on it and rides in a circle .,2.0,3.0,2.0,2.3333,0.1695,0.8327,1.0,0.8408,0.827,0.7769,0.0,0.0,0.1451,0.0,0.0,0.0,0.0
+3,a man is riding a scooter in a parking lot .,0.015,a man is doing wheelie's in the motorcycle event .,5.0,4.0,4.0,4.3333,0.5742,0.8657,1.0,1.0,1.0,1.0,0.4873,0.2849,0.5172,0.2045,0.4186,0.139,0.015
+4,a man is riding a motorcycle down a dirt road .,0.3085,a man is doing wheelie's in the motorcycle event .,4.0,4.0,4.0,4.0,0.4386,0.8957,1.0,1.0,1.0,1.0,0.3679,0.4042,0.4042,0.4042,0.3085,0.3085,0.3085
+5,a man revs up a motorcycle and then drive away through a parking lot .,0.0939,a man is riding a motorcycle doing a pop whilly and riding in circles .,5.0,3.0,3.0,3.6667,0.407,0.8429,0.9744,0.7797,0.8213,0.7796,0.2733,0.2008,0.3694,0.2651,0.223,0.0518,0.0939
+6,a man on a motorcycle accelerating slowly and driving away,0.0731,a man has a motorcycle up on the back wheel as he stands on it and rides in a circle .,2.0,3.0,2.0,2.3333,0.3953,0.8542,0.9804,1.0,0.9791,0.9738,0.2921,0.2343,0.3557,0.234,0.2457,0.0734,0.0731

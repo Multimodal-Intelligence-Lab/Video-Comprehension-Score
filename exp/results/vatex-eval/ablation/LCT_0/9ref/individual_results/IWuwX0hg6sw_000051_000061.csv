@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two people climb ice pick up a cliff of ice outside over commentary .,0.4987,2 people climbing the side of an ice wall while 2 men call the shots .,4.0,5.0,5.0,4.6667,0.7088,0.8872,0.9379,0.7341,0.7617,0.7173,0.6717,0.5726,0.6841,0.5639,0.644,0.5087,0.4987
+2,a group of people are climbing up a snowy mountain .,0.264,two women are racing by climbing up an icy wall .,4.0,4.0,4.0,4.0,0.4446,0.847,1.0,1.0,1.0,1.0,0.3371,0.3955,0.3955,0.3955,0.264,0.264,0.264
+3,a man is climbing up a mountain with a rope .,0.0735,two women racing to climb an ice wall with picks in their hand and spikes on their boots .,4.0,3.0,2.0,3.0,0.3484,0.8233,1.0,1.0,1.0,1.0,0.2085,0.2615,0.2846,0.2615,0.1311,0.0735,0.0735
+4,someone starts by climbing up a rock wall then moves to an ice wall .,0.3008,two women racing to climb an ice wall with picks in their hand and spikes on their boots .,4.0,4.0,4.0,4.0,0.5979,0.8717,1.0,0.9084,0.9328,0.9175,0.5387,0.3965,0.5396,0.4077,0.4588,0.2876,0.3008
+5,a guy climbing a rock wall then a guy climbing an ice wall and then another rock one .,0.0,two women is climbing ice using these hooks the one in the black pants couldn't get her hooks to grab the ice .,4.0,2.0,3.0,3.0,0.5369,0.861,0.9307,0.6872,0.6955,0.6338,0.4519,0.1395,0.4831,0.1498,0.3883,0.0,0.0
+6,men practice scaling an ice wall using ropes and ice axes .,0.4304,two people are climbing an ice wall using ice hooks to help them climb upwards .,4.0,4.0,4.0,4.0,0.6374,0.8569,0.9725,0.7388,0.7863,0.7404,0.5676,0.48,0.6021,0.5119,0.5357,0.3932,0.4304

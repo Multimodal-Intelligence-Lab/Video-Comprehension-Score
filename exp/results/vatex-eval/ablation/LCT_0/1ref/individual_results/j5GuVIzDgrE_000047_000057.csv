@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a woman speaks about a microscope that is in sight , while holding a slide and talks about specimens .",0.4428,a woman demonstrating how to place a slide using a microscope .,5.0,5.0,5.0,5.0,0.7524,0.8547,0.8654,0.6405,0.6043,0.537,0.7103,0.5222,0.7138,0.474,0.6652,0.4939,0.4428
+2,a woman is demonstrating how to use a microscope .,0.6992,a woman demonstrating how to place a slide using a microscope .,5.0,5.0,5.0,5.0,0.85,0.9267,0.963,0.8,0.7479,0.728,0.8382,0.7647,0.8443,0.7034,0.8319,0.7614,0.6992
+3,a woman is demonstrating how to use a microscope .,0.6992,a woman demonstrating how to place a slide using a microscope .,5.0,5.0,5.0,5.0,0.85,0.9267,0.963,0.8,0.7479,0.728,0.8382,0.7647,0.8443,0.7034,0.8319,0.7614,0.6992
+4,a lady worker is demonstrating how to view objects through a microscope .,0.6445,a woman demonstrating how to place a slide using a microscope .,5.0,5.0,5.0,5.0,0.7487,0.8624,0.9167,0.7414,0.8198,0.791,0.7086,0.6546,0.7259,0.6935,0.6821,0.607,0.6445
+5,a woman is demonstrating how to adjust and look into a microscope .,0.7659,a woman demonstrating how to place a slide using a microscope .,5.0,3.0,3.0,3.6667,0.7909,0.8932,1.0,1.0,1.0,1.0,0.7659,0.7909,0.7909,0.7909,0.7659,0.7659,0.7659
+6,a woman is using a large microscope and talking about the procedure .,0.0,a woman demonstrating how to place a slide using a microscope .,5.0,4.0,4.0,4.3333,0.6207,0.8691,0.7917,0.3,0.4351,0.3501,0.5635,0.0,0.5208,0.0899,0.4487,0.0,0.0

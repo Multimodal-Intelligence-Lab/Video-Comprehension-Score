@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man uses a knife to cut up pieces of raw meat before putting them in a tub .,0.1289,"a male with a knife and a piece of meat throws it into a container then picks another piece up and places it on the chopping board , rubs it and starts talking .",5.0,5.0,4.0,4.6667,0.603,0.838,0.8586,0.4779,0.5438,0.4557,0.5263,0.1341,0.5376,0.2435,0.4483,0.0079,0.1289
+2,a man is demonstrating how to properly cut a piece of meat .,0.0,"a male with a knife and a piece of meat throws it into a container then picks another piece up and places it on the chopping board , rubs it and starts talking .",5.0,5.0,5.0,5.0,0.5377,0.8329,0.8103,0.4916,0.4395,0.327,0.4449,0.0545,0.4295,0.0,0.315,0.0,0.0
+3,a man is using a knife to cut a piece of meat .,0.0,"a male with a knife and a piece of meat throws it into a container then picks another piece up and places it on the chopping board , rubs it and starts talking .",5.0,5.0,5.0,5.0,0.6351,0.8635,0.7743,0.4218,0.3443,0.2407,0.5774,0.0896,0.5288,0.0,0.4543,0.0,0.0
+4,a man cuts up and opens a piece of meat on a hard surface .,0.0,"a male with a knife and a piece of meat throws it into a container then picks another piece up and places it on the chopping board , rubs it and starts talking .",5.0,5.0,5.0,5.0,0.5553,0.8393,0.8221,0.4685,0.4176,0.3061,0.4701,0.0428,0.4591,0.0,0.3555,0.0,0.0
+5,a man is putting clumps of meat into a meat grinder and waiting for it to come out the other end .,0.0975,"a male with a knife and a piece of meat throws it into a container then picks another piece up and places it on the chopping board , rubs it and starts talking .",1.0,2.0,2.0,1.6667,0.4058,0.7955,0.9511,0.7753,0.8277,0.7834,0.253,0.2335,0.3752,0.2821,0.2146,0.0365,0.0975
+6,a butcher is splitting a piece of meat with his bare hands before he uses a knife to complete the final part .,0.0,"a male with a knife and a piece of meat throws it into a container then picks another piece up and places it on the chopping board , rubs it and starts talking .",5.0,2.0,4.0,3.6667,0.5005,0.8328,0.8711,0.5007,0.5697,0.4833,0.4003,0.0024,0.4266,0.1233,0.3115,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person separating an egg yolk from a bowl with a water bottle,0.4492,"someone uses a water bottle to suck up an egg yolk , put it in another container , and suck up a second egg yolk .",5.0,5.0,5.0,5.0,0.8944,0.938,0.9373,0.6909,0.6546,0.6121,0.8875,0.5354,0.6499,0.4913,0.6278,0.4782,0.4492
+2,a person is using a plastic bottle to separate egg yolks from a bowl .,0.7945,someone uses a plastic bottle to separate yolks from egg whites .,5.0,4.0,5.0,4.6667,0.9358,0.9372,0.956,0.7143,0.8087,0.7941,0.931,0.6947,0.9271,0.7956,0.9259,0.6931,0.7945
+3,a person is demonstrating how to separate egg yolks from egg whites .,0.5247,someone uses a plastic bottle to separate yolks from egg whites .,5.0,5.0,5.0,5.0,0.7428,0.9218,0.9773,0.7179,0.766,0.7228,0.7206,0.535,0.7262,0.5389,0.7026,0.5207,0.5247
+4,someone sucks an egg yolk into a plastic bottle and places the yolk into a bowl of yolks .,0.6106,the person is sucking up egg yokes in a bottle putting in a bowl .,5.0,5.0,4.0,4.6667,0.8717,0.9304,0.991,0.9198,0.9388,0.9206,0.8584,0.5992,0.8384,0.6188,0.8225,0.5792,0.6106
+5,a person is sucking an egg up with a bottle out of a bowl .,0.8453,the person is sucking up egg yokes in a bottle putting in a bowl .,5.0,4.0,5.0,4.6667,0.8517,0.9588,1.0,1.0,1.0,1.0,0.8453,0.8517,0.8517,0.8517,0.8453,0.8453,0.8453
+6,"a person takes an empty plastic bottle from a waste bin , uses the mouth of the bottle to suck up a raw egg from a plate , and then holds the mouth of the bottle over another plate .",0.4701,someone uses a plastic bottle to suck up yolks out of a bowl and transfer them to another bowl .,4.0,4.0,3.0,3.6667,0.7721,0.8984,0.9035,0.6077,0.6343,0.5851,0.7464,0.3874,0.6915,0.4968,0.6671,0.3548,0.4701

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy in a bowling alley moves a rack to the lane that a girl tries to bring a heavy bowling ball over to .,0.0,boy helps his sister bowl by bringing out the device that rolls the ball,5.0,5.0,5.0,5.0,0.5633,0.8438,0.8591,0.1735,0.1108,0.0,0.4824,0.0,0.4916,0.0,0.3975,0.0,0.0
+2,a group of people are playing a game of bowling .,0.0,boy helps his sister bowl by bringing out the device that rolls the ball,5.0,5.0,5.0,5.0,0.3805,0.7701,0.8263,0.4668,0.3949,0.2143,0.1955,0.0,0.2503,0.0,0.0265,0.0,0.0
+3,a man and a young boy are playing bowling in a bowling alley .,0.0,boy helps his sister bowl by bringing out the device that rolls the ball,4.0,4.0,4.0,4.0,0.4001,0.8043,0.806,0.342,0.2204,0.0307,0.2542,0.0,0.2558,0.0,0.0747,0.0,0.0
+4,"a little girl is excited and talks to a little boy , then rolls a bowling ball .",0.0,boy helps his sister bowl by bringing out the device that rolls the ball,4.0,4.0,4.0,4.0,0.5117,0.8597,0.8239,0.3526,0.2913,0.1757,0.4321,0.0,0.4074,0.0,0.3107,0.0,0.0
+5,a little girl is trying to bowl and throws the bowling ball down the alley .,0.0,boy helps his sister bowl by bringing out the device that rolls the ball,5.0,3.0,4.0,4.0,0.4162,0.8294,0.8636,0.2548,0.3935,0.2688,0.2961,0.0,0.324,0.0,0.185,0.0,0.0
+6,"a little girl , who looks to be bowling for the first time , lofts the bowling ball hard down the alley .",0.0,boy helps his sister bowl by bringing out the device that rolls the ball,4.0,3.0,4.0,3.6667,0.3881,0.8013,0.9304,0.5934,0.6459,0.5581,0.2364,0.0,0.3424,0.0527,0.1793,0.0,0.0

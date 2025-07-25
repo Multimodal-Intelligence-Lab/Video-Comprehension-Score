@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is using a large saw to try to saw a large log in multiple parts,0.3954,someone uses a bow saw to cut a large log that's wrapped with bungee cord .,5.0,5.0,4.0,4.6667,0.5886,0.8561,0.9427,0.7582,0.7949,0.7604,0.5194,0.4574,0.5636,0.4824,0.4902,0.3662,0.3954
+2,a person is using a knife to cut a piece of wood .,0.1499,someone uses a bow saw to cut a large log that's wrapped with bungee cord .,5.0,4.0,4.0,4.3333,0.3727,0.8153,0.9532,0.9006,0.9051,0.8835,0.2306,0.3035,0.3419,0.3069,0.1928,0.1457,0.1499
+3,a group of people are using a saw to cut a piece of wood .,0.2616,someone uses a bow saw to cut a large log that's wrapped with bungee cord .,4.0,4.0,4.0,4.0,0.5138,0.8113,0.9201,0.7958,0.8116,0.7678,0.4007,0.389,0.4716,0.4009,0.3487,0.2469,0.2616
+4,a person is using a log splitting machine to cut wood .,0.0,someone uses a bow saw to cut a large log that's wrapped with bungee cord .,4.0,4.0,3.0,3.6667,0.4336,0.8285,0.901,0.454,0.4905,0.3851,0.3164,0.0,0.3714,0.0,0.2412,0.0,0.0
+5,outside a man uses a long chain saw to split logs down the middle .,0.0,someone uses a bow saw to cut a large log that's wrapped with bungee cord .,4.0,4.0,3.0,3.6667,0.4901,0.8308,0.892,0.2265,0.1788,0.0116,0.3863,0.0,0.4284,0.0,0.312,0.0,0.0
+6,"a person is shown trying to split a log outdoors with an axe , finally cleaving it open with his hands .",0.0,someone uses a bow saw to cut a large log that's wrapped with bungee cord .,3.0,4.0,3.0,3.3333,0.3544,0.788,0.935,0.5557,0.6971,0.6156,0.1807,0.0,0.3095,0.0738,0.1237,0.0,0.0

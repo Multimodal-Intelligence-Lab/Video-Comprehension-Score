@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two men are rolling and installing carpeting inside a room while a customer talks to the manager .,0.1859,people who are very good at putting carpet in for other people .,5.0,5.0,5.0,5.0,0.4555,0.7881,0.9216,0.8538,0.8485,0.8078,0.3092,0.3623,0.4092,0.3583,0.2504,0.1909,0.1859
+2,a man is demonstrating how to install a carpet floor .,0.1124,people who are very good at putting carpet in for other people .,5.0,5.0,5.0,5.0,0.5182,0.8065,0.7933,0.5844,0.673,0.5946,0.4027,0.1756,0.3927,0.2842,0.247,0.0,0.1124
+3,a group of people are working on how to use a floor .,0.0,people who are very good at putting carpet in for other people .,5.0,1.0,1.0,2.3333,0.4377,0.8392,0.7448,0.5,0.5983,0.5214,0.3299,0.0,0.245,0.0601,0.1003,0.0,0.0
+4,"a man , using various tools , is seen installing carpet in a living room .",0.3073,people who are very good at putting carpet in for other people .,5.0,5.0,5.0,5.0,0.4657,0.8041,0.9434,1.0,0.9592,0.9493,0.3356,0.4657,0.4337,0.443,0.2957,0.3356,0.3073
+5,a man stretches a carpet in a room while explaining that the owner just bought the home .,0.0,people who are very good at putting carpet in for other people .,4.0,2.0,3.0,3.0,0.4113,0.7928,0.8065,0.3973,0.2985,0.1151,0.2574,0.0,0.2701,0.0,0.0793,0.0,0.0
+6,a man installing carpet in various rooms with various types of tools .,0.0,people who are very good at putting carpet in for other people .,5.0,4.0,5.0,4.6667,0.5441,0.801,0.8571,0.5971,0.5558,0.4455,0.4308,0.2365,0.4681,0.1798,0.336,0.0468,0.0

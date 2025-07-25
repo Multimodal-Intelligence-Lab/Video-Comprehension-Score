@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,swimmers compete in a race while a near by scoreboard shows their placing .,0.4621,swimmers compete against one another in a large indoor olympic sized pool .,5.0,5.0,5.0,5.0,0.7339,0.8774,1.0,0.8744,0.8908,0.867,0.6967,0.5501,0.6963,0.5584,0.6429,0.452,0.4621
+2,a group of people are competing in a swimming competition .,0.6516,a group of people watching swimmers swim in a race .,5.0,5.0,5.0,5.0,0.7413,0.898,1.0,1.0,1.0,1.0,0.7119,0.6923,0.7413,0.6871,0.7119,0.6573,0.6516
+3,a group of swimmers are competing in a swimming competition .,0.2018,people participating in a swim meet at in indoor pool venue .,5.0,5.0,5.0,5.0,0.7581,0.896,0.941,0.7453,0.7458,0.6978,0.73,0.409,0.7429,0.3241,0.713,0.2834,0.2018
+4,a group of swimmers are racing in a pool and finish at the end of the pool,0.5403,several swimmers race in a swimming pool and the camera shows the completion time of the swimmers .,5.0,5.0,5.0,5.0,0.6967,0.8876,0.9104,0.7476,0.7432,0.7107,0.6583,0.5944,0.6544,0.592,0.6107,0.543,0.5403
+5,several swimmers compete in a race by swimming in their lanes .,0.3267,several swimmers race in a swimming pool and the camera shows the completion time of the swimmers .,5.0,5.0,5.0,5.0,0.6953,0.8976,0.9321,0.6091,0.5686,0.5045,0.6606,0.4378,0.5858,0.3603,0.5386,0.4082,0.3267
+6,a scan of a pool during a swimming competition with multiple swimmers .,0.179,footage of swimmers at a swim meet and the scoreboard after the race .,5.0,5.0,5.0,5.0,0.68,0.8898,0.8,0.5947,0.6431,0.5697,0.6404,0.3423,0.5609,0.319,0.5065,0.2182,0.179

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man discusses the edibility of a mushroom and tells it's latin name .,0.0589,a person sees a mushroom on a tree and he grabs it briefly by his hand .,5.0,5.0,5.0,5.0,0.4303,0.8064,0.9384,0.6256,0.7507,0.6909,0.2935,0.0894,0.3929,0.2411,0.2472,0.0,0.0589
+2,a person is using a knife to cut up a mushroom .,0.0,a person sees a mushroom on a tree and he grabs it briefly by his hand .,3.0,4.0,4.0,3.6667,0.4135,0.8431,0.8571,0.5743,0.4796,0.3827,0.3043,0.0,0.3157,0.0,0.1883,0.0,0.0
+3,a person is using a knife to open a mushroom .,0.0,a person sees a mushroom on a tree and he grabs it briefly by his hand .,3.0,4.0,4.0,3.6667,0.4419,0.8444,0.8571,0.5743,0.4796,0.3837,0.339,0.0281,0.3488,0.0,0.2288,0.0,0.0
+4,a person getting the mushroom growing from a driftwood in the forest .,0.0,a person sees a mushroom on a tree and he grabs it briefly by his hand .,5.0,5.0,4.0,4.6667,0.5725,0.8485,0.7328,0.2205,0.0,0.0,0.4962,0.0,0.4166,0.0,0.3124,0.0,0.0
+5,someone looking for and collecting mushrooms from the forest floor .,0.0,a person sees a mushroom on a tree and he grabs it briefly by his hand .,5.0,5.0,5.0,5.0,0.5575,0.8282,0.9004,0.5921,0.524,0.4252,0.4657,0.2526,0.5085,0.1461,0.4065,0.0975,0.0
+6,a person rips out some mushrooms they find in the forest .,0.0,a person sees a mushroom on a tree and he grabs it briefly by his hand .,5.0,5.0,4.0,4.6667,0.5724,0.852,0.8272,0.3586,0.1673,0.0226,0.4981,0.0,0.4831,0.0,0.3933,0.0,0.0

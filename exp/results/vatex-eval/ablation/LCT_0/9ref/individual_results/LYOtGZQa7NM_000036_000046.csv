@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,people are being lifted up into the air while windsurfing on the ocean .,0.3698,a group of people are wind surfing on a body of water then the video focuses on one wind surf with people on the beach in the background .,5.0,4.0,4.0,4.3333,0.5924,0.8365,0.9125,0.8227,0.7894,0.7465,0.5122,0.4976,0.5408,0.4765,0.4472,0.3953,0.3698
+2,a person is parasailing in the ocean while music plays in the background .,0.0,a person wakeboarding in the ocean and along the beach .,5.0,5.0,5.0,5.0,0.5903,0.8384,0.937,0.6817,0.7202,0.6348,0.5113,0.0,0.4407,0.0,0.3328,0.0,0.0
+3,a person is parasailing in the ocean while music is playing in the background .,0.0,a person wakeboarding in the ocean and along the beach .,5.0,5.0,5.0,5.0,0.5938,0.8353,0.937,0.5848,0.7202,0.6343,0.5137,0.0479,0.4837,0.1504,0.3819,0.0,0.0
+4,a man sails in the ocean on some kind of board and get airborne,0.1731,a person is on the ocean using a parachute to surf at very high heights .,5.0,5.0,1.0,3.6667,0.5892,0.8525,1.0,0.8723,0.8863,0.8566,0.5181,0.3271,0.4553,0.3423,0.323,0.1744,0.1731
+5,a man is parachute surfing over the ocean .,0.5127,a person is on the ocean using a parachute to surf at very high heights .,5.0,4.0,5.0,4.6667,0.8284,0.9277,0.9,0.8041,0.6964,0.6304,0.8143,0.7191,0.7105,0.5246,0.7033,0.712,0.5127
+6,a man on a surfboard skimming the waves in the ocean .,0.1833,a man is surfing in the ocean near a beach using a parachute to pull him up off of the water .,5.0,5.0,5.0,5.0,0.5381,0.8702,0.9796,0.8932,0.8923,0.8688,0.4692,0.3405,0.4277,0.2893,0.3423,0.2422,0.1833

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl sat on the floor beside some leg bricks placed on the bed,0.5114,a child is sitting on the floor next to a pile of lego pieces .,5.0,4.0,4.0,4.3333,0.6288,0.8299,1.0,0.9766,0.9697,0.962,0.5527,0.5845,0.6288,0.5945,0.5527,0.4993,0.5114
+2,a young boy is playing with legos on a table .,0.3533,a child is sitting on the floor next to a pile of lego pieces .,4.0,4.0,4.0,4.0,0.5814,0.8765,0.9756,0.9023,0.8959,0.871,0.5097,0.4817,0.5541,0.478,0.4778,0.3821,0.3533
+3,a young girl is playing with a game of marbles on a table .,0.0,a child is sitting on the floor next to a good-size pile of legos .,4.0,4.0,4.0,4.0,0.2424,0.8194,1.0,0.8879,0.911,0.8863,0.0738,0.0885,0.226,0.1116,0.0116,0.0,0.0
+4,a small child is sitting on the floor playing with legos .,0.7177,a child is sitting on the floor next to a pile of lego pieces .,5.0,5.0,5.0,5.0,0.8498,0.9294,0.9004,0.8387,0.7676,0.7397,0.834,0.8101,0.8293,0.7229,0.8113,0.802,0.7177
+5,a boy sits on a tiled floor building something using small lego parts .,0.5947,a child is sitting on the floor next to a pile of lego pieces .,4.0,4.0,4.0,4.0,0.6907,0.8711,0.9888,1.0,0.9822,0.9786,0.6449,0.6308,0.6872,0.6469,0.6409,0.5761,0.5947
+6,"a young boy is playing and building with legos , one piece at a time .",0.3981,a young boy shows off his lego collection while sitting at the top of a staircase .,4.0,3.0,3.0,3.3333,0.5734,0.8561,0.9831,0.8879,0.8996,0.8721,0.4892,0.4469,0.5477,0.4973,0.4584,0.3377,0.3981

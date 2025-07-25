@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a little girl is pointing to pictures in a book while an adult talks to her .,0.8176,a little girl points at pictures in a book while a man helps her along .,5.0,5.0,5.0,5.0,0.8351,0.9041,1.0,1.0,1.0,1.0,0.8176,0.8351,0.8351,0.8351,0.8176,0.8176,0.8176
+2,a little boy is sitting on the floor playing with a book .,0.3471,a little girl is sitting on a couch and reading a book on her own .,2.0,4.0,1.0,2.3333,0.465,0.8997,1.0,0.869,0.9107,0.9007,0.4054,0.3717,0.4608,0.4126,0.3925,0.3017,0.3471
+3,a little boy is sitting at a table and reading a book .,0.464,a little girl is sitting on a couch and reading a book on her own .,2.0,4.0,2.0,2.6667,0.5018,0.9294,1.0,1.0,1.0,1.0,0.464,0.5018,0.5018,0.5018,0.464,0.464,0.464
+4,a toddler boy is enjoying his mother reading letters from a book .,0.2853,a little girl learn to read the book with her dad .,2.0,4.0,1.0,2.3333,0.4547,0.8569,1.0,1.0,1.0,1.0,0.3636,0.4167,0.4411,0.3987,0.3477,0.3067,0.2853
+5,a kid is reading a comic book while a woman calls out to him,0.0,a little girl points at pictures in a book while a man helps her along .,2.0,4.0,3.0,3.0,0.3129,0.8561,0.9655,0.75,0.7663,0.7128,0.1629,0.0047,0.2456,0.0259,0.0809,0.0,0.0
+6,"a little boy reads a book , a female voice is heard",0.2562,a little girl asks an adult questions about a book she hold in her lap .,2.0,4.0,2.0,2.6667,0.5353,0.8815,0.971,0.805,0.8107,0.7742,0.4728,0.3719,0.4709,0.3764,0.3861,0.2508,0.2562

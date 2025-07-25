@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,someone pours a liquid substance on the roof then rolls over it with a paint roller .,0.1927,a man pours out blue paint and then proceeds to roll it with a paint brush .,5.0,4.0,4.0,4.3333,0.4898,0.8812,0.9085,0.5925,0.7173,0.6791,0.421,0.1389,0.4384,0.2886,0.3627,0.0228,0.1927
+2,a man is demonstrating how to use a tool to clean the floor .,0.0,a man pours out blue paint and then proceeds to roll it with a paint brush .,5.0,4.0,4.0,4.3333,0.2159,0.784,0.9831,0.827,0.8474,0.8054,0.0,0.0518,0.2024,0.0747,0.0,0.0,0.0
+3,a man is demonstrating how to use a paint roller .,0.0977,a man pours out blue paint and then proceeds to roll it with a paint brush .,5.0,5.0,5.0,5.0,0.5915,0.8708,0.8544,0.5657,0.521,0.4499,0.5308,0.2657,0.5218,0.1902,0.4509,0.1706,0.0977
+4,a man uses a disposable pad style mop to mop the tiles in a public restroom .,0.0,a man pours out blue paint and then proceeds to roll it with a paint brush .,2.0,2.0,2.0,2.0,0.1784,0.7708,0.9711,0.782,0.8218,0.7688,0.0,0.0,0.154,0.0002,0.0,0.0,0.0
+5,a man is laying stone down in a particular pattern then pouring certain kind of sand on it .,0.0,a man pours out blue paint and then proceeds to roll it with a paint brush .,3.0,2.0,2.0,2.3333,0.2864,0.8079,0.934,0.5447,0.5633,0.4595,0.1168,0.0,0.236,0.0,0.0543,0.0,0.0
+6,a crew of men are pouring concrete and smoothing it out .,0.0,a man pours out blue paint and then proceeds to roll it with a paint brush .,1.0,2.0,2.0,1.6667,0.2674,0.7896,0.8775,0.7925,0.7492,0.6824,0.0722,0.0756,0.1652,0.0222,0.0,0.0,0.0

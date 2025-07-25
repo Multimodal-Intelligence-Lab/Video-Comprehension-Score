@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy is hitting a ball by his hands in the basketball ground,0.2536,a boy sits at the end of a chair and begins doing basketball exercises .,5.0,5.0,4.0,4.6667,0.467,0.8424,0.9787,0.8723,0.8707,0.8424,0.3501,0.3889,0.4554,0.3879,0.336,0.255,0.2536
+2,a young boy is dribbling a basketball in a gym .,0.4708,a young man demonstrates multiple basketball dribbling drills in an indoor basketball court .,5.0,4.0,4.0,4.3333,0.7063,0.8974,0.8882,0.9218,0.7966,0.757,0.6657,0.4734,0.6693,0.5013,0.6236,0.4413,0.4708
+3,a boy is dribbling two basketballs at the same time .,0.1362,a guy sits in a chair dribbling behind his legs and then stands to dribble with one hand .,4.0,4.0,4.0,4.0,0.4806,0.8799,0.9333,0.781,0.8006,0.752,0.3992,0.2881,0.4043,0.3055,0.2869,0.1146,0.1362
+4,a young boy practices different basketball shots on a large basketball court .,0.5185,a young man demonstrates multiple basketball dribbling drills in an indoor basketball court .,4.0,4.0,4.0,4.0,0.5809,0.8706,1.0,1.0,1.0,1.0,0.5185,0.5809,0.5809,0.5809,0.5185,0.5185,0.5185
+5,a man is on an indoor basketball court giving instructions in a foreign language and then dribbles the basketball .,0.0,a man demonstrate exercises to help build muscles for a low basketball dribble .,5.0,3.0,4.0,4.0,0.6761,0.8935,0.9511,0.7936,0.7963,0.7316,0.6375,0.1035,0.5277,0.1177,0.4714,0.0,0.0
+6,at a basketball court a boy is bouncing a ball with each hand .,0.0,a man demonstrate exercises to help build muscles for a low basketball dribble .,5.0,5.0,5.0,5.0,0.4925,0.8498,0.9101,0.6549,0.6822,0.5947,0.3914,0.1295,0.3736,0.1644,0.2012,0.0,0.0

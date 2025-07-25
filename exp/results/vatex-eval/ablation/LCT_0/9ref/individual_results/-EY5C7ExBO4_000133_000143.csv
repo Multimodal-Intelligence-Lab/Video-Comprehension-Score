@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person holding something white in a field picks up something else then puts it down then wipes dirt off of the thing they were holding .,0.3634,a person is cleaning off an object that they picked off the ground .,5.0,4.0,5.0,4.6667,0.5533,0.8434,0.9592,0.9091,0.8965,0.8715,0.463,0.4904,0.5174,0.4705,0.4198,0.3874,0.3634
+2,a group of people are standing in a yard and one of them is picking up a mushroom .,0.2056,"a woman is outdoors , harvesting a large wavy shaped mushroom .",4.0,4.0,4.0,4.0,0.5943,0.8614,1.0,0.8723,0.8863,0.8508,0.529,0.3943,0.5048,0.3786,0.3798,0.2968,0.2056
+3,a group of people are in a yard and one of them is picking up something .,0.1318,a person is cleaning off an object that they picked off the ground .,4.0,4.0,3.0,3.6667,0.476,0.8565,1.0,0.8408,0.827,0.7902,0.3882,0.2959,0.408,0.2842,0.282,0.146,0.1318
+4,a person picks a mushroom from the ground near a tree .,0.6566,a person picking up mushrooms from the ground and brushing the dirt off,5.0,5.0,4.0,4.6667,0.7154,0.9098,1.0,1.0,1.0,1.0,0.6872,0.6658,0.7093,0.6875,0.6804,0.6327,0.6566
+5,a woman is using a dust pan to clean a mess up off of the floor .,0.2805,the woman is bent over as she picks something from the ground and brushes it off .,2.0,1.0,2.0,1.6667,0.4399,0.8257,0.9846,0.9737,0.9617,0.9527,0.3081,0.4248,0.4287,0.4176,0.2943,0.2894,0.2805
+6,a person uses their hand to pick a bunch of mushrooms out of the ground .,0.4533,a person picking up mushrooms from the ground and brushing the dirt off,5.0,4.0,5.0,4.6667,0.7718,0.9104,1.0,0.8933,0.9155,0.8943,0.7494,0.629,0.7147,0.4768,0.6866,0.6179,0.4533

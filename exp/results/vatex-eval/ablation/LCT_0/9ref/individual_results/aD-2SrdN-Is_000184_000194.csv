@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two people outside playing with some flares near the street .,0.2466,two people are taped using aerosols as blowtorches to light up the outdoors at night .,5.0,5.0,4.0,4.6667,0.5615,0.8425,1.0,0.7071,0.7306,0.6794,0.4795,0.3616,0.5128,0.3653,0.4217,0.2423,0.2466
+2,a group of people are outside in a dark room and they are playing with fire .,0.5042,"a group of people play with fire on a wintry evening reminding viewers that if you play with fire , you are going to get burned .",4.0,4.0,4.0,4.0,0.6801,0.8818,0.9873,0.8911,0.9115,0.89,0.6336,0.5755,0.5743,0.5629,0.5172,0.5186,0.5042
+3,a man is holding a torch in his hand and blows it out of his mouth .,0.4314,outside at night a person holding a lit torch blows liquid onto it to make a flame .,4.0,4.0,4.0,4.0,0.6309,0.8697,1.0,0.9305,0.936,0.9163,0.5756,0.4923,0.5881,0.5055,0.5264,0.4162,0.4314
+4,a torch with a flame is being held in mid air in front of someone before it is fuelled and engulfs the man .,0.0,a group of people are standing outside holding torches in their hands .,4.0,5.0,4.0,4.3333,0.5942,0.8424,0.9005,0.5654,0.5733,0.4288,0.5134,0.0,0.4405,0.0,0.3358,0.0,0.0
+5,a woman begins to spin a fire torch at night time .,0.144,two people are taped using aerosols as blowtorches to light up the outdoors at night .,4.0,5.0,4.0,4.3333,0.5982,0.8287,0.975,0.8307,0.8559,0.8166,0.5151,0.3172,0.4845,0.3275,0.378,0.1541,0.144
+6,people are standing in a group around fire and then it lights up .,0.3944,a group of people are standing outside holding torches in their hands .,5.0,5.0,3.0,4.3333,0.6615,0.8885,0.9199,0.6732,0.629,0.5825,0.6191,0.4972,0.632,0.4392,0.5859,0.4341,0.3944

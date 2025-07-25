@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man drives a car while explaining some features of the car he's in,0.7808,a man driving a car talks about the different systems of the car .,5.0,5.0,4.0,4.6667,0.9056,0.9234,0.9697,0.8598,0.9115,0.8969,0.8978,0.7412,0.8974,0.8055,0.8889,0.7345,0.7808
+2,a man is driving a car in a parking lot while driving a car .,0.1449,a man drives a car while he talks about all of its great features .,4.0,4.0,4.0,4.0,0.5212,0.9193,0.911,0.7486,0.6912,0.6476,0.4695,0.3081,0.439,0.2506,0.3784,0.2105,0.1449
+3,a young boy is driving a car in a car .,0.3839,a person with a yellow shirt drives a car while strapped in .,4.0,4.0,4.0,4.0,0.4889,0.8878,1.0,1.0,1.0,1.0,0.4138,0.4731,0.4731,0.4731,0.3839,0.3839,0.3839
+4,a man drives a sports car down the street while talking about it .,0.4833,a man drives a car while he talks about all of its great features .,5.0,5.0,4.0,4.6667,0.7922,0.8962,0.8784,0.6732,0.6086,0.5571,0.7682,0.5284,0.7625,0.499,0.735,0.4712,0.4833
+5,"a man is sitting in a car , he is touching buttons in the car and talking about them .",0.5251,a man is driving down the street while he describes all of the interior features of the car .,5.0,5.0,5.0,5.0,0.7476,0.885,0.92,0.7986,0.7924,0.7563,0.7143,0.5587,0.7071,0.5699,0.6691,0.4986,0.5251
+6,a man is talking while driving an automobile with the radio on .,0.3022,a man describes and demonstrates the features of a vehicle as he drives down the road,5.0,4.0,4.0,4.3333,0.7366,0.9031,0.9091,0.8812,0.7898,0.7439,0.6968,0.4607,0.6914,0.4182,0.6448,0.3531,0.3022

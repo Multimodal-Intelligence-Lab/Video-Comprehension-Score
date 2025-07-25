@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a kid is wearing a hat and waves to the camera then sticks his tongue out .,0.7857,a man wearing a hat waves his fingers toward the camera and sticks his tongue out .,4.0,4.0,4.0,4.0,0.8117,0.9496,1.0,0.9091,0.9252,0.9213,0.8017,0.7929,0.8093,0.7965,0.7992,0.7819,0.7857
+2,a man is sitting in front of a camera and eating a donut .,0.0,a young man waves and then makes faces at the camera .,3.0,4.0,4.0,3.6667,0.2771,0.8239,1.0,0.8812,0.8001,0.7427,0.1089,0.0282,0.2073,0.0,0.0379,0.0,0.0
+3,a young man is sitting in front of a camera and talking to the camera .,0.3299,a young man waves and then makes faces at the camera .,4.0,4.0,4.0,4.0,0.5335,0.8822,1.0,0.8549,0.844,0.8149,0.4712,0.4076,0.5241,0.4088,0.4606,0.3286,0.3299
+4,"the baby moves his head around , sticks his tongue out , and smiles .",0.3384,a man waves his fingers and then sticks out his tongue .,4.0,4.0,3.0,3.6667,0.5566,0.8787,1.0,1.0,1.0,1.0,0.4937,0.4351,0.4757,0.4351,0.3828,0.3384,0.3384
+5,a man waves his hand with little expression on his face .,0.2498,a man waves his fingers and then sticks out his tongue .,5.0,4.0,5.0,4.6667,0.4567,0.8815,1.0,0.8879,0.911,0.8911,0.3795,0.3495,0.4531,0.3387,0.3795,0.262,0.2498
+6,a man is talking to a camera and spit is hanging out of his mouth .,0.1148,a person is smiling in the camera then sticks his tongue out and waves .,4.0,4.0,4.0,4.0,0.3495,0.8398,0.9677,0.8408,0.8893,0.8682,0.2239,0.203,0.3101,0.2566,0.1785,0.051,0.1148

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman uses a big brush to apply makeup on her face .,0.5179,a young woman appears to be looking at herself in a mirror and then takes a large blush brush and begins patting her face with it .,5.0,5.0,5.0,5.0,0.7713,0.9512,1.0,0.8723,0.8863,0.8654,0.7491,0.5841,0.6754,0.585,0.6587,0.5168,0.5179
+2,a woman is using a brush to apply makeup to her face .,0.5192,a young woman with dark hair is using a make-up brush to apply powder to her face .,5.0,5.0,5.0,5.0,0.8825,0.9485,0.9787,0.8515,0.9107,0.8941,0.8761,0.5582,0.8166,0.5749,0.8055,0.5281,0.5192
+3,a woman is using a brush to apply makeup to her face .,0.5192,a young woman with dark hair is using a make-up brush to apply powder to her face .,5.0,4.0,5.0,4.6667,0.8825,0.9485,0.9787,0.8515,0.9107,0.8941,0.8761,0.5582,0.8166,0.5749,0.8055,0.5281,0.5192
+4,"using a makeup brush , a young woman applies foundation makeup beneath her eyes .",0.403,a young woman uses a makeup brush to apply something to her face .,4.0,5.0,5.0,4.6667,0.8034,0.9183,0.8829,0.5701,0.5905,0.4909,0.7857,0.459,0.7007,0.4162,0.6939,0.4468,0.403
+5,a woman putting on makeup with a thin brush in the mirror .,0.6375,a woman is applying makeup to her face with a soft brush .,4.0,4.0,5.0,4.3333,0.716,0.8809,1.0,1.0,1.0,1.0,0.6776,0.6576,0.7036,0.6806,0.6636,0.6114,0.6375
+6,a woman is describing how to use this brush to apply some make up .,0.5696,a young woman uses a makeup brush to apply something to her face .,5.0,5.0,5.0,5.0,0.7422,0.8845,1.0,1.0,1.0,1.0,0.7086,0.612,0.6696,0.6218,0.6265,0.5585,0.5696

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is laughing and having a good time while standing at the roulette will .,0.0,a man talks to another man as he places his bet at the gaming table .,5.0,4.0,4.0,4.3333,0.3625,0.8066,0.9655,0.4971,0.4844,0.3607,0.2096,0.0,0.3397,0.0,0.1814,0.0,0.0
+2,a group of people are gathered around a table and drinking beer .,0.0,a man talks to another man as he places his bet at the gaming table .,4.0,4.0,4.0,4.0,0.1396,0.7926,0.9264,0.6228,0.6172,0.5171,0.0,0.0,0.0713,0.0,0.0,0.0,0.0
+3,a group of people are playing a game of beer pong .,0.0,a man talks to another man as he places his bet at the gaming table .,3.0,2.0,4.0,3.0,0.0999,0.7938,0.8988,0.6103,0.5904,0.484,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,a group of people are sitting in front of a dealer at a casino while a man speaks about card counting .,0.0,a man talks to another man as he places his bet at the gaming table .,5.0,5.0,5.0,5.0,0.4376,0.8304,0.781,0.3729,0.3396,0.2048,0.3228,0.0,0.2798,0.0,0.1328,0.0,0.0
+5,a man shows off how to deal a hand of poker .,0.0723,a man talks to another man as he places his bet at the gaming table .,1.0,2.0,5.0,2.6667,0.3746,0.8299,0.9583,0.8047,0.8123,0.7738,0.2465,0.2229,0.3474,0.2301,0.2137,0.0636,0.0723
+6,a man talks about strategies for playing poker and winning a lot of money,0.1436,a man talks to another man as he places his bet at the gaming table .,3.0,3.0,5.0,3.6667,0.4701,0.8438,0.9091,0.6144,0.7333,0.6839,0.372,0.1375,0.4171,0.2773,0.3092,0.0,0.1436

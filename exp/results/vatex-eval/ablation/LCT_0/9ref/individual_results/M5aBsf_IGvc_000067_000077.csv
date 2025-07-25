@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is playing a pinball machine and the lights are activated,0.7178,a man plays on a large pinball machine with dazzling lights .,5.0,5.0,5.0,5.0,0.8694,0.9428,1.0,0.8723,0.8863,0.8738,0.8615,0.7516,0.8639,0.7217,0.8557,0.7481,0.7178
+2,a man is playing a game of pinball on a pinball machine .,0.8087,a man plays a game of pinball on a colorful pinball machine .,5.0,5.0,5.0,5.0,0.9132,0.967,0.9804,0.8723,0.8625,0.8451,0.9102,0.8074,0.9115,0.8093,0.9084,0.8068,0.8087
+3,a man is playing a game of pinball on a pinball machine .,0.8087,a man plays a game of pinball on a colorful pinball machine .,5.0,5.0,5.0,5.0,0.9132,0.967,0.9804,0.8723,0.8625,0.8451,0.9102,0.8074,0.9115,0.8093,0.9084,0.8068,0.8087
+4,the man is having fun playing pin ball in the game room .,0.6679,man in a home playing pinball as the machine makes sounds .,5.0,4.0,5.0,4.6667,0.7864,0.9371,0.9846,0.8792,0.929,0.9161,0.7545,0.703,0.7429,0.7189,0.7045,0.6491,0.6679
+5,a man turns on and plays ping pong machine .,0.444,a man plays a game of pinball on a colorful pinball machine .,3.0,3.0,5.0,3.6667,0.5878,0.8775,0.9599,0.8723,0.8567,0.8367,0.5239,0.5208,0.5646,0.5121,0.5038,0.454,0.444
+6,someone is playing a pinball machine in a dark room .,0.6371,a man is playing a pinball machine which is very loud and has flashing lights .,4.0,4.0,4.0,4.0,0.6789,0.8937,1.0,1.0,1.0,1.0,0.6371,0.6789,0.6789,0.6789,0.6371,0.6371,0.6371

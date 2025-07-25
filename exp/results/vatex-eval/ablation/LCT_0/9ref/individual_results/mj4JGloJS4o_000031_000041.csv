@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two people are in a wooded area wearing and holding paintball equipment,0.6688,a couple of people are outside in a wooded area with masks on playing paintball .,5.0,5.0,5.0,5.0,0.8107,0.8878,0.9129,0.6464,0.7435,0.7068,0.786,0.5596,0.7893,0.6805,0.7619,0.5435,0.6688
+2,a man is using a chainsaw to cut through a tree .,0.0886,a man in a suit with equipment to chop up trees is leaning in front of a destroyed tree stump .,3.0,1.0,2.0,2.0,0.4507,0.8586,1.0,1.0,1.0,1.0,0.3603,0.2128,0.3723,0.2174,0.2689,0.0832,0.0886
+3,a group of people are in the woods and they are in a forest .,0.0369,two men are crouching in the middle of the woods having a paintball match .,5.0,4.0,4.0,4.3333,0.4093,0.8653,0.9744,1.0,0.9697,0.9606,0.3174,0.2717,0.3639,0.2194,0.2649,0.1016,0.0369
+4,two men crouch behind inflatable barriers while shooting paint-balls at each other .,0.6891,two men are crouching in the middle of the woods having a paintball match .,3.0,2.0,3.0,2.6667,0.7404,0.8682,0.9831,1.0,0.9872,0.9845,0.701,0.7345,0.7327,0.73,0.6921,0.6942,0.6891
+5,a paintball game where opposing teams are hiding behind cover and shooting at each other .,0.3276,two boys are in a paintball fight as one hides behind a tree stump .,4.0,4.0,4.0,4.0,0.5449,0.8327,0.9804,0.9639,0.9628,0.9504,0.4446,0.4298,0.508,0.4401,0.4091,0.3153,0.3276
+6,a man in the woods with an ax hits the wood and then throw the ax to hit the wood again .,0.0,a man in a suit with equipment to chop up trees is leaning in front of a destroyed tree stump .,3.0,1.0,2.0,2.0,0.3503,0.8146,0.9818,0.7583,0.7907,0.7422,0.1998,0.1204,0.3383,0.1783,0.185,0.0,0.0

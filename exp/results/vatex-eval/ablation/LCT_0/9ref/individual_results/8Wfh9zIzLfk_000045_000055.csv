@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,several people are swimming laps in a pool and turn around at the markers .,0.4048,a group of people swim around in a pool together as other watch,5.0,5.0,5.0,5.0,0.6309,0.9005,0.9831,0.8372,0.8487,0.8167,0.589,0.4678,0.592,0.4708,0.5434,0.4014,0.4048
+2,a group of people are swimming in a swimming pool .,0.6462,some people watching other people swimming in a swimming pool .,5.0,5.0,5.0,5.0,0.8062,0.9608,0.9714,0.9679,0.9393,0.9368,0.792,0.719,0.7799,0.66,0.7637,0.714,0.6462
+3,a group of people are competing in a swimming competition .,0.4173,a group of people swim around in a pool together as other watch,5.0,5.0,2.0,4.0,0.6878,0.8936,0.9412,0.8954,0.8624,0.8352,0.6454,0.5121,0.6636,0.4533,0.6179,0.4663,0.4173
+4,two people swim down lanes in a pool as a large group of people watch .,0.5653,a group of people swim around in a pool together as other watch,4.0,4.0,4.0,4.0,0.7115,0.9263,0.9623,0.8803,0.8873,0.8599,0.6866,0.6412,0.6151,0.5973,0.5844,0.6127,0.5653
+5,people are standing around a swimming pool while people are in the pool racing .,0.0,people are shown swimming around a yellow marker in an indoor pool .,5.0,5.0,4.0,4.6667,0.6942,0.9317,0.8832,0.6194,0.5663,0.4762,0.6718,0.1357,0.6401,0.0547,0.6137,0.0444,0.0
+6,a group of people watching swimmers swim in a race .,0.5698,some people watching other people swimming in a swimming pool .,5.0,5.0,4.0,4.6667,0.7355,0.9251,0.9108,0.6568,0.6928,0.6679,0.7141,0.4355,0.6887,0.5823,0.6635,0.4186,0.5698

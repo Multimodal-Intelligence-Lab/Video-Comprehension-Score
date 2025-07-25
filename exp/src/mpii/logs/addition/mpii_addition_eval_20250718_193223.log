@@ -1,0 +1,215 @@
+2025-07-18 19:32:23 [INFO] Initializing models...
+2025-07-18 19:32:31 [INFO] Models initialized successfully
+2025-07-18 19:32:31 [INFO] Starting addition evaluation pipeline
+2025-07-18 19:32:31 [INFO] Input folder: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset
+2025-07-18 19:32:31 [INFO] Output folder: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/results/mpii/addition
+2025-07-18 19:32:31 [INFO] Experiment ID: eval_20250718_193223
+2025-07-18 19:32:31 [INFO] Found 400 files to process
+2025-07-18 19:32:31 [INFO] Processing 400 files with 12 workers
+2025-07-18 19:32:31 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1.json (10 iterations)
+2025-07-18 19:32:31 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1004.json (10 iterations)
+2025-07-18 19:32:31 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/100.json (10 iterations)
+2025-07-18 19:32:31 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/10.json (10 iterations)
+2025-07-18 19:32:31 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1000.json (10 iterations)
+2025-07-18 19:32:31 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1012.json (10 iterations)
+2025-07-18 19:32:31 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1006.json (10 iterations)
+2025-07-18 19:32:31 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1013.json (10 iterations)
+2025-07-18 19:32:31 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1016.json (10 iterations)
+2025-07-18 19:32:31 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1018.json (10 iterations)
+2025-07-18 19:32:31 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1023.json (10 iterations)
+2025-07-18 19:32:31 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1020.json (10 iterations)
+2025-07-18 19:33:18 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1006.json (10 iterations, 46.28s)
+2025-07-18 19:33:18 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1016.json (10 iterations, 46.30s)
+2025-07-18 19:33:18 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1026.json (10 iterations)
+2025-07-18 19:33:18 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1028.json (10 iterations)
+2025-07-18 19:33:18 [INFO] Files: 1/400 (0.2%)
+2025-07-18 19:33:18 [INFO] ETA: 308.2 minutes
+2025-07-18 19:33:18 [INFO] Files: 2/400 (0.5%)
+2025-07-18 19:33:18 [INFO] ETA: 153.8 minutes
+2025-07-18 19:33:18 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1013.json (10 iterations, 46.37s)
+2025-07-18 19:33:18 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/103.json (10 iterations)
+2025-07-18 19:33:18 [INFO] Files: 3/400 (0.8%)
+2025-07-18 19:33:18 [INFO] ETA: 102.3 minutes
+2025-07-18 19:33:18 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1020.json (10 iterations, 46.95s)
+2025-07-18 19:33:18 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1031.json (10 iterations)
+2025-07-18 19:33:18 [INFO] Files: 4/400 (1.0%)
+2025-07-18 19:33:18 [INFO] ETA: 77.5 minutes
+2025-07-18 19:33:18 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1004.json (10 iterations, 47.07s)
+2025-07-18 19:33:18 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1034.json (10 iterations)
+2025-07-18 19:33:18 [INFO] Files: 5/400 (1.2%)
+2025-07-18 19:33:18 [INFO] ETA: 62.0 minutes
+2025-07-18 19:33:18 [INFO] Checkpoint saved at 5/400 files (interval: 5)
+2025-07-18 19:33:19 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1018.json (10 iterations, 47.33s)
+2025-07-18 19:33:19 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1035.json (10 iterations)
+2025-07-18 19:33:19 [INFO] Files: 6/400 (1.5%)
+2025-07-18 19:33:19 [INFO] ETA: 51.9 minutes
+2025-07-18 19:33:19 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1023.json (10 iterations, 47.41s)
+2025-07-18 19:33:19 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1036.json (10 iterations)
+2025-07-18 19:33:19 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1012.json (10 iterations, 47.42s)
+2025-07-18 19:33:19 [INFO] Files: 7/400 (1.8%)
+2025-07-18 19:33:19 [INFO] ETA: 44.4 minutes
+2025-07-18 19:33:19 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1038.json (10 iterations)
+2025-07-18 19:33:19 [INFO] Files: 8/400 (2.0%)
+2025-07-18 19:33:19 [INFO] ETA: 38.8 minutes
+2025-07-18 19:33:19 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/100.json (10 iterations, 48.10s)
+2025-07-18 19:33:19 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1039.json (10 iterations)
+2025-07-18 19:33:19 [INFO] Files: 9/400 (2.2%)
+2025-07-18 19:33:19 [INFO] ETA: 34.8 minutes
+2025-07-18 19:33:20 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1.json (10 iterations, 48.91s)
+2025-07-18 19:33:20 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/104.json (10 iterations)
+2025-07-18 19:33:20 [INFO] Files: 10/400 (2.5%)
+2025-07-18 19:33:20 [INFO] ETA: 31.8 minutes
+2025-07-18 19:33:20 [INFO] Checkpoint saved at 10/400 files (interval: 30)
+2025-07-18 19:33:21 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/10.json (10 iterations, 49.39s)
+2025-07-18 19:33:21 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1043.json (10 iterations)
+2025-07-18 19:33:21 [INFO] Files: 11/400 (2.8%)
+2025-07-18 19:33:21 [INFO] ETA: 29.1 minutes
+2025-07-18 19:33:21 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1000.json (10 iterations, 50.23s)
+2025-07-18 19:33:21 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1044.json (10 iterations)
+2025-07-18 19:33:21 [INFO] Files: 12/400 (3.0%)
+2025-07-18 19:33:21 [INFO] ETA: 27.1 minutes
+2025-07-18 19:34:01 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1034.json (10 iterations, 42.23s)
+2025-07-18 19:34:01 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1046.json (10 iterations)
+2025-07-18 19:34:01 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1031.json (10 iterations, 42.35s)
+2025-07-18 19:34:01 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1048.json (10 iterations)
+2025-07-18 19:34:01 [INFO] Files: 13/400 (3.2%)
+2025-07-18 19:34:01 [INFO] ETA: 44.3 minutes
+2025-07-18 19:34:01 [INFO] Files: 14/400 (3.5%)
+2025-07-18 19:34:01 [INFO] ETA: 41.0 minutes
+2025-07-18 19:34:01 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/103.json (10 iterations, 43.46s)
+2025-07-18 19:34:01 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1050.json (10 iterations)
+2025-07-18 19:34:01 [INFO] Files: 15/400 (3.8%)
+2025-07-18 19:34:01 [INFO] ETA: 38.4 minutes
+2025-07-18 19:34:01 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1028.json (10 iterations, 43.79s)
+2025-07-18 19:34:01 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1052.json (10 iterations)
+2025-07-18 19:34:01 [INFO] Files: 16/400 (4.0%)
+2025-07-18 19:34:01 [INFO] ETA: 36.0 minutes
+2025-07-18 19:34:02 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1036.json (10 iterations, 42.91s)
+2025-07-18 19:34:02 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1053.json (10 iterations)
+2025-07-18 19:34:02 [INFO] Files: 17/400 (4.2%)
+2025-07-18 19:34:02 [INFO] ETA: 33.9 minutes
+2025-07-18 19:34:02 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1038.json (10 iterations, 43.27s)
+2025-07-18 19:34:02 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1054.json (10 iterations)
+2025-07-18 19:34:02 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1035.json (10 iterations, 43.34s)
+2025-07-18 19:34:02 [INFO] Files: 18/400 (4.5%)
+2025-07-18 19:34:02 [INFO] ETA: 32.1 minutes
+2025-07-18 19:34:02 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1057.json (10 iterations)
+2025-07-18 19:34:02 [INFO] Files: 19/400 (4.8%)
+2025-07-18 19:34:02 [INFO] ETA: 30.3 minutes
+2025-07-18 19:34:03 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1039.json (10 iterations, 43.59s)
+2025-07-18 19:34:03 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/106.json (10 iterations)
+2025-07-18 19:34:03 [INFO] Files: 20/400 (5.0%)
+2025-07-18 19:34:03 [INFO] ETA: 29.0 minutes
+2025-07-18 19:34:04 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1026.json (10 iterations, 46.01s)
+2025-07-18 19:34:04 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1060.json (10 iterations)
+2025-07-18 19:34:04 [INFO] Files: 21/400 (5.2%)
+2025-07-18 19:34:04 [INFO] ETA: 27.8 minutes
+2025-07-18 19:34:04 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1043.json (10 iterations, 43.44s)
+2025-07-18 19:34:04 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1064.json (10 iterations)
+2025-07-18 19:34:04 [INFO] Files: 22/400 (5.5%)
+2025-07-18 19:34:04 [INFO] ETA: 26.6 minutes
+2025-07-18 19:34:06 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/104.json (10 iterations, 45.52s)
+2025-07-18 19:34:06 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1066.json (10 iterations)
+2025-07-18 19:34:06 [INFO] Files: 23/400 (5.8%)
+2025-07-18 19:34:06 [INFO] ETA: 25.8 minutes
+2025-07-18 19:34:07 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1044.json (10 iterations, 45.69s)
+2025-07-18 19:34:07 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1068.json (10 iterations)
+2025-07-18 19:34:07 [INFO] Files: 24/400 (6.0%)
+2025-07-18 19:34:07 [INFO] ETA: 25.0 minutes
+2025-07-18 19:34:45 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1052.json (10 iterations, 43.38s)
+2025-07-18 19:34:45 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/107.json (10 iterations)
+2025-07-18 19:34:45 [INFO] Files: 25/400 (6.2%)
+2025-07-18 19:34:45 [INFO] ETA: 33.4 minutes
+2025-07-18 19:34:45 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1057.json (10 iterations, 43.46s)
+2025-07-18 19:34:45 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1072.json (10 iterations)
+2025-07-18 19:34:45 [INFO] Files: 26/400 (6.5%)
+2025-07-18 19:34:45 [INFO] ETA: 32.2 minutes
+2025-07-18 19:34:45 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1046.json (10 iterations, 44.86s)
+2025-07-18 19:34:45 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1073.json (10 iterations)
+2025-07-18 19:34:45 [INFO] Files: 27/400 (6.8%)
+2025-07-18 19:34:45 [INFO] ETA: 30.9 minutes
+2025-07-18 19:34:46 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1050.json (10 iterations, 44.53s)
+2025-07-18 19:34:46 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1077.json (10 iterations)
+2025-07-18 19:34:46 [INFO] Files: 28/400 (7.0%)
+2025-07-18 19:34:46 [INFO] ETA: 29.8 minutes
+2025-07-18 19:34:47 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1053.json (10 iterations, 45.01s)
+2025-07-18 19:34:47 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1078.json (10 iterations)
+2025-07-18 19:34:47 [INFO] Files: 29/400 (7.2%)
+2025-07-18 19:34:47 [INFO] ETA: 28.9 minutes
+2025-07-18 19:34:47 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1048.json (10 iterations, 46.22s)
+2025-07-18 19:34:47 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1079.json (10 iterations)
+2025-07-18 19:34:47 [INFO] Files: 30/400 (7.5%)
+2025-07-18 19:34:47 [INFO] ETA: 27.9 minutes
+2025-07-18 19:34:48 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/106.json (10 iterations, 44.67s)
+2025-07-18 19:34:48 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1080.json (10 iterations)
+2025-07-18 19:34:48 [INFO] Files: 31/400 (7.8%)
+2025-07-18 19:34:48 [INFO] ETA: 27.1 minutes
+2025-07-18 19:34:48 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1060.json (10 iterations, 44.63s)
+2025-07-18 19:34:48 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1083.json (10 iterations)
+2025-07-18 19:34:48 [INFO] Files: 32/400 (8.0%)
+2025-07-18 19:34:48 [INFO] ETA: 26.2 minutes
+2025-07-18 19:34:49 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1054.json (10 iterations, 46.88s)
+2025-07-18 19:34:49 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1084.json (10 iterations)
+2025-07-18 19:34:49 [INFO] Files: 33/400 (8.2%)
+2025-07-18 19:34:49 [INFO] ETA: 25.5 minutes
+2025-07-18 19:34:50 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1064.json (10 iterations, 45.99s)
+2025-07-18 19:34:50 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1088.json (10 iterations)
+2025-07-18 19:34:50 [INFO] Files: 34/400 (8.5%)
+2025-07-18 19:34:50 [INFO] ETA: 24.9 minutes
+2025-07-18 19:34:50 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1066.json (10 iterations, 44.58s)
+2025-07-18 19:34:50 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/109.json (10 iterations)
+2025-07-18 19:34:50 [INFO] Files: 35/400 (8.8%)
+2025-07-18 19:34:50 [INFO] ETA: 24.2 minutes
+2025-07-18 19:34:53 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1068.json (10 iterations, 45.40s)
+2025-07-18 19:34:53 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1090.json (10 iterations)
+2025-07-18 19:34:53 [INFO] Files: 36/400 (9.0%)
+2025-07-18 19:34:53 [INFO] ETA: 23.8 minutes
+2025-07-18 19:35:27 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/107.json (10 iterations, 42.46s)
+2025-07-18 19:35:27 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1098.json (10 iterations)
+2025-07-18 19:35:27 [INFO] Files: 37/400 (9.2%)
+2025-07-18 19:35:27 [INFO] ETA: 28.8 minutes
+2025-07-18 19:35:28 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1072.json (10 iterations, 42.80s)
+2025-07-18 19:35:28 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1099.json (10 iterations)
+2025-07-18 19:35:28 [INFO] Files: 38/400 (9.5%)
+2025-07-18 19:35:28 [INFO] ETA: 28.1 minutes
+2025-07-18 19:35:29 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1079.json (10 iterations, 42.32s)
+2025-07-18 19:35:29 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/11.json (10 iterations)
+2025-07-18 19:35:29 [INFO] Files: 39/400 (9.8%)
+2025-07-18 19:35:29 [INFO] ETA: 27.4 minutes
+2025-07-18 19:35:29 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1077.json (10 iterations, 43.65s)
+2025-07-18 19:35:29 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1103.json (10 iterations)
+2025-07-18 19:35:29 [INFO] Files: 40/400 (10.0%)
+2025-07-18 19:35:29 [INFO] ETA: 26.7 minutes
+2025-07-18 19:35:29 [INFO] Checkpoint saved at 40/400 files (interval: 33)
+2025-07-18 19:35:30 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1073.json (10 iterations, 44.40s)
+2025-07-18 19:35:30 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1106.json (10 iterations)
+2025-07-18 19:35:30 [INFO] Files: 41/400 (10.2%)
+2025-07-18 19:35:30 [INFO] ETA: 26.1 minutes
+2025-07-18 19:35:30 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1078.json (10 iterations, 43.93s)
+2025-07-18 19:35:30 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1108.json (10 iterations)
+2025-07-18 19:35:30 [INFO] Files: 42/400 (10.5%)
+2025-07-18 19:35:30 [INFO] ETA: 25.5 minutes
+2025-07-18 19:35:31 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1080.json (10 iterations, 43.65s)
+2025-07-18 19:35:31 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1109.json (10 iterations)
+2025-07-18 19:35:31 [INFO] Files: 43/400 (10.8%)
+2025-07-18 19:35:31 [INFO] ETA: 24.9 minutes
+2025-07-18 19:35:32 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1083.json (10 iterations, 43.47s)
+2025-07-18 19:35:32 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1111.json (10 iterations)
+2025-07-18 19:35:32 [INFO] Files: 44/400 (11.0%)
+2025-07-18 19:35:32 [INFO] ETA: 24.3 minutes
+2025-07-18 19:35:32 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1084.json (10 iterations, 42.94s)
+2025-07-18 19:35:32 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1115.json (10 iterations)
+2025-07-18 19:35:32 [INFO] Files: 45/400 (11.2%)
+2025-07-18 19:35:32 [INFO] ETA: 23.7 minutes
+2025-07-18 19:35:33 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1088.json (10 iterations, 43.34s)
+2025-07-18 19:35:33 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1117.json (10 iterations)
+2025-07-18 19:35:33 [INFO] Files: 46/400 (11.5%)
+2025-07-18 19:35:33 [INFO] ETA: 23.4 minutes
+2025-07-18 19:35:35 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/109.json (10 iterations, 44.78s)
+2025-07-18 19:35:35 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1119.json (10 iterations)
+2025-07-18 19:35:35 [INFO] Files: 47/400 (11.8%)
+2025-07-18 19:35:35 [INFO] ETA: 23.0 minutes
+2025-07-18 19:35:39 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1090.json (10 iterations, 46.03s)
+2025-07-18 19:35:39 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset/beginning/1120.json (10 iterations)
+2025-07-18 19:35:39 [INFO] Files: 48/400 (12.0%)
+2025-07-18 19:35:39 [INFO] ETA: 22.9 minutes

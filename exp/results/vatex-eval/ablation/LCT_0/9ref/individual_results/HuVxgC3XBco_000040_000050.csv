@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of three men are on a putting green wrapping up a hole of golf,0.6477,three men put their respective balls on the green while paying a round of golf .,5.0,5.0,5.0,5.0,0.8074,0.9189,0.934,0.8047,0.7867,0.7498,0.7904,0.6819,0.7667,0.6871,0.7461,0.6418,0.6477
+2,a woman is demonstrating how to properly hit a golf ball .,0.0679,three people stand on a golf course and one removes a golf ball from the hole .,2.0,2.0,2.0,2.0,0.3616,0.8321,1.0,0.8723,0.8863,0.854,0.2328,0.2334,0.335,0.2244,0.2008,0.0511,0.0679
+3,a group of people are playing golf in a field .,0.6944,a group of people are having fun at the golf course .,5.0,5.0,5.0,5.0,0.7194,0.9179,1.0,1.0,1.0,1.0,0.6944,0.7194,0.7194,0.7194,0.6944,0.6944,0.6944
+4,a man is playing golf by putting ball in the hole on a golf court .,0.4047,three men paling golf on a putting green at a golf course .,5.0,5.0,5.0,5.0,0.6234,0.8834,0.9176,0.8857,0.8486,0.8286,0.5639,0.4299,0.5687,0.4864,0.5006,0.3547,0.4047
+5,"a man swings his golf club three different times , he is struggling to hit the ball .",0.0,"the three men are using their t time , playing golf together .",2.0,2.0,4.0,2.6667,0.4873,0.8482,0.9571,0.6834,0.7299,0.6792,0.393,0.0291,0.384,0.091,0.2572,0.0,0.0
+6,a man in a golf field hits a golf ball with a club,0.2174,a man putts on a golf course green and then picks up his ball and walks away .,3.0,4.0,5.0,4.0,0.5095,0.877,0.9493,0.8185,0.8307,0.807,0.421,0.3034,0.4097,0.3136,0.3151,0.2057,0.2174

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two teams play sports on a field wearing green and red uniforms .,0.1392,a group of people outside playing a sports game in front of others,5.0,5.0,5.0,5.0,0.4538,0.8258,0.9326,0.7552,0.7685,0.7196,0.3385,0.2768,0.4143,0.2892,0.2907,0.1241,0.1392
+2,a group of people are playing a game of lacrosse on a field .,0.3925,a group of people outside playing a sports game in front of others,5.0,5.0,5.0,5.0,0.4988,0.9057,1.0,0.8879,0.911,0.9017,0.4466,0.4355,0.4988,0.4498,0.4466,0.3767,0.3925
+3,a group of people are playing a game of lacrosse on a field .,0.3925,a group of people outside playing a sports game in front of others,5.0,5.0,5.0,5.0,0.4988,0.9057,1.0,0.8879,0.911,0.9017,0.4466,0.4355,0.4988,0.4498,0.4466,0.3767,0.3925
+4,"athletes play a game of lacrosse and run down the field with their sticks , making passes and plays .",0.0,a group of people outside playing a sports game in front of others,5.0,4.0,5.0,4.6667,0.352,0.8237,0.7887,0.2555,0.1813,0.006,0.2132,0.0,0.1783,0.0,0.0024,0.0,0.0
+5,a lacrosse game is being played as the ball is tossed across the field .,0.0,a group of people outside playing a sports game in front of others,5.0,5.0,5.0,5.0,0.3009,0.8307,0.8521,0.7043,0.6567,0.5868,0.1585,0.0074,0.1796,0.0,0.0124,0.0,0.0
+6,two teams are playing lacrosse against each other on a lacrosse field .,0.0,a group of people outside playing a sports game in front of others,5.0,5.0,5.0,5.0,0.3076,0.8132,0.9655,0.7824,0.7965,0.7498,0.1485,0.115,0.2829,0.1307,0.1181,0.0,0.0

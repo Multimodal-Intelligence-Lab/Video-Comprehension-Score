@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guitar is dropped on the ground and it breaks into many pieces .,0.0,pieces of a broken guitar are tossed onto the carpet by a young man with a grin on his face .,5.0,5.0,5.0,5.0,0.6495,0.8467,0.7356,0.3366,0.2825,0.1525,0.586,0.0,0.5235,0.0,0.4372,0.0,0.0
+2,a man is standing in front of a camera and is talking to the camera .,0.0,pieces of a broken guitar are tossed onto the carpet by a young man with a grin on his face .,2.0,5.0,5.0,4.0,0.0638,0.7777,0.8197,0.5727,0.5658,0.4416,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a man is standing in front of a camera and is talking to the camera .,0.0,pieces of a broken guitar are tossed onto the carpet by a young man with a grin on his face .,2.0,5.0,5.0,4.0,0.0638,0.7777,0.8197,0.5727,0.5658,0.4416,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,a man sits on a bench and uses a rock to break another rock as he talks about it .,0.0,pieces of a broken guitar are tossed onto the carpet by a young man with a grin on his face .,2.0,1.0,1.0,1.3333,0.1645,0.7863,0.8106,0.4744,0.4647,0.3192,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5,a boy destroys an electric guitar by repeatedly striking it with an axe .,0.0,pieces of a broken guitar are tossed onto the carpet by a young man with a grin on his face .,3.0,2.0,3.0,2.6667,0.4855,0.7964,0.8351,0.5411,0.5423,0.4252,0.354,0.0492,0.3839,0.0512,0.2264,0.0,0.0
+6,a boy flies down a sand hill before face planting off his bike .,0.0,pieces of a broken guitar are tossed onto the carpet by a young man with a grin on his face .,2.0,2.0,1.0,1.6667,0.1795,0.7779,0.9221,0.7053,0.7323,0.6559,0.0,0.0,0.1102,0.0,0.0,0.0,0.0

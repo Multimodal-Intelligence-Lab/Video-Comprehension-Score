@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two people practice fighting with each other on a mat while others watch,0.1821,two men are demonstrating how to use your whole body to fight .,5.0,5.0,5.0,5.0,0.5358,0.8389,0.9505,0.9052,0.8461,0.7984,0.4392,0.3233,0.4472,0.3223,0.3321,0.1138,0.1821
+2,a group of people are in a gym and one of them is doing some exercises .,0.5912,a group of people in a gym watch a man demonstrate a boxing exercise .,4.0,5.0,5.0,4.6667,0.6483,0.9032,0.9867,1.0,0.9801,0.9735,0.6106,0.6483,0.6254,0.6308,0.5852,0.6106,0.5912
+3,a group of people are in a gym and they are doing some exercises .,0.1871,a group of people in a gym watch a man demonstrate a boxing exercise .,5.0,2.0,5.0,4.0,0.6294,0.9238,0.9667,1.0,0.9647,0.956,0.5988,0.3203,0.5504,0.2395,0.5133,0.2856,0.1871
+4,two young men are engaged in a wrestling match with onlookers seated in the gymnasium .,0.3507,two men are teaching and modeling a wrestling move to other people nearby .,5.0,3.0,5.0,4.3333,0.6043,0.8406,0.9885,0.9084,0.9255,0.9108,0.5203,0.4474,0.4922,0.4576,0.3921,0.3385,0.3507
+5,two men are boxing against each other in a ring with a few people watching .,0.0014,two men are teaching and modeling a wrestling move to other people nearby .,5.0,4.0,5.0,4.6667,0.4793,0.8815,0.9667,0.8342,0.8125,0.7802,0.3912,0.134,0.2858,0.1481,0.1606,0.0,0.0014
+6,several people sit on the floor or stand a watch while a man does a roundhouse kick against a block of wood being held by two people .,0.065,a group of people in a gym watch a man demonstrate a boxing exercise .,3.0,2.0,4.0,3.0,0.5036,0.8315,0.9516,0.7754,0.7854,0.7419,0.3949,0.2126,0.4327,0.229,0.3085,0.053,0.065

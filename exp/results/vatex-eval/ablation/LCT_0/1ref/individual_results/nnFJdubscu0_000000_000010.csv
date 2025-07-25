@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is seen demonstrating knife throwing in a small room,0.142,a man is throwing knives at a pumpkin and each time he throws he steps back to try from farther away .,5.0,5.0,5.0,5.0,0.4265,0.8346,0.8612,0.8298,0.801,0.7615,0.3128,0.3088,0.334,0.2839,0.202,0.1718,0.142
+2,a man is standing in front of a wall and is showing how to do something .,0.0,a man is throwing knives at a pumpkin and each time he throws he steps back to try from farther away .,5.0,5.0,5.0,5.0,0.1404,0.7846,0.954,0.6882,0.7423,0.6716,0.0,0.0,0.099,0.0,0.0,0.0,0.0
+3,a man is using a trowel to apply plaster to a wall .,0.0,a man is throwing knives at a pumpkin and each time he throws he steps back to try from farther away .,3.0,2.0,3.0,2.6667,0.0908,0.77,0.9762,0.8889,0.9106,0.884,0.0,0.0,0.0686,0.0016,0.0,0.0,0.0
+4,a man leans back and then throws a javelin into the air .,0.0,a man is throwing knives at a pumpkin and each time he throws he steps back to try from farther away .,2.0,4.0,4.0,3.3333,0.3682,0.854,0.862,0.2924,0.2758,0.1519,0.2602,0.0,0.2671,0.0,0.1418,0.0,0.0
+5,a man throws a throwing ax at a target while another man next to him does so,0.0016,a man is throwing knives at a pumpkin and each time he throws he steps back to try from farther away .,4.0,3.0,2.0,3.0,0.4085,0.8472,0.8996,0.6671,0.6993,0.645,0.3019,0.1134,0.3425,0.1542,0.224,0.0,0.0016
+6,a man repeatedly throws a knife at a tree trunk .,0.0,a man is throwing knives at a pumpkin and each time he throws he steps back to try from farther away .,5.0,4.0,4.0,4.3333,0.5642,0.8459,0.885,0.4765,0.5108,0.4217,0.4848,0.0721,0.5075,0.1329,0.4179,0.0,0.0

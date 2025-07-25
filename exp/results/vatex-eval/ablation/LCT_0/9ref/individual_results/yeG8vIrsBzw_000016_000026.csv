@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a car is following as the person in front rides the skateboard on the side of the hill .,0.7406,a vehicle is following a person riding a skateboard on a curved road .,4.0,5.0,5.0,4.6667,0.8694,0.9299,1.0,1.0,1.0,1.0,0.8596,0.7669,0.7669,0.7669,0.7599,0.7406,0.7406
+2,a person is riding a motorcycle down a road in a parking lot .,0.0,a man outside on a road riding real fast down the road ona bike,3.0,3.0,2.0,2.6667,0.3287,0.8758,1.0,0.9336,0.8748,0.8455,0.2173,0.2263,0.2612,0.1742,0.1176,0.0451,0.0
+3,a person is riding a skateboard down a road and then falls down .,0.537,a person riding a skateboard in the middle of the road,4.0,4.0,4.0,4.0,0.6266,0.9456,0.9375,0.9199,0.8529,0.8444,0.6051,0.5227,0.6017,0.5622,0.5788,0.4953,0.537
+4,a person is riding a skateboard in the middle of the highway .,0.821,a person riding a skateboard in the middle of the road,4.0,5.0,5.0,4.6667,0.8265,0.9695,1.0,1.0,1.0,1.0,0.821,0.8265,0.8265,0.8265,0.821,0.821,0.821
+5,a person riding a skateboard zooms down a hill and around a corner .,0.73,a person riding a skateboard down a curvy hill while bent over .,5.0,5.0,5.0,5.0,0.7554,0.906,1.0,1.0,1.0,1.0,0.73,0.7554,0.7554,0.7554,0.73,0.73,0.73
+6,someone skateboards very quickly down a hill on a curvy road .,0.1949,a person riding a skateboard down a curvy hill while bent over .,5.0,4.0,5.0,4.6667,0.7378,0.8909,0.8819,0.509,0.4318,0.3622,0.7057,0.0636,0.6596,0.2299,0.6179,0.0081,0.1949

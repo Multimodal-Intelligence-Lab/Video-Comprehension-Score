@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a female sitting on the floor is wetting a clothing garment with her bare hands .,0.6011,a female is sitting on the floor talking with a piece of clothing in her hands and she starts to rub it .,5.0,4.0,5.0,4.6667,0.7081,0.907,1.0,1.0,1.0,1.0,0.6782,0.6211,0.7016,0.6382,0.671,0.5823,0.6011
+2,a woman is sitting on the floor and washing her hair .,0.335,a female is sitting on the floor talking with a piece of clothing in her hands and she starts to rub it .,4.0,4.0,4.0,4.0,0.5263,0.8884,1.0,1.0,1.0,1.0,0.441,0.4217,0.509,0.4364,0.4207,0.3176,0.335
+3,a woman is sitting on the floor and washing her shoes .,0.2922,a woman sitting over a bowl washing a thin fabric by hand .,3.0,4.0,4.0,3.6667,0.5522,0.8742,1.0,1.0,1.0,1.0,0.4749,0.3957,0.5184,0.3812,0.4353,0.3087,0.2922
+4,a young girl uses her hands to clean a piece of clothes,0.2278,a woman talks to the camera as she hand-washes a piece of clothing .,5.0,5.0,5.0,5.0,0.4413,0.8543,1.0,0.8723,0.8863,0.8649,0.346,0.3395,0.4239,0.3499,0.3156,0.2154,0.2278
+5,a woman is sitting down and showing how to fold a cloth .,0.3951,a woman is demonstrating how to fold a special kind of cloth .,4.0,4.0,4.0,4.0,0.8153,0.9159,1.0,1.0,1.0,1.0,0.7983,0.5897,0.7905,0.4451,0.7713,0.581,0.3951
+6,a woman folds an article of clothing in an indoor setting while she speaks at the same time,0.4367,a lady works on some clothing and talks to the camera,4.0,4.0,4.0,4.0,0.5461,0.8457,0.9592,1.0,0.9687,0.9624,0.4543,0.5461,0.5268,0.5315,0.4311,0.4543,0.4367

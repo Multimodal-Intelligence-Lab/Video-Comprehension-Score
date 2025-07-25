@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is showing how they dance with robots in a robot lab .,0.4863,a woman moves like a robot in front of a robot exhibit .,5.0,5.0,5.0,5.0,0.6759,0.8814,1.0,0.8723,0.8863,0.8653,0.6323,0.5594,0.6555,0.5664,0.6092,0.478,0.4863
+2,a group of people are in a factory and one man is showing how to use a machine .,0.0,a woman moves like a robot in front of a robot exhibit .,1.0,1.0,1.0,1.0,0.3353,0.7922,0.9688,0.8046,0.8186,0.7677,0.1609,0.0,0.1923,0.0,0.0,0.0,0.0
+3,a man is demonstrating how to use a machine to make something .,0.0,a woman moves like a robot in front of a robot exhibit .,2.0,1.0,1.0,1.3333,0.314,0.8058,1.0,0.8408,0.8278,0.7854,0.1488,0.1841,0.314,0.1706,0.1488,0.0,0.0
+4,a person with sunglasses performs a robot dance with two others .,0.062,a women is doing a robot dance in front of a robot,4.0,4.0,4.0,4.0,0.5513,0.8502,0.9756,0.9023,0.8959,0.8668,0.4723,0.3084,0.4749,0.2274,0.3824,0.1866,0.062
+5,a guy riding one of those robots and people are watching .,0.2047,a is standing in front of robots moving the way a robot does .,4.0,1.0,1.0,2.0,0.5942,0.806,0.9474,0.8934,0.847,0.8102,0.4943,0.339,0.4731,0.3618,0.3434,0.1487,0.2047
+6,person wearing robot costume and two people wearing masks dance with three other people .,0.0,a woman moves like a robot in front of a robot exhibit .,1.0,1.0,2.0,1.3333,0.5385,0.8342,0.9112,0.6846,0.7096,0.6313,0.4467,0.146,0.4546,0.1564,0.3461,0.0,0.0

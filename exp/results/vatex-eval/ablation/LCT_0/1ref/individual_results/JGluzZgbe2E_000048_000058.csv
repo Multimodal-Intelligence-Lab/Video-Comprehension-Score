@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person eats a meal while entertained by a sock puppet and another person,0.0,a man is eating chips while making a sandwich and someone behind him is teasing him .,4.0,5.0,5.0,4.6667,0.288,0.8039,0.954,0.737,0.8316,0.7905,0.1143,0.034,0.2537,0.1438,0.0716,0.0,0.0
+2,a man is sitting at a table and is eating a sandwich .,0.0,a man is eating chips while making a sandwich and someone behind him is teasing him .,4.0,4.0,4.0,4.0,0.4739,0.8582,0.7958,0.5147,0.4377,0.3447,0.387,0.0,0.3389,0.0,0.2297,0.0,0.0
+3,a man is sitting at a table and eating a sandwich .,0.0,a man is eating chips while making a sandwich and someone behind him is teasing him .,4.0,4.0,4.0,4.0,0.4761,0.8582,0.7958,0.5147,0.4377,0.3447,0.3895,0.0,0.3416,0.0,0.2328,0.0,0.0
+4,a man sits on the couch eating a bag of chips while a conversation takes place .,0.0051,a man is eating chips while making a sandwich and someone behind him is teasing him .,4.0,1.0,4.0,3.0,0.5673,0.8341,0.934,0.5081,0.5214,0.4263,0.4813,0.1329,0.5367,0.1564,0.4446,0.0,0.0051
+5,the man is enjoying the chips he is munching on while he sits in the room .,0.0,a man is eating chips while making a sandwich and someone behind him is teasing him .,5.0,5.0,5.0,5.0,0.5509,0.829,0.828,0.4264,0.3444,0.2091,0.4583,0.0,0.4576,0.0,0.3457,0.0,0.0
+6,a man wearing a hat is eating a stack of burgers and fries while him and his friend laugh .,0.0,a man is eating chips while making a sandwich and someone behind him is teasing him .,4.0,1.0,4.0,3.0,0.3726,0.8252,0.956,0.4542,0.4621,0.3482,0.2397,0.0,0.3437,0.0,0.2047,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is shaving his goatee with a straight razor and then begins to shave his sideburns .,0.4177,"a man uses one of those old fashioned cut throat razors to groom his moustache , beard and sideburns .",5.0,5.0,5.0,5.0,0.6901,0.838,0.8794,0.5926,0.635,0.5645,0.6302,0.4096,0.6476,0.4712,0.5795,0.3535,0.4177
+2,a man is using a razor to shave his beard with a razor .,0.3835,"a man uses one of those old fashioned cut throat razors to groom his moustache , beard and sideburns .",5.0,5.0,5.0,5.0,0.6812,0.8679,0.8745,0.567,0.61,0.5506,0.6327,0.3644,0.6354,0.4274,0.5799,0.3156,0.3835
+3,a man is shaving his beard with an electric razor .,0.0,"a man uses one of those old fashioned cut throat razors to groom his moustache , beard and sideburns .",4.0,4.0,4.0,4.0,0.5119,0.8599,0.77,0.566,0.4207,0.3264,0.4324,0.1376,0.3661,0.0,0.2629,0.0,0.0
+4,a man shows how to trim your beard using a special razor .,0.0,"a man uses one of those old fashioned cut throat razors to groom his moustache , beard and sideburns .",5.0,5.0,5.0,5.0,0.6501,0.8501,0.7831,0.2173,0.1753,0.0299,0.5884,0.0,0.5532,0.0,0.4743,0.0,0.0
+5,a man with a beard is shaving off his moustache with an electric razor .,0.0,"a man uses one of those old fashioned cut throat razors to groom his moustache , beard and sideburns .",4.0,4.0,4.0,4.0,0.5436,0.8693,0.7083,0.3107,0.2899,0.1831,0.475,0.0,0.3557,0.0,0.2589,0.0,0.0
+6,a man is using face clippers to trim his beard and mustache .,0.4272,"a man uses one of those old fashioned cut throat razors to groom his moustache , beard and sideburns .",5.0,4.0,5.0,4.6667,0.6058,0.8529,0.9548,0.7588,0.807,0.7737,0.5378,0.4805,0.5871,0.5115,0.5159,0.3909,0.4272

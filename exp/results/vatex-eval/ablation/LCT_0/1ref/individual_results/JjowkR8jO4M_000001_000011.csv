@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,people cheer as they watch the performers mingle with the audience during their performance .,0.0,a person at a concert is being thrown in the air as they are crowd surfing .,3.0,2.0,5.0,3.3333,0.2754,0.7715,0.9388,0.3972,0.2637,0.0455,0.0608,0.0,0.2282,0.0,0.0,0.0,0.0
+2,a large crowd of people are watching a crowd of people are cheering .,0.0,a person at a concert is being thrown in the air as they are crowd surfing .,5.0,3.0,5.0,4.3333,0.2546,0.8258,0.84,0.5269,0.4127,0.2888,0.0974,0.0,0.1126,0.0,0.0,0.0,0.0
+3,a large crowd of people are cheering and cheering and cheering .,0.0,a person at a concert is being thrown in the air as they are crowd surfing .,5.0,5.0,5.0,5.0,0.2918,0.8005,0.7286,0.3094,0.4343,0.2934,0.1154,0.0,0.028,0.0,0.0,0.0,0.0
+4,a large crowd in a stadium jump up and down and move to music,0.0,a person at a concert is being thrown in the air as they are crowd surfing .,4.0,2.0,4.0,3.3333,0.3788,0.8077,0.6869,0.209,0.3204,0.1587,0.2309,0.0,0.0956,0.0,0.0,0.0,0.0
+5,a man crowd surfs through the middle of an outdoor concert .,0.0648,a person at a concert is being thrown in the air as they are crowd surfing .,5.0,5.0,5.0,5.0,0.6395,0.8867,0.5617,0.3684,0.445,0.3741,0.5935,0.0124,0.3147,0.1321,0.2615,0.0,0.0648
+6,a man is jumping in and out of a crowd while music is playng .,0.0,a person at a concert is being thrown in the air as they are crowd surfing .,5.0,3.0,4.0,4.0,0.482,0.8234,0.8228,0.0,0.0,0.0,0.3708,0.0,0.3704,0.0,0.2353,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young smiles at the man taking the video and talks to others,0.0,several people are around a table playing a game of dominoes .,4.0,4.0,5.0,4.3333,0.0273,0.7474,0.9524,0.8477,0.897,0.8622,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,a group of people are sitting at a table and they are playing a game of beer .,0.3854,several people are around a table playing a game of dominoes .,4.0,4.0,4.0,4.0,0.5123,0.894,0.9543,0.8297,0.8876,0.8743,0.4545,0.4122,0.489,0.4506,0.4284,0.3425,0.3854
+3,a group of people are sitting around a table and playing beer pong .,0.3961,several people are around a table playing a game of dominoes .,4.0,4.0,4.0,4.0,0.476,0.892,0.9859,0.9777,0.9727,0.9694,0.4126,0.4641,0.4686,0.4613,0.4042,0.3992,0.3961
+4,a person demonstrates how to play dominos when two people are playing .,0.0,several people are around a table playing a game of dominoes .,4.0,1.0,2.0,2.3333,0.5722,0.8784,0.6349,0.1571,0.2519,0.1484,0.513,0.0,0.3263,0.0,0.233,0.0,0.0
+5,a boy pushes down a domino which sets off more of the dominos .,0.0,several people are around a table playing a game of dominoes .,2.0,1.0,1.0,1.3333,0.381,0.815,0.9023,0.6036,0.5388,0.4341,0.2404,0.0,0.3139,0.0,0.1581,0.0,0.0
+6,a boy is playing with dominoes and pushes one over .,0.0,several people are around a table playing a game of dominoes .,4.0,1.0,1.0,2.0,0.4589,0.8398,0.7619,0.4065,0.217,0.0676,0.3557,0.0,0.2898,0.0,0.1543,0.0,0.0

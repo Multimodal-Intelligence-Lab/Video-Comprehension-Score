@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man sitting in a chair has his head and hair massaged .,0.0881,a man is rubbing another mans head harshly while other people stand around them .,5.0,5.0,5.0,5.0,0.4823,0.8217,0.8852,0.6959,0.6909,0.6239,0.37,0.256,0.4152,0.2507,0.2883,0.0946,0.0881
+2,a woman is massaging a woman ' s head with her hands .,0.2153,a man is rubbing another mans head harshly while other people stand around them .,4.0,4.0,4.0,4.0,0.4965,0.7991,0.9467,0.7866,0.8029,0.7534,0.3699,0.3599,0.4681,0.3729,0.3345,0.199,0.2153
+3,a woman is massaging another woman ' s head and scalp .,0.1136,a man is rubbing another mans head harshly while other people stand around them .,4.0,4.0,4.0,4.0,0.4981,0.8346,0.8519,0.7029,0.6784,0.6147,0.3986,0.286,0.4108,0.2602,0.2941,0.1445,0.1136
+4,a man is getting his scalp massaged by another man in a barbershop .,0.0538,a man is rubbing another mans head harshly while other people stand around them .,5.0,4.0,5.0,4.6667,0.5387,0.8379,0.7969,0.6262,0.5818,0.5009,0.4495,0.2633,0.4211,0.2072,0.3091,0.1208,0.0538
+5,a man getting his head massaged at a barber shop .,0.0153,a man is rubbing another mans head harshly while other people stand around them .,5.0,4.0,5.0,4.6667,0.5127,0.8203,0.8784,0.6051,0.6032,0.5163,0.406,0.1947,0.4453,0.1922,0.3238,0.0183,0.0153
+6,a guy is sitting while another guy is using his hands to massage his head .,0.0,a man is rubbing another mans head harshly while other people stand around them .,5.0,5.0,5.0,5.0,0.5697,0.8289,0.8791,0.4771,0.4659,0.3557,0.4809,0.0821,0.5105,0.0624,0.4095,0.0,0.0

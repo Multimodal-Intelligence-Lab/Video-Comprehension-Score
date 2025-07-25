@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man performs martial art moves on dry leaves in a yard .,0.377,in a park a man is performing martial arts movements .,5.0,5.0,5.0,5.0,0.5962,0.8987,0.7333,0.9149,0.7212,0.6897,0.5507,0.5586,0.4494,0.4401,0.3873,0.5089,0.377
+2,a man is standing on a tightrope and does a back flip .,0.0,in a park a man is performing martial arts movements .,2.0,4.0,2.0,2.6667,0.2221,0.7814,1.0,0.8408,0.827,0.7786,0.0045,0.0748,0.2221,0.0594,0.0045,0.0,0.0
+3,a man is balancing on a tightrope in a park .,0.0,in a park a man is performing martial arts movements .,3.0,3.0,3.0,3.0,0.5078,0.8353,0.7483,0.7994,0.546,0.4566,0.4108,0.3843,0.3422,0.0986,0.2126,0.2629,0.0
+4,a man is in an outdoor park and practicing dance moves .,0.4968,in a park a man is performing martial arts movements .,4.0,4.0,4.0,4.0,0.7162,0.8614,0.8537,0.5414,0.6626,0.6083,0.6705,0.3597,0.6675,0.5289,0.6141,0.3161,0.4968
+5,a man in white slowly practices his martial moves in the park .,0.0,in a park a man is performing martial arts movements .,4.0,4.0,4.0,4.0,0.7448,0.8883,0.7595,0.4516,0.2773,0.1864,0.7127,0.2636,0.664,0.0297,0.6217,0.2305,0.0
+6,a man does what appears to be tae chi moves in a public park .,0.0,in a park a man is performing martial arts movements .,5.0,5.0,5.0,5.0,0.7925,0.84,0.6972,0.2944,0.0234,0.0,0.753,0.1097,0.618,0.0,0.598,0.063,0.0

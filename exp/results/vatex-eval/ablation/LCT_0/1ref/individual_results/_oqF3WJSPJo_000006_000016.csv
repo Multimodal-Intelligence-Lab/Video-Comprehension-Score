@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is using a team cleaning device to cleat the grout of the tile floor .,0.0,a person inside a kitchen using a machine to help them clean the floor,5.0,5.0,4.0,4.6667,0.6363,0.8801,0.868,0.3823,0.3431,0.2536,0.5868,0.0292,0.581,0.0,0.5239,0.0,0.0
+2,a person is using a vacuum cleaner to clean the floor .,0.4587,a person inside a kitchen using a machine to help them clean the floor,4.0,4.0,4.0,4.0,0.6749,0.9154,0.9321,0.6569,0.656,0.6242,0.6449,0.4916,0.6513,0.4903,0.619,0.4594,0.4587
+3,a person is using a mop to clean the floor .,0.4635,a person inside a kitchen using a machine to help them clean the floor,4.0,4.0,4.0,4.0,0.5899,0.9156,0.898,0.8819,0.8348,0.8196,0.5521,0.535,0.5433,0.5088,0.5012,0.4921,0.4635
+4,in a bathroom a person is cleaning the floor with a mop .,0.0,a person inside a kitchen using a machine to help them clean the floor,4.0,3.0,4.0,3.6667,0.542,0.8737,0.7755,0.3236,0.185,0.0672,0.4758,0.0,0.4094,0.0,0.324,0.0,0.0
+5,a person squirts cleaner from a mop onto the floor and slowly cleans the floor with the mop .,0.0,a person inside a kitchen using a machine to help them clean the floor,4.0,3.0,3.0,3.3333,0.5391,0.8496,0.8916,0.5061,0.5276,0.444,0.4576,0.084,0.4831,0.1238,0.3917,0.0,0.0
+6,a person is using a steam cleaner to clean a hard wood floor .,0.1415,a person inside a kitchen using a machine to help them clean the floor,4.0,4.0,4.0,4.0,0.5655,0.8917,0.8294,0.4314,0.5676,0.5151,0.5127,0.0,0.4761,0.2345,0.4125,0.0,0.1415

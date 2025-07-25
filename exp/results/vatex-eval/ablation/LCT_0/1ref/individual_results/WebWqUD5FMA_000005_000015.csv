@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a lady in white talks to the person holding the camera,0.0282,a woman is in her laundry room talking about how many loads she does and a man asks her what she likes most about doing laundry .,5.0,5.0,5.0,5.0,0.2851,0.8063,0.96,0.91,0.9124,0.8914,0.1133,0.2144,0.2553,0.2165,0.0763,0.0256,0.0282
+2,a woman is standing in front of a refrigerator and talking to a woman .,0.0,a woman is in her laundry room talking about how many loads she does and a man asks her what she likes most about doing laundry .,4.0,4.0,4.0,4.0,0.2843,0.8247,0.8077,0.6848,0.6549,0.5816,0.1323,0.0,0.1139,0.0,0.0,0.0,0.0
+3,a woman is standing in front of a mirror and she is doing something .,0.0377,a woman is in her laundry room talking about how many loads she does and a man asks her what she likes most about doing laundry .,4.0,4.0,3.0,3.6667,0.2381,0.7918,1.0,1.0,1.0,1.0,0.0377,0.2381,0.2381,0.2381,0.0377,0.0377,0.0377
+4,a woman is talking to the man that is ironing his clothes .,0.183,a woman is in her laundry room talking about how many loads she does and a man asks her what she likes most about doing laundry .,4.0,3.0,2.0,3.0,0.4755,0.8758,0.8739,0.7373,0.733,0.6952,0.4011,0.2886,0.3999,0.2845,0.3147,0.1877,0.183
+5,the lady with glasses is folding clothes while someone else is saying something in the background .,0.0,a woman is in her laundry room talking about how many loads she does and a man asks her what she likes most about doing laundry .,4.0,4.0,4.0,4.0,0.4018,0.775,0.9571,0.6772,0.7243,0.6442,0.2281,0.1167,0.375,0.1741,0.1935,0.0,0.0
+6,a woman is discussing how to do laundry while putting clothes into a laundry machine .,0.0,a woman is in her laundry room talking about how many loads she does and a man asks her what she likes most about doing laundry .,5.0,3.0,4.0,4.0,0.635,0.8571,0.9106,0.2973,0.2644,0.1417,0.5742,0.0,0.5992,0.0,0.5324,0.0,0.0

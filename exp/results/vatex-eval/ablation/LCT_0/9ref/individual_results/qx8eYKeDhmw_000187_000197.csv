@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is doing a tutorial on how to play the guitar .,0.4504,a man playing guitar and explaining what he is doing .,4.0,5.0,5.0,4.6667,0.792,0.9227,0.9412,0.9354,0.8739,0.8563,0.7746,0.4385,0.6334,0.4625,0.6127,0.3632,0.4504
+2,a man is playing a song on his electric guitar .,0.6473,a man is playing chords on an electric bass guitar .,4.0,4.0,3.0,3.6667,0.6668,0.9512,1.0,1.0,1.0,1.0,0.6473,0.6668,0.6668,0.6668,0.6473,0.6473,0.6473
+3,a man is demonstrating how to play a bass guitar .,0.8036,"a man is explaining how to play part of a song on bass guitar ,",4.0,5.0,5.0,4.6667,0.8537,0.945,1.0,0.9589,0.8718,0.8621,0.8452,0.8142,0.8408,0.8174,0.8314,0.8003,0.8036
+4,a man is practicing on their guitar by strumming their fingers on it .,0.4376,a man playing guitar and explaining what he is doing .,4.0,5.0,5.0,4.6667,0.5506,0.867,1.0,1.0,1.0,1.0,0.4677,0.5124,0.5281,0.5124,0.4411,0.4376,0.4376
+5,the musician shows an example of his technique for playing the guitar .,0.08,a person films the neck of a bass to give a tutorial on how to play a song .,4.0,5.0,5.0,4.6667,0.6274,0.8517,0.9831,0.8889,0.9004,0.8759,0.5626,0.252,0.5021,0.2616,0.4154,0.0681,0.08
+6,a man is playing is getting ready to play his guitar and strums the strings .,0.2404,a man playing guitar and explaining what he is doing .,4.0,3.0,5.0,4.0,0.4997,0.8958,0.9453,0.7655,0.7392,0.7089,0.4385,0.3429,0.4393,0.3195,0.3742,0.2665,0.2404

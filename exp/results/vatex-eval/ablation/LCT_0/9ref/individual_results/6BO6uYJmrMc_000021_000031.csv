@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is sailing on a boat as the sea is pretty quiet,0.4636,somone sailing a boat on a large body of water .,4.0,4.0,5.0,4.3333,0.7046,0.8958,1.0,1.0,1.0,1.0,0.6702,0.4979,0.6586,0.5421,0.619,0.4624,0.4636
+2,a group of people are on a boat and they are sailing in the water .,0.0,a man is navigating a small sail boat through open sea waters .,4.0,4.0,4.0,4.0,0.5918,0.8924,0.928,0.6863,0.6155,0.5545,0.5426,0.0505,0.5192,0.1154,0.4612,0.0,0.0
+3,a man on a sailboat is sailing in the water .,0.6781,a man is navigating a small sail boat through open sea waters .,5.0,5.0,5.0,5.0,0.7669,0.8935,0.9697,1.0,0.9222,0.9079,0.7391,0.7186,0.7478,0.7124,0.7177,0.685,0.6781
+4,on a large body of water people are sailing on sail boats .,0.3082,on the ocean a person is sitting and sailing a sailboat .,5.0,5.0,5.0,5.0,0.7354,0.9518,0.9524,0.8228,0.8048,0.7729,0.7221,0.5932,0.4974,0.4053,0.4154,0.5856,0.3082
+5,a man is riding across the water in a boat .,0.1917,a person is guiding a boat across the water on a cloudy day .,5.0,5.0,5.0,5.0,0.6431,0.9229,0.9023,0.776,0.7081,0.6737,0.6133,0.3401,0.4549,0.2768,0.4094,0.2624,0.1917
+6,a man is on a boat traveling on the water .,0.4609,a guy sits on his sail boat as it cruises across the ocean .,5.0,5.0,5.0,5.0,0.6151,0.8923,1.0,1.0,0.9495,0.9414,0.5638,0.5725,0.6151,0.5498,0.5638,0.4881,0.4609

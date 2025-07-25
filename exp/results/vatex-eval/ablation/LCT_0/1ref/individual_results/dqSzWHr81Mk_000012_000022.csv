@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy holds a camel leash as he guides it with two kids riding on top,0.6165,a man is pulling on a camel's harness to get him to walk so two children can get a ride .,5.0,5.0,5.0,5.0,0.7076,0.8496,0.9827,0.8702,0.8974,0.8793,0.6558,0.664,0.7025,0.6742,0.6498,0.6045,0.6165
+2,a group of people are riding camels in a desert .,0.0,a man is pulling on a camel's harness to get him to walk so two children can get a ride .,4.0,2.0,5.0,3.6667,0.4558,0.8142,0.7174,0.1779,0.0468,0.0,0.3316,0.0,0.2414,0.0,0.0683,0.0,0.0
+3,a group of people are riding camels in the desert .,0.0,a man is pulling on a camel's harness to get him to walk so two children can get a ride .,4.0,2.0,5.0,3.6667,0.4541,0.8142,0.7174,0.1779,0.0468,0.0,0.3295,0.0,0.239,0.0,0.0653,0.0,0.0
+4,a man is leading a camel inside a large garage with several children and an adult riding it .,0.4626,a man is pulling on a camel's harness to get him to walk so two children can get a ride .,4.0,3.0,4.0,3.6667,0.5559,0.8264,1.0,1.0,1.0,1.0,0.4626,0.5559,0.5559,0.5559,0.4626,0.4626,0.4626
+5,"a child is on the back of a camel , getting a ride .",0.0,a man is pulling on a camel's harness to get him to walk so two children can get a ride .,4.0,4.0,4.0,4.0,0.5595,0.8771,0.734,0.1969,0.0807,0.0,0.4978,0.0,0.3999,0.0,0.3158,0.0,0.0
+6,a camel being led through town with a woman and two children riding on its back .,0.0323,a man is pulling on a camel's harness to get him to walk so two children can get a ride .,4.0,3.0,4.0,3.6667,0.5953,0.8351,0.9231,0.4735,0.5013,0.4028,0.5154,0.1156,0.5616,0.1622,0.475,0.0,0.0323

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman hands over some sticks to a man the continues to go through a recycling bin .,0.3362,a woman and a man are shown looking for items in a garbage bin .,5.0,5.0,5.0,5.0,0.606,0.8825,0.9859,0.8399,0.851,0.8262,0.5536,0.4234,0.5297,0.431,0.4671,0.3274,0.3362
+2,a man is standing in front of a table and is playing a game of cards .,0.0,"a woman standing by a recycling bin hands two long fluorescent lights to a man who carries them away , then she rummages in the bin and the man returns to assist her",2.0,1.0,1.0,1.3333,0.0756,0.7996,1.0,0.8933,0.929,0.9071,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a man and a woman are sitting at a table and a woman is playing a game .,0.0,"a woman standing by a recycling bin hands two long fluorescent lights to a man who carries them away , then she rummages in the bin and the man returns to assist her",2.0,1.0,1.0,1.3333,0.2475,0.8441,0.9543,0.6667,0.7801,0.7089,0.0925,0.0,0.1568,0.0,0.0011,0.0,0.0
+4,a trash collector is standing at the rear of a large trash truck that is emptying a trash dumpster .,0.0,"a woman standing by a recycling bin hands two long fluorescent lights to a man who carries them away , then she rummages in the bin and the man returns to assist her",3.0,1.0,4.0,2.6667,0.4496,0.8285,0.955,0.771,0.8042,0.7329,0.3357,0.0829,0.3233,0.1062,0.1832,0.0,0.0
+5,the man is emptying a dumpster into a garbage truck .,0.0862,a woman and a man are shown looking for items in a garbage bin .,2.0,1.0,4.0,2.3333,0.5452,0.8738,0.9023,0.8284,0.756,0.7143,0.4757,0.3002,0.4044,0.2195,0.3134,0.1933,0.0862
+6,a garbage can as it picks up and disposes of green garbage can as it leaves for another,0.0,"a woman standing by a recycling bin hands two long fluorescent lights to a man who carries them away , then she rummages in the bin and the man returns to assist her",4.0,1.0,4.0,3.0,0.3493,0.8105,0.9609,0.8057,0.8457,0.7894,0.1803,0.0664,0.2,0.0353,0.013,0.0,0.0

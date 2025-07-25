@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a car pulls up to a house then a man rings the doorbell , a woman steps out and they walk towards the car together .",0.5372,"a white car pulls up to a house , a young man rings a doorbell and a blonde girl comes out they walk to the car .",5.0,5.0,5.0,5.0,0.8059,0.9132,0.9493,0.772,0.788,0.7401,0.7818,0.4748,0.7843,0.5616,0.7575,0.4534,0.5372
+2,a group of people are in a parking lot and they are driving a car .,0.0,"a white car pulls up to a house , a young man rings a doorbell and a blonde girl comes out they walk to the car .",3.0,1.0,1.0,1.6667,0.3908,0.8401,1.0,0.8879,0.911,0.8793,0.2628,0.0,0.2494,0.0,0.0916,0.0,0.0
+3,a group of people are in a car at a gas station .,0.0,"a white car pulls up to a house , a young man rings a doorbell and a blonde girl comes out they walk to the car .",3.0,1.0,1.0,1.6667,0.2362,0.822,1.0,1.0,1.0,1.0,0.0709,0.1543,0.1885,0.1517,0.0,0.0,0.0
+4,a man is hugging a woman on the street in front of others and then another person holding a piece of paper in his hands is running towards them as they were walking away .,0.0,"a white car pulls up to a house , a young man rings a doorbell and a blonde girl comes out they walk to the car .",4.0,1.0,1.0,2.0,0.2303,0.8287,0.9544,0.8641,0.8806,0.8498,0.0506,0.0684,0.1381,0.0859,0.0,0.0,0.0
+5,a man is walking across the parking lot and gets into a white truck .,0.0,"a white car pulls up to a house , a young man rings a doorbell and a blonde girl comes out they walk to the car .",4.0,1.0,1.0,2.0,0.5075,0.8459,0.9313,0.6638,0.752,0.6704,0.4178,0.0,0.3686,0.0,0.2535,0.0,0.0
+6,a man stands in a field and then rides a unicycle with a woman .,0.0,"a white car pulls up to a house , a young man rings a doorbell and a blonde girl comes out they walk to the car .",4.0,1.0,1.0,2.0,0.1651,0.8153,0.9262,0.6309,0.6544,0.5651,0.0,0.0,0.0552,0.0,0.0,0.0,0.0

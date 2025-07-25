@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,various people modeling a brand of clear and tinted eyeglasses .,0.4918,woman and men in a video are modeling wearing different color sunglasses .,5.0,5.0,5.0,5.0,0.6663,0.8708,0.9424,0.8248,0.7799,0.7386,0.6037,0.5954,0.6224,0.5721,0.5516,0.5195,0.4918
+2,a woman is demonstrating how to apply makeup to her face .,0.1483,women are wearing and showing eye glasses for champion eye glasses .,3.0,3.0,3.0,3.0,0.2981,0.8241,1.0,1.0,1.0,1.0,0.1483,0.2981,0.2981,0.2981,0.1483,0.1483,0.1483
+3,a woman is demonstrating how to use a pair of glasses .,0.4569,women are wearing and showing eye glasses for champion eye glasses .,5.0,4.0,1.0,3.3333,0.5942,0.8739,1.0,1.0,1.0,1.0,0.5357,0.5158,0.5858,0.5254,0.526,0.4459,0.4569
+4,a female is showing various pairs of sunglasses while speaking a foreign language .,0.1366,women are wearing and showing eye glasses for champion eye glasses .,5.0,4.0,4.0,4.3333,0.4556,0.8309,0.9419,0.737,0.827,0.7918,0.3437,0.195,0.3701,0.2826,0.242,0.0312,0.1366
+5,a female tv host models and describes a pair of eyeglasses .,0.2704,women are wearing and showing eye glasses for champion eye glasses .,4.0,4.0,3.0,3.6667,0.5407,0.8352,0.9859,0.7612,0.8019,0.747,0.437,0.3967,0.5199,0.4048,0.4114,0.2604,0.2704
+6,"a woman stands in front of a large wall of eye wear , and then models a pair of glasses .",0.0141,a woman is adjusting her glasses and another one is blowing kisses while doing an advert .,3.0,4.0,2.0,3.0,0.5353,0.8799,0.9419,0.8107,0.8685,0.8285,0.4718,0.1942,0.4606,0.2082,0.3869,0.0,0.0141

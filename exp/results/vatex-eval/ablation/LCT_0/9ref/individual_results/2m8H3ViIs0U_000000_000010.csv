@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person uses their hands to massage the back of another person's neck .,0.7457,a person is demonstrating how to massage a persons neck .,5.0,5.0,5.0,5.0,0.7976,0.9207,1.0,0.8819,0.8642,0.8525,0.7802,0.7706,0.7844,0.7658,0.7659,0.7508,0.7457
+2,a woman is massaging the back of a woman who is laying on her back .,0.3982,a person massaged the neck of a man lying with his face down,2.0,2.0,4.0,2.6667,0.5388,0.8369,1.0,1.0,1.0,1.0,0.4489,0.4979,0.4979,0.4979,0.3982,0.3982,0.3982
+3,a person is massaging the back of another person who is laying down .,0.4805,a person massaged the neck of a man lying with his face down,4.0,4.0,4.0,4.0,0.7094,0.9228,0.9084,0.6891,0.6969,0.6603,0.6851,0.4092,0.6114,0.5366,0.5644,0.373,0.4805
+4,a man uses his hand to massage the neck of another man who is laying face down on a table .,0.7641,a person massaged the neck of a man lying with his face down,5.0,5.0,5.0,5.0,0.8676,0.9517,0.9202,0.9527,0.9149,0.9076,0.8609,0.7915,0.7841,0.7828,0.7654,0.7734,0.7641
+5,a male is lying topless on his front while another person massages his neck .,0.5907,a man is laying face down on a table while his neck is being massaged .,5.0,5.0,5.0,5.0,0.8625,0.9028,0.9667,0.9417,0.931,0.92,0.847,0.6512,0.8445,0.6472,0.8269,0.5953,0.5907
+6,a woman is giving another woman a neck massage on a table .,0.3106,a man with no shirt on getting a neck massage by some one .,4.0,4.0,4.0,4.0,0.715,0.8993,0.9199,0.8723,0.8228,0.7895,0.6831,0.4528,0.6237,0.4199,0.5815,0.3496,0.3106

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young girl with fairy wings on her back ice skates with another woman .,0.7708,a young woman in fairy wings and a green dress practices ice skating with another woman .,4.0,5.0,5.0,4.6667,0.8185,0.9329,0.9431,0.829,0.8487,0.8379,0.8055,0.7811,0.8076,0.7862,0.7937,0.7653,0.7708
+2,a woman is ice skating in a rink while a man is talking .,0.2579,two women are ice skating on an indoor ice rink while music plays .,4.0,4.0,4.0,4.0,0.5533,0.8855,0.9403,0.7264,0.7474,0.7148,0.4924,0.3238,0.4776,0.3429,0.4101,0.2364,0.2579
+3,a woman is ice skating in an ice skating rink .,0.4448,two women are ice skating on an indoor ice rink while music plays .,5.0,5.0,5.0,5.0,0.6253,0.9279,0.9244,0.7551,0.7327,0.7098,0.5932,0.4792,0.5947,0.4887,0.5599,0.4345,0.4448
+4,a little girl tries to ice skate in a ice skating venue,0.3183,two girls practice ice skating moves at an indoor rink .,5.0,5.0,5.0,5.0,0.5448,0.8851,0.9445,0.7545,0.8085,0.777,0.4826,0.3373,0.518,0.4145,0.4522,0.2374,0.3183
+5,a young girl skates across the ice at a skating rink .,0.4726,a young girl wearing costume wings is ice skating on an ice rink .,5.0,5.0,5.0,5.0,0.6585,0.9265,0.9623,0.8045,0.827,0.7892,0.6314,0.4896,0.6403,0.5114,0.6118,0.4491,0.4726
+6,a woman is figure skating on an indoor ice rink .,0.5524,two women are ice skating on an indoor ice rink while music plays .,5.0,5.0,4.0,4.6667,0.6914,0.9179,0.9697,0.8638,0.8792,0.861,0.6637,0.5943,0.6551,0.5892,0.6242,0.558,0.5524

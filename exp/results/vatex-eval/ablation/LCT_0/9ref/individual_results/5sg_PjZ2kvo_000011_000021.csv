@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is moving their fingers back and forth in front of a camera .,0.3836,a person simulates walking with their fingers with multiple cutaways are added in which include cats .,5.0,5.0,5.0,5.0,0.5905,0.9049,0.9873,1.0,0.9911,0.9891,0.513,0.5008,0.5573,0.4963,0.4735,0.3891,0.3836
+2,a person is using a brush to draw on a piece of paper .,0.0,"a compilation of a small hand and pets , near the end there is a very scary face of a man .",2.0,2.0,2.0,2.0,0.2054,0.8262,1.0,0.8192,0.8439,0.7965,0.0143,0.0,0.2054,0.0221,0.0143,0.0,0.0
+3,a person is sitting on the floor and playing with a cat .,0.0106,repeated finger movements of a person is seen along with intermittent images of a cat .,3.0,2.0,2.0,2.3333,0.3989,0.8287,0.9231,0.7664,0.7417,0.6811,0.2747,0.2157,0.2989,0.1801,0.154,0.0536,0.0106
+4,a person does many different movements with their fingers right next to the camera,0.2877,a person is showing how to twiddle fingers as music plays in the background .,5.0,5.0,4.0,4.6667,0.6087,0.8518,0.9859,0.7268,0.7551,0.7045,0.5406,0.3866,0.5492,0.4096,0.4708,0.2599,0.2877
+5,a person is making a variety of different hand symbols using their fingers in various positions .,0.0355,a person simulates walking with their fingers with multiple cutaways are added in which include cats .,5.0,5.0,4.0,4.6667,0.5181,0.8419,0.9827,0.6667,0.7212,0.64,0.4086,0.1908,0.4752,0.2093,0.366,0.0129,0.0355
+6,someone with tiny shoes on his fingers shows and describes the moonwalk dance .,0.0205,"a compilation of a small hand and pets , near the end there is a very scary face of a man .",4.0,1.0,2.0,2.3333,0.4652,0.8294,0.9892,0.7984,0.8371,0.7924,0.3224,0.1942,0.4061,0.2314,0.2474,0.0,0.0205

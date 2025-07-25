@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people running together in a park as they pass by each other having fun,0.0,two young men are racing a course outside and going in slow motion as they pass a woman,5.0,5.0,5.0,5.0,0.2746,0.8076,0.9701,0.8218,0.8583,0.8245,0.1018,0.1172,0.2522,0.1548,0.0741,0.0,0.0
+2,a group of people are standing in a field and one of them kicks a ball .,0.0,two young men are racing a course outside and going in slow motion as they pass a woman,2.0,3.0,4.0,3.0,0.0411,0.7691,0.9602,0.8723,0.8896,0.8564,0.0,0.0,0.0014,0.0,0.0,0.0,0.0
+3,a group of people are standing in a field and one of them is kicking a board .,0.0,two young men are racing a course outside and going in slow motion as they pass a woman,2.0,3.0,3.0,2.6667,0.0684,0.7706,0.9602,0.8723,0.8896,0.8567,0.0,0.0,0.0297,0.0,0.0,0.0,0.0
+4,two boys playing around in a park and running around .,0.0,two young men are racing a course outside and going in slow motion as they pass a woman,5.0,5.0,4.0,4.6667,0.235,0.8055,0.9802,0.921,0.9353,0.9197,0.0503,0.1694,0.2196,0.1821,0.0311,0.0,0.0
+5,young boys are hitting a ball and chasing one another .,0.0,two young men are racing a course outside and going in slow motion as they pass a woman,4.0,4.0,4.0,4.0,0.1713,0.7956,1.0,1.0,1.0,1.0,0.0,0.1713,0.1713,0.1713,0.0,0.0,0.0
+6,a boy in physical fitness attire is holding something as bystanders clap before he runs and throws it with a yell .,0.0,two young men are racing a course outside and going in slow motion as they pass a woman,2.0,2.0,2.0,2.0,0.1231,0.7564,0.9226,0.6039,0.73,0.643,0.0,0.0,0.0495,0.0,0.0,0.0,0.0

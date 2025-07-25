@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man drinks and smells a beer and then scowls from the taste .,0.0516,a single man seated drinking and commenting on the quality of a bottled beer .,5.0,5.0,5.0,5.0,0.5579,0.8477,0.8136,0.6141,0.5499,0.4691,0.4785,0.2801,0.4566,0.1932,0.359,0.1508,0.0516
+2,a man is sitting in a chair and smoking a pipe .,0.0,a single man seated drinking and commenting on the quality of a bottled beer .,4.0,4.0,4.0,4.0,0.2019,0.7982,0.9592,0.8819,0.8784,0.8476,0.0002,0.0951,0.1679,0.0914,0.0,0.0,0.0
+3,a man is sitting in a chair and smoking a pipe .,0.0,a single man seated drinking and commenting on the quality of a bottled beer .,4.0,4.0,4.0,4.0,0.2019,0.7982,0.9592,0.8819,0.8784,0.8476,0.0002,0.0951,0.1679,0.0914,0.0,0.0,0.0
+4,a young male drinks a beer from a bottle and is unsure if he likes it .,0.0,a single man seated drinking and commenting on the quality of a bottled beer .,4.0,5.0,5.0,4.6667,0.5773,0.8502,0.8548,0.5405,0.4934,0.4041,0.5028,0.2041,0.5055,0.1224,0.4183,0.0802,0.0
+5,"a man takes a sip out of beer , sniffs it , and then sips the beer again .",0.1161,a single man seated drinking and commenting on the quality of a bottled beer .,5.0,4.0,4.0,4.3333,0.5258,0.8237,0.9396,0.6488,0.6513,0.5767,0.4243,0.2691,0.4953,0.2719,0.3873,0.1126,0.1161
+6,male holding a bottle of beer pouring it into a glass and enjoying the results .,0.053,a single man seated drinking and commenting on the quality of a bottled beer .,3.0,3.0,3.0,3.0,0.5574,0.8232,0.7266,0.4659,0.5677,0.4749,0.4624,0.0418,0.3909,0.2205,0.26,0.0,0.053

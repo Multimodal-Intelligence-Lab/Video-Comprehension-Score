@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is exercising by way of squats and shaking large ropes,0.6512,a man is working out by crouching up and down while pulling on the pair of ropes .,5.0,5.0,5.0,5.0,0.7673,0.861,1.0,1.0,1.0,1.0,0.7297,0.7103,0.7199,0.7103,0.6747,0.6512,0.6512
+2,a man is in a gym doing a workout with a rope .,0.6783,a guy is at the gym working on his upper body with rope .,5.0,5.0,4.0,4.6667,0.8875,0.9012,1.0,1.0,1.0,1.0,0.8736,0.7746,0.8789,0.6834,0.8639,0.7711,0.6783
+3,a man in a gym is using a rope to exercise .,0.5179,a man is in a gym area shaking some lines while crouching down and back up again .,5.0,5.0,4.0,4.6667,0.8854,0.8743,1.0,1.0,1.0,1.0,0.8678,0.6315,0.8782,0.5976,0.8595,0.6082,0.5179
+4,a man grabs two ropes on the gym floor to use for a forearm excercise .,0.2429,a man works out by shaking two heavy ropes at the same time .,5.0,5.0,5.0,5.0,0.725,0.852,0.9538,0.7332,0.7607,0.6948,0.6681,0.3848,0.6399,0.3504,0.5654,0.252,0.2429
+5,a man does a rope exercise while in the gym .,0.6859,a young man whips a rope back and forth in a fitness room for a workout .,5.0,5.0,5.0,5.0,0.8845,0.9004,1.0,1.0,1.0,1.0,0.8689,0.7233,0.7233,0.7233,0.6859,0.6859,0.6859
+6,a man walks into a room and picks up a rope and starts doing rope exercises .,0.3148,a man works out by shaking two heavy ropes at the same time .,4.0,4.0,4.0,4.0,0.6815,0.8735,0.9714,0.7119,0.7325,0.672,0.617,0.425,0.6252,0.4412,0.5439,0.295,0.3148

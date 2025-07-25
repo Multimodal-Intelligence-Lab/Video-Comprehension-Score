@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,people pole vaulting and clearing the bar at some sort of track meet .,0.2516,a couple of athletes are practicing the sport of pole vaulting outdoors while others look on .,5.0,5.0,5.0,5.0,0.678,0.8625,0.96,0.6692,0.6914,0.6178,0.6112,0.3439,0.6041,0.3564,0.5133,0.2727,0.2516
+2,a man runs and jumps over a pole and jumps over a pole .,0.4528,a man is pole vaulting over a pole with using a pole .,5.0,5.0,5.0,5.0,0.7338,0.8775,0.9412,0.7423,0.7501,0.687,0.6967,0.3129,0.709,0.4805,0.6684,0.2357,0.4528
+3,a man runs down a track and jumps over a pole .,0.2488,a person on the field using a pole to jump over another pole onto a mat,5.0,5.0,5.0,5.0,0.6588,0.8848,0.9125,0.7982,0.7541,0.7063,0.6033,0.4968,0.5932,0.3709,0.527,0.4149,0.2488
+4,a person on a track runs and does the pole vault and makes it over .,0.3514,one male successfully executes a pole vault and then another male starts his attempt .,5.0,5.0,5.0,5.0,0.666,0.856,0.9403,0.8177,0.8058,0.7661,0.6094,0.4694,0.5865,0.4616,0.5164,0.3608,0.3514
+5,"an athlete runs up to the pole vault bar and attempts to jump over , but knocks the bar down .",0.1132,a man is pole vaulting over a pole with using a pole .,4.0,4.0,4.0,4.0,0.5358,0.8271,0.89,0.7024,0.7218,0.6475,0.4387,0.266,0.4756,0.2665,0.3659,0.1125,0.1132
+6,"a pole vaulter running , vaulting and clearing the pole at the top .",0.4011,a man is pole vaulting over a pole with using a pole .,5.0,5.0,5.0,5.0,0.666,0.8865,0.9373,0.7402,0.7581,0.7012,0.6233,0.5038,0.6369,0.443,0.5904,0.4404,0.4011

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two young boys at the supermarket check out various items on the shelves .,0.5642,two young boys explore the toy isle of a mass merchandise store .,5.0,5.0,5.0,5.0,0.6855,0.8617,0.9426,0.8322,0.8376,0.8115,0.635,0.6221,0.6664,0.6245,0.6128,0.5614,0.5642
+2,a young boy is walking around a store with a shopping cart .,0.2655,two young boys explore the toy isle of a mass merchandise store .,4.0,3.0,3.0,3.3333,0.5778,0.8417,0.95,0.6523,0.6829,0.6232,0.4984,0.3527,0.5556,0.3817,0.472,0.2311,0.2655
+3,a young boy is walking around a grocery store with a grocery store .,0.1247,two young boys explore the toy isle of a mass merchandise store .,4.0,3.0,3.0,3.3333,0.5398,0.8468,0.9767,0.5817,0.6208,0.5523,0.4566,0.2089,0.5288,0.2588,0.4436,0.0659,0.1247
+4,a toddler boy is standing in front of a tv and next to a toy bin .,0.0,two young boys explore the toy isle of a mass merchandise store .,3.0,2.0,1.0,2.0,0.3857,0.8082,0.9205,0.6228,0.6401,0.5547,0.2399,0.0135,0.3326,0.0402,0.1743,0.0,0.0
+5,a baby boy riding in a shopping cart with load music in the backround,0.0,two young boys explore the toy isle of a mass merchandise store .,1.0,1.0,1.0,1.0,0.3551,0.7827,0.9011,0.7302,0.7294,0.6543,0.1761,0.1168,0.2843,0.1158,0.0856,0.0,0.0
+6,two boys are playing on a sidewalk with a shopping cart,0.1261,two young boys explore the toy isle of a mass merchandise store .,2.0,2.0,2.0,2.0,0.3863,0.8294,0.9851,0.8125,0.8467,0.8152,0.2601,0.2447,0.377,0.2752,0.2488,0.0893,0.1261

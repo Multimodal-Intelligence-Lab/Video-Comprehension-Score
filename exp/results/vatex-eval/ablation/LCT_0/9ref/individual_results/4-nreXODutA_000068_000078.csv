@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two men play squash at the court whilst the camera man calls out the score .,0.4349,"two men are playing racquetball , and they hit the ball several times after saying the score .",4.0,5.0,5.0,4.6667,0.6936,0.8847,0.9427,0.7919,0.8259,0.7934,0.6537,0.452,0.6553,0.5159,0.6104,0.3604,0.4349
+2,two men are playing a game of racquetball on a court .,0.5851,"two men are playing racquetball , and they hit the ball several times after saying the score .",5.0,5.0,5.0,5.0,0.9105,0.9491,0.9199,0.719,0.69,0.6585,0.9057,0.6202,0.786,0.599,0.7501,0.6117,0.5851
+3,two men are playing a game of racquetball in a racquetball court .,0.6256,"two men play squash , which is an indoor racquetball game .",5.0,5.0,5.0,5.0,0.9221,0.9509,0.8993,0.656,0.7256,0.7094,0.9181,0.5821,0.7887,0.6331,0.7532,0.573,0.6256
+4,two men are playing a game of racquetball in a racquetball court .,0.6256,"two men play squash , which is an indoor racquetball game .",5.0,5.0,5.0,5.0,0.9221,0.9509,0.8993,0.656,0.7256,0.7094,0.9181,0.5821,0.7887,0.6331,0.7532,0.573,0.6256
+5,two men playing a game of racquetball on a court .,0.5829,"two men are playing racquetball , and they hit the ball several times after saying the score .",5.0,5.0,5.0,5.0,0.9111,0.9491,0.9199,0.719,0.69,0.6585,0.9063,0.6197,0.7844,0.5971,0.7481,0.6111,0.5829
+6,a man and a boy play racquetball against each other in an indoor racquetball court .,0.4536,"two men play squash , which is an indoor racquetball game .",5.0,5.0,5.0,5.0,0.7483,0.9243,0.9396,0.6669,0.7252,0.7,0.7218,0.4002,0.6254,0.4996,0.5947,0.3587,0.4536

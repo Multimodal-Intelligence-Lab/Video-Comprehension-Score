@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"two girls in the snow , doing a cool dance routine .",0.3847,"two young girls are demonstrating a dance between the two of them , outside in the snow .",5.0,5.0,5.0,5.0,0.8823,0.9149,0.7801,0.5462,0.4638,0.4139,0.8714,0.4857,0.7508,0.3923,0.7477,0.4792,0.3847
+2,a man and a woman are dancing in the snow .,0.4438,"two young girls are demonstrating a dance between the two of them , outside in the snow .",4.0,4.0,4.0,4.0,0.6067,0.8387,0.9744,0.8284,0.8432,0.8131,0.531,0.5252,0.5963,0.5335,0.5186,0.4338,0.4438
+3,a young boy is dancing in the middle of the street .,0.1776,"two young girls are demonstrating a dance between the two of them , outside in the snow .",4.0,3.0,4.0,3.6667,0.3088,0.8405,1.0,1.0,1.0,1.0,0.1776,0.3088,0.3088,0.3088,0.1776,0.1776,0.1776
+4,two people wearing warm coats ice skate slowly around an ice skating rink .,0.0,"two young girls are demonstrating a dance between the two of them , outside in the snow .",3.0,2.0,3.0,2.6667,0.2386,0.7974,0.8515,0.4842,0.5216,0.4001,0.0452,0.0,0.1059,0.0,0.0,0.0,0.0
+5,a young person roller blades in a performance with moves similar to ice skating .,0.0,"two young girls are demonstrating a dance between the two of them , outside in the snow .",1.0,1.0,3.0,1.6667,0.2489,0.7945,0.9453,0.5817,0.6083,0.507,0.0545,0.0,0.2054,0.0,0.0,0.0,0.0
+6,two figure skaters practice gliding and turning in an empty ice rink .,0.0,"two young girls are demonstrating a dance between the two of them , outside in the snow .",1.0,1.0,1.0,1.0,0.2376,0.7859,0.8793,0.4613,0.4472,0.2966,0.0298,0.0,0.1329,0.0,0.0,0.0,0.0

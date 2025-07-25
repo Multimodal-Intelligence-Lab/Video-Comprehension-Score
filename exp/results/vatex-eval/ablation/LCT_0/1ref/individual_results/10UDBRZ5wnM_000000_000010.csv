@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two baby boys are playing with bubbles as they sit shirtless on the floor .,0.0,a young kid is making foam balloons using a certain object,5.0,5.0,4.0,4.6667,0.1423,0.7638,0.9192,0.4794,0.6302,0.5158,0.0,0.0,0.0669,0.0,0.0,0.0,0.0
+2,a man is holding a baby while he is holding a toothbrush .,0.0,a young kid is making foam balloons using a certain object,4.0,2.0,3.0,3.0,0.0212,0.7482,0.9183,0.7079,0.6993,0.5981,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a little boy is sitting on the floor and trying to lick his teeth .,0.0,a young kid is making foam balloons using a certain object,5.0,4.0,4.0,4.3333,0.122,0.7695,1.0,0.7612,0.7966,0.7357,0.0,0.0,0.122,0.0,0.0,0.0,0.0
+4,young baby trying to blow up a balloon mostly just spitting,0.3101,a young kid is making foam balloons using a certain object,5.0,5.0,2.0,4.0,0.438,0.8374,0.9859,0.9777,0.9727,0.9674,0.3289,0.4252,0.43,0.4222,0.3193,0.3136,0.3101
+5,two young kids try to get a large bubble maker to make a gigantic bubble but they miss .,0.0045,a young kid is making foam balloons using a certain object,4.0,5.0,3.0,4.0,0.3669,0.8189,0.9296,0.7355,0.7766,0.7271,0.2269,0.1393,0.319,0.1848,0.1684,0.0,0.0045
+6,a young boy riding in a car blows a very large bubble .,0.0,a young kid is making foam balloons using a certain object,4.0,4.0,4.0,4.0,0.302,0.8024,0.9565,0.7938,0.8014,0.7525,0.13,0.1207,0.2702,0.129,0.0905,0.0,0.0

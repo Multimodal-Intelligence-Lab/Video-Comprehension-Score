@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two head bangers are rocking it up in their living room at home .,0.2375,two humans are jamming and rocking out with each other .,4.0,5.0,4.0,4.3333,0.6294,0.8625,1.0,0.8087,0.8304,0.7817,0.5693,0.4929,0.5941,0.3094,0.5148,0.4121,0.2375
+2,a group of people are dancing to music in a room .,0.2518,two people are dancing to music while one is playing the guitar .,5.0,2.0,5.0,4.0,0.3939,0.8843,0.963,1.0,0.9357,0.923,0.3147,0.3766,0.3469,0.3383,0.2615,0.2951,0.2518
+3,a group of people are in a room and shaking their heads .,0.0,two people sling their heads about and play instruments to a rock song .,5.0,4.0,5.0,4.6667,0.32,0.8337,1.0,1.0,1.0,1.0,0.1737,0.1261,0.2076,0.1222,0.0,0.0,0.0
+4,"a crowd watches a rock show , the person in front has one arm raised with his head slightly bopping to the beat .",0.0,two people sling their heads about and play instruments to a rock song .,4.0,2.0,4.0,3.3333,0.4257,0.8085,0.9592,0.8883,0.878,0.8418,0.2838,0.0,0.3419,0.0,0.1793,0.0,0.0
+5,two men doing a dance routine with their hands and hips with music playing .,0.1339,two humans are jamming and rocking out with each other .,4.0,2.0,5.0,3.6667,0.5271,0.9029,0.9453,0.8753,0.8448,0.8103,0.4625,0.3164,0.4997,0.2917,0.4313,0.164,0.1339
+6,"a man plays an electric guitar on a stage , whipping his hair around while a drummer plays drums in the background .",0.1072,a man plays the guitar as he and his friend jam out to the music .,3.0,3.0,4.0,3.3333,0.5205,0.8532,0.8811,0.7059,0.729,0.6824,0.4175,0.2133,0.4179,0.2382,0.2999,0.078,0.1072

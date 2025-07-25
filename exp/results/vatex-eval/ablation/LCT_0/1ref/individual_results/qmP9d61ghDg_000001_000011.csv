@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person jumping into a pool while two people are laughing in the background .,0.6271,children jumping off into the pool as some one laugh in the back ground .,5.0,5.0,5.0,5.0,0.767,0.888,0.8916,0.6107,0.7249,0.6902,0.7377,0.4925,0.7387,0.6414,0.7058,0.4723,0.6271
+2,a man is swimming in a swimming pool while another person is swimming in the pool .,0.0,children jumping off into the pool as some one laugh in the back ground .,5.0,5.0,5.0,5.0,0.2767,0.8357,0.875,0.7612,0.7212,0.6664,0.1345,0.0498,0.1734,0.0,0.0109,0.0,0.0
+3,a young boy jumps into a swimming pool and swims into the water .,0.0015,children jumping off into the pool as some one laugh in the back ground .,5.0,4.0,5.0,4.6667,0.5084,0.8348,0.8005,0.4668,0.5897,0.5085,0.4112,0.0,0.3859,0.1664,0.2644,0.0,0.0015
+4,"a boy is swimming in a pool , bobbing his head in and out of the water as he swims to the other side .",0.0,children jumping off into the pool as some one laugh in the back ground .,4.0,5.0,2.0,3.6667,0.3212,0.8136,0.9275,0.5101,0.4873,0.3699,0.1658,0.0,0.2682,0.0,0.1006,0.0,0.0
+5,a man is diving off a platform into a diving pool .,0.0,children jumping off into the pool as some one laugh in the back ground .,5.0,5.0,5.0,5.0,0.3823,0.7957,0.8067,0.6019,0.4823,0.3494,0.2237,0.0,0.2343,0.0,0.0377,0.0,0.0
+6,a man jumps off of a diving board into a pool and a group of people on the side of the pool fall in backwards .,0.2422,children jumping off into the pool as some one laugh in the back ground .,3.0,2.0,3.0,2.6667,0.5532,0.8445,0.8978,0.6667,0.6981,0.6425,0.471,0.3299,0.5024,0.36,0.4108,0.2065,0.2422

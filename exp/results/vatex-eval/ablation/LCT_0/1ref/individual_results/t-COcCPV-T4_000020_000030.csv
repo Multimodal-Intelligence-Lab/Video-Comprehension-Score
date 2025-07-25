@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is adding a steel rod through there net .,0.0,a gir lis trying to stitching up the black and white knitting kit with a knitting needle,5.0,5.0,5.0,5.0,0.1347,0.7595,0.9841,1.0,0.9893,0.986,0.0,0.1347,0.1208,0.1254,0.0,0.0,0.0
+2,a person is showing how to tie a basket in a basket .,0.0,a gir lis trying to stitching up the black and white knitting kit with a knitting needle,2.0,3.0,3.0,2.6667,0.1207,0.759,1.0,1.0,1.0,1.0,0.0,0.1207,0.1207,0.1207,0.0,0.0,0.0
+3,a person is showing how to tie a pair of glasses .,0.0,a gir lis trying to stitching up the black and white knitting kit with a knitting needle,2.0,3.0,3.0,2.6667,0.0891,0.7657,1.0,1.0,1.0,1.0,0.0,0.0891,0.0891,0.0891,0.0,0.0,0.0
+4,a tutorial with a women demonstrating knitting techniques using yarn .,0.0,a gir lis trying to stitching up the black and white knitting kit with a knitting needle,5.0,5.0,4.0,4.6667,0.3789,0.7954,0.921,0.5362,0.5704,0.4598,0.2191,0.0,0.3256,0.0,0.1521,0.0,0.0
+5,a woman demonstrates felting a piece of fabric while explaining the process .,0.0,a gir lis trying to stitching up the black and white knitting kit with a knitting needle,5.0,5.0,4.0,4.6667,0.1801,0.7491,0.9433,0.6834,0.7235,0.6308,0.0,0.0,0.1308,0.0,0.0,0.0,0.0
+6,woman giving a tutorial on how to knit a six-stitch right cross .,0.0,a gir lis trying to stitching up the black and white knitting kit with a knitting needle,4.0,4.0,4.0,4.0,0.3674,0.7961,0.8988,0.4537,0.4707,0.3351,0.2053,0.0,0.2961,0.0,0.1158,0.0,0.0

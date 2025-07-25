@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young person does a high jump in the rain while another watches .,0.3965,a woman successfully completes a high jump during a track meet in a rain covered area .,5.0,5.0,5.0,5.0,0.6438,0.9165,0.9804,0.8723,0.872,0.8443,0.5839,0.4697,0.6204,0.4892,0.5566,0.3735,0.3965
+2,a man runs and jumps over a pole and lands on a mat .,0.8914,a person runs and jumps over a pole onto a mat,4.0,4.0,4.0,4.0,0.8991,0.9297,1.0,1.0,1.0,1.0,0.8914,0.8991,0.8991,0.8991,0.8914,0.8914,0.8914
+3,a man runs and jumps over a pole and lands on a mat .,0.8914,a person runs and jumps over a pole onto a mat,4.0,4.0,4.0,4.0,0.8991,0.9297,1.0,1.0,1.0,1.0,0.8914,0.8991,0.8991,0.8991,0.8914,0.8914,0.8914
+4,a far away video of a girl doing a high jump at a track and field event .,0.3068,a girl is practicing a high jump while a person watches on .,5.0,5.0,4.0,4.6667,0.6128,0.8769,1.0,0.8256,0.8726,0.844,0.5585,0.4253,0.551,0.4029,0.488,0.3328,0.3068
+5,at a track meet a young female pole vaulter runs with the pole and tries to clear the bar but she is unsuccessful .,0.0734,outside in wet weather a female high jumps over the pole while a man is standing by the mat .,2.0,4.0,2.0,2.6667,0.4617,0.823,0.991,1.0,0.9943,0.9926,0.3459,0.2866,0.4124,0.2826,0.286,0.0721,0.0734
+6,girls jump over set of hurdles during race under billowing ceiling .,0.0044,a girl athlete throws herself over a bar while a male observes .,3.0,2.0,2.0,2.3333,0.4169,0.8095,0.9804,0.8387,0.84,0.7868,0.2763,0.2518,0.36,0.253,0.1541,0.0028,0.0044

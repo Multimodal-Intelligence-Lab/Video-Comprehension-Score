@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is sitting in a wheelchair and trying to move but is staying in place .,0.4834,a man in a wheelchair moves his wheels with his hands slightly .,5.0,5.0,5.0,5.0,0.7086,0.9141,0.9787,0.8723,0.8707,0.8463,0.6812,0.5811,0.6152,0.5655,0.5447,0.502,0.4834
+2,a man in a wheelchair is pushing a wheelbarrow in a wheelchair .,0.3589,a man in a wheelchair is attempting to lift the front part of the wheelchair,5.0,4.0,5.0,4.6667,0.6268,0.8963,0.9333,0.908,0.762,0.7239,0.5761,0.5325,0.5782,0.4254,0.5294,0.4689,0.3589
+3,a boy is sitting in a wheelchair in a wheelchair and falls over .,0.0,the lady on a wheelchair is trying to do a wheelie exhibition at the party .,4.0,4.0,4.0,4.0,0.5535,0.8754,0.8819,0.4853,0.4187,0.2896,0.4543,0.0002,0.4166,0.0,0.287,0.0,0.0
+4,"the man in the wheelchair is walking his dog , while he pushes himself in the wheelchair .",0.4281,a man in a wheelchair is attempting to lift the front part of the wheelchair,4.0,4.0,4.0,4.0,0.543,0.8616,1.0,1.0,1.0,1.0,0.4696,0.5111,0.5111,0.5111,0.4281,0.4281,0.4281
+5,"a woman in a wheel chair , talks about how she gets out of her vehicle into her wheelchair .",0.0945,a man in a wheelchair is attempting to lift the front part of the wheelchair,2.0,2.0,2.0,2.0,0.55,0.8869,0.9051,0.7208,0.8025,0.757,0.4926,0.1931,0.475,0.2642,0.408,0.0902,0.0945
+6,a man with a dog attached to the front wheel of his wheelchair is rolling himself down a path .,0.1752,a woman uses her arms to wheel herself in a wheelchair .,2.0,2.0,4.0,2.6667,0.4916,0.8861,0.9655,0.9387,0.892,0.8713,0.4067,0.3421,0.4452,0.3076,0.3455,0.2162,0.1752

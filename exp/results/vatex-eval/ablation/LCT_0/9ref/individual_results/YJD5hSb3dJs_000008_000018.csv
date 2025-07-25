@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a swimmer is using a diving board to jump into a deep swimming pool .,0.3856,a person dives from a diving board and the rest splash backwards as they enter the pool .,5.0,5.0,5.0,5.0,0.6774,0.89,0.943,0.8853,0.831,0.801,0.6376,0.5031,0.6009,0.4687,0.5515,0.4255,0.3856
+2,a man jumps off of a diving board into a pool .,0.6035,a person jumps off a diving board and flips into a pool,5.0,5.0,5.0,5.0,0.8283,0.957,0.9412,0.8035,0.7043,0.691,0.815,0.6875,0.7963,0.6092,0.7805,0.6735,0.6035
+3,a man jumps off a diving board into a swimming pool .,0.6464,a person jumps off a diving board and flips into a pool,5.0,5.0,5.0,5.0,0.8084,0.9467,0.9677,0.7333,0.769,0.756,0.7927,0.6419,0.802,0.6652,0.7858,0.6348,0.6464
+4,a person does a backwards dive off of a springboard into a pool .,0.531,a person dives from a diving board and the rest splash backwards as they enter the pool .,5.0,5.0,5.0,5.0,0.7627,0.9047,0.9677,0.8408,0.7996,0.771,0.7377,0.5959,0.7182,0.5751,0.6885,0.5672,0.531
+5,a person does a backflip off a cliff into water while others are already in the water .,0.4912,a man does a flip off of a diving board and then people fall backwards into a pool .,4.0,3.0,4.0,3.6667,0.6039,0.8502,1.0,1.0,1.0,1.0,0.5341,0.5975,0.5975,0.5975,0.5082,0.4912,0.4912
+6,two swimming athletes jump into the air and then dive off a diving board .,0.0,a man does a flip off of a diving board and then people fall backwards into a pool .,4.0,4.0,4.0,4.0,0.5945,0.8656,0.8745,0.6112,0.5692,0.4795,0.5189,0.2207,0.4543,0.1632,0.3663,0.1122,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,man explains how to use shears to trim a tree,0.1125,demonstration and narration on how to trim an evergreen tree .,5.0,4.0,5.0,4.6667,0.5359,0.8485,0.9084,0.7278,0.6162,0.5477,0.4531,0.3624,0.4891,0.247,0.3979,0.2485,0.1125
+2,a man is standing in front of a tree and is using a tool to trim a tree .,0.0,demonstration and narration on how to trim an evergreen tree .,5.0,5.0,5.0,5.0,0.3786,0.8417,0.8767,0.502,0.4576,0.3556,0.2617,0.0,0.2912,0.0,0.1578,0.0,0.0
+3,a man is showing how to properly prune a bush .,0.0,demonstration and narration on how to trim an evergreen tree .,5.0,4.0,4.0,4.3333,0.4151,0.7912,0.875,0.4459,0.5908,0.4828,0.2608,0.0,0.3315,0.0099,0.1552,0.0,0.0
+4,a man is pruning trees by a pair of scissors .,0.0,demonstration and narration on how to trim an evergreen tree .,5.0,5.0,5.0,5.0,0.3564,0.7951,0.8125,0.3153,0.4543,0.3137,0.1906,0.0,0.2079,0.0,0.0038,0.0,0.0
+5,a man is trimming various branches off a long bush with hand held shears .,0.0,demonstration and narration on how to trim an evergreen tree .,5.0,4.0,4.0,4.3333,0.3186,0.7849,0.8764,0.3333,0.2762,0.0778,0.1318,0.0,0.2225,0.0,0.0094,0.0,0.0
+6,a man is trimming the branches from a tall palm tree .,0.0,demonstration and narration on how to trim an evergreen tree .,4.0,5.0,4.0,4.3333,0.3494,0.8395,0.8824,0.5323,0.328,0.1995,0.225,0.0,0.2627,0.0,0.1217,0.0,0.0

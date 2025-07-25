@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young child is sitting at a table with a plate full of food as she looks on at an adult and starts to laugh .,0.0,a kid seated is laughing and rising her eyebrows while a woman is laughing in the background .,5.0,4.0,5.0,4.6667,0.5256,0.8257,0.8939,0.5059,0.545,0.449,0.4255,0.0599,0.4693,0.1296,0.3573,0.0,0.0
+2,a baby is sitting in a high chair and eating spaghetti .,0.0,a kid seated is laughing and rising her eyebrows while a woman is laughing in the background .,4.0,5.0,4.0,4.3333,0.1908,0.7789,0.9655,0.9155,0.9097,0.8841,0.0,0.1161,0.1619,0.1105,0.0,0.0,0.0
+3,a baby is sitting in a high chair and eating food .,0.0,a kid seated is laughing and rising her eyebrows while a woman is laughing in the background .,4.0,5.0,5.0,4.6667,0.2098,0.7831,1.0,0.8879,0.911,0.8863,0.0,0.1101,0.2098,0.1326,0.0,0.0,0.0
+4,girls in a kitchen laughing at something they are touching on the kitchen table .,0.0,a kid seated is laughing and rising her eyebrows while a woman is laughing in the background .,4.0,3.0,2.0,3.0,0.3759,0.8118,0.8521,0.6228,0.5794,0.4818,0.2312,0.0,0.2676,0.0,0.0978,0.0,0.0
+5,a little girl is making faces and laughing as somebody talks .,0.0,a kid seated is laughing and rising her eyebrows while a woman is laughing in the background .,4.0,4.0,4.0,4.0,0.4529,0.8219,0.8832,0.4419,0.3836,0.2501,0.3344,0.0,0.3806,0.0,0.2464,0.0,0.0
+6,in a kitchen a girl takes a drink of pop and then laughs .,0.0,a kid seated is laughing and rising her eyebrows while a woman is laughing in the background .,3.0,2.0,3.0,2.6667,0.3593,0.7912,0.8418,0.3993,0.3125,0.1311,0.1903,0.0,0.239,0.0,0.0381,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man walks on a tightrope while holding a hoop for balance .,0.8735,a man is walking across a tight rope while he is holding a hoola hoop .,5.0,5.0,3.0,4.3333,0.894,0.8992,0.9333,0.9766,0.9317,0.9241,0.8822,0.8915,0.8865,0.8863,0.8738,0.8794,0.8735
+2,a young girl is hula hooping in front of a mirror .,0.0,a man is walking across a tight rope while he is holding a hoola hoop .,1.0,1.0,1.0,1.0,0.2615,0.7803,0.7652,0.4441,0.343,0.158,0.0535,0.0,0.0349,0.0,0.0,0.0,0.0
+3,a young man is doing tricks with a hula hoop .,0.2226,a man is walking across a tight rope while he is holding a hoola hoop .,4.0,5.0,4.0,4.3333,0.5124,0.844,0.898,0.7696,0.7432,0.6958,0.4223,0.3663,0.457,0.3439,0.3566,0.2492,0.2226
+4,"a man on a tightrope hops on the rope , on one foot , from one side to the other .",0.097,a man is walking across a tight rope while he is holding a hoola hoop .,3.0,2.0,4.0,3.0,0.6265,0.8098,0.8281,0.3721,0.5135,0.3992,0.5387,0.0,0.549,0.2235,0.443,0.0,0.097
+5,a man on a tightrope uses a pole to balance himself .,0.4554,a man is walking across a tight rope while he is holding a hoola hoop .,5.0,4.0,3.0,4.0,0.6278,0.7913,0.9378,0.8819,0.8635,0.8275,0.5297,0.578,0.6032,0.569,0.4985,0.4667,0.4554
+6,a man is walking on a tight rope and doing tricks with others .,0.6513,a man is walking across a tight rope while he is holding a hoola hoop .,3.0,4.0,4.0,3.6667,0.7121,0.8875,0.9321,0.9762,0.9305,0.9217,0.6756,0.705,0.6911,0.6906,0.652,0.6677,0.6513

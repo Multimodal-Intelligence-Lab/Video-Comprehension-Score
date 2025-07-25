@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is threading a needle with yellow thread .,0.4524,someone is threading a needle and holds it for the camera .,5.0,5.0,5.0,5.0,0.6829,0.9088,0.9714,0.8819,0.8784,0.8478,0.6435,0.5705,0.5772,0.4889,0.5247,0.5273,0.4524
+2,a person is using a needle to thread a piece of fabric .,0.2577,a woman is working at a table and preparing to have ready a needle with a thread but first she has to untangle it .,3.0,3.0,4.0,3.3333,0.7806,0.8868,0.9787,0.8515,0.9107,0.8823,0.7526,0.368,0.7445,0.3787,0.7119,0.2449,0.2577
+3,a person is demonstrating how to tie a piece of fabric .,0.1499,a person shows how to put the thread though the hole of a needle with thick string,2.0,3.0,3.0,2.6667,0.386,0.8569,1.0,0.8644,0.8814,0.8552,0.281,0.2836,0.3746,0.3033,0.2369,0.1259,0.1499
+4,person warping a thread round a needle making a loop knot .,0.4924,a person pulls thread through the eye of a needle then holds the needle up .,4.0,4.0,5.0,4.3333,0.6728,0.8727,0.978,0.8465,0.8317,0.7914,0.6251,0.5572,0.6502,0.557,0.5993,0.4927,0.4924
+5,someone has a sewing needle and thread and is making a knot in the thread .,0.0,a person works to untangle different pieces of string that are tied together .,4.0,3.0,5.0,4.0,0.6894,0.8722,0.971,0.6437,0.6613,0.5675,0.6409,0.0587,0.604,0.0261,0.5421,0.0,0.0
+6,a person wound a thread around a needle and knot the thread at the bottom .,0.4222,a person shows how to put the thread though the hole of a needle with thick string,4.0,3.0,5.0,4.0,0.7291,0.8911,1.0,1.0,1.0,1.0,0.696,0.5125,0.7033,0.4983,0.667,0.4352,0.4222

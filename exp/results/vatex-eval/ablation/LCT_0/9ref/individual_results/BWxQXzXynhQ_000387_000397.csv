@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,person is spray painting t-shirt with moon and night sky .,0.2152,a guy is using spray paint to plaint something on a wall .,5.0,4.0,5.0,4.6667,0.7912,0.8963,0.9859,0.7845,0.855,0.8245,0.7671,0.2933,0.7558,0.3516,0.7275,0.2313,0.2152
+2,a person is using a tool to paint a piece of wood .,0.3516,a person is using blue spray paint to add finishing touches to a painting .,4.0,4.0,4.0,4.0,0.5269,0.8818,1.0,1.0,1.0,1.0,0.4573,0.4169,0.5121,0.4347,0.4404,0.3312,0.3516
+3,a person is using a tool to paint a piece of metal .,0.3675,a person is using blue spray paint to add finishing touches to a painting .,4.0,4.0,4.0,4.0,0.5397,0.8779,0.9804,0.9737,0.9617,0.9554,0.4706,0.4328,0.5254,0.4501,0.4541,0.3476,0.3675
+4,an artist is spraying a canvas with spray paint and creating an art piece .,0.5915,a guy is using a paint can to spray paint a picture on a wall .,4.0,5.0,5.0,4.6667,0.721,0.8682,0.956,0.9194,0.8852,0.8673,0.6787,0.6598,0.6646,0.6466,0.6101,0.6067,0.5915
+5,a man is using a paint sprayer to coat a wall .,0.6093,a guy is using a paint can to spray paint a picture on a wall .,4.0,4.0,4.0,4.0,0.7504,0.9292,0.9804,0.7876,0.7891,0.773,0.7259,0.6362,0.7345,0.6369,0.7085,0.6085,0.6093
+6,a man with a paint brush is painting on a painting,0.4013,a guy is using a paint can to spray paint a picture on a wall .,4.0,4.0,4.0,4.0,0.4836,0.8806,0.9787,1.0,0.9839,0.98,0.4136,0.4836,0.4707,0.4728,0.3989,0.4136,0.4013

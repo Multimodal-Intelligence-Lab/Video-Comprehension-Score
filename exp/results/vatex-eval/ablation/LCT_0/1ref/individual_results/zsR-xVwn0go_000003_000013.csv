@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,matador uses red cape to make the bull in a bullfight run pass him many times,0.0,a bull show was going on and a person was keeping the red cloth in front of the black bull it was moving,5.0,5.0,5.0,5.0,0.4975,0.8176,0.8464,0.3437,0.4889,0.3749,0.3854,0.0,0.4063,0.0,0.2739,0.0,0.0
+2,a man is in a field and is running around a bull .,0.0,a bull show was going on and a person was keeping the red cloth in front of the black bull it was moving,4.0,4.0,3.0,3.6667,0.3569,0.8232,0.8903,0.8284,0.7448,0.69,0.2188,0.2237,0.2776,0.1366,0.1225,0.057,0.0
+3,a group of people are watching a bull fight in a field .,0.0,a bull show was going on and a person was keeping the red cloth in front of the black bull it was moving,5.0,5.0,5.0,5.0,0.3261,0.8224,0.8841,0.6375,0.6668,0.5948,0.1805,0.0,0.2377,0.0,0.0731,0.0,0.0
+4,a matador is using a red flag to fight a bull in an outdoor bull ring .,0.0925,a bull show was going on and a person was keeping the red cloth in front of the black bull it was moving,5.0,4.0,5.0,4.6667,0.5126,0.8419,0.9148,0.5914,0.6379,0.5699,0.4211,0.1759,0.4672,0.236,0.3672,0.0211,0.0925
+5,a crowd of people watch the bull master waving the red flag at the bull .,0.0,a bull show was going on and a person was keeping the red cloth in front of the black bull it was moving,5.0,4.0,5.0,4.6667,0.5329,0.8477,0.8767,0.2226,0.1708,0.0217,0.4489,0.0,0.4672,0.0,0.3714,0.0,0.0
+6,a man fights a bull in a ring while people watch to see what happens .,0.0,a bull show was going on and a person was keeping the red cloth in front of the black bull it was moving,5.0,5.0,5.0,5.0,0.4035,0.8132,0.8781,0.3705,0.3843,0.2429,0.2664,0.0,0.3207,0.0,0.1646,0.0,0.0

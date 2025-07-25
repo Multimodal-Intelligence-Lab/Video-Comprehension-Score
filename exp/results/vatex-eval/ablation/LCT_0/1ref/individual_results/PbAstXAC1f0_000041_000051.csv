@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a group of young men and women are sitting together , two of them slap each others face gently simultaneously .",0.0,"a man ask for a high-five from a woman , they high-five and both start laughing .",5.0,5.0,4.0,4.6667,0.3345,0.7829,0.9368,0.4485,0.5083,0.3719,0.1499,0.0,0.2895,0.0,0.0925,0.0,0.0
+2,a group of people are sitting at a table and one of them is eating something .,0.0,"a man ask for a high-five from a woman , they high-five and both start laughing .",4.0,5.0,5.0,4.6667,0.0435,0.74,0.9091,0.5435,0.6803,0.568,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a group of people are sitting around a table playing a game of beer .,0.0,"a man ask for a high-five from a woman , they high-five and both start laughing .",4.0,4.0,4.0,4.0,0.0683,0.7544,0.9396,0.6311,0.6326,0.513,0.0,0.0,0.0084,0.0,0.0,0.0,0.0
+4,a man is laughing and a woman slaps him in the face for fun .,0.0,"a man ask for a high-five from a woman , they high-five and both start laughing .",5.0,5.0,5.0,5.0,0.5624,0.8736,0.8203,0.4072,0.2403,0.1304,0.4992,0.0,0.4666,0.0,0.3894,0.0,0.0
+5,a guy is sitting and then looks up and gets slapped by a woman then he attempts to slap back .,0.0,"a man ask for a high-five from a woman , they high-five and both start laughing .",4.0,3.0,4.0,3.6667,0.3594,0.7973,0.936,0.7781,0.7897,0.7362,0.1966,0.1767,0.3156,0.1888,0.1416,0.0,0.0
+6,a man smiles and is then slapped by a woman after he asks her to stop what she's doing .,0.0,"a man ask for a high-five from a woman , they high-five and both start laughing .",4.0,3.0,4.0,3.6667,0.4656,0.8613,0.6815,0.1667,0.2678,0.15,0.3796,0.0,0.2158,0.0,0.0896,0.0,0.0

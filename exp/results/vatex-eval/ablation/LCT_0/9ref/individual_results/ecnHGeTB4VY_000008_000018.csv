@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person takes a very small thread and wraps it around an item,0.2904,someone uses tools to wind a wire around a hook .,5.0,5.0,5.0,5.0,0.5651,0.8503,1.0,1.0,1.0,1.0,0.4854,0.4649,0.4926,0.4242,0.3996,0.3669,0.2904
+2,a person is demonstrating how to make a fishing lure .,0.3562,a person starting to tie a fly fishing lure in a vice,5.0,5.0,5.0,5.0,0.5149,0.8751,1.0,0.8644,0.8611,0.8413,0.4457,0.4388,0.5086,0.4367,0.4318,0.3587,0.3562
+3,a man is demonstrating how to make a fishing lure .,0.3063,a person starting to tie a fly fishing lure in a vice,5.0,5.0,5.0,5.0,0.4849,0.8451,1.0,0.962,0.9649,0.9545,0.3904,0.4376,0.4849,0.4393,0.3904,0.2948,0.3063
+4,a person ties very fine string around a small hook .,0.4234,a person has a hook and is wrapping string around it as music plays .,5.0,5.0,5.0,5.0,0.6288,0.8831,1.0,0.8723,0.8863,0.8575,0.5504,0.4897,0.6,0.4908,0.5155,0.3843,0.4234
+5,"a person holds a piece of string with a loop at the end , they place the loop over a hook and tighten the loop .",0.4495,someone uses tools to wind a wire around a hook .,5.0,4.0,3.0,4.0,0.5852,0.8472,1.0,1.0,1.0,1.0,0.5104,0.5604,0.5515,0.5547,0.4456,0.4566,0.4495
+6,someone shows how to wrap a fish hook with thread using a tool to hold it .,0.6508,a man is carefully wrapping the hook with some thread .,5.0,5.0,5.0,5.0,0.7625,0.865,0.925,0.8356,0.7864,0.7531,0.7254,0.7158,0.7237,0.698,0.6806,0.6714,0.6508

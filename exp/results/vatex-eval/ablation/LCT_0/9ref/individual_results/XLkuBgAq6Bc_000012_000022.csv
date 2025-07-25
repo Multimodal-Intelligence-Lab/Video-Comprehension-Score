@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man wearing a snorkel mask drums in front of fish .,0.6273,a boy wearing a diving mask and snorkel extends arms and pretends to hit drums in front of aquarium background .,5.0,5.0,5.0,5.0,0.7756,0.9008,0.9665,0.7938,0.7849,0.7612,0.7413,0.6426,0.752,0.6642,0.7141,0.6032,0.6273
+2,a group of people are dancing in a dark room .,0.0,"a boy is scuba diving while playing the air drums , a music video flashes between scenes .",2.0,3.0,1.0,2.0,0.1687,0.7784,0.9388,0.965,0.9275,0.9069,0.0,0.1385,0.1144,0.1037,0.0,0.0,0.0
+3,a group of people are standing in a dark room and they are dancing .,0.0,"a boy is scuba diving while playing the air drums , a music video flashes between scenes .",2.0,4.0,1.0,2.3333,0.1566,0.7796,0.9714,0.7974,0.7517,0.6657,0.0,0.0,0.0754,0.0,0.0,0.0,0.0
+4,three people are snorkeling with music playing in the background .,0.3198,the man in snorkels is enjoying the music of the drums .,3.0,4.0,4.0,3.6667,0.6037,0.8383,0.9677,0.8235,0.767,0.7134,0.5272,0.486,0.5788,0.4298,0.4975,0.3868,0.3198
+5,"after a title about scuba diving appears , a man is underwater , scuba diving .",0.1237,"a boy is scuba diving while playing the air drums , a music video flashes between scenes .",3.0,2.0,4.0,3.0,0.4858,0.8815,0.7937,0.7825,0.7073,0.6472,0.4007,0.3428,0.3395,0.273,0.2039,0.2079,0.1237
+6,a man is scuba diving in the ocean while exploring sea creatures .,0.0598,"a boy is scuba diving while playing the air drums , a music video flashes between scenes .",5.0,2.0,3.0,3.3333,0.4786,0.8547,0.9535,0.8366,0.7999,0.7476,0.3899,0.1975,0.4096,0.2265,0.3092,0.0102,0.0598

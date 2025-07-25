@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is working on welding a dolly while another is explaining the procedure .,0.0,a man in proper protective gear is welding metal together .,5.0,5.0,5.0,5.0,0.4245,0.8284,0.7959,0.2845,0.4192,0.2989,0.3053,0.0,0.2769,0.0,0.1271,0.0,0.0
+2,a person is using a lighter to blow up a piece of metal .,0.0,a man in proper protective gear is welding metal together .,5.0,2.0,5.0,4.0,0.3289,0.8073,0.96,0.7486,0.7354,0.6722,0.1686,0.1035,0.3009,0.0874,0.134,0.0,0.0
+3,a person is using a torch to heat a piece of metal .,0.0,a man in proper protective gear is welding metal together .,5.0,2.0,4.0,3.6667,0.4302,0.8155,0.9804,0.5945,0.567,0.469,0.3013,0.0416,0.4188,0.0,0.2873,0.0,0.0
+4,a man with a welding mask on is speaking while welding an object .,0.3438,a man in proper protective gear is welding metal together .,5.0,4.0,4.0,4.3333,0.5789,0.8529,0.9565,0.7671,0.7523,0.7096,0.5063,0.4511,0.5598,0.4403,0.4839,0.3564,0.3438
+5,a man welds some metal tubes in slow motion,0.0,a man in proper protective gear is welding metal together .,4.0,2.0,4.0,3.3333,0.4718,0.8543,0.8397,0.5437,0.4334,0.3368,0.3817,0.0285,0.371,0.0,0.2637,0.0,0.0
+6,a man is using a hammer to form a piece of hot metal .,0.0665,a man in proper protective gear is welding metal together .,4.0,2.0,4.0,3.3333,0.3881,0.8174,0.9394,0.6995,0.8019,0.7576,0.2515,0.1253,0.3487,0.237,0.2032,0.0,0.0665

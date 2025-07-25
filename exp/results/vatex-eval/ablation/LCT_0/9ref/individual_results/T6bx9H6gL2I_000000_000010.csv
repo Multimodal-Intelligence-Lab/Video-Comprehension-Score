@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,several girls are playing ball on a court in the outdoors .,0.5296,a group of kids playing a sport with a ball in an outdoor court,5.0,5.0,5.0,5.0,0.6701,0.9235,1.0,0.8864,0.8889,0.87,0.6352,0.5723,0.6491,0.5656,0.62,0.5368,0.5296
+2,a group of people are playing a game of dodge ball .,0.3873,several people are playing a game outdoors by passing a ball to each other through the air .,5.0,4.0,5.0,4.6667,0.5073,0.9105,1.0,1.0,0.9821,0.9797,0.4556,0.4521,0.4903,0.4454,0.4369,0.3869,0.3873
+3,a group of people are playing a game of soccer on a field .,0.3191,several people are playing a game outdoors by passing a ball to each other through the air .,4.0,4.0,4.0,4.0,0.5064,0.8879,1.0,0.9751,0.9687,0.9614,0.4393,0.3917,0.4893,0.4006,0.42,0.3091,0.3191
+4,a group of people playing a game where a ball was thrown and others tried to chase the ball .,0.4614,several people are playing a game outdoors by passing a ball to each other through the air .,5.0,5.0,5.0,5.0,0.7083,0.8915,0.965,0.68,0.7305,0.6626,0.6674,0.4253,0.6933,0.4926,0.6503,0.39,0.4614
+5,a girl runs to get a ball and bumps into someone else in the process .,0.0,a group of players throwing a ball among themselves as people cheer in the background,5.0,2.0,5.0,4.0,0.3487,0.8173,0.971,0.8659,0.8732,0.8394,0.1782,0.1468,0.2391,0.1538,0.0367,0.0,0.0
+6,a group of athletes pass a ball around a court while running .,0.3515,a group of players throwing a ball among themselves as people cheer in the background,5.0,5.0,5.0,5.0,0.5557,0.8665,0.9328,0.8371,0.8193,0.7738,0.4758,0.4613,0.5198,0.4503,0.4335,0.3644,0.3515

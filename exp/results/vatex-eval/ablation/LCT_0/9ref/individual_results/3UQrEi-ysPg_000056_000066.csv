@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person was spinning a fidget spinner and the person turned it the other way round,0.4464,someone keeps spinning a fidget spinner with and talking to somone else .,5.0,5.0,5.0,5.0,0.6989,0.9356,0.8858,0.6602,0.7445,0.7064,0.6782,0.5139,0.6526,0.5184,0.6287,0.499,0.4464
+2,a person is using a tool to sharpen a piece of metal .,0.0,a child is showing how they use their fidget spinner .,2.0,2.0,2.0,2.0,0.2632,0.8116,1.0,0.8408,0.827,0.7869,0.0921,0.1237,0.2632,0.1091,0.0921,0.0,0.0
+3,a person is holding a fidget spinner in their hand .,0.504,a person is holding a object in his and that he can spin with his fingers .,5.0,4.0,5.0,4.6667,0.8852,0.9594,1.0,0.7888,0.7033,0.6748,0.8804,0.5441,0.8671,0.5475,0.8644,0.5415,0.504
+4,a person spins a fidget spinner over and over again in his hand .,0.8577,person spinning a fidget spinner in their hand while the spin it .,5.0,5.0,5.0,5.0,0.8762,0.9789,0.9714,0.9188,0.8888,0.8864,0.8735,0.8653,0.8726,0.8607,0.8698,0.8624,0.8577
+5,"a person is playing with their fidget spinner , spinning it around .",0.3679,person spinning a fidget spinner in their hand while the spin it .,5.0,5.0,5.0,5.0,0.8608,0.9335,0.963,0.7636,0.7593,0.722,0.8509,0.5708,0.8395,0.4013,0.828,0.5129,0.3679
+6,in a room a person is playing with fidget spinner .,0.4238,a child is showing how they use their fidget spinner .,5.0,5.0,5.0,5.0,0.7198,0.9144,0.9375,0.9369,0.7861,0.7554,0.6908,0.4146,0.6298,0.496,0.5914,0.3586,0.4238

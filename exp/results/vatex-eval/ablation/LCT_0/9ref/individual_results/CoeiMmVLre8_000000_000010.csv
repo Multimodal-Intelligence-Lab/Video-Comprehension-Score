@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two teams are playing a professional football game while other people are watching .,0.2626,two teams play a game of american football on a field .,5.0,5.0,5.0,5.0,0.6494,0.9256,0.9318,0.639,0.679,0.6149,0.6139,0.339,0.61,0.3045,0.5704,0.3008,0.2626
+2,a group of people are playing a game of football on a football field .,0.6154,two teams play a game of american football on a field .,5.0,5.0,5.0,5.0,0.7016,0.9554,0.9688,0.8477,0.9042,0.8944,0.6877,0.6279,0.6744,0.6511,0.641,0.5898,0.6154
+3,a football game is being played on a football field .,0.1169,"a good football game brings back memories of fun , fall , family , and the holidays with loved ones .",5.0,5.0,5.0,5.0,0.7331,0.9413,0.9091,0.7835,0.7298,0.6799,0.7129,0.3231,0.6773,0.2545,0.653,0.2471,0.1169
+4,a person speaks about football plays as game footage is shown .,0.2838,two football commentators are commenting on a football play .,5.0,5.0,5.0,5.0,0.6585,0.8812,0.8989,0.7486,0.6815,0.6233,0.6124,0.4487,0.5309,0.3945,0.4452,0.348,0.2838
+5,footage of a football game from a televised broadcast is shown,0.456,a recording of a previous football game where one player catches the ball,4.0,5.0,5.0,4.6667,0.6832,0.8761,0.9655,0.7824,0.781,0.7329,0.6384,0.5616,0.6227,0.5496,0.5443,0.4705,0.456
+6,a score report is shown on screen while a sports announcer is talking about football scores .,0.2829,replay footage and announcer commentary on a play in a football game .,4.0,5.0,5.0,4.6667,0.5935,0.8254,0.9873,0.9798,0.977,0.9709,0.5076,0.3925,0.5603,0.4081,0.4672,0.264,0.2829

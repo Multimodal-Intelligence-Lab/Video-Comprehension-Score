@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guys performs some break dance moves as people watch him .,0.0,a man dancing in the center of a crowd overlooking him,5.0,5.0,5.0,5.0,0.549,0.7928,0.9524,0.3204,0.1324,0.0,0.4311,0.0,0.5264,0.0,0.4027,0.0,0.0
+2,a man is dancing in front of a crowd of people .,0.7584,a man dancing in the center of a crowd overlooking him,5.0,5.0,5.0,5.0,0.8087,0.9148,0.9052,0.8291,0.8655,0.8529,0.7909,0.7693,0.7887,0.779,0.769,0.7478,0.7584
+3,a young man is dancing in the middle of a room .,0.3412,a man dancing in the center of a crowd overlooking him,5.0,5.0,5.0,5.0,0.5168,0.8659,0.78,0.9268,0.8471,0.8234,0.4419,0.4786,0.3805,0.4295,0.2845,0.3978,0.3412
+4,a group of people are watching a man break dance on a dance floor .,0.0,a man dancing in the center of a crowd overlooking him,4.0,5.0,5.0,4.6667,0.5492,0.8419,0.628,0.3681,0.1962,0.0453,0.4645,0.0,0.2821,0.0,0.1473,0.0,0.0
+5,a young man performs break dancing moves while a group of people watch .,0.205,a man dancing in the center of a crowd overlooking him,5.0,5.0,5.0,5.0,0.5192,0.8341,0.9115,0.7185,0.725,0.6703,0.4236,0.3308,0.4725,0.3368,0.3676,0.1977,0.205
+6,"a man is break dancing on a floor , as a group of people watch .",0.4691,a man dancing in the center of a crowd overlooking him,5.0,5.0,5.0,5.0,0.5491,0.8493,1.0,1.0,1.0,1.0,0.4691,0.5491,0.5491,0.5491,0.4691,0.4691,0.4691

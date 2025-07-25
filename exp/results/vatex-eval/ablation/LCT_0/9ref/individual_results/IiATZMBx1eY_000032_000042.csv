@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man plays a tune on a hand flute , it is very peaceful sounding .",0.5265,a man plays on an instrument that does not look like the flute but sounds like one .,5.0,5.0,4.0,4.6667,0.9253,0.946,0.975,0.8441,0.8591,0.8415,0.921,0.5716,0.7625,0.5791,0.7614,0.5181,0.5265
+2,a man is sitting in a chair and smoking a pipe .,0.0135,a person is sitting near the camera and is playing a musical instrument,4.0,2.0,2.0,2.6667,0.2151,0.8014,1.0,1.0,1.0,1.0,0.0135,0.2151,0.2151,0.2151,0.0135,0.0135,0.0135
+3,a man is sitting in a chair and smoking a pipe .,0.0135,a person is sitting near the camera and is playing a musical instrument,4.0,2.0,2.0,2.6667,0.2151,0.8014,1.0,1.0,1.0,1.0,0.0135,0.2151,0.2151,0.2151,0.0135,0.0135,0.0135
+4,a man is playing a flute like instrument while a band plays behind him .,0.1076,a man is playing a song on a wind instrument .,4.0,4.0,4.0,4.0,0.6168,0.9249,0.9563,0.6682,0.6769,0.6036,0.5857,0.3059,0.5019,0.2664,0.4614,0.194,0.1076
+5,a man of color is playing a harmonica or flute,0.1587,a man slowly plays a tune on an ocarina to camera,4.0,3.0,2.0,3.0,0.5532,0.881,0.9412,1.0,0.9377,0.9245,0.4928,0.3601,0.5134,0.3001,0.4197,0.242,0.1587
+6,a man in a blue shirt plays a song on his small woodwind instrument .,0.4976,a man is playing a song on a wind instrument .,4.0,4.0,4.0,4.0,0.6261,0.8985,0.9831,0.9155,0.9097,0.8935,0.5839,0.5538,0.6017,0.5486,0.5567,0.5034,0.4976

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is playing a guitar while seated and a sheet music stand,0.2332,a man plays a guitar track while recording music in a studio .,5.0,4.0,5.0,4.6667,0.6604,0.9043,0.9384,0.7208,0.8153,0.7886,0.6049,0.2423,0.6026,0.3302,0.5377,0.1326,0.2332
+2,a man is playing a song on an electric guitar .,0.3982,a man at a recording studio is playing an electric guitar while someone sings .,5.0,5.0,5.0,5.0,0.6358,0.9202,0.8955,0.7544,0.6611,0.6279,0.6042,0.5172,0.5521,0.4462,0.5002,0.4754,0.3982
+3,a man is sitting in a chair and playing a guitar .,0.6561,a man is sitting in the studio and playing guitar .,5.0,5.0,5.0,5.0,0.7145,0.9517,0.9677,0.9454,0.8802,0.8741,0.6973,0.6432,0.7024,0.6728,0.6872,0.6251,0.6561
+4,a man sits in a studio and plays a nice tune on an electric guitar .,0.7935,"a man sits in a recording studio , playing an electric guitar with drums in the background .",5.0,5.0,4.0,4.6667,0.8445,0.9177,0.9453,0.8188,0.8285,0.8131,0.8306,0.7854,0.8355,0.7969,0.8208,0.7818,0.7935
+5,"a man sitting down is playing a guitar , while music is playing .",0.7271,a man sitting down holding a guitar in his hands .,5.0,5.0,5.0,5.0,0.7587,0.9559,1.0,1.0,1.0,1.0,0.7271,0.7587,0.7587,0.7587,0.7271,0.7271,0.7271
+6,a man is playing an electric guitar inside of a building .,0.4697,"a man sits in a recording studio , playing an electric guitar with drums in the background .",5.0,5.0,5.0,5.0,0.6215,0.8908,0.9714,0.9679,0.9393,0.9318,0.5711,0.5528,0.5706,0.5321,0.5134,0.4932,0.4697

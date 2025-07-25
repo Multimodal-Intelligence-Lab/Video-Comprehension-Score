@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of sled dogs pull a man on a sled to the finish line as spectators cheer .,0.0,a man races his team of dogs while being cheered on by bystanders .,5.0,5.0,5.0,5.0,0.7082,0.8594,0.7305,0.1336,0.0,0.0,0.6605,0.0,0.6006,0.0,0.5352,0.0,0.0
+2,a group of people are sledding on a sled in the snow .,0.0,a man races his team of dogs while being cheered on by bystanders .,5.0,4.0,5.0,4.6667,0.2125,0.7338,0.7895,0.4587,0.1605,0.0,0.0,0.0,0.0025,0.0,0.0,0.0,0.0
+3,a group of sled dogs are pulling a sled in the snow .,0.0,a man races his team of dogs while being cheered on by bystanders .,5.0,5.0,5.0,5.0,0.4209,0.7826,0.6562,0.3394,0.4474,0.2939,0.26,0.0,0.1175,0.0,0.0,0.0,0.0
+4,a pack of dogs is pulling a man on a sled on the snow .,0.0,a man races his team of dogs while being cheered on by bystanders .,5.0,5.0,5.0,5.0,0.5799,0.8113,0.6869,0.0,0.0,0.0,0.4822,0.0,0.3885,0.0,0.2462,0.0,0.0
+5,"a group of dogs are pulling a sledge with a person on it , through the snow , in a race .",0.0,a man races his team of dogs while being cheered on by bystanders .,5.0,5.0,5.0,5.0,0.6035,0.8334,0.5762,0.5364,0.2593,0.1112,0.5243,0.2318,0.2978,0.0,0.1744,0.1131,0.0
+6,a sled being pulled by a team of dogs races by on the snow .,0.0,a man races his team of dogs while being cheered on by bystanders .,5.0,5.0,5.0,5.0,0.5801,0.8511,0.75,0.2522,0.3775,0.2686,0.5067,0.0,0.4402,0.0,0.3422,0.0,0.0

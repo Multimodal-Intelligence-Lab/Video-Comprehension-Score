@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,one puts the iron nut underneath a vehicle and puts a bucket under it,0.1881,a person twists a screw and places a bucket under the screw .,5.0,4.0,5.0,4.6667,0.4321,0.8207,1.0,1.0,1.0,1.0,0.2981,0.3388,0.4125,0.343,0.2739,0.1829,0.1881
+2,a man is demonstrating how to change the oil from a car .,0.8186,the guy is doing a demonstration on the proper way to do a change oil on your car .,4.0,5.0,5.0,4.6667,0.9629,0.9866,1.0,1.0,1.0,1.0,0.9624,0.8421,0.9001,0.82,0.893,0.8409,0.8186
+3,a man is showing how to remove the oil from a car .,0.7622,the guy is doing a demonstration on the proper way to do a change oil on your car .,4.0,5.0,5.0,4.6667,0.8309,0.9277,1.0,1.0,1.0,1.0,0.8178,0.791,0.8132,0.791,0.7987,0.7622,0.7622
+4,"a man pours oil into a car oil tank , explaining what he's doing .",0.5319,a man demonstrates how to do an oil change on a car .,3.0,3.0,3.0,3.0,0.7078,0.8751,1.0,0.8529,0.8809,0.8447,0.6661,0.6184,0.6591,0.5903,0.6104,0.564,0.5319
+5,"the boy is under the car , pulling the oil plug and draining the oil .",0.5108,"a man reaches under a car with a socket wrench and loosens the oil drain plug , then moves an oil pan underneath it .",4.0,2.0,5.0,3.6667,0.6774,0.9046,1.0,0.8723,0.8863,0.8515,0.6321,0.5403,0.6546,0.5739,0.6034,0.4722,0.5108
+6,a man tells how to use a gas pump and get the gas for cars .,0.2878,a man demonstrates how to do an oil change on a car .,4.0,2.0,2.0,2.6667,0.4883,0.8404,1.0,1.0,1.0,1.0,0.3912,0.4106,0.4777,0.4229,0.3785,0.2734,0.2878

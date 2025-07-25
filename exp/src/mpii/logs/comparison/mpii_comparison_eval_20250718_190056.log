@@ -1,0 +1,227 @@
+2025-07-18 19:00:56 [INFO] Initializing models...
+2025-07-18 19:01:04 [INFO] Models initialized successfully
+2025-07-18 19:01:04 [INFO] Starting evaluation pipeline
+2025-07-18 19:01:04 [INFO] Input folder: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset
+2025-07-18 19:01:04 [INFO] Output folder: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/results/mpii/comparison
+2025-07-18 19:01:04 [INFO] Experiment ID: eval_20250718_190056
+2025-07-18 19:01:04 [INFO] Found 1390 JSON files to process
+2025-07-18 19:01:04 [INFO] Processing 1390 files with 12 workers
+2025-07-18 19:01:04 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1.json (26 test cases)
+2025-07-18 19:01:04 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/10.json (26 test cases)
+2025-07-18 19:01:04 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/100.json (26 test cases)
+2025-07-18 19:01:04 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1000.json (26 test cases)
+2025-07-18 19:01:04 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1001.json (26 test cases)
+2025-07-18 19:01:04 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1002.json (26 test cases)
+2025-07-18 19:01:04 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1003.json (26 test cases)
+2025-07-18 19:01:04 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1005.json (26 test cases)
+2025-07-18 19:01:04 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1006.json (26 test cases)
+2025-07-18 19:01:04 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1004.json (26 test cases)
+2025-07-18 19:01:04 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1007.json (26 test cases)
+2025-07-18 19:01:04 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1008.json (26 test cases)
+2025-07-18 19:05:47 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1000.json (26 test cases, 283.26s)
+2025-07-18 19:05:47 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1009.json (26 test cases)
+2025-07-18 19:05:47 [INFO] Files: 1/1390 (0.1%)
+2025-07-18 19:05:47 [INFO] ETA: 6558.0 minutes
+2025-07-18 19:05:55 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/100.json (26 test cases, 291.69s)
+2025-07-18 19:05:55 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/101.json (26 test cases)
+2025-07-18 19:05:55 [INFO] Files: 2/1390 (0.1%)
+2025-07-18 19:05:55 [INFO] ETA: 3374.5 minutes
+2025-07-18 19:05:57 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1006.json (26 test cases, 293.70s)
+2025-07-18 19:05:57 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1010.json (26 test cases)
+2025-07-18 19:05:57 [INFO] Files: 3/1390 (0.2%)
+2025-07-18 19:05:57 [INFO] ETA: 2263.3 minutes
+2025-07-18 19:06:06 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1008.json (26 test cases, 302.70s)
+2025-07-18 19:06:06 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1011.json (26 test cases)
+2025-07-18 19:06:06 [INFO] Files: 4/1390 (0.3%)
+2025-07-18 19:06:06 [INFO] ETA: 1748.3 minutes
+2025-07-18 19:06:07 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1002.json (26 test cases, 303.12s)
+2025-07-18 19:06:07 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1012.json (26 test cases)
+2025-07-18 19:06:07 [INFO] Files: 5/1390 (0.4%)
+2025-07-18 19:06:07 [INFO] ETA: 1399.7 minutes
+2025-07-18 19:06:07 [INFO] Checkpoint saved at 5/1390 files (interval: 5)
+2025-07-18 19:06:08 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1004.json (26 test cases, 303.98s)
+2025-07-18 19:06:08 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1013.json (26 test cases)
+2025-07-18 19:06:08 [INFO] Files: 6/1390 (0.4%)
+2025-07-18 19:06:08 [INFO] ETA: 1168.7 minutes
+2025-07-18 19:06:08 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1007.json (26 test cases, 304.24s)
+2025-07-18 19:06:08 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1014.json (26 test cases)
+2025-07-18 19:06:08 [INFO] Files: 7/1390 (0.5%)
+2025-07-18 19:06:08 [INFO] ETA: 1002.1 minutes
+2025-07-18 19:06:35 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1003.json (26 test cases, 331.30s)
+2025-07-18 19:06:35 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1015.json (26 test cases)
+2025-07-18 19:06:35 [INFO] Files: 8/1390 (0.6%)
+2025-07-18 19:06:35 [INFO] ETA: 954.0 minutes
+2025-07-18 19:06:37 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/10.json (26 test cases, 333.08s)
+2025-07-18 19:06:37 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1016.json (26 test cases)
+2025-07-18 19:06:37 [INFO] Files: 9/1390 (0.6%)
+2025-07-18 19:06:37 [INFO] ETA: 851.9 minutes
+2025-07-18 19:06:40 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1.json (26 test cases, 336.67s)
+2025-07-18 19:06:40 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1017.json (26 test cases)
+2025-07-18 19:06:40 [INFO] Files: 10/1390 (0.7%)
+2025-07-18 19:06:40 [INFO] ETA: 774.5 minutes
+2025-07-18 19:06:40 [INFO] Checkpoint saved at 10/1390 files (interval: 4)
+2025-07-18 19:06:45 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1001.json (26 test cases, 341.80s)
+2025-07-18 19:06:45 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1018.json (26 test cases)
+2025-07-18 19:06:45 [INFO] Files: 11/1390 (0.8%)
+2025-07-18 19:06:45 [INFO] ETA: 714.2 minutes
+2025-07-18 19:08:00 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1005.json (26 test cases, 416.35s)
+2025-07-18 19:08:00 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1019.json (26 test cases)
+2025-07-18 19:08:00 [INFO] Files: 12/1390 (0.9%)
+2025-07-18 19:08:00 [INFO] ETA: 797.0 minutes
+2025-07-18 19:10:39 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1010.json (26 test cases, 281.77s)
+2025-07-18 19:10:39 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/102.json (26 test cases)
+2025-07-18 19:10:39 [INFO] Files: 13/1390 (0.9%)
+2025-07-18 19:10:39 [INFO] ETA: 1016.0 minutes
+2025-07-18 19:10:42 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1011.json (26 test cases, 275.31s)
+2025-07-18 19:10:42 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1020.json (26 test cases)
+2025-07-18 19:10:42 [INFO] Files: 14/1390 (1.0%)
+2025-07-18 19:10:42 [INFO] ETA: 947.0 minutes
+2025-07-18 19:10:42 [INFO] Checkpoint saved at 14/1390 files (interval: 3)
+2025-07-18 19:10:42 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1013.json (26 test cases, 274.24s)
+2025-07-18 19:10:42 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1021.json (26 test cases)
+2025-07-18 19:10:42 [INFO] Files: 15/1390 (1.1%)
+2025-07-18 19:10:42 [INFO] ETA: 883.4 minutes
+2025-07-18 19:10:43 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1012.json (26 test cases, 276.58s)
+2025-07-18 19:10:43 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1022.json (26 test cases)
+2025-07-18 19:10:43 [INFO] Files: 16/1390 (1.2%)
+2025-07-18 19:10:43 [INFO] ETA: 829.7 minutes
+2025-07-18 19:10:50 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1014.json (26 test cases, 282.61s)
+2025-07-18 19:10:50 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1023.json (26 test cases)
+2025-07-18 19:10:50 [INFO] Files: 17/1390 (1.2%)
+2025-07-18 19:10:50 [INFO] ETA: 790.0 minutes
+2025-07-18 19:10:51 [INFO] Checkpoint saved at 17/1390 files (interval: 4)
+2025-07-18 19:11:13 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1017.json (26 test cases, 273.27s)
+2025-07-18 19:11:13 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1024.json (26 test cases)
+2025-07-18 19:11:14 [INFO] Files: 18/1390 (1.3%)
+2025-07-18 19:11:14 [INFO] ETA: 774.9 minutes
+2025-07-18 19:11:19 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/101.json (26 test cases, 323.85s)
+2025-07-18 19:11:19 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1025.json (26 test cases)
+2025-07-18 19:11:19 [INFO] Files: 19/1390 (1.4%)
+2025-07-18 19:11:19 [INFO] ETA: 740.4 minutes
+2025-07-18 19:11:23 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1018.json (26 test cases, 277.59s)
+2025-07-18 19:11:23 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1026.json (26 test cases)
+2025-07-18 19:11:23 [INFO] Files: 20/1390 (1.4%)
+2025-07-18 19:11:23 [INFO] ETA: 707.2 minutes
+2025-07-18 19:11:25 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1009.json (26 test cases, 338.64s)
+2025-07-18 19:11:25 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1027.json (26 test cases)
+2025-07-18 19:11:25 [INFO] Files: 21/1390 (1.5%)
+2025-07-18 19:11:25 [INFO] ETA: 675.7 minutes
+2025-07-18 19:11:26 [INFO] Checkpoint saved at 21/1390 files (interval: 5)
+2025-07-18 19:12:02 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1016.json (26 test cases, 325.28s)
+2025-07-18 19:12:02 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1028.json (26 test cases)
+2025-07-18 19:12:02 [INFO] Files: 22/1390 (1.6%)
+2025-07-18 19:12:02 [INFO] ETA: 682.4 minutes
+2025-07-18 19:13:18 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1015.json (26 test cases, 402.85s)
+2025-07-18 19:13:18 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1029.json (26 test cases)
+2025-07-18 19:13:18 [INFO] Files: 23/1390 (1.7%)
+2025-07-18 19:13:18 [INFO] ETA: 727.3 minutes
+2025-07-18 19:13:33 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1019.json (26 test cases, 333.05s)
+2025-07-18 19:13:33 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/103.json (26 test cases)
+2025-07-18 19:13:33 [INFO] Files: 24/1390 (1.7%)
+2025-07-18 19:13:33 [INFO] ETA: 710.9 minutes
+2025-07-18 19:15:50 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1024.json (26 test cases, 276.25s)
+2025-07-18 19:15:50 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1030.json (26 test cases)
+2025-07-18 19:15:50 [INFO] Files: 25/1390 (1.8%)
+2025-07-18 19:15:50 [INFO] ETA: 806.5 minutes
+2025-07-18 19:15:58 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1025.json (26 test cases, 279.08s)
+2025-07-18 19:15:58 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1031.json (26 test cases)
+2025-07-18 19:15:58 [INFO] Files: 26/1390 (1.9%)
+2025-07-18 19:15:58 [INFO] ETA: 782.3 minutes
+2025-07-18 19:15:58 [INFO] Checkpoint saved at 26/1390 files (interval: 4)
+2025-07-18 19:15:59 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/102.json (26 test cases, 320.47s)
+2025-07-18 19:15:59 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1032.json (26 test cases)
+2025-07-18 19:16:00 [INFO] Files: 27/1390 (1.9%)
+2025-07-18 19:16:00 [INFO] ETA: 753.8 minutes
+2025-07-18 19:16:05 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1021.json (26 test cases, 323.54s)
+2025-07-18 19:16:05 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1033.json (26 test cases)
+2025-07-18 19:16:05 [INFO] Files: 28/1390 (2.0%)
+2025-07-18 19:16:05 [INFO] ETA: 731.1 minutes
+2025-07-18 19:16:22 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1028.json (26 test cases, 259.97s)
+2025-07-18 19:16:22 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1034.json (26 test cases)
+2025-07-18 19:16:22 [INFO] Files: 29/1390 (2.1%)
+2025-07-18 19:16:22 [INFO] ETA: 718.3 minutes
+2025-07-18 19:16:40 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1020.json (26 test cases, 358.61s)
+2025-07-18 19:16:40 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1035.json (26 test cases)
+2025-07-18 19:16:40 [INFO] Files: 30/1390 (2.2%)
+2025-07-18 19:16:40 [INFO] ETA: 707.7 minutes
+2025-07-18 19:16:40 [INFO] Checkpoint saved at 30/1390 files (interval: 4)
+2025-07-18 19:17:39 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1026.json (26 test cases, 375.99s)
+2025-07-18 19:17:39 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1036.json (26 test cases)
+2025-07-18 19:17:39 [INFO] Files: 31/1390 (2.2%)
+2025-07-18 19:17:39 [INFO] ETA: 727.3 minutes
+2025-07-18 19:17:52 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1027.json (26 test cases, 386.99s)
+2025-07-18 19:17:52 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1037.json (26 test cases)
+2025-07-18 19:17:52 [INFO] Files: 32/1390 (2.3%)
+2025-07-18 19:17:52 [INFO] ETA: 713.6 minutes
+2025-07-18 19:17:56 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/103.json (26 test cases, 263.46s)
+2025-07-18 19:17:56 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1038.json (26 test cases)
+2025-07-18 19:17:56 [INFO] Files: 33/1390 (2.4%)
+2025-07-18 19:17:56 [INFO] ETA: 694.2 minutes
+2025-07-18 19:18:38 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1029.json (26 test cases, 320.01s)
+2025-07-18 19:18:38 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1039.json (26 test cases)
+2025-07-18 19:18:38 [INFO] Files: 34/1390 (2.4%)
+2025-07-18 19:18:38 [INFO] ETA: 700.8 minutes
+2025-07-18 19:18:38 [INFO] Checkpoint saved at 34/1390 files (interval: 4)
+2025-07-18 19:19:58 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1022.json (26 test cases, 554.66s)
+2025-07-18 19:19:58 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/104.json (26 test cases)
+2025-07-18 19:19:58 [INFO] Files: 35/1390 (2.5%)
+2025-07-18 19:19:58 [INFO] ETA: 732.0 minutes
+2025-07-18 19:20:16 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1023.json (26 test cases, 565.44s)
+2025-07-18 19:20:16 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1040.json (26 test cases)
+2025-07-18 19:20:16 [INFO] Files: 36/1390 (2.6%)
+2025-07-18 19:20:16 [INFO] ETA: 722.3 minutes
+2025-07-18 19:20:57 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1030.json (26 test cases, 307.45s)
+2025-07-18 19:20:57 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1041.json (26 test cases)
+2025-07-18 19:20:57 [INFO] Files: 37/1390 (2.7%)
+2025-07-18 19:20:57 [INFO] ETA: 727.5 minutes
+2025-07-18 19:21:05 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1033.json (26 test cases, 299.53s)
+2025-07-18 19:21:05 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1042.json (26 test cases)
+2025-07-18 19:21:05 [INFO] Files: 38/1390 (2.7%)
+2025-07-18 19:21:05 [INFO] ETA: 712.4 minutes
+2025-07-18 19:21:05 [INFO] Checkpoint saved at 38/1390 files (interval: 4)
+2025-07-18 19:21:22 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1032.json (26 test cases, 322.57s)
+2025-07-18 19:21:22 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1043.json (26 test cases)
+2025-07-18 19:21:22 [INFO] Files: 39/1390 (2.8%)
+2025-07-18 19:21:22 [INFO] ETA: 703.5 minutes
+2025-07-18 19:21:36 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1034.json (26 test cases, 314.48s)
+2025-07-18 19:21:36 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1044.json (26 test cases)
+2025-07-18 19:21:36 [INFO] Files: 40/1390 (2.9%)
+2025-07-18 19:21:36 [INFO] ETA: 693.5 minutes
+2025-07-18 19:22:01 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1035.json (26 test cases, 320.85s)
+2025-07-18 19:22:01 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1045.json (26 test cases)
+2025-07-18 19:22:01 [INFO] Files: 41/1390 (2.9%)
+2025-07-18 19:22:01 [INFO] ETA: 689.6 minutes
+2025-07-18 19:22:05 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1037.json (26 test cases, 252.70s)
+2025-07-18 19:22:05 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1046.json (26 test cases)
+2025-07-18 19:22:05 [INFO] Files: 42/1390 (3.0%)
+2025-07-18 19:22:05 [INFO] ETA: 674.9 minutes
+2025-07-18 19:22:05 [INFO] Checkpoint saved at 42/1390 files (interval: 4)
+2025-07-18 19:22:14 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1038.json (26 test cases, 257.54s)
+2025-07-18 19:22:14 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1047.json (26 test cases)
+2025-07-18 19:22:14 [INFO] Files: 43/1390 (3.1%)
+2025-07-18 19:22:14 [INFO] ETA: 663.3 minutes
+2025-07-18 19:22:52 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1036.json (26 test cases, 312.58s)
+2025-07-18 19:22:52 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1048.json (26 test cases)
+2025-07-18 19:22:52 [INFO] Files: 44/1390 (3.2%)
+2025-07-18 19:22:52 [INFO] ETA: 666.9 minutes
+2025-07-18 19:23:00 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1039.json (26 test cases, 262.77s)
+2025-07-18 19:23:00 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1049.json (26 test cases)
+2025-07-18 19:23:01 [INFO] Files: 45/1390 (3.2%)
+2025-07-18 19:23:01 [INFO] ETA: 656.1 minutes
+2025-07-18 19:24:33 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1040.json (26 test cases, 257.26s)
+2025-07-18 19:24:33 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/105.json (26 test cases)
+2025-07-18 19:24:33 [INFO] Files: 46/1390 (3.3%)
+2025-07-18 19:24:33 [INFO] ETA: 686.4 minutes
+2025-07-18 19:24:33 [INFO] Checkpoint saved at 46/1390 files (interval: 4)
+2025-07-18 19:25:13 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/104.json (26 test cases, 315.09s)
+2025-07-18 19:25:13 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1050.json (26 test cases)
+2025-07-18 19:25:13 [INFO] Files: 47/1390 (3.4%)
+2025-07-18 19:25:13 [INFO] ETA: 690.3 minutes
+2025-07-18 19:26:10 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1031.json (26 test cases, 612.30s)
+2025-07-18 19:26:10 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1051.json (26 test cases)
+2025-07-18 19:26:11 [INFO] Files: 48/1390 (3.5%)
+2025-07-18 19:26:11 [INFO] ETA: 702.2 minutes
+2025-07-18 19:26:17 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1045.json (26 test cases, 255.87s)
+2025-07-18 19:26:17 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/comparison/aug_dataset/1052.json (26 test cases)
+2025-07-18 19:26:17 [INFO] Files: 49/1390 (3.5%)
+2025-07-18 19:26:17 [INFO] ETA: 690.3 minutes

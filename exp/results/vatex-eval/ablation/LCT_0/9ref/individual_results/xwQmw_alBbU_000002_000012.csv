@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of kids are playing on a water slide .,0.3624,a child climbs the stairs of an inflatable water slide as another slides down it into water .,5.0,5.0,5.0,5.0,0.5625,0.8748,0.9175,0.8845,0.8439,0.8206,0.4999,0.4732,0.5113,0.4562,0.4152,0.3916,0.3624
+2,a group of kids are sliding down a water slide .,0.1324,a child climbs the stairs of an inflatable water slide as another slides down it into water .,5.0,4.0,4.0,4.3333,0.5409,0.8971,0.9183,0.8033,0.8022,0.7607,0.4883,0.2325,0.4736,0.2253,0.3853,0.1404,0.1324
+3,a group of kids are playing in a bouncy house .,0.2032,"little kids going up the steps to an inflatable slide , while others are going down .",4.0,4.0,4.0,4.0,0.4715,0.841,0.9583,0.9062,0.9039,0.8724,0.3715,0.3594,0.431,0.3603,0.2913,0.2021,0.2032
+4,a little kid goes down a slide into water .,0.4033,"little kids going up the steps to an inflatable slide , while others are going down .",5.0,4.0,4.0,4.3333,0.5767,0.8997,0.9175,0.9387,0.892,0.8798,0.529,0.4904,0.519,0.4637,0.4648,0.433,0.4033
+5,child sliding down an inflatable water slide at a fun park .,0.4963,a child climbs the stairs of an inflatable water slide as another slides down it into water .,5.0,4.0,5.0,4.6667,0.6461,0.9168,0.9778,0.9135,0.9261,0.9118,0.6139,0.5383,0.6121,0.5382,0.5768,0.4964,0.4963
+6,a young child slides down a slide into a pool of water .,0.2073,a child climbs the stairs of an inflatable water slide as another slides down it into water .,5.0,4.0,4.0,4.3333,0.5817,0.9069,0.9744,0.8207,0.8546,0.8235,0.5353,0.2681,0.5407,0.2863,0.4898,0.1908,0.2073

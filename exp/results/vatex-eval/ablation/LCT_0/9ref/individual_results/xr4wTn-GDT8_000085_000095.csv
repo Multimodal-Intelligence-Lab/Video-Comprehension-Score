@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man in a red shirt is sitting down and having his legs massaged .,0.7256,a man wearing a red shirt is sitting in a chair getting his feet washed .,4.0,5.0,5.0,4.6667,0.7689,0.9121,1.0,0.9016,0.9276,0.9202,0.7455,0.7437,0.7689,0.7509,0.7455,0.7177,0.7256
+2,a group of people are washing their feet in a religious ceremony .,0.0,a young man with a beard and red shirt is sitting at a table of a public event as two other gentlemen are preparing a bucket of paint who are standing next to him and his table .,4.0,3.0,4.0,3.6667,0.5459,0.8189,1.0,0.8919,0.8897,0.8551,0.4454,0.1776,0.4551,0.1906,0.3345,0.0,0.0
+3,a man washes the feet of another man sitting in a chair .,0.0426,a man in a red shirt sits in a chair with one foot in a pail while two men in white jackets prepare to pour something on the foot .,5.0,5.0,5.0,5.0,0.7452,0.9114,0.8973,0.7388,0.6255,0.5642,0.7196,0.3159,0.4541,0.1723,0.434,0.2086,0.0426
+4,a guy is scrubbing his shoes clean while sitting on the floor .,0.0,a young man with a beard and red shirt is sitting at a table of a public event as two other gentlemen are preparing a bucket of paint who are standing next to him and his table .,2.0,3.0,4.0,3.0,0.6032,0.8857,0.9386,0.6475,0.6231,0.5287,0.552,0.0,0.4319,0.0,0.3586,0.0,0.0
+5,a row of robed children sit in chairs while robed men wash their feet .,0.0934,a man sets in a red chair while others kneel over and wash his feet .,4.0,3.0,4.0,3.6667,0.5554,0.8402,0.9089,0.7192,0.7727,0.7023,0.4701,0.2611,0.4744,0.2394,0.3736,0.1193,0.0934
+6,"a young man is sitting down , massaging another 's feet .",0.1555,a man wearing a red shirt is sitting in a chair getting his feet washed .,3.0,3.0,4.0,3.3333,0.4826,0.8672,0.9599,0.8238,0.8327,0.7999,0.4033,0.2558,0.433,0.278,0.3368,0.1295,0.1555

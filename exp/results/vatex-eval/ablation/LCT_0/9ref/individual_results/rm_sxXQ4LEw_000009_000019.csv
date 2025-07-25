@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two women play a hand clapping game while counting to a rhythm .,0.6679,two women are sitting outside playing a hand clapping game .,5.0,4.0,5.0,4.6667,0.7944,0.9306,1.0,1.0,1.0,1.0,0.779,0.6604,0.7451,0.6743,0.7261,0.6266,0.6679
+2,a group of people are playing a game of patty cake .,0.1708,two people are playing to each other by using hand movements,4.0,4.0,4.0,4.0,0.4503,0.8429,0.9851,0.979,0.9748,0.966,0.3478,0.2161,0.386,0.301,0.2716,0.07,0.1708
+3,two young girls are playing patty cake with their hands .,0.3124,two young girls play a hand clapping game together outside .,4.0,5.0,5.0,4.6667,0.6234,0.9007,0.9599,0.7804,0.7681,0.7291,0.5819,0.3687,0.5749,0.3712,0.5281,0.3106,0.3124
+4,two young girls are sitting playing a hand clapping game while singing a song .,0.7339,two young girls play a hand clapping game together outside .,3.0,4.0,4.0,3.6667,0.754,0.9265,1.0,1.0,1.0,1.0,0.7339,0.754,0.754,0.754,0.7339,0.7339,0.7339
+5,two girls in a green neighbourhood on a sunny day are playing a hand clapping game with additional gestures including a hip bump .,0.5763,two young girls play a hand clapping game together outside .,4.0,3.0,3.0,3.3333,0.704,0.9001,0.9619,0.8648,0.8508,0.822,0.6644,0.5893,0.6923,0.6263,0.6512,0.5344,0.5763
+6,two little girls are playing a hand game while on a trampoline .,0.4877,two young girls play a hand clapping game together outside .,4.0,4.0,4.0,4.0,0.5552,0.9245,1.0,0.9798,0.9594,0.9552,0.5085,0.5461,0.5378,0.5364,0.4893,0.4984,0.4877

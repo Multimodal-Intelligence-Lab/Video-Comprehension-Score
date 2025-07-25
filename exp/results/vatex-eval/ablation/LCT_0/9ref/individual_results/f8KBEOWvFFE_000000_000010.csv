@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy is able to open up a beer bottle with chopsticks .,0.58,man showing how to open a bottle of beer with chop sticks .,5.0,5.0,5.0,5.0,0.9461,0.9434,0.9599,0.7237,0.7088,0.6592,0.9428,0.6124,0.9376,0.5933,0.9374,0.6086,0.58
+2,a man is using a bottle opener to open a bottle of wine .,0.1904,an asian male uses chopsticks to open a bottle of beer .,4.0,4.0,4.0,4.0,0.5064,0.9183,0.9167,0.6913,0.7722,0.7411,0.4625,0.2044,0.448,0.2878,0.3711,0.0956,0.1904
+3,a man is using a bottle opener to open a bottle of wine .,0.1904,an asian male uses chopsticks to open a bottle of beer .,4.0,4.0,4.0,4.0,0.5064,0.9183,0.9167,0.6913,0.7722,0.7411,0.4625,0.2044,0.448,0.2878,0.3711,0.0956,0.1904
+4,a man pops the cap off of an bottle of beer,0.607,a man pops open a bottle of beer with chopsticks .,5.0,4.0,5.0,4.6667,0.6323,0.9356,1.0,1.0,1.0,1.0,0.607,0.6323,0.6323,0.6323,0.607,0.607,0.607
+5,a young man opens a pop top beer bottle with his teeth and then takes a drink .,0.1982,a man demonstrates how to pop off the top of a bottle using two chopsticks .,3.0,3.0,4.0,3.3333,0.6077,0.8961,0.9703,0.7357,0.7769,0.7407,0.5622,0.265,0.5484,0.3101,0.4961,0.1458,0.1982
+6,a guy is trying to open the cap on a bottle .,0.3757,a male is at a restaurant trying to open a bottle with a stick .,5.0,5.0,5.0,5.0,0.5333,0.904,1.0,0.8408,0.827,0.8087,0.4837,0.4449,0.5333,0.4357,0.4837,0.3859,0.3757

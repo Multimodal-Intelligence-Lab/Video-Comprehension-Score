@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person wearing gloves uses a knife to slice up a piece of meat .,0.5448,aperson with a knife is slowly cutting up some meat .,5.0,5.0,5.0,5.0,0.7226,0.878,0.9378,0.7571,0.7567,0.7229,0.6833,0.6005,0.6961,0.6004,0.653,0.545,0.5448
+2,a person is using a knife to cut a piece of meat .,0.7921,aperson with a knife is slowly cutting up some meat .,5.0,5.0,5.0,5.0,0.8461,0.9161,1.0,0.8723,0.8707,0.8551,0.832,0.8118,0.8461,0.7956,0.832,0.8002,0.7921
+3,a person is using a knife to cut a piece of meat .,0.7921,aperson with a knife is slowly cutting up some meat .,5.0,5.0,5.0,5.0,0.8461,0.9161,1.0,0.8723,0.8707,0.8551,0.832,0.8118,0.8461,0.7956,0.832,0.8002,0.7921
+4,a man takes some pieces of meat and cuts it on a cutting board .,0.5349,a large piece of cooked meat is being sliced by a knife on a cutting board .,5.0,5.0,5.0,5.0,0.66,0.9011,0.9419,0.8155,0.8113,0.7905,0.6227,0.5831,0.639,0.5809,0.5994,0.5373,0.5349
+5,someone in a butcher shops cuts and rips apart a cut of meat .,0.4165,aperson with a knife is slowly cutting up some meat .,5.0,4.0,4.0,4.3333,0.5625,0.8676,0.971,0.8819,0.8642,0.8435,0.4957,0.5039,0.5339,0.4937,0.4629,0.4282,0.4165
+6,someone is grinding and displaying meat through a meat grinder .,0.231,aperson with a knife is slowly cutting up some meat .,1.0,3.0,4.0,2.6667,0.4844,0.8443,1.0,1.0,1.0,1.0,0.3827,0.3868,0.4692,0.3578,0.3645,0.2658,0.231

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person has sausage laying out and his about to do something with it .,0.6463,a person shows sausages laying on a table as someone arranges them .,5.0,5.0,5.0,5.0,0.6857,0.9119,0.9756,1.0,0.9744,0.9719,0.6553,0.6857,0.6759,0.6774,0.6446,0.6553,0.6463
+2,a man is demonstrating how to make sausage links .,0.3122,"a woman is talking , while a man uses his hands to work with a strand of sausage and then he tells her to hold up .",4.0,1.0,5.0,3.3333,0.6951,0.8919,1.0,1.0,1.0,1.0,0.6581,0.4458,0.6453,0.4347,0.6023,0.3257,0.3122
+3,a man is demonstrating how to make sausage links .,0.3122,"a woman is talking , while a man uses his hands to work with a strand of sausage and then he tells her to hold up .",5.0,1.0,5.0,3.6667,0.6951,0.8919,1.0,1.0,1.0,1.0,0.6581,0.4458,0.6453,0.4347,0.6023,0.3257,0.3122
+4,a person demonstrates how to put sausage casings on a sausage maker,0.0,"a woman is talking , while a man uses his hands to work with a strand of sausage and then he tells her to hold up .",4.0,1.0,2.0,2.3333,0.5522,0.8601,0.8759,0.6163,0.6186,0.5413,0.4793,0.1337,0.4574,0.137,0.3445,0.0,0.0
+5,the hands of a person cooks some sausages in a pan,0.1125,a man is in the kitchen and he is tying up uncooked sausage together in order to make links .,4.0,2.0,3.0,3.0,0.4955,0.8395,0.9125,0.7866,0.75,0.6887,0.3991,0.3204,0.3781,0.2873,0.2288,0.1537,0.1125
+6,a man is preparing to make sausages by selecting its ingredients and a sausage filling machine .,0.1888,a person shows sausages laying on a table as someone arranges them .,2.0,3.0,3.0,2.6667,0.5585,0.847,0.9552,0.811,0.8273,0.786,0.4788,0.3505,0.4686,0.3532,0.3433,0.1854,0.1888

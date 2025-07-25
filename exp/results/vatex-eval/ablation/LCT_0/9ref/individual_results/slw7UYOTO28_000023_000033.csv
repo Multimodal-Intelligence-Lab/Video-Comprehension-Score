@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"baby laying down cries with eyes closed , mouth open and covered hands moving .",0.3788,a baby is laying down on the bed and is crying and turning red while it is crying .,5.0,5.0,5.0,5.0,0.6222,0.8504,1.0,1.0,1.0,1.0,0.5557,0.4621,0.577,0.4718,0.5026,0.3675,0.3788
+2,a baby is laying on a bed and yawning and then yawns .,0.1041,a baby is crying on top of a bed while a person is talking to him .,3.0,4.0,3.0,3.3333,0.6052,0.8653,0.9091,0.7507,0.6447,0.5717,0.5437,0.3617,0.4837,0.2567,0.4033,0.2395,0.1041
+3,a baby is laying on a bed and yawning .,0.4173,a baby is crying on top of a bed while a person is talking to him .,4.0,4.0,4.0,4.0,0.6142,0.891,0.963,0.9657,0.9286,0.9153,0.567,0.5277,0.5264,0.5089,0.4381,0.4397,0.4173
+4,a baby is shown with his lip out crying while a woman talks to him .,0.5975,a young baby is crying while a woman talks to the baby .,5.0,5.0,5.0,5.0,0.7794,0.9387,1.0,0.8723,0.8863,0.8632,0.7649,0.6263,0.6577,0.6049,0.6265,0.5702,0.5975
+5,a baby cries extremely loudly while sitting on the floor .,0.2066,a baby is crying on top of a bed while a person is talking to him .,3.0,4.0,3.0,3.3333,0.5985,0.8617,0.9388,0.753,0.7767,0.7323,0.534,0.3025,0.5635,0.3382,0.4935,0.157,0.2066
+6,a baby is seated on and trying to reach for something while crying loudly,0.0942,a baby is laying down on the bed and is crying and turning red while it is crying .,2.0,2.0,3.0,2.3333,0.5986,0.8853,0.8798,0.565,0.6398,0.5676,0.5466,0.1038,0.4499,0.2453,0.3398,0.0,0.0942

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person show how much trouble it is to send text on a phone with broken screen .,0.5899,a person sending a text message with a phone with a cracked screen .,5.0,4.0,4.0,4.3333,0.8071,0.9351,0.9,0.669,0.6745,0.6519,0.7937,0.5899,0.7857,0.5967,0.7708,0.583,0.5899
+2,a man is demonstrating how to use a cell phone .,0.0,a person sending a text message with a phone with a cracked screen .,5.0,5.0,3.0,4.3333,0.2803,0.8188,0.9524,0.6168,0.5812,0.4885,0.121,0.0,0.2443,0.0,0.077,0.0,0.0
+3,a man is holding a cell phone and talking about it .,0.0,a person sending a text message with a phone with a cracked screen .,5.0,4.0,4.0,4.3333,0.2607,0.8101,0.95,0.852,0.8305,0.7908,0.0873,0.1322,0.2218,0.1098,0.0393,0.0,0.0
+4,a person is holding a mobile phone while typing a text message .,0.2309,a person sending a text message with a phone with a cracked screen .,5.0,5.0,5.0,5.0,0.6194,0.899,0.726,0.4512,0.5565,0.5067,0.5766,0.1139,0.4758,0.284,0.4168,0.0482,0.2309
+5,a hand types out a text message on a smart phone .,0.2428,a person sending a text message with a phone with a cracked screen .,5.0,5.0,4.0,4.6667,0.5881,0.8811,0.9599,0.6435,0.6174,0.5658,0.5325,0.3598,0.5709,0.3329,0.513,0.2734,0.2428
+6,someone uses a smart phone to type a very long text with only one hand .,0.0,a person sending a text message with a phone with a cracked screen .,4.0,4.0,4.0,4.0,0.5048,0.8424,0.8123,0.5005,0.4671,0.3674,0.4121,0.0104,0.3903,0.0,0.2762,0.0,0.0

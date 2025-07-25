@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman pulls a waxing strip from her leg quickly and yells .,0.712,a woman removes a hair removal sheet from her leg and screams .,5.0,5.0,5.0,5.0,0.7882,0.9197,0.9697,1.0,0.9167,0.9094,0.7598,0.7316,0.7816,0.7558,0.7424,0.7082,0.712
+2,a person is shaving the legs of another person ' s leg .,0.2496,a person is waxing their legs and when they pull it off they start to scream .,3.0,2.0,3.0,2.6667,0.4839,0.8737,0.9565,0.8775,0.8666,0.8376,0.409,0.3119,0.3806,0.3448,0.2873,0.212,0.2496
+3,a person is applying a wax strip to the leg of another person .,0.6377,a person has a wax strip on her thigh and then she pulls it .,4.0,4.0,4.0,4.0,0.8075,0.9311,0.9555,0.8983,0.8275,0.8115,0.7932,0.7194,0.7502,0.6684,0.741,0.7144,0.6377
+4,a woman is waxing and removing the hair from a man's legs .,0.3315,a person is waxing their legs and when they pull it off they start to scream .,4.0,4.0,4.0,4.0,0.6455,0.9042,0.9404,0.6806,0.6857,0.6043,0.6018,0.3885,0.5819,0.4299,0.5328,0.2617,0.3315
+5,a woman is using tape to remove hair from someone's leg .,0.3358,"a woman removes a large piece of tape from her leg , waxing it .",4.0,3.0,4.0,3.6667,0.7899,0.8928,0.8989,0.7471,0.6768,0.6128,0.761,0.4413,0.7524,0.4053,0.7183,0.3074,0.3358
+6,"some friends laugh as they pat a waxing strip onto a man's leg near his knee , and then rip the strip off .",0.5345,a person that has applied wax hair removal on their leg and is ripping it off .,3.0,3.0,3.0,3.0,0.6567,0.8869,0.9529,0.8828,0.8915,0.8703,0.6129,0.6067,0.6329,0.6106,0.5612,0.5299,0.5345

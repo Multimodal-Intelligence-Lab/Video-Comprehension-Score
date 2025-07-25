@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young girl sits in a highchair and eats something and smiles very sweetly .,0.421,a baby sits in the high chair and smiles while she munches on bread .,5.0,5.0,5.0,5.0,0.736,0.8423,0.9688,0.664,0.744,0.6731,0.6855,0.4527,0.7241,0.4607,0.6714,0.4123,0.421
+2,a baby is sitting in a high chair and eating food with a spoon .,0.5943,a baby sits in the high chair and smiles while she munches on bread .,4.0,4.0,4.0,4.0,0.6865,0.8909,1.0,0.8659,0.8788,0.8511,0.6481,0.6004,0.6767,0.6386,0.6371,0.5514,0.5943
+3,a baby is sitting in a high chair and eating a piece of food .,0.6677,a baby sits in the high chair and smiles while she munches on bread .,5.0,4.0,5.0,4.6667,0.7426,0.8928,1.0,0.8659,0.8788,0.8514,0.7117,0.672,0.7346,0.7033,0.7027,0.6326,0.6677
+4,a young child is sitting at a table with a plate full of food as she looks on at an adult and starts to laugh .,0.0022,a small child in a seat is smiling and holding a hot dog .,4.0,4.0,2.0,3.3333,0.4896,0.8179,0.9769,0.8284,0.8631,0.8284,0.3679,0.1668,0.4008,0.204,0.2673,0.0,0.0022
+5,a young child is sitting down and eating a piece of food .,0.2379,a small child in a seat is smiling and holding a hot dog .,5.0,4.0,5.0,4.6667,0.4895,0.8208,1.0,0.8879,0.8996,0.8732,0.3675,0.3754,0.4552,0.3853,0.3245,0.2256,0.2379
+6,the kid sitting in a high chair deliciously eats a donut .,0.4924,a baby sits in the high chair and smiles while she munches on bread .,4.0,4.0,4.0,4.0,0.5622,0.8625,1.0,1.0,1.0,1.0,0.4924,0.5622,0.5622,0.5622,0.4924,0.4924,0.4924

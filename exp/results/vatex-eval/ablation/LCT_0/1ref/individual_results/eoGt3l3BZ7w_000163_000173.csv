@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young man is playing chords slowly on an electric guitar .,0.4179,"in a house , a young teen boy plays a guitar slowly while looking at notes .",5.0,5.0,5.0,5.0,0.5978,0.8814,0.875,0.8182,0.7839,0.7548,0.5437,0.5084,0.5404,0.4869,0.4785,0.4423,0.4179
+2,a man is sitting in a chair and playing a guitar .,0.0,"in a house , a young teen boy plays a guitar slowly while looking at notes .",5.0,5.0,5.0,5.0,0.3694,0.8148,0.8221,0.8135,0.7449,0.6869,0.2261,0.2249,0.233,0.1535,0.0587,0.0487,0.0
+3,a man is sitting in a chair and playing a guitar .,0.0,"in a house , a young teen boy plays a guitar slowly while looking at notes .",5.0,5.0,5.0,5.0,0.3694,0.8148,0.8221,0.8135,0.7449,0.6869,0.2261,0.2249,0.233,0.1535,0.0587,0.0487,0.0
+4,a guy in a black shirt is sitting in a chair and playing an electric guitar .,0.0,"in a house , a young teen boy plays a guitar slowly while looking at notes .",4.0,4.0,4.0,4.0,0.3179,0.7967,0.8984,0.539,0.5433,0.4268,0.1438,0.0,0.2408,0.0,0.0471,0.0,0.0
+5,a guy is setting in his room playing electric guitar .,0.0,"in a house , a young teen boy plays a guitar slowly while looking at notes .",5.0,4.0,5.0,4.6667,0.5118,0.8141,0.8824,0.4708,0.4596,0.3362,0.4003,0.0,0.4467,0.0,0.3203,0.0,0.0
+6,a man plays a song on an electric guitar sitting on a stool in front of a curtain .,0.0,"in a house , a young teen boy plays a guitar slowly while looking at notes .",5.0,4.0,4.0,4.3333,0.3307,0.8104,0.8652,0.4813,0.6185,0.5293,0.1742,0.0,0.2265,0.0,0.0456,0.0,0.0

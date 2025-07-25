@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a person sits in the drivers seat of a car , and monitors the self driving system as the car drives down the road",0.4035,a person is sitting in a car and controlling the steering wheel .,5.0,4.0,5.0,4.6667,0.6084,0.8891,0.9286,0.7388,0.7706,0.7307,0.5404,0.4699,0.5708,0.4918,0.4962,0.3779,0.4035
+2,a man is driving a car while a man is talking to him .,0.3151,a person is driving his car without using his hands to steer the wheel at all .,3.0,2.0,2.0,2.3333,0.5213,0.9111,0.9688,1.0,0.9519,0.9432,0.4746,0.4475,0.4527,0.4195,0.3741,0.3481,0.3151
+3,a woman is sitting in a car and driving a car .,0.6115,a person is sitting in a car and controlling the steering wheel .,4.0,4.0,3.0,3.6667,0.6834,0.8911,0.9333,0.9827,0.9148,0.9044,0.6446,0.6778,0.6607,0.6539,0.6193,0.6384,0.6115
+4,a man is driving a car and a traffic officer is dancing in the street .,0.0391,a man is driving a car with a remote controlled steering wheel .,3.0,2.0,2.0,2.3333,0.3761,0.8641,0.9485,0.8189,0.8444,0.8081,0.2662,0.1946,0.3085,0.2189,0.1789,0.0072,0.0391
+5,"a person is driving in a car , and is filming another car and driver driving beside them .",0.0974,a person is sitting in a car and controlling the steering wheel .,4.0,2.0,2.0,2.6667,0.4662,0.8787,0.9244,0.8335,0.8223,0.7829,0.3641,0.2329,0.4139,0.2423,0.3018,0.0862,0.0974
+6,a driver is turning a steering wheel as the car accelerates .,0.2094,"someone sitting in the drivers seat of a car , the steering wheel is moving , the person is not touching it .",5.0,2.0,2.0,3.0,0.7532,0.8923,0.8391,0.6647,0.6459,0.5922,0.7234,0.3329,0.5708,0.3135,0.5192,0.2356,0.2094

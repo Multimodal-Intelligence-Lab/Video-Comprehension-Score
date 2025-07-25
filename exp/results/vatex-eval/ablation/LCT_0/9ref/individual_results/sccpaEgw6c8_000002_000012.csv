@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a little boy holding a sippy-cup begins to mumble and then takes a sip from the cup .,0.4127,"the little boy is standing in the kitchen , sipping out of his sip cup .",5.0,5.0,5.0,5.0,0.78,0.8796,0.9623,0.6248,0.6607,0.5879,0.7476,0.4221,0.7527,0.4503,0.7162,0.3826,0.4127
+2,a toddler is sitting in a chair and blowing a sippy cup .,0.1602,an indian child is standing next to a chair and is drinking from a baby cup while an adult talks to him .,4.0,2.0,3.0,3.0,0.6153,0.871,0.9667,0.7487,0.7675,0.7182,0.5584,0.2898,0.5441,0.3072,0.4564,0.1391,0.1602
+3,a little boy is playing with a sippy cup while a woman talks to him .,0.6799,"a young boy drinks from his sippy cup and babbles , then a woman talks to him .",5.0,4.0,4.0,4.3333,0.8708,0.9248,1.0,0.8723,0.8863,0.862,0.8603,0.6852,0.865,0.6838,0.854,0.6652,0.6799
+4,a baby is sipping a juice in a bottle and a man speaks to him,0.3432,a boy is sipping a drink from a cup and her mother is talking to him .,4.0,4.0,4.0,4.0,0.5419,0.854,1.0,1.0,1.0,1.0,0.442,0.4391,0.5255,0.4391,0.422,0.3432,0.3432
+5,a baby boy sitting on a chair smiles as he is talked to while dinking out of a sippy cup .,0.306,"the little boy is standing in the kitchen , sipping out of his sip cup .",4.0,3.0,4.0,3.6667,0.687,0.8671,0.961,0.7455,0.7755,0.7307,0.6389,0.3982,0.5654,0.4215,0.4879,0.29,0.306
+6,a baby is shown sipping a cup while onlookers talk .,0.44,"a young boy drinks from his sippy cup and babbles , then a woman talks to him .",5.0,4.0,5.0,4.6667,0.634,0.8861,0.9831,0.7475,0.7739,0.7323,0.5666,0.5104,0.6277,0.527,0.5591,0.4202,0.44

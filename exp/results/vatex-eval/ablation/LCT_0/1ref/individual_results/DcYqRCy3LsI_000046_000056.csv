@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person talking about different things going on in the country where he lives .,0.0,prince charles is doing the weather report and the studio is laughing .,2.0,2.0,1.0,1.6667,0.1724,0.7573,0.9804,0.8723,0.872,0.8309,0.0,0.0513,0.1559,0.0509,0.0,0.0,0.0
+2,a man is giving a weather report on the weather .,0.2194,prince charles is doing the weather report and the studio is laughing .,4.0,5.0,5.0,4.6667,0.5157,0.8606,0.9333,0.7981,0.7208,0.6756,0.4373,0.3932,0.4812,0.3282,0.3971,0.2949,0.2194
+3,a man is giving a weather report in front of a map .,0.2773,prince charles is doing the weather report and the studio is laughing .,5.0,5.0,5.0,5.0,0.4511,0.8242,0.9565,0.8889,0.9215,0.9047,0.334,0.3825,0.4261,0.4043,0.3037,0.2508,0.2773
+4,"a man is talking about the snow he is walking through , in a foreign language .",0.0,prince charles is doing the weather report and the studio is laughing .,4.0,3.0,1.0,2.6667,0.2042,0.7486,0.9583,0.7414,0.836,0.781,0.0,0.0,0.1696,0.0481,0.0,0.0,0.0
+5,"a man is rolling glass in a furnace , explaining what he's doing , as a news anchors voice over also explains what the man is doing .",0.0,prince charles is doing the weather report and the studio is laughing .,2.0,2.0,1.0,1.6667,0.2372,0.75,0.9677,0.8983,0.9146,0.8862,0.0,0.1508,0.2117,0.166,0.0,0.0,0.0
+6,a weather woman is speaking to the camera while giving a weather forecast .,0.0,prince charles is doing the weather report and the studio is laughing .,4.0,4.0,4.0,4.0,0.3434,0.7943,0.8365,0.565,0.4574,0.317,0.1734,0.0,0.2151,0.0,0.0119,0.0,0.0

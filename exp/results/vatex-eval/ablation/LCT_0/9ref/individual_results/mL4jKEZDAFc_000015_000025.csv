@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the woman is slowly pushing herself off the bricks attempting to do the sport of curling .,0.4765,a woman slides down on one knee as she participates in a curling event .,4.0,5.0,5.0,4.6667,0.7192,0.8581,0.9543,0.7839,0.8608,0.8316,0.6705,0.5161,0.6366,0.5674,0.5765,0.4148,0.4765
+2,a group of people are playing a game of curling .,0.1813,a woman falls to one knee while participating in a curling event .,5.0,4.0,5.0,4.6667,0.5817,0.801,0.928,0.8048,0.7839,0.7238,0.4778,0.3786,0.5241,0.3501,0.3999,0.2173,0.1813
+3,a group of people are watching a man use a tool to cut the ice .,0.0,a woman slides down on one knee as she participates in a curling event .,3.0,2.0,4.0,3.0,0.2544,0.7988,0.9859,0.7567,0.8004,0.7435,0.0454,0.0,0.1478,0.0,0.0,0.0,0.0
+4,several people are engaged in a game of curling on ice .,0.2757,a woman slides down on one knee as she participates in a curling event .,5.0,4.0,5.0,4.6667,0.5983,0.8351,0.9804,0.7876,0.7891,0.7334,0.5191,0.4269,0.5397,0.4281,0.4274,0.2743,0.2757
+5,"players run along curling stone , players gather with brooms and player falls over .",0.3248,woman holding two curling rocks in her hands while sliding and falling to her knees on the ice .,5.0,2.0,5.0,4.0,0.5948,0.8057,0.9474,0.7112,0.8054,0.7519,0.4971,0.4002,0.5405,0.4704,0.4143,0.2354,0.3248
+6,a team is playing a game of curling at a curling rink .,0.1609,"a woman is sliding out onto a curling court , with her hands on the stones .",5.0,2.0,5.0,4.0,0.5519,0.8336,0.9599,0.7129,0.7301,0.6619,0.4625,0.3416,0.511,0.3265,0.3907,0.1796,0.1609

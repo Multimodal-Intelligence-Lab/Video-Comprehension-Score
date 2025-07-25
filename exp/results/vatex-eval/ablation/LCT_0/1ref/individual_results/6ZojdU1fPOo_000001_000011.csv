@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a large crowd of people are clapping their hands high up in a stadium,0.1081,"people are watching a performance in a stadium , people are clapping in unison .",5.0,5.0,5.0,5.0,0.7161,0.8739,0.7118,0.2761,0.3979,0.311,0.6751,0.0,0.5975,0.1592,0.5435,0.0,0.1081
+2,a large crowd of people are cheering and cheering at a concert .,0.0,"people are watching a performance in a stadium , people are clapping in unison .",5.0,4.0,5.0,4.6667,0.468,0.8158,0.8798,0.6096,0.5336,0.4283,0.3479,0.1272,0.3953,0.003,0.2588,0.0,0.0
+3,a crowd of people are cheering and cheering at a concert .,0.0,"people are watching a performance in a stadium , people are clapping in unison .",5.0,4.0,5.0,4.6667,0.4736,0.8261,0.8571,0.6168,0.5289,0.4297,0.3628,0.1466,0.3859,0.0048,0.2566,0.0,0.0
+4,people are clapping at an event that has several people on a stage .,0.0,"people are watching a performance in a stadium , people are clapping in unison .",4.0,3.0,4.0,3.6667,0.5861,0.8669,0.8798,0.3808,0.2192,0.0994,0.5226,0.0,0.5295,0.0,0.4573,0.0,0.0
+5,several people on stage are clapping as as well as the audience in front of them .,0.0,"people are watching a performance in a stadium , people are clapping in unison .",4.0,3.0,4.0,3.6667,0.5932,0.8412,0.8309,0.2973,0.4379,0.3318,0.5164,0.0,0.5104,0.0524,0.418,0.0,0.0
+6,"at a concert , people hold their hands up in the air and clap .",0.0,"people are watching a performance in a stadium , people are clapping in unison .",5.0,5.0,5.0,5.0,0.517,0.8351,0.9004,0.542,0.461,0.3546,0.4216,0.1087,0.4635,0.0,0.3575,0.0,0.0

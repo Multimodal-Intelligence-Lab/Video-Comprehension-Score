@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a young girl lightly kicks the ball to an adult , gets it kicked back , before jogging away with it .",0.4177,a young girl is kicking a ball across a field of grass .,5.0,5.0,4.0,4.6667,0.6216,0.8642,0.9499,0.7015,0.7519,0.7129,0.5622,0.4606,0.6017,0.4968,0.5391,0.3759,0.4177
+2,a little girl is kicking a soccer ball across the grass .,0.7383,a young girl is kicking a ball across a field of grass .,5.0,5.0,5.0,5.0,0.7902,0.9373,0.9394,0.7845,0.855,0.8453,0.7762,0.7273,0.7767,0.7547,0.7618,0.7147,0.7383
+3,a little girl is kicking a soccer ball on the grass .,0.6426,a young girl is kicking a ball across a field of grass .,5.0,5.0,5.0,5.0,0.7489,0.9147,0.9599,0.7804,0.7682,0.7466,0.7254,0.6782,0.7384,0.6731,0.714,0.6482,0.6426
+4,a woman is teaching a toddler to kick a soccer ball .,0.0,a young girl is kicking a ball across a field of grass .,4.0,4.0,4.0,4.0,0.4334,0.8222,0.8798,0.313,0.1029,0.0,0.3109,0.0,0.356,0.0,0.2168,0.0,0.0
+5,a group of kids are kicking a ball on a soccer field .,0.4176,a young girl is kicking a ball across a field of grass .,5.0,4.0,2.0,3.6667,0.5677,0.8836,0.9804,0.8387,0.84,0.8189,0.5108,0.4846,0.5591,0.4854,0.501,0.4167,0.4176
+6,a family plays a game of kickball together in a green grassed yard .,0.2033,a young girl is kicking a ball across a field of grass .,5.0,5.0,2.0,4.0,0.4167,0.7998,1.0,0.8933,0.9155,0.8943,0.2707,0.347,0.4167,0.3628,0.2707,0.1836,0.2033

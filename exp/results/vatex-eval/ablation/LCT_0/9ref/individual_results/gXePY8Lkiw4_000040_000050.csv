@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two different guys are dancing around in a rather rambunctious manner .,0.3594,"two men are doing dances on the outdoors , the time of the setting is in the day .",5.0,5.0,4.0,4.6667,0.5117,0.8362,1.0,0.8933,0.9155,0.8985,0.4136,0.4534,0.5117,0.4666,0.4136,0.3435,0.3594
+2,a man is dancing to music in the middle of the street .,0.3341,"a person performs a dance on a lawn , then another on a street .",4.0,3.0,4.0,3.6667,0.5977,0.8674,1.0,0.9647,0.956,0.9448,0.5362,0.4363,0.526,0.4269,0.4493,0.345,0.3341
+3,a young man is dancing in the middle of the street .,0.4396,"a person performs a dance on a lawn , then another on a street .",4.0,3.0,4.0,3.6667,0.5368,0.8603,0.9756,1.0,0.9672,0.9616,0.458,0.5368,0.5214,0.5211,0.4399,0.458,0.4396
+4,a man is dancing outside vigorously while music playing in the background .,0.3365,"man dances on lawn by kicking legs in different directions , and another man dances on terrace by rotating arms at different levels .",5.0,5.0,5.0,5.0,0.7153,0.9044,0.9455,0.9149,0.8774,0.8511,0.6726,0.4762,0.6515,0.4538,0.5993,0.3637,0.3365
+5,a man is performing for an audience by doing some dance moves .,0.1823,a man outside playing music as he tries to dance along with other people,4.0,4.0,3.0,3.6667,0.4948,0.8473,0.9362,0.8601,0.8103,0.7605,0.3864,0.3144,0.4476,0.3134,0.342,0.1835,0.1823
+6,two men in white shirts perform a dance in an area by steps,0.1352,"two men are doing dances on the outdoors , the time of the setting is in the day .",4.0,4.0,4.0,4.0,0.5302,0.8482,0.9528,0.9088,0.9164,0.8899,0.4461,0.2713,0.4929,0.2665,0.4022,0.1409,0.1352

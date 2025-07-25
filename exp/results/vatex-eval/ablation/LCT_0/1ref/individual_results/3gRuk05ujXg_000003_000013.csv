@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a car pulls up to a house then a man rings the doorbell , a woman steps out and they walk towards the car together .",0.5372,"a white car pulls up to a house , a young man rings a doorbell and a blonde girl comes out they walk to the car .",5.0,5.0,5.0,5.0,0.7087,0.9132,0.9184,0.6278,0.6893,0.6598,0.681,0.4748,0.6828,0.5616,0.6526,0.4534,0.5372
+2,a group of people are in a parking lot and they are driving a car .,0.0,"a white car pulls up to a house , a young man rings a doorbell and a blonde girl comes out they walk to the car .",3.0,1.0,1.0,1.6667,0.208,0.7912,0.8562,0.4459,0.3501,0.1786,0.0,0.0,0.0751,0.0,0.0,0.0,0.0
+3,a group of people are in a car at a gas station .,0.0,"a white car pulls up to a house , a young man rings a doorbell and a blonde girl comes out they walk to the car .",3.0,1.0,1.0,1.6667,0.1544,0.7843,0.9012,0.7419,0.7075,0.627,0.0,0.0,0.0617,0.0,0.0,0.0,0.0
+4,a man is hugging a woman on the street in front of others and then another person holding a piece of paper in his hands is running towards them as they were walking away .,0.0,"a white car pulls up to a house , a young man rings a doorbell and a blonde girl comes out they walk to the car .",4.0,1.0,1.0,2.0,0.1591,0.7834,0.9297,0.6732,0.7444,0.6738,0.0,0.0,0.0955,0.0,0.0,0.0,0.0
+5,a man is walking across the parking lot and gets into a white truck .,0.0,"a white car pulls up to a house , a young man rings a doorbell and a blonde girl comes out they walk to the car .",4.0,1.0,1.0,2.0,0.3662,0.83,0.6425,0.0,0.0,0.0,0.2364,0.0,0.0136,0.0,0.0,0.0,0.0
+6,a man stands in a field and then rides a unicycle with a woman .,0.0,"a white car pulls up to a house , a young man rings a doorbell and a blonde girl comes out they walk to the car .",4.0,1.0,1.0,2.0,0.0941,0.7713,0.867,0.4826,0.4029,0.2259,0.0,0.0,0.0,0.0,0.0,0.0,0.0

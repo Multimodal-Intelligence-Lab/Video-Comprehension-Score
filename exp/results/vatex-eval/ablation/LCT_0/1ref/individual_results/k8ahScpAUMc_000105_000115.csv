@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is sitting on his bed playing the accordion .,0.2184,a person wearing a hat is sitting and playing an accordion .,5.0,5.0,5.0,5.0,0.6045,0.907,0.941,0.6655,0.5592,0.514,0.5639,0.4057,0.5797,0.2708,0.5366,0.3447,0.2184
+2,a young man is playing a song on a accordion .,0.0263,a person wearing a hat is sitting and playing an accordion .,5.0,5.0,4.0,4.6667,0.5498,0.8605,0.8735,0.6863,0.5373,0.4623,0.4768,0.344,0.4846,0.1585,0.4011,0.2377,0.0263
+3,a young man is playing a song on an accordion .,0.0318,a person wearing a hat is sitting and playing an accordion .,5.0,5.0,4.0,4.6667,0.5523,0.8605,0.8735,0.6863,0.5373,0.4623,0.4798,0.3477,0.4875,0.1624,0.4044,0.242,0.0318
+4,a seated man plays a song on an accordian and sings,0.0,a person wearing a hat is sitting and playing an accordion .,4.0,4.0,4.0,4.0,0.6416,0.8516,0.5432,0.0,0.0,0.0,0.5792,0.0,0.2881,0.0,0.2113,0.0,0.0
+5,a man is singing a song while playing an accordion .,0.3773,a person wearing a hat is sitting and playing an accordion .,4.0,4.0,4.0,4.0,0.5585,0.8572,1.0,0.8408,0.827,0.7982,0.485,0.475,0.5585,0.4662,0.485,0.3875,0.3773
+6,a man wearing a hat is singing and playing the accordion .,0.7552,a person wearing a hat is sitting and playing an accordion .,4.0,4.0,4.0,4.0,0.7723,0.9303,1.0,1.0,1.0,1.0,0.7552,0.7723,0.7723,0.7723,0.7552,0.7552,0.7552

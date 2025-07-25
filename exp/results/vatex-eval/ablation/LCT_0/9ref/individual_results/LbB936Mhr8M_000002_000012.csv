@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two cars are driving in water with trees around them .,0.3348,two jeeps driving through high flood waters while crossing a river .,5.0,5.0,5.0,5.0,0.6955,0.8963,0.9655,0.7395,0.7563,0.7175,0.6461,0.4132,0.6539,0.4262,0.5978,0.3401,0.3348
+2,a person is driving a jeep through a river with a boat .,0.2592,two vehicle ford a stream with rapids in the wilderness .,4.0,4.0,4.0,4.0,0.6989,0.8839,0.9756,1.0,0.9672,0.9589,0.6593,0.4285,0.6401,0.4091,0.5928,0.2835,0.2592
+3,a person is driving a vehicle through a river of water .,0.2699,two vehicle ford a stream with rapids in the wilderness .,5.0,5.0,4.0,4.6667,0.7366,0.8806,0.9756,0.8408,0.7761,0.7343,0.6943,0.4321,0.5862,0.3848,0.5297,0.326,0.2699
+4,two people are kayaking through dangerous rapids ; one kayak is continually capsizing .,0.0,a vehicle is shown trailing another vehicle as they both travel through deep waters .,1.0,3.0,2.0,2.0,0.3695,0.8075,0.9665,0.7615,0.7612,0.694,0.2192,0.0692,0.3301,0.0687,0.1436,0.0,0.0
+5,a vehicle was in the middle of a pond and has water up to it halfway .,0.0929,a vehicle is traveling through bumper deep water as another vehicle travels behind in same water,3.0,5.0,4.0,4.0,0.5743,0.8694,0.9714,0.8047,0.7861,0.736,0.4969,0.283,0.4915,0.2394,0.415,0.1068,0.0929
+6,two motor boats race down the river in a large city .,0.0432,two cars attempt to ford a rushing river in the woods .,1.0,2.0,3.0,2.0,0.4009,0.8357,1.0,0.7119,0.7574,0.7065,0.2753,0.1283,0.3517,0.2091,0.2237,0.0,0.0432

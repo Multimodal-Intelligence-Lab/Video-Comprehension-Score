@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is standing on stage playing their keyboard for an audience .,0.3656,a girl is on a stage with a keyboard and is playing a song on the keyboard and singing .,5.0,4.0,5.0,4.6667,0.6772,0.8908,0.92,0.6435,0.5955,0.5459,0.6377,0.4735,0.6492,0.4027,0.6062,0.4369,0.3656
+2,a man is playing a song on a stage in front of a crowd .,0.0,a girl is on a stage with a keyboard and is playing a song on the keyboard and singing .,4.0,4.0,4.0,4.0,0.3654,0.8718,0.7787,0.2363,0.0,0.0,0.272,0.0,0.185,0.0,0.0651,0.0,0.0
+3,a man is standing on a stage and playing a violin .,0.0,a girl is on a stage with a keyboard and is playing a song on the keyboard and singing .,4.0,4.0,3.0,3.6667,0.2869,0.8276,0.8803,0.8644,0.7871,0.7428,0.1384,0.1751,0.19,0.0941,0.0212,0.0032,0.0
+4,"a group of performers begin to sing and play instruments on stage , a young lady stands up to begin dancing .",0.0,a girl is on a stage with a keyboard and is playing a song on the keyboard and singing .,4.0,3.0,4.0,3.6667,0.3922,0.8285,0.7869,0.1599,0.0822,0.0,0.2664,0.0,0.2276,0.0,0.0677,0.0,0.0
+5,a female performer is on stage dancing and singing in front of a crowd .,0.0056,a girl is on a stage with a keyboard and is playing a song on the keyboard and singing .,4.0,4.0,4.0,4.0,0.4776,0.8383,0.8777,0.4874,0.6267,0.5547,0.3768,0.0,0.4048,0.1664,0.29,0.0,0.0056
+6,a woman is singing on stage to a crowd of folks,0.0,a girl is on a stage with a keyboard and is playing a song on the keyboard and singing .,4.0,5.0,5.0,4.6667,0.4113,0.8479,0.7373,0.2555,0.0,0.0,0.3057,0.0,0.2016,0.0,0.0584,0.0,0.0

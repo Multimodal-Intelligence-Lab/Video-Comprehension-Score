@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a team of dogs pulls a sled around a sharp corner , and then a different view is shown .",0.557,"a group of dogs are pulling a sledge with a person on it , through the snow , in a race .",5.0,5.0,5.0,5.0,0.6507,0.8462,0.9433,0.9545,0.9318,0.9194,0.5872,0.634,0.6297,0.6251,0.5624,0.5675,0.557
+2,a group of people are sledding on a sled in the snow .,0.1937,"a group of dogs are pulling a sledge with a person on it , through the snow , in a race .",4.0,4.0,4.0,4.0,0.5498,0.8829,0.9048,0.6847,0.6324,0.5837,0.4901,0.3424,0.5024,0.2881,0.4364,0.2552,0.1937
+3,a group of dogs are pulling a sled in the snow .,0.8448,"a group of dogs are pulling a sledge with a person on it , through the snow , in a race .",5.0,5.0,5.0,5.0,0.8614,0.9523,0.928,1.0,0.9377,0.9346,0.8545,0.8614,0.8506,0.8522,0.8432,0.8545,0.8448
+4,a team of dogs pull someone on a sled across a snow covered road .,0.7274,"a group of dogs are pulling a sledge with a person on it , through the snow , in a race .",5.0,5.0,5.0,5.0,0.7973,0.8921,0.9623,0.8125,0.8336,0.8134,0.7728,0.7505,0.7894,0.7568,0.7639,0.7204,0.7274
+5,a sled being pulled by a team of dogs races by on the snow .,0.0,"a group of dogs are pulling a sledge with a person on it , through the snow , in a race .",5.0,5.0,5.0,5.0,0.7995,0.9248,0.7403,0.343,0.1147,0.0427,0.7832,0.1783,0.6751,0.0,0.6684,0.1612,0.0
+6,a team of sled dogs pulls a sled over a snow covered field .,0.593,"a group of dogs are pulling a sledge with a person on it , through the snow , in a race .",5.0,5.0,5.0,5.0,0.7336,0.8936,0.9714,0.7119,0.7325,0.7007,0.7019,0.6073,0.7257,0.6354,0.6931,0.5812,0.593

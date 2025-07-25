@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is roasting a pig on spit fire outside .,0.2991,"a pig is roasting on an outdoor spit , while being rotated over a fire .",5.0,5.0,5.0,5.0,0.8931,0.955,0.75,0.2522,0.3775,0.3482,0.8881,0.1628,0.7201,0.303,0.7185,0.158,0.2991
+2,a pig is being roasted on a spit on a grill .,0.868,"a pig is roasting on an outdoor spit , while being rotated over a fire .",5.0,5.0,5.0,5.0,0.8824,0.8911,1.0,1.0,1.0,1.0,0.868,0.8824,0.8824,0.8824,0.868,0.868,0.868
+3,a pig is being roasted on a rotisserie over a fire .,0.4957,"a pig is roasting on an outdoor spit , while being rotated over a fire .",4.0,5.0,5.0,4.6667,0.9273,0.9039,0.963,0.6389,0.5362,0.4869,0.9196,0.6106,0.9245,0.4999,0.9165,0.6073,0.4957
+4,a large golden brown pig is roasted on a spit over a fire,0.0,"a pig is roasting on an outdoor spit , while being rotated over a fire .",5.0,5.0,4.0,4.6667,0.7945,0.9013,0.7996,0.3871,0.2027,0.1154,0.772,0.2286,0.743,0.0,0.7149,0.2061,0.0
+5,a man is outside roasting a pig by turning it on a long pole over a fire .,0.1881,"a pig is roasting on an outdoor spit , while being rotated over a fire .",5.0,5.0,5.0,5.0,0.8047,0.9034,0.8497,0.4354,0.3636,0.2955,0.7839,0.2983,0.7702,0.2092,0.7456,0.2797,0.1881
+6,a pig is being roasted over an open fire at a party .,0.5945,"a pig is roasting on an outdoor spit , while being rotated over a fire .",4.0,4.0,4.0,4.0,0.7928,0.8934,0.9125,0.7855,0.6885,0.6514,0.7681,0.7294,0.7729,0.6071,0.7459,0.7047,0.5945

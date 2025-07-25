@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man proposes to a woman and places a ring on her finger while a crowd of people watch,0.0,a woman is being interviewed by someone holding a microphone in front of a sound stage and a noisy audience .,5.0,5.0,5.0,5.0,0.201,0.7786,0.9379,0.6159,0.6581,0.5608,0.0,0.0,0.1481,0.0,0.0,0.0,0.0
+2,a group of people are dancing in a dark room .,0.0,a woman is being interviewed by someone holding a microphone in front of a sound stage and a noisy audience .,3.0,2.0,1.0,2.0,0.0355,0.7567,0.9677,0.9062,0.9146,0.8871,0.0,0.0,0.0034,0.0,0.0,0.0,0.0
+3,a man and a woman are dancing in front of a group of people .,0.0,a woman is being interviewed by someone holding a microphone in front of a sound stage and a noisy audience .,4.0,4.0,4.0,4.0,0.1963,0.8138,0.948,0.7667,0.797,0.7506,0.0124,0.0,0.1522,0.0,0.0,0.0,0.0
+4,a man was dancing with a woman on stage and other girls around them dancing too .,0.0,a woman is being interviewed by someone holding a microphone in front of a sound stage and a noisy audience .,3.0,4.0,2.0,3.0,0.2886,0.8013,0.8883,0.5013,0.5213,0.4026,0.1122,0.0,0.1992,0.0,0.0007,0.0,0.0
+5,several dancers are on a stage as a guy dances with a woman .,0.0,a woman is being interviewed by someone holding a microphone in front of a sound stage and a noisy audience .,4.0,1.0,4.0,3.0,0.2329,0.7915,0.5983,0.1884,0.0488,0.0,0.0309,0.0,0.0,0.0,0.0,0.0,0.0
+6,"during a live performance , a man and woman dressed in cultural garbs are dancing and touching their hands with one another .",0.0,a woman is being interviewed by someone holding a microphone in front of a sound stage and a noisy audience .,4.0,4.0,4.0,4.0,0.1354,0.7736,0.8937,0.4316,0.4776,0.3247,0.0,0.0,0.0326,0.0,0.0,0.0,0.0

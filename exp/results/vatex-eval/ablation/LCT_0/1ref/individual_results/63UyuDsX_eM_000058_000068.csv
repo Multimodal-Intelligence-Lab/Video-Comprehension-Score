@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is on the choppy waters using a sail surfing piece of equipment,0.2833,a person rides a board with a sail in an ocean .,5.0,5.0,5.0,5.0,0.6235,0.8103,0.8222,0.7161,0.6483,0.5659,0.5354,0.4743,0.5421,0.4193,0.435,0.3512,0.2833
+2,a man is windsurfing in the ocean while music plays in the background .,0.0,a person rides a board with a sail in an ocean .,5.0,5.0,5.0,5.0,0.5562,0.8176,0.619,0.5321,0.1446,0.0,0.4573,0.1588,0.2831,0.0,0.1233,0.0,0.0
+3,a group of people are windsurfing in the ocean .,0.0,a person rides a board with a sail in an ocean .,4.0,4.0,4.0,4.0,0.5784,0.8366,0.9474,0.6408,0.2934,0.1554,0.4961,0.342,0.555,0.0,0.4681,0.2135,0.0
+4,a man sails on a surf board across choppy sea water .,0.2627,a person rides a board with a sail in an ocean .,5.0,4.0,4.0,4.3333,0.6266,0.8683,0.8775,0.6135,0.5832,0.5199,0.57,0.3832,0.5745,0.3348,0.51,0.2991,0.2627
+5,the men are having a great time sailing out in the ocean .,0.3966,a person rides a board with a sail in an ocean .,5.0,5.0,5.0,5.0,0.4929,0.8403,1.0,1.0,1.0,1.0,0.3966,0.4929,0.4929,0.4929,0.3966,0.3966,0.3966
+6,several people are surf gliding through open waves on a beautiful day .,0.0,a person rides a board with a sail in an ocean .,4.0,4.0,4.0,4.0,0.3389,0.7894,0.9388,0.8147,0.8085,0.7574,0.1625,0.1885,0.2958,0.1823,0.1079,0.0,0.0

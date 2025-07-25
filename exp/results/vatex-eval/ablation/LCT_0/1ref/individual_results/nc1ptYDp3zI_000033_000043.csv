@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young man in a swimming pool performing laps as he goes back and forth from the ends,0.3358,"a man swims to the end of a lane , flips over and goes the other way .",5.0,5.0,5.0,5.0,0.6065,0.863,0.8444,0.699,0.6865,0.6367,0.5441,0.4371,0.5341,0.4268,0.4601,0.3477,0.3358
+2,a man is swimming in a pool while a man is talking .,0.0012,"a man swims to the end of a lane , flips over and goes the other way .",3.0,4.0,3.0,3.3333,0.4936,0.8356,0.8947,0.6667,0.6067,0.5294,0.394,0.2404,0.434,0.1654,0.3227,0.091,0.0012
+3,a person is swimming in a pool while a man narrates .,0.0,"a man swims to the end of a lane , flips over and goes the other way .",3.0,4.0,3.0,3.3333,0.472,0.8254,0.8095,0.578,0.4574,0.3426,0.3603,0.0864,0.3477,0.0,0.2098,0.0,0.0
+4,a man is swimming in a pool outside doing some laps .,0.492,"a man swims to the end of a lane , flips over and goes the other way .",4.0,5.0,4.0,4.3333,0.6393,0.8143,1.0,0.8571,0.8718,0.8426,0.5571,0.5792,0.6393,0.5863,0.5571,0.4833,0.492
+5,a man swims from the center of the pool to the edge of it,0.5118,"a man swims to the end of a lane , flips over and goes the other way .",5.0,5.0,5.0,5.0,0.6688,0.8418,0.9756,0.8072,0.8058,0.7693,0.6066,0.5897,0.6605,0.589,0.5967,0.5126,0.5118
+6,a guy is swimming backward through an outdoor tropical pool .,0.2537,"a man swims to the end of a lane , flips over and goes the other way .",4.0,4.0,4.0,4.0,0.4812,0.7844,1.0,0.8723,0.8863,0.855,0.3385,0.4052,0.4812,0.4146,0.3385,0.2417,0.2537

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a group of people are in the dark laughing , someone is lighting a lighter .",0.5031,a person is laughing as someone lights a lighter in a dark room .,5.0,5.0,5.0,5.0,0.8744,0.9434,0.9333,0.7298,0.7588,0.7259,0.8669,0.463,0.8135,0.5097,0.801,0.4558,0.5031
+2,a person is using a lighter to blow out a flame .,0.5362,"in the dark , someone lights a lighter creating a small flame .",5.0,5.0,5.0,5.0,0.6479,0.8639,1.0,0.8644,0.8788,0.8597,0.5924,0.5927,0.6479,0.5993,0.5924,0.5285,0.5362
+3,a person lights a lighter in the dark and then blows it out .,0.6285,a person strikes a lighter for just a moment in a dark space .,5.0,5.0,5.0,5.0,0.7494,0.9342,0.9714,0.7974,0.7517,0.7234,0.7208,0.6857,0.742,0.6666,0.7125,0.6498,0.6285
+4,outside at night a person holding a lit torch blows liquid onto it to make a flame .,0.2851,"in the dark , someone lights a lighter creating a small flame .",1.0,3.0,3.0,2.3333,0.5544,0.8302,0.9697,0.8115,0.8379,0.803,0.4632,0.38,0.4915,0.4115,0.3823,0.2469,0.2851
+5,a person is dancing in the dark and spitting on a stick of fire to create a larger flame .,0.1744,someone is laughing in the dark as a lighter is lit .,4.0,4.0,4.0,4.0,0.5191,0.8628,0.9725,0.7782,0.7641,0.7127,0.4426,0.3343,0.4652,0.322,0.3802,0.1894,0.1744
+6,someone lights a torch in the darkness and waves it around .,0.2106,a person strikes a lighter for just a moment in a dark space .,3.0,4.0,4.0,3.6667,0.6782,0.8807,0.941,0.7071,0.673,0.5913,0.6134,0.2663,0.6131,0.3496,0.5351,0.1888,0.2106

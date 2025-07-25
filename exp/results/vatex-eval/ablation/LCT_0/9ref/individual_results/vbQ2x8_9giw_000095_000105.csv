@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is using an contraption on wheel to sail on land .,0.1924,an object with wheels is rolling around in a beach area .,5.0,3.0,5.0,4.3333,0.5292,0.8232,1.0,0.7988,0.836,0.7897,0.4143,0.3533,0.4864,0.3509,0.3611,0.1657,0.1924
+2,a person is riding a bike on a windy day .,0.0,a person remote controlling a small robotic vehicle in a small track,1.0,2.0,4.0,2.3333,0.2557,0.8021,1.0,0.8819,0.8923,0.8566,0.0713,0.0419,0.2185,0.053,0.0239,0.0,0.0
+3,a person is flying a kite on a windy day .,0.082,a small land-sailing toy rides the winds along the beach .,4.0,2.0,3.0,3.0,0.2965,0.8062,1.0,1.0,1.0,1.0,0.1273,0.2856,0.2856,0.2856,0.1055,0.082,0.082
+4,a wind glider on wheels is driving through the surf in the shallow waters .,0.4302,an object with wheels is rolling around in a beach area .,3.0,2.0,1.0,2.0,0.5954,0.8012,1.0,0.8933,0.906,0.8786,0.495,0.5361,0.5954,0.5435,0.495,0.421,0.4302
+5,in the ocean a group of people are riding personal ocean vehicles .,0.0,a person remote controlling a small robotic vehicle in a small track,1.0,2.0,3.0,2.0,0.3007,0.8047,0.971,0.7119,0.7323,0.6492,0.1239,0.0,0.2261,0.0,0.0,0.0,0.0
+6,someone is out in the ocean riding a sail surfboard .,0.0,a person remote controlling a small robotic vehicle in a small track,1.0,1.0,2.0,1.3333,0.46,0.8493,0.9084,0.7108,0.596,0.4636,0.3221,0.1229,0.3679,0.0,0.2066,0.0,0.0

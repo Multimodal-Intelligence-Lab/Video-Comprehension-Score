@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a skateboarder skates down an empty street and around a corner .,0.6272,a man rides a skateboard down an empty street quickly .,5.0,5.0,5.0,5.0,0.7714,0.8584,0.9148,0.934,0.8483,0.8178,0.7337,0.5738,0.7112,0.6454,0.6636,0.5519,0.6272
+2,a man is riding a skateboard down a street and then falls off .,0.5476,a man rides a skateboard down an empty street quickly .,4.0,4.0,4.0,4.0,0.594,0.904,1.0,1.0,1.0,1.0,0.5476,0.591,0.591,0.591,0.5476,0.5476,0.5476
+3,a boy is riding a skateboard down a hill and falls off .,0.4446,a person riding a skateboard zooms down a hill and around a corner .,4.0,4.0,3.0,3.6667,0.6044,0.8934,1.0,1.0,1.0,1.0,0.5385,0.5228,0.5426,0.5038,0.4707,0.4659,0.4446
+4,a young man rides a skateboard in a winding fashion down a road .,0.492,a man rides a skateboard down an empty street quickly .,5.0,5.0,5.0,5.0,0.6621,0.8745,0.9599,0.9608,0.9339,0.9245,0.6063,0.5681,0.5976,0.5557,0.5311,0.5062,0.492
+5,a boy is doing tricks on a skateboard in a large skate board arena .,0.1032,the boy is having a good time riding his skateboard on the quiet streets .,4.0,4.0,3.0,3.6667,0.4711,0.8317,0.9804,0.8241,0.8258,0.7846,0.3591,0.1449,0.4081,0.2598,0.2829,0.0,0.1032
+6,a person skateboarding down a hill on an empty road .,0.5762,a person riding a skateboard zooms down a hill and around a corner .,5.0,5.0,4.0,4.6667,0.703,0.8816,0.9714,1.0,0.9593,0.9533,0.6605,0.6461,0.6943,0.6311,0.6505,0.5934,0.5762

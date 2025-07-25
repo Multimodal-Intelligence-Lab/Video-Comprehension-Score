@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a male individidual doing a tutorial on how to make ballon animals,0.0,"a girl is stretching out a circular shaped , blown balloon .",5.0,5.0,4.0,4.6667,0.2796,0.7813,0.937,0.6383,0.7593,0.692,0.0779,0.0,0.2312,0.0512,0.016,0.0,0.0
+2,a man is demonstrating how to make a balloon animal .,0.0,"a girl is stretching out a circular shaped , blown balloon .",5.0,5.0,4.0,4.6667,0.3506,0.7828,0.941,0.6951,0.5991,0.4878,0.1704,0.0657,0.3099,0.0,0.1183,0.0,0.0
+3,a man is demonstrating how to make a balloon animal .,0.0,"a girl is stretching out a circular shaped , blown balloon .",5.0,5.0,4.0,4.6667,0.3506,0.7828,0.941,0.6951,0.5991,0.4878,0.1704,0.0657,0.3099,0.0,0.1183,0.0,0.0
+4,a man is showing you how to make a balloon animal .,0.0,"a girl is stretching out a circular shaped , blown balloon .",5.0,5.0,4.0,4.6667,0.326,0.7942,0.941,0.7284,0.6423,0.5497,0.1515,0.0748,0.2838,0.0,0.0982,0.0,0.0
+5,the guy is demonstrating how to make balloon animals and discussing the technique .,0.0,"a girl is stretching out a circular shaped , blown balloon .",5.0,5.0,4.0,4.6667,0.3007,0.7747,0.9004,0.6239,0.5617,0.4342,0.0973,0.0,0.2233,0.0,0.0,0.0,0.0
+6,a man is demonstrating how to twist a balloon into a shape .,0.0,"a girl is stretching out a circular shaped , blown balloon .",5.0,5.0,5.0,5.0,0.3745,0.8345,0.8819,0.386,0.0738,0.0,0.2504,0.0,0.2907,0.0,0.15,0.0,0.0

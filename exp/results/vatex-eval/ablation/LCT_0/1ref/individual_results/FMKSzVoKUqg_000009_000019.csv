@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man giving instructions for performing hip and back stretches with a ball,0.1005,a man with his feet on an exercise ball bends his knees and draws the ball closer and returns to his original position .,4.0,4.0,5.0,4.3333,0.5618,0.8106,0.8666,0.5607,0.601,0.5078,0.4594,0.218,0.4943,0.2709,0.3761,0.0358,0.1005
+2,a man is laying on the floor with a ball on the ground and is doing a workout .,0.3716,a man with his feet on an exercise ball bends his knees and draws the ball closer and returns to his original position .,5.0,5.0,4.0,4.6667,0.5956,0.8358,0.8537,0.7816,0.77,0.7248,0.5161,0.4826,0.5263,0.4748,0.4332,0.3809,0.3716
+3,a man is laying on an exercise ball and doing exercises with a large ball .,0.1185,a man with his feet on an exercise ball bends his knees and draws the ball closer and returns to his original position .,5.0,4.0,4.0,4.3333,0.7222,0.8672,0.888,0.3684,0.4009,0.3091,0.6797,0.1254,0.6872,0.1705,0.6393,0.0707,0.1185
+4,man doing leg exercises while using a ball and his arms for balance .,0.7032,a man with his feet on an exercise ball bends his knees and draws the ball closer and returns to his original position .,5.0,5.0,5.0,5.0,0.7816,0.8525,0.9545,0.8346,0.8631,0.8394,0.7438,0.7383,0.7712,0.7469,0.7316,0.693,0.7032
+5,a man in a gym exercises using a large inflated ball with his hands on the ground .,0.3318,a man with his feet on an exercise ball bends his knees and draws the ball closer and returns to his original position .,5.0,5.0,4.0,4.6667,0.6469,0.8325,0.9425,0.5668,0.6349,0.5614,0.5758,0.3303,0.6253,0.4355,0.5499,0.2477,0.3318
+6,the man is doing some exercises as he bends his legs while on the ground .,0.3518,a man with his feet on an exercise ball bends his knees and draws the ball closer and returns to his original position .,5.0,5.0,4.0,4.6667,0.6012,0.8757,0.9181,0.7433,0.7026,0.6603,0.5446,0.4635,0.5656,0.4324,0.504,0.3873,0.3518

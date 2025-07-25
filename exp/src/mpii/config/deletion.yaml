@@ -1,0 +1,104 @@
+# VCS Evaluation Framework Configuration - Deletion Experiment
+# Only experiment-specific settings (inherits from _base.yaml)
+
+# ============================================================================
+# EXPERIMENT SETTINGS
+# ============================================================================
+experiment:
+  # Custom experiment ID (if empty, auto-generates timestamp)
+  # Each experiment should have its own ID for parallel execution
+  experiment_id: ""
+
+# ============================================================================
+# EXPERIMENT-SPECIFIC PATHS
+# ============================================================================
+paths:
+  # Input data directory containing JSON files with iterations
+  data_dir: "/mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/deletion/aug_dataset"
+  
+  # Base output directory for results
+  results_dir: "/mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/results/mpii/deletion"
+
+# ============================================================================
+# DELETION-SPECIFIC EXPERIMENT SETTINGS
+# ============================================================================
+deletion:
+  # Subfolders to process in the dataset
+  subfolders: ["beginning", "middle", "end", "random"]
+  
+  # Number of iterations to process per JSON file
+  num_iterations: 10
+  
+  # Chunk size for VCS computation
+  chunk_size: 1
+  
+  # Enable ablation table generation (separate from comparison)
+  ablation: true
+  
+  # Enable comparison table generation (separate from ablation)  
+  comparison: true
+
+# ============================================================================
+# VCS SETTINGS OVERRIDE
+# ============================================================================
+vcs:
+  # For deletion experiments, use strict chronological order
+  lct_values: [0]
+  
+  # Return all metrics for ablation studies
+  return_all_metrics: true
+  
+  # Return similarity values for detailed analysis
+  return_similarity_values: true
+
+# ============================================================================
+# METRICS CONFIGURATION
+# ============================================================================
+metrics:
+  # Traditional metrics to compute
+  traditional: ["BLEU-1", "BLEU-4", "METEOR", "ROUGE-1", "ROUGE-4", "ROUGE-L", "ROUGE-Lsum"]
+  
+  # VCS-based metrics (current framework)
+  vcs_based: ["VCS", "GAS", "LAS", "NAS"]
+  
+  # Ablation metrics (computed combinations)
+  ablation_metrics:
+    - "GAS"
+    - "LAS" 
+    - "NAS"
+    - "VCS"
+
+# ============================================================================
+# OUTPUT FORMATTING OVERRIDES
+# ============================================================================
+output:
+  # Output format for aggregated results
+  aggregated_format: "mean_std"  # "mean ± std" format
+  
+  # Save formats
+  save_csv: true
+  save_html: false
+  save_json: false
+  
+  # Table formatting
+  table_format: "grid"  # for tabulate library
+
+# ============================================================================
+# LOGGING OVERRIDES
+# ============================================================================
+logging:
+  # Enable logging
+  enable_logging: true
+  
+  # Log format
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+  
+  # Save process log
+  save_process_log: true
+
+# ============================================================================
+# EXPERIMENT SETTINGS OVERRIDE
+# ============================================================================
+experiment:
+  # Experiment type
+  type: "deletion"

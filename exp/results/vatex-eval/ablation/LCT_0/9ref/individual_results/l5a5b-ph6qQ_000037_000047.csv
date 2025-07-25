@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a little girl playing with her hair and then using another women to pull heself up,0.6183,a young girl playing with her hair then climbing on top of a woman's head .,5.0,3.0,3.0,3.6667,0.6939,0.8595,1.0,1.0,0.9911,0.9887,0.6439,0.6631,0.6939,0.6719,0.6439,0.608,0.6183
+2,a young girl is brushing her hair with a brush .,0.2285,a young girl moves towards her mom and touches her face .,3.0,1.0,4.0,2.6667,0.5152,0.8685,1.0,1.0,1.0,1.0,0.4418,0.3529,0.4682,0.3529,0.3877,0.2301,0.2285
+3,a young girl is sitting on a couch while another woman brushes her hair .,0.3133,a young child plays with her own and her mother's hair,4.0,1.0,2.0,2.3333,0.5479,0.8733,1.0,0.8933,0.9155,0.8992,0.4823,0.4085,0.5325,0.4153,0.4647,0.3052,0.3133
+4,a woman holds a baby then runs her hands through the baby's hair .,0.3346,a young child plays with her own and her mother's hair,4.0,1.0,1.0,2.0,0.506,0.8376,1.0,1.0,1.0,1.0,0.3999,0.4563,0.4563,0.4563,0.3346,0.3346,0.3346
+5,young child pulls and brushes a woman's long dark hair .,0.4565,a young child plays with her own and her mother's hair,4.0,1.0,5.0,3.3333,0.5872,0.879,1.0,0.8819,0.8642,0.8455,0.5303,0.5319,0.5602,0.5223,0.4997,0.4674,0.4565
+6,a little girl is being made on over by her parents and grabs a brush to brush her hair .,0.3231,a small girl spends time with her mom at home ; playing with their hair .,4.0,1.0,2.0,2.3333,0.5839,0.8499,0.9859,0.8933,0.886,0.8606,0.5104,0.353,0.5177,0.4353,0.4218,0.2244,0.3231

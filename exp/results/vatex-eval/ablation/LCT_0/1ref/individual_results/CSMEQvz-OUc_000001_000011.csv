@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a pair of men are shown moving a piece of furniture down a flight of stairs .,0.8272,"in a stairwell , two men move a piece of furniture down a flight of stairs .",5.0,5.0,5.0,5.0,0.9166,0.9483,0.8678,0.8184,0.8424,0.8338,0.912,0.8019,0.8557,0.828,0.855,0.8009,0.8272
+2,a little girl is walking in a laundry room while a woman talks to her .,0.0,"in a stairwell , two men move a piece of furniture down a flight of stairs .",1.0,1.0,1.0,1.0,0.1364,0.7521,0.9091,0.5751,0.5568,0.4107,0.0,0.0,0.05,0.0,0.0,0.0,0.0
+3,a young boy is walking through a room and talking to the camera .,0.0,"in a stairwell , two men move a piece of furniture down a flight of stairs .",1.0,1.0,1.0,1.0,0.1181,0.762,0.9474,0.9155,0.8967,0.8644,0.0,0.0367,0.0691,0.0165,0.0,0.0,0.0
+4,"a man handles a large object on the loading platform of a truck , jumps to the ground then begins to pull the object off of the platform .",0.0,"in a stairwell , two men move a piece of furniture down a flight of stairs .",2.0,2.0,2.0,2.0,0.1767,0.7542,0.9277,0.6876,0.7431,0.6594,0.0,0.0,0.1125,0.0,0.0,0.0,0.0
+5,a guy is being lowered from a platform with another guy standing above him .,0.0,"in a stairwell , two men move a piece of furniture down a flight of stairs .",2.0,5.0,1.0,2.6667,0.2385,0.7517,0.9333,0.5594,0.5492,0.4003,0.0,0.0,0.1841,0.0,0.0,0.0,0.0
+6,two men are standing on an apartment deck and hoist a wooden desk over the balcony to the ground below .,0.1088,"in a stairwell , two men move a piece of furniture down a flight of stairs .",2.0,1.0,2.0,1.6667,0.3971,0.806,0.9419,0.8248,0.8393,0.8006,0.252,0.269,0.3599,0.2817,0.2059,0.0931,0.1088

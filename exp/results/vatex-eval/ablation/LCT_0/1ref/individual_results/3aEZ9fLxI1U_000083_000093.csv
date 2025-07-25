@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a series of people give their opinion on a liquid that they drink,0.1191,various women are tasting a wine and giving their opinion on the taste and cost .,5.0,5.0,5.0,5.0,0.4682,0.8466,0.8951,0.7376,0.7131,0.6611,0.3718,0.279,0.4058,0.2542,0.2982,0.1484,0.1191
+2,a woman and a woman are sitting in front of a camera and talking .,0.0,various women are tasting a wine and giving their opinion on the taste and cost .,4.0,4.0,5.0,4.3333,0.26,0.785,0.9655,0.4456,0.4147,0.2544,0.0573,0.0,0.2336,0.0,0.0237,0.0,0.0
+3,two women are sitting on a couch and talking to each other .,0.0,various women are tasting a wine and giving their opinion on the taste and cost .,5.0,4.0,3.0,4.0,0.2029,0.7914,0.9583,0.8047,0.8123,0.7628,0.0,0.0095,0.1683,0.0187,0.0,0.0,0.0
+4,a man and woman are sitting at a table and describing the taste of a wine,0.1667,various women are tasting a wine and giving their opinion on the taste and cost .,4.0,4.0,4.0,4.0,0.4782,0.8594,0.8542,0.7868,0.7287,0.6843,0.3928,0.3367,0.3891,0.2838,0.2891,0.2282,0.1667
+5,a man and a woman are discussing wine while enjoying the wine .,0.1345,various women are tasting a wine and giving their opinion on the taste and cost .,4.0,1.0,2.0,2.3333,0.5175,0.848,0.883,0.6851,0.6574,0.596,0.431,0.2958,0.4536,0.2661,0.3557,0.1696,0.1345
+6,a man and a woman are sitting with a couple of wine bottles on the table while the man is talking about the wine's characteristics .,0.0,various women are tasting a wine and giving their opinion on the taste and cost .,4.0,1.0,3.0,2.6667,0.3912,0.8094,0.9565,0.665,0.723,0.6577,0.2478,0.0844,0.3635,0.1578,0.2136,0.0,0.0

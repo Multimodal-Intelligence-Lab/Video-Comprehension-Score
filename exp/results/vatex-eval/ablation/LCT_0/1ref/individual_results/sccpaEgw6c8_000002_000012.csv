@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a little boy holding a sippy-cup begins to mumble and then takes a sip from the cup .,0.0,a young child is drinking a beverage from a cup in a house .,5.0,5.0,5.0,5.0,0.4956,0.8088,0.9108,0.5939,0.6066,0.5136,0.3763,0.1507,0.4462,0.1684,0.3153,0.0,0.0
+2,a toddler is sitting in a chair and blowing a sippy cup .,0.0,a young child is drinking a beverage from a cup in a house .,4.0,2.0,3.0,3.0,0.3921,0.8126,0.7917,0.5935,0.6784,0.6043,0.252,0.0,0.2322,0.104,0.0552,0.0,0.0
+3,a little boy is playing with a sippy cup while a woman talks to him .,0.2313,a young child is drinking a beverage from a cup in a house .,5.0,4.0,4.0,4.3333,0.4388,0.8238,1.0,0.8723,0.8863,0.862,0.3187,0.3566,0.4388,0.3668,0.3187,0.219,0.2313
+4,a baby is sipping a juice in a bottle and a man speaks to him,0.0322,a young child is drinking a beverage from a cup in a house .,4.0,4.0,4.0,4.0,0.34,0.8027,0.9167,0.7915,0.8495,0.8125,0.1778,0.1662,0.28,0.2231,0.1031,0.0,0.0322
+5,a baby boy sitting on a chair smiles as he is talked to while dinking out of a sippy cup .,0.0,a young child is drinking a beverage from a cup in a house .,4.0,3.0,4.0,3.6667,0.4439,0.8333,0.8359,0.6979,0.665,0.5979,0.3326,0.2031,0.3347,0.1637,0.2016,0.0437,0.0
+6,a baby is shown sipping a cup while onlookers talk .,0.1289,a young child is drinking a beverage from a cup in a house .,5.0,4.0,5.0,4.6667,0.4931,0.8393,0.8953,0.5657,0.6933,0.6346,0.3961,0.1039,0.4339,0.2689,0.3255,0.0,0.1289

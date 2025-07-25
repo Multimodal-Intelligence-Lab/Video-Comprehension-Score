@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two teams are playing a professional football game while other people are watching .,0.0,a group of young guys are on a football field playing a game of football,5.0,5.0,5.0,5.0,0.3771,0.8724,0.7493,0.1515,0.2521,0.1427,0.2859,0.0,0.1687,0.0,0.047,0.0,0.0
+2,a group of people are playing a game of football on a football field .,0.015,a group of young guys are on a football field playing a game of football,5.0,5.0,5.0,5.0,0.7016,0.9554,0.7675,0.4266,0.3226,0.291,0.6877,0.1827,0.6113,0.0345,0.5932,0.1662,0.015
+3,a football game is being played on a football field .,0.0,a group of young guys are on a football field playing a game of football,5.0,5.0,5.0,5.0,0.6233,0.9413,0.628,0.5062,0.3408,0.2997,0.5997,0.2077,0.4001,0.0,0.3626,0.1766,0.0
+4,a person speaks about football plays as game footage is shown .,0.0,a group of young guys are on a football field playing a game of football,5.0,5.0,5.0,5.0,0.284,0.863,0.8832,0.5932,0.5646,0.4955,0.1704,0.0,0.1893,0.0,0.0606,0.0,0.0
+5,footage of a football game from a televised broadcast is shown,0.0,a group of young guys are on a football field playing a game of football,4.0,5.0,5.0,4.6667,0.3801,0.8504,0.707,0.4623,0.3386,0.2222,0.2711,0.0,0.1232,0.0,0.0,0.0,0.0
+6,a score report is shown on screen while a sports announcer is talking about football scores .,0.0,a group of young guys are on a football field playing a game of football,4.0,5.0,5.0,4.6667,0.2183,0.8024,0.9547,0.6635,0.6961,0.6212,0.0258,0.0,0.1812,0.0,0.0,0.0,0.0

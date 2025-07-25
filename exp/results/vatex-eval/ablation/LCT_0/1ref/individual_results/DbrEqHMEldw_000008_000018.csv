@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is seen on his knees in a muddy puddle of water digging for clams with a bucket by his side as the seen cuts to his other adventures .,0.3458,a man digging in a pond and highlights of his fishing trips .,5.0,5.0,5.0,5.0,0.5566,0.8362,0.9592,0.812,0.8106,0.7735,0.4697,0.4539,0.5377,0.4529,0.4471,0.3469,0.3458
+2,a man is using a knife to open a piece of water .,0.0,a man digging in a pond and highlights of his fishing trips .,2.0,2.0,2.0,2.0,0.2509,0.7892,0.8312,0.4375,0.5733,0.4593,0.0508,0.0,0.0989,0.0,0.0,0.0,0.0
+3,a man is using a tool to dig a hole in the ground .,0.0,a man digging in a pond and highlights of his fishing trips .,4.0,5.0,4.0,4.3333,0.4067,0.8079,0.7917,0.2343,0.3616,0.2098,0.2657,0.0,0.2506,0.0,0.0724,0.0,0.0
+4,"a man uses a tool to shuck an oyster , then squeezes lemon juice onto a platter of oysters .",0.0,a man digging in a pond and highlights of his fishing trips .,3.0,3.0,2.0,2.6667,0.2239,0.7644,0.9408,0.761,0.7961,0.7333,0.0,0.0,0.175,0.0251,0.0,0.0,0.0
+5,a man explaining how to open up and remove an oyster for consumption .,0.0,a man digging in a pond and highlights of his fishing trips .,4.0,2.0,2.0,2.6667,0.2018,0.7715,1.0,1.0,1.0,1.0,0.0,0.2018,0.2018,0.2018,0.0,0.0,0.0
+6,two men were racking shallow water for clams using a black rake .,0.0,a man digging in a pond and highlights of his fishing trips .,4.0,3.0,4.0,3.6667,0.3011,0.7545,0.9403,0.8366,0.8396,0.7874,0.0736,0.1646,0.2567,0.1676,0.0148,0.0,0.0

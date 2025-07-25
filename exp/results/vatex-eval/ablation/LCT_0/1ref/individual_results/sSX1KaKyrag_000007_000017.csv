@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is demonstrating how he sucks a egg yolk into a bottle and placing it in another plate .,0.1892,a guy uses a water bottle to suck up a yoke from a cracked egg and move it to another plate .,5.0,5.0,4.0,4.6667,0.8069,0.8913,0.8999,0.3519,0.3649,0.2874,0.7833,0.1968,0.7854,0.2128,0.7592,0.1727,0.1892
+2,a woman is demonstrating how to clean a bowl of water .,0.0,a guy uses a water bottle to suck up a yoke from a cracked egg and move it to another plate .,1.0,3.0,4.0,2.6667,0.2741,0.7737,0.846,0.8206,0.6996,0.6118,0.0618,0.1154,0.1419,0.0,0.0,0.0,0.0
+3,a man is using a plastic bottle to separate the yolk from a bowl .,0.2608,a guy uses a water bottle to suck up a yoke from a cracked egg and move it to another plate .,5.0,5.0,4.0,4.6667,0.7163,0.8322,0.9176,0.4694,0.5128,0.4146,0.6591,0.2592,0.6908,0.3198,0.6285,0.1949,0.2608
+4,a person uses an empty water bottle to separate the yolk from the white of an egg .,0.3949,a guy uses a water bottle to suck up a yoke from a cracked egg and move it to another plate .,5.0,5.0,5.0,5.0,0.7406,0.8743,0.9228,0.5247,0.5744,0.5132,0.7033,0.3582,0.7189,0.4254,0.6785,0.3242,0.3949
+5,a person uses a plastic bottle to remove the egg yolk and places it in a separate bowl .,0.6029,a guy uses a water bottle to suck up a yoke from a cracked egg and move it to another plate .,5.0,5.0,4.0,4.6667,0.7205,0.8567,0.9793,0.7685,0.8215,0.7917,0.6738,0.6363,0.7146,0.6598,0.6669,0.5755,0.6029
+6,a person uses a plastic water bottle to separate a yolk from an egg .,0.243,a guy uses a water bottle to suck up a yoke from a cracked egg and move it to another plate .,5.0,5.0,5.0,5.0,0.7714,0.8859,0.8696,0.4164,0.4383,0.366,0.742,0.2435,0.7372,0.2719,0.7033,0.2135,0.243

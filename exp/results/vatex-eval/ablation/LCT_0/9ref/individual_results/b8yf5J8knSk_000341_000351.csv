@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man at a table records his family playing a board game .,0.0774,a woman and a man are sitting at a table playing a game of scrabble .,4.0,2.0,4.0,3.3333,0.5115,0.8966,0.9543,0.8157,0.815,0.7668,0.4034,0.158,0.4412,0.1728,0.3176,0.0,0.0774
+2,a man is sitting at a table playing a game of cards .,0.4062,a woman and a man are sitting at a table playing a game of scrabble .,3.0,3.0,4.0,3.3333,0.5269,0.9497,1.0,1.0,1.0,1.0,0.4385,0.4576,0.5174,0.4574,0.4273,0.4062,0.4062
+3,two men are sitting at a table playing a card game .,0.3265,a woman and a man are sitting at a table playing a game of scrabble .,4.0,3.0,3.0,3.3333,0.4466,0.9173,0.9697,0.8598,0.9115,0.9035,0.3861,0.3451,0.4193,0.3822,0.3669,0.2861,0.3265
+4,a person sitting down at a table with money in their hands and messing with it,0.5346,a man sat at a table that has some bills on it and he started to pick the money,5.0,5.0,4.0,4.6667,0.7342,0.8607,1.0,0.8723,0.8863,0.8665,0.6907,0.6173,0.711,0.5622,0.6637,0.5698,0.5346
+5,a man gambles in a casino alongside other men and women .,0.0,a man has a bunch of dollar bills on the table as he and others are playing a scrabble game .,4.0,4.0,4.0,4.0,0.3621,0.8363,0.8759,0.68,0.6588,0.5445,0.2178,0.0,0.2717,0.0,0.107,0.0,0.0
+6,a man is figuring out an amount for scrabble while another guy laughs .,0.1911,"a group of people are playing scrabble and talking , while one of them fiddles with money on a table .",4.0,4.0,2.0,3.3333,0.6646,0.8407,0.9206,0.6598,0.6596,0.5722,0.5977,0.3565,0.5617,0.3563,0.4743,0.1914,0.1911

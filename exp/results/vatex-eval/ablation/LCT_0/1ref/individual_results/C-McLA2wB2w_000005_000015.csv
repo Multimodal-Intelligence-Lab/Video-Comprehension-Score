@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a child in a carseat is raising her foot up to her nose and smelling her foot .,0.0,a little girl is trying to put her foot in the mouth,5.0,4.0,5.0,4.6667,0.3527,0.8347,0.9199,0.7359,0.6961,0.636,0.2245,0.1204,0.2963,0.0701,0.1569,0.0,0.0
+2,a little boy is sitting on a couch and is playing with a harmonica .,0.0,a little girl is trying to put her foot in the mouth,4.0,4.0,4.0,4.0,0.1552,0.8069,0.9148,0.806,0.8569,0.8227,0.0,0.0,0.0765,0.0141,0.0,0.0,0.0
+3,a baby is sitting in a car seat and playing with a harmonica .,0.0,a little girl is trying to put her foot in the mouth,4.0,4.0,4.0,4.0,0.1026,0.7481,0.8915,0.6778,0.7701,0.6927,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,"a toddler girl puts flashlight to her foot and says "" feet "" .",0.2326,a little girl is trying to put her foot in the mouth,4.0,4.0,4.0,4.0,0.53,0.8633,0.9199,0.749,0.7094,0.6634,0.4556,0.3724,0.489,0.3374,0.4081,0.2731,0.2326
+5,a young child blows his nose while sitting on the ground below a bed .,0.0,a little girl is trying to put her foot in the mouth,3.0,2.0,3.0,2.6667,0.1425,0.7907,0.9804,0.8241,0.8258,0.7797,0.0,0.0,0.1253,0.0,0.0,0.0,0.0
+6,a toddler sniffs a foot and makes a funny face .,0.0,a little girl is trying to put her foot in the mouth,5.0,2.0,5.0,4.0,0.3819,0.8104,0.8077,0.3684,0.506,0.3904,0.2373,0.0,0.2347,0.0,0.0557,0.0,0.0

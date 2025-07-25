@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two men discussing and explaining types of drawers for a desk .,0.474,two men hold up outlines of drawers while one explains what they are .,5.0,4.0,5.0,4.6667,0.7846,0.8827,0.9412,0.6747,0.6789,0.58,0.7429,0.3239,0.7431,0.4986,0.6934,0.2908,0.474
+2,a man is demonstrating how to install a cabinet in a room .,0.0016,two men hold up outlines of drawers while one explains what they are .,5.0,2.0,4.0,3.6667,0.4296,0.8467,0.9796,0.8819,0.8923,0.8578,0.3263,0.2482,0.3473,0.2453,0.1856,0.0054,0.0016
+3,a man is demonstrating how to install a cabinet cabinet .,0.0678,two men hold up outlines of drawers while one explains what they are .,5.0,2.0,3.0,3.3333,0.4815,0.868,1.0,0.8819,0.8923,0.858,0.4026,0.2926,0.3885,0.3042,0.216,0.0523,0.0678
+4,a man is putting something into a refrigerator and then taking it out while discussing how far the door opens up .,0.0,two men hold up drawer examples while one explains the differences .,4.0,1.0,2.0,2.3333,0.4087,0.8444,0.9665,0.8853,0.8938,0.8592,0.2997,0.1556,0.2801,0.1586,0.1167,0.0,0.0
+5,the boy is opening up his nintendo and explaining all about whats in the box .,0.0,two men hold up drawer examples while one explains the differences .,1.0,1.0,2.0,1.3333,0.2832,0.7872,0.9667,0.7667,0.7701,0.6967,0.0855,0.0411,0.2341,0.0382,0.0202,0.0,0.0
+6,a man is demonstrating how to do something while another man speaks about it in a foreign language .,0.2263,a gray haired guy is demonstrating something while another guy is watching .,5.0,4.0,4.0,4.3333,0.5397,0.8987,0.9499,0.7609,0.8105,0.7501,0.4708,0.2678,0.3862,0.327,0.2944,0.1582,0.2263

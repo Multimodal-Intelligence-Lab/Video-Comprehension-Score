@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a little boy sits in his room and plays a toy whistle .,0.2331,a boy blows into a purple object that he has in his hands,3.0,1.0,3.0,2.3333,0.5066,0.8419,1.0,1.0,1.0,1.0,0.3894,0.3931,0.4139,0.3931,0.3039,0.2331,0.2331
+2,a young boy is playing a tune on a recorder .,0.6395,a young boy plays a tune on a hand flute .,4.0,4.0,4.0,4.0,0.6896,0.9165,0.9756,0.9722,0.9565,0.9495,0.6613,0.6793,0.6805,0.6696,0.6514,0.6501,0.6395
+3,a man is playing a tune on a musical instrument .,0.4794,a man is playing a musical instrument with his mouth blowing .,5.0,4.0,4.0,4.3333,0.6475,0.9381,1.0,0.8408,0.8802,0.8412,0.6243,0.5808,0.6003,0.5116,0.5739,0.5531,0.4794
+4,a young boy holds an ocarina up to his mouth and plays a song .,0.3041,a young boy is making musical sounds by blowing into a small object .,5.0,5.0,5.0,5.0,0.7478,0.9023,0.9129,0.8171,0.7974,0.7597,0.7152,0.4541,0.6161,0.4126,0.5746,0.4266,0.3041
+5,a young boy is playing a song on the cello .,0.4174,a young boy plays a tune on a hand flute .,4.0,4.0,4.0,4.0,0.5233,0.886,1.0,1.0,1.0,1.0,0.4465,0.4838,0.4838,0.4838,0.4174,0.4174,0.4174
+6,a young boy practices a melody on the instrument trombone .,0.4059,a young man learning to play a musical wind instrument .,3.0,4.0,3.0,3.3333,0.5861,0.8522,1.0,1.0,1.0,1.0,0.5055,0.5088,0.5091,0.4937,0.4154,0.4237,0.4059

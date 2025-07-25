@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is playing a traditional australian aboriginal musical instrument called a didjeridoo .,0.0,a man in a lion t-shirt sits crosslegged and plays the didgeridoo .,5.0,5.0,5.0,5.0,0.5116,0.8005,0.7216,0.1526,0.0,0.0,0.3899,0.0,0.3231,0.0,0.1544,0.0,0.0
+2,a man is sitting in a chair and playing a didgeridoo .,0.1316,a man in a lion t-shirt sits crosslegged and plays the didgeridoo .,4.0,4.0,4.0,4.0,0.6172,0.8833,0.9023,0.5782,0.5079,0.4429,0.5666,0.3166,0.5757,0.2027,0.5197,0.2505,0.1316
+3,a man is sitting on a chair and playing a didgeridoo .,0.1169,a man in a lion t-shirt sits crosslegged and plays the didgeridoo .,4.0,4.0,4.0,4.0,0.6089,0.8833,0.9023,0.5782,0.5079,0.4429,0.5572,0.3072,0.5665,0.1918,0.5092,0.2341,0.1169
+4,a man plays a pipe-type wind instrument that lays on the floor .,0.0,a man in a lion t-shirt sits crosslegged and plays the didgeridoo .,5.0,5.0,5.0,5.0,0.289,0.7879,0.6364,0.1179,0.1989,0.0,0.0976,0.0,0.0,0.0,0.0,0.0,0.0
+5,a man playing a didgeridoo in his room with drums playing in the background .,0.0,a man in a lion t-shirt sits crosslegged and plays the didgeridoo .,4.0,4.0,4.0,4.0,0.5072,0.8314,0.6653,0.3153,0.4278,0.3118,0.4072,0.0,0.2593,0.0,0.109,0.0,0.0
+6,a young man is sitting while he plays a musical instrument and beat on it with a pair of wooden sticks .,0.0,a man in a lion t-shirt sits crosslegged and plays the didgeridoo .,3.0,4.0,4.0,3.6667,0.2915,0.8162,0.7327,0.4014,0.3582,0.2137,0.132,0.0,0.033,0.0,0.0,0.0,0.0

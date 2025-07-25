@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person takes off from the beach to parasail behind a boat .,0.0,a group of boys surround one boy who is parasails from the beach .,5.0,5.0,4.0,4.6667,0.5906,0.8427,0.76,0.2105,0.0,0.0,0.5142,0.0,0.4614,0.0,0.3608,0.0,0.0
+2,a group of people are parasailing on the ocean .,0.1746,a group of boys surround one boy who is parasails from the beach .,5.0,5.0,4.0,4.6667,0.6043,0.861,0.8784,0.6305,0.5568,0.4853,0.5404,0.3724,0.5495,0.2666,0.4768,0.2711,0.1746
+3,two people are parasailing over a body of water .,0.0,a group of boys surround one boy who is parasails from the beach .,4.0,4.0,4.0,4.0,0.4273,0.8074,0.8803,0.4651,0.3477,0.1921,0.2908,0.0,0.3495,0.0,0.1943,0.0,0.0
+4,an individual flies over the beach on a parachute while others do the same .,0.0,a group of boys surround one boy who is parasails from the beach .,4.0,4.0,4.0,4.0,0.5796,0.8222,0.785,0.3508,0.1415,0.0,0.4887,0.0,0.4644,0.0,0.3486,0.0,0.0
+5,a person is on the ocean using a parachute to surf at very high heights .,0.0,a group of boys surround one boy who is parasails from the beach .,5.0,5.0,4.0,4.6667,0.4093,0.7964,0.6483,0.0,0.0,0.0,0.2583,0.0,0.0889,0.0,0.0,0.0,0.0
+6,a person attached to a para-sail gets it up into the air and then runs to edge of the cliff and begins to fly .,0.0,a group of boys surround one boy who is parasails from the beach .,4.0,4.0,4.0,4.0,0.4275,0.7847,0.8444,0.3754,0.3596,0.1839,0.2704,0.0,0.322,0.0,0.136,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man demonstrates replacing the inflatable tube in a bike tire .,0.7774,a man is demonstrating how to properly put a tube in a tire .,5.0,5.0,5.0,5.0,0.8013,0.8976,1.0,1.0,1.0,1.0,0.7774,0.8013,0.8013,0.8013,0.7774,0.7774,0.7774
+2,a man is demonstrating how to fix a bike tire .,0.7461,a man explains something about a bicycle tire .,5.0,5.0,5.0,5.0,0.7744,0.9087,1.0,1.0,1.0,1.0,0.7504,0.7744,0.7744,0.7744,0.7504,0.7461,0.7461
+3,a man is demonstrating how to fix a bicycle tire .,0.7677,a man explains something about a bicycle tire .,5.0,4.0,5.0,4.6667,0.7911,0.91,1.0,1.0,1.0,1.0,0.7677,0.7911,0.7911,0.7911,0.7677,0.7677,0.7677
+4,a person is showing how to put the tube back into the bike tire .,0.6249,a man explains how to install an inner tube into a bicycle tire .,5.0,5.0,5.0,5.0,0.7965,0.9159,0.9804,0.7556,0.7527,0.7099,0.7778,0.4939,0.7788,0.6628,0.7584,0.4755,0.6249
+5,man replacing the tire on a bike and then adjusting the gears .,0.466,a man is in a garage and trying to replace a flat bike tire by placing a new tube inside of the tire .,4.0,3.0,4.0,3.6667,0.6821,0.8796,0.9206,0.7653,0.7702,0.7226,0.6386,0.4735,0.6385,0.5261,0.589,0.436,0.466
+6,a male is showing how to fix a bike tire .,0.7291,a man explains something about a bicycle tire .,5.0,4.0,5.0,4.6667,0.7645,0.8708,1.0,1.0,1.0,1.0,0.7291,0.7645,0.7645,0.7645,0.7291,0.7291,0.7291

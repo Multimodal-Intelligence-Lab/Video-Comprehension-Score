@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of men are engaged in a race where they have to crawl through a mud puddle .,0.6016,a group of people racing through the mud and getting all dirty,5.0,5.0,5.0,5.0,0.7573,0.8762,1.0,0.8723,0.8863,0.8517,0.7193,0.6581,0.7284,0.6519,0.6859,0.6087,0.6016
+2,a group of people are walking around in a muddy area .,0.5244,a group of people racing through the mud and getting all dirty,5.0,5.0,5.0,5.0,0.665,0.8712,0.9599,0.8638,0.8692,0.836,0.6155,0.5288,0.6425,0.5857,0.5896,0.4591,0.5244
+3,a group of people are walking around a muddy field .,0.4453,a group of people racing through the mud and getting all dirty,5.0,5.0,5.0,5.0,0.6095,0.8707,0.9599,0.8638,0.8692,0.8361,0.5515,0.4507,0.5833,0.517,0.5214,0.3692,0.4453
+4,a boy is stick in a muddy ditch trying to get out of it .,0.1008,"a man climbs out of water , up onto a muddy bank before running along a muddy pathway alongside other men who appear to be racing him .",4.0,4.0,3.0,3.6667,0.3742,0.827,0.9787,0.8895,0.9107,0.8875,0.2114,0.2964,0.3423,0.2881,0.1691,0.1112,0.1008
+5,a man picked up a stick with a mound of mud at the base,0.0,a group of people racing through the mud and getting all dirty,3.0,3.0,2.0,2.6667,0.3977,0.8598,0.9599,0.7876,0.8085,0.7607,0.2995,0.1679,0.2875,0.1474,0.1222,0.0,0.0
+6,a man is walking towards a truck that is stuck in the mud .,0.0477,several men are crawling through mud under barbed wire while a song about mud plays .,4.0,2.0,3.0,3.0,0.3812,0.8621,1.0,0.8723,0.8863,0.8592,0.2822,0.2166,0.2905,0.2214,0.1322,0.0417,0.0477

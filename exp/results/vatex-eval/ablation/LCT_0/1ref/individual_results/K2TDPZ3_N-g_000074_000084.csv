@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is using a white piece of paper to make a paper plane,0.0,a person wearing a bracelet fold a piece of paper multiple times on a wooden surface .,5.0,5.0,5.0,5.0,0.4053,0.8559,0.9612,0.5868,0.6383,0.5774,0.3053,0.0,0.3813,0.0683,0.2772,0.0,0.0
+2,a person is demonstrating how to fold a piece of paper .,0.2829,a person wearing a bracelet fold a piece of paper multiple times on a wooden surface .,5.0,5.0,5.0,5.0,0.5262,0.9041,0.8113,0.7854,0.7308,0.7023,0.476,0.3967,0.416,0.3517,0.3541,0.3327,0.2829
+3,a person is folding a piece of paper on a table .,0.4581,a person wearing a bracelet fold a piece of paper multiple times on a wooden surface .,5.0,5.0,5.0,5.0,0.6187,0.8906,0.9529,0.7551,0.79,0.7642,0.5719,0.4951,0.5999,0.5174,0.5507,0.433,0.4581
+4,someone is taking a blank sheet of paper and folding it to make it like an airplane to fly .,0.0,a person wearing a bracelet fold a piece of paper multiple times on a wooden surface .,5.0,4.0,5.0,4.6667,0.4509,0.8147,0.9357,0.4278,0.5872,0.4933,0.326,0.0,0.4131,0.0648,0.2796,0.0,0.0
+5,someone finishing up folding a square style paper airplane and showing how to hold it .,0.0,a person wearing a bracelet fold a piece of paper multiple times on a wooden surface .,5.0,3.0,4.0,4.0,0.3329,0.8096,0.991,0.6885,0.75,0.6912,0.1761,0.0311,0.3269,0.1105,0.1686,0.0,0.0
+6,a paper is being made into a airplane .,0.0,a person wearing a bracelet fold a piece of paper multiple times on a wooden surface .,5.0,4.0,5.0,4.6667,0.3994,0.8094,0.8041,0.9464,0.4779,0.3549,0.2579,0.3654,0.2531,0.0,0.0771,0.2159,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy plays a white recorder and then puts it down and picks up another instrument .,0.6241,"a boy is playing a song on a recorder , then he switches to a different recorder .",5.0,5.0,5.0,5.0,0.7246,0.909,0.9497,0.8889,0.8774,0.8543,0.6832,0.6819,0.7027,0.6732,0.658,0.6341,0.6241
+2,a young boy is playing a song on a recorder .,0.5646,a boy is playing musical scales on a hand held recorder .,5.0,5.0,4.0,4.6667,0.8059,0.9416,1.0,1.0,1.0,1.0,0.7836,0.7035,0.7669,0.5766,0.7401,0.6951,0.5646
+3,a young boy is playing a song on a flute .,0.4601,a young man is blowing into a flute in a room,4.0,4.0,4.0,4.0,0.6471,0.874,0.941,0.8938,0.8263,0.7897,0.5916,0.4567,0.6101,0.5334,0.5488,0.3713,0.4601
+4,a boy plays a few different notes on an ocarina .,0.4631,a boy is playing musical scales on a hand held recorder .,4.0,4.0,4.0,4.0,0.5578,0.8592,1.0,1.0,1.0,1.0,0.4631,0.5578,0.5578,0.5578,0.4631,0.4631,0.4631
+5,a young boy practices a melody on the instrument trombone .,0.3037,a boy plays the scale on a recorder in his room .,4.0,4.0,4.0,4.0,0.5135,0.8887,1.0,1.0,1.0,1.0,0.4526,0.45,0.45,0.45,0.3431,0.3037,0.3037
+6,a young boy is playing a song on the cello .,0.1393,a young man is blowing into a flute in a room,4.0,4.0,3.0,3.6667,0.449,0.8758,0.9677,0.962,0.9649,0.9566,0.3319,0.329,0.4145,0.3037,0.2786,0.2098,0.1393

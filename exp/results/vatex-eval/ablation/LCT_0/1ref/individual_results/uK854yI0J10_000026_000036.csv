@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people play beer pong and one throws the ball and misses the cup .,0.0,several college kids appear to be drinking and playing a coin toss game .,5.0,5.0,5.0,5.0,0.4379,0.8091,0.8537,0.4886,0.4953,0.3762,0.3052,0.0,0.3415,0.0,0.1861,0.0,0.0
+2,a group of people are playing a game of beer pong .,0.0,several college kids appear to be drinking and playing a coin toss game .,5.0,5.0,5.0,5.0,0.5014,0.8415,0.8519,0.3669,0.3181,0.1896,0.4074,0.0,0.4147,0.0,0.3044,0.0,0.0
+3,a group of people are playing beer pong in a room .,0.0,several college kids appear to be drinking and playing a coin toss game .,5.0,5.0,5.0,5.0,0.4375,0.8061,0.9706,0.5751,0.6112,0.5177,0.3022,0.0219,0.4204,0.0796,0.281,0.0,0.0
+4,two men try to bounce a ping pong ball into a beer cup .,0.0,several college kids appear to be drinking and playing a coin toss game .,4.0,5.0,4.0,4.3333,0.3356,0.7588,0.8817,0.4297,0.5778,0.4435,0.1244,0.0,0.2464,0.0,0.0069,0.0,0.0
+5,a group of people are playing beer pong with each other .,0.2305,several college kids appear to be drinking and playing a coin toss game .,5.0,5.0,5.0,5.0,0.4802,0.8178,0.9298,0.8275,0.8259,0.7872,0.3644,0.3718,0.441,0.3706,0.3164,0.2319,0.2305
+6,a group of people are playing a game of beer pong during a party .,0.0,several college kids appear to be drinking and playing a coin toss game .,5.0,5.0,4.0,4.6667,0.488,0.8358,0.8373,0.395,0.3515,0.224,0.3874,0.0,0.3885,0.0,0.2684,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,people are scuba diving in the water and using some sort of machine to do something .,0.62,someone is scuba diving in a body of water and holding onto a machine .,5.0,5.0,5.0,5.0,0.757,0.8856,0.9913,0.8879,0.9141,0.8931,0.7257,0.6633,0.7155,0.6444,0.6788,0.6092,0.62
+2,a group of people are scuba diving in the ocean .,0.602,a small group of people are underwater scuba diving with an underwater vehicle .,5.0,5.0,5.0,5.0,0.6941,0.9222,1.0,1.0,1.0,1.0,0.6673,0.6595,0.6387,0.633,0.607,0.6296,0.602
+3,a group of people are scuba diving in the ocean .,0.602,a small group of people are underwater scuba diving with an underwater vehicle .,5.0,5.0,5.0,5.0,0.6941,0.9222,1.0,1.0,1.0,1.0,0.6673,0.6595,0.6387,0.633,0.607,0.6296,0.602
+4,three divers with scuba gear are in the water looking around .,0.3499,a group of three divers are underwater using a machine,5.0,5.0,5.0,5.0,0.6444,0.8477,0.971,0.7119,0.7323,0.6785,0.5806,0.5006,0.5959,0.4489,0.5234,0.4108,0.3499
+5,a scuba diver is video taping another scuba diver scuba diving .,0.1783,a scuba diver is holding onto a hand held tank while another scuba diver holds a plug in his hand and another scuba diver is watching on the other side .,4.0,5.0,5.0,4.6667,0.5094,0.8911,0.8654,0.6509,0.6701,0.6297,0.4494,0.1874,0.4331,0.2678,0.3638,0.0882,0.1783
+6,a scuba diver is underwater swimming among a lot of fish .,0.2304,several scuba divers are in action but one is moving with a large piece of equipment that is held in both hands .,4.0,4.0,5.0,4.3333,0.5044,0.8479,0.9714,0.9041,0.827,0.7853,0.3845,0.3739,0.4898,0.38,0.3664,0.2227,0.2304

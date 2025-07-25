@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a closeup of a child playing with a fidget spinner,0.3515,young boy and young girl playing with a fidget spinner in the backseat of a car .,5.0,5.0,5.0,5.0,0.5323,0.9056,0.797,0.921,0.7963,0.7751,0.4836,0.4922,0.4132,0.4127,0.352,0.4393,0.3515
+2,a person is playing with a fidget spinner on the floor .,0.0235,young boy and young girl playing with a fidget spinner in the backseat of a car .,4.0,4.0,4.0,4.0,0.3974,0.8829,0.724,0.8571,0.6989,0.659,0.3175,0.297,0.1677,0.1379,0.0573,0.2037,0.0235
+3,a person is playing with a fidget spinner in a dark room .,0.1319,young boy and young girl playing with a fidget spinner in the backseat of a car .,4.0,4.0,4.0,4.0,0.3929,0.8692,0.8519,0.869,0.8045,0.7751,0.3016,0.3014,0.2874,0.2454,0.1802,0.1963,0.1319
+4,a boy is sitting and playing with a fidget spinner .,0.2917,young boy and young girl playing with a fidget spinner in the backseat of a car .,5.0,5.0,4.0,4.6667,0.5658,0.9085,0.797,0.7404,0.6747,0.642,0.5221,0.4136,0.4552,0.3565,0.4004,0.3545,0.2917
+5,a little boy plays with and shows off his fidget spinner .,0.1552,young boy and young girl playing with a fidget spinner in the backseat of a car .,5.0,5.0,4.0,4.6667,0.5205,0.8786,0.8949,0.6413,0.646,0.5971,0.4543,0.2523,0.4642,0.2578,0.3902,0.149,0.1552
+6,a young boy doing tricks with a fidget spinning devise .,0.3598,young boy and young girl playing with a fidget spinner in the backseat of a car .,5.0,4.0,5.0,4.6667,0.5298,0.8807,0.9375,0.8315,0.8339,0.8114,0.4661,0.4346,0.4985,0.4361,0.4305,0.358,0.3598

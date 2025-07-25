@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the boys are showing their friend playing hockey while making comments .,0.1364,a few young people are on a icy pavement playing a game of hockey,5.0,5.0,5.0,5.0,0.5854,0.8332,0.9569,0.7233,0.7091,0.6492,0.4963,0.2963,0.5024,0.2837,0.3954,0.1267,0.1364
+2,a group of people are playing a game of ice hockey .,0.2371,fans watch from the stands as a hockey game takes place .,5.0,5.0,5.0,5.0,0.7326,0.9343,0.9321,0.7407,0.7339,0.6943,0.7053,0.4221,0.5852,0.3647,0.5561,0.306,0.2371
+3,a group of people are playing a game of ice hockey .,0.2371,fans watch from the stands as a hockey game takes place .,5.0,5.0,5.0,5.0,0.7326,0.9343,0.9321,0.7407,0.7339,0.6943,0.7053,0.4221,0.5852,0.3647,0.5561,0.306,0.2371
+4,"a man dressed in hockey gear speaks , while others are shown practicing on the ice .",0.2016,a man is shouting and joking into the camera while he watches a game of ice hockey,4.0,4.0,4.0,4.0,0.5985,0.8392,0.95,0.7386,0.7173,0.6576,0.4976,0.3599,0.5139,0.3409,0.3919,0.2247,0.2016
+5,"a man dressed in a hocket outfit is talking , then footage of several hockey players are seen skating on a hockey rink .",0.3105,a man is shouting and joking into the camera while he watches a game of ice hockey,4.0,4.0,4.0,4.0,0.6349,0.8622,0.9642,0.8352,0.8699,0.841,0.5765,0.4141,0.491,0.4358,0.378,0.2831,0.3105
+6,a hockey team practicing in an ice skating rink with people talking in the background .,0.3754,a group of hockey players skate around a rink while a young man adds commentary .,5.0,5.0,5.0,5.0,0.6048,0.8543,0.9658,0.7204,0.761,0.7126,0.5246,0.4462,0.5908,0.4807,0.5078,0.3338,0.3754

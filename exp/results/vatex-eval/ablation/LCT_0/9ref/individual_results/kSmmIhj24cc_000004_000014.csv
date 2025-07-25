@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person rides a motorcycle through a stream to get to the other side .,0.7556,a person rides a motorcycle through a shallow stretch of water .,5.0,5.0,5.0,5.0,0.8094,0.9024,1.0,1.0,1.0,1.0,0.7887,0.7867,0.787,0.7867,0.7639,0.7556,0.7556
+2,a person is riding a motorbike through a stream of water .,0.7661,an individual is riding a motor bike across a river of water .,5.0,5.0,5.0,5.0,0.8174,0.9034,1.0,1.0,1.0,1.0,0.7961,0.787,0.8174,0.7905,0.7961,0.7621,0.7661
+3,a man is riding a bike through a river and then falls off .,0.4593,an individual is riding a motor bike across a river of water .,3.0,3.0,3.0,3.0,0.5177,0.8919,1.0,1.0,1.0,1.0,0.4593,0.5177,0.5177,0.5177,0.4593,0.4593,0.4593
+4,a person riding a motorcycle while driving on a dirt road .,0.4511,a person rides a motorcycle on the ground outside in the daytime,4.0,4.0,4.0,4.0,0.6257,0.902,0.9787,0.8295,0.8893,0.873,0.5851,0.4872,0.5565,0.5216,0.5082,0.4116,0.4511
+5,outside someone is driving a motorcycle down a winding road .,0.0314,a person driving a dirt bike through a shallow body of water .,4.0,4.0,4.0,4.0,0.5007,0.8678,0.9199,0.9737,0.91,0.89,0.4247,0.2593,0.3479,0.2075,0.1785,0.0947,0.0314
+6,a motorcyclist struggles to make his way through a thick mud patch on a road .,0.1409,a man rides a motorcycle through a pool of water and continues to ride through the dirt road .,4.0,4.0,4.0,4.0,0.5484,0.8075,0.9569,0.7478,0.7283,0.6397,0.4408,0.2746,0.5223,0.3063,0.4084,0.1017,0.1409

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man listening to a track , plays along with it on an electronic drum set .",0.507,"a man has earphones on , and is playing the drums and cymbals with his drumsticks .",4.0,5.0,5.0,4.6667,0.6905,0.8801,0.8951,0.7988,0.7663,0.7208,0.6476,0.604,0.6466,0.5872,0.5779,0.527,0.507
+2,a man is playing a drum set on a drum set .,0.318,"in some sort of room , the drummer is trying out his instrumental equipment .",4.0,5.0,5.0,4.6667,0.8236,0.9298,0.88,0.6857,0.7605,0.6997,0.8102,0.3968,0.6377,0.4562,0.6002,0.359,0.318
+3,a man is playing a set of drums and cymbals .,0.5093,"a man has earphones on , and is playing the drums and cymbals with his drumsticks .",5.0,5.0,5.0,5.0,0.7552,0.9342,0.9714,0.7302,0.6675,0.6441,0.7321,0.5875,0.7041,0.5242,0.6761,0.5585,0.5093
+4,a man plays a long beat on the drums with a symbol .,0.1805,a young man plays drums and cymbals while music plays .,4.0,4.0,3.0,3.6667,0.5876,0.8877,0.8988,0.7071,0.626,0.5787,0.526,0.356,0.4993,0.2725,0.4245,0.2745,0.1805
+5,a man plays a groove on a drum set that features a cymbal .,0.0891,a young man plays drums and cymbals while music plays .,5.0,5.0,5.0,5.0,0.6826,0.8972,0.8984,0.68,0.6234,0.5158,0.6463,0.2643,0.5838,0.1976,0.5273,0.0541,0.0891
+6,a young male adult is playing an electronic drum pad kit along with the music that is playing in the background .,0.501,a young man plays drums and cymbals while music plays .,4.0,5.0,4.0,4.3333,0.6766,0.8758,0.9545,0.9811,0.9552,0.9427,0.6308,0.5221,0.6612,0.5629,0.6131,0.4544,0.501

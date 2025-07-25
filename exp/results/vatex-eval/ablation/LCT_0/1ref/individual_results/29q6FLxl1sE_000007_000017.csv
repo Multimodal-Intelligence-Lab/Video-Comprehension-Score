@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman plays darts but fails to hit the board .,0.1799,a women is playing darts in a club while music plays,5.0,5.0,5.0,5.0,0.5866,0.8749,0.7703,0.4601,0.5761,0.5155,0.5276,0.0797,0.4634,0.2774,0.3867,0.0,0.1799
+2,a young boy is throwing darts at a dart board .,0.0,a women is playing darts in a club while music plays,4.0,4.0,4.0,4.0,0.3607,0.7934,0.8496,0.6243,0.7197,0.6467,0.1942,0.0,0.2475,0.1117,0.0515,0.0,0.0
+3,a young boy is throwing darts at a dart board .,0.0,a women is playing darts in a club while music plays,4.0,4.0,4.0,4.0,0.3607,0.7934,0.8496,0.6243,0.7197,0.6467,0.1942,0.0,0.2475,0.1117,0.0515,0.0,0.0
+4,a group of people play dodge ball in an indoor sports centre and throw balls at one another .,0.0,a women is playing darts in a club while music plays,1.0,1.0,1.0,1.0,0.2961,0.7945,0.8635,0.8978,0.8504,0.8117,0.1141,0.216,0.1848,0.1723,0.0,0.0133,0.0
+5,a guy shows a dart and then throws it at the dart board .,0.0,a women is playing darts in a club while music plays,4.0,4.0,4.0,4.0,0.3189,0.7735,0.7658,0.4,0.5255,0.3866,0.1194,0.0,0.1105,0.0,0.0,0.0,0.0
+6,several people are playing a game of dodgeball and throwing balls at each other .,0.0,a women is playing darts in a club while music plays,1.0,1.0,1.0,1.0,0.2114,0.8139,0.8397,0.4726,0.3413,0.1906,0.0311,0.0,0.0609,0.0,0.0,0.0,0.0

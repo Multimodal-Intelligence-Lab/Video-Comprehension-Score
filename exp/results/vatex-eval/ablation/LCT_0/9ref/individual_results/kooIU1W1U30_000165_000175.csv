@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a kid with shaved head is polishing their black boot .,0.5802,a young boy is showing how to polish a boot,5.0,5.0,5.0,5.0,0.6933,0.8728,1.0,1.0,0.9672,0.9612,0.6486,0.6571,0.6892,0.6455,0.6409,0.5939,0.5802
+2,a man is sitting on a couch and showing off his hat .,0.0,a boy is polishing his black doc martins and describing what he does .,4.0,2.0,3.0,3.0,0.1299,0.812,1.0,0.8644,0.8788,0.8407,0.0,0.0,0.0864,0.0,0.0,0.0,0.0
+3,a young boy is showing off his hat and talking about it .,0.343,a young boy is showing how to polish a boot,4.0,4.0,4.0,4.0,0.4197,0.8913,1.0,1.0,1.0,1.0,0.343,0.4197,0.4197,0.4197,0.343,0.343,0.343
+4,a man is polishing a pair of boots while giving verbal instructions .,0.6358,a boy polishes a pair of boots while explaining what he is doing .,5.0,4.0,4.0,4.3333,0.7301,0.8855,0.9804,0.8571,0.84,0.816,0.6952,0.6851,0.7166,0.6775,0.6799,0.6444,0.6358
+5,a pair of young hands are demonstrating the proper way to polish a military style boot with black shoe polish .,0.6363,a young boy is showing how to polish a boot,5.0,4.0,5.0,4.6667,0.7359,0.888,0.9503,0.9384,0.9125,0.8949,0.6887,0.6994,0.687,0.6771,0.6475,0.6615,0.6363
+6,a man is teaching how to clean and polish a shoe,0.4551,a kid showing the process to polishing his boots .,4.0,4.0,4.0,4.0,0.6699,0.8692,1.0,1.0,1.0,1.0,0.6202,0.5556,0.6492,0.5556,0.5964,0.4782,0.4551

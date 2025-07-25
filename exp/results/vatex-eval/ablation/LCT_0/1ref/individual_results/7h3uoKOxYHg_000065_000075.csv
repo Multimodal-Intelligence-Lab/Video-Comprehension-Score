@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is playing with trains on a table with a little boy .,0.0,"the little boy thinks his wooden train is a "" christmas train "" .",5.0,5.0,5.0,5.0,0.4876,0.8687,0.5556,0.2612,0.0,0.0,0.4101,0.0,0.0776,0.0,0.0,0.0,0.0
+2,a little boy is playing with a toy train set .,0.5109,"the little boy thinks his wooden train is a "" christmas train "" .",5.0,5.0,5.0,5.0,0.6702,0.8849,0.9404,0.7876,0.762,0.7311,0.6273,0.5812,0.6493,0.5672,0.6037,0.5268,0.5109
+3,a young boy is playing with a toy train set .,0.3889,"the little boy thinks his wooden train is a "" christmas train "" .",5.0,5.0,5.0,5.0,0.6024,0.8538,0.9404,0.7876,0.762,0.7212,0.5343,0.4952,0.5772,0.4782,0.5048,0.4087,0.3889
+4,kids pull trains out of a toy box and set up a train set together .,0.0,"the little boy thinks his wooden train is a "" christmas train "" .",4.0,2.0,4.0,3.3333,0.4638,0.8211,0.9243,0.526,0.5387,0.4382,0.347,0.0,0.4199,0.0047,0.2935,0.0,0.0
+5,a young boy is playing with his thomas the train set on the floor of a living room .,0.1012,"the little boy thinks his wooden train is a "" christmas train "" .",4.0,4.0,4.0,4.0,0.4793,0.8226,0.936,0.6815,0.7042,0.6404,0.3671,0.236,0.4437,0.2607,0.3238,0.0713,0.1012
+6,a child is sitting on the floor playing with his toy train set .,0.0402,"the little boy thinks his wooden train is a "" christmas train "" .",4.0,4.0,4.0,4.0,0.489,0.8206,0.8309,0.5323,0.6489,0.5721,0.3772,0.0399,0.3849,0.2124,0.2504,0.0,0.0402

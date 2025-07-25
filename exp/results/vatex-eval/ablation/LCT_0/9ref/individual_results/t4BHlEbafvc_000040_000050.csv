@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young woman is applying a yellow crusty cream to her face .,0.4211,a young woman is rubbing a yellow facial treatment on her face while another woman describes the ingredients and benefits of the treatment .,5.0,5.0,5.0,5.0,0.6988,0.8752,0.9206,0.8508,0.8512,0.823,0.6559,0.4714,0.638,0.4567,0.5864,0.3735,0.4211
+2,a woman is demonstrating how to apply cream to her face .,0.6465,a woman demonstrates how to properly apply a facial mask .,5.0,5.0,4.0,4.6667,0.7319,0.917,1.0,1.0,0.8994,0.8867,0.7076,0.6811,0.7319,0.6758,0.7076,0.6523,0.6465
+3,a woman is demonstrating how to apply a facial cream to her face .,0.7101,a woman demonstrates how to properly apply a facial mask .,5.0,5.0,4.0,4.6667,0.7867,0.9282,0.9425,0.8807,0.8338,0.802,0.7702,0.6326,0.7618,0.7309,0.7434,0.6247,0.7101
+4,a lady is showing how to apply face cream on her face .,0.5884,a woman demonstrates how to properly apply a facial mask .,5.0,5.0,4.0,4.6667,0.7268,0.8889,0.9599,0.7929,0.8016,0.7666,0.6839,0.5936,0.6819,0.6358,0.6396,0.5411,0.5884
+5,a woman is demonstrating the proper way to apply a facial cream .,0.7837,a woman demonstrates how to properly apply a facial mask .,5.0,5.0,4.0,4.6667,0.7986,0.9308,1.0,1.0,1.0,1.0,0.7837,0.7986,0.7986,0.7986,0.7837,0.7837,0.7837
+6,a women is applying moisturising cream on her face,0.4284,a woman rubs skin cream on her face while a woman narrates .,5.0,4.0,4.0,4.3333,0.7186,0.8815,0.941,0.9149,0.8686,0.8451,0.6807,0.5709,0.6789,0.5008,0.6263,0.5086,0.4284

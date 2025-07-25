@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl moves blankets and pillows around to demonstrate how she makes a bed .,0.3024,a girl is inside of her bedroom making her bed .,4.0,5.0,5.0,4.6667,0.6501,0.867,0.9831,0.9234,0.9284,0.9056,0.5956,0.3967,0.6079,0.3723,0.5467,0.3346,0.3024
+2,a woman is laying on a bed and she is laying on a bed .,0.1883,"a young woman picks a purse off a bed , then attempts to straighten the sheet and picks up a pillow .",2.0,2.0,1.0,1.6667,0.5364,0.8525,0.9649,0.8571,0.871,0.8423,0.4529,0.3309,0.4897,0.325,0.3977,0.1995,0.1883
+3,a woman is laying on a bed and a woman is talking to her .,0.0,a girl is inside of her bedroom making her bed .,2.0,2.0,1.0,1.6667,0.4008,0.8702,0.88,0.6133,0.5675,0.4534,0.2972,0.0,0.2255,0.0,0.0711,0.0,0.0
+4,a lady folds a sheet and then makes a bed in a room,0.0929,a messy bed is shown as a girl walking around it removes bedding and talks .,4.0,4.0,4.0,4.0,0.7573,0.8694,0.9714,0.855,0.8348,0.7876,0.7209,0.3112,0.5828,0.2946,0.5119,0.2232,0.0929
+5,the ladies are doing a demonstration on how to make beds properly .,0.0346,"in a bedroom , a girl throws a bag on the floor and then grabs sheets to straighten them .",5.0,5.0,4.0,4.6667,0.4648,0.822,0.9677,0.9387,0.8747,0.8321,0.3339,0.3339,0.4313,0.2851,0.2921,0.1004,0.0346
+6,a woman is shown making a bed while explaining how to do it .,0.1582,a girl is inside of her bedroom making her bed .,5.0,5.0,5.0,5.0,0.5666,0.8819,0.9216,0.7638,0.764,0.709,0.4789,0.2621,0.5251,0.2624,0.4245,0.09,0.1582

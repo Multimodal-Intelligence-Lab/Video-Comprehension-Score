@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is demonstrating how to remove power cables from the back of a pc .,0.6253,a man removes the power supply cables from a computer tower,5.0,5.0,4.0,4.6667,0.7476,0.9016,1.0,0.8644,0.8788,0.855,0.7201,0.5208,0.7176,0.6616,0.6868,0.5025,0.6253
+2,a person is demonstrating how to use a computer machine .,0.2644,a man demonstrates working on a desktop computer case with music playing .,3.0,4.0,4.0,3.6667,0.4604,0.8494,1.0,0.8819,0.8923,0.865,0.3648,0.3882,0.4247,0.3752,0.3227,0.2797,0.2644
+3,a man is demonstrating how to install a computer .,0.2927,a man demonstrates working on a desktop computer case with music playing .,3.0,4.0,4.0,3.6667,0.6033,0.8707,0.9524,0.8635,0.8244,0.7884,0.5329,0.4483,0.5834,0.3842,0.5096,0.3664,0.2927
+4,a person is removing an electrical fan component from an open computer .,0.4559,a man removes the power supply cables from a computer tower,4.0,5.0,4.0,4.3333,0.6695,0.8516,0.9756,0.8644,0.8611,0.829,0.609,0.4972,0.5936,0.5454,0.5136,0.3983,0.4559
+5,a person takes the cpu fan off a motherboard in a computer and then releases the cpu latch .,0.1343,a person was doing step by step cables removing from the cpu by plunging out the cable,2.0,2.0,3.0,2.3333,0.634,0.8425,0.9082,0.7767,0.7722,0.7189,0.5525,0.2705,0.5922,0.2663,0.5014,0.131,0.1343
+6,someone has taken apart a computer and is showing the inside of it .,0.5883,a woman had taken the side panel off a computer tower and is showing how to remove the wires .,5.0,5.0,5.0,5.0,0.6481,0.8637,0.9851,1.0,0.9895,0.9878,0.5926,0.6481,0.6428,0.6444,0.5864,0.5926,0.5883

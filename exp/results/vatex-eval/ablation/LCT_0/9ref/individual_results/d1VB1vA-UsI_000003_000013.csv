@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man dances to an electronic song whilst it plays in the background .,0.0,a man kneeling down holding and playing a large instrument by them selves,2.0,2.0,5.0,3.0,0.3695,0.8011,0.9787,0.8057,0.8117,0.7558,0.2129,0.0,0.1902,0.0,0.0,0.0,0.0
+2,a man is sitting on a couch and playing a musical instrument .,0.0758,a male is crouched down and blowing into a device that he modified to make a noise .,4.0,3.0,4.0,3.6667,0.4313,0.8623,1.0,0.8723,0.8863,0.8487,0.3405,0.2941,0.4075,0.3053,0.313,0.061,0.0758
+3,a man is sitting in a chair and playing a musical instrument .,0.0,a man kneeling down holding and playing a large instrument by them selves,4.0,3.0,5.0,4.0,0.4181,0.8579,0.9831,0.8529,0.8781,0.8311,0.3218,0.1039,0.3938,0.0966,0.2934,0.0,0.0
+4,a man is playing a musical instrument with his mouth blowing .,0.399,a male slowly holds up a large musical instrument and then blows air into one end of it .,5.0,5.0,5.0,5.0,0.6528,0.8711,0.9167,0.7647,0.7827,0.7029,0.5962,0.462,0.6179,0.4833,0.5555,0.3732,0.399
+5,a man is blowing into a type of instrument and making a deep vibrating sound .,0.1377,a male is crouched down and blowing into a device that he modified to make a noise .,5.0,5.0,5.0,5.0,0.6735,0.8435,1.0,0.8529,0.8809,0.8416,0.6065,0.261,0.6364,0.2172,0.5689,0.1859,0.1377
+6,a man with glasses plays into an instrument that he has in his hands,0.4488,a person with glasses puts their mouth to a very large musical instrument in a room,5.0,5.0,5.0,5.0,0.5954,0.857,0.9756,0.8819,0.8784,0.8401,0.5236,0.5412,0.569,0.5318,0.4926,0.4599,0.4488

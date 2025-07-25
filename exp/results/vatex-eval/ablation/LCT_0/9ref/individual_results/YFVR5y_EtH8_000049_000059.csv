@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young boy gives a foot massage or cleaning service,0.5257,the little boy is giving the guy a foot bath and a good massage,5.0,5.0,5.0,5.0,0.785,0.888,0.9386,0.7584,0.7189,0.6692,0.7579,0.5691,0.7683,0.5455,0.7391,0.5304,0.5257
+2,a man and a woman are sitting on the floor and they are washing their feet .,0.0729,"a young man is sitting down , massaging another 's feet .",4.0,1.0,4.0,3.0,0.4975,0.8714,0.9004,0.5936,0.6933,0.6481,0.4223,0.0099,0.4409,0.1921,0.3572,0.0,0.0729
+3,a group of children are sitting on the ground and washing their feet .,0.0878,"a young man is sitting down , massaging another 's feet .",4.0,4.0,5.0,4.3333,0.5158,0.8662,0.9583,0.7414,0.836,0.8035,0.4039,0.1418,0.445,0.239,0.3593,0.0,0.0878
+4,a row of robed children sit in chairs while robed men wash their feet .,0.0,a boy doing pedicure to a person by placing his feet in a tub of water and scrubbing,4.0,1.0,5.0,3.3333,0.5353,0.8415,0.8665,0.5555,0.5478,0.4191,0.441,0.1379,0.4291,0.0,0.3215,0.0,0.0
+5,a priest is washing the feet of a young male .,0.0841,a little boy rubbing and cleaning the feet of someone sitting in a chair .,4.0,1.0,4.0,3.0,0.5391,0.8663,0.8947,0.8983,0.8275,0.7866,0.4679,0.3668,0.37,0.2513,0.2727,0.2256,0.0841
+6,a young person is sitting in the floor with legs cross massaging their feet,0.1293,a person sits in a chair as a boy holds their leg up and washing their foot .,5.0,4.0,4.0,4.3333,0.6385,0.9242,0.9139,0.7017,0.7395,0.6949,0.6089,0.3027,0.6045,0.2564,0.5721,0.1715,0.1293

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is talking to the camera using sign language .,0.6954,a man is conveying a message using only sign language .,5.0,5.0,5.0,5.0,0.7432,0.9257,0.9787,0.8515,0.9107,0.9035,0.7226,0.6984,0.7376,0.718,0.7166,0.6742,0.6954
+2,a man is standing in front of a camera and doing sign language .,0.5889,a man is conveying a message using only sign language .,5.0,5.0,5.0,5.0,0.7011,0.8698,0.9583,0.7414,0.836,0.8115,0.6563,0.5968,0.6881,0.6424,0.6414,0.5365,0.5889
+3,a young man is demonstrating how to do a magic trick .,0.0,a man is conveying a message using only sign language .,4.0,1.0,3.0,2.6667,0.2074,0.7915,0.941,0.6951,0.5991,0.4934,0.0,0.0,0.1577,0.0,0.0,0.0,0.0
+4,a man does sign language to tell what the passage says .,0.615,a man is conveying a message using only sign language .,4.0,3.0,3.0,3.3333,0.7674,0.8831,0.75,0.6857,0.7164,0.6789,0.7366,0.5905,0.6742,0.6305,0.6488,0.5733,0.615
+5,a man dressed in white is using sign language to say something .,0.495,a man is conveying a message using only sign language .,5.0,5.0,5.0,5.0,0.7272,0.9055,0.8654,0.6851,0.6472,0.6104,0.6987,0.567,0.6847,0.5148,0.6518,0.5493,0.495
+6,a man is performing sign language and moving his hands .,0.593,a man is conveying a message using only sign language .,5.0,5.0,5.0,5.0,0.8351,0.8803,0.812,0.5692,0.6693,0.6243,0.8126,0.4841,0.7748,0.6039,0.7686,0.4699,0.593

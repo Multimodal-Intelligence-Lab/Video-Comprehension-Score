@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is showing how she prepares to bind an album .,0.4386,a woman is showing how to make hard book covers .,4.0,5.0,5.0,4.6667,0.6117,0.8364,1.0,0.8408,0.827,0.7932,0.5357,0.5381,0.6117,0.5304,0.5357,0.4478,0.4386
+2,a woman is demonstrating how to fold a piece of paper .,0.4308,a woman is showing how to make hard book covers .,4.0,5.0,4.0,4.3333,0.518,0.8467,1.0,1.0,1.0,1.0,0.4308,0.518,0.518,0.518,0.4308,0.4308,0.4308
+3,a woman is demonstrating how to bind a piece of paper .,0.5211,a woman is showing how to make hard book covers .,5.0,5.0,4.0,4.6667,0.5944,0.8469,1.0,1.0,1.0,1.0,0.5211,0.5944,0.5944,0.5944,0.5211,0.5211,0.5211
+4,a person demonstrates decorative writing on a piece of paper using a sharpie marker .,0.0,a woman is showing how to make hard book covers .,3.0,2.0,2.0,2.3333,0.2358,0.7806,0.9706,0.6091,0.6479,0.5489,0.021,0.0,0.2126,0.0,0.0,0.0,0.0
+5,a woman is writing something down on paper using a fine tip sharpie .,0.0,a woman is showing how to make hard book covers .,2.0,2.0,2.0,2.0,0.234,0.7952,0.9655,0.7752,0.79,0.7359,0.0366,0.0119,0.2066,0.0303,0.0022,0.0,0.0
+6,a person lines up tape on the edge of a book and then the tape roll is zoomed in on .,0.0,a woman is showing how to make hard book covers .,2.0,2.0,1.0,1.6667,0.3506,0.7964,0.9497,0.7551,0.7619,0.7011,0.1845,0.14,0.3162,0.1477,0.1414,0.0,0.0

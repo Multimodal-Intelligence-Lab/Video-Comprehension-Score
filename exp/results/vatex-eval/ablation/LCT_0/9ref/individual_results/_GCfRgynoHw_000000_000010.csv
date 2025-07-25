@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a woman walks across the floor , then a man steps up and raises his arms while people are cheering .",0.5275,a woman walks up to the front of a stage while a crowd cheers for her .,5.0,5.0,5.0,5.0,0.6072,0.8691,0.9773,1.0,0.9822,0.979,0.5359,0.6072,0.5966,0.6001,0.5234,0.5359,0.5275
+2,a group of people are dancing on a stage in front of a crowd .,0.2551,two people stand on a stage while a large audience cheers,2.0,4.0,4.0,3.3333,0.4468,0.8609,1.0,0.9187,0.8863,0.8643,0.3398,0.3658,0.4468,0.3758,0.3398,0.2431,0.2551
+3,a woman is standing in front of a group of people .,0.432,a woman walks up to the front of a stage while a crowd cheers for her .,4.0,4.0,5.0,4.3333,0.5174,0.8538,1.0,1.0,1.0,1.0,0.432,0.5174,0.5174,0.5174,0.432,0.432,0.432
+4,people are cheering as a man is welcomed on stage .,0.1672,people are cheering for people on stage in an auditorium with a man happily moving his hands in the air .,4.0,3.0,5.0,4.0,0.6924,0.9227,0.9841,0.8723,0.8998,0.8783,0.6666,0.357,0.6139,0.2939,0.5815,0.261,0.1672
+5,several people are on stage clapping and cheering as a crowd also starts to clap .,0.5259,people are cheering for people on stage in an auditorium with a man happily moving his hands in the air .,4.0,4.0,4.0,4.0,0.7083,0.847,0.9873,0.8041,0.8409,0.8055,0.6546,0.5846,0.6808,0.5996,0.622,0.5106,0.5259
+6,a person is standing on a stage in a crowd cheering and they stand on the peoples hands .,0.3173,a woman walks up to the front of a stage while a crowd cheers for her .,3.0,4.0,4.0,3.6667,0.6596,0.8821,0.9061,0.8462,0.7326,0.6887,0.6095,0.4923,0.5926,0.4136,0.5326,0.409,0.3173

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl in a red shirt and black hat dancing in front of a wall .,0.0,a girl dances in front of a chair while out in public .,5.0,4.0,5.0,4.6667,0.4132,0.859,0.7958,0.5353,0.4601,0.3715,0.3169,0.0,0.2627,0.0,0.1417,0.0,0.0
+2,a young man is dancing to music in a room .,0.0,a girl dances in front of a chair while out in public .,3.0,3.0,3.0,3.0,0.2834,0.7872,0.8426,0.2071,0.3325,0.1521,0.0897,0.0,0.1495,0.0,0.0,0.0,0.0
+3,a man wearing a hat is dancing to a song .,0.0,a girl dances in front of a chair while out in public .,4.0,3.0,4.0,3.6667,0.2602,0.7731,0.8125,0.1768,0.2904,0.0821,0.043,0.0,0.0895,0.0,0.0,0.0,0.0
+4,a little girl is shown performing a dance in front of an adult .,0.0,a girl dances in front of a chair while out in public .,4.0,4.0,4.0,4.0,0.474,0.8655,0.8327,0.5129,0.3913,0.2967,0.3922,0.0,0.3683,0.0,0.2701,0.0,0.0
+5,on a tile floor a little girl is dancing to music and jumping around .,0.0,a girl dances in front of a chair while out in public .,4.0,3.0,3.0,3.3333,0.384,0.801,0.8163,0.8445,0.7452,0.6819,0.231,0.2706,0.2454,0.1734,0.058,0.0893,0.0
+6,a girl is showing the camera her disco dress that is sitting on a bag,0.0,a girl dances in front of a chair while out in public .,4.0,3.0,3.0,3.3333,0.2931,0.7916,0.9756,0.3764,0.2387,0.0382,0.107,0.0,0.2754,0.0,0.0846,0.0,0.0

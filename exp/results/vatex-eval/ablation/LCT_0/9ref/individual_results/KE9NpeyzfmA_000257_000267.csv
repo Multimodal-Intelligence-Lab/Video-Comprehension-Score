@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man with a suit and tie plays a recorder into a microphone .,0.2201,older man with white hair and a white go-tee plays a light musical tune on a wooden wind instrument .,4.0,4.0,4.0,4.0,0.5799,0.901,1.0,0.9787,0.9753,0.9694,0.5338,0.3732,0.5237,0.371,0.4713,0.2228,0.2201
+2,a woman is playing a flute in front of a camera .,0.5282,a man plays a flute into a microphone as he is recorded .,4.0,4.0,2.0,3.3333,0.6108,0.8881,1.0,1.0,1.0,1.0,0.5282,0.6108,0.6108,0.6108,0.5282,0.5282,0.5282
+3,a young man is singing a song on a microphone .,0.0,older man with glasses plays a wooden flute in front of a microphone .,3.0,4.0,3.0,3.3333,0.407,0.8889,1.0,1.0,1.0,1.0,0.3329,0.0507,0.1957,0.0469,0.0952,0.0,0.0
+4,"a man plays a hand flute , a sweet and mellow tune is being played with it .",0.3974,a man plays a flute into a microphone as he is recorded .,5.0,5.0,4.0,4.6667,0.6039,0.8891,0.913,0.7894,0.7676,0.7099,0.5546,0.475,0.5662,0.4642,0.5121,0.4095,0.3974
+5,a man playing a flute with head phones on while he plays .,0.3621,a man is sitting in front of a microphone playing the flute .,4.0,4.0,4.0,4.0,0.6837,0.8904,0.9162,0.8723,0.8228,0.7868,0.6448,0.572,0.6156,0.4066,0.5683,0.5194,0.3621
+6,a man is playing a wooden flute type of instrument while a guitar and drums are also being played .,0.2509,a man plays a flute into a microphone as he is recorded .,4.0,3.0,3.0,3.3333,0.5603,0.8644,0.9024,0.769,0.7446,0.6981,0.4877,0.3865,0.4464,0.3664,0.3455,0.2746,0.2509

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the boy is taking he charger out of the package .,0.4492,a kid is opening a box that has a charger in it .,5.0,5.0,5.0,5.0,0.759,0.8503,0.963,0.9289,0.7571,0.6919,0.7166,0.4847,0.6988,0.48,0.6458,0.363,0.4492
+2,a person is showing how to pack a box with a knife .,0.127,a person picking up different pieces of items in boxes by themselves,4.0,2.0,3.0,3.0,0.3538,0.8555,1.0,1.0,1.0,1.0,0.2133,0.299,0.3198,0.2833,0.1719,0.1806,0.127
+3,a person is opening a box and then opens it up .,0.3598,a kid is opening a box that has a charger in it .,5.0,5.0,5.0,5.0,0.6035,0.9124,1.0,1.0,1.0,1.0,0.56,0.4931,0.5552,0.4419,0.5064,0.3984,0.3598
+4,a person is opening a box and then displaying the items inside the box to the camera .,0.3314,someone is opening a box of an electronic gadget sitting on their bed .,5.0,5.0,5.0,5.0,0.5951,0.8813,0.9658,0.7938,0.8714,0.8397,0.5311,0.4174,0.5664,0.4328,0.4936,0.3197,0.3314
+5,a man is helping a little boy open a package on the floor .,0.3397,a young child is opening a package while telling what it is .,5.0,3.0,4.0,4.0,0.4716,0.8556,1.0,1.0,0.9377,0.927,0.3808,0.4716,0.4305,0.4365,0.3328,0.3808,0.3397
+6,a person is giving a kid a gift and is unboxing it .,0.2523,a child is opening a package and pulling out the various components of a gaming system .,5.0,2.0,3.0,3.3333,0.6035,0.8399,1.0,1.0,1.0,1.0,0.5279,0.4216,0.5435,0.404,0.4492,0.2744,0.2523

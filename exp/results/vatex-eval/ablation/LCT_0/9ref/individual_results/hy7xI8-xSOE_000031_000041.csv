@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people are watching others jump up and down .,0.0462,a trio is demonstrating a stomping technique on an elevated stage,5.0,5.0,5.0,5.0,0.5013,0.8634,1.0,1.0,1.0,1.0,0.4168,0.2961,0.4188,0.2961,0.3268,0.1048,0.0462
+2,a group of people are standing on a platform and one of them is walking on a rope .,0.0659,a group of people are participating in a grape stomping contest .,4.0,1.0,4.0,3.0,0.3027,0.8451,1.0,1.0,1.0,1.0,0.0815,0.2286,0.2585,0.2286,0.0659,0.0659,0.0659
+3,a group of people are watching a man walk on a tightrope .,0.0,several people engage in a competition to stomp something on a patio .,3.0,1.0,3.0,2.3333,0.1675,0.8394,0.9804,0.9737,0.9743,0.9646,0.0047,0.1084,0.1165,0.1124,0.0,0.0,0.0
+4,a group of people stomping on grapes in a big bin .,0.4491,a group of people are competing in a grape crushing competition with their feet,5.0,5.0,4.0,4.6667,0.7602,0.9115,1.0,1.0,1.0,1.0,0.7369,0.5304,0.7321,0.526,0.7061,0.4542,0.4491
+5,"at an outdoor athletics event , people are running the 110 metre hurdles when one person falls while a crowd watch on from the stand .",0.0,several people engage in a competition to stomp something on a patio .,3.0,1.0,3.0,2.3333,0.237,0.8008,0.9375,0.979,0.9156,0.892,0.0374,0.0635,0.1644,0.0,0.0,0.0,0.0
+6,a group of people are in a large bucket outdoors bouncing up and down to music .,0.0,several people engage in a competition to stomp something on a patio .,4.0,4.0,4.0,4.0,0.5301,0.8361,1.0,0.8723,0.8863,0.861,0.4279,0.1586,0.4702,0.1719,0.3523,0.0,0.0

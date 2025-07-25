@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a small child tries to put on their shoes by slipping into them and it the child is having marginal success .,0.5492,a little boy is struggling to put his shoes on .,5.0,5.0,5.0,5.0,0.775,0.8867,0.9744,0.9708,0.9163,0.8994,0.7452,0.6819,0.7047,0.6097,0.6677,0.6618,0.5492
+2,a little girl is sitting on the floor and putting on her toes .,0.3202,"a little kid is standing in front of a chair , and trying to put on his shoes .",4.0,4.0,1.0,3.0,0.4958,0.8518,1.0,1.0,0.9872,0.9847,0.408,0.4391,0.4527,0.4318,0.3199,0.3289,0.3202
+3,a little boy is trying to put on his shoes .,0.9598,a little boy is struggling to put his shoes on .,5.0,5.0,5.0,5.0,0.9609,0.9725,1.0,1.0,1.0,1.0,0.9598,0.9609,0.9609,0.9609,0.9598,0.9598,0.9598
+4,a child is kneeling on a carpet floor tying a shoe .,0.2317,a child is putting their feet inside of a pair of shoes .,4.0,4.0,2.0,3.3333,0.4935,0.8327,1.0,0.8589,0.8637,0.8326,0.3789,0.3629,0.448,0.3664,0.3371,0.2177,0.2317
+5,a young boy puts his shoe on and realizes that it might not be tied correctly but he gets up anyway .,0.2917,a child puts on his shoes while holding onto a chair .,5.0,3.0,3.0,3.6667,0.6207,0.8339,0.9202,0.8352,0.8149,0.7644,0.5451,0.4072,0.5366,0.4166,0.4288,0.2803,0.2917
+6,a kid is cleaning their gym shoes and putting in shoe laces .,0.1242,"a little kid is standing in front of a chair , and trying to put on his shoes .",2.0,2.0,2.0,2.0,0.5816,0.8817,0.9048,0.7304,0.7059,0.6543,0.5255,0.2801,0.5246,0.2551,0.4608,0.1536,0.1242

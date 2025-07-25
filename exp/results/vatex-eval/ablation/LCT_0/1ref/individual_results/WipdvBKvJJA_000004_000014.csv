@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,people work on making balloons while at an office party .,0.0,a group of people are gathered around one guy with a balloon .,4.0,5.0,5.0,4.6667,0.4343,0.8239,0.9199,0.7257,0.6855,0.6183,0.3134,0.2205,0.3851,0.1748,0.2536,0.0539,0.0
+2,a man is sitting on a chair while another man is eating a piece of food .,0.0,a group of people are gathered around one guy with a balloon .,2.0,2.0,3.0,2.3333,0.0805,0.7742,0.9279,0.4571,0.4187,0.2492,0.0,0.0,0.0091,0.0,0.0,0.0,0.0
+3,a man is sitting on a chair and is eating a snake .,0.0,a group of people are gathered around one guy with a balloon .,2.0,2.0,2.0,2.0,0.0697,0.7575,0.8752,0.5751,0.4902,0.3269,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,a balloon maker demonstrating how to make different items with balloons,0.1224,a group of people are gathered around one guy with a balloon .,1.0,1.0,3.0,1.6667,0.4447,0.8067,0.7527,0.8188,0.7844,0.7327,0.3116,0.3218,0.2623,0.2921,0.0855,0.1593,0.1224
+5,a man uses several breaths to blow up a large balloon,0.0059,a group of people are gathered around one guy with a balloon .,2.0,4.0,4.0,3.3333,0.4544,0.8044,0.8746,0.5593,0.6823,0.6051,0.3217,0.0246,0.3762,0.2004,0.2245,0.0,0.0059
+6,a man explains how to create balloon animals by squeezing and twisting a balloon .,0.0,a group of people are gathered around one guy with a balloon .,2.0,2.0,3.0,2.3333,0.4387,0.8079,0.8521,0.3921,0.3056,0.1404,0.3052,0.0,0.3412,0.0,0.1845,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of kids play some instruments that they have on the stage,0.575,a group of children play instruments while the teacher guides them .,5.0,4.0,5.0,4.6667,0.6098,0.9181,1.0,1.0,1.0,1.0,0.575,0.6098,0.6098,0.6098,0.575,0.575,0.575
+2,a group of people are playing instruments on a stage .,0.3601,a group of children play instruments while the teacher guides them .,5.0,5.0,5.0,5.0,0.4592,0.8874,1.0,1.0,1.0,1.0,0.3906,0.4393,0.4393,0.4393,0.3601,0.3601,0.3601
+3,a group of girls are playing a song on a stage .,0.2377,a group of children play instruments while the teacher guides them .,5.0,4.0,5.0,4.6667,0.4205,0.8821,1.0,1.0,1.0,1.0,0.2977,0.402,0.4205,0.3805,0.2762,0.2686,0.2377
+4,a group of children in a band practice playing the flute along with drums .,0.2267,children play flutes on stage in front of an audience as their teacher directs them .,4.0,4.0,4.0,4.0,0.6871,0.881,0.9831,1.0,0.9872,0.9831,0.6448,0.3579,0.6032,0.3496,0.5496,0.2213,0.2267
+5,a young boy is playing an instrument on stage for a small audience .,0.265,young students perform clarinet on a stage with a teacher .,5.0,3.0,4.0,4.0,0.4804,0.8569,1.0,1.0,1.0,1.0,0.3893,0.3831,0.4549,0.3849,0.3486,0.2532,0.265
+6,a child is playing a clarinet in front of an audience .,0.4412,young students perform clarinet on a stage with a teacher .,5.0,4.0,2.0,3.6667,0.6193,0.8922,1.0,1.0,1.0,1.0,0.5378,0.5472,0.6193,0.5397,0.5378,0.4503,0.4412

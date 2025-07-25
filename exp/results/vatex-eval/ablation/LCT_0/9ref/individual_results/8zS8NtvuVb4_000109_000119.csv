@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"two teenage girls sit on the bed , one sings while the other plays guitar .",0.8306,the teenage girl sits on the bed while she sings and strums her guitar .,5.0,5.0,5.0,5.0,0.917,0.9596,0.9873,1.0,0.9911,0.9903,0.9135,0.8463,0.9151,0.845,0.9116,0.8321,0.8306
+2,a man is sitting on a couch and playing a guitar .,0.2295,two women sit on a bed and sing while one plays a guitar .,4.0,3.0,4.0,3.6667,0.4188,0.8688,1.0,1.0,1.0,1.0,0.316,0.3755,0.4043,0.3549,0.2989,0.266,0.2295
+3,a woman is sitting in a chair and playing a guitar .,0.4489,two women sit on a bed and sing while one plays a guitar .,4.0,4.0,4.0,4.0,0.5357,0.8829,1.0,1.0,1.0,1.0,0.4661,0.5357,0.5159,0.5207,0.4434,0.4661,0.4489
+4,a girl on stage sings a song while playing keyboard .,0.1268,two teenange girls are singing a song while one of them is playing a guitar .,4.0,3.0,4.0,3.6667,0.436,0.8759,0.9599,0.7824,0.7761,0.7409,0.3561,0.2514,0.3717,0.2453,0.273,0.1338,0.1268
+5,a girl with long black hair is sitting down playing a tune on her guitar .,0.0,the teenage girl sits on the bed while she sings and strums her guitar .,4.0,4.0,4.0,4.0,0.4832,0.9067,0.9264,0.5497,0.5153,0.4182,0.409,0.0,0.4224,0.0,0.3164,0.0,0.0
+6,two young girls are sitting playing a hand clapping game while singing a song .,0.3641,two girls sit on a bed while they sing a song together .,4.0,4.0,4.0,4.0,0.5198,0.9036,0.9443,0.8461,0.8567,0.8374,0.4553,0.4325,0.4915,0.4395,0.4231,0.3561,0.3641

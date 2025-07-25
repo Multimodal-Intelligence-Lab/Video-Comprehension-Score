@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young girl says her name into the camera and announces she'll play her recorder .,0.314,a girl named hannah is saying that she is going to be playing her recorder .,5.0,5.0,3.0,4.3333,0.7328,0.8784,0.9123,0.5159,0.5227,0.4566,0.6958,0.3393,0.7071,0.3486,0.6665,0.3042,0.314
+2,a young girl is demonstrating how to make a balloon animal .,0.0,a girl named hannah is saying that she is going to be playing her recorder .,4.0,4.0,2.0,3.3333,0.2617,0.7763,0.9386,0.6563,0.6207,0.5114,0.0489,0.0,0.2133,0.0,0.0,0.0,0.0
+3,a young girl is playing with a pink balloon and talking about it .,0.0,a girl named hannah is saying that she is going to be playing her recorder .,4.0,4.0,4.0,4.0,0.2947,0.8316,0.8356,0.3278,0.1182,0.0,0.1519,0.0,0.1559,0.0,0.0,0.0,0.0
+4,a tiny girl is singing while playing her toy xylophone,0.0,a girl named hannah is saying that she is going to be playing her recorder .,3.0,3.0,1.0,2.3333,0.2446,0.8211,0.9004,0.7564,0.7036,0.639,0.08,0.0014,0.161,0.0,0.0,0.0,0.0
+5,a young child practicing playing the recorder as he looks at his notes while people watch him,0.0,a girl named hannah is saying that she is going to be playing her recorder .,4.0,3.0,2.0,3.0,0.4621,0.8239,0.825,0.6059,0.5782,0.488,0.3471,0.1122,0.348,0.0696,0.2086,0.0,0.0
+6,a girl taps on the tubes of a pan flute then blows along the edge of each,0.0,a girl named hannah is saying that she is going to be playing her recorder .,2.0,2.0,2.0,2.0,0.3353,0.7681,0.9424,0.7684,0.7699,0.7004,0.1346,0.135,0.2947,0.1366,0.0817,0.0,0.0

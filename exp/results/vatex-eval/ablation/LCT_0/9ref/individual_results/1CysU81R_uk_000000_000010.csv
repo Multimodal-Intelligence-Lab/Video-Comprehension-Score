@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a little boy walks up to mickey mouse across the room and they hug , as people talk .",0.8381,a little boy goes up to mickey mouse to give him a hug while a woman speaks .,5.0,5.0,5.0,5.0,0.854,0.9106,1.0,1.0,1.0,1.0,0.8381,0.854,0.854,0.854,0.8381,0.8381,0.8381
+2,a little girl is walking around a room with a baby in her hands .,0.1551,a young boy walks across the room to meet a famous mouse .,1.0,2.0,2.0,1.6667,0.354,0.8367,1.0,1.0,0.9911,0.9889,0.2279,0.2853,0.3439,0.2931,0.2158,0.1459,0.1551
+3,a little boy and a little girl are walking around a room .,0.0,a baby boy hugs a mickey mouse mascot in fascination .,3.0,4.0,4.0,3.6667,0.4785,0.8603,0.922,0.6732,0.7454,0.6793,0.3938,0.1926,0.3561,0.0978,0.2516,0.0615,0.0
+4,a lady standing with a toddler boy seated at an organ helping him play some keys .,0.0,a baby boy hugs a mickey mouse mascot in fascination .,1.0,1.0,2.0,1.3333,0.244,0.7928,0.9665,0.7704,0.8003,0.7431,0.0465,0.0,0.1484,0.0,0.0,0.0,0.0
+5,a person is painting and brushing a kids face and micky mouse song is heard in the background .,0.1251,a little boy who is going up to hug mickey mouse .,2.0,1.0,2.0,1.6667,0.3924,0.8267,0.9808,0.91,0.8716,0.844,0.265,0.3101,0.341,0.2797,0.2003,0.1621,0.1251
+6,"the boy has his fingers stuck into a pair of miniature sneakers , as he moves them across the desk and describes a popular dance move .",0.0,a baby boy hugs a mickey mouse mascot in fascination .,2.0,2.0,2.0,2.0,0.3104,0.8222,0.9579,0.7941,0.8308,0.7839,0.1612,0.0152,0.2515,0.0809,0.0896,0.0,0.0

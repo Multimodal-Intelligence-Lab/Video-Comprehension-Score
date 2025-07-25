@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,an announcer is talking while people are play a game of cricket .,0.4605,a group of people are playing a competitive game of cricket .,5.0,5.0,5.0,5.0,0.6927,0.9073,0.9408,0.8295,0.8612,0.847,0.6533,0.4918,0.5762,0.5105,0.5219,0.4399,0.4605
+2,a group of people are playing baseball in a field .,0.3146,a group of people are playing a competitive game of cricket .,4.0,4.0,4.0,4.0,0.6147,0.8922,1.0,0.8412,0.827,0.8061,0.5444,0.3985,0.5506,0.3885,0.4685,0.3258,0.3146
+3,a group of people are playing a game of cricket .,0.9191,a group of people are playing a competitive game of cricket .,5.0,5.0,5.0,5.0,0.9206,0.9812,1.0,1.0,1.0,1.0,0.9191,0.9206,0.9206,0.9206,0.9191,0.9191,0.9191
+4,a group of men play a game of cricket outdoors .,0.6713,a group of people are playing a competitive game of cricket .,5.0,5.0,5.0,5.0,0.7562,0.9201,0.9762,0.9181,0.9309,0.9109,0.7351,0.6675,0.7277,0.6975,0.7041,0.6366,0.6713
+5,a person pitches a ball that is hit during a game of cricket .,0.3947,a group of people are playing a competitive game of cricket .,5.0,5.0,5.0,5.0,0.5653,0.8754,0.9583,0.761,0.836,0.8091,0.494,0.4137,0.5464,0.48,0.472,0.3175,0.3947
+6,a man waits for the ball then hits it in a game of cricket .,0.3357,a group of people are playing a competitive game of cricket .,5.0,5.0,5.0,5.0,0.5409,0.8588,0.9787,0.8515,0.9107,0.8931,0.4547,0.4062,0.4834,0.4448,0.3819,0.2895,0.3357

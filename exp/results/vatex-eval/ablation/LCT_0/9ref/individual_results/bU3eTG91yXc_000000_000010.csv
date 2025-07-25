@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"on a nice day , a man is cleaning a pool with a strainer .",0.2698,a man looks in the net he is using to clean his swimming pool .,5.0,5.0,5.0,5.0,0.653,0.873,0.9118,0.6445,0.5733,0.5083,0.6025,0.4403,0.59,0.3326,0.5275,0.355,0.2698
+2,a man is using a hose to clean the edge of a pool .,0.3317,a man is using a pool skimmer to clean out a small pool .,4.0,3.0,4.0,3.6667,0.5341,0.9163,0.9851,0.7926,0.8298,0.791,0.4915,0.4084,0.5037,0.3877,0.4583,0.3543,0.3317
+3,a man is using a hose to clean a pool .,0.4031,a man looks in the net he is using to clean his swimming pool .,4.0,4.0,4.0,4.0,0.5809,0.935,0.9818,0.8571,0.8814,0.8559,0.5498,0.4596,0.5599,0.4472,0.5248,0.4179,0.4031
+4,detergent is poured into a cap before a man is seen scrubbing the edges of a swimming pool .,0.0802,a man in matching blue shorts and shirt scoops something out of a pool with a net .,2.0,2.0,3.0,2.3333,0.494,0.8613,0.9286,0.7134,0.8069,0.7607,0.4125,0.1976,0.4122,0.2576,0.3176,0.0684,0.0802
+5,a man pours a cleaning product onto a sponge to clean the pool with .,0.261,a man looks in the net he is using to clean his swimming pool .,2.0,2.0,3.0,2.3333,0.5608,0.8682,0.9885,0.7984,0.8367,0.7965,0.4838,0.3652,0.5129,0.3622,0.4357,0.2645,0.261
+6,a man applies a cleaner to a sponge and uses it to start cleaning a pool .,0.2447,a man looks in the net he is using to clean his swimming pool .,4.0,2.0,3.0,3.0,0.5843,0.8739,1.0,0.7984,0.8431,0.8051,0.5098,0.3816,0.5207,0.3437,0.4483,0.2746,0.2447

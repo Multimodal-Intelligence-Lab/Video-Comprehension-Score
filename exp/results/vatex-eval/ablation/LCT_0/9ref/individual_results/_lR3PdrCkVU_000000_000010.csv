@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a small parrot sits on a mans arm and eats something out of his hand while people chat in the background .,0.4431,a parakeet is drinking water out of a mans hand while people in the background are watching and talking .,5.0,5.0,5.0,5.0,0.6956,0.8673,0.9228,0.6768,0.7183,0.6751,0.6329,0.4874,0.624,0.517,0.5665,0.4089,0.4431
+2,a woman is feeding a bird from a bottle of food .,0.5062,a person feeding a bird out of a cup while other people watch .,5.0,3.0,4.0,4.0,0.5737,0.8635,1.0,1.0,1.0,1.0,0.5062,0.5737,0.5737,0.5737,0.5062,0.5062,0.5062
+3,a person is feeding a bird out of a machine .,0.3028,a person is holding a cup of nectar while an exotic bird stands on his arm and drinks from it .,4.0,4.0,4.0,4.0,0.613,0.9187,1.0,1.0,1.0,1.0,0.5788,0.4163,0.5454,0.4163,0.5052,0.3407,0.3028
+4,a person is feeding the birds that are floating in the water .,0.2067,a man feeding a parrot whilst it is perched on his arm,4.0,4.0,4.0,4.0,0.5027,0.8918,1.0,1.0,1.0,1.0,0.4424,0.3612,0.453,0.3494,0.3866,0.2837,0.2067
+5,"a person holds an outstretched hand with some food in it , and birds land on the hand to get the food .",0.4305,a person is holding a colored bird as it eats from their hand .,5.0,5.0,5.0,5.0,0.7067,0.8888,1.0,0.8284,0.8726,0.8455,0.6684,0.4852,0.604,0.4972,0.5514,0.4168,0.4305
+6,a person feeding a few birds out of her bare hands .,0.1952,a person feeding a bird out of a cup while other people watch .,5.0,5.0,5.0,5.0,0.5148,0.8899,0.9677,0.8441,0.8034,0.7638,0.4548,0.3767,0.4663,0.2838,0.4002,0.2996,0.1952

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a gentleman is singing , dancing and playing an accordion while everyone else in the room watches .",0.2078,a man is having a fun time playing an accordion and he turns around to pick up a wine glass and sips some wine .,4.0,4.0,4.0,4.0,0.5164,0.7915,0.922,0.7335,0.7713,0.711,0.389,0.3407,0.4755,0.373,0.3374,0.167,0.2078
+2,a man is playing the accordion while another man plays the accordion .,0.3488,a man is having a fun time playing an accordion and he turns around to pick up a wine glass and sips some wine .,3.0,3.0,3.0,3.0,0.5356,0.8763,0.7864,0.9273,0.8138,0.7876,0.4701,0.4992,0.4095,0.4294,0.3262,0.4285,0.3488
+3,a man is playing a accordion while another man is playing the accordion .,0.3601,a man is having a fun time playing an accordion and he turns around to pick up a wine glass and sips some wine .,3.0,3.0,3.0,3.0,0.5405,0.8823,0.7864,0.9273,0.8138,0.789,0.4792,0.5045,0.4158,0.4354,0.3378,0.4384,0.3601
+4,a gentleman dances the macarena in front of a wall filled with glasses while the song plays in the background .,0.0,a man is having a fun time playing an accordion and he turns around to pick up a wine glass and sips some wine .,2.0,3.0,1.0,2.0,0.3112,0.7788,0.8998,0.6339,0.6797,0.5887,0.1156,0.0,0.2345,0.0,0.0171,0.0,0.0
+5,a man plays trombone as other instruments play along with him .,0.0,a man is having a fun time playing an accordion and he turns around to pick up a wine glass and sips some wine .,2.0,2.0,2.0,2.0,0.2524,0.8122,0.8824,0.7649,0.7743,0.7221,0.0795,0.0226,0.1527,0.0344,0.0,0.0,0.0
+6,a man plays a melodic tune on his accordion in his bedroom .,0.1433,a man is having a fun time playing an accordion and he turns around to pick up a wine glass and sips some wine .,4.0,4.0,2.0,3.3333,0.4835,0.8344,0.8614,0.7095,0.7226,0.6676,0.381,0.2719,0.4004,0.2852,0.2814,0.1274,0.1433

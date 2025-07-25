@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman outside in the snow skiing down the road,0.0,a woman cross country skiing in a snowy country side .,5.0,4.0,5.0,4.6667,0.62,0.8842,0.9048,0.3204,0.122,0.007,0.5703,0.0,0.58,0.0,0.5251,0.0,0.0
+2,a person is skiing down a snowy hill in the snow .,0.0,a woman cross country skiing in a snowy country side .,3.0,5.0,4.0,4.0,0.428,0.881,0.8571,0.578,0.484,0.4143,0.3508,0.0104,0.3327,0.0,0.2426,0.0,0.0
+3,a man is cross country skiing on a snowy day .,0.5647,a woman cross country skiing in a snowy country side .,2.0,4.0,2.0,2.6667,0.6704,0.9329,0.96,0.8241,0.8115,0.7979,0.6467,0.6001,0.6567,0.5939,0.632,0.5713,0.5647
+4,a person is skiing on the snowy road,0.3357,a woman cross country skiing in a snowy country side .,5.0,5.0,5.0,5.0,0.4653,0.8728,0.9108,1.0,0.9222,0.9109,0.3873,0.4653,0.4129,0.4202,0.3273,0.3873,0.3357
+5,a woman skis down a snowy hill in between two patches of trees .,0.001,a woman cross country skiing in a snowy country side .,4.0,3.0,4.0,3.6667,0.5497,0.8575,0.7576,0.4024,0.5256,0.4468,0.4749,0.0,0.4057,0.137,0.3069,0.0,0.001
+6,a person is skiing in a skii trail while others are watching .,0.0,a woman cross country skiing in a snowy country side .,5.0,5.0,5.0,5.0,0.3428,0.8183,0.9004,0.4188,0.2862,0.1277,0.1969,0.0,0.2701,0.0,0.108,0.0,0.0

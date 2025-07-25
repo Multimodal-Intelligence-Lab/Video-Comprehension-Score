@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man holding a little girl walking on a path to a fruit tree .,0.806,a man holding a little girl walks up to an apple tree .,5.0,5.0,5.0,5.0,0.8146,0.9557,1.0,1.0,1.0,1.0,0.806,0.8146,0.8146,0.8146,0.806,0.806,0.806
+2,a little boy is walking around a tree and picking up an apple .,0.3679,a man carrying a girl walked to a tree and the girl picked an apple,3.0,1.0,4.0,2.6667,0.6911,0.912,0.9424,0.846,0.8177,0.7832,0.653,0.4212,0.6323,0.4115,0.5831,0.3759,0.3679
+3,a man and a little boy are picking apples from a tree .,0.8215,a man and little girl pick an apple off an apple tree .,4.0,5.0,4.0,4.3333,0.8301,0.9521,1.0,1.0,1.0,1.0,0.8215,0.8301,0.8301,0.8301,0.8215,0.8215,0.8215
+4,a little boy and girl are picking golden apples from a short tree .,0.3612,a man and little girl pick an apple off an apple tree .,4.0,3.0,4.0,3.6667,0.6943,0.9287,0.9424,0.6761,0.6708,0.5926,0.6708,0.388,0.6756,0.3828,0.6507,0.3666,0.3612
+5,a child helps some adults pick fruit in an orchard pushing through the trees and carrying a fruit picker,0.1173,a family is walking on a trail with fruits on trees and tall trees .,3.0,3.0,4.0,3.3333,0.6254,0.8845,0.8834,0.7708,0.7567,0.7114,0.5655,0.2695,0.5211,0.2559,0.4444,0.1334,0.1173
+6,a boy with a hat picks a golden apple off a branch .,0.2023,a man and little girl pick an apple off an apple tree .,4.0,2.0,4.0,3.3333,0.515,0.8653,0.9804,0.7804,0.7681,0.7,0.4395,0.3141,0.5053,0.3098,0.4282,0.2073,0.2023

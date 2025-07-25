@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person cooking eggs in a pan on a stove and cooking in a toaster oven,0.6199,eggs cooking in a frying pan on a stove and bread in a toaster oven .,4.0,4.0,5.0,4.3333,0.7955,0.9573,0.913,0.7855,0.8,0.7744,0.7864,0.5906,0.7745,0.6242,0.7644,0.5383,0.6199
+2,a person is cooking eggs in a frying pan in a frying pan .,0.4415,an egg is frying in a pan on the stove and the oven is shown open .,5.0,4.0,5.0,4.6667,0.6717,0.9254,0.9406,0.7407,0.6953,0.6359,0.6352,0.4661,0.5908,0.4836,0.5248,0.4312,0.4415
+3,a person is cooking eggs in a pan on a stove .,0.6327,the man is demonstrating on how he is cooking an egg on the stove top .,5.0,5.0,5.0,5.0,0.7257,0.9319,1.0,1.0,0.9893,0.9876,0.6962,0.6738,0.7257,0.6684,0.6962,0.6387,0.6327
+4,a person beating eggs in a bowl and cooking it in a pan .,0.1114,a man is cooking two eggs in a skillet over an electric stove and then he checks the bread slices in a stove .,3.0,4.0,4.0,3.6667,0.6005,0.8638,0.96,0.6281,0.652,0.581,0.5315,0.2532,0.5435,0.2582,0.4645,0.1071,0.1114
+5,a person cooks some eggs that are in a pan in front of them,0.5381,the man is demonstrating on how he is cooking an egg on the stove top .,5.0,4.0,5.0,4.6667,0.6059,0.8679,1.0,1.0,1.0,1.0,0.5381,0.6059,0.6059,0.6059,0.5381,0.5381,0.5381
+6,a hand is seen beating eggs with a fork and then cooking them in a pan .,0.3876,a man shows how he makes eggs and toast in his kitchen .,3.0,3.0,4.0,3.3333,0.5953,0.8549,1.0,0.8723,0.8863,0.8616,0.5241,0.4888,0.5541,0.4969,0.4572,0.3778,0.3876

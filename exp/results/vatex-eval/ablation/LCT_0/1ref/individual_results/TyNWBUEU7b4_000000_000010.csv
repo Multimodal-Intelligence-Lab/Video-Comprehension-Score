@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man on a bike going on a ramp made of snow and he falls,0.2369,a person is riding a bike outside in the snow .,5.0,4.0,5.0,4.6667,0.595,0.8685,0.9524,0.6416,0.6111,0.5522,0.5336,0.3687,0.5747,0.3373,0.5103,0.2731,0.2369
+2,a person is riding a bike down a snowy hill .,0.8294,a person is riding a bike outside in the snow .,4.0,3.0,4.0,3.6667,0.8696,0.9473,0.9375,0.7823,0.8529,0.8447,0.8624,0.7497,0.8609,0.8308,0.8532,0.7475,0.8294
+3,a man is riding a bike down a snowy hill .,0.6859,a person is riding a bike outside in the snow .,4.0,3.0,4.0,3.6667,0.7534,0.9206,0.9375,0.7823,0.8529,0.8402,0.7321,0.6848,0.737,0.7109,0.7143,0.6576,0.6859
+4,a guy is trying to ride his bike through the thick snow and having a hard time doing it .,0.687,a person is riding a bike outside in the snow .,5.0,4.0,5.0,4.6667,0.7337,0.8782,0.9592,1.0,0.9687,0.9644,0.6968,0.7337,0.7224,0.7251,0.6839,0.6968,0.687
+5,a person is trying to ride a bike through snow down an ambankment .,0.5649,a person is riding a bike outside in the snow .,5.0,5.0,4.0,4.6667,0.7822,0.924,0.9714,0.7302,0.6675,0.6401,0.7643,0.6551,0.7758,0.5749,0.7573,0.647,0.5649
+6,a person is trying to ride their bike down a hill in the snow .,0.8036,a person is riding a bike outside in the snow .,4.0,4.0,4.0,4.0,0.8173,0.9302,1.0,1.0,1.0,1.0,0.8036,0.8173,0.8173,0.8173,0.8036,0.8036,0.8036

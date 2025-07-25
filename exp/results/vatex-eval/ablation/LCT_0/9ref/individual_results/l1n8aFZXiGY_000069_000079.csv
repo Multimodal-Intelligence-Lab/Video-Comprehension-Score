@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman works to describe how she creates a dish while cooking .,0.5382,a woman making a recipe shows all the ingredients and discusses the steps .,4.0,1.0,5.0,3.3333,0.7354,0.8416,0.9599,0.7486,0.7092,0.6401,0.6728,0.6466,0.7124,0.6045,0.6441,0.5626,0.5382
+2,a woman is demonstrating how to make a meal with a salad .,0.1864,a woman is prepping her food and about to make a salad .,5.0,5.0,5.0,5.0,0.7884,0.9212,0.9412,0.7974,0.7265,0.6536,0.7655,0.4067,0.7751,0.2977,0.7508,0.389,0.1864
+3,a person is showing how to make a salad in a bowl .,0.4438,a woman in a kitchen is demonstrating how to prepare salad while she is talking .,5.0,5.0,5.0,5.0,0.6575,0.872,0.9091,0.8812,0.7898,0.7526,0.6072,0.5765,0.5936,0.5275,0.5339,0.5015,0.4438
+4,a woman adds several ingredients to demonstrate how to make a recipe .,0.4176,a woman places ingredients into a bowl and then holds a bottle .,5.0,5.0,5.0,5.0,0.7834,0.886,1.0,1.0,1.0,1.0,0.7555,0.55,0.6091,0.5177,0.5588,0.4548,0.4176
+5,a woman holds a bowl for another woman while talking about how to cook .,0.0,with everything set up a woman begins to cook explaining what she is doing .,4.0,1.0,4.0,3.0,0.5552,0.8832,0.8603,0.5274,0.5228,0.4074,0.4964,0.0,0.3421,0.0,0.2551,0.0,0.0
+6,"a woman is preparing a food dish in a glass bowl , and talking about it .",0.4167,a woman is prepping her food and about to make a salad .,4.0,4.0,4.0,4.0,0.6104,0.8792,1.0,1.0,1.0,1.0,0.5569,0.491,0.5572,0.491,0.4964,0.4167,0.4167

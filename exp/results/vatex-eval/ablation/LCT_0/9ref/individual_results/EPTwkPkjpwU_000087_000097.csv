@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is behind a garbage truck as a dumpster's garbage is placed into it .,0.4387,a man is operating a garbage truck and dumping a dumpster .,5.0,5.0,5.0,5.0,0.7625,0.9127,0.96,0.6435,0.6586,0.5987,0.7398,0.5027,0.7051,0.4664,0.6682,0.4768,0.4387
+2,a garbage truck is picking up a trash bin and dumping it into the truck .,0.6506,a garbage man loading a trash dumpster into a garbage truck .,5.0,4.0,5.0,4.6667,0.8508,0.9499,0.8916,0.7807,0.7629,0.74,0.8429,0.6276,0.7601,0.6814,0.7578,0.5789,0.6506
+3,a garbage truck is picking up trash from the street .,0.5561,a garbage truck is lifting and dumping a garbage bin in the back of it .,5.0,2.0,4.0,3.6667,0.6118,0.9062,0.9756,1.0,0.9794,0.977,0.5695,0.6118,0.6021,0.6036,0.5544,0.5652,0.5561
+4,a man is driving a trash truck and picking up trash bins on the road,0.4532,a man is operating a garbage truck and dumping a dumpster .,5.0,4.0,4.0,4.3333,0.6521,0.9108,0.9139,0.7325,0.7199,0.683,0.6064,0.5251,0.6194,0.5168,0.5693,0.4627,0.4532
+5,a garbage man are picking up a garbage and loading it on the truck,0.4275,a garbage truck is lifting and dumping a garbage bin in the back of it .,5.0,3.0,4.0,4.0,0.8302,0.9682,0.9599,0.7791,0.7825,0.745,0.8246,0.5576,0.8114,0.4934,0.8052,0.5162,0.4275
+6,a man is driving a city garbage truck that uses a lift to dump trash from the trashcan .,0.6584,a man is operating a garbage truck and dumping a dumpster .,5.0,4.0,4.0,4.3333,0.6992,0.901,0.9744,1.0,0.9827,0.9807,0.6644,0.6992,0.6913,0.6939,0.6555,0.6644,0.6584

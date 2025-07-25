@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man uses clear packing tape to repair a book while a voiceover describes the process .,0.429,a person lines up tape on the edge of a book and then the tape roll is zoomed in on .,5.0,4.0,5.0,4.6667,0.6854,0.86,1.0,0.7948,0.8161,0.7808,0.6296,0.5082,0.5995,0.5211,0.5273,0.4137,0.429
+2,a woman is demonstrating how to use a sewing machine .,0.0447,someone is showing how to put a sticky tape covering on a book binder with a machine .,3.0,4.0,4.0,3.6667,0.3113,0.8134,0.9756,0.8954,0.8863,0.8602,0.1533,0.2309,0.27,0.223,0.1025,0.0544,0.0447
+3,a man is demonstrating how to use a machine to assemble a .,0.16,someone is showing how to put a sticky tape covering on a book binder with a machine .,5.0,3.0,4.0,4.0,0.4283,0.8261,1.0,1.0,1.0,1.0,0.3079,0.3204,0.3851,0.3195,0.2557,0.161,0.16
+4,a person is folding a material into book like structure and then spraying yellow color on it,0.0929,a woman reinforcing a book binding with some clear plastic tape .,4.0,2.0,2.0,2.6667,0.3846,0.8374,1.0,1.0,1.0,1.0,0.2434,0.2795,0.3638,0.2795,0.2151,0.0929,0.0929
+5,"a male puts back together the packaging of an item , while talking .",0.0,a demonstration on reinforcing book bindings for a specific brand of binding .,5.0,1.0,3.0,3.0,0.324,0.782,1.0,1.0,1.0,1.0,0.1233,0.1622,0.2615,0.1666,0.0514,0.0,0.0
+6,a woman is giving instructions on how to copy a book using a copy machine .,0.2143,someone is showing how to put a sticky tape covering on a book binder with a machine .,4.0,4.0,4.0,4.0,0.5277,0.845,1.0,0.9084,0.9266,0.9081,0.441,0.3418,0.4441,0.3491,0.3421,0.2055,0.2143

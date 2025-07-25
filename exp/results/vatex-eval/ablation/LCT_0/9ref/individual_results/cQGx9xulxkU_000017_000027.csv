@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man demonstrating how to peel potatoes using ice water .,0.7642,a guy demonstrating how to easy peel a potato using hot and cold water,5.0,5.0,5.0,5.0,0.8759,0.9444,1.0,1.0,1.0,1.0,0.8663,0.7798,0.8146,0.7798,0.8122,0.7642,0.7642
+2,a man is demonstrating how to peel a potato with a knife .,0.6009,a guy demonstrating how to easy peel a potato using hot and cold water,4.0,4.0,4.0,4.0,0.6719,0.885,0.9524,1.0,0.9617,0.9567,0.6273,0.6603,0.6412,0.6468,0.5946,0.6162,0.6009
+3,a man is demonstrating how to make a dish in a bowl .,0.2084,a man is showing how to put cook potatoes in ice water for an easy peel .,3.0,3.0,4.0,3.3333,0.3934,0.8194,0.9796,1.0,0.9352,0.9209,0.2597,0.3934,0.3345,0.3514,0.1879,0.2597,0.2084
+4,a man who is seated is peeling potatoes with a knife .,0.4196,using only his hands a man peels a potato which has been in iced water,4.0,4.0,4.0,4.0,0.6119,0.8786,0.9524,0.8954,0.8885,0.8647,0.5583,0.5384,0.5581,0.5012,0.4858,0.4746,0.4196
+5,in a room a man is peeling potatoes over a small garbage bin,0.4006,a man is peeling a potato after dumping it in cold water .,4.0,4.0,4.0,4.0,0.5501,0.8739,0.9787,0.892,0.9043,0.8826,0.4839,0.4768,0.5392,0.4762,0.4727,0.4013,0.4006
+6,a sitting man peels a potato over a trash bin .,0.4311,a man is peeling a potato after dumping it in cold water .,4.0,2.0,3.0,3.0,0.5818,0.8737,0.9804,0.9737,0.9617,0.9556,0.5214,0.5125,0.5101,0.503,0.4393,0.4359,0.4311

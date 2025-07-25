@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a machine is wrapping reams of paper in clear plastic wrap and a man is removing them at the end .,0.8082,a machine wraps stacks of paper in plastic sheeting and someone removes the product .,1.0,5.0,4.0,3.3333,0.8487,0.8928,0.9655,0.8702,0.8872,0.8732,0.8298,0.8261,0.8433,0.8295,0.8238,0.8045,0.8082
+2,a person is showing how to use a machine to use a machine .,0.022,a man taking out a bunch of paper that was wrapped by a machine,5.0,5.0,5.0,5.0,0.3416,0.8483,1.0,0.8812,0.8408,0.8123,0.1915,0.1759,0.2708,0.1704,0.1404,0.0038,0.022
+3,a person is using a machine to open a box .,0.0962,a large red sealing machine is sealing stacks of white paper .,1.0,4.0,4.0,3.0,0.4214,0.8348,1.0,1.0,1.0,1.0,0.3068,0.2727,0.3439,0.2727,0.214,0.0962,0.0962
+4,"a large machine with a conveyor belt first grabs a large plastic bag , then fills it and seals it before moving on .",0.199,a machine wraps stacks of paper in plastic sheeting and someone removes the product .,4.0,4.0,5.0,4.3333,0.5956,0.8355,0.9818,0.8828,0.9121,0.8865,0.516,0.3346,0.5071,0.3737,0.3763,0.2036,0.199
+5,a person puts a sheet into a machine then pushes the machine down to press the sheet .,0.0,packages of paper are being wrapped in paper plastic and stacked on top of each other .,4.0,1.0,5.0,3.3333,0.438,0.8461,0.9859,0.8346,0.8748,0.8356,0.3206,0.1492,0.3095,0.1882,0.1625,0.0,0.0
+6,a machine is sealing bags shut as they pass by the conveyer belt,0.3128,machine wraps stacks of paper into plastic then a worker removed them from the conveyor belt .,5.0,5.0,5.0,5.0,0.483,0.8459,0.9873,0.9045,0.9217,0.9075,0.3792,0.4077,0.4574,0.4187,0.3585,0.2997,0.3128

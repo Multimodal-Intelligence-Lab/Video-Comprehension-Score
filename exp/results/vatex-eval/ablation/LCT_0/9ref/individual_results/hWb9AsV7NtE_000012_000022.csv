@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man a power washing his gutter drains on his house .,0.5093,a person power washes the roof of a house as they stand on it .,5.0,5.0,5.0,5.0,0.7967,0.9384,0.9831,0.8879,0.8996,0.8772,0.7757,0.5405,0.612,0.5713,0.6014,0.4863,0.5093
+2,a man is using a leaf blower to clean the gutters of a house .,0.4455,a man is walking along the edge of a house cleaning the gutters with a power washer .,4.0,4.0,4.0,4.0,0.6582,0.8659,1.0,1.0,0.9884,0.985,0.6052,0.5088,0.6305,0.5199,0.5732,0.4327,0.4455
+3,a man is using a leaf blower to clean the gutters of a house .,0.4455,a man is walking along the edge of a house cleaning the gutters with a power washer .,4.0,4.0,4.0,4.0,0.6582,0.8659,1.0,1.0,0.9884,0.985,0.6052,0.5088,0.6305,0.5199,0.5732,0.4327,0.4455
+4,a man is suspended from the roof as he washes a window .,0.3874,a man standing on a roof to use a pressure washer to clean a gutter .,4.0,4.0,4.0,4.0,0.5432,0.8834,1.0,0.8819,0.8814,0.8567,0.4817,0.482,0.5421,0.4799,0.4817,0.3898,0.3874
+5,a person is using a pressure washer to wash the outside of the house .,0.5248,a person power washes the roof of a house as they stand on it .,4.0,4.0,5.0,4.3333,0.667,0.8808,0.9424,0.8542,0.8442,0.8158,0.6219,0.603,0.638,0.5815,0.589,0.5492,0.5248
+6,"a man , standing on the ground , is using a long pipe or hose to clean the gutters and drainage of a house .",0.4762,a man stands on the roof and pressure washes the gutters .,5.0,4.0,4.0,4.3333,0.6006,0.8774,0.9655,1.0,0.9774,0.9731,0.5447,0.5705,0.5774,0.5606,0.5099,0.4881,0.4762

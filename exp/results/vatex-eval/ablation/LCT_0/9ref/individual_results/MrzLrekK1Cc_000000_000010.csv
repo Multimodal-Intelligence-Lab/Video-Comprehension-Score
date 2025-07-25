@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a toddler female is sitting on a bed beside an adult male , she is chewing a remote then the male removes it from her and an unseen female speaks .",0.5803,a baby girl is sitting on a bed next to a shirtless man putting the remote in her mouth when the man takes the remote away .,4.0,5.0,5.0,4.6667,0.7689,0.8616,0.9042,0.9647,0.9002,0.8747,0.7318,0.4344,0.7419,0.6006,0.7004,0.4058,0.5803
+2,a little girl is sitting on the floor and she is trying to put her nails .,0.0,in a small bedroom a father and child lay on a bed while the mother films and directs .,4.0,3.0,3.0,3.3333,0.3154,0.8233,0.9725,0.8828,0.9069,0.8814,0.1686,0.1593,0.2386,0.1815,0.0632,0.0,0.0
+3,a little girl is sitting on the floor and a woman is talking to her .,0.0,in a small bedroom a father and child lay on a bed while the mother films and directs .,4.0,4.0,4.0,4.0,0.3635,0.8658,1.0,0.8723,0.8863,0.8533,0.2648,0.113,0.3218,0.127,0.2167,0.0,0.0
+4,a baby is sitting on an adult womans lap playing the piano .,0.0,in a small bedroom a father and child lay on a bed while the mother films and directs .,2.0,3.0,3.0,2.6667,0.4181,0.8469,0.9818,0.9615,0.9644,0.9525,0.313,0.1675,0.3702,0.1969,0.2564,0.0,0.0
+5,a young girl holding a juice box runs up to her dad who is sitting on a bed watching tv .,0.1176,a baby girl is sitting on a bed next to a shirtless man putting the remote in her mouth when the man takes the remote away .,2.0,3.0,3.0,2.6667,0.4434,0.8281,0.9886,0.8371,0.8832,0.8551,0.3086,0.2747,0.3671,0.2896,0.2138,0.0991,0.1176
+6,tow young boys open plastic packages in their living room and one asks a woman a question .,0.0293,a small child is seen playing with a television remote with an adult .,4.0,2.0,2.0,2.6667,0.2738,0.7947,0.991,1.0,0.9943,0.9926,0.0622,0.2573,0.2505,0.2531,0.026,0.0347,0.0293

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two men are shown talking to each other with high dubbed voices outdoors .,0.5747,two men are speaking to each other in cartoon high pitched voices .,5.0,5.0,5.0,5.0,0.6469,0.9069,1.0,1.0,1.0,1.0,0.6106,0.6047,0.6469,0.6143,0.6106,0.5641,0.5747
+2,a group of people are in a room and one of them is holding a sword .,0.0,two men argue with one another and their voices are altered to be higher and cartoonish .,5.0,1.0,4.0,3.3333,0.0938,0.8077,1.0,1.0,1.0,1.0,0.0,0.0,0.0938,0.0,0.0,0.0,0.0
+3,a group of people are standing around and talking to each other .,0.0,two men argue with one another and their voices are altered to be higher and cartoonish .,5.0,4.0,4.0,4.3333,0.2061,0.8102,1.0,1.0,1.0,1.0,0.0,0.1625,0.1625,0.1625,0.0,0.0,0.0
+4,"two boys are talking to each other , one with a microphone .",0.2982,two men are speaking to each other in cartoon high pitched voices .,3.0,4.0,3.0,3.3333,0.455,0.8737,1.0,1.0,1.0,1.0,0.3762,0.4075,0.4075,0.4075,0.2982,0.2982,0.2982
+5,two men are speaking and play rock paper scissors .,0.3192,two men are speaking to each other in cartoon high pitched voices .,3.0,3.0,3.0,3.0,0.4251,0.8618,1.0,0.975,0.9798,0.9765,0.3329,0.4104,0.4162,0.4133,0.3225,0.3158,0.3192
+6,two men speak to one another and then one head butts the other .,0.3807,"two men have a disagreement , while one is more serious than the other .",4.0,4.0,4.0,4.0,0.5044,0.8969,1.0,0.8819,0.8923,0.8799,0.4474,0.438,0.4941,0.4446,0.4359,0.3734,0.3807

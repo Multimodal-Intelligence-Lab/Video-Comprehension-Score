@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man driving a car moves his brow , dropping his sunglasses from his forehead onto his nose .",0.6658,"while a man is driving , he moves his eyebrows which automatically drops his sunglasses down into place .",5.0,5.0,5.0,5.0,0.8184,0.912,0.9808,0.8,0.813,0.785,0.7919,0.6718,0.7718,0.6952,0.7369,0.6524,0.6658
+2,a man is sitting in a car and talking to the camera .,0.2267,a man driving in a car while his shades flip down on his face .,4.0,3.0,4.0,3.6667,0.4805,0.8367,1.0,1.0,1.0,1.0,0.3792,0.3822,0.4653,0.3529,0.3609,0.2616,0.2267
+3,a woman is sleeping in a car while a man is talking to her .,0.0,a man is driving and letting a pair of sunglasses fall in front of his eyes .,1.0,1.0,2.0,1.3333,0.3324,0.85,0.8327,0.7204,0.6208,0.5189,0.2146,0.0,0.16,0.0,0.0117,0.0,0.0
+4,a car with shattered glasses and a man holding a phone while driving,0.0,a man is driving and letting a pair of sunglasses fall in front of his eyes .,2.0,3.0,3.0,2.6667,0.5084,0.8603,0.8634,0.5729,0.6888,0.6081,0.4173,0.0,0.2636,0.0,0.1214,0.0,0.0
+5,a man wearing eyeglasses is playing the piano inside a building .,0.0,a man is driving and letting a pair of sunglasses fall in front of his eyes .,3.0,2.0,4.0,3.0,0.3386,0.8179,0.9599,0.8,0.7319,0.6723,0.1843,0.0338,0.2378,0.0,0.0553,0.0,0.0
+6,a guy is using a peins shaped object to shift gears in his car .,0.0213,a man drives and puts some glasses on his head,2.0,2.0,3.0,2.3333,0.4122,0.8217,1.0,0.8819,0.8923,0.8576,0.2847,0.251,0.3256,0.2597,0.1085,0.0098,0.0213

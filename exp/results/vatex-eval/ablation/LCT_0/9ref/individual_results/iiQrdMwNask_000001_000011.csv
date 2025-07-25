@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people are clapping and dancing while a man plays a guitar .,0.3888,"a group of people claps , a man plays a guitar , a woman sings and another woman stands and lifts her arms .",5.0,5.0,5.0,5.0,0.6845,0.8992,0.7887,0.6063,0.6032,0.5587,0.6492,0.4249,0.586,0.4203,0.5397,0.3936,0.3888
+2,a group of people are playing instruments on stage .,0.4822,several people are on stage as some play instruments and others clap and dance .,3.0,4.0,5.0,4.0,0.6843,0.9062,0.9052,0.9662,0.8158,0.791,0.6517,0.5612,0.6312,0.5218,0.5931,0.5158,0.4822
+3,a man and a woman are playing a song on a stage .,0.0,a man is playing the guitar while a woman sings and three women clap .,4.0,5.0,5.0,4.6667,0.5665,0.9256,0.8904,0.7149,0.7241,0.6645,0.5317,0.1812,0.3714,0.1255,0.3209,0.0213,0.0
+4,a man plays the guitar in a studio while a woman sings .,0.398,"one man plays a guitar , a woman sings and another woman starts dancing .",5.0,5.0,5.0,5.0,0.5745,0.9225,0.8988,0.8153,0.7825,0.7465,0.5388,0.4578,0.5103,0.4447,0.4691,0.4123,0.398
+5,a group of people are on a stage clapping and dancing while a woman looks on .,0.4991,several people are on stage as some play instruments and others clap and dance .,4.0,4.0,5.0,4.3333,0.7247,0.8763,0.9106,0.7017,0.7212,0.6748,0.6858,0.5883,0.6782,0.526,0.6327,0.5523,0.4991
+6,a group of men are up on stage dancing to the song being played .,0.0,a man is playing the guitar while a woman sings and three women clap .,4.0,4.0,4.0,4.0,0.5213,0.8775,0.8466,0.6421,0.5762,0.4759,0.4445,0.0,0.3887,0.0,0.2905,0.0,0.0

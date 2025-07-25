@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman gets up from her chair and touches the seated mans head she decides to sit back down and the chair collapses under her,0.0,a lady tried to sit on a chair beside a man and fell down .,4.0,5.0,5.0,4.6667,0.6222,0.8542,0.8198,0.171,0.1038,0.0,0.5577,0.0,0.5392,0.0,0.4605,0.0,0.0
+2,a little boy is sitting on the floor and is trying to cut a piece of fruit .,0.0,a lady tried to sit on a chair beside a man and fell down .,2.0,4.0,4.0,3.3333,0.1486,0.8098,0.8832,0.5745,0.5442,0.4372,0.0,0.0,0.0359,0.0,0.0,0.0,0.0
+3,a little boy is sitting in a chair and a woman is talking to him .,0.0,a lady tried to sit on a chair beside a man and fell down .,4.0,5.0,5.0,4.6667,0.2675,0.839,0.7711,0.3202,0.0875,0.0,0.1269,0.0,0.0501,0.0,0.0,0.0,0.0
+4,"a boy , leaning backwards on a chair , with a girl supporting herself with one arm on the chair , falls backwards when the girl pushes off to step away .",0.0846,a lady tried to sit on a chair beside a man and fell down .,2.0,4.0,3.0,3.0,0.5217,0.8132,0.8668,0.6649,0.6425,0.5604,0.4118,0.2806,0.4482,0.2556,0.3214,0.1154,0.0846
+5,a group of children are sitting in chairs and then one falls backwards .,0.2731,a lady tried to sit on a chair beside a man and fell down .,1.0,4.0,4.0,3.0,0.4601,0.8148,0.9697,0.8598,0.9115,0.8914,0.3374,0.3722,0.4433,0.4077,0.3167,0.2294,0.2731
+6,"one girl is standing next to a boy sitting in a chair when the boy rocks the chair and falls over backwards , then struggles to get out of the chair .",0.0,a lady tried to sit on a chair beside a man and fell down .,4.0,4.0,4.0,4.0,0.5532,0.8445,0.8475,0.4112,0.3554,0.2368,0.471,0.0,0.4728,0.0,0.3758,0.0,0.0

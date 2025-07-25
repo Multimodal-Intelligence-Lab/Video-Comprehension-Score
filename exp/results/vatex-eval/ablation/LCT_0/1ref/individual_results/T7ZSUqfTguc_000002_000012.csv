@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man does a hammer throw and grunts after throwing it .,0.0,a man is spinning a ball attached to a string and releases .,5.0,5.0,5.0,5.0,0.3091,0.7871,0.9084,0.8408,0.7466,0.678,0.1222,0.1783,0.2394,0.0746,0.0336,0.0,0.0
+2,a man is throwing a ball in the air and then throws it .,0.5174,a man is spinning a ball attached to a string and releases .,5.0,4.0,3.0,4.0,0.5896,0.8504,1.0,1.0,1.0,1.0,0.5174,0.5896,0.5896,0.5896,0.5174,0.5174,0.5174
+3,a man is swinging a ball on a rope and then throws it .,0.5448,a man is spinning a ball attached to a string and releases .,5.0,5.0,5.0,5.0,0.6085,0.86,1.0,1.0,1.0,1.0,0.5448,0.6085,0.6085,0.6085,0.5448,0.5448,0.5448
+4,a male athlete continuously rotates his entire body in circles holding a ball attached to the end of a chain getting ready for a hammer throw .,0.3061,a man is spinning a ball attached to a string and releases .,5.0,5.0,5.0,5.0,0.4295,0.8316,0.9841,1.0,0.9888,0.9865,0.3139,0.4295,0.4203,0.423,0.3028,0.3139,0.3061
+5,a male is juggling with 3 and 2 balls then he throws one into the air and catches it at the back of his neck .,0.1553,a man is spinning a ball attached to a string and releases .,3.0,3.0,2.0,2.6667,0.3473,0.7848,0.9762,1.0,0.9845,0.9803,0.1684,0.3473,0.3314,0.337,0.1481,0.1684,0.1553
+6,a guy with glasses is trying to juggle multiple balls .,0.0,a man is spinning a ball attached to a string and releases .,3.0,2.0,2.0,2.3333,0.334,0.7989,0.8333,0.5414,0.6564,0.5699,0.1663,0.0,0.2007,0.0,0.0,0.0,0.0

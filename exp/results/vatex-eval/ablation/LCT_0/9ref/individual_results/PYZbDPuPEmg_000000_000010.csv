@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two boys are pulling a chair on which sits another boy,0.6037,two boys are pulling a chair out from under another boy who has his head down at a desk .,5.0,5.0,5.0,5.0,0.7319,0.9539,0.9543,0.8803,0.8974,0.8859,0.719,0.6412,0.6969,0.6107,0.6823,0.6239,0.6037
+2,a group of people are sitting on a couch and one of them is crying .,0.0,a young man wakes up as two young men pull his seat out from under him .,2.0,3.0,4.0,3.0,0.1591,0.7822,1.0,0.8723,0.8893,0.8569,0.0,0.0226,0.1474,0.039,0.0,0.0,0.0
+3,a group of people are sitting in a room and one of them is laughing .,0.0,a young man wakes up as two young men pull his seat out from under him .,5.0,4.0,5.0,4.6667,0.2782,0.8091,1.0,0.8723,0.8893,0.857,0.108,0.0881,0.2044,0.1018,0.0,0.0,0.0
+4,a young boy comes behind another boy and pulls his chair from underneath him .,0.4973,two boys pull the chair out from under a sleeping classmate .,4.0,4.0,4.0,4.0,0.7311,0.88,1.0,1.0,1.0,1.0,0.6795,0.5761,0.6783,0.5328,0.6166,0.5356,0.4973
+5,a boy comes up behind another boy and pulls out his chair from under him .,0.4167,two boys are pulling a chair out from under another boy who has his head down at a desk .,4.0,4.0,4.0,4.0,0.758,0.8978,1.0,0.8933,0.9155,0.8966,0.7162,0.5247,0.6816,0.4777,0.6265,0.5028,0.4167
+6,kids are joking around in a classroom when one pull out the chair from under another .,0.2547,two boys are pulling a chair out from under another boy who has his head down at a desk .,4.0,4.0,4.0,4.0,0.706,0.8705,0.9667,0.8151,0.8266,0.78,0.6569,0.3759,0.6245,0.3891,0.5618,0.25,0.2547

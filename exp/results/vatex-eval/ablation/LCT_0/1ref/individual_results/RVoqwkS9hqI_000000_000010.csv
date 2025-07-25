@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a couple of girls are tickling a boy inside of a vehicle .,0.2968,two kids are playing with another kid by tickling him .,5.0,5.0,5.0,5.0,0.5945,0.848,0.812,0.5848,0.6799,0.6226,0.5219,0.3017,0.5006,0.4037,0.4111,0.1824,0.2968
+2,a man and a woman are sitting on a couch and one of them is getting her hair waxed .,0.0,two kids are playing with another kid by tickling him .,2.0,3.0,1.0,2.0,0.0859,0.7606,0.9831,0.8879,0.8996,0.868,0.0,0.0,0.0702,0.0,0.0,0.0,0.0
+3,a group of people are having a conversation while one of them is laughing .,0.0,two kids are playing with another kid by tickling him .,3.0,4.0,4.0,3.6667,0.204,0.7954,1.0,0.8408,0.827,0.7826,0.0,0.0532,0.204,0.0375,0.0,0.0,0.0
+4,a man tickles a baby and tries to get them to play with them .,0.0,two kids are playing with another kid by tickling him .,1.0,3.0,1.0,1.6667,0.4884,0.8418,0.6452,0.0,0.0,0.0,0.3922,0.0,0.207,0.0,0.058,0.0,0.0
+5,a girl leaning over a baby and tickling him to make him laugh .,0.0,two kids are playing with another kid by tickling him .,2.0,3.0,4.0,3.0,0.4576,0.8112,0.8333,0.4,0.5405,0.4336,0.3314,0.0,0.3491,0.0,0.1977,0.0,0.0
+6,a person is tickling a little boy who is laughing hard .,0.0,two kids are playing with another kid by tickling him .,4.0,5.0,5.0,4.6667,0.5557,0.8361,0.7083,0.3567,0.4745,0.3715,0.4686,0.0,0.3728,0.0543,0.2498,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman smooths out a pearl necklace and places it on a headless display .,0.4139,a woman unfolds a a pearl necklace and straightens it on a table .,5.0,5.0,5.0,5.0,0.6693,0.8685,1.0,0.9045,0.9298,0.9144,0.6171,0.5268,0.6457,0.5001,0.5821,0.4419,0.4139
+2,a woman is demonstrating how to make a specific necklace .,0.2946,a person is spreading out a multi level pearl necklace for display .,3.0,1.0,5.0,3.0,0.6365,0.8938,0.9592,0.9301,0.8817,0.8545,0.5933,0.4567,0.5742,0.4268,0.5236,0.3313,0.2946
+3,a woman is demonstrating how to make a bracelet with a needle .,0.0826,a pair of female hands are showcasing a white pearl peice of jewelry,2.0,1.0,3.0,2.0,0.465,0.8597,1.0,0.9387,0.876,0.8456,0.3777,0.3123,0.4137,0.2631,0.3181,0.1439,0.0826
+4,a woman is describing and demonstrating a jewelry making technique .,0.2341,a woman showing off a beaded necklace that made out of pearls,2.0,1.0,4.0,2.3333,0.5068,0.8757,0.9599,0.7492,0.836,0.7934,0.4367,0.2679,0.4467,0.3293,0.3682,0.1,0.2341
+5,a woman uses a pair of small pliers to work on a piece of jewelry .,0.0,a woman takes a white beaded necklace and spreads it out on a table to show it at its best .,3.0,1.0,5.0,3.0,0.3976,0.8602,0.9419,0.834,0.8193,0.7752,0.282,0.1437,0.3508,0.1166,0.1826,0.0,0.0
+6,a women is using tools and beads to create jewlery .,0.2968,a woman showing off a beaded necklace that made out of pearls,2.0,1.0,1.0,1.3333,0.5152,0.8327,0.9831,0.7876,0.8278,0.7932,0.4178,0.3461,0.4826,0.4144,0.3787,0.2148,0.2968

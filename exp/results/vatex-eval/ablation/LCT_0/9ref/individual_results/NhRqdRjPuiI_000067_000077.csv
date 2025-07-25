@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young woman is washing her hair over a tub while being filmed .,0.5339,a group of women are in a bathroom and washing their hair over the tub .,5.0,5.0,5.0,5.0,0.6435,0.898,0.9199,0.8295,0.8517,0.8348,0.603,0.5703,0.5926,0.5814,0.5463,0.5214,0.5339
+2,a woman is standing in front of a bathroom washing her hair .,0.5062,a girl leaning over a shower to wash her hair,5.0,4.0,5.0,4.6667,0.7143,0.8983,1.0,1.0,1.0,1.0,0.6759,0.5761,0.6735,0.5761,0.6296,0.5062,0.5062
+3,a man is standing in front of a bathroom sink washing his hair .,0.2958,a girl leaning over a shower to wash her hair,4.0,4.0,4.0,4.0,0.531,0.8643,1.0,1.0,1.0,1.0,0.455,0.4032,0.531,0.4032,0.455,0.2958,0.2958
+4,a girl is getting her hair washed by a young woman who is using a hose to do it .,0.0,a woman with the help of another person washes her head in the bathroom above the bathtub .,3.0,3.0,4.0,3.3333,0.5589,0.8599,0.8521,0.5714,0.6841,0.5966,0.4779,0.1092,0.4359,0.1973,0.344,0.0,0.0
+5,a young girl gets her hair washed by another woman in a salon .,0.1644,a girl leaning over a shower to wash her hair,4.0,3.0,4.0,3.6667,0.5952,0.8697,0.8969,0.7298,0.7072,0.6594,0.5123,0.3039,0.4812,0.2816,0.3748,0.1903,0.1644
+6,a young girl is having her hair washed by a woman in a salon .,0.0,a woman with the help of another person washes her head in the bathroom above the bathtub .,4.0,4.0,4.0,4.0,0.5491,0.8807,0.8819,0.6026,0.5369,0.4394,0.4542,0.1871,0.4446,0.1565,0.3694,0.0771,0.0

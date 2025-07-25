@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man out in the snow whistles and shows some dogs pulling a sled,0.1131,a man in a sled iis whistling to his sled dogs and they all move quickly across the snow .,5.0,5.0,5.0,5.0,0.8677,0.9209,0.8203,0.5063,0.309,0.2126,0.8521,0.2044,0.6781,0.129,0.6722,0.1899,0.1131
+2,a group of people are sledding on a sled in the snow .,0.2412,a team of dogs is pulling the man on the sled over the snow and the frozen lake .,4.0,4.0,3.0,3.6667,0.4627,0.8747,0.9467,0.8819,0.8496,0.8281,0.373,0.3606,0.3859,0.3363,0.298,0.269,0.2412
+3,a group of dogs are pulling a sled through the snow .,0.6309,a team of dogs is pulling the man on the sled over the snow and the frozen lake .,5.0,5.0,5.0,5.0,0.7109,0.9302,0.9183,1.0,0.9361,0.9313,0.6875,0.6786,0.6703,0.6567,0.6435,0.6545,0.6309
+4,a group of dogs is carrying a man across a sled on the snow .,0.6327,a team of dogs is pulling the man on the sled over the snow and the frozen lake .,5.0,5.0,5.0,5.0,0.785,0.906,0.9419,0.8844,0.8684,0.8535,0.7532,0.6759,0.7169,0.6699,0.6827,0.6393,0.6327
+5,a team of dogs pull a sled with a rider across the snow .,0.6526,a team of dogs is pulling the man on the sled over the snow and the frozen lake .,5.0,5.0,5.0,5.0,0.7236,0.9115,0.971,0.8659,0.8732,0.8608,0.6967,0.6808,0.7153,0.6834,0.6876,0.6497,0.6526
+6,a bunch of dogs are forced to carry a man in a sled in the snow .,0.5959,a team of dogs is pulling the man on the sled over the snow and the frozen lake .,5.0,4.0,5.0,4.6667,0.7792,0.8975,0.9565,0.8933,0.8545,0.8379,0.7505,0.6531,0.6913,0.6373,0.6715,0.6134,0.5959

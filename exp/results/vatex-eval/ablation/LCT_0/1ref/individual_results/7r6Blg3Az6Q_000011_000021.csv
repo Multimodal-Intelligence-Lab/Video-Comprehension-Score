@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a dogs goes nuts when the mail is delivered , tearing it apart .",0.0,at a front door a door is squeezing a chew toy while someone puts letters into the mail slot .,5.0,5.0,5.0,5.0,0.4583,0.7711,0.8601,0.4538,0.4782,0.3233,0.2975,0.0,0.3702,0.0,0.1832,0.0,0.0
+2,a dog is walking on the floor with a dog on the floor .,0.0,at a front door a door is squeezing a chew toy while someone puts letters into the mail slot .,5.0,4.0,4.0,4.3333,0.1425,0.7333,1.0,1.0,1.0,1.0,0.0,0.1425,0.1425,0.1425,0.0,0.0,0.0
+3,a dog is in a room and a dog is standing on the floor .,0.0,at a front door a door is squeezing a chew toy while someone puts letters into the mail slot .,5.0,5.0,5.0,5.0,0.1852,0.749,0.9851,0.8845,0.8777,0.8368,0.0,0.0788,0.1729,0.0717,0.0,0.0,0.0
+4,a postman enters a building to deliver mail and drops an envelope on the floor,0.0,at a front door a door is squeezing a chew toy while someone puts letters into the mail slot .,4.0,4.0,4.0,4.0,0.3828,0.7757,0.8544,0.5064,0.5319,0.3966,0.2043,0.0,0.2776,0.0,0.0688,0.0,0.0
+5,a mail man puts letters into mailboxes in the lobby of an apartment building and one falls on the floor .,0.0,at a front door a door is squeezing a chew toy while someone puts letters into the mail slot .,4.0,4.0,4.0,4.0,0.4534,0.8253,0.7051,0.385,0.4981,0.3918,0.3378,0.0,0.2249,0.0,0.0608,0.0,0.0
+6,a mailman opens the door to a lobby and delivers the mail to put it in different mailboxes .,0.0,at a front door a door is squeezing a chew toy while someone puts letters into the mail slot .,4.0,3.0,3.0,3.3333,0.4433,0.8377,0.8604,0.53,0.5577,0.472,0.3354,0.0,0.353,0.0017,0.2276,0.0,0.0

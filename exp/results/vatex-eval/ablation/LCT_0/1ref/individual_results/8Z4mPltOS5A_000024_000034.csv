@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is seen loading a wheelbarrow with concrete outside .,0.6157,a man is holding a wheelbarrow while a truck pours concrete into it .,5.0,5.0,5.0,5.0,0.7399,0.8648,0.9167,0.6828,0.7827,0.7487,0.6992,0.5713,0.7162,0.6676,0.6719,0.5464,0.6157
+2,a man is using a chainsaw to cut a large piece of wood .,0.0,a man is holding a wheelbarrow while a truck pours concrete into it .,2.0,2.0,2.0,2.0,0.1254,0.775,1.0,0.7071,0.714,0.631,0.0,0.0,0.1254,0.0,0.0,0.0,0.0
+3,a man is using a large machine to move a large pile of garbage .,0.0,a man is holding a wheelbarrow while a truck pours concrete into it .,3.0,2.0,4.0,3.0,0.2242,0.7896,0.9655,0.8589,0.8637,0.8274,0.0175,0.0968,0.1965,0.1018,0.0,0.0,0.0
+4,a large bulldozer scoops dirt from a pile and loads it into a dump truck .,0.0,a man is holding a wheelbarrow while a truck pours concrete into it .,2.0,1.0,2.0,1.6667,0.2771,0.7786,0.9,0.3577,0.268,0.0598,0.0715,0.0,0.1968,0.0,0.0,0.0,0.0
+5,a garbage man loading a trash dumpster into a garbage truck .,0.0,a man is holding a wheelbarrow while a truck pours concrete into it .,2.0,1.0,1.0,1.3333,0.3617,0.829,0.9199,0.4875,0.3954,0.2707,0.2301,0.0,0.3061,0.0,0.163,0.0,0.0
+6,a man drives and operates the can lifting/dumping mechanism on a garbage truck .,0.0,a man is holding a wheelbarrow while a truck pours concrete into it .,4.0,2.0,4.0,3.3333,0.304,0.807,0.8798,0.3323,0.1373,0.0,0.1376,0.0,0.2089,0.0,0.0197,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man carves the rest of the display sign into wood while outdoors .,0.4604,a man with his shirt off carving a sign and brushing the small peices of wood off .,5.0,5.0,5.0,5.0,0.696,0.8809,1.0,0.8699,0.8868,0.8639,0.6549,0.5293,0.6682,0.53,0.6234,0.4596,0.4604
+2,a man is using a hammer to cut a piece of wood .,0.3313,a man is using hand tools to create a sign .,4.0,4.0,4.0,4.0,0.4777,0.9345,1.0,1.0,1.0,1.0,0.4411,0.4323,0.4446,0.4323,0.4057,0.3313,0.3313
+3,a man is using a tool to carve a piece of wood .,0.4045,a man is using hand tools to create a sign .,5.0,5.0,5.0,5.0,0.6526,0.9367,0.9655,0.7417,0.8278,0.8034,0.5946,0.4594,0.5641,0.4784,0.5346,0.4228,0.4045
+4,"an older gentleman is working at a bench , shaving some wood .",0.0,a shirtless man finishes the craving he is working on and brushes the wood clippings off it .,4.0,4.0,4.0,4.0,0.4426,0.8303,0.9599,0.6621,0.7042,0.6438,0.3076,0.1239,0.4156,0.0961,0.2787,0.0,0.0
+5,a man is using a tool to carve designs into a piece of wood .,0.325,a man uses a chisel to carve a wood sign and uses a brush to clean off the shavings .,5.0,5.0,5.0,5.0,0.6442,0.9205,0.9714,0.7486,0.7091,0.6595,0.5823,0.4005,0.5701,0.4162,0.4953,0.3068,0.325
+6,a man uses a tool to shave a long piece of wood .,0.3357,a man is using a chisel on a piece of wood and then he brushes the wood off .,5.0,4.0,5.0,4.6667,0.5447,0.899,1.0,0.8248,0.8473,0.8121,0.4892,0.363,0.4987,0.4079,0.4375,0.2338,0.3357

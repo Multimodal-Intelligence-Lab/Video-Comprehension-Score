@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,kids and an adult are riding a camel while an elephant is standing in the building as well .,0.4462,a group of people together as they ride on camals and elephants for a short trip,5.0,5.0,5.0,5.0,0.8332,0.9272,0.8978,0.7938,0.8425,0.8066,0.8201,0.5214,0.6735,0.5491,0.591,0.4122,0.4462
+2,a group of people are riding camels in a desert .,0.6108,a group of people together as they ride on camals and elephants for a short trip,4.0,4.0,4.0,4.0,0.6883,0.8896,1.0,1.0,1.0,1.0,0.6486,0.6538,0.6687,0.6538,0.6266,0.6108,0.6108
+3,a group of people are riding camels in a mall .,0.5277,a man leads a group of pepole sitting on a camel indoors around .,4.0,4.0,4.0,4.0,0.648,0.8892,1.0,1.0,1.0,1.0,0.5724,0.6237,0.5902,0.598,0.5186,0.5579,0.5277
+4,two children are riding a camel at the fair as a man guides the camel .,0.1452,a man is guiding a camel with three people sitting on it in an indoor building .,4.0,5.0,5.0,4.6667,0.6422,0.8877,0.8654,0.7194,0.6678,0.608,0.5916,0.3275,0.5509,0.2756,0.4873,0.2065,0.1452
+5,a man leads a camel around by a leash at a fair while kids ride on top .,0.518,a man leading a camel with three children and a man on it's back .,5.0,5.0,5.0,5.0,0.7108,0.8798,0.9885,0.8196,0.8546,0.8202,0.6713,0.5311,0.6853,0.5524,0.6423,0.5035,0.518
+6,a man pulls a camel while two small children ride on the back .,0.683,a man leading a camel with three children and a man on it's back .,4.0,5.0,5.0,4.6667,0.7775,0.9044,0.9808,0.8906,0.8561,0.8409,0.7468,0.7244,0.7399,0.7133,0.7044,0.6952,0.683

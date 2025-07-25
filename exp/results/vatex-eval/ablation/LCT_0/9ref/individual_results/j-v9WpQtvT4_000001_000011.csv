@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two men in a field doing cartwheels heading in opposite directions .,0.7168,two men are standing in a field then they start to do cartwheels in opposite directions,5.0,5.0,5.0,5.0,0.9481,0.9532,0.971,0.8,0.7475,0.7194,0.9455,0.6962,0.9465,0.7176,0.9439,0.6953,0.7168
+2,a young man is doing cartwheels in a field while others watch .,0.4368,two men do cartwheels as another person records them in the distance .,5.0,4.0,5.0,4.6667,0.6738,0.8533,0.9804,1.0,0.8852,0.8624,0.6177,0.5704,0.6363,0.5324,0.5727,0.4852,0.4368
+3,a young boy is doing cartwheels on a grassy field .,0.5826,two men are doing cartwheels are on the grass .,5.0,4.0,5.0,4.6667,0.6371,0.8694,1.0,1.0,1.0,1.0,0.5826,0.6371,0.6371,0.6371,0.5826,0.5826,0.5826
+4,a man completing a series of cartwheels down a steep grassy hill .,0.5583,two men are doing cartwheels are on the grass .,4.0,3.0,4.0,3.6667,0.6575,0.862,0.9599,0.9706,0.8996,0.8835,0.6027,0.6471,0.624,0.6193,0.5638,0.5906,0.5583
+5,a man is doing a cartwheel and a back flip on a lawn .,0.2599,two men are doing acrobatic moves on a very large and green field on a sunny day .,4.0,3.0,4.0,3.6667,0.6825,0.8534,1.0,1.0,1.0,1.0,0.6279,0.4229,0.6075,0.4229,0.5401,0.2599,0.2599
+6,a man performs a cartwheel and a backflip in an outdoor area .,0.4397,two men are doing cartwheels are on the grass .,4.0,3.0,4.0,3.6667,0.6333,0.847,0.92,0.9657,0.8164,0.7791,0.567,0.6063,0.5635,0.5343,0.4664,0.5264,0.4397

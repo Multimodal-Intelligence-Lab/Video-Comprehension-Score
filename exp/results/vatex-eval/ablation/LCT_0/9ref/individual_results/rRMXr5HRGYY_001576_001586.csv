@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is removing the graphite from some pencils and spreading it out over a flat paper surface .,0.4052,an artist takes multiple pencils and shades a piece of paper with the sides of the pencil,5.0,4.0,5.0,4.6667,0.6405,0.8464,0.9655,0.8509,0.8603,0.8334,0.5753,0.4958,0.5562,0.5013,0.4756,0.3987,0.4052
+2,a person is using a paint brush to draw on a piece of paper .,0.239,the person was sharpening and marking on both sides of a piece of paper .,4.0,2.0,4.0,3.3333,0.5143,0.8731,1.0,1.0,1.0,1.0,0.4437,0.3496,0.4894,0.3663,0.3728,0.2267,0.239
+3,a person is using a tool to draw a picture on a piece of wood .,0.2979,an individual is using various techniques to shape the tips of pencils .,4.0,2.0,4.0,3.3333,0.5428,0.8665,1.0,0.8723,0.9115,0.892,0.4724,0.39,0.4824,0.4246,0.3477,0.2558,0.2979
+4,a person sharpens several pencils using a small manual sharpener .,0.3167,a person sharpens a pencil by hand and then crushes the lead onto a yellow sheet of paper .,4.0,4.0,5.0,4.3333,0.6549,0.8531,0.9343,0.6638,0.6867,0.6156,0.5909,0.3624,0.6052,0.3872,0.532,0.2933,0.3167
+5,a person is using a hand held pencil sharpener to sharpen pencils .,0.4852,an individual is using various techniques to shape the tips of pencils .,5.0,4.0,5.0,4.6667,0.6675,0.8763,0.9714,0.8248,0.8382,0.8103,0.6186,0.5538,0.6212,0.5609,0.5558,0.4768,0.4852
+6,a man sharpens a pencil above a pile of pencil shavings and paper .,0.3995,the person was sharpening and marking on both sides of a piece of paper .,5.0,5.0,5.0,5.0,0.664,0.8786,1.0,1.0,1.0,1.0,0.6176,0.4916,0.6442,0.4916,0.5951,0.3995,0.3995

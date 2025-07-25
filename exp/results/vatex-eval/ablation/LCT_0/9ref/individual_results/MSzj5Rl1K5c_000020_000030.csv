@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person pokes at meat that has come out of a meat grinder .,0.684,a finger pokes at meat that has come out of a grinder .,5.0,5.0,5.0,5.0,0.8636,0.9658,0.9714,0.7785,0.7287,0.719,0.8587,0.7435,0.8595,0.6858,0.8546,0.7421,0.684
+2,a person is using a meat grinder to grind meat .,0.3831,a type of red meat is shown after it has went through the grinder .,5.0,5.0,3.0,4.3333,0.8777,0.9123,0.9091,0.5607,0.6423,0.5862,0.866,0.313,0.7383,0.456,0.7347,0.2405,0.3831
+3,a person is using a meat grinder to grind meat .,0.3831,a type of red meat is shown after it has went through the grinder .,5.0,5.0,3.0,4.3333,0.8777,0.9123,0.9091,0.5607,0.6423,0.5862,0.866,0.313,0.7383,0.456,0.7347,0.2405,0.3831
+4,meat is being placed into a grinder and the end result is shown as trays of ground meat,0.2547,meat put in a grounder coming out on a white parchment paper while a person holds the parchment paper in their hands .,5.0,4.0,4.0,4.3333,0.7407,0.8718,0.8339,0.6957,0.6895,0.6218,0.7007,0.3935,0.6478,0.3881,0.5961,0.2614,0.2547
+5,a man is pushing meat through a meat grinder,0.5429,someone is grinding and displaying meat through a meat grinder .,5.0,4.0,4.0,4.3333,0.7318,0.9488,0.9756,0.8072,0.8802,0.8639,0.7056,0.6556,0.705,0.5593,0.6762,0.6219,0.5429
+6,someone puts chunks of meat in a meat grinder that extrudes ground meat onto a plate .,0.3966,a person's hands are shown handling meat that is being ground out of a tube .,4.0,4.0,4.0,4.0,0.7986,0.8944,0.9286,0.6768,0.7209,0.6669,0.7748,0.4614,0.7531,0.4944,0.724,0.3572,0.3966

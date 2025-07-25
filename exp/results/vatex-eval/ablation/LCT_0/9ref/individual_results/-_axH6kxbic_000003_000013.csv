@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a woman playing cards bets all he money and shows her hand , followed by a man who does the same , with a better hand , and a second man who starts the same .",0.4508,"a woman moves "" all in "" with one pair , a man moves "" all in "" with two pair , another man says he can top it .",5.0,4.0,5.0,4.6667,0.6907,0.8529,0.9649,0.6919,0.713,0.6518,0.6304,0.4507,0.6656,0.5473,0.6004,0.3765,0.4508
+2,a man is demonstrating how to open a bottle of wine .,0.0,people are playing poker and a girl goes all in and loses to someone thens someone else has a better hand .,4.0,2.0,3.0,3.0,0.0887,0.7976,0.9714,0.8408,0.8028,0.7406,0.0,0.0,0.0214,0.0,0.0,0.0,0.0
+3,a man is sitting at a table and drinking a wine .,0.027,a group of three friends are seated at a table playing a card game,4.0,4.0,4.0,4.0,0.2559,0.8059,1.0,1.0,0.9687,0.9612,0.0605,0.2404,0.208,0.2159,0.0173,0.0574,0.027
+4,a group of people play poker in front of an audience .,0.4418,a few people are playing poker at a table and they call all in with their cards .,4.0,3.0,3.0,3.3333,0.6167,0.876,0.9792,0.9602,0.962,0.9508,0.5625,0.5091,0.5485,0.5147,0.4737,0.4099,0.4418
+5,"a group of people are intently playing poker , we can see their hands projected on the screen .",0.5983,a few people are playing poker at a table and they call all in with their cards .,4.0,5.0,4.0,4.3333,0.676,0.8782,0.9851,1.0,0.9895,0.9874,0.6184,0.667,0.661,0.6589,0.6007,0.6079,0.5983
+6,"the man is sitting at a poker table , as he deals out the cards .",0.3796,a few people are playing poker at a table and they call all in with their cards .,5.0,5.0,4.0,4.6667,0.5049,0.8762,0.9787,0.8515,0.9107,0.8981,0.435,0.4186,0.4942,0.4564,0.4227,0.3364,0.3796

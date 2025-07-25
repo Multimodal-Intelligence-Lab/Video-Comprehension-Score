@@ -1,0 +1,49 @@
+# VCS Evaluation Framework Configuration - Authors Experiments
+# Only experiment-specific settings (inherits from _base.yaml)
+
+# ============================================================================
+# EXPERIMENT SETTINGS
+# ============================================================================
+experiment:
+  # Custom experiment ID (if empty, auto-generates timestamp)
+  # Each experiment should have its own ID for parallel execution
+  experiment_id: ""
+
+# ============================================================================
+# EXPERIMENT-SPECIFIC PATHS
+# ============================================================================
+paths:
+  # Input data directory containing JSON files
+  data_dir: "/mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/authors/aug_dataset"
+  
+  # Base output directory for results
+  results_dir: "/mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/results/mpii/authors"
+
+# ============================================================================
+# AUTHORS SPECIFIC SETTINGS
+# ============================================================================
+authors:
+  # Author file mappings
+  author_files:
+    A1: "author1.json"
+    A2: "author2.json"
+    A3: "author3.json"
+    A4: "author4.json"
+  
+  # Selected metrics to compute
+  selected_metrics:
+    - "BLEU-1"
+    - "BLEU-4"
+    - "METEOR"
+    - "ROUGE-1"
+    - "ROUGE-4"
+    - "ROUGE-L"
+    - "ROUGE-Lsum"
+    - "VCS"
+
+# ============================================================================
+# EXPERIMENT SETTINGS OVERRIDE
+# ============================================================================
+experiment:
+  # Custom experiment ID (if empty, auto-generates timestamp)
+  experiment_id: ""

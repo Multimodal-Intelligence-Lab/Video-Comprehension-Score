@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a meteorologist explains weather patterns and temperatures across a geographic area .,0.2055,a weather woman is giving the weather forecast for the country,5.0,5.0,5.0,5.0,0.5381,0.8195,0.9139,0.7212,0.7093,0.6453,0.4364,0.3596,0.4946,0.3489,0.3833,0.2186,0.2055
+2,a woman is giving a weather report in a foreign language .,0.5915,a weather woman is giving the weather forecast for the country,5.0,5.0,5.0,5.0,0.7104,0.91,0.8312,0.7329,0.779,0.7571,0.6818,0.6049,0.6516,0.6282,0.6172,0.5658,0.5915
+3,a woman is giving a weather report in front of a map .,0.5859,a weather woman is giving the weather forecast for the country,5.0,5.0,5.0,5.0,0.7083,0.9043,0.8312,0.7329,0.779,0.7556,0.6774,0.602,0.6491,0.6255,0.612,0.5599,0.5859
+4,a woman stands in front of a map backdrop and provides a weather forecast,0.1283,a weather woman is giving the weather forecast for the country,5.0,5.0,5.0,5.0,0.6579,0.8724,0.7944,0.5453,0.4701,0.3926,0.6079,0.3089,0.5694,0.1946,0.5064,0.2521,0.1283
+5,a woman is presenting weather forecast while standing and talking .,0.603,a weather woman is giving the weather forecast for the country,5.0,5.0,5.0,5.0,0.7348,0.9011,0.7703,0.7144,0.7413,0.7129,0.7057,0.6114,0.6557,0.6422,0.6179,0.588,0.603
+6,a woman is standing in front of a weather map and talking about the data .,0.4271,a weather woman is giving the weather forecast for the country,5.0,5.0,5.0,5.0,0.6377,0.8499,0.8929,0.8046,0.7441,0.6989,0.5737,0.5498,0.5943,0.5131,0.5226,0.4702,0.4271

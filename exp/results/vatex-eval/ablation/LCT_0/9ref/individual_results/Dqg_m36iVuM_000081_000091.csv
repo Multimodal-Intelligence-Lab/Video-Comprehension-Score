@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"one man is digging in the dirt , another is standing on rocks , while another narrates .",0.4547,one man digging a hole with a shovel while two others move around in background .,5.0,5.0,5.0,5.0,0.6502,0.8851,0.9827,0.8363,0.8626,0.84,0.5912,0.5105,0.6106,0.5318,0.5449,0.4298,0.4547
+2,a person is using a chainsaw to cut up a large piece of wood .,0.0,"a man is using a shovel to dig some dirt , as a man is narrating the scene and speaking about the wall and gravel .",1.0,2.0,2.0,1.6667,0.1532,0.8105,0.9787,0.8918,0.9101,0.8826,0.0,0.0,0.1138,0.0,0.0,0.0,0.0
+3,a group of people are watching a man throw a rock into the hole .,0.0315,a group of men are lining a wall of stone with gravel .,2.0,2.0,4.0,2.6667,0.3824,0.8266,0.9804,0.8387,0.84,0.8064,0.2476,0.1982,0.3141,0.1995,0.1702,0.03,0.0315
+4,a man is demonstrating to the viewers the art of stone laying in construction .,0.0102,a man describes the building of a stone wall while others work on it .,2.0,3.0,4.0,3.0,0.5558,0.8319,0.9888,1.0,0.9925,0.9901,0.4661,0.1446,0.4571,0.1714,0.3474,0.0,0.0102
+5,several people work in an archaeological dig site as a guy stands and sifts dirt .,0.2176,a group of men are digging dirt and building something .,5.0,5.0,5.0,5.0,0.4741,0.8209,0.9357,0.8126,0.8264,0.7866,0.3535,0.3529,0.438,0.3637,0.309,0.2043,0.2176
+6,a man is standing in a hole with rocks while measuring it .,0.0,"a man is using a shovel to dig some dirt , as a man is narrating the scene and speaking about the wall and gravel .",4.0,3.0,4.0,3.6667,0.4308,0.8426,1.0,0.8408,0.827,0.7822,0.3245,0.1282,0.3709,0.1497,0.2534,0.0,0.0

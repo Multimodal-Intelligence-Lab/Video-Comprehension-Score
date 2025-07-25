@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"on an asphalt pad , a young man is kicking a soccer ball with his feet .",0.4354,a young teenage boy is successfully kicking up a soccer ball by alternative feet .,5.0,5.0,5.0,5.0,0.5674,0.9044,0.9555,0.8659,0.8628,0.8347,0.5217,0.4977,0.531,0.4893,0.4815,0.4446,0.4354
+2,a young boy is kicking a soccer ball with a soccer ball .,0.6586,a young boy is dribbling a soccer ball using his legs,5.0,5.0,4.0,4.6667,0.7387,0.9409,0.9846,0.7638,0.8338,0.819,0.7154,0.6578,0.7153,0.6866,0.6899,0.6273,0.6586
+3,a young boy is juggling a soccer ball with his feet .,0.759,a young boy is dribbling a soccer ball using his legs,5.0,5.0,5.0,5.0,0.7922,0.9357,1.0,1.0,1.0,1.0,0.7779,0.7866,0.7798,0.7798,0.759,0.7719,0.759
+4,"a young boy is going down the road , kicking a soccer ball up with his foot .",0.6454,a young teenage boy is successfully kicking up a soccer ball by alternative feet .,4.0,4.0,4.0,4.0,0.6977,0.9213,0.9885,0.9084,0.9255,0.9191,0.6719,0.6672,0.6941,0.6733,0.668,0.6388,0.6454
+5,two boys are playing with soccer balls and kicking them up into the air .,0.3404,a boy bounces a soccer ball back and forth on his feet without letting it touch the ground .,4.0,4.0,5.0,4.3333,0.6425,0.9082,0.9714,0.8248,0.8382,0.8093,0.6064,0.4653,0.5616,0.4521,0.4897,0.3564,0.3404
+6,a teenage boy is shown juggling a soccer ball with his feet outdoors .,0.6962,a boy juggles a soccer ball between his two feet in a park .,5.0,5.0,5.0,5.0,0.7647,0.9177,1.0,0.8933,0.9155,0.903,0.7436,0.7366,0.7382,0.7212,0.7147,0.7129,0.6962

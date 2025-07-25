@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man sticks a long knife into his mouth , then takes it out .",0.0012,a man swallows a sword before removing it and letting out a deep breath .,5.0,5.0,5.0,5.0,0.5386,0.8248,0.8984,0.6234,0.56,0.4666,0.4406,0.2599,0.4865,0.1762,0.3774,0.1026,0.0012
+2,a man is demonstrating how to do a yoga exercise .,0.0,a man swallows a sword before removing it and letting out a deep breath .,2.0,3.0,4.0,3.0,0.2434,0.7859,0.9108,0.6239,0.5675,0.4497,0.0373,0.0,0.1693,0.0,0.0,0.0,0.0
+3,a man is demonstrating how to do an exercise with a rope .,0.0,a man swallows a sword before removing it and letting out a deep breath .,2.0,3.0,4.0,3.0,0.2083,0.7938,0.9412,0.689,0.6593,0.5708,0.0026,0.0,0.1588,0.0,0.0,0.0,0.0
+4,a man leans against a rock and inserts a sword down his throat .,0.0923,a man swallows a sword before removing it and letting out a deep breath .,4.0,4.0,4.0,4.0,0.5968,0.8377,0.8587,0.6172,0.5303,0.4393,0.5186,0.3467,0.5305,0.213,0.4395,0.2201,0.0923
+5,a man pours out liquid in a circle around him and then swallows a sword .,0.4458,a man swallows a sword before removing it and letting out a deep breath .,2.0,3.0,3.0,2.6667,0.6869,0.8631,0.7421,0.5854,0.6545,0.5997,0.6373,0.3965,0.5781,0.4971,0.5112,0.3494,0.4458
+6,a man makes a speech before he takes a long dagger and attempts to swallow the blade .,0.0,a man swallows a sword before removing it and letting out a deep breath .,2.0,3.0,4.0,3.0,0.5906,0.8237,0.793,0.4648,0.4205,0.2964,0.503,0.0938,0.4837,0.0188,0.3733,0.0,0.0

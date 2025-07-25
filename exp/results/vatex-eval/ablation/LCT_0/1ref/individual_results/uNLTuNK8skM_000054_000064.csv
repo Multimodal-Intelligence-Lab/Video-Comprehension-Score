@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is in the snow and next to a fire,0.3833,a man sitting in the snow at a campfire pushed food onto a stick and places the stick onto the fire to cook .,5.0,5.0,5.0,5.0,0.5818,0.86,0.9163,0.8918,0.7886,0.7542,0.5137,0.531,0.5436,0.4697,0.4693,0.4547,0.3833
+2,a man is cooking a pig on a campfire with a knife .,0.0,a man sitting in the snow at a campfire pushed food onto a stick and places the stick onto the fire to cook .,4.0,4.0,4.0,4.0,0.4834,0.8482,0.825,0.6533,0.5745,0.4983,0.391,0.2093,0.3739,0.1008,0.2618,0.0678,0.0
+3,a group of people are standing around a campfire and roasting food .,0.0,a man sitting in the snow at a campfire pushed food onto a stick and places the stick onto the fire to cook .,3.0,3.0,3.0,3.0,0.5139,0.8148,0.8197,0.3168,0.3363,0.1854,0.4034,0.0,0.407,0.0,0.2721,0.0,0.0
+4,a man holds a closed wire basket over a barbecue fire as he cooks some food in it,0.0,a man sitting in the snow at a campfire pushed food onto a stick and places the stick onto the fire to cook .,4.0,4.0,4.0,4.0,0.3072,0.8278,0.8535,0.4488,0.4968,0.3921,0.1631,0.0,0.1883,0.0,0.0195,0.0,0.0
+5,a man is cooking a basket of food over a grill flame .,0.0,a man sitting in the snow at a campfire pushed food onto a stick and places the stick onto the fire to cook .,4.0,4.0,4.0,4.0,0.3702,0.8299,0.9065,0.7698,0.7369,0.683,0.2411,0.1819,0.3052,0.1454,0.1629,0.0143,0.0
+6,a guy cooking something in a waffle-like griddle over a campfire .,0.0,a man sitting in the snow at a campfire pushed food onto a stick and places the stick onto the fire to cook .,4.0,4.0,4.0,4.0,0.5578,0.8157,0.7316,0.3891,0.2268,0.0522,0.4579,0.0,0.3956,0.0,0.2591,0.0,0.0

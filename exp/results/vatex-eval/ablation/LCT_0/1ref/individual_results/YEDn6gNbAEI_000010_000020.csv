@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the person out on the track field running while the crowd watch .,0.0172,an athlete runs fast and attempts to jump as far as possible during a competition .,5.0,5.0,5.0,5.0,0.4766,0.7781,0.9164,0.6937,0.6844,0.5944,0.3273,0.2455,0.4288,0.2353,0.2659,0.0303,0.0172
+2,a man runs down a track and jumps into a sand pit .,0.3745,an athlete runs fast and attempts to jump as far as possible during a competition .,5.0,5.0,5.0,5.0,0.4909,0.8139,1.0,1.0,1.0,1.0,0.3745,0.4909,0.4909,0.4909,0.3745,0.3745,0.3745
+3,a man runs down a track and jumps into a sand pit .,0.3745,an athlete runs fast and attempts to jump as far as possible during a competition .,5.0,5.0,5.0,5.0,0.4909,0.8139,1.0,1.0,1.0,1.0,0.3745,0.4909,0.4909,0.4909,0.3745,0.3745,0.3745
+4,a runner is practicing his skill on long jump infront of a crowd,0.2774,an athlete runs fast and attempts to jump as far as possible during a competition .,5.0,4.0,5.0,4.6667,0.5885,0.8105,0.9846,0.6761,0.7025,0.633,0.4924,0.3914,0.5821,0.4143,0.4844,0.2491,0.2774
+5,a person runs down a track and then leaps for a long jump competition .,0.6126,an athlete runs fast and attempts to jump as far as possible during a competition .,5.0,5.0,5.0,5.0,0.7314,0.8764,0.971,0.773,0.7911,0.7617,0.6935,0.6525,0.7233,0.6605,0.6843,0.6035,0.6126
+6,"in a stadium track meet , a person runs and performs a long jump into a sand pit .",0.086,an athlete runs fast and attempts to jump as far as possible during a competition .,4.0,5.0,5.0,4.6667,0.6432,0.8182,0.9423,0.4547,0.4845,0.37,0.564,0.1522,0.6214,0.1986,0.5373,0.0331,0.086

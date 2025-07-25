@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a child tips over a domino , sending a chain reaction through a large setup of many , sending them all falling in a pattern .",0.5322,a young child starts a long row of dominoes falling .,5.0,5.0,5.0,5.0,0.7255,0.8452,0.9181,0.7172,0.718,0.6636,0.6746,0.5477,0.6874,0.58,0.6273,0.514,0.5322
+2,a person is showing how to build a piece of dominoes .,0.2982,a young child starts a long row of dominoes falling .,4.0,4.0,4.0,4.0,0.4956,0.8388,0.9756,0.9301,0.9206,0.9032,0.3891,0.4297,0.4563,0.4238,0.3378,0.3054,0.2982
+3,a person is putting together a piece of legos .,0.0,dominoes are displayed on end in a pattern and then knocked over as they fall in that pattern .,2.0,1.0,2.0,1.6667,0.246,0.7784,1.0,0.8845,0.8802,0.843,0.0164,0.0936,0.1969,0.0831,0.0,0.0,0.0
+4,"brightly colored plastic block are knocked down , some of them domino style .",0.3897,dominoes are displayed on end in a pattern and then knocked over as they fall in that pattern .,4.0,2.0,4.0,3.3333,0.6135,0.8264,0.9404,0.8128,0.8331,0.7857,0.5323,0.4553,0.536,0.4957,0.4386,0.3409,0.3897
+5,someone knocks down a stack of dominos and then angrily throws one into the pile .,0.2844,a boy pushes down a domino which sets off more of the dominos .,3.0,4.0,3.0,3.3333,0.547,0.8353,0.9796,0.9521,0.9002,0.8777,0.4553,0.4478,0.4589,0.4159,0.3522,0.3234,0.2844
+6,a group of people of playing a game of dominoes on a table .,0.1791,a boy is playing with dominoes and pushes one over .,2.0,3.0,4.0,3.0,0.4606,0.8483,1.0,0.8408,0.827,0.7961,0.3629,0.3585,0.4268,0.305,0.3229,0.2422,0.1791

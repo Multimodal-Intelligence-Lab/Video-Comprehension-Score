@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is squeezing their bellybutton to make it move and someone is singing a belly button song .,0.4238,an individual playing with a belly button using two hands and singing in the background .,5.0,5.0,5.0,5.0,0.8364,0.9253,0.8933,0.634,0.6555,0.5838,0.8198,0.4262,0.8057,0.4443,0.786,0.405,0.4238
+2,a person is cracking their knuckles with their hands and then they are laughing .,0.0,fingers and thumbs squeeze belly button to make it look like a mouth talking .,4.0,3.0,1.0,2.6667,0.3237,0.8556,0.95,0.8284,0.8084,0.75,0.2095,0.1369,0.2528,0.1155,0.1267,0.0,0.0
+3,a person is rubbing their belly button with their fingers .,0.8255,a person squeezing their belly button with their hands,5.0,5.0,5.0,5.0,0.8365,0.9371,1.0,1.0,1.0,1.0,0.8255,0.8365,0.8365,0.8365,0.8255,0.8255,0.8255
+4,someone is sticking their finger in their bellybutton and then smacking their stomach .,0.4302,a kid sings a song about playing with his belly button while playing with his belly button .,4.0,4.0,3.0,3.6667,0.6997,0.8382,0.9851,0.7974,0.8267,0.7815,0.6417,0.5264,0.6796,0.548,0.6152,0.4233,0.4302
+5,a man fingers his belly button before smacking his belly .,0.5159,a kid sings a song about playing with his belly button while playing with his belly button .,4.0,3.0,2.0,3.0,0.6976,0.9047,0.9697,0.9478,0.942,0.9328,0.6658,0.585,0.6439,0.5825,0.6063,0.5188,0.5159
+6,a person is seen playing with their belly button with their shirt off .,0.7061,a person squeezing their belly button with their hands,5.0,5.0,5.0,5.0,0.7376,0.9064,1.0,1.0,1.0,1.0,0.7061,0.7376,0.7376,0.7376,0.7061,0.7061,0.7061

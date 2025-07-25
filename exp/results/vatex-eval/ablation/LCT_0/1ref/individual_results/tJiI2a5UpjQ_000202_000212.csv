@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy with really long hair is performing tricks on a skateboard .,0.0,a kid riding a skateboard while a group of people are watching and music plays .,5.0,5.0,5.0,5.0,0.294,0.7845,0.8408,0.5972,0.5476,0.4233,0.1001,0.0,0.1604,0.0,0.0,0.0,0.0
+2,a group of people are riding on skateboards in a parking lot .,0.0,a kid riding a skateboard while a group of people are watching and music plays .,4.0,4.0,4.0,4.0,0.4289,0.882,0.7667,0.5888,0.4991,0.4321,0.3524,0.0299,0.255,0.0,0.1554,0.0,0.0
+3,a group of people are outside and they are playing a game of scooter .,0.0,a kid riding a skateboard while a group of people are watching and music plays .,4.0,4.0,4.0,4.0,0.21,0.8489,0.6937,0.2714,0.0852,0.0,0.0694,0.0,0.0,0.0,0.0,0.0,0.0
+4,a person does tricks on a skateboard ramp as others watch .,0.0362,a kid riding a skateboard while a group of people are watching and music plays .,5.0,5.0,5.0,5.0,0.5259,0.8311,0.8988,0.6116,0.5918,0.5089,0.4296,0.2248,0.4725,0.1989,0.3654,0.0673,0.0362
+5,a younger male skateboarding and doing tricks in different places,0.0179,a kid riding a skateboard while a group of people are watching and music plays .,5.0,4.0,5.0,4.6667,0.3964,0.7983,0.9497,0.7636,0.7698,0.7117,0.2439,0.2096,0.3644,0.2159,0.2039,0.0099,0.0179
+6,several boys do a number of different skateboard tricks off of steps .,0.0,a kid riding a skateboard while a group of people are watching and music plays .,5.0,5.0,5.0,5.0,0.3532,0.7897,0.9264,0.4432,0.3993,0.2394,0.1809,0.0,0.3018,0.0,0.1159,0.0,0.0

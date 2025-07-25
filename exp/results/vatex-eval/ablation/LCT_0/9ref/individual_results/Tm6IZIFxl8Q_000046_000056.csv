@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,outside in the middle of a animal show ring two men hold a cow in place while another man tries to milk it .,0.5339,a group of men are holding a cow while another person gets milk during a rodeo .,5.0,5.0,5.0,5.0,0.7263,0.878,0.9603,0.8277,0.8512,0.8178,0.6883,0.5718,0.6501,0.5583,0.6015,0.5476,0.5339
+2,a group of people are in a barn and a man is trying to milk a cow .,0.4228,a group of men are holding a cow while another person gets milk during a rodeo .,4.0,4.0,5.0,4.3333,0.5903,0.875,0.9638,0.9017,0.9146,0.8952,0.5318,0.5146,0.5383,0.495,0.4723,0.4453,0.4228
+3,a man on a horse is trying to milk a cow .,0.0,a group of men are holding a cow while another person gets milk during a rodeo .,3.0,4.0,4.0,3.6667,0.5372,0.862,1.0,0.8946,0.8863,0.8602,0.4631,0.1849,0.3997,0.1773,0.3036,0.0,0.0
+4,a professional bull rider gets into trouble with a bull in front a large group of people .,0.0,a group of men are holding a cow while another person gets milk during a rodeo .,3.0,1.0,3.0,2.3333,0.5369,0.8736,0.9375,0.7105,0.7283,0.655,0.4699,0.0,0.4295,0.0596,0.2827,0.0,0.0
+5,a large crowd is watching bull fighting inside of an arena .,0.0055,one man holds the horns of a bull as another man does something to the testicles of the bull in a fairground setting .,4.0,1.0,3.0,2.6667,0.556,0.8255,1.0,0.9798,0.977,0.9701,0.4621,0.194,0.4789,0.2085,0.3687,0.0254,0.0055
+6,a bull fight in a ring fighting a bull while others watch .,0.2963,a group of people agitate a bull as many different people watch it,3.0,1.0,3.0,2.3333,0.6069,0.8687,1.0,0.9045,0.9298,0.9112,0.5475,0.4127,0.5555,0.3887,0.4884,0.324,0.2963

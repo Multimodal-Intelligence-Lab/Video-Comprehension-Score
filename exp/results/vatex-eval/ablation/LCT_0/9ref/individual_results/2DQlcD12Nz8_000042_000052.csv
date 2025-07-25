@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a guy is throwing a ball to another boy for him to try to hit it .,0.5026,a man throwing a ball to another man with a bat and a man in the background giving commentary .,5.0,5.0,5.0,5.0,0.6125,0.882,0.9665,0.9444,0.9141,0.8944,0.5606,0.5632,0.5952,0.5683,0.5336,0.4967,0.5026
+2,a man is throwing a baseball at a baseball game .,0.247,"one man is pitching a ball towards another man with a bat , the batter swings at the balls as that come towards him",5.0,4.0,5.0,4.6667,0.5742,0.8696,0.9211,0.8284,0.7993,0.7571,0.5104,0.3998,0.4767,0.378,0.3983,0.2735,0.247
+3,a man is throwing a baseball in a batting cage .,0.2963,"one man is pitching a ball towards another man with a bat , the batter swings at the balls as that come towards him",5.0,5.0,5.0,5.0,0.5601,0.8595,0.962,0.8845,0.8768,0.8503,0.4791,0.4262,0.4724,0.4212,0.3586,0.3024,0.2963
+4,"at an indoor batting cage , a young man hits baseballs that at pitched to him .",0.5079,a young man puts on a hitting display as someone throws baseballs towards him .,5.0,5.0,5.0,5.0,0.6865,0.8595,0.874,0.8531,0.7412,0.6989,0.6353,0.6326,0.5983,0.5771,0.5326,0.5725,0.5079
+5,a man explains how to swing a baseball bat correctly as people demonstrate .,0.0852,there is an adult who pitches a baseball to a child who hits it with a bat while another adult watches from behind .,5.0,5.0,5.0,5.0,0.7225,0.8738,0.9892,0.7984,0.8371,0.7901,0.6825,0.2223,0.6006,0.2603,0.5536,0.0226,0.0852
+6,a man is standing in front of a group of kids in a baseball field showing them the techniques to throw a ball .,0.0,a man is giving instructions to a young boy on how to swing a bat at a baseball .,4.0,3.0,4.0,3.6667,0.5342,0.8481,0.9376,0.5632,0.6048,0.5112,0.4415,0.0873,0.4745,0.152,0.3699,0.0,0.0

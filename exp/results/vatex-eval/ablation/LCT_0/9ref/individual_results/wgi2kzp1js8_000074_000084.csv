@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is crouching down and putting air in his tyre .,0.653,a man is slowly putting air in a tire .,5.0,5.0,5.0,5.0,0.7165,0.9282,0.9677,0.8561,0.8802,0.871,0.6946,0.6488,0.707,0.6779,0.6844,0.6216,0.653
+2,a man is demonstrating how to remove a tire on a tire .,0.2394,a man uses an air compressor and some other tools to work on a tire .,4.0,4.0,3.0,3.6667,0.5393,0.8699,1.0,0.967,0.9592,0.9497,0.4597,0.3862,0.5278,0.3515,0.4462,0.2795,0.2394
+3,a man is using a tool to polish a piece of metal .,0.0869,a man using a hose to apply air on to a tire,5.0,3.0,3.0,3.6667,0.2967,0.8366,1.0,1.0,1.0,1.0,0.1593,0.2368,0.2673,0.2368,0.1243,0.0869,0.0869
+4,a man tells how to check your tire pressure and air up a tire .,0.5336,a man checking and filling a tire with air from an air hose .,4.0,4.0,2.0,3.3333,0.7329,0.9275,0.96,0.7735,0.7961,0.748,0.7087,0.487,0.6661,0.5684,0.6359,0.4282,0.5336
+5,man demonstrates how to put air in a tire and discusses the importance of tire pressure .,0.6786,a man puts air into a tire and checks the reading as he does so .,4.0,3.0,2.0,3.0,0.7498,0.9033,0.9851,0.8638,0.8887,0.8729,0.7143,0.7104,0.746,0.7185,0.71,0.6693,0.6786
+6,a man is using a tool to check the air pressure on one of his tires of his car .,0.5482,a man is slowly putting air in a tire .,4.0,4.0,4.0,4.0,0.7893,0.9328,0.9623,0.8954,0.8873,0.8602,0.7587,0.6169,0.7486,0.609,0.7121,0.5574,0.5482

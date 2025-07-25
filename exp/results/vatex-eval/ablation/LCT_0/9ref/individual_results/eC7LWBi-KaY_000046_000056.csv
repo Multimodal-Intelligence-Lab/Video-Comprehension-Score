@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young woman speaks about basketball certificates that shes holding in her hand .,0.1051,a girl is talking about sports and gun rights while holding a certificate .,5.0,5.0,4.0,4.6667,0.7771,0.9023,0.8265,0.7271,0.6589,0.5499,0.753,0.2988,0.5456,0.2052,0.5257,0.2077,0.1051
+2,a woman is reading a book and talking about it .,0.1524,a girl is standing with a piece of paper and talking about a speech .,3.0,3.0,2.0,2.6667,0.3335,0.8365,1.0,1.0,1.0,1.0,0.1861,0.291,0.3127,0.291,0.1607,0.1524,0.1524
+3,a woman is sitting on a couch and reading a book .,0.0,a girl holding up a paper certificate telling us about it and what is .,2.0,1.0,1.0,1.3333,0.212,0.7911,1.0,1.0,1.0,1.0,0.0,0.133,0.1942,0.1155,0.0,0.0,0.0
+4,a little girl is pointing to pictures in a book while an adult talks to her .,0.1651,"a girl shows an award that was won , and explains about it .",3.0,2.0,2.0,2.3333,0.3318,0.838,1.0,1.0,1.0,1.0,0.1651,0.3318,0.3318,0.3318,0.1651,0.1651,0.1651
+5,a lady is on her laptop and is talking and showing her laptop screen .,0.0,a girl holding up a paper certificate telling us about it and what is .,4.0,3.0,3.0,3.3333,0.2576,0.8066,0.9583,0.8619,0.8548,0.807,0.0512,0.0352,0.1612,0.0271,0.0,0.0,0.0
+6,a kid is talking with a woman and the woman is speaking about a computer .,0.0,a girl holding up a paper certificate telling us about it and what is .,2.0,1.0,2.0,1.6667,0.3195,0.8474,0.9667,0.7935,0.771,0.7101,0.1549,0.0502,0.2146,0.0226,0.052,0.0,0.0

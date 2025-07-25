@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person holding something white in a field picks up something else then puts it down then wipes dirt off of the thing they were holding .,0.1362,"a person holds a large fungus , picks up another one , drops it and brushes dirt off the large fungus .",5.0,4.0,5.0,4.6667,0.4818,0.8434,0.9414,0.6426,0.7114,0.6578,0.3855,0.1936,0.4495,0.2715,0.3472,0.0438,0.1362
+2,a group of people are standing in a yard and one of them is picking up a mushroom .,0.0,"a person holds a large fungus , picks up another one , drops it and brushes dirt off the large fungus .",4.0,4.0,4.0,4.0,0.4539,0.8313,0.8739,0.3371,0.3582,0.228,0.3431,0.0,0.375,0.0,0.2483,0.0,0.0
+3,a group of people are in a yard and one of them is picking up something .,0.0,"a person holds a large fungus , picks up another one , drops it and brushes dirt off the large fungus .",4.0,4.0,3.0,3.6667,0.2585,0.8198,0.9052,0.3655,0.401,0.2693,0.0956,0.0,0.1809,0.0,0.0008,0.0,0.0
+4,a person picks a mushroom from the ground near a tree .,0.3119,"a person holds a large fungus , picks up another one , drops it and brushes dirt off the large fungus .",5.0,5.0,4.0,4.6667,0.5311,0.849,0.9148,0.7802,0.8027,0.7676,0.4477,0.399,0.4874,0.4158,0.3962,0.2921,0.3119
+5,a woman is using a dust pan to clean a mess up off of the floor .,0.0,"a person holds a large fungus , picks up another one , drops it and brushes dirt off the large fungus .",2.0,1.0,2.0,1.6667,0.1879,0.7848,0.9261,0.7285,0.7694,0.7062,0.0,0.0,0.1231,0.0,0.0,0.0,0.0
+6,a person uses their hand to pick a bunch of mushrooms out of the ground .,0.3243,"a person holds a large fungus , picks up another one , drops it and brushes dirt off the large fungus .",5.0,4.0,5.0,4.6667,0.5748,0.8333,0.9189,0.7148,0.7551,0.7061,0.4898,0.4052,0.5373,0.4369,0.4448,0.2862,0.3243

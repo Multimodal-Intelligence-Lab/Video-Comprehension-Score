@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the man takes a running start and kicks the football towards the goal post .,0.0,a man kicks a field goal directly through the uprights on a football field .,5.0,5.0,4.0,4.6667,0.657,0.8765,0.8563,0.2686,0.1725,0.0559,0.6087,0.0,0.5995,0.0,0.5431,0.0,0.0
+2,a man is kicking a football on a football field .,0.2303,a man kicks a field goal directly through the uprights on a football field .,5.0,5.0,5.0,5.0,0.7385,0.9356,0.8358,0.5059,0.4454,0.4073,0.7205,0.331,0.6872,0.2491,0.6657,0.3143,0.2303
+3,a man is kicking a football through a goal post .,0.0,a man kicks a field goal directly through the uprights on a football field .,5.0,5.0,4.0,4.6667,0.738,0.9015,0.8571,0.3351,0.2228,0.1378,0.7094,0.0991,0.6944,0.0,0.6609,0.0627,0.0
+4,"a man kicks a football from a holder , down the field .",0.0569,a man kicks a field goal directly through the uprights on a football field .,5.0,5.0,4.0,4.6667,0.6265,0.9173,0.8544,0.4955,0.4409,0.3905,0.5928,0.1948,0.5628,0.1075,0.5234,0.149,0.0569
+5,"a man jogs in place on a football field then kicks a soccer ball that rolled over to him , then jogs and kicks a ball again .",0.0,a man kicks a field goal directly through the uprights on a football field .,4.0,2.0,2.0,2.6667,0.4926,0.8785,0.7656,0.3009,0.2901,0.1919,0.4224,0.0,0.3372,0.0,0.2455,0.0,0.0
+6,"a man kicks a football towards the end of a football field ,",0.5204,a man kicks a field goal directly through the uprights on a football field .,5.0,5.0,4.0,4.6667,0.6757,0.9319,0.8989,0.7489,0.7256,0.7055,0.652,0.5669,0.6392,0.553,0.6128,0.5353,0.5204

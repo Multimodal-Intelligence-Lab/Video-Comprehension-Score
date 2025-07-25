@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two soccer teams play on a field as a crowded stadium applauds them and cheers .,0.5058,"a professional soccer game is on going , the crowd applauds as the game continues .",5.0,4.0,5.0,4.6667,0.7071,0.8563,0.886,0.6969,0.6922,0.6405,0.6579,0.5713,0.6694,0.5646,0.6139,0.5091,0.5058
+2,a large crowd of people are cheering and cheering in a stadium .,0.0,"a professional soccer game is on going , the crowd applauds as the game continues .",5.0,5.0,5.0,5.0,0.5283,0.7998,0.7875,0.2538,0.0759,0.0,0.4102,0.0,0.401,0.0,0.251,0.0,0.0
+3,a crowd of people in a stadium are cheering and cheering .,0.0,"a professional soccer game is on going , the crowd applauds as the game continues .",5.0,5.0,5.0,5.0,0.5486,0.7979,0.7347,0.3958,0.2716,0.0872,0.4343,0.0,0.3856,0.0,0.2301,0.0,0.0
+4,a big crowd inside a soccer stadium are applauding the soccer players in the soccer field below .,0.0,"a professional soccer game is on going , the crowd applauds as the game continues .",5.0,5.0,5.0,5.0,0.7223,0.8691,0.781,0.1956,0.0838,0.0,0.6804,0.0,0.6444,0.0,0.5908,0.0,0.0
+5,a soccer team makes a play and the crowd goes wild .,0.0,"a professional soccer game is on going , the crowd applauds as the game continues .",4.0,4.0,5.0,4.3333,0.7009,0.867,0.8696,0.1833,0.0,0.0,0.6551,0.0,0.6561,0.0,0.6033,0.0,0.0
+6,"coaches , players , and people in the stands of a soccer game clap .",0.0,"a professional soccer game is on going , the crowd applauds as the game continues .",5.0,4.0,4.0,4.3333,0.6763,0.8566,0.7803,0.4431,0.3478,0.2386,0.6221,0.1765,0.5851,0.0357,0.5157,0.1048,0.0

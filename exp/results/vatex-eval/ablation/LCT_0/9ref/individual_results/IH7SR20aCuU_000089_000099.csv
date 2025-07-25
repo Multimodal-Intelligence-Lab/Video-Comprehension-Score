@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,men playing a poker tournament as people watch and an announcer talks about the game .,0.3939,"a professional poker game is being broadcasted on national television , a commentator is speaking about the game .",5.0,5.0,5.0,5.0,0.7216,0.8989,0.8795,0.5556,0.681,0.625,0.6735,0.315,0.6391,0.4844,0.5776,0.2432,0.3939
+2,a group of people are sitting at a table playing poker .,0.6201,"a group of people are intently playing poker , we can see their hands projected on the screen .",5.0,5.0,5.0,5.0,0.7986,0.9283,0.8819,0.8346,0.7804,0.7486,0.783,0.6897,0.7716,0.6682,0.7539,0.6448,0.6201
+3,a group of people are sitting around a table playing poker .,0.561,"a group of people are intently playing poker , we can see their hands projected on the screen .",5.0,5.0,5.0,5.0,0.7849,0.915,0.8973,0.7547,0.7193,0.6759,0.765,0.6376,0.7557,0.6136,0.733,0.5815,0.561
+4,a man shows off how to deal a hand of poker .,0.2942,"a group of people are intently playing poker , we can see their hands projected on the screen .",3.0,3.0,3.0,3.0,0.5516,0.8429,1.0,1.0,1.0,1.0,0.4597,0.4339,0.5227,0.4201,0.4177,0.3111,0.2942
+5,man showing how to deal a poker game while sitting at a poker table .,0.3555,someone is monitoring a professional poker game and announcing the players moves .,5.0,3.0,4.0,4.0,0.5962,0.8628,0.9547,0.7427,0.831,0.7971,0.532,0.3991,0.5594,0.463,0.4893,0.2789,0.3555
+6,a group of people sitting around a table inside are playing poker .,0.3771,a group of people play poker in front of an audience .,5.0,4.0,5.0,4.6667,0.7307,0.9064,0.9129,0.6732,0.6798,0.5981,0.7029,0.4897,0.6854,0.4155,0.6529,0.4297,0.3771

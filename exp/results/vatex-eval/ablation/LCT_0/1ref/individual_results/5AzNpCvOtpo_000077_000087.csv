@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man installing carpet in various rooms with various types of tools .,0.5642,the man is installing carpet to the room and pushing it down in front of the tile .,5.0,4.0,5.0,4.6667,0.6473,0.8839,1.0,0.8933,0.9155,0.9044,0.601,0.6052,0.6473,0.6148,0.601,0.5534,0.5642
+2,a man is demonstrating how to install carpet on the floor .,0.3945,the man is installing carpet to the room and pushing it down in front of the tile .,5.0,5.0,4.0,4.6667,0.6771,0.8787,0.8327,0.7165,0.617,0.5642,0.6325,0.5493,0.6122,0.4344,0.5586,0.4871,0.3945
+3,a man is kneeling on the floor and putting a tile on the floor .,0.1814,the man is installing carpet to the room and pushing it down in front of the tile .,4.0,4.0,4.0,4.0,0.6256,0.8373,0.9404,0.5945,0.5475,0.4596,0.5528,0.3518,0.6018,0.2766,0.5245,0.2478,0.1814
+4,advertisement for carpet installation where it showcases men in a room of a home installing carpet .,0.0,the man is installing carpet to the room and pushing it down in front of the tile .,5.0,5.0,4.0,4.6667,0.5767,0.8883,0.7621,0.2165,0.072,0.0,0.5234,0.0,0.4445,0.0,0.3746,0.0,0.0
+5,a man is laying carpet and trimming the edges with tools .,0.4406,the man is installing carpet to the room and pushing it down in front of the tile .,5.0,5.0,5.0,5.0,0.5897,0.8275,1.0,0.8723,0.8863,0.8626,0.5042,0.5296,0.5897,0.5371,0.5042,0.4316,0.4406
+6,a man uses a hammer and wedge to install carpet in a home .,0.1508,the man is installing carpet to the room and pushing it down in front of the tile .,4.0,4.0,4.0,4.0,0.5883,0.8578,0.7564,0.4512,0.5652,0.4931,0.52,0.0671,0.4557,0.2609,0.3654,0.0,0.1508

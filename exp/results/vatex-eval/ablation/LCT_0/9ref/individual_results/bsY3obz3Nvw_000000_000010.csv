@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person describing how to chop an onion when demonstrating the techniques .,0.318,a man giving a cooking demonstration begins to cut up an onion .,4.0,5.0,5.0,4.6667,0.7452,0.8728,0.8819,0.7008,0.6891,0.6221,0.7069,0.5583,0.6923,0.3685,0.6474,0.4853,0.318
+2,a person is using a knife to cut a piece of fruit .,0.5107,a person using a knife cuts the stem and root off of an onion .,4.0,4.0,4.0,4.0,0.5561,0.9073,1.0,1.0,1.0,1.0,0.5107,0.5561,0.5561,0.5561,0.5107,0.5107,0.5107
+3,a person is using a knife to cut a piece of meat .,0.4882,a person using a knife cuts the stem and root off of an onion .,4.0,4.0,4.0,4.0,0.5366,0.9055,1.0,1.0,1.0,1.0,0.4882,0.5366,0.5366,0.5366,0.4882,0.4882,0.4882
+4,person cutting a white onion on a chopping board with a large knife .,0.5317,a man cuts up an onion on a cutting board in his kitchen .,4.0,4.0,4.0,4.0,0.6425,0.9073,0.9474,0.9086,0.8913,0.8794,0.6059,0.586,0.603,0.578,0.5594,0.5406,0.5317
+5,a person using a knife in a kitchen on the counter cutting a white onion .,0.5575,a man is using a knife to cut the ends off an onion .,5.0,5.0,5.0,5.0,0.6781,0.9151,1.0,0.8465,0.8645,0.8444,0.6387,0.5809,0.6594,0.596,0.6279,0.541,0.5575
+6,a woman is demonstrating how to properly cut an onion .,0.6919,the guy is doing a demonstration on the proper way to cut onions .,4.0,4.0,4.0,4.0,0.7879,0.9056,1.0,1.0,1.0,1.0,0.7596,0.7209,0.7676,0.7209,0.7365,0.6919,0.6919

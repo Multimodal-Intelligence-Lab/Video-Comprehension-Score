@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is dancing at his office desk,0.2868,a man air drums at his desk than walks away .,5.0,4.0,5.0,4.6667,0.6056,0.8706,0.9412,0.8555,0.8272,0.7765,0.5377,0.4913,0.5213,0.395,0.4244,0.4037,0.2868
+2,a man is standing in front of a computer and is talking to the camera .,0.3956,a man sitting in front of a computer gestures with his hands then laughs and gets up .,4.0,4.0,4.0,4.0,0.5202,0.852,1.0,0.9766,0.9317,0.9199,0.4369,0.5087,0.486,0.4851,0.3967,0.4234,0.3956
+3,a man is standing in front of a desk and is playing with his hands .,0.4055,a man at a work desk is playing air drums .,4.0,4.0,4.0,4.0,0.576,0.8696,0.9677,0.7915,0.8312,0.8059,0.5058,0.4571,0.5089,0.483,0.4352,0.3757,0.4055
+4,a man is seen acting in a weird manner in the office as he places a computer in a copymachine .,0.1729,a man in an office responds to music-like sounds coming from his computer monitor .,4.0,4.0,4.0,4.0,0.55,0.842,0.9474,0.8366,0.8379,0.796,0.4619,0.2938,0.5067,0.3082,0.4102,0.1557,0.1729
+5,the inside of a computer tower is shown while a man talks about parts of it and points to them .,0.0,a man is sitting at a computer playing the air drums to music .,1.0,4.0,3.0,2.6667,0.3349,0.8154,0.971,0.7824,0.7445,0.6763,0.1843,0.0,0.2091,0.0,0.03,0.0,0.0
+6,"a man sleeps in an office chair , someone slaps a notebook loudly on the table in front of him , and he jumps up after them .",0.0756,a man in an office responds to music-like sounds coming from his computer monitor .,3.0,4.0,3.0,3.3333,0.5065,0.8484,0.9642,0.6923,0.7375,0.6694,0.4138,0.218,0.4215,0.2659,0.2865,0.0152,0.0756

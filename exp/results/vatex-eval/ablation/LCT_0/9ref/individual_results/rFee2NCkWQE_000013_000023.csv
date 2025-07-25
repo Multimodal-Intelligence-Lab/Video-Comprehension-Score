@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is demonstrating the proper way to apply a facial cream .,0.8942,a lady is giving a tutorial on how to apply facial cream .,5.0,5.0,5.0,5.0,0.9053,0.8955,1.0,1.0,1.0,1.0,0.8942,0.9053,0.9053,0.9053,0.8942,0.8942,0.8942
+2,a woman is demonstrating how to apply cream to her face .,0.736,a woman demonstrates step by step how to apply lotion to the face .,5.0,5.0,5.0,5.0,0.8749,0.9209,0.9583,0.8819,0.8778,0.845,0.861,0.7626,0.8671,0.7569,0.8523,0.7422,0.736
+3,a woman is demonstrating how to apply cream to her face .,0.736,a woman demonstrates step by step how to apply lotion to the face .,5.0,5.0,5.0,5.0,0.8749,0.9209,0.9583,0.8819,0.8778,0.845,0.861,0.7626,0.8671,0.7569,0.8523,0.7422,0.736
+4,a woman is using some cream and applying it to her face,0.7056,a woman places a type of lotion on her face and smooths it out .,5.0,5.0,5.0,5.0,0.7941,0.8929,1.0,1.0,1.0,1.0,0.7565,0.7552,0.7941,0.7511,0.7565,0.7104,0.7056
+5,a woman is applying a facial product to her face and massaging it into her skin .,0.5594,a woman applies moisturizer to her face and then she rubs it in .,5.0,5.0,5.0,5.0,0.7675,0.8814,0.96,0.7876,0.7801,0.7462,0.7231,0.6105,0.7524,0.5806,0.7051,0.5808,0.5594
+6,a moisturizing cream is displayed and then a woman applies it to her under eyes .,0.0,a woman applies moisturizer to her face and then she rubs it in .,4.0,5.0,4.0,4.3333,0.6674,0.8972,0.832,0.5877,0.5638,0.4575,0.6293,0.1096,0.4396,0.0958,0.3418,0.0557,0.0

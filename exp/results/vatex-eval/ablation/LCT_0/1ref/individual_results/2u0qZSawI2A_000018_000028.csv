@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man moonwalks across a stage as music plays and people scream .,0.0,"it is footage of a extremely famous legendary pop star , dancing around on stage in front of a huge crowd of people .",5.0,5.0,5.0,5.0,0.4215,0.7943,0.9066,0.4,0.4563,0.3155,0.2717,0.0,0.3619,0.0,0.1967,0.0,0.0
+2,a man is performing a dance routine in front of a crowd .,0.3043,"it is footage of a extremely famous legendary pop star , dancing around on stage in front of a huge crowd of people .",5.0,5.0,2.0,4.0,0.4524,0.8409,0.9899,0.9305,0.936,0.9239,0.3488,0.4115,0.4468,0.415,0.3422,0.3002,0.3043
+3,a man is dancing on a stage in front of a crowd .,0.2502,"it is footage of a extremely famous legendary pop star , dancing around on stage in front of a huge crowd of people .",5.0,5.0,3.0,4.3333,0.4964,0.8888,0.9136,0.7853,0.7558,0.7252,0.4334,0.3586,0.4487,0.3336,0.3798,0.2784,0.2502
+4,a man is shown dancing to music on a stage as the crowd cheers .,0.2169,"it is footage of a extremely famous legendary pop star , dancing around on stage in front of a huge crowd of people .",5.0,5.0,5.0,5.0,0.501,0.8328,0.9338,0.7118,0.7651,0.718,0.4008,0.299,0.4656,0.3478,0.3583,0.1582,0.2169
+5,a man does a popular dance with music playing in the background .,0.2683,"it is footage of a extremely famous legendary pop star , dancing around on stage in front of a huge crowd of people .",5.0,5.0,5.0,5.0,0.46,0.7949,0.9796,0.9305,0.9284,0.9099,0.3207,0.4197,0.4488,0.4184,0.3066,0.27,0.2683
+6,one man is dancing like michael jackson in his room,0.0,"it is footage of a extremely famous legendary pop star , dancing around on stage in front of a huge crowd of people .",4.0,4.0,4.0,4.0,0.32,0.7829,0.9415,0.6483,0.7163,0.6376,0.1314,0.0,0.2778,0.0507,0.0775,0.0,0.0

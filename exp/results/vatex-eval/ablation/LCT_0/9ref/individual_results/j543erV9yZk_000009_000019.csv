@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a couple of people by a small camp fire , one walks by pouring something out while the other roasts a marshmellow .",0.5667,a couple of people outside standing around a fire and cooking marshmallows,5.0,4.0,4.0,4.3333,0.6977,0.8594,0.9565,0.7775,0.8171,0.7858,0.646,0.6112,0.684,0.63,0.6299,0.5446,0.5667
+2,a group of people are roasting marshmallows on a fire .,0.5039,some friends roast marshmallows over an over flame campfire at a small backyard party .,4.0,5.0,4.0,4.3333,0.8201,0.9209,0.9677,0.864,0.8065,0.7672,0.8046,0.6679,0.7677,0.5781,0.7587,0.6135,0.5039
+3,a group of people are watching a man roast a marshmallow over a fire .,0.5304,a couple of people outside standing around a fire and cooking marshmallows,3.0,5.0,4.0,4.0,0.7186,0.8975,0.9697,0.8723,0.9115,0.897,0.6864,0.5988,0.674,0.5981,0.6368,0.5313,0.5304
+4,a little girl roasting a marshmallow allows it to get engulfed in flames .,0.4415,a few girls giggle and roast marshmallows with one another .,4.0,5.0,4.0,4.3333,0.7055,0.8422,0.9497,0.9387,0.8885,0.866,0.6439,0.5448,0.6668,0.539,0.5971,0.4486,0.4415
+5,a group of kids and adults are surrounding a blazing bonfire cooking marshmallows .,0.6014,a couple of people outside standing around a fire and cooking marshmallows,4.0,5.0,4.0,4.3333,0.7209,0.8752,0.9569,0.8659,0.822,0.7867,0.6811,0.6565,0.704,0.6512,0.6618,0.5883,0.6014
+6,a person roasts a marshmallow over a fire pit outside .,0.5931,some friends roast marshmallows over an over flame campfire at a small backyard party .,5.0,4.0,5.0,4.6667,0.6856,0.8816,0.9831,1.0,0.9872,0.9851,0.6416,0.6582,0.6543,0.6498,0.598,0.6026,0.5931

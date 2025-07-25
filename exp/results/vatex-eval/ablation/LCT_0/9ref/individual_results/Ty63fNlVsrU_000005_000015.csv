@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person shuffles a red deck of playing cards .,0.5829,a person is shuffling a deck of cards while talking .,5.0,5.0,5.0,5.0,0.7187,0.9274,0.941,0.9679,0.8366,0.8238,0.6869,0.6657,0.6859,0.6132,0.652,0.6395,0.5829
+2,a person is showing how to shuffle a deck of cards .,0.6955,a woman is seen shuffling a deck of cards .,5.0,5.0,5.0,5.0,0.8052,0.9429,1.0,1.0,1.0,1.0,0.7876,0.7212,0.7901,0.7212,0.7711,0.6955,0.6955
+3,a person is shuffling a deck of cards with a deck of cards .,0.5571,a person is shuffling a deck of cards while talking .,5.0,5.0,4.0,4.6667,0.811,0.9809,0.8984,0.829,0.6424,0.6355,0.8073,0.772,0.7698,0.5591,0.7632,0.7676,0.5571
+4,a man seated is shuffling cards while people are talking in the background . /,0.3212,a person is shuffling a deck of cards while talking .,5.0,5.0,5.0,5.0,0.7063,0.914,0.8752,0.8359,0.744,0.6975,0.6787,0.4726,0.6644,0.4075,0.6329,0.4354,0.3212
+5,someone is demonstrating a way to shuffle a deck of cards .,0.6288,a woman is seen shuffling a deck of cards .,5.0,5.0,5.0,5.0,0.7869,0.9033,1.0,1.0,1.0,1.0,0.7641,0.6738,0.7683,0.6738,0.7435,0.6288,0.6288
+6,a man is shuffling a deck of cards in his hands in slow motion .,0.4786,a person is shuffling a deck of cards while talking .,4.0,4.0,4.0,4.0,0.6822,0.9058,0.9524,0.9017,0.8926,0.8787,0.6474,0.5388,0.5886,0.5277,0.5436,0.4908,0.4786

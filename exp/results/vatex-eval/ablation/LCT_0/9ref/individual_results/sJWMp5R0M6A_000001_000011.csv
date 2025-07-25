@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"someone is shown skiing down a large , steep snow-covered mountain .",0.6277,a person is skiing down a hill very fast in snow mountain .,5.0,5.0,5.0,5.0,0.8212,0.9353,0.9787,1.0,0.9593,0.9531,0.8088,0.6697,0.7311,0.6692,0.727,0.6284,0.6277
+2,a group of people are snowboarding down a snowy hill .,0.4702,a person is snowboarding down a snow hill and then they turn .,4.0,4.0,3.0,3.6667,0.6191,0.9203,0.941,0.7823,0.7811,0.7622,0.5861,0.5131,0.5117,0.5124,0.4694,0.471,0.4702
+3,a person is snowboarding down a hill and does a jump .,0.7274,a person is snowboarding down a snow hill and then they turn .,5.0,5.0,4.0,4.6667,0.7446,0.9368,1.0,1.0,1.0,1.0,0.7274,0.7446,0.7446,0.7446,0.7274,0.7274,0.7274
+4,someone is skiing down a snow kill and around ski poles .,0.4342,someone is skiing down a snowy mountain on skis .,5.0,5.0,5.0,5.0,0.5874,0.905,0.9756,0.8128,0.8058,0.7854,0.5441,0.4889,0.5771,0.488,0.5327,0.4353,0.4342
+5,a person skis down a steep slope on a sunny day .,0.5357,person skiing down a steep mountain slope narrowly missing a rock .,4.0,4.0,4.0,4.0,0.6508,0.891,1.0,0.8879,0.911,0.9001,0.5875,0.5755,0.6231,0.5863,0.577,0.5236,0.5357
+6,a person on a pair of skis slides down a mountain fast,0.5498,someone is skiing down a snowy mountain on skis .,5.0,5.0,5.0,5.0,0.836,0.9284,1.0,0.8408,0.827,0.7916,0.8234,0.6521,0.7252,0.5829,0.721,0.6056,0.5498

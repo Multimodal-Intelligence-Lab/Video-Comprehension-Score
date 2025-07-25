@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a small baby is wiggling , flinging their hands around as they are making noises and facing the camera .",0.5193,a very small baby is laying down and making sounds .,4.0,2.0,5.0,3.6667,0.6361,0.8719,0.9744,1.0,0.957,0.9507,0.5817,0.5989,0.5942,0.5808,0.5195,0.5399,0.5193
+2,a baby is laying on a bed and a woman is talking to him .,0.2256,a baby laying on its back wearing a moving his or her arms and makes a sound .,3.0,3.0,3.0,3.0,0.5659,0.8633,0.9756,1.0,0.9687,0.9601,0.4971,0.3478,0.5108,0.3601,0.408,0.2107,0.2256
+3,a baby is laying on a blanket and a woman is talking to the baby .,0.0938,a baby is laying down while crying for a little and looking at the camera .,2.0,3.0,2.0,2.3333,0.5506,0.8779,0.8889,0.8879,0.8326,0.7917,0.4881,0.2762,0.4532,0.2281,0.3511,0.1196,0.0938
+4,"a baby is laying down and making noises and faces , while someone talks to it .",0.556,a very small baby is laying down and making sounds .,4.0,4.0,4.0,4.0,0.742,0.9067,1.0,0.8972,0.8707,0.8438,0.7154,0.7124,0.6753,0.583,0.6204,0.6828,0.556
+5,a young baby is sitting and fussing while someone is talking in the background .,0.2587,a baby is laying down while crying for a little and looking at the camera .,2.0,2.0,2.0,2.0,0.5311,0.8136,1.0,0.8723,0.8863,0.8587,0.4237,0.394,0.4738,0.4036,0.3499,0.2468,0.2587
+6,a baby is being held by someone while making noises with her mouth .,0.2188,a baby waves their hand and blinks a few times and then makes a noise .,3.0,2.0,4.0,3.0,0.5376,0.8742,0.9787,0.7359,0.6961,0.6426,0.4562,0.3717,0.5065,0.3358,0.4172,0.261,0.2188

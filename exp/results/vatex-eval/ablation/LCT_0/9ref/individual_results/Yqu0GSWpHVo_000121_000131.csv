@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a person is sitting at a table eating orange slices , while another places a foil pouch next to a fire .",0.0166,a women is showing how she is cooking potatoes in tin-foil in the coals .,5.0,5.0,5.0,5.0,0.6973,0.8491,0.9469,0.8853,0.8938,0.8637,0.6435,0.2267,0.6356,0.2341,0.5709,0.0072,0.0166
+2,a group of people are roasting marshmallows over a fire .,0.0,outside a woman demonstrates how to properly cook food outdoors .,3.0,1.0,2.0,2.0,0.3525,0.7979,1.0,0.8819,0.8784,0.8431,0.1846,0.1718,0.3149,0.1685,0.1373,0.0,0.0
+3,a group of people are roasting marshmallows over a fire .,0.0,outside a woman demonstrates how to properly cook food outdoors .,3.0,1.0,2.0,2.0,0.3525,0.7979,1.0,0.8819,0.8784,0.8431,0.1846,0.1718,0.3149,0.1685,0.1373,0.0,0.0
+4,a woman is removing fried vegetables from a pan and putting them onto a plate .,0.0467,a woman is explaining how to cook baked potatoes near an open flame .,2.0,1.0,3.0,2.0,0.3367,0.835,0.9885,0.8983,0.9412,0.9263,0.1661,0.2033,0.3055,0.2397,0.1233,0.0011,0.0467
+5,a woman is cooking vegetables on a stove's burner with a frying pan .,0.0,outside a woman demonstrates how to properly cook food outdoors .,3.0,1.0,4.0,2.6667,0.3974,0.8254,0.975,0.8291,0.8546,0.8156,0.2541,0.1713,0.2982,0.1961,0.1497,0.0,0.0
+6,a woman providing a demonstration of cooking techniques for vegetables on a hot stove .,0.2597,a women is showing how she is cooking potatoes in tin-foil in the coals .,4.0,1.0,4.0,3.0,0.5982,0.8438,1.0,0.8879,0.911,0.8943,0.5238,0.3603,0.5598,0.3764,0.4783,0.2405,0.2597

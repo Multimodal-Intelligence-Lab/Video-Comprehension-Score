@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a lady seated while playing a saxophone beautifully in a room,0.3786,a woman sitting down while playing a cello in a classroom,4.0,4.0,4.0,4.0,0.5873,0.8802,1.0,1.0,1.0,1.0,0.5311,0.4735,0.532,0.4735,0.4683,0.3786,0.3786
+2,a young girl is playing a song on a cello .,0.4124,a woman is in the front of a room playing music on a cello .,5.0,5.0,5.0,5.0,0.7181,0.8844,0.9714,0.9188,0.8888,0.8728,0.6813,0.5031,0.6711,0.4863,0.6282,0.4317,0.4124
+3,a woman is sitting in a chair and playing a cello .,0.6047,a woman sitting down while playing a cello in a classroom,4.0,5.0,5.0,4.6667,0.7948,0.9572,1.0,0.8408,0.827,0.8054,0.7856,0.639,0.6965,0.633,0.6624,0.5939,0.6047
+4,a young woman plays the strings on a small harp while sitting on a bed .,0.2414,a woman is playing the cello sitting down in a room .,4.0,3.0,4.0,3.6667,0.504,0.8588,0.9667,0.8694,0.8392,0.8128,0.3965,0.3711,0.4041,0.3485,0.3061,0.2677,0.2414
+5,yoyo ma is playing a bach cello piece on a stage surrounded by chairs,0.0,a woman is shown performing on a cello while reading sheet music indoors .,3.0,2.0,3.0,2.6667,0.3846,0.833,0.8951,0.8467,0.7688,0.7155,0.2518,0.238,0.2784,0.1598,0.112,0.0851,0.0
+6,a girl plays a song on the harp by plucking the strings .,0.0,a woman is shown performing on a cello while reading sheet music indoors .,4.0,4.0,4.0,4.0,0.4767,0.8632,0.9125,0.6435,0.715,0.6426,0.3937,0.0,0.3371,0.0006,0.232,0.0,0.0

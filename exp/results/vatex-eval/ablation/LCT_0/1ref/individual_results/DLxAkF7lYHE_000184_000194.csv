@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl shows how to wrap christmas presents while sitting on the floor .,0.4366,girl in dread locks wrapping christmas gifts in front of a camera .,5.0,4.0,5.0,4.6667,0.5556,0.8616,1.0,0.8933,0.9155,0.9019,0.4842,0.5026,0.5556,0.5146,0.4842,0.4227,0.4366
+2,a young girl is showing how to wrap a present .,0.1874,girl in dread locks wrapping christmas gifts in front of a camera .,5.0,4.0,5.0,4.6667,0.4805,0.8268,0.898,0.8047,0.7732,0.7257,0.3717,0.3544,0.4214,0.3281,0.3003,0.2192,0.1874
+3,a young girl is sitting on the floor and folding a gift .,0.0,girl in dread locks wrapping christmas gifts in front of a camera .,5.0,5.0,4.0,4.6667,0.4057,0.818,0.8418,0.65,0.6004,0.5115,0.2734,0.0856,0.294,0.0101,0.1369,0.0,0.0
+4,a person shows how to wrap a gift the right way,0.1322,girl in dread locks wrapping christmas gifts in front of a camera .,5.0,4.0,5.0,4.6667,0.3416,0.8329,1.0,0.8879,0.911,0.8931,0.2095,0.2585,0.3416,0.2773,0.2095,0.1097,0.1322
+5,"a woman and a little girl decorate a christmas tree while "" rockin' around the christmas tree "" plays .",0.0,girl in dread locks wrapping christmas gifts in front of a camera .,4.0,1.0,1.0,2.0,0.3712,0.8152,0.9213,0.6368,0.6825,0.6106,0.2287,0.0127,0.3175,0.0788,0.1627,0.0,0.0
+6,a young girl and her mother decorating a christmas tree in a room .,0.0,girl in dread locks wrapping christmas gifts in front of a camera .,3.0,1.0,1.0,1.6667,0.3581,0.8273,0.9555,0.614,0.6214,0.5424,0.2241,0.0,0.3282,0.0,0.188,0.0,0.0

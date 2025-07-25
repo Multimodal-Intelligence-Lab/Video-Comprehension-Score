@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"someone hanging from the bottom of a platform , by a rope , after they've bungee jumped .",0.0801,"several people are around a scaffolding that is used for bungee jumping , while one young man is still in the harness .",5.0,5.0,4.0,4.6667,0.537,0.7923,0.8591,0.6024,0.6352,0.5396,0.4157,0.2314,0.4611,0.2712,0.3198,0.0299,0.0801
+2,a man is standing on the side of a building with a rope .,0.0,"several people are around a scaffolding that is used for bungee jumping , while one young man is still in the harness .",5.0,5.0,4.0,4.6667,0.2416,0.7904,0.8108,0.6101,0.4938,0.3595,0.0404,0.0,0.0647,0.0,0.0,0.0,0.0
+3,a group of people are in a building and they are climbing a wall .,0.0,"several people are around a scaffolding that is used for bungee jumping , while one young man is still in the harness .",1.0,1.0,1.0,1.0,0.1504,0.7827,0.9307,0.7987,0.766,0.7011,0.0,0.0,0.0871,0.0,0.0,0.0,0.0
+4,a man attached to another man were suspended in the air and then popped open the parachute,0.0,"several people are around a scaffolding that is used for bungee jumping , while one young man is still in the harness .",4.0,1.0,2.0,2.3333,0.2659,0.7995,0.8577,0.4487,0.4865,0.3577,0.0818,0.0,0.1442,0.0,0.0,0.0,0.0
+5,a man jumping off a rail bunging jumping outdoors with people surrounding,0.0,"several people are around a scaffolding that is used for bungee jumping , while one young man is still in the harness .",5.0,2.0,3.0,3.3333,0.5265,0.8643,0.6123,0.5051,0.442,0.3544,0.4522,0.0601,0.2268,0.0,0.1054,0.0,0.0
+6,a man attached to a bungee cord leaps off of a bridge and is pulled back up by the cord .,0.0868,"several people are around a scaffolding that is used for bungee jumping , while one young man is still in the harness .",4.0,5.0,4.0,4.3333,0.5078,0.8085,0.8738,0.6317,0.6666,0.5877,0.3912,0.2208,0.4367,0.2616,0.3033,0.0363,0.0868

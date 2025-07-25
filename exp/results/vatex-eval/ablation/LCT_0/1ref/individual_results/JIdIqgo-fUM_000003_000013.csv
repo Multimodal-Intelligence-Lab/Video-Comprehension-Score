@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people playing a basketball game in front of other people,0.043,a boys high school basketball game and one player scores a basket .,5.0,5.0,5.0,5.0,0.3958,0.8349,0.9243,0.7463,0.7562,0.7079,0.2763,0.1904,0.3464,0.201,0.2171,0.0303,0.043
+2,a group of people are playing basketball in a gym .,0.0,a boys high school basketball game and one player scores a basket .,5.0,5.0,5.0,5.0,0.4185,0.8113,0.8728,0.4814,0.4687,0.3452,0.2833,0.0,0.3337,0.0,0.1788,0.0,0.0
+3,a group of people are playing basketball in a gym .,0.0,a boys high school basketball game and one player scores a basket .,5.0,5.0,5.0,5.0,0.4185,0.8113,0.8728,0.4814,0.4687,0.3452,0.2833,0.0,0.3337,0.0,0.1788,0.0,0.0
+4,a basketball game is in progress and one team member make a basket .,0.0,a boys high school basketball game and one player scores a basket .,5.0,5.0,5.0,5.0,0.6098,0.8759,0.8571,0.4295,0.4012,0.3163,0.5545,0.0645,0.5448,0.0181,0.4803,0.0,0.0
+5,a man dunks a basketball on the court while others are watching .,0.0,a boys high school basketball game and one player scores a basket .,5.0,5.0,5.0,5.0,0.3466,0.8036,0.9244,0.5282,0.5411,0.429,0.1869,0.0,0.2932,0.0,0.1204,0.0,0.0
+6,two teams of basketball players are gathered under the net and one player throw the ball and gets a basket .,0.2661,a boys high school basketball game and one player scores a basket .,5.0,5.0,5.0,5.0,0.4973,0.8611,0.9228,0.7649,0.7955,0.7625,0.4162,0.3427,0.4552,0.3681,0.3673,0.2367,0.2661

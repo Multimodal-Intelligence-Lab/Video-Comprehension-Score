@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two men are talking about a scene about a woman character .,0.2271,on a tv show two guys are talking with a tv playing in the background .,5.0,5.0,5.0,5.0,0.4553,0.838,0.9,0.8879,0.8409,0.8101,0.3501,0.3866,0.3948,0.3523,0.2779,0.268,0.2271
+2,a man and a woman are standing in front of a microphone .,0.0,on a tv show two guys are talking with a tv playing in the background .,2.0,4.0,2.0,2.6667,0.1092,0.7507,0.913,0.8047,0.7832,0.7112,0.0,0.0,0.0243,0.0,0.0,0.0,0.0
+3,a man in a suit is talking to a group of people .,0.0,on a tv show two guys are talking with a tv playing in the background .,4.0,4.0,4.0,4.0,0.1299,0.7896,0.9796,0.8819,0.8923,0.8636,0.0,0.0134,0.1118,0.0249,0.0,0.0,0.0
+4,"on a boat , a man is pointing at and talking about people on two other boats .",0.0,on a tv show two guys are talking with a tv playing in the background .,3.0,4.0,2.0,3.0,0.1199,0.8078,0.8845,0.6785,0.6518,0.569,0.0,0.0,0.0049,0.0,0.0,0.0,0.0
+5,a split screen shows a man speaking and making a statement while a man and a woman on the other screen listen and take it in .,0.0,on a tv show two guys are talking with a tv playing in the background .,4.0,4.0,4.0,4.0,0.353,0.7937,0.9529,0.6787,0.7409,0.6736,0.1849,0.0467,0.321,0.1268,0.1446,0.0,0.0
+6,a man on a tv show looking like he's talking about his engagement,0.0295,on a tv show two guys are talking with a tv playing in the background .,4.0,4.0,4.0,4.0,0.455,0.8563,0.8612,0.5296,0.6559,0.5981,0.3635,0.0,0.3671,0.169,0.2609,0.0,0.0295

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is driving on a road and two pedestrians back up then walk on the road .,0.1906,someone is driving down the street and has to stop for two people in the middle of the road waiting to cross .,5.0,5.0,5.0,5.0,0.5452,0.8799,0.9038,0.6107,0.6386,0.5893,0.4831,0.2553,0.4968,0.2878,0.4282,0.1537,0.1906
+2,a person is driving a car in a parking lot and a man is talking .,0.0,someone is driving down the street and has to stop for two people in the middle of the road waiting to cross .,3.0,3.0,3.0,3.0,0.2839,0.8074,0.9556,0.8176,0.8416,0.8038,0.1131,0.1241,0.2506,0.1491,0.0718,0.0,0.0
+3,a person is driving a car down the road while a man is talking in the background .,0.0,someone is driving down the street and has to stop for two people in the middle of the road waiting to cross .,4.0,3.0,3.0,3.3333,0.3752,0.8512,0.9221,0.4158,0.4309,0.3314,0.266,0.0,0.3224,0.0,0.2039,0.0,0.0
+4,a vehicle going down the road and stopping to view a dancing traffic officer .,0.0,someone is driving down the street and has to stop for two people in the middle of the road waiting to cross .,4.0,4.0,4.0,4.0,0.4194,0.8143,0.9227,0.5794,0.6157,0.5281,0.287,0.0,0.3708,0.0571,0.2273,0.0,0.0
+5,a vehicle is backin up out of a busy intersection and another vehicle moves forward .,0.0,someone is driving down the street and has to stop for two people in the middle of the road waiting to cross .,4.0,2.0,1.0,2.3333,0.3579,0.7802,0.9407,0.6903,0.7284,0.6519,0.177,0.0698,0.3174,0.1185,0.1252,0.0,0.0
+6,"viewed through the windshield of an automobile , motor vehicle traffic passes by and a black car reverses somewhat so that the observation car can pull out into traffic .",0.0,someone is driving down the street and has to stop for two people in the middle of the road waiting to cross .,4.0,3.0,2.0,3.0,0.3334,0.7652,0.9753,0.7463,0.8175,0.7614,0.1288,0.1067,0.3165,0.1845,0.1067,0.0,0.0

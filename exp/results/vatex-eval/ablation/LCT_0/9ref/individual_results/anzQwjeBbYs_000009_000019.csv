@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man rolls a clear ball up and down his arms fluidly .,0.6375,a man moves a clear ball all over his body while music plays .,5.0,5.0,5.0,5.0,0.8293,0.9223,0.9787,0.9737,0.9743,0.9701,0.8149,0.6912,0.8032,0.6817,0.7866,0.6483,0.6375
+2,a man is demonstrating how to do a trick with a ball .,0.5552,in a room a man shows different instances of him doing tricks with a large marble ball,5.0,5.0,4.0,4.6667,0.6067,0.8842,1.0,1.0,1.0,1.0,0.5552,0.6067,0.6067,0.6067,0.5552,0.5552,0.5552
+3,a man is demonstrating how to juggle a ball in his hands .,0.3787,man manipulating a clear glass ball over and under his hand with musical accompaniment .,5.0,5.0,4.0,4.6667,0.552,0.8727,0.9714,0.8819,0.8642,0.8416,0.4867,0.478,0.5096,0.4673,0.428,0.3912,0.3787
+4,a man does a trick with a crystal ball that he is holding .,0.7262,the man is moving a crystal ball around on his body .,5.0,5.0,4.0,4.6667,0.7992,0.9174,1.0,0.9722,0.8954,0.8775,0.7736,0.7612,0.7992,0.7572,0.7736,0.7307,0.7262
+5,a man stands and uses his hands to do tricks with a crystal ball,0.5116,the man is moving a crystal ball around on his body .,5.0,5.0,4.0,4.6667,0.7498,0.8951,1.0,0.9045,0.9298,0.9188,0.7205,0.6644,0.7006,0.576,0.6554,0.6137,0.5116
+6,"a man is balancing a blue ball on his hands/arms , while he is constantly moving them .",0.6112,a man balances a glass ball on his arms and rolls it around .,4.0,4.0,4.0,4.0,0.6588,0.8777,1.0,1.0,1.0,1.0,0.6112,0.6588,0.6588,0.6588,0.6112,0.6112,0.6112

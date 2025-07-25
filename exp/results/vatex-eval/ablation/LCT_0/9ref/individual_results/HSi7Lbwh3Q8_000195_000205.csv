@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"orange , red , and black dominoes fall out of a stack into a pile .",0.5319,someone throws a bunch of colored dominoes on top of an already messy pile of dominoes .,5.0,5.0,5.0,5.0,0.681,0.9077,1.0,0.8723,0.8863,0.8537,0.6226,0.5875,0.666,0.6043,0.6048,0.512,0.5319
+2,a person is showing how to use a meat grinder .,0.0,a person is knocking over some plastic pieces that is on a table .,4.0,2.0,2.0,2.6667,0.1529,0.7953,0.9756,0.9802,0.9537,0.9398,0.0,0.1168,0.1317,0.0855,0.0,0.0,0.0
+3,a person is demonstrating how to use a meat grinder .,0.0,a person is knocking over some plastic pieces that is on a table .,4.0,2.0,2.0,2.6667,0.1691,0.7872,0.9756,0.8824,0.8647,0.8238,0.0,0.0227,0.1483,0.0,0.0,0.0,0.0
+4,a child is playing and knocking over dominoes on the floor .,0.1803,"brightly colored plastic block are knocked down , some of them domino style .",5.0,2.0,4.0,3.6667,0.543,0.8527,0.9524,0.8128,0.7587,0.7026,0.4641,0.3793,0.5119,0.335,0.393,0.2349,0.1803
+5,a group of people of playing a game of dominoes on a table .,0.0365,"brightly colored plastic block are knocked down , some of them domino style .",4.0,3.0,4.0,3.6667,0.4309,0.8248,1.0,0.8723,0.8863,0.8527,0.2959,0.2442,0.3711,0.2561,0.2294,0.0347,0.0365
+6,a boy pushes down a domino which sets off more of the dominos .,0.3795,a person knocks down a wall of red dominoes next to an orange pile of dominoes .,5.0,4.0,4.0,4.3333,0.6837,0.9227,1.0,1.0,1.0,1.0,0.6573,0.4851,0.5125,0.4851,0.4859,0.3795,0.3795

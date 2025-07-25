@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a soccer team comes out of a huddle , preparing to play a game in an indoor arena .",0.5884,a soccer team huddles together on the field during a game .,4.0,5.0,5.0,4.6667,0.6706,0.9015,1.0,1.0,1.0,1.0,0.6346,0.6341,0.6497,0.6289,0.6114,0.5941,0.5884
+2,a group of people are playing a game of football .,0.1605,a group of people on a sports field huddle in a circle and link arms .,5.0,5.0,2.0,4.0,0.4556,0.8523,0.95,0.8445,0.8084,0.7604,0.3613,0.3553,0.3493,0.2845,0.2366,0.2437,0.1605
+3,a group of girls are playing a game of football .,0.0,a sports team in blue and white jerseys huddle together in a circle on the field in an arena before they all walk off .,4.0,4.0,1.0,3.0,0.3256,0.8339,0.9231,0.8384,0.7948,0.7334,0.1768,0.1738,0.194,0.0881,0.016,0.0,0.0
+4,"a team of people on a soccer field , huddled in a circle then moving in a circle together .",0.6144,a group of people on a sports field huddle in a circle and link arms .,3.0,4.0,4.0,3.6667,0.8143,0.9256,0.9892,0.9084,0.926,0.9179,0.7994,0.6455,0.8025,0.6522,0.7866,0.607,0.6144
+5,a group of people standing around each other in a huddle in a sports game,0.2332,a group of people on a sports field huddle in a circle and link arms .,5.0,5.0,5.0,5.0,0.6943,0.8973,0.8989,0.65,0.6822,0.5969,0.6593,0.3161,0.6599,0.2718,0.6209,0.2797,0.2332
+6,a group of people are huddled together standing close to a soccer goal .,0.5104,a soccer team huddles together on the field during a game .,5.0,5.0,4.0,4.6667,0.7065,0.873,0.971,0.7824,0.7469,0.6886,0.6638,0.6249,0.6332,0.5565,0.5798,0.5703,0.5104

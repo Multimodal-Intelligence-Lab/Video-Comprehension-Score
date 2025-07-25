@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a toddler wearing a bike helmet and riding a skateboard with handles .,0.0,a little girl is pushing herself on a toy scooter along a concrete driveway .,4.0,5.0,5.0,4.6667,0.3076,0.7424,0.9412,0.5294,0.5164,0.3486,0.0674,0.0,0.2644,0.0,0.0092,0.0,0.0
+2,a little girl is riding a scooter on the sidewalk .,0.5761,a little girl is pushing herself on a toy scooter along a concrete driveway .,4.0,4.0,4.0,4.0,0.6754,0.8723,0.9583,0.8819,0.8778,0.8599,0.6279,0.6319,0.6613,0.6302,0.6117,0.5781,0.5761
+3,a little boy is riding a scooter down a driveway .,0.3973,a little girl is pushing herself on a toy scooter along a concrete driveway .,4.0,5.0,4.0,4.3333,0.6331,0.8842,0.9583,0.6754,0.6886,0.6478,0.585,0.4567,0.6171,0.4671,0.567,0.3856,0.3973
+4,a little boy was riding on a scooter in a circle,0.1531,a little girl is pushing herself on a toy scooter along a concrete driveway .,4.0,4.0,4.0,4.0,0.3695,0.8481,0.9583,0.8819,0.8778,0.8559,0.2566,0.2851,0.3421,0.2817,0.2243,0.1571,0.1531
+5,some children are at play with an scooter .,0.0,a little girl is pushing herself on a toy scooter along a concrete driveway .,4.0,4.0,4.0,4.0,0.3772,0.8401,0.8392,0.9611,0.688,0.6287,0.2587,0.3521,0.2579,0.0949,0.1167,0.2288,0.0
+6,a young child rolls around on a three-wheeled scooter .,0.0,a little girl is pushing herself on a toy scooter along a concrete driveway .,4.0,4.0,5.0,4.3333,0.4266,0.822,0.883,0.649,0.6222,0.5404,0.3025,0.1165,0.3507,0.0785,0.2101,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man and a woman are discussing wine while enjoying the wine .,0.7269,a man and a women talk with one another while surrounded by wine .,5.0,5.0,5.0,5.0,0.8783,0.9152,0.9565,0.7785,0.764,0.7369,0.8643,0.7478,0.8727,0.7313,0.8582,0.7437,0.7269
+2,a woman is demonstrating how to make a wine tasting .,0.2218,a man and woman sit at a table drinking wine and discussing the flavor .,5.0,1.0,1.0,2.3333,0.4871,0.8579,0.9592,0.8819,0.8784,0.8395,0.3975,0.3627,0.4373,0.3491,0.3391,0.2381,0.2218
+3,a woman is sitting at a table and tasting a glass of wine .,0.5547,a man and woman are sitting at a table and describing the taste of a wine,5.0,4.0,5.0,4.6667,0.6871,0.9421,1.0,1.0,1.0,1.0,0.6523,0.588,0.6643,0.5805,0.627,0.5627,0.5547
+4,two men are sitting at a table while drinking wine and talking .,0.6747,a man and woman sit at a table drinking wine and discussing the flavor .,4.0,3.0,4.0,3.6667,0.7141,0.9142,0.971,0.9777,0.9615,0.9578,0.6872,0.7075,0.7055,0.7026,0.6779,0.6801,0.6747
+5,two middle-aged men chat and enjoy wine-tasting in a public setting .,0.0645,a man and woman sit at a table drinking wine and discussing the flavor .,4.0,4.0,2.0,3.3333,0.5905,0.8146,0.9264,0.6761,0.6719,0.5914,0.4973,0.2678,0.558,0.2651,0.4573,0.086,0.0645
+6,two men at a wine tasting are discussing their impressions of wine .,0.3537,a couple is sitting down doing a wine tasting one glass at a time/,4.0,4.0,4.0,4.0,0.6359,0.8838,0.9555,0.7638,0.8338,0.803,0.5881,0.405,0.5717,0.455,0.5154,0.2945,0.3537

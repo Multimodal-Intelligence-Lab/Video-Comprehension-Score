@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man holding a baby while the baby holds a baby bottle with both of its hands .,0.5273,a man holds a baby while she drinks from a sippy cup .,5.0,5.0,5.0,5.0,0.7062,0.9072,0.9321,0.6855,0.685,0.6528,0.6762,0.5547,0.6848,0.554,0.6526,0.5277,0.5273
+2,a baby is drinking from a sippy cup with a straw .,0.532,a man holds a baby while she drinks from a sippy cup .,4.0,5.0,4.0,4.3333,0.6966,0.9165,0.7636,0.9679,0.7074,0.6808,0.6689,0.6865,0.6026,0.5711,0.5664,0.6579,0.532
+3,a little girl is sitting on a couch holding a sippy cup .,0.0,a man holds a baby while she drinks from a sippy cup .,5.0,4.0,4.0,4.3333,0.5728,0.8622,0.8603,0.4189,0.2724,0.1561,0.5045,0.0,0.5034,0.0,0.4241,0.0,0.0
+4,a baby drinks a dark liquid from a sippy cup while being helped by an adult .,0.1855,a man holds a baby while she drinks from a sippy cup .,4.0,4.0,3.0,3.6667,0.6554,0.8962,0.7318,0.6107,0.4987,0.4406,0.6155,0.406,0.5291,0.2351,0.4745,0.3675,0.1855
+5,a man is holding to babies while sitting in a chair .,0.345,a man holds a baby while she drinks from a sippy cup .,4.0,5.0,4.0,4.3333,0.4392,0.8563,1.0,1.0,1.0,1.0,0.345,0.4392,0.4392,0.4392,0.345,0.345,0.345
+6,a baby is holding onto a pink sippy cup with two hands and drinking from it .,0.022,a man holds a baby while she drinks from a sippy cup .,5.0,4.0,4.0,4.3333,0.6757,0.9031,0.7341,0.4426,0.3732,0.3059,0.6409,0.1751,0.5583,0.0724,0.5109,0.1304,0.022

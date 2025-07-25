@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a mason is laying bricks to create a wall while smoking a cigarette .,0.0695,a man with something in his mouth laying a brick with cement to form a wall-like structure .,5.0,5.0,5.0,5.0,0.6207,0.8282,0.8623,0.5085,0.4957,0.3911,0.542,0.2082,0.5601,0.1875,0.4689,0.0932,0.0695
+2,a man is using a trowel to build a brick wall .,0.3464,a man with something in his mouth laying a brick with cement to form a wall-like structure .,5.0,5.0,5.0,5.0,0.5531,0.844,0.9557,0.789,0.8101,0.775,0.4705,0.4336,0.5324,0.4483,0.4459,0.3289,0.3464
+3,a man is demonstrating how to lay bricks on a wall .,0.5164,a man with something in his mouth laying a brick with cement to form a wall-like structure .,5.0,5.0,5.0,5.0,0.623,0.8774,0.9467,0.8954,0.8885,0.8729,0.5703,0.5789,0.6017,0.5756,0.5461,0.5201,0.5164
+4,a man demonstrates laying a brick wall with bricks and mortar .,0.461,a man with something in his mouth laying a brick with cement to form a wall-like structure .,5.0,5.0,5.0,5.0,0.6588,0.8829,0.9223,0.7029,0.7169,0.6794,0.6136,0.5147,0.6301,0.5241,0.581,0.4503,0.461
+5,a man is outside hammering bricks into place on the ground,0.3392,a man with something in his mouth laying a brick with cement to form a wall-like structure .,4.0,4.0,3.0,3.6667,0.4975,0.8293,0.9851,0.9002,0.917,0.8999,0.3941,0.4418,0.4899,0.452,0.3849,0.3269,0.3392
+6,a man wearing a hi-viz jacket lays bricks on a wall using a trowel and mortar .,0.2246,a man with something in his mouth laying a brick with cement to form a wall-like structure .,4.0,4.0,4.0,4.0,0.551,0.8278,0.9571,0.6506,0.6995,0.637,0.4576,0.3099,0.5309,0.3581,0.4333,0.1663,0.2246

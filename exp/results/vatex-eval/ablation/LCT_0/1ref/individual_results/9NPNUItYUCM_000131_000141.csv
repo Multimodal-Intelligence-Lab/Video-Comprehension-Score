@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man does a modern shuffle dance on a kitchen floor to electronic dance music .,0.1443,a person is dancing along to music in a kitchen .,5.0,5.0,5.0,5.0,0.6955,0.8847,0.7314,0.5074,0.4388,0.3656,0.6558,0.2918,0.5837,0.1931,0.5294,0.2489,0.1443
+2,a person is doing a dance routine in a living room .,0.5196,a person is dancing along to music in a kitchen .,4.0,4.0,4.0,4.0,0.6784,0.8516,0.9375,0.6768,0.7861,0.7488,0.6224,0.5235,0.6569,0.5909,0.5972,0.442,0.5196
+3,a young man is dancing to music in a kitchen .,0.4305,a person is dancing along to music in a kitchen .,5.0,5.0,5.0,5.0,0.8631,0.92,0.875,0.3651,0.5152,0.4731,0.8512,0.2644,0.8436,0.4384,0.83,0.2542,0.4305
+4,music is playing while a man is dancing around the room .,0.0,a person is dancing along to music in a kitchen .,5.0,5.0,5.0,5.0,0.6236,0.8832,0.6452,0.5567,0.1954,0.089,0.5738,0.2892,0.4166,0.0,0.3395,0.2276,0.0
+5,a teenage boy does crazy dance moves to a music in a hallway .,0.0,a person is dancing along to music in a kitchen .,4.0,4.0,4.0,4.0,0.4947,0.837,0.9524,0.5274,0.4647,0.3605,0.3963,0.0419,0.4695,0.0,0.3662,0.0,0.0
+6,a young man dances around a bedroom to dance music while different colored lights flash .,0.2528,a person is dancing along to music in a kitchen .,3.0,3.0,3.0,3.0,0.5361,0.8463,0.8768,0.8284,0.7335,0.6851,0.4519,0.4401,0.471,0.3676,0.3749,0.3384,0.2528

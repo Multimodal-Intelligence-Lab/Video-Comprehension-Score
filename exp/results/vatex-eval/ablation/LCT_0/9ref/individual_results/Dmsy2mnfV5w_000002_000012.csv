@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man begins to gear up and then throws a stone to skip the water .,0.4891,a man throws a rock and skips it across the lake .,5.0,5.0,5.0,5.0,0.6953,0.8837,0.9846,0.8792,0.929,0.9149,0.6552,0.5892,0.6537,0.5323,0.6081,0.5352,0.4891
+2,a man is standing on the ground and a man is talking to him .,0.0,a man is talking to a young boy before he throws an object into a lake .,4.0,4.0,4.0,4.0,0.2919,0.8552,0.9677,0.9062,0.9146,0.8869,0.1715,0.0465,0.1042,0.0521,0.0,0.0,0.0
+3,a man is standing on the beach and is digging in the sand .,0.0,a man is talking to a young boy before he throws an object into a lake .,4.0,4.0,2.0,3.3333,0.2433,0.8489,1.0,0.8408,0.827,0.7833,0.104,0.1,0.2433,0.085,0.052,0.0,0.0
+4,a man throws a rock in a lake as his dog watches .,0.6877,a man throws a rock and skips it across the lake .,4.0,4.0,4.0,4.0,0.7719,0.902,0.9356,0.8983,0.8957,0.8696,0.7471,0.7021,0.7328,0.7183,0.7038,0.6716,0.6877
+5,the man is skipping rocks across the lake while his dog watches him .,0.3392,a man throws a rock and skips it across the lake .,4.0,4.0,4.0,4.0,0.7865,0.9139,0.9386,0.7243,0.7558,0.7085,0.7664,0.4845,0.7457,0.3664,0.7218,0.4709,0.3392
+6,a man throws a rock into a lake as little kids watch besides him .,0.5694,a man throws a rock and skips it across the lake .,5.0,5.0,4.0,4.6667,0.7832,0.8964,0.9034,0.7249,0.6735,0.6358,0.7582,0.6488,0.7449,0.5832,0.7154,0.6372,0.5694

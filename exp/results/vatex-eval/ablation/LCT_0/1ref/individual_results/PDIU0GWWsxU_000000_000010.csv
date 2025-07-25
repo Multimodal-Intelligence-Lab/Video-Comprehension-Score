@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a lady is doing jumping jacks while a man in the background is talking .,0.0583,a girl in workout clothes gets filmed doing jumping jacks .,5.0,5.0,5.0,5.0,0.543,0.8134,0.7595,0.7564,0.5966,0.504,0.4382,0.3959,0.3983,0.2341,0.2603,0.2573,0.0583
+2,a woman is doing jumping jacks in front of a mirror .,0.0,a girl in workout clothes gets filmed doing jumping jacks .,4.0,3.0,4.0,3.6667,0.5748,0.8226,0.7589,0.5725,0.4211,0.2963,0.4832,0.2564,0.4398,0.0,0.319,0.0973,0.0
+3,a woman is doing jumping jacks in front of a mirror .,0.0,a girl in workout clothes gets filmed doing jumping jacks .,4.0,3.0,4.0,3.6667,0.5748,0.8226,0.7589,0.5725,0.4211,0.2963,0.4832,0.2564,0.4398,0.0,0.319,0.0973,0.0
+4,a woman in excercise attire demonstrates proper form for jumping jacks,0.5277,a girl in workout clothes gets filmed doing jumping jacks .,5.0,5.0,5.0,5.0,0.6376,0.8469,0.9859,0.8933,0.906,0.889,0.572,0.5943,0.6324,0.6,0.5659,0.5209,0.5277
+5,in a room a young woman is doing jumping jacks .,0.0,a girl in workout clothes gets filmed doing jumping jacks .,5.0,5.0,5.0,5.0,0.5761,0.824,0.8947,0.4558,0.3399,0.1989,0.4856,0.0554,0.5262,0.0,0.4251,0.0,0.0
+6,a woman is doing a bunch of jumping jacks on a balcony .,0.0,a girl in workout clothes gets filmed doing jumping jacks .,4.0,4.0,4.0,4.0,0.4555,0.8337,0.8067,0.7672,0.6441,0.5731,0.3469,0.2903,0.3251,0.1547,0.1905,0.1487,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman laying down massages another with her feet while the other asks her to continue .,0.6183,a young woman laying on a bed uses her feet to massage another young womans back,4.0,5.0,5.0,4.6667,0.7489,0.8979,0.9846,0.9706,0.8996,0.8749,0.7112,0.6697,0.6906,0.6573,0.6554,0.6321,0.6183
+2,a man is sitting on a couch and another man is sitting on a couch .,0.0,the ladies are massaging each other and are having fun in the bedroom .,2.0,1.0,1.0,1.3333,0.1635,0.7919,1.0,1.0,1.0,1.0,0.0,0.1635,0.1635,0.1635,0.0,0.0,0.0
+3,a woman is laying on a bed and a woman is playing with her .,0.451,two women are laying at opposite ends of a bed while laughing and talking .,5.0,4.0,5.0,4.6667,0.6583,0.8772,1.0,1.0,1.0,1.0,0.6057,0.5416,0.617,0.5397,0.558,0.4709,0.451
+4,a woman is laughing on a bed and rubbing her feet on another persons face .,0.3519,a young woman laying on a bed uses her feet to massage another young womans back,4.0,4.0,4.0,4.0,0.5895,0.8712,0.9358,0.7406,0.8085,0.7672,0.522,0.3985,0.555,0.4354,0.4892,0.3096,0.3519
+5,two girls are wrestling and laughing on the bed while another watches from across the room .,0.4019,two girls are laying on a bed next to a window and laughing .,4.0,3.0,4.0,3.6667,0.6704,0.8881,0.9226,0.9062,0.7352,0.7004,0.6288,0.4794,0.6233,0.4714,0.5758,0.411,0.4019
+6,a girl laying on a bed blowing bubbles and giggling .,0.46,two girls are laying on a bed next to a window and laughing .,4.0,3.0,4.0,3.6667,0.5843,0.8689,1.0,0.9825,0.9735,0.9671,0.5214,0.5232,0.5841,0.5307,0.5214,0.4513,0.46

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is playing tennis in an indoor clay tennis court .,0.5537,a man hits a tennis ball hard within a big indoor tennis court .,5.0,5.0,5.0,5.0,0.792,0.9096,0.9688,0.7845,0.855,0.8406,0.7709,0.549,0.7263,0.5976,0.7074,0.5235,0.5537
+2,a man is playing a game of tennis on a tennis court .,0.579,the guy is having fun while playing tennis at the clubhouse tennis court .,5.0,5.0,5.0,5.0,0.6627,0.9307,1.0,1.0,1.0,1.0,0.6268,0.6161,0.6527,0.6161,0.6268,0.5722,0.579
+3,two people are playing a game of tennis on a tennis court .,0.2742,the guy is having fun while playing tennis at the clubhouse tennis court .,5.0,4.0,4.0,4.3333,0.5055,0.8974,0.9846,0.8723,0.8876,0.8643,0.4339,0.345,0.4676,0.3563,0.4068,0.2097,0.2742
+4,a older man and a younger man is playing tennis against a wall,0.1195,in an indoor tennis court a young man is warming up and practising his tennis skills,3.0,3.0,4.0,3.3333,0.5863,0.8695,0.9231,0.8424,0.8183,0.7898,0.5041,0.2608,0.3795,0.239,0.2561,0.1446,0.1195
+5,two men are on a tennis court hitting tennis balls back and forth .,0.3165,a man is standing in a gym and playing tennis with someone else .,5.0,4.0,4.0,4.3333,0.5421,0.891,0.9744,0.8441,0.8664,0.836,0.4861,0.4284,0.5138,0.4431,0.4459,0.2985,0.3165
+6,two men playing tennis in a small room back and forth .,0.3466,a man is standing in a gym and playing tennis with someone else .,4.0,3.0,3.0,3.3333,0.583,0.8505,0.9419,0.8659,0.8535,0.8235,0.4888,0.4653,0.5344,0.4575,0.4291,0.356,0.3466

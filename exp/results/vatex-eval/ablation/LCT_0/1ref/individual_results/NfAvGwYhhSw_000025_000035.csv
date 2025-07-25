@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is sitting on a man's shoulders as he is riding a unicycle .,0.0,a man is riding a unicycle with a woman on his shoulders .,5.0,5.0,5.0,5.0,0.9194,0.9626,0.4667,0.3256,0.0,0.0,0.9163,0.2664,0.4199,0.0,0.4179,0.2639,0.0
+2,a man is riding a unicycle in a parking lot .,0.2595,a man is riding a unicycle with a woman on his shoulders .,5.0,4.0,4.0,4.3333,0.5385,0.8998,0.8705,0.5751,0.6926,0.6584,0.4871,0.1975,0.4698,0.3337,0.4108,0.1081,0.2595
+3,a young man is riding a unicycle down a street .,0.1871,a man is riding a unicycle with a woman on his shoulders .,4.0,4.0,4.0,4.0,0.5242,0.9017,0.7448,0.5751,0.649,0.6108,0.4724,0.1727,0.3612,0.267,0.2916,0.0826,0.1871
+4,a woman is riding unicycle and holding hands with a bearded man while music is playing .,0.0,a man is riding a unicycle with a woman on his shoulders .,4.0,4.0,2.0,3.3333,0.6719,0.8992,0.5965,0.2503,0.0937,0.0,0.6351,0.0,0.3994,0.0,0.3646,0.0,0.0
+5,a man and women riding unicycles in a park setting .,0.0,a man is riding a unicycle with a woman on his shoulders .,4.0,5.0,4.0,4.3333,0.6488,0.9197,0.8819,0.4769,0.2381,0.1716,0.6181,0.1938,0.6018,0.0,0.567,0.1537,0.0
+6,four individuals are holding up a large unicycle while a man stands on top of it .,0.0023,a man is riding a unicycle with a woman on his shoulders .,4.0,3.0,1.0,2.6667,0.5894,0.8305,0.8367,0.55,0.4956,0.3926,0.5056,0.2366,0.5092,0.1442,0.409,0.1011,0.0023

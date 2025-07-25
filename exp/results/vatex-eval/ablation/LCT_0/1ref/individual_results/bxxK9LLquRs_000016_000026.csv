@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is holding down an animal in an arena .,0.0,a man is putting a alligator asleep by rubbing his belly at some kind of water park show .,5.0,5.0,5.0,5.0,0.3062,0.7998,0.9565,0.8664,0.8185,0.773,0.1326,0.1992,0.2747,0.1523,0.0931,0.0,0.0
+2,a man is sitting on a crocodile while a crowd watches .,0.0231,a man is putting a alligator asleep by rubbing his belly at some kind of water park show .,4.0,4.0,5.0,4.3333,0.3722,0.7961,0.9529,0.776,0.8072,0.7579,0.2115,0.191,0.3412,0.2223,0.1725,0.0,0.0231
+3,a man is standing on top of an alligator while a crowd watches .,0.2802,a man is putting a alligator asleep by rubbing his belly at some kind of water park show .,4.0,3.0,3.0,3.3333,0.5346,0.8057,0.9357,0.7818,0.8025,0.7549,0.4224,0.4048,0.5026,0.4201,0.3827,0.2612,0.2802
+4,a man sits on top of an alligator and holds his mouth shut at a gator rescue center .,0.1137,a man is putting a alligator asleep by rubbing his belly at some kind of water park show .,4.0,2.0,4.0,3.3333,0.551,0.8132,0.9057,0.4747,0.6229,0.5363,0.4479,0.0467,0.5043,0.2792,0.3904,0.0,0.1137
+5,a man is in a pond with an alligator while people watch .,0.0,a man is putting a alligator asleep by rubbing his belly at some kind of water park show .,4.0,3.0,4.0,3.6667,0.5388,0.835,0.8568,0.4549,0.459,0.3521,0.4476,0.0,0.4617,0.0,0.3553,0.0,0.0
+6,a man in an alligator terrarium holds alligator's mouth as it moves around .,0.2503,a man is putting a alligator asleep by rubbing his belly at some kind of water park show .,3.0,2.0,4.0,3.0,0.5396,0.829,0.9227,0.7149,0.7408,0.6873,0.4446,0.3559,0.501,0.3785,0.398,0.2231,0.2503

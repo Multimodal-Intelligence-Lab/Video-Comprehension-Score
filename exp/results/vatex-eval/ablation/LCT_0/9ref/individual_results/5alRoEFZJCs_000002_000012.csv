@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a baseball player hits a ball and throws his bat into the stands .,0.6708,a baseball player swings hard and hurls the bat into the crowd past first base .,5.0,4.0,3.0,4.0,0.7719,0.8915,0.936,0.7944,0.8095,0.7788,0.7351,0.7129,0.7527,0.7166,0.7127,0.6665,0.6708
+2,a group of people are playing baseball in a field .,0.0,"a baseball batter swings at a low pitch and loses his grip on his bat , which is caught one handed by a male spectator in the stands",5.0,5.0,4.0,4.6667,0.4393,0.8456,0.9048,0.6155,0.5529,0.4459,0.3369,0.0,0.2812,0.0,0.1499,0.0,0.0
+3,a baseball player hits the ball and hits the ball .,0.4403,a baseball player swings hard and hurls the bat into the crowd past first base .,5.0,5.0,5.0,5.0,0.6689,0.927,1.0,1.0,1.0,1.0,0.6428,0.5352,0.6182,0.5352,0.5882,0.4403,0.4403
+4,"a guy is seen running , pitches a ball and the aimed at person lifts a bat to hit it .",0.0,"a baseball batter swings at a low pitch and loses his grip on his bat , which is caught one handed by a male spectator in the stands",4.0,3.0,4.0,3.6667,0.4489,0.8265,0.8765,0.7233,0.6768,0.603,0.3122,0.1144,0.3713,0.1175,0.2153,0.0,0.0
+5,a mini game of baseball where a man swings a bat to a thrown ball .,0.2398,two teams are playing baseball when a man hits a foul ball to a man in the crowd .,5.0,5.0,4.0,4.6667,0.5527,0.8899,0.951,0.8081,0.8317,0.8043,0.4973,0.327,0.4644,0.3461,0.3981,0.2177,0.2398
+6,during a baseball game a man hit the ball with the bat and the others run the bases .,0.3214,"a baseball player is up to bat , swings at the ball , and the bat goes flying into the crowd .",4.0,4.0,4.0,4.0,0.5239,0.876,1.0,0.7735,0.8216,0.7911,0.4521,0.3489,0.4921,0.4205,0.4052,0.2375,0.3214

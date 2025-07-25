@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,someone is sanding some metal bars with a circular sander .,0.3187,a person smooths a metal surface using a spinning electric tool .,5.0,3.0,5.0,4.3333,0.6461,0.8587,0.9474,0.9809,0.9328,0.9121,0.5866,0.4538,0.5574,0.4533,0.483,0.3193,0.3187
+2,a man is using a tool to cut a piece of wood .,0.2711,a person is using a tool to smooth out metal .,4.0,3.0,3.0,3.3333,0.3661,0.8696,1.0,1.0,1.0,1.0,0.2711,0.3661,0.3661,0.3661,0.2711,0.2711,0.2711
+3,a person is using a tool to cut a piece of metal .,0.689,a person is using a tool to smooth out metal .,4.0,3.0,4.0,3.6667,0.7076,0.9401,1.0,1.0,1.0,1.0,0.689,0.7076,0.7076,0.7076,0.689,0.689,0.689
+4,a man is getting a piece of extremely heated metal ready for shaping by brushing it,0.3684,a person trying to smooth out metal with an tool .,4.0,2.0,3.0,3.0,0.5447,0.8217,0.9818,0.8571,0.8814,0.8556,0.4433,0.4664,0.5341,0.481,0.433,0.3506,0.3684
+5,a man uses a large piece of machinery to polish an item .,0.4669,a man uses an electric tool to polish a steel frame .,5.0,3.0,5.0,4.3333,0.6071,0.8707,1.0,0.9722,0.935,0.9182,0.5409,0.4905,0.5811,0.5358,0.5189,0.4148,0.4669
+6,a man is buffing a piece of metal so that will have a shine on its surface .,0.425,a person trying to smooth out metal with an tool .,5.0,5.0,5.0,5.0,0.6491,0.8434,1.0,0.8408,0.827,0.7901,0.5839,0.534,0.6082,0.5262,0.5245,0.4344,0.425

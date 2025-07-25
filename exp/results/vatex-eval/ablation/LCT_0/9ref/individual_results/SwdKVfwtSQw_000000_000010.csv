@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a small toddler stomping in a shallow puddle of water .,0.7006,a young child is stomping and wading through a puddle of mud .,5.0,5.0,5.0,5.0,0.8364,0.8965,1.0,1.0,1.0,1.0,0.8129,0.7421,0.8172,0.7421,0.7911,0.7006,0.7006
+2,a little boy is walking in the mud with a shovel .,0.523,a small boy is standing in the mud where he stomps his feet to play .,4.0,3.0,4.0,3.6667,0.6556,0.8624,0.9524,0.9679,0.9085,0.8914,0.6007,0.603,0.6384,0.5886,0.5807,0.5342,0.523
+3,a little boy is walking in the mud and a woman is talking to him .,0.4552,a small boy is standing in the mud where he stomps his feet to play .,4.0,2.0,4.0,3.3333,0.5898,0.8495,1.0,0.8723,0.8863,0.8661,0.5171,0.5297,0.5898,0.5372,0.5171,0.4464,0.4552
+4,"a young man with a pan of dirt , dips it into water to swish around .",0.0085,a young child is stomping and wading through a puddle of mud .,5.0,2.0,1.0,2.6667,0.405,0.8529,1.0,0.8153,0.8268,0.7694,0.27,0.1967,0.3773,0.1861,0.236,0.0214,0.0085
+5,a little boy is drinking water out of a hose and then sprays with it .,0.0,a young boy splashes in a puddle as the cameraman talks to him .,2.0,2.0,2.0,2.0,0.4091,0.8737,1.0,0.8115,0.8682,0.8309,0.3237,0.0662,0.3249,0.1271,0.1599,0.0,0.0
+6,several children play in the water at a large outdoor water fountain,0.0,a young boy splashes in a puddle as the cameraman talks to him .,4.0,1.0,4.0,3.0,0.2032,0.8399,1.0,0.8933,0.9155,0.8963,0.0346,0.0414,0.1437,0.0646,0.0,0.0,0.0

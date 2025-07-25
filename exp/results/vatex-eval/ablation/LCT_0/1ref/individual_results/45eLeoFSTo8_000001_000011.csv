@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man in a push-up position lifts his head and chest with his arms , and then his hips high into the air repeatedly while remaining on his feet and hands .",0.0956,inside a home a male is doing exercises where he does a type of press up then stretches his head and neck forward and upwards .,5.0,5.0,5.0,5.0,0.5716,0.7949,0.9279,0.5161,0.596,0.4917,0.461,0.1534,0.5383,0.2811,0.4191,0.0,0.0956
+2,a man is doing push ups on a mat in a gym .,0.0,inside a home a male is doing exercises where he does a type of press up then stretches his head and neck forward and upwards .,3.0,3.0,2.0,2.6667,0.5451,0.822,0.7728,0.5414,0.3462,0.2046,0.4466,0.1588,0.4114,0.0,0.284,0.0,0.0
+3,a man is doing push ups on the floor in a gym .,0.0,inside a home a male is doing exercises where he does a type of press up then stretches his head and neck forward and upwards .,4.0,4.0,4.0,4.0,0.55,0.8185,0.7527,0.5803,0.3796,0.242,0.4502,0.2245,0.4022,0.0,0.2696,0.0526,0.0
+4,a man does one armed push ups over and over .,0.0561,inside a home a male is doing exercises where he does a type of press up then stretches his head and neck forward and upwards .,4.0,3.0,3.0,3.3333,0.4689,0.8105,0.9697,0.7257,0.6942,0.6228,0.3447,0.2681,0.4522,0.2349,0.3242,0.097,0.0561
+5,a man is working out by doing push-ups on a slab .,0.179,inside a home a male is doing exercises where he does a type of press up then stretches his head and neck forward and upwards .,5.0,4.0,3.0,4.0,0.446,0.7759,0.9811,0.8797,0.8698,0.8322,0.2859,0.3702,0.4353,0.363,0.2722,0.1883,0.179
+6,a man demonstrating different types of push up exercises .,0.0067,inside a home a male is doing exercises where he does a type of press up then stretches his head and neck forward and upwards .,4.0,3.0,2.0,3.0,0.5817,0.8422,0.8046,0.4927,0.5001,0.4064,0.5033,0.1279,0.4801,0.1406,0.3827,0.0,0.0067

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the lady is drawing some art on the board with a special pen on her hands .,0.1262,a person is drawing a graffiti word jem with their left hand using a blue pen .,3.0,4.0,4.0,3.6667,0.6132,0.8875,1.0,1.0,1.0,1.0,0.5641,0.2717,0.47,0.2717,0.3739,0.1012,0.1262
+2,a person is using a pencil to draw on a piece of paper .,0.5458,someone is using coloring pencils to draw a picture while music is playing .,4.0,4.0,4.0,4.0,0.6595,0.91,0.9831,1.0,0.9872,0.9856,0.6214,0.6007,0.5938,0.5955,0.545,0.5516,0.5458
+3,a person is drawing a picture on a piece of paper .,0.4714,a hand is shown drawing the outline of letters on an art board or paper .,5.0,5.0,5.0,5.0,0.5634,0.8992,1.0,1.0,1.0,1.0,0.4884,0.5407,0.5407,0.5407,0.4714,0.4756,0.4714
+4,a child is using a marker to color in the picture on the piece of paper .,0.1756,someone is using coloring pencils to draw a picture while music is playing .,5.0,4.0,4.0,4.3333,0.6522,0.9313,0.9859,0.904,0.8831,0.8571,0.6266,0.2811,0.467,0.2902,0.4277,0.1651,0.1756
+5,a person is drawing a design with markers on a piece of white board .,0.5417,a person is drawing some letters on a dry erase board .,4.0,4.0,4.0,4.0,0.6445,0.8752,1.0,0.8918,0.9029,0.8833,0.5938,0.5924,0.6445,0.5989,0.5938,0.5343,0.5417
+6,a person draws a very colorful picture on some paper in front of them,0.3102,a hand is shown drawing the outline of letters on an art board or paper .,3.0,4.0,2.0,3.0,0.5759,0.8615,0.9831,1.0,0.9872,0.9849,0.5077,0.43,0.5371,0.4186,0.4628,0.3237,0.3102

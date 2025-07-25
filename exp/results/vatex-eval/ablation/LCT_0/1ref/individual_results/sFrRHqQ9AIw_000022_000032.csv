@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man counting money and handing it to someone else at the dinner table .,0.0,a man with a bunch of money is counting one dollar bills,5.0,5.0,5.0,5.0,0.5104,0.867,0.8218,0.6006,0.5409,0.4705,0.4352,0.1847,0.4042,0.0948,0.3127,0.0596,0.0
+2,a man is counting money from a stack of money .,0.0,a man with a bunch of money is counting one dollar bills,5.0,5.0,5.0,5.0,0.7321,0.9198,0.8752,0.4191,0.2779,0.215,0.7088,0.2065,0.6939,0.0137,0.6673,0.1804,0.0
+3,a man is counting a stack of dollar bills in his hands .,0.332,a man with a bunch of money is counting one dollar bills,5.0,5.0,5.0,5.0,0.811,0.9169,0.8603,0.5646,0.4697,0.4216,0.7939,0.4632,0.7804,0.3461,0.7605,0.4516,0.332
+4,"a table full of money , a money counting machines and a person grabbing the counted money .",0.1857,a man with a bunch of money is counting one dollar bills,4.0,1.0,3.0,2.6667,0.4803,0.8745,0.8554,0.7468,0.7299,0.6911,0.4057,0.304,0.3924,0.2879,0.3052,0.2041,0.1857
+5,a man is demonstrating how he counts a stack of money .,0.4228,a man with a bunch of money is counting one dollar bills,5.0,4.0,5.0,4.6667,0.658,0.88,0.8803,0.74,0.6735,0.6289,0.6113,0.5378,0.6114,0.4921,0.5584,0.4747,0.4228
+6,a person is counting money at a table while talking to others .,0.0,a man with a bunch of money is counting one dollar bills,5.0,5.0,5.0,5.0,0.4995,0.8601,0.88,0.2074,0.0,0.0,0.4181,0.0,0.4312,0.0,0.3387,0.0,0.0

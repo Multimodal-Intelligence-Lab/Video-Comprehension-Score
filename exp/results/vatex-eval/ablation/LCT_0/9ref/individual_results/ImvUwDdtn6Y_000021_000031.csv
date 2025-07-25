@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,someone is putting chunked meat into a grinder that turns it into ground meat .,0.8267,someone puts chunks of meat in a meat grinder that extrudes ground meat onto a plate .,5.0,5.0,5.0,5.0,0.8475,0.9195,1.0,0.9768,0.957,0.9532,0.8341,0.8439,0.8405,0.8406,0.8266,0.8302,0.8267
+2,a person is using a meat grinder to grind meat .,0.7041,a person loading cubes of meat into a meat grinder and then extruding ground meat .,5.0,5.0,5.0,5.0,0.9381,0.9349,0.9851,0.9319,0.9408,0.9356,0.9338,0.7255,0.7779,0.7281,0.7769,0.7012,0.7041
+3,a person is using a meat grinder to grind meat .,0.7041,a person loading cubes of meat into a meat grinder and then extruding ground meat .,5.0,5.0,5.0,5.0,0.9381,0.9349,0.9851,0.9319,0.9408,0.9356,0.9338,0.7255,0.7779,0.7281,0.7769,0.7012,0.7041
+4,someone is grinding and displaying meat through a meat grinder .,0.8828,a person is grinding a bunch of meat with a meat grinder .,5.0,5.0,5.0,5.0,0.8904,0.9353,1.0,1.0,1.0,1.0,0.8828,0.8904,0.8904,0.8904,0.8828,0.8828,0.8828
+5,a man is pushing meat through a meat grinder,0.559,a person is grinding a bunch of meat with a meat grinder .,5.0,3.0,4.0,4.0,0.7514,0.9256,0.9592,0.8357,0.8398,0.82,0.7314,0.6807,0.7265,0.5708,0.7045,0.655,0.559
+6,a man grinding meat through a meat grinder . into his hand .,0.4954,a person is grinding a bunch of meat with a meat grinder .,4.0,4.0,4.0,4.0,0.7263,0.9386,0.9063,0.6782,0.6737,0.6377,0.7084,0.5026,0.6943,0.5079,0.6743,0.4478,0.4954

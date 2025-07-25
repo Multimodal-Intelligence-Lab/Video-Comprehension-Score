@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man plays a tune on a hand flute , it is very peaceful sounding .",0.235,a man is playing a song on a wind instrument .,5.0,5.0,4.0,4.6667,0.5869,0.845,0.95,0.6667,0.6392,0.573,0.5111,0.3803,0.5651,0.3536,0.4853,0.2666,0.235
+2,a man is sitting in a chair and smoking a pipe .,0.0,a man is playing a song on a wind instrument .,4.0,2.0,2.0,2.6667,0.1593,0.7772,1.0,1.0,1.0,1.0,0.0,0.1593,0.1593,0.1593,0.0,0.0,0.0
+3,a man is sitting in a chair and smoking a pipe .,0.0,a man is playing a song on a wind instrument .,4.0,2.0,2.0,2.6667,0.1593,0.7772,1.0,1.0,1.0,1.0,0.0,0.1593,0.1593,0.1593,0.0,0.0,0.0
+4,a man is playing a flute like instrument while a band plays behind him .,0.1076,a man is playing a song on a wind instrument .,4.0,4.0,4.0,4.0,0.5494,0.8843,0.8544,0.6133,0.571,0.5149,0.4904,0.2653,0.4726,0.2109,0.4036,0.1691,0.1076
+5,a man of color is playing a harmonica or flute,0.0,a man is playing a song on a wind instrument .,4.0,3.0,2.0,3.0,0.531,0.8507,0.875,0.3651,0.5152,0.4302,0.4487,0.0,0.464,0.0871,0.3699,0.0,0.0
+6,a man in a blue shirt plays a song on his small woodwind instrument .,0.4976,a man is playing a song on a wind instrument .,4.0,4.0,4.0,4.0,0.6261,0.8985,0.9388,0.838,0.8283,0.8089,0.5839,0.5538,0.6017,0.5486,0.5567,0.5034,0.4976

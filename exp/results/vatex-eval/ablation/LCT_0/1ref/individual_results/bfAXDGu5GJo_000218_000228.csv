@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a teenager videos himself throwing a knife before moving the camera to get a different angle .,0.0362,a man is outside in a jacket practicing throwing a knife at a target .,5.0,5.0,3.0,4.3333,0.4394,0.816,0.85,0.7465,0.7129,0.6481,0.313,0.249,0.3405,0.2136,0.1917,0.0797,0.0362
+2,a man is standing in front of a tree and he is throwing a knife .,0.3496,a man is outside in a jacket practicing throwing a knife at a target .,5.0,4.0,4.0,4.3333,0.6098,0.8665,0.9787,0.6988,0.6924,0.645,0.5497,0.4417,0.6013,0.4365,0.5399,0.3556,0.3496
+3,a man is standing in the woods and he is talking to the camera .,0.0,a man is outside in a jacket practicing throwing a knife at a target .,5.0,4.0,5.0,4.6667,0.1722,0.7925,0.9524,0.7528,0.7348,0.6654,0.0,0.0,0.1309,0.0,0.0,0.0,0.0
+4,a man throwing knives at an object at different distances .,0.0005,a man is outside in a jacket practicing throwing a knife at a target .,4.0,2.0,4.0,3.3333,0.6302,0.8533,0.8397,0.5439,0.4336,0.3363,0.5667,0.2763,0.5596,0.1013,0.484,0.1951,0.0005
+5,a young boy is seen throwing out a javelin and then walking away .,0.0,a man is outside in a jacket practicing throwing a knife at a target .,5.0,4.0,4.0,4.3333,0.2594,0.7987,0.8612,0.5075,0.6386,0.5476,0.0727,0.0,0.14,0.0,0.0,0.0,0.0
+6,a young man tosses throwing knives at a nearby tree .,0.3183,a man is outside in a jacket practicing throwing a knife at a target .,4.0,2.0,4.0,3.3333,0.5445,0.8582,0.8612,0.7105,0.7786,0.742,0.4692,0.3589,0.4711,0.415,0.3837,0.2529,0.3183

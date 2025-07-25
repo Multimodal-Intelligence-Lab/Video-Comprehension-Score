@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is using a rope to climb down a wall outside .,0.7131,an individual is using a rope to climb down a rock wall .,5.0,5.0,5.0,5.0,0.7647,0.922,0.9744,1.0,0.9827,0.9789,0.7448,0.7164,0.7545,0.7355,0.7338,0.6924,0.7131
+2,a person is climbing up a rock wall with a rope .,0.2669,an adult repels down a large rock face while wearing a harness and helmet .,4.0,4.0,4.0,4.0,0.7315,0.9488,0.9796,1.0,0.9845,0.9807,0.717,0.4203,0.5959,0.4112,0.5878,0.3818,0.2669
+3,a man is climbing down a rock wall with a rope .,0.4458,an adult repels down a large rock face while wearing a harness and helmet .,4.0,4.0,4.0,4.0,0.8852,0.9302,1.0,1.0,1.0,1.0,0.8765,0.5596,0.6661,0.5596,0.6628,0.4943,0.4458
+4,a person climbs to the top of a rope and begins to descend .,0.2775,a person slowly abseils over some large rocks below a sheer wall .,4.0,4.0,2.0,3.3333,0.7474,0.8477,1.0,0.8723,0.8863,0.8582,0.7012,0.4112,0.6961,0.4205,0.6405,0.2659,0.2775
+5,a man jumps down a rock climbing wall while being helped by a harness and rope .,0.3326,a woman in a rock climb area lowers herself slowly with a rope .,4.0,4.0,4.0,4.0,0.6624,0.885,1.0,0.8933,0.9155,0.8995,0.6185,0.4246,0.5711,0.4386,0.4765,0.316,0.3326
+6,a man climbing down a rock with the help of a rope .,0.4423,an adult repels down a large rock face while wearing a harness and helmet .,4.0,4.0,4.0,4.0,0.8272,0.8849,0.9583,0.9387,0.9226,0.903,0.8047,0.5629,0.7143,0.5553,0.7063,0.4519,0.4423

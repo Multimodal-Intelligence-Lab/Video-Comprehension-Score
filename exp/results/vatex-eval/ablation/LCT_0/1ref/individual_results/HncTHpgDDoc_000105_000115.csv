@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young man gives a tutorial on forming an animal with a balloon .,0.5076,a young man is demonstrating as he talks about making a balloon animal .,5.0,5.0,5.0,5.0,0.8236,0.91,0.9091,0.4512,0.6031,0.5638,0.8062,0.3337,0.806,0.5181,0.7868,0.3192,0.5076
+2,a man is demonstrating how to use a bottle of water .,0.2058,a young man is demonstrating as he talks about making a balloon animal .,4.0,4.0,4.0,4.0,0.331,0.8423,1.0,1.0,1.0,1.0,0.2058,0.331,0.331,0.331,0.2058,0.2058,0.2058
+3,a man is holding a fidget spinner in his hand and then it it .,0.0,a young man is demonstrating as he talks about making a balloon animal .,4.0,4.0,4.0,4.0,0.1878,0.7866,0.9756,0.8644,0.8611,0.8234,0.0,0.0604,0.1675,0.0568,0.0,0.0,0.0
+4,a young man gives a balloon animal bending technique demonstration .,0.2078,a young man is demonstrating as he talks about making a balloon animal .,5.0,5.0,5.0,5.0,0.8551,0.9073,0.7675,0.4361,0.3343,0.2663,0.8403,0.3406,0.7282,0.2215,0.7234,0.329,0.2078
+5,a young man is filmed explaining how to create a balloon figure .,0.7386,a young man is demonstrating as he talks about making a balloon animal .,5.0,5.0,5.0,5.0,0.8035,0.8668,0.9697,0.7845,0.8673,0.847,0.7733,0.7318,0.7973,0.7734,0.7662,0.711,0.7386
+6,a man explains how to create balloon animals by squeezing and twisting a balloon .,0.3153,a young man is demonstrating as he talks about making a balloon animal .,5.0,5.0,5.0,5.0,0.7028,0.8622,0.8093,0.6181,0.5513,0.4796,0.6553,0.4566,0.6327,0.3616,0.574,0.4172,0.3153

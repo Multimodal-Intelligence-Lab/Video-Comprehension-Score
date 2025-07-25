@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a tennis show is being tied while a narrator in a foreign language walks the video through .,0.4971,a shoe is being shown how to be tied in a foreign language .,4.0,4.0,4.0,4.0,0.5876,0.8981,0.9859,0.967,0.913,0.9032,0.5408,0.5735,0.5509,0.5483,0.5,0.5251,0.4971
+2,a person is demonstrating how to tie a shoe laces .,0.7685,a lady is demonstrating how to properly tie a shoe .,5.0,5.0,5.0,5.0,0.8449,0.9167,0.941,0.9679,0.9085,0.8991,0.8236,0.7658,0.8238,0.788,0.8078,0.7598,0.7685
+3,a person is demonstrating how to tie a shoe lace .,0.7688,a lady is demonstrating how to properly tie a shoe .,5.0,5.0,5.0,5.0,0.8486,0.9347,1.0,1.0,1.0,1.0,0.8297,0.7364,0.8369,0.7893,0.819,0.7309,0.7688
+4,a woman gives a lesson to help someone tie their shoes .,0.7347,a lady is demonstrating how to properly tie a shoe .,5.0,5.0,5.0,5.0,0.8822,0.889,0.9756,0.7905,0.7889,0.7507,0.8675,0.7466,0.8746,0.7447,0.859,0.7367,0.7347
+5,a woman is making an instructional video on how to tie shoelaces on a pair of sneakers .,0.6934,a lady is demonstrating how to properly tie a shoe .,5.0,4.0,4.0,4.3333,0.7642,0.8751,1.0,1.0,0.9845,0.9814,0.7179,0.7485,0.7642,0.7446,0.7179,0.6981,0.6934
+6,a woman demonstrates how to tie the shoelaces on a purple shoe,0.6554,a woman demonstrates how to properly tie a lace of a shoe .,5.0,4.0,4.0,4.3333,0.739,0.9148,1.0,1.0,1.0,1.0,0.7147,0.648,0.7215,0.6847,0.6955,0.6152,0.6554

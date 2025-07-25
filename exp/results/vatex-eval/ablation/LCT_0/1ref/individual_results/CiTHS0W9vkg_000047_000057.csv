@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"two guys fool around doing dance moves to the "" macarena "" song .",0.1422,two high school age boys demonstrate how not to macarana .,5.0,5.0,5.0,5.0,0.6337,0.8112,0.8845,0.5608,0.5295,0.42,0.5484,0.3069,0.5859,0.2576,0.4894,0.1947,0.1422
+2,a man is in a gym and he is dancing to music .,0.0,two high school age boys demonstrate how not to macarana .,5.0,5.0,4.0,4.6667,0.1706,0.7345,0.7669,0.6408,0.4969,0.3151,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a group of people are in a room and they are dancing to music .,0.0,two high school age boys demonstrate how not to macarana .,4.0,5.0,4.0,4.3333,0.1875,0.7382,0.928,0.686,0.6481,0.5233,0.0,0.0,0.1244,0.0,0.0,0.0,0.0
+4,a couple of boys dance and mimic performing a musical routine .,0.0,two high school age boys demonstrate how not to macarana .,5.0,5.0,5.0,5.0,0.504,0.784,0.7701,0.307,0.439,0.2844,0.3674,0.0,0.3559,0.0,0.1785,0.0,0.0
+5,a couple of men do some intricate dance moves while they are surrounded by others,0.0,two high school age boys demonstrate how not to macarana .,4.0,3.0,4.0,3.6667,0.3163,0.7554,0.8331,0.349,0.4919,0.3274,0.0949,0.0,0.1793,0.0,0.0,0.0,0.0
+6,two men dance as a surrounding group sings a song and plays instruments .,0.0,two high school age boys demonstrate how not to macarana .,2.0,2.0,3.0,2.3333,0.2575,0.7732,0.85,0.5199,0.5032,0.3575,0.0397,0.0,0.1265,0.0,0.0,0.0,0.0

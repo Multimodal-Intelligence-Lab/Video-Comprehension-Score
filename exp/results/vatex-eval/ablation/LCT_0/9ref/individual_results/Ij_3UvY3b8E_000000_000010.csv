@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man making a weird face while moving his head back and fourth .,0.3663,a man makes a weird face as he prepares to sneeze .,5.0,5.0,5.0,5.0,0.5713,0.874,0.9903,0.9124,0.8883,0.8543,0.5095,0.5302,0.4604,0.4462,0.3826,0.4624,0.3663
+2,a man is sitting on a bed and he is yawning .,0.1635,a man is curling his nose and opening his mouth very wide until he pretends to sneeze .,2.0,2.0,2.0,2.0,0.3744,0.7866,1.0,1.0,1.0,1.0,0.1975,0.3744,0.3397,0.348,0.1529,0.1975,0.1635
+3,a man is yawning while a man is talking to him .,0.0,a man is curling his nose and opening his mouth very wide until he pretends to sneeze .,4.0,2.0,2.0,2.6667,0.3959,0.8693,0.8915,0.699,0.589,0.5012,0.3051,0.0724,0.3045,0.0,0.1999,0.0,0.0
+4,a person is looking at the camera and is laughing and sneezing,0.394,a man in glasses makes a face while exaggerating a sneeze .,4.0,4.0,3.0,3.6667,0.6256,0.8349,1.0,0.8408,0.827,0.7892,0.5467,0.511,0.6162,0.5029,0.5354,0.4039,0.394
+5,a man sits with his mouth open before he lets out a loud burp and then a person in the background laughs .,0.1514,a man is trying to sneeze in an awkward manner and a lady in the background is talking to him .,4.0,4.0,4.0,4.0,0.4111,0.8375,0.9903,0.9728,0.9561,0.9448,0.2969,0.314,0.3686,0.3081,0.2461,0.1377,0.1514
+6,a small girl is trying to blow her nose while a man laughs .,0.0,a man is curling his nose and opening his mouth very wide until he pretends to sneeze .,1.0,1.0,1.0,1.0,0.4251,0.8216,0.8397,0.764,0.7295,0.6566,0.3002,0.1348,0.2655,0.1143,0.106,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is climbing the side of a palm tree by himself on a sunny day .,0.5514,a person is climbing up a palm tree to cut it with ropes,5.0,5.0,5.0,5.0,0.7264,0.8943,0.9804,0.9737,0.9617,0.9566,0.6932,0.6091,0.6912,0.606,0.6536,0.5569,0.5514
+2,a man is using a chainsaw to cut off a tree .,0.0916,a man clims to the top of a palm tree and tries to remove the branches .,4.0,3.0,4.0,3.6667,0.4675,0.8656,0.9467,0.8376,0.8001,0.7607,0.3615,0.2753,0.324,0.2413,0.1906,0.1323,0.0916
+3,a man is in a tree trimming the branches of a tree .,0.5162,a man is high in the air in order to trim the fronds on a tall palm tree .,5.0,4.0,5.0,4.6667,0.724,0.9586,0.9023,0.8571,0.7784,0.7446,0.7121,0.5811,0.6441,0.5714,0.6287,0.5272,0.5162
+4,a man in an orange shirt trims trees while standing high up in the branches .,0.0,a man is trimming the branches from a tall palm tree .,4.0,3.0,3.0,3.3333,0.5456,0.889,0.9524,0.7475,0.7424,0.6764,0.4889,0.1441,0.4324,0.1206,0.3485,0.0176,0.0
+5,"an man cuts the top off of a very tall tree , while he is secured to the trunk at a great height .",0.2033,a man clims to the top of a palm tree and tries to remove the branches .,4.0,4.0,3.0,3.6667,0.6181,0.8793,0.975,0.7888,0.8209,0.7767,0.558,0.3017,0.5407,0.327,0.4563,0.1733,0.2033
+6,"a man strapped onto a tall eucalyptus tree carefully saws off the trunk above him , and it falls .",0.211,a person is climbing up a palm tree to cut it with ropes,4.0,3.0,3.0,3.3333,0.4865,0.8573,1.0,1.0,0.9822,0.9776,0.3775,0.3856,0.4815,0.3745,0.361,0.225,0.211

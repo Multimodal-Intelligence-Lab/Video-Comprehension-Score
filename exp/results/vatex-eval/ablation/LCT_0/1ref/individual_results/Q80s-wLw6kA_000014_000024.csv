@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young man is making very loud and long burping noises .,0.4001,"a very young man sits in his room , executing three extreme burps",5.0,5.0,5.0,5.0,0.6564,0.8429,0.9424,0.6747,0.6796,0.6198,0.5923,0.4907,0.6354,0.4944,0.5674,0.3958,0.4001
+2,a man is sitting in front of a computer and is talking to the camera .,0.0104,"a very young man sits in his room , executing three extreme burps",4.0,4.0,4.0,4.0,0.2393,0.7927,0.9831,0.9766,0.9697,0.9618,0.0404,0.2211,0.2261,0.2155,0.0238,0.0174,0.0104
+3,a man is sitting in front of a camera and talking to the camera .,0.0,"a very young man sits in his room , executing three extreme burps",4.0,4.0,1.0,3.0,0.1824,0.7917,0.9655,0.8589,0.8637,0.8278,0.0,0.0481,0.1532,0.0534,0.0,0.0,0.0
+4,a man with glasses makes a burp sound and looks at the camera,0.0,"a very young man sits in his room , executing three extreme burps",5.0,5.0,5.0,5.0,0.4192,0.7951,0.9129,0.5591,0.5402,0.4217,0.2694,0.0,0.3637,0.0,0.1997,0.0,0.0
+5,a boy seated on a striped chair forces himself to burp several times .,0.0,"a very young man sits in his room , executing three extreme burps",4.0,4.0,4.0,4.0,0.5567,0.797,0.8749,0.2857,0.4308,0.2858,0.4438,0.0,0.4933,0.0,0.3642,0.0,0.0
+6,a man in a backwards cap looks into the camera then burps loudly as the video ends .,0.0,"a very young man sits in his room , executing three extreme burps",5.0,4.0,4.0,4.3333,0.4602,0.8064,0.912,0.4132,0.3962,0.2512,0.3306,0.0,0.4081,0.0,0.266,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man with a football teaches how to throw the ball in a gym .,0.7249,"a man picks up a football , backs up , and then throws it across the gym .",5.0,5.0,5.0,5.0,0.8166,0.9127,0.9787,0.8723,0.8709,0.8568,0.7987,0.7567,0.7831,0.7562,0.7552,0.7254,0.7249
+2,a man in a gym is throwing a baseball in a gym .,0.3383,"a man does a short drop back , and then throws a football pass in an indoor gym .",4.0,4.0,4.0,4.0,0.6846,0.9016,1.0,1.0,1.0,1.0,0.6502,0.433,0.5814,0.4234,0.5358,0.3494,0.3383
+3,a young man throws a baseball in a gym while another man watches .,0.1626,a man throws a football to someone in an indoor gym,4.0,3.0,4.0,3.6667,0.6143,0.8839,0.886,0.7921,0.7709,0.73,0.5637,0.3129,0.5419,0.2317,0.4817,0.2449,0.1626
+4,a man explaining how to throw a football in a gym .,0.6397,"a man does a short drop back , and then throws a football pass in an indoor gym .",5.0,4.0,4.0,4.3333,0.806,0.9278,1.0,0.8644,0.8788,0.8568,0.7903,0.6692,0.7642,0.674,0.7451,0.6343,0.6397
+5,a man is describing how to throw a football and demonstrates by throwing it .,0.094,a person with a red shirt throws a football on a basketball court .,5.0,4.0,4.0,4.3333,0.7044,0.89,0.9162,0.8366,0.791,0.7541,0.6679,0.272,0.5322,0.2301,0.4651,0.1677,0.094
+6,a man in an indoor gym throwing a football and explaining it .,0.5519,a man in a gym steps back and throws a football .,5.0,4.0,4.0,4.3333,0.8604,0.9439,1.0,0.8723,0.8863,0.8632,0.8521,0.5826,0.6706,0.5816,0.6443,0.5695,0.5519

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a chef prepares a seafood dish that includes scallops , fish and shrimp . cooking instructions appear on the screen .",0.3808,a time lapse video of seafood cooking with instructions displayed on the screen .,4.0,5.0,5.0,4.6667,0.7184,0.8637,0.937,0.7009,0.7524,0.6755,0.6716,0.4037,0.6133,0.4325,0.5523,0.3571,0.3808
+2,a person is cooking food in a frying pan in a skillet .,0.5452,someone is adding ingredients to a food preparation into a frying pan while music is being played .,5.0,5.0,5.0,5.0,0.6975,0.9201,0.9706,0.979,0.9647,0.9601,0.6669,0.6038,0.6626,0.5979,0.6333,0.5519,0.5452
+3,a person is cooking scallops in a frying pan on a stove .,0.3304,a person is cooking seafood in a pan using different ingredients and instructions in the process .,5.0,5.0,5.0,5.0,0.8477,0.9157,0.9599,0.8081,0.8169,0.786,0.8337,0.4459,0.8328,0.4175,0.8174,0.3631,0.3304
+4,a person in a kitchen demonstrating how to prepare a dish .,0.4903,a person cooks a meal while text describes how to prepare that meal .,5.0,5.0,5.0,5.0,0.6624,0.8601,0.9756,0.8954,0.8992,0.8749,0.6009,0.5633,0.6267,0.5616,0.5587,0.4922,0.4903
+5,a person cooks some food that is sitting in a pan,0.3347,a person is cooking by placing some meat on the pan,5.0,5.0,5.0,5.0,0.757,0.9051,0.9278,0.7888,0.7752,0.734,0.7286,0.4196,0.7223,0.4262,0.6899,0.3133,0.3347
+6,a person showing how to make a certain kind of food .,0.2991,a person is giving a tutorial of how to cook scallops and shrimps .,5.0,5.0,5.0,5.0,0.724,0.8382,0.8554,0.7144,0.7762,0.7269,0.6682,0.4153,0.6367,0.4255,0.5633,0.3024,0.2991

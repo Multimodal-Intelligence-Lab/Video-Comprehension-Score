@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is ironing a piece of clothing and then stops to adjust it .,0.4064,a man irons his shirt while talking to a woman .,5.0,5.0,5.0,5.0,0.607,0.8824,1.0,0.9679,0.9085,0.8901,0.5547,0.5359,0.5235,0.5055,0.4545,0.4429,0.4064
+2,a woman is demonstrating how to iron a shirt on a table .,0.3577,a male is shown ironing his shirt on a iron table .,4.0,4.0,4.0,4.0,0.7138,0.9124,0.9714,0.9679,0.9393,0.9247,0.6863,0.5314,0.6958,0.4178,0.6666,0.5126,0.3577
+3,a woman is ironing a shirt on an ironing board .,0.6569,a man standing and ironing his shirt on a ironing board,4.0,4.0,4.0,4.0,0.6796,0.9338,1.0,1.0,1.0,1.0,0.6569,0.6796,0.6796,0.6796,0.6569,0.6569,0.6569
+4,"a man is standing at an ironing board , ironing a shirt .",0.6111,a male is shown ironing his shirt on a iron table .,5.0,4.0,5.0,4.6667,0.9465,1.0,0.9565,0.75,0.8408,0.8042,0.9465,0.5735,0.8239,0.6575,0.8239,0.5518,0.6111
+5,a man demonstrating how to iron a shirt as he irons the sleeve and cuff .,0.4209,a male is shown ironing his shirt on a iron table .,5.0,3.0,4.0,4.0,0.6351,0.8763,0.9804,0.8822,0.8446,0.814,0.5821,0.5224,0.6113,0.4943,0.5548,0.455,0.4209
+6,a man ironing a garment on a commercial pressing machine .,0.4145,a man irons his shirt while talking to a woman .,3.0,2.0,3.0,2.6667,0.5937,0.8639,1.0,1.0,1.0,1.0,0.5129,0.5129,0.5308,0.5129,0.4422,0.4145,0.4145

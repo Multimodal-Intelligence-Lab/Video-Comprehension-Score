@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young man is playing the drums and cymbals somewhat slowly .,0.4474,a young man is sitting while he plays a musical instrument and beat on it with a pair of wooden sticks .,5.0,5.0,5.0,5.0,0.5785,0.8176,0.9888,0.9135,0.9329,0.9179,0.4845,0.5386,0.5737,0.5482,0.4786,0.4357,0.4474
+2,a man is playing a drum set on a drum set .,0.2419,a young man is sitting while he plays a musical instrument and beat on it with a pair of wooden sticks .,5.0,5.0,5.0,5.0,0.4559,0.813,0.9357,0.8898,0.8829,0.856,0.3307,0.3885,0.4185,0.3837,0.2847,0.2478,0.2419
+3,a man is playing the drums and cymbals and cymbals .,0.0938,a young man is sitting while he plays a musical instrument and beat on it with a pair of wooden sticks .,5.0,5.0,5.0,5.0,0.4257,0.7859,0.8523,0.8574,0.8065,0.7538,0.2692,0.3302,0.3261,0.2878,0.1425,0.1477,0.0938
+4,a man is playing the drums while an ad for cymbals is displayed .,0.0664,a young man is sitting while he plays a musical instrument and beat on it with a pair of wooden sticks .,5.0,5.0,5.0,5.0,0.3399,0.7935,0.9487,0.8898,0.8911,0.8627,0.1681,0.2581,0.3042,0.2592,0.1231,0.065,0.0664
+5,a young man plays drums and cymbals while music plays .,0.433,a young man is sitting while he plays a musical instrument and beat on it with a pair of wooden sticks .,4.0,5.0,4.0,4.3333,0.6253,0.8772,0.8644,0.771,0.7533,0.7188,0.5729,0.514,0.5665,0.5026,0.5058,0.446,0.433
+6,"a man plays a simple rhythm on a drumkit , especially using a cymbal .",0.0,a young man is sitting while he plays a musical instrument and beat on it with a pair of wooden sticks .,5.0,5.0,5.0,5.0,0.4259,0.8077,0.8698,0.4728,0.4835,0.3605,0.2892,0.0,0.34,0.0,0.1829,0.0,0.0

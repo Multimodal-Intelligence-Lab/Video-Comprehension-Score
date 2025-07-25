@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person uses a snowmobile and rides around in the snow .,0.0,a person yells hi to a person as they ride their snowmobile past them on a circle track .,5.0,5.0,5.0,5.0,0.483,0.8765,0.9118,0.3562,0.3171,0.2209,0.4101,0.0,0.4329,0.0,0.353,0.0,0.0
+2,a person is riding a snowmobile down a snowy hill .,0.1047,a person yells hi to a person as they ride their snowmobile past them on a circle track .,4.0,5.0,4.0,4.3333,0.4629,0.884,0.8375,0.7134,0.6787,0.6365,0.3924,0.2471,0.3587,0.2086,0.2745,0.1483,0.1047
+3,a person is riding a snowmobile down a snowy hill .,0.1047,a person yells hi to a person as they ride their snowmobile past them on a circle track .,4.0,5.0,4.0,4.3333,0.4629,0.884,0.8375,0.7134,0.6787,0.6365,0.3924,0.2471,0.3587,0.2086,0.2745,0.1483,0.1047
+4,someone is using a snowmobile on a very snowy mountain .,0.0,a person yells hi to a person as they ride their snowmobile past them on a circle track .,4.0,5.0,4.0,4.3333,0.4097,0.8243,0.8664,0.6274,0.6189,0.5377,0.2838,0.0591,0.3186,0.0462,0.1734,0.0,0.0
+5,a person is driving a snow mobile through thick snow on the ground .,0.0,a person yells hi to a person as they ride their snowmobile past them on a circle track .,5.0,5.0,5.0,5.0,0.4097,0.8341,0.875,0.4044,0.3744,0.25,0.2923,0.0,0.3254,0.0,0.1912,0.0,0.0
+6,a snowmobile is driving through the snow and kicking up snow .,0.0,a person yells hi to a person as they ride their snowmobile past them on a circle track .,5.0,5.0,4.0,4.6667,0.4341,0.8021,0.7346,0.5006,0.4336,0.2938,0.2945,0.0,0.2296,0.0,0.0395,0.0,0.0

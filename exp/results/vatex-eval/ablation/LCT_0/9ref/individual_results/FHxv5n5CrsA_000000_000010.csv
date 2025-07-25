@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man rides a horse across a dirt path , and a cow runs alongside the horse .",0.5853,a man on horseback is attempting to lasso a cow that is running in front of the horse .,4.0,5.0,5.0,4.6667,0.649,0.8689,1.0,1.0,1.0,1.0,0.5932,0.6397,0.6397,0.6397,0.5853,0.5853,0.5853
+2,a woman is riding on a horse in a rodeo .,0.3957,a woman on a horse is twirling a rope while a cow slowly moves in front of them .,4.0,3.0,3.0,3.3333,0.6266,0.8847,1.0,1.0,1.0,1.0,0.5559,0.5493,0.5436,0.4919,0.4572,0.4639,0.3957
+3,a woman is riding a horse around a fenced area .,0.113,a man riding on a horse is steer roping in a ranch .,5.0,4.0,4.0,4.3333,0.5031,0.8344,1.0,0.8723,0.9107,0.8925,0.3988,0.234,0.486,0.263,0.378,0.0819,0.113
+4,"a man on a horse is seen bolting through the gate of a stable with a cow in the lane to the left of him , and as both take off running , the man on horseback is seen lassoing the cow with a rope , as a woman's voice is heard off camera .",0.3379,a man on horseback is attempting to lasso a cow that is running in front of the horse .,4.0,4.0,3.0,3.6667,0.7306,0.8658,0.9283,0.7071,0.7163,0.6338,0.6888,0.3743,0.6824,0.3757,0.6229,0.3075,0.3379
+5,"a man rides a horse which gallops into a stadium , and then the man throws a lasso at a cow and ties it up",0.5542,a man riding a horse attempts to catch a cow with a lasso .,4.0,4.0,3.0,3.6667,0.752,0.905,0.9778,0.8548,0.8828,0.852,0.726,0.5114,0.7371,0.5696,0.7095,0.4939,0.5542
+6,a man on a horse chases a released animal and loops a rope around its neck before jumping off the horse and slamming the animal down .,0.2519,a man riding a horse attempts to catch a cow with a lasso .,4.0,5.0,3.0,4.0,0.5812,0.854,0.9357,0.7555,0.7245,0.656,0.494,0.3418,0.5265,0.3807,0.428,0.1955,0.2519

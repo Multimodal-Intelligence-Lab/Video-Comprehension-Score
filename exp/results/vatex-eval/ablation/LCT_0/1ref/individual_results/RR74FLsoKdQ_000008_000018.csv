@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,several children jump on a trampoline that is filled with balloons .,0.8547,a group of boys and girls are jumping in a trampoline filled with balloons .,5.0,5.0,5.0,5.0,0.866,0.9225,1.0,1.0,1.0,1.0,0.8547,0.866,0.866,0.866,0.8547,0.8547,0.8547
+2,a group of people are playing a game of dodgeball .,0.0899,a group of boys and girls are jumping in a trampoline filled with balloons .,4.0,4.0,3.0,3.6667,0.2831,0.7877,1.0,1.0,1.0,1.0,0.0899,0.2831,0.2831,0.2831,0.0899,0.0899,0.0899
+3,a group of people are playing a game of marbles in a bouncy house .,0.0,a group of boys and girls are jumping in a trampoline filled with balloons .,4.0,4.0,2.0,3.3333,0.3946,0.789,0.9081,0.5033,0.6476,0.5534,0.2328,0.0,0.3333,0.0653,0.1551,0.0,0.0
+4,a child jumps around and does flips on a trampoline .,0.0,a group of boys and girls are jumping in a trampoline filled with balloons .,4.0,4.0,2.0,3.3333,0.4448,0.8313,0.8545,0.6104,0.5202,0.4228,0.332,0.0904,0.3502,0.0,0.2183,0.0,0.0
+5,"some kids are playing in inflatable structure , while music is playing in the background .",0.0,a group of boys and girls are jumping in a trampoline filled with balloons .,5.0,5.0,4.0,4.6667,0.3808,0.7649,0.7396,0.455,0.5634,0.4292,0.1904,0.0,0.1628,0.0,0.0,0.0,0.0
+6,kid in a room showing how to blow up and make balloon animals .,0.0,a group of boys and girls are jumping in a trampoline filled with balloons .,1.0,3.0,1.0,1.6667,0.2591,0.772,0.924,0.6256,0.7461,0.6711,0.0403,0.0,0.1982,0.007,0.0,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"two young girls each holding snowballs , throw them to the ground .",0.894,two little girls are holding snow balls and then they throw them on the ground .,5.0,5.0,5.0,5.0,0.9,0.9432,1.0,1.0,1.0,1.0,0.894,0.9,0.9,0.9,0.894,0.894,0.894
+2,a little girl is playing with a snowball in the snow .,0.6201,two little girls are holding snow balls and then they throw them on the ground .,5.0,4.0,5.0,4.6667,0.7089,0.8642,0.9565,0.8945,0.8867,0.869,0.6631,0.6745,0.6956,0.6717,0.6478,0.6234,0.6201
+3,a little girl is playing in the snow while a man is talking to her .,0.3771,two little girls are holding snow balls and then they throw them on the ground .,5.0,4.0,5.0,4.6667,0.4753,0.8424,1.0,1.0,1.0,1.0,0.3771,0.4753,0.4753,0.4753,0.3771,0.3771,0.3771
+4,two people on a snow covered field and making and throwing snowballs .,0.1858,two little girls are holding snow balls and then they throw them on the ground .,5.0,4.0,5.0,4.6667,0.6067,0.8436,0.8509,0.4314,0.5725,0.4933,0.5338,0.0628,0.5378,0.2955,0.4521,0.0,0.1858
+5,a kid is playing in the snow throwing snowballs at someone .,0.0,two little girls are holding snow balls and then they throw them on the ground .,4.0,2.0,4.0,3.3333,0.5136,0.8391,0.8667,0.3486,0.2459,0.1012,0.4203,0.0,0.4387,0.0,0.3311,0.0,0.0
+6,two children are trying to roll up snow into a ball and then one of them walks away .,0.3155,two little girls are holding snow balls and then they throw them on the ground .,2.0,2.0,4.0,2.6667,0.5349,0.8423,0.978,0.7704,0.8066,0.7704,0.4479,0.3963,0.5245,0.4234,0.4355,0.2833,0.3155

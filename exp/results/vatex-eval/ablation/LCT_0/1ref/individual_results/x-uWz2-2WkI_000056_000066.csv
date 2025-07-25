@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a kid has in phone in his hand sitting on the floor making noises beside a cat .,0.0,a boy makes funny vocal noises into a handheld device while a cat next to him stares out a window .,4.0,5.0,5.0,4.6667,0.6233,0.8461,0.8224,0.2329,0.1811,0.0321,0.5548,0.0,0.5419,0.0,0.4586,0.0,0.0
+2,a man is sitting on a couch and a dog is holding a dog .,0.0,a boy makes funny vocal noises into a handheld device while a cat next to him stares out a window .,2.0,2.0,2.0,2.0,0.1556,0.7685,0.9195,0.7668,0.7895,0.7261,0.0,0.0,0.0817,0.0,0.0,0.0,0.0
+3,a man is holding a dog and talking to a dog .,0.0,a boy makes funny vocal noises into a handheld device while a cat next to him stares out a window .,4.0,2.0,2.0,2.6667,0.2106,0.7771,0.9245,0.6133,0.5273,0.3917,0.0,0.0,0.1461,0.0,0.0,0.0,0.0
+4,a young boy is talking on a cell phone while sitting in a restaurant .,0.1136,a boy makes funny vocal noises into a handheld device while a cat next to him stares out a window .,4.0,3.0,4.0,3.6667,0.341,0.7717,0.9602,0.9831,0.9634,0.9526,0.146,0.3297,0.3137,0.316,0.1106,0.1314,0.1136
+5,a little boy sitting was holding a phone while staring at it,0.1253,a boy makes funny vocal noises into a handheld device while a cat next to him stares out a window .,5.0,5.0,5.0,5.0,0.3678,0.807,0.9408,0.8976,0.8955,0.8705,0.2167,0.2957,0.3281,0.2941,0.1674,0.1273,0.1253
+6,a boy is tapping his hands and making music sounds .,0.0,a boy makes funny vocal noises into a handheld device while a cat next to him stares out a window .,2.0,2.0,2.0,2.0,0.3876,0.8279,0.7451,0.7762,0.6919,0.6279,0.2603,0.211,0.1781,0.1148,0.0072,0.047,0.0

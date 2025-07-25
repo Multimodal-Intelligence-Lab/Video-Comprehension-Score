@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person peels back and then proceeds to fold away at several layers of fabric .,0.0,someone folding a red cloth napkin on a wooden table,5.0,5.0,5.0,5.0,0.2732,0.8066,0.7992,0.1842,0.0191,0.0,0.099,0.0,0.0907,0.0,0.0,0.0,0.0
+2,a person is demonstrating how to fold a napkin .,0.0,someone folding a red cloth napkin on a wooden table,5.0,5.0,4.0,4.6667,0.5268,0.8579,0.793,0.5617,0.4293,0.3348,0.4484,0.1576,0.4033,0.0,0.3045,0.018,0.0
+3,a person is demonstrating how to fold a piece of paper .,0.0,someone folding a red cloth napkin on a wooden table,4.0,4.0,4.0,4.0,0.3233,0.8087,0.9524,0.7756,0.7583,0.7011,0.1632,0.1275,0.2895,0.1075,0.1213,0.0,0.0
+4,a napkin is placed out in front of someone and folded .,0.0,someone folding a red cloth napkin on a wooden table,5.0,5.0,5.0,5.0,0.4756,0.8661,0.5195,0.4361,0.1236,0.0,0.3946,0.0,0.0,0.0,0.0,0.0,0.0
+5,a woman lays a white napkin out and begins to fold it .,0.0,someone folding a red cloth napkin on a wooden table,4.0,4.0,4.0,4.0,0.4997,0.8213,0.818,0.5945,0.481,0.3681,0.3908,0.1584,0.3883,0.0,0.2553,0.0,0.0
+6,a woman demonstrates the steps to fold a cloth napkin .,0.0,someone folding a red cloth napkin on a wooden table,5.0,5.0,4.0,4.6667,0.5521,0.8575,0.8397,0.519,0.4025,0.3032,0.4776,0.1287,0.4666,0.0,0.3779,0.0,0.0

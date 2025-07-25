@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a kid is cleaning their gym shoes and putting in shoe laces .,0.0,a boy tries to clean his dirty shoes with a toothbrush .,3.0,4.0,4.0,3.6667,0.5582,0.8503,0.8973,0.5165,0.4891,0.3896,0.4735,0.0507,0.5077,0.0138,0.4133,0.0,0.0
+2,a man is showing how to properly clean a shoe .,0.6049,boy showing the best way to clean a pair of shoes on the floor .,5.0,5.0,5.0,5.0,0.6507,0.8841,1.0,1.0,1.0,1.0,0.6049,0.6507,0.6507,0.6507,0.6049,0.6049,0.6049
+3,a man demonstrates how to clean a pair of sneakers .,0.5462,boy showing the best way to clean a pair of shoes on the floor .,5.0,5.0,5.0,5.0,0.6036,0.8871,0.9796,1.0,0.9845,0.9826,0.5532,0.6036,0.5954,0.5974,0.5439,0.5532,0.5462
+4,a young boy is showing how to polish a boot,0.4795,a teenager is using white shoe polish to clean up his shoes .,4.0,3.0,4.0,3.6667,0.5801,0.8481,1.0,1.0,1.0,1.0,0.505,0.5752,0.5752,0.5752,0.4795,0.4795,0.4795
+5,"in his room , a young boy is explainging the best way to clean sport sneakers .",0.5672,in a room a teeneger is recording a video to show his followers how to clean a dirty white sneakers .,5.0,5.0,5.0,5.0,0.6836,0.8934,1.0,0.8686,0.8726,0.8484,0.6291,0.6156,0.6826,0.6363,0.6223,0.5425,0.5672
+6,a boy is holding a boot and he is demonstrating how to apply polish to the boot .,0.1975,a boy giving instructions on how to clean sneakers with a tooth brush .,4.0,4.0,4.0,4.0,0.5419,0.8193,1.0,0.9428,0.9397,0.9205,0.4408,0.3613,0.5136,0.3646,0.4063,0.1794,0.1975

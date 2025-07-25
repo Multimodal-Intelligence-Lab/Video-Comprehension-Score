@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man does several jumps on the trampoline then launches himself off into a flip and lands flat on his front-side .,0.7309,"a man is jumping on a trampoline , does a front flip off of it , and lands on his face .",5.0,5.0,5.0,5.0,0.802,0.9248,1.0,1.0,1.0,1.0,0.7859,0.7563,0.78,0.7452,0.7621,0.7365,0.7309
+2,a man jumps off of a trampoline and does a back flip .,0.6688,"a man is jumping on a trampoline , does a front flip off of it , and lands on his face .",5.0,4.0,4.0,4.3333,0.725,0.9162,1.0,0.9602,0.9064,0.8978,0.6998,0.7136,0.7036,0.6965,0.6765,0.6874,0.6688
+3,a man is jumping on a trampoline and does a back flip .,0.6712,"a man is jumping on a trampoline , does a front flip off of it , and lands on his face .",5.0,4.0,4.0,4.3333,0.7229,0.93,1.0,0.9602,0.9064,0.8993,0.702,0.7114,0.7014,0.6942,0.6789,0.6897,0.6712
+4,a man does a back flip off of a low ledge and hits his face on it as he lands .,0.2821,in a backyard a man is jumping on a trampoline and falls on his face on the ground,4.0,4.0,4.0,4.0,0.6483,0.9074,0.9796,0.8819,0.8923,0.862,0.604,0.4222,0.5982,0.4049,0.5531,0.2921,0.2821
+5,"a boy falls from a tree while doing 3/4 of a front flip , and lands on his back on a trampoline",0.3084,"a man is jumping on a trampoline , does a front flip off of it , and lands on his face .",3.0,4.0,4.0,3.6667,0.603,0.8804,0.8873,0.697,0.693,0.6513,0.5365,0.3946,0.5245,0.3911,0.4599,0.3124,0.3084
+6,a person lands on their back twice falling on to a trampoline .,0.0426,a person wearing a red shirt and blue shorts jumps from a small trampoline and then falls on his face .,2.0,2.0,2.0,2.0,0.6356,0.8707,0.8787,0.5418,0.5761,0.4955,0.5751,0.1446,0.5572,0.1955,0.4835,0.0,0.0426

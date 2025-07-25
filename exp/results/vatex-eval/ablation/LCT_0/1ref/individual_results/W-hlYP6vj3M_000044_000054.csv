@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of sheep eat the hay that is unloaded from a truck .,0.616,a group of sheep are eating hay in their cages .,5.0,5.0,5.0,5.0,0.6703,0.9141,0.9714,0.9679,0.9393,0.9336,0.6393,0.6593,0.6606,0.649,0.6287,0.6273,0.616
+2,a man is using a chainsaw to cut a piece of wood .,0.0,a group of sheep are eating hay in their cages .,2.0,2.0,2.0,2.0,0.0499,0.7444,0.9714,0.7974,0.7517,0.6665,0.0,0.0,0.022,0.0,0.0,0.0,0.0
+3,a person is feeding a goat from the back of a bull .,0.0,a group of sheep are eating hay in their cages .,4.0,4.0,3.0,3.6667,0.2438,0.7996,0.875,0.25,0.3889,0.2357,0.0543,0.0,0.1357,0.0,0.0,0.0,0.0
+4,a sheep is lying on the ground while a person is harvesting wool from the sheep,0.0,a group of sheep are eating hay in their cages .,3.0,3.0,3.0,3.0,0.2939,0.813,0.8272,0.5274,0.4069,0.2704,0.1315,0.0,0.1464,0.0,0.0,0.0,0.0
+5,a young asian girl bottle feeding a baby sheep through a metal barn fence .,0.0,a group of sheep are eating hay in their cages .,3.0,1.0,1.0,1.6667,0.4023,0.8065,0.8904,0.7311,0.7372,0.6742,0.2589,0.1824,0.3286,0.1892,0.1676,0.0,0.0
+6,a person is showing how they feed sheeps by drinking in a bottle .,0.0,a group of sheep are eating hay in their cages .,4.0,4.0,3.0,3.6667,0.3639,0.7906,0.9125,0.7105,0.5979,0.4914,0.1954,0.1047,0.3029,0.0,0.1183,0.0,0.0

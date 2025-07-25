@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,an athletic woman climbs a rope hanging from a tree .,0.6744,a young girl is climbing a rope that is hanging from a tree .,5.0,5.0,5.0,5.0,0.7061,0.9025,1.0,1.0,1.0,1.0,0.6744,0.7061,0.7061,0.7061,0.6744,0.6744,0.6744
+2,a young girl is climbing up a rope in a park .,0.7609,a young girl is climbing a rope that is hanging from a tree .,5.0,4.0,5.0,4.6667,0.7748,0.942,1.0,1.0,1.0,1.0,0.7609,0.7748,0.7748,0.7748,0.7609,0.7609,0.7609
+3,a woman is climbing up a rope in a park .,0.4674,a young girl is climbing a rope that is hanging from a tree .,5.0,4.0,5.0,4.6667,0.5348,0.8734,1.0,1.0,1.0,1.0,0.4674,0.5348,0.5348,0.5348,0.4674,0.4674,0.4674
+4,a woman is walking on a rope that is tied to some trees in the park .,0.0185,a young girl is climbing a rope that is hanging from a tree .,4.0,3.0,5.0,4.0,0.4666,0.8376,0.8537,0.5234,0.6489,0.5808,0.3631,0.0,0.3751,0.1779,0.254,0.0,0.0185
+5,a young girl climbs around the branches of a tree in a wooded area,0.537,a young girl is climbing a rope that is hanging from a tree .,5.0,4.0,5.0,4.6667,0.7044,0.8929,0.9321,0.7161,0.7149,0.6808,0.669,0.5873,0.6829,0.5866,0.6449,0.5378,0.537
+6,a little girl is attempting to climb a small tree .,0.4809,a young girl is climbing a rope that is hanging from a tree .,4.0,4.0,4.0,4.0,0.6264,0.8694,0.937,0.7414,0.8278,0.802,0.5703,0.4962,0.6013,0.5487,0.5414,0.4204,0.4809

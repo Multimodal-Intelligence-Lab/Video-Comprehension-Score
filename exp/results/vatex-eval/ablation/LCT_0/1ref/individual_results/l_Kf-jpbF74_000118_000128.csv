@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man demonstrates a knot using a length of thin green cord .,0.262,a person shows a string and shows how to make tight knot in to a string .,5.0,5.0,5.0,5.0,0.6235,0.8299,0.8749,0.4738,0.6147,0.5357,0.5464,0.156,0.5697,0.382,0.4815,0.0368,0.262
+2,a person is showing how to tie a knot with a needle .,0.4967,a person shows a string and shows how to make tight knot in to a string .,4.0,4.0,4.0,4.0,0.6748,0.8827,0.9183,0.7429,0.732,0.6964,0.6316,0.5623,0.6459,0.5558,0.5989,0.5041,0.4967
+3,a person is demonstrating how to tie a knot with a string .,0.6173,a person shows a string and shows how to make tight knot in to a string .,4.0,5.0,5.0,4.6667,0.896,0.9126,0.8544,0.7073,0.6609,0.6284,0.886,0.6734,0.8375,0.6215,0.8356,0.6697,0.6173
+4,a man is showing how to tie a string arond a small fish hook so it stays tight .,0.0114,a person shows a string and shows how to make tight knot in to a string .,5.0,5.0,5.0,5.0,0.6158,0.8623,0.8724,0.4445,0.4519,0.3644,0.5544,0.0979,0.5596,0.1099,0.4892,0.0,0.0114
+5,a man is carefully wrapping the hook with some thread .,0.0,a person shows a string and shows how to make tight knot in to a string .,2.0,5.0,2.0,3.0,0.3135,0.7787,0.9378,0.715,0.7171,0.6367,0.1184,0.0399,0.268,0.0427,0.0599,0.0,0.0
+6,a man uses his hands to take the ends of a tie and put it through a loop in the tie .,0.0,a person shows a string and shows how to make tight knot in to a string .,2.0,5.0,1.0,2.6667,0.4463,0.792,0.9892,0.5765,0.6199,0.52,0.3009,0.0396,0.4403,0.1068,0.2933,0.0,0.0

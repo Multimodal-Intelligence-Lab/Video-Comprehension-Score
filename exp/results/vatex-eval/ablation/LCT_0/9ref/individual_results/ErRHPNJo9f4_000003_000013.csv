@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,someone flys down a snowy hill with skis on while several people look on from below .,0.4369,a person quickly skis down a snowy hill and around two people at the bottom .,5.0,5.0,4.0,4.6667,0.6309,0.8897,0.9767,0.8983,0.9359,0.921,0.5851,0.4769,0.6139,0.499,0.566,0.4121,0.4369
+2,a person is skiing down a snowy slope while music is playing .,0.3299,a person is skiing down a very steep and slippery slope in a mountain,4.0,4.0,4.0,4.0,0.5994,0.89,0.9167,0.7429,0.6962,0.6492,0.5499,0.3367,0.4706,0.4036,0.4052,0.2547,0.3299
+3,a person is skiing down a hill while a man is talking .,0.5152,a person skiis down a hill and stops by two people standing at the bottom .,4.0,4.0,4.0,4.0,0.5911,0.9019,0.9592,1.0,0.9687,0.9641,0.5303,0.5911,0.5736,0.5779,0.5103,0.5303,0.5152
+4,someone is skiing down a snowy mountain on skis .,0.1751,"someone is skiing down hill in a steep slope and when they reach the bottom , two other skiers are waiting .",5.0,5.0,5.0,5.0,0.7277,0.8957,0.8537,0.7603,0.6816,0.6274,0.6959,0.3621,0.6488,0.2953,0.6078,0.298,0.1751
+5,a person is skiing down a hill very fast in snow mountain .,0.7127,a person is skiing down a very steep and slippery slope in a mountain,5.0,5.0,5.0,5.0,0.7683,0.93,0.9787,0.8515,0.9107,0.8992,0.7384,0.7279,0.7633,0.7456,0.7327,0.6928,0.7127
+6,a person is on top of a mountain and then starts skiing down it,0.0,a person is skiing down a very steep and slippery slope in a mountain,5.0,5.0,4.0,4.6667,0.728,0.8929,0.8537,0.8047,0.6848,0.6132,0.695,0.3226,0.5562,0.0065,0.5351,0.2037,0.0

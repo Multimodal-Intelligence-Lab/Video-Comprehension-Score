@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is seen slapping a boy that's sleeping .,0.5058,someone slaps a little boy who is on the floor sleeping .,5.0,5.0,5.0,5.0,0.7942,0.8729,0.9565,0.6758,0.7749,0.7095,0.7643,0.479,0.7648,0.5244,0.7306,0.3651,0.5058
+2,a person is using a tool to carve a piece of ice .,0.0,a young child sleeps on the floor before being slapped in the face by a person next to them .,3.0,3.0,2.0,2.6667,0.1287,0.819,0.9804,0.9657,0.9286,0.9074,0.0,0.0,0.0141,0.0,0.0,0.0,0.0
+3,a person is using a knife to cut off the hair of a man .,0.0,a young child sleeps on the floor before being slapped in the face by a person next to them .,2.0,2.0,2.0,2.0,0.2012,0.8249,1.0,0.9657,0.9286,0.9076,0.0316,0.1036,0.1054,0.0678,0.0,0.0,0.0
+4,a man is asleep at his desk and someone slams something to wake him up .,0.1858,a person is sleeping on the floor and another person slaps them in the face .,4.0,4.0,3.0,3.6667,0.489,0.8608,1.0,1.0,1.0,1.0,0.3973,0.2526,0.4561,0.325,0.3584,0.1274,0.1858
+5,a man is sleeping in a chair and is woken up as a joke by someone slamming something on the desk in front of him .,0.0392,a person is sleeping on the floor and another person slaps them in the face .,3.0,4.0,4.0,3.6667,0.5329,0.8465,0.9614,0.8776,0.8901,0.8668,0.4391,0.1519,0.4721,0.1867,0.3763,0.0,0.0392
+6,a heavy set man is leaned back asleep in a chair by a table and another person slaps something on the table waking him up .,0.1778,a child sleeps as others play a prank and slap him awake .,3.0,4.0,3.0,3.3333,0.4806,0.8719,0.914,0.9268,0.8422,0.8116,0.3996,0.287,0.4286,0.3244,0.3045,0.1488,0.1778

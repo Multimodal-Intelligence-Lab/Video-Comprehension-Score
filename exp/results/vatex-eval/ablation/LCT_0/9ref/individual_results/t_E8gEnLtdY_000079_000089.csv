@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man cuts open a mussel with a knife .,0.5716,a man shows how to take oysters out of a shell with a knife .,4.0,2.0,4.0,3.3333,0.6292,0.8655,1.0,1.0,1.0,1.0,0.5716,0.6292,0.6292,0.6292,0.5716,0.5716,0.5716
+2,a woman is using a knife to cut a piece of meat .,0.0,a man explaining to a woman how to harvest the meat out of her oyster with a knife .,5.0,1.0,5.0,3.6667,0.4165,0.8691,1.0,1.0,1.0,1.0,0.3286,0.0587,0.2702,0.0587,0.1604,0.0,0.0
+3,a person is using a spoon to open a bowl of food .,0.0,a man explaining to a woman how to harvest the meat out of her oyster with a knife .,3.0,2.0,3.0,2.6667,0.288,0.8138,1.0,1.0,1.0,1.0,0.1251,0.1727,0.2214,0.1727,0.0381,0.0,0.0
+4,a man explains how to shuck an oyster and how to protect yourself from jabbing yourself .,0.586,a man shows how to take oysters out of a shell with a knife .,5.0,3.0,5.0,4.3333,0.8063,0.8643,1.0,1.0,1.0,1.0,0.7755,0.6594,0.7761,0.6594,0.7409,0.586,0.586
+5,a person demonstrates how to peel out the meat from an oyster .,0.6036,the man is showing where the pearls are found in an oyster .,5.0,5.0,5.0,5.0,0.7697,0.8614,1.0,1.0,1.0,1.0,0.7189,0.6612,0.7697,0.6612,0.7189,0.6036,0.6036
+6,a man explains and demonstrates the proper way to shuck an oyster without getting hurt .,0.7838,a man explaining how to open up and remove an oyster for consumption .,4.0,4.0,5.0,4.3333,0.8389,0.8717,1.0,1.0,1.0,1.0,0.814,0.8095,0.8306,0.8153,0.8017,0.777,0.7838

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person in blue and white walks around and talks to the camera,0.0,a guy is doing a demonstration on how to do a jump kick while talking about it .,5.0,5.0,4.0,4.6667,0.2552,0.7921,1.0,0.8659,0.8831,0.847,0.0598,0.1384,0.2552,0.1525,0.0598,0.0,0.0
+2,a man in a gym is doing a kick kick kicks .,0.441,a man demonstrates karate type kicking moves a couple of times .,5.0,5.0,4.0,4.6667,0.748,0.881,0.9643,0.8568,0.8704,0.8528,0.713,0.547,0.5708,0.5246,0.5454,0.4675,0.441
+3,a man is demonstrating how to do a martial arts kick .,0.6881,a man is demonstrating a martial arts jump and kick combination twice .,5.0,5.0,5.0,5.0,0.7547,0.9585,0.9677,1.0,0.9736,0.9708,0.7241,0.7356,0.7265,0.7037,0.6812,0.7241,0.6881
+4,a man demonstrates the proper method of clearing hurdles in track .,0.1926,a guy is doing a demonstration on how to do a jump kick while talking about it .,4.0,3.0,4.0,3.6667,0.411,0.8272,1.0,1.0,1.0,1.0,0.288,0.367,0.367,0.367,0.213,0.1926,0.1926
+5,a man is in a gym and demonstrating proper technique on how to perform a side kick .,0.2252,a man is demonstrating how to trot and then do a high kick .,5.0,5.0,4.0,4.6667,0.6862,0.8746,0.9592,0.7516,0.7642,0.7304,0.6338,0.3182,0.6133,0.3224,0.5487,0.2122,0.2252
+6,a man is performing karate and kicks an item being held high up in the air .,0.4636,a man performs karate kicks and verbally announces his movements and steps .,5.0,4.0,3.0,4.0,0.6168,0.8597,0.971,0.8047,0.8666,0.8444,0.5376,0.4977,0.5885,0.5399,0.5127,0.4144,0.4636

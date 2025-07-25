@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boat is getting very close to another boat at a marina . as it docks .,0.0,a man is talking while filming two boats together in a harbor .,5.0,4.0,5.0,4.6667,0.4299,0.8068,0.8612,0.4254,0.5695,0.4664,0.2934,0.0,0.3381,0.0,0.1796,0.0,0.0
+2,a group of people are standing on the back of a boat .,0.0,a man is talking while filming two boats together in a harbor .,4.0,1.0,3.0,2.6667,0.1543,0.7855,0.928,0.7735,0.7395,0.6683,0.0,0.0,0.0886,0.0,0.0,0.0,0.0
+3,a group of people are on a boat in a marina .,0.0,a man is talking while filming two boats together in a harbor .,4.0,4.0,4.0,4.0,0.2624,0.7962,0.9032,0.8,0.7475,0.6828,0.0736,0.078,0.1834,0.0132,0.0,0.0,0.0
+4,a yacht boat is being pulled towards a dock with a man on it .,0.0,a man is talking while filming two boats together in a harbor .,5.0,3.0,4.0,4.0,0.376,0.8307,0.5587,0.2576,0.0,0.0,0.2488,0.0,0.0,0.0,0.0,0.0,0.0
+5,a man on a boat brings the boat to a dock then steps onto the dock and grabs the boat,0.0,a man is talking while filming two boats together in a harbor .,5.0,2.0,4.0,3.6667,0.3785,0.8168,0.8072,0.4366,0.4222,0.2927,0.2391,0.0,0.23,0.0,0.0574,0.0,0.0
+6,a man steps out of a yacht as it glides to the side of the dock .,0.0,a man is talking while filming two boats together in a harbor .,5.0,4.0,5.0,4.6667,0.3164,0.8014,0.9404,0.5843,0.5347,0.4193,0.147,0.0,0.273,0.0,0.0929,0.0,0.0

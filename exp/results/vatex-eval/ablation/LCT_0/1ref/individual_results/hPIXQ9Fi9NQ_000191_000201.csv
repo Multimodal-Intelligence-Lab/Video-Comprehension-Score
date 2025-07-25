@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a team of cheerleaders is being filmed while performing in a stadium type venue .,0.5771,a group of cheerleaders do a dance with each other while they are in a stadium,5.0,5.0,5.0,5.0,0.7424,0.8641,0.8067,0.8398,0.7049,0.6585,0.7019,0.6933,0.6807,0.6025,0.6305,0.6451,0.5771
+2,a group of people are playing a game of instruments in front of a crowd .,0.0,a group of cheerleaders do a dance with each other while they are in a stadium,4.0,4.0,4.0,4.0,0.2218,0.7941,0.8667,0.7574,0.6806,0.5977,0.0201,0.0,0.1021,0.0,0.0,0.0,0.0
+3,a group of people are performing a dance routine in front of a crowd .,0.049,a group of cheerleaders do a dance with each other while they are in a stadium,5.0,5.0,5.0,5.0,0.4535,0.8444,0.8667,0.7574,0.6806,0.6217,0.3528,0.2785,0.3695,0.197,0.2532,0.1455,0.049
+4,"people are watching a performance in a stadium , people are clapping in unison .",0.0,a group of cheerleaders do a dance with each other while they are in a stadium,3.0,4.0,1.0,2.6667,0.4857,0.7963,0.7247,0.2783,0.0036,0.0,0.3541,0.0,0.2903,0.0,0.1088,0.0,0.0
+5,school cheerleaders are performing a routine in front of a crowd .,0.2365,a group of cheerleaders do a dance with each other while they are in a stadium,5.0,5.0,4.0,4.6667,0.5625,0.813,0.8333,0.8723,0.7047,0.6368,0.4619,0.4985,0.475,0.3792,0.3543,0.3832,0.2365
+6,a group of cheerleaders perform a cheer routine while screaming loudly .,0.4125,a group of cheerleaders do a dance with each other while they are in a stadium,5.0,4.0,4.0,4.3333,0.5452,0.8484,0.9375,0.9579,0.9126,0.897,0.4639,0.5251,0.5148,0.5016,0.4281,0.4403,0.4125

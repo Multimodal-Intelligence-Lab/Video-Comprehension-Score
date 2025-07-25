@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person was drawing a cartoon image on a white paper,0.7757,someone is drawing a cartoon figure of a man on a white sheet of paper .,5.0,5.0,5.0,5.0,0.8387,0.9311,1.0,1.0,1.0,1.0,0.8268,0.7798,0.8298,0.7789,0.8172,0.7766,0.7757
+2,a person is using a marker to draw on a piece of paper .,0.3571,a hand is shown drawing a cartoon on a piece of paper .,4.0,4.0,4.0,4.0,0.6277,0.9142,0.937,0.8879,0.8642,0.8407,0.582,0.3865,0.5865,0.4331,0.5352,0.28,0.3571
+3,a person is drawing a picture on a piece of paper .,0.6692,a person draws a simpson's character on a piece of paper .,5.0,5.0,5.0,5.0,0.8414,0.9566,1.0,1.0,1.0,1.0,0.8342,0.6941,0.8314,0.6941,0.8238,0.6766,0.6692
+4,a man draws and colors in a cartoon figure .,0.4539,a hand is shown drawing a cartoon on a piece of paper .,4.0,4.0,4.0,4.0,0.73,0.9023,1.0,1.0,0.9681,0.9613,0.7007,0.5446,0.6409,0.537,0.5844,0.5035,0.4539
+5,a person is drawing pencil drawings on a piece of paper .,0.5191,a person is drawing a picture of a man on a sheet of paper .,5.0,5.0,4.0,4.6667,0.6815,0.9218,0.9497,0.8153,0.7217,0.6946,0.6545,0.4678,0.6443,0.5567,0.6141,0.4047,0.5191
+6,a person draws a very colorful picture on some paper in front of them,0.3509,a person draws a simpson's character on a piece of paper .,4.0,4.0,4.0,4.0,0.6238,0.9228,0.9667,0.7992,0.7593,0.7306,0.5923,0.3287,0.5572,0.4202,0.5201,0.2278,0.3509

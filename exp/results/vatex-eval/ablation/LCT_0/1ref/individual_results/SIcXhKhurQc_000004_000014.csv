@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girls soft ball game being played and one steals a base and is safe .,0.0,a player threw a ball and the other fell over it and then passed it to one other player,4.0,5.0,4.0,4.3333,0.1984,0.8245,0.8972,0.6585,0.6633,0.5917,0.0278,0.0,0.1066,0.0,0.0,0.0,0.0
+2,a baseball player hits the ball and hits the ball .,0.0,a player threw a ball and the other fell over it and then passed it to one other player,2.0,5.0,4.0,3.6667,0.2729,0.8692,0.7595,0.0,0.0,0.0,0.1635,0.0,0.0426,0.0,0.0,0.0,0.0
+3,a group of people are playing a game of baseball .,0.0,a player threw a ball and the other fell over it and then passed it to one other player,5.0,4.0,4.0,4.3333,0.2823,0.7794,0.785,0.469,0.312,0.1173,0.0792,0.0,0.0857,0.0,0.0,0.0,0.0
+4,a girl swings a ball around and then releases it for track and field .,0.0,a player threw a ball and the other fell over it and then passed it to one other player,4.0,4.0,4.0,4.0,0.2211,0.7702,0.9846,0.8792,0.929,0.9078,0.0,0.1141,0.2089,0.1615,0.0,0.0,0.0
+5,two girls who are outside playing hopscotch with each other .,0.0,a player threw a ball and the other fell over it and then passed it to one other player,3.0,2.0,4.0,3.0,0.0881,0.7675,0.7619,0.2612,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6,a news broadcast where a softball is hit to an outfielder and caught in a softball game .,0.0,a player threw a ball and the other fell over it and then passed it to one other player,4.0,4.0,4.0,4.0,0.2834,0.7763,0.8521,0.4058,0.3246,0.13,0.0769,0.0,0.159,0.0,0.0,0.0,0.0

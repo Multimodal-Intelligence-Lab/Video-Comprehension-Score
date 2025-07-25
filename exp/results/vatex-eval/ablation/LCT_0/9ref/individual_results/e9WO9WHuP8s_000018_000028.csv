@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young boy who seems to be timing himself how fast he can eat a snack .,0.7502,a young boy is giving himself four minutes to eat a snack .,5.0,5.0,5.0,5.0,0.8075,0.8927,1.0,1.0,1.0,1.0,0.7833,0.7332,0.8015,0.7781,0.7765,0.7238,0.7502
+2,a young boy is chewing gum and talking to the camera .,0.1477,a young boy who is timing himself eating while also recording .,4.0,4.0,4.0,4.0,0.4335,0.8288,0.941,0.7414,0.8198,0.7825,0.3013,0.219,0.382,0.2937,0.2378,0.0576,0.1477
+3,a little boy is chewing gum and talking to the camera .,0.0483,a kid recording himself as he starts to eat some kind of food .,4.0,4.0,4.0,4.0,0.4128,0.7929,0.941,0.7414,0.8198,0.7727,0.2379,0.174,0.3594,0.2667,0.1867,0.0,0.0483
+4,a man and a young child sit and eat various types of food on a table .,0.1777,a kid recording himself as he starts to eat some kind of food .,4.0,3.0,3.0,3.3333,0.3913,0.8663,0.9557,0.8783,0.8815,0.8632,0.2776,0.285,0.3429,0.2876,0.2416,0.1747,0.1777
+5,a small boy eats some food served by his family at the table .,0.1202,a boy shows his finger and then begins to eat food .,3.0,3.0,4.0,3.3333,0.5168,0.845,0.928,0.7302,0.6925,0.6206,0.4282,0.3383,0.4384,0.2566,0.3354,0.2169,0.1202
+6,the group of boys are sitting outside in the nice weather eating their food .,0.1833,a boy shows his finger and then begins to eat food .,3.0,2.0,2.0,2.3333,0.3802,0.8376,1.0,1.0,1.0,1.0,0.256,0.3104,0.3802,0.3196,0.256,0.1621,0.1833

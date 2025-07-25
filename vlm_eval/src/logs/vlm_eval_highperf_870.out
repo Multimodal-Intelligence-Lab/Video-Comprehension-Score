@@ -1,0 +1,64 @@
+Starting MPII High-Performance Comparison Script at Thu Jul 24 02:20:14 PM CDT 2025
+Job ID: 870
+Running on node: g003
+Target: 2 GPUs, 48 CPUs, 80GB RAM for faster processing
+GPU Information:
+Thu Jul 24 14:20:14 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.35.05              Driver Version: 560.35.05      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 PCIe               Off |   00000000:61:00.0 Off |                    0 |
+| N/A   39C    P0             52W /  350W |       1MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA H100 PCIe               Off |   00000000:E1:00.0 Off |                    0 |
+| N/A   29C    P0             46W /  350W |       1MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+Loading modules...
+Creating logs directory if it doesn't exist...
+Activating virtual environment...
+Setting CUDA environment variables for multi-GPU...
+Running high-performance vlm_eval evaluation...
+Starting fresh evaluation with new experiment ID: eval_20250724_142019
+Loading CLIP-CC ground truth data...
+Loaded 200 CLIP-CC ground truth entries
+Loading model predictions...
+Loaded 199 predictions for model videochatflash
+Loaded 199 predictions for model mplug
+Loaded 199 predictions for model vilamp
+Loaded 199 predictions for model minicpm
+Loaded 199 predictions for model llava_next_video
+Loaded 199 predictions for model sharegpt4
+Loaded 199 predictions for model longvu
+Loaded 199 predictions for model timechat
+Loaded 199 predictions for model ts_llava
+Loaded 199 predictions for model rtnn
+Loaded 199 predictions for model videollama3
+Loaded 199 predictions for model llava_one_vision
+Loaded 199 predictions for model video_xl
+Loaded 199 predictions for model internvl
+Loaded 199 predictions for model longva
+Loaded 199 predictions for model oryx
+Initializing models...
+✓ SAT model initialized
+✓ NV-Embed model initialized
+Starting parallel evaluation...
+\nEvaluation completed! Check log file for details.
+Results: /ces/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/vlm_eval/results/individual_results
+Aggregated: /ces/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/vlm_eval/results/aggregated_results/aggregated_results.csv
+High-performance vlm_eval script completed at Thu Jul 24 03:35:11 PM CDT 2025
+SUCCESS: High-performance vlm_eval evaluation completed successfully

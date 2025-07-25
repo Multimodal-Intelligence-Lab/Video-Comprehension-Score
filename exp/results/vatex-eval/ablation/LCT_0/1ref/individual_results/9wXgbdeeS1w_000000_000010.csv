@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl jumps into a swimming pool and then reemerges .,0.5457,a girl with goggles jumps into a swimming pool after someone says to go .,5.0,5.0,5.0,5.0,0.6755,0.895,0.9362,0.8047,0.7982,0.7746,0.6374,0.5967,0.6533,0.5934,0.6127,0.5494,0.5457
+2,a little girl is swimming in a pool with a pool .,0.3271,a girl with goggles jumps into a swimming pool after someone says to go .,5.0,4.0,4.0,4.3333,0.481,0.8805,0.8969,0.9387,0.876,0.8592,0.4105,0.4471,0.4213,0.4075,0.3427,0.372,0.3271
+3,a little girl jumps into a pool and jumps into the pool .,0.4417,a girl with goggles jumps into a swimming pool after someone says to go .,5.0,3.0,3.0,3.6667,0.6318,0.8968,0.832,0.8153,0.7353,0.7049,0.5895,0.5484,0.5575,0.4993,0.5066,0.4965,0.4417
+4,a young girl does a dive in a diving pool and then does it again from a differnt angle .,0.3249,a girl with goggles jumps into a swimming pool after someone says to go .,4.0,2.0,3.0,3.0,0.4967,0.8261,0.9569,0.914,0.9025,0.8819,0.3908,0.4494,0.474,0.4423,0.3633,0.3334,0.3249
+5,a young lady is swimming laps in a swimming pool .,0.0,a girl with goggles jumps into a swimming pool after someone says to go .,5.0,3.0,4.0,4.0,0.3933,0.8398,0.8497,0.3569,0.2539,0.1116,0.2775,0.0,0.2859,0.0,0.1497,0.0,0.0
+6,a girl is at a swimming pool and she does several flips into the water .,0.2394,a girl with goggles jumps into a swimming pool after someone says to go .,5.0,4.0,4.0,4.3333,0.5756,0.8575,0.883,0.6781,0.6506,0.5926,0.5051,0.3742,0.5194,0.3478,0.4396,0.2702,0.2394

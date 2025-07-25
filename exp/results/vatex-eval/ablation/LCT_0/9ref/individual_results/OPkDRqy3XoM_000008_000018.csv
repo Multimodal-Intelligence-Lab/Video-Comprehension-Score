@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man using a unique knife to carve and get perfect slices of water melon,0.6839,a person is using a kitchen tool to carve slices of watermelon .,5.0,5.0,5.0,5.0,0.782,0.887,0.9789,0.7709,0.8084,0.7763,0.7542,0.6575,0.7745,0.7156,0.7457,0.6449,0.6839
+2,a person is using a knife to cut a watermelon .,0.7893,a person is using a kitchen tool to carve slices of watermelon .,5.0,4.0,4.0,4.3333,0.864,0.9407,1.0,0.9301,0.8817,0.8743,0.8549,0.8057,0.8334,0.8089,0.8163,0.7857,0.7893
+3,a person is showing how to cut a watermelon with a knife .,0.9624,someone is showing how to cut a watermelon with a watermelon knife .,5.0,4.0,4.0,4.3333,0.9632,0.9786,1.0,1.0,1.0,1.0,0.9624,0.9632,0.9632,0.9632,0.9624,0.9624,0.9624
+4,a person displays how to cut and section off a watermelon fruit .,0.7931,someone is showing how to cut a watermelon with a watermelon knife .,5.0,5.0,5.0,5.0,0.8446,0.8982,1.0,0.8723,0.8863,0.8706,0.827,0.726,0.8379,0.8059,0.8195,0.6882,0.7931
+5,one person is cutting the watermelon and slices into small pieces,0.6198,a person is using a tool to cut the insides of a watermelon into rectangle shapes and putting them onto a plate .,4.0,4.0,5.0,4.3333,0.7178,0.9,0.9703,0.9013,0.9158,0.9008,0.6865,0.6721,0.6954,0.6773,0.6498,0.6137,0.6198
+6,a person is very carefully and neatly cutting a watermelon .,0.6209,a person is using a kitchen tool to carve slices of watermelon .,5.0,5.0,5.0,5.0,0.7411,0.8906,0.963,0.8954,0.8992,0.8797,0.7039,0.6874,0.7274,0.6797,0.6774,0.6301,0.6209

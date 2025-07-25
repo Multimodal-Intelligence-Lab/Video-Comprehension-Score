@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman uses a makeup brush to apply makeup to her eyebrow .,0.0,someone brushes their right eyebrow over and over while there is a voice over .,5.0,5.0,5.0,5.0,0.4228,0.8351,0.9048,0.4714,0.3664,0.2413,0.3088,0.0,0.3621,0.0,0.2361,0.0,0.0
+2,a woman is demonstrating how to apply mascara to her eyebrows .,0.0,someone brushes their right eyebrow over and over while there is a voice over .,5.0,4.0,4.0,4.3333,0.3411,0.8005,0.875,0.4459,0.5908,0.4887,0.1768,0.0,0.247,0.0,0.0592,0.0,0.0
+3,a woman is demonstrating how to apply mascara to her eyebrows .,0.0,someone brushes their right eyebrow over and over while there is a voice over .,4.0,4.0,4.0,4.0,0.3411,0.8005,0.875,0.4459,0.5908,0.4887,0.1768,0.0,0.247,0.0,0.0592,0.0,0.0
+4,a woman is demonstrating how to properly use an eyebrow filler .,0.0,someone brushes their right eyebrow over and over while there is a voice over .,5.0,5.0,5.0,5.0,0.3507,0.8192,0.9677,0.6669,0.5793,0.4865,0.2073,0.0264,0.329,0.0,0.1809,0.0,0.0
+5,a woman does a tutorial on how to fill in her eyebrows with makeup .,0.1879,someone brushes their right eyebrow over and over while there is a voice over .,5.0,5.0,5.0,5.0,0.3495,0.801,1.0,1.0,1.0,1.0,0.1879,0.3495,0.3495,0.3495,0.1879,0.1879,0.1879
+6,"a woman is sat down applying color to her eyebrows with a makeup brush , while talking about why she does it .",0.0,someone brushes their right eyebrow over and over while there is a voice over .,5.0,4.0,3.0,4.0,0.4066,0.8365,0.856,0.7137,0.6676,0.6026,0.2906,0.1686,0.3068,0.1112,0.1713,0.006,0.0

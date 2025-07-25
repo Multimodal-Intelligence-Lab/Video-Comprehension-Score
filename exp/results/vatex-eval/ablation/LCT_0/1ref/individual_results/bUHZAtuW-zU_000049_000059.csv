@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a weather woman is speaking to the camera while giving a weather forecast .,0.1803,a weather girl giving the weather forecast on television in a red top with skirt on,5.0,5.0,5.0,5.0,0.5789,0.8826,0.7992,0.625,0.582,0.5264,0.5229,0.3263,0.4731,0.2765,0.4031,0.2367,0.1803
+2,a woman is giving a weather report in front of a map .,0.3578,a weather girl giving the weather forecast on television in a red top with skirt on,5.0,5.0,5.0,5.0,0.5596,0.8605,0.9697,0.7646,0.797,0.7641,0.4882,0.424,0.5458,0.4474,0.4722,0.3306,0.3578
+3,a woman is giving a weather forecast in front of a map .,0.3746,a weather girl giving the weather forecast on television in a red top with skirt on,5.0,5.0,5.0,5.0,0.5589,0.885,0.9697,0.7646,0.797,0.7707,0.5016,0.423,0.5451,0.4465,0.486,0.3481,0.3746
+4,a woman stands in front of a map backdrop and provides a weather forecast,0.0,a weather girl giving the weather forecast on television in a red top with skirt on,5.0,5.0,5.0,5.0,0.5095,0.823,0.7797,0.4774,0.429,0.3062,0.404,0.0,0.3709,0.0,0.2356,0.0,0.0
+5,a woman is presenting weather forecast while standing and talking .,0.4315,a weather girl giving the weather forecast on television in a red top with skirt on,5.0,5.0,5.0,5.0,0.547,0.8459,0.9697,0.9478,0.942,0.9315,0.4645,0.5221,0.5329,0.5192,0.4477,0.4349,0.4315
+6,a weather woman is giving the weather forecast for the country,0.3464,a weather girl giving the weather forecast on television in a red top with skirt on,5.0,5.0,5.0,5.0,0.5481,0.8938,0.8824,0.7982,0.7735,0.7466,0.4944,0.4339,0.4879,0.4158,0.427,0.3666,0.3464

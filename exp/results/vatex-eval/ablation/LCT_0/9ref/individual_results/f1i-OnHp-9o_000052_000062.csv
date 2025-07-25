@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person was doing the painting the on the paper by using some pen like instrument,0.466,person holding a utensil and doing a design on a piece of paper .,5.0,5.0,5.0,5.0,0.6976,0.831,1.0,0.8723,0.8863,0.8542,0.636,0.596,0.6562,0.5435,0.5863,0.5138,0.466
+2,a person is using a tool to draw on a piece of wood .,0.5203,a person is using a metal tool to shade a drawing of a face covered in leaves .,5.0,4.0,4.0,4.3333,0.759,0.9146,1.0,1.0,0.9895,0.9881,0.7365,0.5791,0.7131,0.5746,0.6864,0.5254,0.5203
+3,a person is using a tool to carve a design on a piece of wood .,0.3973,a person is drawing a design into a piece of wood with a wood burner .,5.0,4.0,4.0,4.3333,0.6809,0.9095,1.0,0.9045,0.9217,0.9083,0.6491,0.4128,0.5856,0.4254,0.5444,0.3299,0.3973
+4,a person uses a pen to draw a stylized design,0.1723,painter uses pronged tool to fill in spaces on drawing of ruffled leaves .,4.0,4.0,4.0,4.0,0.7225,0.8682,0.9706,0.869,0.8838,0.857,0.6804,0.3159,0.6917,0.3274,0.6449,0.2011,0.1723
+5,someone with a paint application stick is using this to perform art strokes as they show symbology .,0.216,a person is doing a type of art work with a special device with ink .,5.0,3.0,4.0,4.0,0.5777,0.8385,0.9831,0.8214,0.8442,0.7964,0.474,0.3365,0.542,0.3705,0.4296,0.1737,0.216
+6,person putting spray paint onto their hands and creating a piece of artwork .,0.0844,an artist uses a special ink pen to create a complex drawing .,3.0,3.0,4.0,3.3333,0.4561,0.8264,0.9873,0.979,0.9748,0.9677,0.3419,0.3005,0.3627,0.2609,0.2279,0.1335,0.0844

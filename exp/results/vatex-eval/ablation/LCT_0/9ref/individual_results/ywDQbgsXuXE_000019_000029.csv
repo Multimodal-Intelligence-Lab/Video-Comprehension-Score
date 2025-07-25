@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is acting nervous while pushing buttons on an atm machine .,0.4301,a man wearing a white shirt appears to be in distress as he uses an atm machine .,5.0,5.0,5.0,5.0,0.8382,0.9445,0.95,0.8598,0.8974,0.8729,0.8287,0.5125,0.6905,0.5329,0.6817,0.3959,0.4301
+2,a man is demonstrating how to use an atm machine .,0.3727,a man is pushing random buttons on an atm and acting frantically,4.0,5.0,3.0,4.0,0.6044,0.8867,0.9756,0.8644,0.8611,0.8346,0.5271,0.4753,0.5506,0.4732,0.4628,0.3752,0.3727
+3,a man is demonstrating how to use an atm machine .,0.3727,a man is pushing random buttons on an atm and acting frantically,4.0,5.0,3.0,4.0,0.6044,0.8867,0.9756,0.8644,0.8611,0.8346,0.5271,0.4753,0.5506,0.4732,0.4628,0.3752,0.3727
+4,"a card is pulled out of atm machine , then selects a button on atm .",0.0,a man is pushing random buttons on an atm and acting frantically,3.0,5.0,3.0,3.6667,0.6058,0.848,0.9688,0.8477,0.9042,0.8776,0.5278,0.1769,0.4587,0.1713,0.3412,0.0349,0.0
+5,a man is playing a pinball machine which is very loud and has flashing lights .,0.0,a man is pushing random buttons on an atm and acting frantically,2.0,2.0,4.0,2.6667,0.2946,0.8121,0.9846,0.9013,0.929,0.9084,0.1167,0.1524,0.2484,0.1965,0.0744,0.0,0.0
+6,an aggressive male is using a photocopier machine to copy something that is not practical and is banging around disturbing the other employees .,0.0,a man is pushing random buttons on an atm and acting frantically,3.0,1.0,2.0,2.0,0.2986,0.8185,0.9895,0.8983,0.9271,0.9034,0.1396,0.1341,0.2723,0.16,0.0815,0.0,0.0

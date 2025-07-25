@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man takes a long sword and puts it down his throat and then takes it out .,0.3736,a man is doing a trick on stage of putting a sword down his throat .,5.0,5.0,5.0,5.0,0.7463,0.8657,0.9599,0.5945,0.5571,0.4885,0.707,0.4567,0.7357,0.4066,0.6948,0.4265,0.3736
+2,a man is on stage performing a dance routine on stage .,0.0,a man is doing a trick on stage of putting a sword down his throat .,4.0,4.0,4.0,4.0,0.3724,0.8538,0.8496,0.4,0.5439,0.4658,0.2649,0.0,0.2613,0.0,0.1348,0.0,0.0
+3,a man is performing a dance in front of a crowd .,0.0,a man is doing a trick on stage of putting a sword down his throat .,4.0,4.0,4.0,4.0,0.281,0.7942,1.0,0.8408,0.827,0.7822,0.0948,0.1449,0.281,0.1307,0.0948,0.0,0.0
+4,a man pulls a sword out of his throat as he shows how he can preform a trick .,0.0,a man is doing a trick on stage of putting a sword down his throat .,5.0,5.0,5.0,5.0,0.7984,0.8963,0.6792,0.4292,0.21,0.1186,0.7751,0.2851,0.5983,0.0106,0.5862,0.2636,0.0
+5,outside a man is pushing a curved sword down his throat then pulls it out .,0.5781,a man is doing a trick on stage of putting a sword down his throat .,4.0,3.0,4.0,3.6667,0.6818,0.8662,0.9787,0.8723,0.8707,0.8507,0.6326,0.6352,0.6749,0.6346,0.6246,0.5788,0.5781
+6,a man is doing a performance that involved swallowing a sword .,0.7136,a man is doing a trick on stage of putting a sword down his throat .,5.0,5.0,5.0,5.0,0.798,0.853,1.0,0.8408,0.827,0.7972,0.7632,0.7597,0.798,0.7557,0.7632,0.7183,0.7136

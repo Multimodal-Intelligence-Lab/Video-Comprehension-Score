@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is fiddling with a power tool while talking to a lady .,0.2258,a man changing a part on a tool using their hands,4.0,4.0,3.0,3.6667,0.574,0.8532,0.9655,0.8589,0.8781,0.8535,0.5007,0.3027,0.4084,0.3555,0.2893,0.1623,0.2258
+2,a man is using an electric drill to peel an apple .,0.0,a man at the counter in a hardware store is showing off a tool .,4.0,2.0,3.0,3.0,0.4212,0.8442,0.9706,0.8446,0.8645,0.8248,0.3125,0.081,0.2943,0.1147,0.1571,0.0,0.0
+3,a person is using a drill to peel an apple .,0.0,a man at the counter in a hardware store is showing off a tool .,4.0,4.0,3.0,3.6667,0.4333,0.8356,0.9434,0.8779,0.7587,0.7106,0.3218,0.1963,0.2864,0.1476,0.1429,0.0359,0.0
+4,a man is holding a tool and pulls out a hot piece of metal .,0.2528,a man is seen holding a tool and attempting to unscrew the curved silver tip .,4.0,3.0,2.0,3.0,0.4491,0.851,1.0,0.8441,0.8876,0.8553,0.3527,0.3473,0.4346,0.3641,0.3356,0.2331,0.2528
+5,"the narrator is describing what the welder is doing , as the welder is using his tools to work on the piece .",0.0,a man at the counter in a hardware store is showing off a tool .,4.0,4.0,1.0,3.0,0.2822,0.8304,0.9688,0.7623,0.8001,0.7408,0.0692,0.0,0.2388,0.1028,0.013,0.0,0.0
+6,a man is showing a tool that is used on locks and talking about what it is made of and how it is shaped .,0.2713,a man is showing how to use a part of the drill he is holding .,2.0,3.0,2.0,2.3333,0.4982,0.8599,0.9665,0.8853,0.8938,0.871,0.4069,0.4225,0.4317,0.3834,0.3284,0.3174,0.2713

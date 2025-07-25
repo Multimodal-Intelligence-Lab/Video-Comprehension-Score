@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a boy removes his glasses and then puts them on , then puts his arms on the table and rests his head .",0.4269,a boy was having specs in his face and having his face on the table and have some animal in front,5.0,5.0,5.0,5.0,0.7286,0.8937,0.9873,0.8744,0.8985,0.8751,0.68,0.5213,0.6521,0.534,0.6107,0.4111,0.4269
+2,a young boy is sitting on the floor and talking to a camera .,0.3151,a young boy shows off his pair of prescription glasses for the camera .,3.0,3.0,2.0,2.6667,0.4778,0.8603,1.0,0.8723,0.9107,0.8871,0.393,0.4013,0.4778,0.4108,0.393,0.3041,0.3151
+3,a young boy is sitting on the floor and playing with a toy .,0.1958,a boy is sitting on a chair is wearing and playing with his eyeglasses .,4.0,3.0,4.0,3.6667,0.4065,0.8784,1.0,1.0,1.0,1.0,0.3243,0.2625,0.3371,0.2936,0.2453,0.1463,0.1958
+4,a baby boy examines pieces of watermelon while in a highchair in a living room .,0.021,a young boy adjusts a pair of glasses and then puts his head in his hands while sitting at a kitchen table .,2.0,1.0,2.0,1.6667,0.3262,0.8147,0.9846,0.9048,0.9201,0.8976,0.1427,0.223,0.2778,0.236,0.0746,0.0044,0.021
+5,a young boy with glasses is throwing things at a window blind that has paper woven in it .,0.2109,a little boy with his glasses and he puts them on and than smiles .,2.0,2.0,2.0,2.0,0.4842,0.8551,1.0,0.9045,0.9298,0.9116,0.3967,0.364,0.4246,0.3498,0.3007,0.2282,0.2109
+6,three children are watching a video when a boy falls backward with his chair .,0.0,a boy is sitting on a chair is wearing and playing with his eyeglasses .,2.0,1.0,2.0,1.6667,0.3616,0.8154,0.9667,0.8515,0.8582,0.8204,0.2171,0.0939,0.2018,0.1009,0.0,0.0,0.0

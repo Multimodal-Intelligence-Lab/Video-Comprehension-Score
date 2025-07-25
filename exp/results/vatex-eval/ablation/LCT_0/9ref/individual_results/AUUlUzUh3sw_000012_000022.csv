@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young boy digs through a dumpster for trash in a parking lot .,0.59,a young boy looks through bins outside in a car park .,5.0,5.0,5.0,5.0,0.6998,0.8695,1.0,0.8723,0.9042,0.8873,0.6455,0.6283,0.6938,0.6516,0.6377,0.5627,0.59
+2,a young boy is standing on the street and is talking to a man .,0.0,a boy is digging through a container with items in it and can't find it .,4.0,4.0,5.0,4.3333,0.2988,0.8517,1.0,0.7983,0.7778,0.7191,0.1622,0.0083,0.2988,0.0533,0.1622,0.0,0.0
+3,a man is standing in a parking lot and he is trying to put something on a car .,0.0,a boy is digging through a container with items in it and can't find it .,4.0,4.0,4.0,4.0,0.2876,0.8136,1.0,1.0,1.0,1.0,0.1221,0.1072,0.151,0.1072,0.0,0.0,0.0
+4,a man goes though a garbage can and gets stuff out of it .,0.297,a person outside digging thru a dumpster trying to find items with someone else,4.0,4.0,5.0,4.3333,0.6239,0.83,1.0,0.91,0.9048,0.8808,0.5457,0.4419,0.5707,0.4387,0.4808,0.301,0.297
+5,a man goes dumpster diving in a large recycle bin and checks a game cover .,0.2267,a person outside digging thru a dumpster trying to find items with someone else,4.0,4.0,4.0,4.0,0.4718,0.8256,0.9614,0.8368,0.8728,0.8374,0.3251,0.3456,0.4439,0.3948,0.2895,0.1638,0.2267
+6,a man is searching through trash in a dumpster and finds some comic books .,0.4292,a boy is looking through a dumpster for something outside of stores .,4.0,3.0,4.0,3.6667,0.5483,0.8633,1.0,1.0,1.0,1.0,0.4537,0.5263,0.5263,0.5263,0.4292,0.4292,0.4292

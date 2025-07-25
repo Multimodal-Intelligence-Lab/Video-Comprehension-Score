@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man shave a long bread off of his face as a woman is sad about it .,0.5571,a man is shaving off his long beard while someone in the background protests .,5.0,4.0,5.0,4.6667,0.6248,0.8747,1.0,1.0,1.0,1.0,0.5603,0.6243,0.6243,0.6243,0.5571,0.5571,0.5571
+2,a man is shaving his beard with an electric razor .,0.5848,a man is shaving off his beard in the bathroom .,5.0,5.0,5.0,5.0,0.8421,0.9522,1.0,1.0,1.0,1.0,0.8342,0.6585,0.8016,0.6223,0.7886,0.6247,0.5848
+3,a man is using a electric razor to shave his beard .,0.8437,a man uses an electric razor to shave off his beard while in a bathroom .,5.0,5.0,5.0,5.0,0.8511,0.9525,1.0,1.0,1.0,1.0,0.8437,0.8511,0.8511,0.8511,0.8437,0.8437,0.8437
+4,a man shows how to trim your beard using a special razor .,0.3946,a man with a long beard shaves it off with an electric shaver .,4.0,5.0,4.0,4.3333,0.5525,0.877,1.0,0.9258,0.9121,0.894,0.4883,0.4869,0.5525,0.4951,0.4634,0.3848,0.3946
+5,a man shows and discusses how he uses his trimmer to shave and shape his beard .,0.2892,a man uses an electric razor to shave off his beard while in a bathroom .,5.0,4.0,4.0,4.3333,0.5436,0.8836,0.9419,0.8156,0.8113,0.7865,0.4548,0.3752,0.5102,0.3719,0.4125,0.2929,0.2892
+6,a man is shaving off their very long mustache with an electric shaver .,0.416,a man with a long beard shaves it off with an electric shaver .,5.0,3.0,4.0,4.0,0.7949,0.9621,0.9091,0.8723,0.8081,0.7798,0.7868,0.4796,0.7538,0.445,0.7441,0.4073,0.416

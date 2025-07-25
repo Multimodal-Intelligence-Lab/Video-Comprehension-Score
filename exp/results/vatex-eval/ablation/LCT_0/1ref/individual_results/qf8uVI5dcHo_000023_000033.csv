@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"while a woman is talking , a man kicks a ball and gives a high five to another man .",0.0,a man lets out a yell as he throws a shot put ball at a track and field meet .,4.0,4.0,4.0,4.0,0.1615,0.8088,0.8739,0.5333,0.6624,0.5826,0.0,0.0,0.0405,0.0,0.0,0.0,0.0
+2,a group of people are watching a man throw a ball .,0.0,a man lets out a yell as he throws a shot put ball at a track and field meet .,5.0,5.0,5.0,5.0,0.371,0.8463,0.7545,0.5409,0.5067,0.4172,0.2568,0.0,0.1663,0.0,0.0149,0.0,0.0
+3,a young man throws a shot put at a track and field event .,0.6515,a man lets out a yell as he throws a shot put ball at a track and field meet .,5.0,5.0,5.0,5.0,0.6975,0.9232,0.9808,0.9306,0.94,0.935,0.6724,0.6749,0.6916,0.6782,0.6659,0.6479,0.6515
+4,a well muscled young man spins and throws a shot in a shot put event and everybody cheers when they see how well he did .,0.3595,a man lets out a yell as he throws a shot put ball at a track and field meet .,4.0,5.0,5.0,4.6667,0.6085,0.846,0.9578,0.6421,0.7225,0.672,0.5372,0.3903,0.5912,0.4582,0.5168,0.2793,0.3595
+5,a man yells loudly as he throws the ball for the shot put .,0.6089,a man lets out a yell as he throws a shot put ball at a track and field meet .,5.0,5.0,5.0,5.0,0.867,0.9322,0.8661,0.659,0.6647,0.6403,0.8573,0.6067,0.8455,0.6132,0.8352,0.6023,0.6089
+6,a young man spins around and throws a shot put while others watch and clap .,0.3681,a man lets out a yell as he throws a shot put ball at a track and field meet .,4.0,5.0,4.0,4.3333,0.5936,0.8435,0.8991,0.662,0.7625,0.7185,0.5182,0.3861,0.548,0.4671,0.4641,0.2722,0.3681

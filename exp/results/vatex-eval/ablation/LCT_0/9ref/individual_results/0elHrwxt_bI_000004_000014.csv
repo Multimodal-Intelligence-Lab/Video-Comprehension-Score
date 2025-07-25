@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,the lady is demonstrating how to make some sausages from scratch .,0.2744,a woman and man are making sausages together as a small crowd watches .,1.0,1.0,4.0,2.0,0.7021,0.8716,0.898,0.6754,0.6564,0.5825,0.6435,0.4494,0.6622,0.4029,0.5958,0.3243,0.2744
+2,a group of people are in a kitchen and a woman is demonstrating how to make meat .,0.1255,"a cooking instructor is explaining to his woman student inside of a kitchen , how to properly prepare sausage links for a special food to be made .",3.0,4.0,4.0,3.6667,0.6986,0.8881,0.88,0.5816,0.6249,0.5486,0.6607,0.2193,0.4596,0.2733,0.3801,0.0604,0.1255
+3,a group of people are in a kitchen and one of them is putting meat into a machine .,0.0333,"a cooking instructor is explaining to his woman student inside of a kitchen , how to properly prepare sausage links for a special food to be made .",4.0,3.0,4.0,3.6667,0.5554,0.839,0.9556,0.7724,0.8169,0.7706,0.4701,0.184,0.3283,0.2284,0.1934,0.0,0.0333
+4,a woman is cooking sausages on a frying pan using tongs .,0.2404,a woman is making sausages in front of a group in the kitchen .,1.0,2.0,2.0,1.6667,0.5751,0.8456,1.0,0.7735,0.818,0.7641,0.4974,0.4397,0.4939,0.3577,0.4015,0.3373,0.2404
+5,a woman is grilling sausages on a skillet in the kitchen .,0.5448,a woman is making sausages in front of a group in the kitchen .,2.0,3.0,4.0,3.0,0.6578,0.8756,0.9677,0.8938,0.8586,0.8385,0.6092,0.6172,0.6464,0.6015,0.5962,0.5628,0.5448
+6,man in a kitchen showing how to put casings on a sausage maker .,0.0873,in a factory a man is showing a group of women how to properly tie up sausage,2.0,3.0,4.0,3.0,0.5464,0.8629,0.9404,0.6709,0.6742,0.6132,0.4632,0.2367,0.4976,0.2312,0.396,0.096,0.0873

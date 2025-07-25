@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is in a store in a thrid world country and making some products .,0.0308,a person in a street market is using various dyes to dye pieces of fabric different colors .,4.0,4.0,5.0,4.3333,0.3512,0.8079,1.0,1.0,1.0,1.0,0.1668,0.2517,0.2517,0.2517,0.0308,0.0308,0.0308
+2,a group of people are in a building and one of them is using a tool to make something .,0.0,a person in a street market is using various dyes to dye pieces of fabric different colors .,5.0,4.0,4.0,4.3333,0.2055,0.8201,0.9846,0.7735,0.8633,0.8182,0.0,0.0,0.122,0.0067,0.0,0.0,0.0
+3,a group of people are working in a dumpster while a woman talks about it .,0.0,a person in a street market is using various dyes to dye pieces of fabric different colors .,2.0,2.0,2.0,2.0,0.1453,0.7974,1.0,0.8879,0.911,0.8824,0.0,0.0,0.1063,0.0058,0.0,0.0,0.0
+4,a man makes several dishes over outdoor beds of coals .,0.0,a person in a street market is using various dyes to dye pieces of fabric different colors .,2.0,2.0,2.0,2.0,0.391,0.8247,0.9787,0.9023,0.8707,0.8381,0.2381,0.1454,0.2823,0.1601,0.1296,0.0,0.0
+5,"a man is shown preparing to make something , using cloth to squeeze out the moisture .",0.0,a person in a street market is using various dyes to dye pieces of fabric different colors .,4.0,2.0,4.0,3.3333,0.4246,0.8193,0.9744,0.8192,0.8351,0.7893,0.2858,0.0523,0.2771,0.0805,0.1176,0.0,0.0
+6,a man demonstrates how to cook food using a ventilated pan with holes over a barbecue .,0.0,a person in a street market is using various dyes to dye pieces of fabric different colors .,2.0,2.0,2.0,2.0,0.3681,0.8285,0.9744,0.979,0.9641,0.9538,0.2215,0.1501,0.3515,0.137,0.1969,0.0,0.0

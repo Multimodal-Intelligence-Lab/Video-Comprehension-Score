@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl jumps on a hopscotch court drawn on a sidewalk near a playground .,0.5893,a girl jumps into some squares that are drawn on the ground,5.0,5.0,5.0,5.0,0.7914,0.9012,0.9796,1.0,0.9845,0.9826,0.7685,0.6397,0.7562,0.634,0.7295,0.5957,0.5893
+2,a young girl is playing hopscotch on the sidewalk .,0.8064,"a young girl is playing hopscotch on a sidewalk , the hopscotch is drawn on the ground in chalk .",5.0,5.0,5.0,5.0,0.9585,0.9545,1.0,1.0,1.0,1.0,0.9566,0.8706,0.8535,0.8214,0.8532,0.8703,0.8064
+3,a young girl is playing hopscotch on the sidewalk .,0.8064,"a young girl is playing hopscotch on a sidewalk , the hopscotch is drawn on the ground in chalk .",5.0,5.0,5.0,5.0,0.9585,0.9545,1.0,1.0,1.0,1.0,0.9566,0.8706,0.8535,0.8214,0.8532,0.8703,0.8064
+4,one girl is drawing a hopscotch and the other girl is trying to jump on it .,0.0,"a young girl is playing hopscotch on a sidewalk , the hopscotch is drawn on the ground in chalk .",4.0,4.0,4.0,4.0,0.6436,0.8725,0.9199,0.5578,0.5525,0.4534,0.5896,0.1659,0.5913,0.1288,0.5294,0.0029,0.0
+5,a girl is playing hop scotch with another girl .,0.489,"a young girl is playing hopscotch on a sidewalk , the hopscotch is drawn on the ground in chalk .",4.0,4.0,4.0,4.0,0.6999,0.9077,0.8951,0.8684,0.8314,0.8018,0.6573,0.5839,0.5944,0.5653,0.5232,0.5108,0.489
+6,two girls who are outside playing hopscotch with each other .,0.2666,a little girl jumps along a hopscotch layout in a park .,4.0,4.0,4.0,4.0,0.6605,0.8851,0.9048,0.7735,0.702,0.6411,0.6164,0.4473,0.6099,0.391,0.534,0.3344,0.2666

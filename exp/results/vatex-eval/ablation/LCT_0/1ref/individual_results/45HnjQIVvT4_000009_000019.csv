@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a young man is playing with a woman in the snow , dragging her along a snow covered sidewalk and she is laughing .",0.0,lady is trying to walk on ice and keeps falling down,5.0,5.0,5.0,5.0,0.2526,0.7719,0.8689,0.544,0.5746,0.4489,0.0318,0.0,0.1398,0.0,0.0,0.0,0.0
+2,a group of people are playing in the snow and throwing snowballs at each other .,0.0,lady is trying to walk on ice and keeps falling down,3.0,4.0,2.0,3.0,0.1534,0.7494,0.873,0.5011,0.6367,0.5152,0.0,0.0,0.0302,0.0,0.0,0.0,0.0
+3,a group of people are outside playing a game of snowball .,0.0,lady is trying to walk on ice and keeps falling down,3.0,4.0,1.0,2.6667,0.1622,0.7522,0.8496,0.604,0.706,0.6092,0.0,0.0,0.0138,0.0,0.0,0.0,0.0
+4,a guy is ice skating and gets caught by another person as he falls .,0.0,lady is trying to walk on ice and keeps falling down,2.0,4.0,2.0,2.6667,0.3859,0.8105,0.7467,0.4847,0.3818,0.2372,0.2423,0.0,0.1775,0.0,0.0,0.0,0.0
+5,"in snow , a man is kneeling , holding a mic and speaking and a woman is floating in a pool of water then walks up stairs to get out .",0.0,lady is trying to walk on ice and keeps falling down,2.0,4.0,2.0,2.6667,0.1929,0.7869,0.765,0.2014,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6,"a person is being pulled on an object through the snow , one hand goes down to touch the snow .",0.0,lady is trying to walk on ice and keeps falling down,4.0,4.0,4.0,4.0,0.2587,0.7773,0.9403,0.7543,0.7719,0.7065,0.0463,0.0172,0.2116,0.0396,0.0,0.0,0.0

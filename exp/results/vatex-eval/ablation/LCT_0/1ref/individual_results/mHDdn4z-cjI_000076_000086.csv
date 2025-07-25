@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a little girl is sitting on a horse and looking down as a woman is talking to her .,0.3919,a little learns to ride a horse her first time .,5.0,5.0,5.0,5.0,0.5946,0.8231,0.9787,0.8094,0.8101,0.7692,0.5074,0.4991,0.5858,0.4995,0.4967,0.3914,0.3919
+2,a woman is using a brush to brush a horse .,0.0,a little learns to ride a horse her first time .,2.0,1.0,1.0,1.3333,0.3778,0.7804,0.941,0.7785,0.7041,0.6209,0.2028,0.2008,0.3388,0.1164,0.1528,0.0,0.0
+3,a woman is sitting on a horse and she is brushing her hair .,0.0,a little learns to ride a horse her first time .,3.0,2.0,1.0,2.0,0.371,0.7687,1.0,0.6213,0.5329,0.3923,0.1817,0.0,0.371,0.0,0.1817,0.0,0.0
+4,a woman is riding a horse while a toddler sits in front of her in the saddle .,0.0,a little learns to ride a horse her first time .,4.0,2.0,3.0,3.0,0.4833,0.817,0.7778,0.3936,0.2044,0.0262,0.3675,0.0,0.3356,0.0,0.1868,0.0,0.0
+5,a group of young girls are practicing their horse riding .,0.0,a little learns to ride a horse her first time .,3.0,3.0,3.0,3.0,0.5548,0.8022,0.7059,0.4,0.5106,0.39,0.4451,0.0,0.3693,0.118,0.2138,0.0,0.0
+6,a young woman rides a horse around an instructor while being taught .,0.3684,a little learns to ride a horse her first time .,5.0,4.0,2.0,3.6667,0.6161,0.8249,0.9333,0.7671,0.7368,0.6809,0.5346,0.4995,0.5887,0.479,0.5014,0.3933,0.3684

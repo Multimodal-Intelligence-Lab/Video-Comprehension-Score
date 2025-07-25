@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is giving a boy a massage on his chest and head .,0.0,a young man lying on a bed while getting a massage and having the head rubbed .,4.0,4.0,4.0,4.0,0.5694,0.8803,0.9,0.3775,0.2978,0.2023,0.5109,0.0,0.5216,0.0,0.4565,0.0,0.0
+2,a woman is massaging a woman ' s head with her hands .,0.0,a young man lying on a bed while getting a massage and having the head rubbed .,2.0,3.0,3.0,2.6667,0.4405,0.8214,0.856,0.7,0.6553,0.5804,0.3188,0.2008,0.3464,0.1463,0.2043,0.027,0.0
+3,a woman is massaging a woman ' s head while she lays on a bed .,0.0,a young man lying on a bed while getting a massage and having the head rubbed .,3.0,4.0,4.0,3.6667,0.5821,0.8545,0.6496,0.1421,0.0,0.0,0.5109,0.0,0.3566,0.0,0.2471,0.0,0.0
+4,a guy is sitting while another guy is using his hands to massage his head .,0.0414,a young man lying on a bed while getting a massage and having the head rubbed .,5.0,4.0,4.0,4.3333,0.5278,0.8302,0.8864,0.4459,0.5933,0.5102,0.4312,0.0,0.4672,0.2041,0.3583,0.0,0.0414
+5,a young person receives a massage whilst laying down inside .,0.0,a young man lying on a bed while getting a massage and having the head rubbed .,5.0,5.0,5.0,5.0,0.6658,0.8484,0.8682,0.3998,0.3213,0.2,0.6062,0.0986,0.6151,0.0,0.5464,0.0098,0.0
+6,man laying on massage table and another man is administering a massage .,0.0,a young man lying on a bed while getting a massage and having the head rubbed .,5.0,5.0,5.0,5.0,0.5363,0.8609,0.8125,0.3286,0.468,0.382,0.4613,0.0,0.4293,0.0079,0.337,0.0,0.0

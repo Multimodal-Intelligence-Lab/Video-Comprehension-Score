@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,someone is handing a snake while talking calmly to it .,0.3064,woman wearing gloves holds curled snake which is extending its head away from woman .,5.0,5.0,5.0,5.0,0.4797,0.7845,0.9841,0.9508,0.9562,0.9442,0.3368,0.4528,0.4713,0.4559,0.3261,0.3024,0.3064
+2,a man is demonstrating how to make a balloon animal .,0.0,woman wearing gloves holds curled snake which is extending its head away from woman .,2.0,3.0,1.0,2.0,0.0529,0.7452,0.9019,0.6745,0.6958,0.5917,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a man is holding a small snake with his hands .,0.3055,woman wearing gloves holds curled snake which is extending its head away from woman .,4.0,5.0,4.0,4.3333,0.5108,0.8188,0.9195,0.8723,0.8603,0.8294,0.4025,0.4391,0.4679,0.4313,0.3502,0.315,0.3055
+4,a person holds a stick that has a small snake curled around it .,0.0,woman wearing gloves holds curled snake which is extending its head away from woman .,4.0,4.0,4.0,4.0,0.5418,0.863,0.8519,0.1711,0.0467,0.0,0.469,0.0,0.4622,0.0,0.3768,0.0,0.0
+5,a person is holding a stick picks up a snake using the stick .,0.0,woman wearing gloves holds curled snake which is extending its head away from woman .,3.0,2.0,4.0,3.0,0.4526,0.815,0.8933,0.2757,0.2284,0.0533,0.3283,0.0,0.3872,0.0,0.2481,0.0,0.0
+6,a person has a snake and is putting it on a stick .,0.0,woman wearing gloves holds curled snake which is extending its head away from woman .,3.0,4.0,3.0,3.3333,0.46,0.8107,0.8671,0.7351,0.5913,0.4958,0.3339,0.2654,0.3772,0.0867,0.2318,0.0938,0.0

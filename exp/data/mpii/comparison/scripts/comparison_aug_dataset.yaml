@@ -1,0 +1,80 @@
+# ============================================================================
+# Data Augmentation Configuration for Comparison Experiments
+# ============================================================================
+
+# ============================================================================
+# DATA PATHS (relative to script location)
+# ============================================================================
+data:
+  # Ground truth JSON files directory (processes all .json files in directory)
+  gt_file_path: "../raw_dataset/*.json"
+  
+  # Prompts file for API-based transformations
+  prompts_file_path: "./prompts-chaining.json"
+  
+  # Unrelated text corpus for content addition transformations
+  unrelated_segments_file: "./unrelated_segments.txt"
+
+# ============================================================================
+# OUTPUT PATHS (relative to script location)
+# ============================================================================
+output:
+  # Directory to save augmented datasets
+  output_dir: "../aug_dataset"
+  
+  # Directory for log files
+  logs_dir: "./logs"
+
+# ============================================================================
+# API SETTINGS
+# ============================================================================
+api:
+  # OpenAI model to use
+  model: "gpt-4o"
+  
+  # Maximum tokens for API responses
+  max_tokens: 10000
+  
+  # Temperature for response generation
+  temperature: 0.9
+  
+  # Maximum number of retry attempts on API failure
+  max_retries: 3
+  
+  # Sleep time between retries (seconds)
+  retry_sleep: 5.0
+
+# ============================================================================
+# PROCESSING SETTINGS
+# ============================================================================
+processing:
+  # Enable detailed logging of prompts and outputs
+  log_details: true
+  
+  # Enable file-based logging
+  enable_logging: true
+  
+  # Resume processing from existing files (true) or start fresh (false)
+  resume_processing: true
+  
+  # Video IDs to process (["Default"] = all available)
+  selected_ids: ["Default"]
+  
+  # Test case IDs to execute (["Default"] = all available)
+  test_case_ids: ["3.3", "3.4", "3.5", "3.6", "4.2", "6.1", "6.2", "6.3"]
+
+# ============================================================================
+# TRANSFORMATION SETTINGS
+# ============================================================================
+transformations:
+  # Random seed for reproducible local transformations
+  random_seed: 42
+  
+  # Percentage settings for local transformations
+  percentages:
+    repeat_segments: 50.0
+    addition_medium: 50.0
+    addition_high: 80.0
+    deletion_medium: 50.0
+    deletion_high: 80.0
+    rotation: 50.0

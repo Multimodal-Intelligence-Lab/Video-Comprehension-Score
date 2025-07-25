@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young man is showing on cam how he makes a colorful design on the wall,0.0,a couple of people are painting graffiti on some concrete near the railroad tracks .,5.0,5.0,5.0,5.0,0.2138,0.7517,0.9313,0.7228,0.8139,0.7525,0.0,0.0,0.1558,0.0341,0.0,0.0,0.0
+2,a person is using a paint roller to paint graffiti on a wall .,0.0,a couple of people are painting graffiti on some concrete near the railroad tracks .,4.0,4.0,4.0,4.0,0.4803,0.8402,0.8591,0.4412,0.3745,0.2555,0.3814,0.0,0.395,0.0,0.2799,0.0,0.0
+3,a group of people are painting graffiti on a wall .,0.4148,a couple of people are painting graffiti on some concrete near the railroad tracks .,4.0,4.0,4.0,4.0,0.6061,0.8771,0.8775,0.8147,0.7674,0.7348,0.5509,0.5165,0.5511,0.4867,0.4882,0.4487,0.4148
+4,a person is spraying graffiti markings on an exterior wall .,0.0449,a couple of people are painting graffiti on some concrete near the railroad tracks .,5.0,5.0,5.0,5.0,0.3998,0.8221,0.9667,0.7473,0.7644,0.7134,0.27,0.1969,0.3791,0.2148,0.2448,0.0231,0.0449
+5,someone is creating graffiti art with a wide black marker with rapping music playing in the background .,0.0,a couple of people are painting graffiti on some concrete near the railroad tracks .,4.0,4.0,4.0,4.0,0.396,0.7946,0.9213,0.5305,0.5799,0.4714,0.2399,0.0,0.3444,0.0,0.175,0.0,0.0
+6,a boy is spray painting a fence with graffiti while someone films him .,0.0,a couple of people are painting graffiti on some concrete near the railroad tracks .,4.0,4.0,4.0,4.0,0.4263,0.8282,0.9424,0.1907,0.0,0.0,0.3073,0.0,0.3913,0.0,0.2649,0.0,0.0

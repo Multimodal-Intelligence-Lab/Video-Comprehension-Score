@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two baby boys are playing with bubbles as they sit shirtless on the floor .,0.1831,two young boys are sitting down and one has a book while the other blows bubbles .,5.0,5.0,4.0,4.6667,0.7344,0.899,0.9565,0.7796,0.8188,0.7719,0.7046,0.2847,0.6598,0.2949,0.6216,0.2544,0.1831
+2,a man is holding a baby while he is holding a toothbrush .,0.0,a young kid is making foam balloons using a certain object,4.0,2.0,3.0,3.0,0.2442,0.7785,0.9434,0.9454,0.9222,0.895,0.0291,0.0333,0.1364,0.0089,0.0,0.0,0.0
+3,a little boy is sitting on the floor and trying to lick his teeth .,0.2242,two babies are sitting on the floor and one is blowing bubbles .,5.0,4.0,4.0,4.3333,0.3615,0.8231,1.0,1.0,1.0,1.0,0.2242,0.3615,0.3615,0.3615,0.2242,0.2242,0.2242
+4,young baby trying to blow up a balloon mostly just spitting,0.3101,a young kid is making foam balloons using a certain object,5.0,5.0,2.0,4.0,0.4656,0.8387,0.9873,0.9777,0.9727,0.9674,0.3463,0.4252,0.4347,0.4222,0.3259,0.3136,0.3101
+5,two young kids try to get a large bubble maker to make a gigantic bubble but they miss .,0.1471,a little boy takes the wand out of a bubbles container and blows bubbles .,4.0,5.0,3.0,4.0,0.493,0.8405,1.0,0.8924,0.9289,0.9108,0.3968,0.293,0.4701,0.3208,0.3695,0.1122,0.1471
+6,a young boy riding in a car blows a very large bubble .,0.1969,a young child opens a bottle of bubbles and blows them into the air and is somewhat surprised and excited to see them .,4.0,4.0,4.0,4.0,0.4911,0.8573,1.0,0.8723,0.8863,0.8602,0.4065,0.3488,0.4759,0.3163,0.3887,0.2351,0.1969

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two men jump to a basketball hoop to put a ball in .,0.3514,several men are in a gymnasium and running to the hoop trying to do lay ups .,4.0,5.0,5.0,4.6667,0.6395,0.8498,1.0,0.9722,0.935,0.9199,0.5758,0.4566,0.5794,0.4681,0.4959,0.3487,0.3514
+2,a group of people are playing basketball in a gym .,0.163,a group of guys play on a basketball court while one successfully dunks the ball .,5.0,4.0,5.0,4.6667,0.6943,0.8768,0.8819,0.6306,0.5964,0.5272,0.644,0.3615,0.6284,0.2855,0.5673,0.3117,0.163
+3,a group of people are playing basketball in a gym .,0.163,a group of guys play on a basketball court while one successfully dunks the ball .,5.0,4.0,5.0,4.6667,0.6943,0.8768,0.8819,0.6306,0.5964,0.5272,0.644,0.3615,0.6284,0.2855,0.5673,0.3117,0.163
+4,a group of people are playing basketball and one guy makes a shot .,0.2631,a group of guys play on a basketball court while one successfully dunks the ball .,5.0,4.0,4.0,4.3333,0.7218,0.8823,0.9673,0.7693,0.7998,0.7512,0.6805,0.3115,0.6782,0.3024,0.6317,0.2727,0.2631
+5,a young guy dunking his basketball into an outdoor basketball hoop .,0.297,a man dunks a basketball in the net and is being filmed while doing it .,4.0,4.0,4.0,4.0,0.546,0.8799,0.96,0.8777,0.8135,0.7826,0.4792,0.4371,0.4794,0.3953,0.3947,0.3456,0.297
+6,two men are on a basketball court in a gym and one bounces the ball to the other who is trying to dunk the ball .,0.4872,a group of guys play on a basketball court while one successfully dunks the ball .,3.0,3.0,3.0,3.0,0.6453,0.8979,0.9382,0.7598,0.7938,0.769,0.593,0.5217,0.6127,0.5422,0.5662,0.4643,0.4872

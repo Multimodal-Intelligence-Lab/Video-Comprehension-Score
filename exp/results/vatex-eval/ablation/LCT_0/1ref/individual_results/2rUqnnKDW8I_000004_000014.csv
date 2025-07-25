@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is playing with a baby on the ground as they all laugh and smile together .,0.0,a little boy smiling and shaking their head in front of a woman,5.0,5.0,5.0,5.0,0.2242,0.8026,0.8137,0.3834,0.5212,0.4034,0.0333,0.0,0.0465,0.0,0.0,0.0,0.0
+2,a man and a little girl are playing with each other .,0.0,a little boy smiling and shaking their head in front of a woman,4.0,4.0,4.0,4.0,0.1567,0.812,0.8519,0.403,0.2453,0.0705,0.0,0.0,0.0101,0.0,0.0,0.0,0.0
+3,two toddlers are playing with each other in a living room .,0.0,a little boy smiling and shaking their head in front of a woman,4.0,4.0,4.0,4.0,0.1677,0.7512,1.0,0.8644,0.8788,0.8387,0.0,0.0371,0.1677,0.0529,0.0,0.0,0.0
+4,a baby fusses and cries while a woman talks and laughs .,0.0,a little boy smiling and shaking their head in front of a woman,4.0,4.0,4.0,4.0,0.2796,0.8034,0.8356,0.4213,0.2669,0.0875,0.1032,0.0,0.1378,0.0,0.0,0.0,0.0
+5,a young baby makes faces and starts to cry while a woman laughs .,0.0,a little boy smiling and shaking their head in front of a woman,4.0,4.0,3.0,3.6667,0.3173,0.8111,0.9275,0.6747,0.6717,0.5953,0.1583,0.0,0.264,0.0,0.0925,0.0,0.0
+6,a cute baby is laughing hysterically while a woman is making funny noises in the background .,0.0,a little boy smiling and shaking their head in front of a woman,5.0,3.0,4.0,4.0,0.2882,0.8167,0.9123,0.6694,0.6811,0.6095,0.1284,0.0,0.2198,0.0,0.0447,0.0,0.0

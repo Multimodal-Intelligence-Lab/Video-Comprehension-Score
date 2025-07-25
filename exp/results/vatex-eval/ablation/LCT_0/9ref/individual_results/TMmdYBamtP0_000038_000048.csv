@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man lifts a lever on a machine and steam starts to come up from inside of the machine .,0.0891,"a cylinder shaped object with a metal arm going through it turns in a pan when a hand lifts a level shaped like a hammer , then steam poors all over .",4.0,5.0,5.0,4.6667,0.5347,0.8692,0.975,0.7987,0.8214,0.7813,0.4178,0.1967,0.4698,0.272,0.3366,0.0166,0.0891
+2,a person is using a knife to roast a piece of meat .,0.2943,a person uses a rotating machine and heat to cook some food .,2.0,2.0,3.0,2.3333,0.483,0.8685,1.0,0.8723,0.8863,0.8624,0.3745,0.4072,0.483,0.4166,0.3745,0.2829,0.2943
+3,a person is using a hose to water a fire .,0.0213,a person uses a rotating machine and heat to cook some food .,3.0,3.0,2.0,2.6667,0.2221,0.8116,1.0,1.0,1.0,1.0,0.0415,0.2221,0.2026,0.2057,0.0175,0.0415,0.0213
+4,a person roasts coffee beans in a pan and stirs them back and forth with a wooden spatula .,0.0958,a person lifts up a switch which drops coffee beans into a machine that stirs them .,4.0,3.0,3.0,3.3333,0.5977,0.8564,0.9778,0.91,0.9246,0.9021,0.53,0.2226,0.4455,0.2257,0.3526,0.1197,0.0958
+5,a person shapes glass using a hot furnace and then rolling the glass .,0.0,a man using a roasting machine to roast coffee beans .,4.0,2.0,4.0,3.3333,0.2799,0.8285,1.0,0.9786,0.9835,0.9787,0.1308,0.1488,0.2153,0.153,0.033,0.0,0.0
+6,"a man reaches under a car with a socket wrench and loosens the oil drain plug , then moves an oil pan underneath it .",0.0,a man using a roasting machine to roast coffee beans .,2.0,2.0,2.0,2.0,0.2276,0.7762,0.9712,0.9305,0.9205,0.8923,0.0,0.0059,0.1565,0.0,0.0,0.0,0.0

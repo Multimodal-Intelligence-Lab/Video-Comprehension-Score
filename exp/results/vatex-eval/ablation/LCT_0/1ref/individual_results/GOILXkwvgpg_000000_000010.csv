@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,in a gym a man is doing some stretches with his whole body,0.0027,a man is stretching out his upper body while standing on a basketball court .,4.0,4.0,3.0,3.6667,0.5776,0.8647,0.785,0.6218,0.4899,0.41,0.5115,0.3207,0.4619,0.1168,0.3777,0.2144,0.0027
+2,a man is demonstrating how to do a dance routine .,0.0,a man is stretching out his upper body while standing on a basketball court .,4.0,4.0,4.0,4.0,0.2298,0.7888,0.9697,0.8555,0.8484,0.8078,0.0236,0.0997,0.2057,0.0922,0.0,0.0,0.0
+3,a man is standing in front of a mirror and he is demonstrating how to do .,0.0,a man is stretching out his upper body while standing on a basketball court .,4.0,4.0,4.0,4.0,0.2743,0.8301,0.8803,0.7016,0.6347,0.56,0.1257,0.0,0.1756,0.0,0.0068,0.0,0.0
+4,a man stands with his arm over his shoulder and performs an intense arm stretch .,0.0,a man is stretching out his upper body while standing on a basketball court .,5.0,5.0,5.0,5.0,0.5365,0.8386,0.7092,0.199,0.0,0.0,0.4473,0.0,0.3464,0.0,0.2207,0.0,0.0
+5,a man in the gym working out using their arms to lift weights,0.0,a man is stretching out his upper body while standing on a basketball court .,4.0,4.0,4.0,4.0,0.2886,0.7844,0.9394,0.6417,0.7625,0.6973,0.0931,0.0,0.2427,0.0671,0.0346,0.0,0.0
+6,a man is in a gym and is using free weights to strengthen his upper body .,0.0,a man is stretching out his upper body while standing on a basketball court .,4.0,2.0,2.0,2.6667,0.343,0.8442,0.7808,0.7199,0.6237,0.5542,0.2217,0.0873,0.1585,0.0,0.0033,0.0,0.0

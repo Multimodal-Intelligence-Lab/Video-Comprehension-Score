@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man wearing a mask over his nose and mouth uses a paint sprayer to paint a room with white paint .,0.7392,a man is wearing a mask and spray painting a wall white .,5.0,5.0,5.0,5.0,0.8257,0.9299,0.955,0.8016,0.8301,0.803,0.8076,0.709,0.8175,0.7555,0.7985,0.7036,0.7392
+2,a man is using a paint roller to paint a wall .,0.6509,a man is using a paint sprayer to coat a wall .,4.0,4.0,4.0,4.0,0.7266,0.9315,1.0,0.7804,0.8408,0.8291,0.7065,0.6355,0.7142,0.6748,0.6932,0.6087,0.6509
+3,a man is using a paint roller to paint a wall .,0.6509,a man is using a paint sprayer to coat a wall .,4.0,4.0,4.0,4.0,0.7266,0.9315,1.0,0.7804,0.8408,0.8291,0.7065,0.6355,0.7142,0.6748,0.6932,0.6087,0.6509
+4,a guy is using a paint can to spray paint a picture on a wall .,0.6093,a man is using a paint sprayer to coat a wall .,4.0,4.0,4.0,4.0,0.7135,0.9292,0.9846,1.0,0.9884,0.9864,0.6917,0.6362,0.7078,0.6369,0.6855,0.6085,0.6093
+5,the man is using a paint roller to apply paint to the wall .,0.4465,a man is using a paint sprayer to coat a wall .,4.0,4.0,4.0,4.0,0.7172,0.9154,0.9688,0.7783,0.8192,0.7837,0.691,0.5029,0.7054,0.4666,0.6782,0.4841,0.4465
+6,a man wearing a hat and a t-shirt is painting the wall with a paint roller in his hands .,0.2129,a man is using a paint sprayer to coat a wall .,4.0,4.0,4.0,4.0,0.5083,0.8868,0.9673,0.8125,0.8336,0.8123,0.4239,0.3235,0.4602,0.3282,0.3675,0.2074,0.2129

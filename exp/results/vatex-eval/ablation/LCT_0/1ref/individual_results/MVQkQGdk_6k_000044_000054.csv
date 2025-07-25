@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is replacing one of there bike tires with a new one .,0.0,a man has a bike off of the ground replacing the tire .,1.0,3.0,5.0,3.0,0.7659,0.8979,0.785,0.0,0.0,0.0,0.7392,0.0,0.7017,0.0,0.6678,0.0,0.0
+2,a man is demonstrating how to fix a bicycle tire .,0.0,a man has a bike off of the ground replacing the tire .,4.0,3.0,5.0,4.0,0.6739,0.8961,0.8125,0.1768,0.2904,0.2081,0.6361,0.0,0.5986,0.0,0.5521,0.0,0.0
+3,a man is demonstrating how to fix a bicycle tire .,0.0,a man has a bike off of the ground replacing the tire .,4.0,3.0,5.0,4.0,0.6739,0.8961,0.8125,0.1768,0.2904,0.2081,0.6361,0.0,0.5986,0.0,0.5521,0.0,0.0
+4,a man demonstrating how to rig the brakes on a bicycle .,0.0,a man has a bike off of the ground replacing the tire .,4.0,4.0,4.0,4.0,0.3925,0.8418,0.7174,0.1768,0.2837,0.1491,0.2783,0.0,0.1532,0.0,0.0,0.0,0.0
+5,a man demonstrates replacing the inflatable tube in a bike tire .,0.0,a man has a bike off of the ground replacing the tire .,2.0,2.0,2.0,2.0,0.6994,0.9223,0.785,0.0,0.0,0.0,0.6741,0.0,0.6171,0.0,0.5849,0.0,0.0
+6,a man is showing how to patch a punctured bicycle tube .,0.0,a man has a bike off of the ground replacing the tire .,3.0,3.0,3.0,3.0,0.5078,0.8518,0.849,0.2333,0.0,0.0,0.4221,0.0,0.4202,0.0,0.3193,0.0,0.0

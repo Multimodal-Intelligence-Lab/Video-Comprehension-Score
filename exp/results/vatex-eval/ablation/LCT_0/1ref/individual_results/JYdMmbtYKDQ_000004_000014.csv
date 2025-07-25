@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young woman is demonstrating how to make a put shot .,0.0,a girl is practicing putting using a special piece of equipment,5.0,5.0,5.0,5.0,0.589,0.7778,0.8798,0.3679,0.198,0.0,0.4716,0.0,0.5328,0.0,0.3994,0.0,0.0
+2,a man is in a gym and he is doing push ups .,0.0,a girl is practicing putting using a special piece of equipment,3.0,2.0,1.0,2.0,0.0819,0.7459,0.9697,1.0,0.9744,0.9656,0.0,0.0819,0.0533,0.0578,0.0,0.0,0.0
+3,a man is standing on a field and is throwing a ball .,0.0,a girl is practicing putting using a special piece of equipment,4.0,4.0,3.0,3.6667,0.0419,0.7358,0.9756,0.6863,0.6763,0.5601,0.0,0.0,0.018,0.0,0.0,0.0,0.0
+4,a person putts two golf strokes to get a ball in the hole .,0.0,a girl is practicing putting using a special piece of equipment,5.0,5.0,5.0,5.0,0.3947,0.7801,0.9129,0.4804,0.4443,0.2876,0.2241,0.0,0.337,0.0,0.15,0.0,0.0
+5,a person on a golf course hitting the ball into the hole in front of them,0.0,a girl is practicing putting using a special piece of equipment,5.0,5.0,5.0,5.0,0.3135,0.7607,0.9543,0.7845,0.8611,0.8174,0.0975,0.125,0.2807,0.2028,0.0543,0.0,0.0
+6,a girl is swinging and then shoots a shot put .,0.0343,a girl is practicing putting using a special piece of equipment,5.0,4.0,5.0,4.6667,0.4908,0.8089,0.8095,0.7735,0.6518,0.5696,0.3706,0.3417,0.371,0.2188,0.2224,0.1862,0.0343

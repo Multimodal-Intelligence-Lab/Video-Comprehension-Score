@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man discusses the edibility of a mushroom and tells it's latin name .,0.581,a man discusses the characteristics of a wild mushroom growing in a forest .,5.0,5.0,5.0,5.0,0.7482,0.8948,0.9555,0.6256,0.7507,0.6909,0.7037,0.4548,0.7132,0.6086,0.6625,0.4203,0.581
+2,a person is using a knife to cut up a mushroom .,0.1484,a person tells about mushrooms and that it is eatable and warns about them .,3.0,4.0,4.0,3.6667,0.4577,0.8431,0.9583,0.8047,0.8123,0.7601,0.356,0.233,0.4012,0.2828,0.2603,0.0893,0.1484
+3,a person is using a knife to open a mushroom .,0.1168,a person tells about mushrooms and that it is eatable and warns about them .,3.0,4.0,4.0,3.6667,0.4805,0.8444,0.9583,0.8512,0.8524,0.8126,0.3629,0.2977,0.4545,0.2595,0.3272,0.1429,0.1168
+4,a person getting the mushroom growing from a driftwood in the forest .,0.2017,a man discusses the characteristics of a wild mushroom growing in a forest .,5.0,5.0,4.0,4.6667,0.6786,0.8852,0.9831,0.7273,0.7305,0.6785,0.6204,0.3734,0.5468,0.2752,0.488,0.2922,0.2017
+5,someone looking for and collecting mushrooms from the forest floor .,0.4522,a man discusses the characteristics of a wild mushroom growing in a forest .,5.0,5.0,5.0,5.0,0.7619,0.8907,0.9831,0.9766,0.9697,0.9618,0.7327,0.5528,0.6325,0.5456,0.6178,0.4609,0.4522
+6,a person rips out some mushrooms they find in the forest .,0.2948,a man discusses the characteristics of a wild mushroom growing in a forest .,5.0,5.0,4.0,4.6667,0.7225,0.8887,0.9583,0.8887,0.865,0.8415,0.6878,0.4351,0.6002,0.3963,0.5609,0.3402,0.2948

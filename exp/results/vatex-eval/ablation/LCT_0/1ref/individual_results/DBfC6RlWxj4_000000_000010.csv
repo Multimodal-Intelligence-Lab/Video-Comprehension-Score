@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is exercising by way of squats and shaking large ropes,0.1679,a man is in a gym area shaking some lines while crouching down and back up again .,5.0,5.0,5.0,5.0,0.5439,0.8374,0.8788,0.5215,0.6546,0.5875,0.4553,0.1202,0.4809,0.3032,0.3802,0.0,0.1679
+2,a man is in a gym doing a workout with a rope .,0.3225,a man is in a gym area shaking some lines while crouching down and back up again .,5.0,5.0,4.0,4.6667,0.6607,0.8506,0.9108,0.6456,0.5927,0.5212,0.6012,0.4637,0.6275,0.3836,0.5621,0.3822,0.3225
+3,a man in a gym is using a rope to exercise .,0.5179,a man is in a gym area shaking some lines while crouching down and back up again .,5.0,5.0,4.0,4.6667,0.6519,0.8348,0.8947,0.9447,0.8651,0.8384,0.5829,0.6315,0.6109,0.5976,0.5339,0.5586,0.5179
+4,a man grabs two ropes on the gym floor to use for a forearm excercise .,0.0,a man is in a gym area shaking some lines while crouching down and back up again .,5.0,5.0,5.0,5.0,0.6038,0.8022,0.8831,0.3783,0.3415,0.1791,0.5061,0.0,0.5514,0.0,0.4408,0.0,0.0
+5,a man does a rope exercise while in the gym .,0.0,a man is in a gym area shaking some lines while crouching down and back up again .,5.0,5.0,5.0,5.0,0.6426,0.8512,0.6752,0.5786,0.3719,0.2621,0.5802,0.3442,0.4707,0.0227,0.3782,0.2736,0.0
+6,a man walks into a room and picks up a rope and starts doing rope exercises .,0.0,a man is in a gym area shaking some lines while crouching down and back up again .,4.0,4.0,4.0,4.0,0.5236,0.7944,0.8548,0.4536,0.3891,0.231,0.4003,0.0,0.4426,0.0,0.2984,0.0,0.0

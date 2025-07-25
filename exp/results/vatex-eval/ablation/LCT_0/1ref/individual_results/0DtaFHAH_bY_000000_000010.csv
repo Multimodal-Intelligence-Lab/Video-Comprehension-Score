@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a small child tries to help his parent prune the garden .,0.0,people are walking around holding tools through the bushes outside .,4.0,4.0,4.0,4.0,0.2898,0.7608,0.9394,0.6417,0.7625,0.6879,0.0665,0.0,0.244,0.0686,0.0063,0.0,0.0
+2,a group of people are picking up apples from a tree .,0.0,people are walking around holding tools through the bushes outside .,5.0,4.0,5.0,4.6667,0.2445,0.8041,0.9524,0.7137,0.6933,0.6185,0.0605,0.0,0.2068,0.0,0.0135,0.0,0.0
+3,a group of people are walking around a tree and picking up apples .,0.0035,people are walking around holding tools through the bushes outside .,5.0,5.0,4.0,4.6667,0.3352,0.8642,0.8634,0.6979,0.7719,0.7361,0.2308,0.0475,0.23,0.1388,0.1091,0.0,0.0035
+4,people picking fruit as a woman and a child by them .,0.0,people are walking around holding tools through the bushes outside .,4.0,4.0,4.0,4.0,0.1836,0.7996,0.95,0.7735,0.7545,0.6929,0.0,0.0,0.1406,0.0,0.0,0.0,0.0
+5,a young child is seen picking an apple from a tree .,0.0,people are walking around holding tools through the bushes outside .,5.0,4.0,5.0,4.6667,0.1296,0.7681,1.0,0.7071,0.714,0.6277,0.0,0.0,0.1296,0.0,0.0,0.0,0.0
+6,two young children are picking apples in an orchard .,0.0,people are walking around holding tools through the bushes outside .,5.0,5.0,4.0,4.6667,0.1282,0.7443,1.0,0.8723,0.8863,0.8472,0.0,0.0005,0.1282,0.0163,0.0,0.0,0.0

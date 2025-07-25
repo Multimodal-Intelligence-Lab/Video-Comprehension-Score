@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,someone in a butcher shops cuts and rips apart a cut of meat .,0.564,a butcher shows how to break down a piece of beef .,5.0,5.0,5.0,5.0,0.6518,0.8661,1.0,1.0,1.0,1.0,0.5752,0.6396,0.6396,0.6396,0.564,0.564,0.564
+2,a man is using a knife to cut a piece of meat .,0.695,a man uses his hands to prepare a piece of meat .,5.0,5.0,5.0,5.0,0.7577,0.8974,1.0,1.0,1.0,1.0,0.73,0.7277,0.7277,0.7277,0.695,0.695,0.695
+3,a man is using a knife to cut a piece of meat .,0.695,a man uses his hands to prepare a piece of meat .,5.0,5.0,5.0,5.0,0.7577,0.8974,1.0,1.0,1.0,1.0,0.73,0.7277,0.7277,0.7277,0.695,0.695,0.695
+4,a group of men are grinding up meat and putting it into portions .,0.1768,"a man standing by a table with meat on top of it , cutting meat and put it on top of the pile .",2.0,2.0,1.0,1.6667,0.499,0.8348,0.9614,0.8807,0.8715,0.8404,0.3869,0.2736,0.4426,0.3128,0.3324,0.1298,0.1768
+5,a person is carefully slicing meat on a cutting board .,0.1951,"a man standing by a table with meat on top of it , cutting meat and put it on top of the pile .",4.0,5.0,5.0,4.6667,0.6171,0.8796,1.0,1.0,1.0,1.0,0.5451,0.3426,0.5648,0.3426,0.4829,0.2215,0.1951
+6,a man is heard telling how to slice meat off as you can see hands cutting meat off a large chunk that has just been cooked .,0.3419,"a man standing by a table with meat on top of it , cutting meat and put it on top of the pile .",4.0,4.0,3.0,3.6667,0.5359,0.8741,0.9809,0.8557,0.8608,0.8382,0.4691,0.4,0.5032,0.4339,0.4225,0.3026,0.3419

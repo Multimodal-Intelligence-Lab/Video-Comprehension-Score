@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,on a large body of water people are sailing on sail boats .,0.0,two sail boats floating around on the water with the wind blowing very hard,5.0,5.0,5.0,5.0,0.5794,0.8553,0.6667,0.3783,0.2757,0.1532,0.5082,0.0,0.369,0.0,0.2623,0.0,0.0
+2,a group of people are sailing on a sailboat in the ocean .,0.0,two sail boats floating around on the water with the wind blowing very hard,5.0,4.0,5.0,4.6667,0.3897,0.8017,0.785,0.4623,0.4147,0.27,0.2388,0.0,0.2226,0.0,0.0304,0.0,0.0
+3,a group of people are on a sailboat in the ocean .,0.0,two sail boats floating around on the water with the wind blowing very hard,5.0,4.0,5.0,4.6667,0.3961,0.7852,0.8293,0.65,0.3672,0.1941,0.231,0.071,0.2718,0.0,0.0727,0.0,0.0
+4,a man is navigating a small sail boat through open sea waters .,0.0,two sail boats floating around on the water with the wind blowing very hard,5.0,5.0,5.0,5.0,0.4102,0.8276,0.868,0.5234,0.5142,0.413,0.2873,0.0,0.3205,0.0,0.1789,0.0,0.0
+5,a guy sits on his sail boat as it cruises across the ocean .,0.0,two sail boats floating around on the water with the wind blowing very hard,4.0,5.0,5.0,4.6667,0.3734,0.8054,0.85,0.5008,0.4823,0.3572,0.222,0.0,0.2629,0.0,0.0847,0.0,0.0
+6,a sailboat drifts away as people on another sailboat watch .,0.0,two sail boats floating around on the water with the wind blowing very hard,5.0,5.0,4.0,4.6667,0.4535,0.7964,0.8743,0.519,0.5119,0.3871,0.3137,0.0,0.3749,0.0,0.215,0.0,0.0

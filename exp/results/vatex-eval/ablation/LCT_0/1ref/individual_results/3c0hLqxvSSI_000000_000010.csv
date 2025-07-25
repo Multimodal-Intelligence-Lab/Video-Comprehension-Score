@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is on a platform performing a series of pushups .,0.4976,a man on a platform doing pushups in different variations,5.0,5.0,5.0,5.0,0.8875,0.9116,0.8125,0.4268,0.5596,0.5169,0.8766,0.3541,0.7887,0.5038,0.7861,0.3461,0.4976
+2,a man is doing push ups on a mat in a gym .,0.3133,a man on a platform doing pushups in different variations,5.0,4.0,4.0,4.3333,0.5429,0.8231,0.9052,0.731,0.8088,0.7677,0.4446,0.3747,0.495,0.4348,0.3864,0.2403,0.3133
+3,a man is doing push ups on a floor in a gym .,0.3048,a man on a platform doing pushups in different variations,5.0,4.0,4.0,4.3333,0.5432,0.8123,0.9052,0.731,0.8088,0.7647,0.4377,0.3752,0.4954,0.4353,0.3788,0.2308,0.3048
+4,a man demonstrating different types of push up exercises .,0.519,a man on a platform doing pushups in different variations,5.0,5.0,5.0,5.0,0.7314,0.8703,0.8735,0.7974,0.6675,0.6179,0.6913,0.6631,0.6925,0.5454,0.6466,0.6129,0.519
+5,a man is doing a one handed pushup to music in a workout room .,0.3749,a man on a platform doing pushups in different variations,5.0,4.0,4.0,4.3333,0.4782,0.8347,1.0,1.0,1.0,1.0,0.3749,0.4782,0.4782,0.4782,0.3749,0.3749,0.3749
+6,a man exercises in the corner of a room in a push up position .,0.0,a man on a platform doing pushups in different variations,5.0,5.0,4.0,4.6667,0.5069,0.8233,0.8819,0.4112,0.1217,0.0,0.4011,0.0,0.4409,0.0,0.3209,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person using ski poles is skiing down a small mountain top .,0.0,a man is having fun by mono skiing while making some sounds .,5.0,5.0,5.0,5.0,0.317,0.8215,0.9164,0.5232,0.4991,0.3902,0.1685,0.0,0.2546,0.0,0.0926,0.0,0.0
+2,a person is skiing down a hill in the snow .,0.0,a man is having fun by mono skiing while making some sounds .,4.0,5.0,4.0,4.3333,0.4064,0.8345,0.8571,0.5,0.2632,0.117,0.2887,0.0,0.3075,0.0,0.1702,0.0,0.0
+3,a person is skiing down a snowy hill and then falls down .,0.0,a man is having fun by mono skiing while making some sounds .,4.0,4.0,4.0,4.0,0.3375,0.8265,0.9125,0.7278,0.6195,0.5396,0.1985,0.0898,0.2741,0.0,0.1216,0.0,0.0
+4,someone is going down a snowy slope on skis at a high rate of speed while others are also skiing .,0.0,a man is having fun by mono skiing while making some sounds .,4.0,4.0,4.0,4.0,0.4044,0.793,0.8882,0.5873,0.6233,0.525,0.249,0.0,0.3294,0.0445,0.1544,0.0,0.0
+5,someone is skiing down a snow kill and around ski poles .,0.0,a man is having fun by mono skiing while making some sounds .,5.0,5.0,5.0,5.0,0.4,0.8097,0.9004,0.2982,0.08,0.0,0.259,0.0,0.3336,0.0,0.177,0.0,0.0
+6,on a snowy mountain top a skier skis up a small ramp and does a small jump then skis on down the slope .,0.0,a man is having fun by mono skiing while making some sounds .,5.0,4.0,5.0,4.6667,0.3003,0.8002,0.8215,0.4855,0.499,0.3739,0.1256,0.0,0.1482,0.0,0.0,0.0,0.0

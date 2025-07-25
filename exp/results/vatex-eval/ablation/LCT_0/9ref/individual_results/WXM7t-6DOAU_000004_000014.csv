@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person lights a round object on fire and then rolls it around their arms .,0.8276,a person sets a ball on fire and rolls it around in their arms .,5.0,5.0,5.0,5.0,0.8393,0.9319,1.0,1.0,1.0,1.0,0.8276,0.8393,0.8393,0.8393,0.8276,0.8276,0.8276
+2,a man is standing in front of a fire and blows fire from his mouth .,0.1725,a person sets a ball on fire and rolls it around in their arms .,2.0,2.0,2.0,2.0,0.5128,0.8443,1.0,0.8103,0.8763,0.8503,0.4227,0.2837,0.4925,0.3164,0.3986,0.1092,0.1725
+3,a man is holding a torch in his hand and he blows it in his mouth .,0.3386,someone lights a torch in the darkness and waves it around .,2.0,2.0,2.0,2.0,0.5075,0.8177,0.9831,0.8879,0.9107,0.8908,0.3977,0.4216,0.4968,0.4592,0.3846,0.2926,0.3386
+4,a man is juggling fire on a stick and performing different tricks with it .,0.3986,a male sets a ball alight with a flame and starts doing tricks with it rolling it up and down his arms and across his chest .,4.0,3.0,2.0,3.0,0.6719,0.9069,1.0,1.0,1.0,1.0,0.6373,0.5034,0.6404,0.5072,0.5712,0.3939,0.3986
+5,a man is juggling sticks that have been set on fire .,0.581,a man is performing a trick with a ball that has been lit on fire .,4.0,3.0,4.0,3.6667,0.6826,0.8535,1.0,1.0,1.0,1.0,0.6281,0.6447,0.6447,0.6447,0.581,0.581,0.581
+6,someone in a darkened room lights a match and tosses it into a cup liquid that burns .,0.0941,a person sets a ball on fire and rolls it around in their arms .,2.0,3.0,3.0,2.6667,0.6442,0.8503,0.9922,0.8408,0.8846,0.849,0.5811,0.2711,0.6053,0.3036,0.5352,0.0672,0.0941

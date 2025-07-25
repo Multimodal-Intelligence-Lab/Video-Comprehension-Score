@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a toddler sits on a bed and plays with maracas .,0.8265,"a baby is sitting on a bed moving around , and then he is playing with a set of maracas .",5.0,5.0,5.0,5.0,0.8529,0.9063,1.0,1.0,1.0,1.0,0.8347,0.8529,0.8433,0.8456,0.8239,0.8347,0.8265
+2,a little boy is sitting on the floor and playing with a toy .,0.3538,a baby boy is sitting on a bed playing moraccas .,4.0,4.0,4.0,4.0,0.4422,0.886,1.0,1.0,1.0,1.0,0.3704,0.4248,0.43,0.4274,0.3567,0.3508,0.3538
+3,a little boy is sitting on the floor and playing with maracas .,0.5377,a little baby crawls toward the camera and plays with a pair of maracas .,4.0,4.0,4.0,4.0,0.659,0.9001,1.0,1.0,1.0,1.0,0.5987,0.6101,0.6155,0.6101,0.5593,0.5377,0.5377
+4,a little baby holds his head up and shakes it back and forth along with sounds and music coming from a baby toy .,0.2625,"a baby is sitting on a bed moving around , and then he is playing with a set of maracas .",4.0,2.0,3.0,3.0,0.547,0.8198,0.9387,0.903,0.8533,0.8142,0.4454,0.4042,0.4744,0.4177,0.3588,0.2454,0.2625
+5,a little boy is playing with a toy drum set in a room .,0.0644,a young boy plays with maracas and his mom encourages him .,4.0,4.0,4.0,4.0,0.4558,0.8297,0.9804,0.8387,0.84,0.8006,0.3433,0.2479,0.3816,0.2491,0.2537,0.0629,0.0644
+6,a toddler boy is standing on a carpet and playing a plastic harmonica .,0.1749,a baby boy is sitting on a bed playing moraccas .,3.0,2.0,3.0,2.6667,0.3442,0.8264,1.0,1.0,1.0,1.0,0.2065,0.3265,0.3311,0.3181,0.1906,0.185,0.1749

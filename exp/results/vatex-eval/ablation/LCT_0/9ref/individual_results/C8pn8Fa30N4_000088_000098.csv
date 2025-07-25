@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a balloon maker demonstrating how to make different items with balloons,0.2282,kid in a room showing how to blow up and make balloon animals .,5.0,4.0,5.0,4.6667,0.6738,0.8724,0.8721,0.6161,0.5786,0.5072,0.6261,0.3011,0.556,0.3137,0.4911,0.1423,0.2282
+2,a man is demonstrating how to properly fold a ball .,0.0826,kid in a room showing how to blow up and make balloon animals .,4.0,4.0,4.0,4.0,0.4372,0.8316,1.0,0.8644,0.8788,0.8452,0.3233,0.2579,0.4091,0.255,0.2894,0.0881,0.0826
+3,a man is demonstrating how to properly make a ball ball .,0.2305,kid in a room showing how to blow up and make balloon animals .,4.0,4.0,4.0,4.0,0.5119,0.8714,1.0,0.8723,0.8863,0.8664,0.4256,0.3509,0.4786,0.3452,0.4016,0.2351,0.2305
+4,a young man demonstrating balloon animal making techniques .,0.4342,kid in a room showing how to blow up and make balloon animals .,5.0,5.0,5.0,5.0,0.6825,0.8854,0.9873,0.7464,0.7902,0.7308,0.631,0.4614,0.6301,0.5062,0.5701,0.3844,0.4342
+5,a man explains how to create balloon animals by squeezing and twisting a balloon .,0.5304,a man is showing how to create balloon animals while wearing a green hat .,5.0,5.0,4.0,4.6667,0.6202,0.8862,1.0,0.9231,0.9375,0.9295,0.5598,0.5774,0.5904,0.5839,0.5378,0.5231,0.5304
+6,a young man is demonstrating as he talks about making a balloon animal .,0.5127,kid in a room showing how to blow up and make balloon animals .,5.0,5.0,5.0,5.0,0.6211,0.8852,1.0,1.0,1.0,1.0,0.572,0.5763,0.5899,0.5763,0.5368,0.5127,0.5127

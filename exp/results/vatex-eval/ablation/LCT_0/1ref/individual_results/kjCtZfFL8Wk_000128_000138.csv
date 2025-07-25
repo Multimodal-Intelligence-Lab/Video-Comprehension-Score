@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a chef pushes aside some carrot peelings and starts to top and tail a carrot using a chef's knife .,0.0,demonstration and narration on the proper way to use a large knife to cut a carrot .,5.0,5.0,5.0,5.0,0.5942,0.8227,0.804,0.3756,0.39,0.2586,0.5067,0.0,0.4952,0.0,0.3864,0.0,0.0
+2,a person is using a knife to cut carrots on a cutting board .,0.1435,demonstration and narration on the proper way to use a large knife to cut a carrot .,5.0,5.0,5.0,5.0,0.638,0.8646,0.822,0.5299,0.5021,0.4241,0.5813,0.2631,0.5596,0.2196,0.4906,0.1913,0.1435
+3,a person is using a knife to cut a piece of bread .,0.0346,demonstration and narration on the proper way to use a large knife to cut a carrot .,4.0,4.0,4.0,4.0,0.3971,0.8371,0.8814,0.7643,0.7461,0.6967,0.2797,0.2111,0.3159,0.1919,0.1828,0.0576,0.0346
+4,a person using a knife sharpener then cutting carrots on a cutting board .,0.0456,demonstration and narration on the proper way to use a large knife to cut a carrot .,4.0,4.0,4.0,4.0,0.571,0.8529,0.8195,0.5556,0.5271,0.4455,0.497,0.2216,0.4765,0.1717,0.3862,0.0945,0.0456
+5,a man demonstrates how to properly cut a carrot into pieces,0.2903,demonstration and narration on the proper way to use a large knife to cut a carrot .,5.0,5.0,4.0,4.6667,0.6947,0.8813,0.8529,0.5499,0.5361,0.4737,0.6536,0.3521,0.642,0.3323,0.5938,0.3113,0.2903
+6,a person demonstrates how to properly cut up a carrot .,0.4373,demonstration and narration on the proper way to use a large knife to cut a carrot .,5.0,5.0,5.0,5.0,0.7542,0.8987,0.8947,0.5858,0.5912,0.5451,0.7265,0.4508,0.7253,0.458,0.6943,0.4298,0.4373

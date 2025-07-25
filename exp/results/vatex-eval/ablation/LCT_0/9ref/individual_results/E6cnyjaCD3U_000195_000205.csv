@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is closing his eyes and whistling a tune while music is playing in the background .,0.5556,a man is in a room whistling in time with the music that is playing .,5.0,5.0,5.0,5.0,0.7374,0.9097,0.9703,0.8819,0.8686,0.845,0.7074,0.5904,0.6541,0.5958,0.6198,0.5498,0.5556
+2,a man is sitting in a room and whistling a tune .,0.3675,a man in glasses and a yellow knit hat whistles to music in tune .,4.0,5.0,4.0,4.3333,0.8752,0.9091,1.0,0.8824,0.8923,0.8751,0.8627,0.4656,0.8585,0.4546,0.8444,0.4579,0.3675
+3,a man is sitting in front of a camera and whistling .,0.4424,a man wearing a knitted cap and glasses is whistling .,5.0,5.0,4.0,4.6667,0.6995,0.8547,1.0,1.0,1.0,1.0,0.6441,0.5296,0.5993,0.5296,0.5255,0.4424,0.4424
+4,"with emotion , a man wearing glasses whistles a tune .",0.6001,a man wearing a knitted cap and glasses is whistling .,5.0,5.0,5.0,5.0,0.7262,0.9065,0.9497,0.7701,0.8005,0.7799,0.6963,0.6232,0.6871,0.6375,0.6496,0.5843,0.6001
+5,a man is sitting in a chair and whistling a tune .,0.4205,a man is in a room whistling in time with the music that is playing .,4.0,5.0,4.0,4.3333,0.66,0.8717,1.0,0.8819,0.8923,0.8751,0.6088,0.5737,0.6145,0.4964,0.5564,0.5094,0.4205
+6,a man whistles a song for others that are listing to him whistle .,0.3006,a man in a knit cap whistles a folk song tune while being accompanied by a string instrument .,4.0,3.0,2.0,3.0,0.6369,0.8986,0.9831,0.7906,0.7943,0.7374,0.596,0.4299,0.5729,0.3842,0.5248,0.3525,0.3006

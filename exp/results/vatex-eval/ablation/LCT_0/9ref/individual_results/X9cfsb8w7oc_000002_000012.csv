@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,somebody is watching a show about a medical operation on a large-screen tv .,0.3822,a television showing surgeons performing surgery in the theater,5.0,4.0,5.0,4.6667,0.7926,0.8569,0.9604,0.921,0.9232,0.9043,0.7575,0.5747,0.6972,0.455,0.681,0.5308,0.3822
+2,a little girl is playing with a tv in a living room .,0.0406,a person is showing a tv with people doing a surgerical procedure .,5.0,2.0,2.0,3.0,0.4803,0.8537,0.9714,0.7414,0.8096,0.7597,0.3793,0.2159,0.3846,0.2397,0.265,0.0635,0.0406
+3,a person is playing on a tv on a television .,0.3464,a person is recording a show on a television screen .,5.0,2.0,2.0,3.0,0.6223,0.8947,1.0,0.8902,0.8389,0.8123,0.5779,0.5212,0.6223,0.4152,0.5779,0.4649,0.3464
+4,an infant is looking at the camera while a television plays in the background .,0.0925,a person is sitting in front of a camera that points towards a large screen television over a fire place .,3.0,3.0,2.0,2.6667,0.4545,0.8265,0.9787,0.9002,0.9077,0.882,0.34,0.2257,0.4135,0.2499,0.2905,0.0342,0.0925
+5,a person shows how to use your phone to work on a television screen .,0.2607,a person is recording a show on a television screen .,3.0,3.0,2.0,2.6667,0.5533,0.9131,0.9301,0.7431,0.7434,0.6963,0.5108,0.3604,0.5186,0.3249,0.4728,0.2996,0.2607
+6,a child is laying down on the couch watching tv .,0.334,a person sits on the couch in a dining room and watches a tv show about surgery .,5.0,5.0,2.0,4.0,0.4949,0.8644,1.0,1.0,1.0,1.0,0.4157,0.436,0.4568,0.4242,0.3716,0.3475,0.334

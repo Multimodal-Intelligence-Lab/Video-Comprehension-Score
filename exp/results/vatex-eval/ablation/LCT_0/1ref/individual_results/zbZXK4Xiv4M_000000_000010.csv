@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a chef is rolling dough into small thin tube shapes and placing them aside .,0.2352,the chef in a white chef coat rolls bread dough into long strips .,5.0,5.0,5.0,5.0,0.5956,0.8323,0.8199,0.5185,0.6352,0.5618,0.5142,0.1916,0.5068,0.3634,0.4075,0.063,0.2352
+2,a man is demonstrating how to cut a piece of wood .,0.0,the chef in a white chef coat rolls bread dough into long strips .,3.0,2.0,3.0,2.6667,0.1017,0.7486,0.963,0.8284,0.8469,0.7955,0.0,0.0,0.0672,0.0,0.0,0.0,0.0
+3,a man is demonstrating how to cut a piece of wood .,0.0,the chef in a white chef coat rolls bread dough into long strips .,3.0,2.0,3.0,2.6667,0.1017,0.7486,0.963,0.8284,0.8469,0.7955,0.0,0.0,0.0672,0.0,0.0,0.0,0.0
+4,a man is folding over a piece of dough before spreading flour under it and then rolling out the dough .,0.0,the chef in a white chef coat rolls bread dough into long strips .,5.0,2.0,4.0,3.6667,0.477,0.8262,0.886,0.3454,0.2958,0.1476,0.3669,0.0,0.4097,0.0,0.2854,0.0,0.0
+5,a baker kneads rolls of dough and places them into bowls .,0.2152,the chef in a white chef coat rolls bread dough into long strips .,4.0,3.0,4.0,3.6667,0.5093,0.8148,0.9108,0.7688,0.7673,0.7145,0.3978,0.3617,0.4612,0.3605,0.3388,0.2167,0.2152
+6,a man is preparing some dough for cooking in the kitchen .,0.0,the chef in a white chef coat rolls bread dough into long strips .,5.0,5.0,4.0,4.6667,0.4748,0.8097,0.6878,0.2819,0.1599,0.0,0.3514,0.0,0.2364,0.0,0.0569,0.0,0.0

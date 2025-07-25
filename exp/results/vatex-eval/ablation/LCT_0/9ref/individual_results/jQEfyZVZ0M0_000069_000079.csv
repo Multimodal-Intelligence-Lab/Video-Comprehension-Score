@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person bungee jumps off of a platform with a white fence .,0.412,a man bungee jumps from a tower above a river .,5.0,4.0,4.0,4.3333,0.5111,0.8836,1.0,1.0,1.0,1.0,0.4274,0.4914,0.4914,0.4914,0.412,0.412,0.412
+2,a man is bungee jumping off of a tall bridge .,0.6866,a man bungee jumps from a tower above a river .,5.0,4.0,5.0,4.6667,0.7166,0.9045,1.0,1.0,1.0,1.0,0.6866,0.7166,0.7166,0.7166,0.6866,0.6866,0.6866
+3,a man bungee jumps off of a bridge into a river .,0.8375,a man bungee jumps from a tower above a river .,5.0,4.0,4.0,4.3333,0.844,0.9599,1.0,1.0,1.0,1.0,0.8375,0.844,0.844,0.844,0.8375,0.8375,0.8375
+4,a person is hanging off the side of a bridge after they bungee jumped .,0.0,a man is hanging from a bungee rope while yelling and the another man is pushed off a ledge .,5.0,4.0,5.0,4.6667,0.642,0.8823,0.8587,0.5837,0.5623,0.4843,0.5943,0.2017,0.5831,0.1359,0.5275,0.0576,0.0
+5,someone bungee jumps off a bridge and hangs out over the water .,0.5349,a man bungee jumps from a tower above a river .,5.0,5.0,5.0,5.0,0.6086,0.8761,1.0,1.0,1.0,1.0,0.5409,0.5949,0.5949,0.5949,0.5349,0.5349,0.5349
+6,"several bungee jumpers jump off of a bridge , in front of a crowd",0.4222,a man bungee jumps from a tower above a river .,4.0,2.0,4.0,3.3333,0.5594,0.8555,1.0,1.0,1.0,1.0,0.4849,0.5176,0.5176,0.5176,0.4222,0.4222,0.4222

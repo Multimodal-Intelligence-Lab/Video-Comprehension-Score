@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy is ice skating in slow motion on the ice rink .,0.0,an ice skater is completing a move to demonstrate instructions .,5.0,5.0,5.0,5.0,0.4113,0.8581,0.8182,0.7486,0.6364,0.5763,0.314,0.2136,0.2805,0.075,0.1615,0.0836,0.0
+2,a man is ice skating in a rink with a hockey stick .,0.0,an ice skater is completing a move to demonstrate instructions .,4.0,4.0,1.0,3.0,0.3886,0.8202,0.7407,0.4,0.5195,0.4142,0.2547,0.0,0.1747,0.0,0.0,0.0,0.0
+3,a man is ice skating on an ice rink and then stops .,0.0061,an ice skater is completing a move to demonstrate instructions .,5.0,5.0,5.0,5.0,0.4627,0.832,0.7568,0.5692,0.6497,0.579,0.3542,0.0561,0.29,0.1731,0.1466,0.0,0.0061
+4,a group of men are playing ice hockey on a ice rink .,0.0,an ice skater is completing a move to demonstrate instructions .,2.0,3.0,1.0,2.0,0.2869,0.8036,0.6,0.6135,0.3445,0.1843,0.1126,0.0,0.0,0.0,0.0,0.0,0.0
+5,footage of a hockey game where older men are skating around towards the middle of the rink .,0.0,an ice skater is completing a move to demonstrate instructions .,4.0,2.0,1.0,2.3333,0.2854,0.7869,0.843,0.412,0.4046,0.2434,0.0919,0.0,0.1524,0.0,0.0,0.0,0.0
+6,a group of people are skating in ice skating rink .,0.0,an ice skater is completing a move to demonstrate instructions .,4.0,4.0,4.0,4.0,0.4748,0.8178,0.6,0.5657,0.5823,0.4893,0.3578,0.0716,0.1247,0.0981,0.0,0.0,0.0

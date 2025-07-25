@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"from underneath a car , a guy uses bare hands to remove an oil pan drain plug .",0.0,a person is changing the oil of her car from the bottom .,5.0,5.0,5.0,5.0,0.4525,0.8541,0.6507,0.6004,0.3241,0.2087,0.359,0.0881,0.1586,0.0,0.0149,0.0,0.0
+2,a man is demonstrating how to change the oil from a car .,0.382,a person is changing the oil of her car from the bottom .,4.0,5.0,4.0,4.3333,0.5517,0.9101,0.8125,0.7823,0.7971,0.7771,0.5074,0.4269,0.4482,0.4376,0.3937,0.3703,0.382
+3,a man is under a car and is removing the oil from the car .,0.3852,a person is changing the oil of her car from the bottom .,5.0,5.0,4.0,4.6667,0.6373,0.8959,0.77,0.5751,0.6584,0.6188,0.5952,0.3333,0.529,0.4492,0.4743,0.2862,0.3852
+4,a man puts oil into a car and removes the tire .,0.307,a person is changing the oil of her car from the bottom .,3.0,2.0,2.0,2.3333,0.509,0.8566,1.0,0.8408,0.827,0.7981,0.4268,0.4161,0.509,0.4063,0.4268,0.3183,0.307
+5,a guy is removing the drain plug and slides the oil pan into place .,0.0135,a person is changing the oil of her car from the bottom .,4.0,3.0,3.0,3.3333,0.4576,0.8101,0.9388,0.6757,0.6787,0.6034,0.3305,0.1972,0.4222,0.2008,0.2868,0.0091,0.0135
+6,"a man jacks up a car , removes an oil filter , takes of a wheel and then welds a piece of metal under the car .",0.0,a person is changing the oil of her car from the bottom .,4.0,2.0,2.0,2.6667,0.4173,0.8436,0.9036,0.545,0.4665,0.3676,0.3093,0.0,0.3551,0.0,0.2356,0.0,0.0

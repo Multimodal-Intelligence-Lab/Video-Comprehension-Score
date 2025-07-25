@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person separating an egg yolk from a bowl with a water bottle,0.3937,someone uses a plastic bottle to suck up yolks out of a bowl and transfer them to another bowl .,5.0,5.0,5.0,5.0,0.6914,0.8691,0.8554,0.602,0.6089,0.55,0.645,0.4244,0.6393,0.4344,0.585,0.383,0.3937
+2,a person is using a plastic bottle to separate egg yolks from a bowl .,0.5199,someone uses a plastic bottle to suck up yolks out of a bowl and transfer them to another bowl .,5.0,4.0,5.0,4.6667,0.8237,0.9027,0.9134,0.581,0.6136,0.572,0.8048,0.4913,0.807,0.531,0.7862,0.4793,0.5199
+3,a person is demonstrating how to separate egg yolks from egg whites .,0.0688,someone uses a plastic bottle to suck up yolks out of a bowl and transfer them to another bowl .,5.0,5.0,5.0,5.0,0.543,0.8051,0.9773,0.5541,0.6096,0.5151,0.4324,0.1752,0.5324,0.2504,0.4192,0.0,0.0688
+4,someone sucks an egg yolk into a plastic bottle and places the yolk into a bowl of yolks .,0.3244,someone uses a plastic bottle to suck up yolks out of a bowl and transfer them to another bowl .,5.0,5.0,4.0,4.6667,0.8576,0.9304,0.7404,0.3008,0.4278,0.385,0.847,0.1847,0.6973,0.3328,0.6935,0.1745,0.3244
+5,a person is sucking an egg up with a bottle out of a bowl .,0.0,someone uses a plastic bottle to suck up yolks out of a bowl and transfer them to another bowl .,5.0,4.0,5.0,4.6667,0.7252,0.9006,0.8077,0.2452,0.1682,0.0764,0.6949,0.0,0.6598,0.0,0.6222,0.0,0.0
+6,"a person takes an empty plastic bottle from a waste bin , uses the mouth of the bottle to suck up a raw egg from a plate , and then holds the mouth of the bottle over another plate .",0.4701,someone uses a plastic bottle to suck up yolks out of a bowl and transfer them to another bowl .,4.0,4.0,3.0,3.6667,0.7269,0.8816,0.8695,0.5547,0.6343,0.5851,0.6902,0.3874,0.6859,0.4968,0.6437,0.3548,0.4701

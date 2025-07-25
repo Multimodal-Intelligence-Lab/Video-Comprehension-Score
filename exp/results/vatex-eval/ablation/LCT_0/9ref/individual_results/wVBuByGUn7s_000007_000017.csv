@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,different pieces of jewelry and designs are featured along with a person placing beads on a string .,0.3549,several pieces of home made jewelry are shown off,5.0,5.0,5.0,5.0,0.7165,0.8918,0.9318,0.7818,0.7658,0.7204,0.6574,0.4707,0.6564,0.4596,0.5848,0.3682,0.3549
+2,a person is showing how to make a puzzle on a table .,0.0757,a person demonstrates how to make various necklaces and bracelets using beads .,4.0,4.0,4.0,4.0,0.3997,0.8813,0.9583,0.9755,0.9503,0.936,0.292,0.3138,0.2635,0.2162,0.1315,0.1908,0.0757
+3,a person is showing how to put together a puzzle .,0.1876,a person demonstrates how to make various necklaces and bracelets using beads .,4.0,4.0,3.0,3.6667,0.3623,0.8735,1.0,1.0,1.0,1.0,0.213,0.3623,0.3352,0.3417,0.1795,0.213,0.1876
+4,"materials are listed , and then a person demonstrates how to make a piece of jewelry .",0.0,a woman is drawing some designs which represent different examples of handmade jewelry .,5.0,5.0,5.0,5.0,0.6434,0.8877,0.9424,0.6352,0.6383,0.548,0.5645,0.2083,0.5256,0.1365,0.4206,0.12,0.0
+5,a woman is showing the tools and items necessary for a jewelry crafting project .,0.4716,a person is showing off the different pieces of jewelry they made,5.0,5.0,5.0,5.0,0.5726,0.8631,0.9831,1.0,0.9872,0.9851,0.4868,0.5498,0.5421,0.544,0.4694,0.4784,0.4716
+6,a women is using tools and beads to create jewlery .,0.4496,a woman is drawing some designs which represent different examples of handmade jewelry .,5.0,5.0,5.0,5.0,0.6113,0.843,0.9655,0.8725,0.875,0.8451,0.5239,0.5545,0.5974,0.5558,0.5012,0.448,0.4496

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,child holds spool of string while running between streaming kite and mother .,0.1472,a young child runs down the beach flying a kite .,5.0,5.0,5.0,5.0,0.6091,0.8613,0.9333,0.7925,0.7611,0.6983,0.54,0.3303,0.4735,0.2655,0.3774,0.2225,0.1472
+2,a group of people are on the beach and they are playing with a kite .,0.3371,a young child runs down the beach flying a kite .,5.0,5.0,4.0,4.6667,0.6949,0.8835,1.0,1.0,1.0,1.0,0.6547,0.4452,0.5834,0.436,0.4926,0.348,0.3371
+3,a group of people are on a beach playing a game of sand .,0.0,a little girl is walking across the beach flying a kite .,1.0,4.0,4.0,3.0,0.3908,0.8436,1.0,0.8723,0.8863,0.849,0.2719,0.0,0.3423,0.11,0.1893,0.0,0.0
+4,a woman is trying to help a young boy fly a kite .,0.4446,"a lady and her toddler is at the beach , while the toddler flies a kite .",5.0,5.0,3.0,4.3333,0.5925,0.8744,0.9787,0.9369,0.9374,0.9244,0.5118,0.5376,0.5837,0.5364,0.5012,0.446,0.4446
+5,a kid running outside and jumping on a blow up toy,0.1773,a little kid is running in their diaper trying to fly a kite .,3.0,3.0,3.0,3.0,0.385,0.8434,1.0,0.8723,0.8863,0.8652,0.2709,0.295,0.385,0.3061,0.2709,0.1641,0.1773
+6,a kid playing with a lightweight floating ball back and forth .,0.0,a little girl is walking across the beach flying a kite .,2.0,2.0,2.0,2.0,0.2398,0.7977,0.9787,0.7876,0.7609,0.7003,0.0471,0.0348,0.1903,0.001,0.0,0.0,0.0

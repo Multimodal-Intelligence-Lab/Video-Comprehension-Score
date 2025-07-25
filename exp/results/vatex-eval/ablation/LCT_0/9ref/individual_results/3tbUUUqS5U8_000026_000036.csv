@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man smoking a cigarette drives a small car on a roadway .,0.8263,a man smokes a cigarette while driving a vehicle on the road .,5.0,5.0,5.0,5.0,0.8392,0.9605,1.0,1.0,1.0,1.0,0.8263,0.8392,0.8392,0.8392,0.8263,0.8263,0.8263
+2,a man is driving a car in the middle of the street .,0.3847,a man is driving his car around while he smokes .,5.0,3.0,5.0,4.3333,0.4821,0.903,0.9697,0.9268,0.9321,0.9248,0.4265,0.4412,0.4476,0.4444,0.3883,0.3812,0.3847
+3,a man is driving a car down a road and then stops .,0.3961,a man is driving his car around while he smokes .,4.0,4.0,4.0,4.0,0.4897,0.914,0.9677,0.962,0.9649,0.9607,0.4417,0.4589,0.4622,0.4605,0.3979,0.3943,0.3961
+4,a man smokes from a pipe while driving .,0.4712,music plays as a man smokes a cigarette while driving a car .,4.0,4.0,4.0,4.0,0.7433,0.9196,0.9524,0.8284,0.7175,0.6896,0.7208,0.6706,0.7272,0.5223,0.6989,0.6253,0.4712
+5,an adult boy driving his car and smoking a cigarette on a pipe,0.6769,a person is driving a car and is smoking a cigarette,4.0,4.0,4.0,4.0,0.6963,0.9399,1.0,1.0,1.0,1.0,0.6769,0.6963,0.6963,0.6963,0.6769,0.6769,0.6769
+6,"a man drives a vehicle while describing his smoking pipe , then he smokes from the pipe .",0.5743,a man is driving his car around while he smokes .,4.0,3.0,3.0,3.3333,0.7212,0.9074,0.9787,1.0,0.9839,0.9813,0.6839,0.6338,0.6964,0.6278,0.6558,0.581,0.5743

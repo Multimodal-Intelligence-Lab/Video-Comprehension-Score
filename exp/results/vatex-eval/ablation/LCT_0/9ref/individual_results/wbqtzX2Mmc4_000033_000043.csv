@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man speaks as he sands outside above dirt that has bones scatter in it .,0.6031,a man speaking while an animal skull and bone are on the ground .,5.0,5.0,5.0,5.0,0.6963,0.8915,1.0,0.8723,0.8863,0.8683,0.6482,0.6518,0.6963,0.6573,0.6482,0.5967,0.6031
+2,a group of people are digging in a muddy area .,0.0,a man is explaining an archaeological dig in a backyard .,2.0,1.0,4.0,2.3333,0.3052,0.8092,1.0,0.8938,0.8586,0.8228,0.1243,0.2011,0.2621,0.1683,0.0751,0.0,0.0
+3,a man is standing in front of a pile of dirt and talking about it .,0.2065,a man is showing off the bones he had dug up from the dirt .,5.0,5.0,5.0,5.0,0.477,0.8637,1.0,0.9766,0.9697,0.9624,0.3443,0.3259,0.4511,0.3708,0.3438,0.2195,0.2065
+4,a man is describing what he is finding while digging through a dumpster .,0.3226,a man is explaining how an archaeological dig for dinosaurs is like .,4.0,2.0,4.0,3.3333,0.508,0.8668,1.0,1.0,1.0,1.0,0.4177,0.4645,0.4772,0.4277,0.3813,0.3662,0.3226
+5,"one man is digging in the dirt , another is standing on rocks , while another narrates .",0.1323,an old man was speaking about the place and showing the bones that are on the ground,4.0,2.0,3.0,3.0,0.5033,0.8615,0.9892,0.9499,0.9376,0.9228,0.3819,0.308,0.387,0.299,0.229,0.1435,0.1323
+6,"a man is using a shovel to dig some dirt , as a man is narrating the scene and speaking about the wall and gravel .",0.0,a man is explaining an archaeological dig in a backyard .,4.0,3.0,4.0,3.6667,0.4537,0.8666,0.9477,0.7541,0.7941,0.7425,0.3433,0.108,0.3022,0.153,0.167,0.0,0.0

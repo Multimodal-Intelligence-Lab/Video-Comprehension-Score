@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,someone is showing the inside tag and outside of a hat .,0.4355,a person is discussing the inside of a snap back cap .,5.0,5.0,5.0,5.0,0.5438,0.8855,1.0,1.0,1.0,1.0,0.4848,0.5244,0.5244,0.5244,0.4355,0.4355,0.4355
+2,a man is demonstrating how to use a baseball cap .,0.3245,a person is discussing the inside of a snap back cap .,5.0,4.0,2.0,3.6667,0.7107,0.8853,1.0,0.8408,0.827,0.7885,0.6665,0.5309,0.6236,0.4475,0.5662,0.4998,0.3245
+3,a person is showing off a hat that is on a table .,0.444,a person grabbing a hat while looking at it and placing it on a head model,4.0,4.0,4.0,4.0,0.5892,0.8593,0.963,0.9706,0.9286,0.917,0.5161,0.5768,0.5324,0.528,0.4491,0.5014,0.444
+4,a person picks up a fitted hat off a bed and examines it,0.2252,a person holds onto a hat that has the word obey on it,4.0,4.0,4.0,4.0,0.5815,0.8296,0.9583,0.8889,0.9215,0.9049,0.4924,0.3369,0.5244,0.3603,0.4231,0.1968,0.2252
+5,a person is showing and talking about some baseball caps they own .,0.0965,a person grabbing a hat while looking at it and placing it on a head model,4.0,4.0,2.0,3.3333,0.6535,0.8849,1.0,0.8644,0.8611,0.8258,0.6012,0.3378,0.6203,0.2795,0.563,0.2598,0.0965
+6,a man is showing off two hats he has and is talking about them .,0.008,a man showcases a cap by rotating the cap and showing the word printed on the cap .,4.0,4.0,3.0,3.6667,0.4831,0.8325,1.0,0.921,0.8985,0.8715,0.3619,0.2697,0.3754,0.1854,0.2497,0.0849,0.008

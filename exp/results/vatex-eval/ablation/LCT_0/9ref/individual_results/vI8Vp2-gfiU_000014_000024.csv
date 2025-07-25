@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,one male is standing in a snow covered field while another moves over and attempts to kick him .,0.4092,"guys are fooling around in the snow and ice , and one takes a flying kick at another",5.0,5.0,5.0,5.0,0.6957,0.8596,0.9221,0.7899,0.8012,0.7682,0.646,0.4102,0.6389,0.4514,0.5799,0.3066,0.4092
+2,a group of people are playing in the snow with a snowball .,0.1277,"two teenage boys are outside in the snow , one does a flying kick at the other and they both fall .",4.0,4.0,4.0,4.0,0.5057,0.8505,0.9756,0.9075,0.8725,0.8419,0.4102,0.3237,0.4215,0.2966,0.3098,0.1613,0.1277
+3,a man is standing in the snow and another man runs in the snow .,0.0,"on a snow covered field , two boys are jumping and playing while music is playing .",5.0,5.0,5.0,5.0,0.643,0.9191,1.0,1.0,1.0,1.0,0.6082,0.1448,0.4913,0.1448,0.4417,0.0872,0.0
+4,a man walks outside while it is snowing and throws his small dog into the snow .,0.0,"on a snow covered field , two boys are jumping and playing while music is playing .",4.0,2.0,3.0,3.0,0.3492,0.8361,0.971,0.6053,0.5708,0.4386,0.2217,0.0,0.2396,0.0,0.0906,0.0,0.0
+5,a little boy making snowballs and then another boy comes up and hits hit with one .,0.2184,a boy is kicking another boy with his leg and falls down .,4.0,4.0,3.0,3.6667,0.4881,0.8467,0.987,0.9527,0.9594,0.9521,0.3843,0.3335,0.4292,0.3382,0.3135,0.2129,0.2184
+6,a man runs up to a snowman and kicks the snowman over to destroy it .,0.0,"on a snow covered field , two boys are jumping and playing while music is playing .",4.0,3.0,1.0,2.6667,0.5939,0.9008,0.9386,0.795,0.7681,0.7037,0.5492,0.1035,0.4478,0.0721,0.387,0.0,0.0

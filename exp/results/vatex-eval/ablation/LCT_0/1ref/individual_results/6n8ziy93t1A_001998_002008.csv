@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,people wearing robes sit in a row as other people in robes wash their feet .,0.0,a priest is bending down blessing a group of choir boys in a church .,5.0,5.0,5.0,5.0,0.1848,0.7373,0.9223,0.7888,0.7905,0.7158,0.0,0.0,0.1161,0.0,0.0,0.0,0.0
+2,a group of people are washing their feet in a religious ceremony .,0.0,a priest is bending down blessing a group of choir boys in a church .,5.0,5.0,4.0,4.6667,0.2406,0.8182,0.7328,0.3779,0.1643,0.0,0.0718,0.0,0.0,0.0,0.0,0.0,0.0
+3,a group of people in a church are washing their feet .,0.0,a priest is bending down blessing a group of choir boys in a church .,5.0,5.0,4.0,4.6667,0.4022,0.8477,0.6667,0.2792,0.0,0.0,0.2948,0.0,0.1033,0.0,0.0,0.0,0.0
+4,"in a hall full of students in cap and gown , a man washes the foot of one student .",0.0,a priest is bending down blessing a group of choir boys in a church .,4.0,2.0,2.0,2.6667,0.1754,0.7341,0.955,0.7231,0.764,0.6786,0.0,0.0,0.1365,0.0,0.0,0.0,0.0
+5,a man sets in a red chair while others kneel over and wash his feet .,0.0,a priest is bending down blessing a group of choir boys in a church .,4.0,3.0,4.0,3.6667,0.242,0.7599,0.8813,0.6023,0.5733,0.4384,0.0024,0.0,0.1398,0.0,0.0,0.0,0.0
+6,a priest kisses the feet of a congregant during a catholic ritual washing of the feet ceremony .,0.0,a priest is bending down blessing a group of choir boys in a church .,4.0,3.0,4.0,3.6667,0.3796,0.7945,0.858,0.4913,0.4747,0.3389,0.2192,0.0,0.277,0.0,0.09,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a man is scuba diving in the water , there are plenty of fishes nearby .",0.0,a school of fish swimming around a scuba diver with music in the background .,5.0,5.0,5.0,5.0,0.6205,0.8447,0.6803,0.3428,0.1838,0.0338,0.5507,0.0,0.4421,0.0,0.3395,0.0,0.0
+2,a group of people are scuba diving in the ocean .,0.0319,a school of fish swimming around a scuba diver with music in the background .,4.0,4.0,4.0,4.0,0.4474,0.8183,0.8477,0.7544,0.6975,0.6303,0.3248,0.2675,0.3482,0.2078,0.2035,0.1049,0.0319
+3,a person is scuba diving in the ocean with a bunch of fish .,0.0,a school of fish swimming around a scuba diver with music in the background .,5.0,5.0,5.0,5.0,0.6496,0.8475,0.7163,0.4743,0.3561,0.2402,0.5865,0.1908,0.5108,0.0087,0.4227,0.1037,0.0
+4,a large group of fish are swimming around in a pool of water with sand at the bottom .,0.2571,a school of fish swimming around a scuba diver with music in the background .,3.0,4.0,4.0,3.6667,0.4712,0.8504,0.9892,0.7984,0.8371,0.8085,0.3781,0.3377,0.4654,0.3683,0.3714,0.2211,0.2571
+5,a scuba diver looks around while he swims under water .,0.0,a school of fish swimming around a scuba diver with music in the background .,5.0,5.0,5.0,5.0,0.5456,0.8779,0.6667,0.2991,0.1194,0.0,0.4824,0.0,0.3184,0.0,0.2237,0.0,0.0
+6,fish are swimming inbetween rocks as a snorkeller floats on the surface taking pictures .,0.2409,a school of fish swimming around a scuba diver with music in the background .,4.0,2.0,4.0,3.3333,0.4567,0.8132,0.9453,0.8853,0.88,0.8525,0.332,0.3864,0.4253,0.3827,0.2933,0.2454,0.2409

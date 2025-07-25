@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man driving in blue car describes heads up display features of the car .,0.0715,a man drives a chevrolet and discusses its mpg rating .,4.0,5.0,4.0,4.3333,0.441,0.8122,0.9403,0.7193,0.7411,0.6813,0.3118,0.223,0.4055,0.2458,0.2681,0.0433,0.0715
+2,a man is driving a car in the middle of the street .,0.0,a man drives a chevrolet and discusses its mpg rating .,5.0,5.0,5.0,5.0,0.3061,0.8231,0.941,0.8211,0.7539,0.701,0.1569,0.1549,0.2625,0.0796,0.104,0.0,0.0
+3,a man is driving down a street and then a pedestrian is shown .,0.0,a man drives a chevrolet and discusses its mpg rating .,4.0,4.0,4.0,4.0,0.3458,0.7938,0.9084,0.6108,0.4609,0.3209,0.1759,0.0,0.2799,0.0,0.0928,0.0,0.0
+4,a man is talking while driving an automobile with the radio on .,0.0,a man drives a chevrolet and discusses its mpg rating .,5.0,5.0,4.0,4.6667,0.5249,0.836,0.8228,0.33,0.0,0.0,0.4316,0.0,0.4225,0.0,0.3092,0.0,0.0
+5,a man is driving down the street while he describes all of the interior features of the car .,0.0,a man drives a chevrolet and discusses its mpg rating .,5.0,5.0,4.0,4.6667,0.5189,0.8167,0.8929,0.306,0.093,0.0,0.4109,0.0,0.4612,0.0,0.3402,0.0,0.0
+6,a man driving a car talks about the different systems of the car .,0.2542,a man drives a chevrolet and discusses its mpg rating .,5.0,5.0,5.0,5.0,0.5633,0.8333,0.9804,0.7071,0.7027,0.6432,0.4759,0.3824,0.5545,0.3785,0.4655,0.2589,0.2542

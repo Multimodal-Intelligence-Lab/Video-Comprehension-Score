@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl is standing on a boy's back and asks him what she should do .,0.0,"woman leans forward in bare feet , as she stands on the back of a man lying on the floor .",5.0,5.0,5.0,5.0,0.3458,0.8207,0.8208,0.4769,0.4711,0.3555,0.2028,0.0,0.2029,0.0,0.0288,0.0,0.0
+2,a man is laying on the floor and another man is laying on the floor .,0.0,"woman leans forward in bare feet , as she stands on the back of a man lying on the floor .",3.0,4.0,2.0,3.0,0.3794,0.8672,0.7263,0.7561,0.6545,0.6016,0.2844,0.1792,0.1456,0.0519,0.0148,0.0535,0.0
+3,a man is laying on the floor while another man is on his back .,0.0,"woman leans forward in bare feet , as she stands on the back of a man lying on the floor .",4.0,4.0,4.0,4.0,0.4944,0.8899,0.6154,0.5714,0.4568,0.3896,0.4318,0.1151,0.1783,0.0,0.0767,0.0057,0.0
+4,"a woman holds herself aloft by laying back against a standing man and wrapping her arms around his torso above her head , she lifts and lowers her legs .",0.0,"woman leans forward in bare feet , as she stands on the back of a man lying on the floor .",3.0,1.0,1.0,1.6667,0.5585,0.8496,0.7744,0.3661,0.4057,0.3005,0.4804,0.0,0.4299,0.0,0.329,0.0,0.0
+5,a young girl lies on her stomach with her arms bent back to hold her feet and then stands up and does a back bend .,0.0286,"woman leans forward in bare feet , as she stands on the back of a man lying on the floor .",2.0,3.0,1.0,2.0,0.5102,0.8564,0.8248,0.5656,0.5888,0.5199,0.428,0.1339,0.4061,0.1681,0.3065,0.0,0.0286
+6,a girl stands on her bed and bends backwards and then lays down .,0.0,"woman leans forward in bare feet , as she stands on the back of a man lying on the floor .",2.0,3.0,2.0,2.3333,0.4334,0.8182,0.8829,0.5472,0.5676,0.4714,0.3075,0.0,0.3583,0.0017,0.2156,0.0,0.0

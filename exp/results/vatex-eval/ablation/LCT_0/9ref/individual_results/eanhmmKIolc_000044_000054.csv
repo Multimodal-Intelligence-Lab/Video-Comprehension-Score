@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person dances pretty hard near their vehicle while getting their gas ; even doing a huge flip .,0.603,a person performs various dance moves at a gas station .,5.0,5.0,5.0,5.0,0.8385,0.8555,0.9391,0.7797,0.8098,0.7739,0.8112,0.6346,0.7816,0.6481,0.752,0.5657,0.603
+2,a man is standing in the back of a truck and a man is talking about it .,0.0,a guy outside is doing a fancy trick while pushing against a car .,4.0,3.0,3.0,3.3333,0.2249,0.8253,0.9206,0.9011,0.8287,0.7878,0.0608,0.0382,0.1186,0.0,0.0,0.0,0.0
+3,a man is talking about a truck that is in front of him .,0.0196,a man is dancing to some loud music outside of his car at a gas station .,4.0,4.0,4.0,4.0,0.2756,0.8371,1.0,1.0,1.0,1.0,0.1347,0.2021,0.2275,0.2021,0.0342,0.0196,0.0196
+4,two men are sitting in a car dancing to the beat of the radio . /,0.0,a guy outside is doing a fancy trick while pushing against a car .,1.0,1.0,2.0,1.3333,0.4665,0.8427,0.925,0.7222,0.693,0.6283,0.3669,0.0564,0.3545,0.0804,0.234,0.0,0.0
+5,a man is dancing outside vigorously while music playing in the background .,0.5011,a man dances outside and flips to wild music while his car is pumped with gasoline .,5.0,5.0,5.0,5.0,0.6641,0.8821,0.9725,0.9737,0.9446,0.9311,0.6192,0.5749,0.6374,0.5714,0.5889,0.5052,0.5011
+6,two men are driving in a car pumping their fists to the music that is playing .,0.0,a guy outside is doing a fancy trick while pushing against a car .,2.0,1.0,4.0,2.3333,0.364,0.8378,0.956,0.8047,0.7999,0.7499,0.2327,0.033,0.2457,0.0272,0.0952,0.0,0.0

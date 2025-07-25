@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man regards a small beverage container and then drinks it at the taunts of another man .,0.0,a group of people are getting a young man to drink something out of a small cup .,5.0,2.0,5.0,4.0,0.4976,0.8647,0.7483,0.2322,0.3545,0.2534,0.4189,0.0,0.3286,0.0,0.2235,0.0,0.0
+2,a man is sitting at a table and drinking from a cup .,0.1136,a group of people are getting a young man to drink something out of a small cup .,5.0,5.0,4.0,4.6667,0.41,0.8537,0.8573,0.8284,0.7797,0.7419,0.3089,0.2878,0.3118,0.2433,0.1939,0.1658,0.1136
+3,a man is sitting in a chair and drinking from a bottle .,0.0,a group of people are getting a young man to drink something out of a small cup .,4.0,4.0,4.0,4.0,0.277,0.8209,0.8947,0.8571,0.8257,0.7877,0.1193,0.1565,0.1919,0.1244,0.0156,0.0,0.0
+4,"a man takes a sip of a drink , then vomits it back into the cup , then drinks it again",0.0,a group of people are getting a young man to drink something out of a small cup .,3.0,2.0,4.0,3.0,0.4086,0.8562,0.8417,0.5081,0.4872,0.401,0.3093,0.0,0.2974,0.0,0.1793,0.0,0.0
+5,a man is mixing drinks while other people watch him .,0.0,a group of people are getting a young man to drink something out of a small cup .,5.0,3.0,4.0,4.0,0.3234,0.8684,0.7192,0.414,0.3357,0.235,0.2209,0.0,0.0592,0.0,0.0,0.0,0.0
+6,a man was serving drinks into many cups at a time and photos of him were taken,0.0,a group of people are getting a young man to drink something out of a small cup .,3.0,2.0,4.0,3.0,0.3422,0.8329,0.8239,0.2369,0.1151,0.0,0.2102,0.0,0.2017,0.0,0.0415,0.0,0.0

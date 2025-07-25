@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young girl is being tickled by another person while lying on a bed .,0.3413,a girl is laying on a bed and being tickled by another person .,5.0,5.0,5.0,5.0,0.911,0.965,0.6391,0.6434,0.4021,0.3804,0.9078,0.6086,0.6038,0.3436,0.6024,0.6072,0.3413
+2,a man is laying on a bed and he is playing with a baby .,0.22,a girl is laying on a bed and being tickled by another person .,5.0,4.0,3.0,4.0,0.4414,0.8615,0.8571,0.9827,0.8313,0.8042,0.3516,0.4316,0.3483,0.3281,0.2435,0.3402,0.22
+3,a person is laying on the ground and a bed and then a person is shown .,0.1108,a girl is laying on a bed and being tickled by another person .,4.0,4.0,1.0,3.0,0.4659,0.9067,0.7991,0.5657,0.6624,0.6277,0.411,0.0559,0.3317,0.1938,0.2629,0.0,0.1108
+4,a women tickles a baby laying on it's back while it smiles and laughs .,0.0,a girl is laying on a bed and being tickled by another person .,4.0,4.0,4.0,4.0,0.5203,0.8433,0.84,0.192,0.0,0.0,0.4312,0.0,0.429,0.0,0.3229,0.0,0.0
+5,a girl leaning over a baby and tickling him to make him laugh .,0.4521,a girl is laying on a bed and being tickled by another person .,4.0,4.0,3.0,3.6667,0.5395,0.8404,1.0,1.0,1.0,1.0,0.4521,0.5395,0.5395,0.5395,0.4521,0.4521,0.4521
+6,a little baby is lying on his back and laughing as he is being tickled by someone .,0.2608,a girl is laying on a bed and being tickled by another person .,5.0,5.0,5.0,5.0,0.4716,0.8506,0.9386,0.8723,0.8403,0.8123,0.3788,0.3943,0.437,0.3712,0.3382,0.2879,0.2608

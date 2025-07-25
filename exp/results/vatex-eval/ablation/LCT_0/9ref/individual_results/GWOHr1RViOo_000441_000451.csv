@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl is sitting on a bed cleaning a razor that she is going to be using .,0.8181,a girl is sitting and cleaning out a razor with something .,5.0,4.0,5.0,4.6667,0.8909,0.9215,1.0,1.0,1.0,1.0,0.8779,0.8324,0.8864,0.8324,0.8728,0.8181,0.8181
+2,a girl is sitting on the floor and playing with a fidget spinner .,0.1625,"a girl is sitting on a bed , holding a shaving razor .",3.0,1.0,2.0,2.0,0.3916,0.8338,1.0,0.8515,0.9107,0.8903,0.2703,0.2764,0.3916,0.3184,0.2703,0.1322,0.1625
+3,a young boy is sitting on the floor and playing with a fidget spinner .,0.0,a girl is cleaning a razor by running it on toilet paper,2.0,1.0,1.0,1.3333,0.2036,0.8027,1.0,0.8723,0.8863,0.8551,0.0,0.0717,0.1903,0.0864,0.0,0.0,0.0
+4,a lady that is sitting on the each of a bathtub and shaving her leg .,0.5997,a woman is sitting on a bed while shaving her legs .,4.0,4.0,2.0,3.3333,0.6797,0.9089,0.9714,0.8408,0.8802,0.8682,0.6477,0.6033,0.6691,0.6362,0.6359,0.5635,0.5997
+5,"a woman sitting on the ledge of a bathtub , shaving another person's leg .",0.61,a woman is sitting on a bed while shaving her legs .,3.0,2.0,2.0,2.3333,0.6651,0.9015,0.9773,1.0,0.9526,0.9475,0.6285,0.6651,0.6432,0.6484,0.6042,0.6285,0.61
+6,a woman is sitting and shaving her legs with a razor while talking to another woman in the background,0.3657,a girl sits on a bed dry shaving and talking about random things .,4.0,3.0,3.0,3.3333,0.6505,0.9199,0.956,0.8638,0.8588,0.8216,0.62,0.4508,0.5391,0.4636,0.455,0.3696,0.3657

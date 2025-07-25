@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young baby is crying until she eats an ice cream cone .,0.3366,the baby tries ice cream for the first time .,5.0,5.0,5.0,5.0,0.6663,0.8553,0.9199,0.6435,0.5954,0.5269,0.6099,0.4649,0.6373,0.3928,0.5759,0.3937,0.3366
+2,a little girl is sitting in a chair and eating ice cream .,0.0,the baby tries ice cream for the first time .,4.0,4.0,5.0,4.3333,0.4204,0.8313,0.7996,0.5294,0.395,0.2722,0.3028,0.0,0.2752,0.0,0.1281,0.0,0.0
+3,a baby is sitting in a high chair and eating a ice cream cone .,0.3093,the baby tries ice cream for the first time .,4.0,4.0,5.0,4.3333,0.6314,0.848,0.9164,0.639,0.6294,0.5629,0.5653,0.4231,0.5977,0.413,0.5256,0.3196,0.3093
+4,a young girl bites into an ice cream cone and it drips onto her chin .,0.2223,the baby tries ice cream for the first time .,3.0,5.0,5.0,4.3333,0.4376,0.8273,1.0,0.835,0.8741,0.8478,0.3202,0.3265,0.4376,0.3566,0.3202,0.1858,0.2223
+5,a toddler wearing pink is trying to eat an ice cream cone .,0.0,the baby tries ice cream for the first time .,4.0,4.0,4.0,4.0,0.5398,0.8648,0.8667,0.3993,0.3201,0.2138,0.4679,0.0,0.469,0.0,0.386,0.0,0.0
+6,a baby is sitting enjoying a vanilla ice cream cone .,0.3316,the baby tries ice cream for the first time .,5.0,5.0,4.0,4.6667,0.6588,0.8645,0.9199,0.6435,0.5954,0.532,0.6054,0.4588,0.6291,0.3859,0.571,0.3867,0.3316

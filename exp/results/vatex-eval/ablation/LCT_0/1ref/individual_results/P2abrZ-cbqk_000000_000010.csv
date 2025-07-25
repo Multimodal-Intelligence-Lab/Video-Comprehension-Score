@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is driving a large snow blowing tractor on the side of a highway .,0.0,a vehicle was clearing the snow from the road side and throw the cleared snow on other sides,5.0,5.0,4.0,4.6667,0.5276,0.8408,0.8019,0.1522,0.0,0.0,0.4382,0.0,0.4109,0.0,0.2994,0.0,0.0
+2,a person is riding a snow blower down a road in the snow .,0.0,a vehicle was clearing the snow from the road side and throw the cleared snow on other sides,5.0,5.0,5.0,5.0,0.5004,0.8537,0.8674,0.5371,0.5287,0.448,0.4148,0.0698,0.424,0.0551,0.3254,0.0,0.0
+3,a person is driving a tractor on a snow covered road .,0.0,a vehicle was clearing the snow from the road side and throw the cleared snow on other sides,5.0,5.0,4.0,4.6667,0.4227,0.8448,0.8086,0.1845,0.0205,0.0,0.3167,0.0,0.286,0.0,0.1549,0.0,0.0
+4,very large machine with snow-plow attached slowly drives up the road removing snow .,0.0425,a vehicle was clearing the snow from the road side and throw the cleared snow on other sides,5.0,5.0,5.0,5.0,0.6031,0.8364,0.7897,0.3624,0.4968,0.3984,0.5255,0.0,0.4975,0.1658,0.3991,0.0,0.0425
+5,a person plowing snow in a ride on industrial size snow blower .,0.1903,a vehicle was clearing the snow from the road side and throw the cleared snow on other sides,5.0,5.0,5.0,5.0,0.4854,0.8184,0.978,0.7367,0.7765,0.7269,0.3713,0.3015,0.4738,0.3373,0.3571,0.1465,0.1903
+6,cars are covered in a massive amount of snow and a snowblower drives through .,0.0,a vehicle was clearing the snow from the road side and throw the cleared snow on other sides,4.0,4.0,4.0,4.0,0.4917,0.8167,0.9082,0.5163,0.5217,0.4144,0.3775,0.0155,0.4403,0.0257,0.3146,0.0,0.0

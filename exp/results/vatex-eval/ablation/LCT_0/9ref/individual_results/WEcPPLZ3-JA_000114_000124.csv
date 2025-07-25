@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"two girls are kissing , making faces , and dancing in front of a camera .",0.6546,two females are kissing and making out for the camera .,5.0,5.0,5.0,5.0,0.7509,0.9302,0.9419,0.9041,0.827,0.7926,0.7322,0.6853,0.7288,0.6787,0.7084,0.6617,0.6546
+2,a man and a woman are kissing each other in front of a crowd .,0.2308,two females are kissing and making out for the camera .,3.0,4.0,4.0,3.6667,0.3713,0.84,1.0,1.0,1.0,1.0,0.2442,0.3713,0.3713,0.3713,0.2308,0.2308,0.2308
+3,a man and a woman are kissing each other in a room .,0.2223,two women are hugging and kissing for the camera .,4.0,4.0,4.0,4.0,0.3509,0.8577,1.0,1.0,1.0,1.0,0.2223,0.342,0.342,0.342,0.2223,0.2223,0.2223
+4,two girls are kissing one another then they just look at one another .,0.5503,two females are kissing and making out for the camera .,3.0,5.0,4.0,4.0,0.6538,0.8611,0.9767,0.9755,0.9216,0.907,0.595,0.6451,0.6133,0.6156,0.5476,0.5848,0.5503
+5,two women kiss passionately as they look into each others eyes .,0.6518,two females are kissing and making out for the camera .,3.0,4.0,4.0,3.6667,0.7045,0.8849,1.0,1.0,1.0,1.0,0.6602,0.7009,0.7045,0.7009,0.6591,0.6518,0.6518
+6,two girls are kissing passionately in an outdoor scene .,0.5584,two females are kissing and making out for the camera .,4.0,4.0,4.0,4.0,0.6822,0.8702,1.0,1.0,0.992,0.9898,0.6348,0.622,0.6822,0.6157,0.6348,0.5656,0.5584

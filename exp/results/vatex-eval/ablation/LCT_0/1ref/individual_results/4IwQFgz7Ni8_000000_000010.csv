@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a lady is carrying a small baby in front in a cloth and saying something,0.0,a woman is making a video with herself holding her baby across her chest .,5.0,5.0,5.0,5.0,0.4844,0.8247,0.8229,0.471,0.3987,0.2708,0.3749,0.0,0.3735,0.0,0.2403,0.0,0.0
+2,a woman is holding a baby while she is holding a baby .,0.0502,a woman is making a video with herself holding her baby across her chest .,3.0,3.0,5.0,3.6667,0.5799,0.923,0.8545,0.578,0.4825,0.4394,0.5448,0.2721,0.5083,0.1076,0.4673,0.2124,0.0502
+3,a woman is holding a baby and the baby is laughing .,0.1971,a woman is making a video with herself holding her baby across her chest .,5.0,4.0,5.0,4.6667,0.4852,0.8994,0.928,0.7471,0.713,0.6808,0.4276,0.3109,0.4452,0.2779,0.3831,0.2338,0.1971
+4,a woman is holding a baby and demonstrating how to wrap the baby .,0.0741,a woman is making a video with herself holding her baby across her chest .,5.0,2.0,5.0,4.0,0.5325,0.8862,0.8984,0.6318,0.5698,0.5146,0.4725,0.26,0.4796,0.1795,0.4128,0.165,0.0741
+5,a woman is holding her infant son and making baby noises with him .,0.0,a woman is making a video with herself holding her baby across her chest .,4.0,4.0,4.0,4.0,0.4874,0.9075,0.7701,0.2845,0.4155,0.356,0.4352,0.0,0.3343,0.0,0.2665,0.0,0.0
+6,a woman is demonstrating a chest strap used for carrying a baby while someone is talking in a foreign language .,0.1209,a woman is making a video with herself holding her baby across her chest .,4.0,3.0,4.0,3.6667,0.4439,0.842,0.871,0.751,0.7513,0.7046,0.3395,0.2595,0.3615,0.2598,0.2417,0.1205,0.1209

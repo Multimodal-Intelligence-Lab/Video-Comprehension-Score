@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a male coach demonstrates the technique for swinging a baseball bat using a video clip .,0.5599,a man shows the proper posture and how to swing a bat .,5.0,5.0,5.0,5.0,0.6871,0.845,0.8844,0.8776,0.8414,0.8123,0.6297,0.6435,0.6462,0.6281,0.5814,0.5781,0.5599
+2,a man in a baseball uniform hits a baseball at a baseball game .,0.0,a man shows the proper posture and how to swing a bat .,5.0,3.0,5.0,4.3333,0.4025,0.8115,0.8587,0.2704,0.0187,0.0,0.2637,0.0,0.3042,0.0,0.1425,0.0,0.0
+3,a man in a baseball uniform hits a baseball with a bat .,0.0,a man shows the proper posture and how to swing a bat .,5.0,4.0,5.0,4.6667,0.4873,0.8408,0.8415,0.4675,0.6011,0.5256,0.3902,0.0,0.3907,0.147,0.2753,0.0,0.0
+4,a man uses a stand for a baseball to demonstrate proper hitting technique when using a baseball bat .,0.6462,a man shows the proper posture and how to swing a bat .,5.0,4.0,5.0,4.6667,0.7446,0.8607,0.9281,0.8267,0.8386,0.8125,0.7033,0.6911,0.7249,0.6955,0.6803,0.6411,0.6462
+5,a man demonstrates and narrates a proper batting stance for baseball .,0.4593,a man shows the proper posture and how to swing a bat .,5.0,5.0,5.0,5.0,0.7602,0.8792,0.9404,0.6435,0.6068,0.5528,0.7272,0.531,0.745,0.4828,0.7099,0.5097,0.4593
+6,there is a man showing the viewer how to hit a baseball .,0.6362,a man shows the proper posture and how to swing a bat .,5.0,5.0,5.0,5.0,0.7472,0.84,1.0,0.8408,0.827,0.7941,0.6991,0.6994,0.7472,0.6944,0.6991,0.6422,0.6362

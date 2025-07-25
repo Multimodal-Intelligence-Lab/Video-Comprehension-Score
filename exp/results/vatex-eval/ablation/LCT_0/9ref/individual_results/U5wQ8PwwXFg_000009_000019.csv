@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a little girl is crying while having a hair trim,0.4242,"a toddler is getting her hair cut and crying a bit while mom says "" almost done . """,5.0,4.0,4.0,4.3333,0.6753,0.8496,1.0,1.0,1.0,1.0,0.6098,0.5549,0.6046,0.5208,0.5346,0.4652,0.4242
+2,a little boy is sitting in a chair and getting his hair cut .,0.4995,a little boy getting a hair cut while setting in a yellow toy car .,5.0,4.0,5.0,4.6667,0.6696,0.9365,0.9787,0.8352,0.7247,0.6978,0.6373,0.5979,0.5794,0.544,0.5384,0.5587,0.4995
+3,a little boy is sitting in a chair and getting his hair cut .,0.4995,a little boy getting a hair cut while setting in a yellow toy car .,5.0,4.0,5.0,4.6667,0.6696,0.9365,0.9787,0.8352,0.7247,0.6978,0.6373,0.5979,0.5794,0.544,0.5384,0.5587,0.4995
+4,a toddler sits in a barbers chair getting his hair cut .,0.3173,a toddler sits in a car chair while a woman cuts her hair .,5.0,4.0,5.0,4.6667,0.7144,0.9123,0.9091,0.722,0.6552,0.5961,0.687,0.243,0.6692,0.3435,0.6375,0.1227,0.3173
+5,a young child sits patiently while getting their hair cut .,0.1658,an infant sitting in a toy car has his or her hair cut and combed .,4.0,5.0,4.0,4.3333,0.6006,0.9023,0.9565,0.7026,0.6791,0.6232,0.5573,0.2855,0.5358,0.2776,0.4788,0.1743,0.1658
+6,"a young child is sitting in a barbers chair , and the barber is cutting his hair with electric clippers .",0.1679,a baby cry as a woman cuts his hair and talks to him .,4.0,4.0,4.0,4.0,0.5386,0.8651,0.9614,0.8177,0.845,0.8102,0.4634,0.2976,0.4797,0.3203,0.3701,0.1401,0.1679

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a small child is smiling holding a cup holder , then puts it into their mouth",0.0692,a small baby in a white sweater plays with a canister and puts it in his mouth .,5.0,1.0,5.0,3.6667,0.5497,0.8972,0.9396,0.8512,0.8109,0.7635,0.4926,0.2504,0.3954,0.2132,0.2639,0.0625,0.0692
+2,a little boy is sitting in a chair and eating ice cream .,0.0,a baby stands leaning on a table and puts a piece of wood in her mouth .,3.0,1.0,4.0,2.6667,0.2572,0.8094,0.9756,0.8296,0.8267,0.7738,0.0578,0.0,0.2181,0.0,0.0082,0.0,0.0
+3,a toddler is sitting on the floor and eating a donut .,0.0,a baby stands leaning on a table and puts a piece of wood in her mouth .,4.0,4.0,3.0,3.6667,0.4612,0.8321,0.9592,0.8819,0.8784,0.834,0.3524,0.1673,0.3605,0.164,0.2314,0.0,0.0
+4,a baby is being fed some food and making cooing noises .,0.0761,a baby puts an object in his mouth before smiling .,4.0,3.0,2.0,3.0,0.5277,0.8064,0.9831,0.8879,0.8996,0.8716,0.4111,0.3077,0.4981,0.2656,0.3741,0.133,0.0761
+5,"a small child takes a bite of what appears to be bread , then chews it up .",0.0215,a baby puts an object in his mouth before smiling .,4.0,5.0,4.0,4.3333,0.4691,0.8491,0.9714,0.8284,0.8084,0.7555,0.3748,0.2519,0.4177,0.2334,0.2897,0.0452,0.0215
+6,a toddler is sitting in a shopping cart while chewing on a toy .,0.2476,a toddler is sitting down while biting on a wooden coastal .,3.0,4.0,4.0,3.6667,0.5518,0.8499,0.9677,0.8211,0.7008,0.648,0.4727,0.4542,0.4918,0.3605,0.402,0.3578,0.2476

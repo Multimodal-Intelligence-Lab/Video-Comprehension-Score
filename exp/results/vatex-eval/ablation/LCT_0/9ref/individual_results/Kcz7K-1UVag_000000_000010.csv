@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man does a core workout with the help of a large workout ball .,0.6485,a man is doing exercises on a large ball at the gym,5.0,4.0,5.0,4.6667,0.804,0.9213,1.0,0.8933,0.9155,0.8958,0.7873,0.7182,0.7834,0.6558,0.7649,0.7123,0.6485
+2,a man is doing push ups with a ball in a gym .,0.7342,a man is doing exercises on a large ball at the gym,4.0,4.0,4.0,4.0,0.7852,0.9017,1.0,1.0,1.0,1.0,0.7513,0.7603,0.7603,0.7603,0.7342,0.7342,0.7342
+3,a woman is demonstrating how to do an exercise with an exercise ball .,0.2145,a man exercising in a gym with a yoga ball .,4.0,4.0,4.0,4.0,0.5013,0.881,0.9796,0.8819,0.8923,0.8619,0.4268,0.3533,0.4339,0.3252,0.3356,0.2439,0.2145
+4,the man is doing some exercises using a big ball by his feet for balance .,0.7915,man doing leg exercises while using a ball and his arms for balance .,5.0,4.0,5.0,4.6667,0.8345,0.9358,1.0,1.0,1.0,1.0,0.8231,0.7606,0.8208,0.8049,0.8085,0.74,0.7915
+5,a guy lays on a yoga mat performing leg exercises with a big ball .,0.3448,a man uses a large ball to complete a leg exercise .,4.0,4.0,4.0,4.0,0.7206,0.8781,0.9673,0.7109,0.7473,0.6787,0.679,0.5072,0.6381,0.3826,0.5782,0.477,0.3448
+6,a guy in a gym is doing exercises with his dumbbells .,0.3583,a man at the gym is using a excersice ball to do lunges .,4.0,4.0,4.0,4.0,0.6027,0.8822,0.9474,0.9742,0.9409,0.9198,0.5438,0.5113,0.5089,0.4475,0.4361,0.4324,0.3583

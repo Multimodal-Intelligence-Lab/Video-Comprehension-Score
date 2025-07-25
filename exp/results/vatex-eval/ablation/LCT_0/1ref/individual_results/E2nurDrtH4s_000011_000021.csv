@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,someone is skiing in water behind a boat that is speeding .,0.0,someone is water skiing on the lake on a clear day .,5.0,5.0,5.0,5.0,0.5685,0.8707,0.875,0.209,0.3374,0.2389,0.5044,0.0,0.5069,0.0,0.4336,0.0,0.0
+2,a man is riding a jet ski in a lake and a boat is being pulled by a boat .,0.4337,someone is water skiing on the lake on a clear day .,4.0,4.0,4.0,4.0,0.5359,0.8194,1.0,1.0,1.0,1.0,0.4337,0.5359,0.5359,0.5359,0.4337,0.4337,0.4337
+3,a person is water skiing behind a boat on a lake .,0.67,someone is water skiing on the lake on a clear day .,5.0,5.0,5.0,5.0,0.7656,0.8935,0.8953,0.7144,0.7947,0.7703,0.7377,0.627,0.7382,0.7051,0.7071,0.6129,0.67
+4,"a person is in the water behind a boat wearing water skis , and the boat begins to pick up speed .",0.3472,someone is water skiing on the lake on a clear day .,5.0,4.0,5.0,4.6667,0.5431,0.8432,0.9051,0.8334,0.83,0.7983,0.4582,0.4518,0.4952,0.4495,0.4014,0.3499,0.3472
+5,a person is towed behind a speed boat riding one waterski and reaches down and touches the water with one hand .,0.0,someone is water skiing on the lake on a clear day .,5.0,3.0,4.0,4.0,0.439,0.8114,0.854,0.6051,0.5416,0.4351,0.3086,0.0728,0.3431,0.0,0.1904,0.0,0.0
+6,a person is water skiing across a large body of water .,0.4056,someone is water skiing on the lake on a clear day .,5.0,5.0,5.0,5.0,0.651,0.8747,0.88,0.7379,0.6712,0.6241,0.601,0.527,0.6034,0.48,0.5466,0.4593,0.4056

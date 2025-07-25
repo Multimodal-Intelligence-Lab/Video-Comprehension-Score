@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a toddler girl is show listening to people in the background and then goes over and hugs a smaller girl .,0.1074,two toddlers play together on the floor as their mother talks to them .,5.0,5.0,5.0,5.0,0.3821,0.7866,0.955,0.8692,0.8801,0.8476,0.2144,0.2891,0.353,0.2979,0.1774,0.0962,0.1074
+2,a little girl is walking around on the floor with her parents .,0.2393,two toddlers play together on the floor as their mother talks to them .,4.0,4.0,5.0,4.3333,0.4554,0.8078,1.0,0.8723,0.8863,0.8592,0.3258,0.3756,0.4554,0.3855,0.3258,0.2271,0.2393
+3,a little girl is sitting on the floor and playing with a toy .,0.0,two toddlers play together on the floor as their mother talks to them .,4.0,2.0,5.0,3.6667,0.4927,0.8225,0.9199,0.4852,0.3922,0.261,0.3833,0.0,0.4486,0.0,0.3295,0.0,0.0
+4,a women trying to get a toddler to hug her again .,0.0,two toddlers play together on the floor as their mother talks to them .,3.0,4.0,2.0,3.0,0.3714,0.8052,0.7312,0.2436,0.0,0.0,0.2193,0.0,0.1403,0.0,0.0,0.0,0.0
+5,two girls were sleeping close beside each other while talking,0.0,two toddlers play together on the floor as their mother talks to them .,4.0,4.0,2.0,3.3333,0.2408,0.8292,0.9787,0.8094,0.8101,0.7709,0.0844,0.062,0.2243,0.0628,0.0645,0.0,0.0
+6,a toddler lies on their back while their parent talks to them and makes them smile .,0.1114,two toddlers play together on the floor as their mother talks to them .,4.0,4.0,4.0,4.0,0.4747,0.8332,0.8331,0.6179,0.7095,0.6513,0.3696,0.1498,0.3694,0.2596,0.2432,0.0,0.1114

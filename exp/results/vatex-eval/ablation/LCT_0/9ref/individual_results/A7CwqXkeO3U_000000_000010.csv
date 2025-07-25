@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man standing on the beach with a very long fishing pool and is about to cast the line out into the water .,0.6113,a man is standing on a beach next to the shore and then casts a fishing rod out into the water .,5.0,4.0,5.0,4.6667,0.8255,0.966,0.9697,0.7894,0.8184,0.7945,0.8194,0.5254,0.8087,0.6189,0.802,0.4804,0.6113
+2,a man is standing on the edge of a lake and casts a fishing rod .,0.6621,a man is standing on a beach next to the shore and then casts a fishing rod out into the water .,5.0,4.0,4.0,4.3333,0.6897,0.9184,1.0,1.0,1.0,1.0,0.6621,0.6897,0.6897,0.6897,0.6621,0.6621,0.6621
+3,a man is standing on a beach and casting a fishing pole .,0.9292,a man is standing on the beach and casting his fishing line into the water .,5.0,5.0,5.0,5.0,0.9331,0.9449,1.0,1.0,1.0,1.0,0.9292,0.9331,0.9331,0.9331,0.9292,0.9292,0.9292
+4,man fishing on shore attempts to reel in a fish .,0.4115,a man with a long fishing pole is throwing his reel into the water .,5.0,4.0,5.0,4.6667,0.6278,0.8751,1.0,1.0,1.0,1.0,0.5712,0.4863,0.5782,0.4863,0.514,0.4115,0.4115
+5,a boy is fishing and casts his line into the water .,0.3814,a man looks at his fishing tackle and casts his fishing line out into the ocean .,5.0,4.0,5.0,4.6667,0.6382,0.9179,0.9756,0.8644,0.8611,0.8344,0.5969,0.4533,0.6155,0.4371,0.5716,0.3992,0.3814
+6,a man falling off of a small fishing boat into the ocean .,0.3294,a man looks at his fishing tackle and casts his fishing line out into the ocean .,3.0,2.0,3.0,2.6667,0.5339,0.8791,1.0,0.8408,0.837,0.8103,0.4698,0.4085,0.5095,0.4239,0.4365,0.3115,0.3294

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,several young girls and a boy rise up on one leg and spin in a circle in unison .,0.39,a group of young children perform pirouettes in a dance studio .,4.0,4.0,4.0,4.0,0.5736,0.8009,1.0,0.9579,0.9329,0.9154,0.4646,0.5056,0.5432,0.5159,0.4245,0.3771,0.39
+2,a group of young girls are performing a dance routine .,0.5493,a group of young children perform pirouettes in a dance studio .,5.0,5.0,4.0,4.6667,0.6198,0.9147,1.0,1.0,1.0,1.0,0.568,0.5878,0.6115,0.5878,0.55,0.5493,0.5493
+3,a group of people are dancing in a dance studio .,0.6261,a group of young children practice their dance moves in a studio .,5.0,5.0,5.0,5.0,0.7128,0.9121,0.9714,0.8644,0.8438,0.8284,0.6845,0.6677,0.6984,0.6596,0.6687,0.635,0.6261
+4,a group of girls are dancing at their ballet class .,0.5163,several small children practice their ballet skills during a class .,5.0,5.0,4.0,4.6667,0.7843,0.8736,0.928,0.7735,0.7395,0.697,0.7531,0.6023,0.7455,0.5841,0.7087,0.5375,0.5163
+5,a group of kids performing a dance in a school gymnasium .,0.4768,a group of young children perform pirouettes in a dance studio .,4.0,4.0,4.0,4.0,0.6247,0.8936,0.9804,0.9737,0.9279,0.9193,0.5644,0.5545,0.5815,0.5325,0.5123,0.5014,0.4768
+6,a class of young girls is practicing a dance routine,0.6141,a group of young children practice their dance moves in a studio .,5.0,5.0,4.0,4.6667,0.6593,0.888,1.0,1.0,1.0,1.0,0.6141,0.6593,0.6593,0.6593,0.6141,0.6141,0.6141

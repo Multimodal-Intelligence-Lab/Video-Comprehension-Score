@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man shows how to peal the apple using the driller rotating and using the peeler on the apple,0.0,he's using a drill and a potato peeler peeling a apple .,5.0,5.0,5.0,5.0,0.8028,0.8942,0.7588,0.2782,0.2095,0.116,0.7794,0.1009,0.6995,0.0154,0.6905,0.074,0.0
+2,a person is using an apple peeler to peel an apple .,0.3766,he's using a drill and a potato peeler peeling a apple .,5.0,5.0,4.0,4.6667,0.6806,0.919,0.9162,0.6434,0.5932,0.5574,0.6524,0.476,0.6514,0.4023,0.6207,0.4534,0.3766
+3,a person is using an apple peeler to peel an apple .,0.3766,he's using a drill and a potato peeler peeling a apple .,5.0,5.0,4.0,4.6667,0.6806,0.919,0.9162,0.6434,0.5932,0.5574,0.6524,0.476,0.6514,0.4023,0.6207,0.4534,0.3766
+4,a man is peeling apples on a drill driven apple peeler while people are talking .,0.0045,he's using a drill and a potato peeler peeling a apple .,4.0,4.0,4.0,4.0,0.7409,0.8794,0.7607,0.3707,0.2978,0.2016,0.7054,0.1506,0.6593,0.0522,0.6127,0.1078,0.0045
+5,a person starts peeling the skin of an apple using a knife .,0.0,he's using a drill and a potato peeler peeling a apple .,4.0,4.0,4.0,4.0,0.5391,0.8661,0.6788,0.1953,0.3033,0.1956,0.4678,0.0,0.321,0.0,0.216,0.0,0.0
+6,a person is demonstrating how to use a gadget to peel an apple .,0.5217,he's using a drill and a potato peeler peeling a apple .,5.0,5.0,5.0,5.0,0.6572,0.8365,0.9599,0.8723,0.8567,0.8287,0.5903,0.607,0.6429,0.5999,0.5731,0.5302,0.5217

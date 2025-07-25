@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,some children are in a gym demonstrating their skills and one child falls off the gym equipment .,0.0,a small boy takes a tumble off of an object while playing at the gym .,5.0,5.0,4.0,4.6667,0.7343,0.8165,0.8182,0.3151,0.237,0.0656,0.6746,0.0674,0.6753,0.0,0.6023,0.0,0.0
+2,a young girl is jumping up and down on a trampoline .,0.0,a small boy takes a tumble off of an object while playing at the gym .,1.0,2.0,2.0,1.6667,0.1245,0.7481,0.9697,1.0,0.9744,0.9657,0.0,0.1245,0.0972,0.1015,0.0,0.0,0.0
+3,a group of people are in a gym and they are doing a jump jump .,0.0,a small boy takes a tumble off of an object while playing at the gym .,4.0,4.0,2.0,3.3333,0.3706,0.796,0.8571,0.5743,0.4796,0.3462,0.2093,0.0,0.2657,0.0,0.0775,0.0,0.0
+4,"a young boy is shown riding a body board on an artificial wave , then he falls .",0.0,a small boy takes a tumble off of an object while playing at the gym .,3.0,3.0,2.0,2.6667,0.4023,0.7884,0.8373,0.5896,0.5687,0.453,0.2419,0.0,0.2862,0.0,0.0946,0.0,0.0
+5,a group of kids ride up and down a ramp before one tries to do a jump and falls .,0.0,a small boy takes a tumble off of an object while playing at the gym .,4.0,4.0,4.0,4.0,0.3664,0.7665,0.9424,0.6747,0.6796,0.5819,0.1734,0.0609,0.3277,0.0677,0.1229,0.0,0.0
+6,some kids are playing on a log when a little boy falls off,0.0,a small boy takes a tumble off of an object while playing at the gym .,4.0,4.0,4.0,4.0,0.4797,0.8617,0.5,0.2656,0.0,0.0,0.3962,0.0,0.0,0.0,0.0,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a little , toddler girl , trying to dance , while watching a music video on the tv .",0.0478,a girl observes while trying to mimic the dance on the television .,4.0,5.0,5.0,4.6667,0.7518,0.8936,0.8654,0.3603,0.3123,0.2304,0.7222,0.1491,0.7132,0.0852,0.679,0.1143,0.0478
+2,a little girl is standing in front of a tv and is dancing to music .,0.2406,a girl observes while trying to mimic the dance on the television .,5.0,5.0,5.0,5.0,0.6823,0.8446,0.9404,0.5778,0.5263,0.4391,0.6238,0.3812,0.6622,0.3057,0.6,0.3231,0.2406
+3,a little girl is standing in front of a tv and she is dancing .,0.3225,a girl observes while trying to mimic the dance on the television .,5.0,5.0,5.0,5.0,0.7006,0.8473,0.8537,0.4188,0.5619,0.4829,0.6466,0.1703,0.6492,0.3746,0.586,0.1011,0.3225
+4,a toddler girl dances across the floor while listening to music .,0.0,a girl observes while trying to mimic the dance on the television .,4.0,5.0,4.0,4.3333,0.4652,0.8086,0.8587,0.2039,0.0,0.0,0.3387,0.0,0.3773,0.0,0.2299,0.0,0.0
+5,a group of children dancing together for a play as they are being watched by a crowd of people,0.0,a girl observes while trying to mimic the dance on the television .,1.0,1.0,2.0,1.3333,0.3236,0.7941,0.8471,0.2714,0.1166,0.0,0.1482,0.0,0.2015,0.0,0.0,0.0,0.0
+6,"a little girl in a silver dress is shown performing on stage , dancing to the music playing in the background .",0.0,a girl observes while trying to mimic the dance on the television .,4.0,1.0,4.0,3.0,0.3808,0.7966,0.9152,0.6512,0.6927,0.6142,0.2226,0.0492,0.3234,0.106,0.1506,0.0,0.0

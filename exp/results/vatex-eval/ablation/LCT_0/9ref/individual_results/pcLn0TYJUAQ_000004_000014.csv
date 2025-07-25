@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man in a black shirts is doing push ups on black blocks while someone speaks to him .,0.467,a man is in a gym and is doing pushups on blocks while moving .,5.0,5.0,5.0,5.0,0.5561,0.8391,1.0,1.0,1.0,1.0,0.467,0.5561,0.5561,0.5561,0.467,0.467,0.467
+2,a man is doing push ups on a mat in a gym .,0.5193,a man does a version of a push up during a workout routine .,5.0,5.0,5.0,5.0,0.7044,0.9084,1.0,1.0,1.0,1.0,0.6618,0.5543,0.6571,0.58,0.6075,0.4814,0.5193
+3,a man in a gym is doing push ups on the floor .,0.6685,a person in the gym with others doing work outs with his hands while on the floor moving,5.0,5.0,5.0,5.0,0.7165,0.8704,1.0,1.0,1.0,1.0,0.6736,0.7165,0.7106,0.712,0.6668,0.6736,0.6685
+4,a man is doing push-ups in a gym using a support block .,0.2631,a man doing push ups excercises over a brown mat being watched by two others,5.0,5.0,5.0,5.0,0.8235,0.9201,0.9851,0.9319,0.9408,0.9258,0.8082,0.4072,0.7999,0.4129,0.7825,0.256,0.2631
+5,a man exercises in the corner of a room in a push up position .,0.4057,a man demonstrating different types of push up exercises .,5.0,4.0,4.0,4.3333,0.7058,0.8784,0.9706,0.8883,0.8851,0.8577,0.6612,0.4184,0.6424,0.4779,0.5882,0.3379,0.4057
+6,a man is on a platform performing a series of pushups .,0.5326,a man demonstrating different types of push up exercises .,5.0,4.0,5.0,4.6667,0.6864,0.8457,1.0,0.9633,0.9381,0.9191,0.6145,0.6181,0.6789,0.6118,0.6134,0.5403,0.5326

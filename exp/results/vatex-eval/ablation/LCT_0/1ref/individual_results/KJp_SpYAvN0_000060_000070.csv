@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a baby crawling on a floor while another person is watching her .,0.4504,"in a room , a baby crawls on a checkered tile floor toward a couch .",5.0,5.0,5.0,5.0,0.6684,0.8587,0.9497,0.6937,0.7026,0.6537,0.6139,0.522,0.6509,0.5281,0.5934,0.4434,0.4504
+2,a baby crawls across the floor while a woman talks to him .,0.3704,"in a room , a baby crawls on a checkered tile floor toward a couch .",3.0,3.0,5.0,3.6667,0.6446,0.8665,0.9474,0.6453,0.6515,0.5978,0.5898,0.4492,0.6248,0.4544,0.567,0.3643,0.3704
+3,a baby crawls on the floor while a woman talks to him .,0.5281,"in a room , a baby crawls on a checkered tile floor toward a couch .",3.0,3.0,5.0,3.6667,0.6377,0.874,0.9592,0.8819,0.8784,0.8609,0.5855,0.5892,0.6223,0.5876,0.5678,0.53,0.5281
+4,a baby is trying to learn to crawl on the rug on the floor .,0.036,"in a room , a baby crawls on a checkered tile floor toward a couch .",5.0,4.0,4.0,4.3333,0.6079,0.855,0.883,0.5168,0.4781,0.3896,0.5415,0.2052,0.556,0.1414,0.4807,0.1077,0.036
+5,"young child baby sounds , crawling across a floor to a large pillow .",0.4005,"in a room , a baby crawls on a checkered tile floor toward a couch .",4.0,2.0,3.0,3.0,0.6075,0.8561,0.9453,0.743,0.7648,0.7253,0.5415,0.4717,0.5847,0.4868,0.5149,0.3829,0.4005
+6,a small baby is steadily crawling across a padded floor .,0.0,"in a room , a baby crawls on a checkered tile floor toward a couch .",4.0,4.0,4.0,4.0,0.6549,0.8508,0.8391,0.3371,0.2215,0.085,0.5944,0.0,0.5887,0.0,0.5166,0.0,0.0

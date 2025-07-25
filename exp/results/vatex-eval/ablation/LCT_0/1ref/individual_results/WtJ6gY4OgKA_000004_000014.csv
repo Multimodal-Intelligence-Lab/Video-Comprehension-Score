@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two men in a park are preparing a pig for roasting .,0.4244,two men are carrying a pig that has been skewered onto an open pit fire .,5.0,5.0,5.0,5.0,0.6379,0.8534,0.9118,0.7322,0.7371,0.6919,0.5758,0.5055,0.6029,0.5088,0.5347,0.4206,0.4244
+2,a group of people are walking around in a muddy area .,0.0,two men are carrying a pig that has been skewered onto an open pit fire .,1.0,5.0,2.0,2.6667,0.1014,0.768,0.9557,0.8344,0.8473,0.8012,0.0,0.0,0.0597,0.0,0.0,0.0,0.0
+3,a man is pushing a wheelbarrow and another man is pushing it .,0.0,two men are carrying a pig that has been skewered onto an open pit fire .,1.0,4.0,2.0,2.3333,0.2556,0.7846,0.908,0.7193,0.7238,0.648,0.0513,0.0,0.1802,0.0,0.0,0.0,0.0
+4,"a man cooking a hole pig on a spit , constantly turning it to cook evenly and to keep from burning .",0.3638,two men are carrying a pig that has been skewered onto an open pit fire .,2.0,5.0,3.0,3.3333,0.5683,0.801,0.9529,0.8195,0.8472,0.8093,0.461,0.4732,0.5469,0.4904,0.4344,0.3423,0.3638
+5,a group of young men roasting a pig over an outdoor fire .,0.1462,two men are carrying a pig that has been skewered onto an open pit fire .,4.0,5.0,5.0,4.6667,0.6483,0.8502,0.8993,0.4996,0.4993,0.4111,0.5864,0.2282,0.609,0.2277,0.5401,0.1467,0.1462
+6,a full sized pig is being turned and cooked over a hot furnace as the man turns it by hand using a log .,0.0,two men are carrying a pig that has been skewered onto an open pit fire .,2.0,5.0,3.0,3.3333,0.5852,0.7892,0.8461,0.3539,0.3739,0.2066,0.4744,0.0,0.5098,0.0,0.3788,0.0,0.0

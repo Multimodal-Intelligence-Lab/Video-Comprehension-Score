@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a tennis show is being tied while a narrator in a foreign language walks the video through .,0.0,a woman is demonstrating how to tie a shoe in slow motion .,4.0,4.0,4.0,4.0,0.32,0.7974,0.9655,0.821,0.8311,0.7882,0.1472,0.1717,0.2957,0.1818,0.1167,0.0,0.0
+2,a person is demonstrating how to tie a shoe laces .,0.5957,a woman is demonstrating how to tie a shoe in slow motion .,5.0,5.0,5.0,5.0,0.6669,0.9069,0.941,0.9679,0.9085,0.8991,0.6328,0.6559,0.6461,0.6334,0.6097,0.6206,0.5957
+3,a person is demonstrating how to tie a shoe lace .,0.6119,a woman is demonstrating how to tie a shoe in slow motion .,5.0,5.0,5.0,5.0,0.6716,0.901,0.9714,0.9679,0.9393,0.9326,0.6355,0.6607,0.6619,0.6504,0.6248,0.6234,0.6119
+4,a woman gives a lesson to help someone tie their shoes .,0.312,a woman is demonstrating how to tie a shoe in slow motion .,5.0,5.0,5.0,5.0,0.7194,0.8599,0.8203,0.6445,0.5365,0.461,0.6737,0.5059,0.658,0.3557,0.6023,0.4724,0.312
+5,a woman is making an instructional video on how to tie shoelaces on a pair of sneakers .,0.2728,a woman is demonstrating how to tie a shoe in slow motion .,5.0,4.0,4.0,4.3333,0.7256,0.8484,0.8951,0.5379,0.508,0.42,0.6766,0.3632,0.6935,0.3219,0.6387,0.317,0.2728
+6,a woman demonstrates how to tie the shoelaces on a purple shoe,0.5032,a woman is demonstrating how to tie a shoe in slow motion .,5.0,4.0,4.0,4.3333,0.6444,0.9123,0.9167,0.6857,0.7845,0.7638,0.6102,0.4814,0.6121,0.5467,0.5748,0.4316,0.5032

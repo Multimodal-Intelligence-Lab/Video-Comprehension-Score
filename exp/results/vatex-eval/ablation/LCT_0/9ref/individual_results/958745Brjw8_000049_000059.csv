@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a group of girls are doing yoga and using hula hoops in a dim room , they are wearing neon style lights .",0.5642,people stretch and use hula hoops to exercise while doing so in a black light .,5.0,5.0,5.0,5.0,0.693,0.8659,0.9725,0.9049,0.9197,0.9036,0.6454,0.6305,0.664,0.6364,0.6119,0.5572,0.5642
+2,a woman is hula hooping in front of a crowd of people .,0.0,a group of ladies dressed in neon hula hoops are dancing around in a studio,5.0,4.0,5.0,4.6667,0.4616,0.85,0.9804,0.8787,0.6554,0.5738,0.3535,0.3621,0.3891,0.1575,0.2583,0.211,0.0
+3,a man is performing a hula hoop in front of a crowd .,0.2132,a group of girls dance with hula hoops which have some lighting system turned on,4.0,4.0,4.0,4.0,0.4177,0.8208,0.9804,1.0,0.9791,0.9742,0.2826,0.4177,0.3449,0.3614,0.1929,0.2826,0.2132
+4,a woman dances with a hula hoop while music plays .,0.4384,women dancing in the dark with neon-lit hula hoops to music .,5.0,4.0,5.0,4.6667,0.6743,0.8991,0.9831,0.979,0.9641,0.9559,0.6378,0.5426,0.6298,0.4809,0.5883,0.4912,0.4384
+5,two girls are in a gym doing hula hoops while others walk around the gym .,0.5102,woemn are in a gym exercising and running hula hoop around their stomachs in a studio .,5.0,2.0,3.0,3.3333,0.676,0.8751,0.975,0.8803,0.8953,0.8603,0.6297,0.5352,0.6075,0.5714,0.5515,0.4688,0.5102
+6,"girl jumps using a hula hoop , spins hoop around arm , spins hoop around waist , and jumps with hoop again .",0.1212,woemn are in a gym exercising and running hula hoop around their stomachs in a studio .,5.0,4.0,4.0,4.3333,0.495,0.836,0.9557,0.7874,0.8022,0.7558,0.3855,0.27,0.3944,0.2835,0.263,0.0986,0.1212

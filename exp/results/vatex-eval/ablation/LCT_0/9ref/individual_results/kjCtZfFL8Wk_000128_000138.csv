@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a chef pushes aside some carrot peelings and starts to top and tail a carrot using a chef's knife .,0.2858,a man chops a carrot on a cutting board while describing how he does it .,5.0,5.0,5.0,5.0,0.6348,0.8402,0.914,0.8498,0.8356,0.7912,0.5654,0.4472,0.5711,0.4378,0.4631,0.2977,0.2858
+2,a person is using a knife to cut carrots on a cutting board .,0.6435,a person in the kitchen using a knife to chop vegetables on a cutting board,5.0,5.0,5.0,5.0,0.7049,0.9484,0.9859,0.8542,0.873,0.8661,0.6888,0.6545,0.7006,0.6619,0.6844,0.6357,0.6435
+3,a person is using a knife to cut a piece of bread .,0.23,a person in the kitchen using a knife to chop vegetables on a cutting board,4.0,4.0,4.0,4.0,0.5489,0.8988,0.9655,0.7988,0.836,0.795,0.4981,0.2923,0.5328,0.3079,0.4802,0.2126,0.23
+4,a person using a knife sharpener then cutting carrots on a cutting board .,0.3239,a person in the kitchen using a knife to chop vegetables on a cutting board,4.0,4.0,4.0,4.0,0.6399,0.9439,0.9321,0.8153,0.8047,0.7622,0.5889,0.4401,0.5879,0.4328,0.5295,0.3183,0.3239
+5,a man demonstrates how to properly cut a carrot into pieces,0.6648,a man giving instructions on how to smoothly chop up a carrot .,5.0,5.0,4.0,4.6667,0.83,0.8813,0.9497,0.6948,0.7307,0.6883,0.8032,0.5648,0.8009,0.6756,0.7695,0.5502,0.6648
+6,a person demonstrates how to properly cut up a carrot .,0.7041,a man giving instructions on how to smoothly chop up a carrot .,5.0,5.0,5.0,5.0,0.7905,0.8987,1.0,0.8408,0.827,0.798,0.7553,0.7508,0.7905,0.7467,0.7553,0.7089,0.7041

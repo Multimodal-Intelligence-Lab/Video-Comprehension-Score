@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman removes a shot glass from a man's sizeable pants and drinks the shot without using her hands,0.2954,a woman pulls a cup out of a man's groin area using her mouth .,5.0,5.0,5.0,5.0,0.5059,0.8418,0.9593,0.7898,0.8329,0.8016,0.4131,0.3744,0.485,0.4068,0.3882,0.2569,0.2954
+2,a man is sitting on a chair and another man is sitting on the floor .,0.0,a woman pulls a cup out of a man's groin area using her mouth .,2.0,1.0,3.0,2.0,0.065,0.7764,0.9231,0.5261,0.5053,0.3629,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a group of people are sitting around a table and a man is sitting on a chair .,0.0,a woman pulls a cup out of a man's groin area using her mouth .,2.0,1.0,4.0,2.3333,0.0498,0.7739,0.8294,0.2703,0.4077,0.2346,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,a woman lick another woman and then drinks a shot of alcohol,0.0,a woman pulls a cup out of a man's groin area using her mouth .,4.0,4.0,4.0,4.0,0.3031,0.8016,0.8119,0.6422,0.5757,0.4707,0.1306,0.0,0.1416,0.0,0.0,0.0,0.0
+5,"a man puts alcohol in his mouth , tilts his head back , and the lady puts a lighter towards his mouth .",0.0,a woman pulls a cup out of a man's groin area using her mouth .,3.0,1.0,2.0,2.0,0.3521,0.8169,0.7784,0.4109,0.4224,0.2929,0.2069,0.0,0.1677,0.0,0.0,0.0,0.0
+6,a woman is trying to unscrew a bottle of wine and then puts the bottle between her legs .,0.0,a woman pulls a cup out of a man's groin area using her mouth .,2.0,2.0,2.0,2.0,0.3129,0.7795,0.8749,0.4771,0.6174,0.5092,0.1185,0.0,0.2146,0.0,0.0,0.0,0.0

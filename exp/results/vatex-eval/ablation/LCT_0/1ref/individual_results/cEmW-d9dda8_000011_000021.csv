@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl sits and smiles while holding a stuffed dog before her ear gets pierced .,0.2904,girl holding stuffed animal getting her ears pierced .,5.0,5.0,5.0,5.0,0.7048,0.9344,0.9,0.5127,0.5145,0.4805,0.6841,0.3086,0.672,0.3112,0.649,0.2877,0.2904
+2,a woman is getting her hair pierced by a woman .,0.0,girl holding stuffed animal getting her ears pierced .,4.0,4.0,4.0,4.0,0.3455,0.8526,0.8067,0.0,0.0,0.0,0.2324,0.0,0.1887,0.0,0.0485,0.0,0.0
+3,a young girl is sitting in a chair and she is looking at her phone .,0.0,girl holding stuffed animal getting her ears pierced .,4.0,3.0,4.0,3.6667,0.1842,0.786,0.92,0.8022,0.7618,0.6969,0.0,0.0,0.1133,0.0,0.0,0.0,0.0
+4,a girl sits down to get her ear lobe pierced .,0.1772,girl holding stuffed animal getting her ears pierced .,5.0,5.0,5.0,5.0,0.57,0.8778,0.9199,0.6435,0.5954,0.5391,0.5101,0.3317,0.5325,0.2777,0.4674,0.2387,0.1772
+5,a person pierces a young girls ear using a needle .,0.0,girl holding stuffed animal getting her ears pierced .,4.0,4.0,4.0,4.0,0.5146,0.8271,0.6957,0.2578,0.3762,0.2458,0.4131,0.0,0.3022,0.0,0.1564,0.0,0.0
+6,a girl is getting her ear pierced by a body piercer .,0.2392,girl holding stuffed animal getting her ears pierced .,5.0,5.0,5.0,5.0,0.6088,0.9148,0.7595,0.719,0.5645,0.5239,0.5724,0.456,0.485,0.2847,0.437,0.4053,0.2392

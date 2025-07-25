@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two women crack eggs to show how to make scrambled eggs .,0.6681,two ladies who are in a kitchen cracking eggs to make something .,5.0,5.0,5.0,5.0,0.8562,0.9465,0.9424,0.7938,0.7644,0.7423,0.8438,0.7078,0.8385,0.6933,0.8245,0.6804,0.6681
+2,a woman is demonstrating how to make a sandwich in a kitchen .,0.0,women are in a kitchen and they are cooking with eggs .,3.0,4.0,4.0,3.6667,0.4296,0.8534,0.9115,0.74,0.6932,0.623,0.3316,0.0755,0.303,0.0835,0.1657,0.0,0.0
+3,two girls are in a kitchen and one of them is making something .,0.4683,two ladies who are in a kitchen cracking eggs to make something .,4.0,5.0,4.0,4.3333,0.5231,0.8969,1.0,1.0,1.0,1.0,0.4683,0.5231,0.5231,0.5231,0.4683,0.4683,0.4683
+4,someone scrambled eggs in a pan while shaking the pan and whipping the eggs with a fork .,0.1722,a couple of people show two different ways to make scrabble eggs,2.0,2.0,2.0,2.0,0.5666,0.8188,0.8938,0.7742,0.7551,0.6961,0.4615,0.2089,0.4528,0.3337,0.3202,0.0241,0.1722
+5,a woman is beating eggs and then pouring it into the pan to make scrambled eggs .,0.4599,two women demonstrate two different ways to make scrambled eggs .,3.0,3.0,4.0,3.3333,0.6141,0.8804,0.9398,0.8619,0.8179,0.7916,0.5583,0.5409,0.5893,0.5282,0.53,0.4545,0.4599
+6,a person beating eggs in a bowl and cooking it in a pan .,0.0484,two women are cracking several eggs each into different bowls .,3.0,3.0,3.0,3.0,0.5605,0.8626,0.8798,0.7486,0.6815,0.6188,0.4905,0.298,0.4127,0.205,0.3191,0.1793,0.0484

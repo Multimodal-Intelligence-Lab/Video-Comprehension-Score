@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,in a room a person is playing with fidget spinner .,0.0,person twirling a light blue fidget spinner in their hand .,5.0,5.0,5.0,5.0,0.6064,0.8887,0.8466,0.4302,0.2841,0.1945,0.5571,0.0604,0.5351,0.0,0.4769,0.0,0.0
+2,a person is demonstrating how to use a fidget spinner .,0.1187,person twirling a light blue fidget spinner in their hand .,5.0,5.0,4.0,4.6667,0.6126,0.8858,0.9023,0.5751,0.5041,0.4402,0.5627,0.3064,0.5706,0.1905,0.5153,0.2396,0.1187
+3,a person is showing how to use a fidget spinner .,0.3502,person twirling a light blue fidget spinner in their hand .,5.0,5.0,4.0,4.6667,0.6114,0.8869,0.9231,0.7131,0.6743,0.6328,0.5618,0.455,0.579,0.4237,0.5253,0.3855,0.3502
+4,a child is showing how they use their fidget spinner .,0.441,person twirling a light blue fidget spinner in their hand .,5.0,5.0,4.0,4.6667,0.5576,0.8598,0.9756,0.9301,0.9206,0.9076,0.4854,0.5244,0.5465,0.5194,0.4726,0.4468,0.441
+5,a boy spinning a black a red fidget spinner between his fingers .,0.4358,person twirling a light blue fidget spinner in their hand .,3.0,4.0,4.0,3.6667,0.5027,0.8814,1.0,1.0,1.0,1.0,0.4358,0.5027,0.5027,0.5027,0.4358,0.4358,0.4358
+6,a weird person is spinning fidget spinners on her face .,0.2883,person twirling a light blue fidget spinner in their hand .,3.0,4.0,4.0,3.6667,0.4992,0.8938,0.9199,0.8295,0.7872,0.7619,0.4397,0.3963,0.4556,0.3639,0.3909,0.3246,0.2883

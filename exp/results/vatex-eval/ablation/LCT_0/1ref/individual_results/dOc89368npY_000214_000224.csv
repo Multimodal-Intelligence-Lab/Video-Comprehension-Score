@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man in a wheelchair fights another man in a boxing ring,0.3103,two men are boxing in a ring at the gym and one of them is in a wheelchair .,5.0,5.0,5.0,5.0,0.8392,0.8902,0.5387,0.3646,0.4349,0.3652,0.8194,0.2429,0.4504,0.3266,0.4371,0.2246,0.3103
+2,a group of people are in a wheelchair and one of them is in a wheelchair .,0.0,two men are boxing in a ring at the gym and one of them is in a wheelchair .,1.0,3.0,4.0,2.6667,0.4763,0.8613,0.8803,0.5469,0.4578,0.3705,0.392,0.0425,0.4051,0.0,0.3093,0.0,0.0
+3,two men are in a wheelchair and one of them falls down .,0.0,two men are boxing in a ring at the gym and one of them is in a wheelchair .,4.0,3.0,2.0,3.0,0.5601,0.9097,0.8571,0.4905,0.3732,0.311,0.5164,0.0903,0.4868,0.0,0.4358,0.0133,0.0
+4,"a man in a gym swings , then kicks a punching bag",0.0,two men are boxing in a ring at the gym and one of them is in a wheelchair .,3.0,3.0,2.0,2.6667,0.3393,0.8081,0.8397,0.2288,0.0,0.0,0.1824,0.0,0.2131,0.0,0.0263,0.0,0.0
+5,"two men spar in a boxing gym , wearing gloves and headgear and throw punches at one another .",0.0216,two men are boxing in a ring at the gym and one of them is in a wheelchair .,4.0,4.0,4.0,4.0,0.5655,0.8821,0.8892,0.456,0.5035,0.4372,0.5074,0.038,0.5113,0.1221,0.446,0.0,0.0216
+6,a man at a karate tournament breaks several pieces of suspended boards with his fists .,0.0,two men are boxing in a ring at the gym and one of them is in a wheelchair .,2.0,2.0,2.0,2.0,0.2148,0.756,0.8972,0.6374,0.6434,0.5283,0.0,0.0,0.1249,0.0,0.0,0.0,0.0

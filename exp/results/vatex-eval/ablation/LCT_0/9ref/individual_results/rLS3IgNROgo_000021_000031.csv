@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a small child has sticks that he's swinging around at home while the other guy holds a sword .,0.3453,a young boy is play fighting using two sticks with another person who has a sword .,5.0,5.0,5.0,5.0,0.7067,0.8422,0.9916,0.802,0.849,0.8071,0.6439,0.41,0.6714,0.4308,0.6011,0.2705,0.3453
+2,a little girl is using a broom to sweep the floor .,0.0,two little boys sword fight with wooden sticks and swords .,3.0,1.0,1.0,1.6667,0.2456,0.8074,1.0,1.0,1.0,1.0,0.0456,0.2045,0.2057,0.2045,0.0,0.0,0.0
+3,a little boy is playing with a broom and a broom .,0.3501,a little boy playing and fighting with swords against his dad .,3.0,3.0,3.0,3.0,0.4742,0.8857,1.0,1.0,1.0,1.0,0.3569,0.4244,0.4632,0.4244,0.3501,0.3501,0.3501
+4,"two kids are play fighting with swords , before one of them knees the other with a sword .",0.4857,a little boy playing and fighting with swords against his dad .,4.0,4.0,4.0,4.0,0.6249,0.9018,0.9318,0.9766,0.9183,0.9073,0.584,0.5737,0.5876,0.5466,0.5295,0.5164,0.4857
+5,two kids playing sword fight with dummy swords at home for fun .,0.544,two little boys sword fight with wooden sticks and swords .,4.0,4.0,4.0,4.0,0.6517,0.8816,0.9665,0.8638,0.867,0.8491,0.6046,0.5907,0.6396,0.5983,0.5909,0.5353,0.544
+6,two small children prentend to sword fight in a livingroom .,0.3867,two little boys sword fight with wooden sticks and swords .,4.0,4.0,4.0,4.0,0.5992,0.8916,0.9599,0.9589,0.9357,0.9221,0.5504,0.4659,0.5612,0.4531,0.5078,0.3983,0.3867

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man holds a wad of bills in his hand and shuffles through them one by one .,0.4761,a man is counting a wad of money at a high speed .,5.0,5.0,4.0,4.6667,0.6157,0.8258,0.9667,0.8879,0.8884,0.8649,0.5346,0.5672,0.6024,0.5674,0.5185,0.4758,0.4761
+2,a person is showing how to use a money machine .,0.2164,a man is counting a wad of money at a high speed .,4.0,2.0,3.0,3.0,0.3497,0.8299,1.0,1.0,1.0,1.0,0.2164,0.3497,0.3497,0.3497,0.2164,0.2164,0.2164
+3,a man is counting money in a foreign language .,0.5863,a man is counting a wad of money at a high speed .,4.0,4.0,4.0,4.0,0.6298,0.8948,1.0,1.0,1.0,1.0,0.5863,0.6298,0.6298,0.6298,0.5863,0.5863,0.5863
+4,money flips in a machine as it is counted with stacks of counted bills around it .,0.0,a man is counting a wad of money at a high speed .,4.0,4.0,4.0,4.0,0.5186,0.8284,0.7986,0.2598,0.0881,0.0,0.4188,0.0,0.3971,0.0,0.2723,0.0,0.0
+5,a man counts his money in his hands while sitting at a table .,0.3367,a man is counting a wad of money at a high speed .,5.0,5.0,5.0,5.0,0.5869,0.8556,0.873,0.6243,0.728,0.6821,0.5171,0.3382,0.5268,0.4325,0.4469,0.2265,0.3367
+6,a man with a bunch of money is counting one dollar bills,0.0,a man is counting a wad of money at a high speed .,4.0,4.0,4.0,4.0,0.6501,0.8789,0.8587,0.4852,0.3668,0.2795,0.6019,0.2082,0.5925,0.026,0.5364,0.1447,0.0

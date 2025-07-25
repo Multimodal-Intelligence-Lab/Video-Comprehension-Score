@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is using both hands to fluff up a girls' hair and give it volume .,0.1222,a man manipulates someone else's long hair with his hand .,5.0,4.0,5.0,4.6667,0.5646,0.8428,1.0,0.8933,0.9155,0.893,0.4834,0.3094,0.4906,0.2602,0.3956,0.1806,0.1222
+2,a woman is massaging a woman ' s head while another woman is talking .,0.2665,"a man massaging a woman's head , weaving through her long blond hair .",4.0,3.0,4.0,3.6667,0.5812,0.89,0.96,0.803,0.7908,0.7318,0.5229,0.3682,0.5308,0.3657,0.4531,0.2694,0.2665
+3,a woman is massaging another woman ' s head and neck .,0.1935,a man massages a woman's head and runs his fingers through her hair .,4.0,4.0,4.0,4.0,0.6734,0.8846,0.9787,0.8094,0.8101,0.7555,0.6237,0.3648,0.6365,0.2554,0.579,0.3119,0.1935
+4,a man sitting in a chair has his head and hair massaged .,0.524,a man stands over a seated woman holding her head with one hand and massages her scalp with the other hand .,4.0,4.0,4.0,4.0,0.6294,0.8881,0.9804,0.9751,0.9616,0.9554,0.5827,0.5966,0.5925,0.591,0.5258,0.5306,0.524
+5,a man rubs and massages another mans head while sitting .,0.1088,a man massages a woman's head and runs his fingers through her hair .,4.0,4.0,4.0,4.0,0.6314,0.8721,0.8777,0.5446,0.6722,0.5971,0.5762,0.0,0.5408,0.1867,0.4721,0.0,0.1088
+6,a man is giving a massage to a woman .,0.5165,a man is doing some sort of head massage to a woman in a quiet room .,5.0,5.0,5.0,5.0,0.6512,0.9116,1.0,1.0,1.0,1.0,0.5977,0.5899,0.5643,0.5681,0.5122,0.5409,0.5165

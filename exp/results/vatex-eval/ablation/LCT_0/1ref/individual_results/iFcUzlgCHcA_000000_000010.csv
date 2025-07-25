@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people near snowy mountains as a person uses a parachute to lift himself high off the ground,0.0,a person goes hang gliding off of the edge of a cliff terrain .,5.0,4.0,4.0,4.3333,0.3368,0.8029,0.881,0.7293,0.7403,0.6765,0.174,0.0906,0.2472,0.1041,0.0624,0.0,0.0
+2,a person is paragliting in the air with a parachute .,0.2392,a person goes hang gliding off of the edge of a cliff terrain .,5.0,5.0,5.0,5.0,0.4945,0.8032,0.9412,0.8555,0.8272,0.7849,0.3707,0.4091,0.4629,0.3889,0.3313,0.2644,0.2392
+3,a person is parachuting over a mountain with a parachute .,0.0,a person goes hang gliding off of the edge of a cliff terrain .,5.0,5.0,5.0,5.0,0.3816,0.8036,0.8824,0.7574,0.6918,0.6165,0.2305,0.1835,0.2992,0.1062,0.1279,0.0,0.0
+4,a duo of people jump from a cliff and glide in a blue parachute,0.0,a person goes hang gliding off of the edge of a cliff terrain .,4.0,4.0,4.0,4.0,0.3631,0.8318,0.8634,0.3333,0.481,0.376,0.2343,0.0,0.2623,0.0,0.1131,0.0,0.0
+5,"a man dressed in ski clothes with a parachute on his back , climbs to the top of a tall building and jumps off and opens his parachute to land safely .",0.0,a person goes hang gliding off of the edge of a cliff terrain .,4.0,4.0,3.0,3.6667,0.3063,0.7668,0.963,0.6881,0.7149,0.6282,0.0954,0.0,0.2797,0.0297,0.0606,0.0,0.0
+6,a person wearing skis slides off a high ledge and the parachute opens .,0.0,a person goes hang gliding off of the edge of a cliff terrain .,4.0,4.0,1.0,3.0,0.3918,0.8035,0.9424,0.5948,0.594,0.4947,0.2431,0.0,0.3547,0.0,0.1968,0.0,0.0

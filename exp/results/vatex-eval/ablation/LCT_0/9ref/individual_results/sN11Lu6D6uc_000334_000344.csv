@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,men seated in a public place have their bare legs waxed by women to remove hair .,0.6295,multiple men get their legs waxed at an event together .,5.0,5.0,5.0,5.0,0.7796,0.8676,0.9665,0.7468,0.7426,0.6827,0.7372,0.6254,0.772,0.6535,0.7281,0.6016,0.6295
+2,a group of people are gathered around a table and they are having a conversation .,0.0,multiple men get their legs waxed at an event together .,4.0,4.0,2.0,3.3333,0.3494,0.8343,1.0,0.8723,0.8863,0.8624,0.1934,0.08,0.2255,0.0946,0.0398,0.0,0.0
+3,a group of people are gathered around a table and a man is proposing to a woman .,0.0,multiple men get their legs waxed at an event together .,4.0,3.0,2.0,3.0,0.2321,0.8263,0.971,0.8933,0.8958,0.8739,0.0707,0.1404,0.2092,0.1428,0.0429,0.0,0.0
+4,a man on a cot as a woman waxes the hair on his legs .,0.2921,men sit waiting and one has wax strip applied to the hair on his legs .,5.0,4.0,4.0,4.3333,0.5754,0.8572,1.0,0.8723,0.8863,0.8547,0.5047,0.4075,0.569,0.3932,0.4971,0.2847,0.2921
+5,a woman is waxing a man's leg with waxing paper a few times in front of another man holding a camera and in front of people .,0.0581,men sit waiting and one has wax strip applied to the hair on his legs .,5.0,4.0,5.0,4.6667,0.5725,0.8318,0.9081,0.5951,0.6628,0.5827,0.486,0.1881,0.4589,0.239,0.3432,0.0,0.0581
+6,a woman is waxing a guy's leg hair off outside while others watch .,0.0,multiple men get their legs waxed at an event together .,5.0,5.0,5.0,5.0,0.6069,0.843,0.9424,0.7938,0.7927,0.7236,0.5337,0.1466,0.5357,0.0627,0.4379,0.0295,0.0

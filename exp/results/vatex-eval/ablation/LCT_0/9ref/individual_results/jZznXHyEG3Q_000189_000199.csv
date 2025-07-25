@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"someone is filming themselves from their own point of view , riding a motorcycle , down a open road .",0.3234,outside someone is driving a motorcycle down a winding road .,5.0,5.0,5.0,5.0,0.5873,0.8774,0.9164,0.7376,0.7038,0.6582,0.5238,0.4218,0.5496,0.4136,0.4804,0.3329,0.3234
+2,a person is riding a bike down a road with a helmet .,0.5894,a person rides a bike down a road in a mountainous area .,4.0,3.0,4.0,3.6667,0.6623,0.9055,1.0,1.0,1.0,1.0,0.627,0.6511,0.6411,0.6282,0.6036,0.6147,0.5894
+3,a person is riding a bike down a road and then a person is riding a bike .,0.4008,a person rides a bike down a road in a mountainous area .,4.0,3.0,5.0,4.0,0.634,0.9264,0.8988,0.7923,0.6914,0.6323,0.6049,0.5352,0.5447,0.4449,0.5085,0.4983,0.4008
+4,a person is riding a motorcycle down a paved path .,0.352,outside someone is driving a motorcycle down a winding road .,5.0,5.0,4.0,4.6667,0.5899,0.8991,1.0,1.0,1.0,1.0,0.5439,0.4784,0.5491,0.4516,0.4883,0.3837,0.352
+5,a motorcyclist rides down a street through a open air in the countryside .,0.285,a person on a motorcycle driving themselves down a road with noone else around,5.0,5.0,4.0,4.6667,0.6032,0.8056,1.0,1.0,1.0,1.0,0.4922,0.4437,0.5401,0.4351,0.418,0.296,0.285
+6,outside someone is sitting on a motorcycle and drives away .,0.181,outside someone is driving a motorcycle down a winding road .,4.0,5.0,5.0,4.6667,0.5873,0.8942,0.8587,0.565,0.5635,0.5119,0.5385,0.0703,0.4835,0.2568,0.4225,0.0,0.181

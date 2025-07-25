@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a girl uses a pencil to draw a car on a white piece of paper .,0.4252,a child is drawing a car and describing the wheels .,5.0,4.0,5.0,4.6667,0.6885,0.9187,0.9388,0.9387,0.9081,0.8912,0.6568,0.5304,0.6294,0.5146,0.5831,0.4439,0.4252
+2,a person is using a pen to write on a piece of paper .,0.2442,a person is sketching a picture on a white piece of paper on the floor .,4.0,4.0,5.0,4.3333,0.4148,0.8736,1.0,0.8723,0.8893,0.8698,0.3301,0.3291,0.4148,0.3397,0.3301,0.232,0.2442
+3,a person is using a pencil to draw on a piece of paper .,0.2506,a child uses a pencil and paper to demonstrate how to draw wheels on a car .,5.0,5.0,5.0,5.0,0.6084,0.9031,0.9677,0.7109,0.8008,0.7559,0.5603,0.3716,0.5475,0.3283,0.4919,0.2943,0.2506
+4,a kid draws details on a cartoon character using a pencil .,0.5083,a kid draws a car on a piece of paper in front of them,4.0,5.0,4.0,4.3333,0.6414,0.8519,0.9599,0.9737,0.9446,0.9349,0.579,0.5942,0.5915,0.5817,0.5173,0.523,0.5083
+5,a child is using a marker to color in the picture on the piece of paper .,0.2676,a kid draws a car on a piece of paper in front of them,4.0,4.0,4.0,4.0,0.5252,0.8819,0.9756,0.8221,0.8095,0.7618,0.4521,0.4087,0.4726,0.3653,0.3914,0.3176,0.2676
+6,a person draws a car on a sketch pad .,0.6164,a kid draws a car on a piece of paper in front of them,4.0,4.0,4.0,4.0,0.6627,0.8792,1.0,1.0,1.0,1.0,0.6164,0.6627,0.6627,0.6627,0.6164,0.6164,0.6164

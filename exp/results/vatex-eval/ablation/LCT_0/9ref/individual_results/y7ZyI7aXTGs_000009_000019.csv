@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two girls are playing a hand game in the dark .,0.5988,"two young girls sitting on the floor in the dark , playing a hand game .",5.0,5.0,5.0,5.0,0.8528,0.9557,1.0,1.0,1.0,1.0,0.8459,0.6631,0.7755,0.6226,0.7737,0.6604,0.5988
+2,two young girls are playing a game of patty cake .,0.8503,two girls sitting and playing a game of patty cake .,5.0,5.0,5.0,5.0,0.8904,0.9609,0.9778,0.9683,0.9276,0.9176,0.8859,0.758,0.887,0.851,0.8824,0.7568,0.8503
+3,two young girls are playing a game of patty cake with each other .,0.8485,two girls sitting and playing a game of patty cake .,5.0,5.0,5.0,5.0,0.8803,0.9609,0.9778,0.9683,0.9276,0.9176,0.8754,0.7552,0.8766,0.8493,0.8715,0.7539,0.8485
+4,two little girls are playing a hand game while on a trampoline .,0.5482,two little girls are playing a hand game in their pajamas .,4.0,4.0,4.0,4.0,0.5767,0.9562,0.9888,0.9844,0.9802,0.9788,0.5573,0.5658,0.5701,0.568,0.5504,0.5459,0.5482
+5,"a woman is doing patty-cake with two young girls in a crowded , noisy room .",0.1459,two young children playing patty cake in the living room .,2.0,4.0,3.0,3.0,0.5391,0.8576,0.9279,0.7409,0.7002,0.646,0.4621,0.2436,0.4262,0.2675,0.3139,0.0909,0.1459
+6,two girls sitting on the grass play hand ryhme games together .,0.5302,two young girls are sitting playing a hand clapping game while singing a song .,4.0,4.0,4.0,4.0,0.6356,0.9068,0.991,0.862,0.8896,0.8719,0.5924,0.5587,0.6323,0.5801,0.5887,0.5063,0.5302

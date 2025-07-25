@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person showing how to make a certain kind of food .,0.0,a piece of meat is breaded in preparation for frying,4.0,5.0,5.0,4.6667,0.2932,0.7864,0.8148,0.5633,0.3323,0.1509,0.1013,0.0,0.1326,0.0,0.0,0.0,0.0
+2,a man is demonstrating how to make a sandwich in a kitchen .,0.0,a piece of meat is breaded in preparation for frying,4.0,4.0,4.0,4.0,0.1964,0.7506,0.875,0.6036,0.7144,0.6194,0.0,0.0,0.0815,0.0,0.0,0.0,0.0
+3,a man is demonstrating how to make a sandwich .,0.0,a piece of meat is breaded in preparation for frying,4.0,4.0,4.0,4.0,0.2104,0.7466,0.9045,0.5462,0.0433,0.0,0.0,0.0,0.127,0.0,0.0,0.0,0.0
+4,a man is seasoning a pan of food that he is cooking on the stove .,0.0,a piece of meat is breaded in preparation for frying,4.0,2.0,2.0,2.6667,0.2111,0.7911,0.941,0.6571,0.5477,0.4282,0.0027,0.0,0.1616,0.0,0.0,0.0,0.0
+5,"in a kitchen , a man adds ingredients to a pan and explains the recipe .",0.0,a piece of meat is breaded in preparation for frying,4.0,3.0,4.0,3.6667,0.1719,0.7536,0.9756,0.8644,0.8611,0.8157,0.0,0.042,0.1512,0.0383,0.0,0.0,0.0
+6,a person shows how to dip meat in to a batter and cook it .,0.3117,a piece of meat is breaded in preparation for frying,4.0,4.0,4.0,4.0,0.615,0.814,0.941,0.7644,0.6871,0.6156,0.5271,0.4964,0.5909,0.4398,0.4974,0.3813,0.3117

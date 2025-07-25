@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is using a nice to peel an orange with a spoon .,0.7187,a person is demonstrating how to peel an orange with a spoon,4.0,5.0,5.0,4.6667,0.8643,0.9191,1.0,1.0,1.0,1.0,0.8524,0.7516,0.8513,0.7475,0.8382,0.7234,0.7187
+2,a person is using a knife to peel an orange with a knife .,0.5967,a demonstration of a woman peeling an orange with a knife and spoon .,4.0,4.0,4.0,4.0,0.7749,0.9299,0.9714,0.8408,0.8893,0.8754,0.7579,0.6311,0.7306,0.6153,0.7103,0.5807,0.5967
+3,a person is using a knife to cut an orange into an orange .,0.5408,a person is showing how to cut and then peel a large orange .,5.0,5.0,4.0,4.6667,0.8048,0.9154,0.9412,0.7974,0.8085,0.7877,0.7867,0.6533,0.7713,0.5857,0.7502,0.6454,0.5408
+4,a person is holding an orange and then he picks up a knife from the table and he begins to peel the orange with it .,0.6422,"a person scores an orange with a knife , then begins to peel it with a spoon .",4.0,5.0,4.0,4.3333,0.7293,0.9228,0.9333,0.8171,0.8199,0.8048,0.7067,0.6687,0.71,0.6699,0.6857,0.641,0.6422
+5,"a girl using a knife to cut around the rind of an orange , shows the slice to the camera and then starts eating it .",0.5194,a woman cuts into an orange and then puts a spoon up to it .,2.0,3.0,3.0,2.6667,0.7013,0.8708,0.973,1.0,0.9772,0.9721,0.657,0.6157,0.605,0.6067,0.5195,0.5303,0.5194
+6,a person in a kitchen is using a knife to cut an orange over a kitchen worktop .,0.385,a person is showing how to cut and then peel a large orange .,5.0,5.0,4.0,4.6667,0.7105,0.8852,0.9362,0.8589,0.8419,0.8155,0.6729,0.4833,0.6536,0.4729,0.6087,0.398,0.385

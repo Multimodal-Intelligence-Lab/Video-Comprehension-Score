@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,in a men capturing video in the street and them .,0.4498,a young guy is outside at night video taping the night life .,5.0,5.0,5.0,5.0,0.5518,0.825,1.0,1.0,1.0,1.0,0.4498,0.5518,0.5518,0.5518,0.4498,0.4498,0.4498
+2,a group of people are walking around in a parking lot .,0.0,"the camera pans around a street corner at night as a car passes , then focuses on a face close up",4.0,4.0,4.0,4.0,0.2253,0.831,0.9787,0.8515,0.9107,0.8831,0.0677,0.0,0.1732,0.0417,0.005,0.0,0.0
+3,a group of people are walking around in a dark street .,0.1872,people are walking down a dark street and then the camera turns to a man's face .,5.0,5.0,5.0,5.0,0.628,0.9062,0.9583,0.8295,0.8893,0.8676,0.5895,0.3999,0.5038,0.237,0.4524,0.3413,0.1872
+4,a man showing a view of buildings with many people around it .,0.0261,a night scene of a busy city street changes to a teenage boy talking about doing a give away .,5.0,5.0,5.0,5.0,0.3099,0.8302,1.0,1.0,1.0,1.0,0.1687,0.2519,0.2519,0.2519,0.057,0.0261,0.0261
+5,a person starts running from a point and it is being observed by a man standing in front of him,0.0,"the camera pans around a street corner at night as a car passes , then focuses on a face close up",1.0,4.0,4.0,3.0,0.2314,0.8347,0.9913,0.9084,0.9255,0.904,0.03,0.0375,0.1591,0.0552,0.0,0.0,0.0
+6,a man walked to the middle of the road and gestured to people to pass,0.0,"the camera pans around a street corner at night as a car passes , then focuses on a face close up",2.0,4.0,2.0,2.6667,0.3615,0.8555,1.0,0.9045,0.9298,0.9068,0.2241,0.0078,0.3487,0.0348,0.2086,0.0,0.0

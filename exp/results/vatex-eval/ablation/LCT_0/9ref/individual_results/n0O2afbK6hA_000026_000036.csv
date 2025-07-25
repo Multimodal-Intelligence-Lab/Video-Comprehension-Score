@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young man is demonstrating how to check tire pressure on a car wheel using a tire gauge .,0.812,a man is showing how to check tire pressure using a gauge .,5.0,5.0,5.0,5.0,0.9087,0.9556,0.9654,1.0,0.974,0.9718,0.9019,0.8194,0.9054,0.8204,0.8984,0.811,0.812
+2,a man is demonstrating how to check the tire of a tire .,0.7619,a man explains how to check the tire pressure of a car tire .,4.0,5.0,5.0,4.6667,0.8163,0.9318,0.9756,1.0,0.9687,0.9635,0.8006,0.7899,0.8072,0.7806,0.7907,0.7746,0.7619
+3,a man is demonstrating how to check a tire pressure .,0.9021,a man is showing how to check tire pressure using a gauge .,5.0,5.0,5.0,5.0,0.9144,0.9532,0.9388,1.0,0.9526,0.9432,0.9102,0.9144,0.8958,0.9066,0.8954,0.9102,0.9021
+4,man demonstrates how to put air in a tire and discusses the importance of tire pressure .,0.6154,a man is showing how to check tire pressure using a gauge .,3.0,4.0,4.0,3.6667,0.7692,0.8971,0.936,0.8627,0.8495,0.8303,0.7428,0.6641,0.7467,0.6589,0.7176,0.6213,0.6154
+5,a man is explaining how to service and check the tread on tires .,0.5066,a man showing how to use the gage to measure the pressure of the tire,4.0,4.0,3.0,3.6667,0.7777,0.9149,1.0,1.0,1.0,1.0,0.757,0.5856,0.7583,0.5856,0.7359,0.5066,0.5066
+6,a man showing how to put air on a car tire as he holds tha air hose .,0.4143,a man is showing how to check tire pressure using a gauge .,4.0,4.0,4.0,4.0,0.6675,0.8845,1.0,0.6832,0.749,0.7053,0.6123,0.4531,0.6264,0.5012,0.5613,0.3578,0.4143

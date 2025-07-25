@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a person is doing an exercise technique with their hands on the floor , and running in place with their legs .",0.3473,a guy is doing exercises by doing knee kicks on the ground .,5.0,5.0,5.0,5.0,0.6292,0.8816,0.9831,0.8819,0.8642,0.8338,0.577,0.4775,0.5637,0.4668,0.5024,0.3604,0.3473
+2,a man is demonstrating how to do push ups on the floor .,0.4391,the man is properly demonstrating how to do mountain climbers in his home .,4.0,4.0,4.0,4.0,0.5613,0.8531,1.0,1.0,1.0,1.0,0.4741,0.531,0.531,0.531,0.4391,0.4391,0.4391
+3,a man is demonstrating how to do a mountain climber exercise .,0.7924,the man is properly demonstrating how to do mountain climbers in his home .,5.0,5.0,5.0,5.0,0.8099,0.9159,1.0,1.0,1.0,1.0,0.7924,0.8099,0.8099,0.8099,0.7924,0.7924,0.7924
+4,a heavily tattooed man is doing exercise stretches,0.1181,"on a carpeted floor , a man is doing leg extension exercises with his hands braced against the floor . .",4.0,3.0,3.0,3.3333,0.524,0.8343,0.9474,0.878,0.8759,0.8434,0.426,0.303,0.3753,0.3013,0.2466,0.1202,0.1181
+5,a male doing leg squats forward and backward in a room with exercise equipment .,0.2399,a man on the floor doing mountain climbing exercises on his floor,4.0,2.0,4.0,3.3333,0.5966,0.8623,0.9831,0.881,0.9266,0.9074,0.5321,0.3846,0.486,0.39,0.4039,0.2332,0.2399
+6,a man on the floor of a gym does running exercises on his hands and feet,0.2352,a man on the floor doing mountain climbing exercises on his floor,5.0,4.0,5.0,4.6667,0.6367,0.8949,0.9599,0.8059,0.7796,0.7216,0.5912,0.4092,0.5853,0.2899,0.5333,0.3447,0.2352

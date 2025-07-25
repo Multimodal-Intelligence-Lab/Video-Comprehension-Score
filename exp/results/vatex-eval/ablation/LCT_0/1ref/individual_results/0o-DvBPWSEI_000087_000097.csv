@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a slow motion capture of a person riding and jumping their bike .,0.0,a young by is on a bicycle riding in he woods and jumps a big hurdle .,5.0,5.0,5.0,5.0,0.3959,0.8325,0.7118,0.2102,0.3246,0.1886,0.2743,0.0,0.1512,0.0,0.0,0.0,0.0
+2,a man is riding a bike in a wooded area and then a man is talking .,0.0,a young by is on a bicycle riding in he woods and jumps a big hurdle .,4.0,4.0,4.0,4.0,0.4725,0.8347,0.9081,0.3204,0.4736,0.3694,0.368,0.0,0.4191,0.0,0.3041,0.0,0.0
+3,a man is riding a bike down a hill and then falls off the bike .,0.0,a young by is on a bicycle riding in he woods and jumps a big hurdle .,4.0,3.0,4.0,3.6667,0.2804,0.8404,0.8356,0.502,0.3786,0.2606,0.1437,0.0,0.1387,0.0,0.0,0.0,0.0
+4,a person appears to try and ride a dirt bike up a steep hill .,0.0,a young by is on a bicycle riding in he woods and jumps a big hurdle .,4.0,4.0,4.0,4.0,0.211,0.8053,0.8989,0.6069,0.5869,0.487,0.0202,0.0,0.1223,0.0,0.0,0.0,0.0
+5,a person rides a bike down a road in a mountainous area .,0.0,a young by is on a bicycle riding in he woods and jumps a big hurdle .,5.0,5.0,5.0,5.0,0.3423,0.8092,0.92,0.2205,0.0,0.0,0.1872,0.0,0.2851,0.0,0.1166,0.0,0.0
+6,a boy is riding a bike and rode up on a ramp to jump .,0.0,a young by is on a bicycle riding in he woods and jumps a big hurdle .,5.0,5.0,5.0,5.0,0.4663,0.8652,0.8984,0.4776,0.3728,0.275,0.3831,0.0,0.406,0.0,0.3134,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"orange , red , and black dominoes fall out of a stack into a pile .",0.0,a person is knocking over some plastic pieces that is on a table .,5.0,5.0,5.0,5.0,0.3422,0.7706,0.95,0.6916,0.6674,0.5685,0.1463,0.0488,0.3075,0.0144,0.1014,0.0,0.0
+2,a person is showing how to use a meat grinder .,0.0,a person is knocking over some plastic pieces that is on a table .,4.0,2.0,2.0,2.6667,0.1363,0.7953,0.9052,0.731,0.8088,0.7596,0.0,0.0,0.0458,0.0,0.0,0.0,0.0
+3,a person is demonstrating how to use a meat grinder .,0.0,a person is knocking over some plastic pieces that is on a table .,4.0,2.0,2.0,2.6667,0.1551,0.7872,0.9052,0.731,0.8088,0.7571,0.0,0.0,0.0665,0.0,0.0,0.0,0.0
+4,a child is playing and knocking over dominoes on the floor .,0.0,a person is knocking over some plastic pieces that is on a table .,5.0,2.0,4.0,3.6667,0.4783,0.8164,0.875,0.3651,0.5152,0.4062,0.3609,0.0,0.4038,0.0,0.2696,0.0,0.0
+5,a group of people of playing a game of dominoes on a table .,0.0187,a person is knocking over some plastic pieces that is on a table .,4.0,3.0,4.0,3.6667,0.3306,0.8248,1.0,0.8408,0.827,0.7903,0.1884,0.2039,0.3306,0.1906,0.1884,0.0347,0.0187
+6,a boy pushes down a domino which sets off more of the dominos .,0.0,a person is knocking over some plastic pieces that is on a table .,5.0,4.0,4.0,4.3333,0.2935,0.7709,0.9052,0.731,0.8088,0.752,0.0835,0.0335,0.2195,0.1265,0.0,0.0,0.0

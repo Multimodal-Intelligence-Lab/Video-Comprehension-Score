@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,several people dig in a site as a person sifts dirt through a screen .,0.1003,workers are excavating a large multiple dig site looking for treasures .,5.0,5.0,5.0,5.0,0.5499,0.8285,0.7839,0.4911,0.6039,0.5219,0.4567,0.0745,0.4258,0.2546,0.307,0.0,0.1003
+2,a group of people are digging in a muddy area .,0.1043,workers are excavating a large multiple dig site looking for treasures .,5.0,5.0,5.0,5.0,0.5079,0.7804,0.913,0.7161,0.704,0.6207,0.3694,0.3128,0.4611,0.301,0.3094,0.1194,0.1043
+3,a group of people are digging a hole in the dirt .,0.0,workers are excavating a large multiple dig site looking for treasures .,4.0,4.0,4.0,4.0,0.4958,0.7813,0.9583,0.6133,0.6219,0.516,0.3546,0.1778,0.4739,0.1892,0.3266,0.0,0.0
+4,a group of men are digging dirt and building something .,0.0,workers are excavating a large multiple dig site looking for treasures .,5.0,4.0,3.0,4.0,0.4898,0.7864,0.9321,0.4204,0.3692,0.1979,0.3512,0.0,0.4526,0.0,0.3039,0.0,0.0
+5,a person at an excavation site brushing away dirt to reveal artifacts .,0.0061,workers are excavating a large multiple dig site looking for treasures .,4.0,5.0,4.0,4.3333,0.4405,0.8256,0.8976,0.5497,0.6818,0.6147,0.3223,0.0,0.3766,0.1794,0.245,0.0,0.0061
+6,a group of people dig into some dirt that is on the ground,0.0866,workers are excavating a large multiple dig site looking for treasures .,5.0,5.0,5.0,5.0,0.548,0.7957,0.9583,0.6133,0.6219,0.5248,0.432,0.263,0.5284,0.2732,0.4073,0.0738,0.0866

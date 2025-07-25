@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,two teams are playing ice hockey and they go from one end of the rink to the other .,0.6702,teams are playing ice hockey in full regalia as they weave back and forth .,5.0,5.0,5.0,5.0,0.7629,0.9162,0.9474,0.8062,0.8302,0.8039,0.7262,0.7059,0.7229,0.7144,0.68,0.6604,0.6702
+2,a group of people are playing hockey in a hockey rink .,0.833,a group of people are playing hockey by skating on an ice arena .,5.0,4.0,5.0,4.6667,0.8664,0.9451,0.9599,0.8723,0.8567,0.8478,0.8582,0.8469,0.8609,0.8346,0.8523,0.8374,0.833
+3,a group of people are playing a game of ice hockey .,0.718,a group of men are playing a hockey game in an ice rink .,5.0,5.0,5.0,5.0,0.8799,0.9565,0.9199,0.8153,0.7833,0.7634,0.8739,0.7683,0.8413,0.721,0.8402,0.7578,0.718
+4,in an ice rink there are people playing hockey .,0.2036,a group of ice hockey players are playing a game while spectators watch .,5.0,5.0,5.0,5.0,0.8453,0.9429,0.7489,0.8018,0.4626,0.3808,0.8347,0.6545,0.6342,0.2406,0.5892,0.65,0.2036
+5,a group of men are playing ice hockey on a ice rink .,0.6321,a group of men are playing a hockey game in an ice rink .,5.0,5.0,5.0,5.0,0.965,0.9883,0.9129,0.6043,0.6452,0.641,0.9646,0.4819,0.9058,0.6323,0.9058,0.4817,0.6321
+6,a couple of people playing a game of hockey in front of others,0.4661,a group of people are playing hockey by skating on an ice arena .,5.0,4.0,5.0,4.6667,0.7648,0.9067,0.9424,0.6913,0.7702,0.7354,0.7406,0.4833,0.6746,0.5362,0.6258,0.4052,0.4661

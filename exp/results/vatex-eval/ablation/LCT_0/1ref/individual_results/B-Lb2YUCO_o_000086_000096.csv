@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman is performing a pull down on a smith machine while the weights move up and down .,0.0327,a woman stands in a gym and demonstrates how to use weight equipment .,5.0,5.0,4.0,4.6667,0.4949,0.8067,0.8937,0.5075,0.6473,0.5628,0.3738,0.0046,0.4348,0.2197,0.2993,0.0,0.0327
+2,a woman is in a gym doing exercises with a weight machine .,0.6847,a woman stands in a gym and demonstrates how to use weight equipment .,4.0,5.0,5.0,4.6667,0.7428,0.892,1.0,0.9023,0.9144,0.9041,0.7116,0.7149,0.7428,0.7187,0.7116,0.6804,0.6847
+3,a woman is in a gym and is lifting weights in a gym .,0.5589,a woman stands in a gym and demonstrates how to use weight equipment .,4.0,5.0,5.0,4.6667,0.7392,0.8786,0.9231,0.7278,0.6898,0.6469,0.7032,0.6318,0.7175,0.5804,0.6785,0.5922,0.5589
+4,a woman is working out in the gym using handweights .,0.4307,a woman stands in a gym and demonstrates how to use weight equipment .,5.0,5.0,4.0,4.6667,0.6688,0.8418,0.95,0.7131,0.6911,0.6331,0.6066,0.5356,0.6514,0.5208,0.5859,0.4483,0.4307
+5,a woman is performing weight exercises inside a gym .,0.0,a woman stands in a gym and demonstrates how to use weight equipment .,5.0,5.0,5.0,5.0,0.753,0.8612,0.7778,0.3871,0.1949,0.0651,0.7132,0.186,0.6824,0.0,0.6313,0.1406,0.0
+6,"a woman in a gym is lifting hand-held weights , working her right side .",0.0,a woman stands in a gym and demonstrates how to use weight equipment .,2.0,4.0,4.0,3.3333,0.6097,0.8362,0.8973,0.2661,0.1157,0.0,0.5332,0.0,0.565,0.0,0.4798,0.0,0.0

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of kids at a birthday party are bouncing in a play house .,0.4805,a child's 1st birthday party in a bouncy castle with her friends .,4.0,4.0,5.0,4.3333,0.7744,0.9296,0.9697,0.8598,0.9115,0.8995,0.7573,0.5649,0.7548,0.5424,0.7362,0.5477,0.4805
+2,a group of people are wrestling in a bouncy house .,0.4973,a group of people are jumping in a bounce house when someone has an accident .,4.0,5.0,4.0,4.3333,0.6418,0.9051,1.0,0.8819,0.8642,0.834,0.6043,0.5857,0.6204,0.545,0.5772,0.5422,0.4973
+3,a group of kids are playing in a bouncy castle .,0.8345,a group of kids rolling around inside a bouncy castle .,5.0,5.0,5.0,5.0,0.8671,0.9427,1.0,1.0,1.0,1.0,0.8557,0.8352,0.8671,0.8475,0.8557,0.8317,0.8345
+4,a little girl and an adult playing in an inflateable bounce castle .,0.2813,a child's 1st birthday party in a bouncy castle with her friends .,5.0,3.0,4.0,4.0,0.6361,0.8615,0.9804,0.8387,0.8457,0.8108,0.5776,0.3537,0.5654,0.4112,0.4955,0.211,0.2813
+5,a group of children bouncing in a bounce house where they scream and have fun,0.6836,a group of kids are playing inside the bouncy house,5.0,4.0,5.0,4.6667,0.7913,0.9084,0.9846,0.9042,0.929,0.9201,0.7702,0.7482,0.7628,0.692,0.7389,0.7229,0.6836
+6,"a group of kids play around , scream , and jump in a small bouncy house .",0.7322,a group of kids are playing inside the bouncy house,5.0,4.0,4.0,4.3333,0.7803,0.923,1.0,0.9016,0.8887,0.8794,0.762,0.7563,0.7664,0.7528,0.7469,0.736,0.7322

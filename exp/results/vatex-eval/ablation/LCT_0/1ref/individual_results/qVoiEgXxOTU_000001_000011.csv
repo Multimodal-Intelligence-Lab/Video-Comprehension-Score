@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a person in a car films an suv driving to their right , focusing on a woman in the backseat .",0.0,a person videotapes another person who is riding in another car .,5.0,5.0,5.0,5.0,0.6874,0.8438,0.7356,0.3804,0.3021,0.1729,0.6296,0.0986,0.5751,0.0,0.4964,0.0158,0.0
+2,a group of people are riding on a tractor in a field .,0.0,a person videotapes another person who is riding in another car .,3.0,4.0,4.0,3.6667,0.1526,0.813,0.9048,0.6733,0.6201,0.5327,0.0,0.0,0.0634,0.0,0.0,0.0,0.0
+3,a man is walking through the woods and looking at something .,0.0,a person videotapes another person who is riding in another car .,1.0,2.0,2.0,1.6667,0.0215,0.7798,0.8466,0.6515,0.5605,0.4364,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,"a person sits in the drivers seat of a car , and monitors the self driving system as the car drives down the road",0.0,a person videotapes another person who is riding in another car .,3.0,3.0,4.0,3.3333,0.375,0.8399,0.8637,0.463,0.5036,0.409,0.2559,0.0,0.2763,0.0,0.1384,0.0,0.0
+5,"a person is driving in traffic , and a person is seen through the windshield dancing in the street .",0.0,a person videotapes another person who is riding in another car .,4.0,4.0,4.0,4.0,0.4729,0.8277,0.7937,0.1479,0.0,0.0,0.3631,0.0,0.3358,0.0,0.1976,0.0,0.0
+6,a motorist films another driver beside him texting while driving .,0.2264,a person videotapes another person who is riding in another car .,2.0,4.0,3.0,3.0,0.6462,0.8233,0.7879,0.433,0.5589,0.4642,0.5702,0.1226,0.5509,0.3173,0.4545,0.0057,0.2264

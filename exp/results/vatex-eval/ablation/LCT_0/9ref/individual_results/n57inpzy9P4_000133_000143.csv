@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man dancing by hopping back and forth and spinning around with music in the background .,0.4755,a person is dancing and hoping back and forth while other people are standing off to the side .,5.0,5.0,5.0,5.0,0.6479,0.8733,0.9922,0.9319,0.9408,0.9255,0.5968,0.5378,0.6185,0.5419,0.5632,0.4708,0.4755
+2,a woman is dancing to music in front of a mirror .,0.343,a perso jumps around rapidly in front of a large mirror as others watch .,5.0,4.0,4.0,4.3333,0.7621,0.9155,1.0,1.0,1.0,1.0,0.7402,0.5024,0.5986,0.4679,0.5268,0.402,0.343
+3,a group of people are doing a dance routine in a dance studio .,0.4343,a man is doing a fun jumping dance in a dance studio .,5.0,4.0,4.0,4.3333,0.5839,0.8838,0.9583,0.7876,0.836,0.8136,0.5271,0.4388,0.5658,0.5023,0.5065,0.3621,0.4343
+4,a man is dancing around as other people stand around watching him .,0.4798,a person is dancing and hoping back and forth while other people are standing off to the side .,5.0,5.0,5.0,5.0,0.6357,0.8796,0.9404,0.8478,0.855,0.8253,0.5839,0.5584,0.601,0.5446,0.5442,0.4955,0.4798
+5,a man is performing for an audience by doing some dance moves .,0.3857,a man is doing a fun jumping dance in a dance studio .,5.0,5.0,5.0,5.0,0.564,0.8583,1.0,0.8408,0.827,0.7985,0.492,0.4814,0.564,0.4728,0.492,0.3958,0.3857
+6,a man is break dancing while a group of people watch him .,0.1006,a person performs dance jumps in a room with a wooden floor and many mirrors while other people observe it .,5.0,5.0,5.0,5.0,0.4714,0.8763,1.0,0.8446,0.8732,0.8392,0.3757,0.2505,0.4434,0.2751,0.3426,0.071,0.1006

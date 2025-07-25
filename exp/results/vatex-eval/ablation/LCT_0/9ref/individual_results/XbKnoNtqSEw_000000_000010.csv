@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,three women sitting at a table together having a conversation .,0.7867,the three women were sitting at the dining table and having a discussion .,1.0,5.0,5.0,3.6667,0.832,0.9419,1.0,0.8889,0.9034,0.8939,0.8217,0.6892,0.8247,0.7991,0.8139,0.6853,0.7867
+2,a man and a woman are sitting at a table and eating food .,0.0,"a group of three women sit at a dinner table and converse , while audio of a different conversation plays over it .",3.0,4.0,4.0,3.6667,0.4405,0.8824,1.0,0.9508,0.8403,0.8064,0.3496,0.2538,0.3108,0.1667,0.1584,0.0956,0.0
+3,a group of people are sitting at a table and one of them is eating something .,0.0813,"a group of three women sit at a dinner table and converse , while audio of a different conversation plays over it .",5.0,3.0,5.0,4.3333,0.4626,0.8516,0.9873,0.8526,0.881,0.8518,0.3412,0.2475,0.4123,0.2523,0.3008,0.1056,0.0813
+4,a woman explaining how to get in contact with her while she sits at a table .,0.0,"a group of three women sit at a dinner table and converse , while audio of a different conversation plays over it .",5.0,5.0,3.0,4.3333,0.5107,0.8474,0.9164,0.7074,0.6977,0.6283,0.4091,0.2319,0.4511,0.091,0.3371,0.0724,0.0
+5,the group seated at the table are chatting among each other .,0.3985,three women are sitting at a table talking and two men are in the background talking,1.0,5.0,5.0,3.6667,0.7093,0.8942,0.9697,1.0,0.975,0.9696,0.6749,0.5095,0.5895,0.491,0.5413,0.4203,0.3985
+6,a little girl places napkins by table settings while talking to a woman .,0.0,"a group of three women sit at a dinner table and converse , while audio of a different conversation plays over it .",5.0,2.0,2.0,3.0,0.3461,0.858,0.8696,0.8278,0.7205,0.6594,0.2379,0.1367,0.1589,0.0082,0.0,0.0,0.0

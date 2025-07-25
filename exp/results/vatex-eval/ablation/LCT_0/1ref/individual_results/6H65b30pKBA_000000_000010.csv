@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy bent over talking to the camera with drool running from his mouth .,0.0,a young man tries rap a song and spill saliva from his mouth,5.0,4.0,5.0,4.6667,0.4082,0.8007,0.9846,0.5579,0.5683,0.4609,0.2609,0.0,0.399,0.0,0.2494,0.0,0.0
+2,a man is laying on a bed and is getting his face waxed .,0.0,a young man tries rap a song and spill saliva from his mouth,2.0,2.0,2.0,2.0,0.1225,0.7907,0.9333,0.688,0.6882,0.6057,0.0,0.0,0.0598,0.0,0.0,0.0,0.0
+3,a man is sitting in a chair and a woman is talking to him .,0.0,a young man tries rap a song and spill saliva from his mouth,2.0,2.0,2.0,2.0,0.0303,0.7868,0.9796,0.8819,0.8923,0.8631,0.0,0.0,0.0101,0.0,0.0,0.0,0.0
+4,a young boy smells his father's foot and complains about it while laughing .,0.0,a young man tries rap a song and spill saliva from his mouth,1.0,1.0,1.0,1.0,0.1198,0.788,0.9524,0.6209,0.6276,0.5274,0.0,0.0,0.0758,0.0,0.0,0.0,0.0
+5,a little boy holding a sippy-cup begins to mumble and then takes a sip from the cup .,0.0,a young man tries rap a song and spill saliva from his mouth,1.0,1.0,1.0,1.0,0.2486,0.7632,0.9563,0.6565,0.69,0.5938,0.0154,0.0,0.2142,0.0,0.0,0.0,0.0
+6,"a young man is seen seated and talking as if in an interview , before the camera pans to a wet outdoor area , and the sound of water is heard as it splashes the surface .",0.0,a young man tries rap a song and spill saliva from his mouth,2.0,2.0,2.0,2.0,0.2874,0.8033,0.9419,0.716,0.7825,0.7292,0.113,0.0047,0.2435,0.0893,0.0583,0.0,0.0

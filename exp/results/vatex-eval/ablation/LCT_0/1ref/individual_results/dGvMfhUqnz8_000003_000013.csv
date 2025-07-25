@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a young boy playing with ropes on the floor in a tennis court,0.5956,a young boy playing hop scotch on a tennis court,5.0,4.0,4.0,4.3333,0.6786,0.9162,0.9697,0.7845,0.8673,0.8552,0.6492,0.5904,0.6686,0.6295,0.6383,0.5529,0.5956
+2,a young girl is playing hopscotch on the sidewalk .,0.278,a young boy playing hop scotch on a tennis court,1.0,2.0,2.0,1.6667,0.4876,0.8478,0.9524,0.8571,0.8371,0.8078,0.3956,0.4022,0.462,0.3879,0.3654,0.2949,0.278
+3,a young girl is playing hopscotch on an outdoor court .,0.544,a young boy playing hop scotch on a tennis court,2.0,4.0,4.0,3.3333,0.5942,0.89,1.0,1.0,1.0,1.0,0.544,0.5942,0.5942,0.5942,0.544,0.544,0.544
+4,a little boy does hopscotch and jumps along the sidewalk .,0.3217,a young boy playing hop scotch on a tennis court,4.0,4.0,4.0,4.0,0.5637,0.794,0.9787,0.8094,0.8101,0.7608,0.4506,0.461,0.5542,0.4614,0.4386,0.3211,0.3217
+5,the small boy hops on the chalk drawings on the concrete and plays hopscotch .,0.0,a young boy playing hop scotch on a tennis court,2.0,4.0,4.0,3.3333,0.5467,0.824,0.8406,0.4621,0.3945,0.2651,0.4498,0.016,0.4607,0.0,0.3455,0.0,0.0
+6,a young boy is playing hopscotch next to a female toddler .,0.3598,a young boy playing hop scotch on a tennis court,2.0,4.0,4.0,3.3333,0.5552,0.8633,0.8694,0.7491,0.8048,0.7739,0.4848,0.4062,0.4884,0.4473,0.4074,0.3123,0.3598

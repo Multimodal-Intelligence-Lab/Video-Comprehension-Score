@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a swiss bobsled team is shown pushing their sled and then boarding while announcers narrate .,0.2007,the swiss 4-man bobsled team starts a run down an icy track .,5.0,5.0,5.0,5.0,0.6271,0.8259,0.9123,0.5537,0.5648,0.4731,0.5485,0.2884,0.5913,0.3061,0.5051,0.1846,0.2007
+2,a group of people are sledding down a snowy track .,0.0,the swiss 4-man bobsled team starts a run down an icy track .,5.0,5.0,5.0,5.0,0.4588,0.8257,0.7958,0.3832,0.276,0.1232,0.3446,0.0,0.3199,0.0,0.1764,0.0,0.0
+3,a bobsled team is bobsledding down a track in a competition .,0.0,the swiss 4-man bobsled team starts a run down an icy track .,5.0,5.0,5.0,5.0,0.6531,0.888,0.8151,0.4468,0.3658,0.2858,0.6094,0.153,0.5745,0.029,0.5208,0.0922,0.0
+4,people participate in the luge event on an icy track .,0.2144,the swiss 4-man bobsled team starts a run down an icy track .,5.0,5.0,4.0,4.6667,0.489,0.8382,0.9,0.8065,0.776,0.7328,0.3904,0.3664,0.4323,0.3416,0.3226,0.2441,0.2144
+5,a sled is going around on a sled course in while someone is riding it .,0.0,the swiss 4-man bobsled team starts a run down an icy track .,5.0,5.0,5.0,5.0,0.3348,0.7601,0.8989,0.4495,0.3989,0.2092,0.1248,0.0,0.2599,0.0,0.0264,0.0,0.0
+6,a man with a camera capturing a bobsledder as he races past him .,0.0,the swiss 4-man bobsled team starts a run down an icy track .,5.0,5.0,5.0,5.0,0.4418,0.7767,0.9164,0.5594,0.542,0.4104,0.2814,0.0021,0.3909,0.0,0.2158,0.0,0.0

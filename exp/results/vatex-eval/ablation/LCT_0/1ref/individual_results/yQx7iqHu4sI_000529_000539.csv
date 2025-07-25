@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,men in church kneeling down in front of other men while children sing .,0.0,people arise from kneeling in a church in front of other seated people .,5.0,5.0,5.0,5.0,0.543,0.8691,0.8331,0.2357,0.3674,0.2722,0.4742,0.0,0.4515,0.0,0.3688,0.0,0.0
+2,a group of people are in a room playing a game of chess .,0.0,people arise from kneeling in a church in front of other seated people .,3.0,3.0,3.0,3.0,0.1608,0.7971,0.8132,0.4585,0.3107,0.1353,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,a group of people are sitting in chairs and a man is standing in front of a group of people .,0.0,people arise from kneeling in a church in front of other seated people .,5.0,3.0,4.0,4.0,0.3762,0.8644,0.9,0.4816,0.4784,0.3966,0.2784,0.0,0.3069,0.0,0.1982,0.0,0.0
+4,a group of church goers observing a sermon and singing along .,0.0,people arise from kneeling in a church in front of other seated people .,4.0,4.0,4.0,4.0,0.4426,0.7837,0.6917,0.1179,0.2014,0.0,0.2887,0.0,0.1941,0.0,0.0,0.0,0.0
+5,a man plays the organ at a church ceremony while women sing .,0.0,people arise from kneeling in a church in front of other seated people .,4.0,1.0,3.0,2.6667,0.33,0.7813,0.8777,0.4832,0.6233,0.5179,0.1424,0.0,0.2367,0.0,0.023,0.0,0.0
+6,people preaching in a church while walking around praising god .,0.0,people arise from kneeling in a church in front of other seated people .,4.0,2.0,4.0,3.3333,0.4201,0.8328,0.7273,0.3679,0.4886,0.3859,0.3037,0.0,0.2027,0.0,0.0426,0.0,0.0

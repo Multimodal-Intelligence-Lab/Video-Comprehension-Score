@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is jogging down a dirt road at a fast pace .,0.1444,a person is jogging on a dirt trail while another person films them .,5.0,4.0,5.0,4.6667,0.549,0.8536,0.96,0.6435,0.6175,0.5519,0.4717,0.2991,0.5302,0.2696,0.4497,0.1789,0.1444
+2,a group of people are walking around on a trail .,0.0,a person is jogging on a dirt trail while another person films them .,3.0,1.0,4.0,2.6667,0.2789,0.8271,0.8067,0.0,0.0,0.0,0.1281,0.0,0.1061,0.0,0.0,0.0,0.0
+3,a person is walking down a path in the woods .,0.0,a person is jogging on a dirt trail while another person films them .,4.0,4.0,4.0,4.0,0.2008,0.8239,0.7857,0.5,0.3519,0.2134,0.03,0.0,0.0,0.0,0.0,0.0,0.0
+4,the man is running as he detects a catch in the hole .,0.0,a person is jogging on a dirt trail while another person films them .,3.0,2.0,3.0,2.6667,0.1985,0.7989,0.8649,0.4794,0.3615,0.2008,0.0,0.0,0.0732,0.0,0.0,0.0,0.0
+5,a man runs down a track and takes a long jump .,0.0,a person is jogging on a dirt trail while another person films them .,4.0,3.0,1.0,2.6667,0.2192,0.7887,0.9167,0.6435,0.5936,0.4847,0.0099,0.0,0.1482,0.0,0.0,0.0,0.0
+6,a man running and participating in the long jump track and field event .,0.0,a person is jogging on a dirt trail while another person films them .,4.0,3.0,1.0,2.6667,0.2296,0.7948,0.9569,0.6437,0.6545,0.5653,0.0307,0.0,0.1949,0.0,0.0,0.0,0.0

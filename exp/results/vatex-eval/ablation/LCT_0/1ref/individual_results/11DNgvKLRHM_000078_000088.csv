@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man that is sitting down sings a song using a microphone while accompanying music is playing in the background .,0.183,"a man sitting on a couch , singing into a microphone .",5.0,5.0,5.0,5.0,0.6766,0.8795,0.8077,0.4934,0.4834,0.4127,0.6323,0.2512,0.5996,0.2365,0.5447,0.1987,0.183
+2,a man is sitting on a couch and playing a harmonica .,0.4915,"a man sitting on a couch , singing into a microphone .",4.0,4.0,4.0,4.0,0.5497,0.8855,1.0,1.0,1.0,1.0,0.4915,0.5497,0.5497,0.5497,0.4915,0.4915,0.4915
+3,a man is sitting on a couch and playing a harmonica .,0.4915,"a man sitting on a couch , singing into a microphone .",4.0,4.0,4.0,4.0,0.5497,0.8855,1.0,1.0,1.0,1.0,0.4915,0.5497,0.5497,0.5497,0.4915,0.4915,0.4915
+4,a man is sitting in front of a microphone playing the flute .,0.0364,"a man sitting on a couch , singing into a microphone .",4.0,4.0,4.0,4.0,0.4005,0.8836,0.941,0.7785,0.7041,0.6651,0.3215,0.2299,0.3629,0.1486,0.279,0.1285,0.0364
+5,a man plays a small guitar and then sings into a microphone .,0.2219,"a man sitting on a couch , singing into a microphone .",4.0,4.0,4.0,4.0,0.452,0.8515,1.0,0.8408,0.827,0.7969,0.3565,0.3483,0.452,0.3374,0.3565,0.2346,0.2219
+6,a man sitting on a stool by on a deck plays a guitar and sings into a microphone .,0.3512,"a man sitting on a couch , singing into a microphone .",3.0,3.0,3.0,3.0,0.4418,0.8881,0.9592,1.0,0.9687,0.9648,0.3715,0.4418,0.418,0.4237,0.3447,0.3715,0.3512

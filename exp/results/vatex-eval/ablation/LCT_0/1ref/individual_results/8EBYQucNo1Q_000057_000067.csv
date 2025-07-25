@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,an actress rises from the floor of the stage while a winged figure approaches her,0.0,two people in costume perform on stage for an audience as part of a show .,3.0,4.0,4.0,3.6667,0.3226,0.7607,0.9859,0.7268,0.7551,0.6781,0.1096,0.068,0.313,0.1029,0.0968,0.0,0.0
+2,a group of people are on stage performing a dance routine .,0.0,two people in costume perform on stage for an audience as part of a show .,4.0,4.0,4.0,4.0,0.4507,0.8626,0.9333,0.466,0.4325,0.3421,0.3632,0.0,0.4115,0.0,0.3177,0.0,0.0
+3,a group of people are performing a dance routine on a stage .,0.2078,two people in costume perform on stage for an audience as part of a show .,4.0,4.0,3.0,3.6667,0.4539,0.8639,0.9333,0.8065,0.7979,0.7661,0.3679,0.3229,0.4149,0.3156,0.3227,0.2162,0.2078
+4,a man and a woman are on the stage performing in a play .,0.3301,two people in costume perform on stage for an audience as part of a show .,5.0,5.0,5.0,5.0,0.6078,0.8445,0.9592,0.6795,0.6932,0.6367,0.5356,0.4229,0.5911,0.4343,0.5158,0.3166,0.3301
+5,a group of people on a stage in front of a crowd putting on a show .,0.3495,two people in costume perform on stage for an audience as part of a show .,5.0,3.0,4.0,4.0,0.6014,0.8695,0.971,0.6849,0.7048,0.6605,0.5415,0.4179,0.5894,0.4344,0.5278,0.3306,0.3495
+6,a group of people are performing on stage to an audience .,0.5683,two people in costume perform on stage for an audience as part of a show .,5.0,3.0,4.0,4.0,0.6292,0.9095,0.9592,0.967,0.9446,0.9391,0.5923,0.6165,0.6134,0.6074,0.5749,0.5783,0.5683

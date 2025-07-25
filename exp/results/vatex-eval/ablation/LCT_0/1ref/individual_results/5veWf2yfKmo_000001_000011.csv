@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a little girl is excited and talks to a little boy , then rolls a bowling ball .",0.0,"a girl walks toward a ball retriever , grabs a bowling ball , and throws it down the lane .",5.0,5.0,5.0,5.0,0.5732,0.8389,0.8621,0.4034,0.3995,0.2841,0.4913,0.0,0.505,0.0,0.4099,0.0,0.0
+2,a man is bowling in a bowling alley and then throws a strike .,0.0,"a girl walks toward a ball retriever , grabs a bowling ball , and throws it down the lane .",4.0,4.0,4.0,4.0,0.4418,0.8267,0.8075,0.5399,0.5295,0.4308,0.3248,0.0,0.3088,0.0,0.1638,0.0,0.0
+3,a man is a bowling ball in a bowling alley .,0.0657,"a girl walks toward a ball retriever , grabs a bowling ball , and throws it down the lane .",4.0,4.0,4.0,4.0,0.4481,0.8513,0.8904,0.679,0.6939,0.6404,0.3517,0.1871,0.3801,0.2046,0.2719,0.0451,0.0657
+4,a little girl holds a bowling ball and waits for a little boy to put a device into place that will help her hit her target better .,0.0,"a girl walks toward a ball retriever , grabs a bowling ball , and throws it down the lane .",2.0,4.0,2.0,2.6667,0.624,0.819,0.793,0.3578,0.401,0.2686,0.5409,0.0,0.5259,0.0401,0.4211,0.0,0.0
+5,several people are in a bowling alley rolling the ball down the lane .,0.0,"a girl walks toward a ball retriever , grabs a bowling ball , and throws it down the lane .",5.0,5.0,4.0,4.6667,0.5154,0.8426,0.8776,0.4771,0.4909,0.3957,0.4248,0.0,0.4478,0.0121,0.3446,0.0,0.0
+6,"while in a large bowling alley , three bowlers roll their balls at once followed by another bowler rolling his ball .",0.0,"a girl walks toward a ball retriever , grabs a bowling ball , and throws it down the lane .",4.0,4.0,4.0,4.0,0.439,0.8152,0.7981,0.2695,0.2536,0.0844,0.3118,0.0,0.297,0.0,0.1377,0.0,0.0

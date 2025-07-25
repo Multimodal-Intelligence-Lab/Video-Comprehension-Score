@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a girl doing a performance in a gym , on roller skates .",0.457,a woman is performing a dance routine in a roller skating competition .,4.0,4.0,5.0,4.3333,0.8548,0.8989,0.9231,0.9301,0.8777,0.8585,0.8384,0.5569,0.6592,0.5304,0.6415,0.4876,0.457
+2,a woman is performing a roller skating routine on roller skates .,0.6589,a woman is performing a dance routine in a roller skating competition .,5.0,5.0,5.0,5.0,0.8337,0.9497,0.9419,0.7938,0.7923,0.7276,0.8248,0.5698,0.7806,0.6625,0.7782,0.5652,0.6589
+3,a woman is performing a dance routine on roller skates .,0.9029,a woman is performing a dance routine in a roller skating competition .,5.0,5.0,4.0,4.6667,0.9127,0.969,0.9804,0.934,0.9277,0.9254,0.9099,0.9065,0.9109,0.9059,0.9081,0.9035,0.9029
+4,a woman is ice skating on a rink and doing tricks .,0.3956,a woman in a glittering outfit is seen skating with rollers on her foot .,5.0,5.0,4.0,4.6667,0.5429,0.8409,1.0,1.0,1.0,1.0,0.4564,0.5286,0.492,0.4973,0.3893,0.4333,0.3956
+5,a girl is ice skating while another woman also ice skating appears in the skating ring .,0.0,a girl is roller skating on a gym floor and is doing a routine and people are watching .,2.0,4.0,3.0,3.0,0.4121,0.8251,0.9391,0.745,0.7825,0.7068,0.2795,0.0,0.3043,0.0005,0.1474,0.0,0.0
+6,a lady demonstrating a spinning dance move in a gym,0.1137,a person on roller skates performs a figure skating routine on a gym floor .,4.0,4.0,4.0,4.0,0.524,0.8168,0.9804,0.9737,0.9263,0.9073,0.4042,0.2992,0.4714,0.3068,0.3241,0.1184,0.1137

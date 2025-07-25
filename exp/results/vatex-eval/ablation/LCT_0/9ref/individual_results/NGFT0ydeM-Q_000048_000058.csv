@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a lady is giving instructions on how to open a bottle .,0.6827,a woman demonstrating how to open a bottle of wine .,5.0,5.0,5.0,5.0,0.7671,0.8884,1.0,1.0,1.0,1.0,0.7379,0.7219,0.7338,0.7181,0.7004,0.6792,0.6827
+2,a man is demonstrating how to open a bottle of wine .,0.7781,a woman demonstrating how to open a bottle of wine .,4.0,4.0,4.0,4.0,0.7883,0.9542,1.0,1.0,1.0,1.0,0.7781,0.7883,0.7883,0.7883,0.7781,0.7781,0.7781
+3,a man is demonstrating how to open a wine bottle .,0.544,a woman demonstrates cutting the foil on a wine bottle before uncorking it .,4.0,4.0,4.0,4.0,0.7741,0.9542,1.0,1.0,1.0,1.0,0.7632,0.6023,0.7418,0.6023,0.7294,0.544,0.544
+4,a woman is trying to open a wine bottle with a corkscrew .,0.5977,a woman demonstrates cutting the foil on a wine bottle before uncorking it .,5.0,5.0,5.0,5.0,0.7698,0.9329,1.0,1.0,1.0,1.0,0.7532,0.6986,0.7553,0.6492,0.7377,0.6787,0.5977
+5,a woman in a white sweater attempts to open a bottle of wine in a kitchen .,0.458,a woman demonstrating how to open a bottle of wine .,4.0,4.0,4.0,4.0,0.5712,0.9008,0.9831,0.8819,0.8784,0.865,0.524,0.5138,0.5529,0.5118,0.5037,0.4602,0.458
+6,a woman showing how to properly pour a bottle of beer into a glass .,0.5048,a woman demonstrating how to open a bottle of wine .,4.0,2.0,4.0,3.3333,0.5952,0.8872,1.0,1.0,1.0,1.0,0.5211,0.5607,0.5607,0.5607,0.5048,0.5048,0.5048

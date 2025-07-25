@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a lady with red top and white trousers is practising headstand of yoga,0.3653,a woman is doing a head stand yoga pose on a mat .,4.0,5.0,5.0,4.6667,0.6568,0.8153,0.9424,0.8753,0.8487,0.8116,0.5785,0.5052,0.6102,0.4831,0.5213,0.3924,0.3653
+2,a man is demonstrating how to do a yoga pose .,0.3526,a woman shows off how specific yoga positions should be performed,5.0,4.0,4.0,4.3333,0.6214,0.8943,0.963,1.0,0.9462,0.9367,0.5472,0.502,0.6069,0.4587,0.5298,0.4044,0.3526
+3,a man is demonstrating how to do a yoga pose .,0.3526,a woman shows off how specific yoga positions should be performed,5.0,4.0,4.0,4.3333,0.6214,0.8943,0.963,1.0,0.9462,0.9367,0.5472,0.502,0.6069,0.4587,0.5298,0.4044,0.3526
+4,a woman in workout clothes does a headstand in a yoga studio .,0.3572,a woman is doing a head stand yoga pose on a mat .,5.0,5.0,5.0,5.0,0.7877,0.8461,1.0,0.8295,0.88,0.8529,0.7491,0.4389,0.7574,0.4711,0.7133,0.3119,0.3572
+5,a woman is seen indoors on a yoga mat performing a yoga pose .,0.2578,a female is in her living room performing a yoga pose on her mat .,5.0,5.0,5.0,5.0,0.8615,0.9286,0.9846,0.8753,0.8487,0.8056,0.8509,0.3788,0.8153,0.3593,0.8129,0.3436,0.2578
+6,a woman stretches and performs poses on a yoga mat .,0.3776,"a woman describes a yoga pose while another woman demonstrates the pose , on a yoga mat .",4.0,5.0,5.0,4.6667,0.7326,0.909,0.963,0.9129,0.8746,0.8416,0.7032,0.4461,0.7152,0.4176,0.6844,0.3955,0.3776

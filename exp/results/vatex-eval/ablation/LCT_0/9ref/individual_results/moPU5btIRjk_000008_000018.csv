@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is surfing in circles with a sail on it .,0.2855,a person is wind surfing over a large body of water .,5.0,5.0,4.0,4.6667,0.5884,0.8743,1.0,1.0,1.0,1.0,0.5085,0.4113,0.498,0.4052,0.4005,0.3267,0.2855
+2,a man is windsurfing in the ocean while music is playing .,0.5194,someone wind surfing with generic music over it .,5.0,5.0,5.0,5.0,0.6606,0.828,0.9796,1.0,0.9845,0.9807,0.5901,0.5661,0.638,0.6021,0.5628,0.476,0.5194
+3,a man is windsurfing in the ocean while music is playing in the background .,0.4714,someone wind surfing with generic music over it .,5.0,5.0,5.0,5.0,0.6844,0.8218,0.9697,0.8638,0.8792,0.8483,0.6159,0.6042,0.6646,0.5656,0.5918,0.5184,0.4714
+4,"various windsurfers ride the waves on a partly cloudy day , attached to sails .",0.2502,a person is wind surfing over a large body of water .,5.0,5.0,5.0,5.0,0.5499,0.8183,0.9375,0.961,0.9288,0.9091,0.4397,0.4324,0.4181,0.4126,0.2575,0.2754,0.2502
+5,a person is sail surfing in some fairly rough surf .,0.469,a person is wind surfing over a large body of water .,4.0,5.0,4.0,4.3333,0.7098,0.8662,0.9655,0.8889,0.9106,0.8968,0.6627,0.5288,0.6825,0.5401,0.6309,0.4561,0.469
+6,a man is wind surfing and jumping on his board in a large body of water .,0.6438,a person is wind surfing over a large body of water .,4.0,4.0,4.0,4.0,0.6933,0.9443,1.0,1.0,0.9687,0.963,0.6752,0.655,0.6933,0.6637,0.6752,0.6346,0.6438

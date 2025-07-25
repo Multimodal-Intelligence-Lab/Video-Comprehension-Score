@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,several women are shown performing amazing feats of flexibility to the music playing in the background .,0.4909,the four ladies are doing an exhibition as they stretch their bodies .,5.0,5.0,5.0,5.0,0.6181,0.8413,0.9903,1.0,0.9822,0.9771,0.5131,0.6181,0.5922,0.6006,0.4801,0.5131,0.4909
+2,a group of people are doing martial arts moves in front of a crowd .,0.0758,four outdoor performers do a special routine for the public .,4.0,4.0,3.0,3.6667,0.3927,0.8235,0.9846,0.9035,0.9135,0.8805,0.1953,0.3037,0.3795,0.3025,0.1778,0.0774,0.0758
+3,a man is doing a cartwheel in front of a group of people .,0.0,three people dressed in white costumes perform acrobatic tricks .,4.0,4.0,1.0,3.0,0.3987,0.8377,1.0,1.0,1.0,1.0,0.2783,0.1708,0.2157,0.1708,0.0,0.0,0.0
+4,a man and woman acrobatic dancers perform outside on a stage for people .,0.0,three people dressed in white costumes perform acrobatic tricks .,4.0,4.0,4.0,4.0,0.4377,0.8399,0.9859,0.8694,0.8523,0.8038,0.3149,0.1349,0.3512,0.0846,0.1861,0.0,0.0
+5,an acrobatic demonstration is being performed in a public place .,0.0874,a group of people outside performing circus act with music in the background,5.0,5.0,5.0,5.0,0.6025,0.8137,0.9231,0.9301,0.8777,0.8327,0.5115,0.3057,0.5325,0.2801,0.4254,0.1198,0.0874
+6,a band in full costume gear are drumming away with baton twirlers at the front doing their thing .,0.0,three people dressed in white costumes perform acrobatic tricks .,4.0,5.0,2.0,3.6667,0.3264,0.7626,0.9658,0.7431,0.78,0.6986,0.1167,0.0,0.2625,0.0,0.0329,0.0,0.0

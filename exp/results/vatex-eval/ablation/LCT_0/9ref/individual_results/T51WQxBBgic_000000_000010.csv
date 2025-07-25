@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a woman wearing wearing black spandex quietly working out at a gym by doing armraises while wearing headphones .,0.4443,a woman repeatedly lifts a weight in her hand while listening to her headphones .,5.0,5.0,5.0,5.0,0.6473,0.84,0.9851,0.8845,0.8777,0.8449,0.5801,0.5528,0.5902,0.5573,0.4855,0.4386,0.4443
+2,a woman is in a gym lifting weights in a gym .,0.7136,a woman in the gym with headphones lifting free weights .,5.0,5.0,5.0,5.0,0.8264,0.9488,0.9375,0.9679,0.7943,0.7832,0.8041,0.777,0.7418,0.7283,0.7279,0.765,0.7136
+3,a woman is lifting weights in a gym while music is playing in the background .,0.5766,a woman repeatedly lifts a weight in her hand while listening to her headphones .,3.0,4.0,3.0,3.3333,0.8698,0.9171,0.9129,0.74,0.7669,0.7201,0.858,0.626,0.8157,0.6474,0.8132,0.5539,0.5766
+4,a female bodybuilder is shown to lift a sizeable amount of weight in a gym,0.4234,a woman is lifting small weights with her arms .,4.0,4.0,4.0,4.0,0.636,0.8555,0.9302,1.0,0.9361,0.9232,0.5746,0.551,0.563,0.5204,0.4682,0.4602,0.4234
+5,a woman at a gym lifting arm weights as a demonstration .,0.4762,a woman is lifting small weights with her arms .,5.0,4.0,4.0,4.3333,0.7502,0.9176,0.9667,0.7414,0.8278,0.8037,0.7072,0.6155,0.7262,0.5207,0.6822,0.5852,0.4762
+6,a woman at the gym doing front arm extensions with dumbbells .,0.3958,a woman in the gym with headphones lifting free weights .,5.0,5.0,5.0,5.0,0.6823,0.864,0.9583,0.8828,0.8789,0.847,0.6282,0.5275,0.6624,0.4986,0.6048,0.4247,0.3958

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man has way strips placed on his legs for waxing,0.6014,a man get his leg hair waxed by a professional .,5.0,5.0,5.0,5.0,0.7519,0.8935,0.8968,0.8283,0.8057,0.7587,0.7088,0.5265,0.7094,0.6419,0.6588,0.4903,0.6014
+2,a woman is laying on a table and getting her leg waxed .,0.362,a person puts wax paper on a person's leg to remove some hair from it .,4.0,4.0,3.0,3.6667,0.7357,0.8841,0.941,0.8344,0.8193,0.7736,0.6922,0.504,0.5423,0.476,0.4466,0.3961,0.362
+3,a man is laying on the floor and getting his leg waxed .,0.3615,a man on a cot as a woman waxes the hair on his legs .,4.0,4.0,4.0,4.0,0.7559,0.8986,0.883,0.786,0.7475,0.6937,0.7283,0.4647,0.6831,0.4631,0.6473,0.3505,0.3615
+4,men sit waiting and one has wax strip applied to the hair on his legs .,0.2921,a man on a cot as a woman waxes the hair on his legs .,4.0,5.0,5.0,4.6667,0.7051,0.897,0.9851,0.6532,0.6998,0.6497,0.6544,0.35,0.6343,0.3932,0.5715,0.2417,0.2921
+5,"a woman removes hair off a section of a man's leg by ripping off hot wax , she then applies more hot wax to his leg .",0.5451,a woman waxing a man's leg with wax strips while he is lying down,5.0,3.0,4.0,4.0,0.8299,0.9241,0.8846,0.714,0.7436,0.7115,0.8159,0.5789,0.6601,0.5956,0.6246,0.5263,0.5451
+6,a man is getting his leg waxed by multiple people,0.6633,a man get his leg hair waxed by a professional .,4.0,4.0,4.0,4.0,0.7869,0.8975,0.9158,0.7248,0.7689,0.7281,0.7626,0.5245,0.7671,0.6737,0.7405,0.5094,0.6633

@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is sailing on a boat as the sea is pretty quiet,0.4083,a man is navigating a small sail boat through open sea waters .,4.0,4.0,5.0,4.3333,0.7046,0.8958,0.8654,0.6397,0.6034,0.5573,0.6702,0.4886,0.6586,0.4372,0.619,0.4624,0.4083
+2,a group of people are on a boat and they are sailing in the water .,0.0,a man is navigating a small sail boat through open sea waters .,4.0,4.0,4.0,4.0,0.4582,0.8645,0.9183,0.237,0.0651,0.0,0.3732,0.0,0.41,0.0,0.3175,0.0,0.0
+3,a man on a sailboat is sailing in the water .,0.6781,a man is navigating a small sail boat through open sea waters .,5.0,5.0,5.0,5.0,0.7669,0.8935,0.9243,0.8284,0.8106,0.7881,0.7391,0.7186,0.7478,0.7124,0.7177,0.685,0.6781
+4,on a large body of water people are sailing on sail boats .,0.0,a man is navigating a small sail boat through open sea waters .,5.0,5.0,5.0,5.0,0.4976,0.8461,0.7473,0.4431,0.3345,0.2135,0.4062,0.0,0.3277,0.0,0.2055,0.0,0.0
+5,a man is riding across the water in a boat .,0.0,a man is navigating a small sail boat through open sea waters .,5.0,5.0,5.0,5.0,0.5257,0.8637,0.8367,0.5242,0.4668,0.3827,0.4509,0.095,0.4331,0.0,0.3437,0.0,0.0
+6,a man is on a boat traveling on the water .,0.0,a man is navigating a small sail boat through open sea waters .,5.0,5.0,5.0,5.0,0.5724,0.8923,0.8242,0.0,0.0,0.0,0.5208,0.0,0.4812,0.0,0.4186,0.0,0.0

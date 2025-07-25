@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people are watching a man break dance while cheering him on .,0.09,many onlookers cheer as a break dancer spins on their head outside while music plays .,5.0,5.0,5.0,5.0,0.6579,0.8282,0.7529,0.4979,0.4659,0.3551,0.587,0.2368,0.5457,0.1882,0.4514,0.1446,0.09
+2,a man is doing a cartwheel on a mat in front of a crowd .,0.0,many onlookers cheer as a break dancer spins on their head outside while music plays .,4.0,4.0,3.0,3.6667,0.2783,0.7565,0.8455,0.7071,0.6935,0.5948,0.0459,0.0,0.1463,0.0,0.0,0.0,0.0
+3,a man does a backflip in front of a crowd of people .,0.0,many onlookers cheer as a break dancer spins on their head outside while music plays .,4.0,4.0,4.0,4.0,0.3252,0.7571,0.8455,0.7071,0.6935,0.5951,0.1087,0.0457,0.2018,0.0269,0.0,0.0,0.0
+4,a guys performs some break dance moves as people watch him .,0.1935,many onlookers cheer as a break dancer spins on their head outside while music plays .,5.0,5.0,5.0,5.0,0.5812,0.8055,0.8554,0.6421,0.6448,0.559,0.48,0.3477,0.5104,0.3504,0.3921,0.1902,0.1935
+5,"a man is break dancing on a floor , as a group of people watch .",0.2168,many onlookers cheer as a break dancer spins on their head outside while music plays .,5.0,4.0,5.0,4.6667,0.5315,0.7997,0.8988,0.7388,0.748,0.6848,0.4142,0.3659,0.4787,0.3736,0.3482,0.207,0.2168
+6,a young man is breakdancing onstage as people around him cheer .,0.0,many onlookers cheer as a break dancer spins on their head outside while music plays .,5.0,4.0,4.0,4.3333,0.5667,0.7852,0.832,0.5438,0.5437,0.4188,0.4481,0.195,0.4792,0.1947,0.3367,0.0,0.0

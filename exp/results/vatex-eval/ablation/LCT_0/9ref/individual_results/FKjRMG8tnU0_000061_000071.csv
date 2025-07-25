@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,slow motion action of person walking out the shot outside in a grassy areas covered with dry leaves .,0.0955,a man is walking across the grass with a lawn mower .,5.0,5.0,5.0,5.0,0.54,0.8737,0.9792,1.0,0.9868,0.9827,0.4735,0.2718,0.4837,0.2601,0.4091,0.1257,0.0955
+2,a person is using a leaf blower to blow up the grass .,0.1607,a person walking past a lawn mower that is making loud noises .,3.0,1.0,1.0,1.6667,0.4697,0.8633,1.0,0.8879,0.9107,0.8771,0.359,0.3231,0.3984,0.3229,0.3031,0.1609,0.1607
+3,a person is using a leaf blower to blow leaves from the ground .,0.4272,a person is outside and there are lots of leaves on the ground .,4.0,1.0,1.0,2.0,0.6374,0.895,1.0,0.8723,0.8863,0.8456,0.5949,0.492,0.6283,0.4873,0.5847,0.4323,0.4272
+4,a person is riding a riding lawn mower and they are moving up and down to move leaves .,0.2935,a person walking past a lawn mower that is making loud noises .,3.0,5.0,1.0,3.0,0.5715,0.8479,0.9885,0.8983,0.9412,0.9307,0.4757,0.3722,0.4805,0.4009,0.3869,0.2597,0.2935
+5,someone is sitting on a leaf blower and riding around some trees that have shed many leaves .,0.229,a person is outside and there are lots of leaves on the ground .,4.0,4.0,1.0,3.0,0.5415,0.8588,0.9888,1.0,0.9827,0.9768,0.4661,0.3578,0.4617,0.3539,0.3638,0.2338,0.229
+6,an individual uses a leaf blower to get rid of several leaves .,0.3116,a person is outside and there are lots of leaves on the ground .,3.0,3.0,1.0,2.3333,0.6033,0.8323,1.0,0.7988,0.8222,0.7742,0.5214,0.4461,0.5583,0.4294,0.467,0.3317,0.3116

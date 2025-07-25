@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person is driving a bulldozer over some loose dirt .,0.0,a large yellow tractor pushes some dirt outside in the day,5.0,5.0,5.0,5.0,0.3378,0.8136,0.8803,0.6532,0.5832,0.4877,0.1861,0.0,0.2478,0.0,0.0754,0.0,0.0
+2,a bulldozer is being driven by a bulldozer in a field .,0.0144,a large yellow tractor pushes some dirt outside in the day,4.0,4.0,2.0,3.3333,0.3246,0.7509,0.9375,0.9579,0.9126,0.8836,0.1005,0.2949,0.2796,0.26,0.0406,0.061,0.0144
+3,a bulldozer is being driven by a large pile of dirt .,0.0,a large yellow tractor pushes some dirt outside in the day,5.0,3.0,2.0,3.3333,0.4404,0.8421,0.8327,0.5603,0.4497,0.3465,0.3355,0.0012,0.3279,0.0,0.2019,0.0,0.0
+4,a bulldozer picked up dirt and emptied it in the back of a truck,0.0,a large yellow tractor pushes some dirt outside in the day,2.0,1.0,2.0,1.6667,0.367,0.7947,0.8766,0.5344,0.44,0.2953,0.2035,0.0,0.2778,0.0,0.0913,0.0,0.0
+5,outside someone is driving heavy machinery and dumping dirt into a dump truck .,0.0,a large yellow tractor pushes some dirt outside in the day,4.0,3.0,4.0,3.6667,0.433,0.8292,0.7718,0.262,0.1476,0.0,0.3162,0.0,0.2653,0.0,0.1139,0.0,0.0
+6,a man is driving a bulldozer slowly pushing earth down a hill .,0.0,a large yellow tractor pushes some dirt outside in the day,4.0,4.0,4.0,4.0,0.2975,0.7909,0.9081,0.5033,0.6476,0.5545,0.1118,0.0,0.2264,0.0,0.0219,0.0,0.0

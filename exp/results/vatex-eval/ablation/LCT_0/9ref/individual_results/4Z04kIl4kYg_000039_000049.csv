@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a boy has his hair washed with shampoo while in the bath .,0.579,a young boy has their hair washed and is smiling and enjoying it .,5.0,5.0,2.0,4.0,0.6919,0.8847,1.0,0.8408,0.827,0.8045,0.6518,0.6336,0.6919,0.6275,0.6518,0.5859,0.579
+2,a woman is getting her hair pierced by a woman .,0.0,a young boy is sitting while another person applies dye to his wet hair .,4.0,1.0,2.0,2.3333,0.3017,0.8314,0.9756,0.8022,0.8009,0.7605,0.1266,0.0639,0.2441,0.084,0.0686,0.0,0.0
+3,a woman is getting her head shaved by a woman .,0.0,a young boy is sitting while another person applies dye to his wet hair .,4.0,1.0,2.0,2.3333,0.2969,0.8013,0.9524,0.969,0.9366,0.916,0.0479,0.168,0.2031,0.1392,0.0,0.0,0.0
+4,a little kid gets their hair worked on by an adult that is behind them,0.2542,a young person is getting their hair colored by someone wearing plastic gloves .,4.0,3.0,4.0,3.6667,0.4628,0.8241,1.0,0.9045,0.9217,0.9035,0.3264,0.3836,0.4353,0.3951,0.3038,0.24,0.2542
+5,a small child is sucking on her hand while getting her hair fixed .,0.0,a young boy is sitting while another person applies dye to his wet hair .,4.0,1.0,4.0,3.0,0.362,0.8372,0.9804,0.8387,0.84,0.8002,0.2092,0.1433,0.293,0.1446,0.1327,0.0,0.0
+6,a young boy is fixing his hair with his fingers as it is sticking up .,0.2713,a young boy has their hair washed and is smiling and enjoying it .,5.0,3.0,2.0,3.3333,0.4697,0.874,0.9599,0.8387,0.836,0.8116,0.3908,0.3309,0.4467,0.3657,0.3643,0.2344,0.2713

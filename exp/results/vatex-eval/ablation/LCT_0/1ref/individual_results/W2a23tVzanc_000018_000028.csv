@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a couple of guys play a game with a ball inside of a place,0.0,a man with a racket hits a ball against a wall and then another man hits the ball .,4.0,5.0,5.0,4.6667,0.4205,0.8193,0.9243,0.6502,0.6688,0.5957,0.2926,0.1087,0.373,0.1334,0.2347,0.0,0.0
+2,two men are playing a game of racquetball on a court .,0.0,a man with a racket hits a ball against a wall and then another man hits the ball .,4.0,5.0,5.0,4.6667,0.5789,0.7961,0.8784,0.5065,0.4995,0.3713,0.4711,0.1475,0.5207,0.1354,0.3979,0.0,0.0
+3,two men are playing a game of racquetball in a racquetball court .,0.0,a man with a racket hits a ball against a wall and then another man hits the ball .,5.0,5.0,5.0,5.0,0.5806,0.8024,0.8609,0.3561,0.3053,0.1343,0.4773,0.0,0.5128,0.0,0.3928,0.0,0.0
+4,two men in a racquet game were swinging around their racket,0.1461,a man with a racket hits a ball against a wall and then another man hits the ball .,5.0,5.0,5.0,5.0,0.6494,0.8267,0.8242,0.5349,0.5083,0.4052,0.5758,0.2838,0.5746,0.2428,0.4854,0.1924,0.1461
+5,"inside a racquetball court , two men engage each other in a game .",0.3285,a man with a racket hits a ball against a wall and then another man hits the ball .,5.0,5.0,5.0,5.0,0.6227,0.8061,0.9223,0.6811,0.6969,0.6241,0.532,0.446,0.5909,0.4587,0.4926,0.3128,0.3285
+6,2 men are in a racket ball court hitting the ball onto the wall,0.2615,a man with a racket hits a ball against a wall and then another man hits the ball .,5.0,5.0,5.0,5.0,0.7666,0.9047,0.7432,0.3248,0.452,0.3943,0.742,0.1192,0.665,0.2852,0.6529,0.09,0.2615

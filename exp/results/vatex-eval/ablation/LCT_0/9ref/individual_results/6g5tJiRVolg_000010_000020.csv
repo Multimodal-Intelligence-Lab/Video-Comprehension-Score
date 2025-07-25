@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a man is climbing up a rope and then he slides down to the bottom .,0.6929,a person climbs up a rope in a gym and then slides back down .,4.0,5.0,5.0,4.6667,0.7496,0.9285,1.0,1.0,1.0,1.0,0.7273,0.723,0.723,0.723,0.6969,0.6929,0.6929
+2,a woman is on a trapeze in a gym and she is doing a rope .,0.0977,"a person is climbing a rope in a gym , then slides down the rope .",3.0,2.0,4.0,3.0,0.5722,0.8944,0.8333,0.7279,0.5301,0.4746,0.5217,0.395,0.4867,0.1788,0.4261,0.3236,0.0977
+3,a woman is climbing up a rope in a gym .,0.7071,a man is climbing a rope in an indoor gym .,4.0,4.0,4.0,4.0,0.7293,0.9445,1.0,1.0,1.0,1.0,0.7071,0.7293,0.7293,0.7293,0.7071,0.7071,0.7071
+4,a man in an indoor gym climbs a rope hanging from the ceiling .,0.5781,"a man in a gym climbing to the top of a rope , barefoot .",5.0,5.0,5.0,5.0,0.9518,0.9496,1.0,0.8933,0.9155,0.9006,0.9493,0.6252,0.6794,0.6258,0.6385,0.5774,0.5781
+5,"a woman climbs up a thick rope in a gym to touch the knot at the top , then slides down to the ground .",0.5796,a person climbs up a rope in a gym and then slides back down .,4.0,4.0,4.0,4.0,0.7608,0.9072,0.9365,0.8813,0.8774,0.8522,0.7363,0.5725,0.7368,0.5931,0.7098,0.5573,0.5796
+6,a woman is climbing rope to the top and then comes down at a gym .,0.6816,a person climbs a vertical rope and then descends in a gym .,4.0,4.0,4.0,4.0,0.7663,0.9128,1.0,1.0,1.0,1.0,0.7338,0.6626,0.7562,0.7205,0.7223,0.641,0.6816

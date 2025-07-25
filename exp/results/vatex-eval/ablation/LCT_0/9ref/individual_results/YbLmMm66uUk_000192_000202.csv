@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,people were playing around the beach and a person paddling a kayak afar on the water,0.3095,a large group of people are out on the beach together ; one person is also kayaking .,5.0,5.0,5.0,5.0,0.7154,0.8845,0.9665,0.624,0.658,0.5988,0.6713,0.2022,0.6569,0.3521,0.6037,0.1009,0.3095
+2,a group of people are in a lake and they are swimming in the water .,0.5242,a group of people are on the lake having a good time on a sunny day .,5.0,2.0,4.0,3.6667,0.6433,0.8927,1.0,0.8644,0.8611,0.8405,0.5903,0.5873,0.6343,0.5857,0.5801,0.5261,0.5242
+3,a group of people are in a kayak and they are in a boat .,0.1957,a group of people on the shore looking on as someone is paddling a small boat,5.0,4.0,5.0,4.6667,0.6338,0.8989,0.9697,1.0,0.9744,0.9699,0.5862,0.3261,0.5563,0.3018,0.4986,0.2214,0.1957
+4,a few people are swimming in the ocean next to a boat .,0.175,a group of people on the shore looking on as someone is paddling a small boat,5.0,2.0,3.0,3.3333,0.3973,0.8453,1.0,0.8819,0.8788,0.8491,0.287,0.3167,0.3747,0.3026,0.2503,0.1916,0.175
+5,two people leave the dock in a boat while a group of people watch .,0.0,a large group of people are gathered along the shore of a river,5.0,4.0,1.0,3.3333,0.4625,0.8664,0.9286,0.8248,0.8024,0.7588,0.3727,0.1056,0.2743,0.0565,0.1377,0.0,0.0
+6,two people get caught in a wave in the ocean while another person watches .,0.2017,a crowd of people are seen at the beach and even some are in the water .,3.0,4.0,1.0,2.6667,0.4397,0.8277,0.975,0.8366,0.848,0.8163,0.3231,0.3303,0.4126,0.3392,0.2903,0.1909,0.2017

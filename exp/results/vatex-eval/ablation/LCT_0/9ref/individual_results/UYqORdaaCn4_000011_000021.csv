@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of people inside are clapping and dancing while sitting .,0.2753,a group of people are in a room and dancing together and singing .,5.0,5.0,4.0,4.6667,0.6317,0.8917,0.9148,0.7701,0.8097,0.7793,0.5869,0.2898,0.5445,0.3584,0.4891,0.1764,0.2753
+2,a group of people are sitting in a room and they are having a conversation .,0.4282,"a group of people sit in a living room , singing clapping and listening to music .",5.0,5.0,5.0,5.0,0.5182,0.8879,1.0,1.0,1.0,1.0,0.4573,0.5182,0.4818,0.4923,0.4163,0.4573,0.4282
+3,a group of people are sitting on a couch and playing a guitar .,0.2548,"a group of people sit in a living room , singing clapping and listening to music .",4.0,4.0,4.0,4.0,0.4845,0.8536,0.9557,0.7974,0.8487,0.8134,0.396,0.3469,0.4606,0.3639,0.368,0.2349,0.2548
+4,a man sings karaoke to a song while others dance .,0.194,a group of people are singing karaoke and clapping there hands,4.0,5.0,4.0,4.3333,0.6094,0.8483,0.9583,0.7466,0.836,0.7943,0.5395,0.2783,0.5317,0.3436,0.4268,0.178,0.194
+5,a guy is at a party singing while other people are dancing .,0.0758,a group of teenagers are doing karaoke together and also laughing .,4.0,4.0,4.0,4.0,0.5848,0.8988,0.9677,1.0,0.9672,0.9572,0.5102,0.3159,0.4776,0.2927,0.3837,0.1061,0.0758
+6,a girl is singing a song at a karaoke bar as her friends cheer her on .,0.1143,a group of people dancing and doing karaoke at home .,4.0,4.0,2.0,3.3333,0.6898,0.8524,0.9396,0.8284,0.744,0.6792,0.6284,0.3761,0.557,0.2751,0.4693,0.2377,0.1143

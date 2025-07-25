@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a group of girls are playing volleyball in a sand volleyball court .,0.0,a woman is holding a volleyball and she is playing with another 3 women .,5.0,5.0,5.0,5.0,0.5353,0.8445,0.7564,0.1179,0.2039,0.0574,0.4497,0.0,0.3856,0.0,0.2725,0.0,0.0
+2,a group of people are playing a game of volleyball .,0.0776,a woman is holding a volleyball and she is playing with another 3 women .,5.0,5.0,5.0,5.0,0.5936,0.8399,0.8067,0.6417,0.5246,0.434,0.5161,0.3666,0.4962,0.1991,0.4002,0.2459,0.0776
+3,a group of people are playing a game of volleyball on a field .,0.0,a woman is holding a volleyball and she is playing with another 3 women .,5.0,4.0,5.0,4.6667,0.522,0.8352,0.8365,0.4667,0.3319,0.2001,0.4277,0.0,0.4286,0.0,0.3158,0.0,0.0
+4,the girls high school volleyball team is in the middle of a match .,0.0,a woman is holding a volleyball and she is playing with another 3 women .,5.0,4.0,5.0,4.6667,0.4424,0.8035,0.7724,0.4874,0.5976,0.4993,0.306,0.0,0.2781,0.067,0.1016,0.0,0.0
+5,a woman serves a volleyball to an opposing team to begin play of volleyball game .,0.0,a woman is holding a volleyball and she is playing with another 3 women .,5.0,5.0,5.0,5.0,0.6133,0.867,0.7623,0.1491,0.0,0.0,0.5539,0.0,0.4927,0.0,0.4148,0.0,0.0
+6,a volleyball team is playing a game of volleyball with multiple balls in the game .,0.0,a woman is holding a volleyball and she is playing with another 3 women .,4.0,4.0,4.0,4.0,0.5476,0.8421,0.8986,0.4867,0.4471,0.3435,0.4628,0.0627,0.4965,0.0,0.4021,0.0,0.0

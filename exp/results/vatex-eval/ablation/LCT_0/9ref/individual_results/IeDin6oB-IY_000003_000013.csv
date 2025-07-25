@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a child gets a hit while playing baseball , runs to first base and another one runs home .",0.6303,a young boy hits a baseball and runs to first base .,5.0,4.0,5.0,4.6667,0.8015,0.9459,0.919,0.7615,0.779,0.7386,0.7902,0.6591,0.784,0.6469,0.7717,0.6349,0.6303
+2,a young boy hits a baseball at a baseball game .,0.6107,a young boy hits a baseball and runs to first base .,5.0,5.0,5.0,5.0,0.796,0.9321,0.9599,0.8619,0.8479,0.8222,0.7811,0.6381,0.7875,0.618,0.772,0.6312,0.6107
+3,a group of people are playing baseball on a baseball field .,0.6124,a group of kids are playing a baseball game outdoors .,5.0,5.0,5.0,5.0,0.7024,0.9326,0.9599,0.8446,0.8554,0.8449,0.6759,0.6039,0.6895,0.6441,0.6618,0.5752,0.6124
+4,a young boy is swinging a baseball bat at a ball that is on a baseball tee,0.536,a young child takes a turn at bat in a t-ball game being played on a baseball field .,5.0,5.0,5.0,5.0,0.6606,0.8684,0.9569,0.8809,0.8742,0.8548,0.6048,0.6011,0.6229,0.5981,0.5646,0.5395,0.536
+5,a group of kids playing baseball on a beautiful sunny day .,0.7703,a group of kids are playing a baseball game outdoors .,4.0,4.0,4.0,4.0,0.8158,0.9121,0.9787,0.8812,0.879,0.8673,0.7981,0.791,0.8118,0.7905,0.7937,0.7709,0.7703
+6,several kids use a practice machine to hit baseballs .,0.2658,a group of kids wearing uniforms are playing a game of baseball on a baseball field .,4.0,4.0,4.0,4.0,0.5487,0.8301,0.9778,0.8548,0.8828,0.852,0.4563,0.3807,0.5094,0.3959,0.409,0.2473,0.2658

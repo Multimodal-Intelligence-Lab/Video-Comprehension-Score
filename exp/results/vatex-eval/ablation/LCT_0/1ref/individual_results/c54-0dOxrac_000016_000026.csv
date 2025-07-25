@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"a little boy practices punching a weighted bag from the ceiling , knocking himself over .",0.5299,a young boy playing with a punching bag when the bag swings back and hits him .,5.0,5.0,5.0,5.0,0.6786,0.8488,0.9426,0.7924,0.8054,0.7707,0.6214,0.5944,0.6591,0.601,0.5983,0.5222,0.5299
+2,a little boy is playing with a punching bag .,0.663,a young boy playing with a punching bag when the bag swings back and hits him .,5.0,5.0,5.0,5.0,0.7472,0.9227,0.8245,0.9126,0.8129,0.7972,0.7261,0.723,0.6934,0.689,0.6677,0.6998,0.663
+3,a little boy is punching a punching bag in a garage .,0.5144,a young boy playing with a punching bag when the bag swings back and hits him .,5.0,5.0,5.0,5.0,0.6165,0.889,0.9412,0.9002,0.8883,0.8743,0.5686,0.574,0.5925,0.5683,0.5417,0.5208,0.5144
+4,a boy is boxing in his living room while using a punching bag and the punching bag hits him in the face .,0.0,a young boy playing with a punching bag when the bag swings back and hits him .,4.0,4.0,4.0,4.0,0.7297,0.8955,0.9138,0.2579,0.2315,0.1418,0.6982,0.0,0.7042,0.0,0.6697,0.0,0.0
+5,a young boy is hitting a bag with boxing gloves on and the bag knocked him over .,0.6149,a young boy playing with a punching bag when the bag swings back and hits him .,4.0,4.0,4.0,4.0,0.7393,0.8948,0.9116,0.7554,0.7566,0.728,0.7086,0.6549,0.714,0.6554,0.6804,0.6143,0.6149
+6,a young man jump kicking a punching bag in a room .,0.4116,a young boy playing with a punching bag when the bag swings back and hits him .,4.0,4.0,4.0,4.0,0.5538,0.87,0.9123,0.9045,0.8717,0.8526,0.4871,0.5067,0.5109,0.4882,0.4378,0.4329,0.4116

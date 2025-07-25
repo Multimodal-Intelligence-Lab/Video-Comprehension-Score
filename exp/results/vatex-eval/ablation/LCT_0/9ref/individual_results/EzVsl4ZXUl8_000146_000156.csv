@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,"two men spar in a boxing gym , wearing gloves and headgear and throw punches at one another .",0.5102,two boxers are sparring in a boxing ring during training at a gym .,5.0,5.0,5.0,5.0,0.7597,0.9141,0.9118,0.6509,0.6715,0.6029,0.7371,0.5354,0.6966,0.5377,0.6681,0.5077,0.5102
+2,two men are in a boxing match and one of them punches the other .,0.6043,two men are boxing against each other in a ring with a few people watching .,5.0,5.0,4.0,4.6667,0.8244,0.918,0.9787,1.0,0.9821,0.9792,0.8076,0.6721,0.8056,0.6506,0.7883,0.6656,0.6043
+3,two men are in a gym and one of them kicks a punching bag .,0.0,two men in a boxing ring spar while wearing headgear,3.0,3.0,3.0,3.0,0.4805,0.8469,0.928,0.6807,0.7637,0.7117,0.3699,0.162,0.3853,0.164,0.2742,0.0106,0.0
+4,two men practice boxing and sparing in a basement gym .,0.4753,two men square off in a practice boxing match while a few others watch outside of the ring .,5.0,5.0,5.0,5.0,0.655,0.8904,1.0,1.0,1.0,1.0,0.6069,0.5457,0.5929,0.5457,0.5361,0.4753,0.4753
+5,a guy is on stage with a couple other dudes attempting to beat box .,0.0,two men in a boxing ring spar while wearing headgear,5.0,1.0,5.0,3.6667,0.2369,0.7976,0.9569,0.7417,0.682,0.5912,0.0399,0.0,0.1493,0.0,0.0,0.0,0.0
+6,a man boxing vigorously with boxing gloves and with a punching bag,0.0,two men in a boxing ring spar while wearing headgear,4.0,3.0,4.0,3.6667,0.5276,0.862,0.9396,0.7208,0.8153,0.7707,0.4351,0.0738,0.3771,0.1812,0.2774,0.0,0.0

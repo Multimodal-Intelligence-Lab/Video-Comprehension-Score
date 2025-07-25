@@ -1,0 +1,19 @@
+candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,GAS,LAS,NAS-D,NAS-L,NAS,"NAS
++LAS(S)","GAS
++LAS(S)","GAS
++NAS-L(S)","GAS
++NAS-D(S)","GAS
++NAS(S)","GAS
++LAS(S)
++NAS-D(S)","GAS
++LAS(S)
++NAS-L(S)","GAS
++LAS(S)
++(NAS-D
++NAS-L)(S)"
+1,a person shuffles a red deck of playing cards .,0.0,a woman shuffles cards while her and a guy make funny voices,5.0,5.0,5.0,5.0,0.4546,0.8538,0.7787,0.2686,0.0,0.0,0.3612,0.0,0.2996,0.0,0.1796,0.0,0.0
+2,a person is showing how to shuffle a deck of cards .,0.0,a woman shuffles cards while her and a guy make funny voices,5.0,5.0,5.0,5.0,0.4933,0.8522,0.6897,0.0,0.0,0.0,0.4055,0.0,0.2653,0.0,0.1379,0.0,0.0
+3,a person is shuffling a deck of cards with a deck of cards .,0.0,a woman shuffles cards while her and a guy make funny voices,5.0,5.0,4.0,4.6667,0.5122,0.8764,0.7403,0.292,0.0313,0.0,0.4435,0.0,0.3411,0.0,0.2482,0.0,0.0
+4,a man seated is shuffling cards while people are talking in the background . /,0.0,a woman shuffles cards while her and a guy make funny voices,5.0,5.0,5.0,5.0,0.4909,0.8288,0.8027,0.4444,0.5721,0.4837,0.3857,0.0,0.3658,0.1102,0.2347,0.0,0.0
+5,someone is demonstrating a way to shuffle a deck of cards .,0.0,a woman shuffles cards while her and a guy make funny voices,5.0,5.0,5.0,5.0,0.4704,0.8178,0.7548,0.4424,0.263,0.0988,0.3524,0.0,0.2983,0.0,0.142,0.0,0.0
+6,a man is shuffling a deck of cards in his hands in slow motion .,0.0,a woman shuffles cards while her and a guy make funny voices,4.0,4.0,4.0,4.0,0.3963,0.8439,0.8634,0.5527,0.674,0.6137,0.2846,0.0,0.3007,0.1042,0.1714,0.0,0.0
