@@ -1,16 +1,13 @@
 name: Build and Publish
 
 on:
-  # Publish on releases and tags (only after tests pass)
-  release:
-    types: [published, created]
-  push:
-    tags:
-      - 'v*.*.*'
-  
-  # Manual trigger for testing (only after tests pass)
+  # Manual trigger only - full control over when to publish
   workflow_dispatch:
     inputs:
+      version:
+        description: 'Version to release (e.g., 1.0.0)'
+        required: true
+        type: string
       environment:
         description: 'Deploy to'
         required: true
@@ -108,7 +105,12 @@ jobs:
         git tag -l v*.*.* | sort -V | tail -5
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-        python tag_version.py
+        
+        VERSION="${{ github.event.inputs.version }}"
+        TAG="v$VERSION"
+        echo "Creating version tag: $TAG"
+        git tag -a "$TAG" -m "Release $TAG"
+        git push origin "$TAG"
     
     - name: Install build dependencies
       run: |
