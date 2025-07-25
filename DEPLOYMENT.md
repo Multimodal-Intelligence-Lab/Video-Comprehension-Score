@@ -196,8 +196,8 @@ git commit -m "fix typo in README"
 ### For Contributors
 1. **Clone repository**
    ```bash
-   git clone https://github.com/hdubey-debug/vcs.git
-   cd vcs
+   git clone https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score.git
+   cd Video-Comprehension-Score
    ```
 
 2. **Create feature branch**

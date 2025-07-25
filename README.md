@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/hdubey-debug/vcs">
+  <a href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score">
     <img src=".github/assets/vcs.gif" alt="VCS Process Flow" width="100%"/>
   </a>
   <p align="center">
@@ -200,16 +200,16 @@ pip install video-comprehension-score
 
 **Terminal Installation:**
 ```bash
-git clone https://github.com/hdubey-debug/vcs.git
-cd vcs
+git clone https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score.git
+cd Video-Comprehension-Score
 pip install -e ".[dev]"
 pre-commit install
 ```
 
 **Jupyter/Colab Installation:**
 ```bash
-!git clone https://github.com/hdubey-debug/vcs.git
-%cd vcs
+!git clone https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score.git
+%cd Video-Comprehension-Score
 !pip install -e ".[dev]"
 !pre-commit install
 ```
@@ -838,8 +838,8 @@ We welcome contributions to VCS Metrics! Whether you're fixing bugs, adding feat
 
 ```bash
 # 1. Clone and setup
-git clone https://github.com/hdubey-debug/vcs.git
-cd vcs
+git clone https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score.git
+cd Video-Comprehension-Score
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
@@ -961,8 +961,8 @@ Our comprehensive CI/CD pipeline ensures code quality and reliability on every c
 <tr>
 <td align="center">
 
-[![Tests](https://img.shields.io/github/actions/workflow/status/hdubey-debug/vcs/test.yml?branch=main&label=Tests&logo=github-actions&logoColor=white&style=for-the-badge)](https://github.com/hdubey-debug/vcs/actions/workflows/test.yml)
-[![Build](https://img.shields.io/github/actions/workflow/status/hdubey-debug/vcs/publish.yml?label=Build&logo=github-actions&logoColor=white&style=for-the-badge)](https://github.com/hdubey-debug/vcs/actions/workflows/publish.yml)
+[![Tests](https://img.shields.io/github/actions/workflow/status/Multimodal-Intelligence-Lab/Video-Comprehension-Score/test.yml?branch=main&label=Tests&logo=github-actions&logoColor=white&style=for-the-badge)](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/actions/workflows/test.yml)
+[![Build](https://img.shields.io/github/actions/workflow/status/Multimodal-Intelligence-Lab/Video-Comprehension-Score/publish.yml?label=Build&logo=github-actions&logoColor=white&style=for-the-badge)](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/actions/workflows/publish.yml)
 
 **✅ Automated testing ensures every change is production-ready**
 
@@ -989,19 +989,19 @@ For comprehensive information about contributing and development:
 <td width="33%" align="center">
 
 **🐛 Bug Reports**  
-[Create GitHub Issue](https://github.com/hdubey-debug/vcs/issues)
+[Create GitHub Issue](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues)
 
 </td>
 <td width="33%" align="center">
 
 **💬 Questions**  
-[GitHub Discussions](https://github.com/hdubey-debug/vcs/discussions)
+[GitHub Discussions](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/discussions)
 
 </td>
 <td width="33%" align="center">
 
 **💡 Feature Requests**  
-[Feature Request Issue](https://github.com/hdubey-debug/vcs/issues/new)
+[Feature Request Issue](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues/new)
 
 </td>
 </tr>
@@ -1019,7 +1019,7 @@ If you use VCS Metrics in your research, please cite:
   author = {Dubey, Harsh and Ali, Mukhtiar and Mishra, Sugam and Pack, Chulwoo},
   year = {2024},
   institution = {South Dakota State University},
-  url = {https://github.com/hdubey-debug/vcs},
+  url = {https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score},
   note = {Python package for narrative similarity evaluation}
 }
 ```
@@ -1094,10 +1094,10 @@ VCS is designed to work seamlessly with [CLIP-CC Dataset](https://github.com/hdu
 
 ### 📊 **Contribution Analytics**
 
-[![Contributors](https://img.shields.io/github/contributors/hdubey-debug/vcs?style=for-the-badge&color=14b8a6&labelColor=0f172a)](https://github.com/hdubey-debug/vcs/graphs/contributors)
-[![Commit Activity](https://img.shields.io/github/commit-activity/m/hdubey-debug/vcs?style=for-the-badge&color=ff6b6b&labelColor=0f172a)](https://github.com/hdubey-debug/vcs/pulse)
-[![Last Commit](https://img.shields.io/github/last-commit/hdubey-debug/vcs?style=for-the-badge&color=4ecdc4&labelColor=0f172a)](https://github.com/hdubey-debug/vcs/commits)
-[![Code Frequency](https://img.shields.io/github/languages/count/hdubey-debug/vcs?style=for-the-badge&color=f9ca24&labelColor=0f172a)](https://github.com/hdubey-debug/vcs)
+[![Contributors](https://img.shields.io/github/contributors/Multimodal-Intelligence-Lab/Video-Comprehension-Score?style=for-the-badge&color=14b8a6&labelColor=0f172a)](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/graphs/contributors)
+[![Commit Activity](https://img.shields.io/github/commit-activity/m/Multimodal-Intelligence-Lab/Video-Comprehension-Score?style=for-the-badge&color=ff6b6b&labelColor=0f172a)](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/pulse)
+[![Last Commit](https://img.shields.io/github/last-commit/Multimodal-Intelligence-Lab/Video-Comprehension-Score?style=for-the-badge&color=4ecdc4&labelColor=0f172a)](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/commits)
+[![Code Frequency](https://img.shields.io/github/languages/count/Multimodal-Intelligence-Lab/Video-Comprehension-Score?style=for-the-badge&color=f9ca24&labelColor=0f172a)](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score)
 
 </div>
 
@@ -1115,6 +1115,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Institution**: South Dakota State University  
 **Year**: 2024
 
-[⭐ Star this repo](https://github.com/hdubey-debug/vcs) • [🐛 Report Bug](https://github.com/hdubey-debug/vcs/issues) • [💡 Request Feature](https://github.com/hdubey-debug/vcs/issues) • [💬 Community Q&A](https://github.com/hdubey-debug/vcs/discussions)
+[⭐ Star this repo](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score) • [🐛 Report Bug](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues) • [💡 Request Feature](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues) • [💬 Community Q&A](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/discussions)
 
 </div>

@@ -7,8 +7,8 @@ Thank you for your interest in contributing to VCS Metrics! This guide will help
 ### 1. Setup Development Environment
 ```bash
 # Clone the repository
-git clone https://github.com/hdubey-debug/vcs.git
-cd vcs
+git clone https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score.git
+cd Video-Comprehension-Score
 
 # Create virtual environment
 python -m venv venv

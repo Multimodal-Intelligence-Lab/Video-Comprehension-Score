@@ -84,8 +84,8 @@ Table of Contents
    :caption: Additional Resources:
 
    PyPI Package <https://pypi.org/project/video-comprehension-score/>
-   GitHub Repository <https://github.com/hdubey-debug/vcs>
-   Report Issues <https://github.com/hdubey-debug/vcs/issues>
+   GitHub Repository <https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score>
+   Report Issues <https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues>
 
 Citation
 --------

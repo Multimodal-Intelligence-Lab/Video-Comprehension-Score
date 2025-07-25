@@ -37,8 +37,8 @@ For development or to get the latest features:
       .. code-block:: bash
 
          # Clone the repository
-         git clone https://github.com/hdubey-debug/vcs.git
-         cd vcs
+         git clone https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score.git
+         cd Video-Comprehension-Score
 
          # Install in development mode
          pip install -e ".[dev]"
@@ -51,10 +51,10 @@ For development or to get the latest features:
       .. code-block:: bash
 
          # Clone the repository
-         !git clone https://github.com/hdubey-debug/vcs.git
+         !git clone https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score.git
          
          # Change directory and install in development mode
-         %cd vcs
+         %cd Video-Comprehension-Score
          !pip install -e ".[dev]"
 
          # Install pre-commit hooks (optional)
