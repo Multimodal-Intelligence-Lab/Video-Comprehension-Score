@@ -468,7 +468,7 @@ Now let's see VCS in action with a complete working example:
 # Fix import path issue if running from vcs/ root directory
 import sys
 import os
-if os.path.basename(os.getcwd()) == 'vcs' and os.path.exists('src/vcs'):
+if os.path.basename(os.getcwd()) == 'Video-Comprehension-Score' and os.path.exists('src/vcs'):
     sys.path.insert(0, 'src')
     print("🔧 Fixed import path for development directory")
 
@@ -494,7 +494,7 @@ except ImportError as e:
     print("💡 Make sure you:")
     print("   1. Installed VCS correctly: pip install -e .[dev]")
     print("   2. Restarted your notebook kernel") 
-    print("   3. You're NOT in the root vcs/ directory (this causes import conflicts)")
+    print("   3. You're NOT in the root Video-Comprehension-Score/ directory (this causes import conflicts)")
 
 # Import required libraries
 import torch
@@ -1028,14 +1028,14 @@ If you use VCS Metrics in your research, please cite:
 
 ## 🤖 CLIP-CC Ecosystem Integration
 
-VCS is designed to work seamlessly with [CLIP-CC Dataset](https://github.com/hdubey-debug/CLIP-CC) for comprehensive video understanding evaluation.
+VCS is designed to work seamlessly with [CLIP-CC Dataset](https://github.com/Multimodal-Intelligence-Lab/CLIP-CC) for comprehensive video understanding evaluation.
 
 <div align="center">
 <table style="border: 2px solid #7c3aed; border-radius: 12px; background: linear-gradient(145deg, #f3e8ff, #e9d5ff); padding: 20px; margin: 20px 0;">
 <tr>
 <td align="center">
 
-[![CLIP-CC Dataset](https://img.shields.io/badge/🤖_Companion_Dataset-CLIP--CC-9333ea?style=for-the-badge&logo=python&logoColor=white)](https://github.com/hdubey-debug/CLIP-CC)
+[![CLIP-CC Dataset](https://img.shields.io/badge/🤖_Companion_Dataset-CLIP--CC-9333ea?style=for-the-badge&logo=python&logoColor=white)](https://github.com/Multimodal-Intelligence-Lab/CLIP-CC)
 
 **🔄 Perfect Integration: VCS + CLIP-CC**
 - 🎥 **CLIP-CC provides the data** → Rich video dataset with human summaries
