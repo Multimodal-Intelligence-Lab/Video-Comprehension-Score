@@ -1,14 +1,17 @@
 include README.md
 include LICENSE
 include CHANGELOG.md
-include pyproject.toml
-include MANIFEST.in
 
 # Include all Python files
 recursive-include src/vcs *.py
 
-# Include documentation
-recursive-include docs *.md *.rst *.txt
+# Exclude everything else to keep package small
+prune docs
+prune .github
+prune tests
+prune build
+prune dist
+prune *.egg-info
 
 # Exclude development and build artifacts
 global-exclude *.pyc
@@ -20,6 +23,6 @@ global-exclude .DS_Store
 global-exclude *.so
 global-exclude .coverage
 global-exclude .pytest_cache
-prune build
-prune dist
-prune *.egg-info
+global-exclude tag_version.py
+global-exclude CONTRIBUTING.md
+global-exclude DEPLOYMENT.md
