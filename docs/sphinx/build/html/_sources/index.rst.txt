@@ -14,8 +14,8 @@ VCS focuses on whether the overall story and narrative structure matches rather 
 
 To understand how VCS works in detail, please read our `research paper <#>`_ or explore our interactive `playground <#>`_.
 
-.. image:: https://img.shields.io/pypi/v/vcs-metrics.svg
-   :target: https://pypi.org/project/vcs-metrics/
+.. image:: https://img.shields.io/pypi/v/video-comprehension-score.svg
+   :target: https://pypi.org/project/video-comprehension-score/
    :alt: PyPI version
 
 .. image:: https://img.shields.io/badge/python-3.8+-blue.svg
@@ -53,8 +53,8 @@ Table of Contents
    :maxdepth: 1
    :caption: Additional Resources:
 
-   GitHub Repository <https://github.com/yourusername/vcs-metrics>
-   PyPI Package <https://pypi.org/project/vcs-metrics/>
+   GitHub Repository <https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score>
+   PyPI Package <https://pypi.org/project/video-comprehension-score/>
 
 Citation
 --------
@@ -67,20 +67,20 @@ If you use VCS Metrics in your research, please cite:
      title = {VCS Metrics: Video Comprehension Score for Text Similarity},
      author = {Harsh Dubey and Chulwoo Pack},
      year = {2024},
-     url = {https://github.com/yourusername/vcs-metrics}
+     url = {https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score}
    }
 
 Support
 -------
 
 - **Documentation**: You're reading it! 📖
-- **Issues**: `GitHub Issues <https://github.com/yourusername/vcs-metrics/issues>`_
-- **Discussions**: `GitHub Discussions <https://github.com/yourusername/vcs-metrics/discussions>`_
+- **Issues**: `GitHub Issues <https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues>`_
+- **Discussions**: `GitHub Discussions <https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/discussions>`_
 
 License
 -------
 
-This project is licensed under the MIT License - see the `LICENSE <https://github.com/yourusername/vcs-metrics/blob/main/LICENSE>`_ file for details.
+This project is licensed under the MIT License - see the `LICENSE <https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/blob/main/LICENSE>`_ file for details.
 
 Indices and tables
 ==================

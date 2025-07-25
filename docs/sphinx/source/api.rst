@@ -152,4 +152,4 @@ See Also
 --------
 
 - :doc:`getting_started` - Installation and basic setup
-- `GitHub Repository <https://github.com/yourusername/vcs-metrics>`_ - Source code and issue tracking
+- `GitHub Repository <https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score>`_ - Source code and issue tracking

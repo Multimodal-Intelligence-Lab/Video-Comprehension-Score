@@ -68,7 +68,7 @@ __all__ = [
 ]
 
 # Package metadata for programmatic access
-__package_name__ = "vcs-metrics"
+__package_name__ = "video-comprehension-score"
 __description__ = "Video Comprehension Score (VCS) - A comprehensive metric for evaluating narrative similarity"
-__url__ = "https://github.com/yourusername/vcs-metrics"
+__url__ = "https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score"
 __license__ = "MIT"

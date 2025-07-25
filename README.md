@@ -10,7 +10,7 @@
 
 <div align="center">
 
-[![PyPI version](https://img.shields.io/pypi/v/vcs-metrics?color=teal&style=for-the-badge)](https://badge.fury.io/py/vcs-metrics)
+[![PyPI version](https://img.shields.io/pypi/v/video-comprehension-score?color=teal&style=for-the-badge)](https://badge.fury.io/py/video-comprehension-score)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-teal?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-teal?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Documentation](https://img.shields.io/badge/docs-github.io-teal?style=for-the-badge&logo=gitbook&logoColor=white)](https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/)
@@ -169,12 +169,12 @@ Choose the installation method that fits your needs:
 
 **Terminal Installation:**
 ```bash
-pip install vcs-metrics
+pip install video-comprehension-score
 ```
 
 **Jupyter/Colab Installation:**
 ```bash
-!pip install vcs-metrics
+!pip install video-comprehension-score
 ```
 
 <div align="center">

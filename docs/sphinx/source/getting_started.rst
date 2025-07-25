@@ -17,13 +17,13 @@ Install VCS Metrics from PyPI:
 
       .. code-block:: bash
 
-         pip install vcs-metrics
+         pip install video-comprehension-score
 
    .. tab:: Notebook (Colab/Jupyter)
 
       .. code-block:: bash
 
-         !pip install vcs-metrics
+         !pip install video-comprehension-score
 
 Development Installation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -507,7 +507,7 @@ Here's a complete working example using lightweight models:
    **Development Directory Import Issue**: If you're running code from the root `vcs/` directory after cloning, Python might try to import from the local `vcs/` folder instead of the installed package. The examples above include a fix for this. Alternatively, you can:
    
    - Run your code from a different directory (e.g., create a `test/` folder)
-   - Use `pip install vcs-metrics` instead of development installation
+   - Use `pip install video-comprehension-score` instead of development installation
    - Navigate to a subdirectory before running your code
 
 

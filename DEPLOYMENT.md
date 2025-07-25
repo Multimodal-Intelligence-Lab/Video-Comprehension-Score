@@ -172,13 +172,13 @@ git commit -m "fix typo in README"
 ## 🌍 Environments
 
 ### TestPyPI (Staging)
-- **URL**: https://test.pypi.org/project/vcs-metrics/
+- **URL**: https://test.pypi.org/project/video-comprehension-score/
 - **Purpose**: Automated testing of package releases
 - **Trigger**: GitHub releases and version tags
 - **Authentication**: Trusted Publishing (OIDC)
 
 ### PyPI (Production)
-- **URL**: https://pypi.org/project/vcs-metrics/
+- **URL**: https://pypi.org/project/video-comprehension-score/
 - **Purpose**: Production package distribution
 - **Trigger**: Manual workflow dispatch or tag-based release
 - **Authentication**: Trusted Publishing (OIDC)
