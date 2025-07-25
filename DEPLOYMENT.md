@@ -184,7 +184,7 @@ git commit -m "fix typo in README"
 - **Authentication**: Trusted Publishing (OIDC)
 
 ### GitHub Pages (Documentation)
-- **URL**: https://hdubey-debug.github.io/vcs/
+- **URL**: https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/
 - **Purpose**: Public documentation hosting
 - **Trigger**: Push to `main` branch (docs changes)
 - **Content**: Sphinx-generated API docs and user guides

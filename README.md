@@ -13,7 +13,7 @@
 [![PyPI version](https://img.shields.io/pypi/v/vcs-metrics?color=teal&style=for-the-badge)](https://badge.fury.io/py/vcs-metrics)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-teal?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-teal?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Documentation](https://img.shields.io/badge/docs-github.io-teal?style=for-the-badge&logo=gitbook&logoColor=white)](https://hdubey-debug.github.io/vcs/)
+[![Documentation](https://img.shields.io/badge/docs-github.io-teal?style=for-the-badge&logo=gitbook&logoColor=white)](https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/)
 
 </div>
 
@@ -109,7 +109,7 @@ Initially developed for evaluating video comprehension by comparing generated an
 
 ## 🌟 Key Features
 
-Explore the comprehensive capabilities that make VCS a powerful narrative evaluation toolkit. **To understand these features in detail, read our [research paper](https://arxiv.org/abs/placeholder-link), then visit our [interactive playground](https://hdubey-debug.github.io/vcs/) to see them in action.**
+Explore the comprehensive capabilities that make VCS a powerful narrative evaluation toolkit. **To understand these features in detail, read our [research paper](https://arxiv.org/abs/placeholder-link), then visit our [interactive playground](https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/) to see them in action.**
 
 <table width="100%" align="center" style="border: none; border-collapse: collapse;">
   <tr style="background-color: transparent;">
@@ -719,7 +719,7 @@ result = compute_vcs_score(
 <tr>
 <td align="center">
 
-**📚 For complete API documentation and visualization guides, visit our [API Documentation](https://hdubey-debug.github.io/vcs/)**
+**📚 For complete API documentation and visualization guides, visit our [API Documentation](https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/)**
 
 </td>
 </tr>

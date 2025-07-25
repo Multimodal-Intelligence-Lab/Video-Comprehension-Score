@@ -37,7 +37,7 @@ To understand how VCS works in detail, please read our research paper or explore
    <p>
    <a href="https://arxiv.org/abs/placeholder-link" target="_blank">📄 Research Paper</a>
    ·
-   <a href="https://hdubey-debug.github.io/vcs/" target="_blank">📓 Interactive Playground</a>
+   <a href="https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/" target="_blank">📓 Interactive Playground</a>
    </p>
 
 .. image:: https://img.shields.io/pypi/v/vcs-metrics.svg
