@@ -11,7 +11,7 @@
 <div align="center">
 
 [![PyPI version](https://img.shields.io/pypi/v/video-comprehension-score?color=teal&style=for-the-badge)](https://badge.fury.io/py/video-comprehension-score)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-teal?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-teal?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-teal?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Documentation](https://img.shields.io/badge/docs-github.io-teal?style=for-the-badge&logo=gitbook&logoColor=white)](https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/)
 
@@ -244,9 +244,9 @@ Before installing VCS, make sure your system meets these requirements:
 
 <img src="https://img.shields.io/badge/Python-3.10+-306998?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
 
-**Required: Python 3.10 or higher**
+**Required: Python 3.11 or higher**
 
-VCS Metrics uses modern Python features and requires Python 3.10+. We recommend Python 3.11+ for optimal performance.
+VCS Metrics uses modern Python features and requires Python 3.11+ for optimal performance and compatibility.
 
 </div>
 
@@ -857,8 +857,8 @@ git checkout -b feature/your-feature-name
 # 5. Run quality checks
 black src/ && isort src/ && flake8 src/ && mypy src/
 
-# 6. Commit with semantic format
-git commit -m "minor: add new awesome feature"
+# 6. Commit with descriptive message
+git commit -m "add new awesome feature"
 
 # 7. Push and create PR
 git push origin feature/your-feature-name
@@ -896,15 +896,15 @@ git push origin feature/your-feature-name
 
 <div style="background: linear-gradient(145deg, #ecfdf5, #d1fae5); padding: 20px; border-radius: 12px; border: 2px solid #059669;">
 
-**1. Semantic Commit Messages**  
-**2. GitHub Release Creation**  
-**3. Automated Version Calculation**  
+**1. Manual Version Specification**  
+**2. Workflow Dispatch Trigger**  
+**3. Version Update in pyproject.toml**  
 **4. Package Building**  
 **5. TestPyPI Publishing**  
 **6. Production Release**  
 
 🚀 **Industry-standard CI/CD pipeline**  
-⚡ **Zero manual version management**
+⚡ **Manual version control for precision**
 
 </div>
 
@@ -912,20 +912,20 @@ git push origin feature/your-feature-name
 </tr>
 </table>
 
-### 💡 Semantic Commit Format
+### 💡 Manual Versioning
 
-We use semantic commits for automatic version bumping:
+We use manual version management with clear release workflows:
 
 <div align="center">
 <table style="border: 2px solid #7c3aed; border-radius: 12px; background: linear-gradient(145deg, #f3e8ff, #e9d5ff); padding: 15px; margin: 20px 0;">
 <tr>
 <td align="center">
 
-| **Commit Type** | **Version Bump** | **Example** |
+| **Version Type** | **When to Use** | **Example** |
 |:---|:---:|:---|
-| `minor: description` | New features | `1.0.4 → 1.1.0` |
-| `major: description` | Breaking changes | `1.0.4 → 2.0.0` |
-| `anything else` | Bug fixes (default) | `1.0.4 → 1.0.5` |
+| Patch (1.0.4 → 1.0.5) | Bug fixes, docs | Fix calculation error |
+| Minor (1.0.4 → 1.1.0) | New features | Add visualization |
+| Major (1.0.4 → 2.0.0) | Breaking changes | Redesign API |
 
 </td>
 </tr>
@@ -943,7 +943,7 @@ Our comprehensive CI/CD pipeline ensures code quality and reliability on every c
 
 ### 🚀 **What Gets Tested**
 
-**✅ Matrix Testing** - Python 3.11 & 3.12 compatibility  
+**✅ Matrix Testing** - Python 3.11+ compatibility  
 **✅ Package Validation** - Import testing & API availability  
 **✅ Integration Testing** - Full getting-started example  
 **✅ Code Quality** - Flake8 linting & complexity checks  
