@@ -18,12 +18,12 @@ def get_latest_tag():
         )
         tags = result.stdout.strip().split('\n')
         if not tags or tags == ['']:
-            return "v0.999.999"  # Will bump to v1.0.0 with major
+            return "v0.0.0"  # Will bump to v1.0.0 with major
         
         # Sort tags by version (simple string sort works for semantic versions)
         version_tags = [tag for tag in tags if tag.startswith('v') and tag.count('.') == 2]
         if not version_tags:
-            return "v0.999.999"  # Will bump to v1.0.0 with major
+            return "v0.0.0"  # Will bump to v1.0.0 with major
             
         # Sort and get the latest
         version_tags.sort(key=lambda x: [int(i) for i in x[1:].split('.')])
@@ -31,7 +31,7 @@ def get_latest_tag():
         
     except subprocess.CalledProcessError:
         # No tags found, start with current version
-        return "v0.999.999"  # Will bump to v1.0.0 with major
+        return "v0.0.0"  # Will bump to v1.0.0 with major
 
 def get_latest_commit_message():
     """Get the latest commit message"""

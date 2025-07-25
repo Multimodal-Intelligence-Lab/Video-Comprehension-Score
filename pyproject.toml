@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel", "setuptools-scm>=8.0"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "video-comprehension-score"
-dynamic = ["version"]
+version = "1.0.0"
 description = "Video Comprehension Score (VCS) - A comprehensive metric for evaluating narrative similarity between reference and generated text"
 readme = "README.md"
 license = {text = "MIT"}
@@ -20,9 +20,6 @@ classifiers = [
     "Intended Audience :: Science/Research",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
@@ -63,11 +60,11 @@ all = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/hdubey-debug/vcs"
-Documentation = "https://hdubey-debug.github.io/vcs/"
-Repository = "https://github.com/hdubey-debug/vcs.git"
-"Bug Tracker" = "https://github.com/hdubey-debug/vcs/issues"
-Changelog = "https://github.com/hdubey-debug/vcs/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score"
+Documentation = "https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/"
+Repository = "https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score.git"
+"Bug Tracker" = "https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues"
+Changelog = "https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/blob/main/CHANGELOG.md"
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -92,5 +89,4 @@ warn_unused_configs = true
 disallow_untyped_defs = true
 ignore_missing_imports = true
 
-[tool.setuptools_scm]
-write_to = "src/vcs/_version.py"
+# Version is now manually managed in pyproject.toml

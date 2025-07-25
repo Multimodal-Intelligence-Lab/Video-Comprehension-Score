@@ -37,11 +37,11 @@ To understand how VCS works in detail, please read our research paper or explore
    <p>
    <a href="https://arxiv.org/abs/placeholder-link" target="_blank">📄 Research Paper</a>
    ·
-   <a href="https://hdubey-debug.github.io/vcs/" target="_blank">📓 Interactive Playground</a>
+   <a href="https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/" target="_blank">📓 Interactive Playground</a>
    </p>
 
-.. image:: https://img.shields.io/pypi/v/vcs-metrics.svg
-   :target: https://pypi.org/project/vcs-metrics/
+.. image:: https://img.shields.io/pypi/v/video-comprehension-score.svg
+   :target: https://pypi.org/project/video-comprehension-score/
    :alt: PyPI version
 
 .. image:: https://img.shields.io/badge/python-3.11+-blue.svg
@@ -83,9 +83,9 @@ Table of Contents
    :maxdepth: 1
    :caption: Additional Resources:
 
-   PyPI Package <https://pypi.org/project/vcs-metrics/>
-   GitHub Repository <https://github.com/hdubey-debug/vcs>
-   Report Issues <https://github.com/hdubey-debug/vcs/issues>
+   PyPI Package <https://pypi.org/project/video-comprehension-score/>
+   GitHub Repository <https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score>
+   Report Issues <https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues>
 
 Citation
 --------

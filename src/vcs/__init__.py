@@ -1,8 +1,14 @@
 
+# Import version from package metadata
 try:
-    from ._version import version as __version__
+    from importlib.metadata import version
+    __version__ = version("video-comprehension-score")
 except ImportError:
-    # Fallback version if setuptools_scm version file is not available
+    # Fallback for Python < 3.8
+    from importlib_metadata import version
+    __version__ = version("video-comprehension-score")
+except Exception:
+    # Final fallback
     __version__ = "1.0.0"
 
 __author__ = "Harsh Dubey"
@@ -68,7 +74,7 @@ __all__ = [
 ]
 
 # Package metadata for programmatic access
-__package_name__ = "vcs-metrics"
+__package_name__ = "video-comprehension-score"
 __description__ = "Video Comprehension Score (VCS) - A comprehensive metric for evaluating narrative similarity"
-__url__ = "https://github.com/yourusername/vcs-metrics"
+__url__ = "https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score"
 __license__ = "MIT"

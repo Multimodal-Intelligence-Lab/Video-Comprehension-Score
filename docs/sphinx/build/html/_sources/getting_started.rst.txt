@@ -13,7 +13,7 @@ Install VCS Metrics from PyPI:
 
 .. code-block:: bash
 
-   pip install vcs-metrics
+   pip install video-comprehension-score
 
 Development Installation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -23,8 +23,8 @@ For development or to get the latest features:
 .. code-block:: bash
 
    # Clone the repository
-   git clone https://github.com/yourusername/vcs-metrics.git
-   cd vcs-metrics
+   git clone https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score.git
+   cd video-comprehension-score
 
    # Install in development mode
    pip install -e ".[dev]"

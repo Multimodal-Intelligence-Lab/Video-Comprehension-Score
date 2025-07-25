@@ -7,8 +7,8 @@ Thank you for your interest in contributing to VCS Metrics! This guide will help
 ### 1. Setup Development Environment
 ```bash
 # Clone the repository
-git clone https://github.com/hdubey-debug/vcs.git
-cd vcs
+git clone https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score.git
+cd Video-Comprehension-Score
 
 # Create virtual environment
 python -m venv venv
@@ -31,19 +31,18 @@ git checkout -b feature/your-feature-name
 ```
 
 ### 3. Commit Your Changes
-Use our **semantic commit format** for automatic versioning:
+Use clear, descriptive commit messages:
 
 ```bash
-# For new features (minor version bump: 1.0.4 → 1.1.0)
-git commit -m "minor: add support for custom thresholds"
-
-# For breaking changes (major version bump: 1.0.4 → 2.0.0)
-git commit -m "major: redesign API for better performance"
-
-# Everything else defaults to patch bump (1.0.4 → 1.0.5)
+# Use standard descriptive commit messages
+git commit -m "add support for custom thresholds"
+git commit -m "redesign API for better performance"
 git commit -m "fix calculation error in similarity metric"
 git commit -m "improve code documentation"
 git commit -m "update README with examples"
+
+# Version numbers are manually managed during releases
+# No special commit message format required
 ```
 
 ### 4. Submit Pull Request
@@ -80,7 +79,7 @@ git push origin feature/your-feature-name
 
 ### **Continuous Testing** (Every PR/Push)
 When you submit a PR or push to main:
-1. **Automated Testing**: Runs on Python 3.11 & 3.12
+1. **Automated Testing**: Runs on Python 3.11+
 2. **Code Quality Checks**: Linting, formatting, type checking  
 3. **Build Verification**: Ensures package builds correctly
 4. **Fast Feedback**: Results in ~2-3 minutes
@@ -88,8 +87,8 @@ When you submit a PR or push to main:
 ### **Release Publishing** (Manual Process)
 Publishing is done manually by maintainers:
 1. **Manual Trigger**: Go to Actions → "Build and Publish" → Run workflow
-2. **Environment Choice**: Select TestPyPI (testing) or PyPI (production)
-3. **Version Calculation**: Based on git tags + commit messages
+2. **Version Input**: Specify the desired version (e.g., 1.0.1)
+3. **Environment Choice**: Select TestPyPI (testing) or PyPI (production)
 4. **Package Building**: Creates wheel and source distributions
 5. **Publishing**: Deploys to selected environment
 
@@ -97,24 +96,23 @@ Publishing is done manually by maintainers:
 
 ### Format
 ```
-<type>: <description>
+<description>
 
 [optional body]
 [optional footer]
 ```
 
-### Types
-- **minor**: New features, backwards-compatible changes
-- **major**: Breaking changes, API redesigns
-- **default**: Everything else (bug fixes, improvements, docs) → patch bump
+### Style
+- Use clear, descriptive messages
+- Start with a verb (add, fix, update, remove, etc.)
+- Keep the first line under 50 characters when possible
+- Use present tense ("add feature" not "added feature")
 
 ### Examples
 ```bash
-# Explicit semantic prefixes
-minor: add multilingual support for similarity metrics
-major: refactor API to use async/await pattern
-
-# Default behavior (all become patch bumps)
+# Good commit messages
+add multilingual support for similarity metrics
+refactor API to use async/await pattern
 fix edge case in text alignment algorithm
 fix bug in NAS calculation
 add new visualization feature
@@ -166,21 +164,21 @@ mypy src/
 python -m build
 
 # Test package installation
-pip install dist/vcs_metrics-*.whl
+pip install dist/video-comprehension-score-*.whl
 ```
 
 ## 🐛 Debugging
 
 ### Version Issues
 ```bash
-# Check what version would be generated
-python tag_version.py
+# Check current version in pyproject.toml
+grep '^version = ' pyproject.toml
 
 # List current git tags
 git tag -l v*.*.* | sort -V
 
-# Check setuptools-scm version
-python -c "import setuptools_scm; print(setuptools_scm.get_version())"
+# Check package version
+python -c "import vcs; print(vcs.__version__)"
 ```
 
 ### Build Issues
@@ -195,7 +193,7 @@ python -m build
 ## 📝 Release Process
 
 ### For Contributors
-1. **Submit PR** with semantic commit message
+1. **Submit PR** with descriptive commit message
 2. **Tests run automatically** (no publishing)
 3. **Maintainer merges** when ready
 

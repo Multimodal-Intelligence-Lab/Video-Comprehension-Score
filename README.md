@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/hdubey-debug/vcs">
+  <a href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score">
     <img src=".github/assets/vcs.gif" alt="VCS Process Flow" width="100%"/>
   </a>
   <p align="center">
@@ -10,10 +10,10 @@
 
 <div align="center">
 
-[![PyPI version](https://img.shields.io/pypi/v/vcs-metrics?color=teal&style=for-the-badge)](https://badge.fury.io/py/vcs-metrics)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-teal?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
+[![PyPI version](https://img.shields.io/pypi/v/video-comprehension-score?color=teal&style=for-the-badge)](https://badge.fury.io/py/video-comprehension-score)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-teal?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-teal?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Documentation](https://img.shields.io/badge/docs-github.io-teal?style=for-the-badge&logo=gitbook&logoColor=white)](https://hdubey-debug.github.io/vcs/)
+[![Documentation](https://img.shields.io/badge/docs-github.io-teal?style=for-the-badge&logo=gitbook&logoColor=white)](https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/)
 
 </div>
 
@@ -109,7 +109,7 @@ Initially developed for evaluating video comprehension by comparing generated an
 
 ## 🌟 Key Features
 
-Explore the comprehensive capabilities that make VCS a powerful narrative evaluation toolkit. **To understand these features in detail, read our [research paper](https://arxiv.org/abs/placeholder-link), then visit our [interactive playground](https://hdubey-debug.github.io/vcs/) to see them in action.**
+Explore the comprehensive capabilities that make VCS a powerful narrative evaluation toolkit. **To understand these features in detail, read our [research paper](https://arxiv.org/abs/placeholder-link), then visit our [interactive playground](https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/) to see them in action.**
 
 <table width="100%" align="center" style="border: none; border-collapse: collapse;">
   <tr style="background-color: transparent;">
@@ -169,12 +169,12 @@ Choose the installation method that fits your needs:
 
 **Terminal Installation:**
 ```bash
-pip install vcs-metrics
+pip install video-comprehension-score
 ```
 
 **Jupyter/Colab Installation:**
 ```bash
-!pip install vcs-metrics
+!pip install video-comprehension-score
 ```
 
 <div align="center">
@@ -200,16 +200,16 @@ pip install vcs-metrics
 
 **Terminal Installation:**
 ```bash
-git clone https://github.com/hdubey-debug/vcs.git
-cd vcs
+git clone https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score.git
+cd Video-Comprehension-Score
 pip install -e ".[dev]"
 pre-commit install
 ```
 
 **Jupyter/Colab Installation:**
 ```bash
-!git clone https://github.com/hdubey-debug/vcs.git
-%cd vcs
+!git clone https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score.git
+%cd Video-Comprehension-Score
 !pip install -e ".[dev]"
 !pre-commit install
 ```
@@ -244,9 +244,9 @@ Before installing VCS, make sure your system meets these requirements:
 
 <img src="https://img.shields.io/badge/Python-3.10+-306998?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
 
-**Required: Python 3.10 or higher**
+**Required: Python 3.11 or higher**
 
-VCS Metrics uses modern Python features and requires Python 3.10+. We recommend Python 3.11+ for optimal performance.
+VCS Metrics uses modern Python features and requires Python 3.11+ for optimal performance and compatibility.
 
 </div>
 
@@ -468,7 +468,7 @@ Now let's see VCS in action with a complete working example:
 # Fix import path issue if running from vcs/ root directory
 import sys
 import os
-if os.path.basename(os.getcwd()) == 'vcs' and os.path.exists('src/vcs'):
+if os.path.basename(os.getcwd()) == 'Video-Comprehension-Score' and os.path.exists('src/vcs'):
     sys.path.insert(0, 'src')
     print("🔧 Fixed import path for development directory")
 
@@ -494,7 +494,7 @@ except ImportError as e:
     print("💡 Make sure you:")
     print("   1. Installed VCS correctly: pip install -e .[dev]")
     print("   2. Restarted your notebook kernel") 
-    print("   3. You're NOT in the root vcs/ directory (this causes import conflicts)")
+    print("   3. You're NOT in the root Video-Comprehension-Score/ directory (this causes import conflicts)")
 
 # Import required libraries
 import torch
@@ -719,7 +719,7 @@ result = compute_vcs_score(
 <tr>
 <td align="center">
 
-**📚 For complete API documentation and visualization guides, visit our [API Documentation](https://hdubey-debug.github.io/vcs/)**
+**📚 For complete API documentation and visualization guides, visit our [API Documentation](https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/)**
 
 </td>
 </tr>
@@ -838,8 +838,8 @@ We welcome contributions to VCS Metrics! Whether you're fixing bugs, adding feat
 
 ```bash
 # 1. Clone and setup
-git clone https://github.com/hdubey-debug/vcs.git
-cd vcs
+git clone https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score.git
+cd Video-Comprehension-Score
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
@@ -857,8 +857,8 @@ git checkout -b feature/your-feature-name
 # 5. Run quality checks
 black src/ && isort src/ && flake8 src/ && mypy src/
 
-# 6. Commit with semantic format
-git commit -m "minor: add new awesome feature"
+# 6. Commit with descriptive message
+git commit -m "add new awesome feature"
 
 # 7. Push and create PR
 git push origin feature/your-feature-name
@@ -896,15 +896,15 @@ git push origin feature/your-feature-name
 
 <div style="background: linear-gradient(145deg, #ecfdf5, #d1fae5); padding: 20px; border-radius: 12px; border: 2px solid #059669;">
 
-**1. Semantic Commit Messages**  
-**2. GitHub Release Creation**  
-**3. Automated Version Calculation**  
+**1. Manual Version Specification**  
+**2. Workflow Dispatch Trigger**  
+**3. Version Update in pyproject.toml**  
 **4. Package Building**  
 **5. TestPyPI Publishing**  
 **6. Production Release**  
 
 🚀 **Industry-standard CI/CD pipeline**  
-⚡ **Zero manual version management**
+⚡ **Manual version control for precision**
 
 </div>
 
@@ -912,20 +912,20 @@ git push origin feature/your-feature-name
 </tr>
 </table>
 
-### 💡 Semantic Commit Format
+### 💡 Manual Versioning
 
-We use semantic commits for automatic version bumping:
+We use manual version management with clear release workflows:
 
 <div align="center">
 <table style="border: 2px solid #7c3aed; border-radius: 12px; background: linear-gradient(145deg, #f3e8ff, #e9d5ff); padding: 15px; margin: 20px 0;">
 <tr>
 <td align="center">
 
-| **Commit Type** | **Version Bump** | **Example** |
+| **Version Type** | **When to Use** | **Example** |
 |:---|:---:|:---|
-| `minor: description` | New features | `1.0.4 → 1.1.0` |
-| `major: description` | Breaking changes | `1.0.4 → 2.0.0` |
-| `anything else` | Bug fixes (default) | `1.0.4 → 1.0.5` |
+| Patch (1.0.4 → 1.0.5) | Bug fixes, docs | Fix calculation error |
+| Minor (1.0.4 → 1.1.0) | New features | Add visualization |
+| Major (1.0.4 → 2.0.0) | Breaking changes | Redesign API |
 
 </td>
 </tr>
@@ -943,7 +943,7 @@ Our comprehensive CI/CD pipeline ensures code quality and reliability on every c
 
 ### 🚀 **What Gets Tested**
 
-**✅ Matrix Testing** - Python 3.11 & 3.12 compatibility  
+**✅ Matrix Testing** - Python 3.11+ compatibility  
 **✅ Package Validation** - Import testing & API availability  
 **✅ Integration Testing** - Full getting-started example  
 **✅ Code Quality** - Flake8 linting & complexity checks  
@@ -961,8 +961,8 @@ Our comprehensive CI/CD pipeline ensures code quality and reliability on every c
 <tr>
 <td align="center">
 
-[![Tests](https://img.shields.io/github/actions/workflow/status/hdubey-debug/vcs/test.yml?branch=main&label=Tests&logo=github-actions&logoColor=white&style=for-the-badge)](https://github.com/hdubey-debug/vcs/actions/workflows/test.yml)
-[![Build](https://img.shields.io/github/actions/workflow/status/hdubey-debug/vcs/publish.yml?label=Build&logo=github-actions&logoColor=white&style=for-the-badge)](https://github.com/hdubey-debug/vcs/actions/workflows/publish.yml)
+[![Tests](https://img.shields.io/github/actions/workflow/status/Multimodal-Intelligence-Lab/Video-Comprehension-Score/test.yml?branch=main&label=Tests&logo=github-actions&logoColor=white&style=for-the-badge)](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/actions/workflows/test.yml)
+[![Build](https://img.shields.io/github/actions/workflow/status/Multimodal-Intelligence-Lab/Video-Comprehension-Score/publish.yml?label=Build&logo=github-actions&logoColor=white&style=for-the-badge)](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/actions/workflows/publish.yml)
 
 **✅ Automated testing ensures every change is production-ready**
 
@@ -989,19 +989,19 @@ For comprehensive information about contributing and development:
 <td width="33%" align="center">
 
 **🐛 Bug Reports**  
-[Create GitHub Issue](https://github.com/hdubey-debug/vcs/issues)
+[Create GitHub Issue](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues)
 
 </td>
 <td width="33%" align="center">
 
 **💬 Questions**  
-[GitHub Discussions](https://github.com/hdubey-debug/vcs/discussions)
+[GitHub Discussions](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/discussions)
 
 </td>
 <td width="33%" align="center">
 
 **💡 Feature Requests**  
-[Feature Request Issue](https://github.com/hdubey-debug/vcs/issues/new)
+[Feature Request Issue](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues/new)
 
 </td>
 </tr>
@@ -1019,7 +1019,7 @@ If you use VCS Metrics in your research, please cite:
   author = {Dubey, Harsh and Ali, Mukhtiar and Mishra, Sugam and Pack, Chulwoo},
   year = {2024},
   institution = {South Dakota State University},
-  url = {https://github.com/hdubey-debug/vcs},
+  url = {https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score},
   note = {Python package for narrative similarity evaluation}
 }
 ```
@@ -1028,14 +1028,14 @@ If you use VCS Metrics in your research, please cite:
 
 ## 🤖 CLIP-CC Ecosystem Integration
 
-VCS is designed to work seamlessly with [CLIP-CC Dataset](https://github.com/hdubey-debug/CLIP-CC) for comprehensive video understanding evaluation.
+VCS is designed to work seamlessly with [CLIP-CC Dataset](https://github.com/Multimodal-Intelligence-Lab/CLIP-CC) for comprehensive video understanding evaluation.
 
 <div align="center">
 <table style="border: 2px solid #7c3aed; border-radius: 12px; background: linear-gradient(145deg, #f3e8ff, #e9d5ff); padding: 20px; margin: 20px 0;">
 <tr>
 <td align="center">
 
-[![CLIP-CC Dataset](https://img.shields.io/badge/🤖_Companion_Dataset-CLIP--CC-9333ea?style=for-the-badge&logo=python&logoColor=white)](https://github.com/hdubey-debug/CLIP-CC)
+[![CLIP-CC Dataset](https://img.shields.io/badge/🤖_Companion_Dataset-CLIP--CC-9333ea?style=for-the-badge&logo=python&logoColor=white)](https://github.com/Multimodal-Intelligence-Lab/CLIP-CC)
 
 **🔄 Perfect Integration: VCS + CLIP-CC**
 - 🎥 **CLIP-CC provides the data** → Rich video dataset with human summaries
@@ -1071,12 +1071,21 @@ VCS is designed to work seamlessly with [CLIP-CC Dataset](https://github.com/hdu
 
 | Commits | Lines | Files |
 |:---:|:---:|:---:|
-| **2** | **49K** | **171** |
+| **50+** | **49K** | **260** |
 
 **📋 Key Work:**
-• VCS Algorithm Architecture  
+
+<div align="left">
+
+• VCS Algorithm Implementation  
+• Python Package  
 • Visualization Engine  
-• LAS, GAS, and NAS Metrics  
+• PDF Report Generation  
+• VCS Website  
+• Sphinx Documentation  
+• CI/CD Pipeline  
+
+</div>
 
 [![GitHub](https://img.shields.io/badge/-GitHub-14b8a6?style=flat&logo=github)](https://github.com/hdubey-debug)
 
@@ -1094,10 +1103,10 @@ VCS is designed to work seamlessly with [CLIP-CC Dataset](https://github.com/hdu
 
 ### 📊 **Contribution Analytics**
 
-[![Contributors](https://img.shields.io/github/contributors/hdubey-debug/vcs?style=for-the-badge&color=14b8a6&labelColor=0f172a)](https://github.com/hdubey-debug/vcs/graphs/contributors)
-[![Commit Activity](https://img.shields.io/github/commit-activity/m/hdubey-debug/vcs?style=for-the-badge&color=ff6b6b&labelColor=0f172a)](https://github.com/hdubey-debug/vcs/pulse)
-[![Last Commit](https://img.shields.io/github/last-commit/hdubey-debug/vcs?style=for-the-badge&color=4ecdc4&labelColor=0f172a)](https://github.com/hdubey-debug/vcs/commits)
-[![Code Frequency](https://img.shields.io/github/languages/count/hdubey-debug/vcs?style=for-the-badge&color=f9ca24&labelColor=0f172a)](https://github.com/hdubey-debug/vcs)
+[![Contributors](https://img.shields.io/github/contributors/Multimodal-Intelligence-Lab/Video-Comprehension-Score?style=for-the-badge&color=14b8a6&labelColor=0f172a)](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/graphs/contributors)
+[![Commit Activity](https://img.shields.io/github/commit-activity/m/Multimodal-Intelligence-Lab/Video-Comprehension-Score?style=for-the-badge&color=ff6b6b&labelColor=0f172a)](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/pulse)
+[![Last Commit](https://img.shields.io/github/last-commit/Multimodal-Intelligence-Lab/Video-Comprehension-Score?style=for-the-badge&color=4ecdc4&labelColor=0f172a)](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/commits)
+[![Code Frequency](https://img.shields.io/github/languages/count/Multimodal-Intelligence-Lab/Video-Comprehension-Score?style=for-the-badge&color=f9ca24&labelColor=0f172a)](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score)
 
 </div>
 
@@ -1115,6 +1124,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Institution**: South Dakota State University  
 **Year**: 2024
 
-[⭐ Star this repo](https://github.com/hdubey-debug/vcs) • [🐛 Report Bug](https://github.com/hdubey-debug/vcs/issues) • [💡 Request Feature](https://github.com/hdubey-debug/vcs/issues) • [💬 Community Q&A](https://github.com/hdubey-debug/vcs/discussions)
+[⭐ Star this repo](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score) • [🐛 Report Bug](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues) • [💡 Request Feature](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues) • [💬 Community Q&A](https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/discussions)
 
 </div>

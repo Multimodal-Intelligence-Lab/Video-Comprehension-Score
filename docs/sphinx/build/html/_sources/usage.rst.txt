@@ -596,5 +596,5 @@ Next Steps
 ----------
 
 - Explore the :doc:`api` reference for detailed function documentation
-- Check out the `GitHub repository <https://github.com/yourusername/vcs-metrics>`_ for examples and updates
-- Join the discussion on `GitHub Discussions <https://github.com/yourusername/vcs-metrics/discussions>`_
+- Check out the `GitHub repository <https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score>`_ for examples and updates
+- Join the discussion on `GitHub Discussions <https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/discussions>`_

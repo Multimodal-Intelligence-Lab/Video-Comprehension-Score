@@ -17,13 +17,13 @@ Install VCS Metrics from PyPI:
 
       .. code-block:: bash
 
-         pip install vcs-metrics
+         pip install video-comprehension-score
 
    .. tab:: Notebook (Colab/Jupyter)
 
       .. code-block:: bash
 
-         !pip install vcs-metrics
+         !pip install video-comprehension-score
 
 Development Installation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -37,8 +37,8 @@ For development or to get the latest features:
       .. code-block:: bash
 
          # Clone the repository
-         git clone https://github.com/hdubey-debug/vcs.git
-         cd vcs
+         git clone https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score.git
+         cd Video-Comprehension-Score
 
          # Install in development mode
          pip install -e ".[dev]"
@@ -51,10 +51,10 @@ For development or to get the latest features:
       .. code-block:: bash
 
          # Clone the repository
-         !git clone https://github.com/hdubey-debug/vcs.git
+         !git clone https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score.git
          
          # Change directory and install in development mode
-         %cd vcs
+         %cd Video-Comprehension-Score
          !pip install -e ".[dev]"
 
          # Install pre-commit hooks (optional)
@@ -374,7 +374,7 @@ Here's a complete working example using lightweight models:
    # Fix import path issue if running from vcs/ root directory
    import sys
    import os
-   if os.path.basename(os.getcwd()) == 'vcs' and os.path.exists('src/vcs'):
+   if os.path.basename(os.getcwd()) == 'Video-Comprehension-Score' and os.path.exists('src/vcs'):
        sys.path.insert(0, 'src')
        print("🔧 Fixed import path for development directory")
 
@@ -400,7 +400,7 @@ Here's a complete working example using lightweight models:
        print("💡 Make sure you:")
        print("   1. Installed VCS correctly: pip install -e .[dev]")
        print("   2. Restarted your notebook kernel") 
-       print("   3. You're NOT in the root vcs/ directory (this causes import conflicts)")
+       print("   3. You're NOT in the root Video-Comprehension-Score/ directory (this causes import conflicts)")
 
    # Import required libraries
    import torch
@@ -504,10 +504,10 @@ Here's a complete working example using lightweight models:
    **Scale Consideration**: This example uses a small caption to illustrate the concept, but VCS is designed for analyzing really long captions and should be used for them. There is no size limit to caption length - any large generated caption length can be processed.
 
 .. warning::
-   **Development Directory Import Issue**: If you're running code from the root `vcs/` directory after cloning, Python might try to import from the local `vcs/` folder instead of the installed package. The examples above include a fix for this. Alternatively, you can:
+   **Development Directory Import Issue**: If you're running code from the root `Video-Comprehension-Score/` directory after cloning, Python might try to import from the local `vcs/` folder instead of the installed package. The examples above include a fix for this. Alternatively, you can:
    
    - Run your code from a different directory (e.g., create a `test/` folder)
-   - Use `pip install vcs-metrics` instead of development installation
+   - Use `pip install video-comprehension-score` instead of development installation
    - Navigate to a subdirectory before running your code
 
 

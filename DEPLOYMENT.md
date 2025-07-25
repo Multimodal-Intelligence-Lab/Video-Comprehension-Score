@@ -18,7 +18,7 @@ The VCS Metrics project uses **industry-standard CI/CD pipelines** that handle:
 
 - ✅ **Continuous testing** on every commit/PR
 - ✅ **Controlled releases** via GitHub Releases
-- ✅ **Semantic versioning** via commit messages and tags
+- ✅ **Manual versioning** for precise control
 - ✅ **Automated publishing** to TestPyPI/PyPI
 - ✅ **Documentation deployment** to GitHub Pages
 - ✅ **Zero manual version management**
@@ -52,7 +52,7 @@ The publishing workflow runs on:
 
 ### Automated Process
 1. **Test Verification**: Checks that tests pass for the current commit
-2. **Version Calculation**: Uses git tags + semantic versioning
+2. **Version Input**: Version specified during workflow dispatch
 3. **Package Building**: Creates wheel and source distributions
 4. **Publishing**: Uses OpenID Connect (Trusted Publishing) for secure deployment
 
@@ -135,56 +135,53 @@ graph TD
 
 ## 🔢 Version Control System
 
-### Semantic Versioning
-We use [Semantic Versioning](https://semver.org/) with **automated version bumps** based on commit messages:
+### Manual Versioning
+We use manual version management where versions are explicitly set in `pyproject.toml` and specified during releases:
 
-| Commit Message Format | Version Bump | Example |
-|----------------------|--------------|---------|
-| `minor: description` | Minor (new features) | `1.0.4 → 1.1.0` |
-| `major: description` | Major (breaking changes) | `1.0.4 → 2.0.0` |
-| `anything else` | Patch (default) | `1.0.4 → 1.0.5` |
+| Version Type | When to Use | Example |
+|--------------|-------------|---------|
+| Patch (1.0.4 → 1.0.5) | Bug fixes, documentation updates | Fix calculation error |
+| Minor (1.0.4 → 1.1.0) | New features, backwards-compatible | Add new visualization |
+| Major (1.0.4 → 2.0.0) | Breaking changes, API redesigns | Redesign core API |
 
 ### Examples
 ```bash
-# Bug fix (defaults to patch)
+# All commits use standard descriptive messages
 git commit -m "fix calculation error in NAS metric"
-
-# New feature  
-git commit -m "minor: add support for custom similarity thresholds"
-
-# Breaking change
-git commit -m "major: redesign API for better performance"
-
-# All these are patch bumps (default behavior)
+git commit -m "add support for custom similarity thresholds"
+git commit -m "redesign API for better performance"
 git commit -m "update documentation"
 git commit -m "improve code formatting"  
 git commit -m "fix typo in README"
+
+# Version is manually specified during publishing workflow
+# No special commit message format required
 ```
 
 ### Technical Implementation
 - **Git Tags**: Store version history (`v1.0.5`, `v1.1.0`, etc.)
-- **setuptools-scm**: Generates package version from git tags
-- **tag_version.py**: Parses commit messages and creates appropriate tags
-- **No version conflicts**: Dynamic versioning eliminates local/remote sync issues
+- **pyproject.toml**: Contains the current version number
+- **Manual Publishing**: Version specified during workflow dispatch
+- **No version conflicts**: Workflow prevents duplicate tag/version issues
 
 ---
 
 ## 🌍 Environments
 
 ### TestPyPI (Staging)
-- **URL**: https://test.pypi.org/project/vcs-metrics/
+- **URL**: https://test.pypi.org/project/video-comprehension-score/
 - **Purpose**: Automated testing of package releases
 - **Trigger**: GitHub releases and version tags
 - **Authentication**: Trusted Publishing (OIDC)
 
 ### PyPI (Production)
-- **URL**: https://pypi.org/project/vcs-metrics/
+- **URL**: https://pypi.org/project/video-comprehension-score/
 - **Purpose**: Production package distribution
 - **Trigger**: Manual workflow dispatch or tag-based release
 - **Authentication**: Trusted Publishing (OIDC)
 
 ### GitHub Pages (Documentation)
-- **URL**: https://hdubey-debug.github.io/vcs/
+- **URL**: https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/
 - **Purpose**: Public documentation hosting
 - **Trigger**: Push to `main` branch (docs changes)
 - **Content**: Sphinx-generated API docs and user guides
@@ -196,8 +193,8 @@ git commit -m "fix typo in README"
 ### For Contributors
 1. **Clone repository**
    ```bash
-   git clone https://github.com/hdubey-debug/vcs.git
-   cd vcs
+   git clone https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score.git
+   cd Video-Comprehension-Score
    ```
 
 2. **Create feature branch**
@@ -207,9 +204,9 @@ git commit -m "fix typo in README"
 
 3. **Make changes** to `src/vcs/` directory
 
-4. **Commit with semantic message**
+4. **Commit with descriptive message**
    ```bash
-   git commit -m "minor: add new similarity metric"
+   git commit -m "add new similarity metric"
    ```
 
 5. **Push and create PR**
@@ -336,8 +333,8 @@ fatal: No names found, cannot describe anything
 
 ### Debug Commands
 ```bash
-# Check current version that would be generated
-python tag_version.py
+# Check current version in pyproject.toml
+grep '^version = ' pyproject.toml
 
 # List all version tags
 git tag -l v*.*.* | sort -V
@@ -346,14 +343,14 @@ git tag -l v*.*.* | sort -V
 python -m build
 
 # Verify package contents
-tar -tf dist/vcs_metrics-*.tar.gz
+tar -tf dist/video-comprehension-score-*.tar.gz
 ```
 
 ---
 
 ## 📚 Additional Resources
 
-- [Semantic Versioning Specification](https://semver.org/)
+- [Manual Versioning Guide](./CONTRIBUTING.md#commit-message-guidelines)
 - [PyPI Trusted Publishing Guide](https://docs.pypi.org/trusted-publishers/)
 - [setuptools-scm Documentation](https://setuptools-scm.readthedocs.io/)
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
