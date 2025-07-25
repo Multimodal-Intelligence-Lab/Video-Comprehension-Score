@@ -1,8 +1,14 @@
 
+# Import version from package metadata
 try:
-    from ._version import version as __version__
+    from importlib.metadata import version
+    __version__ = version("video-comprehension-score")
 except ImportError:
-    # Fallback version if setuptools_scm version file is not available
+    # Fallback for Python < 3.8
+    from importlib_metadata import version
+    __version__ = version("video-comprehension-score")
+except Exception:
+    # Final fallback
     __version__ = "1.0.0"
 
 __author__ = "Harsh Dubey"

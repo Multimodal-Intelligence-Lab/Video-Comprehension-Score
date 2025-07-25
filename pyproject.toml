@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel", "setuptools-scm>=8.0"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "video-comprehension-score"
-dynamic = ["version"]
+version = "1.0.0"
 description = "Video Comprehension Score (VCS) - A comprehensive metric for evaluating narrative similarity between reference and generated text"
 readme = "README.md"
 license = {text = "MIT"}
@@ -92,5 +92,4 @@ warn_unused_configs = true
 disallow_untyped_defs = true
 ignore_missing_imports = true
 
-[tool.setuptools_scm]
-write_to = "src/vcs/_version.py"
+# Version is now manually managed in pyproject.toml
