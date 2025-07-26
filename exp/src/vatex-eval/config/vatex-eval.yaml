@@ -1,5 +1,5 @@
-# VATEX-EVAL Ablation Configuration
-# Configuration for ablation studies with multiple segmenter functions and n_refs
+# VATEX-EVAL VCS Evaluation Configuration
+# Configuration for comprehensive VCS evaluation with multiple chunk sizes and LCT values
 
 # ============================================================================
 # ESSENTIAL PATHS (MUST BE UPDATED FOR YOUR ENVIRONMENT)
@@ -14,7 +14,7 @@ models:
 # ============================================================================
 paths:
   # Base output directory for results
-  results_dir: "/mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/results/vatex-eval"
+  results_dir: "/mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/results/vatex-eval"
   
   # Logs directory (relative to script location)
   logs_dir: "logs"
@@ -24,15 +24,14 @@ paths:
 # ============================================================================
 vatex_eval:
   # Path to VATEX-EVAL JSON data file
-  data_dir: "/mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/vatex-eval/vid_cans_score_dict.json"
+  data_dir: "/mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/vatex-eval/vid_cans_score_dict.json"
   
   # Number of references to use for evaluation (list of integers)
   # Each value will be evaluated separately
   use_n_refs: [1, 9]
   
   # Segmenter function: uses segmenter_punc_stop with NLTK stopwords
-  # This is the only supported segmenter for VATEX-EVAL ablation analysis
-  
+  # This is the only supported segmenter for VATEX-EVAL VCS analysis
 
 # ============================================================================
 # VCS COMPUTATION SETTINGS
@@ -41,16 +40,18 @@ vcs:
   # LCT (Line Chronological Tolerance) values to compute
   # LCT = 0: Strict chronological order (DEFAULT)
   # LCT > 0: Allow chronological flexibility
-  # Results will be saved in separate folders: results/vatex_eval/ablation/LCT_0/, LCT_1/, etc.
-  # Examples:
-  #   lct_values: [0]        # Only strict mode
-  #   lct_values: [0, 1, 2]  # Multiple LCT variants
-  #   lct_values: [1, 3]     # Non-consecutive values
+  # Results will include metrics for all combinations: VCS_C{chunk}_LCT{n}
   lct_values: [0, 1]
   
+  # Chunk sizes to evaluate
+  # Results will include metrics for all combinations: VCS_C{chunk}_LCT{n}
+  # Examples:
+  #   chunk_sizes: [1]        # Only chunk size 1
+  #   chunk_sizes: [1, 2]     # Chunk sizes 1 and 2
+  #   chunk_sizes: [1, 2, 3]  # Multiple chunk sizes
+  chunk_sizes: [1, 2]
+  
   # VCS algorithm parameters
-  # chunk_size can be 1, 2, 3, etc. depending on computational requirements
-  chunk_size: 1
   context_cutoff_value: 0.6
   context_window_control: 4.0
   
@@ -70,7 +71,7 @@ processing:
   max_workers: 48
   
   # Checkpoint saving interval (save every N candidates processed)
-  checkpoint_interval: 100
+  checkpoint_interval: 6
   
   # Resume from checkpoint if available
   resume_from_checkpoint: true
@@ -85,6 +86,28 @@ output:
   # Output options
   save_correlation_summary: true
   save_detailed_scores: true
+
+# ============================================================================
+# NEW DIRECTORY STRUCTURE
+# ============================================================================
+# Results will be organized as follows:
+#
+# results/vatex-eval/
+# ├── individual_results/
+# │   ├── 1ref/
+# │   │   ├── _2zXAtOKXm0_000004_000014.csv
+# │   │   └── [other video CSV files]
+# │   └── 9ref/
+# │       ├── _2zXAtOKXm0_000004_000014.csv
+# │       └── [other video CSV files]
+# └── aggregated_results/
+#     └── correlation_summary.csv  # Hierarchical format with all n_refs
+#
+# Individual CSV format:
+# candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,VCS_C1_LCT0,VCS_C1_LCT1,VCS_C2_LCT0,VCS_C2_LCT1
+#
+# Aggregated correlation_summary.csv format:
+# Metric,1ref_Kendall_Tau,1ref_Spearman_Correlation,9ref_Kendall_Tau,9ref_Spearman_Correlation
 
 # ============================================================================
 # LOGGING AND VERBOSITY

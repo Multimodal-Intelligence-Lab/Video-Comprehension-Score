@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=mpii_vatex_eval_highperf
+#SBATCH --job-name=vatex_eval_highperf
 #SBATCH --output=logs/vatex_eval_highperf_%j.out
 #SBATCH --error=logs/vatex_eval_highperf_%j.err
 #SBATCH --time=16:00:00
@@ -30,14 +30,14 @@ echo "Creating logs directory if it doesn't exist..."
 mkdir -p logs
 
 echo "Activating virtual environment..."
-source /mmfs2/home/jacks.local/mali9292/scratch/vcs/venv/bin/activate
+source /mmfs2/home/jacks.local/mali9292/scratch/Video-Comprehension-Score/venv/bin/activate
 
 echo "Setting CUDA environment variables for multi-GPU..."
 export CUDA_VISIBLE_DEVICES=0,1
 export TORCH_CUDA_ARCH_LIST="6.0 6.1 7.0 7.5 8.0 8.6"
 
 echo "Running high-performance vatex_eval evaluation..."
-python scripts/vatex_eval_ablation.py --config config/ablation.yaml
+python scripts/vatex_eval.py --config config/vatex-eval.yaml
 
 echo "High-performance vatex_eval script completed at $(date)"
 

@@ -39,27 +39,57 @@ PUNCTUATIONS = list(string.punctuation)
 # Decimal precision for metric outputs
 DECIMAL_PRECISION = 4
 
-# Ablation metrics order for consistent output formatting (base metrics, LCT suffix will be added)
-ABLATION_METRICS_ORDER = [
-    "GAS",
-    "LAS", 
-    "NAS-D",
-    "NAS-L",
-    "NAS",
-    "NAS\n+LAS(S)",
-    "GAS\n+LAS(S)",
-    "GAS\n+NAS-L(S)",
-    "GAS\n+NAS-D(S)",
-    "GAS\n+NAS(S)",
-    "GAS\n+LAS(S)\n+NAS-D(S)",
-    "GAS\n+LAS(S)\n+NAS-L(S)",
-    "GAS\n+LAS(S)\n+(NAS-D\n+NAS-L)(S)",
-]
+# VCS metrics utilities for dynamic metric generation
 
-# VCS metrics order for consistent output formatting (base metrics, VCS_LCT variants will be added dynamically)
-VCS_METRICS_ORDER = [
-    "VCS",  # Will be expanded to VCS_LCT0, VCS_LCT1, etc.
-]
+class VCSMetricsGenerator:
+    """Utility class for generating VCS metric names and configurations."""
+    
+    @staticmethod
+    def generate_metric_names(chunk_sizes: List[int], lct_values: List[int]) -> List[str]:
+        """
+        Generate VCS metric names in VCS_C{chunk}_LCT{n} format.
+        
+        Args:
+            chunk_sizes: List of chunk sizes to use
+            lct_values: List of LCT values to use
+            
+        Returns:
+            List of metric names in sorted order
+        """
+        metric_names = []
+        for chunk_size in sorted(chunk_sizes):
+            for lct in sorted(lct_values):
+                metric_names.append(f"VCS_C{chunk_size}_LCT{lct}")
+        return metric_names
+    
+    @staticmethod
+    def parse_metric_name(metric_name: str) -> tuple:
+        """
+        Parse VCS metric name to extract chunk size and LCT value.
+        
+        Args:
+            metric_name: Metric name in VCS_C{chunk}_LCT{n} format
+            
+        Returns:
+            Tuple of (chunk_size, lct_value) or None if invalid format
+        """
+        import re
+        match = re.match(r'VCS_C(\d+)_LCT(\d+)', metric_name)
+        if match:
+            return int(match.group(1)), int(match.group(2))
+        return None
+    
+    @staticmethod
+    def get_default_vcs_config() -> Dict:
+        """Get default VCS configuration."""
+        return {
+            "chunk_sizes": [1],
+            "lct_values": [0],
+            "context_cutoff_value": 0.6,
+            "context_window_control": 4.0,
+            "return_all_metrics": True,
+            "return_internals": False
+        }
 
 # Default segmenter function for VATEX-EVAL (single segmenter)
 DEFAULT_SEGMENTER_FUNCTION = "segmenter_punc_stop"
@@ -152,6 +182,14 @@ class ConfigLoader:
         lct_values = config['vcs']['lct_values']
         if not isinstance(lct_values, list) or not all(isinstance(x, int) and x >= 0 for x in lct_values):
             raise ValueError("vcs.lct_values must be a list of non-negative integers")
+        
+        # Validate chunk sizes
+        if 'chunk_sizes' not in config['vcs']:
+            raise ValueError("Missing required field: vcs.chunk_sizes")
+        
+        chunk_sizes = config['vcs']['chunk_sizes']
+        if not isinstance(chunk_sizes, list) or not all(isinstance(x, int) and x >= 1 for x in chunk_sizes):
+            raise ValueError("vcs.chunk_sizes must be a list of positive integers")
 
 
 class CheckpointManager:
@@ -527,11 +565,41 @@ class VATEXEvalUtils:
         return kendalltau_val, spearman
     
     @staticmethod
-    def generate_results_path(base_output_dir: str, evaluation_type: str, lct_value: int, n_refs: int) -> str:
-        """Generate standardized results path for LCT-based structure."""
-        return str(Path(base_output_dir) / evaluation_type / f"LCT_{lct_value}" / f"{n_refs}ref")
+    def generate_individual_results_path(base_output_dir: str, n_refs: int) -> str:
+        """Generate standardized individual results path for new structure."""
+        return str(Path(base_output_dir) / "individual_results" / f"{n_refs}ref")
     
     @staticmethod
-    def generate_file_suffix(n_refs: int, lct_value: int) -> str:
-        """Generate standardized file suffix."""
-        return f"{n_refs}refs_LCT{lct_value}"
+    def generate_aggregated_results_path(base_output_dir: str) -> str:
+        """Generate standardized aggregated results path for new structure."""
+        return str(Path(base_output_dir) / "aggregated_results")
+    
+    @staticmethod
+    def generate_file_suffix(n_refs: int, metric_config: str = "") -> str:
+        """Generate standardized file suffix for new structure."""
+        if metric_config:
+            return f"{n_refs}refs_{metric_config}"
+        return f"{n_refs}refs"
+    
+    @staticmethod
+    def generate_hierarchical_results_structure(base_output_dir: str, n_refs_list: List[int]) -> Dict[str, str]:
+        """
+        Generate complete directory structure for hierarchical VCS results.
+        
+        Args:
+            base_output_dir: Base output directory
+            n_refs_list: List of n_refs values to create directories for
+            
+        Returns:
+            Dictionary mapping result types to paths
+        """
+        structure = {
+            "base": base_output_dir,
+            "individual_results": {},
+            "aggregated_results": VATEXEvalUtils.generate_aggregated_results_path(base_output_dir)
+        }
+        
+        for n_refs in n_refs_list:
+            structure["individual_results"][n_refs] = VATEXEvalUtils.generate_individual_results_path(base_output_dir, n_refs)
+        
+        return structure

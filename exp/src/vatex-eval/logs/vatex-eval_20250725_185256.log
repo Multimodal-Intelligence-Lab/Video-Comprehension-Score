@@ -1,0 +1,228 @@
+2025-07-25 18:52:56 [INFO] Initializing models...
+2025-07-25 18:53:02 [INFO] Models initialized successfully
+2025-07-25 18:53:02 [INFO] Starting VCS evaluation pipeline
+2025-07-25 18:53:02 [INFO] Output folder: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/results/vatex-eval
+2025-07-25 18:53:02 [INFO] Experiment ID: eval_20250725_185256
+2025-07-25 18:53:02 [INFO] Loading VATEX-EVAL data from: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/vatex-eval/vid_cans_score_dict.json
+2025-07-25 18:53:02 [INFO] Loaded 18000 candidates from 3000 videos
+2025-07-25 18:53:02 [INFO] Processing 1 references configuration
+2025-07-25 18:54:03 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 18:54:31 [INFO] Processing nrefs_1: 150/18000 (0.8%)
+2025-07-25 18:54:31 [INFO] ETA: 176.2 minutes
+2025-07-25 18:55:02 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 18:56:23 [INFO] Initializing models...
+2025-07-25 18:56:30 [INFO] Models initialized successfully
+2025-07-25 18:56:30 [INFO] Starting VCS evaluation pipeline
+2025-07-25 18:56:30 [INFO] Output folder: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/results/vatex-eval
+2025-07-25 18:56:30 [INFO] Experiment ID: eval_20250725_185256
+2025-07-25 18:56:30 [INFO] Loading VATEX-EVAL data from: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/vatex-eval/vid_cans_score_dict.json
+2025-07-25 18:56:30 [INFO] Loaded 18000 candidates from 3000 videos
+2025-07-25 18:56:30 [INFO] Processing 1 references configuration
+2025-07-25 18:57:59 [INFO] Processing nrefs_1: 150/18000 (0.8%)
+2025-07-25 18:57:59 [INFO] ETA: 176.4 minutes
+2025-07-25 18:59:25 [INFO] Processing nrefs_1: 300/18000 (1.7%)
+2025-07-25 18:59:25 [INFO] ETA: 172.8 minutes
+2025-07-25 18:59:33 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:00:52 [INFO] Processing nrefs_1: 450/18000 (2.5%)
+2025-07-25 19:00:52 [INFO] ETA: 170.4 minutes
+2025-07-25 19:02:17 [INFO] Processing nrefs_1: 600/18000 (3.3%)
+2025-07-25 19:02:17 [INFO] ETA: 168.1 minutes
+2025-07-25 19:02:32 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:03:44 [INFO] Processing nrefs_1: 750/18000 (4.2%)
+2025-07-25 19:03:44 [INFO] ETA: 166.5 minutes
+2025-07-25 19:05:10 [INFO] Processing nrefs_1: 900/18000 (5.0%)
+2025-07-25 19:05:10 [INFO] ETA: 164.7 minutes
+2025-07-25 19:05:30 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:06:38 [INFO] Processing nrefs_1: 1050/18000 (5.8%)
+2025-07-25 19:06:38 [INFO] ETA: 163.6 minutes
+2025-07-25 19:08:05 [INFO] Processing nrefs_1: 1200/18000 (6.7%)
+2025-07-25 19:08:05 [INFO] ETA: 162.2 minutes
+2025-07-25 19:08:32 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:09:31 [INFO] Processing nrefs_1: 1350/18000 (7.5%)
+2025-07-25 19:09:31 [INFO] ETA: 160.6 minutes
+2025-07-25 19:11:01 [INFO] Initializing models...
+2025-07-25 19:11:08 [INFO] Models initialized successfully
+2025-07-25 19:11:08 [INFO] Starting VCS evaluation pipeline
+2025-07-25 19:11:08 [INFO] Output folder: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/results/vatex-eval
+2025-07-25 19:11:08 [INFO] Experiment ID: eval_20250725_185256
+2025-07-25 19:11:08 [INFO] Loading VATEX-EVAL data from: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/vatex-eval/vid_cans_score_dict.json
+2025-07-25 19:11:08 [INFO] Loaded 18000 candidates from 3000 videos
+2025-07-25 19:11:08 [INFO] Processing 1 references configuration
+2025-07-25 19:12:36 [INFO] Processing nrefs_1: 150/18000 (0.8%)
+2025-07-25 19:12:36 [INFO] ETA: 175.0 minutes
+2025-07-25 19:14:02 [INFO] Processing nrefs_1: 300/18000 (1.7%)
+2025-07-25 19:14:02 [INFO] ETA: 171.5 minutes
+2025-07-25 19:14:09 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:15:28 [INFO] Processing nrefs_1: 450/18000 (2.5%)
+2025-07-25 19:15:28 [INFO] ETA: 169.1 minutes
+2025-07-25 19:16:53 [INFO] Processing nrefs_1: 600/18000 (3.3%)
+2025-07-25 19:16:53 [INFO] ETA: 166.8 minutes
+2025-07-25 19:17:07 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:18:19 [INFO] Processing nrefs_1: 750/18000 (4.2%)
+2025-07-25 19:18:19 [INFO] ETA: 165.2 minutes
+2025-07-25 19:19:44 [INFO] Processing nrefs_1: 900/18000 (5.0%)
+2025-07-25 19:19:44 [INFO] ETA: 163.5 minutes
+2025-07-25 19:20:04 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:21:11 [INFO] Processing nrefs_1: 1050/18000 (5.8%)
+2025-07-25 19:21:11 [INFO] ETA: 162.3 minutes
+2025-07-25 19:22:38 [INFO] Processing nrefs_1: 1200/18000 (6.7%)
+2025-07-25 19:22:38 [INFO] ETA: 161.0 minutes
+2025-07-25 19:23:09 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:24:03 [INFO] Processing nrefs_1: 1350/18000 (7.5%)
+2025-07-25 19:24:03 [INFO] ETA: 159.3 minutes
+2025-07-25 19:25:29 [INFO] Processing nrefs_1: 1500/18000 (8.3%)
+2025-07-25 19:25:29 [INFO] ETA: 157.9 minutes
+2025-07-25 19:26:12 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:26:56 [INFO] Processing nrefs_1: 1650/18000 (9.2%)
+2025-07-25 19:26:56 [INFO] ETA: 156.7 minutes
+2025-07-25 19:28:23 [INFO] Processing nrefs_1: 1800/18000 (10.0%)
+2025-07-25 19:28:23 [INFO] ETA: 155.3 minutes
+2025-07-25 19:29:12 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:29:49 [INFO] Processing nrefs_1: 1950/18000 (10.8%)
+2025-07-25 19:29:49 [INFO] ETA: 153.8 minutes
+2025-07-25 19:31:15 [INFO] Processing nrefs_1: 2100/18000 (11.7%)
+2025-07-25 19:31:15 [INFO] ETA: 152.3 minutes
+2025-07-25 19:32:12 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:32:43 [INFO] Processing nrefs_1: 2250/18000 (12.5%)
+2025-07-25 19:32:43 [INFO] ETA: 151.1 minutes
+2025-07-25 19:34:09 [INFO] Processing nrefs_1: 2400/18000 (13.3%)
+2025-07-25 19:34:09 [INFO] ETA: 149.7 minutes
+2025-07-25 19:35:10 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:35:33 [INFO] Processing nrefs_1: 2550/18000 (14.2%)
+2025-07-25 19:35:33 [INFO] ETA: 147.9 minutes
+2025-07-25 19:36:59 [INFO] Processing nrefs_1: 2700/18000 (15.0%)
+2025-07-25 19:36:59 [INFO] ETA: 146.5 minutes
+2025-07-25 19:38:11 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:38:26 [INFO] Processing nrefs_1: 2850/18000 (15.8%)
+2025-07-25 19:38:26 [INFO] ETA: 145.1 minutes
+2025-07-25 19:39:52 [INFO] Processing nrefs_1: 3000/18000 (16.7%)
+2025-07-25 19:39:52 [INFO] ETA: 143.7 minutes
+2025-07-25 19:41:16 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:41:19 [INFO] Processing nrefs_1: 3150/18000 (17.5%)
+2025-07-25 19:41:19 [INFO] ETA: 142.3 minutes
+2025-07-25 19:42:47 [INFO] Processing nrefs_1: 3300/18000 (18.3%)
+2025-07-25 19:42:47 [INFO] ETA: 141.0 minutes
+2025-07-25 19:44:11 [INFO] Processing nrefs_1: 3450/18000 (19.2%)
+2025-07-25 19:44:11 [INFO] ETA: 139.4 minutes
+2025-07-25 19:44:14 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:45:36 [INFO] Processing nrefs_1: 3600/18000 (20.0%)
+2025-07-25 19:45:36 [INFO] ETA: 137.9 minutes
+2025-07-25 19:47:00 [INFO] Processing nrefs_1: 3750/18000 (20.8%)
+2025-07-25 19:47:00 [INFO] ETA: 136.3 minutes
+2025-07-25 19:47:13 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:48:24 [INFO] Processing nrefs_1: 3900/18000 (21.7%)
+2025-07-25 19:48:24 [INFO] ETA: 134.7 minutes
+2025-07-25 19:49:50 [INFO] Processing nrefs_1: 4050/18000 (22.5%)
+2025-07-25 19:49:50 [INFO] ETA: 133.3 minutes
+2025-07-25 19:50:14 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:51:15 [INFO] Processing nrefs_1: 4200/18000 (23.3%)
+2025-07-25 19:51:15 [INFO] ETA: 131.8 minutes
+2025-07-25 19:52:39 [INFO] Processing nrefs_1: 4350/18000 (24.2%)
+2025-07-25 19:52:39 [INFO] ETA: 130.3 minutes
+2025-07-25 19:53:14 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:54:06 [INFO] Processing nrefs_1: 4500/18000 (25.0%)
+2025-07-25 19:54:06 [INFO] ETA: 128.9 minutes
+2025-07-25 19:55:31 [INFO] Processing nrefs_1: 4650/18000 (25.8%)
+2025-07-25 19:55:31 [INFO] ETA: 127.4 minutes
+2025-07-25 19:56:14 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:56:53 [INFO] Processing nrefs_1: 4800/18000 (26.7%)
+2025-07-25 19:56:53 [INFO] ETA: 125.8 minutes
+2025-07-25 19:58:19 [INFO] Processing nrefs_1: 4950/18000 (27.5%)
+2025-07-25 19:58:19 [INFO] ETA: 124.4 minutes
+2025-07-25 19:59:16 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 19:59:47 [INFO] Processing nrefs_1: 5100/18000 (28.3%)
+2025-07-25 19:59:47 [INFO] ETA: 123.1 minutes
+2025-07-25 20:01:15 [INFO] Processing nrefs_1: 5250/18000 (29.2%)
+2025-07-25 20:01:15 [INFO] ETA: 121.7 minutes
+2025-07-25 20:02:20 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 20:02:41 [INFO] Processing nrefs_1: 5400/18000 (30.0%)
+2025-07-25 20:02:41 [INFO] ETA: 120.3 minutes
+2025-07-25 20:04:06 [INFO] Processing nrefs_1: 5550/18000 (30.8%)
+2025-07-25 20:04:06 [INFO] ETA: 118.8 minutes
+2025-07-25 20:05:24 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 20:05:35 [INFO] Processing nrefs_1: 5700/18000 (31.7%)
+2025-07-25 20:05:35 [INFO] ETA: 117.5 minutes
+2025-07-25 20:07:01 [INFO] Processing nrefs_1: 5850/18000 (32.5%)
+2025-07-25 20:07:01 [INFO] ETA: 116.1 minutes
+2025-07-25 20:08:27 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 20:08:27 [INFO] Processing nrefs_1: 6000/18000 (33.3%)
+2025-07-25 20:08:27 [INFO] ETA: 114.6 minutes
+2025-07-25 20:09:52 [INFO] Processing nrefs_1: 6150/18000 (34.2%)
+2025-07-25 20:09:52 [INFO] ETA: 113.2 minutes
+2025-07-25 20:11:17 [INFO] Processing nrefs_1: 6300/18000 (35.0%)
+2025-07-25 20:11:17 [INFO] ETA: 111.7 minutes
+2025-07-25 20:11:28 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 20:12:43 [INFO] Processing nrefs_1: 6450/18000 (35.8%)
+2025-07-25 20:12:43 [INFO] ETA: 110.3 minutes
+2025-07-25 20:14:08 [INFO] Processing nrefs_1: 6600/18000 (36.7%)
+2025-07-25 20:14:08 [INFO] ETA: 108.8 minutes
+2025-07-25 20:14:29 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 20:15:36 [INFO] Processing nrefs_1: 6750/18000 (37.5%)
+2025-07-25 20:15:36 [INFO] ETA: 107.4 minutes
+2025-07-25 20:17:01 [INFO] Processing nrefs_1: 6900/18000 (38.3%)
+2025-07-25 20:17:01 [INFO] ETA: 106.0 minutes
+2025-07-25 20:17:34 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 20:18:31 [INFO] Processing nrefs_1: 7050/18000 (39.2%)
+2025-07-25 20:18:31 [INFO] ETA: 104.7 minutes
+2025-07-25 20:19:58 [INFO] Processing nrefs_1: 7200/18000 (40.0%)
+2025-07-25 20:19:58 [INFO] ETA: 103.3 minutes
+2025-07-25 20:20:39 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 20:21:24 [INFO] Processing nrefs_1: 7350/18000 (40.8%)
+2025-07-25 20:21:24 [INFO] ETA: 101.8 minutes
+2025-07-25 20:22:50 [INFO] Processing nrefs_1: 7500/18000 (41.7%)
+2025-07-25 20:22:50 [INFO] ETA: 100.4 minutes
+2025-07-25 20:23:42 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 20:24:16 [INFO] Processing nrefs_1: 7650/18000 (42.5%)
+2025-07-25 20:24:16 [INFO] ETA: 99.0 minutes
+2025-07-25 20:25:44 [INFO] Processing nrefs_1: 7800/18000 (43.3%)
+2025-07-25 20:25:44 [INFO] ETA: 97.6 minutes
+2025-07-25 20:26:46 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 20:27:10 [INFO] Processing nrefs_1: 7950/18000 (44.2%)
+2025-07-25 20:27:10 [INFO] ETA: 96.1 minutes
+2025-07-25 20:28:36 [INFO] Processing nrefs_1: 8100/18000 (45.0%)
+2025-07-25 20:28:36 [INFO] ETA: 94.7 minutes
+2025-07-25 20:29:49 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 20:30:03 [INFO] Processing nrefs_1: 8250/18000 (45.8%)
+2025-07-25 20:30:03 [INFO] ETA: 93.3 minutes
+2025-07-25 20:31:31 [INFO] Processing nrefs_1: 8400/18000 (46.7%)
+2025-07-25 20:31:31 [INFO] ETA: 91.9 minutes
+2025-07-25 20:32:54 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 20:32:58 [INFO] Processing nrefs_1: 8550/18000 (47.5%)
+2025-07-25 20:32:58 [INFO] ETA: 90.5 minutes
+2025-07-25 20:34:23 [INFO] Processing nrefs_1: 8700/18000 (48.3%)
+2025-07-25 20:34:23 [INFO] ETA: 89.0 minutes
+2025-07-25 20:35:37 [INFO] Initializing models...
+2025-07-25 20:35:44 [INFO] Models initialized successfully
+2025-07-25 20:35:44 [INFO] Starting VCS evaluation pipeline
+2025-07-25 20:35:44 [INFO] Output folder: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/results/vatex-eval
+2025-07-25 20:35:44 [INFO] Experiment ID: eval_20250725_185256
+2025-07-25 20:35:44 [INFO] Loading VATEX-EVAL data from: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/vatex-eval/vid_cans_score_dict.json
+2025-07-25 20:35:44 [INFO] Loaded 18000 candidates from 3000 videos
+2025-07-25 20:35:44 [INFO] Processing 1 references configuration
+2025-07-25 20:37:13 [INFO] Processing nrefs_1: 150/18000 (0.8%)
+2025-07-25 20:37:13 [INFO] ETA: 176.2 minutes
+2025-07-25 20:38:39 [INFO] Processing nrefs_1: 300/18000 (1.7%)
+2025-07-25 20:38:39 [INFO] ETA: 172.5 minutes
+2025-07-25 20:38:50 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 20:40:05 [INFO] Processing nrefs_1: 450/18000 (2.5%)
+2025-07-25 20:40:05 [INFO] ETA: 170.0 minutes
+2025-07-25 20:41:31 [INFO] Processing nrefs_1: 600/18000 (3.3%)
+2025-07-25 20:41:31 [INFO] ETA: 167.7 minutes
+2025-07-25 20:41:51 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 20:42:57 [INFO] Processing nrefs_1: 750/18000 (4.2%)
+2025-07-25 20:42:57 [INFO] ETA: 166.1 minutes
+2025-07-25 20:44:23 [INFO] Processing nrefs_1: 900/18000 (5.0%)
+2025-07-25 20:44:23 [INFO] ETA: 164.3 minutes
+2025-07-25 20:44:49 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 20:45:50 [INFO] Processing nrefs_1: 1050/18000 (5.8%)
+2025-07-25 20:45:50 [INFO] ETA: 163.1 minutes
+2025-07-25 20:47:17 [INFO] Processing nrefs_1: 1200/18000 (6.7%)
+2025-07-25 20:47:17 [INFO] ETA: 161.8 minutes
+2025-07-25 20:47:52 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 20:48:43 [INFO] Processing nrefs_1: 1350/18000 (7.5%)
+2025-07-25 20:48:43 [INFO] ETA: 160.2 minutes
+2025-07-25 20:50:09 [INFO] Processing nrefs_1: 1500/18000 (8.3%)
+2025-07-25 20:50:09 [INFO] ETA: 158.7 minutes
+2025-07-25 20:50:53 [INFO] Saved 1 individual video JSON files to temp directory
+2025-07-25 20:51:37 [INFO] Processing nrefs_1: 1650/18000 (9.2%)
+2025-07-25 20:51:37 [INFO] ETA: 157.5 minutes
