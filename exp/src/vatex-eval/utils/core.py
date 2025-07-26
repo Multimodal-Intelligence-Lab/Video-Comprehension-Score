@@ -83,7 +83,7 @@ class VCSMetricsGenerator:
     def get_default_vcs_config() -> Dict:
         """Get default VCS configuration."""
         return {
-            "chunk_sizes": [1],
+            "chunk_size": [1],
             "lct_values": [0],
             "context_cutoff_value": 0.6,
             "context_window_control": 4.0,
@@ -184,12 +184,12 @@ class ConfigLoader:
             raise ValueError("vcs.lct_values must be a list of non-negative integers")
         
         # Validate chunk sizes
-        if 'chunk_sizes' not in config['vcs']:
-            raise ValueError("Missing required field: vcs.chunk_sizes")
+        if 'chunk_size' not in config['vcs']:
+            raise ValueError("Missing required field: vcs.chunk_size")
         
-        chunk_sizes = config['vcs']['chunk_sizes']
+        chunk_sizes = config['vcs']['chunk_size']
         if not isinstance(chunk_sizes, list) or not all(isinstance(x, int) and x >= 1 for x in chunk_sizes):
-            raise ValueError("vcs.chunk_sizes must be a list of positive integers")
+            raise ValueError("vcs.chunk_size must be a list of positive integers")
 
 
 class CheckpointManager:
@@ -210,6 +210,27 @@ class CheckpointManager:
         # Performance tracking
         self._last_save_time = 0
         self._adaptive_interval = 100  # Start with 100 candidates, adapt based on processing speed
+    
+    def get_existing_result_files(self, n_refs: int) -> set:
+        """Get set of existing result files for a given n_refs configuration."""
+        existing_files = set()
+        
+        # Check temp results directory
+        if self.results_dir.exists():
+            for json_file in self.results_dir.glob("*.json"):
+                # Extract video_id from filename (remove .json extension)
+                video_id = json_file.stem
+                existing_files.add(video_id)
+        
+        return existing_files
+    
+    def count_processed_candidates_from_files(self, existing_files: set, video_ids: list) -> int:
+        """Count how many candidates have been processed based on existing files."""
+        processed_count = 0
+        for video_id in video_ids:
+            if video_id in existing_files:
+                processed_count += 1
+        return processed_count
     
     def _calculate_checksum(self, data: bytes) -> str:
         """Calculate SHA-256 checksum for integrity validation."""

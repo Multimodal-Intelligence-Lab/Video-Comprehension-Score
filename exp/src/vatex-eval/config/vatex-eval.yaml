@@ -24,7 +24,7 @@ paths:
 # ============================================================================
 vatex_eval:
   # Path to VATEX-EVAL JSON data file
-  data_dir: "/mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/vatex-eval/vid_cans_score_dict.json"
+  data_dir: "/mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/vatex-eval/vid_cans_score_dict-TEST.json"
   
   # Number of references to use for evaluation (list of integers)
   # Each value will be evaluated separately
@@ -43,13 +43,13 @@ vcs:
   # Results will include metrics for all combinations: VCS_C{chunk}_LCT{n}
   lct_values: [0, 1]
   
-  # Chunk sizes to evaluate
+  # Chunk sizes to evaluate (discrete values)
   # Results will include metrics for all combinations: VCS_C{chunk}_LCT{n}
   # Examples:
-  #   chunk_sizes: [1]        # Only chunk size 1
-  #   chunk_sizes: [1, 2]     # Chunk sizes 1 and 2
-  #   chunk_sizes: [1, 2, 3]  # Multiple chunk sizes
-  chunk_sizes: [1, 2]
+  #   chunk_size: [1]        # Only chunk size 1
+  #   chunk_size: [1, 2]     # Chunk sizes 1 and 2
+  #   chunk_size: [1, 2, 3]  # Multiple chunk sizes
+  chunk_size: [1]
   
   # VCS algorithm parameters
   context_cutoff_value: 0.6

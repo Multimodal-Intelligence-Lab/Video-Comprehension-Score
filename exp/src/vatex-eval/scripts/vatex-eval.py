@@ -115,17 +115,38 @@ class StructuredLogger:
         """Log individual correlation results."""
         self.main_logger.info(f"VCS({metric_name}) LCT_{lct_value}_{n_refs}ref - Kendall: {kendall_tau}, Spearman: {spearman_corr}")
     
-    def log_progress(self, current: int, total: int, description: str = "Processing"):
-        """Log progress information."""
+    def log_progress(self, current: int, total: int, description: str = "Processing", already_processed: int = 0):
+        """Log progress information with resume context."""
         if total > 0:
-            self.main_logger.info(f"{description}: {current}/{total} ({current/total*100:.1f}%)")
+            percentage = (current / total) * 100
+            self.main_logger.info(f"{description}: {current}/{total} ({percentage:.1f}%)")
+            
+            # Show resume context if applicable
+            if already_processed > 0:
+                newly_processed = current - already_processed
+                self.main_logger.info(f"Resume context: {already_processed} already completed, {newly_processed} processed this session")
         else:
             self.main_logger.info(f"{description}: {current}/0 (N/A%)")
         
-        if current > 0:
-            elapsed = time.time() - getattr(self, '_start_time', time.time())
-            eta = (elapsed / current) * (total - current)
-            self.main_logger.info(f"ETA: {eta/60:.1f} minutes")
+        # Calculate ETA based on newly processed items only
+        if current > 0 and hasattr(self, '_start_time'):
+            elapsed = time.time() - self._start_time
+            remaining = total - current
+            
+            if already_processed > 0:
+                # Calculate rate based on newly processed items
+                newly_processed = current - already_processed
+                if newly_processed > 0:
+                    rate = elapsed / newly_processed
+                    eta = rate * remaining
+                    self.main_logger.info(f"Processing rate: {newly_processed/elapsed:.2f} candidates/sec, ETA: {eta/60:.1f} minutes")
+                else:
+                    self.main_logger.info(f"No new items processed this session yet")
+            else:
+                # Standard ETA calculation
+                rate = elapsed / current
+                eta = rate * remaining
+                self.main_logger.info(f"Processing rate: {current/elapsed:.2f} candidates/sec, ETA: {eta/60:.1f} minutes")
     
     def log_error(self, message: str, error: Exception, context: Dict = None):
         """Log errors with context."""
@@ -171,7 +192,7 @@ class VCSEvaluator:
             vcs_metrics = {}
             
             # Get chunk sizes and LCT values from config
-            chunk_sizes = self.config['vcs'].get('chunk_sizes', [1])
+            chunk_sizes = self.config['vcs'].get('chunk_size', [1])
             lct_values = self.lct_values
             
             # Compute VCS for each chunk size and LCT combination
@@ -210,7 +231,7 @@ class VCSEvaluator:
             
             # Return zero metrics on failure
             zero_metrics = {}
-            chunk_sizes = self.config['vcs'].get('chunk_sizes', [1])
+            chunk_sizes = self.config['vcs'].get('chunk_size', [1])
             for chunk_size in chunk_sizes:
                 for lct in self.lct_values:
                     metric_name = f"VCS_C{chunk_size}_LCT{lct}"
@@ -392,13 +413,22 @@ class VCSPipeline:
             for n_refs in use_n_refs_list:
                 self.logger.main_logger.info(f"Processing {n_refs} references configuration")
                 
-                # Check for checkpoint resume (following original ablation pattern)
+                # Check for checkpoint resume with improved logic
                 checkpoint_key = f"nrefs_{n_refs}"
+                resume_data = None
                 if self.resume_from_checkpoint:
                     checkpoint_data = self.checkpoint_manager.load_checkpoint(self.config)
                     if checkpoint_data and checkpoint_data.get('current_config') == checkpoint_key:
-                        self.logger.main_logger.info(f"Resuming from checkpoint for {checkpoint_key}")
-                        continue
+                        # Check if this n_refs configuration was fully completed
+                        processed_candidates = checkpoint_data.get('processed_candidates', 0)
+                        total_candidates = len(cands_all)
+                        
+                        if processed_candidates >= total_candidates:
+                            self.logger.main_logger.info(f"Configuration {checkpoint_key} already completed ({processed_candidates}/{total_candidates})")
+                            continue
+                        else:
+                            self.logger.main_logger.info(f"Resuming {checkpoint_key} from {processed_candidates}/{total_candidates} candidates")
+                            resume_data = checkpoint_data
                 
                 # Limit references
                 refs_limited = VATEXEvalUtils.limit_references(refs_all, n_refs)
@@ -411,7 +441,8 @@ class VCSPipeline:
                     video_ids=video_ids_all,
                     human_scores=human_scores_array,
                     n_refs=n_refs,
-                    checkpoint_key=checkpoint_key
+                    checkpoint_key=checkpoint_key,
+                    resume_data=resume_data
                 )
                 
                 # Compute correlations for this n_refs
@@ -459,21 +490,62 @@ class VCSPipeline:
     
     def _process_with_checkpointing(self, candidates: List[str], references_batch: List[List[str]], 
                                    video_ids: List[str], human_scores: np.ndarray, n_refs: int, 
-                                   checkpoint_key: str) -> List[VCSResult]:
+                                   checkpoint_key: str, resume_data: Dict = None) -> List[VCSResult]:
         """Process candidates with checkpoint saving during processing."""
         
         total_candidates = len(candidates)
         checkpoint_interval = self.config['processing'].get('checkpoint_interval', 100)
         
-        # Process candidates in batches with checkpointing
+        # Log the checkpoint interval being used
+        self.logger.main_logger.info(f"Using checkpoint interval: {checkpoint_interval} candidates")
+        
+        # Check for existing results and determine starting position
+        existing_files = self.checkpoint_manager.get_existing_result_files(n_refs)
+        start_idx = 0
         results = []
         processed_count = 0
-        last_checkpoint_count = 0  # Track count at last checkpoint save
+        last_checkpoint_count = 0
+        
+        # Handle resume logic - check for existing files regardless of checkpoint
+        actual_processed = self.checkpoint_manager.count_processed_candidates_from_files(existing_files, video_ids)
+        
+        if resume_data:
+            # Get resume position from checkpoint
+            checkpoint_processed = resume_data.get('processed_candidates', 0)
+            batch_start_idx = resume_data.get('processing_stats', {}).get('batch_start_idx', 0)
+            
+            # Use the minimum of checkpoint and actual files to be safe
+            processed_count = min(checkpoint_processed, actual_processed)
+            start_idx = processed_count
+            last_checkpoint_count = processed_count
+            
+            self.logger.main_logger.info(f"Resume from checkpoint: checkpoint={checkpoint_processed}, files={actual_processed}, starting from index={start_idx}")
+        elif actual_processed > 0:
+            # Resume from existing files even without checkpoint
+            processed_count = actual_processed
+            start_idx = processed_count
+            last_checkpoint_count = processed_count
+            
+            self.logger.main_logger.info(f"Resume from existing files: found {actual_processed} processed files, starting from index={start_idx}")
+        
+        # Load existing results from temp files if any exist
+        if processed_count > 0:
+            results = self._load_existing_results_from_temp(existing_files, video_ids[:processed_count], 
+                                                           candidates[:processed_count], n_refs)
+            self.logger.main_logger.info(f"Loaded {len(results)} existing results from temp files")
         
         self.logger.set_start_time()
         
-        for i in range(0, total_candidates, checkpoint_interval):
-            end_idx = min(i + checkpoint_interval, total_candidates)
+        # Log initial progress if resuming
+        if start_idx > 0:
+            self.logger.log_progress(start_idx, total_candidates, f"Resuming {checkpoint_key}", 
+                                   already_processed=start_idx)
+        
+        # Process candidates one by one or in small batches, but save at checkpoint intervals
+        batch_size = 1  # Process one candidate at a time for more granular control
+        
+        for i in range(start_idx, total_candidates, batch_size):
+            end_idx = min(i + batch_size, total_candidates)
             batch_candidates = candidates[i:end_idx]
             batch_references = references_batch[i:end_idx]
             batch_video_ids = video_ids[i:end_idx]
@@ -492,11 +564,14 @@ class VCSPipeline:
             results.extend(batch_results)
             processed_count += len(batch_results)
             
-            # Save batch results incrementally and checkpoint (following original ablation pattern)
+            # Check if we should save checkpoint
             candidates_since_last_checkpoint = processed_count - last_checkpoint_count
-            if self.resume_from_checkpoint and self.checkpoint_manager.should_save_checkpoint(candidates_since_last_checkpoint):
-                # Save batch results to temporary directory
-                self._save_batch_results(batch_results, processed_count, n_refs)
+            if self.resume_from_checkpoint and candidates_since_last_checkpoint >= checkpoint_interval:
+                # Save recent results to temporary directory
+                recent_results = results[last_checkpoint_count:processed_count]
+                self._save_batch_results(recent_results, processed_count, n_refs)
+                
+                self.logger.main_logger.info(f"Saving checkpoint after {candidates_since_last_checkpoint} new candidates (total: {processed_count})")
                 
                 self.checkpoint_manager.save_checkpoint(
                     processed_candidates=processed_count,
@@ -513,24 +588,77 @@ class VCSPipeline:
                 )
                 last_checkpoint_count = processed_count  # Update last checkpoint count
             
-            # Log progress
+            # Log progress with resume context
             if processed_count % 50 == 0 or processed_count == total_candidates:
-                self.logger.log_progress(processed_count, total_candidates, f"Processing {checkpoint_key}")
+                self.logger.log_progress(processed_count, total_candidates, f"Processing {checkpoint_key}", 
+                                       already_processed=start_idx if resume_data else 0)
         
-        # Save any remaining batch results at the end (if not already saved)
+        # Save any remaining results at the end (if not already saved)
         if self.resume_from_checkpoint and processed_count > last_checkpoint_count:
-            # Save the final batch that wasn't saved at a checkpoint interval
-            final_batch = results[last_checkpoint_count:]
-            if final_batch:
-                self._save_batch_results(final_batch, processed_count, n_refs)
+            # Save the final results that weren't saved at a checkpoint interval
+            final_results = results[last_checkpoint_count:]
+            if final_results:
+                self.logger.main_logger.info(f"Saving final {len(final_results)} results that weren't checkpointed")
+                self._save_batch_results(final_results, processed_count, n_refs)
+        
+        return results
+    
+    def _load_existing_results_from_temp(self, existing_files: set, video_ids: List[str], 
+                                        candidates: List[str], n_refs: int) -> List[VCSResult]:
+        """Load existing results from temporary JSON files."""
+        results = []
+        
+        # Group video_ids and candidates by video_id
+        video_to_candidates = {}
+        for i, (video_id, candidate) in enumerate(zip(video_ids, candidates)):
+            if video_id not in video_to_candidates:
+                video_to_candidates[video_id] = []
+            video_to_candidates[video_id].append((i, candidate))
+        
+        # Load results from existing files
+        for video_id in existing_files:
+            if video_id in video_to_candidates:
+                json_file = self.checkpoint_manager.results_dir / f"{video_id}.json"
+                
+                try:
+                    with open(json_file, 'r') as f:
+                        video_data = json.load(f)
+                    
+                    # Convert JSON data back to VCSResult objects
+                    for result_dict in video_data:
+                        result = VCSResult(
+                            video_id=result_dict['video_id'],
+                            candidate=result_dict['candidate'],
+                            reference=result_dict['reference'],
+                            n_refs=result_dict['n_refs'],
+                            metrics=result_dict['metrics'],
+                            best_score=result_dict['best_score'],
+                            best_reference=result_dict['best_reference'],
+                            human_score_1=result_dict['human_score_1'],
+                            human_score_2=result_dict['human_score_2'],
+                            human_score_3=result_dict['human_score_3'],
+                            human_avg=result_dict['human_avg']
+                        )
+                        results.append(result)
+                        
+                except Exception as e:
+                    if self.logger:
+                        self.logger.log_error(f"Failed to load existing results from {json_file}", e)
+        
+        # Sort results to maintain order (by video_id and then by candidate order)
+        results.sort(key=lambda r: (video_ids.index(r.video_id) if r.video_id in video_ids else 0))
         
         return results
     
     def _save_batch_results(self, batch_results: List[VCSResult], processed_count: int, n_refs: int) -> None:
-        """Save batch results incrementally to temporary directory as individual video files (following original pattern)."""
+        """Save batch results incrementally to both temporary and individual results directories."""
         
         # Get the temporary results directory from checkpoint manager
         temp_results_dir = self.checkpoint_manager.results_dir
+        
+        # Also get the individual results directory
+        individual_results_dir = Path(self.output_folder) / "individual_results" / f"{n_refs}ref"
+        individual_results_dir.mkdir(parents=True, exist_ok=True)
         
         # Group results by video_id (same as individual_results structure)
         video_groups = {}
@@ -540,16 +668,17 @@ class VCSPipeline:
                 video_groups[video_id] = []
             video_groups[video_id].append(result)
         
-        # Save individual JSON files per video_id (matching individual_results structure)
+        # Save individual files per video_id to both temp and individual results directories
         files_saved = 0
+        decimal_precision = self.config['output'].get('decimal_precision', DECIMAL_PRECISION)
+        
         for video_id, video_results in video_groups.items():
-            # Create filename matching individual_results pattern but with .json extension
-            video_filename = f"{video_id}.json"
-            video_file_path = temp_results_dir / video_filename
+            # Convert video results to serializable format for temp JSON
+            video_data_json = []
+            video_data_csv = []
             
-            # Convert video results to serializable format
-            video_data = []
             for candidate_idx, result in enumerate(video_results, 1):
+                # JSON format for temp directory (full data)
                 result_dict = {
                     'candidate_id': candidate_idx,
                     'video_id': result.video_id,
@@ -564,19 +693,45 @@ class VCSPipeline:
                     'human_score_3': result.human_score_3,
                     'human_avg': result.human_avg
                 }
-                video_data.append(result_dict)
+                video_data_json.append(result_dict)
+                
+                # CSV format for individual results directory (formatted like final output)
+                csv_row = {
+                    'candidate_id': candidate_idx,
+                    'candidate': result.candidate,
+                    'best_score': round(result.best_score, decimal_precision),
+                    'best_reference': result.best_reference,
+                    'human_score_1': round(result.human_score_1, decimal_precision),
+                    'human_score_2': round(result.human_score_2, decimal_precision),
+                    'human_score_3': round(result.human_score_3, decimal_precision),
+                    'human_avg': round(result.human_avg, decimal_precision),
+                    **{k: round(v, decimal_precision) for k, v in result.metrics.items()}
+                }
+                video_data_csv.append(csv_row)
             
-            # Save individual video JSON file
+            # Save to temp directory as JSON
+            video_json_path = temp_results_dir / f"{video_id}.json"
             try:
-                with open(video_file_path, 'w') as f:
-                    json.dump(video_data, f, indent=2)
+                with open(video_json_path, 'w') as f:
+                    json.dump(video_data_json, f, indent=2)
+            except Exception as e:
+                if self.logger:
+                    self.logger.log_error(f"Failed to save temp JSON for {video_id}", e)
+                continue
+            
+            # Save to individual results directory as CSV
+            video_csv_path = individual_results_dir / f"{video_id}.csv"
+            try:
+                import pandas as pd
+                video_df = pd.DataFrame(video_data_csv)
+                video_df.to_csv(video_csv_path, index=False)
                 files_saved += 1
             except Exception as e:
                 if self.logger:
-                    self.logger.log_error(f"Failed to save video results to {video_filename}", e)
+                    self.logger.log_error(f"Failed to save individual CSV for {video_id}", e)
         
         if self.logger and files_saved > 0:
-            self.logger.main_logger.info(f"Saved {files_saved} individual video JSON files to temp directory")
+            self.logger.main_logger.info(f"Saved {files_saved} video files to both temp directory (JSON) and individual results directory (CSV)")
     
     def _compute_correlations(self, results: List[VCSResult], human_scores: np.ndarray, n_refs: int) -> List[CorrelationResult]:
         """Compute correlations between metrics and human judgments."""
