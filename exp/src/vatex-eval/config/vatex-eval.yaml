@@ -24,7 +24,7 @@ paths:
 # ============================================================================
 vatex_eval:
   # Path to VATEX-EVAL JSON data file
-  data_dir: "/mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/vatex-eval/vid_cans_score_dict-TEST.json"
+  data_dir: "/mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/vatex-eval/vid_cans_score_dict.json"
   
   # Number of references to use for evaluation (list of integers)
   # Each value will be evaluated separately
@@ -71,7 +71,7 @@ processing:
   max_workers: 48
   
   # Checkpoint saving interval (save every N candidates processed)
-  checkpoint_interval: 6
+  checkpoint_interval: 100
   
   # Resume from checkpoint if available
   resume_from_checkpoint: true

@@ -201,8 +201,9 @@ class CheckpointManager:
         self.experiment_id = experiment_id
         self.config_hash = config_hash
         self.checkpoint_file = self.checkpoint_dir / f"checkpoint_{experiment_id}.json.gz"
-        self.results_dir = self.checkpoint_dir / f"results_{experiment_id}"
-        self.results_dir.mkdir(exist_ok=True)
+        # Base results directory - will be made n_refs-specific when needed
+        self.base_results_dir = self.checkpoint_dir / f"results_{experiment_id}"
+        self.current_results_dir = None  # Will be set per n_refs configuration
         
         # Thread safety
         self._lock = threading.Lock()
@@ -211,13 +212,26 @@ class CheckpointManager:
         self._last_save_time = 0
         self._adaptive_interval = 100  # Start with 100 candidates, adapt based on processing speed
     
+    def set_current_config(self, n_refs: int):
+        """Set the current n_refs configuration and create corresponding temp directory."""
+        self.current_results_dir = self.base_results_dir / f"nrefs_{n_refs}"
+        self.current_results_dir.mkdir(parents=True, exist_ok=True)
+    
+    @property
+    def results_dir(self):
+        """Get the current results directory for the active n_refs configuration."""
+        if self.current_results_dir is None:
+            raise RuntimeError("No current configuration set. Call set_current_config() first.")
+        return self.current_results_dir
+    
     def get_existing_result_files(self, n_refs: int) -> set:
         """Get set of existing result files for a given n_refs configuration."""
         existing_files = set()
         
-        # Check temp results directory
-        if self.results_dir.exists():
-            for json_file in self.results_dir.glob("*.json"):
+        # Check the specific temp results directory for this n_refs configuration
+        config_results_dir = self.base_results_dir / f"nrefs_{n_refs}"
+        if config_results_dir.exists():
+            for json_file in config_results_dir.glob("*.json"):
                 # Extract video_id from filename (remove .json extension)
                 video_id = json_file.stem
                 existing_files.add(video_id)
@@ -361,8 +375,9 @@ class CheckpointManager:
                 if file_path.exists():
                     file_path.unlink()
             
-            if self.results_dir.exists():
-                shutil.rmtree(self.results_dir)
+            # Clean up all n_refs temp directories
+            if self.base_results_dir.exists():
+                shutil.rmtree(self.base_results_dir)
     
     def get_adaptive_interval(self) -> int:
         """Get current adaptive checkpoint interval."""

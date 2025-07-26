@@ -91,3 +91,11 @@ dmypy.json
 # Development artifacts
 *.png
 *.pdf
+
+# SLURM job files
+*.slurm
+*.sbatch
+slurm-*.out
+slurm-*.err
+slurm_*.out
+slurm_*.err

@@ -413,6 +413,9 @@ class VCSPipeline:
             for n_refs in use_n_refs_list:
                 self.logger.main_logger.info(f"Processing {n_refs} references configuration")
                 
+                # Set the current configuration for this n_refs
+                self.checkpoint_manager.set_current_config(n_refs)
+                
                 # Check for checkpoint resume with improved logic
                 checkpoint_key = f"nrefs_{n_refs}"
                 resume_data = None
@@ -498,6 +501,7 @@ class VCSPipeline:
         
         # Log the checkpoint interval being used
         self.logger.main_logger.info(f"Using checkpoint interval: {checkpoint_interval} candidates")
+        self.logger.main_logger.info(f"Using configuration-specific temp directory: {self.checkpoint_manager.results_dir}")
         
         # Check for existing results and determine starting position
         existing_files = self.checkpoint_manager.get_existing_result_files(n_refs)
@@ -605,7 +609,7 @@ class VCSPipeline:
     
     def _load_existing_results_from_temp(self, existing_files: set, video_ids: List[str], 
                                         candidates: List[str], n_refs: int) -> List[VCSResult]:
-        """Load existing results from temporary JSON files."""
+        """Load existing results from temporary JSON files for the current n_refs configuration."""
         results = []
         
         # Group video_ids and candidates by video_id
@@ -615,10 +619,11 @@ class VCSPipeline:
                 video_to_candidates[video_id] = []
             video_to_candidates[video_id].append((i, candidate))
         
-        # Load results from existing files
+        # Load results from existing files (configuration-specific)
+        config_results_dir = self.checkpoint_manager.base_results_dir / f"nrefs_{n_refs}"
         for video_id in existing_files:
             if video_id in video_to_candidates:
-                json_file = self.checkpoint_manager.results_dir / f"{video_id}.json"
+                json_file = config_results_dir / f"{video_id}.json"
                 
                 try:
                     with open(json_file, 'r') as f:
