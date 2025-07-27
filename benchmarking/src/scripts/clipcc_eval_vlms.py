@@ -91,7 +91,7 @@ class StructuredLogger:
         self.logger.info(f"Experiment ID: {self.experiment_id}")
         self.logger.info(f"Timestamp: {datetime.now(timezone.utc).isoformat()}")
         self.logger.info(f"Models to evaluate: {list(models_info.keys())}")
-        self.logger.info(f"Chunk sizes: {config['vcs']['chunk_sizes']}")
+        self.logger.info(f"Chunk sizes: {config['vcs']['chunk_size']}")
         self.logger.info(f"LCT values: {config['vcs']['lct']}")
         self.logger.info(f"Parallel workers: {config['processing']['max_workers']}")
         self.logger.info("="*80)

@@ -110,17 +110,17 @@ class ConfigLoader:
             raise ValueError("Missing required field: models.nv_embed_path")
         
         # Validate VCS parameters
-        required_vcs_fields = ['chunk_sizes', 'lct']
+        required_vcs_fields = ['chunk_size', 'lct']
         for field in required_vcs_fields:
             if field not in config['vcs']:
                 raise ValueError(f"Missing required field: vcs.{field}")
         
-        # Validate chunk_sizes and lct_values
-        chunk_sizes = config['vcs']['chunk_sizes']
+        # Validate chunk_size and lct_values
+        chunk_sizes = config['vcs']['chunk_size']
         lct_values = config['vcs']['lct']
         
         if not isinstance(chunk_sizes, list) or not all(isinstance(x, int) and x > 0 for x in chunk_sizes):
-            raise ValueError("vcs.chunk_sizes must be a list of positive integers")
+            raise ValueError("vcs.chunk_size must be a list of positive integers")
             
         if not isinstance(lct_values, list) or not all(isinstance(x, int) and x >= 0 for x in lct_values):
             raise ValueError("vcs.lct must be a list of non-negative integers")
@@ -236,7 +236,7 @@ class VCSEvaluator:
     def __init__(self, config: Dict, checkpoint_manager=None, logger=None):
         """Initialize VCS evaluator with configuration."""
         self.config = config
-        self.chunk_sizes = config['vcs']['chunk_sizes']
+        self.chunk_sizes = config['vcs']['chunk_size']
         self.lct_values = config['vcs']['lct']
         self.segmenter = TextProcessor.sat_segmenter
         self.embedding_fn = EmbeddingGenerator.nv_embed_embedding_fn
@@ -345,7 +345,7 @@ class VCSEvaluator:
                             return_all_metrics=True,
                             return_internals=False
                         )
-                        vcs_scores[f"chunk{chunk_size}_lct{lct}"] = vcs_results.get("VCS", 0.0)
+                        vcs_scores[f"VCS_C{chunk_size}_LCT{lct}"] = vcs_results.get("VCS", 0.0)
                     except Exception as e:
                         # Use debug level for VCS computation failures to reduce log spam
                         error_msg = f"VCS computation failed for {model_name}, ID {id_key}, chunk_size={chunk_size}, lct={lct}: {str(e)[:100]}"
@@ -353,7 +353,7 @@ class VCSEvaluator:
                             self.logger.debug(error_msg)  # Changed from warning to debug
                         else:
                             print(f"Warning: {error_msg}")
-                        vcs_scores[f"chunk{chunk_size}_lct{lct}"] = 0.0
+                        vcs_scores[f"VCS_C{chunk_size}_LCT{lct}"] = 0.0
                         computation_failed = True
             
             # Track processing time and update statistics
@@ -739,7 +739,7 @@ class CheckpointManager:
         lct_values = set()
         for vcs_key in result.vcs_scores.keys():
             if vcs_key.startswith('chunk'):
-                chunk_part, lct_part = vcs_key.replace('chunk', '').split('_lct')
+                chunk_part, lct_part = vcs_key.replace('VCS_C', '').split('_LCT')
                 chunk_sizes.add(int(chunk_part))
                 lct_values.add(int(lct_part))
         
@@ -782,7 +782,7 @@ class CheckpointManager:
         # Add VCS scores in the same order as columns
         for chunk_size in chunk_sizes:
             for lct in lct_values:
-                vcs_key = f"chunk{chunk_size}_lct{lct}"
+                vcs_key = f"VCS_C{chunk_size}_LCT{lct}"
                 score = result.vcs_scores.get(vcs_key, 0.0)
                 row_data.append(round(score, 3))
         
@@ -915,8 +915,8 @@ class ResultsProcessor:
         all_lct_values = set()
         for result in results:
             for vcs_key in result.vcs_scores.keys():
-                if vcs_key.startswith('chunk'):
-                    chunk_part, lct_part = vcs_key.replace('chunk', '').split('_lct')
+                if vcs_key.startswith('VCS_C'):
+                    chunk_part, lct_part = vcs_key.replace('VCS_C', '').split('_LCT')
                     all_chunk_sizes.add(int(chunk_part))
                     all_lct_values.add(int(lct_part))
         
@@ -924,26 +924,16 @@ class ResultsProcessor:
         chunk_sizes = sorted(all_chunk_sizes)
         lct_values = sorted(all_lct_values)
         
-        # Create hierarchical column structure with single spanning VCS header
-        level_0 = ['id']
-        level_1 = ['']
-        level_2 = ['']
+        # Create flat column structure (same as aggregated results)
+        columns = ['id']
         
-        # Build VCS columns with repeated VCS header
+        # Build VCS columns with VCS_C{chunk_size}_LCT{lct} format
         for chunk_size in chunk_sizes:
             for lct in lct_values:
-                # All VCS columns get 'VCS' header
-                level_0.append('VCS')
-                level_1.append(f'chunk_size={chunk_size}')
-                level_2.append(f'LCT={lct}')
+                columns.append(f'VCS_C{chunk_size}_LCT{lct}')
         
         # Add file_link column
-        level_0.append('file_link')
-        level_1.append('')
-        level_2.append('')
-        
-        # Create MultiIndex columns
-        columns = pd.MultiIndex.from_arrays([level_0, level_1, level_2])
+        columns.append('file_link')
         
         # Create data rows
         data_rows = []
@@ -953,7 +943,7 @@ class ResultsProcessor:
             # Add VCS scores in the same order as columns
             for chunk_size in chunk_sizes:
                 for lct in lct_values:
-                    vcs_key = f"chunk{chunk_size}_lct{lct}"
+                    vcs_key = f"VCS_C{chunk_size}_LCT{lct}"
                     score = result.vcs_scores.get(vcs_key, 0.0)
                     row_data.append(round(score, decimal_precision))
             
@@ -961,13 +951,13 @@ class ResultsProcessor:
             row_data.append(result.file_link)
             data_rows.append(row_data)
         
-        # Create DataFrame with MultiIndex columns
+        # Create DataFrame with flat columns
         df = pd.DataFrame(data_rows, columns=columns)
         
         # Ensure output directory exists
         Path(output_file).parent.mkdir(parents=True, exist_ok=True)
         
-        # Save to CSV with MultiIndex headers
+        # Save to CSV with flat headers
         df.to_csv(output_file, index=False)
         # Don't print here - let the calling code handle logging
     
@@ -1001,9 +991,9 @@ class ResultsProcessor:
             if results:
                 sample_result = results[0]
                 for vcs_key in sample_result.vcs_scores.keys():
-                    if vcs_key.startswith('chunk'):
-                        chunk_part, lct_part = vcs_key.replace('chunk', '').split('_lct')
-                        column_name = f"chunk_size={chunk_part}, LCT={lct_part}"
+                    if vcs_key.startswith('VCS_C'):
+                        chunk_part, lct_part = vcs_key.replace('VCS_C', '').split('_LCT')
+                        column_name = f"VCS_C{chunk_part}_LCT{lct_part}"
                         metrics[column_name] = [r.vcs_scores.get(vcs_key, 0.0) for r in results]
             
             # Compute mean ± std for each metric

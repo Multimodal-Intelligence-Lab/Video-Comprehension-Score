@@ -23,8 +23,8 @@ models:
 # VCS COMPUTATION SETTINGS
 # ============================================================================
 vcs:
-  # Evaluate both chunk sizes
-  chunk_sizes: [1, 2]
+  # Chunk sizes to evaluate (standardized parameter name)
+  chunk_size: [1, 2]
   
   # VCS algorithm parameters
   context_cutoff_value: 0.6
@@ -87,13 +87,13 @@ advanced:
 # ============================================================================
 paths:
   # CLIP-CC dataset directory containing ground truth summaries
-  clipcc_data_dir: "/ces/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/vlm_eval/data/clip-cc"
+  clipcc_data_dir: "/ces/scratch/jacks.local/mali9292/Video-Comprehension-Score/benchmarking/data/clip-cc"
   
   # Models' predictions directory containing JSON files
-  models_data_dir: "/ces/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/vlm_eval/data/models"
+  models_data_dir: "/ces/scratch/jacks.local/mali9292/Video-Comprehension-Score/benchmarking/data/models_test"
   
   # Base output directory for results
-  results_dir: "/ces/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/vlm_eval/results"
+  results_dir: "/ces/scratch/jacks.local/mali9292/Video-Comprehension-Score/benchmarking/results"
   
   # Subdirectories for results organization
   individual_results_dir: "individual_results"
