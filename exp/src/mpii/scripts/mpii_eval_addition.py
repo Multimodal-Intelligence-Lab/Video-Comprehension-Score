@@ -479,7 +479,7 @@ class MetricsEvaluator:
             
             # Extract VCS configuration
             vcs_config = self.config['vcs']
-            lct_values = vcs_config['lct_values']
+            lct_values = vcs_config['lct']
             chunk_size = vcs_config.get('chunk_size', 1)
             context_cutoff = vcs_config.get('context_cutoff_value', 0.6)
             context_window = vcs_config.get('context_window_control', 4.0)

@@ -41,7 +41,7 @@ vcs:
   # LCT = 0: Strict chronological order (DEFAULT)
   # LCT > 0: Allow chronological flexibility
   # Results will include metrics for all combinations: VCS_C{chunk}_LCT{n}
-  lct_values: [0, 1]
+  lct: [0, 1]
   
   # Chunk sizes to evaluate (discrete values)
   # Results will include metrics for all combinations: VCS_C{chunk}_LCT{n}

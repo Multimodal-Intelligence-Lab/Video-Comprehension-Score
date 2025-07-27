@@ -46,7 +46,7 @@ addition:
 # ============================================================================
 vcs:
   # For addition experiments, use strict chronological order
-  lct_values: [0]
+  lct: [0]
   
   # Return all metrics for ablation studies
   return_all_metrics: true

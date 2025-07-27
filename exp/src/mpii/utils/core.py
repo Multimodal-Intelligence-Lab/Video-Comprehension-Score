@@ -115,12 +115,12 @@ class ConfigLoader:
             raise ValueError("Missing required field: models.nv_embed_path")
         
         # Validate LCT values
-        if 'lct_values' not in config['vcs']:
-            raise ValueError("Missing required field: vcs.lct_values")
+        if 'lct' not in config['vcs']:
+            raise ValueError("Missing required field: vcs.lct")
         
-        lct_values = config['vcs']['lct_values']
+        lct_values = config['vcs']['lct']
         if not isinstance(lct_values, list) or not all(isinstance(x, int) and x >= 0 for x in lct_values):
-            raise ValueError("vcs.lct_values must be a list of non-negative integers")
+            raise ValueError("vcs.lct must be a list of non-negative integers")
 
 
 class CheckpointManager:

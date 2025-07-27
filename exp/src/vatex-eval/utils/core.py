@@ -84,7 +84,7 @@ class VCSMetricsGenerator:
         """Get default VCS configuration."""
         return {
             "chunk_size": [1],
-            "lct_values": [0],
+            "lct": [0],
             "context_cutoff_value": 0.6,
             "context_window_control": 4.0,
             "return_all_metrics": True,
@@ -176,12 +176,12 @@ class ConfigLoader:
         # Note: segmenter_functions is now optional as we use a default single segmenter
         
         # Validate LCT values
-        if 'lct_values' not in config['vcs']:
-            raise ValueError("Missing required field: vcs.lct_values")
+        if 'lct' not in config['vcs']:
+            raise ValueError("Missing required field: vcs.lct")
         
-        lct_values = config['vcs']['lct_values']
+        lct_values = config['vcs']['lct']
         if not isinstance(lct_values, list) or not all(isinstance(x, int) and x >= 0 for x in lct_values):
-            raise ValueError("vcs.lct_values must be a list of non-negative integers")
+            raise ValueError("vcs.lct must be a list of non-negative integers")
         
         # Validate chunk sizes
         if 'chunk_size' not in config['vcs']:

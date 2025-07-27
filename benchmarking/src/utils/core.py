@@ -110,20 +110,20 @@ class ConfigLoader:
             raise ValueError("Missing required field: models.nv_embed_path")
         
         # Validate VCS parameters
-        required_vcs_fields = ['chunk_sizes', 'lct_values']
+        required_vcs_fields = ['chunk_sizes', 'lct']
         for field in required_vcs_fields:
             if field not in config['vcs']:
                 raise ValueError(f"Missing required field: vcs.{field}")
         
         # Validate chunk_sizes and lct_values
         chunk_sizes = config['vcs']['chunk_sizes']
-        lct_values = config['vcs']['lct_values']
+        lct_values = config['vcs']['lct']
         
         if not isinstance(chunk_sizes, list) or not all(isinstance(x, int) and x > 0 for x in chunk_sizes):
             raise ValueError("vcs.chunk_sizes must be a list of positive integers")
             
         if not isinstance(lct_values, list) or not all(isinstance(x, int) and x >= 0 for x in lct_values):
-            raise ValueError("vcs.lct_values must be a list of non-negative integers")
+            raise ValueError("vcs.lct must be a list of non-negative integers")
 
 
 class DataLoader:
@@ -237,7 +237,7 @@ class VCSEvaluator:
         """Initialize VCS evaluator with configuration."""
         self.config = config
         self.chunk_sizes = config['vcs']['chunk_sizes']
-        self.lct_values = config['vcs']['lct_values']
+        self.lct_values = config['vcs']['lct']
         self.segmenter = TextProcessor.sat_segmenter
         self.embedding_fn = EmbeddingGenerator.nv_embed_embedding_fn
         self.checkpoint_manager = checkpoint_manager  # For incremental saving

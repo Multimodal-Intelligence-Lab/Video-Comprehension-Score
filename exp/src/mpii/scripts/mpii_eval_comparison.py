@@ -306,6 +306,26 @@ class MetricsEvaluator:
         self.embedding_fn = EmbeddingGenerator.nv_embed_embedding_fn
         self.logger = logger
     
+    def _generate_complete_metrics_order(self) -> List[str]:
+        """Generate complete metrics list maintaining static order for base metrics."""
+        # Static base metrics order (preserved for consistency)
+        base_metrics = ["BLEU-1", "BLEU-4", "METEOR", "ROUGE-1", "ROUGE-4", "ROUGE-L", "ROUGE-Lsum"]
+        
+        # Generate dynamic VCS metrics based on config
+        vcs_config = self.config['vcs']
+        lct_values = vcs_config['lct']
+        chunk_sizes = vcs_config.get('chunk_size', [1])
+        if not isinstance(chunk_sizes, list):
+            chunk_sizes = [chunk_sizes]  # Convert single value to list
+        
+        # Create VCS metrics in consistent order: chunk_size ascending, then lct ascending
+        vcs_metrics = []
+        for chunk_size in sorted(chunk_sizes):
+            for lct in sorted(lct_values):
+                vcs_metrics.append(f"VCS_C{chunk_size}_LCT{lct}")
+        
+        return base_metrics + vcs_metrics
+    
     def process_single_file(self, json_file: str, output_folder: str) -> List[EvaluationResult]:
         """Process a single JSON file and return results."""
         start_time = time.time()
@@ -397,7 +417,7 @@ class MetricsEvaluator:
             
             # Extract VCS configuration
             vcs_config = self.config['vcs']
-            lct_values = vcs_config['lct_values']
+            lct_values = vcs_config['lct']
             chunk_size = vcs_config.get('chunk_size', 1)
             context_cutoff = vcs_config.get('context_cutoff_value', 0.6)
             context_window = vcs_config.get('context_window_control', 4.0)
@@ -419,11 +439,11 @@ class MetricsEvaluator:
                         return_all_metrics=True,
                         return_internals=False
                     )
-                    vcs_metrics[f"VCS_LCT{lct}"] = vcs_results.get("VCS", 0.0)
+                    vcs_metrics[f"VCS_C{chunk_size}_LCT{lct}"] = vcs_results.get("VCS", 0.0)
                 except Exception as e:
                     if self.logger:
                         self.logger.log_error(f"VCS computation failed for LCT={lct}", e)
-                    vcs_metrics[f"VCS_LCT{lct}"] = 0.0
+                    vcs_metrics[f"VCS_C{chunk_size}_LCT{lct}"] = 0.0
             
             # Extract and organize metrics
             metrics = {
@@ -455,7 +475,8 @@ class MetricsEvaluator:
                                     {"test_case_id": test_case_id, "file_path": file_path})
             
             # Return zero metrics on failure
-            zero_metrics = {metric: 0.0 for metric in METRICS_ORDER}
+            complete_metrics = self._generate_complete_metrics_order()
+            zero_metrics = {metric: 0.0 for metric in complete_metrics}
             return EvaluationResult(
                 test_case_id=test_case_id,
                 test_case_name=test_case_name,
@@ -534,7 +555,8 @@ class ResultsManager:
     @staticmethod
     def save_individual_results(
         results: List[EvaluationResult], 
-        output_path: str
+        output_path: str,
+        metrics_order: List[str] = None
     ) -> None:
         """Save results for individual file to CSV."""
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
@@ -554,8 +576,17 @@ class ResultsManager:
         numeric_cols = [col for col in df.columns if col not in ["test_case_id", "test_case_name"]]
         df[numeric_cols] = df[numeric_cols].round(DECIMAL_PRECISION)
         
-        # Ensure column order
-        ordered_cols = ["test_case_id", "test_case_name"] + METRICS_ORDER
+        # Ensure column order - use dynamic metrics order if provided, otherwise fall back to static
+        if metrics_order:
+            ordered_cols = ["test_case_id", "test_case_name"] + metrics_order
+        else:
+            # Fallback: traditional metrics first, then VCS metrics alphabetically
+            all_metrics = [col for col in df.columns if col not in ["test_case_id", "test_case_name"]]
+            traditional_metrics = ["BLEU-1", "BLEU-4", "METEOR", "ROUGE-1", "ROUGE-4", "ROUGE-L", "ROUGE-Lsum"]
+            vcs_metrics = sorted([m for m in all_metrics if m.startswith("VCS")])
+            ordered_metrics = [m for m in traditional_metrics if m in all_metrics] + vcs_metrics
+            ordered_cols = ["test_case_id", "test_case_name"] + ordered_metrics
+        
         df = df[ordered_cols]
         
         df.to_csv(output_path, index=False)

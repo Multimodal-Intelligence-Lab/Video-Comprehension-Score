@@ -34,7 +34,7 @@ vcs:
   return_internals: false
   
   # LCT values to evaluate
-  lct_values: [0, 1]
+  lct: [0, 1]
 
 # ============================================================================
 # PARALLEL PROCESSING

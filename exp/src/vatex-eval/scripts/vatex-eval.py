@@ -169,7 +169,7 @@ class VCSEvaluator:
         
         # Extract VCS parameters
         vcs_config = config['vcs']
-        self.lct_values = vcs_config.get('lct_values', [0])
+        self.lct_values = vcs_config.get('lct', [0])
         self.chunk_size = vcs_config.get('chunk_size', 1)
         self.context_cutoff = vcs_config.get('context_cutoff_value', 0.6)
         self.context_window = vcs_config.get('context_window_control', 4.0)

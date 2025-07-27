@@ -42,6 +42,22 @@ authors:
     - "VCS"
 
 # ============================================================================
+# VCS SETTINGS OVERRIDE
+# ============================================================================
+vcs:
+  # Chunk sizes to evaluate (discrete values)
+  chunk_size: [1]
+  
+  # LCT (Line Chronological Tolerance) values to compute
+  lct: [0, 1]
+  
+  # Return all metrics for detailed analysis
+  return_all_metrics: true
+  
+  # Return similarity values for ablation studies
+  return_similarity_values: true
+
+# ============================================================================
 # EXPERIMENT SETTINGS OVERRIDE
 # ============================================================================
 experiment:

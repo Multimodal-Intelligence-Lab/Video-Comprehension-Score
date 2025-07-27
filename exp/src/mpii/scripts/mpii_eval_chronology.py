@@ -312,6 +312,21 @@ class MetricsEvaluator:
         self.selected_metrics = config['chronology']['selected_metrics']
         self.num_iterations = config['chronology']['num_iterations']
     
+    def _generate_zero_vcs_metrics(self) -> Dict[str, float]:
+        """Generate zero VCS metrics based on config."""
+        vcs_config = self.config['vcs']
+        chunk_sizes = vcs_config.get('chunk_size', [1])
+        if not isinstance(chunk_sizes, list):
+            chunk_sizes = [chunk_sizes]  # Convert single value to list
+        lct_values = vcs_config['lct']
+        
+        zero_vcs_metrics = {}
+        for chunk_size in chunk_sizes:
+            for lct in lct_values:
+                zero_vcs_metrics[f"VCS_C{chunk_size}_LCT{lct}"] = 0.0
+        
+        return zero_vcs_metrics
+    
     def process_single_file(self, json_file: str, subfolder: str, output_folder: str) -> List[IterationResult]:
         """Process a single JSON file and return results."""
         start_time = time.time()
@@ -398,33 +413,36 @@ class MetricsEvaluator:
             
             # Extract VCS configuration
             vcs_config = self.config['vcs']
-            lct_values = vcs_config['lct_values']
-            chunk_size = vcs_config.get('chunk_size', 1)
+            lct_values = vcs_config['lct']
+            chunk_sizes = vcs_config.get('chunk_size', [1])
+            if not isinstance(chunk_sizes, list):
+                chunk_sizes = [chunk_sizes]  # Convert single value to list for compatibility
             context_cutoff = vcs_config.get('context_cutoff_value', 0.6)
             context_window = vcs_config.get('context_window_control', 4.0)
             
-            # Compute VCS metrics for each LCT value
+            # Compute VCS metrics for each chunk_size × LCT combination
             vcs_metrics = {}
-            for lct in lct_values:
-                try:
-                    vcs_results = vcs.compute_vcs_score(
-                        reference_text=reference,
-                        generated_text=generated,
-                        segmenter_fn=self.segmenter,
-                        embedding_fn_las=self.embedding_fn,
-                        embedding_fn_gas=self.embedding_fn,
-                        chunk_size=chunk_size,
-                        context_cutoff_value=context_cutoff,
-                        context_window_control=context_window,
-                        lct=lct,
-                        return_all_metrics=True,
-                        return_internals=False
-                    )
-                    vcs_metrics[f"VCS_LCT{lct}"] = vcs_results.get("VCS", 0.0)
-                except Exception as e:
-                    if self.logger:
-                        self.logger.log_error(f"VCS computation failed for LCT={lct}", e)
-                    vcs_metrics[f"VCS_LCT{lct}"] = 0.0
+            for chunk_size in chunk_sizes:
+                for lct in lct_values:
+                    try:
+                        vcs_results = vcs.compute_vcs_score(
+                            reference_text=reference,
+                            generated_text=generated,
+                            segmenter_fn=self.segmenter,
+                            embedding_fn_las=self.embedding_fn,
+                            embedding_fn_gas=self.embedding_fn,
+                            chunk_size=chunk_size,
+                            context_cutoff_value=context_cutoff,
+                            context_window_control=context_window,
+                            lct=lct,
+                            return_all_metrics=True,
+                            return_internals=False
+                        )
+                        vcs_metrics[f"VCS_C{chunk_size}_LCT{lct}"] = vcs_results.get("VCS", 0.0)
+                    except Exception as e:
+                        if self.logger:
+                            self.logger.log_error(f"VCS computation failed for chunk_size={chunk_size}, LCT={lct}", e)
+                        vcs_metrics[f"VCS_C{chunk_size}_LCT{lct}"] = 0.0
             
             # Extract and organize metrics
             metrics = {
@@ -465,8 +483,7 @@ class MetricsEvaluator:
                 "ROUGE-4": 0.0,
                 "ROUGE-L": 0.0,
                 "ROUGE-Lsum": 0.0,
-                "VCS_LCT0": 0.0,
-                "VCS_LCT1": 0.0
+                **self._generate_zero_vcs_metrics()  # Dynamic VCS metrics based on config
             }
             return IterationResult(
                 iteration_id=iteration_id,
@@ -483,7 +500,7 @@ class MetricsEvaluator:
         # Get decimal precision from config
         decimal_precision = self.config.get('output', {}).get('decimal_precision', 3)
         
-        # Get all metric names (including VCS_LCT variants)
+        # Get all metric names (including VCS_C{chunk_size}_LCT{lct} variants)
         all_metrics = set()
         for result in results:
             all_metrics.update(result.metrics.keys())
