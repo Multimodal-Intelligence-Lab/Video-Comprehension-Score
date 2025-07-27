@@ -37,7 +37,7 @@ export CUDA_VISIBLE_DEVICES=0,1
 export TORCH_CUDA_ARCH_LIST="6.0 6.1 7.0 7.5 8.0 8.6"
 
 echo "Running high-performance vatex_eval evaluation..."
-python scripts/vatex_eval.py --config config/vatex-eval.yaml
+python scripts/vatex-eval.py --config config/vatex-eval.yaml
 
 echo "High-performance vatex_eval script completed at $(date)"
 
