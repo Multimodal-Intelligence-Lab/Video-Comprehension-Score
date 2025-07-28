@@ -14,10 +14,10 @@ experiment:
 # ============================================================================
 paths:
   # Input data directory containing JSON files with iterations
-  data_dir: "/mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/addition/aug_dataset"
+  data_dir: "/mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/addition/aug_dataset"
   
   # Base output directory for results
-  results_dir: "/mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/results/mpii/addition"
+  results_dir: "/mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/results/mpii/addition"
   
   # Addition-specific result directory
   ablation_results_dir: "ablation_results"
@@ -32,8 +32,6 @@ addition:
   # Number of iterations to process per JSON file
   num_iterations: 10
   
-  # Chunk size for VCS computation
-  chunk_size: 1
   
   # Enable ablation table generation (separate from comparison)
   ablation: true
@@ -45,8 +43,11 @@ addition:
 # VCS SETTINGS OVERRIDE
 # ============================================================================
 vcs:
+  # Chunk size for VCS computation (list format for consistency)
+  chunk_size: [1]
+  
   # For addition experiments, use strict chronological order
-  lct: [0]
+  lct: [0, 1]
   
   # Return all metrics for ablation studies
   return_all_metrics: true
@@ -74,17 +75,8 @@ metrics:
 # ============================================================================
 # OUTPUT FORMATTING OVERRIDES
 # ============================================================================
-output:
-  # Output format for aggregated results
-  aggregated_format: "mean_std"  # "mean ± std" format
-  
-  # Save formats
-  save_csv: true
-  save_html: true
-  save_json: false
-  
-  # Table formatting
-  table_format: "grid"  # for tabulate library
+# Note: decimal_precision is inherited from _base.yaml
+# All other output parameters (aggregated_format, save_*, table_format) were unused dead code
 
 # ============================================================================
 # LOGGING OVERRIDES

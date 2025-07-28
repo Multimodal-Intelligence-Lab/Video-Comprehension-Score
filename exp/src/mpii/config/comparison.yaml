@@ -10,11 +10,24 @@ experiment:
   experiment_id: ""
 
 # ============================================================================
+# VCS COMPUTATION SETTINGS (EXPLICIT FOR COMPARISON EXPERIMENTS)
+# ============================================================================
+vcs:
+  # Override base configuration with explicit parameters for consistency
+  chunk_size: [1]  # Single chunk size for comparison experiments
+  lct: [0, 1]       # Multiple LCT values for comprehensive comparison
+  
+  # VCS algorithm parameters (inherited from base but explicit here)
+  context_cutoff_value: 0.6
+  context_window_control: 4.0
+  return_internals: false
+
+# ============================================================================
 # EXPERIMENT-SPECIFIC PATHS
 # ============================================================================
 paths:
   # Input data directory containing JSON files
-  data_dir: "/mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test"
+  data_dir: "/mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset"
   
   # Base output directory for results
   results_dir: "/mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/results/mpii/comparison"

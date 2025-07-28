@@ -20,7 +20,7 @@ models:
 # ============================================================================
 vcs:
   # VCS algorithm parameters (research settings - usually don't change)
-  chunk_size: 1
+  chunk_size: [1]
   context_cutoff_value: 0.6
   context_window_control: 4.0
   
@@ -35,7 +35,7 @@ vcs:
 # ============================================================================
 processing:
   # Number of parallel workers for file processing
-  max_workers: 12
+  max_workers: 20
   
   # Checkpoint saving interval (save every N files)
   checkpoint_interval: 5

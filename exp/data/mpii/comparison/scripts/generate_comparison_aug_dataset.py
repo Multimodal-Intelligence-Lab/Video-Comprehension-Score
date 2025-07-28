@@ -290,7 +290,7 @@ def is_api_based(test_case_id: str) -> bool:
         "1.1", "1.2",
         "2.1", "2.2", "2.3", "2.4", "2.5", "2.6",
         "3.1",
-        "4.1", "4.3", "4.4", "4.5", "4.6", "4.7",
+        "4.1",
         "5.1",
         "6.4"
     }
@@ -618,6 +618,30 @@ class TextTransformer:
             raise ValueError("position must be 'start' or 'end'")
         return " ".join(rotated)
 
+    def neighbor_swap(self, paragraph: str, op_code: str) -> str:
+        """Swap neighboring segments in different patterns."""
+        segs = TextProcessor.sat_segmenter(paragraph)
+        if not segs:
+            return ""
+        
+        if op_code == "adjacent":
+            # Swap pairs: [1,2,3,4,5] → [2,1,4,3,5]
+            for i in range(0, len(segs) - 1, 2):
+                segs[i], segs[i + 1] = segs[i + 1], segs[i]
+        
+        elif op_code == "triplet":
+            # Swap first and last in triplets: [1,2,3,4,5,6] → [3,2,1,6,5,4]
+            for i in range(0, len(segs), 3):
+                if i + 2 < len(segs):  # Full triplet
+                    segs[i], segs[i + 2] = segs[i + 2], segs[i]
+                elif i + 1 < len(segs):  # Pair remaining
+                    segs[i], segs[i + 1] = segs[i + 1], segs[i]
+        
+        else:
+            raise ValueError("op_code must be 'adjacent' or 'triplet'")
+        
+        return " ".join(segs)
+
 # ============================================================================
 # LOCAL TRANSFORMATIONS DISPATCHER
 # ============================================================================
@@ -627,7 +651,7 @@ def perform_local_transformation(transformer, test_case_id, category, test_case_
     config = transformer.config
     
     local_transformations = {
-        "3.3": {
+        "3.2": {
             "func": lambda: transformer.add_segments_to_middle(
                 unrelated_segments_text=unrelated_segments,
                 percentage=config['transformations']['percentages']['addition_medium'],
@@ -635,7 +659,7 @@ def perform_local_transformation(transformer, test_case_id, category, test_case_
             ),
             "name": "Addition (~50%)"
         },
-        "3.4": {
+        "3.3": {
             "func": lambda: transformer.add_segments_to_middle(
                 unrelated_segments_text=unrelated_segments,
                 percentage=config['transformations']['percentages']['addition_high'],
@@ -643,14 +667,14 @@ def perform_local_transformation(transformer, test_case_id, category, test_case_
             ),
             "name": "Addition (~80%)"
         },
-        "3.5": {
+        "3.4": {
             "func": lambda: transformer.delete_segments_from_middle(
                 percentage=config['transformations']['percentages']['deletion_medium'],
                 seed=config['transformations']['random_seed']
             ),
             "name": "Deletion (~50%)"
         },
-        "3.6": {
+        "3.5": {
             "func": lambda: transformer.delete_segments_from_middle(
                 percentage=config['transformations']['percentages']['deletion_high'],
                 seed=config['transformations']['random_seed']
@@ -674,11 +698,11 @@ def perform_local_transformation(transformer, test_case_id, category, test_case_
             "name": "Reverse Segments Order"
         },
         "6.2": {
-            "func": lambda: transformer.transform_paragraph(
+            "func": lambda: transformer.neighbor_swap(
                 paragraph=transformer.gt_text,
-                op_code="jumble"
+                op_code="adjacent"
             ),
-            "name": "Jumble Segments Order"
+            "name": "Adjacent Neighbor Swap"
         },
         "6.3": {
             "func": lambda: transformer.rotate_paragraph(
@@ -818,7 +842,7 @@ def run_transformations(config, unrelated_segments):
         return
 
     # Define test case types
-    all_local_test_case_ids = {"3.3", "3.4", "3.5", "3.6", "4.2", "6.1", "6.2", "6.3"}
+    all_local_test_case_ids = {"3.2", "3.3", "3.4", "3.5", "4.2", "6.1", "6.2", "6.3"}
     
     chain_prompt_map = {
         "2.4": "2.3"

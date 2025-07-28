@@ -306,32 +306,38 @@ class MetricsEvaluator:
             # Extract VCS configuration
             vcs_config = self.config['vcs']
             lct_values = vcs_config['lct']
-            chunk_size = vcs_config.get('chunk_size', 1)
+            chunk_sizes = vcs_config.get('chunk_size', [1])
+            if not isinstance(chunk_sizes, list):
+                chunk_sizes = [chunk_sizes]  # Convert single value to list for compatibility
             context_cutoff = vcs_config.get('context_cutoff_value', 0.6)
             context_window = vcs_config.get('context_window_control', 4.0)
             
             # Compute VCS metrics (needed for both ablation and comparison)
             vcs_results = None
-            for lct in lct_values:
-                try:
-                    vcs_results = vcs.compute_vcs_score(
-                        reference_text=reference,
-                        generated_text=generated,
-                        segmenter_fn=self.segmenter,
-                        embedding_fn_las=self.embedding_fn,
-                        embedding_fn_gas=self.embedding_fn,
-                        chunk_size=chunk_size,
-                        context_cutoff_value=context_cutoff,
-                        context_window_control=context_window,
-                        lct=lct,
-                        return_all_metrics=True,
-                        return_internals=False
-                    )
-                    break  # Use first successful LCT value
-                except Exception as e:
-                    if self.logger:
-                        self.logger.log_error(f"VCS computation failed for LCT={lct}", e)
-                    continue
+            # Try first chunk_size and first successful LCT value
+            for chunk_size in chunk_sizes:
+                for lct in lct_values:
+                    try:
+                        vcs_results = vcs.compute_vcs_score(
+                            reference_text=reference,
+                            generated_text=generated,
+                            segmenter_fn=self.segmenter,
+                            embedding_fn_las=self.embedding_fn,
+                            embedding_fn_gas=self.embedding_fn,
+                            chunk_size=chunk_size,
+                            context_cutoff_value=context_cutoff,
+                            context_window_control=context_window,
+                            lct=lct,
+                            return_all_metrics=True,
+                            return_internals=False
+                        )
+                        break  # Use first successful LCT value
+                    except Exception as e:
+                        if self.logger:
+                            self.logger.log_error(f"VCS computation failed for chunk_size={chunk_size}, LCT={lct}", e)
+                        continue
+                if vcs_results:
+                    break  # Use first successful chunk_size
             
             if vcs_results is None:
                 # Fallback to zero metrics

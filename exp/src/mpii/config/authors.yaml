@@ -14,10 +14,10 @@ experiment:
 # ============================================================================
 paths:
   # Input data directory containing JSON files
-  data_dir: "/mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/data/mpii/authors/aug_dataset"
+  data_dir: "/mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/authors/aug_dataset"
   
   # Base output directory for results
-  results_dir: "/mmfs1/scratch/jacks.local/mali9292/dev-vcs-vatex/vcs/exp/results/mpii/authors"
+  results_dir: "/mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/results/mpii/authors"
 
 # ============================================================================
 # AUTHORS SPECIFIC SETTINGS

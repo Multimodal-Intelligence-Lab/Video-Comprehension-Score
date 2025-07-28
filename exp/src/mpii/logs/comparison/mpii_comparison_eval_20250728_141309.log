@@ -1,0 +1,57 @@
+2025-07-28 14:13:09 [INFO] Initializing models...
+2025-07-28 14:13:17 [INFO] Models initialized successfully
+2025-07-28 14:13:17 [INFO] Starting evaluation pipeline
+2025-07-28 14:13:17 [INFO] Input folder: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test
+2025-07-28 14:13:17 [INFO] Output folder: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/results/mpii/comparison
+2025-07-28 14:13:17 [INFO] Experiment ID: eval_20250728_141309
+2025-07-28 14:13:17 [INFO] Found 10 JSON files to process
+2025-07-28 14:13:17 [INFO] Processing 10 files with 20 workers
+2025-07-28 14:13:17 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/1.json (19 test cases)
+2025-07-28 14:13:17 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/10.json (19 test cases)
+2025-07-28 14:13:17 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/100.json (19 test cases)
+2025-07-28 14:13:17 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/1000.json (19 test cases)
+2025-07-28 14:13:17 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/1001.json (19 test cases)
+2025-07-28 14:13:17 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/1002.json (19 test cases)
+2025-07-28 14:13:17 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/1003.json (19 test cases)
+2025-07-28 14:13:17 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/1004.json (19 test cases)
+2025-07-28 14:13:17 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/1005.json (19 test cases)
+2025-07-28 14:13:17 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/1006.json (19 test cases)
+2025-07-28 14:16:10 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/1000.json (19 test cases, 173.05s)
+2025-07-28 14:16:10 [INFO] Files: 1/10 (10.0%)
+2025-07-28 14:16:10 [INFO] ETA: 26.0 minutes
+2025-07-28 14:16:15 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/100.json (19 test cases, 178.35s)
+2025-07-28 14:16:15 [INFO] Files: 2/10 (20.0%)
+2025-07-28 14:16:15 [INFO] ETA: 11.9 minutes
+2025-07-28 14:16:15 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/1006.json (19 test cases, 178.59s)
+2025-07-28 14:16:15 [INFO] Files: 3/10 (30.0%)
+2025-07-28 14:16:15 [INFO] ETA: 6.9 minutes
+2025-07-28 14:16:19 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/1002.json (19 test cases, 181.98s)
+2025-07-28 14:16:19 [INFO] Files: 4/10 (40.0%)
+2025-07-28 14:16:19 [INFO] ETA: 4.5 minutes
+2025-07-28 14:16:19 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/1004.json (19 test cases, 182.68s)
+2025-07-28 14:16:19 [INFO] Files: 5/10 (50.0%)
+2025-07-28 14:16:19 [INFO] ETA: 3.0 minutes
+2025-07-28 14:16:19 [INFO] Checkpoint saved at 5/10 files (interval: 5)
+2025-07-28 14:16:27 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/1003.json (19 test cases, 189.91s)
+2025-07-28 14:16:27 [INFO] Files: 6/10 (60.0%)
+2025-07-28 14:16:27 [INFO] ETA: 2.1 minutes
+2025-07-28 14:16:27 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/1.json (19 test cases, 190.25s)
+2025-07-28 14:16:27 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/10.json (19 test cases, 190.25s)
+2025-07-28 14:16:27 [INFO] Files: 7/10 (70.0%)
+2025-07-28 14:16:27 [INFO] ETA: 1.4 minutes
+2025-07-28 14:16:27 [INFO] Files: 8/10 (80.0%)
+2025-07-28 14:16:27 [INFO] ETA: 0.8 minutes
+2025-07-28 14:16:28 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/1001.json (19 test cases, 191.54s)
+2025-07-28 14:16:28 [INFO] Files: 9/10 (90.0%)
+2025-07-28 14:16:28 [INFO] ETA: 0.4 minutes
+2025-07-28 14:16:33 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/comparison/aug_dataset_test/1005.json (19 test cases, 196.01s)
+2025-07-28 14:16:33 [INFO] Files: 10/10 (100.0%)
+2025-07-28 14:16:33 [INFO] ETA: 0.0 minutes
+2025-07-28 14:16:33 [INFO] Checkpoint saved at 10/10 files (interval: 7)
+2025-07-28 14:16:33 [INFO] Aggregating results...
+2025-07-28 14:16:33 [INFO] Evaluation completed successfully!
+2025-07-28 14:16:33 [INFO] Total test cases processed: 190
+2025-07-28 14:16:33 [INFO] Total processing time: 196.04 seconds
+2025-07-28 14:16:33 [INFO] Average time per test case: 1.032 seconds
+2025-07-28 14:16:33 [INFO] Results saved to: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/results/mpii/comparison/aggregated_results/aggr_comp.csv
+2025-07-28 14:16:33 [INFO] Checkpoint cleaned up
