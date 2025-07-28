@@ -14,7 +14,7 @@ experiment:
 # ============================================================================
 paths:
   # Input data directory containing JSON files
-  data_dir: "/mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/authors/aug_dataset"
+  data_dir: "/mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/authors/aug_dataset_test"
   
   # Base output directory for results
   results_dir: "/mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/results/mpii/authors"
@@ -60,6 +60,5 @@ vcs:
 # ============================================================================
 # EXPERIMENT SETTINGS OVERRIDE
 # ============================================================================
-experiment:
-  # Custom experiment ID (if empty, auto-generates timestamp)
-  experiment_id: ""
+# Note: experiment section was duplicated - removed duplicate
+# Original experiment section at top of file is sufficient

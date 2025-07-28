@@ -1,0 +1,50 @@
+2025-07-28 17:56:03 [INFO] Initializing models...
+2025-07-28 17:56:10 [INFO] Models initialized successfully
+2025-07-28 17:56:10 [INFO] Starting deletion evaluation pipeline
+2025-07-28 17:56:10 [INFO] Input folder: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/deletion/aug_dataset
+2025-07-28 17:56:10 [INFO] Output folder: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/results/mpii/deletion
+2025-07-28 17:56:10 [INFO] Experiment ID: eval_20250728_175603
+2025-07-28 17:56:10 [INFO] Found 8 files to process
+2025-07-28 17:56:10 [INFO] Processing 8 files with 20 workers
+2025-07-28 17:56:10 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/deletion/aug_dataset/beginning/117.json in subfolder: beginning (10 iterations)
+2025-07-28 17:56:10 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/deletion/aug_dataset/beginning/1263.json in subfolder: beginning (10 iterations)
+2025-07-28 17:56:10 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/deletion/aug_dataset/middle/117.json in subfolder: middle (10 iterations)
+2025-07-28 17:56:10 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/deletion/aug_dataset/middle/1263.json in subfolder: middle (10 iterations)
+2025-07-28 17:56:10 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/deletion/aug_dataset/end/117.json in subfolder: end (10 iterations)
+2025-07-28 17:56:10 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/deletion/aug_dataset/end/1263.json in subfolder: end (10 iterations)
+2025-07-28 17:56:10 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/deletion/aug_dataset/random/117.json in subfolder: random (10 iterations)
+2025-07-28 17:56:10 [INFO] Processing file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/deletion/aug_dataset/random/1263.json in subfolder: random (10 iterations)
+2025-07-28 17:56:28 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/deletion/aug_dataset/random/1263.json in subfolder: random (10 iterations, 18.42s)
+2025-07-28 17:56:28 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/deletion/aug_dataset/middle/117.json in subfolder: middle (10 iterations, 18.42s)
+2025-07-28 17:56:28 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/deletion/aug_dataset/middle/1263.json in subfolder: middle (10 iterations, 18.42s)
+2025-07-28 17:56:28 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/deletion/aug_dataset/end/117.json in subfolder: end (10 iterations, 18.42s)
+2025-07-28 17:56:29 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/deletion/aug_dataset/beginning/1263.json in subfolder: beginning (10 iterations, 18.64s)
+2025-07-28 17:56:29 [INFO] Files: 1/8 (12.5%)
+2025-07-28 17:56:29 [INFO] ETA: 2.2 minutes
+2025-07-28 17:56:29 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/deletion/aug_dataset/end/1263.json in subfolder: end (10 iterations, 18.64s)
+2025-07-28 17:56:29 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/deletion/aug_dataset/random/117.json in subfolder: random (10 iterations, 18.64s)
+2025-07-28 17:56:29 [INFO] Completed file: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/deletion/aug_dataset/beginning/117.json in subfolder: beginning (10 iterations, 18.64s)
+2025-07-28 17:56:29 [INFO] Files: 2/8 (25.0%)
+2025-07-28 17:56:29 [INFO] ETA: 0.9 minutes
+2025-07-28 17:56:29 [INFO] Files: 3/8 (37.5%)
+2025-07-28 17:56:29 [INFO] ETA: 0.5 minutes
+2025-07-28 17:56:29 [INFO] Files: 4/8 (50.0%)
+2025-07-28 17:56:29 [INFO] ETA: 0.3 minutes
+2025-07-28 17:56:29 [INFO] Files: 5/8 (62.5%)
+2025-07-28 17:56:29 [INFO] ETA: 0.2 minutes
+2025-07-28 17:56:29 [INFO] Checkpoint saved at 5/8 files (interval: 5)
+2025-07-28 17:56:29 [INFO] Files: 6/8 (75.0%)
+2025-07-28 17:56:29 [INFO] ETA: 0.1 minutes
+2025-07-28 17:56:29 [INFO] Files: 7/8 (87.5%)
+2025-07-28 17:56:29 [INFO] ETA: 0.0 minutes
+2025-07-28 17:56:29 [INFO] Files: 8/8 (100.0%)
+2025-07-28 17:56:29 [INFO] ETA: 0.0 minutes
+2025-07-28 17:56:29 [INFO] Aggregating results...
+2025-07-28 17:56:29 [INFO] Loaded results from 8 files
+2025-07-28 17:56:30 [INFO] Ablation results saved to: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/results/mpii/deletion/aggregated_results/ablation
+2025-07-28 17:56:30 [INFO] Comparison results saved to: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/results/mpii/deletion/aggregated_results/comparison
+2025-07-28 17:56:30 [INFO] Deletion evaluation completed successfully!
+2025-07-28 17:56:30 [INFO] Total iterations processed: 80
+2025-07-28 17:56:30 [INFO] Total processing time: 20.33 seconds
+2025-07-28 17:56:30 [INFO] Average time per iteration: 0.254 seconds
+2025-07-28 17:56:30 [INFO] Checkpoint cleaned up

@@ -1,0 +1,95 @@
+2025-07-28 17:48:58 [INFO] Initializing models...
+2025-07-28 17:49:05 [INFO] Models initialized successfully
+2025-07-28 17:49:05 [INFO] Starting authors evaluation pipeline
+2025-07-28 17:49:05 [INFO] Input folder: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/authors/aug_dataset_test
+2025-07-28 17:49:05 [INFO] Output folder: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/results/mpii/authors
+2025-07-28 17:49:05 [INFO] Experiment ID: eval_20250728_174858
+2025-07-28 17:49:05 [INFO] Authors: ['A1', 'A2', 'A3', 'A4']
+2025-07-28 17:49:05 [INFO] Loaded 4 authors
+2025-07-28 17:49:05 [INFO]   A1: 3 entries
+2025-07-28 17:49:05 [INFO]   A2: 3 entries
+2025-07-28 17:49:05 [INFO]   A3: 3 entries
+2025-07-28 17:49:05 [INFO]   A4: 3 entries
+2025-07-28 17:49:05 [INFO] Total comparisons to process: 36
+2025-07-28 17:49:05 [INFO] Processing 36 comparisons with 20 workers
+2025-07-28 17:49:28 [INFO] Comparisons: 1/36 (2.8%)
+2025-07-28 17:49:28 [INFO] ETA: 13.3 minutes
+2025-07-28 17:49:30 [INFO] Comparisons: 2/36 (5.6%)
+2025-07-28 17:49:30 [INFO] ETA: 7.0 minutes
+2025-07-28 17:49:30 [INFO] Comparisons: 3/36 (8.3%)
+2025-07-28 17:49:30 [INFO] ETA: 4.6 minutes
+2025-07-28 17:49:30 [INFO] Comparisons: 4/36 (11.1%)
+2025-07-28 17:49:30 [INFO] ETA: 3.3 minutes
+2025-07-28 17:49:30 [INFO] Comparisons: 5/36 (13.9%)
+2025-07-28 17:49:30 [INFO] ETA: 2.6 minutes
+2025-07-28 17:49:34 [INFO] Checkpoint saved at 5/36 comparisons (interval: 5)
+2025-07-28 17:49:35 [INFO] Comparisons: 6/36 (16.7%)
+2025-07-28 17:49:35 [INFO] ETA: 2.5 minutes
+2025-07-28 17:49:35 [INFO] Comparisons: 7/36 (19.4%)
+2025-07-28 17:49:35 [INFO] ETA: 2.1 minutes
+2025-07-28 17:49:36 [INFO] Comparisons: 8/36 (22.2%)
+2025-07-28 17:49:36 [INFO] ETA: 1.8 minutes
+2025-07-28 17:49:36 [INFO] Comparisons: 9/36 (25.0%)
+2025-07-28 17:49:36 [INFO] ETA: 1.5 minutes
+2025-07-28 17:49:38 [INFO] Comparisons: 10/36 (27.8%)
+2025-07-28 17:49:38 [INFO] ETA: 1.4 minutes
+2025-07-28 17:49:38 [INFO] Checkpoint saved at 10/36 comparisons (interval: 49)
+2025-07-28 17:49:38 [INFO] Comparisons: 11/36 (30.6%)
+2025-07-28 17:49:38 [INFO] ETA: 1.2 minutes
+2025-07-28 17:49:41 [INFO] Comparisons: 12/36 (33.3%)
+2025-07-28 17:49:41 [INFO] ETA: 1.2 minutes
+2025-07-28 17:49:41 [INFO] Comparisons: 13/36 (36.1%)
+2025-07-28 17:49:41 [INFO] ETA: 1.1 minutes
+2025-07-28 17:49:41 [INFO] Comparisons: 14/36 (38.9%)
+2025-07-28 17:49:41 [INFO] ETA: 0.9 minutes
+2025-07-28 17:49:41 [INFO] Comparisons: 15/36 (41.7%)
+2025-07-28 17:49:41 [INFO] ETA: 0.8 minutes
+2025-07-28 17:49:42 [INFO] Comparisons: 16/36 (44.4%)
+2025-07-28 17:49:42 [INFO] ETA: 0.8 minutes
+2025-07-28 17:49:42 [INFO] Comparisons: 17/36 (47.2%)
+2025-07-28 17:49:42 [INFO] ETA: 0.7 minutes
+2025-07-28 17:49:42 [INFO] Comparisons: 18/36 (50.0%)
+2025-07-28 17:49:42 [INFO] ETA: 0.6 minutes
+2025-07-28 17:49:42 [INFO] Comparisons: 19/36 (52.8%)
+2025-07-28 17:49:42 [INFO] ETA: 0.5 minutes
+2025-07-28 17:49:42 [INFO] Comparisons: 20/36 (55.6%)
+2025-07-28 17:49:42 [INFO] ETA: 0.5 minutes
+2025-07-28 17:49:42 [INFO] Comparisons: 21/36 (58.3%)
+2025-07-28 17:49:42 [INFO] ETA: 0.4 minutes
+2025-07-28 17:49:42 [INFO] Comparisons: 22/36 (61.1%)
+2025-07-28 17:49:42 [INFO] ETA: 0.4 minutes
+2025-07-28 17:49:42 [INFO] Comparisons: 23/36 (63.9%)
+2025-07-28 17:49:42 [INFO] ETA: 0.3 minutes
+2025-07-28 17:49:42 [INFO] Comparisons: 24/36 (66.7%)
+2025-07-28 17:49:42 [INFO] ETA: 0.3 minutes
+2025-07-28 17:49:42 [INFO] Comparisons: 25/36 (69.4%)
+2025-07-28 17:49:42 [INFO] ETA: 0.3 minutes
+2025-07-28 17:49:43 [INFO] Comparisons: 26/36 (72.2%)
+2025-07-28 17:49:43 [INFO] ETA: 0.2 minutes
+2025-07-28 17:49:43 [INFO] Comparisons: 27/36 (75.0%)
+2025-07-28 17:49:43 [INFO] ETA: 0.2 minutes
+2025-07-28 17:49:43 [INFO] Comparisons: 28/36 (77.8%)
+2025-07-28 17:49:43 [INFO] ETA: 0.2 minutes
+2025-07-28 17:49:43 [INFO] Comparisons: 29/36 (80.6%)
+2025-07-28 17:49:43 [INFO] ETA: 0.2 minutes
+2025-07-28 17:49:43 [INFO] Comparisons: 30/36 (83.3%)
+2025-07-28 17:49:43 [INFO] ETA: 0.1 minutes
+2025-07-28 17:49:43 [INFO] Comparisons: 31/36 (86.1%)
+2025-07-28 17:49:43 [INFO] ETA: 0.1 minutes
+2025-07-28 17:49:43 [INFO] Comparisons: 32/36 (88.9%)
+2025-07-28 17:49:43 [INFO] ETA: 0.1 minutes
+2025-07-28 17:49:44 [INFO] Comparisons: 33/36 (91.7%)
+2025-07-28 17:49:44 [INFO] ETA: 0.1 minutes
+2025-07-28 17:49:46 [INFO] Comparisons: 34/36 (94.4%)
+2025-07-28 17:49:46 [INFO] ETA: 0.0 minutes
+2025-07-28 17:49:46 [INFO] Comparisons: 35/36 (97.2%)
+2025-07-28 17:49:46 [INFO] ETA: 0.0 minutes
+2025-07-28 17:49:47 [INFO] Comparisons: 36/36 (100.0%)
+2025-07-28 17:49:47 [INFO] ETA: 0.0 minutes
+2025-07-28 17:49:47 [INFO] Aggregating results...
+2025-07-28 17:49:47 [INFO] Authors evaluation completed successfully!
+2025-07-28 17:49:47 [INFO] Total comparisons processed: 36
+2025-07-28 17:49:47 [INFO] Total processing time: 41.50 seconds
+2025-07-28 17:49:47 [INFO] Average time per comparison: 1.153 seconds
+2025-07-28 17:49:47 [INFO] Results saved to: /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/results/mpii/authors/aggregated_results
+2025-07-28 17:49:48 [INFO] Checkpoint cleaned up

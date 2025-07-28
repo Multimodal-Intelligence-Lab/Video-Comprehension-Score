@@ -43,10 +43,12 @@ models:
 # VCS COMPUTATION PARAMETERS  
 # ============================================================================
 vcs:
-  chunk_size: 1
+  # Chunk sizes to evaluate (supports multiple values for comprehensive testing)
+  chunk_size: [1]
   context_cutoff_value: 0.6
   context_window_control: 4.0
-  lct: 0
+  # LCT values to evaluate (supports multiple values for comprehensive testing)
+  lct: [0]
   return_all_metrics: true
   return_internals: false
 

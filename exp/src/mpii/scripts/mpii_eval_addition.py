@@ -37,7 +37,6 @@ import logging
 from dataclasses import dataclass, asdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
-from tabulate import tabulate
 
 import sys
 from pathlib import Path

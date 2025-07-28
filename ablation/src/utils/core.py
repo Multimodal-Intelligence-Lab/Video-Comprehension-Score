@@ -120,6 +120,29 @@ class ConfigLoader:
         for model_key in required_models:
             if model_key not in models:
                 raise ValueError(f"Missing required model: {model_key}")
+        
+        # Validate VCS parameters (standardized validation)
+        vcs = config['vcs']
+        required_vcs_fields = ['chunk_size', 'lct']
+        for field in required_vcs_fields:
+            if field not in vcs:
+                raise ValueError(f"Missing required VCS parameter: {field}")
+        
+        # Validate chunk_size and lct are properly formatted (support both single values and arrays)
+        chunk_size = vcs['chunk_size']
+        lct = vcs['lct']
+        
+        # Convert single values to lists for validation
+        if not isinstance(chunk_size, list):
+            chunk_size = [chunk_size]
+        if not isinstance(lct, list):
+            lct = [lct]
+            
+        if not all(isinstance(x, int) and x > 0 for x in chunk_size):
+            raise ValueError("vcs.chunk_size must be a positive integer or list of positive integers")
+            
+        if not all(isinstance(x, int) and x >= 0 for x in lct):
+            raise ValueError("vcs.lct must be a non-negative integer or list of non-negative integers")
 
 
 class CheckpointManager:

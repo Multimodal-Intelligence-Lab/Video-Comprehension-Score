@@ -55,19 +55,8 @@ vcs:
 # ============================================================================
 # METRICS CONFIGURATION
 # ============================================================================
-metrics:
-  # Traditional metrics to compute
-  traditional: ["BLEU-1", "BLEU-4", "METEOR", "ROUGE-1", "ROUGE-4", "ROUGE-L", "ROUGE-Lsum"]
-  
-  # VCS-based metrics (current framework)
-  vcs_based: ["VCS", "GAS", "LAS", "NAS"]
-  
-  # Ablation metrics (computed combinations)
-  ablation_metrics:
-    - "GAS"
-    - "LAS" 
-    - "NAS"
-    - "VCS"
+# Note: Metrics are hardcoded in the script, not read from config
+# The metrics section was unused dead code and has been removed
 
 # ============================================================================
 # OUTPUT FORMATTING OVERRIDES
@@ -78,15 +67,8 @@ metrics:
 # ============================================================================
 # LOGGING OVERRIDES
 # ============================================================================
-logging:
-  # Enable logging
-  enable_logging: true
-  
-  # Log format
-  format: "%(asctime)s - %(levelname)s - %(message)s"
-  
-  # Save process log
-  save_process_log: true
+# Note: Only logging.verbose is used (via command line --verbose flag)
+# Other logging parameters were unused dead code and have been removed
 
 # ============================================================================
 # EXPERIMENT SETTINGS OVERRIDE
