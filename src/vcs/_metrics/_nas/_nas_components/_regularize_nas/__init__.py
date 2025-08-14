@@ -1,6 +1,6 @@
-from ._regularize_nas import _calculate_window_regularizer, _regularize_nas
+from ._regularize_nas import _calculate_length_regularizer, _regularize_nas
 
 __all__ = [
-    "_calculate_window_regularizer",
+    "_calculate_length_regularizer", 
     "_regularize_nas"
 ]

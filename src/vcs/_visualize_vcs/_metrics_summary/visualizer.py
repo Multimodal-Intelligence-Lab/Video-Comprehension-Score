@@ -72,7 +72,7 @@ def visualize_metrics_summary(internals: Dict[str, Any]) -> plt.Figure:
     metrics['NAS-L Recall'] = nas_l['recall']['value']
     
     metrics['NAS F1'] = internals['metrics']['nas']['nas_f1']
-    metrics['Window Regularizer'] = internals['metrics']['nas']['regularizer']['value']
+    metrics['Length Regularizer'] = internals['metrics']['nas']['regularizer']['value']
     
     order = [
         'VCS',
@@ -82,7 +82,7 @@ def visualize_metrics_summary(internals: Dict[str, Any]) -> plt.Figure:
         'LAS Recall',
         'SAS',
         'NAS',
-        'Window Regularizer',
+        'Length Regularizer',
         'NAS F1',
         'NAS-D',
         'NAS-D Precision',
@@ -104,7 +104,7 @@ def visualize_metrics_summary(internals: Dict[str, Any]) -> plt.Figure:
         'NAS': 'salmon',
         'NAS-D': 'plum',
         'NAS-L': 'orchid',
-        'Window Regularizer': 'peachpuff',
+        'Length Regularizer': 'peachpuff',
     }
     
     def get_color(metric_name):

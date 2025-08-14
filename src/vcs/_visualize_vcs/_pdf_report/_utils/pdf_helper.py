@@ -93,7 +93,7 @@ def create_section_structure(
     visualize_line_nas: Callable,
     visualize_line_nas_precision_calculations: Callable,
     visualize_line_nas_recall_calculations: Callable,
-    visualize_window_regularizer: Callable,
+    visualize_length_regularizer: Callable,
     internals: Dict[str, Any]
 ) -> List[Tuple]:
     return [
@@ -120,7 +120,7 @@ def create_section_structure(
             ("Line-based NAS", "NAS Line", lambda: visualize_line_nas(internals)),
             ("Line NAS Precision", "NAS Line", lambda: visualize_line_nas_precision_calculations(internals)[0]),
             ("Line NAS Recall", "NAS Line", lambda: visualize_line_nas_recall_calculations(internals)[0]),
-            ("Window Regularization", "Window Regularizer", lambda: visualize_window_regularizer(internals))
+            ("Length Regularization", "Length Regularizer", lambda: visualize_length_regularizer(internals))
         ])
     ]
 

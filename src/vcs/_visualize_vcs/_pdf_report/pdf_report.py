@@ -143,7 +143,7 @@ def create_vcs_pdf_report(
         from .._line_nas import visualize_line_nas, visualize_line_nas_precision_calculations, visualize_line_nas_recall_calculations
         from .._distance_nas import visualize_distance_nas
         from .._las import visualize_las
-        from .._window_regularizer import visualize_window_regularizer
+        from .._length_regularizer import visualize_length_regularizer
         from .._metrics_summary import visualize_metrics_summary
         
         # Set up consistent styling
@@ -164,7 +164,7 @@ def create_vcs_pdf_report(
             visualize_similarity_matrix, visualize_mapping_windows, visualize_las,
             visualize_distance_nas, visualize_line_nas, 
             visualize_line_nas_precision_calculations, visualize_line_nas_recall_calculations,
-            visualize_window_regularizer, internals
+            visualize_length_regularizer, internals
         )
         
         # Filter sections and calculate page layout

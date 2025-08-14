@@ -29,7 +29,7 @@ from ._visualize_vcs import (
     visualize_line_nas_recall_calculations,  
     visualize_distance_nas,
     visualize_las,
-    visualize_window_regularizer,
+    visualize_length_regularizer,
     visualize_metrics_summary,
     create_vcs_pdf_report
 )
@@ -40,6 +40,8 @@ from ._config import (
     DEFAULT_CONTEXT_WINDOW_CONTROL,
     DEFAULT_LCT,
     DEFAULT_CHUNK_SIZE,
+    DEFAULT_NAS_BLEND_FACTOR,
+    DEFAULT_NAS_COVERAGE_CUTOFF,
 )
 
 __all__ = [
@@ -62,7 +64,7 @@ __all__ = [
     "visualize_line_nas_recall_calculations",
     "visualize_distance_nas",
     "visualize_las",
-    "visualize_window_regularizer",
+    "visualize_length_regularizer",
     "visualize_metrics_summary",
     "create_vcs_pdf_report",
     
@@ -71,6 +73,8 @@ __all__ = [
     "DEFAULT_CONTEXT_WINDOW_CONTROL",
     "DEFAULT_LCT",
     "DEFAULT_CHUNK_SIZE",
+    "DEFAULT_NAS_BLEND_FACTOR",
+    "DEFAULT_NAS_COVERAGE_CUTOFF",
 ]
 
 # Package metadata for programmatic access

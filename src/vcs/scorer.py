@@ -12,6 +12,8 @@ from ._config import (
     DEFAULT_CONTEXT_WINDOW_CONTROL,
     DEFAULT_LCT,
     DEFAULT_CHUNK_SIZE,
+    DEFAULT_NAS_BLEND_FACTOR,
+    DEFAULT_NAS_COVERAGE_CUTOFF,
 )
 from ._utils import _validate_seg_embed_functions
 from ._segmenting import _segment_and_chunk_texts, _build_similarity_matrix
@@ -35,6 +37,8 @@ def compute_vcs_score(
     context_cutoff_value: float = DEFAULT_CONTEXT_CUTOFF_VALUE,
     context_window_control: float = DEFAULT_CONTEXT_WINDOW_CONTROL,
     lct: int = DEFAULT_LCT,
+    nas_blend_factor: float = DEFAULT_NAS_BLEND_FACTOR,
+    nas_coverage_cutoff: float = DEFAULT_NAS_COVERAGE_CUTOFF,
     return_all_metrics: bool = False,
     return_internals: bool = False,
 ) -> Dict[str, Any]:
@@ -103,6 +107,20 @@ def compute_vcs_score(
         - ``lct=0``: Strict chronological order required
         - ``lct=1``: Small deviations allowed
         - ``lct=2+``: More flexible chronological matching
+    nas_blend_factor : float, default=0.0
+        Controls how window penalty and imbalance penalty are blended in NAS 
+        regularization. Must be between -1.0 and 1.0:
+        
+        - ``-1.0``: Follow imbalance penalty exclusively (prioritize length differences)
+        - ``0.0``: Balanced blend of both penalties (recommended)
+        - ``+1.0``: Follow window penalty exclusively (prioritize coverage patterns)
+    nas_coverage_cutoff : float, default=0.5
+        Coverage threshold above which NAS is considered meaningless due to 
+        excessive mapping window overlap. Must be between 0.0 and 1.0:
+        
+        - ``0.3-0.4``: Strict coverage requirements
+        - ``0.5-0.6``: Balanced coverage assessment (recommended)
+        - ``0.7-0.8``: Permissive coverage allowance
     return_all_metrics : bool, default=False
         If True, returns all intermediate metrics (GAS, LAS, NAS components) in 
         addition to the final VCS score. Useful for detailed analysis.
@@ -135,7 +153,7 @@ def compute_vcs_score(
         * ``'Recall NAS-L'`` : float - Line-based NAS recall
         * ``'NAS-L'`` : float - Line-based Narrative Alignment Score
         * ``'NAS-F1'`` : float - Combined NAS-D and NAS-L score
-        * ``'Window-Regularizer'`` : float - Regularization factor for window overlap
+        * ``'Length-Regularizer'`` : float - Regularization factor for length imbalance
         * ``'NAS'`` : float - Final regularized Narrative Alignment Score
             
         **With return_internals=True:**
@@ -197,7 +215,9 @@ def compute_vcs_score(
             chunk_size=2,
             context_cutoff_value=0.7,
             context_window_control=3.0,
-            lct=1
+            lct=1,
+            nas_blend_factor=0.2,
+            nas_coverage_cutoff=0.6
         )
     
     **Different Embedding Functions for GAS and LAS:**
@@ -226,6 +246,8 @@ def compute_vcs_score(
             context_cutoff_value=0.7,
             context_window_control=3.0,
             lct=1,
+            nas_blend_factor=0.2,
+            nas_coverage_cutoff=0.6,
             return_all_metrics=True,
             return_internals=True
         )
@@ -278,7 +300,9 @@ def compute_vcs_score(
         recall_matches, recall_indices, recall_sim_values,
         prec_map_windows, rec_map_windows,
         ref_chunks, gen_chunks,
-        lct=lct
+        lct=lct,
+        nas_blend_factor=nas_blend_factor,
+        nas_coverage_cutoff=nas_coverage_cutoff
     )
     combined = _compute_vcs_metrics(
         gas_val, nas_metrics["NAS"], las_metrics["LAS"]
@@ -377,7 +401,7 @@ def compute_vcs_score(
                         "f1": nas_metrics["NAS-L"],
                     },
                     "regularizer": {
-                        "value": nas_metrics["Window-Regularizer"],
+                        "value": nas_metrics["Length-Regularizer"],
                         "total_mapping_window_area": nas_internals["regularizer_internals"]["total_mapping_window_area"],
                         "timeline_area": nas_internals["regularizer_internals"]["timeline_area"],
                         "min_area": nas_internals["regularizer_internals"]["min_area"],
@@ -395,6 +419,8 @@ def compute_vcs_score(
                 "context_cutoff_value": context_cutoff_value,
                 "context_window_control": context_window_control,
                 "lct": lct,
+                "nas_blend_factor": nas_blend_factor,
+                "nas_coverage_cutoff": nas_coverage_cutoff,
             },
             "best_match": {
                 "precision": precision_match_details,

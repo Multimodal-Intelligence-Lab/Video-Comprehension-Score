@@ -193,3 +193,98 @@ See Also
 compute_vcs_score : Detailed chunk_size parameter description
 visualize_text_chunks : See how chunking affects text organization
 """
+
+DEFAULT_NAS_BLEND_FACTOR = 0.0
+"""Default blend factor for NAS regularization penalty blending.
+
+Controls how window penalty (wp) and imbalance penalty (i_p) are blended in 
+the NAS regularization calculation. The value determines the preference between
+length-based and coverage-based penalties.
+
+Type
+----
+float
+
+Value
+-----
+0.0
+
+Notes
+-----
+* Range: -1.0 to 1.0
+* -1.0 = follow imbalance penalty (i_p) exclusively  
+* 0.0 = balanced blend between both penalties (default)
+* +1.0 = follow window penalty (wp) exclusively
+* Controls the alpha parameter in the noisy-OR blending function
+* Affects final NAS regularization and overall score sensitivity
+
+Use Cases
+---------
+* -1.0: Prioritize length imbalance detection (texts with very different lengths)
+* 0.0: Balanced approach for most general use cases (recommended)
+* +1.0: Prioritize coverage penalty (focus on mapping window overlap)
+
+Examples
+--------
+>>> # Balanced blending (default)
+>>> result = compute_vcs_score(ref, gen, seg, emb, nas_blend_factor=0.0)
+
+>>> # Prefer length imbalance penalty
+>>> result = compute_vcs_score(ref, gen, seg, emb, nas_blend_factor=-0.5)
+
+>>> # Prefer window coverage penalty  
+>>> result = compute_vcs_score(ref, gen, seg, emb, nas_blend_factor=0.5)
+
+See Also
+--------
+DEFAULT_NAS_COVERAGE_CUTOFF : Coverage threshold for NAS penalty calculation
+compute_vcs_score : Parameter description for detailed blending behavior
+"""
+
+DEFAULT_NAS_COVERAGE_CUTOFF = 0.5
+"""Default coverage cutoff threshold for NAS penalty calculation.
+
+Controls the mapping window coverage threshold (tau) above which NAS is 
+considered meaningless due to excessive overlap. Higher values are more 
+permissive of window coverage before applying penalties.
+
+Type
+----
+float
+
+Value
+-----
+0.5
+
+Notes
+-----
+* Range: 0.0 to 1.0
+* 0.0 = very restrictive (penalties applied with minimal coverage)
+* 0.5 = moderate threshold (balanced approach)
+* 1.0 = very permissive (penalties only with complete coverage)
+* Controls when window penalty (wp) becomes significant
+* Affects sensitivity to mapping window overlap patterns
+
+Guidelines
+----------
+* Use 0.3-0.4 for strict coverage requirements
+* Use 0.5-0.6 for balanced coverage assessment (recommended)
+* Use 0.7-0.8 for permissive coverage allowance
+* Consider text type and expected alignment patterns
+
+Examples
+--------
+>>> # Moderate coverage threshold (default)
+>>> result = compute_vcs_score(ref, gen, seg, emb, nas_coverage_cutoff=0.5)
+
+>>> # Strict coverage requirements
+>>> result = compute_vcs_score(ref, gen, seg, emb, nas_coverage_cutoff=0.3)
+
+>>> # Permissive coverage allowance
+>>> result = compute_vcs_score(ref, gen, seg, emb, nas_coverage_cutoff=0.7)
+
+See Also
+--------
+DEFAULT_NAS_BLEND_FACTOR : Controls penalty blending in NAS regularization
+compute_vcs_score : Parameter description for detailed coverage behavior
+"""

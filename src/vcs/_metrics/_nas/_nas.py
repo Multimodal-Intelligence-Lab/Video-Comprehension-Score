@@ -2,7 +2,7 @@ import numpy as np
 from typing import List, Tuple, Dict, Any
 from ..._utils import _calculate_f1
 
-from ._nas_components._regularize_nas._regularize_nas import _calculate_window_regularizer, _regularize_nas
+from ._nas_components._regularize_nas._regularize_nas import _calculate_length_regularizer, _regularize_nas
 from ._nas_components._distance_nas._distance_nas import _calculate_distance_based_nas
 from ._nas_components._line_nas._line_nas import _calculate_line_based_nas
 
@@ -20,7 +20,9 @@ def _compute_nas_metrics(
     rec_map_windows: List[Tuple[int, int]],
     ref_chunks: List[str],
     gen_chunks: List[str],
-    lct: int = 0
+    lct: int = 0,
+    nas_blend_factor: float = 0.0,
+    nas_coverage_cutoff: float = 0.5
 ) -> Tuple[Dict[str, float], Dict[str, Any]]:
 
     prec_nas, prec_nas_internals = _calculate_distance_based_nas(
@@ -52,8 +54,8 @@ def _compute_nas_metrics(
     
     f1_nas = _calculate_f1(nas_d, nas_l)
     
-    window_regularizer, regularizer_internals = _calculate_window_regularizer(ref_len, gen_len, prec_map_windows, rec_map_windows)
-    regularized_nas = _regularize_nas(f1_nas, window_regularizer)
+    length_regularizer, regularizer_internals = _calculate_length_regularizer(ref_len, gen_len, prec_map_windows, rec_map_windows, nas_blend_factor, nas_coverage_cutoff)
+    regularized_nas = _regularize_nas(f1_nas, length_regularizer)
 
     metrics = {
         "Precision NAS-D": prec_nas,
@@ -63,7 +65,7 @@ def _compute_nas_metrics(
         "Recall NAS-L": row_ratio,
         "NAS-L": nas_l,
         "NAS-F1": f1_nas,
-        "Window-Regularizer": window_regularizer,
+        "Length-Regularizer": length_regularizer,
         "NAS": regularized_nas
     }
     
