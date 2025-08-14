@@ -32,11 +32,6 @@ def _calculate_window_regularizer(
     else:
         window_regularizer = 0
     
-    I = 1.0 - (min(ref_len, gen_len) / max(ref_len, gen_len))
-    M = max(window_regularizer, I)
-    m = min(window_regularizer, I)
-    P = (M * M) + (m * (1.0 - M))
-    window_regularizer = P
     internals = {
         "total_mapping_window_area": total_mapping_window_area,
         "timeline_area": timeline_area,
