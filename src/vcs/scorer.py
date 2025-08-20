@@ -271,11 +271,7 @@ def compute_vcs_score(
         )
     )
 
-    las_metrics = _compute_las_metrics(
-        precision_sim_values, recall_sim_values,
-        precision_indices, recall_indices,
-        ref_len, gen_len
-    )
+    las_metrics = _compute_las_metrics(precision_sim_values, recall_sim_values)
     nas_metrics, nas_internals = _compute_nas_metrics(
         sim_matrix, ref_len, gen_len,
         precision_matches, precision_indices, precision_sim_values,
