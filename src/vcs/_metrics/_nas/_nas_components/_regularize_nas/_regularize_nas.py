@@ -27,7 +27,7 @@ def _calculate_window_regularizer(
         min_area = 1 / gen_len
     
     if timeline_area > 0 and min_area < 1: 
-        window_regularizer = (total_mapping_window_area / timeline_area - min_area) / (0.5 - min_area)
+        window_regularizer = (total_mapping_window_area / timeline_area - min_area) / (1 - min_area)
         window_regularizer = max(0, min(1, window_regularizer))
     else:
         window_regularizer = 0
