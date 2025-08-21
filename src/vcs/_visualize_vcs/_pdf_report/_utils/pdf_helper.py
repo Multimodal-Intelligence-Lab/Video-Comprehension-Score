@@ -113,7 +113,7 @@ def create_section_structure(
             ("Best Match Details", "Best Match", lambda: None)  # Special handling for paginated content
         ]),
         ("Local Alignment Score (LAS)", [
-            ("LAS Visualization", "LAS", lambda: visualize_las(internals))
+            ("LAS Visualization", "LAS", lambda: visualize_las(internals, pdf_mode=True))
         ]),
         ("Narrative Alignment Score (NAS)", [
             ("Distance-based NAS", "NAS Distance", lambda: visualize_distance_nas(internals)),
