@@ -271,7 +271,7 @@ def compute_vcs_score(
         )
     )
 
-    las_metrics, las_internals = _compute_las_metrics(
+    las_metrics = _compute_las_metrics(
         precision_sim_values, recall_sim_values,
         precision_indices, recall_indices,
         ref_len, gen_len
@@ -332,7 +332,6 @@ def compute_vcs_score(
                     "precision": las_metrics["Precision LAS"],
                     "recall": las_metrics["Recall LAS"],
                     "f1": las_metrics["LAS"],
-                    "internals": las_internals,
                 },
                 "nas": {
                     "nas_d": {
