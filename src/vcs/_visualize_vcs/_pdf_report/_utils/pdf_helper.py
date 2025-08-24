@@ -153,21 +153,8 @@ def estimate_pages_for_metric(metric_key: str, internals: Dict[str, Any]) -> int
 
 def estimate_las_load_sharing_pages(internals: Dict[str, Any]) -> int:
     """Estimate the number of pages needed for LAS load sharing content."""
-    las_metrics = internals.get('metrics', {}).get('las', {})
-    precision_internals = las_metrics.get('precision_internals', {})
-    recall_internals = las_metrics.get('recall_internals', {})
-    
-    precision_cases = precision_internals.get('load_sharing_details', [])
-    recall_cases = recall_internals.get('load_sharing_details', [])
-    
-    # Estimate pages: 1 summary + 1 details + 1 each for precision/recall if they have cases
-    pages = 2  # Summary table + main details figure
-    if precision_cases:
-        pages += 1  # Precision details page
-    if recall_cases: 
-        pages += 1  # Recall details page
-    
-    return pages
+    # Simple like best match: always 2 pages (precision + recall)
+    return 2
 
 def estimate_best_match_pages(internals: Dict[str, Any]) -> int:
     """Estimate the number of pages needed for best match content."""

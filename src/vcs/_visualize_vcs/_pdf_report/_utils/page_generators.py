@@ -8,45 +8,26 @@ from .empty_states import create_empty_precision_matches_page, create_empty_reca
 
 
 def generate_las_load_sharing_pages(internals: Dict[str, Any], pdf: PdfPages, start_page: int) -> int:
-    """Generate LAS load sharing pages with proper figure management."""
+    """Generate LAS load sharing pages matching best match style."""
     from ..._las import visualize_las_load_sharing
     
     page_count = 0
-    current_page = start_page
     
-    # Generate load sharing visualizations
     try:
+        # Generate load sharing figures (precision and recall only like best match)
         las_load_sharing_figs = visualize_las_load_sharing(internals)
         
-        # Add summary table page
-        if 'summary_table' in las_load_sharing_figs and las_load_sharing_figs['summary_table'] is not None:
-            pdf.savefig(las_load_sharing_figs['summary_table'], bbox_inches='tight')
-            plt.close(las_load_sharing_figs['summary_table'])
+        # Add precision details page
+        if 'precision_details' in las_load_sharing_figs:
+            pdf.savefig(las_load_sharing_figs['precision_details'], bbox_inches='tight')
+            plt.close(las_load_sharing_figs['precision_details'])
             page_count += 1
         
-        # Add main details page
-        if 'load_sharing_details' in las_load_sharing_figs and las_load_sharing_figs['load_sharing_details'] is not None:
-            pdf.savefig(las_load_sharing_figs['load_sharing_details'], bbox_inches='tight')
-            plt.close(las_load_sharing_figs['load_sharing_details'])
+        # Add recall details page  
+        if 'recall_details' in las_load_sharing_figs:
+            pdf.savefig(las_load_sharing_figs['recall_details'], bbox_inches='tight')
+            plt.close(las_load_sharing_figs['recall_details'])
             page_count += 1
-        
-        # Add precision details page if there are precision cases
-        if 'precision_load_sharing' in las_load_sharing_figs and las_load_sharing_figs['precision_load_sharing'] is not None:
-            las_metrics = internals.get('metrics', {}).get('las', {})
-            precision_internals = las_metrics.get('precision_internals', {})
-            if precision_internals.get('load_sharing_details', []):
-                pdf.savefig(las_load_sharing_figs['precision_load_sharing'], bbox_inches='tight')
-                page_count += 1
-            plt.close(las_load_sharing_figs['precision_load_sharing'])
-        
-        # Add recall details page if there are recall cases  
-        if 'recall_load_sharing' in las_load_sharing_figs and las_load_sharing_figs['recall_load_sharing'] is not None:
-            las_metrics = internals.get('metrics', {}).get('las', {})
-            recall_internals = las_metrics.get('recall_internals', {})
-            if recall_internals.get('load_sharing_details', []):
-                pdf.savefig(las_load_sharing_figs['recall_load_sharing'], bbox_inches='tight')
-                page_count += 1
-            plt.close(las_load_sharing_figs['recall_load_sharing'])
             
     except Exception as e:
         print(f"Warning: Could not generate LAS load sharing pages: {e}")
