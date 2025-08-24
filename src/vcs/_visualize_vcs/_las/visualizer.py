@@ -2,10 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from typing import Dict, Any
 
-from .._design_system import (
-    VCSColors, VCSTypography, create_professional_figure,
-    style_metric_visualization, add_professional_legend
-)
 from ._utils import (
     create_precision_load_sharing_figure,
     create_recall_load_sharing_figure
@@ -51,15 +47,7 @@ def visualize_las(internals: Dict[str, Any]) -> plt.Figure:
     visualize_best_match : See detailed match analysis
     visualize_similarity_matrix : See underlying similarity computations
     """
-    # Create professional figure
-    fig, ax = create_professional_figure(
-        title="Local Alignment Score (LAS) Analysis",
-        subtitle="Precision and Recall Component Breakdown"
-    )
-    
-    # Create subplots manually for better control
-    ax.remove()  # Remove the default axis
-    axes = fig.subplots(1, 2)
+    fig, axes = plt.subplots(1, 2, figsize=(16, 8))
     
     precision_sim_values = np.array(internals['alignment']['precision']['similarity_values'])
     recall_sim_values = np.array(internals['alignment']['recall']['similarity_values'])
@@ -75,9 +63,7 @@ def visualize_las(internals: Dict[str, Any]) -> plt.Figure:
     
     x_indices = np.arange(len(precision_sim_values))
     
-    bars = ax_precision.bar(x_indices, precision_sim_values, 
-                           alpha=0.8, color=VCSColors.PRECISION_COLOR,
-                           edgecolor=VCSColors.GRAY_LIGHT, linewidth=0.5)
+    bars = ax_precision.bar(x_indices, precision_sim_values, alpha=0.7, color='skyblue')
     
     for i, sim in enumerate(precision_sim_values):
         if sim > 0.5:
@@ -88,53 +74,43 @@ def visualize_las(internals: Dict[str, Any]) -> plt.Figure:
                                 ha='center', va='bottom',
                                 fontsize=8)
     
-    # Add the average line with professional styling
-    ax_precision.axhline(y=precision_las, color=VCSColors.ACCENT, linestyle='--', linewidth=2)
+    # Add the average line with improved positioning and visibility
+    ax_precision.axhline(y=precision_las, color='red', linestyle='--')
     
-    # Add a text annotation for the average with professional styling
+    # Add a text annotation for the average in a more visible position
+    # If the average is close to 1.0, place it slightly lower to ensure visibility
     if precision_las > 0.95:
-        avg_text_y = 0.9
+        avg_text_y = 0.9  # Position text lower when average is near top
     else:
-        avg_text_y = min(precision_las + 0.07, 0.95)
+        avg_text_y = min(precision_las + 0.07, 0.95)  # Place above line but not too high
     
     ax_precision.text(len(precision_sim_values) * 0.5, avg_text_y, 
                      f'Average: {precision_las:.4f}',
-                     ha='center', va='bottom', color=VCSColors.ACCENT,
-                     fontsize=VCSTypography.BODY_SIZE,
-                     fontweight=VCSTypography.BOLD,
-                     bbox=dict(facecolor=VCSColors.WHITE, alpha=0.9, 
-                              edgecolor=VCSColors.ACCENT, 
-                              boxstyle='round,pad=0.4',
-                              linewidth=1.5))
+                     ha='center', va='bottom', color='red',
+                     bbox=dict(facecolor='white', alpha=0.8, edgecolor='red', boxstyle='round,pad=0.3'))
     
     ax_precision.set_xlabel('Generation Index')
     ax_precision.set_ylabel('Similarity Value')
     ax_precision.set_title(f'Precision LAS: {precision_las:.4f}')
     ax_precision.set_ylim(0, 1.05)
     
-    match_text = "Key Matches:\n"
-    for g_idx, r_idx in precision_matches[:8]:  # Show fewer for cleaner look
+    match_text = "Matches:\n"
+    for g_idx, r_idx in precision_matches[:10]:
         match_text += f"Gen {g_idx} → Ref {r_idx}\n"
-    if len(precision_matches) > 8:
-        match_text += f"... +{len(precision_matches) - 8} more"
+    if len(precision_matches) > 10:
+        match_text += f"... and {len(precision_matches) - 10} more"
     
     ax_precision.text(0.05, 0.95, match_text, 
                     transform=ax_precision.transAxes, 
                     va='top', ha='left',
-                    bbox=dict(boxstyle='round,pad=0.5', 
-                             facecolor=VCSColors.GRAY_BG, 
-                             alpha=0.9,
-                             edgecolor=VCSColors.GRAY_LIGHT),
-                    fontsize=VCSTypography.CAPTION_SIZE,
-                    color=VCSColors.GRAY_DARK)
+                    bbox=dict(boxstyle='round', facecolor='white', alpha=0.8),
+                    fontsize=8)
     
     ax_recall = axes[1]
     
     x_indices = np.arange(len(recall_sim_values))
     
-    bars = ax_recall.bar(x_indices, recall_sim_values, 
-                        alpha=0.8, color=VCSColors.RECALL_COLOR,
-                        edgecolor=VCSColors.GRAY_LIGHT, linewidth=0.5)
+    bars = ax_recall.bar(x_indices, recall_sim_values, alpha=0.7, color='salmon')
     
     for i, sim in enumerate(recall_sim_values):
         if sim > 0.5:
@@ -145,56 +121,40 @@ def visualize_las(internals: Dict[str, Any]) -> plt.Figure:
                             ha='center', va='bottom',
                             fontsize=8)
     
-    # Add the average line with professional styling
-    ax_recall.axhline(y=recall_las, color=VCSColors.PRIMARY, linestyle='--', linewidth=2)
+    # Add the average line with improved visibility
+    ax_recall.axhline(y=recall_las, color='blue', linestyle='--')
     
-    # Add a text annotation for the average with professional styling
+    # Add a text annotation for the average in a more visible position
+    # If the average is close to 1.0, place it slightly lower to ensure visibility
     if recall_las > 0.95:
-        avg_text_y = 0.9
+        avg_text_y = 0.9  # Position text lower when average is near top
     else:
-        avg_text_y = min(recall_las + 0.07, 0.95)
+        avg_text_y = min(recall_las + 0.07, 0.95)  # Place above line but not too high
     
     ax_recall.text(len(recall_sim_values) * 0.5, avg_text_y, 
                   f'Average: {recall_las:.4f}',
-                  ha='center', va='bottom', color=VCSColors.PRIMARY,
-                  fontsize=VCSTypography.BODY_SIZE,
-                  fontweight=VCSTypography.BOLD,
-                  bbox=dict(facecolor=VCSColors.WHITE, alpha=0.9, 
-                           edgecolor=VCSColors.PRIMARY, 
-                           boxstyle='round,pad=0.4',
-                           linewidth=1.5))
+                  ha='center', va='bottom', color='blue',
+                  bbox=dict(facecolor='white', alpha=0.8, edgecolor='blue', boxstyle='round,pad=0.3'))
     
     ax_recall.set_xlabel('Reference Index')
     ax_recall.set_ylabel('Similarity Value')
     ax_recall.set_title(f'Recall LAS: {recall_las:.4f}')
     ax_recall.set_ylim(0, 1.05)
     
-    match_text = "Key Matches:\n"
-    for g_idx, r_idx in recall_matches[:8]:  # Show fewer for cleaner look
+    match_text = "Matches:\n"
+    for g_idx, r_idx in recall_matches[:10]:
         match_text += f"Ref {r_idx} → Gen {g_idx}\n"
-    if len(recall_matches) > 8:
-        match_text += f"... +{len(recall_matches) - 8} more"
+    if len(recall_matches) > 10:
+        match_text += f"... and {len(recall_matches) - 10} more"
     
     ax_recall.text(0.05, 0.95, match_text, 
                  transform=ax_recall.transAxes, 
                  va='top', ha='left',
-                 bbox=dict(boxstyle='round,pad=0.5', 
-                          facecolor=VCSColors.GRAY_BG, 
-                          alpha=0.9,
-                          edgecolor=VCSColors.GRAY_LIGHT),
-                 fontsize=VCSTypography.CAPTION_SIZE,
-                 color=VCSColors.GRAY_DARK)
+                 bbox=dict(boxstyle='round', facecolor='white', alpha=0.8),
+                 fontsize=8)
     
-    # Update the main title to use professional styling (already set in create_professional_figure)
-    # Add final F1 score as subtitle if not already included
-    if not fig._suptitle or 'F1' not in fig._suptitle.get_text():
-        current_title = fig._suptitle.get_text() if fig._suptitle else "Local Alignment Score (LAS) Analysis"
-        fig.suptitle(f"{current_title}\nOverall F1 Score: {f1_las:.4f}", 
-                    fontsize=VCSTypography.TITLE_SIZE,
-                    fontweight=VCSTypography.BOLD,
-                    color=VCSColors.GRAY_DARK)
-    
-    plt.tight_layout()
+    fig.suptitle(f'Local Alignment Score (LAS): {f1_las:.4f}', fontsize=16)
+    fig.tight_layout()
     return fig
 
 def visualize_las_load_sharing(internals: Dict[str, Any]) -> Dict[str, plt.Figure]:

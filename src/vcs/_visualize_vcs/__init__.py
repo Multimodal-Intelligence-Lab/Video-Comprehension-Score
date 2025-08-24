@@ -1,12 +1,3 @@
-"""
-VCS Visualization Package
-========================
-
-Comprehensive visualization tools for Video Comprehension Score analysis.
-Features professional design system and publication-ready outputs.
-"""
-
-from ._design_system import apply_vcs_theme, VCSColors, VCSTypography
 from ._config import visualize_config
 from ._text_chunks import visualize_text_chunks
 from ._similarity_matrix import visualize_similarity_matrix
@@ -24,9 +15,6 @@ from ._metrics_summary import visualize_metrics_summary
 from ._pdf_report import create_vcs_pdf_report
 
 __all__ = [
-    "apply_vcs_theme",
-    "VCSColors", 
-    "VCSTypography",
     "visualize_config",
     "visualize_text_chunks",
     "visualize_similarity_matrix",
