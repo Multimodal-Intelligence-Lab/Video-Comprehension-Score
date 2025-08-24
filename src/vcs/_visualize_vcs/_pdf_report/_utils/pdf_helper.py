@@ -153,8 +153,19 @@ def estimate_pages_for_metric(metric_key: str, internals: Dict[str, Any]) -> int
 
 def estimate_las_load_sharing_pages(internals: Dict[str, Any]) -> int:
     """Estimate the number of pages needed for LAS load sharing content."""
-    # Simple like best match: always 2 pages (precision + recall)
-    return 2
+    # Get LAS internals
+    las_metrics = internals.get('metrics', {}).get('las', {})
+    precision_internals = las_metrics.get('precision_internals', {})
+    recall_internals = las_metrics.get('recall_internals', {})
+    
+    # Count load sharing cases (4 cases per page like best match)
+    precision_cases = precision_internals.get('load_sharing_details', [])
+    recall_cases = recall_internals.get('load_sharing_details', [])
+    
+    precision_pages = max(1, (len(precision_cases) + 3) // 4) if precision_cases else 0
+    recall_pages = max(1, (len(recall_cases) + 3) // 4) if recall_cases else 0
+    
+    return precision_pages + recall_pages
 
 def estimate_best_match_pages(internals: Dict[str, Any]) -> int:
     """Estimate the number of pages needed for best match content."""

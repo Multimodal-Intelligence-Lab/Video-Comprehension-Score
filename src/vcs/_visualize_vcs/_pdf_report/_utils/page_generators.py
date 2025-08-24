@@ -8,37 +8,26 @@ from .empty_states import create_empty_precision_matches_page, create_empty_reca
 
 
 def generate_las_load_sharing_pages(internals: Dict[str, Any], pdf: PdfPages, start_page: int) -> int:
-    """Generate LAS load sharing pages matching best match style."""
-    from ..._las import visualize_las_load_sharing
-    
+    """Generate LAS load sharing pages with pagination like best match."""
     page_count = 0
+    current_page = start_page
     
-    try:
-        # Generate load sharing figures (precision and recall only like best match)
-        las_load_sharing_figs = visualize_las_load_sharing(internals)
-        
-        # Add precision details page
-        if 'precision_details' in las_load_sharing_figs:
-            pdf.savefig(las_load_sharing_figs['precision_details'], bbox_inches='tight')
-            plt.close(las_load_sharing_figs['precision_details'])
-            page_count += 1
-        
-        # Add recall details page  
-        if 'recall_details' in las_load_sharing_figs:
-            pdf.savefig(las_load_sharing_figs['recall_details'], bbox_inches='tight')
-            plt.close(las_load_sharing_figs['recall_details'])
-            page_count += 1
-            
-    except Exception as e:
-        print(f"Warning: Could not generate LAS load sharing pages: {e}")
-        # Create a placeholder page
-        from .empty_states import create_empty_las_load_sharing_page
-        fig = create_empty_las_load_sharing_page()
-        pdf.savefig(fig, bbox_inches='tight')
-        plt.close(fig)
-        page_count = 1
+    # Get LAS internals
+    las_metrics = internals.get('metrics', {}).get('las', {})
+    precision_internals = las_metrics.get('precision_internals', {})
+    recall_internals = las_metrics.get('recall_internals', {})
     
-    return page_count
+    # 1. Generate precision load sharing detail pages
+    current_page += _generate_precision_load_sharing_pages(
+        precision_internals, pdf, current_page
+    )
+    
+    # 2. Generate recall load sharing detail pages
+    current_page += _generate_recall_load_sharing_pages(
+        recall_internals, pdf, current_page
+    )
+    
+    return current_page - start_page
 
 def generate_best_match_pages(internals: Dict[str, Any], pdf: PdfPages, start_page: int) -> int:
     """Generate best match pages with proper figure management to prevent console display."""
@@ -257,6 +246,92 @@ def _generate_recall_detail_pages(
             context_window_control,
             batch_idx // 4 + 1,
             total_pages
+        )
+        
+        # Add page number
+        fig.text(0.5, 0.02, f"Page {start_page + pages_added}", 
+                 ha='center', va='bottom', fontsize=9, color='#555555')
+        
+        # Save to PDF and immediately close to prevent display
+        pdf.savefig(fig, bbox_inches='tight')
+        plt.close(fig)
+        pages_added += 1
+    
+    return pages_added
+
+
+def _generate_precision_load_sharing_pages(
+    precision_internals: Dict[str, Any],
+    pdf: PdfPages,
+    start_page: int
+) -> int:
+    """Generate precision load sharing pages with immediate figure closure."""
+    from .las_load_sharing_details import create_precision_load_sharing_page
+    
+    load_sharing_cases = precision_internals.get('load_sharing_details', [])
+    if not load_sharing_cases:
+        return 0
+    
+    # Calculate total pages (4 cases per page)
+    total_pages = (len(load_sharing_cases) + 3) // 4
+    pages_added = 0
+    
+    # Generate pages one at a time with immediate closure
+    for batch_idx in range(0, len(load_sharing_cases), 4):
+        batch_cases = load_sharing_cases[batch_idx:batch_idx + 4]
+        
+        # Include summary on last page
+        direction_summary = precision_internals if batch_idx + 4 >= len(load_sharing_cases) else None
+        
+        # Create figure
+        fig = create_precision_load_sharing_page(
+            batch_cases,
+            batch_idx // 4 + 1,
+            total_pages,
+            direction_summary
+        )
+        
+        # Add page number
+        fig.text(0.5, 0.02, f"Page {start_page + pages_added}", 
+                 ha='center', va='bottom', fontsize=9, color='#555555')
+        
+        # Save to PDF and immediately close to prevent display
+        pdf.savefig(fig, bbox_inches='tight')
+        plt.close(fig)
+        pages_added += 1
+    
+    return pages_added
+
+
+def _generate_recall_load_sharing_pages(
+    recall_internals: Dict[str, Any],
+    pdf: PdfPages,
+    start_page: int
+) -> int:
+    """Generate recall load sharing pages with immediate figure closure."""
+    from .las_load_sharing_details import create_recall_load_sharing_page
+    
+    load_sharing_cases = recall_internals.get('load_sharing_details', [])
+    if not load_sharing_cases:
+        return 0
+    
+    # Calculate total pages (4 cases per page)
+    total_pages = (len(load_sharing_cases) + 3) // 4
+    pages_added = 0
+    
+    # Generate pages one at a time with immediate closure
+    for batch_idx in range(0, len(load_sharing_cases), 4):
+        batch_cases = load_sharing_cases[batch_idx:batch_idx + 4]
+        
+        # Include summary on last page
+        direction_summary = recall_internals if batch_idx + 4 >= len(load_sharing_cases) else None
+        
+        # Create figure
+        fig = create_recall_load_sharing_page(
+            batch_cases,
+            batch_idx // 4 + 1,
+            total_pages,
+            direction_summary
         )
         
         # Add page number
