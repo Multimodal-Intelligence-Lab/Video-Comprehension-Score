@@ -2,6 +2,8 @@ import os
 from matplotlib.backends.backend_pdf import PdfPages
 from typing import Dict, Any, List, Union
 
+from .._design_system import apply_vcs_theme
+from ._pages import create_executive_summary_page
 from ._utils import (
     pdf_matplotlib_context,
     setup_pdf_metadata,
@@ -147,8 +149,8 @@ def create_vcs_pdf_report(
         from .._window_regularizer import visualize_window_regularizer
         from .._metrics_summary import visualize_metrics_summary
         
-        # Set up consistent styling
-        setup_matplotlib_style()
+        # Apply professional VCS theme
+        apply_vcs_theme()
         
         # Create the directory if it doesn't exist
         output_dir = os.path.dirname(output_file)
@@ -179,7 +181,7 @@ def create_vcs_pdf_report(
         # Create the PDF
         with PdfPages(output_file) as pdf:
             current_page = generate_front_matter(
-                pdf, key_metrics, layout_config, toc_data
+                pdf, key_metrics, layout_config, toc_data, internals
             )
             
             current_page = generate_content_pages(

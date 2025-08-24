@@ -4,29 +4,60 @@ import datetime
 from matplotlib.backends.backend_pdf import PdfPages
 from typing import List, Tuple, Dict, Any
 
+from ..._design_system import (
+    VCSColors, VCSTypography, VCSSpacing, VCSVisualElements,
+    create_professional_figure
+)
+
 
 def create_title_page() -> plt.Figure:
-    fig = plt.figure(figsize=(8.5, 11))
-    ax = fig.add_subplot(111)
+    """Create a professional title page using VCS design system."""
+    fig, ax = create_professional_figure(
+        figsize=(8.5, 11),
+        show_branding=False  # We'll add custom branding
+    )
     ax.axis('off')
+    ax.set_xlim(0, 10)
+    ax.set_ylim(0, 10)
     
-    # Add a subtle background gradient for modern look
-    _add_background_gradient(ax)
+    # Main title
+    ax.text(5, 7, "Video Comprehension Score",
+           ha='center', va='center',
+           fontsize=VCSTypography.TITLE_SIZE + 6,
+           fontweight=VCSTypography.BOLD,
+           color=VCSColors.PRIMARY)
     
-    # Add title with modern styling - corrected to Video Comprehension Score
-    _add_main_title(ax)
+    # Subtitle
+    ax.text(5, 6.3, "Analysis Report",
+           ha='center', va='center',
+           fontsize=VCSTypography.SECTION_SIZE + 2,
+           color=VCSColors.GRAY_DARK)
     
-    # Add a decorative line with gradient
-    _add_decorative_line(ax)
+    # Professional divider
+    divider = plt.Rectangle((2, 5.8), 6, 0.03,
+                           facecolor=VCSColors.PRIMARY,
+                           alpha=0.8)
+    ax.add_patch(divider)
     
-    # Add generation date and version info
-    _add_metadata(ax)
+    # Generation info
+    current_date = datetime.datetime.now().strftime("%B %d, %Y")
+    ax.text(5, 4.5, f"Generated on {current_date}",
+           ha='center', va='center',
+           fontsize=VCSTypography.BODY_SIZE,
+           color=VCSColors.GRAY_MEDIUM)
     
-    # Add footer
-    _add_footer(ax)
+    # Version info
+    ax.text(5, 4.1, "VCS Analysis Library",
+           ha='center', va='center',
+           fontsize=VCSTypography.BODY_SIZE,
+           color=VCSColors.GRAY_MEDIUM)
     
-    # Add decorative corner elements
-    _add_corner_decorations(ax)
+    # Footer branding
+    ax.text(5, 1, "Professional Video Comprehension Analysis",
+           ha='center', va='center',
+           fontsize=VCSTypography.CAPTION_SIZE,
+           style='italic',
+           color=VCSColors.GRAY_LIGHT)
     
     return fig
 
@@ -90,7 +121,8 @@ def generate_front_matter(
     pdf: PdfPages, 
     key_metrics: Dict[str, Any], 
     layout_config: Dict[str, Any], 
-    toc_data: List[Tuple]
+    toc_data: List[Tuple],
+    internals: Dict[str, Any] = None
 ) -> int:
     """Generate front matter pages (title, metrics, TOC) and return current page number."""
     current_page = 2
@@ -100,7 +132,15 @@ def generate_front_matter(
     pdf.savefig(title_page, bbox_inches='tight')
     plt.close(title_page)
     
-    # Optional metrics summary page
+    # Second page: Executive Summary (always included when internals available)
+    if internals is not None:
+        from .._pages import create_executive_summary_page
+        exec_summary = create_executive_summary_page(internals)
+        pdf.savefig(exec_summary, bbox_inches='tight')
+        plt.close(exec_summary)
+        current_page += 1
+    
+    # Optional metrics summary page (kept for backward compatibility)
     if layout_config['include_metrics_page']:
         metrics_page = create_metrics_page(**key_metrics)
         pdf.savefig(metrics_page, bbox_inches='tight')
