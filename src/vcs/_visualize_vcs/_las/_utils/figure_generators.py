@@ -4,8 +4,8 @@ from typing import Dict, Any
 def create_load_sharing_details_figure(las_internals: Dict[str, Any]) -> plt.Figure:
     """Create a detailed figure showing load sharing analysis for both directions."""
     
-    precision_internals = las_internals.get('precision', {})
-    recall_internals = las_internals.get('recall', {})
+    precision_internals = las_internals.get('precision_internals', {})
+    recall_internals = las_internals.get('recall_internals', {})
     
     # Create figure with 2 columns (precision and recall)
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(20, 12))

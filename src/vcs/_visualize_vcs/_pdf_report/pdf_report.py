@@ -47,6 +47,7 @@ def create_vcs_pdf_report(
           - ``"Mapping Windows"`` : Alignment windows
           - ``"Best Match"`` : Match analysis details
           - ``"LAS"`` : Local Alignment Score analysis
+          - ``"LAS Load Sharing"`` : Load sharing penalty analysis
           - ``"NAS Distance"`` : Distance-based NAS analysis
           - ``"NAS Line"`` : Line-based NAS analysis  
           - ``"Window Regularizer"`` : Regularization analysis

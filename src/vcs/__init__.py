@@ -29,6 +29,7 @@ from ._visualize_vcs import (
     visualize_line_nas_recall_calculations,  
     visualize_distance_nas,
     visualize_las,
+    visualize_las_load_sharing,
     visualize_window_regularizer,
     visualize_metrics_summary,
     create_vcs_pdf_report
@@ -62,6 +63,7 @@ __all__ = [
     "visualize_line_nas_recall_calculations",
     "visualize_distance_nas",
     "visualize_las",
+    "visualize_las_load_sharing",
     "visualize_window_regularizer",
     "visualize_metrics_summary",
     "create_vcs_pdf_report",

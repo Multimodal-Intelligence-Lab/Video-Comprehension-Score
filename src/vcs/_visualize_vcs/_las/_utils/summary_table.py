@@ -5,8 +5,8 @@ from typing import Dict, Any
 def create_load_sharing_summary_table_figure(las_internals: Dict[str, Any]) -> plt.Figure:
     """Create a summary table showing load sharing statistics for both directions."""
     
-    precision_internals = las_internals.get('precision', {})
-    recall_internals = las_internals.get('recall', {})
+    precision_internals = las_internals.get('precision_internals', {})
+    recall_internals = las_internals.get('recall_internals', {})
     
     # Extract data for both directions
     precision_stats = _extract_load_sharing_stats(precision_internals, "Precision")
