@@ -153,9 +153,9 @@ def estimate_pages_for_metric(metric_key: str, internals: Dict[str, Any]) -> int
 
 def estimate_las_load_sharing_pages(internals: Dict[str, Any]) -> int:
     """Estimate the number of pages needed for LAS load sharing content."""
-    las_internals = internals.get('metrics', {}).get('las', {})
-    precision_internals = las_internals.get('precision_internals', {})
-    recall_internals = las_internals.get('recall_internals', {})
+    las_metrics = internals.get('metrics', {}).get('las', {})
+    precision_internals = las_metrics.get('precision_internals', {})
+    recall_internals = las_metrics.get('recall_internals', {})
     
     precision_cases = precision_internals.get('load_sharing_details', [])
     recall_cases = recall_internals.get('load_sharing_details', [])
