@@ -7,6 +7,58 @@ from .summary_tables import create_precision_matches_summary_page, create_recall
 from .empty_states import create_empty_precision_matches_page, create_empty_recall_matches_page
 
 
+def generate_las_load_sharing_pages(internals: Dict[str, Any], pdf: PdfPages, start_page: int) -> int:
+    """Generate LAS load sharing pages with proper figure management."""
+    from ..._las import visualize_las_load_sharing
+    
+    page_count = 0
+    current_page = start_page
+    
+    # Generate load sharing visualizations
+    try:
+        las_load_sharing_figs = visualize_las_load_sharing(internals)
+        
+        # Add summary table page
+        if 'summary_table' in las_load_sharing_figs:
+            pdf.savefig(las_load_sharing_figs['summary_table'], bbox_inches='tight')
+            las_load_sharing_figs['summary_table'].close()
+            page_count += 1
+        
+        # Add main details page
+        if 'load_sharing_details' in las_load_sharing_figs:
+            pdf.savefig(las_load_sharing_figs['load_sharing_details'], bbox_inches='tight')
+            las_load_sharing_figs['load_sharing_details'].close()
+            page_count += 1
+        
+        # Add precision details page if there are precision cases
+        if 'precision_load_sharing' in las_load_sharing_figs:
+            las_internals = internals.get('metrics', {}).get('las', {})
+            precision_internals = las_internals.get('precision_internals', {})
+            if precision_internals.get('load_sharing_details', []):
+                pdf.savefig(las_load_sharing_figs['precision_load_sharing'], bbox_inches='tight')
+                page_count += 1
+            las_load_sharing_figs['precision_load_sharing'].close()
+        
+        # Add recall details page if there are recall cases  
+        if 'recall_load_sharing' in las_load_sharing_figs:
+            las_internals = internals.get('metrics', {}).get('las', {})
+            recall_internals = las_internals.get('recall_internals', {})
+            if recall_internals.get('load_sharing_details', []):
+                pdf.savefig(las_load_sharing_figs['recall_load_sharing'], bbox_inches='tight')
+                page_count += 1
+            las_load_sharing_figs['recall_load_sharing'].close()
+            
+    except Exception as e:
+        print(f"Warning: Could not generate LAS load sharing pages: {e}")
+        # Create a placeholder page
+        from .empty_states import create_empty_las_load_sharing_page
+        fig = create_empty_las_load_sharing_page()
+        pdf.savefig(fig, bbox_inches='tight')
+        fig.close()
+        page_count = 1
+    
+    return page_count
+
 def generate_best_match_pages(internals: Dict[str, Any], pdf: PdfPages, start_page: int) -> int:
     """Generate best match pages with proper figure management to prevent console display."""
     page_count = 0
@@ -63,6 +115,10 @@ def generate_content_pages(
                 # Special handling for Best Match section - memory efficient version
                 best_match_pages = generate_best_match_pages(internals, pdf, current_page)
                 current_page += best_match_pages
+            elif metric_key == "LAS Load Sharing" and (include_all or "LAS Load Sharing" in metrics_list):
+                # Special handling for LAS Load Sharing section - multiple pages
+                las_load_sharing_pages = generate_las_load_sharing_pages(internals, pdf, current_page)
+                current_page += las_load_sharing_pages
             elif item_generator == "PAGINATED_CONTENT":
                 # Handle paginated content - generate ALL pages
                 if item_name == "Reference Chunks":

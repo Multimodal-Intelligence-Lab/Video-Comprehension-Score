@@ -1,5 +1,22 @@
 import matplotlib.pyplot as plt
 
+def create_empty_las_load_sharing_page() -> plt.Figure:
+    """Create an empty LAS load sharing page when data is unavailable."""
+    fig, ax = plt.subplots(1, 1, figsize=(11, 8.5))
+    
+    ax.text(0.5, 0.5, 
+           "LAS Load Sharing Analysis\n\n"
+           "No load sharing data available or\n"
+           "an error occurred generating the visualization.",
+           ha='center', va='center', transform=ax.transAxes,
+           fontsize=16, 
+           bbox=dict(boxstyle="round,pad=0.5", facecolor="lightgray", alpha=0.7))
+    
+    ax.set_title('LAS Load Sharing - Data Unavailable', fontsize=18, fontweight='bold')
+    ax.axis('off')
+    
+    return fig
+
 
 def create_empty_precision_matches_page() -> plt.Figure:
     fig, ax = plt.subplots(figsize=(15, 10))

@@ -113,7 +113,8 @@ def create_section_structure(
             ("Best Match Details", "Best Match", lambda: None)  # Special handling for paginated content
         ]),
         ("Local Alignment Score (LAS)", [
-            ("LAS Visualization", "LAS", lambda: visualize_las(internals))
+            ("LAS Visualization", "LAS", lambda: visualize_las(internals)),
+            ("LAS Load Sharing Details", "LAS Load Sharing", lambda: None)  # Special handling for multiple pages
         ]),
         ("Narrative Alignment Score (NAS)", [
             ("Distance-based NAS", "NAS Distance", lambda: visualize_distance_nas(internals)),
@@ -129,6 +130,8 @@ def estimate_pages_for_metric(metric_key: str, internals: Dict[str, Any]) -> int
 
     if metric_key == "Best Match":
         return estimate_best_match_pages(internals)
+    elif metric_key == "LAS Load Sharing":
+        return estimate_las_load_sharing_pages(internals)
     elif metric_key == "Text Chunks":
         # Text chunks might be paginated
         ref_chunks = internals['texts']['reference_chunks']
@@ -147,6 +150,24 @@ def estimate_pages_for_metric(metric_key: str, internals: Dict[str, Any]) -> int
         # Most other metrics are single-page
         return 1
 
+
+def estimate_las_load_sharing_pages(internals: Dict[str, Any]) -> int:
+    """Estimate the number of pages needed for LAS load sharing content."""
+    las_internals = internals.get('metrics', {}).get('las', {})
+    precision_internals = las_internals.get('precision_internals', {})
+    recall_internals = las_internals.get('recall_internals', {})
+    
+    precision_cases = precision_internals.get('load_sharing_details', [])
+    recall_cases = recall_internals.get('load_sharing_details', [])
+    
+    # Estimate pages: 1 summary + 1 details + 1 each for precision/recall if they have cases
+    pages = 2  # Summary table + main details figure
+    if precision_cases:
+        pages += 1  # Precision details page
+    if recall_cases: 
+        pages += 1  # Recall details page
+    
+    return pages
 
 def estimate_best_match_pages(internals: Dict[str, Any]) -> int:
     """Estimate the number of pages needed for best match content."""
@@ -185,7 +206,7 @@ def estimate_paginated_content_pages(item_name: str, internals: Dict[str, Any]) 
 def validate_metrics_list(metrics_list: List[str]) -> List[str]:
     valid_metrics = {
         "Config", "Overview", "Text Chunks", "Similarity Matrix", 
-        "Mapping Windows", "Best Match", "LAS", "NAS Distance", 
+        "Mapping Windows", "Best Match", "LAS", "LAS Load Sharing", "NAS Distance", 
         "NAS Line", "Window Regularizer"
     }
     
