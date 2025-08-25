@@ -1635,12 +1635,12 @@
             lct_window_base = Math.max(0, lct_window_base);
             let expanded_lct_window;
             if (totalRefChunks <= totalGenChunks) {
-                expanded_lct_window = lctValue > 0 ? lct_window_base + (mappingWindowHeight * lctValue) : lct_window_base;
+                expanded_lct_window = lctValue > 0 ? lct_window_base +  lctValue : lct_window_base;
             } else {
                 if (ratioDecimalPart > 0 && ratioDecimalPart <= 0.5) {
-                    expanded_lct_window = lctValue > 0 ? lct_window_base + ((mappingWindowHeight - 1) * lctValue) : lct_window_base;
+                    expanded_lct_window = lctValue > 0 ? lct_window_base +  lctValue : lct_window_base;
                 } else {
-                    expanded_lct_window = lctValue > 0 ? lct_window_base + (mappingWindowHeight * lctValue) : lct_window_base;
+                    expanded_lct_window = lctValue > 0 ? lct_window_base +  lctValue : lct_window_base;
                 }
             }
             

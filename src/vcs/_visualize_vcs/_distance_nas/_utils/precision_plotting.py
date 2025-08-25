@@ -30,12 +30,11 @@ def draw_precision_mapping_content(ax: plt.Axes, internals: Dict[str, Any],
     precision_indices = internals['alignment']['precision']['indices']
     precision_windows = internals['mapping_windows']['precision']
     prec_nas_data = internals['metrics']['nas']['nas_d']['precision']
-    prec_window_height = prec_nas_data['mapping_window_height']
     
     # Draw mapping windows with LCT
     draw_mapping_windows_with_lct(
         ax, precision_windows, precision_indices, lct, 
-        prec_window_height, ref_len, 'precision'
+        ref_len, 'precision'
     )
     
     # Draw points and distance lines
@@ -59,7 +58,6 @@ def draw_precision_mapping_content(ax: plt.Axes, internals: Dict[str, Any],
 def draw_precision_penalty_plot(ax: plt.Axes, internals: Dict[str, Any], lct: int) -> None:
     """Draw precision penalty visualization."""
     prec_nas_data = internals['metrics']['nas']['nas_d']['precision']
-    prec_window_height = prec_nas_data['mapping_window_height']
     
     # Get penalty data
     penalties = np.array(prec_nas_data['penalties'])
@@ -78,4 +76,4 @@ def draw_precision_penalty_plot(ax: plt.Axes, internals: Dict[str, Any], lct: in
     
     # Add legend and metrics text
     add_penalty_legend(ax, lct)
-    add_penalty_metrics_text(ax, prec_nas_data, 'Precision', lct, prec_window_height)
+    add_penalty_metrics_text(ax, prec_nas_data, 'Precision', lct)

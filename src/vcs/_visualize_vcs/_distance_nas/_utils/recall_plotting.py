@@ -30,12 +30,11 @@ def draw_recall_mapping_content(ax: plt.Axes, internals: Dict[str, Any],
     recall_indices = internals['alignment']['recall']['indices']
     recall_windows = internals['mapping_windows']['recall']
     rec_nas_data = internals['metrics']['nas']['nas_d']['recall']
-    rec_window_height = rec_nas_data['mapping_window_height']
     
     # Draw mapping windows with LCT
     draw_mapping_windows_with_lct(
         ax, recall_windows, recall_indices, lct, 
-        rec_window_height, gen_len, 'recall'
+        gen_len, 'recall'
     )
     
     # Draw points and distance lines
@@ -59,7 +58,6 @@ def draw_recall_mapping_content(ax: plt.Axes, internals: Dict[str, Any],
 def draw_recall_penalty_plot(ax: plt.Axes, internals: Dict[str, Any], lct: int) -> None:
     """Draw recall penalty visualization."""
     rec_nas_data = internals['metrics']['nas']['nas_d']['recall']
-    rec_window_height = rec_nas_data['mapping_window_height']
     
     # Get penalty data
     penalties = np.array(rec_nas_data['penalties'])
@@ -78,4 +76,4 @@ def draw_recall_penalty_plot(ax: plt.Axes, internals: Dict[str, Any], lct: int) 
     
     # Add legend and metrics text
     add_penalty_legend(ax, lct)
-    add_penalty_metrics_text(ax, rec_nas_data, 'Recall', lct, rec_window_height)
+    add_penalty_metrics_text(ax, rec_nas_data, 'Recall', lct)

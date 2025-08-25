@@ -55,7 +55,7 @@ def calculate_actual_penalty(
             
         start, end = mapping_windows[i]
         dist = start - idx if idx < start else idx - (end - 1)
-        dist = 0 if dist <= lct*lct_window else dist
+        dist = 0 if dist <= lct else dist
         penalties[i] = dist / float(length) if length else 0
     
     in_lct_zone = np.zeros_like(best_indices, dtype=bool)
@@ -64,7 +64,7 @@ def calculate_actual_penalty(
             start, end = mapping_windows[i]
             original_in_window = start <= idx < end
             if not original_in_window and lct > 0:
-                lct_in_zone = (start - lct*lct_window <= idx < end + lct*lct_window)
+                lct_in_zone = (start - lct <= idx < end + lct)
                 in_lct_zone[i] = lct_in_zone
     
     internals = {

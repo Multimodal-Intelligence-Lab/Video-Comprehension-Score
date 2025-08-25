@@ -30,15 +30,11 @@ def _compute_actual_line_length(
     
     if y_axis <= x_axis:
         lct_window = mapping_window_height
-        expanded_lct_window = lct_window + (mapping_window_height * lct) if lct > 0 else lct_window
-
     else:
         if 0 < ratio_decimal_part <= 0.5:
             lct_window = (2 * mapping_window_height) - 2
-            expanded_lct_window = lct_window + ((mapping_window_height - 1) * lct) if lct > 0 else lct_window
         else:
             lct_window = (2 * mapping_window_height) - 1
-            expanded_lct_window = lct_window + (mapping_window_height * lct) if lct > 0 else lct_window
 
     for i in range(len(dx)):
 
@@ -56,7 +52,7 @@ def _compute_actual_line_length(
             calculation_method = "standard"
             
         # CASE 2: Large vertical jumps but within LCT range
-        elif lct > 0 and dy_value > lct_window and dy_value <= expanded_lct_window:
+        elif lct > 0 and dy_value > lct_window and dy_value <= lct_window+lct:
             is_calculable = True
             floor_dy = None
             if floor_path_dy_map and x_arr[i] in floor_path_dy_map:
@@ -75,7 +71,7 @@ def _compute_actual_line_length(
             "dx": int(dx[i]),
             "dy": int(dy[i]),
             "threshold": float(lct_window),
-            "threshold_with_lct": float(expanded_lct_window),
+            "threshold_with_lct": float(lct_window+lct),
             "is_calculable": is_calculable,
             "calculation_method": calculation_method,
             "length": float(segment_length)

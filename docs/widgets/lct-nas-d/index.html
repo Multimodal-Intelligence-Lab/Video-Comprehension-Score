@@ -1158,7 +1158,7 @@
         // --- CORE LOGIC ---
         function get_mapping_windows_js(refLen, genLen) { const isRefLonger = refLen >= genLen; const longerLen = isRefLonger ? refLen : genLen; const shorterLen = isRefLonger ? genLen : refLen; if (shorterLen === 0) return { precision_windows: [], recall_windows: [] }; const slope = longerLen / shorterLen; const mappingWindowHeight = Math.ceil(slope); let direct_windows = []; for (let i = 0; i < shorterLen; i++) { const idx_point = i * slope; const start = Math.floor(idx_point); const end = Math.min(start + mappingWindowHeight, longerLen); direct_windows.push({ start, end }); } let reverse_windows = Array(longerLen).fill(null).map((_, longIdx) => { const shortIndices = direct_windows.map((dw, shortIdx) => (dw.start <= longIdx && longIdx < dw.end) ? shortIdx : -1).filter(idx => idx !== -1); if (shortIndices.length > 0) { return { start: Math.min(...shortIndices), end: Math.max(...shortIndices) + 1 }; } else { return null; }}); for (let i = 0; i < longerLen; i++) { if (reverse_windows[i] === null) { const proportionalYPos = Math.max(0, Math.min(shorterLen - 1, Math.floor((i / longerLen) * shorterLen))); reverse_windows[i] = { start: proportionalYPos, end: Math.min(proportionalYPos + 1, shorterLen) };}} return isRefLonger ? { precision_windows: direct_windows, recall_windows: reverse_windows } : { precision_windows: reverse_windows, recall_windows: direct_windows }; }
         function calculate_lct_window_js(y_axis, x_axis) { if (x_axis === 0) return 0; const ratio = y_axis / x_axis; const mappingWindowHeight = Math.ceil(ratio); const ratioDecimalPart = ratio - Math.floor(ratio); if (y_axis <= x_axis) { return mappingWindowHeight; } else { if (0 < ratioDecimalPart && ratioDecimalPart <= 0.5) { return mappingWindowHeight - 1; } else { return mappingWindowHeight; } } }
-        function calculate_penalty_for_marker(markerX, markerY, lct, idealWindow) { if (!idealWindow) return { penalty: 1.0, forgiven: false, rawDistance: numUnitsY }; let dist; if (markerY >= idealWindow.start && markerY < idealWindow.end) { dist = 0; } else if (markerY < idealWindow.start) { dist = idealWindow.start - markerY; } else { dist = markerY - (idealWindow.end - 1); } const tolerance = lct * calculate_lct_window_js(numUnitsY, numUnitsX); const effective_dist = (dist <= tolerance) ? 0 : dist; return { penalty: numUnitsY > 0 ? effective_dist / numUnitsY : 0, forgiven: dist > 0 && effective_dist === 0, rawDistance: dist }; }
+        function calculate_penalty_for_marker(markerX, markerY, lct, idealWindow) { if (!idealWindow) return { penalty: 1.0, forgiven: false, rawDistance: numUnitsY }; let dist; if (markerY >= idealWindow.start && markerY < idealWindow.end) { dist = 0; } else if (markerY < idealWindow.start) { dist = idealWindow.start - markerY; } else { dist = markerY - (idealWindow.end - 1); } const tolerance = lct; const effective_dist = (dist <= tolerance) ? 0 : dist; return { penalty: numUnitsY > 0 ? effective_dist / numUnitsY : 0, forgiven: dist > 0 && effective_dist === 0, rawDistance: dist }; }
         function calculate_max_penalty_js() { let sum_max_dist = 0; if (!currentPrecisionWindows || currentPrecisionWindows.length === 0) return 0; currentPrecisionWindows.forEach(window => { sum_max_dist += Math.max(window.start, (numUnitsY - 1) - (window.end - 1)); }); return numUnitsY > 0 ? sum_max_dist / numUnitsY : 0.0; }
         function calculate_all_scores(markers, lct) { let totalPenalty = 0; markers.forEach(marker => { const idealWindow = currentPrecisionWindows[marker.currentX]; if(idealWindow) { totalPenalty += calculate_penalty_for_marker(marker.currentX, marker.currentY, lct, idealWindow).penalty; } }); const maxPenalty = calculate_max_penalty_js(); const nasScore = maxPenalty > 0 ? (1 - (totalPenalty / maxPenalty)) : (totalPenalty > 0 ? 0 : 1); return { totalPenalty, maxPenalty, nasScore: Math.max(0, nasScore) }; }
 
@@ -1336,8 +1336,8 @@
                     div.style.opacity = '0';
                 } else {
                     // Expand the window to its calculated size
-                    const padBottom = Math.max(0, win.start - (lctValue * lctUnitHeight));
-                    const padTop = Math.min(numUnitsY, win.end + (lctValue * lctUnitHeight));
+                    const padBottom = Math.max(0, win.start - lctValue);
+                    const padTop = Math.min(numUnitsY, win.end + lctValue);
                     div.style.bottom = `calc(${padBottom} * 100% / ${numUnitsY})`;
                     div.style.height = `calc(${(padTop - padBottom)} * 100% / ${numUnitsY})`;
                     div.style.opacity = '1';
@@ -1456,7 +1456,7 @@
             // FIX: These elements do not exist in the DOM, causing a TypeError.
             // formulaActual.textContent = totalPenalty.toFixed(3);
             // formulaMax.textContent = maxPenalty.toFixed(3);
-            const tolerance = lctValue * calculate_lct_window_js(numUnitsY, numUnitsX);
+            const tolerance = lctValue;
             currentToleranceDisplay.textContent = `${tolerance} blocks`;
             updateDynamicBackground(nasScore);
         }

@@ -4,7 +4,7 @@ from matplotlib.lines import Line2D
 from typing import List, Tuple, Dict, Any
 
 def draw_mapping_windows_with_lct(ax: plt.Axes, windows: List[Tuple[int, int]], 
-                                 indices: List[int], lct: int, window_height: float,
+                                 indices: List[int], lct: int,
                                  max_len: int, window_type: str = 'precision') -> None:
     """Draw mapping windows with LCT padding zones."""
     color_map = {'precision': 'blue', 'recall': 'red'}
@@ -21,7 +21,7 @@ def draw_mapping_windows_with_lct(ax: plt.Axes, windows: List[Tuple[int, int]],
             
             # LCT padding zone (if lct > 0)
             if lct > 0:
-                lct_padding = lct * window_height
+                lct_padding = lct
                 expanded_start = max(0, start - lct_padding)
                 expanded_end = min(max_len, end + lct_padding)
                 
