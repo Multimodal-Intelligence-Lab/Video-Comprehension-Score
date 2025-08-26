@@ -10,7 +10,7 @@ import torch
 from ._config import (
     DEFAULT_CONTEXT_CUTOFF_VALUE,
     DEFAULT_CONTEXT_WINDOW_CONTROL,
-    DEFAULT_LCT,
+    DEFAULT_Rn,
     DEFAULT_CHUNK_SIZE,
 )
 from ._utils import _validate_seg_embed_functions
@@ -34,7 +34,7 @@ def compute_vcs_score(
     chunk_size: int = DEFAULT_CHUNK_SIZE,
     context_cutoff_value: float = DEFAULT_CONTEXT_CUTOFF_VALUE,
     context_window_control: float = DEFAULT_CONTEXT_WINDOW_CONTROL,
-    lct: int = DEFAULT_LCT,
+    Rn: int = DEFAULT_Rn,
     return_all_metrics: bool = False,
     return_internals: bool = False,
 ) -> Dict[str, Any]:
@@ -96,13 +96,13 @@ def compute_vcs_score(
         Controls the size of context windows when they are applied. Larger values 
         create smaller context windows (more restrictive), while smaller values 
         create larger context windows (more permissive).
-    lct : int, default=0
-        Local Chronology Tolerance - allows flexibility in narrative ordering. 
+    Rn : int, default=0
+        NAS Regularizer - allows flexibility in narrative ordering. 
         Higher values permit more deviation from strict chronological order:
         
-        - ``lct=0``: Strict chronological order required
-        - ``lct=1``: Small deviations allowed
-        - ``lct=2+``: More flexible chronological matching
+        - ``Rn=0``: Strict chronological order required
+        - ``Rn=1``: Small deviations allowed
+        - ``Rn=2+``: More flexible chronological matching
     return_all_metrics : bool, default=False
         If True, returns all intermediate metrics (GAS, LAS, NAS components) in 
         addition to the final VCS score. Useful for detailed analysis.
@@ -197,7 +197,7 @@ def compute_vcs_score(
             chunk_size=2,
             context_cutoff_value=0.7,
             context_window_control=3.0,
-            lct=1
+            Rn=1
         )
     
     **Different Embedding Functions for GAS and LAS:**
@@ -225,7 +225,7 @@ def compute_vcs_score(
             chunk_size=2,
             context_cutoff_value=0.7,
             context_window_control=3.0,
-            lct=1,
+            Rn=1,
             return_all_metrics=True,
             return_internals=True
         )
@@ -282,7 +282,7 @@ def compute_vcs_score(
         recall_matches, recall_indices, recall_sim_values,
         prec_map_windows, rec_map_windows,
         ref_chunks, gen_chunks,
-        lct=lct
+        Rn=Rn
     )
     combined = _compute_vcs_metrics(
         gas_val, nas_metrics["NAS"], las_metrics["LAS"]
@@ -344,7 +344,7 @@ def compute_vcs_score(
                             "total_penalty": nas_internals["precision_nas_internals"]["total_penalty"],
                             "penalties": nas_internals["precision_nas_internals"]["penalties"],
                             "in_window": nas_internals["precision_nas_internals"]["in_window"],
-                            "in_lct_zone": nas_internals["precision_nas_internals"]["in_lct_zone"],
+                            "in_Rn_zone": nas_internals["precision_nas_internals"]["in_Rn_zone"],
                         },
                         "recall": {
                             "value": nas_metrics["Recall NAS-D"],
@@ -353,7 +353,7 @@ def compute_vcs_score(
                             "total_penalty": nas_internals["recall_nas_internals"]["total_penalty"],
                             "penalties": nas_internals["recall_nas_internals"]["penalties"],
                             "in_window": nas_internals["recall_nas_internals"]["in_window"],
-                            "in_lct_zone": nas_internals["recall_nas_internals"]["in_lct_zone"],
+                            "in_Rn_zone": nas_internals["recall_nas_internals"]["in_Rn_zone"],
                         },
                         "f1": nas_metrics["NAS-D"],
                     },
@@ -400,7 +400,7 @@ def compute_vcs_score(
                 "chunk_size": chunk_size,
                 "context_cutoff_value": context_cutoff_value,
                 "context_window_control": context_window_control,
-                "lct": lct,
+                "Rn": Rn,
             },
             "best_match": {
                 "precision": precision_match_details,

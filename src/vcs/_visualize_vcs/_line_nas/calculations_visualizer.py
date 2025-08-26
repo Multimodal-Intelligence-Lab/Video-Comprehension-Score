@@ -3,13 +3,13 @@ from typing import Dict, Any, List
 from ._utils import (
     paginate_segments, should_paginate, create_base_calculation_figure, 
     finalize_calculation_figure, create_empty_segments_figure,
-    generate_summary_text, generate_calculation_method_text, generate_lct_note,
+    generate_summary_text, generate_calculation_method_text, generate_Rn_note,
     create_segment_table
 )
 
 def create_line_nas_calculation_figure(title: str, segments: List[Dict], 
                                      summary_data: Dict[str, float], 
-                                     lct: int, page_num: int, total_pages: int) -> plt.Figure:
+                                     Rn: int, page_num: int, total_pages: int) -> plt.Figure:
     """Create a figure for a page of Line NAS calculation details."""
     # Create base figure
     fig, ax = create_base_calculation_figure(title, page_num, total_pages)
@@ -27,10 +27,10 @@ def create_line_nas_calculation_figure(title: str, segments: List[Dict],
             ha='center', va='center', fontsize=10, transform=ax.transAxes)
     
     # Create and display segment table
-    segments_text = create_segment_table(segments, lct)
+    segments_text = create_segment_table(segments, Rn)
     
     # Add LCT note if applicable
-    segments_text += generate_lct_note(lct)
+    segments_text += generate_Rn_note(Rn)
     
     # Display segment table
     plt.text(0.5, 0.4, segments_text, 
@@ -77,7 +77,7 @@ def visualize_line_nas_precision_calculations(internals: Dict[str, Any]) -> List
             embedding_fn_las=your_embedder,
             return_internals=True,
             return_all_metrics=True,
-            lct=1
+            Rn=1
         )
         precision_figs = visualize_line_nas_precision_calculations(result['internals'])
         for fig in precision_figs:
@@ -93,7 +93,7 @@ def visualize_line_nas_precision_calculations(internals: Dict[str, Any]) -> List
     visualize_line_nas_recall_calculations : Corresponding recall analysis
     """
     precision_line_data = internals['metrics']['nas']['nas_l']['precision']
-    lct = internals['config']['lct']
+    Rn = internals['config']['Rn']
     segments = precision_line_data.get('segments', [])
     
     # Handle empty segments
@@ -108,7 +108,7 @@ def visualize_line_nas_precision_calculations(internals: Dict[str, Any]) -> List
             "Precision Line-based NAS Calculation Details",
             segments,
             precision_line_data,
-            lct,
+            Rn,
             1, 1
         )
         return [fig]
@@ -122,7 +122,7 @@ def visualize_line_nas_precision_calculations(internals: Dict[str, Any]) -> List
             "Precision Line-based NAS Calculation Details",
             page_segments,
             precision_line_data,
-            lct,
+            Rn,
             i + 1,
             len(paginated_segments)
         )
@@ -165,7 +165,7 @@ def visualize_line_nas_recall_calculations(internals: Dict[str, Any]) -> List[pl
             embedding_fn_las=your_embedder,
             return_internals=True,
             return_all_metrics=True,
-            lct=1
+            Rn=1
         )
         recall_figs = visualize_line_nas_recall_calculations(result['internals'])
         for fig in recall_figs:
@@ -177,7 +177,7 @@ def visualize_line_nas_recall_calculations(internals: Dict[str, Any]) -> List[pl
     visualize_line_nas_precision_calculations : Corresponding precision analysis
     """
     recall_line_data = internals['metrics']['nas']['nas_l']['recall']
-    lct = internals['config']['lct']
+    Rn = internals['config']['Rn']
     segments = recall_line_data.get('segments', [])
     
     # Handle empty segments
@@ -192,7 +192,7 @@ def visualize_line_nas_recall_calculations(internals: Dict[str, Any]) -> List[pl
             "Recall Line-based NAS Calculation Details",
             segments,
             recall_line_data,
-            lct,
+            Rn,
             1, 1
         )
         return [fig]
@@ -206,7 +206,7 @@ def visualize_line_nas_recall_calculations(internals: Dict[str, Any]) -> List[pl
             "Recall Line-based NAS Calculation Details",
             page_segments,
             recall_line_data,
-            lct,
+            Rn,
             i + 1,
             len(paginated_segments)
         )

@@ -10,10 +10,10 @@ def _calculate_line_based_nas(
     ref_len: int, 
     gen_len: int, 
     swap: bool = False,
-    lct: int = 0
+    Rn: int = 0
 ) -> Tuple[float, Dict[str, Any]]:
     if not aligned:
-        return 0.0, {"message": "No aligned segments"}
+        retuRn 0.0, {"message": "No aligned segments"}
     
     if not swap:
         source_len = ref_len
@@ -39,7 +39,7 @@ def _calculate_line_based_nas(
             dy = floor_path[i+1][1] - floor_path[i][1]
             floor_path_dy_map[x_pos] = dy
     
-    actual_line_length, segments = _compute_actual_line_length(sx, sy, source_len, target_len, lct, floor_path_dy_map)
+    actual_line_length, segments = _compute_actual_line_length(sx, sy, source_len, target_len, Rn, floor_path_dy_map)
     average_ideal_line_length = (floor_ideal_line_length + ceil_ideal_line_length) / 2
 
     if floor_ideal_line_length <= actual_line_length <= ceil_ideal_line_length:
@@ -51,7 +51,7 @@ def _calculate_line_based_nas(
     
     actual_path = [(int(x), int(y)) for x, y in zip(sx, sy)]
     
-    internals = {
+    inteRnals = {
         "actual_line_length": actual_line_length,
         "floor_ideal_line_length": floor_ideal_line_length,
         "ceil_ideal_line_length": ceil_ideal_line_length,
@@ -62,4 +62,4 @@ def _calculate_line_based_nas(
         "ceil_path": ceil_path
     }
     
-    return line_nas, internals
+    retuRn line_nas, inteRnals

@@ -48,7 +48,7 @@ def visualize_distance_nas(internals: Dict[str, Any]) -> plt.Figure:
     # Extract basic data
     ref_len = internals['texts']['reference_length']
     gen_len = internals['texts']['generated_length']
-    lct = internals['config']['lct']
+    Rn = internals['config']['Rn']
     
     # Get NAS data for window heights
     prec_nas_data = internals['metrics']['nas']['nas_d']['precision']
@@ -61,21 +61,21 @@ def visualize_distance_nas(internals: Dict[str, Any]) -> plt.Figure:
     
     # PRECISION MAPPING PLOT (top-left)
     ax_prec_mapping = axes[0, 0]
-    setup_precision_mapping_plot(ax_prec_mapping, gen_len, ref_len, lct, prec_window_height)
-    draw_precision_mapping_content(ax_prec_mapping, internals, ref_len, gen_len, lct)
+    setup_precision_mapping_plot(ax_prec_mapping, gen_len, ref_len, Rn, prec_window_height)
+    draw_precision_mapping_content(ax_prec_mapping, internals, ref_len, gen_len, Rn)
     
     # RECALL MAPPING PLOT (top-right)
     ax_rec_mapping = axes[0, 1]
-    setup_recall_mapping_plot(ax_rec_mapping, ref_len, gen_len, lct, rec_window_height)
-    draw_recall_mapping_content(ax_rec_mapping, internals, ref_len, gen_len, lct)
+    setup_recall_mapping_plot(ax_rec_mapping, ref_len, gen_len, Rn, rec_window_height)
+    draw_recall_mapping_content(ax_rec_mapping, internals, ref_len, gen_len, Rn)
     
     # PRECISION PENALTY PLOT (bottom-left)
     ax_prec_penalties = axes[1, 0]
-    draw_precision_penalty_plot(ax_prec_penalties, internals, lct)
+    draw_precision_penalty_plot(ax_prec_penalties, internals, Rn)
     
     # RECALL PENALTY PLOT (bottom-right)
     ax_rec_penalties = axes[1, 1]
-    draw_recall_penalty_plot(ax_rec_penalties, internals, lct)
+    draw_recall_penalty_plot(ax_rec_penalties, internals, Rn)
     
     # Set overall title and layout
     fig.suptitle('Distance-based NAS Metrics', fontsize=16)

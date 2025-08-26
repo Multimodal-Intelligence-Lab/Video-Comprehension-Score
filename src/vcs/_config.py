@@ -99,8 +99,8 @@ See Also
 DEFAULT_CONTEXT_CUTOFF_VALUE : Controls when context windows are applied
 """
 
-DEFAULT_LCT = 0
-"""Default Local Chronology Tolerance (LCT) value.
+DEFAULT_Rn = 0
+"""Default NAS Regularizer (Rn) value.
 
 Controls how much flexibility is allowed in narrative chronological ordering.
 Higher values permit more deviation from strict temporal sequence, while 0
@@ -125,25 +125,25 @@ Notes
 
 Use Cases
 ---------
-* LCT=0: News articles, stories, procedural text (strict temporal order)
-* LCT=1: Summaries, descriptions (minor reordering acceptable)  
-* LCT=2+: Creative text, flexible narratives (more reordering acceptable)
+* Rn=0: News articles, stories, procedural text (strict temporal order)
+* Rn=1: Summaries, descriptions (minor reordering acceptable)  
+* Rn=2+: Creative text, flexible narratives (more reordering acceptable)
 
 Examples
 --------
 >>> # Strict chronological ordering (default)
->>> result = compute_vcs_score(ref, gen, seg, emb, lct=0)
+>>> result = compute_vcs_score(ref, gen, seg, emb, Rn=0)
 
 >>> # Allow minor reordering
->>> result = compute_vcs_score(ref, gen, seg, emb, lct=1)
+>>> result = compute_vcs_score(ref, gen, seg, emb, Rn=1)
 
 >>> # Allow more flexible ordering
->>> result = compute_vcs_score(ref, gen, seg, emb, lct=2)
+>>> result = compute_vcs_score(ref, gen, seg, emb, Rn=2)
 
 See Also
 --------
-compute_vcs_score : Parameter description for detailed LCT behavior
-visualize_distance_nas : See LCT effects on penalty calculations
+compute_vcs_score : Parameter description for detailed Rn behavior
+visualize_distance_nas : See Rn effects on penalty calculations
 """
 
 DEFAULT_CHUNK_SIZE = 1

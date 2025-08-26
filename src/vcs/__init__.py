@@ -39,7 +39,7 @@ from ._visualize_vcs import (
 from ._config import (
     DEFAULT_CONTEXT_CUTOFF_VALUE,
     DEFAULT_CONTEXT_WINDOW_CONTROL,
-    DEFAULT_LCT,
+    DEFAULT_Rn,
     DEFAULT_CHUNK_SIZE,
 )
 
@@ -71,7 +71,7 @@ __all__ = [
     # Configuration constants
     "DEFAULT_CONTEXT_CUTOFF_VALUE",
     "DEFAULT_CONTEXT_WINDOW_CONTROL",
-    "DEFAULT_LCT",
+    "DEFAULT_Rn",
     "DEFAULT_CHUNK_SIZE",
 ]
 

@@ -10,16 +10,16 @@ def setup_penalty_plot(ax: plt.Axes, title: str, x_label: str) -> None:
     ax.set_title(title)
 
 def draw_penalty_bars(ax: plt.Axes, penalties: np.ndarray, in_window: np.ndarray, 
-                     in_lct_zone: List[bool], base_color: str = 'skyblue') -> List:
+                     in_rn_zone: List[bool], base_color: str = 'skyblue') -> List:
     """Draw penalty bars with appropriate colors based on window status."""
     x_indices = np.arange(len(penalties))
     bars = ax.bar(x_indices, penalties, alpha=0.7, color=base_color, label='Penalty')
     
     # Color bars based on window status
-    for i, (penalty, is_in, is_lct) in enumerate(zip(penalties, in_window, in_lct_zone)):
+    for i, (penalty, is_in, is_rn) in enumerate(zip(penalties, in_window, in_rn_zone)):
         if is_in:
             bars[i].set_color('green')
-        elif is_lct:
+        elif is_rn:
             bars[i].set_color('orange')
         elif penalty > 0:
             bars[i].set_color('red')
@@ -37,20 +37,20 @@ def add_penalty_annotations(ax: plt.Axes, penalties: np.ndarray, in_window: np.n
                        ha='center', va='bottom',
                        fontsize=8)
 
-def add_penalty_legend(ax: plt.Axes, lct: int) -> None:
-    """Add legend for penalty plot if LCT is being used."""
-    if lct > 0:
+def add_penalty_legend(ax: plt.Axes, Rn: int) -> None:
+    """Add legend for penalty plot if Rn is being used."""
+    if Rn > 0:
         ax.legend(['Zero Line', 'Normal Penalty', 'In Window (No Penalty)', 
-                  'In LCT Zone (No Penalty)'])
+                  'In Rn Zone (No Penalty)'])
 
 def add_penalty_metrics_text(ax: plt.Axes, nas_data: Dict[str, Any], 
-                           metric_name: str, lct: int) -> None:
+                           metric_name: str, Rn: int) -> None:
     """Add metrics text box to penalty plot."""
     text_content = (f"Max Penalty: {nas_data['max_penalty']:.4f}\n"
                    f"NAS-D {metric_name}: {nas_data['value']:.4f}\n")
     
-    if lct > 0:
-        text_content += f"LCT: {lct}"
+    if Rn > 0:
+        text_content += f"Rn: {Rn}"
     
     ax.text(0.05, 0.95, text_content,
            transform=ax.transAxes, 

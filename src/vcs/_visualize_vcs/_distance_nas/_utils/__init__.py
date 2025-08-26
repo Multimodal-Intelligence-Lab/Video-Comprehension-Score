@@ -4,8 +4,8 @@ from .penalty_visualization import (
     setup_penalty_plot, draw_penalty_bars, add_penalty_annotations, 
     add_penalty_metrics_text, add_penalty_legend
 )
-from .lct_handling import (
-    create_lct_legend_elements, draw_mapping_windows_with_lct,
+from .Rn_handling import (
+    create_Rn_legend_elements, draw_mapping_windows_with_Rn,
     determine_point_color, should_draw_distance_line, draw_distance_line
 )
 
@@ -27,9 +27,9 @@ __all__ = [
     "add_penalty_metrics_text",
     "add_penalty_legend",
     
-    # LCT handling
-    "create_lct_legend_elements",
-    "draw_mapping_windows_with_lct",
+    # Rn handling
+    "create_Rn_legend_elements",
+    "draw_mapping_windows_with_Rn",
     "determine_point_color",
     "should_draw_distance_line", 
     "draw_distance_line"

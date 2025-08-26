@@ -29,7 +29,7 @@ def generate_calculation_method_text(summary_data: Dict[str, float]) -> str:
                 f" / {actual_length:.2f}"
                 f" = {nas_value:.4f}\n")
 
-def generate_lct_note(lct: int) -> str:
-    if lct > 0:
-        return f"\nNote: Local Chronology Tolerance (LCT) = {lct} is applied to extend the valid range for segment calculations.\n"
+def generate_Rn_note(Rn: int) -> str:
+    if Rn > 0:
+        return f"\nNote: NAS Regularizer (Rn) = {Rn} is applied to extend the valid range for segment calculations.\n"
     return ""

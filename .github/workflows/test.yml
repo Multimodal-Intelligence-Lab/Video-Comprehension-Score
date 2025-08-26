@@ -61,7 +61,7 @@ jobs:
         python << 'EOF'
         import vcs
         print('Testing configuration constants...')
-        assert vcs.DEFAULT_LCT == 0, f'LCT should be 0, got {vcs.DEFAULT_LCT}'
+        assert vcs.DEFAULT_Rn == 0, f'LCT should be 0, got {vcs.DEFAULT_Rn}'
         assert vcs.DEFAULT_CONTEXT_CUTOFF_VALUE == 0.6, f'Context cutoff should be 0.6, got {vcs.DEFAULT_CONTEXT_CUTOFF_VALUE}'
         assert vcs.DEFAULT_CONTEXT_WINDOW_CONTROL == 4.0, f'Context window control should be 4.0, got {vcs.DEFAULT_CONTEXT_WINDOW_CONTROL}'
         assert vcs.DEFAULT_CHUNK_SIZE == 1, f'Chunk size should be 1, got {vcs.DEFAULT_CHUNK_SIZE}'

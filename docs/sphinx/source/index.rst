@@ -67,7 +67,7 @@ Explore the comprehensive capabilities that make VCS a powerful narrative evalua
    Generate comprehensive multi-page PDF reports with all metrics, visualizations, and analysis details. Supports both complete reports and customizable selective reports. Professional formatting suitable for research publications.
 
 **⚙️ Flexible Configuration System**
-   Fine-tune evaluation with configurable parameters: chunk sizes, similarity thresholds, context windows, and Local Chronology Tolerance (LCT). Supports custom segmentation and embedding functions for domain-specific applications.
+   Fine-tune evaluation with configurable parameters: chunk sizes, similarity thresholds, context windows, and NAS Regularizer (Rn). Supports custom segmentation and embedding functions for domain-specific applications.
 
 Table of Contents
 -----------------

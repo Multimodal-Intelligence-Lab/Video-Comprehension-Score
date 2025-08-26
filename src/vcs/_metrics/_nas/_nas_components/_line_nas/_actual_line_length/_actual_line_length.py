@@ -7,7 +7,7 @@ def _compute_actual_line_length(
     y: Union[List[float], np.ndarray], 
     y_axis: int, 
     x_axis: int,
-    lct: int = 0,
+    Rn: int = 0,
     floor_path_dy_map: Dict[int, int] = None
 
 ) -> Tuple[float, List[Dict[str, Any]]]: 
@@ -29,37 +29,37 @@ def _compute_actual_line_length(
     segments = []
     
     if y_axis <= x_axis:
-        lct_window = mapping_window_height
+        Rn_window = mapping_window_height
     else:
         if 0 < ratio_decimal_part <= 0.5:
-            lct_window = (2 * mapping_window_height) - 2
+            Rn_window = (2 * mapping_window_height) - 2
         else:
-            lct_window = (2 * mapping_window_height) - 1
+            Rn_window = (2 * mapping_window_height) - 1
 
     for i in range(len(dx)):
 
-        dy_value = abs(dy[i]) if lct > 0 else dy[i]
+        dy_value = abs(dy[i]) if Rn > 0 else dy[i]
         
         is_calculable = False
         segment_length = 0.0
         calculation_method = "none"
         
         # CASE 1: Normal segments (reasonable vertical change)
-        if dy_value <= lct_window and dy_value >= 0:
+        if dy_value <= Rn_window and dy_value >= 0:
             is_calculable = True
             segment_length = math.sqrt(dx[i]**2 + dy[i]**2)
             lengths[i] = segment_length
             calculation_method = "standard"
             
         # CASE 2: Large vertical jumps but within LCT range
-        elif lct > 0 and dy_value > lct_window and dy_value <= lct_window+lct:
+        elif Rn > 0 and dy_value > Rn_window and dy_value <= Rn_window+Rn:
             is_calculable = True
             floor_dy = None
             if floor_path_dy_map and x_arr[i] in floor_path_dy_map:
                 floor_dy = abs(floor_path_dy_map[x_arr[i]])
             segment_length = math.sqrt(dx[i]**2 + floor_dy**2)
             lengths[i] = segment_length
-            calculation_method = "lct_capped"
+            calculation_method = "Rn_capped"
             
         # CASE 3: Beyond LCT range or negative slopes
         # Length remains 0, segment not calculable
@@ -70,8 +70,8 @@ def _compute_actual_line_length(
             "end": (int(x_arr[i+1]), int(y_arr[i+1])),
             "dx": int(dx[i]),
             "dy": int(dy[i]),
-            "threshold": float(lct_window),
-            "threshold_with_lct": float(lct_window+lct),
+            "threshold": float(Rn_window),
+            "threshold_with_Rn": float(Rn_window+Rn),
             "is_calculable": is_calculable,
             "calculation_method": calculation_method,
             "length": float(segment_length)

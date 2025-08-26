@@ -827,7 +827,7 @@
                                 LCT Effect on Line-based NAS (NAS-L)
                             </h1>
                             <p class="text-teal-200 text-base sm:text-lg mb-6 max-w-3xl">
-                                Explore how Local Chronology Threshold (LCT) affects path segment classification and calculability in line-based narrative alignment score within the Video Comprehension Score framework.
+                                Explore how Local Chronology Threshold (Rn) affects path segment classification and calculability in line-based narrative alignment score within the Video Comprehension Score framework.
                             </p>
                         </div>
                     </div>
@@ -847,7 +847,7 @@
                 <!-- Definition -->
                 <div class="bg-white bg-opacity-70 p-4 rounded-xl mb-6 border-l-4 border-amber-500">
                     <p class="text-sm text-slate-700 mb-3">
-                        <strong>What is Local Chronology Tolerance (LCT) Effect on NAS-L?</strong> Local Chronology Threshold (LCT) introduces controlled flexibility to Line-based NAS by creating "forgiveness neighborhoods" where chronological content can be locally rearranged without affecting segment calculability. This addresses the limitation where minor narrative reorderings make path segments non-calculable despite preserving semantic flow.
+                        <strong>What is NAS Regularizer (Rn) Effect on NAS-L?</strong> Local Chronology Threshold (Rn) introduces controlled flexibility to Line-based NAS by creating "forgiveness neighborhoods" where chronological content can be locally rearranged without affecting segment calculability. This addresses the limitation where minor narrative reorderings make path segments non-calculable despite preserving semantic flow.
                     </p>
                     
                     <!-- Warning -->
@@ -1011,10 +1011,10 @@
                         </h3>
                         <div class="space-y-4">
                             <div class="flex items-center justify-between">
-                                <label for="lctSlider" class="text-sm font-medium text-purple-700">LCT Multiplier (τ<sub>LCT</sub>):</label>
-                                <span id="lctValueDisplay" class="text-lg font-bold text-purple-600 bg-purple-100 px-3 py-1 rounded">0</span>
+                                <label for="RnSlider" class="text-sm font-medium text-purple-700">LCT Multiplier (τ<sub>LCT</sub>):</label>
+                                <span id="RnValueDisplay" class="text-lg font-bold text-purple-600 bg-purple-100 px-3 py-1 rounded">0</span>
                             </div>
-                            <input type="range" id="lctSlider" min="0" max="8" value="0" class="w-full h-2 bg-purple-200 rounded-xl appearance-none cursor-pointer">
+                            <input type="range" id="RnSlider" min="0" max="8" value="0" class="w-full h-2 bg-purple-200 rounded-xl appearance-none cursor-pointer">
                             <div id="lctDescription" class="text-xs text-purple-600"></div>
                         </div>
                     </div>
@@ -1080,8 +1080,8 @@
                 <div class="test-category">
                     <h3><i class="fas fa-play-circle"></i>Getting Started</h3>
                     <div class="test-item">
-                        <h4>Understanding Local Chronology Tolerance (LCT) Effect on NAS-L</h4>
-                        <p>This guide will help you understand how Local Chronology Threshold (LCT) modifies Line-based NAS behavior.</p>
+                        <h4>Understanding NAS Regularizer (Rn) Effect on NAS-L</h4>
+                        <p>This guide will help you understand how Local Chronology Threshold (Rn) modifies Line-based NAS behavior.</p>
                         <ul class="test-checklist">
                             <li>At LCT = 0, each segment is surrounded by a green search zone(Base LCT Window) for its adjacent path segments. If an immediate neighbor lies within this zone, calculability is preserved and the connecting line adds to the total path length.</li>
                             <li>For LCT > 0, each segment is surrounded by an expanded lct search zone(yellow color): if its immediate neighbor falls within this zone, the segment remains calculable and uses its floor‐path length instead of being marked invalid(red color).</li>
@@ -1223,8 +1223,8 @@
             axisLabelContainerY: document.getElementById('axisLabelContainerY'),
             idealPathsSvg: document.getElementById('idealPathsSvg'),
             actualPathSvg: document.getElementById('actualPathSvg'),
-            lctSlider: document.getElementById('lctSlider'),
-            lctValueDisplay: document.getElementById('lctValueDisplay'),
+            RnSlider: document.getElementById('RnSlider'),
+            RnValueDisplay: document.getElementById('RnValueDisplay'),
             lctDescription: document.getElementById('lctDescription'),
             refLenInput: document.getElementById('refLenInput'),
             genLenInput: document.getElementById('genLenInput'),
@@ -1462,7 +1462,7 @@
 
         // LCT descriptions
         function updateLctDescription() {
-            const lctValue = parseInt(elements.lctSlider.value);
+            const RnValue = parseInt(elements.RnSlider.value);
             const descriptions = [
                 "Tolerance: 0 blocks (Strict calculation)",
                 "Tolerance: Low (2×2 neighbor rotations calculable)",
@@ -1475,7 +1475,7 @@
                 "Tolerance: Complete (9×9 full rotations calculable)"
             ];
             const colors = ['border-red-200 bg-red-50', 'border-purple-200 bg-purple-50', 'border-blue-200 bg-blue-50', 'border-green-200 bg-green-50', 'border-yellow-200 bg-yellow-50', 'border-orange-200 bg-orange-50', 'border-pink-200 bg-pink-50', 'border-indigo-200 bg-indigo-50', 'border-gray-200 bg-gray-50'];
-            elements.lctDescription.innerHTML = `<div class="p-2 rounded border ${colors[Math.min(lctValue, 8)]}">${descriptions[Math.min(lctValue, 8)]}</div>`;
+            elements.lctDescription.innerHTML = `<div class="p-2 rounded border ${colors[Math.min(RnValue, 8)]}">${descriptions[Math.min(RnValue, 8)]}</div>`;
         }
 
         // Core algorithms
@@ -1613,7 +1613,7 @@
             return dyMap;
         }
         
-        function computeActualLineLengthJS(actualPathPoints, totalRefChunks, totalGenChunks, lctValue, localFloorPathDyMap) {
+        function computeActualLineLengthJS(actualPathPoints, totalRefChunks, totalGenChunks, RnValue, localFloorPathDyMap) {
             if (!actualPathPoints || actualPathPoints.length <= 1) {
                 return { totalLength: 0.0, segments: [], lct_window_base: 0, expanded_lct_window: 0 };
             }
@@ -1635,12 +1635,12 @@
             lct_window_base = Math.max(0, lct_window_base);
             let expanded_lct_window;
             if (totalRefChunks <= totalGenChunks) {
-                expanded_lct_window = lctValue > 0 ? lct_window_base +  lctValue : lct_window_base;
+                expanded_lct_window = RnValue > 0 ? lct_window_base +  RnValue : lct_window_base;
             } else {
                 if (ratioDecimalPart > 0 && ratioDecimalPart <= 0.5) {
-                    expanded_lct_window = lctValue > 0 ? lct_window_base +  lctValue : lct_window_base;
+                    expanded_lct_window = RnValue > 0 ? lct_window_base +  RnValue : lct_window_base;
                 } else {
-                    expanded_lct_window = lctValue > 0 ? lct_window_base +  lctValue : lct_window_base;
+                    expanded_lct_window = RnValue > 0 ? lct_window_base +  RnValue : lct_window_base;
                 }
             }
             
@@ -1658,7 +1658,7 @@
                     is_calculable = true; calculation_method = "standard";
                 }
                 // Check if it's a negative slope made calculable by LCT (should be lct-capped)
-                else if (lctValue > 0 && dy_segment_raw < 0 && dy_for_eval <= expanded_lct_window) {
+                else if (RnValue > 0 && dy_segment_raw < 0 && dy_for_eval <= expanded_lct_window) {
                     let floor_dy_val = dy_segment_raw; 
                     if (localFloorPathDyMap && localFloorPathDyMap.hasOwnProperty(p1.x)) {
                         floor_dy_val = Math.abs(localFloorPathDyMap[p1.x]);
@@ -1667,7 +1667,7 @@
                     is_calculable = true; calculation_method = "lct-capped";
                 }
                 // Check if it's a positive slope within LCT tolerance (also lct-capped)
-                else if (lctValue > 0 && dy_segment_raw >= 0 && dy_for_eval > lct_window_base && dy_for_eval <= expanded_lct_window) {
+                else if (RnValue > 0 && dy_segment_raw >= 0 && dy_for_eval > lct_window_base && dy_for_eval <= expanded_lct_window) {
                     let floor_dy_val = dy_segment_raw; 
                     if (localFloorPathDyMap && localFloorPathDyMap.hasOwnProperty(p1.x)) {
                         floor_dy_val = Math.abs(localFloorPathDyMap[p1.x]);
@@ -1761,11 +1761,11 @@
         }
 
         // Preview functions
-        function showScorePreview(tempMarkers, lctValue) {
+        function showScorePreview(tempMarkers, RnValue) {
             if (!tempMarkers) return;
             const sortedMarkers = [...tempMarkers].sort((a, b) => a.currentX - b.currentX);
             const pathData = sortedMarkers.map(marker => ({ x: marker.currentX, y: marker.currentY }));
-            const lengthData = computeActualLineLengthJS(pathData, numUnitsY, numUnitsX, lctValue, floorPathDyMap);
+            const lengthData = computeActualLineLengthJS(pathData, numUnitsY, numUnitsX, RnValue, floorPathDyMap);
             const previewActualLength = lengthData.totalLength;
             const previewLineNas = calculateLineNAS(currentFloorLength, currentCeilLength, previewActualLength);
             elements.nasLScorePreview.textContent = `→ ${previewLineNas.toFixed(3)}`;
@@ -2012,7 +2012,7 @@
 
         function renderAnimatedMarkers(animatedMarkers) {
             elements.genChunkMarkerContainer.innerHTML = '';
-            const lctValue = parseInt(elements.lctSlider.value);
+            const RnValue = parseInt(elements.RnSlider.value);
             animatedMarkers.forEach(markerData => {
                 if (typeof markerData.opacity !== 'number' || markerData.opacity > 0.01) {
                     const markerDiv = document.createElement('div');
@@ -2116,13 +2116,13 @@
             // if (tipElement) tipElement.innerHTML = `<p><strong>Tip:</strong> ${tips[scenarioType] || tips.optimal}</p>`;
         }
 
-        function computeAnimatedSegments(animatedMarkers, lctValue, floorPathDyMap) {
+        function computeAnimatedSegments(animatedMarkers, RnValue, floorPathDyMap) {
             const visibleMarkers = animatedMarkers.filter(m => m.opacity > 0.01);
             if (visibleMarkers.length <= 1) return [];
             
             const sortedMarkers = [...visibleMarkers].sort((a, b) => a.currentX - b.currentX);
             const pathData = sortedMarkers.map(marker => ({ x: marker.currentX, y: marker.currentY }));
-            const lengthData = computeActualLineLengthJS(pathData, numUnitsY, numUnitsX, lctValue, floorPathDyMap);
+            const lengthData = computeActualLineLengthJS(pathData, numUnitsY, numUnitsX, RnValue, floorPathDyMap);
             return lengthData.segments;
         }
 
@@ -2162,13 +2162,13 @@
             numUnitsX = targetGenLen;
             elements.refLenInput.value = numUnitsY;
             elements.genLenInput.value = numUnitsX;
-            elements.lctSlider.max = Math.max(0, numUnitsY - 1);
-            if (parseInt(elements.lctSlider.value) > elements.lctSlider.max) {
-                elements.lctSlider.value = elements.lctSlider.max;
-                elements.lctValueDisplay.textContent = elements.lctSlider.value;
+            elements.RnSlider.max = Math.max(0, numUnitsY - 1);
+            if (parseInt(elements.RnSlider.value) > elements.RnSlider.max) {
+                elements.RnSlider.value = elements.RnSlider.max;
+                elements.RnValueDisplay.textContent = elements.RnSlider.value;
                 updateLctDescription();
             }
-            currentLct = parseInt(elements.lctSlider.value, 10);
+            currentLct = parseInt(elements.RnSlider.value, 10);
             
             // --- 3. Calculate Target Paths & Positions ---
             const windows = get_mapping_windows_js(numUnitsY, numUnitsX);
@@ -2345,7 +2345,7 @@
         function initializeStateAndRender(preserveMarkerPositions = false) {
             numUnitsY = Math.max(1, Math.min(10, parseInt(elements.refLenInput.value, 10) || 1));
             numUnitsX = Math.max(1, Math.min(10, parseInt(elements.genLenInput.value, 10) || 1));
-            currentLct = parseInt(elements.lctSlider.value, 10); elements.lctValueDisplay.textContent = currentLct;
+            currentLct = parseInt(elements.RnSlider.value, 10); elements.RnValueDisplay.textContent = currentLct;
             updateLctDescription();
             elements.refLenInput.value = numUnitsY; elements.genLenInput.value = numUnitsX;
             
@@ -2412,9 +2412,9 @@
         document.getElementById('start-tour-btn').addEventListener('click', () => tourManager.start());
         elements.refLenInput.addEventListener('change', handleGridInputChange);
         elements.genLenInput.addEventListener('change', handleGridInputChange);
-        elements.lctSlider.addEventListener('input', () => {
-            currentLct = parseInt(elements.lctSlider.value, 10); 
-            elements.lctValueDisplay.textContent = currentLct;
+        elements.RnSlider.addEventListener('input', () => {
+            currentLct = parseInt(elements.RnSlider.value, 10); 
+            elements.RnValueDisplay.textContent = currentLct;
             updateLctDescription();
             renderGenChunkMarkers(); 
         });

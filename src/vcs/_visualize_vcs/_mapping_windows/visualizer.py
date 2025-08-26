@@ -36,7 +36,7 @@ def visualize_mapping_windows(internals: Dict[str, Any]) -> plt.Figure:
             segmenter_fn=your_segmenter,
             embedding_fn_las=your_embedder,
             return_internals=True,
-            lct=1
+            Rn=1
         )
         fig = visualize_mapping_windows(result['internals'])
         fig.show()
@@ -52,7 +52,7 @@ def visualize_mapping_windows(internals: Dict[str, Any]) -> plt.Figure:
     recall_windows = internals['mapping_windows']['recall']
     
     # Get LCT value from config
-    lct = internals['config']['lct']
+    Rn = internals['config']['Rn']
     
     # Get the LCT window heights from the NAS calculations
     prec_window_height = internals['metrics']['nas']['nas_d']['precision']['mapping_window_height']
@@ -71,14 +71,14 @@ def visualize_mapping_windows(internals: Dict[str, Any]) -> plt.Figure:
                             edgecolor='blue', facecolor='lightblue', alpha=0.5)
             ax_precision.add_patch(rect)
             
-            # Draw LCT padding if lct > 0
-            if lct > 0:
+            # Draw LCT padding if Rn > 0
+            if Rn > 0:
                 # Use the centralized LCT window height from NAS calculation
-                lct_padding = lct * prec_window_height
+                Rn_padding = Rn * prec_window_height
                 
                 # Create expanded window with LCT padding
-                expanded_start = max(0, r_start - lct_padding)
-                expanded_end = min(ref_len, r_end + lct_padding)
+                expanded_start = max(0, r_start - Rn_padding)
+                expanded_end = min(ref_len, r_end + Rn_padding)
                 
                 # Draw the LCT padding zone (if it extends beyond the original window)
                 if expanded_start < r_start:
@@ -100,15 +100,15 @@ def visualize_mapping_windows(internals: Dict[str, Any]) -> plt.Figure:
     ax_precision.set_xlabel('Generation Index')
     ax_precision.set_ylabel('Reference Index')
     title = f'Precision Mapping Windows (ref→gen)'
-    if lct > 0:
-        title += f' (LCT={lct}, LCT Window={prec_window_height})'
+    if Rn > 0:
+        title += f' (LCT={Rn}, LCT Window={prec_window_height})'
     ax_precision.set_title(title)
     ax_precision.grid(True, linestyle='--', alpha=0.7)
     
     # Add a legend for LCT padding if applicable
-    if lct > 0:
-        lct_patch = Rectangle((0, 0), 1, 1, facecolor='lightgreen', edgecolor='green', alpha=0.3, linestyle='--')
-        ax_precision.legend([lct_patch], [f'LCT Padding (LCT={lct})'])
+    if Rn > 0:
+        Rn_patch = Rectangle((0, 0), 1, 1, facecolor='lightgreen', edgecolor='green', alpha=0.3, linestyle='--')
+        ax_precision.legend([Rn_patch], [f'LCT Padding (LCT={Rn})'])
     
     precision_matches = internals['alignment']['precision']['matches']
     for g_idx, r_idx in precision_matches:
@@ -124,14 +124,14 @@ def visualize_mapping_windows(internals: Dict[str, Any]) -> plt.Figure:
                             edgecolor='red', facecolor='mistyrose', alpha=0.5)
             ax_recall.add_patch(rect)
             
-            # Draw LCT padding if lct > 0
-            if lct > 0:
+            # Draw LCT padding if Rn > 0
+            if Rn > 0:
                 # Use the centralized LCT window height from NAS calculation
-                lct_padding = lct * rec_window_height
+                Rn_padding = Rn * rec_window_height
                 
                 # Create expanded window with LCT padding
-                expanded_start = max(0, g_start - lct_padding)
-                expanded_end = min(gen_len, g_end + lct_padding)
+                expanded_start = max(0, g_start - Rn_padding)
+                expanded_end = min(gen_len, g_end + Rn_padding)
                 
                 # Draw the LCT padding zone (if it extends beyond the original window)
                 if expanded_start < g_start:
@@ -153,15 +153,15 @@ def visualize_mapping_windows(internals: Dict[str, Any]) -> plt.Figure:
     ax_recall.set_xlabel('Reference Index')
     ax_recall.set_ylabel('Generation Index')
     title = f'Recall Mapping Windows (gen→ref)'
-    if lct > 0:
-        title += f' (LCT={lct}, LCT Window={rec_window_height})'
+    if Rn > 0:
+        title += f' (LCT={Rn}, LCT Window={rec_window_height})'
     ax_recall.set_title(title)
     ax_recall.grid(True, linestyle='--', alpha=0.7)
     
     # Add a legend for LCT padding if applicable
-    if lct > 0:
-        lct_patch = Rectangle((0, 0), 1, 1, facecolor='lightgreen', edgecolor='green', alpha=0.3, linestyle='--')
-        ax_recall.legend([lct_patch], [f'LCT Padding (LCT={lct})'])
+    if Rn > 0:
+        Rn_patch = Rectangle((0, 0), 1, 1, facecolor='lightgreen', edgecolor='green', alpha=0.3, linestyle='--')
+        ax_recall.legend([Rn_patch], [f'LCT Padding (LCT={Rn})'])
     
     recall_matches = internals['alignment']['recall']['matches']
     for g_idx, r_idx in recall_matches:
