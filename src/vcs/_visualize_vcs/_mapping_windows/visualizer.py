@@ -101,14 +101,14 @@ def visualize_mapping_windows(internals: Dict[str, Any]) -> plt.Figure:
     ax_precision.set_ylabel('Reference Index')
     title = f'Precision Mapping Windows (ref→gen)'
     if Rn > 0:
-        title += f' (LCT={Rn}, LCT Window={prec_window_height})'
+        title += f' (Rn={Rn}, Rn Window={prec_window_height})'
     ax_precision.set_title(title)
     ax_precision.grid(True, linestyle='--', alpha=0.7)
     
     # Add a legend for LCT padding if applicable
     if Rn > 0:
         Rn_patch = Rectangle((0, 0), 1, 1, facecolor='lightgreen', edgecolor='green', alpha=0.3, linestyle='--')
-        ax_precision.legend([Rn_patch], [f'LCT Padding (LCT={Rn})'])
+        ax_precision.legend([Rn_patch], [f'Rn Padding (Rn={Rn})'])
     
     precision_matches = internals['alignment']['precision']['matches']
     for g_idx, r_idx in precision_matches:
@@ -154,14 +154,14 @@ def visualize_mapping_windows(internals: Dict[str, Any]) -> plt.Figure:
     ax_recall.set_ylabel('Generation Index')
     title = f'Recall Mapping Windows (gen→ref)'
     if Rn > 0:
-        title += f' (LCT={Rn}, LCT Window={rec_window_height})'
+        title += f' (Rn={Rn}, Rn Window={rec_window_height})'
     ax_recall.set_title(title)
     ax_recall.grid(True, linestyle='--', alpha=0.7)
     
     # Add a legend for LCT padding if applicable
     if Rn > 0:
         Rn_patch = Rectangle((0, 0), 1, 1, facecolor='lightgreen', edgecolor='green', alpha=0.3, linestyle='--')
-        ax_recall.legend([Rn_patch], [f'LCT Padding (LCT={Rn})'])
+        ax_recall.legend([Rn_patch], [f'Rn Padding (Rn={Rn})'])
     
     recall_matches = internals['alignment']['recall']['matches']
     for g_idx, r_idx in recall_matches:

@@ -20,7 +20,7 @@ def setup_precision_mapping_plot(ax: plt.Axes, gen_len: int, ref_len: int,
     
     title = 'Precision Mapping with Distances'
     if Rn > 0:
-        title += f' (LCT={rn}, LCT Window={window_height})'
+        title += f' (Rn={Rn}, Rn Window={window_height})'
     ax.set_title(title)
     ax.grid(True, linestyle='--', alpha=0.5)
 
