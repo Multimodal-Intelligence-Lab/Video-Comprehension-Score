@@ -67,11 +67,11 @@ def calculate_actual_penalty(
                 Rn_in_zone = (start - Rn <= idx < end + Rn)
                 in_Rn_zone[i] = Rn_in_zone
     
-    inteRnals = {
+    internals = {
         "mapping_window_height": Rn_window,
         "penalties": penalties.tolist() if isinstance(penalties, np.ndarray) else penalties,
         "in_window": in_window.tolist() if isinstance(in_window, np.ndarray) else in_window,
         "in_Rn_zone": in_Rn_zone.tolist() if isinstance(in_Rn_zone, np.ndarray) else in_Rn_zone,
     }
     
-    return penalties, inteRnals
+    return penalties, internals

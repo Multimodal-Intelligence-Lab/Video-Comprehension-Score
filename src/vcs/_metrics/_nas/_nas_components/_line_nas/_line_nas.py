@@ -13,7 +13,7 @@ def _calculate_line_based_nas(
     Rn: int = 0
 ) -> Tuple[float, Dict[str, Any]]:
     if not aligned:
-        retuRn 0.0, {"message": "No aligned segments"}
+        return 0.0, {"message": "No aligned segments"}
     
     if not swap:
         source_len = ref_len
@@ -51,7 +51,7 @@ def _calculate_line_based_nas(
     
     actual_path = [(int(x), int(y)) for x, y in zip(sx, sy)]
     
-    inteRnals = {
+    internals = {
         "actual_line_length": actual_line_length,
         "floor_ideal_line_length": floor_ideal_line_length,
         "ceil_ideal_line_length": ceil_ideal_line_length,
@@ -62,4 +62,4 @@ def _calculate_line_based_nas(
         "ceil_path": ceil_path
     }
     
-    retuRn line_nas, inteRnals
+    return line_nas, internals

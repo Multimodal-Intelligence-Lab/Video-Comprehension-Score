@@ -14,7 +14,7 @@ def _calculate_distance_based_nas(
     Rn: int = 0
 ) -> Tuple[float, Dict[str, Any]]:
 
-    penalties, inteRnals = calculate_actual_penalty(
+    penalties, internals = calculate_actual_penalty(
         best_indices, mapping_windows, length, direction, Rn, ref_len, gen_len
     )
     
@@ -24,10 +24,10 @@ def _calculate_distance_based_nas(
     
     nas = 1 - (total_penalty / max_total_penalty) if max_total_penalty else 0
     
-    inteRnals.update({
+    internals.update({
         "max_penalty": max_total_penalty,
         "total_penalty": total_penalty,
         "value": nas
     })
     
-    retuRn nas, inteRnals
+    return nas, internals
