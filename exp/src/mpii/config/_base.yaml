@@ -27,8 +27,8 @@ vcs:
   # Return detailed VCS internals for debugging
   return_internals: false
   
-  # Default LCT values (experiments can override)
-  lct: [0, 1]
+  # Default Rn values (experiments can override)
+  Rn: [0, 1]
 
 # ============================================================================
 # PARALLEL PROCESSING

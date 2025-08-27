@@ -123,26 +123,26 @@ class ConfigLoader:
         
         # Validate VCS parameters (standardized validation)
         vcs = config['vcs']
-        required_vcs_fields = ['chunk_size', 'lct']
+        required_vcs_fields = ['chunk_size', 'Rn']
         for field in required_vcs_fields:
             if field not in vcs:
                 raise ValueError(f"Missing required VCS parameter: {field}")
         
-        # Validate chunk_size and lct are properly formatted (support both single values and arrays)
+        # Validate chunk_size and Rn are properly formatted (support both single values and arrays)
         chunk_size = vcs['chunk_size']
-        lct = vcs['lct']
+        Rn = vcs['Rn']
         
         # Convert single values to lists for validation
         if not isinstance(chunk_size, list):
             chunk_size = [chunk_size]
-        if not isinstance(lct, list):
-            lct = [lct]
+        if not isinstance(Rn, list):
+            Rn = [Rn]
             
         if not all(isinstance(x, int) and x > 0 for x in chunk_size):
             raise ValueError("vcs.chunk_size must be a positive integer or list of positive integers")
             
-        if not all(isinstance(x, int) and x >= 0 for x in lct):
-            raise ValueError("vcs.lct must be a non-negative integer or list of non-negative integers")
+        if not all(isinstance(x, int) and x >= 0 for x in Rn):
+            raise ValueError("vcs.Rn must be a non-negative integer or list of non-negative integers")
 
 
 class CheckpointManager:

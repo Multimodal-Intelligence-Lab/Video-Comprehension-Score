@@ -45,36 +45,36 @@ class VCSMetricsGenerator:
     """Utility class for generating VCS metric names and configurations."""
     
     @staticmethod
-    def generate_metric_names(chunk_sizes: List[int], lct_values: List[int]) -> List[str]:
+    def generate_metric_names(chunk_sizes: List[int], Rn_values: List[int]) -> List[str]:
         """
-        Generate VCS metric names in VCS_C{chunk}_LCT{n} format.
+        Generate VCS metric names in VCS_C{chunk}_Rn{n} format.
         
         Args:
             chunk_sizes: List of chunk sizes to use
-            lct_values: List of LCT values to use
+            Rn_values: List of Rn values to use
             
         Returns:
             List of metric names in sorted order
         """
         metric_names = []
         for chunk_size in sorted(chunk_sizes):
-            for lct in sorted(lct_values):
-                metric_names.append(f"VCS_C{chunk_size}_LCT{lct}")
+            for Rn in sorted(Rn_values):
+                metric_names.append(f"VCS_C{chunk_size}_Rn{Rn}")
         return metric_names
     
     @staticmethod
     def parse_metric_name(metric_name: str) -> tuple:
         """
-        Parse VCS metric name to extract chunk size and LCT value.
+        Parse VCS metric name to extract chunk size and Rn value.
         
         Args:
-            metric_name: Metric name in VCS_C{chunk}_LCT{n} format
+            metric_name: Metric name in VCS_C{chunk}_Rn{n} format
             
         Returns:
-            Tuple of (chunk_size, lct_value) or None if invalid format
+            Tuple of (chunk_size, Rn_value) or None if invalid format
         """
         import re
-        match = re.match(r'VCS_C(\d+)_LCT(\d+)', metric_name)
+        match = re.match(r'VCS_C(\d+)_Rn(\d+)', metric_name)
         if match:
             return int(match.group(1)), int(match.group(2))
         return None
@@ -84,7 +84,7 @@ class VCSMetricsGenerator:
         """Get default VCS configuration."""
         return {
             "chunk_size": [1],
-            "lct": [0],
+            "Rn": [0],
             "context_cutoff_value": 0.6,
             "context_window_control": 4.0,
             "return_all_metrics": True,
@@ -175,13 +175,13 @@ class ConfigLoader:
         
         # Note: segmenter_functions is now optional as we use a default single segmenter
         
-        # Validate LCT values
-        if 'lct' not in config['vcs']:
-            raise ValueError("Missing required field: vcs.lct")
+        # Validate Rn values
+        if 'Rn' not in config['vcs']:
+            raise ValueError("Missing required field: vcs.Rn")
         
-        lct_values = config['vcs']['lct']
-        if not isinstance(lct_values, list) or not all(isinstance(x, int) and x >= 0 for x in lct_values):
-            raise ValueError("vcs.lct must be a list of non-negative integers")
+        Rn_values = config['vcs']['Rn']
+        if not isinstance(Rn_values, list) or not all(isinstance(x, int) and x >= 0 for x in Rn_values):
+            raise ValueError("vcs.Rn must be a list of non-negative integers")
         
         # Validate chunk sizes
         if 'chunk_size' not in config['vcs']:

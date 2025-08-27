@@ -2,10 +2,10 @@
 VATEX-EVAL VCS Evaluation Framework
 
 This module provides a comprehensive VCS evaluation framework for the VATEX-EVAL dataset,
-computing VCS scores with different chunk sizes and LCT values.
+computing VCS scores with different chunk sizes and Rn values.
 
 Features:
-- Multiple chunk_size and LCT value evaluation
+- Multiple chunk_size and Rn value evaluation
 - Multiple n_refs evaluation (1-9 references)
 - Correlation analysis with human judgments
 - Parallel processing with checkpointing
@@ -49,7 +49,7 @@ class VCSResult:
     candidate: str
     reference: str
     n_refs: int
-    metrics: Dict[str, float]  # VCS_C{chunk}_LCT{n} format
+    metrics: Dict[str, float]  # VCS_C{chunk}_Rn{n} format
     best_score: float
     best_reference: str
     human_score_1: float
@@ -62,7 +62,7 @@ class VCSResult:
 class CorrelationResult:
     """Container for correlation results for a specific configuration."""
     n_refs: int
-    metric_name: str  # VCS_C{chunk}_LCT{n} format
+    metric_name: str  # VCS_C{chunk}_Rn{n} format
     kendall_tau: float
     spearman_correlation: float
     best_scores: List[float]
@@ -98,22 +98,22 @@ class StructuredLogger:
         main_handler.setFormatter(main_formatter)
         self.main_logger.addHandler(main_handler)
     
-    def log_experiment_start(self, lct_value: int, n_refs: int, total_candidates: int):
+    def log_experiment_start(self, Rn_value: int, n_refs: int, total_candidates: int):
         """Log start of experiment configuration."""
-        self.main_logger.info(f"Starting VCS evaluation: LCT={lct_value} with {n_refs} references")
+        self.main_logger.info(f"Starting VCS evaluation: Rn={Rn_value} with {n_refs} references")
         self.main_logger.info(f"Total candidates to process: {total_candidates}")
     
-    def log_experiment_complete(self, lct_value: int, n_refs: int, processing_time: float, 
+    def log_experiment_complete(self, Rn_value: int, n_refs: int, processing_time: float, 
                                candidates_processed: int, correlation_results: Dict):
         """Log completion of experiment configuration."""
-        self.main_logger.info(f"Completed LCT={lct_value} with {n_refs} references")
+        self.main_logger.info(f"Completed Rn={Rn_value} with {n_refs} references")
         self.main_logger.info(f"Processed {candidates_processed} candidates in {processing_time:.2f}s")
         self.main_logger.info(f"VCS(X,X*) correlation results: {correlation_results}")
     
     def log_correlation_results(self, metric_name: str, kendall_tau: float, spearman_corr: float, 
-                               lct_value: int, n_refs: int):
+                               Rn_value: int, n_refs: int):
         """Log individual correlation results."""
-        self.main_logger.info(f"VCS({metric_name}) LCT_{lct_value}_{n_refs}ref - Kendall: {kendall_tau}, Spearman: {spearman_corr}")
+        self.main_logger.info(f"VCS({metric_name}) LCT_{Rn_value}_{n_refs}ref - Kendall: {kendall_tau}, Spearman: {spearman_corr}")
     
     def log_progress(self, current: int, total: int, description: str = "Processing", already_processed: int = 0):
         """Log progress information with resume context."""
@@ -169,7 +169,7 @@ class VCSEvaluator:
         
         # Extract VCS parameters
         vcs_config = config['vcs']
-        self.lct_values = vcs_config.get('lct', [0])
+        self.Rn_values = vcs_config.get('Rn', [0])
         self.chunk_size = vcs_config.get('chunk_size', 1)
         self.context_cutoff = vcs_config.get('context_cutoff_value', 0.6)
         self.context_window = vcs_config.get('context_window_control', 4.0)
@@ -178,26 +178,26 @@ class VCSEvaluator:
     
     def compute_vcs_metrics(self, reference: str, generated: str) -> Dict[str, float]:
         """
-        Compute VCS metrics for all chunk sizes and LCT values.
+        Compute VCS metrics for all chunk sizes and Rn values.
         
         Args:
             reference: Reference text
             generated: Generated/candidate text
             
         Returns:
-            Dictionary of VCS metrics in VCS_C{chunk}_LCT{n} format
+            Dictionary of VCS metrics in VCS_C{chunk}_Rn{n} format
         """
         try:
             segmenter_fn = TextProcessor.get_segmenter_function(DEFAULT_SEGMENTER_FUNCTION)
             vcs_metrics = {}
             
-            # Get chunk sizes and LCT values from config
+            # Get chunk sizes and Rn values from config
             chunk_sizes = self.config['vcs'].get('chunk_size', [1])
-            lct_values = self.lct_values
+            Rn_values = self.Rn_values
             
             # Compute VCS for each chunk size and LCT combination
             for chunk_size in chunk_sizes:
-                for lct in lct_values:
+                for Rn in Rn_values:
                     try:
                         vcs_results = vcs.compute_vcs_score(
                             reference_text=reference,
@@ -208,19 +208,19 @@ class VCSEvaluator:
                             chunk_size=chunk_size,
                             context_cutoff_value=self.context_cutoff,
                             context_window_control=self.context_window,
-                            lct=lct,
+                            Rn=Rn,
                             return_all_metrics=self.return_all_metrics,
                             return_internals=self.return_internals
                         )
                         
-                        # Store with hierarchical naming: VCS_C{chunk}_LCT{n}
-                        metric_name = f"VCS_C{chunk_size}_LCT{lct}"
+                        # Store with hierarchical naming: VCS_C{chunk}_Rn{n}
+                        metric_name = f"VCS_C{chunk_size}_Rn{Rn}"
                         vcs_metrics[metric_name] = vcs_results.get("VCS", 0.0)
                         
                     except Exception as e:
                         if self.logger:
-                            self.logger.log_error(f"VCS computation failed for chunk_size={chunk_size}, LCT={lct}", e)
-                        metric_name = f"VCS_C{chunk_size}_LCT{lct}"
+                            self.logger.log_error(f"VCS computation failed for chunk_size={chunk_size}, Rn={Rn}", e)
+                        metric_name = f"VCS_C{chunk_size}_Rn{Rn}"
                         vcs_metrics[metric_name] = 0.0
             
             return vcs_metrics
@@ -233,8 +233,8 @@ class VCSEvaluator:
             zero_metrics = {}
             chunk_sizes = self.config['vcs'].get('chunk_size', [1])
             for chunk_size in chunk_sizes:
-                for lct in self.lct_values:
-                    metric_name = f"VCS_C{chunk_size}_LCT{lct}"
+                for Rn in self.Rn_values:
+                    metric_name = f"VCS_C{chunk_size}_Rn{Rn}"
                     zero_metrics[metric_name] = 0.0
             return zero_metrics
     

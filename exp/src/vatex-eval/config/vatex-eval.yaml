@@ -1,5 +1,5 @@
 # VATEX-EVAL VCS Evaluation Configuration
-# Configuration for comprehensive VCS evaluation with multiple chunk sizes and LCT values
+# Configuration for comprehensive VCS evaluation with multiple chunk sizes and Rn values
 
 # ============================================================================
 # ESSENTIAL PATHS (MUST BE UPDATED FOR YOUR ENVIRONMENT)
@@ -37,14 +37,14 @@ vatex_eval:
 # VCS COMPUTATION SETTINGS
 # ============================================================================
 vcs:
-  # LCT (Line Chronological Tolerance) values to compute
-  # LCT = 0: Strict chronological order (DEFAULT)
-  # LCT > 0: Allow chronological flexibility
-  # Results will include metrics for all combinations: VCS_C{chunk}_LCT{n}
-  lct: [0, 1]
+  # Rn (Line Chronological Tolerance) values to compute
+  # Rn = 0: Strict chronological order (DEFAULT)
+  # Rn > 0: Allow chronological flexibility
+  # Results will include metrics for all combinations: VCS_C{chunk}_Rn{Rn}
+  Rn: [0, 1]
   
   # Chunk sizes to evaluate (discrete values)
-  # Results will include metrics for all combinations: VCS_C{chunk}_LCT{n}
+  # Results will include metrics for all combinations: VCS_C{chunk}_Rn{Rn}
   # Examples:
   #   chunk_size: [1]        # Only chunk size 1
   #   chunk_size: [1, 2]     # Chunk sizes 1 and 2
@@ -68,7 +68,7 @@ processing:
   #   - 1-2 workers: 8GB RAM systems
   #   - 4 workers: 16GB RAM systems  
   #   - 8+ workers: 32GB+ RAM systems
-  max_workers: 36
+  max_workers: 16
   
   # Checkpoint saving interval (save every N candidates processed)
   checkpoint_interval: 100
@@ -104,7 +104,7 @@ output:
 #     └── correlation_summary.csv  # Hierarchical format with all n_refs
 #
 # Individual CSV format:
-# candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,VCS_C1_LCT0,VCS_C1_LCT1,VCS_C2_LCT0,VCS_C2_LCT1
+# candidate_id,candidate,best_score,best_reference,human_score_1,human_score_2,human_score_3,human_avg,VCS_C1_Rn0,VCS_C1_Rn1,VCS_C2_Rn0,VCS_C2_Rn1
 #
 # Aggregated correlation_summary.csv format:
 # Metric,1ref_Kendall_Tau,1ref_Spearman_Correlation,9ref_Kendall_Tau,9ref_Spearman_Correlation

@@ -313,12 +313,12 @@ class MetricsEvaluator:
         chunk_sizes = vcs_config.get('chunk_size', [1])
         if not isinstance(chunk_sizes, list):
             chunk_sizes = [chunk_sizes]  # Convert single value to list
-        lct_values = vcs_config['lct']
+        Rn_values = vcs_config['Rn']
         
         zero_vcs_metrics = {}
         for chunk_size in chunk_sizes:
-            for lct in lct_values:
-                zero_vcs_metrics[f"VCS_C{chunk_size}_LCT{lct}"] = 0.0
+            for Rn in Rn_values:
+                zero_vcs_metrics[f"VCS_C{chunk_size}_Rn{Rn}"] = 0.0
         
         return zero_vcs_metrics
     
@@ -427,7 +427,7 @@ class MetricsEvaluator:
             
             # Extract VCS configuration
             vcs_config = self.config['vcs']
-            lct_values = vcs_config['lct']
+            Rn_values = vcs_config['Rn']
             chunk_sizes = vcs_config.get('chunk_size', [1])
             if not isinstance(chunk_sizes, list):
                 chunk_sizes = [chunk_sizes]  # Convert single value to list for compatibility
@@ -437,7 +437,7 @@ class MetricsEvaluator:
             # Compute VCS metrics for each chunk_size × LCT combination
             vcs_metrics = {}
             for chunk_size in chunk_sizes:
-                for lct in lct_values:
+                for Rn in Rn_values:
                     try:
                         vcs_results = vcs.compute_vcs_score(
                             reference_text=reference,
@@ -448,15 +448,15 @@ class MetricsEvaluator:
                             chunk_size=chunk_size,
                             context_cutoff_value=context_cutoff,
                             context_window_control=context_window,
-                            lct=lct,
+                            Rn=Rn,
                             return_all_metrics=True,
                             return_internals=False
                         )
-                        vcs_metrics[f"VCS_C{chunk_size}_LCT{lct}"] = vcs_results.get("VCS", 0.0)
+                        vcs_metrics[f"VCS_C{chunk_size}_Rn{Rn}"] = vcs_results.get("VCS", 0.0)
                     except Exception as e:
                         if self.logger:
-                            self.logger.log_error(f"VCS computation failed for chunk_size={chunk_size}, LCT={lct}", e)
-                        vcs_metrics[f"VCS_C{chunk_size}_LCT{lct}"] = 0.0
+                            self.logger.log_error(f"VCS computation failed for chunk_size={chunk_size}, Rn={Rn}", e)
+                        vcs_metrics[f"VCS_C{chunk_size}_Rn{Rn}"] = 0.0
             
             # Extract and organize metrics
             metrics = {
@@ -558,7 +558,7 @@ class MetricsEvaluator:
         # Get decimal precision from config
         decimal_precision = self.config.get('output', {}).get('decimal_precision', 3)
         
-        # Get all metric names (including VCS_C{chunk_size}_LCT{lct} variants)
+        # Get all metric names (including VCS_C{chunk_size}_Rn{Rn} variants)
         all_metrics = set()
         for result in results:
             all_metrics.update(result.metrics.keys())

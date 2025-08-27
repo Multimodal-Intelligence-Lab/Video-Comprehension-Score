@@ -138,12 +138,12 @@ class AblationEvaluator:
         
         # Extract VCS parameters
         vcs_config = config['vcs']
-        # Support both single values and arrays for chunk_size and lct
+        # Support both single values and arrays for chunk_size and Rn
         chunk_size_config = vcs_config.get('chunk_size', [1])
         self.chunk_sizes = chunk_size_config if isinstance(chunk_size_config, list) else [chunk_size_config]
         
-        lct_config = vcs_config.get('lct', [0])
-        self.lct_values = lct_config if isinstance(lct_config, list) else [lct_config]
+        lct_config = vcs_config.get('Rn', [0])
+        self.Rn_values = lct_config if isinstance(lct_config, list) else [lct_config]
         
         self.context_cutoff = vcs_config.get('context_cutoff_value', 0.6)
         self.context_window = vcs_config.get('context_window_control', 4.0)
@@ -174,10 +174,10 @@ class AblationEvaluator:
             # Get segmenter function
             segmenter_fn = TextProcessor.get_segmenter_function(DEFAULT_SEGMENTER_FUNCTION)
             
-            # Compute VCS with all metrics for all chunk_size and lct combinations
+            # Compute VCS with all metrics for all chunk_size and Rn combinations
             all_vcs_results = {}
             for chunk_size in self.chunk_sizes:
-                for lct in self.lct_values:
+                for Rn in self.Rn_values:
                     vcs_results = vcs.compute_vcs_score(
                         reference_text=reference,
                         generated_text=generated,
@@ -187,12 +187,12 @@ class AblationEvaluator:
                         chunk_size=chunk_size,
                         context_cutoff_value=self.context_cutoff,
                         context_window_control=self.context_window,
-                        lct=lct,
+                        Rn=Rn,
                         return_all_metrics=True,  # Always True for ablation 1
                         return_internals=self.return_internals
                     )
                     # Store results with standardized naming
-                    metric_prefix = f"VCS_C{chunk_size}_LCT{lct}"
+                    metric_prefix = f"VCS_C{chunk_size}_Rn{Rn}"
                     for metric_name, value in vcs_results.items():
                         if metric_name == "VCS":
                             all_vcs_results[metric_prefix] = value
@@ -208,9 +208,9 @@ class AblationEvaluator:
                 filtered_metrics[metric_name] = float(value)
             
             # Then add traditional ablation metrics if they exist
-            # Note: Traditional ablation metrics are typically from first chunk_size/lct combination
+            # Note: Traditional ablation metrics are typically from first chunk_size/Rn combination
             first_chunk = self.chunk_sizes[0]
-            first_lct = self.lct_values[0]
+            first_lct = self.Rn_values[0]
             base_vcs_key = f"VCS_C{first_chunk}_LCT{first_lct}"
             
             for metric_name in ABLATION_1_METRICS_ORDER:
@@ -270,10 +270,10 @@ class AblationEvaluator:
             # Get segmenter function
             segmenter_fn = TextProcessor.get_segmenter_function(DEFAULT_SEGMENTER_FUNCTION)
             
-            # Compute VCS with all metrics for all chunk_size and lct combinations to get base components
+            # Compute VCS with all metrics for all chunk_size and Rn combinations to get base components
             all_vcs_results = {}
             for chunk_size in self.chunk_sizes:
-                for lct in self.lct_values:
+                for Rn in self.Rn_values:
                     vcs_results = vcs.compute_vcs_score(
                         reference_text=reference,
                         generated_text=generated,
@@ -283,12 +283,12 @@ class AblationEvaluator:
                         chunk_size=chunk_size,
                         context_cutoff_value=self.context_cutoff,
                         context_window_control=self.context_window,
-                        lct=lct,
+                        Rn=Rn,
                         return_all_metrics=True,
                         return_internals=self.return_internals
                     )
                     # Store results with standardized naming
-                    metric_prefix = f"VCS_C{chunk_size}_LCT{lct}"
+                    metric_prefix = f"VCS_C{chunk_size}_Rn{Rn}"
                     for metric_name, value in vcs_results.items():
                         if metric_name == "VCS":
                             all_vcs_results[metric_prefix] = value
@@ -297,7 +297,7 @@ class AblationEvaluator:
             
             # Extract base metrics for ablation 2 computation (use first combination)
             first_chunk = self.chunk_sizes[0]
-            first_lct = self.lct_values[0]
+            first_lct = self.Rn_values[0]
             base_prefix = f"VCS_C{first_chunk}_LCT{first_lct}"
             
             gas = all_vcs_results.get(f"{base_prefix}_GAS", 0.0)
