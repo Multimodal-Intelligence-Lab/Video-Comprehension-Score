@@ -68,7 +68,7 @@ processing:
   #   - 1-2 workers: 8GB RAM systems
   #   - 4 workers: 16GB RAM systems  
   #   - 8+ workers: 32GB+ RAM systems
-  max_workers: 48
+  max_workers: 36
   
   # Checkpoint saving interval (save every N candidates processed)
   checkpoint_interval: 100

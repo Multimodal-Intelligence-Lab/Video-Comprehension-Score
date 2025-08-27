@@ -14,7 +14,7 @@ experiment:
 # ============================================================================
 paths:
   # Input data directory containing JSON files
-  data_dir: "/mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/authors/aug_dataset_test"
+  data_dir: "/mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/data/mpii/authors/aug_dataset"
   
   # Base output directory for results
   results_dir: "/mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/exp/results/mpii/authors"
@@ -25,10 +25,10 @@ paths:
 authors:
   # Author file mappings
   author_files:
-    A1: "author1.json"
-    A2: "author2.json"
-    A3: "author3.json"
-    A4: "author4.json"
+    A1: "chatgpt.json" #author1
+    A2: "claude.json" #author2
+    A3: "grok.json" #author3
+    A4: "mistral.json" #author4
   
   # Selected metrics to compute
   selected_metrics:
@@ -46,7 +46,7 @@ authors:
 # ============================================================================
 vcs:
   # Chunk sizes to evaluate (discrete values)
-  chunk_size: [1]
+  chunk_size: [2]
   
   # LCT (Line Chronological Tolerance) values to compute
   lct: [0, 1]

@@ -61,7 +61,7 @@ processing:
   selected_ids: ["Default"]
   
   # Test case IDs to execute (["Default"] = all available)
-  test_case_ids: ["6.2"]
+  test_case_ids: ["1.3"]
 
 # ============================================================================
 # TRANSFORMATION SETTINGS
