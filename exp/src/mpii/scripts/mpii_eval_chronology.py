@@ -420,7 +420,7 @@ class MetricsEvaluator:
             context_cutoff = vcs_config.get('context_cutoff_value', 0.6)
             context_window = vcs_config.get('context_window_control', 4.0)
             
-            # Compute VCS metrics for each chunk_size × LCT combination
+            # Compute VCS metrics for each chunk_size × Rn combination
             vcs_metrics = {}
             for chunk_size in chunk_sizes:
                 for Rn in Rn_values:

@@ -113,7 +113,7 @@ class StructuredLogger:
     def log_correlation_results(self, metric_name: str, kendall_tau: float, spearman_corr: float, 
                                Rn_value: int, n_refs: int):
         """Log individual correlation results."""
-        self.main_logger.info(f"VCS({metric_name}) LCT_{Rn_value}_{n_refs}ref - Kendall: {kendall_tau}, Spearman: {spearman_corr}")
+        self.main_logger.info(f"VCS({metric_name}) Rn_{Rn_value}_{n_refs}ref - Kendall: {kendall_tau}, Spearman: {spearman_corr}")
     
     def log_progress(self, current: int, total: int, description: str = "Processing", already_processed: int = 0):
         """Log progress information with resume context."""
@@ -195,7 +195,7 @@ class VCSEvaluator:
             chunk_sizes = self.config['vcs'].get('chunk_size', [1])
             Rn_values = self.Rn_values
             
-            # Compute VCS for each chunk size and LCT combination
+            # Compute VCS for each chunk size and Rn combination
             for chunk_size in chunk_sizes:
                 for Rn in Rn_values:
                     try:

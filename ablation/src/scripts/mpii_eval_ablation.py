@@ -142,8 +142,8 @@ class AblationEvaluator:
         chunk_size_config = vcs_config.get('chunk_size', [1])
         self.chunk_sizes = chunk_size_config if isinstance(chunk_size_config, list) else [chunk_size_config]
         
-        lct_config = vcs_config.get('Rn', [0])
-        self.Rn_values = lct_config if isinstance(lct_config, list) else [lct_config]
+        Rn_config = vcs_config.get('Rn', [0])
+        self.Rn_values = Rn_config if isinstance(Rn_config, list) else [Rn_config]
         
         self.context_cutoff = vcs_config.get('context_cutoff_value', 0.6)
         self.context_window = vcs_config.get('context_window_control', 4.0)
@@ -210,8 +210,8 @@ class AblationEvaluator:
             # Then add traditional ablation metrics if they exist
             # Note: Traditional ablation metrics are typically from first chunk_size/Rn combination
             first_chunk = self.chunk_sizes[0]
-            first_lct = self.Rn_values[0]
-            base_vcs_key = f"VCS_C{first_chunk}_LCT{first_lct}"
+            first_Rn = self.Rn_values[0]
+            base_vcs_key = f"VCS_C{first_chunk}_Rn{first_Rn}"
             
             for metric_name in ABLATION_1_METRICS_ORDER:
                 if metric_name not in filtered_metrics:
@@ -297,8 +297,8 @@ class AblationEvaluator:
             
             # Extract base metrics for ablation 2 computation (use first combination)
             first_chunk = self.chunk_sizes[0]
-            first_lct = self.Rn_values[0]
-            base_prefix = f"VCS_C{first_chunk}_LCT{first_lct}"
+            first_Rn = self.Rn_values[0]
+            base_prefix = f"VCS_C{first_chunk}_Rn{first_Rn}"
             
             gas = all_vcs_results.get(f"{base_prefix}_GAS", 0.0)
             las = all_vcs_results.get(f"{base_prefix}_LAS", 0.0)
