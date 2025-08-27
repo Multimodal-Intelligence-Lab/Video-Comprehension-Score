@@ -10,7 +10,6 @@ from ._line_nas import (
 )  
 from ._distance_nas import visualize_distance_nas
 from ._las import visualize_las, visualize_las_load_sharing
-from ._window_regularizer import visualize_window_regularizer
 from ._metrics_summary import visualize_metrics_summary
 from ._pdf_report import create_vcs_pdf_report
 
@@ -26,7 +25,6 @@ __all__ = [
     "visualize_distance_nas",
     "visualize_las",
     "visualize_las_load_sharing",
-    "visualize_window_regularizer",
     "visualize_metrics_summary",
     "create_vcs_pdf_report"
 ]

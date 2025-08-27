@@ -2,7 +2,6 @@ import numpy as np
 from typing import List, Tuple, Dict, Any
 from ..._utils import _calculate_f1
 
-from ._nas_components._regularize_nas._regularize_nas import _calculate_window_regularizer, _regularize_nas
 from ._nas_components._distance_nas._distance_nas import _calculate_distance_based_nas
 from ._nas_components._line_nas._line_nas import _calculate_line_based_nas
 
@@ -51,9 +50,6 @@ def _compute_nas_metrics(
     nas_l = _calculate_f1(col_ratio, row_ratio)
     
     f1_nas = _calculate_f1(nas_d, nas_l)
-    
-    window_regularizer, regularizer_internals = _calculate_window_regularizer(ref_len, gen_len, prec_map_windows, rec_map_windows)
-    regularized_nas = _regularize_nas(f1_nas, window_regularizer)
 
     metrics = {
         "Precision NAS-D": prec_nas,
@@ -63,8 +59,7 @@ def _compute_nas_metrics(
         "Recall NAS-L": row_ratio,
         "NAS-L": nas_l,
         "NAS-F1": f1_nas,
-        "Window-Regularizer": window_regularizer,
-        "NAS": regularized_nas
+        "NAS": f1_nas
     }
     
     internals = {
@@ -72,7 +67,6 @@ def _compute_nas_metrics(
         "recall_nas_internals": rec_nas_internals,
         "precision_line_internals": col_ratio_internals,
         "recall_line_internals": row_ratio_internals,
-        "regularizer_internals": regularizer_internals,
         "aligned_precision": aligned_col,
         "aligned_recall": aligned_row,
     }

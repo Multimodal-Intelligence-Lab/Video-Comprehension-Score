@@ -76,7 +76,7 @@ def extract_key_metrics(internals: Dict[str, Any]) -> Dict[str, Any]:
         'vcs_score': internals['metrics']['vcs']['value'],
         'gas_score': internals['metrics']['gas']['value'],
         'las_score': internals['metrics']['las']['f1'],
-        'nas_score': internals['metrics']['nas']['regularized_nas'],
+        'nas_score': internals['metrics']['nas']['nas'],
         'ref_len': internals['texts']['reference_length'],
         'gen_len': internals['texts']['generated_length']
     }
@@ -93,7 +93,6 @@ def create_section_structure(
     visualize_line_nas: Callable,
     visualize_line_nas_precision_calculations: Callable,
     visualize_line_nas_recall_calculations: Callable,
-    visualize_window_regularizer: Callable,
     internals: Dict[str, Any]
 ) -> List[Tuple]:
     return [
@@ -121,7 +120,6 @@ def create_section_structure(
             ("Line-based NAS", "NAS Line", lambda: visualize_line_nas(internals)),
             ("Line NAS Precision", "NAS Line", lambda: visualize_line_nas_precision_calculations(internals)[0]),
             ("Line NAS Recall", "NAS Line", lambda: visualize_line_nas_recall_calculations(internals)[0]),
-            ("Window Regularization", "Window Regularizer", lambda: visualize_window_regularizer(internals))
         ])
     ]
 
@@ -205,7 +203,7 @@ def validate_metrics_list(metrics_list: List[str]) -> List[str]:
     valid_metrics = {
         "Config", "Overview", "Text Chunks", "Similarity Matrix", 
         "Mapping Windows", "Best Match", "LAS", "LAS Load Sharing", "NAS Distance", 
-        "NAS Line", "Window Regularizer"
+        "NAS Line"
     }
     
     validated = []

@@ -135,8 +135,7 @@ def compute_vcs_score(
         * ``'Recall NAS-L'`` : float - Line-based NAS recall
         * ``'NAS-L'`` : float - Line-based Narrative Alignment Score
         * ``'NAS-F1'`` : float - Combined NAS-D and NAS-L score
-        * ``'Window-Regularizer'`` : float - Regularization factor for window overlap
-        * ``'NAS'`` : float - Final regularized Narrative Alignment Score
+        * ``'NAS'`` : float - Final Narrative Alignment Score
             
         **With return_internals=True:**
         
@@ -382,14 +381,8 @@ def compute_vcs_score(
                         },
                         "f1": nas_metrics["NAS-L"],
                     },
-                    "regularizer": {
-                        "value": nas_metrics["Window-Regularizer"],
-                        "total_mapping_window_area": nas_internals["regularizer_internals"]["total_mapping_window_area"],
-                        "timeline_area": nas_internals["regularizer_internals"]["timeline_area"],
-                        "min_area": nas_internals["regularizer_internals"]["min_area"],
-                    },
                     "nas_f1": nas_metrics["NAS-F1"],
-                    "regularized_nas": nas_metrics["NAS"],
+                    "nas": nas_metrics["NAS"],
                 },
                 "vcs": {
                     "value": combined["VCS"],
