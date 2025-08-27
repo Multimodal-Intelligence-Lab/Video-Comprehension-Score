@@ -47,7 +47,7 @@ def add_penalty_metrics_text(ax: plt.Axes, nas_data: Dict[str, Any],
                            metric_name: str, Rn: int) -> None:
     """Add metrics text box to penalty plot."""
     text_content = (f"Max Penalty: {nas_data['max_penalty']:.4f}\n"
-                   f"NAS-D {metric_name}: {nas_data['value']:.4f}\n")
+                   f"Global NAS {metric_name}: {nas_data['value']:.4f}\n")
     
     if Rn > 0:
         text_content += f"Rn: {Rn}"

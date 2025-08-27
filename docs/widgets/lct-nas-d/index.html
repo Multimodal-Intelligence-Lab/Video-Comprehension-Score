@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Effect of LCT on Distance-based NAS (NAS-D)</title>
+    <title>Effect of LCT on Global NAS (Global NAS)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -725,10 +725,10 @@
                                 <div class="bg-white bg-opacity-20 text-white px-3 py-1 rounded-full text-xs font-semibold">Core VCS Component</div>
                             </div>
                             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-3 leading-tight">
-                                LCT Effect on Distance-based NAS (NAS-D)
+                                LCT Effect on Global NAS (Global NAS)
                             </h1>
                             <p class="text-teal-200 text-base sm:text-lg mb-6 max-w-3xl">
-                                Explore how Local Chronology Threshold (Rn) introduces flexibility for local chronological deviations by enabling tolerance zones in Distance-based NAS within the Video Comprehension Score framework.
+                                Explore how Local Chronology Threshold (Rn) introduces flexibility for local chronological deviations by enabling tolerance zones in Global NAS within the Video Comprehension Score framework.
                             </p>
                         </div>
                     </div>
@@ -741,13 +741,13 @@
             <div id="tour-step-intro" class="intro-card interactive-card rounded-xl p-6">
                 <div class="flex items-center mb-4">
                     <i class="fas fa-lightbulb text-amber-600 text-xl mr-3"></i>
-                    <h2 class="text-xl font-semibold text-amber-800">Introduction to LCT Effect on Distance-based NAS</h2>
+                    <h2 class="text-xl font-semibold text-amber-800">Introduction to LCT Effect on Global NAS</h2>
                 </div>
                 
                 <!-- Definition -->
                 <div class="bg-white bg-opacity-70 p-4 rounded-xl mb-6 border-l-4 border-amber-500">
                     <p class="text-sm text-slate-700 mb-3">
-                        <strong>What is NAS Regularizer (Rn) Effect on NAS-D?</strong> Local Chronology Threshold (Rn) introduces controlled flexibility to Distance-based NAS by creating "forgiveness neighborhoods" where chronological content can be locally rearranged without distance penalties. This addresses the limitation where minor narrative reorderings (like adjacent sentence swaps) are heavily penalized despite preserving meaning.
+                        <strong>What is NAS Regularizer (Rn) Effect on Global NAS?</strong> Local Chronology Threshold (Rn) introduces controlled flexibility to Global NAS by creating "forgiveness neighborhoods" where chronological content can be locally rearranged without distance penalties. This addresses the limitation where minor narrative reorderings (like adjacent sentence swaps) are heavily penalized despite preserving meaning.
                     </p>
                     
                     <!-- Warning -->
@@ -767,7 +767,7 @@
                             <i class="fas fa-info-circle text-blue-500 mr-2 mt-0.5"></i>
                             <div>
                                 <p class="text-xs text-blue-800 font-medium mb-1">📚 Additional Prerequisites</p>
-                                <p class="text-xs text-blue-700">Before exploring LCT effects on Distance-based NAS, we recommend visiting the <a href="../mapping-window/" class="font-bold underline hover:text-blue-900">Mapping Window Demo</a>, <a href="../best-match/" class="font-bold underline hover:text-blue-900">Best Match Demo</a>, and <a href="../distance-nas/" class="font-bold underline hover:text-blue-900">Distance-based NAS Demo</a> to understand the foundational concepts. LCT builds upon these by adding controlled flexibility to chronological alignment assessment.</p>
+                                <p class="text-xs text-blue-700">Before exploring LCT effects on Global NAS, we recommend visiting the <a href="../mapping-window/" class="font-bold underline hover:text-blue-900">Mapping Window Demo</a>, <a href="../best-match/" class="font-bold underline hover:text-blue-900">Best Match Demo</a>, and <a href="../global-nas/" class="font-bold underline hover:text-blue-900">Global NAS Demo</a> to understand the foundational concepts. LCT builds upon these by adding controlled flexibility to chronological alignment assessment.</p>
                             </div>
                         </div>
                     </div>
@@ -802,7 +802,7 @@
                                 </p>
                                 <div class="bg-blue-50/50 p-3 rounded-xl mb-3 border border-blue-200">
                                     <p class="text-xs text-blue-700">
-                                        <strong>Distance-based NAS Behavior:</strong> Without LCT, this reversal incurs distance penalties. With Rn=1, these penalties are forgiven within the tolerance zone. For perfect ratios (max(ref,gen)/min(ref,gen) yielding whole numbers like 10/5, 9/3), Rn=1 enables swap with immediate neighbor without penalty.
+                                        <strong>Global NAS Behavior:</strong> Without LCT, this reversal incurs distance penalties. With Rn=1, these penalties are forgiven within the tolerance zone. For perfect ratios (max(ref,gen)/min(ref,gen) yielding whole numbers like 10/5, 9/3), Rn=1 enables swap with immediate neighbor without penalty.
                                         <br><strong>⚠️ Caution:</strong> When ratios are non-integer (10/7, 9/8), behavior varies slightly—explore this in the demo.
                                     </p>
                                 </div>
@@ -864,7 +864,7 @@
                 <div id="tour-step-next-steps" class="demo-card interactive-card rounded-xl p-6 mt-8">
                     <h3 class="font-semibold text-slate-800 mb-3 flex items-center text-lg"><i class="fas fa-graduation-cap text-teal-600 mr-2"></i>Next Steps</h3>
                     <div class="mt-2 space-y-4 text-sm text-slate-700 bg-slate-50/50 p-4 rounded-xl border border-slate-200">
-                        <p class="flex items-start"><strong class="mr-3 text-teal-600 text-base mt-0.5">📚</strong> <span>Once you understand the LCT concept here, visit the <a href="../distance-nas/" class="text-teal-600 hover:text-teal-800 underline font-semibold">Distance-based NAS demo</a> to see how LCT plays out in real examples with actual narrative content.</span></p>
+                        <p class="flex items-start"><strong class="mr-3 text-teal-600 text-base mt-0.5">📚</strong> <span>Once you understand the LCT concept here, visit the <a href="../global-nas/" class="text-teal-600 hover:text-teal-800 underline font-semibold">Global NAS demo</a> to see how LCT plays out in real examples with actual narrative content.</span></p>
                         <p class="flex items-start"><strong class="mr-3 text-teal-600 text-base mt-0.5">🎯</strong> <span>Then explore the <a href="../nas/" class="text-teal-600 hover:text-teal-800 underline font-semibold">final NAS demo</a> to see how all components work together.</span></p>
                     </div>
                 </div>
@@ -876,12 +876,12 @@
                     
                     <div id="tour-step-3" class="metrics-card interactive-card rounded-xl p-6">
                         <h3 class="text-lg font-semibold text-blue-800 mb-4 flex items-center">
-                            <i class="fas fa-calculator text-blue-600 mr-2"></i>Live NAS-D Metrics
+                            <i class="fas fa-calculator text-blue-600 mr-2"></i>Live Global NAS Metrics
                         </h3>
                         <div class="space-y-3">
                             <details class="text-center bg-blue-50/70 p-3 rounded-xl border border-blue-200 cursor-pointer">
                                 <summary class="list-none">
-                                    <label class="block text-sm font-medium text-blue-700 mb-1 cursor-pointer">Distance-based NAS-D</label>
+                                    <label class="block text-sm font-medium text-blue-700 mb-1 cursor-pointer">Global Global NAS</label>
                                     <span id="nasScoreDisplay" class="text-4xl font-bold text-blue-600">-</span>
                                     <span id="nasScorePreview" class="text-4xl font-bold ghost-score"></span>
                                 </summary>
@@ -975,8 +975,8 @@
                 <div class="test-category">
                     <h3><i class="fas fa-play-circle"></i>Getting Started</h3>
                     <div class="test-item">
-                        <h4>Understanding NAS Regularizer (Rn) Effect on NAS-D</h4>
-                        <p>This guide will help you understand how Local Chronology Threshold (Rn) modifies Distance-based NAS behavior.</p>
+                        <h4>Understanding NAS Regularizer (Rn) Effect on Global NAS</h4>
+                        <p>This guide will help you understand how Local Chronology Threshold (Rn) modifies Global NAS behavior.</p>
                         <ul class="test-checklist">
                             <li>LCT creates tolerance zones around mapping windows where penalties are forgiven</li>
                             <li>Raw distance ≤ LCT_tolerance results in penalty = 0</li>
@@ -1133,14 +1133,14 @@
         const tourManager = {
             isActive: false, currentStep: 0, overlay: document.getElementById('tour-overlay'),
             steps: [ 
-                { selector: '#tour-step-intro', text: 'Welcome to LCT Effect on Distance-based NAS! This demo shows how Local Chronological Tolerance creates forgiveness zones around mapping windows. Visit Mapping Window, Best Match, and Distance-based NAS demos first to understand the foundational concepts.', position: 'bottom' }, 
+                { selector: '#tour-step-intro', text: 'Welcome to LCT Effect on Global NAS! This demo shows how Local Chronological Tolerance creates forgiveness zones around mapping windows. Visit Mapping Window, Best Match, and Global NAS demos first to understand the foundational concepts.', position: 'bottom' }, 
                 { selector: '#tour-step-2', text: 'Click to expand the neighborhood explorer. This shows how LCT forgives local chronological reorderings by creating tolerance zones.', position: 'bottom' }, 
                 { selector: '.lg\\:col-span-2 > .demo-card', text: 'This grid visualizes LCT effects in real-time. Green rectangles are ideal mapping windows, yellow zones show LCT forgiveness areas. Drag purple markers to test penalty calculations.', position: 'top' }, 
                 { selector: '#tour-step-5', text: 'Adjust grid configuration parameters to see how different text length ratios affect LCT window calculations. Try different reference/generated length ratios.', position: 'left' }, 
                 { selector: '#tour-step-6', text: 'Try these preset scenarios to explore different LCT effects on narrative disruption patterns. Each button demonstrates a specific forgiveness pattern. Check the Testing Guide for detailed exploration strategies.', position: 'left' },
                 { selector: '#tour-step-4', text: 'LCT Parameter slider controls forgiveness tolerance. Higher values create larger yellow tolerance zones around mapping windows, reducing penalties for minor deviations.', position: 'left' }, 
-                { selector: '#tour-step-3', text: 'Live Distance-based NAS score updates with real-time penalty calculations. Click the score to see the underlying formula. Watch how LCT reduces penalties by expanding forgiveness zones.', position: 'left' },
-                { selector: '#tour-step-next-steps', text: 'After exploring this demo, check out the Distance-based NAS demo to try the LCT parameter there, and see how all components work together.', position: 'top' } 
+                { selector: '#tour-step-3', text: 'Live Global NAS score updates with real-time penalty calculations. Click the score to see the underlying formula. Watch how LCT reduces penalties by expanding forgiveness zones.', position: 'left' },
+                { selector: '#tour-step-next-steps', text: 'After exploring this demo, check out the Global NAS demo to try the LCT parameter there, and see how all components work together.', position: 'top' } 
             ],
             start: function() { this.isActive = true; this.currentStep = 0; this.overlay.style.pointerEvents = 'auto'; this.overlay.style.opacity = '1'; this.addClickOutsideHandler(); this.showStep(); },
             next: function() { this.cleanupCurrentStep(); this.currentStep++; if (this.currentStep < this.steps.length) { setTimeout(() => this.showStep(), 400); } else { this.end(); } },
@@ -1217,7 +1217,7 @@
 
         function updateScenarioTip(scenarioType) {
             const tips = {
-                optimal: "This is a perfect 1-to-1 alignment. The NAS-D score is 1.0, and there are no penalties.",
+                optimal: "This is a perfect 1-to-1 alignment. The Global NAS score is 1.0, and there are no penalties.",
                 lct1Rotation: "A minor 2x2 reordering. Without LCT, this creates penalties. Set Rn=1 to see them forgiven, boosting the score.",
                 lct2Rotation: "A more complex 3x3 rotation. This requires Rn=2 to be fully forgiven. Notice the larger initial penalty.",
                 deleteEnd: "The generated sequence is shorter, ending prematurely. This lowers the max possible penalty but still results in a poor score.",

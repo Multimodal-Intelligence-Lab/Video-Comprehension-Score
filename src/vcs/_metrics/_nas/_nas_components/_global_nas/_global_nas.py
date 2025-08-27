@@ -4,7 +4,7 @@ from typing import List, Tuple, Dict, Any
 from ._max_penalty._max_penalty import calculate_max_penalty
 from ._actual_penalty._actual_penalty import calculate_actual_penalty
 
-def _calculate_distance_based_nas(
+def _calculate_global_nas(
     best_indices: np.ndarray,
     mapping_windows: List[Tuple[int, int]],
     length: int,

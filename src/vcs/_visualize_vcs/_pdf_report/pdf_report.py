@@ -48,7 +48,7 @@ def create_vcs_pdf_report(
           - ``"Best Match"`` : Match analysis details
           - ``"LAS"`` : Local Alignment Score analysis
           - ``"LAS Load Sharing"`` : Load sharing penalty analysis
-          - ``"NAS Distance"`` : Distance-based NAS analysis
+          - ``"Global NAS"`` : Global NAS analysis
           - ``"NAS Line"`` : Line-based NAS analysis  
     
     Returns
@@ -81,7 +81,7 @@ def create_vcs_pdf_report(
         create_vcs_pdf_report(
             result['internals'], 
             'summary_report.pdf',
-            metrics_to_include=["Config", "Overview", "LAS", "NAS Distance"]
+            metrics_to_include=["Config", "Overview", "LAS", "Global NAS"]
         )
     
     **Create Report for Specific Analysis:**
@@ -141,7 +141,7 @@ def create_vcs_pdf_report(
         from .._similarity_matrix import visualize_similarity_matrix
         from .._mapping_windows import visualize_mapping_windows
         from .._line_nas import visualize_line_nas, visualize_line_nas_precision_calculations, visualize_line_nas_recall_calculations
-        from .._distance_nas import visualize_distance_nas
+        from .._global_nas import visualize_global_nas
         from .._las import visualize_las
         from .._metrics_summary import visualize_metrics_summary
         
@@ -161,7 +161,7 @@ def create_vcs_pdf_report(
         all_sections = create_section_structure(
             visualize_config, visualize_metrics_summary, visualize_text_chunks,
             visualize_similarity_matrix, visualize_mapping_windows, visualize_las,
-            visualize_distance_nas, visualize_line_nas, 
+            visualize_global_nas, visualize_line_nas, 
             visualize_line_nas_precision_calculations, visualize_line_nas_recall_calculations,
             internals
         )

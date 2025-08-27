@@ -65,7 +65,7 @@ def draw_precision_penalty_plot(ax: plt.Axes, internals: Dict[str, Any], Rn: int
     in_rn_zone = prec_nas_data.get('in_rn_zone', [False] * len(penalties))
     
     # Set up plot
-    title = create_penalty_title('Precision NAS-D Penalties', prec_nas_data["total_penalty"])
+    title = create_penalty_title('Precision Global NAS Penalties', prec_nas_data["total_penalty"])
     setup_penalty_plot(ax, title, 'Generation Index')
     
     # Draw bars

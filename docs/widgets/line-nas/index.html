@@ -720,14 +720,14 @@
                         <i class="fas fa-info-circle text-blue-500 mr-2 mt-0.5"></i>
                         <div>
                             <p class="text-xs text-blue-800 font-medium mb-1">📚 Additional Prerequisites</p>
-                            <p class="text-xs text-blue-700">Before exploring Line-based NAS, we recommend visiting the <a href="../mapping-window/" class="font-bold underline hover:text-blue-900">Mapping Window Demo</a> to understand how mapping windows work, the <a href="../best-match/" class="font-bold underline hover:text-blue-900">Best Match Demo</a> to understand how best matches are determined, and the <a href="../distance-nas/" class="font-bold underline hover:text-blue-900">Distance-NAS Demo</a> to understand distance-based penalties and LCT concepts. Line-based NAS builds upon these foundational concepts to measure geometric path coherence.</p>
+                            <p class="text-xs text-blue-700">Before exploring Line-based NAS, we recommend visiting the <a href="../mapping-window/" class="font-bold underline hover:text-blue-900">Mapping Window Demo</a> to understand how mapping windows work, the <a href="../best-match/" class="font-bold underline hover:text-blue-900">Best Match Demo</a> to understand how best matches are determined, and the <a href="../global-nas/" class="font-bold underline hover:text-blue-900">Distance-NAS Demo</a> to understand distance-based penalties and LCT concepts. Line-based NAS builds upon these foundational concepts to measure geometric path coherence.</p>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div class="bg-white bg-opacity-60 p-4 rounded-xl"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-crosshairs text-blue-500 mr-2"></i>Distance-based NAS (NAS-D)</h4><p class="text-sm text-slate-700">Measures chronological alignment by penalizing out-of-window matches. Excellent for detecting major structural issues, but less sensitive to subtle local reorderings.</p></div>
+                <div class="bg-white bg-opacity-60 p-4 rounded-xl"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-crosshairs text-blue-500 mr-2"></i>Global NAS (Global NAS)</h4><p class="text-sm text-slate-700">Measures chronological alignment by penalizing out-of-window matches. Excellent for detecting major structural issues, but less sensitive to subtle local reorderings.</p></div>
                 <div class="bg-white bg-opacity-60 p-4 rounded-xl"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-route text-purple-500 mr-2"></i>Line-based NAS (NAS-L)</h4><p class="text-sm text-slate-700">Measures narrative flow smoothness by evaluating path geometry. Highly sensitive to local disruptions like neighbor swaps that create longer, more chaotic alignment paths.</p></div>
             </div>
             
@@ -1102,7 +1102,7 @@
                         <p>Local misalignments create jagged, longer paths that significantly impact NAS-L scores.</p>
                         <ul class="test-checklist">
                             <li>Click "Neighbor Swaps" to see how NAS-L severely penalizes local disruptions</li>
-                            <li>Notice the dramatic score drop - much more sensitive than NAS-D to local changes</li>
+                            <li>Notice the dramatic score drop - much more sensitive than Global NAS to local changes</li>
                             <li>Observe how the path becomes jagged and longer with neighbor swaps</li>
                             <li>This demonstrates NAS-L's primary strength: detecting subtle narrative flow issues</li>
                         </ul>

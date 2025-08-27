@@ -65,7 +65,7 @@ def draw_recall_penalty_plot(ax: plt.Axes, internals: Dict[str, Any], Rn: int) -
     in_rn_zone = rec_nas_data.get('in_rn_zone', [False] * len(penalties))
     
     # Set up plot
-    title = create_penalty_title('Recall NAS-D Penalties', rec_nas_data["total_penalty"])
+    title = create_penalty_title('Recall Global NAS Penalties', rec_nas_data["total_penalty"])
     setup_penalty_plot(ax, title, 'Reference Index')
     
     # Draw bars

@@ -128,9 +128,9 @@ def compute_vcs_score(
         * ``'Precision LAS'`` : float - LAS precision component
         * ``'Recall LAS'`` : float - LAS recall component  
         * ``'LAS'`` : float - Local Alignment Score (F1 of precision/recall)
-        * ``'Precision NAS-D'`` : float - Distance-based NAS precision
-        * ``'Recall NAS-D'`` : float - Distance-based NAS recall
-        * ``'NAS-D'`` : float - Distance-based Narrative Alignment Score
+        * ``'Precision Global NAS'`` : float - Global NAS precision
+        * ``'Recall Global NAS'`` : float - Global NAS recall
+        * ``'Global NAS'`` : float - Global Narrative Alignment Score
         * ``'Precision NAS-L'`` : float - Line-based NAS precision
         * ``'Recall NAS-L'`` : float - Line-based NAS recall
         * ``'NAS-L'`` : float - Line-based Narrative Alignment Score
@@ -336,7 +336,7 @@ def compute_vcs_score(
                 "nas": {
                     "nas_d": {
                         "precision": {
-                            "value": nas_metrics["Precision NAS-D"],
+                            "value": nas_metrics["Precision Global NAS"],
                             "mapping_window_height": nas_internals["precision_nas_internals"]["mapping_window_height"],
                             "max_penalty": nas_internals["precision_nas_internals"]["max_penalty"],
                             "total_penalty": nas_internals["precision_nas_internals"]["total_penalty"],
@@ -345,7 +345,7 @@ def compute_vcs_score(
                             "in_Rn_zone": nas_internals["precision_nas_internals"]["in_Rn_zone"],
                         },
                         "recall": {
-                            "value": nas_metrics["Recall NAS-D"],
+                            "value": nas_metrics["Recall Global NAS"],
                             "mapping_window_height": nas_internals["recall_nas_internals"]["mapping_window_height"],
                             "max_penalty": nas_internals["recall_nas_internals"]["max_penalty"],
                             "total_penalty": nas_internals["recall_nas_internals"]["total_penalty"],
@@ -353,7 +353,7 @@ def compute_vcs_score(
                             "in_window": nas_internals["recall_nas_internals"]["in_window"],
                             "in_Rn_zone": nas_internals["recall_nas_internals"]["in_Rn_zone"],
                         },
-                        "f1": nas_metrics["NAS-D"],
+                        "f1": nas_metrics["Global NAS"],
                     },
                     "nas_l": {
                         "precision": {

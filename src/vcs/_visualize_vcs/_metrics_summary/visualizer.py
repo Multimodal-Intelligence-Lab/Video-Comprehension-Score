@@ -62,9 +62,9 @@ def visualize_metrics_summary(internals: Dict[str, Any]) -> plt.Figure:
     metrics['NAS'] = internals['metrics']['nas']['nas']
     
     nas_d = internals['metrics']['nas']['nas_d']
-    metrics['NAS-D'] = nas_d['f1']
-    metrics['NAS-D Precision'] = nas_d['precision']['value']
-    metrics['NAS-D Recall'] = nas_d['recall']['value']
+    metrics['Global NAS'] = nas_d['f1']
+    metrics['Global NAS Precision'] = nas_d['precision']['value']
+    metrics['Global NAS Recall'] = nas_d['recall']['value']
     
     nas_l = internals['metrics']['nas']['nas_l']
     metrics['NAS-L'] = nas_l['f1']
@@ -80,9 +80,9 @@ def visualize_metrics_summary(internals: Dict[str, Any]) -> plt.Figure:
         'LAS Recall',
         'SAS',
         'NAS',
-        'NAS-D',
-        'NAS-D Precision',
-        'NAS-D Recall',
+        'Global NAS',
+        'Global NAS Precision',
+        'Global NAS Recall',
         'NAS-L',
         'NAS-L Precision',
         'NAS-L Recall'
@@ -98,7 +98,7 @@ def visualize_metrics_summary(internals: Dict[str, Any]) -> plt.Figure:
         'LAS': 'lightgreen',
         'SAS': 'lightcyan',
         'NAS': 'salmon',
-        'NAS-D': 'plum',
+        'Global NAS': 'plum',
         'NAS-L': 'orchid',
     }
     

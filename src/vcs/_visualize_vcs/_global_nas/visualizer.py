@@ -5,8 +5,8 @@ from ._utils import (
     setup_recall_mapping_plot, draw_recall_mapping_content, draw_recall_penalty_plot
 )
 
-def visualize_distance_nas(internals: Dict[str, Any]) -> plt.Figure:
-    """Create visualization of distance-based Narrative Alignment Score (NAS-D) components.
+def visualize_global_nas(internals: Dict[str, Any]) -> plt.Figure:
+    """Create visualization of Global Narrative Alignment Score components.
     
     Shows precision and recall mapping windows with penalty calculations that measure
     how well the chronological ordering of segments is preserved between texts.
@@ -15,13 +15,13 @@ def visualize_distance_nas(internals: Dict[str, Any]) -> plt.Figure:
     ----------
     internals : dict
         The internals dictionary returned by ``compute_vcs_score`` with 
-        ``return_internals=True``. Must contain NAS-D metrics and mapping data.
+        ``return_internals=True``. Must contain Global NAS metrics and mapping data.
     
     Returns
     -------
     matplotlib.figure.Figure
         A figure with four subplots showing precision mapping, recall mapping,
-        and their respective penalty calculations for distance-based NAS.
+        and their respective penalty calculations for Global NAS.
     
     Examples
     --------
@@ -37,7 +37,7 @@ def visualize_distance_nas(internals: Dict[str, Any]) -> plt.Figure:
             return_internals=True,
             return_all_metrics=True
         )
-        fig = visualize_distance_nas(result['internals'])
+        fig = visualize_global_nas(result['internals'])
         fig.show()
     
     See Also
@@ -78,7 +78,7 @@ def visualize_distance_nas(internals: Dict[str, Any]) -> plt.Figure:
     draw_recall_penalty_plot(ax_rec_penalties, internals, Rn)
     
     # Set overall title and layout
-    fig.suptitle('Distance-based NAS Metrics', fontsize=16)
+    fig.suptitle('Global NAS Metrics', fontsize=16)
     fig.tight_layout()
     
     return fig

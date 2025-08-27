@@ -8,7 +8,7 @@ from ._line_nas import (
     visualize_line_nas_precision_calculations,
     visualize_line_nas_recall_calculations,
 )  
-from ._distance_nas import visualize_distance_nas
+from ._global_nas import visualize_global_nas
 from ._las import visualize_las, visualize_las_load_sharing
 from ._metrics_summary import visualize_metrics_summary
 from ._pdf_report import create_vcs_pdf_report
@@ -22,7 +22,7 @@ __all__ = [
     "visualize_line_nas",
     "visualize_line_nas_precision_calculations",
     "visualize_line_nas_recall_calculations",
-    "visualize_distance_nas",
+    "visualize_global_nas",
     "visualize_las",
     "visualize_las_load_sharing",
     "visualize_metrics_summary",

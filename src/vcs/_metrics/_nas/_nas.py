@@ -2,7 +2,7 @@ import numpy as np
 from typing import List, Tuple, Dict, Any
 from ..._utils import _calculate_f1
 
-from ._nas_components._distance_nas._distance_nas import _calculate_distance_based_nas
+from ._nas_components._global_nas._global_nas import _calculate_global_nas
 from ._nas_components._line_nas._line_nas import _calculate_line_based_nas
 
 def _compute_nas_metrics(
@@ -22,17 +22,17 @@ def _compute_nas_metrics(
     Rn: int = 0
 ) -> Tuple[Dict[str, float], Dict[str, Any]]:
 
-    prec_nas, prec_nas_internals = _calculate_distance_based_nas(
+    prec_nas, prec_nas_internals = _calculate_global_nas(
         precision_indices, prec_map_windows, ref_len, "precision",
         ref_len=ref_len, gen_len=gen_len, Rn=Rn
     )
     
-    rec_nas, rec_nas_internals = _calculate_distance_based_nas(
+    rec_nas, rec_nas_internals = _calculate_global_nas(
         recall_indices, rec_map_windows, gen_len, "recall",
         ref_len=ref_len, gen_len=gen_len, Rn=Rn
     )
     
-    nas_d = _calculate_f1(prec_nas, rec_nas)
+    global_nas = _calculate_f1(prec_nas, rec_nas)
     
     aligned_col = []
     for g_idx, r_idx in precision_matches:
@@ -49,12 +49,12 @@ def _compute_nas_metrics(
     
     nas_l = _calculate_f1(col_ratio, row_ratio)
     
-    f1_nas = _calculate_f1(nas_d, nas_l)
+    f1_nas = _calculate_f1(global_nas, nas_l)
 
     metrics = {
-        "Precision NAS-D": prec_nas,
-        "Recall NAS-D": rec_nas,
-        "NAS-D": nas_d,
+        "Precision Global NAS": prec_nas,
+        "Recall Global NAS": rec_nas,
+        "Global NAS": global_nas,
         "Precision NAS-L": col_ratio,
         "Recall NAS-L": row_ratio,
         "NAS-L": nas_l,

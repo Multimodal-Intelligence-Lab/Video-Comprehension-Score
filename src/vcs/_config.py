@@ -120,7 +120,7 @@ Notes
 * 0 = strict chronological order required
 * 1 = small deviations from chronological order allowed
 * 2+ = increasing flexibility in temporal ordering
-* Affects NAS-D and NAS-L penalty calculations
+* Affects Global NAS and NAS-L penalty calculations
 * Useful for texts where some reordering is semantically acceptable
 
 Use Cases

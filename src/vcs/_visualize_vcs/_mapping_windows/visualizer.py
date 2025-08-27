@@ -43,7 +43,7 @@ def visualize_mapping_windows(internals: Dict[str, Any]) -> plt.Figure:
     
     See Also
     --------
-    visualize_distance_nas : See how mapping windows affect NAS-D penalties
+    visualize_global_nas : See how mapping windows affect Global NAS penalties
     visualize_similarity_matrix : Compare with unconstrained similarity
     """
     ref_len = internals['texts']['reference_length']

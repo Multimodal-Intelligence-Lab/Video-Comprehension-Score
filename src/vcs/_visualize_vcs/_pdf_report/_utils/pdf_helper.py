@@ -89,7 +89,7 @@ def create_section_structure(
     visualize_similarity_matrix: Callable,
     visualize_mapping_windows: Callable,
     visualize_las: Callable,
-    visualize_distance_nas: Callable,
+    visualize_global_nas: Callable,
     visualize_line_nas: Callable,
     visualize_line_nas_precision_calculations: Callable,
     visualize_line_nas_recall_calculations: Callable,
@@ -116,7 +116,7 @@ def create_section_structure(
             ("LAS Load Sharing Details", "LAS Load Sharing", lambda: None)  # Special handling for multiple pages
         ]),
         ("Narrative Alignment Score (NAS)", [
-            ("Distance-based NAS", "NAS Distance", lambda: visualize_distance_nas(internals)),
+            ("Global NAS", "Global NAS", lambda: visualize_global_nas(internals)),
             ("Line-based NAS", "NAS Line", lambda: visualize_line_nas(internals)),
             ("Line NAS Precision", "NAS Line", lambda: visualize_line_nas_precision_calculations(internals)[0]),
             ("Line NAS Recall", "NAS Line", lambda: visualize_line_nas_recall_calculations(internals)[0]),
@@ -202,7 +202,7 @@ def estimate_paginated_content_pages(item_name: str, internals: Dict[str, Any]) 
 def validate_metrics_list(metrics_list: List[str]) -> List[str]:
     valid_metrics = {
         "Config", "Overview", "Text Chunks", "Similarity Matrix", 
-        "Mapping Windows", "Best Match", "LAS", "LAS Load Sharing", "NAS Distance", 
+        "Mapping Windows", "Best Match", "LAS", "LAS Load Sharing", "Global NAS", 
         "NAS Line"
     }
     

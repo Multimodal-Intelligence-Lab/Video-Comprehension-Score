@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Distance-based Narrative Alignment Score (NAS-D)</title>
+    <title>Distance-based Narrative Alignment Score (Global NAS)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
@@ -681,7 +681,7 @@
                                 <div class="bg-white bg-opacity-20 text-white px-3 py-1 rounded-full text-xs font-semibold">Core VCS Component</div>
                             </div>
                             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-3 leading-tight">
-                                Distance-based Narrative Alignment Score (NAS-D)
+                                Distance-based Narrative Alignment Score (Global NAS)
                             </h1>
                             <p class="text-teal-200 text-base sm:text-lg mb-6 max-w-3xl">
                                 Explore chronological misalignment assessment through distance-based penalties when text segments are matched outside their expected narrative positions in the Video Comprehension Score framework.
@@ -699,7 +699,7 @@
             
             <!-- Definition -->
             <div class="bg-white bg-opacity-70 p-4 rounded-lg mb-6 border-l-4 border-amber-500">
-                <p class="text-sm text-slate-700 mb-3"><strong>What is Distance-based NAS (NAS-D)?</strong> NAS-D measures chronological misalignment by calculating distance-based penalties when text segments are matched outside their expected narrative positions within mapping windows. Unlike semantic metrics that focus on content similarity, NAS-D explicitly evaluates narrative structure and temporal sequence integrity.</p>
+                <p class="text-sm text-slate-700 mb-3"><strong>What is Global NAS (Global NAS)?</strong> Global NAS measures chronological misalignment by calculating distance-based penalties when text segments are matched outside their expected narrative positions within mapping windows. Unlike semantic metrics that focus on content similarity, Global NAS explicitly evaluates narrative structure and temporal sequence integrity.</p>
                 
                 <!-- Warning -->
                 <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
@@ -718,7 +718,7 @@
                         <i class="fas fa-info-circle text-blue-500 mr-2 mt-0.5"></i>
                         <div>
                             <p class="text-xs text-blue-800 font-medium mb-1">📚 Additional Prerequisites</p>
-                            <p class="text-xs text-blue-700">Before exploring Distance-based NAS, we recommend visiting the <a href="../mapping-window/" class="font-bold underline hover:text-blue-900">Mapping Window Demo</a> to understand how mapping windows work, and the <a href="../best-match/" class="font-bold underline hover:text-blue-900">Best Match Demo</a> to understand how best matches are determined. Distance-based NAS builds upon these foundational concepts.</p>
+                            <p class="text-xs text-blue-700">Before exploring Global NAS, we recommend visiting the <a href="../mapping-window/" class="font-bold underline hover:text-blue-900">Mapping Window Demo</a> to understand how mapping windows work, and the <a href="../best-match/" class="font-bold underline hover:text-blue-900">Best Match Demo</a> to understand how best matches are determined. Global NAS builds upon these foundational concepts.</p>
                         </div>
                     </div>
                 </div>
@@ -726,13 +726,13 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div class="bg-white bg-opacity-60 p-4 rounded-lg"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-microscope text-teal-500 mr-2"></i>Local Alignment (LAS)</h4><p class="text-sm text-slate-700">Measures average semantic quality of matched chunk pairs. Excellent for content similarity, but ignores chronological order and narrative structure.</p></div>
-                <div class="bg-white bg-opacity-60 p-4 rounded-lg"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-clock text-amber-500 mr-2"></i>Distance-based NAS (NAS-D)</h4><p class="text-sm text-slate-700">Measures chronological alignment by penalizing matches outside expected narrative positions. Detects temporal misalignments and narrative structure disruptions.</p></div>
+                <div class="bg-white bg-opacity-60 p-4 rounded-lg"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-clock text-amber-500 mr-2"></i>Global NAS (Global NAS)</h4><p class="text-sm text-slate-700">Measures chronological alignment by penalizing matches outside expected narrative positions. Detects temporal misalignments and narrative structure disruptions.</p></div>
             </div>
             
             <!-- Sensitivity Analysis Section -->
             <div class="bg-white bg-opacity-70 p-4 rounded-lg mb-6 border-l-4 border-blue-500">
-                <h4 class="font-semibold text-blue-700 mb-3 flex items-center"><i class="fas fa-balance-scale text-blue-600 mr-2"></i>NAS-D Sensitivity Analysis</h4>
-                <p class="text-sm text-slate-700 mb-3">Distance-based Narrative Alignment Score (NAS-D) responds differently to various types of chronological disruptions:</p>
+                <h4 class="font-semibold text-blue-700 mb-3 flex items-center"><i class="fas fa-balance-scale text-blue-600 mr-2"></i>Global NAS Sensitivity Analysis</h4>
+                <p class="text-sm text-slate-700 mb-3">Distance-based Narrative Alignment Score (Global NAS) responds differently to various types of chronological disruptions:</p>
                 
                 <!-- Conceptual Sensitivity Comparison -->
                 <div class="grid grid-cols-2 gap-4 mb-3">
@@ -767,7 +767,7 @@
                 </div>
                 
                 <div class="bg-blue-50 p-3 rounded text-xs text-blue-800">
-                    <strong>Core Concept:</strong> NAS-D prioritizes global chronological coherence over local perfection. It severely penalizes large-scale narrative disruptions while being more forgiving of minor local variations, making it ideal for detecting structural narrative issues.
+                    <strong>Core Concept:</strong> Global NAS prioritizes global chronological coherence over local perfection. It severely penalizes large-scale narrative disruptions while being more forgiving of minor local variations, making it ideal for detecting structural narrative issues.
                 </div>
             </div>
             <details id="tour-step-2" class="mb-4">
@@ -850,7 +850,7 @@
                                     <div class="math-container">
                                         <p class="text-xs">$\text{max\_penalty} = \frac{\sum_{i=0}^{N_{ref}-1} \text{max\_distance}_i}{N_{gen}}$</p>
                                         <p class="text-xs">$\text{total\_penalty} = \sum_{i=0}^{N_{ref}-1} \frac{\text{effective\_distance}_i}{N_{gen}}$</p>
-                                        <p class="text-xs">$\text{Recall NAS-D} = 1 - \frac{\text{total\_penalty}}{\text{max\_penalty}}$</p>
+                                        <p class="text-xs">$\text{Recall Global NAS} = 1 - \frac{\text{total\_penalty}}{\text{max\_penalty}}$</p>
                                     </div>
                                     <p class="text-xs text-orange-700 mt-2">This ensures scores are bounded between 0 and 1, with higher scores indicating better chronological alignment.</p>
                                 </div>
@@ -877,7 +877,7 @@
                                     <p class="text-xs text-orange-800 font-medium mb-1">Step 6: F1 Score Combination</p>
                                     <p class="text-xs text-orange-700 mb-2">Combine precision and recall Distance-NAS scores using harmonic mean to create a balanced measure that captures chronological alignment in both directions.</p>
                                     <div class="math-container">
-                                        <p class="text-xs">$\text{Distance-NAS} = \frac{2 \times \text{Precision NAS-D} \times \text{Recall NAS-D}}{\text{Precision NAS-D} + \text{Recall NAS-D}}$</p>
+                                        <p class="text-xs">$\text{Distance-NAS} = \frac{2 \times \text{Precision Global NAS} \times \text{Recall Global NAS}}{\text{Precision Global NAS} + \text{Recall Global NAS}}$</p>
                                     </div>
                                     <p class="text-xs text-orange-700 mt-2">The harmonic mean ensures balanced evaluation and prevents dominance by either precision or recall components.</p>
                                 </div>
@@ -905,7 +905,7 @@
             <div class="lg:col-span-2 space-y-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div id="tour-step-4" class="demo-card interactive-card rounded-xl p-4">
-                        <div class="text-center mb-4"><div class="inline-flex items-center bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold mb-2"><i class="fas fa-crosshairs mr-1"></i>PRECISION NAS-D</div><h2 class="text-lg font-bold text-slate-800">Gen → Ref Alignment</h2></div>
+                        <div class="text-center mb-4"><div class="inline-flex items-center bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold mb-2"><i class="fas fa-crosshairs mr-1"></i>PRECISION Global NAS</div><h2 class="text-lg font-bold text-slate-800">Gen → Ref Alignment</h2></div>
                         <div class="relative w-full max-w-md mx-auto pt-4 pb-36 pl-20 pr-4">
                             <div class="absolute top-1/2 -left-8 -translate-y-16 -rotate-90 font-semibold text-sm text-slate-600 whitespace-nowrap">Reference Chunks</div>
                             <div class="absolute bottom-24 left-1/2 -translate-x-1/4 font-semibold text-sm text-slate-600">Generated Chunks</div>
@@ -926,7 +926,7 @@
                         </div>
                     </div>
                     <div class="demo-card interactive-card rounded-xl p-4">
-                        <div class="text-center mb-4"><div class="inline-flex items-center bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-semibold mb-2"><i class="fas fa-search mr-1"></i>RECALL NAS-D</div><h2 class="text-lg font-bold text-slate-800">Ref → Gen Alignment</h2></div>
+                        <div class="text-center mb-4"><div class="inline-flex items-center bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-semibold mb-2"><i class="fas fa-search mr-1"></i>RECALL Global NAS</div><h2 class="text-lg font-bold text-slate-800">Ref → Gen Alignment</h2></div>
                         <div class="relative w-full max-w-md mx-auto pt-4 pb-36 pl-20 pr-4">
                             <div class="absolute top-1/2 -left-8 -translate-y-16 -rotate-90 font-semibold text-sm text-slate-600 whitespace-nowrap">Generated Chunks</div>
                             <div class="absolute bottom-24 left-1/2 -translate-x-1/4 font-semibold text-sm text-slate-600">Reference Chunks</div>
@@ -960,23 +960,23 @@
             <div class="lg:col-span-1">
                 <div class="sticky top-6 space-y-6">
                     <div id="tour-step-6" class="metrics-card interactive-card rounded-xl p-6">
-                        <h3 class="text-lg font-semibold text-blue-800 mb-4 flex items-center"><i class="fas fa-tachometer-alt text-blue-600 mr-2"></i>Live NAS-D Metrics</h3>
+                        <h3 class="text-lg font-semibold text-blue-800 mb-4 flex items-center"><i class="fas fa-tachometer-alt text-blue-600 mr-2"></i>Live Global NAS Metrics</h3>
                         <div class="space-y-4">
                             <div class="text-center bg-blue-50/70 p-3 rounded-lg border border-blue-200">
-                                <label class="block text-sm font-medium text-blue-700 mb-1">Overall NAS-D (F1)</label>
+                                <label class="block text-sm font-medium text-blue-700 mb-1">Overall Global NAS (F1)</label>
                                 <span id="f1DistNasValue" class="text-4xl font-bold text-blue-600">0.000</span>
                                 <span id="f1DistNasValuePreview" class="text-4xl ghost-score"></span>
                                 <p class="text-xs text-slate-500 mt-1">Harmonic mean of P & R</p>
                             </div>
                                 <div class="grid grid-cols-2 gap-4">
                                     <div class="text-center">
-                                        <label class="block text-sm font-medium text-blue-700 mb-1">Precision NAS-D</label>
+                                        <label class="block text-sm font-medium text-blue-700 mb-1">Precision Global NAS</label>
                                         <span id="overallPrecisionNas" class="text-3xl font-bold text-teal-600">0.000</span>
                                         <span id="overallPrecisionNasPreview" class="text-3xl ghost-score"></span>
                                         <p class="text-xs text-slate-500 mt-1">Gen → Ref penalties</p>
                                     </div>
                                     <div class="text-center">
-                                        <label class="block text-sm font-medium text-blue-700 mb-1">Recall NAS-D</label>
+                                        <label class="block text-sm font-medium text-blue-700 mb-1">Recall Global NAS</label>
                                         <span id="overallRecallNas" class="text-3xl font-bold text-amber-600">0.000</span>
                                         <span id="overallRecallNasPreview" class="text-3xl ghost-score"></span>
                                         <p class="text-xs text-slate-500 mt-1">Ref → Gen penalties</p>
@@ -1038,10 +1038,10 @@
                 <div class="test-category">
                     <h3><i class="fas fa-play-circle"></i>Getting Started</h3>
                     <div class="test-item">
-                        <h4>Understanding Distance-based NAS</h4>
-                        <p>This guide will help you understand how NAS-D works by exploring different scenarios and their impact on chronological alignment scores.</p>
+                        <h4>Understanding Global NAS</h4>
+                        <p>This guide will help you understand how Global NAS works by exploring different scenarios and their impact on chronological alignment scores.</p>
                         <ul class="test-checklist">
-                            <li>NAS-D measures chronological alignment by penalizing out-of-window matches</li>
+                            <li>Global NAS measures chronological alignment by penalizing out-of-window matches</li>
                             <li>It's more sensitive to global misalignments than local ones</li>
                             <li>LCT (Local Chronological Tolerance) creates forgiveness zones for minor deviations</li>
                             <li>Close this guide and use the Test Scenarios to experiment with different configurations</li>
@@ -1056,7 +1056,7 @@
                         <h4>Neighbor Swaps Impact</h4>
                         <p>Local misalignments involve neighboring chunks being swapped while maintaining global narrative order.</p>
                         <ul class="test-checklist">
-                            <li>Click "Neighbor Swaps" to see how NAS-D handles local chronological mix-ups</li>
+                            <li>Click "Neighbor Swaps" to see how Global NAS handles local chronological mix-ups</li>
                             <li>Notice the moderate penalty - globally aligned but locally disrupted</li>
                             <li>Observe purple markers showing small distances from their ideal windows</li>
                             <li>This represents minor editorial reorderings that don't break overall narrative flow</li>
@@ -1075,7 +1075,7 @@
                             <li>Click "Rotate Half" to simulate major narrative reordering</li>
                             <li>Compare the penalty with "Neighbor Swaps" - much higher penalty for global disruption</li>
                             <li>Notice how many markers fall outside their mapping windows</li>
-                            <li>This demonstrates NAS-D's higher sensitivity to global chronological issues</li>
+                            <li>This demonstrates Global NAS's higher sensitivity to global chronological issues</li>
                         </ul>
                         <p class="text-sm text-slate-600 mt-2 italic">Try "Rotate Half" and compare scores with local misalignments.</p>
                     </div>
@@ -1086,7 +1086,7 @@
                     <h3><i class="fas fa-random"></i>Testing Various Disorders</h3>
                     <div class="test-item">
                         <h4>Progressive Disorder Analysis</h4>
-                        <p>Explore how different levels of chronological disorder affect NAS-D scores.</p>
+                        <p>Explore how different levels of chronological disorder affect Global NAS scores.</p>
                         <ul class="test-checklist">
                             <li>Try "Reverse" to see maximum chronological disruption (lowest scores)</li>
                             <li>Test "Minor Disorders" for moderate random misalignments</li>
@@ -1142,7 +1142,7 @@
                             </div>
                         </div>
                         <div class="bg-amber-50 p-3 rounded-lg border border-amber-200 mt-3">
-                            <p class="text-xs text-amber-800"><strong>Low Demintionality Problem:</strong> Progressively disable chunks until only 2-3 remain from each list. Notice how scores paradoxically increase! This happens because mapping windows cover the entire grid, making NAS-D meaningless. Visit <strong>Window Regularizer Demo</strong> to see how this is fixed.</p>
+                            <p class="text-xs text-amber-800"><strong>Low Demintionality Problem:</strong> Progressively disable chunks until only 2-3 remain from each list. Notice how scores paradoxically increase! This happens because mapping windows cover the entire grid, making Global NAS meaningless. Visit <strong>Window Regularizer Demo</strong> to see how this is fixed.</p>
                         </div>
                     </div>
                 </div>
@@ -1151,10 +1151,10 @@
                 <div class="test-category">
                     <h3><i class="fas fa-lightbulb"></i>Key Insights</h3>
                     <div class="test-item">
-                        <h4>Understanding NAS-D Behavior</h4>
-                        <p>After exploring the scenarios, you should understand these core NAS-D characteristics:</p>
+                        <h4>Understanding Global NAS Behavior</h4>
+                        <p>After exploring the scenarios, you should understand these core Global NAS characteristics:</p>
                         <ul class="test-checklist">
-                            <li>NAS-D prioritizes global chronological alignment over local perfection</li>
+                            <li>Global NAS prioritizes global chronological alignment over local perfection</li>
                             <li>Local misalignments (neighbor swaps) receive moderate penalties</li>
                             <li>Global misalignments (rotations, reversals) receive severe penalties</li>
                             <li>LCT provides configurable tolerance for acceptable chronological deviations</li>
@@ -1229,13 +1229,13 @@
             currentStep: 0,
             overlay: document.getElementById('tour-overlay'),
             steps: [
-                { selector: '#tour-step-intro', text: 'Welcome to Distance-based NAS! This demo measures chronological misalignment by penalizing matches outside expected narrative positions. Visit Mapping Window and Best Match demos first to understand the foundational concepts.', position: 'bottom' },
+                { selector: '#tour-step-intro', text: 'Welcome to Global NAS! This demo measures chronological misalignment by penalizing matches outside expected narrative positions. Visit Mapping Window and Best Match demos first to understand the foundational concepts.', position: 'bottom' },
                 { selector: '#tour-step-2', text: 'Click to expand the algorithm breakdown. This shows the 6-step mathematical theory behind distance penalty calculation.', position: 'bottom'},
                 { selector: '#tour-step-4', text: 'These charts show narrative alignment assessment. Green rectangles are ideal mapping windows, yellow areas show LCT tolerance zones, purple markers are draggable best matches. Drag markers to see penalty changes.', position: 'top' },
                 { selector: '#tour-step-5', text: 'Click chunks to activate/deactivate them or drag to reorder sequences. Watch how structural changes affect distance penalties and alignment scores in real-time.', position: 'top' },
                 { selector: '#tour-step-3', text: 'Try these preset scenarios to explore different narrative misalignment challenges. Each button demonstrates a specific penalty pattern. Check the Testing Guide for detailed exploration strategies.', position: 'left', action: () => handleScenarioClick('neighborSwap') },
                 { selector: '#tour-step-lct', text: 'Local Chronological Tolerance creates forgiveness zones for minor deviations. Adjust the slider to control acceptable displacement. Visit the LCT Effect Demo first to understand this parameter.', position: 'left' },
-                { selector: '#tour-step-6', text: 'Final NAS-D scores are displayed here with detailed breakdowns. Precision NAS-D measures Gen→Ref penalties, Recall NAS-D measures Ref→Gen penalties, and F1 combines both. Higher scores indicate better chronological alignment.', position: 'left' }
+                { selector: '#tour-step-6', text: 'Final Global NAS scores are displayed here with detailed breakdowns. Precision Global NAS measures Gen→Ref penalties, Recall Global NAS measures Ref→Gen penalties, and F1 combines both. Higher scores indicate better chronological alignment.', position: 'left' }
             ],
 
             start: function() {
