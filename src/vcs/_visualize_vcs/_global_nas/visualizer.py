@@ -42,7 +42,7 @@ def visualize_global_nas(internals: Dict[str, Any]) -> plt.Figure:
     
     See Also
     --------
-    visualize_line_nas : See line-based NAS visualization
+    visualize_local_nas : See local NAS visualization
     visualize_mapping_windows : See mapping window details
     """
     # Extract basic data

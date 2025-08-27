@@ -36,14 +36,14 @@ def visualize_local_nas(internals: Dict[str, Any]) -> plt.Figure:
             return_internals=True,
             return_all_metrics=True
         )
-        fig = visualize_line_nas(result['internals'])
+        fig = visualize_local_nas(result['internals'])
         fig.show()
     
     See Also
     --------
     visualize_distance_nas : Compare with distance-based narrative analysis
-    visualize_line_nas_precision_calculations : Detailed precision calculations
-    visualize_line_nas_recall_calculations : Detailed recall calculations
+    visualize_local_nas_precision_calculations : Detailed precision calculations
+    visualize_local_nas_recall_calculations : Detailed recall calculations
     """
     ref_len = internals['texts']['reference_length']
     gen_len = internals['texts']['generated_length']

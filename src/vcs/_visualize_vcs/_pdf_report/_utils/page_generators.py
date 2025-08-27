@@ -77,7 +77,7 @@ def generate_content_pages(
 ) -> int:
     """Generate all content pages for the PDF report."""
     from ..._text_chunks import visualize_text_chunks
-    from ..._line_nas import visualize_local_nas_precision_calculations, visualize_local_nas_recall_calculations
+    from ..._local_nas import visualize_local_nas_precision_calculations, visualize_local_nas_recall_calculations
     
     for section_name, section_items in sections_to_use:
         for item_name, metric_key, item_generator in section_items:
@@ -96,9 +96,9 @@ def generate_content_pages(
                 elif item_name == "Generated Chunks":
                     current_page += generate_text_chunks_pages(pdf, internals, current_page, 'generated')
                 elif item_name == "Line NAS Precision":
-                    current_page += generate_line_nas_pages(pdf, internals, current_page, 'precision')
+                    current_page += generate_local_nas_pages(pdf, internals, current_page, 'precision')
                 elif item_name == "Line NAS Recall":
-                    current_page += generate_line_nas_pages(pdf, internals, current_page, 'recall')
+                    current_page += generate_local_nas_pages(pdf, internals, current_page, 'recall')
             else:
                 # Generate figure on demand
                 fig = item_generator()
@@ -148,9 +148,9 @@ def generate_text_chunks_pages(pdf: PdfPages, internals: Dict[str, Any], start_p
     return pages_added
 
 
-def generate_line_nas_pages(pdf: PdfPages, internals: Dict[str, Any], start_page: int, calc_type: str) -> int:
+def generate_local_nas_pages(pdf: PdfPages, internals: Dict[str, Any], start_page: int, calc_type: str) -> int:
     """Generate all pages for line NAS calculations without displaying them."""
-    from ..._line_nas import visualize_local_nas_precision_calculations, visualize_local_nas_recall_calculations
+    from ..._local_nas import visualize_local_nas_precision_calculations, visualize_local_nas_recall_calculations
     
     # Get all line NAS calculation figures
     if calc_type == 'precision':
