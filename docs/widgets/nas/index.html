@@ -878,15 +878,10 @@
                             <div class="flex items-start">
                                 <i class="fas fa-calculator text-orange-500 mr-2 mt-0.5"></i>
                                 <div>
-                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 4: Combine Components and Apply Regularization</p>
-                                    <p class="text-xs text-orange-700 mb-2">Combine Distance-NAS and Line-NAS using harmonic mean, then apply window regularization with renormalization to produce the final comprehensive score.</p>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 4: Combine Components</p>
+                                    <p class="text-xs text-orange-700 mb-2">Combine Distance-NAS and Line-NAS using harmonic mean to produce the final comprehensive score.</p>
                                     <div class="math-container">
-                                        <p class="text-xs">$\text{NAS-F1} = \frac{2 \times \text{NAS-D} \times \text{NAS-L}}{\text{NAS-D} + \text{NAS-L}}$</p>
-                                        <p class="text-xs">$\text{regularized\_nas} = \text{NAS-F1} - \text{window\_regularizer}$</p>
-                                        <p class="text-xs">$\text{Complete NAS} = \begin{cases} 
-                                        \frac{\text{regularized\_nas}}{1 - \text{window\_regularizer}} & \text{if } \text{regularized\_nas} > 0 \\
-                                        0 & \text{otherwise}
-                                        \end{cases}$</p>
+                                        <p class="text-xs">$\text{NAS} = \frac{2 \times \text{NAS-D} \times \text{NAS-L}}{\text{NAS-D} + \text{NAS-L}}$</p>
                                     </div>
                                     <p class="text-xs text-orange-700 mt-2">The final score balances chronological accuracy, narrative flow, and structural coverage for comprehensive text similarity assessment.</p>
                                 </div>
@@ -1087,9 +1082,7 @@
                         <h4>Perfect Integration Benchmark</h4>
                         <p>When narratives align perfectly, observe how all components achieve maximum performance.</p>
                         <ul class="test-checklist">
-                            <li>Distance-NAS, Line-NAS, and NAS F1 should all equal 1.0000</li>
-                            <li>Window Regularizer penalty should be 0.0000</li>
-                            <li>Complete NAS achieves perfect 1.0000 score</li>
+                            <li>Distance-NAS, Line-NAS, and NAS should all equal 1.0000</li>
                             <li>All purple markers align precisely within teal mapping windows</li>
                         </ul>
                         <p class="text-sm text-slate-600 mt-2 italic">Close this guide and click "Optimal" to establish the performance baseline.</p>

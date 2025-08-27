@@ -71,7 +71,6 @@ def visualize_metrics_summary(internals: Dict[str, Any]) -> plt.Figure:
     metrics['NAS-L Precision'] = nas_l['precision']['value']
     metrics['NAS-L Recall'] = nas_l['recall']['value']
     
-    metrics['NAS F1'] = internals['metrics']['nas']['nas_f1']
     
     order = [
         'VCS',
@@ -81,7 +80,6 @@ def visualize_metrics_summary(internals: Dict[str, Any]) -> plt.Figure:
         'LAS Recall',
         'SAS',
         'NAS',
-        'NAS F1',
         'NAS-D',
         'NAS-D Precision',
         'NAS-D Recall',

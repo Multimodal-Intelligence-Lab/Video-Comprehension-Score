@@ -58,7 +58,6 @@ def _compute_nas_metrics(
         "Precision NAS-L": col_ratio,
         "Recall NAS-L": row_ratio,
         "NAS-L": nas_l,
-        "NAS-F1": f1_nas,
         "NAS": f1_nas
     }
     

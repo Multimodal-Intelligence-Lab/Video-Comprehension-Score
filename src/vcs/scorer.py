@@ -134,7 +134,6 @@ def compute_vcs_score(
         * ``'Precision NAS-L'`` : float - Line-based NAS precision
         * ``'Recall NAS-L'`` : float - Line-based NAS recall
         * ``'NAS-L'`` : float - Line-based Narrative Alignment Score
-        * ``'NAS-F1'`` : float - Combined NAS-D and NAS-L score
         * ``'NAS'`` : float - Final Narrative Alignment Score
             
         **With return_internals=True:**
@@ -381,7 +380,6 @@ def compute_vcs_score(
                         },
                         "f1": nas_metrics["NAS-L"],
                     },
-                    "nas_f1": nas_metrics["NAS-F1"],
                     "nas": nas_metrics["NAS"],
                 },
                 "vcs": {
