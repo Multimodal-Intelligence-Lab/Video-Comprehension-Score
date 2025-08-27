@@ -63,7 +63,7 @@ def add_metrics_text_box(ax: plt.Axes, line_data: Dict[str, Any],
     text_content = (f"Actual Length: {actual_length:.2f}\n"
                    f"Floor Ideal (Min): {floor_line:.2f}\n"
                    f"Ceil Ideal (Max): {ceil_line:.2f}\n"
-                   f"NAS-L {metric_name}: {nas_value:.4f}")
+                   f"Local NAS {metric_name}: {nas_value:.4f}")
     
     ax.text(position[0], position[1], text_content,
             transform=ax.transAxes, va='top',

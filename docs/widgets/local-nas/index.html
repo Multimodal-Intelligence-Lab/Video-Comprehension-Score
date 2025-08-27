@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Line-based Narrative Alignment Score (NAS-L)</title>
+    <title>Line-based Narrative Alignment Score (Local NAS)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
@@ -683,7 +683,7 @@
                                 <div class="bg-white bg-opacity-20 text-white px-3 py-1 rounded-full text-xs font-semibold">Core VCS Component</div>
                             </div>
                             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-3 leading-tight">
-                                Line-based Narrative Alignment Score (NAS-L)
+                                Line-based Narrative Alignment Score (Local NAS)
                             </h1>
                             <p class="text-teal-200 text-base sm:text-lg mb-6 max-w-3xl">
                                 Explore narrative flow evaluation by measuring the geometric length of alignment paths against ideal bounds in the Video Comprehension Score framework.
@@ -701,7 +701,7 @@
             
             <!-- Definition -->
             <div class="bg-white bg-opacity-70 p-4 rounded-xl mb-6 border-l-4 border-amber-500">
-                <p class="text-sm text-slate-700 mb-3"><strong>What is Line-based NAS (NAS-L)?</strong> NAS-L measures narrative coherence by analyzing how smoothly best matches connect through the text. It calculates the geometric length of the alignment path formed by these best matches, checking whether each next neighbor appears in its expected position. The algorithm then compares this actual path length against an ideal band - consisting of floor and ceiling paths computed through mapping windows. The floor path represents the shortest possible route (optimal alignment), while the ceiling path represents the longest acceptable route, creating bounds that help detect narrative flow disruptions and local reorderings.</p>
+                <p class="text-sm text-slate-700 mb-3"><strong>What is Local NAS (Local NAS)?</strong> Local NAS measures narrative coherence by analyzing how smoothly best matches connect through the text. It calculates the geometric length of the alignment path formed by these best matches, checking whether each next neighbor appears in its expected position. The algorithm then compares this actual path length against an ideal band - consisting of floor and ceiling paths computed through mapping windows. The floor path represents the shortest possible route (optimal alignment), while the ceiling path represents the longest acceptable route, creating bounds that help detect narrative flow disruptions and local reorderings.</p>
                 
                 <!-- Warning -->
                 <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
@@ -720,7 +720,7 @@
                         <i class="fas fa-info-circle text-blue-500 mr-2 mt-0.5"></i>
                         <div>
                             <p class="text-xs text-blue-800 font-medium mb-1">📚 Additional Prerequisites</p>
-                            <p class="text-xs text-blue-700">Before exploring Line-based NAS, we recommend visiting the <a href="../mapping-window/" class="font-bold underline hover:text-blue-900">Mapping Window Demo</a> to understand how mapping windows work, the <a href="../best-match/" class="font-bold underline hover:text-blue-900">Best Match Demo</a> to understand how best matches are determined, and the <a href="../global-nas/" class="font-bold underline hover:text-blue-900">Distance-NAS Demo</a> to understand distance-based penalties and LCT concepts. Line-based NAS builds upon these foundational concepts to measure geometric path coherence.</p>
+                            <p class="text-xs text-blue-700">Before exploring Local NAS, we recommend visiting the <a href="../mapping-window/" class="font-bold underline hover:text-blue-900">Mapping Window Demo</a> to understand how mapping windows work, the <a href="../best-match/" class="font-bold underline hover:text-blue-900">Best Match Demo</a> to understand how best matches are determined, and the <a href="../global-nas/" class="font-bold underline hover:text-blue-900">Distance-NAS Demo</a> to understand distance-based penalties and LCT concepts. Local NAS builds upon these foundational concepts to measure geometric path coherence.</p>
                         </div>
                     </div>
                 </div>
@@ -728,13 +728,13 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div class="bg-white bg-opacity-60 p-4 rounded-xl"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-crosshairs text-blue-500 mr-2"></i>Global NAS (Global NAS)</h4><p class="text-sm text-slate-700">Measures chronological alignment by penalizing out-of-window matches. Excellent for detecting major structural issues, but less sensitive to subtle local reorderings.</p></div>
-                <div class="bg-white bg-opacity-60 p-4 rounded-xl"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-route text-purple-500 mr-2"></i>Line-based NAS (NAS-L)</h4><p class="text-sm text-slate-700">Measures narrative flow smoothness by evaluating path geometry. Highly sensitive to local disruptions like neighbor swaps that create longer, more chaotic alignment paths.</p></div>
+                <div class="bg-white bg-opacity-60 p-4 rounded-xl"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-route text-purple-500 mr-2"></i>Local NAS (Local NAS)</h4><p class="text-sm text-slate-700">Measures narrative flow smoothness by evaluating path geometry. Highly sensitive to local disruptions like neighbor swaps that create longer, more chaotic alignment paths.</p></div>
             </div>
             
             <!-- Sensitivity Analysis Section -->
             <div class="bg-white bg-opacity-70 p-4 rounded-xl mb-6 border-l-4 border-blue-500">
-                <h4 class="font-semibold text-blue-700 mb-3 flex items-center"><i class="fas fa-balance-scale text-blue-600 mr-2"></i>NAS-L Sensitivity Analysis</h4>
-                <p class="text-sm text-slate-700 mb-3">Line-based Narrative Alignment Score (NAS-L) responds differently to various types of chronological disruptions:</p>
+                <h4 class="font-semibold text-blue-700 mb-3 flex items-center"><i class="fas fa-balance-scale text-blue-600 mr-2"></i>Local NAS Sensitivity Analysis</h4>
+                <p class="text-sm text-slate-700 mb-3">Line-based Narrative Alignment Score (Local NAS) responds differently to various types of chronological disruptions:</p>
                 
                 <!-- Conceptual Sensitivity Comparison -->
                 <div class="grid grid-cols-2 gap-4 mb-3">
@@ -769,7 +769,7 @@
                 </div>
                 
                 <div class="bg-purple-50 p-3 rounded text-xs text-purple-800">
-                    <strong>Core Concept:</strong> NAS-L excels at detecting local narrative flow disruptions. It's highly sensitive to neighbor swaps and small reorderings that create jagged, longer alignment paths, while being more tolerant of global structural changes that maintain local flow patterns.
+                    <strong>Core Concept:</strong> Local NAS excels at detecting local narrative flow disruptions. It's highly sensitive to neighbor swaps and small reorderings that create jagged, longer alignment paths, while being more tolerant of global structural changes that maintain local flow patterns.
                 </div>
             </div>
             <details id="tour-step-2" class="mb-4">
@@ -867,7 +867,7 @@
                                     <p class="text-xs text-orange-800 font-medium mb-1">Step 4: Normalize by Ideal Bounds</p>
                                     <p class="text-xs text-orange-700 mb-2">Normalize the actual path length against the ideal bounds to compute the recall Line-NAS score, with perfect alignment yielding score 1.0.</p>
                                     <div class="math-container">
-                                        <p class="text-xs">$\text{Recall NAS-L} = \begin{cases} 
+                                        <p class="text-xs">$\text{Recall Local NAS} = \begin{cases} 
                                         1.0 & \text{if } \text{floor\_length} \leq \text{actual\_length} \leq \text{ceil\_length} \\
                                         \frac{\text{actual\_length}}{\text{floor\_length}} & \text{if } \text{actual\_length} < \text{floor\_length} \\
                                         \frac{\text{ceil\_length}}{\text{actual\_length}} & \text{if } \text{actual\_length} > \text{ceil\_length}
@@ -898,7 +898,7 @@
                                     <p class="text-xs text-orange-800 font-medium mb-1">Step 6: F1 Score Combination</p>
                                     <p class="text-xs text-orange-700 mb-2">Combine precision and recall Line-NAS scores using harmonic mean to create a balanced measure that captures narrative flow smoothness in both directions.</p>
                                     <div class="math-container">
-                                        <p class="text-xs">$\text{Line-NAS} = \frac{2 \times \text{Precision NAS-L} \times \text{Recall NAS-L}}{\text{Precision NAS-L} + \text{Recall NAS-L}}$</p>
+                                        <p class="text-xs">$\text{Line-NAS} = \frac{2 \times \text{Precision Local NAS} \times \text{Recall Local NAS}}{\text{Precision Local NAS} + \text{Recall Local NAS}}$</p>
                                     </div>
                                     <p class="text-xs text-orange-700 mt-2">The harmonic mean ensures balanced evaluation and prevents dominance by either precision or recall geometric measurements.</p>
                                 </div>
@@ -926,7 +926,7 @@
             <div class="lg:col-span-2 space-y-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div id="tour-step-4" class="demo-card interactive-card rounded-xl p-4">
-                        <div class="text-center mb-4"><div class="inline-flex items-center bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold mb-2"><i class="fas fa-route mr-1"></i>PRECISION NAS-L</div><h2 class="text-lg font-bold text-slate-800">Gen → Ref Alignment</h2></div>
+                        <div class="text-center mb-4"><div class="inline-flex items-center bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold mb-2"><i class="fas fa-route mr-1"></i>PRECISION Local NAS</div><h2 class="text-lg font-bold text-slate-800">Gen → Ref Alignment</h2></div>
                         <div class="relative w-full max-w-md mx-auto pt-4 pb-36 pl-20 pr-4">
                             <div class="absolute top-1/2 -left-8 -translate-y-16 -rotate-90 font-semibold text-sm text-slate-600 whitespace-nowrap">Reference Chunks</div>
                             <div class="absolute bottom-24 left-1/2 -translate-x-1/4 font-semibold text-sm text-slate-600">Generated Chunks</div>
@@ -950,7 +950,7 @@
                         </div>
                     </div>
                     <div class="demo-card interactive-card rounded-xl p-4">
-                        <div class="text-center mb-4"><div class="inline-flex items-center bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-semibold mb-2"><i class="fas fa-route mr-1"></i>RECALL NAS-L</div><h2 class="text-lg font-bold text-slate-800">Ref → Gen Alignment</h2></div>
+                        <div class="text-center mb-4"><div class="inline-flex items-center bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-semibold mb-2"><i class="fas fa-route mr-1"></i>RECALL Local NAS</div><h2 class="text-lg font-bold text-slate-800">Ref → Gen Alignment</h2></div>
                         <div class="relative w-full max-w-md mx-auto pt-4 pb-36 pl-20 pr-4">
                             <div class="absolute top-1/2 -left-8 -translate-y-16 -rotate-90 font-semibold text-sm text-slate-600 whitespace-nowrap">Generated Chunks</div>
                             <div class="absolute bottom-24 left-1/2 -translate-x-1/4 font-semibold text-sm text-slate-600">Reference Chunks</div>
@@ -987,23 +987,23 @@
             <div class="lg:col-span-1">
                 <div class="sticky top-6 space-y-6">
                     <div id="tour-step-6" class="metrics-card interactive-card rounded-xl p-6">
-                        <h3 class="text-lg font-semibold text-blue-800 mb-4 flex items-center"><i class="fas fa-tachometer-alt text-blue-600 mr-2"></i>Live NAS-L Metrics</h3>
+                        <h3 class="text-lg font-semibold text-blue-800 mb-4 flex items-center"><i class="fas fa-tachometer-alt text-blue-600 mr-2"></i>Live Local NAS Metrics</h3>
                         <div class="space-y-4">
                             <div class="text-center bg-blue-50/70 p-3 rounded-xl border border-blue-200">
-                                <label class="block text-sm font-medium text-blue-700 mb-1">Overall NAS-L (F1)</label>
+                                <label class="block text-sm font-medium text-blue-700 mb-1">Overall Local NAS (F1)</label>
                                 <span id="f1LineNasValue" class="text-4xl font-bold text-blue-600">0.000</span>
                                 <span id="f1LineNasValuePreview" class="text-4xl ghost-score"></span>
                                 <p class="text-xs text-slate-500 mt-1">Harmonic mean of P & R</p>
                             </div>
                                <div class="grid grid-cols-2 gap-4">
                                    <div class="text-center">
-                                       <label class="block text-sm font-medium text-blue-700 mb-1">Precision NAS-L</label>
+                                       <label class="block text-sm font-medium text-blue-700 mb-1">Precision Local NAS</label>
                                        <span id="overallPrecisionNas" class="text-3xl font-bold text-teal-600">0.000</span>
                                         <span id="overallPrecisionNasPreview" class="text-3xl ghost-score"></span>
                                        <p class="text-xs text-slate-500 mt-1">Gen → Ref flow</p>
                                    </div>
                                    <div class="text-center">
-                                       <label class="block text-sm font-medium text-blue-700 mb-1">Recall NAS-L</label>
+                                       <label class="block text-sm font-medium text-blue-700 mb-1">Recall Local NAS</label>
                                        <span id="overallRecallNas" class="text-3xl font-bold text-amber-600">0.000</span>
                                        <span id="overallRecallNasPreview" class="text-3xl ghost-score"></span>
                                        <p class="text-xs text-slate-500 mt-1">Ref → Gen flow</p>
@@ -1065,10 +1065,10 @@
                 <div class="test-category">
                     <h3><i class="fas fa-play-circle"></i>Getting Started</h3>
                     <div class="test-item">
-                        <h4>Understanding Line-based NAS</h4>
-                        <p>This guide will help you understand how NAS-L works by exploring different scenarios and their impact on narrative flow scores.</p>
+                        <h4>Understanding Local NAS</h4>
+                        <p>This guide will help you understand how Local NAS works by exploring different scenarios and their impact on narrative flow scores.</p>
                         <ul class="test-checklist">
-                            <li>NAS-L measures narrative flow by evaluating path geometry and length</li>
+                            <li>Local NAS measures narrative flow by evaluating path geometry and length</li>
                             <li>It's highly sensitive to local misalignments like neighbor swaps</li>
                             <li>LCT (Local Chronological Tolerance) filters segments with excessive vertical jumps</li>
                             <li>Close this guide and use the Test Scenarios to experiment with different configurations</li>
@@ -1081,7 +1081,7 @@
                     <h3><i class="fas fa-route"></i>Understanding Path Visualization</h3>
                     <div class="test-item">
                         <h4>Floor, Ceiling, and Actual Paths</h4>
-                        <p>Learn to interpret the different path elements in the NAS-L visualization.</p>
+                        <p>Learn to interpret the different path elements in the Local NAS visualization.</p>
                         <ul class="test-checklist">
                             <li><strong>Blue dashed line:</strong> Floor path (shortest possible route)</li>
                             <li><strong>Pink dashed line:</strong> Ceiling path (longest acceptable route)</li>
@@ -1099,12 +1099,12 @@
                     <h3><i class="fas fa-exchange-alt"></i>Testing Local Misalignment Sensitivity</h3>
                     <div class="test-item">
                         <h4>Neighbor Swaps - High Impact</h4>
-                        <p>Local misalignments create jagged, longer paths that significantly impact NAS-L scores.</p>
+                        <p>Local misalignments create jagged, longer paths that significantly impact Local NAS scores.</p>
                         <ul class="test-checklist">
-                            <li>Click "Neighbor Swaps" to see how NAS-L severely penalizes local disruptions</li>
+                            <li>Click "Neighbor Swaps" to see how Local NAS severely penalizes local disruptions</li>
                             <li>Notice the dramatic score drop - much more sensitive than Global NAS to local changes</li>
                             <li>Observe how the path becomes jagged and longer with neighbor swaps</li>
-                            <li>This demonstrates NAS-L's primary strength: detecting subtle narrative flow issues</li>
+                            <li>This demonstrates Local NAS's primary strength: detecting subtle narrative flow issues</li>
                         </ul>
                         <p class="text-sm text-slate-600 mt-2 italic">Close this guide and click "Neighbor Swaps" to see high local sensitivity.</p>
                     </div>
@@ -1115,12 +1115,12 @@
                     <h3><i class="fas fa-sync-alt"></i>Testing Global Misalignment Tolerance</h3>
                     <div class="test-item">
                         <h4>Rotate Half - Moderate Impact</h4>
-                        <p>Global misalignments may maintain local flow patterns, resulting in moderate NAS-L penalties.</p>
+                        <p>Global misalignments may maintain local flow patterns, resulting in moderate Local NAS penalties.</p>
                         <ul class="test-checklist">
                             <li>Click "Rotate Half" to simulate major narrative reordering</li>
-                            <li>Compare with "Neighbor Swaps" - notice NAS-L is more tolerant of global changes</li>
+                            <li>Compare with "Neighbor Swaps" - notice Local NAS is more tolerant of global changes</li>
                             <li>Observe that some path segments may still maintain acceptable flow</li>
-                            <li>This shows NAS-L's focus on local narrative continuity over global structure</li>
+                            <li>This shows Local NAS's focus on local narrative continuity over global structure</li>
                         </ul>
                         <p class="text-sm text-slate-600 mt-2 italic">Try "Rotate Half" and compare with local misalignments.</p>
                     </div>
@@ -1171,7 +1171,7 @@
                             </div>
                         </div>
                         <div class="bg-purple-50 p-3 rounded-xl border border-purple-200 mt-3">
-                            <p class="text-xs text-purple-800"><strong>Low Demintionality Problem:</strong> Progressively disable chunks until only 2-3 remain from each list. Notice how scores paradoxically increase! This happens because mapping windows cover the entire grid, making NAS-L meaningless. Visit Window Regularizer Demo to see how this is fixed.</p>
+                            <p class="text-xs text-purple-800"><strong>Low Demintionality Problem:</strong> Progressively disable chunks until only 2-3 remain from each list. Notice how scores paradoxically increase! This happens because mapping windows cover the entire grid, making Local NAS meaningless. Visit Window Regularizer Demo to see how this is fixed.</p>
                         </div>
                     </div>
                 </div>
@@ -1180,10 +1180,10 @@
                 <div class="test-category">
                     <h3><i class="fas fa-lightbulb"></i>Key Insights</h3>
                     <div class="test-item">
-                        <h4>Understanding NAS-L Behavior</h4>
-                        <p>After exploring the scenarios, you should understand these core NAS-L characteristics:</p>
+                        <h4>Understanding Local NAS Behavior</h4>
+                        <p>After exploring the scenarios, you should understand these core Local NAS characteristics:</p>
                         <ul class="test-checklist">
-                            <li>NAS-L excels at detecting local narrative flow disruptions</li>
+                            <li>Local NAS excels at detecting local narrative flow disruptions</li>
                             <li>Local misalignments (neighbor swaps) receive severe penalties</li>
                             <li>Global misalignments may receive moderate penalties if local flow is preserved</li>
                             <li>Path geometry matters more than positional accuracy</li>
@@ -1240,13 +1240,13 @@
             currentStep: 0,
             overlay: document.getElementById('tour-overlay'),
             steps: [
-                { selector: '#tour-step-intro', text: 'Welcome to Line-based NAS! This demo measures narrative coherence by evaluating geometric path length between text segments. Visit Mapping Window, Best Match, and Distance-NAS demos first to understand the foundational concepts.', position: 'bottom' },
+                { selector: '#tour-step-intro', text: 'Welcome to Local NAS! This demo measures narrative coherence by evaluating geometric path length between text segments. Visit Mapping Window, Best Match, and Distance-NAS demos first to understand the foundational concepts.', position: 'bottom' },
                 { selector: '#tour-step-2', text: 'Click to expand the algorithm breakdown. This shows the 5-step mathematical theory behind geometric path analysis.', position: 'bottom'},
                 { selector: '#tour-step-4', text: 'These charts visualize narrative path geometry with color coding. Green lines show smooth flow, orange lines indicate acceptable deviations, red lines show violations. Drag path points to see changes.', position: 'top' },
                 { selector: '#tour-step-5', text: 'Click chunks to activate/deactivate them or drag to reorder sequences. Watch how structural changes affect geometric path measurements and narrative flow.', position: 'top' },
                 { selector: '#tour-step-3', text: 'Try these preset scenarios to explore different narrative flow challenges. Each button demonstrates a specific geometric pattern. Check the Testing Guide for detailed exploration strategies.', position: 'left', action: () => handleScenarioClick('neighborSwap') },
                 { selector: '#tour-step-lct', text: 'Local Chronological Tolerance creates expanded tolerance windows for controlled deviations. Adjust the slider to control geometric flexibility. Visit the LCT Effect Demo first to understand this parameter.', position: 'left' },
-                { selector: '#tour-step-6', text: 'Final Line-based NAS scores are displayed here with detailed breakdowns. Precision NAS-L measures generated path quality, Recall NAS-L measures reference coverage, and F1 combines both. Higher scores indicate better geometric coherence.', position: 'left' }
+                { selector: '#tour-step-6', text: 'Final Local NAS scores are displayed here with detailed breakdowns. Precision Local NAS measures generated path quality, Recall Local NAS measures reference coverage, and F1 combines both. Higher scores indicate better geometric coherence.', position: 'left' }
             ],
 
             start: function() {
@@ -1727,7 +1727,7 @@
             reverse: '<strong>Tip:</strong> The path is completely reversed. Test how the score changes with and without LCT enabled.',
             minorDisorders: '<strong>Tip:</strong> Even a few out-of-place segments can significantly impact the narrative flow score.',
             majorDisorder: '<strong>Tip:</strong> With major chaos, the path is too long and discontinuous, resulting in a score of 0.',
-            rotateHalf: '<strong>Tip:</strong> Local chronology is mostly preserved, but global order is wrong. Since NAS-L prioritizes local flow, the score barely drops.'
+            rotateHalf: '<strong>Tip:</strong> Local chronology is mostly preserved, but global order is wrong. Since Local NAS prioritizes local flow, the score barely drops.'
         };
 
         function handleScenarioClick(scenarioType) { 

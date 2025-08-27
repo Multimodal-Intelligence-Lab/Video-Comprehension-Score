@@ -3,7 +3,7 @@ from typing import List, Tuple, Dict, Any
 from ..._utils import _calculate_f1
 
 from ._nas_components._global_nas._global_nas import _calculate_global_nas
-from ._nas_components._line_nas._line_nas import _calculate_line_based_nas
+from ._nas_components._local_nas._local_nas import _calculate_local_nas
 
 def _compute_nas_metrics(
     sim_matrix: np.ndarray,
@@ -44,20 +44,20 @@ def _compute_nas_metrics(
         if g_idx >= 0 and r_idx >= 0 and g_idx < len(gen_chunks) and r_idx < len(ref_chunks):
             aligned_row.append((g_idx + 1, r_idx + 1, gen_chunks[g_idx], ref_chunks[r_idx]))
     
-    col_ratio, col_ratio_internals = _calculate_line_based_nas(aligned_col, prec_map_windows, ref_len, gen_len, Rn=Rn)
-    row_ratio, row_ratio_internals = _calculate_line_based_nas(aligned_row, rec_map_windows, ref_len, gen_len, swap=True, Rn=Rn)
+    col_ratio, col_ratio_internals = _calculate_local_nas(aligned_col, prec_map_windows, ref_len, gen_len, Rn=Rn)
+    row_ratio, row_ratio_internals = _calculate_local_nas(aligned_row, rec_map_windows, ref_len, gen_len, swap=True, Rn=Rn)
     
-    nas_l = _calculate_f1(col_ratio, row_ratio)
+    local_nas = _calculate_f1(col_ratio, row_ratio)
     
-    f1_nas = _calculate_f1(global_nas, nas_l)
+    f1_nas = _calculate_f1(global_nas, local_nas)
 
     metrics = {
         "Precision Global NAS": prec_nas,
         "Recall Global NAS": rec_nas,
         "Global NAS": global_nas,
-        "Precision NAS-L": col_ratio,
-        "Recall NAS-L": row_ratio,
-        "NAS-L": nas_l,
+        "Precision Local NAS": col_ratio,
+        "Recall Local NAS": row_ratio,
+        "Local NAS": local_nas,
         "NAS": f1_nas
     }
     

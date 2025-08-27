@@ -7,7 +7,7 @@ from ._utils import (
     create_segment_table
 )
 
-def create_line_nas_calculation_figure(title: str, segments: List[Dict], 
+def create_local_nas_calculation_figure(title: str, segments: List[Dict], 
                                      summary_data: Dict[str, float], 
                                      Rn: int, page_num: int, total_pages: int) -> plt.Figure:
     """Create a figure for a page of Line NAS calculation details."""
@@ -42,10 +42,10 @@ def create_line_nas_calculation_figure(title: str, segments: List[Dict],
     
     return fig
 
-def visualize_line_nas_precision_calculations(internals: Dict[str, Any]) -> List[plt.Figure]:
+def visualize_local_nas_precision_calculations(internals: Dict[str, Any]) -> List[plt.Figure]:
     """Create detailed visualizations of precision Line-based NAS calculations.
     
-    Provides comprehensive breakdown of how the precision NAS-L score was calculated,
+    Provides comprehensive breakdown of how the precision Local NAS score was calculated,
     including segment-by-segment analysis, threshold applications, and calculation
     methods. Automatically creates multiple pages for large datasets.
     
@@ -58,7 +58,7 @@ def visualize_line_nas_precision_calculations(internals: Dict[str, Any]) -> List
     Returns
     -------
     list of matplotlib.figure.Figure
-        List of figures (one or more pages) showing detailed precision NAS-L 
+        List of figures (one or more pages) showing detailed precision Local NAS 
         calculations, including:
         - Summary statistics and calculation methods
         - Segment-by-segment breakdown table
@@ -79,18 +79,18 @@ def visualize_line_nas_precision_calculations(internals: Dict[str, Any]) -> List
             return_all_metrics=True,
             Rn=1
         )
-        precision_figs = visualize_line_nas_precision_calculations(result['internals'])
+        precision_figs = visualize_local_nas_precision_calculations(result['internals'])
         for fig in precision_figs:
             fig.show()
     * Indicates which calculation method was used for each segment
     * Displays LCT threshold applications when applicable
-    * Essential for debugging unexpected NAS-L precision scores
+    * Essential for debugging unexpected Local NAS precision scores
     * Automatically paginated for datasets with >15 segments per page
     
     See Also
     --------
-    visualize_line_nas : Overview of line-based analysis
-    visualize_line_nas_recall_calculations : Corresponding recall analysis
+    visualize_local_nas : Overview of line-based analysis
+    visualize_local_nas_recall_calculations : Corresponding recall analysis
     """
     precision_line_data = internals['metrics']['nas']['nas_l']['precision']
     Rn = internals['config']['Rn']
@@ -104,7 +104,7 @@ def visualize_line_nas_precision_calculations(internals: Dict[str, Any]) -> List
     
     # Check if pagination is needed
     if not should_paginate(segments):
-        fig = create_line_nas_calculation_figure(
+        fig = create_local_nas_calculation_figure(
             "Precision Line-based NAS Calculation Details",
             segments,
             precision_line_data,
@@ -118,7 +118,7 @@ def visualize_line_nas_precision_calculations(internals: Dict[str, Any]) -> List
     figures = []
     
     for i, page_segments in enumerate(paginated_segments):
-        fig = create_line_nas_calculation_figure(
+        fig = create_local_nas_calculation_figure(
             "Precision Line-based NAS Calculation Details",
             page_segments,
             precision_line_data,
@@ -130,10 +130,10 @@ def visualize_line_nas_precision_calculations(internals: Dict[str, Any]) -> List
     
     return figures
 
-def visualize_line_nas_recall_calculations(internals: Dict[str, Any]) -> List[plt.Figure]:
+def visualize_local_nas_recall_calculations(internals: Dict[str, Any]) -> List[plt.Figure]:
     """Create detailed visualizations of recall Line-based NAS calculations.
     
-    Provides comprehensive breakdown of how the recall NAS-L score was calculated,
+    Provides comprehensive breakdown of how the recall Local NAS score was calculated,
     including segment-by-segment analysis, threshold applications, and calculation
     methods. Automatically creates multiple pages for large datasets.
     
@@ -146,7 +146,7 @@ def visualize_line_nas_recall_calculations(internals: Dict[str, Any]) -> List[pl
     Returns
     -------
     list of matplotlib.figure.Figure
-        List of figures (one or more pages) showing detailed recall NAS-L 
+        List of figures (one or more pages) showing detailed recall Local NAS 
         calculations, including:
         - Summary statistics and calculation methods
         - Segment-by-segment breakdown table  
@@ -167,14 +167,14 @@ def visualize_line_nas_recall_calculations(internals: Dict[str, Any]) -> List[pl
             return_all_metrics=True,
             Rn=1
         )
-        recall_figs = visualize_line_nas_recall_calculations(result['internals'])
+        recall_figs = visualize_local_nas_recall_calculations(result['internals'])
         for fig in recall_figs:
             fig.show()
     
     See Also
     --------
-    visualize_line_nas : Overview of line-based analysis  
-    visualize_line_nas_precision_calculations : Corresponding precision analysis
+    visualize_local_nas : Overview of line-based analysis  
+    visualize_local_nas_precision_calculations : Corresponding precision analysis
     """
     recall_line_data = internals['metrics']['nas']['nas_l']['recall']
     Rn = internals['config']['Rn']
@@ -188,7 +188,7 @@ def visualize_line_nas_recall_calculations(internals: Dict[str, Any]) -> List[pl
     
     # Check if pagination is needed
     if not should_paginate(segments):
-        fig = create_line_nas_calculation_figure(
+        fig = create_local_nas_calculation_figure(
             "Recall Line-based NAS Calculation Details",
             segments,
             recall_line_data,
@@ -202,7 +202,7 @@ def visualize_line_nas_recall_calculations(internals: Dict[str, Any]) -> List[pl
     figures = []
     
     for i, page_segments in enumerate(paginated_segments):
-        fig = create_line_nas_calculation_figure(
+        fig = create_local_nas_calculation_figure(
             "Recall Line-based NAS Calculation Details",
             page_segments,
             recall_line_data,

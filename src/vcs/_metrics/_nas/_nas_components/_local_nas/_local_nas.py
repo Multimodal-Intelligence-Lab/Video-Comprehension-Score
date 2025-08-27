@@ -4,7 +4,7 @@ from typing import List, Tuple, Dict, Any
 from ._ideal_line_band._ideal_line_band import _compute_ideal_narrative_line_band
 from ._actual_line_length._actual_line_length import _compute_actual_line_length
 
-def _calculate_line_based_nas(
+def _calculate_local_nas(
     aligned: List[Tuple],
     mapping_windows,
     ref_len: int, 

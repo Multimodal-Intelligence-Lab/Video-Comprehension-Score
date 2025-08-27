@@ -2,8 +2,8 @@ import matplotlib.pyplot as plt
 from typing import Dict, Any
 from ._utils import setup_precision_plot, draw_precision_content, setup_recall_plot, draw_recall_content
 
-def visualize_line_nas(internals: Dict[str, Any]) -> plt.Figure:
-    """Visualize Line-based Narrative Alignment Score (NAS-L) calculations.
+def visualize_local_nas(internals: Dict[str, Any]) -> plt.Figure:
+    """Visualize Local Narrative Alignment Score calculations.
     
     Shows the actual alignment paths compared to ideal narrative lines for both
     precision and recall directions. Displays floor (shortest) and ceiling (longest)

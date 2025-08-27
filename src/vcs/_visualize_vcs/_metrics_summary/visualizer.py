@@ -67,9 +67,9 @@ def visualize_metrics_summary(internals: Dict[str, Any]) -> plt.Figure:
     metrics['Global NAS Recall'] = nas_d['recall']['value']
     
     nas_l = internals['metrics']['nas']['nas_l']
-    metrics['NAS-L'] = nas_l['f1']
-    metrics['NAS-L Precision'] = nas_l['precision']['value']
-    metrics['NAS-L Recall'] = nas_l['recall']['value']
+    metrics['Local NAS'] = nas_l['f1']
+    metrics['Local NAS Precision'] = nas_l['precision']['value']
+    metrics['Local NAS Recall'] = nas_l['recall']['value']
     
     
     order = [
@@ -83,9 +83,9 @@ def visualize_metrics_summary(internals: Dict[str, Any]) -> plt.Figure:
         'Global NAS',
         'Global NAS Precision',
         'Global NAS Recall',
-        'NAS-L',
-        'NAS-L Precision',
-        'NAS-L Recall'
+        'Local NAS',
+        'Local NAS Precision',
+        'Local NAS Recall'
     ]
     
     y_pos = 0
@@ -99,7 +99,7 @@ def visualize_metrics_summary(internals: Dict[str, Any]) -> plt.Figure:
         'SAS': 'lightcyan',
         'NAS': 'salmon',
         'Global NAS': 'plum',
-        'NAS-L': 'orchid',
+        'Local NAS': 'orchid',
     }
     
     def get_color(metric_name):

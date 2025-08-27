@@ -140,7 +140,7 @@ def create_vcs_pdf_report(
         from .._text_chunks import visualize_text_chunks
         from .._similarity_matrix import visualize_similarity_matrix
         from .._mapping_windows import visualize_mapping_windows
-        from .._line_nas import visualize_line_nas, visualize_line_nas_precision_calculations, visualize_line_nas_recall_calculations
+        from .._local_nas import visualize_local_nas, visualize_local_nas_precision_calculations, visualize_local_nas_recall_calculations
         from .._global_nas import visualize_global_nas
         from .._las import visualize_las
         from .._metrics_summary import visualize_metrics_summary
@@ -161,8 +161,8 @@ def create_vcs_pdf_report(
         all_sections = create_section_structure(
             visualize_config, visualize_metrics_summary, visualize_text_chunks,
             visualize_similarity_matrix, visualize_mapping_windows, visualize_las,
-            visualize_global_nas, visualize_line_nas, 
-            visualize_line_nas_precision_calculations, visualize_line_nas_recall_calculations,
+            visualize_global_nas, visualize_local_nas, 
+            visualize_local_nas_precision_calculations, visualize_local_nas_recall_calculations,
             internals
         )
         

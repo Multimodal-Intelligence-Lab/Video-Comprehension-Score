@@ -131,9 +131,9 @@ def compute_vcs_score(
         * ``'Precision Global NAS'`` : float - Global NAS precision
         * ``'Recall Global NAS'`` : float - Global NAS recall
         * ``'Global NAS'`` : float - Global Narrative Alignment Score
-        * ``'Precision NAS-L'`` : float - Line-based NAS precision
-        * ``'Recall NAS-L'`` : float - Line-based NAS recall
-        * ``'NAS-L'`` : float - Line-based Narrative Alignment Score
+        * ``'Precision Local NAS'`` : float - Local NAS precision
+        * ``'Recall Local NAS'`` : float - Local NAS recall
+        * ``'Local NAS'`` : float - Local Narrative Alignment Score
         * ``'NAS'`` : float - Final Narrative Alignment Score
             
         **With return_internals=True:**
@@ -357,7 +357,7 @@ def compute_vcs_score(
                     },
                     "nas_l": {
                         "precision": {
-                            "value": nas_metrics["Precision NAS-L"],
+                            "value": nas_metrics["Precision Local NAS"],
                             "actual_line_length": nas_internals["precision_line_internals"]["actual_line_length"],
                             "floor_ideal_line_length": nas_internals["precision_line_internals"]["floor_ideal_line_length"],
                             "ceil_ideal_line_length": nas_internals["precision_line_internals"]["ceil_ideal_line_length"],
@@ -368,7 +368,7 @@ def compute_vcs_score(
                             "actual_path": nas_internals["precision_line_internals"]["actual_path"]
                         },
                         "recall": {
-                            "value": nas_metrics["Recall NAS-L"],
+                            "value": nas_metrics["Recall Local NAS"],
                             "actual_line_length": nas_internals["recall_line_internals"]["actual_line_length"],
                             "floor_ideal_line_length": nas_internals["recall_line_internals"]["floor_ideal_line_length"],
                             "ceil_ideal_line_length": nas_internals["recall_line_internals"]["ceil_ideal_line_length"],
@@ -378,7 +378,7 @@ def compute_vcs_score(
                             "ceil_path": nas_internals["recall_line_internals"]["ceil_path"],
                             "actual_path": nas_internals["recall_line_internals"]["actual_path"]
                         },
-                        "f1": nas_metrics["NAS-L"],
+                        "f1": nas_metrics["Local NAS"],
                     },
                     "nas": nas_metrics["NAS"],
                 },
