@@ -320,15 +320,17 @@ class AblationAnalyzer:
         return (numerator / denominator) if (numerator > 0 and denominator != 0) else 0.0
 
     @staticmethod
-    def produce_ablation_metrics(vcs_results: Dict) -> Dict[str, float]:
+    def produce_ablation_metrics(vcs_results: Dict, chunk_size: int, lct: int) -> Dict[str, float]:
         """
-        Produce ablation metrics from VCS results following VCS_addition_ab.py logic.
+        Produce ablation metrics from VCS results with dynamic naming including chunk_size and lct.
         
         Args:
             vcs_results: Dictionary containing VCS computation results
+            chunk_size: Chunk size used for computation
+            lct: LCT value used for computation
             
         Returns:
-            Dictionary with ablation metrics in the specified order
+            Dictionary with ablation metrics with dynamic names
         """
         # Extract base metrics using correct names
         gas = vcs_results.get("GAS", 0.0)  # SAS in old code
@@ -348,21 +350,21 @@ class AblationAnalyzer:
         gas_las_s_plus_nas_d = AblationAnalyzer.compute_sas_nas_scaled(gas_las_scaled, nas_d)
         gas_las_s_plus_nas_l = AblationAnalyzer.compute_sas_nas_scaled(gas_las_scaled, nas_l)
         
-        # Build ablation results following the exact order from the user's specification
+        # Build ablation results with dynamic naming including chunk_size and lct
         ablation_results = {
-            "GAS": gas,
-            "LAS": las,
-            "NAS-D": nas_d,
-            "NAS-L": nas_l,
-            "NAS": nas,
-            "NAS\n+LAS(S)": nas_las_scaled,
-            "GAS\n+LAS(S)": gas_las_scaled,
-            "GAS\n+NAS-L(S)": gas_nas_l_scaled,
-            "GAS\n+NAS-D(S)": gas_nas_d_scaled,
-            "GAS\n+NAS(S)": gas_nas_scaled,
-            "GAS\n+LAS(S)\n+NAS-D(S)": gas_las_s_plus_nas_d,
-            "GAS\n+LAS(S)\n+NAS-L(S)": gas_las_s_plus_nas_l,
-            "GAS\n+LAS(S)\n+(NAS-D\n+NAS-L)(S)": vcs_score,
+            f"GAS_C{chunk_size}_LCT{lct}": gas,
+            f"LAS_C{chunk_size}_LCT{lct}": las,
+            f"NAS-D_C{chunk_size}_LCT{lct}": nas_d,
+            f"NAS-L_C{chunk_size}_LCT{lct}": nas_l,
+            f"NAS_C{chunk_size}_LCT{lct}": nas,
+            f"NAS\n+LAS(S)_C{chunk_size}_LCT{lct}": nas_las_scaled,
+            f"GAS\n+LAS(S)_C{chunk_size}_LCT{lct}": gas_las_scaled,
+            f"GAS\n+NAS-L(S)_C{chunk_size}_LCT{lct}": gas_nas_l_scaled,
+            f"GAS\n+NAS-D(S)_C{chunk_size}_LCT{lct}": gas_nas_d_scaled,
+            f"GAS\n+NAS(S)_C{chunk_size}_LCT{lct}": gas_nas_scaled,
+            f"GAS\n+LAS(S)\n+NAS-D(S)_C{chunk_size}_LCT{lct}": gas_las_s_plus_nas_d,
+            f"GAS\n+LAS(S)\n+NAS-L(S)_C{chunk_size}_LCT{lct}": gas_las_s_plus_nas_l,
+            f"GAS\n+LAS(S)\n+(NAS-D\n+NAS-L)(S)_C{chunk_size}_LCT{lct}": vcs_score,
         }
         
         return ablation_results
@@ -485,9 +487,8 @@ class MetricsEvaluator:
             context_cutoff = vcs_config.get('context_cutoff_value', 0.6)
             context_window = vcs_config.get('context_window_control', 4.0)
             
-            # Compute VCS metrics (needed for both ablation and comparison)
-            vcs_results = None
-            # Try first chunk_size and first successful LCT value
+            # Compute VCS metrics for all chunk_size and lct combinations
+            all_vcs_results = {}
             for chunk_size in chunk_sizes:
                 for lct in lct_values:
                     try:
@@ -504,31 +505,37 @@ class MetricsEvaluator:
                             return_all_metrics=True,
                             return_internals=False
                         )
-                        break  # Use first successful LCT value
+                        all_vcs_results[(chunk_size, lct)] = vcs_results
                     except Exception as e:
                         if self.logger:
                             self.logger.log_error(f"VCS computation failed for chunk_size={chunk_size}, LCT={lct}", e)
-                        continue
-                if vcs_results:
-                    break  # Use first successful chunk_size
+                        all_vcs_results[(chunk_size, lct)] = None
             
-            if vcs_results is None:
-                # Fallback to zero metrics
-                vcs_results = {
-                    "GAS": 0.0, "LAS": 0.0, "NAS": 0.0, "NAS-D": 0.0, "NAS-L": 0.0,
-                    "VCS": 0.0, "GAS-LAS-Scaled": 0.0
-                }
+            # Initialize metrics
+            ablation_metrics = {}
+            comparison_metrics = {}
             
             # Compute ablation metrics if enabled
             if self.config['addition'].get('ablation', False):
-                ablation_metrics = self.ablation_analyzer.produce_ablation_metrics(vcs_results)
+                for chunk_size in chunk_sizes:
+                    for lct in lct_values:
+                        vcs_results = all_vcs_results.get((chunk_size, lct))
+                        if vcs_results is None:
+                            # Fallback to zero metrics
+                            vcs_results = {
+                                "GAS": 0.0, "LAS": 0.0, "NAS": 0.0, "VCS": 0.0,
+                                "NAS-D": 0.0, "NAS-L": 0.0, "GAS-LAS-Scaled": 0.0
+                            }
+                        
+                        chunk_ablation_metrics = self.ablation_analyzer.produce_ablation_metrics(vcs_results, chunk_size, lct)
+                        ablation_metrics.update(chunk_ablation_metrics)
             
             # Compute comparison metrics if enabled  
             if self.config['addition'].get('comparison', False):
                 # Compute traditional metrics (BLEU, METEOR, ROUGE)
                 brm_results = evaluate_BRM(reference, generated)
                 
-                # Create comparison metrics in the same order as mpii_eval.py
+                # Create comparison metrics with dynamic VCS naming like comparison script
                 comparison_metrics = {
                     "BLEU-1": brm_results.get("bleu1", 0.0),
                     "BLEU-4": brm_results.get("bleu4", 0.0),
@@ -537,8 +544,14 @@ class MetricsEvaluator:
                     "ROUGE-4": brm_results.get("rouge", {}).get("rouge4", 0.0),
                     "ROUGE-L": brm_results.get("rouge", {}).get("rougeL", 0.0),
                     "ROUGE-Lsum": brm_results.get("rouge", {}).get("rougeLsum", 0.0),
-                    "VCS": vcs_results.get("VCS", 0.0),
                 }
+                
+                # Add VCS metrics for each chunk_size and lct combination
+                for chunk_size in chunk_sizes:
+                    for lct in lct_values:
+                        vcs_results = all_vcs_results.get((chunk_size, lct))
+                        vcs_score = vcs_results.get("VCS", 0.0) if vcs_results else 0.0
+                        comparison_metrics[f"VCS_C{chunk_size}_LCT{lct}"] = vcs_score
             
             # Log iteration metrics
             processing_time = time.time() - start_time

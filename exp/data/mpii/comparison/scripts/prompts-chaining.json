@@ -9,7 +9,12 @@
             "id": 1.2,
             "name": "Active <-> Passive Transformation",
             "prompt_text": "Please transform the following text by switching all active-voice sentences to passive voice, and all passive-voice sentences to active voice, while preserving the original meaning as closely as possible. Specifically:\n\n1. **Active → Passive**: For each sentence in active voice, rewrite it in passive voice.  \n   - Example: “Alice closed the door.” → “The door was closed by Alice.”\n2. **Passive → Active**: For each sentence in passive voice, rewrite it in active voice.  \n   - Example: “The keys were left in the lock by Alice.” → “Alice left the keys in the lock.”\n3. **Preserve the general structure and punctuation** of the text, as well as any names or nouns. Do not change or remove information; simply adjust the voice from active to passive or from passive to active.\n4. **Retain capitalization** and any proper nouns or specialized terms exactly as written.\n5. If a sentence can’t be unambiguously classified as active or passive, use your best judgment to keep the text coherent.\n\n**Small Example**\n\n**Original text:**\nAlice closed the door. The keys were left in the lock by her.\n\n**Analysis & Transformation:**\n- “Alice closed the door.” (Active voice) → “The door was closed by Alice.” (Passive voice)\n- “The keys were left in the lock by her.” (Passive voice) → “She left the keys in the lock.” (Active voice)\n\n**Result:**\nThe door was closed by Alice. She left the keys in the lock."
-        },        
+        },
+        {
+            "id": 1.3,
+            "name": "Paraphrasing",
+            "prompt_text": "Please paraphrase the video description below so that the modified version has exactly the same number of sentences as the original. For each sentence in the original, produce a fully paraphrased counterpart—use synonyms, adjust phrasing, and restructure clauses—but do not merge, split, add, or remove any sentences or factual details. Keep the sequence of sentences unchanged.  \n\nExample:  \n\nOriginal (4 sentences):   \n1. At dawn, the mountain guide checked his map and compass before beginning the climb.   \n2. He led the group along a narrow path that wound through pine trees.   \n3. Mid-morning, they paused at a clearing to admire the valley below.   \n4. Finally, the guide set up camp near a bubbling creek to rest.  \n\nTransformed (4 sentences):   \n\n1. At first light, the mountain guide examined his compass and map before setting out on the ascent.   \n2. He guided the party along a slender trail snaking through towering pines.   \n3. Around mid-morning, they stopped at an open glade to take in the valley view.   \n4. Lastly, the guide pitched camp beside a murmuring creek to recuperate.  \n\nAll key facts—dawn timing, map and compass check, narrow pine path, mid-morning clearing, valley vista, and camp by the creek—remain intact, and each original sentence is fully paraphrased without changing the sentence count."
+        },
         {
             "id": 2.1,
             "name": "Brevity - L1",
@@ -60,11 +65,6 @@
             "id": 5.1,
             "name": "Summarization",
             "prompt_text": "Summarize the video description below so that it’s about 75% of the original word count. Follow these steps to ensure a concise but complete summary:\n\nIdentify the Core Plot\n\nHighlight the main characters, their motivations, and the central conflict.\nPinpoint the essential events (inciting incident, climax, resolution).\nRemove or Shorten Less Crucial Details\n\nIf there are lengthy descriptive passages or minor character moments that don’t significantly affect the main narrative, trim or condense them.\nSubplots that influence the protagonist’s choices should stay, but reduce them to a sentence or two if they’re overly detailed.\nCombine Sentences Where Possible\n\nMerge multiple related sentences into one or two succinct lines, especially if they describe the same action or emotion.\nUse Concise Language\n\nReplace weak or repetitive phrases with sharper, more direct wording.\nEliminate filler words or unnecessary repetition.\nMaintain Cohesion\n\nEnsure the summary flows logically.\nCheck for any gaps that might confuse the reader.\nCheck Word Count\n\nAim for around 75% of the original word count. Adjust slightly if needed.\nExample\nOriginal Description (40 words):\nA young woman named Clara rushes through the crowded train station, clutching a worn leather briefcase. She scans each platform anxiously. A sudden announcement blares overhead, warning of a delayed arrival. Clara breathes a sigh of relief, checking her watch nervously.\n\nTransformed Summary (~30 words, ~75% of original):\nClara hurries through a packed train station, holding a tattered briefcase. She checks each platform until an announcement reveals a delay. Relieved, she exhales and glances at her watch anxiously."
-        },
-        {
-            "id": 6.4,
-            "name": "Valid Narrative",
-            "prompt_text": " "
         }
     ]
 }

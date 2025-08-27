@@ -287,12 +287,11 @@ def determine_category(test_case_id: str) -> str:
 def is_api_based(test_case_id: str) -> bool:
     """Check if test_case_id requires API calls."""
     api_based_ids = {
-        "1.1", "1.2",
+        "1.1", "1.2", "1.3",
         "2.1", "2.2", "2.3", "2.4", "2.5", "2.6",
         "3.1",
         "4.1",
-        "5.1",
-        "6.4"
+        "5.1"
     }
     return test_case_id in api_based_ids
 
@@ -842,7 +841,7 @@ def run_transformations(config, unrelated_segments):
         return
 
     # Define test case types
-    all_local_test_case_ids = {"3.2", "3.3", "3.4", "3.5", "4.2", "6.1", "6.2", "6.3"}
+    all_local_test_case_ids = {"3.2", "3.3", "3.4", "3.5", "4.2", "6.1", "6.2", "6.3", "6.4"}
     
     chain_prompt_map = {
         "2.4": "2.3"
