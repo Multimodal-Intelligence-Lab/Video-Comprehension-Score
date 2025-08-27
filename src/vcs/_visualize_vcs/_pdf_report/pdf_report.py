@@ -47,9 +47,9 @@ def create_vcs_pdf_report(
           - ``"Mapping Windows"`` : Alignment windows
           - ``"Best Match"`` : Match analysis details
           - ``"LAS"`` : Local Alignment Score analysis
-          - ``"NAS Distance"`` : Distance-based NAS analysis
+          - ``"LAS Load Sharing"`` : Load sharing penalty analysis
+          - ``"Global NAS"`` : Global NAS analysis
           - ``"NAS Line"`` : Line-based NAS analysis  
-          - ``"Window Regularizer"`` : Regularization analysis
     
     Returns
     -------
@@ -81,7 +81,7 @@ def create_vcs_pdf_report(
         create_vcs_pdf_report(
             result['internals'], 
             'summary_report.pdf',
-            metrics_to_include=["Config", "Overview", "LAS", "NAS Distance"]
+            metrics_to_include=["Config", "Overview", "LAS", "Global NAS"]
         )
     
     **Create Report for Specific Analysis:**
@@ -140,10 +140,9 @@ def create_vcs_pdf_report(
         from .._text_chunks import visualize_text_chunks
         from .._similarity_matrix import visualize_similarity_matrix
         from .._mapping_windows import visualize_mapping_windows
-        from .._line_nas import visualize_line_nas, visualize_line_nas_precision_calculations, visualize_line_nas_recall_calculations
-        from .._distance_nas import visualize_distance_nas
+        from .._local_nas import visualize_local_nas, visualize_local_nas_precision_calculations, visualize_local_nas_recall_calculations
+        from .._global_nas import visualize_global_nas
         from .._las import visualize_las
-        from .._window_regularizer import visualize_window_regularizer
         from .._metrics_summary import visualize_metrics_summary
         
         # Set up consistent styling
@@ -162,9 +161,9 @@ def create_vcs_pdf_report(
         all_sections = create_section_structure(
             visualize_config, visualize_metrics_summary, visualize_text_chunks,
             visualize_similarity_matrix, visualize_mapping_windows, visualize_las,
-            visualize_distance_nas, visualize_line_nas, 
-            visualize_line_nas_precision_calculations, visualize_line_nas_recall_calculations,
-            visualize_window_regularizer, internals
+            visualize_global_nas, visualize_local_nas, 
+            visualize_local_nas_precision_calculations, visualize_local_nas_recall_calculations,
+            internals
         )
         
         # Filter sections and calculate page layout

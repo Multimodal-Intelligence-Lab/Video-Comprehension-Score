@@ -59,20 +59,18 @@ def visualize_metrics_summary(internals: Dict[str, Any]) -> plt.Figure:
     
     metrics['SAS'] = internals['metrics']['vcs']['gas_las_scaled']
     
-    metrics['NAS'] = internals['metrics']['nas']['regularized_nas']
+    metrics['NAS'] = internals['metrics']['nas']['nas']
     
     nas_d = internals['metrics']['nas']['nas_d']
-    metrics['NAS-D'] = nas_d['f1']
-    metrics['NAS-D Precision'] = nas_d['precision']['value']
-    metrics['NAS-D Recall'] = nas_d['recall']['value']
+    metrics['Global NAS'] = nas_d['f1']
+    metrics['Global NAS Precision'] = nas_d['precision']['value']
+    metrics['Global NAS Recall'] = nas_d['recall']['value']
     
     nas_l = internals['metrics']['nas']['nas_l']
-    metrics['NAS-L'] = nas_l['f1']
-    metrics['NAS-L Precision'] = nas_l['precision']['value']
-    metrics['NAS-L Recall'] = nas_l['recall']['value']
+    metrics['Local NAS'] = nas_l['f1']
+    metrics['Local NAS Precision'] = nas_l['precision']['value']
+    metrics['Local NAS Recall'] = nas_l['recall']['value']
     
-    metrics['NAS F1'] = internals['metrics']['nas']['nas_f1']
-    metrics['Window Regularizer'] = internals['metrics']['nas']['regularizer']['value']
     
     order = [
         'VCS',
@@ -82,14 +80,12 @@ def visualize_metrics_summary(internals: Dict[str, Any]) -> plt.Figure:
         'LAS Recall',
         'SAS',
         'NAS',
-        'Window Regularizer',
-        'NAS F1',
-        'NAS-D',
-        'NAS-D Precision',
-        'NAS-D Recall',
-        'NAS-L',
-        'NAS-L Precision',
-        'NAS-L Recall'
+        'Global NAS',
+        'Global NAS Precision',
+        'Global NAS Recall',
+        'Local NAS',
+        'Local NAS Precision',
+        'Local NAS Recall'
     ]
     
     y_pos = 0
@@ -102,9 +98,8 @@ def visualize_metrics_summary(internals: Dict[str, Any]) -> plt.Figure:
         'LAS': 'lightgreen',
         'SAS': 'lightcyan',
         'NAS': 'salmon',
-        'NAS-D': 'plum',
-        'NAS-L': 'orchid',
-        'Window Regularizer': 'peachpuff',
+        'Global NAS': 'plum',
+        'Local NAS': 'orchid',
     }
     
     def get_color(metric_name):

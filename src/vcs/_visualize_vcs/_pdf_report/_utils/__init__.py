@@ -2,7 +2,7 @@ from .page_generators import (
     generate_best_match_pages, 
     generate_content_pages,
     generate_text_chunks_pages,
-    generate_line_nas_pages
+    generate_local_nas_pages
 )
 from .match_details import create_precision_match_details_page, create_recall_match_details_page
 from .summary_tables import create_precision_matches_summary_page, create_recall_matches_summary_page
@@ -30,7 +30,7 @@ __all__ = [
     "generate_best_match_pages",
     "generate_content_pages", 
     "generate_text_chunks_pages",
-    "generate_line_nas_pages",
+    "generate_local_nas_pages",
     
     # Match details
     "create_precision_match_details_page",

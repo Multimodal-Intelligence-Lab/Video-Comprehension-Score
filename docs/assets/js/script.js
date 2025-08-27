@@ -490,7 +490,7 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             {
                 id: 'lct-nas-d',
-                title: 'Local Chronology Tolerance (LCT) Effect on NAS-D',
+                title: 'NAS Regularizer (Rn) Effect on NAS-D',
                 subtitle: 'Configure chronology tolerance for Distance-based Narrative Alignment Score',
                 icon: 'fas fa-sliders-h',
                 iframe: 'widgets/lct-nas-d/index.html',
@@ -498,7 +498,7 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             {
                 id: 'lct-nas-l',
-                title: 'Local Chronology Tolerance (LCT) Effect on NAS-L',
+                title: 'NAS Regularizer (Rn) Effect on NAS-L',
                 subtitle: 'Configure chronology tolerance for Line-based Narrative Alignment Score',
                 icon: 'fas fa-sliders-h',
                 iframe: 'widgets/lct-nas-l/index.html',

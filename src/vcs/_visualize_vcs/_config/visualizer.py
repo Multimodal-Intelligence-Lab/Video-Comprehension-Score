@@ -52,7 +52,7 @@ def visualize_config(internals: Dict[str, Any]) -> plt.Figure:
     config_text += f"Chunk Size: {config['chunk_size']}\n"
     config_text += f"Context Cutoff Value: {config['context_cutoff_value']:.4f}\n"
     config_text += f"Context Window Control: {config['context_window_control']:.4f}\n"
-    config_text += f"Local Chronology Tolerance (LCT): {config['lct']}\n\n"
+    config_text += f"NAS Regularizer (Rn): {config['Rn']}\n\n"
     config_text += f"Reference Length: {ref_len} | Generated Length: {gen_len}"
     
     ax.text(0.5, 0.5, config_text,

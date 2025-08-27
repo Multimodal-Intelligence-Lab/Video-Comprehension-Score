@@ -10,7 +10,7 @@ import torch
 from ._config import (
     DEFAULT_CONTEXT_CUTOFF_VALUE,
     DEFAULT_CONTEXT_WINDOW_CONTROL,
-    DEFAULT_LCT,
+    DEFAULT_Rn,
     DEFAULT_CHUNK_SIZE,
 )
 from ._utils import _validate_seg_embed_functions
@@ -34,7 +34,7 @@ def compute_vcs_score(
     chunk_size: int = DEFAULT_CHUNK_SIZE,
     context_cutoff_value: float = DEFAULT_CONTEXT_CUTOFF_VALUE,
     context_window_control: float = DEFAULT_CONTEXT_WINDOW_CONTROL,
-    lct: int = DEFAULT_LCT,
+    Rn: int = DEFAULT_Rn,
     return_all_metrics: bool = False,
     return_internals: bool = False,
 ) -> Dict[str, Any]:
@@ -96,13 +96,13 @@ def compute_vcs_score(
         Controls the size of context windows when they are applied. Larger values 
         create smaller context windows (more restrictive), while smaller values 
         create larger context windows (more permissive).
-    lct : int, default=0
-        Local Chronology Tolerance - allows flexibility in narrative ordering. 
+    Rn : int, default=0
+        NAS Regularizer - allows flexibility in narrative ordering. 
         Higher values permit more deviation from strict chronological order:
         
-        - ``lct=0``: Strict chronological order required
-        - ``lct=1``: Small deviations allowed
-        - ``lct=2+``: More flexible chronological matching
+        - ``Rn=0``: Strict chronological order required
+        - ``Rn=1``: Small deviations allowed
+        - ``Rn=2+``: More flexible chronological matching
     return_all_metrics : bool, default=False
         If True, returns all intermediate metrics (GAS, LAS, NAS components) in 
         addition to the final VCS score. Useful for detailed analysis.
@@ -128,15 +128,13 @@ def compute_vcs_score(
         * ``'Precision LAS'`` : float - LAS precision component
         * ``'Recall LAS'`` : float - LAS recall component  
         * ``'LAS'`` : float - Local Alignment Score (F1 of precision/recall)
-        * ``'Precision NAS-D'`` : float - Distance-based NAS precision
-        * ``'Recall NAS-D'`` : float - Distance-based NAS recall
-        * ``'NAS-D'`` : float - Distance-based Narrative Alignment Score
-        * ``'Precision NAS-L'`` : float - Line-based NAS precision
-        * ``'Recall NAS-L'`` : float - Line-based NAS recall
-        * ``'NAS-L'`` : float - Line-based Narrative Alignment Score
-        * ``'NAS-F1'`` : float - Combined NAS-D and NAS-L score
-        * ``'Window-Regularizer'`` : float - Regularization factor for window overlap
-        * ``'NAS'`` : float - Final regularized Narrative Alignment Score
+        * ``'Precision Global NAS'`` : float - Global NAS precision
+        * ``'Recall Global NAS'`` : float - Global NAS recall
+        * ``'Global NAS'`` : float - Global Narrative Alignment Score
+        * ``'Precision Local NAS'`` : float - Local NAS precision
+        * ``'Recall Local NAS'`` : float - Local NAS recall
+        * ``'Local NAS'`` : float - Local Narrative Alignment Score
+        * ``'NAS'`` : float - Final Narrative Alignment Score
             
         **With return_internals=True:**
         
@@ -197,7 +195,7 @@ def compute_vcs_score(
             chunk_size=2,
             context_cutoff_value=0.7,
             context_window_control=3.0,
-            lct=1
+            Rn=1
         )
     
     **Different Embedding Functions for GAS and LAS:**
@@ -225,7 +223,7 @@ def compute_vcs_score(
             chunk_size=2,
             context_cutoff_value=0.7,
             context_window_control=3.0,
-            lct=1,
+            Rn=1,
             return_all_metrics=True,
             return_internals=True
         )
@@ -271,14 +269,18 @@ def compute_vcs_score(
         )
     )
 
-    las_metrics = _compute_las_metrics(precision_sim_values, recall_sim_values)
+    las_metrics, las_internals = _compute_las_metrics(
+        precision_sim_values, recall_sim_values,
+        precision_indices, recall_indices,
+        ref_len, gen_len
+    )
     nas_metrics, nas_internals = _compute_nas_metrics(
         sim_matrix, ref_len, gen_len,
         precision_matches, precision_indices, precision_sim_values,
         recall_matches, recall_indices, recall_sim_values,
         prec_map_windows, rec_map_windows,
         ref_chunks, gen_chunks,
-        lct=lct
+        Rn=Rn
     )
     combined = _compute_vcs_metrics(
         gas_val, nas_metrics["NAS"], las_metrics["LAS"]
@@ -328,32 +330,34 @@ def compute_vcs_score(
                     "precision": las_metrics["Precision LAS"],
                     "recall": las_metrics["Recall LAS"],
                     "f1": las_metrics["LAS"],
+                    "precision_internals": las_internals["precision"],
+                    "recall_internals": las_internals["recall"],
                 },
                 "nas": {
                     "nas_d": {
                         "precision": {
-                            "value": nas_metrics["Precision NAS-D"],
+                            "value": nas_metrics["Precision Global NAS"],
                             "mapping_window_height": nas_internals["precision_nas_internals"]["mapping_window_height"],
                             "max_penalty": nas_internals["precision_nas_internals"]["max_penalty"],
                             "total_penalty": nas_internals["precision_nas_internals"]["total_penalty"],
                             "penalties": nas_internals["precision_nas_internals"]["penalties"],
                             "in_window": nas_internals["precision_nas_internals"]["in_window"],
-                            "in_lct_zone": nas_internals["precision_nas_internals"]["in_lct_zone"],
+                            "in_Rn_zone": nas_internals["precision_nas_internals"]["in_Rn_zone"],
                         },
                         "recall": {
-                            "value": nas_metrics["Recall NAS-D"],
+                            "value": nas_metrics["Recall Global NAS"],
                             "mapping_window_height": nas_internals["recall_nas_internals"]["mapping_window_height"],
                             "max_penalty": nas_internals["recall_nas_internals"]["max_penalty"],
                             "total_penalty": nas_internals["recall_nas_internals"]["total_penalty"],
                             "penalties": nas_internals["recall_nas_internals"]["penalties"],
                             "in_window": nas_internals["recall_nas_internals"]["in_window"],
-                            "in_lct_zone": nas_internals["recall_nas_internals"]["in_lct_zone"],
+                            "in_Rn_zone": nas_internals["recall_nas_internals"]["in_Rn_zone"],
                         },
-                        "f1": nas_metrics["NAS-D"],
+                        "f1": nas_metrics["Global NAS"],
                     },
                     "nas_l": {
                         "precision": {
-                            "value": nas_metrics["Precision NAS-L"],
+                            "value": nas_metrics["Precision Local NAS"],
                             "actual_line_length": nas_internals["precision_line_internals"]["actual_line_length"],
                             "floor_ideal_line_length": nas_internals["precision_line_internals"]["floor_ideal_line_length"],
                             "ceil_ideal_line_length": nas_internals["precision_line_internals"]["ceil_ideal_line_length"],
@@ -364,7 +368,7 @@ def compute_vcs_score(
                             "actual_path": nas_internals["precision_line_internals"]["actual_path"]
                         },
                         "recall": {
-                            "value": nas_metrics["Recall NAS-L"],
+                            "value": nas_metrics["Recall Local NAS"],
                             "actual_line_length": nas_internals["recall_line_internals"]["actual_line_length"],
                             "floor_ideal_line_length": nas_internals["recall_line_internals"]["floor_ideal_line_length"],
                             "ceil_ideal_line_length": nas_internals["recall_line_internals"]["ceil_ideal_line_length"],
@@ -374,16 +378,9 @@ def compute_vcs_score(
                             "ceil_path": nas_internals["recall_line_internals"]["ceil_path"],
                             "actual_path": nas_internals["recall_line_internals"]["actual_path"]
                         },
-                        "f1": nas_metrics["NAS-L"],
+                        "f1": nas_metrics["Local NAS"],
                     },
-                    "regularizer": {
-                        "value": nas_metrics["Window-Regularizer"],
-                        "total_mapping_window_area": nas_internals["regularizer_internals"]["total_mapping_window_area"],
-                        "timeline_area": nas_internals["regularizer_internals"]["timeline_area"],
-                        "min_area": nas_internals["regularizer_internals"]["min_area"],
-                    },
-                    "nas_f1": nas_metrics["NAS-F1"],
-                    "regularized_nas": nas_metrics["NAS"],
+                    "nas": nas_metrics["NAS"],
                 },
                 "vcs": {
                     "value": combined["VCS"],
@@ -394,7 +391,7 @@ def compute_vcs_score(
                 "chunk_size": chunk_size,
                 "context_cutoff_value": context_cutoff_value,
                 "context_window_control": context_window_control,
-                "lct": lct,
+                "Rn": Rn,
             },
             "best_match": {
                 "precision": precision_match_details,

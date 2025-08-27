@@ -2,6 +2,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 from typing import Dict, Any
 
+from ._utils import (
+    create_precision_load_sharing_figure,
+    create_recall_load_sharing_figure
+)
+
 def visualize_las(internals: Dict[str, Any]) -> plt.Figure:
     """Create a visualization of Local Alignment Score (LAS) precision and recall components.
     
@@ -151,3 +156,16 @@ def visualize_las(internals: Dict[str, Any]) -> plt.Figure:
     fig.suptitle(f'Local Alignment Score (LAS): {f1_las:.4f}', fontsize=16)
     fig.tight_layout()
     return fig
+
+def visualize_las_load_sharing(internals: Dict[str, Any]) -> Dict[str, plt.Figure]:
+    """Create simple load sharing visualizations matching best match style.
+    
+    Returns separate precision and recall figures like best match does.
+    """
+    precision_fig = create_precision_load_sharing_figure(internals)
+    recall_fig = create_recall_load_sharing_figure(internals)
+    
+    return {
+        'precision_details': precision_fig,
+        'recall_details': recall_fig
+    }

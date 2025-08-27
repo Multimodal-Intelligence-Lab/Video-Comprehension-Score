@@ -24,12 +24,12 @@ from ._visualize_vcs import (
     visualize_similarity_matrix,
     visualize_mapping_windows,
     visualize_best_match,
-    visualize_line_nas,
-    visualize_line_nas_precision_calculations,
-    visualize_line_nas_recall_calculations,  
-    visualize_distance_nas,
+    visualize_local_nas,
+    visualize_local_nas_precision_calculations,
+    visualize_local_nas_recall_calculations,  
+    visualize_global_nas,
     visualize_las,
-    visualize_window_regularizer,
+    visualize_las_load_sharing,
     visualize_metrics_summary,
     create_vcs_pdf_report
 )
@@ -38,7 +38,7 @@ from ._visualize_vcs import (
 from ._config import (
     DEFAULT_CONTEXT_CUTOFF_VALUE,
     DEFAULT_CONTEXT_WINDOW_CONTROL,
-    DEFAULT_LCT,
+    DEFAULT_Rn,
     DEFAULT_CHUNK_SIZE,
 )
 
@@ -57,19 +57,19 @@ __all__ = [
     "visualize_similarity_matrix",
     "visualize_mapping_windows",
     "visualize_best_match",
-    "visualize_line_nas",
-    "visualize_line_nas_precision_calculations",
-    "visualize_line_nas_recall_calculations",
-    "visualize_distance_nas",
+    "visualize_local_nas",
+    "visualize_local_nas_precision_calculations",
+    "visualize_local_nas_recall_calculations",
+    "visualize_global_nas",
     "visualize_las",
-    "visualize_window_regularizer",
+    "visualize_las_load_sharing",
     "visualize_metrics_summary",
     "create_vcs_pdf_report",
     
     # Configuration constants
     "DEFAULT_CONTEXT_CUTOFF_VALUE",
     "DEFAULT_CONTEXT_WINDOW_CONTROL",
-    "DEFAULT_LCT",
+    "DEFAULT_Rn",
     "DEFAULT_CHUNK_SIZE",
 ]
 

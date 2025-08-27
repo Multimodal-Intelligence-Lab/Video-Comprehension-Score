@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Effect of LCT on Line-based NAS (NAS-L)</title>
+    <title>Effect of LCT on Local NAS (Local NAS)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -824,10 +824,10 @@
                                 <div class="bg-white bg-opacity-20 text-white px-3 py-1 rounded-full text-xs font-semibold">Core VCS Component</div>
                             </div>
                             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-3 leading-tight">
-                                LCT Effect on Line-based NAS (NAS-L)
+                                LCT Effect on Local NAS (Local NAS)
                             </h1>
                             <p class="text-teal-200 text-base sm:text-lg mb-6 max-w-3xl">
-                                Explore how Local Chronology Threshold (LCT) affects path segment classification and calculability in line-based narrative alignment score within the Video Comprehension Score framework.
+                                Explore how Local Chronology Threshold (Rn) affects path segment classification and calculability in line-based narrative alignment score within the Video Comprehension Score framework.
                             </p>
                         </div>
                     </div>
@@ -841,13 +841,13 @@
             <div id="tour-step-1" class="intro-card interactive-card rounded-xl p-6">
                 <div class="flex items-center mb-4">
                     <i class="fas fa-route text-amber-600 text-xl mr-3"></i>
-                    <h2 class="text-xl font-semibold text-amber-800">Introduction to LCT Effect on Line-based NAS</h2>
+                    <h2 class="text-xl font-semibold text-amber-800">Introduction to LCT Effect on Local NAS</h2>
                 </div>
                 
                 <!-- Definition -->
                 <div class="bg-white bg-opacity-70 p-4 rounded-xl mb-6 border-l-4 border-amber-500">
                     <p class="text-sm text-slate-700 mb-3">
-                        <strong>What is Local Chronology Tolerance (LCT) Effect on NAS-L?</strong> Local Chronology Threshold (LCT) introduces controlled flexibility to Line-based NAS by creating "forgiveness neighborhoods" where chronological content can be locally rearranged without affecting segment calculability. This addresses the limitation where minor narrative reorderings make path segments non-calculable despite preserving semantic flow.
+                        <strong>What is NAS Regularizer (Rn) Effect on Local NAS?</strong> Local Chronology Threshold (Rn) introduces controlled flexibility to Local NAS by creating "forgiveness neighborhoods" where chronological content can be locally rearranged without affecting segment calculability. This addresses the limitation where minor narrative reorderings make path segments non-calculable despite preserving semantic flow.
                     </p>
                     
                     <!-- Warning -->
@@ -867,7 +867,7 @@
                             <i class="fas fa-info-circle text-blue-500 mr-2 mt-0.5"></i>
                             <div>
                                 <p class="text-xs text-blue-800 font-medium mb-1">📚 Additional Prerequisites</p>
-                                <p class="text-xs text-blue-700">Before exploring LCT effects on Line-based NAS, we recommend visiting the <a href="../mapping-window/" class="font-bold underline hover:text-blue-900">Mapping Window Demo</a>, <a href="../best-match/" class="font-bold underline hover:text-blue-900">Best Match Demo</a>, and <a href="../line-nas/" class="font-bold underline hover:text-blue-900">Line-based NAS Demo</a> to understand the foundational concepts. LCT builds upon these by adding controlled flexibility to path segment calculability.</p>
+                                <p class="text-xs text-blue-700">Before exploring LCT effects on Local NAS, we recommend visiting the <a href="../mapping-window/" class="font-bold underline hover:text-blue-900">Mapping Window Demo</a>, <a href="../best-match/" class="font-bold underline hover:text-blue-900">Best Match Demo</a>, and <a href="../local-nas/" class="font-bold underline hover:text-blue-900">Local NAS Demo</a> to understand the foundational concepts. LCT builds upon these by adding controlled flexibility to path segment calculability.</p>
                             </div>
                         </div>
                     </div>
@@ -902,7 +902,7 @@
                                 </p>
                                 <div class="bg-blue-50/50 p-3 rounded-xl mb-3 border border-blue-200">
                                     <p class="text-xs text-blue-700">
-                                        <strong>Line-based NAS Behavior:</strong> Without LCT, Line-based NAS expects neighboring path segments to maintain upward or horizontal progression (same grid level or one above). When adjacent chunks are swapped, the diagonal mapping flips, creating a downward path segment where the line moves backward in the reference sequence while advancing in the generated sequence. These backward-sloping segments are considered non-calculable and their length is excluded from the actual path length calculation. With LCT=1, these downward segments within the tolerance zone become calculable, and their segment lengths are now included in the actual path length, this allows for immediate neighbor swaps.
+                                        <strong>Local NAS Behavior:</strong> Without LCT, Local NAS expects neighboring path segments to maintain upward or horizontal progression (same grid level or one above). When adjacent chunks are swapped, the diagonal mapping flips, creating a downward path segment where the line moves backward in the reference sequence while advancing in the generated sequence. These backward-sloping segments are considered non-calculable and their length is excluded from the actual path length calculation. With LCT=1, these downward segments within the tolerance zone become calculable, and their segment lengths are now included in the actual path length, this allows for immediate neighbor swaps.
                                         <br><strong>⚠️ Caution:</strong> When ratios are non-integer (10/7, 9/8), mapping window heights vary, affecting tolerance zone behavior—explore this in the demo.
                                     </p>
                                 </div>
@@ -965,7 +965,7 @@
                 <div id="tour-step-next-steps" class="demo-card interactive-card rounded-xl p-6">
                     <h3 class="font-semibold text-slate-800 mb-3 flex items-center text-lg"><i class="fas fa-graduation-cap text-teal-600 mr-2"></i>Next Steps</h3>
                     <div class="mt-2 space-y-4 text-sm text-slate-700 bg-slate-50/50 p-4 rounded-xl border border-slate-200">
-                        <p class="flex items-start"><strong class="mr-3 text-teal-600 text-base mt-0.5">📚</strong> <span>Once you understand the LCT concept here, visit the <a href="../line-nas/" class="text-teal-600 hover:text-teal-800 underline font-semibold">Line-based NAS demo</a> to see how LCT plays out in real examples with actual narrative content and path calculations.</span></p>
+                        <p class="flex items-start"><strong class="mr-3 text-teal-600 text-base mt-0.5">📚</strong> <span>Once you understand the LCT concept here, visit the <a href="../local-nas/" class="text-teal-600 hover:text-teal-800 underline font-semibold">Local NAS demo</a> to see how LCT plays out in real examples with actual narrative content and path calculations.</span></p>
                         <p class="flex items-start"><strong class="mr-3 text-teal-600 text-base mt-0.5">🎯</strong> <span>Then explore the <a href="../nas/" class="text-teal-600 hover:text-teal-800 underline font-semibold">final NAS demo</a> to see how LCT affects the overall Narrative Alignment Score combining both distance and line-based components.</span></p>
                         <p class="flex items-start"><strong class="mr-3 text-teal-600 text-base mt-0.5">🔄</strong> <span>Compare with the <a href="../lct-nas-d/" class="text-teal-600 hover:text-teal-800 underline font-semibold">LCT Distance-based demo</a> to understand the differences between distance penalties and segment calculability approaches.</span></p>
                     </div>
@@ -979,11 +979,11 @@
                     
                     <div id="tour-step-3" class="metrics-card interactive-card rounded-xl p-6">
                         <h3 class="text-lg font-semibold text-blue-800 mb-4 flex items-center">
-                            <i class="fas fa-calculator text-blue-600 mr-2"></i>Live NAS-L Metrics
+                            <i class="fas fa-calculator text-blue-600 mr-2"></i>Live Local NAS Metrics
                         </h3>
                         <div class="space-y-3">
                             <div class="text-center bg-blue-50/70 p-3 rounded-xl border border-blue-200">
-                                <label class="block text-sm font-medium text-blue-700 mb-1">Line-based NAS-L Score</label>
+                                <label class="block text-sm font-medium text-blue-700 mb-1">Line-based Local NAS Score</label>
                                 <span id="nasLScoreDisplay" class="text-4xl font-bold text-blue-600">-</span>
                                 <span id="nasLScorePreview" class="text-4xl font-bold ghost-score"></span>
                             </div>
@@ -1011,10 +1011,10 @@
                         </h3>
                         <div class="space-y-4">
                             <div class="flex items-center justify-between">
-                                <label for="lctSlider" class="text-sm font-medium text-purple-700">LCT Multiplier (τ<sub>LCT</sub>):</label>
-                                <span id="lctValueDisplay" class="text-lg font-bold text-purple-600 bg-purple-100 px-3 py-1 rounded">0</span>
+                                <label for="RnSlider" class="text-sm font-medium text-purple-700">LCT Multiplier (τ<sub>LCT</sub>):</label>
+                                <span id="RnValueDisplay" class="text-lg font-bold text-purple-600 bg-purple-100 px-3 py-1 rounded">0</span>
                             </div>
-                            <input type="range" id="lctSlider" min="0" max="8" value="0" class="w-full h-2 bg-purple-200 rounded-xl appearance-none cursor-pointer">
+                            <input type="range" id="RnSlider" min="0" max="8" value="0" class="w-full h-2 bg-purple-200 rounded-xl appearance-none cursor-pointer">
                             <div id="lctDescription" class="text-xs text-purple-600"></div>
                         </div>
                     </div>
@@ -1080,8 +1080,8 @@
                 <div class="test-category">
                     <h3><i class="fas fa-play-circle"></i>Getting Started</h3>
                     <div class="test-item">
-                        <h4>Understanding Local Chronology Tolerance (LCT) Effect on NAS-L</h4>
-                        <p>This guide will help you understand how Local Chronology Threshold (LCT) modifies Line-based NAS behavior.</p>
+                        <h4>Understanding NAS Regularizer (Rn) Effect on Local NAS</h4>
+                        <p>This guide will help you understand how Local Chronology Threshold (Rn) modifies Local NAS behavior.</p>
                         <ul class="test-checklist">
                             <li>At LCT = 0, each segment is surrounded by a green search zone(Base LCT Window) for its adjacent path segments. If an immediate neighbor lies within this zone, calculability is preserved and the connecting line adds to the total path length.</li>
                             <li>For LCT > 0, each segment is surrounded by an expanded lct search zone(yellow color): if its immediate neighbor falls within this zone, the segment remains calculable and uses its floor‐path length instead of being marked invalid(red color).</li>
@@ -1099,7 +1099,7 @@
                             <li>Watch the Floor Length (green path) - this sets the minimum baseline</li>
                             <li>Monitor the Ceil Length (pink path) - this represents the maximum ideal path</li>
                             <li>Track the Actual Length (purple) - how LCT preserves calculable segments</li>
-                            <li>Observe the NAS-L Score - ratio of actual to ideal path length</li>
+                            <li>Observe the Local NAS Score - ratio of actual to ideal path length</li>
                             <li>Key: Invalid segments contribute 0 to actual length, LCT-capped segments contribute positively</li>
                         </ul>
                     </div>
@@ -1187,7 +1187,7 @@
                 <div class="test-category">
                     <h3><i class="fas fa-lightbulb"></i>Key Insights</h3>
                     <div class="test-item">
-                        <h4>Understanding LCT Design Principles for Line-based NAS</h4>
+                        <h4>Understanding LCT Design Principles for Local NAS</h4>
                         <p>Essential principles for effective use of LCT with line-based narrative alignment scoring.</p>
                         <ul class="test-checklist">
                             <li>LCT tolerance adapts to local segment characteristics and slope variations</li>
@@ -1223,8 +1223,8 @@
             axisLabelContainerY: document.getElementById('axisLabelContainerY'),
             idealPathsSvg: document.getElementById('idealPathsSvg'),
             actualPathSvg: document.getElementById('actualPathSvg'),
-            lctSlider: document.getElementById('lctSlider'),
-            lctValueDisplay: document.getElementById('lctValueDisplay'),
+            RnSlider: document.getElementById('RnSlider'),
+            RnValueDisplay: document.getElementById('RnValueDisplay'),
             lctDescription: document.getElementById('lctDescription'),
             refLenInput: document.getElementById('refLenInput'),
             genLenInput: document.getElementById('genLenInput'),
@@ -1255,14 +1255,14 @@
         const tourManager = {
             isActive: false, currentStep: 0, overlay: document.getElementById('tour-overlay'),
             steps: [ 
-                { selector: '#tour-step-1', text: 'Welcome to LCT Effect on Line-based NAS! This demo shows how Local Chronological Tolerance affects path segment calculability in geometric scoring. Visit Mapping Window, Best Match, and Line-based NAS demos first to understand the foundational concepts.', position: 'bottom' }, 
+                { selector: '#tour-step-1', text: 'Welcome to LCT Effect on Local NAS! This demo shows how Local Chronological Tolerance affects path segment calculability in geometric scoring. Visit Mapping Window, Best Match, and Local NAS demos first to understand the foundational concepts.', position: 'bottom' }, 
                 { selector: '#tour-step-2', text: 'Click to expand the neighborhood explorer. This shows how LCT forgives local chronological reorderings by creating tolerance zones for segment classification.', position: 'bottom' }, 
                 { selector: '#chartGrid', text: 'This grid visualizes LCT effects on path segment calculability. Green rectangles are ideal mapping windows, yellow zones show LCT tolerance areas. The path line connects mappings with color-coded segments. Drag path points to test different scenarios.', position: 'top' },
                 { selector: '#tour-step-5', text: 'Adjust grid configuration parameters to see how different text length ratios affect LCT window calculations and segment classification. Try different reference/generated length ratios.', position: 'left' }, 
                 { selector: '#tour-step-6', text: 'Try these preset scenarios to explore different LCT effects on narrative alignment patterns. Each button demonstrates a specific segment classification outcome. Check the Testing Guide for detailed exploration strategies.', position: 'left' },
                 { selector: '#tour-step-4', text: 'LCT Parameter slider controls tolerance multiplier with precise effects on segment classification. Higher values expand tolerance windows, converting invalid segments to LCT-capped segments.', position: 'left' }, 
-                { selector: '#tour-step-3', text: 'Live Line-based NAS score calculation with real-time path length ratio updates. Click the score to see the underlying formula. Watch how LCT changes path length by affecting which segments are calculable.', position: 'left' },
-                { selector: '#tour-step-next-steps', text: 'After exploring this demo, visit the Line-based NAS demo to see how LCT applies to real narrative content, then explore the final NAS demo to understand how LCT affects combined scoring.', position: 'top' } 
+                { selector: '#tour-step-3', text: 'Live Local NAS score calculation with real-time path length ratio updates. Click the score to see the underlying formula. Watch how LCT changes path length by affecting which segments are calculable.', position: 'left' },
+                { selector: '#tour-step-next-steps', text: 'After exploring this demo, visit the Local NAS demo to see how LCT applies to real narrative content, then explore the final NAS demo to understand how LCT affects combined scoring.', position: 'top' } 
             ],
             start: function() { this.isActive = true; this.currentStep = 0; this.overlay.style.pointerEvents = 'auto'; this.overlay.style.opacity = '1'; this.addClickOutsideHandler(); this.showStep(); },
             next: function() { this.cleanupCurrentStep(); this.currentStep++; if (this.currentStep < this.steps.length) { setTimeout(() => this.showStep(), 400); } else { this.end(); } },
@@ -1427,7 +1427,7 @@
                         if (refPos !== -1) {
                             const cell = grid.querySelector(`[data-ref="${refPos}"][data-gen="${genPos}"]`);
                             
-                            // Calculate distance for segment calculability in NAS-L context
+                            // Calculate distance for segment calculability in Local NAS context
                             const distance = Math.abs(refPos - genPos);
                             
                             // Determine cell class based on distance and LCT for line-based scoring
@@ -1462,7 +1462,7 @@
 
         // LCT descriptions
         function updateLctDescription() {
-            const lctValue = parseInt(elements.lctSlider.value);
+            const RnValue = parseInt(elements.RnSlider.value);
             const descriptions = [
                 "Tolerance: 0 blocks (Strict calculation)",
                 "Tolerance: Low (2×2 neighbor rotations calculable)",
@@ -1475,7 +1475,7 @@
                 "Tolerance: Complete (9×9 full rotations calculable)"
             ];
             const colors = ['border-red-200 bg-red-50', 'border-purple-200 bg-purple-50', 'border-blue-200 bg-blue-50', 'border-green-200 bg-green-50', 'border-yellow-200 bg-yellow-50', 'border-orange-200 bg-orange-50', 'border-pink-200 bg-pink-50', 'border-indigo-200 bg-indigo-50', 'border-gray-200 bg-gray-50'];
-            elements.lctDescription.innerHTML = `<div class="p-2 rounded border ${colors[Math.min(lctValue, 8)]}">${descriptions[Math.min(lctValue, 8)]}</div>`;
+            elements.lctDescription.innerHTML = `<div class="p-2 rounded border ${colors[Math.min(RnValue, 8)]}">${descriptions[Math.min(RnValue, 8)]}</div>`;
         }
 
         // Core algorithms
@@ -1613,7 +1613,7 @@
             return dyMap;
         }
         
-        function computeActualLineLengthJS(actualPathPoints, totalRefChunks, totalGenChunks, lctValue, localFloorPathDyMap) {
+        function computeActualLineLengthJS(actualPathPoints, totalRefChunks, totalGenChunks, RnValue, localFloorPathDyMap) {
             if (!actualPathPoints || actualPathPoints.length <= 1) {
                 return { totalLength: 0.0, segments: [], lct_window_base: 0, expanded_lct_window: 0 };
             }
@@ -1635,12 +1635,12 @@
             lct_window_base = Math.max(0, lct_window_base);
             let expanded_lct_window;
             if (totalRefChunks <= totalGenChunks) {
-                expanded_lct_window = lctValue > 0 ? lct_window_base + (mappingWindowHeight * lctValue) : lct_window_base;
+                expanded_lct_window = RnValue > 0 ? lct_window_base +  RnValue : lct_window_base;
             } else {
                 if (ratioDecimalPart > 0 && ratioDecimalPart <= 0.5) {
-                    expanded_lct_window = lctValue > 0 ? lct_window_base + ((mappingWindowHeight - 1) * lctValue) : lct_window_base;
+                    expanded_lct_window = RnValue > 0 ? lct_window_base +  RnValue : lct_window_base;
                 } else {
-                    expanded_lct_window = lctValue > 0 ? lct_window_base + (mappingWindowHeight * lctValue) : lct_window_base;
+                    expanded_lct_window = RnValue > 0 ? lct_window_base +  RnValue : lct_window_base;
                 }
             }
             
@@ -1658,7 +1658,7 @@
                     is_calculable = true; calculation_method = "standard";
                 }
                 // Check if it's a negative slope made calculable by LCT (should be lct-capped)
-                else if (lctValue > 0 && dy_segment_raw < 0 && dy_for_eval <= expanded_lct_window) {
+                else if (RnValue > 0 && dy_segment_raw < 0 && dy_for_eval <= expanded_lct_window) {
                     let floor_dy_val = dy_segment_raw; 
                     if (localFloorPathDyMap && localFloorPathDyMap.hasOwnProperty(p1.x)) {
                         floor_dy_val = Math.abs(localFloorPathDyMap[p1.x]);
@@ -1667,7 +1667,7 @@
                     is_calculable = true; calculation_method = "lct-capped";
                 }
                 // Check if it's a positive slope within LCT tolerance (also lct-capped)
-                else if (lctValue > 0 && dy_segment_raw >= 0 && dy_for_eval > lct_window_base && dy_for_eval <= expanded_lct_window) {
+                else if (RnValue > 0 && dy_segment_raw >= 0 && dy_for_eval > lct_window_base && dy_for_eval <= expanded_lct_window) {
                     let floor_dy_val = dy_segment_raw; 
                     if (localFloorPathDyMap && localFloorPathDyMap.hasOwnProperty(p1.x)) {
                         floor_dy_val = Math.abs(localFloorPathDyMap[p1.x]);
@@ -1761,11 +1761,11 @@
         }
 
         // Preview functions
-        function showScorePreview(tempMarkers, lctValue) {
+        function showScorePreview(tempMarkers, RnValue) {
             if (!tempMarkers) return;
             const sortedMarkers = [...tempMarkers].sort((a, b) => a.currentX - b.currentX);
             const pathData = sortedMarkers.map(marker => ({ x: marker.currentX, y: marker.currentY }));
-            const lengthData = computeActualLineLengthJS(pathData, numUnitsY, numUnitsX, lctValue, floorPathDyMap);
+            const lengthData = computeActualLineLengthJS(pathData, numUnitsY, numUnitsX, RnValue, floorPathDyMap);
             const previewActualLength = lengthData.totalLength;
             const previewLineNas = calculateLineNAS(currentFloorLength, currentCeilLength, previewActualLength);
             elements.nasLScorePreview.textContent = `→ ${previewLineNas.toFixed(3)}`;
@@ -2012,7 +2012,7 @@
 
         function renderAnimatedMarkers(animatedMarkers) {
             elements.genChunkMarkerContainer.innerHTML = '';
-            const lctValue = parseInt(elements.lctSlider.value);
+            const RnValue = parseInt(elements.RnSlider.value);
             animatedMarkers.forEach(markerData => {
                 if (typeof markerData.opacity !== 'number' || markerData.opacity > 0.01) {
                     const markerDiv = document.createElement('div');
@@ -2104,7 +2104,7 @@
 
         function updateScenarioTip(scenarioType) {
             const tips = {
-                optimal: "This is a perfect 1-to-1 alignment along the optimal path. All segments are standard and calculable, resulting in optimal NAS-L score.",
+                optimal: "This is a perfect 1-to-1 alignment along the optimal path. All segments are standard and calculable, resulting in optimal Local NAS score.",
                 lct1Rotation: "A minor 2x2 reordering. Without LCT, this creates invalid segments. Set LCT=1 to see them become LCT-capped, improving calculability.",
                 lct2Rotation: "A more complex 3x3 rotation. This requires LCT=2 to make segments calculable. Notice how segments transition from invalid to LCT-capped.",
                 deleteEnd: "The generated sequence is shorter, ending prematurely. This affects path length calculation and reduces the total calculable segments.",
@@ -2116,13 +2116,13 @@
             // if (tipElement) tipElement.innerHTML = `<p><strong>Tip:</strong> ${tips[scenarioType] || tips.optimal}</p>`;
         }
 
-        function computeAnimatedSegments(animatedMarkers, lctValue, floorPathDyMap) {
+        function computeAnimatedSegments(animatedMarkers, RnValue, floorPathDyMap) {
             const visibleMarkers = animatedMarkers.filter(m => m.opacity > 0.01);
             if (visibleMarkers.length <= 1) return [];
             
             const sortedMarkers = [...visibleMarkers].sort((a, b) => a.currentX - b.currentX);
             const pathData = sortedMarkers.map(marker => ({ x: marker.currentX, y: marker.currentY }));
-            const lengthData = computeActualLineLengthJS(pathData, numUnitsY, numUnitsX, lctValue, floorPathDyMap);
+            const lengthData = computeActualLineLengthJS(pathData, numUnitsY, numUnitsX, RnValue, floorPathDyMap);
             return lengthData.segments;
         }
 
@@ -2162,13 +2162,13 @@
             numUnitsX = targetGenLen;
             elements.refLenInput.value = numUnitsY;
             elements.genLenInput.value = numUnitsX;
-            elements.lctSlider.max = Math.max(0, numUnitsY - 1);
-            if (parseInt(elements.lctSlider.value) > elements.lctSlider.max) {
-                elements.lctSlider.value = elements.lctSlider.max;
-                elements.lctValueDisplay.textContent = elements.lctSlider.value;
+            elements.RnSlider.max = Math.max(0, numUnitsY - 1);
+            if (parseInt(elements.RnSlider.value) > elements.RnSlider.max) {
+                elements.RnSlider.value = elements.RnSlider.max;
+                elements.RnValueDisplay.textContent = elements.RnSlider.value;
                 updateLctDescription();
             }
-            currentLct = parseInt(elements.lctSlider.value, 10);
+            currentLct = parseInt(elements.RnSlider.value, 10);
             
             // --- 3. Calculate Target Paths & Positions ---
             const windows = get_mapping_windows_js(numUnitsY, numUnitsX);
@@ -2345,7 +2345,7 @@
         function initializeStateAndRender(preserveMarkerPositions = false) {
             numUnitsY = Math.max(1, Math.min(10, parseInt(elements.refLenInput.value, 10) || 1));
             numUnitsX = Math.max(1, Math.min(10, parseInt(elements.genLenInput.value, 10) || 1));
-            currentLct = parseInt(elements.lctSlider.value, 10); elements.lctValueDisplay.textContent = currentLct;
+            currentLct = parseInt(elements.RnSlider.value, 10); elements.RnValueDisplay.textContent = currentLct;
             updateLctDescription();
             elements.refLenInput.value = numUnitsY; elements.genLenInput.value = numUnitsX;
             
@@ -2412,9 +2412,9 @@
         document.getElementById('start-tour-btn').addEventListener('click', () => tourManager.start());
         elements.refLenInput.addEventListener('change', handleGridInputChange);
         elements.genLenInput.addEventListener('change', handleGridInputChange);
-        elements.lctSlider.addEventListener('input', () => {
-            currentLct = parseInt(elements.lctSlider.value, 10); 
-            elements.lctValueDisplay.textContent = currentLct;
+        elements.RnSlider.addEventListener('input', () => {
+            currentLct = parseInt(elements.RnSlider.value, 10); 
+            elements.RnValueDisplay.textContent = currentLct;
             updateLctDescription();
             renderGenChunkMarkers(); 
         });

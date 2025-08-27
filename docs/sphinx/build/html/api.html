@@ -204,7 +204,7 @@ likely to be applied, leading to more restrictive matching.</p></li>
 <li><p><strong>context_window_control</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a><em>, </em><em>default=4.0</em>) – Controls the size of context windows when they are applied. Larger values
 create smaller context windows (more restrictive), while smaller values
 create larger context windows (more permissive).</p></li>
-<li><p><strong>lct</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><em>int</em></a><em>, </em><em>default=0</em>) – <p>Local Chronology Tolerance - allows flexibility in narrative ordering.
+<li><p><strong>lct</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><em>int</em></a><em>, </em><em>default=0</em>) – <p>NAS Regularizer - allows flexibility in narrative ordering.
 Higher values permit more deviation from strict chronological order:</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">lct=0</span></code>: Strict chronological order required</p></li>
@@ -615,7 +615,7 @@ generated chunks on the x-axis.</p>
 <p>Shows the allowable alignment regions (mapping windows) that constrain which
 reference chunks can be matched to which generated chunks. This helps maintain
 chronological ordering while allowing some flexibility. Also displays Local
-Chronology Tolerance (LCT) zones when applicable.</p>
+Chronology Tolerance (Rn) zones when applicable.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>internals</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><em>dict</em></a>) – The internals dictionary returned by <code class="docutils literal notranslate"><span class="pre">compute_vcs_score</span></code> with
@@ -648,7 +648,7 @@ including LCT padding zones and actual matches found.</p>
 <p class="rubric">Notes</p>
 <ul class="simple">
 <li><p>Mapping windows enforce approximate chronological order</p></li>
-<li><p>LCT (Local Chronology Tolerance) adds flexibility zones around windows</p></li>
+<li><p>LCT (NAS Regularizer) adds flexibility zones around windows</p></li>
 <li><p>Window size depends on the ratio of text lengths</p></li>
 <li><p>Matches outside windows incur penalties in NAS-D calculation</p></li>
 <li><p>Green padding shows where LCT allows matches without penalty</p></li>
@@ -1096,7 +1096,7 @@ by whitespace.  The base defaults to 10.  Valid bases are 0 and 2-36.
 Base 0 means to interpret the base from the string as an integer literal.
 &gt;&gt;&gt; int(‘0b100’, base=0)
 4</p>
-<p>Default Local Chronology Tolerance (LCT) value. Controls how much flexibility is allowed in narrative chronological ordering.</p>
+<p>Default NAS Regularizer (Rn) value. Controls how much flexibility is allowed in narrative chronological ordering.</p>
 </dd></dl>
 
 <dl class="py data">

@@ -136,7 +136,7 @@ Explore the comprehensive capabilities that make VCS a powerful narrative evalua
     <td style="padding: 10px; border: none; vertical-align: top;">
       <details style="border: 1px solid #14b8a6; border-radius: 12px; padding: 20px; background: linear-gradient(145deg, #1f2937, #111827); color: #e5e7eb; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
         <summary style="cursor: pointer; font-weight: bold; font-size: 1.2em; color: #6ee7b7;">⚙️ Flexible Configuration System</summary>
-        <p style="padding-top: 10px;">Fine-tune evaluation with configurable parameters: chunk sizes, similarity thresholds, context windows, and Local Chronology Tolerance (LCT). Supports custom segmentation and embedding functions for domain-specific applications.</p>
+        <p style="padding-top: 10px;">Fine-tune evaluation with configurable parameters: chunk sizes, similarity thresholds, context windows, and NAS Regularizer (Rn). Supports custom segmentation and embedding functions for domain-specific applications.</p>
       </details>
     </td>
   </tr>
@@ -702,7 +702,7 @@ result = compute_vcs_score(
     chunk_size=2,                  # Group segments
     context_cutoff_value=0.7,      # Higher threshold
     context_window_control=3.0,    # Tighter windows
-    lct=1,                         # Some reordering OK
+    Rn=1,                         # Some reordering OK
     return_all_metrics=True,       # Get detailed breakdown
     return_internals=True          # Get visualization data
 )
@@ -757,7 +757,7 @@ result = compute_vcs_score(
 
 <details>
 <summary><strong>⏱️ How do I control the strictness of chronological matching?</strong></summary>
-<p>Use the <code>lct</code> (Local Chronology Tolerance) parameter to control chronological matching strictness. A higher LCT value means more lenient chronological ordering, allowing for greater flexibility in narrative sequence evaluation. The default value is 0 for strict chronological matching.</p>
+<p>Use the <code>lct</code> (NAS Regularizer) parameter to control chronological matching strictness. A higher LCT value means more lenient chronological ordering, allowing for greater flexibility in narrative sequence evaluation. The default value is 0 for strict chronological matching.</p>
 </details>
 
 <details>
@@ -1071,12 +1071,21 @@ VCS is designed to work seamlessly with [CLIP-CC Dataset](https://github.com/Mul
 
 | Commits | Lines | Files |
 |:---:|:---:|:---:|
-| **2** | **49K** | **171** |
+| **50+** | **49K** | **260** |
 
 **📋 Key Work:**
-• VCS Algorithm Architecture  
+
+<div align="left">
+
+• VCS Algorithm Implementation  
+• Python Package  
 • Visualization Engine  
-• LAS, GAS, and NAS Metrics  
+• PDF Report Generation  
+• VCS Website  
+• Sphinx Documentation  
+• CI/CD Pipeline  
+
+</div>
 
 [![GitHub](https://img.shields.io/badge/-GitHub-14b8a6?style=flat&logo=github)](https://github.com/hdubey-debug)
 

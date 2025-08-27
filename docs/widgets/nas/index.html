@@ -785,7 +785,7 @@
                                 Complete Narrative Alignment Score (NAS)
                             </h1>
                             <p class="text-teal-200 text-base sm:text-lg mb-6 max-w-3xl">
-                                Evaluate narrative similarity by analyzing how well the chronological order of semantics aligns between two texts through distance-based alignment (NAS-D), narrative flow continuity (NAS-L), and length coverage validation (Window Regularizer for Narrative Alignment) in the Video Comprehension Score framework.
+                                Evaluate narrative similarity by analyzing how well the chronological order of semantics aligns between two texts through global alignment (Global NAS), narrative flow continuity (Local NAS), and length coverage validation (Window Regularizer for Narrative Alignment) in the Video Comprehension Score framework.
                             </p>
                         </div>
                     </div>
@@ -800,7 +800,7 @@
             
             <!-- Definition -->
             <div class="bg-white bg-opacity-70 p-4 rounded-xl mb-6 border-l-4 border-amber-500">
-                <p class="text-sm text-slate-700 mb-3"><strong>What is Complete NAS?</strong> The Complete Narrative Alignment Score (NAS) is a comprehensive evaluation system that combines three critical aspects of narrative similarity: global chronological order (NAS-D), local chronological order (NAS-L), and length coverage (Window Regularizer). It provides a robust, balanced assessment of how well a generated text aligns with a reference text in terms of narrative.</p>
+                <p class="text-sm text-slate-700 mb-3"><strong>What is Complete NAS?</strong> The Complete Narrative Alignment Score (NAS) is a comprehensive evaluation system that combines three critical aspects of narrative similarity: global chronological order (Global NAS), local chronological order (Local NAS), and length coverage (Window Regularizer). It provides a robust, balanced assessment of how well a generated text aligns with a reference text in terms of narrative.</p>
                 
                 <!-- Warning -->
                 <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
@@ -819,15 +819,15 @@
                         <i class="fas fa-info-circle text-blue-500 mr-2 mt-0.5"></i>
                         <div>
                             <p class="text-xs text-blue-800 font-medium mb-1">📚 Additional Prerequisites</p>
-                            <p class="text-xs text-blue-700">Before exploring Complete NAS, we strongly recommend visiting the <a href="../distance-nas/" class="font-bold underline hover:text-blue-900">Distance-based NAS Demo</a>, <a href="../line-nas/" class="font-bold underline hover:text-blue-900">Line-based NAS Demo</a>, and <a href="../window-regularizer/" class="font-bold underline hover:text-blue-900">Window Regularizer Demo</a> to understand each component individually. Complete NAS combines all three systems into a comprehensive text similarity assessment framework.</p>
+                            <p class="text-xs text-blue-700">Before exploring Complete NAS, we strongly recommend visiting the <a href="../global-nas/" class="font-bold underline hover:text-blue-900">Global NAS Demo</a>, <a href="../local-nas/" class="font-bold underline hover:text-blue-900">Local NAS Demo</a>, and <a href="../window-regularizer/" class="font-bold underline hover:text-blue-900">Window Regularizer Demo</a> to understand each component individually. Complete NAS combines all three systems into a comprehensive text similarity assessment framework.</p>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                <div class="bg-white bg-opacity-60 p-4 rounded-xl"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-crosshairs text-blue-500 mr-2"></i>NAS-D Component</h4><p class="text-sm text-slate-700">Distance-based chronological alignment penalties. Measures positional accuracy of chunks within mapping windows.</p></div>
-                <div class="bg-white bg-opacity-60 p-4 rounded-xl"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-route text-purple-500 mr-2"></i>NAS-L Component</h4><p class="text-sm text-slate-700">Line-based narrative flow assessment. Evaluates path smoothness and calculability between aligned segments.</p></div>
+                <div class="bg-white bg-opacity-60 p-4 rounded-xl"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-crosshairs text-blue-500 mr-2"></i>Global NAS Component</h4><p class="text-sm text-slate-700">Global chronological alignment penalties. Measures positional accuracy of chunks within mapping windows.</p></div>
+                <div class="bg-white bg-opacity-60 p-4 rounded-xl"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-route text-purple-500 mr-2"></i>Local NAS Component</h4><p class="text-sm text-slate-700">Line-based narrative flow assessment. Evaluates path smoothness and calculability between aligned segments.</p></div>
                 <div class="bg-white bg-opacity-60 p-4 rounded-xl"><h4 class="font-semibold text-amber-700 mb-2 flex items-center"><i class="fas fa-balance-scale text-red-500 mr-2"></i>Window Regularizer</h4><p class="text-sm text-slate-700">Length coverage penalty preventing artificially high scores from oversimplified or imbalanced content.</p></div>
             </div>
             <details id="tour-step-algo" class="mb-4">
@@ -835,16 +835,16 @@
                 <div class="mt-4 space-y-4">
                     <!-- Main Algorithm Overview -->
                     <div class="bg-white bg-opacity-70 p-4 rounded-lg border-l-4 border-amber-500">
-                        <p class="text-sm text-slate-700 mb-3"><strong>Algorithm Overview:</strong> The Complete NAS algorithm follows 4 steps to combine three critical components: Distance-NAS measures chronological alignment, Line-NAS evaluates narrative flow smoothness, and Window Regularizer prevents inflated scores from excessive coverage. Each component operates independently before final combination:</p>
+                        <p class="text-sm text-slate-700 mb-3"><strong>Algorithm Overview:</strong> The Complete NAS algorithm follows 4 steps to combine three critical components: Global NAS measures chronological alignment, Line-NAS evaluates narrative flow smoothness, and Window Regularizer prevents inflated scores from excessive coverage. Each component operates independently before final combination:</p>
                         
-                        <!-- Step 1: Calculate Distance-NAS -->
+                        <!-- Step 1: Calculate Global NAS -->
                         <div class="bg-orange-50 border border-orange-200 rounded-xl p-3 mt-3">
                             <div class="flex items-start">
                                 <i class="fas fa-crosshairs text-orange-500 mr-2 mt-0.5"></i>
                                 <div>
-                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 1: Calculate Distance-NAS (NAS-D)</p>
-                                    <p class="text-xs text-orange-700 mb-2">Calculate Distance-based NAS for the given reference and generated text using precision and recall best matches combined with F1 harmonic mean.</p>
-                                    <p class="text-xs text-orange-700 mt-2">📍 <strong>Learn more:</strong> Visit the <a href="../distance-nas/" class="font-bold underline hover:text-orange-900">Distance-NAS Demo</a> to understand the complete 6-step algorithm with detailed distance penalty calculations.</p>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 1: Calculate Global NAS (Global NAS)</p>
+                                    <p class="text-xs text-orange-700 mb-2">Calculate Global NAS for the given reference and generated text using precision and recall best matches combined with F1 harmonic mean.</p>
+                                    <p class="text-xs text-orange-700 mt-2">📍 <strong>Learn more:</strong> Visit the <a href="../global-nas/" class="font-bold underline hover:text-orange-900">Global NAS Demo</a> to understand the complete 6-step algorithm with detailed distance penalty calculations.</p>
                                 </div>
                             </div>
                         </div>
@@ -854,9 +854,9 @@
                             <div class="flex items-start">
                                 <i class="fas fa-route text-orange-500 mr-2 mt-0.5"></i>
                                 <div>
-                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 2: Calculate Line-NAS (NAS-L)</p>
-                                    <p class="text-xs text-orange-700 mb-2">Calculate Line-based NAS for the given reference and generated text using precision and recall best matches combined with F1 harmonic mean.</p>
-                                    <p class="text-xs text-orange-700 mt-2">📍 <strong>Learn more:</strong> Visit the <a href="../line-nas/" class="font-bold underline hover:text-orange-900">Line-NAS Demo</a> to explore the complete 6-step algorithm with path geometry analysis and ideal bound computation.</p>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 2: Calculate Line-NAS (Local NAS)</p>
+                                    <p class="text-xs text-orange-700 mb-2">Calculate Local NAS for the given reference and generated text using precision and recall best matches combined with F1 harmonic mean.</p>
+                                    <p class="text-xs text-orange-700 mt-2">📍 <strong>Learn more:</strong> Visit the <a href="../local-nas/" class="font-bold underline hover:text-orange-900">Line-NAS Demo</a> to explore the complete 6-step algorithm with path geometry analysis and ideal bound computation.</p>
                                 </div>
                             </div>
                         </div>
@@ -878,15 +878,10 @@
                             <div class="flex items-start">
                                 <i class="fas fa-calculator text-orange-500 mr-2 mt-0.5"></i>
                                 <div>
-                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 4: Combine Components and Apply Regularization</p>
-                                    <p class="text-xs text-orange-700 mb-2">Combine Distance-NAS and Line-NAS using harmonic mean, then apply window regularization with renormalization to produce the final comprehensive score.</p>
+                                    <p class="text-xs text-orange-800 font-medium mb-1">Step 4: Combine Components</p>
+                                    <p class="text-xs text-orange-700 mb-2">Combine Global NAS and Line-NAS using harmonic mean to produce the final comprehensive score.</p>
                                     <div class="math-container">
-                                        <p class="text-xs">$\text{NAS-F1} = \frac{2 \times \text{NAS-D} \times \text{NAS-L}}{\text{NAS-D} + \text{NAS-L}}$</p>
-                                        <p class="text-xs">$\text{regularized\_nas} = \text{NAS-F1} - \text{window\_regularizer}$</p>
-                                        <p class="text-xs">$\text{Complete NAS} = \begin{cases} 
-                                        \frac{\text{regularized\_nas}}{1 - \text{window\_regularizer}} & \text{if } \text{regularized\_nas} > 0 \\
-                                        0 & \text{otherwise}
-                                        \end{cases}$</p>
+                                        <p class="text-xs">$\text{NAS} = \frac{2 \times \text{Global NAS} \times \text{Local NAS}}{\text{Global NAS} + \text{Local NAS}}$</p>
                                     </div>
                                     <p class="text-xs text-orange-700 mt-2">The final score balances chronological accuracy, narrative flow, and structural coverage for comprehensive text similarity assessment.</p>
                                 </div>
@@ -899,7 +894,7 @@
                                 <i class="fas fa-play-circle text-blue-500 mr-2 mt-0.5"></i>
                                 <div>
                                     <p class="text-xs text-blue-800 font-medium mb-1">🎯 Interactive Demo</p>
-                                    <p class="text-xs text-blue-700 mb-2">Now that you understand how Complete NAS combines Distance-NAS, Line-NAS, and Window Regularizer into a comprehensive assessment, use the interactive demo below to see how all three components work together in real-time.</p>
+                                    <p class="text-xs text-blue-700 mb-2">Now that you understand how Complete NAS combines Global NAS, Line-NAS, and Window Regularizer into a comprehensive assessment, use the interactive demo below to see how all three components work together in real-time.</p>
                                     <p class="text-xs text-blue-700">Adjust the alignment markers to observe how changes affect each component individually and their combined impact on the final Complete NAS score.</p>
                                 </div>
                             </div>
@@ -930,8 +925,8 @@
                                 </div>
                             </div>
                             <div id="precisionChartMetrics" class="absolute -bottom-2 left-0 right-0 grid grid-cols-2 gap-x-4 gap-y-1 text-center text-xs text-slate-600 bg-white/80 p-2 rounded-md">
-                                <div><span>NAS-D:</span><br><span id="precisionNasD" class="font-bold text-blue-600">0.000</span> <span id="precisionNasDPreview" class="ghost-score"></span></div>
-                                <div><span>NAS-L:</span><br><span id="precisionNasL" class="font-bold text-purple-600">0.000</span> <span id="precisionNasLPreview" class="ghost-score"></span></div>
+                                <div><span>Global NAS:</span><br><span id="precisionNasD" class="font-bold text-blue-600">0.000</span> <span id="precisionNasDPreview" class="ghost-score"></span></div>
+                                <div><span>Local NAS:</span><br><span id="precisionNasL" class="font-bold text-purple-600">0.000</span> <span id="precisionNasLPreview" class="ghost-score"></span></div>
                                 <div class="col-span-2"><span>Combined:</span><br><span id="precisionCombined" class="font-bold text-teal-600 text-sm">0.000</span> <span id="precisionCombinedPreview" class="ghost-score"></span></div>
                             </div>
                         </div>
@@ -953,8 +948,8 @@
                                 </div>
                             </div>
                             <div id="recallChartMetrics" class="absolute -bottom-2 left-0 right-0 grid grid-cols-2 gap-x-4 gap-y-1 text-center text-xs text-slate-600 bg-white/80 p-2 rounded-md">
-                                <div><span>NAS-D:</span><br><span id="recallNasD" class="font-bold text-blue-600">0.000</span> <span id="recallNasDPreview" class="ghost-score"></span></div>
-                                <div><span>NAS-L:</span><br><span id="recallNasL" class="font-bold text-purple-600">0.000</span> <span id="recallNasLPreview" class="ghost-score"></span></div>
+                                <div><span>Global NAS:</span><br><span id="recallNasD" class="font-bold text-blue-600">0.000</span> <span id="recallNasDPreview" class="ghost-score"></span></div>
+                                <div><span>Local NAS:</span><br><span id="recallNasL" class="font-bold text-purple-600">0.000</span> <span id="recallNasLPreview" class="ghost-score"></span></div>
                                 <div class="col-span-2"><span>Combined:</span><br><span id="recallCombined" class="font-bold text-amber-600 text-sm">0.000</span> <span id="recallCombinedPreview" class="ghost-score"></span></div>
                             </div>
                         </div>
@@ -983,13 +978,13 @@
                             </div>
                                <div class="grid grid-cols-2 gap-4">
                                   <div class="text-center">
-                                      <label class="block text-sm font-medium text-blue-700 mb-1">F1 NAS-D</label>
+                                      <label class="block text-sm font-medium text-blue-700 mb-1">F1 Global NAS</label>
                                       <span id="overallNasDF1" class="text-2xl font-bold text-blue-600">0.000</span>
                                       <span id="overallNasDF1Preview" class="text-2xl ghost-score"></span>
                                       <p class="text-xs text-slate-500 mt-1">Distance alignment</p>
                                   </div>
                                   <div class="text-center">
-                                      <label class="block text-sm font-medium text-purple-700 mb-1">F1 NAS-L</label>
+                                      <label class="block text-sm font-medium text-purple-700 mb-1">F1 Local NAS</label>
                                       <span id="overallNasLF1" class="text-2xl font-bold text-purple-600">0.000</span>
                                       <span id="overallNasLF1Preview" class="text-2xl ghost-score"></span>
                                       <p class="text-xs text-slate-500 mt-1">Flow alignment</p>
@@ -1070,7 +1065,7 @@
                     <h3><i class="fas fa-play-circle"></i>Getting Started</h3>
                     <div class="test-item">
                         <h4>Understanding Complete NAS Integration</h4>
-                        <p>This guide explores how Distance-NAS, Line-NAS, and Window Regularizer work together to provide comprehensive narrative alignment assessment.</p>
+                        <p>This guide explores how Global NAS, Line-NAS, and Window Regularizer work together to provide comprehensive narrative alignment assessment.</p>
                         <ul class="test-checklist">
                             <li>Three components evaluate different aspects: chronological accuracy, narrative flow, and structural fairness</li>
                             <li>Each component has complementary strengths and sensitivities</li>
@@ -1087,9 +1082,7 @@
                         <h4>Perfect Integration Benchmark</h4>
                         <p>When narratives align perfectly, observe how all components achieve maximum performance.</p>
                         <ul class="test-checklist">
-                            <li>Distance-NAS, Line-NAS, and NAS F1 should all equal 1.0000</li>
-                            <li>Window Regularizer penalty should be 0.0000</li>
-                            <li>Complete NAS achieves perfect 1.0000 score</li>
+                            <li>Global NAS, Line-NAS, and NAS should all equal 1.0000</li>
                             <li>All purple markers align precisely within teal mapping windows</li>
                         </ul>
                         <p class="text-sm text-slate-600 mt-2 italic">Close this guide and click "Optimal" to establish the performance baseline.</p>
@@ -1153,7 +1146,7 @@
                         <ul class="test-checklist">
                             <li>Progressively disable chunks by clicking them in the segment lists</li>
                             <li>Notice how Complete NAS enforces content alignment requirements</li>
-                            <li>Observe that NAS does NOT suffer from the low-dimensionality problem that affects NAS-D and NAS-L individually</li>
+                            <li>Observe that NAS does NOT suffer from the low-dimensionality problem that affects Global NAS and Local NAS individually</li>
                             <li>Window Regularizer prevents paradoxical score increases when chunks are disabled</li>
                             <li>Complete NAS maintains meaningful assessment even with fewer active chunks</li>
                         </ul>
@@ -1170,7 +1163,7 @@
                         <ul class="test-checklist">
                             <li>Complete NAS integrates three complementary evaluation dimensions</li>
                             <li>LCT effectively rescues local chronological issues but has limited impact on global disruptions</li>
-                            <li>Window Regularizer prevents the low-dimensionality problem that affects individual NAS-D and NAS-L</li>
+                            <li>Window Regularizer prevents the low-dimensionality problem that affects individual Global NAS and Local NAS</li>
                             <li>Complete NAS provides robust assessment that maintains content alignment requirements</li>
                             <li>Integration prevents gaming and artificial score inflation through structural awareness</li>
                             <li>Manual exploration reveals systematic advantages over individual component evaluation</li>
@@ -1246,13 +1239,13 @@
             currentStep: 0,
             overlay: document.getElementById('tour-overlay'),
             steps: [
-                { selector: '#tour-step-intro', text: 'Welcome to Complete Narrative Alignment Score! This demo combines Distance-based NAS, Line-based NAS, and Window Regularizer into a unified text similarity assessment. Understand each component individually first.', position: 'bottom' },
+                { selector: '#tour-step-intro', text: 'Welcome to Complete Narrative Alignment Score! This demo combines Global NAS, Local NAS, and Window Regularizer into a unified text similarity assessment. Understand each component individually first.', position: 'bottom' },
                 { selector: '#tour-step-algo', text: 'Click to expand the complete NAS algorithm pipeline. This shows step-by-step calculations integrating all three evaluation dimensions.', position: 'bottom'},
-                { selector: '#tour-step-4', text: 'Interactive dual visualization showing Distance-based NAS and Line-based NAS operating together. Purple markers are draggable best matches that affect both distance penalties and path geometry.', position: 'top' },
+                { selector: '#tour-step-4', text: 'Interactive dual visualization showing Global NAS and Local NAS operating together. Purple markers are draggable best matches that affect both distance penalties and path geometry.', position: 'top' },
                 { selector: '#tour-step-5', text: 'Click chunks to activate/deactivate them or drag to reorder sequences. Watch how all three components respond to structural changes in real-time.', position: 'top' },
                 { selector: '#tour-step-3', text: 'Try these preset scenarios to explore how different narrative patterns affect all three NAS components simultaneously. Each button demonstrates specific disruption effects. Check the Testing Guide for comprehensive exploration strategies.', position: 'left', action: () => handleScenarioClick('neighborSwap') },
-                { selector: '#tour-step-lct', text: 'Local Chronological Tolerance affects both Distance-based penalties and Line-based path calculations simultaneously. Higher values create forgiveness zones across all evaluation dimensions.', position: 'left' },
-                { selector: '#tour-step-6', text: 'Comprehensive scoring dashboard shows integrated results from all three systems. Distance-based Narrative Alignment Score (NAS-D) measures chronological accuracy, Line-based Narrative Alignment Score (NAS-L) captures narrative flow, Window Regularizer for Narrative Alignment prevents gaming, and Complete NAS provides balanced assessment.', position: 'left' }
+                { selector: '#tour-step-lct', text: 'Local Chronological Tolerance affects both Global penalties and Line-based path calculations simultaneously. Higher values create forgiveness zones across all evaluation dimensions.', position: 'left' },
+                { selector: '#tour-step-6', text: 'Comprehensive scoring dashboard shows integrated results from all three systems. Global Narrative Alignment Score (Global NAS) measures chronological accuracy, Line-based Narrative Alignment Score (Local NAS) captures narrative flow, Window Regularizer for Narrative Alignment prevents gaming, and Complete NAS provides balanced assessment.', position: 'left' }
             ],
 
             start: function() {
@@ -1515,7 +1508,7 @@
             return { bestMatchIndex: bestMatchIndexToReturn };
         }
 
-        // NAS-D Distance calculations
+        // Global NAS Distance calculations
         function calculatePenaltiesAndNAS(chartType) {
             const isRecall = chartType === 'recall';
             const sourceLen = isRecall ? activeReferenceIndices.length : activeGeneratedIndices.length;
@@ -1546,7 +1539,7 @@
             return { actualPenalty: totalActualPenalty, maxPenalty: maxTotalPenalty, nas: nas, markerPenalties: markerPenalties };
         }
 
-        // NAS-L Line calculations
+        // Local NAS Line calculations
         function computeIdealNarrativeLineBandJS(mappingWindows, numX, numY) {
             const n_windows = mappingWindows.length;
             if (n_windows === 0 || numX === 0 || numY === 0) {
@@ -1885,11 +1878,11 @@
              currentLct = parseInt(lctSlider.value);
              const nRef = activeReferenceIndices.length, nGen = activeGeneratedIndices.length;
 
-             // Calculate NAS-D for both charts
+             // Calculate Global NAS for both charts
              const precNasDResult = calculatePenaltiesForMarkers('precision', tempMarkers.precision);
              const recNasDResult = calculatePenaltiesForMarkers('recall', tempMarkers.recall);
              
-             // Calculate NAS-L for both charts
+             // Calculate Local NAS for both charts
              const precMappingWindows = get_mapping_windows_generic(nGen, nRef);
              const precIdealBand = computeIdealNarrativeLineBandJS(precMappingWindows, nGen, nRef);
              const precPathInfo = computeActualLineLengthJS(tempPaths.precision, nRef, nGen, currentLct, precIdealBand.floor_path_dy_map);
@@ -2170,7 +2163,7 @@
                 lbl.style.transform = 'translateX(-50%)'; chartUI.axisX.appendChild(lbl);
             }
 
-            // Render SVG paths for Line NAS
+            // Render SVG paths for Local NAS
             const chartWidth = chartUI.grid.clientWidth;
             const chartHeight = chartUI.grid.clientHeight;
             
@@ -2548,7 +2541,7 @@
                     const simMatrix = buildCurrentSimilarityMatrix(isRecall);
                     const mappingWindows = get_mapping_windows_generic(sourceLen, targetLen);
 
-                    // Initialize markers for NAS-D
+                    // Initialize markers for Global NAS
                     const currentMarkers = [];
                     for (let i = 0; i < sourceLen; i++) {
                         const similarityColumn = simMatrix[i];
@@ -2557,7 +2550,7 @@
                     }
                     newMarkerPositions[chartType] = currentMarkers;
 
-                    // Initialize paths for NAS-L
+                    // Initialize paths for Local NAS
                     newActualPathPositions[chartType] = initializeActualPath(simMatrix, mappingWindows, sourceLen, targetLen);
                 }
             });
@@ -2589,7 +2582,7 @@
         }
 
         /**
-         * [MODIFIED] This function now shows both NAS-D and NAS-L details.
+         * [MODIFIED] This function now shows both Global NAS and Local NAS details.
          */
         function updateChartTooltip(e, chartType, markerId) {
             const highlightedItems = document.querySelectorAll('.segment-list li.highlight');
@@ -2616,7 +2609,7 @@
             
             const mappingText = `${isRecall ? 'Ref' : 'Gen'} Chunk ${xOriginalIndex} ↔ ${isRecall ? 'Gen' : 'Ref'} Chunk ${yOriginalIndex}`;
             
-            // --- NAS-D Details ---
+            // --- Global NAS Details ---
             let penaltyText = '';
             let finalStatusClass = 'standard';
             const idealWindows = get_mapping_windows_generic(sourceLen, targetLen);
@@ -2641,7 +2634,7 @@
                 }
             }
             
-            // --- NAS-L Segment Details ---
+            // --- Local NAS Segment Details ---
             let segmentText = 'End of path';
             const segments = actualPathSegments[chartType] || [];
             const segment = segments.find(s => s.start.x === markerId);
@@ -2659,8 +2652,8 @@
             chartTooltip.innerHTML = `
                 <div>${mappingText}</div>
                 <hr class="my-1 border-slate-500">
-                <div><strong>Distance (NAS-D):</strong> ${penaltyText}</div>
-                <div><strong>Flow (NAS-L):</strong> ${segmentText}</div>
+                <div><strong>Distance (Global NAS):</strong> ${penaltyText}</div>
+                <div><strong>Flow (Local NAS):</strong> ${segmentText}</div>
             `;
         }
 
@@ -2715,8 +2708,8 @@
                 const nasLf1 = _calculate_f1(precNasL, recallNasL);
 
                 let mathHtml = `<strong>Component Scores:</strong><br>`;
-                mathHtml += `NAS-D: P=${nasDPrecision.toFixed(3)}, R=${nasDRecall.toFixed(3)}, F1=${nasDf1.toFixed(3)}<br>`;
-                mathHtml += `NAS-L: P=${precNasL.toFixed(3)}, R=${recallNasL.toFixed(3)}, F1=${nasLf1.toFixed(3)}<br>`;
+                mathHtml += `Global NAS: P=${nasDPrecision.toFixed(3)}, R=${nasDRecall.toFixed(3)}, F1=${nasDf1.toFixed(3)}<br>`;
+                mathHtml += `Local NAS: P=${precNasL.toFixed(3)}, R=${recallNasL.toFixed(3)}, F1=${nasLf1.toFixed(3)}<br>`;
                 mathHtml += `<strong>Combined F1:</strong> 2×(${nasDf1.toFixed(3)}×${nasLf1.toFixed(3)})/(${nasDf1.toFixed(3)}+${nasLf1.toFixed(3)}) = ${combinedF1.toFixed(3)}<br>`;
                 mathHtml += `<strong>Window Regularizer:</strong> ${regularizer.toFixed(3)}<br>`;
                 mathHtml += `<strong>Final NAS:</strong> (${combinedF1.toFixed(3)} - ${regularizer.toFixed(3)}) / (1 - ${regularizer.toFixed(3)}) = ${finalNAS.toFixed(3)}`;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Effect of LCT on Distance-based NAS (NAS-D)</title>
+    <title>Effect of LCT on Global NAS (Global NAS)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -725,10 +725,10 @@
                                 <div class="bg-white bg-opacity-20 text-white px-3 py-1 rounded-full text-xs font-semibold">Core VCS Component</div>
                             </div>
                             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-3 leading-tight">
-                                LCT Effect on Distance-based NAS (NAS-D)
+                                LCT Effect on Global NAS (Global NAS)
                             </h1>
                             <p class="text-teal-200 text-base sm:text-lg mb-6 max-w-3xl">
-                                Explore how Local Chronology Threshold (LCT) introduces flexibility for local chronological deviations by enabling tolerance zones in Distance-based NAS within the Video Comprehension Score framework.
+                                Explore how Local Chronology Threshold (Rn) introduces flexibility for local chronological deviations by enabling tolerance zones in Global NAS within the Video Comprehension Score framework.
                             </p>
                         </div>
                     </div>
@@ -741,13 +741,13 @@
             <div id="tour-step-intro" class="intro-card interactive-card rounded-xl p-6">
                 <div class="flex items-center mb-4">
                     <i class="fas fa-lightbulb text-amber-600 text-xl mr-3"></i>
-                    <h2 class="text-xl font-semibold text-amber-800">Introduction to LCT Effect on Distance-based NAS</h2>
+                    <h2 class="text-xl font-semibold text-amber-800">Introduction to LCT Effect on Global NAS</h2>
                 </div>
                 
                 <!-- Definition -->
                 <div class="bg-white bg-opacity-70 p-4 rounded-xl mb-6 border-l-4 border-amber-500">
                     <p class="text-sm text-slate-700 mb-3">
-                        <strong>What is Local Chronology Tolerance (LCT) Effect on NAS-D?</strong> Local Chronology Threshold (LCT) introduces controlled flexibility to Distance-based NAS by creating "forgiveness neighborhoods" where chronological content can be locally rearranged without distance penalties. This addresses the limitation where minor narrative reorderings (like adjacent sentence swaps) are heavily penalized despite preserving meaning.
+                        <strong>What is NAS Regularizer (Rn) Effect on Global NAS?</strong> Local Chronology Threshold (Rn) introduces controlled flexibility to Global NAS by creating "forgiveness neighborhoods" where chronological content can be locally rearranged without distance penalties. This addresses the limitation where minor narrative reorderings (like adjacent sentence swaps) are heavily penalized despite preserving meaning.
                     </p>
                     
                     <!-- Warning -->
@@ -767,7 +767,7 @@
                             <i class="fas fa-info-circle text-blue-500 mr-2 mt-0.5"></i>
                             <div>
                                 <p class="text-xs text-blue-800 font-medium mb-1">📚 Additional Prerequisites</p>
-                                <p class="text-xs text-blue-700">Before exploring LCT effects on Distance-based NAS, we recommend visiting the <a href="../mapping-window/" class="font-bold underline hover:text-blue-900">Mapping Window Demo</a>, <a href="../best-match/" class="font-bold underline hover:text-blue-900">Best Match Demo</a>, and <a href="../distance-nas/" class="font-bold underline hover:text-blue-900">Distance-based NAS Demo</a> to understand the foundational concepts. LCT builds upon these by adding controlled flexibility to chronological alignment assessment.</p>
+                                <p class="text-xs text-blue-700">Before exploring LCT effects on Global NAS, we recommend visiting the <a href="../mapping-window/" class="font-bold underline hover:text-blue-900">Mapping Window Demo</a>, <a href="../best-match/" class="font-bold underline hover:text-blue-900">Best Match Demo</a>, and <a href="../global-nas/" class="font-bold underline hover:text-blue-900">Global NAS Demo</a> to understand the foundational concepts. LCT builds upon these by adding controlled flexibility to chronological alignment assessment.</p>
                             </div>
                         </div>
                     </div>
@@ -802,7 +802,7 @@
                                 </p>
                                 <div class="bg-blue-50/50 p-3 rounded-xl mb-3 border border-blue-200">
                                     <p class="text-xs text-blue-700">
-                                        <strong>Distance-based NAS Behavior:</strong> Without LCT, this reversal incurs distance penalties. With LCT=1, these penalties are forgiven within the tolerance zone. For perfect ratios (max(ref,gen)/min(ref,gen) yielding whole numbers like 10/5, 9/3), LCT=1 enables swap with immediate neighbor without penalty.
+                                        <strong>Global NAS Behavior:</strong> Without LCT, this reversal incurs distance penalties. With Rn=1, these penalties are forgiven within the tolerance zone. For perfect ratios (max(ref,gen)/min(ref,gen) yielding whole numbers like 10/5, 9/3), Rn=1 enables swap with immediate neighbor without penalty.
                                         <br><strong>⚠️ Caution:</strong> When ratios are non-integer (10/7, 9/8), behavior varies slightly—explore this in the demo.
                                     </p>
                                 </div>
@@ -819,7 +819,7 @@
                                 </p>
                                 <div class="bg-green-50/50 p-3 rounded-xl mb-3 border border-green-200">
                                     <p class="text-xs text-green-700">
-                                        <strong>Tolerance Zone Extension:</strong> LCT=2 creates a 3×3 mapping window tolerance zone, enabling rotation within 3-mapping-window-height blocks. This allows chunks to move up to 2 positions away from their ideal diagonal without penalty. While LCT=1 only forgives immediate neighbor swaps, LCT=2 accommodates rotation upto second neighbor and other swapping permutations within the 3x3 block.
+                                        <strong>Tolerance Zone Extension:</strong> Rn=2 creates a 3×3 mapping window tolerance zone, enabling rotation within 3-mapping-window-height blocks. This allows chunks to move up to 2 positions away from their ideal diagonal without penalty. While Rn=1 only forgives immediate neighbor swaps, Rn=2 accommodates rotation upto second neighbor and other swapping permutations within the 3x3 block.
                                         <br><strong>⚠️ Caution:</strong> Non-integer ratios (10/7, 9/8) produce irregular mapping window heights, affecting tolerance zone behavior—experiment with different ratios in the demo.
                                     </p>
                                 </div>
@@ -864,7 +864,7 @@
                 <div id="tour-step-next-steps" class="demo-card interactive-card rounded-xl p-6 mt-8">
                     <h3 class="font-semibold text-slate-800 mb-3 flex items-center text-lg"><i class="fas fa-graduation-cap text-teal-600 mr-2"></i>Next Steps</h3>
                     <div class="mt-2 space-y-4 text-sm text-slate-700 bg-slate-50/50 p-4 rounded-xl border border-slate-200">
-                        <p class="flex items-start"><strong class="mr-3 text-teal-600 text-base mt-0.5">📚</strong> <span>Once you understand the LCT concept here, visit the <a href="../distance-nas/" class="text-teal-600 hover:text-teal-800 underline font-semibold">Distance-based NAS demo</a> to see how LCT plays out in real examples with actual narrative content.</span></p>
+                        <p class="flex items-start"><strong class="mr-3 text-teal-600 text-base mt-0.5">📚</strong> <span>Once you understand the LCT concept here, visit the <a href="../global-nas/" class="text-teal-600 hover:text-teal-800 underline font-semibold">Global NAS demo</a> to see how LCT plays out in real examples with actual narrative content.</span></p>
                         <p class="flex items-start"><strong class="mr-3 text-teal-600 text-base mt-0.5">🎯</strong> <span>Then explore the <a href="../nas/" class="text-teal-600 hover:text-teal-800 underline font-semibold">final NAS demo</a> to see how all components work together.</span></p>
                     </div>
                 </div>
@@ -876,12 +876,12 @@
                     
                     <div id="tour-step-3" class="metrics-card interactive-card rounded-xl p-6">
                         <h3 class="text-lg font-semibold text-blue-800 mb-4 flex items-center">
-                            <i class="fas fa-calculator text-blue-600 mr-2"></i>Live NAS-D Metrics
+                            <i class="fas fa-calculator text-blue-600 mr-2"></i>Live Global NAS Metrics
                         </h3>
                         <div class="space-y-3">
                             <details class="text-center bg-blue-50/70 p-3 rounded-xl border border-blue-200 cursor-pointer">
                                 <summary class="list-none">
-                                    <label class="block text-sm font-medium text-blue-700 mb-1 cursor-pointer">Distance-based NAS-D</label>
+                                    <label class="block text-sm font-medium text-blue-700 mb-1 cursor-pointer">Global Global NAS</label>
                                     <span id="nasScoreDisplay" class="text-4xl font-bold text-blue-600">-</span>
                                     <span id="nasScorePreview" class="text-4xl font-bold ghost-score"></span>
                                 </summary>
@@ -906,10 +906,10 @@
                         </h3>
                         <div class="space-y-4">
                             <div class="flex items-center justify-between">
-                                <label for="lctSlider" class="text-sm font-medium text-purple-700">LCT Multiplier (τ<sub>LCT</sub>):</label>
-                                <span id="lctValueDisplay" class="text-lg font-bold text-purple-600 bg-purple-100 px-3 py-1 rounded">0</span>
+                                <label for="RnSlider" class="text-sm font-medium text-purple-700">LCT Multiplier (τ<sub>LCT</sub>):</label>
+                                <span id="RnValueDisplay" class="text-lg font-bold text-purple-600 bg-purple-100 px-3 py-1 rounded">0</span>
                             </div>
-                            <input type="range" id="lctSlider" min="0" max="8" value="0" class="w-full h-2 bg-purple-200 rounded-xl appearance-none cursor-pointer">
+                            <input type="range" id="RnSlider" min="0" max="8" value="0" class="w-full h-2 bg-purple-200 rounded-xl appearance-none cursor-pointer">
                             <div id="lctDescription" class="text-xs text-purple-600"></div>
                         </div>
                     </div>
@@ -975,8 +975,8 @@
                 <div class="test-category">
                     <h3><i class="fas fa-play-circle"></i>Getting Started</h3>
                     <div class="test-item">
-                        <h4>Understanding Local Chronology Tolerance (LCT) Effect on NAS-D</h4>
-                        <p>This guide will help you understand how Local Chronology Threshold (LCT) modifies Distance-based NAS behavior.</p>
+                        <h4>Understanding NAS Regularizer (Rn) Effect on Global NAS</h4>
+                        <p>This guide will help you understand how Local Chronology Threshold (Rn) modifies Global NAS behavior.</p>
                         <ul class="test-checklist">
                             <li>LCT creates tolerance zones around mapping windows where penalties are forgiven</li>
                             <li>Raw distance ≤ LCT_tolerance results in penalty = 0</li>
@@ -987,16 +987,16 @@
                 </div>
 
                 <div class="test-category">
-                    <h3><i class="fas fa-sync-alt"></i>Testing 2×2 Rotation & LCT=1</h3>
+                    <h3><i class="fas fa-sync-alt"></i>Testing 2×2 Rotation & Rn=1</h3>
                     <div class="test-item">
                         <h4>Adjacent Neighbor Swaps</h4>
-                        <p>Learn how LCT=1 handles immediate neighbor chronology changes (2×2 box rotations).</p>
+                        <p>Learn how Rn=1 handles immediate neighbor chronology changes (2×2 box rotations).</p>
                         <ul class="test-checklist">
                             <li>Click the "2×2 Rotation" scenario button</li>
-                            <li>Observe the score with LCT=0 (strict mode) - note the penalties</li>
-                            <li>Set LCT=1 using the slider and watch the score improve</li>
+                            <li>Observe the score with Rn=0 (strict mode) - note the penalties</li>
+                            <li>Set Rn=1 using the slider and watch the score improve</li>
                             <li>Notice how yellow forgiveness zones appear around mapping windows</li>
-                            <li>LCT=1 means you can swap immediate neighbors (within 2×2 blocks) without penalty</li>
+                            <li>Rn=1 means you can swap immediate neighbors (within 2×2 blocks) without penalty</li>
                         </ul>
                     </div>
                 </div>
@@ -1008,10 +1008,10 @@
                         <p>See how different LCT values progressively forgive larger chronological deviations.</p>
                         <ul class="test-checklist">
                             <li>Click the "3×3 Rotation" scenario button</li>
-                            <li>Try LCT=0: Note the heavy penalties for 3×3 rotations</li>
-                            <li>Try LCT=1: Observe that 3×3 rotations are NOT fully forgiven</li>
-                            <li>Try LCT=2: Watch the score improve significantly as 3×3 rotations become forgiven</li>
-                            <li>Key insight: LCT=1 only supports immediate neighbors, LCT=2 supports 2-place swaps</li>
+                            <li>Try Rn=0: Note the heavy penalties for 3×3 rotations</li>
+                            <li>Try Rn=1: Observe that 3×3 rotations are NOT fully forgiven</li>
+                            <li>Try Rn=2: Watch the score improve significantly as 3×3 rotations become forgiven</li>
+                            <li>Key insight: Rn=1 only supports immediate neighbors, Rn=2 supports 2-place swaps</li>
                         </ul>
                     </div>
                 </div>
@@ -1022,7 +1022,7 @@
                         <h4>Recall Effects and Content Masking</h4>
                         <p>Understand how increasing LCT can sometimes lead to weaker content alignment detection.</p>
                         <ul class="test-checklist">
-                            <li>Try "Delete End" scenario with LCT=0, then increase LCT gradually</li>
+                            <li>Try "Delete End" scenario with Rn=0, then increase LCT gradually</li>
                             <li>Try "Delete Middle" scenario with varying LCT values</li>
                             <li>Try "Delete Begin" scenario with different LCT settings</li>
                             <li>Notice how higher LCT may sometimes mask alignment issues</li>
@@ -1090,8 +1090,8 @@
         const penaltyLinesContainer = document.getElementById('penaltyLinesContainer');
         const axisLabelContainerX = document.getElementById('axisLabelContainerX');
         const axisLabelContainerY = document.getElementById('axisLabelContainerY');
-        const lctSlider = document.getElementById('lctSlider');
-        const lctValueDisplay = document.getElementById('lctValueDisplay');
+        const RnSlider = document.getElementById('RnSlider');
+        const RnValueDisplay = document.getElementById('RnValueDisplay');
         const lctDescription = document.getElementById('lctDescription');
         const maxPenaltyDisplay = document.getElementById('maxPenaltyDisplay');
         const totalActualPenaltyDisplay = document.getElementById('totalActualPenaltyDisplay');
@@ -1133,14 +1133,14 @@
         const tourManager = {
             isActive: false, currentStep: 0, overlay: document.getElementById('tour-overlay'),
             steps: [ 
-                { selector: '#tour-step-intro', text: 'Welcome to LCT Effect on Distance-based NAS! This demo shows how Local Chronological Tolerance creates forgiveness zones around mapping windows. Visit Mapping Window, Best Match, and Distance-based NAS demos first to understand the foundational concepts.', position: 'bottom' }, 
+                { selector: '#tour-step-intro', text: 'Welcome to LCT Effect on Global NAS! This demo shows how Local Chronological Tolerance creates forgiveness zones around mapping windows. Visit Mapping Window, Best Match, and Global NAS demos first to understand the foundational concepts.', position: 'bottom' }, 
                 { selector: '#tour-step-2', text: 'Click to expand the neighborhood explorer. This shows how LCT forgives local chronological reorderings by creating tolerance zones.', position: 'bottom' }, 
                 { selector: '.lg\\:col-span-2 > .demo-card', text: 'This grid visualizes LCT effects in real-time. Green rectangles are ideal mapping windows, yellow zones show LCT forgiveness areas. Drag purple markers to test penalty calculations.', position: 'top' }, 
                 { selector: '#tour-step-5', text: 'Adjust grid configuration parameters to see how different text length ratios affect LCT window calculations. Try different reference/generated length ratios.', position: 'left' }, 
                 { selector: '#tour-step-6', text: 'Try these preset scenarios to explore different LCT effects on narrative disruption patterns. Each button demonstrates a specific forgiveness pattern. Check the Testing Guide for detailed exploration strategies.', position: 'left' },
                 { selector: '#tour-step-4', text: 'LCT Parameter slider controls forgiveness tolerance. Higher values create larger yellow tolerance zones around mapping windows, reducing penalties for minor deviations.', position: 'left' }, 
-                { selector: '#tour-step-3', text: 'Live Distance-based NAS score updates with real-time penalty calculations. Click the score to see the underlying formula. Watch how LCT reduces penalties by expanding forgiveness zones.', position: 'left' },
-                { selector: '#tour-step-next-steps', text: 'After exploring this demo, check out the Distance-based NAS demo to try the LCT parameter there, and see how all components work together.', position: 'top' } 
+                { selector: '#tour-step-3', text: 'Live Global NAS score updates with real-time penalty calculations. Click the score to see the underlying formula. Watch how LCT reduces penalties by expanding forgiveness zones.', position: 'left' },
+                { selector: '#tour-step-next-steps', text: 'After exploring this demo, check out the Global NAS demo to try the LCT parameter there, and see how all components work together.', position: 'top' } 
             ],
             start: function() { this.isActive = true; this.currentStep = 0; this.overlay.style.pointerEvents = 'auto'; this.overlay.style.opacity = '1'; this.addClickOutsideHandler(); this.showStep(); },
             next: function() { this.cleanupCurrentStep(); this.currentStep++; if (this.currentStep < this.steps.length) { setTimeout(() => this.showStep(), 400); } else { this.end(); } },
@@ -1153,12 +1153,12 @@
 
         // --- DYNAMIC VISUALS ---
         function updateDynamicBackground(nasScore) { const score = isNaN(nasScore) ? 0 : nasScore; const hue = 120 * score; const saturation = 30 + 40 * score; const lightness = 85 + 10 * score; const startColor = `hsl(170, 20%, 90%)`; const endColor = `hsl(190, 30%, 95%)`; appBackground.style.background = `linear-gradient(135deg, ${startColor} 0%, ${endColor} 100%)`; }
-        function updateLctDescription() { const lctValue = parseInt(lctSlider.value); const descriptions = [ "Tolerance: 0 blocks (Strict alignment)", "Tolerance: Low (2×2 neighbor rotations forgiven)", "Tolerance: Moderate (3×3 group rotations forgiven)", "Tolerance: High (4×4 block rotations forgiven)", "Tolerance: Very High (5×5 section rotations forgiven)", "Tolerance: Extreme (6×6 region rotations forgiven)", "Tolerance: Maximum (7×7 area rotations forgiven)", "Tolerance: Ultra (8×8 zone rotations forgiven)", "Tolerance: Complete (9×9 full rotations forgiven)", "Tolerance: Grid-level forgiveness"]; const colors = ['border-red-200 bg-red-50', 'border-purple-200 bg-purple-50', 'border-blue-200 bg-blue-50', 'border-green-200 bg-green-50', 'border-yellow-200 bg-yellow-50', 'border-orange-200 bg-orange-50', 'border-pink-200 bg-pink-50', 'border-indigo-200 bg-indigo-50', 'border-gray-200 bg-gray-50', 'border-gray-400 bg-gray-200']; lctDescription.innerHTML = `<div class="p-2 rounded border ${colors[Math.min(lctValue, 9)]}">${descriptions[Math.min(lctValue, 9)]}</div>`; }
+        function updateLctDescription() { const RnValue = parseInt(RnSlider.value); const descriptions = [ "Tolerance: 0 blocks (Strict alignment)", "Tolerance: Low (2×2 neighbor rotations forgiven)", "Tolerance: Moderate (3×3 group rotations forgiven)", "Tolerance: High (4×4 block rotations forgiven)", "Tolerance: Very High (5×5 section rotations forgiven)", "Tolerance: Extreme (6×6 region rotations forgiven)", "Tolerance: Maximum (7×7 area rotations forgiven)", "Tolerance: Ultra (8×8 zone rotations forgiven)", "Tolerance: Complete (9×9 full rotations forgiven)", "Tolerance: Grid-level forgiveness"]; const colors = ['border-red-200 bg-red-50', 'border-purple-200 bg-purple-50', 'border-blue-200 bg-blue-50', 'border-green-200 bg-green-50', 'border-yellow-200 bg-yellow-50', 'border-orange-200 bg-orange-50', 'border-pink-200 bg-pink-50', 'border-indigo-200 bg-indigo-50', 'border-gray-200 bg-gray-50', 'border-gray-400 bg-gray-200']; lctDescription.innerHTML = `<div class="p-2 rounded border ${colors[Math.min(RnValue, 9)]}">${descriptions[Math.min(RnValue, 9)]}</div>`; }
         
         // --- CORE LOGIC ---
         function get_mapping_windows_js(refLen, genLen) { const isRefLonger = refLen >= genLen; const longerLen = isRefLonger ? refLen : genLen; const shorterLen = isRefLonger ? genLen : refLen; if (shorterLen === 0) return { precision_windows: [], recall_windows: [] }; const slope = longerLen / shorterLen; const mappingWindowHeight = Math.ceil(slope); let direct_windows = []; for (let i = 0; i < shorterLen; i++) { const idx_point = i * slope; const start = Math.floor(idx_point); const end = Math.min(start + mappingWindowHeight, longerLen); direct_windows.push({ start, end }); } let reverse_windows = Array(longerLen).fill(null).map((_, longIdx) => { const shortIndices = direct_windows.map((dw, shortIdx) => (dw.start <= longIdx && longIdx < dw.end) ? shortIdx : -1).filter(idx => idx !== -1); if (shortIndices.length > 0) { return { start: Math.min(...shortIndices), end: Math.max(...shortIndices) + 1 }; } else { return null; }}); for (let i = 0; i < longerLen; i++) { if (reverse_windows[i] === null) { const proportionalYPos = Math.max(0, Math.min(shorterLen - 1, Math.floor((i / longerLen) * shorterLen))); reverse_windows[i] = { start: proportionalYPos, end: Math.min(proportionalYPos + 1, shorterLen) };}} return isRefLonger ? { precision_windows: direct_windows, recall_windows: reverse_windows } : { precision_windows: reverse_windows, recall_windows: direct_windows }; }
         function calculate_lct_window_js(y_axis, x_axis) { if (x_axis === 0) return 0; const ratio = y_axis / x_axis; const mappingWindowHeight = Math.ceil(ratio); const ratioDecimalPart = ratio - Math.floor(ratio); if (y_axis <= x_axis) { return mappingWindowHeight; } else { if (0 < ratioDecimalPart && ratioDecimalPart <= 0.5) { return mappingWindowHeight - 1; } else { return mappingWindowHeight; } } }
-        function calculate_penalty_for_marker(markerX, markerY, lct, idealWindow) { if (!idealWindow) return { penalty: 1.0, forgiven: false, rawDistance: numUnitsY }; let dist; if (markerY >= idealWindow.start && markerY < idealWindow.end) { dist = 0; } else if (markerY < idealWindow.start) { dist = idealWindow.start - markerY; } else { dist = markerY - (idealWindow.end - 1); } const tolerance = lct * calculate_lct_window_js(numUnitsY, numUnitsX); const effective_dist = (dist <= tolerance) ? 0 : dist; return { penalty: numUnitsY > 0 ? effective_dist / numUnitsY : 0, forgiven: dist > 0 && effective_dist === 0, rawDistance: dist }; }
+        function calculate_penalty_for_marker(markerX, markerY, lct, idealWindow) { if (!idealWindow) return { penalty: 1.0, forgiven: false, rawDistance: numUnitsY }; let dist; if (markerY >= idealWindow.start && markerY < idealWindow.end) { dist = 0; } else if (markerY < idealWindow.start) { dist = idealWindow.start - markerY; } else { dist = markerY - (idealWindow.end - 1); } const tolerance = lct; const effective_dist = (dist <= tolerance) ? 0 : dist; return { penalty: numUnitsY > 0 ? effective_dist / numUnitsY : 0, forgiven: dist > 0 && effective_dist === 0, rawDistance: dist }; }
         function calculate_max_penalty_js() { let sum_max_dist = 0; if (!currentPrecisionWindows || currentPrecisionWindows.length === 0) return 0; currentPrecisionWindows.forEach(window => { sum_max_dist += Math.max(window.start, (numUnitsY - 1) - (window.end - 1)); }); return numUnitsY > 0 ? sum_max_dist / numUnitsY : 0.0; }
         function calculate_all_scores(markers, lct) { let totalPenalty = 0; markers.forEach(marker => { const idealWindow = currentPrecisionWindows[marker.currentX]; if(idealWindow) { totalPenalty += calculate_penalty_for_marker(marker.currentX, marker.currentY, lct, idealWindow).penalty; } }); const maxPenalty = calculate_max_penalty_js(); const nasScore = maxPenalty > 0 ? (1 - (totalPenalty / maxPenalty)) : (totalPenalty > 0 ? 0 : 1); return { totalPenalty, maxPenalty, nasScore: Math.max(0, nasScore) }; }
 
@@ -1186,9 +1186,9 @@
             numUnitsY = config.targetRefLen; numUnitsX = config.targetGenLen;
             refLenInput.value = numUnitsY; genLenInput.value = numUnitsX;
             updateScenarioTip(scenarioType);
-            lctSlider.max = Math.max(0, numUnitsY - 1);
-            if (parseInt(lctSlider.value) > lctSlider.max) lctSlider.value = lctSlider.max;
-            lctValueDisplay.textContent = lctSlider.value;
+            RnSlider.max = Math.max(0, numUnitsY - 1);
+            if (parseInt(RnSlider.value) > RnSlider.max) RnSlider.value = RnSlider.max;
+            RnValueDisplay.textContent = RnSlider.value;
             updateLctDescription();
             const windows = get_mapping_windows_js(numUnitsY, numUnitsX);
             currentPrecisionWindows = windows.precision_windows;
@@ -1217,9 +1217,9 @@
 
         function updateScenarioTip(scenarioType) {
             const tips = {
-                optimal: "This is a perfect 1-to-1 alignment. The NAS-D score is 1.0, and there are no penalties.",
-                lct1Rotation: "A minor 2x2 reordering. Without LCT, this creates penalties. Set LCT=1 to see them forgiven, boosting the score.",
-                lct2Rotation: "A more complex 3x3 rotation. This requires LCT=2 to be fully forgiven. Notice the larger initial penalty.",
+                optimal: "This is a perfect 1-to-1 alignment. The Global NAS score is 1.0, and there are no penalties.",
+                lct1Rotation: "A minor 2x2 reordering. Without LCT, this creates penalties. Set Rn=1 to see them forgiven, boosting the score.",
+                lct2Rotation: "A more complex 3x3 rotation. This requires Rn=2 to be fully forgiven. Notice the larger initial penalty.",
                 deleteEnd: "The generated sequence is shorter, ending prematurely. This lowers the max possible penalty but still results in a poor score.",
                 deleteMiddle: "A gap in the middle creates a significant chronological disruption, heavily penalizing the score as markers are misaligned.",
                 deleteBegin: "Missing the start of a sequence is costly. All generated chunks are mapped to later reference chunks, creating large penalties."
@@ -1228,10 +1228,10 @@
         }
 
         // --- TOOLTIP & PREVIEW FUNCTIONS ---
-        function updateChartTooltip(e, markerId) { const marker = markers_config.find(m => m.id === markerId); if (!marker) return; chartTooltip.classList.add('visible'); chartTooltip.style.left = `${e.clientX + 15}px`; chartTooltip.style.top = `${e.clientY + 15}px`; const lctValue = parseInt(lctSlider.value); const idealWindow = currentPrecisionWindows[marker.currentX]; const penaltyInfo = calculate_penalty_for_marker(marker.currentX, marker.currentY, lctValue, idealWindow); const mappingText = `Gen Chunk ${marker.currentX} ↔ Ref Chunk ${marker.currentY}`; let statusClass, penaltyText; if (penaltyInfo.penalty > 0) { statusClass = 'penalty'; penaltyText = `<hr class="my-1 border-slate-500"><strong class="text-red-400">Penalty Active!</strong><br>Raw Distance: ${penaltyInfo.rawDistance}<br>Normalized: ${penaltyInfo.penalty.toFixed(3)}`; } else if (penaltyInfo.forgiven) { statusClass = 'forgiven'; penaltyText = `<hr class="my-1 border-slate-500"><strong class="text-blue-400">Forgiven by LCT</strong><br>Raw Distance: ${penaltyInfo.rawDistance}`; } else { statusClass = 'in-window'; penaltyText = `<hr class="my-1 border-slate-500"><strong class="text-green-400">In Window</strong><br>No Penalty`; } chartTooltip.className = `visible ${statusClass}`; chartTooltip.innerHTML = mappingText + penaltyText; }
+        function updateChartTooltip(e, markerId) { const marker = markers_config.find(m => m.id === markerId); if (!marker) return; chartTooltip.classList.add('visible'); chartTooltip.style.left = `${e.clientX + 15}px`; chartTooltip.style.top = `${e.clientY + 15}px`; const RnValue = parseInt(RnSlider.value); const idealWindow = currentPrecisionWindows[marker.currentX]; const penaltyInfo = calculate_penalty_for_marker(marker.currentX, marker.currentY, RnValue, idealWindow); const mappingText = `Gen Chunk ${marker.currentX} ↔ Ref Chunk ${marker.currentY}`; let statusClass, penaltyText; if (penaltyInfo.penalty > 0) { statusClass = 'penalty'; penaltyText = `<hr class="my-1 border-slate-500"><strong class="text-red-400">Penalty Active!</strong><br>Raw Distance: ${penaltyInfo.rawDistance}<br>Normalized: ${penaltyInfo.penalty.toFixed(3)}`; } else if (penaltyInfo.forgiven) { statusClass = 'forgiven'; penaltyText = `<hr class="my-1 border-slate-500"><strong class="text-blue-400">Forgiven by LCT</strong><br>Raw Distance: ${penaltyInfo.rawDistance}`; } else { statusClass = 'in-window'; penaltyText = `<hr class="my-1 border-slate-500"><strong class="text-green-400">In Window</strong><br>No Penalty`; } chartTooltip.className = `visible ${statusClass}`; chartTooltip.innerHTML = mappingText + penaltyText; }
         function hideChartTooltip() { chartTooltip.classList.remove('visible'); }
-        function showScorePreview(tempMarkers, lctValue) {
-            const { totalPenalty, nasScore } = calculate_all_scores(tempMarkers, lctValue);
+        function showScorePreview(tempMarkers, RnValue) {
+            const { totalPenalty, nasScore } = calculate_all_scores(tempMarkers, RnValue);
             nasScorePreview.textContent = `→ ${nasScore.toFixed(3)}`;
             totalActualPenaltyPreview.textContent = `→ ${totalPenalty.toFixed(3)}`;
         }
@@ -1301,7 +1301,7 @@
             }
         }
         function renderPadding() {
-            const lctValue = parseInt(lctSlider.value, 10);
+            const RnValue = parseInt(RnSlider.value, 10);
             if (!currentPrecisionWindows) {
                 paddingBoxContainer.innerHTML = '';
                 return;
@@ -1327,7 +1327,7 @@
                 div.style.left = `calc(${idx}*100%/${numUnitsX})`;
                 div.style.width = `calc(100%/${numUnitsX})`;
 
-                if (lctValue === 0) {
+                if (RnValue === 0) {
                     // Collapse the window to zero height at the center of the ideal window for a smooth animation start
                     const idealWindowHeight = win.end - win.start;
                     const centerPoint = win.start + idealWindowHeight / 2;
@@ -1336,8 +1336,8 @@
                     div.style.opacity = '0';
                 } else {
                     // Expand the window to its calculated size
-                    const padBottom = Math.max(0, win.start - (lctValue * lctUnitHeight));
-                    const padTop = Math.min(numUnitsY, win.end + (lctValue * lctUnitHeight));
+                    const padBottom = Math.max(0, win.start - RnValue);
+                    const padTop = Math.min(numUnitsY, win.end + RnValue);
                     div.style.bottom = `calc(${padBottom} * 100% / ${numUnitsY})`;
                     div.style.height = `calc(${(padTop - padBottom)} * 100% / ${numUnitsY})`;
                     div.style.opacity = '1';
@@ -1347,7 +1347,7 @@
         
         function renderAnimatedMarkersAndScores(animatedMarkers) {
             genChunkMarkerContainer.innerHTML = '';
-            const lctValue = parseInt(lctSlider.value);
+            const RnValue = parseInt(RnSlider.value);
             animatedMarkers.forEach(markerData => {
                 if (typeof markerData.opacity !== 'number' || markerData.opacity > 0.01) {
                     const markerDiv = document.createElement('div');
@@ -1359,7 +1359,7 @@
                     markerDiv.style.opacity = markerData.opacity;
                     
                     const idealWindow = currentPrecisionWindows[markerData.currentX];
-                    const penaltyInfo = calculate_penalty_for_marker(markerData.currentX, markerData.currentY, lctValue, idealWindow);
+                    const penaltyInfo = calculate_penalty_for_marker(markerData.currentX, markerData.currentY, RnValue, idealWindow);
                     const penaltyLabel = document.createElement('span'); 
                     penaltyLabel.className = 'marker-penalty-label';
                     if (penaltyInfo.penalty > 0) { 
@@ -1390,7 +1390,7 @@
         }
         function renderGenChunkMarkersAndScores(isAnimating = false) {
             penaltyLinesContainer.innerHTML = '';
-            const lctValue = parseInt(lctSlider.value);
+            const RnValue = parseInt(RnSlider.value);
             let totalPenalty = 0, activePenalties = 0, forgivenPenalties = 0;
             
             // Apply element reuse strategy for smooth transitions
@@ -1421,7 +1421,7 @@
                 markerDiv.style.bottom = `calc(${(markerData.currentY + 0.5)}*100%/${numUnitsY} - 6px)`;
                 
                 const idealWindow = currentPrecisionWindows[markerData.currentX];
-                const penaltyInfo = calculate_penalty_for_marker(markerData.currentX, markerData.currentY, lctValue, idealWindow);
+                const penaltyInfo = calculate_penalty_for_marker(markerData.currentX, markerData.currentY, RnValue, idealWindow);
                 totalPenalty += penaltyInfo.penalty;
                 
                 if (penaltyInfo.penalty > 0 && idealWindow) {
@@ -1447,7 +1447,7 @@
                 genChunkMarkerContainer.lastChild.remove();
             }
             if (isAnimating) return;
-            const { totalPenalty: calculatedTotalPenalty, maxPenalty, nasScore } = calculate_all_scores(markers_config, lctValue);
+            const { totalPenalty: calculatedTotalPenalty, maxPenalty, nasScore } = calculate_all_scores(markers_config, RnValue);
             animateNumber(maxPenaltyDisplay, parseFloat(maxPenaltyDisplay.textContent) || 0, maxPenalty);
             animateNumber(totalActualPenaltyDisplay, parseFloat(totalActualPenaltyDisplay.textContent) || 0, calculatedTotalPenalty);
             animateNumber(nasScoreDisplay, parseFloat(nasScoreDisplay.textContent) || 0, nasScore);
@@ -1456,7 +1456,7 @@
             // FIX: These elements do not exist in the DOM, causing a TypeError.
             // formulaActual.textContent = totalPenalty.toFixed(3);
             // formulaMax.textContent = maxPenalty.toFixed(3);
-            const tolerance = lctValue * calculate_lct_window_js(numUnitsY, numUnitsX);
+            const tolerance = RnValue;
             currentToleranceDisplay.textContent = `${tolerance} blocks`;
             updateDynamicBackground(nasScore);
         }
@@ -1511,7 +1511,7 @@
                     }
                     draggedMarker.currentX = targetX;
                     draggedMarker.currentY = targetY;
-                    showScorePreview(tempMarkers, parseInt(lctSlider.value));
+                    showScorePreview(tempMarkers, parseInt(RnSlider.value));
                 }
             }
         }
@@ -1576,7 +1576,7 @@
                 wrapper.appendChild(container);
                 
                 const withoutLCT = this.createMatrixInstance(config, 'Without LCT', false);
-                const withLCT = this.createMatrixInstance(config, `With LCT=${config.size-1}`, true);
+                const withLCT = this.createMatrixInstance(config, `With Rn=${config.size-1}`, true);
                 
                 container.appendChild(withoutLCT); 
                 container.appendChild(withLCT);
@@ -1737,10 +1737,10 @@
                 markers_config.push({ id: i, currentX: i, currentY: Math.min(idealY, numUnitsY - 1) });
             }
             
-            lctSlider.max = Math.max(0, numUnitsY - 1);
-            if (parseInt(lctSlider.value) > parseInt(lctSlider.max)) {
-                 lctSlider.value = lctSlider.max;
-                 lctValueDisplay.textContent = lctSlider.value;
+            RnSlider.max = Math.max(0, numUnitsY - 1);
+            if (parseInt(RnSlider.value) > parseInt(RnSlider.max)) {
+                 RnSlider.value = RnSlider.max;
+                 RnValueDisplay.textContent = RnSlider.value;
             }
 
             updateLctDescription();
@@ -1748,7 +1748,7 @@
         }
 
         document.getElementById('start-tour-btn').addEventListener('click', () => tourManager.start());
-        lctSlider.addEventListener('input', () => { lctValueDisplay.textContent = lctSlider.value; updateLctDescription(); renderAll(); });
+        RnSlider.addEventListener('input', () => { RnValueDisplay.textContent = RnSlider.value; updateLctDescription(); renderAll(); });
         refLenInput.addEventListener('change', handleGridInputChange);
         genLenInput.addEventListener('change', handleGridInputChange);
         window.addEventListener('resize', () => { clearTimeout(window.resizeTimer); window.resizeTimer = setTimeout(renderAll, 150); });

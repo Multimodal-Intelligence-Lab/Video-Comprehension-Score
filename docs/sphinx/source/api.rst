@@ -125,7 +125,7 @@ Default parameter values available for import:
 
    **Default:** ``0`` | **Type:** ``int`` | **Range:** ``0 - ∞``
    
-   Local Chronology Tolerance for narrative ordering flexibility.
+   NAS Regularizer for narrative ordering flexibility.
 
 .. py:data:: vcs.DEFAULT_CHUNK_SIZE
 

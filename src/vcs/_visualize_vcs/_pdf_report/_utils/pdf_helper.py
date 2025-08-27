@@ -76,7 +76,7 @@ def extract_key_metrics(internals: Dict[str, Any]) -> Dict[str, Any]:
         'vcs_score': internals['metrics']['vcs']['value'],
         'gas_score': internals['metrics']['gas']['value'],
         'las_score': internals['metrics']['las']['f1'],
-        'nas_score': internals['metrics']['nas']['regularized_nas'],
+        'nas_score': internals['metrics']['nas']['nas'],
         'ref_len': internals['texts']['reference_length'],
         'gen_len': internals['texts']['generated_length']
     }
@@ -89,11 +89,10 @@ def create_section_structure(
     visualize_similarity_matrix: Callable,
     visualize_mapping_windows: Callable,
     visualize_las: Callable,
-    visualize_distance_nas: Callable,
-    visualize_line_nas: Callable,
-    visualize_line_nas_precision_calculations: Callable,
-    visualize_line_nas_recall_calculations: Callable,
-    visualize_window_regularizer: Callable,
+    visualize_global_nas: Callable,
+    visualize_local_nas: Callable,
+    visualize_local_nas_precision_calculations: Callable,
+    visualize_local_nas_recall_calculations: Callable,
     internals: Dict[str, Any]
 ) -> List[Tuple]:
     return [
@@ -113,14 +112,14 @@ def create_section_structure(
             ("Best Match Details", "Best Match", lambda: None)  # Special handling for paginated content
         ]),
         ("Local Alignment Score (LAS)", [
-            ("LAS Visualization", "LAS", lambda: visualize_las(internals))
+            ("LAS Visualization", "LAS", lambda: visualize_las(internals)),
+            ("LAS Load Sharing Details", "LAS Load Sharing", lambda: None)  # Special handling for multiple pages
         ]),
         ("Narrative Alignment Score (NAS)", [
-            ("Distance-based NAS", "NAS Distance", lambda: visualize_distance_nas(internals)),
-            ("Line-based NAS", "NAS Line", lambda: visualize_line_nas(internals)),
-            ("Line NAS Precision", "NAS Line", lambda: visualize_line_nas_precision_calculations(internals)[0]),
-            ("Line NAS Recall", "NAS Line", lambda: visualize_line_nas_recall_calculations(internals)[0]),
-            ("Window Regularization", "Window Regularizer", lambda: visualize_window_regularizer(internals))
+            ("Global NAS", "Global NAS", lambda: visualize_global_nas(internals)),
+            ("Local NAS", "Local NAS", lambda: visualize_local_nas(internals)),
+            ("Line NAS Precision", "NAS Line", lambda: visualize_local_nas_precision_calculations(internals)[0]),
+            ("Line NAS Recall", "NAS Line", lambda: visualize_local_nas_recall_calculations(internals)[0]),
         ])
     ]
 
@@ -129,6 +128,8 @@ def estimate_pages_for_metric(metric_key: str, internals: Dict[str, Any]) -> int
 
     if metric_key == "Best Match":
         return estimate_best_match_pages(internals)
+    elif metric_key == "LAS Load Sharing":
+        return estimate_las_load_sharing_pages(internals)
     elif metric_key == "Text Chunks":
         # Text chunks might be paginated
         ref_chunks = internals['texts']['reference_chunks']
@@ -147,6 +148,22 @@ def estimate_pages_for_metric(metric_key: str, internals: Dict[str, Any]) -> int
         # Most other metrics are single-page
         return 1
 
+
+def estimate_las_load_sharing_pages(internals: Dict[str, Any]) -> int:
+    """Estimate the number of pages needed for LAS load sharing content."""
+    # Get LAS internals
+    las_metrics = internals.get('metrics', {}).get('las', {})
+    precision_internals = las_metrics.get('precision_internals', {})
+    recall_internals = las_metrics.get('recall_internals', {})
+    
+    # Count load sharing cases (4 cases per page like best match)
+    precision_cases = precision_internals.get('load_sharing_details', [])
+    recall_cases = recall_internals.get('load_sharing_details', [])
+    
+    precision_pages = max(1, (len(precision_cases) + 3) // 4) if precision_cases else 0
+    recall_pages = max(1, (len(recall_cases) + 3) // 4) if recall_cases else 0
+    
+    return precision_pages + recall_pages
 
 def estimate_best_match_pages(internals: Dict[str, Any]) -> int:
     """Estimate the number of pages needed for best match content."""
@@ -185,8 +202,8 @@ def estimate_paginated_content_pages(item_name: str, internals: Dict[str, Any]) 
 def validate_metrics_list(metrics_list: List[str]) -> List[str]:
     valid_metrics = {
         "Config", "Overview", "Text Chunks", "Similarity Matrix", 
-        "Mapping Windows", "Best Match", "LAS", "NAS Distance", 
-        "NAS Line", "Window Regularizer"
+        "Mapping Windows", "Best Match", "LAS", "LAS Load Sharing", "Global NAS", 
+        "Local NAS"
     }
     
     validated = []

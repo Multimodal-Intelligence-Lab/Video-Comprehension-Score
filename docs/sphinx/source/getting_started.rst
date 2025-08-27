@@ -286,7 +286,7 @@ The following parameters control the fundamental behavior of VCS evaluation:
    - **Higher values** (e.g., 5.0-6.0): Larger context windows, more flexible matching
    - **Use case**: Larger values allow for more narrative flexibility
 
-**lct** (Local Chronology Tolerance, default: 0)
+**lct** (NAS Regularizer, default: 0)
    Controls how much narrative reordering is allowed in the evaluation.
    
    - **Value 0**: Strict chronological matching, no reordering allowed
@@ -341,7 +341,7 @@ Here's how to use these parameters in practice:
        chunk_size=1,                    # Fine-grained analysis
        context_cutoff_value=0.7,        # More restrictive matching
        context_window_control=3.0,      # Tighter context windows
-       lct=0,                          # Strict chronological order
+       Rn=0,                          # Strict chronological order
        return_all_metrics=True,         # Get detailed breakdown
        return_internals=True            # Get visualization data
    )
@@ -356,7 +356,7 @@ Here's how to use these parameters in practice:
        chunk_size=2,                    # Group segments in pairs
        context_cutoff_value=0.5,        # More lenient matching
        context_window_control=5.0,      # Larger context windows
-       lct=1,                          # Allow some narrative reordering
+       Rn=1,                          # Allow some narrative reordering
        return_all_metrics=True,
        return_internals=True
    )
