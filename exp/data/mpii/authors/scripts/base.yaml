@@ -1,0 +1,74 @@
+# ============================================================================
+# Base Configuration for LLM Processing Scripts (Grok, Claude, Mistral)
+# ============================================================================
+
+# ============================================================================
+# DATA PATHS (relative to script location)
+# ============================================================================
+data:
+  # Base input folder - scripts will auto-discover all rawGT3_part* folders
+  input_base_folder: "../raw_dataset"
+  
+  # Output directory - each script will auto-generate its own JSON filename
+  output_dir: "../aug_dataset"
+
+# ============================================================================
+# OUTPUT PATHS (relative to script location)  
+# ============================================================================
+output:
+  # Directory for log files
+  logs_dir: "./logs"
+
+# ============================================================================
+# MODEL-SPECIFIC API SETTINGS
+# ============================================================================
+# Grok API settings
+grok_model: "grok-3"
+grok_api_key: "YOUR_GROK_API_KEY_HERE"
+
+# Claude API settings  
+claude_model: "claude-3-5-sonnet-20241022"
+claude_api_key: "YOUR_CLAUDE_API_KEY_HERE"
+
+# Mistral API settings
+mistral_model: "mistral-large-latest"
+mistral_api_key: "YOUR_MISTRAL_API_KEY_HERE"
+
+# ============================================================================
+# GENERAL API SETTINGS
+# ============================================================================
+api:
+  # Maximum tokens for API responses
+  max_tokens: 5000
+  
+  # Temperature for response generation
+  temperature: 1
+  
+  # Maximum number of retry attempts on API failure
+  max_retries: 3
+  
+  # Sleep time between retries (seconds)
+  retry_sleep: 3.0
+
+# ============================================================================
+# PROCESSING SETTINGS
+# ============================================================================
+processing:
+  # Enable detailed logging of prompts and outputs
+  log_details: true
+  
+  # Enable file-based logging
+  enable_logging: true
+  
+  # Resume processing from existing files (true) or start fresh (false)
+  resume_processing: true
+
+# ============================================================================
+# PROMPT CONFIGURATION (shared across all LLM scripts)
+# ============================================================================
+prompt:
+  # Main transformation prompt - EXACT copy from notebooks
+  text: "I have a list of scenes describing a movie in chronological order. Please transform them into a coherent movie description, preserving all events, actions, subjects, and objects. You should apply all of the following transformations, using your best judgment:  1) Paraphrasing & Varying Language: Use different vocabulary and alter sentence structure from the original text while keeping all information. 2) Active ↔ Passive: Switch active voice to passive or vice versa without losing detail. 3) Brevity: Use fewer words but keep every fact intact. 4) Verbosity: Add descriptive words (no new events) to clarify or emphasize. 5) Micro → Macro / Macro → Micro: Summarize small actions into a bigger overview or break down large actions into step-by-step detail, maintaining the same content. 6) Add or Remove Attributes: Adjust adjectives/adverbs or minor descriptors, but don't remove major content. 7) Express Scenes with Varying Detail: Use fewer words for non-critical moments, and more words for key details. 8) Expand Scenes / Add Emphasis: Elaborate on emotional states or background info, without creating new plot points.  Important: - Maintain chronological order. - Do not omit or alter any essential events or objects. - Feel free to combine transformations if it improves clarity or style.Please output only the narrative itself. Do not include any introductory or framing sentences such as \"Here's a coherent narrative combining those scenes:Input: \tDescription\n"
+  
+  # System prompt for Grok (using Anthropic-style client)
+  system: "Process the input text according to the user's exact instructions. Output only the requested transformation."
