@@ -106,3 +106,5 @@ slurm_*.err
 *.csv
 *.json
 *.log
+*.json.gz
+*.checksum
