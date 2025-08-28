@@ -44,7 +44,7 @@ vcs:
   chunk_size: [1]
   
   # For deletion experiments, use strict chronological order
-  lct: [0, 1]
+  Rn: [0, 1]
   
   # Return all metrics for ablation studies
   return_all_metrics: true

@@ -47,8 +47,8 @@ vcs:
   # Chunk sizes to evaluate (discrete values)
   chunk_size: [1]
   
-  # LCT (Line Chronological Tolerance) values to compute
-  lct: [0, 1]
+  # Rn (Line Chronological Tolerance) values to compute
+  Rn: [0, 1]
   
   # Return all metrics for detailed analysis
   return_all_metrics: true

@@ -68,7 +68,7 @@ class MPIIExperimentIDTester:
             },
             'vcs': {
                 'chunk_size': 1,
-                'lct_values': [0, 1],
+                'Rn_values': [0, 1],
                 'context_cutoff_value': 0.6,
                 'context_window_control': 4.0
             },

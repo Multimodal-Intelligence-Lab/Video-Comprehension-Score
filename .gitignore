@@ -95,7 +95,14 @@ dmypy.json
 # SLURM job files
 *.slurm
 *.sbatch
+*.err
+*.out
 slurm-*.out
 slurm-*.err
 slurm_*.out
 slurm_*.err
+
+# Results files
+*.csv
+*.json
+*.log

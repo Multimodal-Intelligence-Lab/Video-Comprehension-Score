@@ -4,9 +4,9 @@
 #SBATCH --output=logs/comparison_highperf_%j.out
 #SBATCH --error=logs/comparison_highperf_%j.err
 #SBATCH --time=16:00:00
-#SBATCH --partition=gpu
+#SBATCH --partition=all-gpu
 #SBATCH --gres=gpu:2
-#SBATCH --mem=256G
+#SBATCH --mem=160G
 #SBATCH --cpus-per-task=32
 
 set -e
@@ -23,21 +23,21 @@ if command -v nvidia-smi &> /dev/null; then
 fi
 
 echo "Loading modules..."
-module load python/3.8
-module load cuda/11.8
+module load python/3.12
+module load cuda/12.6
 
 echo "Creating logs directory if it doesn't exist..."
 mkdir -p logs
 
 echo "Activating virtual environment..."
-source /mmfs1/scratch/jacks.local/mali9292/vcs/venv/bin/activate
+source /mmfs1/scratch/jacks.local/mali9292/Video-Comprehension-Score/venv/bin/activate
 
 echo "Setting CUDA environment variables for multi-GPU..."
 export CUDA_VISIBLE_DEVICES=0,1
 export TORCH_CUDA_ARCH_LIST="6.0 6.1 7.0 7.5 8.0 8.6"
 
 echo "Running high-performance comparison evaluation..."
-python mpii_eval_comparison.py --config config/comparison.yaml
+python scripts/mpii_eval_comparison.py --config config/comparison.yaml
 
 echo "High-performance comparison script completed at $(date)"
 

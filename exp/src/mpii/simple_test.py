@@ -44,7 +44,7 @@ def test_single_script(script_name: str, experiment_id: str, create_checkpoint: 
             },
             'models': {'nv_embed_path': "/fake", 'sat_model': "fake"},
             'processing': {'max_workers': 1},
-            'vcs': {'chunk_size': 1, 'lct_values': [0]},
+            'vcs': {'chunk_size': 1, 'Rn_values': [0]},
             'output': {'decimal_precision': 3},
             'embedding': {'batch_size': 1, 'max_length': 128}
         }

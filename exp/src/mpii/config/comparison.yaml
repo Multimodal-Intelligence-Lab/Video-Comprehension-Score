@@ -15,7 +15,7 @@ experiment:
 vcs:
   # Override base configuration with explicit parameters for consistency
   chunk_size: [1]  # Single chunk size for comparison experiments
-  lct: [0, 1]       # Multiple LCT values for comprehensive comparison
+  Rn: [0, 1]       # Multiple Rn values for comprehensive comparison
   
   # VCS algorithm parameters (inherited from base but explicit here)
   context_cutoff_value: 0.6
