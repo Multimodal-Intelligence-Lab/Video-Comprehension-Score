@@ -477,7 +477,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 title: 'Distance-based Narrative Alignment Score (NAS-D)',
                 subtitle: 'Penalize position deviations within windows',
                 icon: 'fas fa-route',
-                iframe: 'widgets/distance-nas/index.html',
+                iframe: 'widgets/global-nas/index.html',
                 available: true
             },
             {
@@ -485,7 +485,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 title: 'Line-based Narrative Alignment Score (NAS-L)',
                 subtitle: 'Evaluate chronological flow of elements',
                 icon: 'fas fa-wave-square',
-                iframe: 'widgets/line-nas/index.html',
+                iframe: 'widgets/local-nas/index.html',
                 available: true
             },
             {
@@ -510,7 +510,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 subtitle: 'Adjust NAS for extreme length disparities',
                 icon: 'fas fa-window-maximize',
                 iframe: 'widgets/window-regularizer/index.html',
-                available: true
+                available: false
             },
             {
                 id: 'nas',
