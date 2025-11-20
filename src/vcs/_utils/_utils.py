@@ -7,7 +7,7 @@ def _calculate_f1(precision: float, recall: float) -> float:
     denom = precision + recall
     return (2.0 * precision * recall / denom) if denom else 0.0
 
-def _compute_gas_las_scaled(gas: float, las: float) -> float:
+def _compute_sas(gas: float, las: float) -> float:
     if las <= 0:
         return 0.0
     val = gas - (1 - las)

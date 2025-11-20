@@ -122,9 +122,9 @@ def compute_vcs_score(
             
         **With return_all_metrics=True:**
         
-        * ``'VCS'`` : float - Video Comprehension Score  
+        * ``'VCS'`` : float - Video Comprehension Score
         * ``'GAS'`` : float - Global Alignment Score
-        * ``'GAS-LAS-Scaled'`` : float - Scaled combination of GAS and LAS
+        * ``'SAS'`` : float - Scaled combination of GAS and LAS
         * ``'Precision LAS'`` : float - LAS precision component
         * ``'Recall LAS'`` : float - LAS recall component  
         * ``'LAS'`` : float - Local Alignment Score (F1 of precision/recall)
@@ -384,7 +384,7 @@ def compute_vcs_score(
                 },
                 "vcs": {
                     "value": combined["VCS"],
-                    "gas_las_scaled": combined["GAS-LAS-Scaled"],
+                    "sas": combined["SAS"],
                 },
             },
             "config": {

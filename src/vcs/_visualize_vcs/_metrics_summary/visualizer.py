@@ -57,7 +57,7 @@ def visualize_metrics_summary(internals: Dict[str, Any]) -> plt.Figure:
     metrics['LAS Precision'] = las_metrics['precision']
     metrics['LAS Recall'] = las_metrics['recall']
     
-    metrics['SAS'] = internals['metrics']['vcs']['gas_las_scaled']
+    metrics['SAS'] = internals['metrics']['vcs']['sas']
     
     metrics['NAS'] = internals['metrics']['nas']['nas']
     
