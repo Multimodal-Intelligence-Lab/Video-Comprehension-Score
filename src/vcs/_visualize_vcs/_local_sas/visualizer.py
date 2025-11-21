@@ -8,56 +8,56 @@ from ._utils import (
 )
 
 def visualize_las(internals: Dict[str, Any]) -> plt.Figure:
-    """Create a visualization of Local Alignment Score (LAS) precision and recall components.
-    
-    Displays LAS precision and recall as side-by-side bar charts showing similarity
+    """Create a visualization of Local Semantic Alignment Score (SAS) precision and recall components.
+
+    Displays Local SAS precision and recall as side-by-side bar charts showing similarity
     values for each matched segment pair, with averages and match details.
-    
+
     Parameters
     ----------
     internals : dict
-        The internals dictionary returned by ``compute_vcs_score`` with 
-        ``return_internals=True``. Must contain LAS metrics and alignment data.
-    
+        The internals dictionary returned by ``compute_vcs_score`` with
+        ``return_internals=True``. Must contain Local SAS metrics and alignment data.
+
     Returns
     -------
     matplotlib.figure.Figure
-        A figure with two subplots showing precision and recall LAS components
+        A figure with two subplots showing precision and recall Local SAS components
         with similarity values, averages, and match information.
-    
+
     Examples
     --------
     **Basic Usage:**
-    
+
     .. code-block:: python
-    
+
         result = compute_vcs_score(
             reference_text="Your reference text",
             generated_text="Your generated text",
             segmenter_fn=your_segmenter,
-            embedding_fn_las=your_embedder,
+            embedding_fn_global_sas=your_embedder,
             return_internals=True,
             return_all_metrics=True
         )
         fig = visualize_las(result['internals'])
         fig.show()
-    
+
     See Also
     --------
     visualize_best_match : See detailed match analysis
     visualize_similarity_matrix : See underlying similarity computations
     """
     fig, axes = plt.subplots(1, 2, figsize=(16, 8))
-    
+
     precision_sim_values = np.array(internals['alignment']['precision']['similarity_values'])
     recall_sim_values = np.array(internals['alignment']['recall']['similarity_values'])
     precision_matches = internals['alignment']['precision']['matches']
     recall_matches = internals['alignment']['recall']['matches']
-    
-    las_metrics = internals['metrics']['las']
-    precision_las = las_metrics['precision']
-    recall_las = las_metrics['recall']
-    f1_las = las_metrics['f1']
+
+    sas_metrics = internals['metrics']['local_sas']
+    precision_las = sas_metrics['precision']
+    recall_las = sas_metrics['recall']
+    f1_las = sas_metrics['f1']
     
     ax_precision = axes[0]
     

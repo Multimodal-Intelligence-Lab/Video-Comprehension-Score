@@ -26,14 +26,14 @@ def visualize_global_nas(internals: Dict[str, Any]) -> plt.Figure:
     Examples
     --------
     **Basic Usage:**
-    
+
     .. code-block:: python
-    
+
         result = compute_vcs_score(
             reference_text="Your reference text",
             generated_text="Your generated text",
             segmenter_fn=your_segmenter,
-            embedding_fn_las=your_embedder,
+            embedding_fn_global_sas=your_embedder,
             return_internals=True,
             return_all_metrics=True
         )
@@ -49,12 +49,12 @@ def visualize_global_nas(internals: Dict[str, Any]) -> plt.Figure:
     ref_len = internals['texts']['reference_length']
     gen_len = internals['texts']['generated_length']
     Rn = internals['config']['Rn']
-    
+
     # Get NAS data for window heights
-    prec_nas_data = internals['metrics']['nas']['nas_d']['precision']
-    rec_nas_data = internals['metrics']['nas']['nas_d']['recall']
-    prec_window_height = prec_nas_data['mapping_window_height']
-    rec_window_height = rec_nas_data['mapping_window_height']
+    prec_nas_data = internals['metrics']['global_nas']['precision']
+    rec_nas_data = internals['metrics']['global_nas']['recall']
+    prec_window_height = prec_nas_data['alignment_window_height']
+    rec_window_height = rec_nas_data['alignment_window_height']
     
     # Create figure with 2x2 subplot layout
     fig, axes = plt.subplots(2, 2, figsize=(16, 12))

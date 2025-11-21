@@ -8,14 +8,14 @@ from .empty_states import create_empty_precision_matches_page, create_empty_reca
 
 
 def generate_las_load_sharing_pages(internals: Dict[str, Any], pdf: PdfPages, start_page: int) -> int:
-    """Generate LAS load sharing pages with pagination like best match."""
+    """Generate SAS load sharing pages with pagination like best match."""
     page_count = 0
     current_page = start_page
-    
-    # Get LAS internals
-    las_metrics = internals.get('metrics', {}).get('las', {})
-    precision_internals = las_metrics.get('precision_internals', {})
-    recall_internals = las_metrics.get('recall_internals', {})
+
+    # Get SAS internals
+    sas_metrics = internals.get('metrics', {}).get('local_sas', {})
+    precision_internals = sas_metrics.get('precision_internals', {})
+    recall_internals = sas_metrics.get('recall_internals', {})
     
     # 1. Generate precision load sharing detail pages
     current_page += _generate_precision_load_sharing_pages(
