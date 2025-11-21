@@ -1,6 +1,6 @@
 from typing import Dict
 import numpy as np
-from .._utils import _compute_vcs_scaled
+from ..._utils import _compute_vcs_scaled
 
 
 def _compute_vcs_metrics(

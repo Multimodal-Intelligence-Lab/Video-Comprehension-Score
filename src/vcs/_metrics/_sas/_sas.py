@@ -1,6 +1,6 @@
 import numpy as np
 from typing import Dict, Any, Tuple
-from .._utils import _compute_sas
+from ..._utils import _compute_sas
 
 
 def _compute_sas_metrics(
