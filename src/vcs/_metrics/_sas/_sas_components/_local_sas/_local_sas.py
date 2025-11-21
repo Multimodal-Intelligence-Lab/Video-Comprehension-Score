@@ -1,6 +1,6 @@
 import numpy as np
 from typing import List, Dict, Any, Tuple
-from ..._utils import _calculate_f1
+from ....._utils import _calculate_f1
 
 from ._semantic_load_penalty._precision_penalty._precision_penalty import _apply_semantic_load_penalty_precision
 from ._semantic_load_penalty._recall_penalty._recall_penalty import _apply_semantic_load_penalty_recall

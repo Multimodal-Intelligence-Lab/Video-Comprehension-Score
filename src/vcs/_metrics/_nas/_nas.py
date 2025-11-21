@@ -1,6 +1,6 @@
 import numpy as np
 from typing import List, Tuple, Dict, Any
-from ..._utils import _calculate_f1
+from .._utils import _calculate_f1
 
 from ._nas_components._global_nas._global_nas import _calculate_global_nas
 from ._nas_components._local_nas._local_nas import _calculate_local_nas
