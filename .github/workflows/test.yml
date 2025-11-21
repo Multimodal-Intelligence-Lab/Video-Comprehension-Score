@@ -129,26 +129,25 @@ jobs:
                 reference_text=reference_text,
                 generated_text=generated_text,
                 segmenter_fn=simple_segmenter,
-                embedding_fn_las=lightweight_embedding_function,
-                embedding_fn_gas=lightweight_embedding_function,
+                embedding_fn_global_sas=lightweight_embedding_function,
+                embedding_fn_local_sas=lightweight_embedding_function,
                 return_all_metrics=True,
                 return_internals=True
             )
-            
+
             # Validate results
-            required_keys = ['VCS', 'GAS', 'LAS', 'NAS']
+            required_keys = ['VCS', 'SAS', 'NAS']
             for key in required_keys:
                 assert key in result, f'Missing key: {key}'
                 assert isinstance(result[key], (int, float)), f'{key} should be numeric, got {type(result[key])}'
                 assert 0 <= result[key] <= 1, f'{key} should be between 0 and 1, got {result[key]}'
-            
+
             # Check internals are returned
             assert 'internals' in result, 'internals should be returned when return_internals=True'
-            
+
             print("🎯 VCS Results:")
             print(f"VCS Score: {result['VCS']:.4f}")
-            print(f"GAS Score: {result['GAS']:.4f}")
-            print(f"LAS Score: {result['LAS']:.4f}")
+            print(f"SAS Score: {result['SAS']:.4f}")
             print(f"NAS Score: {result['NAS']:.4f}")
             print("✅ Getting started example works correctly!")
             

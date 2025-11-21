@@ -244,7 +244,7 @@ def compute_vcs_score(
     if embedding_fn_local_sas is None or embedding_fn_global_sas is None:
         raise ValueError("Provide at least one embedding function (global or local).")
 
-    _validate_seg_embed_functions(segmenter_fn, embedding_fn_local_sas, embedding_fn_global_sas)
+    _validate_seg_embed_functions(segmenter_fn, embedding_fn_global_sas, embedding_fn_local_sas)
 
     # ===== METHOD: EMBED =====
     # Global Embed (GE)
