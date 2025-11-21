@@ -58,14 +58,14 @@ def _compute_local_sas_metrics(
             "original_similarities": precision_sim_values.tolist(),
             "adjusted_similarities": adjusted_precision_sim.tolist(),
             "original_las": float(np.mean(precision_sim_values)) if precision_sim_values.size else 0.0,
-            "adjusted_las": precision_las,
+            "adjusted_las": float(np.mean(adjusted_precision_sim)) if adjusted_precision_sim.size else 0.0,
             **precision_internals
         },
         "recall": {
             "original_similarities": recall_sim_values.tolist(),
             "adjusted_similarities": adjusted_recall_sim.tolist(),
             "original_las": float(np.mean(recall_sim_values)) if recall_sim_values.size else 0.0,
-            "adjusted_las": recall_las,
+            "adjusted_las": float(np.mean(adjusted_recall_sim)) if adjusted_recall_sim.size else 0.0,
             **recall_internals
         }
     }
