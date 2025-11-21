@@ -10,22 +10,22 @@ def setup_recall_plot(ax: plt.Axes, ref_len: int, gen_len: int) -> None:
         'Reference Index', 'Generation Index', 'Recall Line NAS'
     )
 
-def draw_recall_content(ax: plt.Axes, internals: Dict[str, Any], 
+def draw_recall_content(ax: plt.Axes, internals: Dict[str, Any],
                        ref_len: int, gen_len: int) -> None:
     """Draw all content for the recall plot."""
     # Draw mapping windows
-    recall_windows = internals['mapping_windows']['recall']
+    recall_windows = internals['alignment_windows']['recall']
     draw_mapping_windows(ax, recall_windows, ref_len, 'recall')
-    
+
     # Get alignment data
     aligned_recall = internals['alignment']['recall']['aligned_segments']
-    
+
     if aligned_recall:
         # Plot actual line (with swapped coordinates for recall)
         plot_actual_path(ax, aligned_recall, color='r', label='Actual Line', swap_coords=True)
-        
+
         # Get line data
-        recall_line_data = internals['metrics']['nas']['nas_l']['recall']
+        recall_line_data = internals['metrics']['local_nas']['recall']
         
         # Plot floor path if it exists
         floor_path = recall_line_data.get('floor_path', [])

@@ -92,7 +92,7 @@ def visualize_local_nas_precision_calculations(internals: Dict[str, Any]) -> Lis
     visualize_local_nas : Overview of line-based analysis
     visualize_local_nas_recall_calculations : Corresponding recall analysis
     """
-    precision_line_data = internals['metrics']['nas']['nas_l']['precision']
+    precision_line_data = internals['metrics']['local_nas']['precision']
     Rn = internals['config']['Rn']
     segments = precision_line_data.get('segments', [])
     
@@ -176,7 +176,7 @@ def visualize_local_nas_recall_calculations(internals: Dict[str, Any]) -> List[p
     visualize_local_nas : Overview of line-based analysis  
     visualize_local_nas_precision_calculations : Corresponding precision analysis
     """
-    recall_line_data = internals['metrics']['nas']['nas_l']['recall']
+    recall_line_data = internals['metrics']['local_nas']['recall']
     Rn = internals['config']['Rn']
     segments = recall_line_data.get('segments', [])
     

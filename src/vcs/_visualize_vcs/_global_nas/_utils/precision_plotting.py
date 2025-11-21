@@ -28,8 +28,8 @@ def draw_precision_mapping_content(ax: plt.Axes, internals: Dict[str, Any],
                                   ref_len: int, gen_len: int, Rn: int) -> None:
     """Draw all content for precision mapping plot."""
     precision_indices = internals['alignment']['precision']['indices']
-    precision_windows = internals['mapping_windows']['precision']
-    prec_nas_data = internals['metrics']['nas']['nas_d']['precision']
+    precision_windows = internals['alignment_windows']['precision']
+    prec_nas_data = internals['metrics']['global_nas']['precision']
     
     # Draw mapping windows with Rn
     draw_mapping_windows_with_Rn(
@@ -57,7 +57,7 @@ def draw_precision_mapping_content(ax: plt.Axes, internals: Dict[str, Any],
 
 def draw_precision_penalty_plot(ax: plt.Axes, internals: Dict[str, Any], Rn: int) -> None:
     """Draw precision penalty visualization."""
-    prec_nas_data = internals['metrics']['nas']['nas_d']['precision']
+    prec_nas_data = internals['metrics']['global_nas']['precision']
     
     # Get penalty data
     penalties = np.array(prec_nas_data['penalties'])

@@ -74,9 +74,9 @@ def extract_key_metrics(internals: Dict[str, Any]) -> Dict[str, Any]:
     """Extract key metrics from internals for summary pages."""
     return {
         'vcs_score': internals['metrics']['vcs']['value'],
-        'gas_score': internals['metrics']['gas']['value'],
-        'las_score': internals['metrics']['las']['f1'],
-        'nas_score': internals['metrics']['nas']['nas'],
+        'gas_score': internals['metrics']['global_sas']['value'],
+        'las_score': internals['metrics']['local_sas']['f1'],
+        'nas_score': internals['metrics']['nas']['value'],
         'ref_len': internals['texts']['reference_length'],
         'gen_len': internals['texts']['generated_length']
     }
@@ -139,8 +139,8 @@ def estimate_pages_for_metric(metric_key: str, internals: Dict[str, Any]) -> int
         return ref_pages + gen_pages
     elif metric_key == "NAS Line":
         # Line NAS calculations might be paginated
-        precision_segments = internals.get('metrics', {}).get('nas', {}).get('nas_l', {}).get('precision', {}).get('segments', [])
-        recall_segments = internals.get('metrics', {}).get('nas', {}).get('nas_l', {}).get('recall', {}).get('segments', [])
+        precision_segments = internals.get('metrics', {}).get('local_nas', {}).get('precision', {}).get('segments', [])
+        recall_segments = internals.get('metrics', {}).get('local_nas', {}).get('recall', {}).get('segments', [])
         precision_pages = max(1, (len(precision_segments) + 14) // 15) if precision_segments else 1
         recall_pages = max(1, (len(recall_segments) + 14) // 15) if recall_segments else 1
         return 1 + precision_pages + recall_pages  # +1 for main line NAS visualization
@@ -152,7 +152,7 @@ def estimate_pages_for_metric(metric_key: str, internals: Dict[str, Any]) -> int
 def estimate_las_load_sharing_pages(internals: Dict[str, Any]) -> int:
     """Estimate the number of pages needed for LAS load sharing content."""
     # Get LAS internals
-    las_metrics = internals.get('metrics', {}).get('las', {})
+    las_metrics = internals.get('metrics', {}).get('local_sas', {})
     precision_internals = las_metrics.get('precision_internals', {})
     recall_internals = las_metrics.get('recall_internals', {})
     

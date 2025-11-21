@@ -3,29 +3,29 @@ import numpy as np
 from typing import List, Tuple, Optional, Dict, Any
 
 def _find_best_match_with_context(
-    similarity_array: np.ndarray, 
-    mapping_windows: Optional[Tuple[int, int]] = None,
+    similarity_array: np.ndarray,
+    alignment_windows: Optional[Tuple[int, int]] = None,
     context_cutoff_value: float = 0.6,
     context_window_ctrl: float = 5.0
 ) -> Tuple[int, Dict[str, Any]]:  # Return type changed to include details
 
     if similarity_array.size == 0:
         return -1, {}
-    
+
     max_val = np.max(similarity_array)
     max_idx = np.argmax(similarity_array)
     context_range = 1 - context_cutoff_value
-    
+
     # Determine if context window is applied
     context_window_applied = max_val > 0 and (context_range - (1 - max_val)) > 0
-    
+
     context_window = ((context_range - (1 - max_val)) / max_val) / context_window_ctrl if context_window_applied else 0.0
     context_threshold = max_val - context_window
-    
+
     # Get all candidates within threshold
     candidate_indices = np.where(similarity_array >= context_threshold)[0]
     candidate_values = similarity_array[candidate_indices]
-    
+
     # Initialize selection data
     selection_details = {
         "max_value": float(max_val),
@@ -36,16 +36,16 @@ def _find_best_match_with_context(
         "context_window_applied": bool(context_window_applied),
         "candidates": []
     }
-    
-    # If there's only one candidate or no mapping window
-    if len(candidate_indices) == 1 or mapping_windows is None:
+
+    # If there's only one candidate or no alignment window
+    if len(candidate_indices) == 1 or alignment_windows is None:
         selection_details["selected_index"] = int(max_idx)
-        selection_details["selection_reason"] = "max_similarity" if len(candidate_indices) == 1 else "no_mapping_window"
+        selection_details["selection_reason"] = "max_similarity" if len(candidate_indices) == 1 else "no_alignment_window"
         return max_idx, selection_details
-    
+
     # Process all candidates
-    start, end = mapping_windows
-    selection_details["mapping_window"] = {"start": int(start), "end": int(end)}
+    start, end = alignment_windows
+    selection_details["alignment_window"] = {"start": int(start), "end": int(end)}
     
     in_window = (candidate_indices >= start) & (candidate_indices < end)
     left_dist = np.maximum(start - candidate_indices, 0)
@@ -82,17 +82,17 @@ def _find_best_match_with_context(
     
     # Record selection reason
     if in_window[min_dist_idx]:
-        selection_reason = "in_mapping_window"
+        selection_reason = "in_alignment_window"
     else:
-        selection_reason = "closest_to_mapping_window"
+        selection_reason = "closest_to_alignment_window"
     selection_details["selection_reason"] = selection_reason
     selection_details["selected_index"] = int(selected_idx)
-    
+
     return selected_idx, selection_details
 
-def _calculate_row_col_matches_context(
+def _calculate_alignment_based_matches(
     sim_matrix: np.ndarray,
-    mapping_windows: List[Tuple[int, int]],
+    alignment_windows: List[Tuple[int, int]],
     direction: str,
     context_cutoff_value: float,
     context_window_ctrl: float
@@ -117,21 +117,21 @@ def _calculate_row_col_matches_context(
                     "reason": "empty_column"
                 })
                 continue
-            
-            start_ref, end_ref = mapping_windows[g_idx]
+
+            start_ref, end_ref = alignment_windows[g_idx]
             r_idx, selection_details = _find_best_match_with_context(
                 column, (start_ref, end_ref),
                 context_cutoff_value, context_window_ctrl
             )
-            
+
             segment_details = {
                 "index": g_idx,
-                "mapping_window": {"start": start_ref, "end": end_ref},
+                "alignment_window": {"start": start_ref, "end": end_ref},
                 "selection": selection_details,
                 "valid": r_idx >= 0
             }
             match_details["segments"].append(segment_details)
-            
+
             if r_idx >= 0:
                 best_indices[g_idx] = r_idx
                 sim_values[g_idx] = sim_matrix[r_idx, g_idx]
@@ -156,21 +156,21 @@ def _calculate_row_col_matches_context(
                     "reason": "empty_row"
                 })
                 continue
-            
-            start_gen, end_gen = mapping_windows[r_idx]
+
+            start_gen, end_gen = alignment_windows[r_idx]
             g_idx, selection_details = _find_best_match_with_context(
                 row, (start_gen, end_gen),
                 context_cutoff_value, context_window_ctrl
             )
-            
+
             segment_details = {
                 "index": r_idx,
-                "mapping_window": {"start": start_gen, "end": end_gen},
+                "alignment_window": {"start": start_gen, "end": end_gen},
                 "selection": selection_details,
                 "valid": g_idx >= 0
             }
             match_details["segments"].append(segment_details)
-            
+
             if g_idx >= 0:
                 best_indices[r_idx] = g_idx
                 sim_values[r_idx] = sim_matrix[r_idx, g_idx]

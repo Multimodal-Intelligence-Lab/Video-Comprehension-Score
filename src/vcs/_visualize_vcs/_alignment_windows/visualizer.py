@@ -48,15 +48,15 @@ def visualize_mapping_windows(internals: Dict[str, Any]) -> plt.Figure:
     """
     ref_len = internals['texts']['reference_length']
     gen_len = internals['texts']['generated_length']
-    precision_windows = internals['mapping_windows']['precision']
-    recall_windows = internals['mapping_windows']['recall']
-    
+    precision_windows = internals['alignment_windows']['precision']
+    recall_windows = internals['alignment_windows']['recall']
+
     # Get LCT value from config
     Rn = internals['config']['Rn']
-    
+
     # Get the LCT window heights from the NAS calculations
-    prec_window_height = internals['metrics']['nas']['nas_d']['precision']['mapping_window_height']
-    rec_window_height = internals['metrics']['nas']['nas_d']['recall']['mapping_window_height'] 
+    prec_window_height = internals['metrics']['global_nas']['precision']['mapping_window_height']
+    rec_window_height = internals['metrics']['global_nas']['recall']['mapping_window_height'] 
     
     fig, axes = plt.subplots(1, 2, figsize=(16, 8))
     

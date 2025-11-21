@@ -2,18 +2,18 @@ import math
 import numpy as np
 from typing import List, Tuple
 
-def _get_mapping_windows(ref_len: int, gen_len: int) -> Tuple[List[Tuple[int, int]], List[Tuple[int, int]]]:
+def _get_alignment_windows(ref_len: int, gen_len: int) -> Tuple[List[Tuple[int, int]], List[Tuple[int, int]]]:
     is_ref_longer = ref_len >= gen_len
     longer_len = ref_len if is_ref_longer else gen_len
     shorter_len = gen_len if is_ref_longer else ref_len
-    
+
     slope = longer_len / shorter_len if shorter_len else 0
-    mapping_window_height = math.ceil(slope)
+    alignment_window_height = math.ceil(slope)
     
     indices = np.arange(shorter_len)
     idx_points = indices * slope
     starts = np.maximum(np.floor(idx_points).astype(int), 0)
-    ends = np.minimum(starts + mapping_window_height, longer_len)
+    ends = np.minimum(starts + alignment_window_height, longer_len)
     
     direct_windows = list(zip(starts, ends))
     

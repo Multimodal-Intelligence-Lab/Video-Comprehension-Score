@@ -6,7 +6,7 @@ from ._actual_penalty._actual_penalty import calculate_actual_penalty
 
 def _calculate_global_nas(
     best_indices: np.ndarray,
-    mapping_windows: List[Tuple[int, int]],
+    alignment_windows: List[Tuple[int, int]],
     length: int,
     direction: str,
     ref_len: int = None,
@@ -15,19 +15,19 @@ def _calculate_global_nas(
 ) -> Tuple[float, Dict[str, Any]]:
 
     penalties, internals = calculate_actual_penalty(
-        best_indices, mapping_windows, length, direction, Rn, ref_len, gen_len
+        best_indices, alignment_windows, length, direction, Rn, ref_len, gen_len
     )
-    
-    max_total_penalty = calculate_max_penalty(mapping_windows, length)
+
+    max_total_penalty = calculate_max_penalty(alignment_windows, length)
     
     total_penalty = np.sum(penalties)
     
-    nas = 1 - (total_penalty / max_total_penalty) if max_total_penalty else 0
-    
+    global_nas = 1 - (total_penalty / max_total_penalty) if max_total_penalty else 0
+
     internals.update({
         "max_penalty": max_total_penalty,
         "total_penalty": total_penalty,
-        "value": nas
+        "value": global_nas
     })
-    
-    return nas, internals
+
+    return global_nas, internals

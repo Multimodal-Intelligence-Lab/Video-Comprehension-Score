@@ -1,18 +1,25 @@
 from typing import Dict
 import numpy as np
-from ..._utils import _compute_sas, _compute_vcs_scaled
+from ..._utils import _compute_vcs_scaled
+
 
 def _compute_vcs_metrics(
-    gas: float,
+    sas: float,
     nas: Dict[str, float],
-    las: float,
 ) -> Dict[str, float]:
+    """
+    Compute Video Comprehension Score (VCS) from SAS and NAS.
 
-    sas = _compute_sas(gas, las)
-    vcs = _compute_vcs_scaled(sas, nas)
+    Args:
+        sas: Semantic Alignment Score (combined Global_SAS and Local_SAS)
+        nas: Dict with NAS metrics, must contain "NAS" key
+
+    Returns:
+        Dict with "SAS" and "VCS" scores
+    """
+    vcs = _compute_vcs_scaled(sas, nas["NAS"])
 
     return {
-        "GAS": gas,
         "SAS": sas,
         "VCS": vcs,
     }

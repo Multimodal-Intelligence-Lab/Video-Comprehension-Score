@@ -1,6 +1,6 @@
-from ._best_match import _find_best_match_with_context, _calculate_row_col_matches_context
+from ._alignment_based_matching import _find_best_match_with_context, _calculate_alignment_based_matches
 
 __all__ = [
-    "_find_best_match_with_context", 
-    "_calculate_row_col_matches_context"
+    "_find_best_match_with_context",
+    "_calculate_alignment_based_matches"
 ]

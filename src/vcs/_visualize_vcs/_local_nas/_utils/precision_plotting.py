@@ -10,22 +10,22 @@ def setup_precision_plot(ax: plt.Axes, ref_len: int, gen_len: int) -> None:
         'Generation Index', 'Reference Index', 'Precision Line NAS'
     )
 
-def draw_precision_content(ax: plt.Axes, internals: Dict[str, Any], 
+def draw_precision_content(ax: plt.Axes, internals: Dict[str, Any],
                           ref_len: int, gen_len: int) -> None:
     """Draw all content for the precision plot."""
     # Draw mapping windows
-    precision_windows = internals['mapping_windows']['precision']
+    precision_windows = internals['alignment_windows']['precision']
     draw_mapping_windows(ax, precision_windows, gen_len, 'precision')
-    
+
     # Get alignment data
     aligned_precision = internals['alignment']['precision']['aligned_segments']
-    
+
     if aligned_precision:
         # Plot actual line
         plot_actual_path(ax, aligned_precision, color='b', label='Actual Line')
-        
+
         # Get line data
-        precision_line_data = internals['metrics']['nas']['nas_l']['precision']
+        precision_line_data = internals['metrics']['local_nas']['precision']
         
         # Plot floor path if it exists
         floor_path = precision_line_data.get('floor_path', [])

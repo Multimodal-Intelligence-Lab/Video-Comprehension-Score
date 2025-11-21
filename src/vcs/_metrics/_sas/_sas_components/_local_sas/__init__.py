@@ -1,5 +1,5 @@
-from ._las import _compute_las_metrics
+from ._local_sas import _compute_local_sas_metrics
 
 __all__ = [
-    "_compute_las_metrics"
+    "_compute_local_sas_metrics"
 ]

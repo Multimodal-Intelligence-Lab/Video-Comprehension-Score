@@ -2,9 +2,9 @@ import torch
 import torch.nn.functional as F
 from typing import Callable
 
-def _compute_gas_metrics(
-    reference_text: str, 
-    generated_text: str, 
+def _compute_global_sas_metrics(
+    reference_text: str,
+    generated_text: str,
     embedding_fn: Callable
 ) -> float:
 

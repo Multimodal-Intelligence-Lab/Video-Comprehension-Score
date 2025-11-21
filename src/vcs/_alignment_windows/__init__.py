@@ -1,5 +1,5 @@
-from ._mapping_windows import _get_mapping_windows
+from ._alignment_windows import _get_alignment_windows
 
 __all__ = [
-    "_get_mapping_windows"
+    "_get_alignment_windows"
 ]

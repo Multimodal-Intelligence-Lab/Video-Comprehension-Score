@@ -77,5 +77,5 @@ def _compute_actual_line_length(
             "length": float(segment_length)
         })
     
-    total_length = np.sum(lengths)
-    return total_length, segments
+    actual_line_length = np.sum(lengths)
+    return actual_line_length, segments

@@ -1,5 +1,5 @@
-from ._gas import _compute_gas_metrics
+from ._global_sas import _compute_global_sas_metrics
 
 __all__ = [
-    "_compute_gas_metrics"
+    "_compute_global_sas_metrics"
 ]

@@ -15,12 +15,13 @@ from ._config import (
 )
 from ._utils import _validate_seg_embed_functions
 from ._segmenting import _segment_and_chunk_texts, _build_similarity_matrix
-from ._mapping_windows import _get_mapping_windows
-from ._matching import _calculate_row_col_matches_context
+from ._alignment_windows import _get_alignment_windows
+from ._alignment_based_matching import _calculate_alignment_based_matches
 
 from ._metrics import (
-    _compute_gas_metrics,
-    _compute_las_metrics,
+    _compute_global_sas_metrics,
+    _compute_local_sas_metrics,
+    _compute_sas_metrics,
     _compute_nas_metrics,
     _compute_vcs_metrics,
 )
@@ -29,8 +30,8 @@ def compute_vcs_score(
     reference_text: str,
     generated_text: str,
     segmenter_fn: Callable[[str], List[str]],
-    embedding_fn_las: Callable[[List[str]], torch.Tensor],
-    embedding_fn_gas: Callable[[List[str]], torch.Tensor] | None = None,
+    embedding_fn_global_sas: Callable[[List[str]], torch.Tensor],
+    embedding_fn_local_sas: Callable[[List[str]], torch.Tensor] | None = None,
     chunk_size: int = DEFAULT_CHUNK_SIZE,
     context_cutoff_value: float = DEFAULT_CONTEXT_CUTOFF_VALUE,
     context_window_control: float = DEFAULT_CONTEXT_WINDOW_CONTROL,
@@ -39,22 +40,23 @@ def compute_vcs_score(
     return_internals: bool = False,
 ) -> Dict[str, Any]:
     """Compute Video Comprehension Score (VCS) between reference and generated text.
-    
-    The VCS metric combines Global Alignment Score (GAS), Local Alignment Score (LAS),
-    and Narrative Alignment Score (NAS) to provide a comprehensive measure of how well
-    a generated text preserves the narrative structure and semantic content of a
-    reference text.
-    
+
+    The VCS metric combines Global Semantic Alignment Score (Global_SAS),
+    Local Semantic Alignment Score (Local_SAS), and Narrative Alignment Score (NAS)
+    to provide a comprehensive measure of how well a generated text preserves the
+    narrative structure and semantic content of a reference text.
+
     **Key Metrics Computed:**
-    
-    * **GAS (Global Alignment Score)**: Measures overall semantic similarity between 
-      the full reference and generated texts using document-level embeddings.
-    * **LAS (Local Alignment Score)**: Evaluates segment-by-segment semantic similarity
-      using optimal alignment between text chunks.
-    * **NAS (Narrative Alignment Score)**: Assesses how well the narrative flow and 
-      chronological structure are preserved, combining distance-based and line-based 
-      alignment measures.
-    * **VCS (Video Comprehension Score)**: The final combined score that balances all 
+
+    * **Global_SAS (Global Semantic Alignment Score)**: Measures overall semantic
+      similarity between the full reference and generated texts using document-level
+      embeddings (Global_SAS Embedding).
+    * **Local_SAS (Local Semantic Alignment Score)**: Evaluates segment-by-segment
+      semantic similarity using optimal alignment between text chunks (Local_SAS Embedding).
+    * **NAS (Narrative Alignment Score)**: Assesses how well the narrative flow and
+      chronological structure are preserved, combining Global NAS and Local NAS measures.
+    * **SAS (Semantic Alignment Score)**: Scaled combination of Global_SAS and Local_SAS.
+    * **VCS (Video Comprehension Score)**: The final combined score that balances all
       three metrics to provide an overall narrative similarity assessment.
     
     Parameters
@@ -66,21 +68,21 @@ def compute_vcs_score(
         The generated text to evaluate. This is the text being assessed for how well
         it preserves the content and structure of the reference.
     segmenter_fn : callable
-        Function to segment text into meaningful units for comparison. Must take a 
+        Function to segment text into meaningful units for comparison. Must take a
         string as input and return a list of strings. Common choices include sentence
         segmentation, clause segmentation, or custom domain-specific segmentation.
-        
+
         Example: ``lambda text: text.split('.')`` for simple sentence splitting.
-    embedding_fn_las : callable
-        Function to compute embeddings for Local Alignment Score calculation. Must 
-        take a list of strings (text segments) and return a torch.Tensor of shape 
-        (n_segments, embedding_dim) where each row is the embedding for one segment.
-        
+    embedding_fn_global_sas : callable
+        Function to compute Global_SAS Embedding (document-level embeddings) for Global_SAS
+        calculation. Must take a list of strings and return a torch.Tensor of shape
+        (n_items, embedding_dim) where each row is an embedding.
+
         Example: A function that uses sentence transformers or other semantic models.
-    embedding_fn_gas : callable, optional
-        Function to compute embeddings for Global Alignment Score calculation. If 
-        None, uses ``embedding_fn_las`` for both GAS and LAS calculations. Should 
-        follow the same signature as ``embedding_fn_las``.
+    embedding_fn_local_sas : callable, optional
+        Function to compute Local_SAS Embedding (segment-level embeddings) for Local_SAS
+        calculation. If None, uses ``embedding_fn_global_sas`` for both Global_SAS and
+        Local_SAS calculations. Should follow the same signature as ``embedding_fn_global_sas``.
     chunk_size : int, default=1
         Number of consecutive segments to group together for analysis. Larger values
         create bigger comparison units but may lose fine-grained alignment details.
@@ -121,13 +123,13 @@ def compute_vcs_score(
             The Video Comprehension Score (0.0 to 1.0, higher is better)
             
         **With return_all_metrics=True:**
-        
+
         * ``'VCS'`` : float - Video Comprehension Score
-        * ``'GAS'`` : float - Global Alignment Score
-        * ``'SAS'`` : float - Scaled combination of GAS and LAS
-        * ``'Precision LAS'`` : float - LAS precision component
-        * ``'Recall LAS'`` : float - LAS recall component  
-        * ``'LAS'`` : float - Local Alignment Score (F1 of precision/recall)
+        * ``'Global_SAS'`` : float - Global Semantic Alignment Score
+        * ``'SAS'`` : float - Semantic Alignment Score (scaled Global_SAS and Local_SAS)
+        * ``'Precision Local_SAS'`` : float - Local_SAS precision component
+        * ``'Recall Local_SAS'`` : float - Local_SAS recall component
+        * ``'Local_SAS'`` : float - Local Semantic Alignment Score (F1 of precision/recall)
         * ``'Precision Global NAS'`` : float - Global NAS precision
         * ``'Recall Global NAS'`` : float - Global NAS recall
         * ``'Global NAS'`` : float - Global Narrative Alignment Score
@@ -159,67 +161,67 @@ def compute_vcs_score(
     Examples
     --------
     **Basic Usage (Minimal Parameters):**
-    
+
     .. code-block:: python
-    
+
         result = compute_vcs_score(
             reference_text="Your reference text here",
             generated_text="Your generated text here",
             segmenter_fn=your_segmenter_function,
-            embedding_fn_las=your_embedding_function
+            embedding_fn_global_sas=your_embedding_function
         )
         print(f"VCS Score: {result['VCS']:.4f}")
-    
+
     **With Return Controls:**
-    
+
     .. code-block:: python
-    
+
         result = compute_vcs_score(
             reference_text="Your reference text here",
             generated_text="Your generated text here",
             segmenter_fn=your_segmenter_function,
-            embedding_fn_las=your_embedding_function,
+            embedding_fn_global_sas=your_embedding_function,
             return_all_metrics=True,
             return_internals=True
         )
-    
+
     **With Core Configuration Parameters:**
-    
+
     .. code-block:: python
-    
+
         result = compute_vcs_score(
             reference_text="Your reference text here",
             generated_text="Your generated text here",
             segmenter_fn=your_segmenter_function,
-            embedding_fn_las=your_embedding_function,
+            embedding_fn_global_sas=your_embedding_function,
             chunk_size=2,
             context_cutoff_value=0.7,
             context_window_control=3.0,
             Rn=1
         )
-    
-    **Different Embedding Functions for GAS and LAS:**
-    
+
+    **Different Embedding Functions for Global and Local SAS:**
+
     .. code-block:: python
-    
+
         result = compute_vcs_score(
             reference_text="Your reference text here",
             generated_text="Your generated text here",
             segmenter_fn=your_segmenter_function,
-            embedding_fn_las=your_local_embedding_function,
-            embedding_fn_gas=your_global_embedding_function
+            embedding_fn_global_sas=your_global_embedding_function,
+            embedding_fn_local_sas=your_local_embedding_function
         )
-    
+
     **Complete Configuration (All Parameters):**
-    
+
     .. code-block:: python
-    
+
         result = compute_vcs_score(
             reference_text="Your reference text here",
             generated_text="Your generated text here",
             segmenter_fn=your_segmenter_function,
-            embedding_fn_las=your_embedding_function,
-            embedding_fn_gas=your_embedding_function,
+            embedding_fn_global_sas=your_global_embedding_function,
+            embedding_fn_local_sas=your_local_embedding_function,
             chunk_size=2,
             context_cutoff_value=0.7,
             context_window_control=3.0,
@@ -235,59 +237,81 @@ def compute_vcs_score(
     visualize_mapping_windows : Show alignment windows used for matching
     create_vcs_pdf_report : Generate comprehensive PDF analysis report
     """
-    if embedding_fn_las is None and embedding_fn_gas is not None:
-        embedding_fn_las = embedding_fn_gas
-    elif embedding_fn_gas is None and embedding_fn_las is not None:
-        embedding_fn_gas = embedding_fn_las
-    if embedding_fn_las is None or embedding_fn_gas is None:
-        raise ValueError("Provide at least one embedding function (LAS or GAS).")
+    if embedding_fn_local_sas is None and embedding_fn_global_sas is not None:
+        embedding_fn_local_sas = embedding_fn_global_sas
+    elif embedding_fn_global_sas is None and embedding_fn_local_sas is not None:
+        embedding_fn_global_sas = embedding_fn_local_sas
+    if embedding_fn_local_sas is None or embedding_fn_global_sas is None:
+        raise ValueError("Provide at least one embedding function (global or local).")
 
-    _validate_seg_embed_functions(segmenter_fn, embedding_fn_las, embedding_fn_gas)
-    
-    gas_val = _compute_gas_metrics(reference_text, generated_text, embedding_fn_gas)
+    _validate_seg_embed_functions(segmenter_fn, embedding_fn_local_sas, embedding_fn_global_sas)
 
+    # ===== METHOD: EMBED =====
+    # Global Embed (GE)
+    global_sas = _compute_global_sas_metrics(reference_text, generated_text, embedding_fn_global_sas)
+
+    # Local Embed (LE): Segmenting and Chunking
     ref_chunks, gen_chunks = _segment_and_chunk_texts(
         reference_text, generated_text, chunk_size, segmenter_fn
     )
 
+    # ===== METHOD: ALIGNMENT =====
+    # Build similarity matrix for alignment
     sim_matrix, ref_len, gen_len = _build_similarity_matrix(
-        ref_chunks, gen_chunks, embedding_fn_las
+        ref_chunks, gen_chunks, embedding_fn_local_sas
     )
 
-    prec_map_windows, rec_map_windows = _get_mapping_windows(ref_len, gen_len)
+    # Alignment Window (AW)
+    prec_align_windows, rec_align_windows = _get_alignment_windows(ref_len, gen_len)
 
-    precision_matches, precision_indices, precision_sim_values, precision_match_details = (
-        _calculate_row_col_matches_context(
-            sim_matrix, prec_map_windows, "precision",
-            context_cutoff_value, context_window_control
-        )
-    )
-    recall_matches, recall_indices, recall_sim_values, recall_match_details = (
-        _calculate_row_col_matches_context(
-            sim_matrix, rec_map_windows, "recall",
+    # Alignment-Based Matching (ABM): Precision direction (generated -> reference)
+    precision_aligned_matches, precision_aligned_indices, precision_sim_values, precision_match_details = (
+        _calculate_alignment_based_matches(
+            sim_matrix, prec_align_windows, "precision",
             context_cutoff_value, context_window_control
         )
     )
 
-    las_metrics, las_internals = _compute_las_metrics(
+    # Alignment-Based Matching (ABM): Recall direction (reference -> generated)
+    recall_aligned_matches, recall_aligned_indices, recall_sim_values, recall_match_details = (
+        _calculate_alignment_based_matches(
+            sim_matrix, rec_align_windows, "recall",
+            context_cutoff_value, context_window_control
+        )
+    )
+
+    # ===== METHOD: SAS =====
+    # Local-SAS (lSAS): Semantic-Alignment Score at local/chunk level
+    local_sas_metrics, local_sas_internals = _compute_local_sas_metrics(
         precision_sim_values, recall_sim_values,
-        precision_indices, recall_indices,
+        precision_aligned_indices, recall_aligned_indices,
         ref_len, gen_len
     )
+
+    # Combine Global_SAS + Local_SAS → SAS
+    sas_metrics, sas_internals = _compute_sas_metrics(
+        global_sas, local_sas_metrics
+    )
+
+    # ===== METHOD: NAS =====
+    # Narrative Alignment Score (combines Global NAS and Local NAS)
     nas_metrics, nas_internals = _compute_nas_metrics(
         sim_matrix, ref_len, gen_len,
-        precision_matches, precision_indices, precision_sim_values,
-        recall_matches, recall_indices, recall_sim_values,
-        prec_map_windows, rec_map_windows,
+        precision_aligned_matches, precision_aligned_indices, precision_sim_values,
+        recall_aligned_matches, recall_aligned_indices, recall_sim_values,
+        prec_align_windows, rec_align_windows,
         ref_chunks, gen_chunks,
         Rn=Rn
     )
+
+    # ===== METHOD: VCS =====
+    # Final VCS computation combining SAS and NAS
     combined = _compute_vcs_metrics(
-        gas_val, nas_metrics["NAS"], las_metrics["LAS"]
+        sas_metrics["SAS"], nas_metrics
     )
 
     if return_all_metrics:
-        output: Dict[str, Any] = {**las_metrics, **nas_metrics, **combined}
+        output: Dict[str, Any] = {**sas_metrics, **nas_metrics, **combined}
     else:
         output = {
             "VCS": combined["VCS"],
@@ -304,87 +328,91 @@ def compute_vcs_score(
             "similarity": {
                 "matrix": sim_matrix.tolist() if isinstance(sim_matrix, np.ndarray) else sim_matrix,
             },
-            "mapping_windows": {
-                "precision": prec_map_windows,
-                "recall": rec_map_windows,
+            "alignment_windows": {
+                "precision": prec_align_windows,
+                "recall": rec_align_windows,
             },
             "alignment": {
                 "precision": {
-                    "matches": precision_matches,
-                    "indices": precision_indices.tolist() if isinstance(precision_indices, np.ndarray) else precision_indices,
+                    "matches": precision_aligned_matches,
+                    "indices": precision_aligned_indices.tolist() if isinstance(precision_aligned_indices, np.ndarray) else precision_aligned_indices,
                     "similarity_values": precision_sim_values.tolist() if isinstance(precision_sim_values, np.ndarray) else precision_sim_values,
                     "aligned_segments": nas_internals["aligned_precision"] if "aligned_precision" in nas_internals else [],
                 },
                 "recall": {
-                    "matches": recall_matches,
-                    "indices": recall_indices.tolist() if isinstance(recall_indices, np.ndarray) else recall_indices,
+                    "matches": recall_aligned_matches,
+                    "indices": recall_aligned_indices.tolist() if isinstance(recall_aligned_indices, np.ndarray) else recall_aligned_indices,
                     "similarity_values": recall_sim_values.tolist() if isinstance(recall_sim_values, np.ndarray) else recall_sim_values,
                     "aligned_segments": nas_internals["aligned_recall"] if "aligned_recall" in nas_internals else [],
                 }
             },
             "metrics": {
-                "gas": {
-                    "value": gas_val,
+                "global_sas": {
+                    "value": global_sas,
                 },
-                "las": {
-                    "precision": las_metrics["Precision LAS"],
-                    "recall": las_metrics["Recall LAS"],
-                    "f1": las_metrics["LAS"],
-                    "precision_internals": las_internals["precision"],
-                    "recall_internals": las_internals["recall"],
+                "local_sas": {
+                    "precision": local_sas_metrics["Precision Local_SAS"],
+                    "recall": local_sas_metrics["Recall Local_SAS"],
+                    "f1": local_sas_metrics["Local_SAS"],
+                    "precision_internals": local_sas_internals["precision"],
+                    "recall_internals": local_sas_internals["recall"],
+                },
+                "sas": {
+                    "value": sas_metrics["SAS"],
+                    "global_sas_internals": sas_internals.get("global_sas_internals", {}),
+                    "local_sas_internals": sas_internals.get("local_sas_internals", {}),
+                },
+                "global_nas": {
+                    "precision": {
+                        "value": nas_metrics["Precision Global NAS"],
+                        "alignment_window_height": nas_internals["precision_global_nas_internals"]["alignment_window_height"],
+                        "max_penalty": nas_internals["precision_global_nas_internals"]["max_penalty"],
+                        "total_penalty": nas_internals["precision_global_nas_internals"]["total_penalty"],
+                        "penalties": nas_internals["precision_global_nas_internals"]["penalties"],
+                        "in_window": nas_internals["precision_global_nas_internals"]["in_window"],
+                        "in_rn_zone": nas_internals["precision_global_nas_internals"]["in_rn_zone"],
+                    },
+                    "recall": {
+                        "value": nas_metrics["Recall Global NAS"],
+                        "alignment_window_height": nas_internals["recall_global_nas_internals"]["alignment_window_height"],
+                        "max_penalty": nas_internals["recall_global_nas_internals"]["max_penalty"],
+                        "total_penalty": nas_internals["recall_global_nas_internals"]["total_penalty"],
+                        "penalties": nas_internals["recall_global_nas_internals"]["penalties"],
+                        "in_window": nas_internals["recall_global_nas_internals"]["in_window"],
+                        "in_rn_zone": nas_internals["recall_global_nas_internals"]["in_rn_zone"],
+                    },
+                    "f1": nas_metrics["Global NAS"],
+                },
+                "local_nas": {
+                    "precision": {
+                        "value": nas_metrics["Precision Local NAS"],
+                        "actual_line_length": nas_internals["precision_local_nas_internals"]["actual_line_length"],
+                        "floor_ideal_line_length": nas_internals["precision_local_nas_internals"]["floor_ideal_line_length"],
+                        "ceil_ideal_line_length": nas_internals["precision_local_nas_internals"]["ceil_ideal_line_length"],
+                        "average_ideal_line_length": nas_internals["precision_local_nas_internals"]["average_ideal_line_length"],
+                        "segments": nas_internals["precision_local_nas_internals"]["segments"],
+                        "floor_path": nas_internals["precision_local_nas_internals"]["floor_path"],
+                        "ceil_path": nas_internals["precision_local_nas_internals"]["ceil_path"],
+                        "actual_path": nas_internals["precision_local_nas_internals"]["actual_path"]
+                    },
+                    "recall": {
+                        "value": nas_metrics["Recall Local NAS"],
+                        "actual_line_length": nas_internals["recall_local_nas_internals"]["actual_line_length"],
+                        "floor_ideal_line_length": nas_internals["recall_local_nas_internals"]["floor_ideal_line_length"],
+                        "ceil_ideal_line_length": nas_internals["recall_local_nas_internals"]["ceil_ideal_line_length"],
+                        "average_ideal_line_length": nas_internals["recall_local_nas_internals"]["average_ideal_line_length"],
+                        "segments": nas_internals["recall_local_nas_internals"]["segments"],
+                        "floor_path": nas_internals["recall_local_nas_internals"]["floor_path"],
+                        "ceil_path": nas_internals["recall_local_nas_internals"]["ceil_path"],
+                        "actual_path": nas_internals["recall_local_nas_internals"]["actual_path"]
+                    },
+                    "f1": nas_metrics["Local NAS"],
                 },
                 "nas": {
-                    "nas_d": {
-                        "precision": {
-                            "value": nas_metrics["Precision Global NAS"],
-                            "mapping_window_height": nas_internals["precision_nas_internals"]["mapping_window_height"],
-                            "max_penalty": nas_internals["precision_nas_internals"]["max_penalty"],
-                            "total_penalty": nas_internals["precision_nas_internals"]["total_penalty"],
-                            "penalties": nas_internals["precision_nas_internals"]["penalties"],
-                            "in_window": nas_internals["precision_nas_internals"]["in_window"],
-                            "in_Rn_zone": nas_internals["precision_nas_internals"]["in_Rn_zone"],
-                        },
-                        "recall": {
-                            "value": nas_metrics["Recall Global NAS"],
-                            "mapping_window_height": nas_internals["recall_nas_internals"]["mapping_window_height"],
-                            "max_penalty": nas_internals["recall_nas_internals"]["max_penalty"],
-                            "total_penalty": nas_internals["recall_nas_internals"]["total_penalty"],
-                            "penalties": nas_internals["recall_nas_internals"]["penalties"],
-                            "in_window": nas_internals["recall_nas_internals"]["in_window"],
-                            "in_Rn_zone": nas_internals["recall_nas_internals"]["in_Rn_zone"],
-                        },
-                        "f1": nas_metrics["Global NAS"],
-                    },
-                    "nas_l": {
-                        "precision": {
-                            "value": nas_metrics["Precision Local NAS"],
-                            "actual_line_length": nas_internals["precision_line_internals"]["actual_line_length"],
-                            "floor_ideal_line_length": nas_internals["precision_line_internals"]["floor_ideal_line_length"],
-                            "ceil_ideal_line_length": nas_internals["precision_line_internals"]["ceil_ideal_line_length"],
-                            "average_ideal_line_length": nas_internals["precision_line_internals"]["average_ideal_line_length"],
-                            "segments": nas_internals["precision_line_internals"]["segments"],
-                            "floor_path": nas_internals["precision_line_internals"]["floor_path"],
-                            "ceil_path": nas_internals["precision_line_internals"]["ceil_path"],
-                            "actual_path": nas_internals["precision_line_internals"]["actual_path"]
-                        },
-                        "recall": {
-                            "value": nas_metrics["Recall Local NAS"],
-                            "actual_line_length": nas_internals["recall_line_internals"]["actual_line_length"],
-                            "floor_ideal_line_length": nas_internals["recall_line_internals"]["floor_ideal_line_length"],
-                            "ceil_ideal_line_length": nas_internals["recall_line_internals"]["ceil_ideal_line_length"],
-                            "average_ideal_line_length": nas_internals["recall_line_internals"]["average_ideal_line_length"],
-                            "segments": nas_internals["recall_line_internals"]["segments"],
-                            "floor_path": nas_internals["recall_line_internals"]["floor_path"],
-                            "ceil_path": nas_internals["recall_line_internals"]["ceil_path"],
-                            "actual_path": nas_internals["recall_line_internals"]["actual_path"]
-                        },
-                        "f1": nas_metrics["Local NAS"],
-                    },
-                    "nas": nas_metrics["NAS"],
+                    "value": nas_metrics["NAS"],
                 },
                 "vcs": {
                     "value": combined["VCS"],
-                    "sas": combined["SAS"],
                 },
             },
             "config": {

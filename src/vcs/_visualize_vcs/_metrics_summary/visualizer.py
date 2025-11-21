@@ -31,7 +31,7 @@ def visualize_metrics_summary(internals: Dict[str, Any]) -> plt.Figure:
             reference_text="Your reference text",
             generated_text="Your generated text",
             segmenter_fn=your_segmenter,
-            embedding_fn_las=your_embedder,
+            embedding_fn_global_sas=your_embedder,
             return_internals=True,
             return_all_metrics=True
         )
@@ -47,37 +47,37 @@ def visualize_metrics_summary(internals: Dict[str, Any]) -> plt.Figure:
     fig, ax = plt.subplots(figsize=(12, 8))
     
     metrics = {}
-    
+
     metrics['VCS'] = internals['metrics']['vcs']['value']
-    
-    metrics['GAS'] = internals['metrics']['gas']['value']
-    
-    las_metrics = internals['metrics']['las']
-    metrics['LAS'] = las_metrics['f1']
-    metrics['LAS Precision'] = las_metrics['precision']
-    metrics['LAS Recall'] = las_metrics['recall']
-    
-    metrics['SAS'] = internals['metrics']['vcs']['sas']
-    
-    metrics['NAS'] = internals['metrics']['nas']['nas']
-    
-    nas_d = internals['metrics']['nas']['nas_d']
-    metrics['Global NAS'] = nas_d['f1']
-    metrics['Global NAS Precision'] = nas_d['precision']['value']
-    metrics['Global NAS Recall'] = nas_d['recall']['value']
-    
-    nas_l = internals['metrics']['nas']['nas_l']
-    metrics['Local NAS'] = nas_l['f1']
-    metrics['Local NAS Precision'] = nas_l['precision']['value']
-    metrics['Local NAS Recall'] = nas_l['recall']['value']
-    
-    
+
+    metrics['Global_SAS'] = internals['metrics']['global_sas']['value']
+
+    local_sas_metrics = internals['metrics']['local_sas']
+    metrics['Local_SAS'] = local_sas_metrics['f1']
+    metrics['Local_SAS Precision'] = local_sas_metrics['precision']
+    metrics['Local_SAS Recall'] = local_sas_metrics['recall']
+
+    metrics['SAS'] = internals['metrics']['sas']['value']
+
+    metrics['NAS'] = internals['metrics']['nas']['value']
+
+    global_nas = internals['metrics']['global_nas']
+    metrics['Global NAS'] = global_nas['f1']
+    metrics['Global NAS Precision'] = global_nas['precision']['value']
+    metrics['Global NAS Recall'] = global_nas['recall']['value']
+
+    local_nas = internals['metrics']['local_nas']
+    metrics['Local NAS'] = local_nas['f1']
+    metrics['Local NAS Precision'] = local_nas['precision']['value']
+    metrics['Local NAS Recall'] = local_nas['recall']['value']
+
+
     order = [
         'VCS',
-        'GAS',
-        'LAS',
-        'LAS Precision',
-        'LAS Recall',
+        'Global_SAS',
+        'Local_SAS',
+        'Local_SAS Precision',
+        'Local_SAS Recall',
         'SAS',
         'NAS',
         'Global NAS',
@@ -87,15 +87,15 @@ def visualize_metrics_summary(internals: Dict[str, Any]) -> plt.Figure:
         'Local NAS Precision',
         'Local NAS Recall'
     ]
-    
+
     y_pos = 0
     y_ticks = []
     y_labels = []
-    
+
     colors = {
         'VCS': 'gold',
-        'GAS': 'skyblue',
-        'LAS': 'lightgreen',
+        'Global_SAS': 'skyblue',
+        'Local_SAS': 'lightgreen',
         'SAS': 'lightcyan',
         'NAS': 'salmon',
         'Global NAS': 'plum',

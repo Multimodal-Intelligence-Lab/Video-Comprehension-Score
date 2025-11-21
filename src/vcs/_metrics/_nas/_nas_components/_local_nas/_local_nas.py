@@ -6,9 +6,9 @@ from ._actual_line_length._actual_line_length import _compute_actual_line_length
 
 def _calculate_local_nas(
     aligned: List[Tuple],
-    mapping_windows,
-    ref_len: int, 
-    gen_len: int, 
+    alignment_windows,
+    ref_len: int,
+    gen_len: int,
     swap: bool = False,
     Rn: int = 0
 ) -> Tuple[float, Dict[str, Any]]:
@@ -30,7 +30,7 @@ def _calculate_local_nas(
     sx = np.array([point[sx_idx] for point in sorted_aligned])
     sy = np.array([point[sy_idx] for point in sorted_aligned])
 
-    floor_ideal_line_length, ceil_ideal_line_length, floor_path, ceil_path = _compute_ideal_narrative_line_band(mapping_windows, source_len, target_len)
+    floor_ideal_line_length, ceil_ideal_line_length, floor_path, ceil_path = _compute_ideal_narrative_line_band(alignment_windows, source_len, target_len)
 
     floor_path_dy_map = {}
     if len(floor_path) > 1:
@@ -43,14 +43,14 @@ def _calculate_local_nas(
     average_ideal_line_length = (floor_ideal_line_length + ceil_ideal_line_length) / 2
 
     if floor_ideal_line_length <= actual_line_length <= ceil_ideal_line_length:
-        line_nas = 1.0
+        local_nas = 1.0
     elif actual_line_length < floor_ideal_line_length:
-        line_nas = actual_line_length / floor_ideal_line_length if floor_ideal_line_length else 0.0
+        local_nas = actual_line_length / floor_ideal_line_length if floor_ideal_line_length else 0.0
     else:
-        line_nas = ceil_ideal_line_length / actual_line_length if actual_line_length else 0.0
-    
+        local_nas = ceil_ideal_line_length / actual_line_length if actual_line_length else 0.0
+
     actual_path = [(int(x), int(y)) for x, y in zip(sx, sy)]
-    
+
     internals = {
         "actual_line_length": actual_line_length,
         "floor_ideal_line_length": floor_ideal_line_length,
@@ -61,5 +61,5 @@ def _calculate_local_nas(
         "floor_path": floor_path,
         "ceil_path": ceil_path
     }
-    
-    return line_nas, internals
+
+    return local_nas, internals

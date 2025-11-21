@@ -28,8 +28,8 @@ def draw_recall_mapping_content(ax: plt.Axes, internals: Dict[str, Any],
                                ref_len: int, gen_len: int, Rn: int) -> None:
     """Draw all content for recall mapping plot."""
     recall_indices = internals['alignment']['recall']['indices']
-    recall_windows = internals['mapping_windows']['recall']
-    rec_nas_data = internals['metrics']['nas']['nas_d']['recall']
+    recall_windows = internals['alignment_windows']['recall']
+    rec_nas_data = internals['metrics']['global_nas']['recall']
     
     # Draw mapping windows with Rn
     draw_mapping_windows_with_Rn(
@@ -57,7 +57,7 @@ def draw_recall_mapping_content(ax: plt.Axes, internals: Dict[str, Any],
 
 def draw_recall_penalty_plot(ax: plt.Axes, internals: Dict[str, Any], Rn: int) -> None:
     """Draw recall penalty visualization."""
-    rec_nas_data = internals['metrics']['nas']['nas_d']['recall']
+    rec_nas_data = internals['metrics']['global_nas']['recall']
     
     # Get penalty data
     penalties = np.array(rec_nas_data['penalties'])

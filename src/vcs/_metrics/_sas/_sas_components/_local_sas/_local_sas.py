@@ -5,7 +5,7 @@ from ..._utils import _calculate_f1
 from ._semantic_load_penalty._precision_penalty._precision_penalty import _apply_semantic_load_penalty_precision
 from ._semantic_load_penalty._recall_penalty._recall_penalty import _apply_semantic_load_penalty_recall
 
-def _compute_las_metrics(
+def _compute_local_sas_metrics(
     precision_sim_values: np.ndarray,
     recall_sim_values: np.ndarray,
     precision_indices: np.ndarray,
@@ -14,12 +14,12 @@ def _compute_las_metrics(
     gen_len: int
 ) -> Tuple[Dict[str, float], Dict[str, Any]]:
     """
-    Compute LAS metrics with bidirectional semantic load sharing penalty.
-    
+    Compute Local SAS metrics with bidirectional semantic load sharing penalty.
+
     This approach measures semantic coverage by comparing demand vs supply
     for each shared chunk, regardless of overall length balance. Both directions
     are penalized when load sharing occurs.
-    
+
     Args:
         precision_sim_values: Similarity values for precision direction (gen->ref)
         recall_sim_values: Similarity values for recall direction (ref->gen)
@@ -27,10 +27,10 @@ def _compute_las_metrics(
         recall_indices: Matched generated indices for each reference chunk
         ref_len: Number of reference chunks (m)
         gen_len: Number of generated chunks (n)
-    
+
     Returns:
         Tuple containing:
-        - Dict with Precision LAS, Recall LAS, and combined LAS scores
+        - Dict with Precision Local SAS, Recall Local SAS, and combined Local SAS scores
         - Dict with internal calculations for both directions
     """
     
@@ -42,15 +42,15 @@ def _compute_las_metrics(
         recall_sim_values, recall_indices, gen_len
     )
     
-    # Calculate final LAS scores
-    precision_las = float(np.mean(adjusted_precision_sim)) if adjusted_precision_sim.size else 0.0
-    recall_las = float(np.mean(adjusted_recall_sim)) if adjusted_recall_sim.size else 0.0
-    f1_las = _calculate_f1(precision_las, recall_las)
-    
+    # Calculate final Local_SAS scores
+    precision_local_sas = float(np.mean(adjusted_precision_sim)) if adjusted_precision_sim.size else 0.0
+    recall_local_sas = float(np.mean(adjusted_recall_sim)) if adjusted_recall_sim.size else 0.0
+    f1_local_sas = _calculate_f1(precision_local_sas, recall_local_sas)
+
     metrics = {
-        "Precision LAS": precision_las,
-        "Recall LAS": recall_las,
-        "LAS": f1_las 
+        "Precision Local_SAS": precision_local_sas,
+        "Recall Local_SAS": recall_local_sas,
+        "Local_SAS": f1_local_sas
     }
     
     internals = {
