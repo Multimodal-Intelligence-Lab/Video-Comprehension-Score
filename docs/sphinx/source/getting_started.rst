@@ -286,7 +286,7 @@ The following parameters control the fundamental behavior of VCS evaluation:
    - **Higher values** (e.g., 5.0-6.0): Larger context windows, more flexible matching
    - **Use case**: Larger values allow for more narrative flexibility
 
-**lct** (NAS Regularizer, default: 0)
+**Rn** (NAS Regularizer, default: 0)
    Controls how much narrative reordering is allowed in the evaluation.
    
    - **Value 0**: Strict chronological matching, no reordering allowed
@@ -303,7 +303,7 @@ These parameters control what information VCS returns to you:
    When set to True, returns detailed breakdown of all metrics instead of just the final VCS score.
    
    **Returns when True:**
-   - Individual GAS, LAS, NAS scores
+   - Individual Global_SAS, Local_SAS, SAS, NAS scores
    - LAS precision and recall components
    - Distance-based and line-based NAS sub-metrics
    - Complete metric breakdown for detailed analysis
@@ -327,7 +327,7 @@ Here's how to use these parameters in practice:
    from vcs import (
        DEFAULT_CONTEXT_CUTOFF_VALUE,    # 0.6
        DEFAULT_CONTEXT_WINDOW_CONTROL,  # 4.0
-       DEFAULT_LCT,                     # 0
+       DEFAULT_Rn,                      # 0
        DEFAULT_CHUNK_SIZE,              # 1
    )
 
@@ -336,8 +336,8 @@ Here's how to use these parameters in practice:
        reference_text=ref_text,
        generated_text=gen_text,
        segmenter_fn=segmenter,
-       embedding_fn_las=embedder,
-       embedding_fn_gas=embedder,
+       embedding_fn_local_sas=embedder,
+       embedding_fn_global_sas=embedder,
        chunk_size=1,                    # Fine-grained analysis
        context_cutoff_value=0.7,        # More restrictive matching
        context_window_control=3.0,      # Tighter context windows
@@ -351,8 +351,8 @@ Here's how to use these parameters in practice:
        reference_text=ref_text,
        generated_text=gen_text,
        segmenter_fn=segmenter,
-       embedding_fn_las=embedder,
-       embedding_fn_gas=embedder,
+       embedding_fn_local_sas=embedder,
+       embedding_fn_global_sas=embedder,
        chunk_size=2,                    # Group segments in pairs
        context_cutoff_value=0.5,        # More lenient matching
        context_window_control=5.0,      # Larger context windows
@@ -362,7 +362,7 @@ Here's how to use these parameters in practice:
    )
 
 .. tip::
-   **Tuning Strategy**: Start with default values and adjust based on your specific use case. For creative writing, you might want higher LCT values. For technical documentation, you might want lower context_cutoff_value for stricter matching.
+   **Tuning Strategy**: Start with default values and adjust based on your specific use case. For creative writing, you might want higher Rn values. For technical documentation, you might want lower context_cutoff_value for stricter matching.
 
 Quick Start Example
 -------------------
@@ -474,16 +474,15 @@ Here's a complete working example using lightweight models:
            reference_text=reference_text,
            generated_text=generated_text,
            segmenter_fn=simple_segmenter,
-           embedding_fn_las=lightweight_embedding_function,
-           embedding_fn_gas=lightweight_embedding_function,
+           embedding_fn_local_sas=lightweight_embedding_function,
+           embedding_fn_global_sas=lightweight_embedding_function,
            return_all_metrics=True,
            return_internals=True
        )
        
        print("🎯 VCS Results:")
        print(f"VCS Score: {result['VCS']:.4f}")
-       print(f"GAS Score: {result['GAS']:.4f}")
-       print(f"LAS Score: {result['LAS']:.4f}")
+       print(f"SAS Score: {result['SAS']:.4f}")
        print(f"NAS Score: {result['NAS']:.4f}")
        print("✅ VCS is working correctly!")
        

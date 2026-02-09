@@ -105,7 +105,6 @@ html_theme_options = {
     'navigation_depth': 4,
     'includehidden': True,
     'titles_only': False,
-    'display_version': True,
 }
 
 # HTML context

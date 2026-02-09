@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>vcs._visualize_vcs._text_chunks.visualizer &mdash; VCS Metrics v1.0.2</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css?v=887dc02f" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css?v=46cc18d5" />
 
   
       <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
@@ -16,6 +17,9 @@
       <script src="../../../../_static/documentation_options.js?v=1ed6394b"></script>
       <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
       <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../_static/copybutton.js?v=30646c52"></script>
+      <script src="../../../../_static/external_links.js?v=0247d4bd"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" /> 
@@ -47,8 +51,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Additional Resources:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score">GitHub Repository</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/video-comprehension-score/">PyPI Package</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score">GitHub Repository</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues">Report Issues</a></li>
 </ul>
 
         </div>
@@ -61,7 +66,7 @@
       </nav>
 
       <div class="wy-nav-content">
-        <div class="rst-content">
+        <div class="rst-content style-external-links">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
@@ -112,12 +117,70 @@
     <span class="k">return</span> <span class="n">figures</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">visualize_reference_chunks</span><span class="p">(</span><span class="n">internals</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Create visualization of reference text chunks.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    internals : dict</span>
+<span class="sd">        The internals dictionary from VCS computation.</span>
+<span class="sd">    </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    list of matplotlib.figure.Figure</span>
+<span class="sd">        One or more figures showing reference text chunks.</span>
+<span class="sd">    </span>
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    **Basic Usage:**</span>
+<span class="sd">    </span>
+<span class="sd">    .. code-block:: python</span>
+<span class="sd">    </span>
+<span class="sd">        result = compute_vcs_score(</span>
+<span class="sd">            reference_text=&quot;Your reference text&quot;,</span>
+<span class="sd">            generated_text=&quot;Your generated text&quot;,</span>
+<span class="sd">            segmenter_fn=your_segmenter,</span>
+<span class="sd">            embedding_fn_las=your_embedder,</span>
+<span class="sd">            return_internals=True</span>
+<span class="sd">        )</span>
+<span class="sd">        figures = visualize_reference_chunks(result[&#39;internals&#39;])</span>
+<span class="sd">        for fig in figures:</span>
+<span class="sd">            fig.show()</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">ref_chunks</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;texts&#39;</span><span class="p">][</span><span class="s1">&#39;reference_chunks&#39;</span><span class="p">]</span>
     <span class="n">chunk_size</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;config&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;chunk_size&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
     
     <span class="k">return</span> <span class="n">_visualize_chunks_generic</span><span class="p">(</span><span class="n">ref_chunks</span><span class="p">,</span> <span class="s2">&quot;Reference Text Chunks&quot;</span><span class="p">,</span> <span class="n">chunk_size</span><span class="p">)</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">visualize_generated_chunks</span><span class="p">(</span><span class="n">internals</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Create visualization of generated text chunks.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    internals : dict</span>
+<span class="sd">        The internals dictionary from VCS computation.</span>
+<span class="sd">    </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    list of matplotlib.figure.Figure</span>
+<span class="sd">        One or more figures showing generated text chunks.</span>
+<span class="sd">    </span>
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    **Basic Usage:**</span>
+<span class="sd">    </span>
+<span class="sd">    .. code-block:: python</span>
+<span class="sd">    </span>
+<span class="sd">        result = compute_vcs_score(</span>
+<span class="sd">            reference_text=&quot;Your reference text&quot;,</span>
+<span class="sd">            generated_text=&quot;Your generated text&quot;,</span>
+<span class="sd">            segmenter_fn=your_segmenter,</span>
+<span class="sd">            embedding_fn_las=your_embedder,</span>
+<span class="sd">            return_internals=True</span>
+<span class="sd">        )</span>
+<span class="sd">        figures = visualize_generated_chunks(result[&#39;internals&#39;])</span>
+<span class="sd">        for fig in figures:</span>
+<span class="sd">            fig.show()</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">gen_chunks</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;texts&#39;</span><span class="p">][</span><span class="s1">&#39;generated_chunks&#39;</span><span class="p">]</span>
     <span class="n">chunk_size</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;config&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;chunk_size&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
     
@@ -154,40 +217,24 @@
 <span class="sd">    --------</span>
 <span class="sd">    **Basic Usage:**</span>
 <span class="sd">    </span>
-<span class="sd">    &gt;&gt;&gt; result = compute_vcs_score(ref_text, gen_text, segmenter, embedder,</span>
-<span class="sd">    ...                           return_internals=True)</span>
-<span class="sd">    &gt;&gt;&gt; chunk_figs = visualize_text_chunks(result[&#39;internals&#39;])</span>
-<span class="sd">    &gt;&gt;&gt; </span>
-<span class="sd">    &gt;&gt;&gt; # Display reference chunks (may be multiple pages)</span>
-<span class="sd">    &gt;&gt;&gt; for i, fig in enumerate(chunk_figs[&#39;reference_chunks&#39;]):</span>
-<span class="sd">    ...     fig.suptitle(f&#39;Reference Chunks - Page {i+1}&#39;)</span>
-<span class="sd">    ...     fig.show()</span>
-<span class="sd">    &gt;&gt;&gt; </span>
-<span class="sd">    &gt;&gt;&gt; # Display generated chunks  </span>
-<span class="sd">    &gt;&gt;&gt; for i, fig in enumerate(chunk_figs[&#39;generated_chunks&#39;]):</span>
-<span class="sd">    ...     fig.suptitle(f&#39;Generated Chunks - Page {i+1}&#39;)</span>
-<span class="sd">    ...     fig.show()</span>
+<span class="sd">    .. code-block:: python</span>
 <span class="sd">    </span>
-<span class="sd">    **Save All Chunk Visualizations:**</span>
-<span class="sd">    </span>
-<span class="sd">    &gt;&gt;&gt; chunk_figs = visualize_text_chunks(result[&#39;internals&#39;])</span>
-<span class="sd">    &gt;&gt;&gt; </span>
-<span class="sd">    &gt;&gt;&gt; # Save reference chunk pages</span>
-<span class="sd">    &gt;&gt;&gt; for i, fig in enumerate(chunk_figs[&#39;reference_chunks&#39;]):</span>
-<span class="sd">    ...     fig.savefig(f&#39;ref_chunks_page_{i+1}.png&#39;, dpi=300, bbox_inches=&#39;tight&#39;)</span>
-<span class="sd">    ...     plt.close(fig)  # Free memory</span>
-<span class="sd">    &gt;&gt;&gt; </span>
-<span class="sd">    &gt;&gt;&gt; # Save generated chunk pages</span>
-<span class="sd">    &gt;&gt;&gt; for i, fig in enumerate(chunk_figs[&#39;generated_chunks&#39;]):</span>
-<span class="sd">    ...     fig.savefig(f&#39;gen_chunks_page_{i+1}.png&#39;, dpi=300, bbox_inches=&#39;tight&#39;)</span>
-<span class="sd">    ...     plt.close(fig)</span>
-<span class="sd">    </span>
-<span class="sd">    Notes</span>
-<span class="sd">    -----</span>
-<span class="sd">    * Chunks are automatically paginated when there are more than 25 chunks per page</span>
-<span class="sd">    * Each chunk is numbered according to its position in the analysis</span>
-<span class="sd">    * Text is automatically wrapped for better readability</span>
-<span class="sd">    * Useful for debugging segmentation issues or understanding text preprocessing</span>
+<span class="sd">        result = compute_vcs_score(</span>
+<span class="sd">            reference_text=&quot;Your reference text&quot;,</span>
+<span class="sd">            generated_text=&quot;Your generated text&quot;,</span>
+<span class="sd">            segmenter_fn=your_segmenter,</span>
+<span class="sd">            embedding_fn_las=your_embedder,</span>
+<span class="sd">            return_internals=True</span>
+<span class="sd">        )</span>
+<span class="sd">        chunk_figs = visualize_text_chunks(result[&#39;internals&#39;])</span>
+<span class="sd">        </span>
+<span class="sd">        # Display reference chunks</span>
+<span class="sd">        for fig in chunk_figs[&#39;reference_chunks&#39;]:</span>
+<span class="sd">            fig.show()</span>
+<span class="sd">        </span>
+<span class="sd">        # Display generated chunks  </span>
+<span class="sd">        for fig in chunk_figs[&#39;generated_chunks&#39;]:</span>
+<span class="sd">            fig.show()</span>
 <span class="sd">    </span>
 <span class="sd">    See Also</span>
 <span class="sd">    --------</span>

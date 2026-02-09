@@ -78,18 +78,18 @@ Local Alignment Score (LAS)
 Narrative Alignment Score (NAS)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. autofunction:: vcs.visualize_distance_nas
+.. autofunction:: vcs.visualize_global_nas
 
-.. autofunction:: vcs.visualize_line_nas
+.. autofunction:: vcs.visualize_local_nas
 
-.. autofunction:: vcs.visualize_line_nas_precision_calculations
+.. autofunction:: vcs.visualize_local_nas_precision_calculations
 
-.. autofunction:: vcs.visualize_line_nas_recall_calculations
+.. autofunction:: vcs.visualize_local_nas_recall_calculations
 
-Window Regularization
-^^^^^^^^^^^^^^^^^^^^^
+Load Sharing
+^^^^^^^^^^^^
 
-.. autofunction:: vcs.visualize_window_regularizer
+.. autofunction:: vcs.visualize_las_load_sharing
 
 Report Generation
 ~~~~~~~~~~~~~~~~~
@@ -121,11 +121,11 @@ Default parameter values available for import:
    
    Context window size control parameter.
 
-.. py:data:: vcs.DEFAULT_LCT
+.. py:data:: vcs.DEFAULT_Rn
 
    **Default:** ``0`` | **Type:** ``int`` | **Range:** ``0 - ∞``
-   
-   NAS Regularizer for narrative ordering flexibility.
+
+   NAS Regularizer (Rn) for narrative ordering flexibility.
 
 .. py:data:: vcs.DEFAULT_CHUNK_SIZE
 

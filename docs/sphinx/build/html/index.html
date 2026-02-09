@@ -8,8 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VCS Metrics Documentation &mdash; VCS Metrics v1.0.2</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=887dc02f" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=46cc18d5" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
@@ -17,6 +18,9 @@
       <script src="_static/documentation_options.js?v=1ed6394b"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=30646c52"></script>
+      <script src="_static/external_links.js?v=0247d4bd"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -49,8 +53,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Additional Resources:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score">GitHub Repository</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/video-comprehension-score/">PyPI Package</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score">GitHub Repository</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues">Report Issues</a></li>
 </ul>
 
         </div>
@@ -63,13 +68,13 @@
       </nav>
 
       <div class="wy-nav-content">
-        <div class="rst-content">
+        <div class="rst-content style-external-links">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">VCS Metrics Documentation</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/blob/main/docs/source/index.rst" class="fa fa-github"> Edit on GitHub</a>
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -77,27 +82,52 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="video-comprehension-score-documentation">
-<h1>VCS Metrics Documentation<a class="headerlink" href="#video-comprehension-score-documentation" title="Link to this heading"></a></h1>
+  <section id="vcs-metrics-documentation">
+<h1>VCS Metrics Documentation<a class="headerlink" href="#vcs-metrics-documentation" title="Link to this heading"></a></h1>
 <div style="background: linear-gradient(135deg, #0d9488, #0f766e); color: white; padding: 2rem; text-align: center; border-radius: 0.75rem; margin-bottom: 2rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);">
     <h1 style="color: white; border: none; margin: 0; font-size: 2.5rem; font-weight: 700;">VCS Metrics</h1>
     <p style="color: #ccfbf1; font-size: 1.2rem; margin: 0.5rem 0 0 0;">Video Comprehension Score - A comprehensive metric for evaluating narrative similarity</p>
-</div><p>VCS Metrics is a Python library that provides a comprehensive approach to measuring narrative similarity between reference and generated text. Originally developed to evaluate the video comprehension ability of large video language models by comparing their long video descriptions to human-written captions, VCS can also be used for document-level similarity analysis or comparing similarity between two long stories and other narrative content.</p>
-<p>VCS focuses on whether the overall story and narrative structure matches rather than worrying about every small detail. It achieves this by checking the global, local, and chronological semantic alignment between two given long paragraphs. There is no size limit in terms of paragraphs that can be processed.</p>
-<p>To understand how VCS works in detail, please read our <a class="reference external" href="#">research paper</a> or explore our interactive <a class="reference external" href="#">playground</a>.</p>
-<a class="reference external image-reference" href="https://pypi.org/project/video-comprehension-score/"><img alt="PyPI version" src="https://img.shields.io/pypi/v/video-comprehension-score.svg" />
+</div><p>Recent advances in Large Video Language Models (LVLMs) have significantly enhanced automated video understanding, enabling detailed, long-form narratives of complex video content. However, accurately evaluating whether these models genuinely comprehend the video’s narrative—its events, entities, interactions, and chronological coherence—remains challenging.</p>
+<p><strong>Why Existing Metrics Fall Short:</strong></p>
+<ul class="simple">
+<li><p><strong>N-gram Metrics (e.g., BLEU, ROUGE, CIDEr)</strong>: Primarily measure lexical overlap, penalizing valid linguistic variations and inadequately evaluating narrative chronology.</p></li>
+<li><p><strong>Embedding-based Metrics (e.g., BERTScore, SBERT)</strong>: Improve semantic sensitivity but struggle with extended context, detailed content alignment, and narrative sequencing.</p></li>
+<li><p><strong>LLM-based Evaluations</strong>: Often inconsistent, lacking clear criteria for narrative structure and chronology assessments.</p></li>
+</ul>
+<p>Moreover, traditional benchmarks largely rely on question-answering tasks, which only test isolated events or entities rather than holistic video comprehension. A model answering specific questions correctly does not necessarily demonstrate understanding of the overall narrative or the intricate interplay of events.</p>
+<p><strong>Introducing VCS (Video Comprehension Score):</strong></p>
+<p>VCS is a Python library specifically designed to overcome these challenges by evaluating narrative comprehension through direct comparison of extensive, detailed video descriptions generated by LVLMs against human-written references. Unlike traditional metrics, VCS assesses whether models capture the overall narrative structure, event sequencing, and thematic coherence, not just lexical or isolated semantic matches.</p>
+<p><strong>Core Components of VCS:</strong></p>
+<ul class="simple">
+<li><p>🌍 <strong>Global Alignment Score (GAS)</strong>: Captures overall thematic alignment, tolerating stylistic variations without penalizing valid linguistic differences.</p></li>
+<li><p>🎯 <strong>Local Alignment Score (LAS)</strong>: Checks detailed semantic correspondence at a chunk-level, allowing minor descriptive variations while penalizing significant inaccuracies or omissions.</p></li>
+<li><p>📖 <strong>Narrative Alignment Score (NAS)</strong>: Evaluates chronological consistency, balancing the need for both strict event sequencing and permissible narrative flexibility.</p></li>
+</ul>
+<p>Initially developed for evaluating video comprehension by comparing generated and human-written video narratives, VCS is versatile enough for broader applications, including document-level narrative comparisons, analysis of extensive narrative content, and various other narrative similarity tasks.</p>
+<p>To understand how VCS works in detail, please read our research paper or explore our interactive playground.</p>
+<p>
+<a href="https://arxiv.org/abs/placeholder-link" target="_blank">📄 Research Paper</a>
+·
+<a href="https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/" target="_blank">📓 Interactive Playground</a>
+</p><a class="reference external image-reference" href="https://pypi.org/project/video-comprehension-score/"><img alt="PyPI version" src="https://img.shields.io/pypi/v/video-comprehension-score.svg" />
 </a>
-<a class="reference external image-reference" href="https://www.python.org/downloads/"><img alt="Python 3.8+" src="https://img.shields.io/badge/python-3.8+-blue.svg" />
+<a class="reference external image-reference" href="https://www.python.org/downloads/"><img alt="Python 3.11+" src="https://img.shields.io/badge/python-3.11+-blue.svg" />
 </a>
 <a class="reference external image-reference" href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
 </a>
 <section id="key-features">
 <h2>Key Features<a class="headerlink" href="#key-features" title="Link to this heading"></a></h2>
-<p>🎯 <strong>Comprehensive Scoring</strong>: Evaluates narrative similarity through Global Alignment Score (GAS), Local Alignment Score (LAS), and chronological Narrative Alignment Score (NAS)</p>
-<p>📊 <strong>Rich Visualizations</strong>: Generate detailed plots, heatmaps, and PDF reports for analysis</p>
-<p>🔧 <strong>Flexible Configuration</strong>: VCS is configurable to perform less granular or more granular comparisons and can be configured to control the strictness of comparison, from strict to less strict matching</p>
-<p>📈 <strong>Detailed Analytics</strong>: Access to internal calculations for deep analysis and debugging</p>
-<p>🎨 <strong>Publication Ready</strong>: Professional visualizations and reports suitable for research and presentations</p>
+<p>Explore the comprehensive capabilities that make VCS a powerful narrative evaluation toolkit:</p>
+<dl class="simple">
+<dt><strong>🧮 Comprehensive Metric Suite</strong></dt><dd><p>Computes VCS along with detailed breakdowns: GAS (global thematic similarity), LAS with precision/recall components, and NAS with distance-based and line-based sub-metrics. Access all internal calculations including penalty systems, mapping windows, and alignment paths.</p>
+</dd>
+<dt><strong>📊 Advanced Visualization Engine</strong></dt><dd><p>11 specialized visualization functions including similarity heatmaps, alignment analysis, best-match visualizations, narrative flow diagrams, and precision/recall breakdowns. Each metric component can be visualized with publication-quality plots.</p>
+</dd>
+<dt><strong>📋 Professional PDF Reports</strong></dt><dd><p>Generate comprehensive multi-page PDF reports with all metrics, visualizations, and analysis details. Supports both complete reports and customizable selective reports. Professional formatting suitable for research publications.</p>
+</dd>
+<dt><strong>⚙️ Flexible Configuration System</strong></dt><dd><p>Fine-tune evaluation with configurable parameters: chunk sizes, similarity thresholds, context windows, and NAS Regularizer (Rn). Supports custom segmentation and embedding functions for domain-specific applications.</p>
+</dd>
+</dl>
 </section>
 <section id="table-of-contents">
 <h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading"></a></h2>
@@ -108,10 +138,9 @@
 <li class="toctree-l2"><a class="reference internal" href="getting_started.html#installation">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="getting_started.html#requirements">Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="getting_started.html#core-function-requirements">Core Function Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="getting_started.html#quick-start-example">Quick Start Example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="getting_started.html#configuration-parameters">Configuration Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#quick-start-example">Quick Start Example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="getting_started.html#next-steps">Next Steps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="getting_started.html#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a><ul>
@@ -119,9 +148,6 @@
 <li class="toctree-l2"><a class="reference internal" href="api.html#visualization-functions">Visualization Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api.html#configuration-constants">Configuration Constants</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api.html#package-information">Package Information</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#function-return-types">Function Return Types</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#error-handling">Error Handling</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#type-hints">Type Hints</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api.html#see-also">See Also</a></li>
 </ul>
 </li>
@@ -130,8 +156,9 @@
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Additional Resources:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score">GitHub Repository</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/video-comprehension-score/">PyPI Package</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score">GitHub Repository</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues">Report Issues</a></li>
 </ul>
 </div>
 </section>
@@ -140,24 +167,17 @@
 <p>If you use VCS Metrics in your research, please cite:</p>
 <div class="highlight-bibtex notranslate"><div class="highlight"><pre><span></span><span class="nc">@software</span><span class="p">{</span><span class="nl">vcs_metrics</span><span class="p">,</span>
 <span class="w">  </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{VCS Metrics: Video Comprehension Score for Text Similarity}</span><span class="p">,</span>
-<span class="w">  </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Harsh Dubey and Chulwoo Pack}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Harsh Dubey and Mukhtiar Ali and Sugam Mishra and Chulwoo Pack}</span><span class="p">,</span>
 <span class="w">  </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{2024}</span><span class="p">,</span>
-<span class="w">  </span><span class="na">url</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score}</span>
+<span class="w">  </span><span class="na">institution</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{South Dakota State University}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">note</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Python package for narrative similarity evaluation}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 </section>
-<section id="support">
-<h2>Support<a class="headerlink" href="#support" title="Link to this heading"></a></h2>
-<ul class="simple">
-<li><p><strong>Documentation</strong>: You’re reading it! 📖</p></li>
-<li><p><strong>Issues</strong>: <a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues">GitHub Issues</a></p></li>
-<li><p><strong>Discussions</strong>: <a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/discussions">GitHub Discussions</a></p></li>
-</ul>
-</section>
 <section id="license">
 <h2>License<a class="headerlink" href="#license" title="Link to this heading"></a></h2>
-<p>This project is licensed under the MIT License - see the <a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/blob/main/LICENSE">LICENSE</a> file for details.</p>
+<p>This project is licensed under the MIT License.</p>
 </section>
 </section>
 <section id="indices-and-tables">

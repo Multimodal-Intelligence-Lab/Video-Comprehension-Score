@@ -14,3 +14,15 @@
 .wy-nav-content .rst-content {
     max-width: none !important;
 }
+
+/* Make external links open in new tabs */
+a.external {
+    target: _blank;
+}
+
+/* Style external links */
+a.external::after {
+    content: " ↗";
+    font-size: 0.8em;
+    opacity: 0.6;
+}

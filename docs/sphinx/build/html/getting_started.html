@@ -8,8 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Getting Started &mdash; VCS Metrics v1.0.2</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=887dc02f" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=46cc18d5" />
+      <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=a5c4661c" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
@@ -17,6 +19,10 @@
       <script src="_static/documentation_options.js?v=1ed6394b"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=30646c52"></script>
+      <script src="_static/external_links.js?v=0247d4bd"></script>
+      <script src="_static/tabs.js?v=3030b3cb"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -58,18 +64,23 @@
 <li class="toctree-l3"><a class="reference internal" href="#embedding-function">Embedding Function</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration-parameters">Configuration Parameters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#core-parameters">Core Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#return-control-parameters">Return Control Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configuration-example">Configuration Example</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#quick-start-example">Quick Start Example</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#configuration-parameters">Configuration Parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#next-steps">Next Steps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Additional Resources:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score">GitHub Repository</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/video-comprehension-score/">PyPI Package</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score">GitHub Repository</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues">Report Issues</a></li>
 </ul>
 
         </div>
@@ -82,13 +93,13 @@
       </nav>
 
       <div class="wy-nav-content">
-        <div class="rst-content">
+        <div class="rst-content style-external-links">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Getting Started</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/blob/main/docs/source/getting_started.rst" class="fa fa-github"> Edit on GitHub</a>
+            <a href="_sources/getting_started.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -104,24 +115,42 @@
 <section id="basic-installation">
 <h3>Basic Installation<a class="headerlink" href="#basic-installation" title="Link to this heading"></a></h3>
 <p>Install VCS Metrics from PyPI:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>video-comprehension-score
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Terminal</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Notebook (Colab/Jupyter)</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>video-comprehension-score
 </pre></div>
 </div>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>!pip<span class="w"> </span>install<span class="w"> </span>video-comprehension-score
+</pre></div>
+</div>
+</div></div>
 </section>
 <section id="development-installation">
 <h3>Development Installation<a class="headerlink" href="#development-installation" title="Link to this heading"></a></h3>
 <p>For development or to get the latest features:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Clone the repository</span>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-1-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-1-1-0" name="1-0" role="tab" tabindex="0">Terminal</button><button aria-controls="panel-1-1-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-1-1-1" name="1-1" role="tab" tabindex="-1">Notebook (Colab/Jupyter)</button></div><div aria-labelledby="tab-1-1-0" class="sphinx-tabs-panel" id="panel-1-1-0" name="1-0" role="tabpanel" tabindex="0"><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Clone the repository</span>
 git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score.git
-<span class="nb">cd</span><span class="w"> </span>video-comprehension-score
+<span class="nb">cd</span><span class="w"> </span>Video-Comprehension-Score
 
 <span class="c1"># Install in development mode</span>
 pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;.[dev]&quot;</span>
 
-<span class="c1"># Install pre-commit hooks</span>
+<span class="c1"># Install pre-commit hooks (optional)</span>
 pre-commit<span class="w"> </span>install
 </pre></div>
 </div>
+</div><div aria-labelledby="tab-1-1-1" class="sphinx-tabs-panel" hidden="true" id="panel-1-1-1" name="1-1" role="tabpanel" tabindex="0"><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Clone the repository</span>
+!git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score.git
+
+<span class="c1"># Change directory and install in development mode</span>
+%cd<span class="w"> </span>Video-Comprehension-Score
+!pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;.[dev]&quot;</span>
+
+<span class="c1"># Install pre-commit hooks (optional)</span>
+!pre-commit<span class="w"> </span>install
+</pre></div>
+</div>
+</div></div>
 </section>
 <section id="pytorch-installation">
 <h3>PyTorch Installation<a class="headerlink" href="#pytorch-installation" title="Link to this heading"></a></h3>
@@ -135,12 +164,16 @@ pre-commit<span class="w"> </span>install
 <section id="requirements">
 <h2>Requirements<a class="headerlink" href="#requirements" title="Link to this heading"></a></h2>
 <ul class="simple">
-<li><p>Python 3.8+</p></li>
+<li><p><strong>Python 3.11+</strong></p></li>
 <li><p>numpy &gt;= 1.20.0</p></li>
 <li><p>matplotlib &gt;= 3.5.0</p></li>
 <li><p>seaborn &gt;= 0.11.0</p></li>
 <li><p>PyTorch &gt;= 1.9.0 (install separately)</p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Python Version Compatibility</strong>: While VCS Metrics supports Python 3.8+, we recommend using Python 3.11 or higher for optimal performance and compatibility with the latest dependencies.</p>
+</div>
 </section>
 <section id="core-function-requirements">
 <h2>Core Function Requirements<a class="headerlink" href="#core-function-requirements" title="Link to this heading"></a></h2>
@@ -303,18 +336,200 @@ pre-commit<span class="w"> </span>install
 </div>
 </section>
 </section>
+<section id="configuration-parameters">
+<h2>Configuration Parameters<a class="headerlink" href="#configuration-parameters" title="Link to this heading"></a></h2>
+<p>VCS Metrics provides several configuration parameters that allow you to fine-tune the evaluation behavior for your specific use case. Understanding these parameters is crucial for getting optimal results from VCS.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Parameter Importance</strong>: These configuration options control the granularity, strictness, and behavior of the VCS evaluation. Proper configuration can significantly impact your results.</p>
+</div>
+<section id="core-parameters">
+<h3>Core Parameters<a class="headerlink" href="#core-parameters" title="Link to this heading"></a></h3>
+<p>The following parameters control the fundamental behavior of VCS evaluation:</p>
+<dl class="simple">
+<dt><strong>chunk_size</strong> (default: 1)</dt><dd><p>Controls the granularity of text comparison by grouping segments together.</p>
+<ul class="simple">
+<li><p><strong>Lower values</strong> (e.g., 1): More fine-grained analysis, segment-by-segment comparison</p></li>
+<li><p><strong>Higher values</strong> (e.g., 2-4): Broader comparison, grouping multiple segments</p></li>
+<li><p><strong>Use case</strong>: Increase for more general comparisons, decrease for detailed analysis</p></li>
+</ul>
+</dd>
+<dt><strong>context_cutoff_value</strong> (default: 0.6)</dt><dd><p>Sets the similarity threshold for determining matches between segments.</p>
+<ul class="simple">
+<li><p><strong>Lower values</strong> (e.g., 0.4-0.5): More lenient matching, accepts lower similarity</p></li>
+<li><p><strong>Higher values</strong> (e.g., 0.7-0.8): More restrictive matching, requires higher similarity</p></li>
+<li><p><strong>Use case</strong>: Adjust based on how strict you want the semantic matching to be</p></li>
+</ul>
+</dd>
+<dt><strong>context_window_control</strong> (default: 4.0)</dt><dd><p>Controls the size of context windows used for matching segments.</p>
+<ul class="simple">
+<li><p><strong>Lower values</strong> (e.g., 2.0-3.0): Tighter context windows, more focused matching</p></li>
+<li><p><strong>Higher values</strong> (e.g., 5.0-6.0): Larger context windows, more flexible matching</p></li>
+<li><p><strong>Use case</strong>: Larger values allow for more narrative flexibility</p></li>
+</ul>
+</dd>
+<dt><strong>Rn</strong> (NAS Regularizer, default: 0)</dt><dd><p>Controls how much narrative reordering is allowed in the evaluation.</p>
+<ul class="simple">
+<li><p><strong>Value 0</strong>: Strict chronological matching, no reordering allowed</p></li>
+<li><p><strong>Value 1</strong>: Some reordering tolerance, allows minor narrative flexibility</p></li>
+<li><p><strong>Higher values</strong>: More lenient chronological matching</p></li>
+<li><p><strong>Use case</strong>: Increase for texts where narrative order may vary legitimately</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="return-control-parameters">
+<h3>Return Control Parameters<a class="headerlink" href="#return-control-parameters" title="Link to this heading"></a></h3>
+<p>These parameters control what information VCS returns to you:</p>
+<dl>
+<dt><strong>return_all_metrics</strong> (default: False)</dt><dd><p>When set to True, returns detailed breakdown of all metrics instead of just the final VCS score.</p>
+<p><strong>Returns when True:</strong>
+- Individual Global_SAS, Local_SAS, SAS, NAS scores
+- LAS precision and recall components
+- Distance-based and line-based NAS sub-metrics
+- Complete metric breakdown for detailed analysis</p>
+</dd>
+<dt><strong>return_internals</strong> (default: False)</dt><dd><p>When set to True, returns internal computation data needed for visualization and analysis.</p>
+<p><strong>Returns when True:</strong>
+- Similarity matrices and alignment paths
+- Mapping windows and penalty calculations
+- Text chunks and segmentation details
+- All data needed for VCS visualization functions</p>
+</dd>
+</dl>
+</section>
+<section id="configuration-example">
+<h3>Configuration Example<a class="headerlink" href="#configuration-example" title="Link to this heading"></a></h3>
+<p>Here’s how to use these parameters in practice:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">vcs</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">DEFAULT_CONTEXT_CUTOFF_VALUE</span><span class="p">,</span>    <span class="c1"># 0.6</span>
+    <span class="n">DEFAULT_CONTEXT_WINDOW_CONTROL</span><span class="p">,</span>  <span class="c1"># 4.0</span>
+    <span class="n">DEFAULT_Rn</span><span class="p">,</span>                      <span class="c1"># 0</span>
+    <span class="n">DEFAULT_CHUNK_SIZE</span><span class="p">,</span>              <span class="c1"># 1</span>
+<span class="p">)</span>
+
+<span class="c1"># Example 1: More restrictive evaluation</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+    <span class="n">reference_text</span><span class="o">=</span><span class="n">ref_text</span><span class="p">,</span>
+    <span class="n">generated_text</span><span class="o">=</span><span class="n">gen_text</span><span class="p">,</span>
+    <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">segmenter</span><span class="p">,</span>
+    <span class="n">embedding_fn_local_sas</span><span class="o">=</span><span class="n">embedder</span><span class="p">,</span>
+    <span class="n">embedding_fn_global_sas</span><span class="o">=</span><span class="n">embedder</span><span class="p">,</span>
+    <span class="n">chunk_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>                    <span class="c1"># Fine-grained analysis</span>
+    <span class="n">context_cutoff_value</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>        <span class="c1"># More restrictive matching</span>
+    <span class="n">context_window_control</span><span class="o">=</span><span class="mf">3.0</span><span class="p">,</span>      <span class="c1"># Tighter context windows</span>
+    <span class="n">Rn</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>                          <span class="c1"># Strict chronological order</span>
+    <span class="n">return_all_metrics</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>         <span class="c1"># Get detailed breakdown</span>
+    <span class="n">return_internals</span><span class="o">=</span><span class="kc">True</span>            <span class="c1"># Get visualization data</span>
+<span class="p">)</span>
+
+<span class="c1"># Example 2: More lenient evaluation</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
+    <span class="n">reference_text</span><span class="o">=</span><span class="n">ref_text</span><span class="p">,</span>
+    <span class="n">generated_text</span><span class="o">=</span><span class="n">gen_text</span><span class="p">,</span>
+    <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">segmenter</span><span class="p">,</span>
+    <span class="n">embedding_fn_local_sas</span><span class="o">=</span><span class="n">embedder</span><span class="p">,</span>
+    <span class="n">embedding_fn_global_sas</span><span class="o">=</span><span class="n">embedder</span><span class="p">,</span>
+    <span class="n">chunk_size</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>                    <span class="c1"># Group segments in pairs</span>
+    <span class="n">context_cutoff_value</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>        <span class="c1"># More lenient matching</span>
+    <span class="n">context_window_control</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span>      <span class="c1"># Larger context windows</span>
+    <span class="n">Rn</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>                          <span class="c1"># Allow some narrative reordering</span>
+    <span class="n">return_all_metrics</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">return_internals</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Tuning Strategy</strong>: Start with default values and adjust based on your specific use case. For creative writing, you might want higher Rn values. For technical documentation, you might want lower context_cutoff_value for stricter matching.</p>
+</div>
+</section>
+</section>
 <section id="quick-start-example">
 <h2>Quick Start Example<a class="headerlink" href="#quick-start-example" title="Link to this heading"></a></h2>
-<p>Here’s a complete working example using Sentence Transformers:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<p>Here’s a complete working example using lightweight models:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fix import path issue if running from vcs/ root directory</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span> <span class="o">==</span> <span class="s1">&#39;Video-Comprehension-Score&#39;</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s1">&#39;src/vcs&#39;</span><span class="p">):</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;src&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🔧 Fixed import path for development directory&quot;</span><span class="p">)</span>
 
+<span class="c1"># Test the installation</span>
 <span class="k">try</span><span class="p">:</span>
-    <span class="kn">from</span><span class="w"> </span><span class="nn">vcs</span><span class="w"> </span><span class="kn">import</span> <span class="n">compute_vcs_score</span><span class="p">,</span> <span class="n">visualize_metrics_summary</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ Main function imported successfully!&quot;</span><span class="p">)</span>
+    <span class="kn">import</span><span class="w"> </span><span class="nn">vcs</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ VCS package imported successfully!&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Test main function availability</span>
+    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">vcs</span><span class="p">,</span> <span class="s1">&#39;compute_vcs_score&#39;</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ Main function &#39;compute_vcs_score&#39; is available!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;⚠️ Main function not found - there might be an installation issue&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Try to get version</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;📦 Version: </span><span class="si">{</span><span class="n">vcs</span><span class="o">.</span><span class="n">__version__</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;📦 Version: Unable to determine (this is normal for development installs)&quot;</span><span class="p">)</span>
+
 <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;❌ Import failed: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;💡 Make sure you:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   1. Installed VCS correctly: pip install -e .[dev]&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   2. Restarted your notebook kernel&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   3. You&#39;re NOT in the root Video-Comprehension-Score/ directory (this causes import conflicts)&quot;</span><span class="p">)</span>
+
+<span class="c1"># Import required libraries</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
+
+<span class="c1"># Define lightweight segmenter function</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">simple_segmenter</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Simple sentence segmenter using period splitting.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        text: Input text to segment</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        List of text segments</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Split by periods and clean up</span>
+    <span class="n">segments</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">strip</span><span class="p">()]</span>
+    <span class="k">return</span> <span class="n">segments</span>
+
+<span class="c1"># Define lightweight embedding function using sentence-transformers</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">lightweight_embedding_function</span><span class="p">(</span><span class="n">texts</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Lightweight embedding function using sentence-transformers.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        texts: List of text segments to embed</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        PyTorch tensor of shape (len(texts), embedding_dim)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">sentence_transformers</span><span class="w"> </span><span class="kn">import</span> <span class="n">SentenceTransformer</span>
+
+        <span class="c1"># Use a lightweight model (only downloads ~80MB)</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">SentenceTransformer</span><span class="p">(</span><span class="s1">&#39;all-MiniLM-L6-v2&#39;</span><span class="p">)</span>
+
+        <span class="c1"># Generate embeddings</span>
+        <span class="n">embeddings</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">texts</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">embeddings</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;⚠️ sentence-transformers not found. Installing...&quot;</span><span class="p">)</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">subprocess</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+        <span class="n">subprocess</span><span class="o">.</span><span class="n">check_call</span><span class="p">([</span><span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">,</span> <span class="s2">&quot;-m&quot;</span><span class="p">,</span> <span class="s2">&quot;pip&quot;</span><span class="p">,</span> <span class="s2">&quot;install&quot;</span><span class="p">,</span> <span class="s2">&quot;sentence-transformers&quot;</span><span class="p">])</span>
+
+        <span class="c1"># Try again after installation</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">sentence_transformers</span><span class="w"> </span><span class="kn">import</span> <span class="n">SentenceTransformer</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">SentenceTransformer</span><span class="p">(</span><span class="s1">&#39;all-MiniLM-L6-v2&#39;</span><span class="p">)</span>
+        <span class="n">embeddings</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">texts</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">embeddings</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
 
 <span class="c1"># Example texts</span>
 <span class="n">reference_text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
@@ -329,91 +544,58 @@ pre-commit<span class="w"> </span>install
 <span class="s2">The fox needed to find food for its cubs.</span>
 <span class="s2">&quot;&quot;&quot;</span>
 
-<span class="c1"># Load a pre-trained sentence transformer model</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">sentence_transformers</span><span class="w"> </span><span class="kn">import</span> <span class="n">SentenceTransformer</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">SentenceTransformer</span><span class="p">(</span><span class="s1">&#39;all-MiniLM-L6-v2&#39;</span><span class="p">)</span>
+<span class="c1"># Compute VCS score</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🧠 Computing VCS score...&quot;</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">vcs</span><span class="o">.</span><span class="n">compute_vcs_score</span><span class="p">(</span>
+        <span class="n">reference_text</span><span class="o">=</span><span class="n">reference_text</span><span class="p">,</span>
+        <span class="n">generated_text</span><span class="o">=</span><span class="n">generated_text</span><span class="p">,</span>
+        <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">simple_segmenter</span><span class="p">,</span>
+        <span class="n">embedding_fn_local_sas</span><span class="o">=</span><span class="n">lightweight_embedding_function</span><span class="p">,</span>
+        <span class="n">embedding_fn_global_sas</span><span class="o">=</span><span class="n">lightweight_embedding_function</span><span class="p">,</span>
+        <span class="n">return_all_metrics</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">return_internals</span><span class="o">=</span><span class="kc">True</span>
+    <span class="p">)</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">sbert_embedding_function</span><span class="p">(</span><span class="n">texts</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Sentence-BERT embedding function.&quot;&quot;&quot;</span>
-    <span class="n">embeddings</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">texts</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">embeddings</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🎯 VCS Results:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;VCS Score: </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;VCS&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;SAS Score: </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;SAS&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;NAS Score: </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;NAS&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ VCS is working correctly!&quot;</span><span class="p">)</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">simple_segmenter</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Simple sentence segmenter.&quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">strip</span><span class="p">()]</span>
+    <span class="c1"># Generate visualization (optional)</span>
+    <span class="k">if</span> <span class="s1">&#39;internals&#39;</span> <span class="ow">in</span> <span class="n">result</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">fig</span> <span class="o">=</span> <span class="n">vcs</span><span class="o">.</span><span class="n">visualize_metrics_summary</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;internals&#39;</span><span class="p">])</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;📊 Visualization generated successfully!&quot;</span><span class="p">)</span>
+            <span class="c1"># fig.show()  # Uncomment to display</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">viz_error</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;⚠️ Visualization failed (this is normal in some environments): </span><span class="si">{</span><span class="n">viz_error</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
-<span class="c1"># Test with better embeddings</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🧠 Testing with Sentence-BERT embeddings...&quot;</span><span class="p">)</span>
-<span class="n">result_sbert</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
-    <span class="n">reference_text</span><span class="o">=</span><span class="n">reference_text</span><span class="p">,</span>
-    <span class="n">generated_text</span><span class="o">=</span><span class="n">generated_text</span><span class="p">,</span>
-    <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">simple_segmenter</span><span class="p">,</span>
-    <span class="n">embedding_fn_las</span><span class="o">=</span><span class="n">sbert_embedding_function</span><span class="p">,</span>
-    <span class="n">embedding_fn_gas</span><span class="o">=</span><span class="n">sbert_embedding_function</span><span class="p">,</span>
-    <span class="n">return_all_metrics</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-    <span class="n">return_internals</span><span class="o">=</span><span class="kc">True</span>
-<span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🎯 VCS Results with Sentence-BERT:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;VCS Score: </span><span class="si">{</span><span class="n">result_sbert</span><span class="p">[</span><span class="s1">&#39;VCS&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;GAS Score: </span><span class="si">{</span><span class="n">result_sbert</span><span class="p">[</span><span class="s1">&#39;GAS&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;LAS Score: </span><span class="si">{</span><span class="n">result_sbert</span><span class="p">[</span><span class="s1">&#39;LAS&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;NAS Score: </span><span class="si">{</span><span class="n">result_sbert</span><span class="p">[</span><span class="s1">&#39;NAS&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-
-
-<span class="k">if</span> <span class="s1">&#39;internals&#39;</span> <span class="ow">in</span> <span class="n">result_sbert</span><span class="p">:</span>
-    <span class="n">internals</span> <span class="o">=</span> <span class="n">result_sbert</span><span class="p">[</span><span class="s1">&#39;internals&#39;</span><span class="p">]</span>
-    <span class="n">visualize_metrics_summary</span><span class="p">(</span><span class="n">internals</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;❌ Error running VCS: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;💡 Make sure PyTorch is installed and try restarting your kernel&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>Scale Consideration</strong>: This example uses a small caption to illustrate the concept, but VCS is designed for analyzing really long captions and should be used for them. There is no size limit to caption length - any large generated caption length can be processed.</p>
 </div>
-</section>
-<section id="configuration-parameters">
-<h2>Configuration Parameters<a class="headerlink" href="#configuration-parameters" title="Link to this heading"></a></h2>
-<p>VCS Metrics provides several configuration parameters to control the granularity and strictness of the comparison:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">vcs</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
-    <span class="n">DEFAULT_CONTEXT_CUTOFF_VALUE</span><span class="p">,</span>    <span class="c1"># 0.6</span>
-    <span class="n">DEFAULT_CONTEXT_WINDOW_CONTROL</span><span class="p">,</span>  <span class="c1"># 4.0</span>
-    <span class="n">DEFAULT_LCT</span><span class="p">,</span>                     <span class="c1"># 0</span>
-    <span class="n">DEFAULT_CHUNK_SIZE</span><span class="p">,</span>              <span class="c1"># 1</span>
-<span class="p">)</span>
-
-<span class="n">result</span> <span class="o">=</span> <span class="n">compute_vcs_score</span><span class="p">(</span>
-    <span class="n">reference_text</span><span class="o">=</span><span class="n">ref_text</span><span class="p">,</span>
-    <span class="n">generated_text</span><span class="o">=</span><span class="n">gen_text</span><span class="p">,</span>
-    <span class="n">segmenter_fn</span><span class="o">=</span><span class="n">segmenter</span><span class="p">,</span>
-    <span class="n">embedding_fn_las</span><span class="o">=</span><span class="n">embedder</span><span class="p">,</span>
-    <span class="n">chunk_size</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>                    <span class="c1"># Group segments in pairs</span>
-    <span class="n">context_cutoff_value</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>        <span class="c1"># More restrictive matching</span>
-    <span class="n">context_window_control</span><span class="o">=</span><span class="mf">3.0</span><span class="p">,</span>      <span class="c1"># Larger context windows</span>
-    <span class="n">lct</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>                          <span class="c1"># Allow some narrative reordering</span>
-<span class="p">)</span>
-</pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Development Directory Import Issue</strong>: If you’re running code from the root <cite>Video-Comprehension-Score/</cite> directory after cloning, Python might try to import from the local <cite>vcs/</cite> folder instead of the installed package. The examples above include a fix for this. Alternatively, you can:</p>
+<ul class="simple">
+<li><p>Run your code from a different directory (e.g., create a <cite>test/</cite> folder)</p></li>
+<li><p>Use <cite>pip install video-comprehension-score</cite> instead of development installation</p></li>
+<li><p>Navigate to a subdirectory before running your code</p></li>
+</ul>
 </div>
 </section>
 <section id="next-steps">
 <h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading"></a></h2>
 <ul class="simple">
-<li><p>Read the <a class="reference internal" href="usage.html"><span class="doc">Usage Guide</span></a> guide for detailed examples</p></li>
 <li><p>Explore the <a class="reference internal" href="api.html"><span class="doc">API Reference</span></a> reference for all available functions</p></li>
-<li><p>Check out the visualization capabilities for analysis and reporting</p></li>
 </ul>
-</section>
-<section id="troubleshooting">
-<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading"></a></h2>
-<dl class="simple">
-<dt><strong>ImportError: No module named ‘torch’</strong></dt><dd><p>Install PyTorch separately from the official website: <a class="reference external" href="https://pytorch.org/get-started/locally/">https://pytorch.org/get-started/locally/</a></p>
-</dd>
-<dt><strong>SAT or nv-embed-v2 model not found</strong></dt><dd><p>Download and initialize the models first before creating your functions</p>
-</dd>
-<dt><strong>GPU memory issues</strong></dt><dd><p>Try smaller batch sizes or use CPU-compatible models for testing</p>
-</dd>
-<dt><strong>Poor VCS scores</strong></dt><dd><p>Experiment with different segmentation strategies and embedding models from MTEB leaderboard</p>
-</dd>
-</dl>
 </section>
 </section>
 

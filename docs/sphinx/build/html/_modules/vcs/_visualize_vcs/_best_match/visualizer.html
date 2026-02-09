@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>vcs._visualize_vcs._best_match.visualizer &mdash; VCS Metrics v1.0.2</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css?v=887dc02f" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css?v=46cc18d5" />
 
   
       <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
@@ -16,6 +17,9 @@
       <script src="../../../../_static/documentation_options.js?v=1ed6394b"></script>
       <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
       <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../_static/copybutton.js?v=30646c52"></script>
+      <script src="../../../../_static/external_links.js?v=0247d4bd"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" /> 
@@ -47,8 +51,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Additional Resources:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score">GitHub Repository</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/video-comprehension-score/">PyPI Package</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score">GitHub Repository</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues">Report Issues</a></li>
 </ul>
 
         </div>
@@ -61,7 +66,7 @@
       </nav>
 
       <div class="wy-nav-content">
-        <div class="rst-content">
+        <div class="rst-content style-external-links">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
@@ -87,6 +92,50 @@
 <div class="viewcode-block" id="visualize_best_match">
 <a class="viewcode-back" href="../../../../api.html#vcs.visualize_best_match">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">visualize_best_match</span><span class="p">(</span><span class="n">internals</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Create detailed visualizations of best match analysis for precision and recall.</span>
+<span class="sd">    </span>
+<span class="sd">    Generates three complementary visualizations showing how segments were matched</span>
+<span class="sd">    between reference and generated texts, including detailed match information</span>
+<span class="sd">    and summary statistics.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    internals : dict</span>
+<span class="sd">        The internals dictionary returned by ``compute_vcs_score`` with </span>
+<span class="sd">        ``return_internals=True``. Must contain alignment and best match data.</span>
+<span class="sd">    </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    dict</span>
+<span class="sd">        Dictionary containing three matplotlib figures:</span>
+<span class="sd">        </span>
+<span class="sd">        * ``&#39;precision_details&#39;`` : Figure showing precision matching details</span>
+<span class="sd">        * ``&#39;recall_details&#39;`` : Figure showing recall matching details  </span>
+<span class="sd">        * ``&#39;summary_table&#39;`` : Figure with summary statistics table</span>
+<span class="sd">    </span>
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    **Basic Usage:**</span>
+<span class="sd">    </span>
+<span class="sd">    .. code-block:: python</span>
+<span class="sd">    </span>
+<span class="sd">        result = compute_vcs_score(</span>
+<span class="sd">            reference_text=&quot;Your reference text&quot;,</span>
+<span class="sd">            generated_text=&quot;Your generated text&quot;,</span>
+<span class="sd">            segmenter_fn=your_segmenter,</span>
+<span class="sd">            embedding_fn_las=your_embedder,</span>
+<span class="sd">            return_internals=True</span>
+<span class="sd">        )</span>
+<span class="sd">        figures = visualize_best_match(result[&#39;internals&#39;])</span>
+<span class="sd">        figures[&#39;precision_details&#39;].show()</span>
+<span class="sd">        figures[&#39;recall_details&#39;].show()</span>
+<span class="sd">        figures[&#39;summary_table&#39;].show()</span>
+<span class="sd">    </span>
+<span class="sd">    See Also</span>
+<span class="sd">    --------</span>
+<span class="sd">    visualize_similarity_matrix : See similarity matrix used for matching</span>
+<span class="sd">    visualize_las : See LAS metrics computed from these matches</span>
+<span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="n">precision_fig</span> <span class="o">=</span> <span class="n">create_precision_details_figure</span><span class="p">(</span><span class="n">internals</span><span class="p">)</span>
     <span class="n">recall_fig</span> <span class="o">=</span> <span class="n">create_recall_details_figure</span><span class="p">(</span><span class="n">internals</span><span class="p">)</span>

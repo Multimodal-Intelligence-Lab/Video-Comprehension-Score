@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>vcs._visualize_vcs._similarity_matrix.visualizer &mdash; VCS Metrics v1.0.2</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css?v=887dc02f" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css?v=46cc18d5" />
 
   
       <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
@@ -16,6 +17,9 @@
       <script src="../../../../_static/documentation_options.js?v=1ed6394b"></script>
       <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
       <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../_static/copybutton.js?v=30646c52"></script>
+      <script src="../../../../_static/external_links.js?v=0247d4bd"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" /> 
@@ -47,8 +51,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Additional Resources:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score">GitHub Repository</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/video-comprehension-score/">PyPI Package</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score">GitHub Repository</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues">Report Issues</a></li>
 </ul>
 
         </div>
@@ -61,7 +66,7 @@
       </nav>
 
       <div class="wy-nav-content">
-        <div class="rst-content">
+        <div class="rst-content style-external-links">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
@@ -110,24 +115,19 @@
 <span class="sd">    </span>
 <span class="sd">    Examples</span>
 <span class="sd">    --------</span>
-<span class="sd">    &gt;&gt;&gt; result = compute_vcs_score(ref_text, gen_text, segmenter, embedder,</span>
-<span class="sd">    ...                           return_internals=True)</span>
-<span class="sd">    &gt;&gt;&gt; fig = visualize_similarity_matrix(result[&#39;internals&#39;])</span>
-<span class="sd">    &gt;&gt;&gt; fig.show()</span>
+<span class="sd">    **Basic Usage:**</span>
 <span class="sd">    </span>
-<span class="sd">    **Customize and Save:**</span>
+<span class="sd">    .. code-block:: python</span>
 <span class="sd">    </span>
-<span class="sd">    &gt;&gt;&gt; fig = visualize_similarity_matrix(result[&#39;internals&#39;])</span>
-<span class="sd">    &gt;&gt;&gt; fig.suptitle(&#39;Custom Title: Semantic Similarity Analysis&#39;)</span>
-<span class="sd">    &gt;&gt;&gt; fig.savefig(&#39;similarity_matrix.png&#39;, dpi=300, bbox_inches=&#39;tight&#39;)</span>
-<span class="sd">    </span>
-<span class="sd">    Notes</span>
-<span class="sd">    -----</span>
-<span class="sd">    * Color intensity represents similarity strength (darker = more similar)</span>
-<span class="sd">    * Red boxes highlight precision matches (generated → reference)</span>
-<span class="sd">    * Blue boxes highlight recall matches (reference → generated)  </span>
-<span class="sd">    * For very large matrices (&gt;100x100), matches may not be shown for clarity</span>
-<span class="sd">    * Values range from 0.0 (no similarity) to 1.0 (identical)</span>
+<span class="sd">        result = compute_vcs_score(</span>
+<span class="sd">            reference_text=&quot;Your reference text&quot;,</span>
+<span class="sd">            generated_text=&quot;Your generated text&quot;,</span>
+<span class="sd">            segmenter_fn=your_segmenter,</span>
+<span class="sd">            embedding_fn_las=your_embedder,</span>
+<span class="sd">            return_internals=True</span>
+<span class="sd">        )</span>
+<span class="sd">        fig = visualize_similarity_matrix(result[&#39;internals&#39;])</span>
+<span class="sd">        fig.show()</span>
 <span class="sd">    </span>
 <span class="sd">    See Also</span>
 <span class="sd">    --------</span>

@@ -5,10 +5,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>vcs._visualize_vcs._line_nas.visualizer &mdash; VCS Metrics v1.0.2</title>
+  <title>vcs._visualize_vcs._local_nas.visualizer &mdash; VCS Metrics v1.0.2</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css?v=887dc02f" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css?v=46cc18d5" />
 
   
       <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
@@ -16,6 +17,9 @@
       <script src="../../../../_static/documentation_options.js?v=1ed6394b"></script>
       <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
       <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../_static/copybutton.js?v=30646c52"></script>
+      <script src="../../../../_static/external_links.js?v=0247d4bd"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" /> 
@@ -47,8 +51,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Additional Resources:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score">GitHub Repository</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/video-comprehension-score/">PyPI Package</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score">GitHub Repository</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score/issues">Report Issues</a></li>
 </ul>
 
         </div>
@@ -61,12 +66,12 @@
       </nav>
 
       <div class="wy-nav-content">
-        <div class="rst-content">
+        <div class="rst-content style-external-links">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../../index.html">Module code</a></li>
-      <li class="breadcrumb-item active">vcs._visualize_vcs._line_nas.visualizer</li>
+      <li class="breadcrumb-item active">vcs._visualize_vcs._local_nas.visualizer</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -75,15 +80,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <h1>Source code for vcs._visualize_vcs._line_nas.visualizer</h1><div class="highlight"><pre>
+  <h1>Source code for vcs._visualize_vcs._local_nas.visualizer</h1><div class="highlight"><pre>
 <span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Any</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">._utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">setup_precision_plot</span><span class="p">,</span> <span class="n">draw_precision_content</span><span class="p">,</span> <span class="n">setup_recall_plot</span><span class="p">,</span> <span class="n">draw_recall_content</span>
 
-<div class="viewcode-block" id="visualize_line_nas">
-<a class="viewcode-back" href="../../../../api.html#vcs.visualize_line_nas">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">visualize_line_nas</span><span class="p">(</span><span class="n">internals</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Visualize Line-based Narrative Alignment Score (NAS-L) calculations.</span>
+<div class="viewcode-block" id="visualize_local_nas">
+<a class="viewcode-back" href="../../../../api.html#vcs.visualize_local_nas">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">visualize_local_nas</span><span class="p">(</span><span class="n">internals</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Visualize Local Narrative Alignment Score calculations.</span>
 <span class="sd">    </span>
 <span class="sd">    Shows the actual alignment paths compared to ideal narrative lines for both</span>
 <span class="sd">    precision and recall directions. Displays floor (shortest) and ceiling (longest)</span>
@@ -104,32 +109,26 @@
 <span class="sd">    </span>
 <span class="sd">    Examples</span>
 <span class="sd">    --------</span>
-<span class="sd">    &gt;&gt;&gt; result = compute_vcs_score(ref_text, gen_text, segmenter, embedder,</span>
-<span class="sd">    ...                           return_internals=True)</span>
-<span class="sd">    &gt;&gt;&gt; fig = visualize_line_nas(result[&#39;internals&#39;])</span>
-<span class="sd">    &gt;&gt;&gt; fig.show()</span>
+<span class="sd">    **Basic Usage:**</span>
 <span class="sd">    </span>
-<span class="sd">    **Path Interpretation:**</span>
+<span class="sd">    .. code-block:: python</span>
 <span class="sd">    </span>
-<span class="sd">    &gt;&gt;&gt; # Blue line with circles = actual alignment path</span>
-<span class="sd">    &gt;&gt;&gt; # Green dashed line with triangles = floor ideal (shortest possible path)</span>
-<span class="sd">    &gt;&gt;&gt; # Red dashed line with squares = ceiling ideal (longest possible path)</span>
-<span class="sd">    &gt;&gt;&gt; # NAS-L = 1.0 if actual path is between floor and ceiling</span>
-<span class="sd">    &gt;&gt;&gt; # NAS-L &lt; 1.0 if actual path is outside the ideal range</span>
-<span class="sd">    </span>
-<span class="sd">    Notes</span>
-<span class="sd">    -----</span>
-<span class="sd">    * NAS-L measures narrative flow continuity via path analysis</span>
-<span class="sd">    * Ideal paths represent optimal narrative alignment boundaries</span>
-<span class="sd">    * Actual path length is calculated using Euclidean distance between matches</span>
-<span class="sd">    * Paths outside the ideal band indicate narrative flow disruption</span>
-<span class="sd">    * Combines with NAS-D to form comprehensive narrative alignment assessment</span>
+<span class="sd">        result = compute_vcs_score(</span>
+<span class="sd">            reference_text=&quot;Your reference text&quot;,</span>
+<span class="sd">            generated_text=&quot;Your generated text&quot;,</span>
+<span class="sd">            segmenter_fn=your_segmenter,</span>
+<span class="sd">            embedding_fn_las=your_embedder,</span>
+<span class="sd">            return_internals=True,</span>
+<span class="sd">            return_all_metrics=True</span>
+<span class="sd">        )</span>
+<span class="sd">        fig = visualize_local_nas(result[&#39;internals&#39;])</span>
+<span class="sd">        fig.show()</span>
 <span class="sd">    </span>
 <span class="sd">    See Also</span>
 <span class="sd">    --------</span>
 <span class="sd">    visualize_distance_nas : Compare with distance-based narrative analysis</span>
-<span class="sd">    visualize_line_nas_precision_calculations : Detailed precision calculations</span>
-<span class="sd">    visualize_line_nas_recall_calculations : Detailed recall calculations</span>
+<span class="sd">    visualize_local_nas_precision_calculations : Detailed precision calculations</span>
+<span class="sd">    visualize_local_nas_recall_calculations : Detailed recall calculations</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">ref_len</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;texts&#39;</span><span class="p">][</span><span class="s1">&#39;reference_length&#39;</span><span class="p">]</span>
     <span class="n">gen_len</span> <span class="o">=</span> <span class="n">internals</span><span class="p">[</span><span class="s1">&#39;texts&#39;</span><span class="p">][</span><span class="s1">&#39;generated_length&#39;</span><span class="p">]</span>
