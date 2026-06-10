@@ -23,6 +23,8 @@ SWAP_KEY = {
     "NAS": "NAS",
     "Global NAS": "Global NAS",
     "Local NAS": "Local NAS",
+    "Precision Local_SAS": "Recall Local_SAS",
+    "Recall Local_SAS": "Precision Local_SAS",
     "Precision Global NAS": "Recall Global NAS",
     "Recall Global NAS": "Precision Global NAS",
     "Precision Local NAS": "Recall Local NAS",

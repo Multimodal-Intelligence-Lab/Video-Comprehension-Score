@@ -1,11 +1,9 @@
 """Return-shape contract of compute_vcs_score.
 
 Asserts the exact key sets for each return-flag combination, independent of
-the golden values. NOTE: 'Precision Local_SAS' / 'Recall Local_SAS' are
-documented in the scorer docstring but DROPPED by _compute_sas_metrics in
-v1 — the 11-key set below pins today's actual behavior; plan C4 adds the
-two missing keys intentionally (-> 13) and updates this test in the same
-commit.
+the golden values. As of v2.0.0, 'Precision Local_SAS' / 'Recall Local_SAS'
+are returned as the scorer docstring always promised (v1 computed but
+dropped them in _compute_sas_metrics).
 """
 import pytest
 
@@ -15,6 +13,8 @@ from vcs import compute_vcs_score
 METRIC_KEYS = {
     "VCS",
     "Global_SAS",
+    "Precision Local_SAS",
+    "Recall Local_SAS",
     "Local_SAS",
     "SAS",
     "Precision Global NAS",

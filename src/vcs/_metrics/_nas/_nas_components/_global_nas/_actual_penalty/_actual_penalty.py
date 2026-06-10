@@ -1,22 +1,5 @@
 import numpy as np
-import math
 from typing import List, Tuple, Dict, Any
-
-def calculate_rn_window(y_axis: int, x_axis: int) -> int:
-    alignment_window_height = math.ceil(y_axis / x_axis) if x_axis else 0
-
-    ratio = y_axis / x_axis if x_axis else 0
-    ratio_decimal_part = ratio - math.floor(ratio)
-
-    if y_axis <= x_axis:
-        rn_window = alignment_window_height
-    else:
-        if 0 < ratio_decimal_part <= 0.5:
-            rn_window = alignment_window_height - 1
-        else:
-            rn_window = alignment_window_height
-
-    return rn_window
 
 def calculate_actual_penalty(
     best_indices: np.ndarray,
@@ -27,15 +10,6 @@ def calculate_actual_penalty(
     ref_len: int = None,
     gen_len: int = None
 ) -> Tuple[np.ndarray, Dict[str, Any]]:
-
-    if direction == "precision":
-        y_axis = ref_len if ref_len is not None else length
-        x_axis = gen_len if gen_len is not None else len(best_indices)
-    else:
-        y_axis = gen_len if gen_len is not None else length
-        x_axis = ref_len if ref_len is not None else len(best_indices)
-    
-    rn_window = calculate_rn_window(y_axis, x_axis)
 
     valid_indices = best_indices >= 0
 
@@ -67,7 +41,6 @@ def calculate_actual_penalty(
                 in_rn_zone[i] = rn_in_zone
 
     internals = {
-        "alignment_window_height": rn_window,
         "penalties": penalties.tolist() if isinstance(penalties, np.ndarray) else penalties,
         "in_window": in_window.tolist() if isinstance(in_window, np.ndarray) else in_window,
         "in_rn_zone": in_rn_zone.tolist() if isinstance(in_rn_zone, np.ndarray) else in_rn_zone,

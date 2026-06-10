@@ -286,7 +286,7 @@ def compute_vcs_score(
 
     # Combine Global_SAS + Local_SAS → SAS
     sas_metrics, sas_internals = _compute_sas_metrics(
-        global_sas, local_sas_metrics
+        global_sas, local_sas_metrics, local_sas_internals
     )
 
     # ===== METHOD: NAS =====
@@ -361,7 +361,6 @@ def compute_vcs_score(
                 "global_nas": {
                     "precision": {
                         "value": nas_metrics["Precision Global NAS"],
-                        "alignment_window_height": nas_internals["precision_global_nas_internals"]["alignment_window_height"],
                         "max_penalty": nas_internals["precision_global_nas_internals"]["max_penalty"],
                         "total_penalty": nas_internals["precision_global_nas_internals"]["total_penalty"],
                         "penalties": nas_internals["precision_global_nas_internals"]["penalties"],
@@ -370,7 +369,6 @@ def compute_vcs_score(
                     },
                     "recall": {
                         "value": nas_metrics["Recall Global NAS"],
-                        "alignment_window_height": nas_internals["recall_global_nas_internals"]["alignment_window_height"],
                         "max_penalty": nas_internals["recall_global_nas_internals"]["max_penalty"],
                         "total_penalty": nas_internals["recall_global_nas_internals"]["total_penalty"],
                         "penalties": nas_internals["recall_global_nas_internals"]["penalties"],

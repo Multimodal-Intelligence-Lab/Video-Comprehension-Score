@@ -12,8 +12,10 @@
     "NAS": 0.923076923076923,
     "Precision Global NAS": 1.0,
     "Precision Local NAS": 1.0,
+    "Precision Local_SAS": 0.4524671540864706,
     "Recall Global NAS": 0.75,
     "Recall Local NAS": 1.0,
+    "Recall Local_SAS": 0.09038176347278969,
     "SAS": 0.0,
     "VCS": 0.0,
     "internals": {
@@ -277,7 +279,6 @@
       "global_nas": {
        "f1": 0.8571428571428571,
        "precision": {
-        "alignment_window_height": 2,
         "in_rn_zone": [
          false,
          false
@@ -295,7 +296,6 @@
         "value": 1.0
        },
        "recall": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -561,7 +561,62 @@
        "global_sas_internals": {
         "value": 0.4062678954103026
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 0.4524671540864706,
+         "adjusted_similarities": [
+          0.3217806203998387,
+          0.5831536877731025
+         ],
+         "load_sharing_details": [],
+         "original_las": 0.4524671540864706,
+         "original_similarities": [
+          0.3217806203998387,
+          0.5831536877731025
+         ]
+        },
+        "recall": {
+         "adjusted_las": 0.09038176347278969,
+         "adjusted_similarities": [
+          0.3217806203998387,
+          0.0,
+          0.0,
+          0.039746433491320066
+         ],
+         "load_sharing_details": [
+          {
+           "chunk_details": [
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.34836650714580886,
+             "reference_chunk_idx": 1
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.3707805517759864,
+             "reference_chunk_idx": 2
+            },
+            {
+             "adjusted_similarity": 0.039746433491320066,
+             "original_similarity": 0.5831536877731025,
+             "reference_chunk_idx": 3
+            }
+           ],
+           "generated_chunk_idx": 1,
+           "load_sharing_penalty": 0.5658997511017008,
+           "num_refs_shared": 3,
+           "semantic_coverage": 0.43410024889829923
+          }
+         ],
+         "original_las": 0.4060203417736841,
+         "original_similarities": [
+          0.3217806203998387,
+          0.34836650714580886,
+          0.3707805517759864,
+          0.5831536877731025
+         ]
+        }
+       },
        "value": 0.0
       },
       "vcs": {
@@ -617,8 +672,10 @@
     "NAS": 0.0,
     "Precision Global NAS": 0,
     "Precision Local NAS": 1.0,
+    "Precision Local_SAS": 0.4930904691043906,
     "Recall Global NAS": 0,
     "Recall Local NAS": 1.0,
+    "Recall Local_SAS": 0.0,
     "SAS": 0.0,
     "VCS": 0.0,
     "internals": {
@@ -812,7 +869,6 @@
       "global_nas": {
        "f1": 0.0,
        "precision": {
-        "alignment_window_height": 3,
         "in_rn_zone": [
          false
         ],
@@ -827,7 +883,6 @@
         "value": 0
        },
        "recall": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -1017,7 +1072,58 @@
        "global_sas_internals": {
         "value": 0.4062678954103026
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 0.4930904691043906,
+         "adjusted_similarities": [
+          0.4930904691043906
+         ],
+         "load_sharing_details": [],
+         "original_las": 0.4930904691043906,
+         "original_similarities": [
+          0.4930904691043906
+         ]
+        },
+        "recall": {
+         "adjusted_las": 0.0,
+         "adjusted_similarities": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "load_sharing_details": [
+          {
+           "chunk_details": [
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.4930904691043906,
+             "reference_chunk_idx": 0
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.18501855531964115,
+             "reference_chunk_idx": 1
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.4200464156406382,
+             "reference_chunk_idx": 2
+            }
+           ],
+           "generated_chunk_idx": 0,
+           "load_sharing_penalty": 0.63394818664511,
+           "num_refs_shared": 3,
+           "semantic_coverage": 0.36605181335489
+          }
+         ],
+         "original_las": 0.36605181335489,
+         "original_similarities": [
+          0.4930904691043906,
+          0.18501855531964115,
+          0.4200464156406382
+         ]
+        }
+       },
        "value": 0.0
       },
       "vcs": {
@@ -1067,8 +1173,10 @@
     "NAS": 1.0,
     "Precision Global NAS": 1.0,
     "Precision Local NAS": 1.0,
+    "Precision Local_SAS": 0.4047092226539212,
     "Recall Global NAS": 1.0,
     "Recall Local NAS": 1.0,
+    "Recall Local_SAS": 0.4047092226539212,
     "SAS": 0.0,
     "VCS": 0.0,
     "internals": {
@@ -1300,7 +1408,6 @@
       "global_nas": {
        "f1": 1.0,
        "precision": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false
@@ -1318,7 +1425,6 @@
         "value": 1.0
        },
        "recall": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false
@@ -1492,7 +1598,34 @@
        "global_sas_internals": {
         "value": 0.553185691343506
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 0.4047092226539212,
+         "adjusted_similarities": [
+          0.5000743328629693,
+          0.309344112444873
+         ],
+         "load_sharing_details": [],
+         "original_las": 0.4047092226539212,
+         "original_similarities": [
+          0.5000743328629693,
+          0.309344112444873
+         ]
+        },
+        "recall": {
+         "adjusted_las": 0.4047092226539212,
+         "adjusted_similarities": [
+          0.5000743328629693,
+          0.309344112444873
+         ],
+         "load_sharing_details": [],
+         "original_las": 0.4047092226539212,
+         "original_similarities": [
+          0.5000743328629693,
+          0.309344112444873
+         ]
+        }
+       },
        "value": 0.0
       },
       "vcs": {
@@ -1539,8 +1672,10 @@
     "NAS": 0.0,
     "Precision Global NAS": 0.8461538461538461,
     "Precision Local NAS": 0.0,
+    "Precision Local_SAS": 0.368169586374889,
     "Recall Global NAS": 0.6923076923076923,
     "Recall Local NAS": 0.6386979044864147,
+    "Recall Local_SAS": 0.08472646593305652,
     "SAS": 0.0,
     "VCS": 0.0,
     "internals": {
@@ -2012,7 +2147,6 @@
       "global_nas": {
        "f1": 0.7615384615384616,
        "precision": {
-        "alignment_window_height": 3,
         "in_rn_zone": [
          false,
          false,
@@ -2033,7 +2167,6 @@
         "value": 0.8461538461538461
        },
        "recall": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -2481,7 +2614,87 @@
        "global_sas_internals": {
         "value": 0.4062678954103026
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 0.368169586374889,
+         "adjusted_similarities": [
+          0.41180923783575,
+          0.26600248962870215,
+          0.42669703166021483
+         ],
+         "load_sharing_details": [],
+         "original_las": 0.368169586374889,
+         "original_similarities": [
+          0.41180923783575,
+          0.26600248962870215,
+          0.42669703166021483
+         ]
+        },
+        "recall": {
+         "adjusted_las": 0.08472646593305652,
+         "adjusted_similarities": [
+          0.26600248962870215,
+          0.41180923783575,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+         ],
+         "load_sharing_details": [
+          {
+           "chunk_details": [
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.4352456634956394,
+             "reference_chunk_idx": 2
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.1489677845447717,
+             "reference_chunk_idx": 3
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.26949286210118834,
+             "reference_chunk_idx": 4
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.31947317069844305,
+             "reference_chunk_idx": 5
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.3105121744991967,
+             "reference_chunk_idx": 6
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.42669703166021483,
+             "reference_chunk_idx": 7
+            }
+           ],
+           "generated_chunk_idx": 2,
+           "load_sharing_penalty": 0.6816018855000909,
+           "num_refs_shared": 6,
+           "semantic_coverage": 0.318398114499909
+          }
+         ],
+         "original_las": 0.3235250518079883,
+         "original_similarities": [
+          0.26600248962870215,
+          0.41180923783575,
+          0.4352456634956394,
+          0.1489677845447717,
+          0.26949286210118834,
+          0.31947317069844305,
+          0.3105121744991967,
+          0.42669703166021483
+         ]
+        }
+       },
        "value": 0.0
       },
       "vcs": {
@@ -2567,8 +2780,10 @@
     "NAS": 0.6382043073699568,
     "Precision Global NAS": 0.6153846153846154,
     "Precision Local NAS": 0.6125741132772069,
+    "Precision Local_SAS": 0.37101913032003053,
     "Recall Global NAS": 0.6923076923076923,
     "Recall Local NAS": 0.6386979044864147,
+    "Recall Local_SAS": 0.08472646593305652,
     "SAS": 0.0,
     "VCS": 0.0,
     "internals": {
@@ -3007,7 +3222,6 @@
       "global_nas": {
        "f1": 0.6515837104072398,
        "precision": {
-        "alignment_window_height": 3,
         "in_rn_zone": [
          false,
          false,
@@ -3028,7 +3242,6 @@
         "value": 0.6153846153846154
        },
        "recall": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -3476,7 +3689,87 @@
        "global_sas_internals": {
         "value": 0.4062678954103026
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 0.37101913032003053,
+         "adjusted_similarities": [
+          0.41180923783575,
+          0.26600248962870215,
+          0.4352456634956394
+         ],
+         "load_sharing_details": [],
+         "original_las": 0.37101913032003053,
+         "original_similarities": [
+          0.41180923783575,
+          0.26600248962870215,
+          0.4352456634956394
+         ]
+        },
+        "recall": {
+         "adjusted_las": 0.08472646593305652,
+         "adjusted_similarities": [
+          0.26600248962870215,
+          0.41180923783575,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+         ],
+         "load_sharing_details": [
+          {
+           "chunk_details": [
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.4352456634956394,
+             "reference_chunk_idx": 2
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.1489677845447717,
+             "reference_chunk_idx": 3
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.26949286210118834,
+             "reference_chunk_idx": 4
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.31947317069844305,
+             "reference_chunk_idx": 5
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.3105121744991967,
+             "reference_chunk_idx": 6
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.42669703166021483,
+             "reference_chunk_idx": 7
+            }
+           ],
+           "generated_chunk_idx": 2,
+           "load_sharing_penalty": 0.6816018855000909,
+           "num_refs_shared": 6,
+           "semantic_coverage": 0.318398114499909
+          }
+         ],
+         "original_las": 0.3235250518079883,
+         "original_similarities": [
+          0.26600248962870215,
+          0.41180923783575,
+          0.4352456634956394,
+          0.1489677845447717,
+          0.26949286210118834,
+          0.31947317069844305,
+          0.3105121744991967,
+          0.42669703166021483
+         ]
+        }
+       },
        "value": 0.0
       },
       "vcs": {
@@ -3559,8 +3852,10 @@
     "NAS": 0.0,
     "Precision Global NAS": 0.6,
     "Precision Local NAS": 0.3333333333333333,
+    "Precision Local_SAS": 0.14649283696262472,
     "Recall Global NAS": 0.5,
     "Recall Local NAS": 0.0,
+    "Recall Local_SAS": 0.14649283696262472,
     "SAS": 0.0,
     "VCS": 0.0,
     "internals": {
@@ -3894,7 +4189,6 @@
       "global_nas": {
        "f1": 0.5454545454545454,
        "precision": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -3918,7 +4212,6 @@
         "value": 0.6
        },
        "recall": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -4260,7 +4553,80 @@
        "global_sas_internals": {
         "value": 0.34663684587147336
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 0.14649283696262472,
+         "adjusted_similarities": [
+          0.0,
+          0.318511028635303,
+          0.2674603192151959,
+          0.0
+         ],
+         "load_sharing_details": [
+          {
+           "chunk_details": [
+            {
+             "adjusted_similarity": 0.0,
+             "generated_chunk_idx": 0,
+             "original_similarity": 0.24845199749997662
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "generated_chunk_idx": 3,
+             "original_similarity": 0.20225995873897262
+            }
+           ],
+           "load_sharing_penalty": 0.7746440218805254,
+           "num_gens_shared": 2,
+           "reference_chunk_idx": 3,
+           "semantic_coverage": 0.2253559781194746
+          }
+         ],
+         "original_las": 0.259170826022362,
+         "original_similarities": [
+          0.24845199749997662,
+          0.318511028635303,
+          0.2674603192151959,
+          0.20225995873897262
+         ]
+        },
+        "recall": {
+         "adjusted_las": 0.14649283696262472,
+         "adjusted_similarities": [
+          0.318511028635303,
+          0.0,
+          0.2674603192151959,
+          0.0
+         ],
+         "load_sharing_details": [
+          {
+           "chunk_details": [
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.1164050492949297,
+             "reference_chunk_idx": 1
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.24845199749997662,
+             "reference_chunk_idx": 3
+            }
+           ],
+           "generated_chunk_idx": 0,
+           "load_sharing_penalty": 0.8175714766025468,
+           "num_refs_shared": 2,
+           "semantic_coverage": 0.18242852339745316
+          }
+         ],
+         "original_las": 0.2377070986613513,
+         "original_similarities": [
+          0.318511028635303,
+          0.1164050492949297,
+          0.2674603192151959,
+          0.24845199749997662
+         ]
+        }
+       },
        "value": 0.0
       },
       "vcs": {
@@ -4324,8 +4690,10 @@
     "NAS": 0.0,
     "Precision Global NAS": 0.5,
     "Precision Local NAS": 0.0,
+    "Precision Local_SAS": 0.14649283696262472,
     "Recall Global NAS": 0.6,
     "Recall Local NAS": 0.3333333333333333,
+    "Recall Local_SAS": 0.14649283696262472,
     "SAS": 0.0,
     "VCS": 0.0,
     "internals": {
@@ -4659,7 +5027,6 @@
       "global_nas": {
        "f1": 0.5454545454545454,
        "precision": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -4683,7 +5050,6 @@
         "value": 0.5
        },
        "recall": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -5025,7 +5391,80 @@
        "global_sas_internals": {
         "value": 0.34663684587147336
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 0.14649283696262472,
+         "adjusted_similarities": [
+          0.318511028635303,
+          0.0,
+          0.2674603192151959,
+          0.0
+         ],
+         "load_sharing_details": [
+          {
+           "chunk_details": [
+            {
+             "adjusted_similarity": 0.0,
+             "generated_chunk_idx": 1,
+             "original_similarity": 0.1164050492949297
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "generated_chunk_idx": 3,
+             "original_similarity": 0.24845199749997662
+            }
+           ],
+           "load_sharing_penalty": 0.8175714766025468,
+           "num_gens_shared": 2,
+           "reference_chunk_idx": 0,
+           "semantic_coverage": 0.18242852339745316
+          }
+         ],
+         "original_las": 0.2377070986613513,
+         "original_similarities": [
+          0.318511028635303,
+          0.1164050492949297,
+          0.2674603192151959,
+          0.24845199749997662
+         ]
+        },
+        "recall": {
+         "adjusted_las": 0.14649283696262472,
+         "adjusted_similarities": [
+          0.0,
+          0.318511028635303,
+          0.2674603192151959,
+          0.0
+         ],
+         "load_sharing_details": [
+          {
+           "chunk_details": [
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.24845199749997662,
+             "reference_chunk_idx": 0
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.20225995873897262,
+             "reference_chunk_idx": 3
+            }
+           ],
+           "generated_chunk_idx": 3,
+           "load_sharing_penalty": 0.7746440218805254,
+           "num_refs_shared": 2,
+           "semantic_coverage": 0.2253559781194746
+          }
+         ],
+         "original_las": 0.259170826022362,
+         "original_similarities": [
+          0.24845199749997662,
+          0.318511028635303,
+          0.2674603192151959,
+          0.20225995873897262
+         ]
+        }
+       },
        "value": 0.0
       },
       "vcs": {
@@ -5089,8 +5528,10 @@
     "NAS": 0.6782439550608405,
     "Precision Global NAS": 0.9230769230769231,
     "Precision Local NAS": 1.0,
+    "Precision Local_SAS": 0.36219926963864174,
     "Recall Global NAS": 0.5384615384615385,
     "Recall Local NAS": 0.5109583235891317,
+    "Recall Local_SAS": 0.08685640942294037,
     "SAS": 0.0,
     "VCS": 0.0,
     "internals": {
@@ -5529,7 +5970,6 @@
       "global_nas": {
        "f1": 0.6801619433198381,
        "precision": {
-        "alignment_window_height": 3,
         "in_rn_zone": [
          false,
          false,
@@ -5550,7 +5990,6 @@
         "value": 0.9230769230769231
        },
        "recall": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -5998,7 +6437,87 @@
        "global_sas_internals": {
         "value": 0.4062678954103026
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 0.36219926963864174,
+         "adjusted_similarities": [
+          0.27944198281711613,
+          0.4154092925664068,
+          0.39174653353240213
+         ],
+         "load_sharing_details": [],
+         "original_las": 0.36219926963864174,
+         "original_similarities": [
+          0.27944198281711613,
+          0.4154092925664068,
+          0.39174653353240213
+         ]
+        },
+        "recall": {
+         "adjusted_las": 0.08685640942294037,
+         "adjusted_similarities": [
+          0.0,
+          0.0,
+          0.4154092925664068,
+          0.27944198281711613,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+         ],
+         "load_sharing_details": [
+          {
+           "chunk_details": [
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.20513217183267982,
+             "reference_chunk_idx": 0
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.19166144159279414,
+             "reference_chunk_idx": 1
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.28803379794855527,
+             "reference_chunk_idx": 4
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.13696631233231585,
+             "reference_chunk_idx": 5
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.39174653353240213,
+             "reference_chunk_idx": 6
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.2910711189559383,
+             "reference_chunk_idx": 7
+            }
+           ],
+           "generated_chunk_idx": 2,
+           "load_sharing_penalty": 0.7492314373008857,
+           "num_refs_shared": 6,
+           "semantic_coverage": 0.25076856269911424
+          }
+         ],
+         "original_las": 0.2749328314472761,
+         "original_similarities": [
+          0.20513217183267982,
+          0.19166144159279414,
+          0.4154092925664068,
+          0.27944198281711613,
+          0.28803379794855527,
+          0.13696631233231585,
+          0.39174653353240213,
+          0.2910711189559383
+         ]
+        }
+       },
        "value": 0.0
       },
       "vcs": {
@@ -6081,8 +6600,10 @@
     "NAS": 0.41248618943078025,
     "Precision Global NAS": 0.6,
     "Precision Local NAS": 0.4714045207910316,
+    "Precision Local_SAS": 0.7372446490225835,
     "Recall Global NAS": 0.6,
     "Recall Local NAS": 0.2357022603955158,
+    "Recall Local_SAS": 0.5416666666666665,
     "SAS": 0.7103949234933105,
     "VCS": 0.1729757756711332,
     "internals": {
@@ -6416,7 +6937,6 @@
       "global_nas": {
        "f1": 0.6,
        "precision": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -6440,7 +6960,6 @@
         "value": 0.6
        },
        "recall": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -6787,7 +7306,85 @@
        "global_sas_internals": {
         "value": 0.8191412704731835
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 0.7372446490225835,
+         "adjusted_similarities": [
+          0.9999999999999999,
+          0.41760448659585275,
+          0.5313741094944812,
+          0.9999999999999998
+         ],
+         "load_sharing_details": [
+          {
+           "chunk_details": [
+            {
+             "adjusted_similarity": 0.9999999999999999,
+             "generated_chunk_idx": 0,
+             "original_similarity": 0.9999999999999999
+            },
+            {
+             "adjusted_similarity": 0.41760448659585275,
+             "generated_chunk_idx": 1,
+             "original_similarity": 0.5687046880260319
+            },
+            {
+             "adjusted_similarity": 0.5313741094944812,
+             "generated_chunk_idx": 2,
+             "original_similarity": 0.6529572344002589
+            }
+           ],
+           "load_sharing_penalty": 0.2594460258579031,
+           "num_gens_shared": 3,
+           "reference_chunk_idx": 0,
+           "semantic_coverage": 0.7405539741420969
+          }
+         ],
+         "original_las": 0.8054154806065725,
+         "original_similarities": [
+          0.9999999999999999,
+          0.5687046880260319,
+          0.6529572344002589,
+          0.9999999999999998
+         ]
+        },
+        "recall": {
+         "adjusted_las": 0.5416666666666665,
+         "adjusted_similarities": [
+          0.9999999999999998,
+          0.0,
+          0.9999999999999998,
+          0.16666666666666663
+         ],
+         "load_sharing_details": [
+          {
+           "chunk_details": [
+            {
+             "adjusted_similarity": 0.9999999999999998,
+             "original_similarity": 0.9999999999999999,
+             "reference_chunk_idx": 0
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.3223719093409528,
+             "reference_chunk_idx": 1
+            }
+           ],
+           "generated_chunk_idx": 0,
+           "load_sharing_penalty": 0.33881404532952364,
+           "num_refs_shared": 2,
+           "semantic_coverage": 0.6611859546704764
+          }
+         ],
+         "original_las": 0.6222596440019047,
+         "original_similarities": [
+          0.9999999999999999,
+          0.3223719093409528,
+          0.9999999999999998,
+          0.16666666666666663
+         ]
+        }
+       },
        "value": 0.7103949234933105
       },
       "vcs": {
@@ -6851,8 +7448,10 @@
     "NAS": 1.0,
     "Precision Global NAS": 1.0,
     "Precision Local NAS": 1.0,
+    "Precision Local_SAS": 0.7132155264219757,
     "Recall Global NAS": 1.0,
     "Recall Local NAS": 1.0,
+    "Recall Local_SAS": 0.7132155264219757,
     "SAS": 0.3952636091397106,
     "VCS": 0.3952636091397106,
     "internals": {
@@ -7116,7 +7715,6 @@
       "global_nas": {
        "f1": 1.0,
        "precision": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -7137,7 +7735,6 @@
         "value": 1.0
        },
        "recall": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -7376,7 +7973,38 @@
        "global_sas_internals": {
         "value": 0.5686926166460531
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 0.7132155264219757,
+         "adjusted_similarities": [
+          0.6726727939963124,
+          0.46697378526961475,
+          1.0
+         ],
+         "load_sharing_details": [],
+         "original_las": 0.7132155264219757,
+         "original_similarities": [
+          0.6726727939963124,
+          0.46697378526961475,
+          1.0
+         ]
+        },
+        "recall": {
+         "adjusted_las": 0.7132155264219757,
+         "adjusted_similarities": [
+          0.6726727939963124,
+          0.46697378526961475,
+          1.0
+         ],
+         "load_sharing_details": [],
+         "original_las": 0.7132155264219757,
+         "original_similarities": [
+          0.6726727939963124,
+          0.46697378526961475,
+          1.0
+         ]
+        }
+       },
        "value": 0.3952636091397106
       },
       "vcs": {
@@ -7429,8 +8057,10 @@
     "NAS": 0.6444949819954763,
     "Precision Global NAS": 0.7,
     "Precision Local NAS": 0.7207592200561265,
+    "Precision Local_SAS": 0.9999999999999998,
     "Recall Global NAS": 0.55,
     "Recall Local NAS": 0.6360389693210724,
+    "Recall Local_SAS": 0.5192375170109276,
     "SAS": 0.8021347694026755,
     "VCS": 0.55680138604482,
     "internals": {
@@ -7904,7 +8534,6 @@
       "global_nas": {
        "f1": 0.616,
        "precision": {
-        "alignment_window_height": 2,
         "in_rn_zone": [
          false,
          false,
@@ -7928,7 +8557,6 @@
         "value": 0.7
        },
        "recall": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -8428,7 +9056,110 @@
        "global_sas_internals": {
         "value": 0.8647491917652395
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 0.9999999999999998,
+         "adjusted_similarities": [
+          0.9999999999999999,
+          1.0,
+          1.0000000000000002,
+          0.9999999999999992
+         ],
+         "load_sharing_details": [],
+         "original_las": 0.9999999999999998,
+         "original_similarities": [
+          0.9999999999999999,
+          1.0,
+          1.0000000000000002,
+          0.9999999999999992
+         ]
+        },
+        "recall": {
+         "adjusted_las": 0.5192375170109276,
+         "adjusted_similarities": [
+          0.9999999999999998,
+          1.0,
+          1.0000000000000002,
+          0.9999999999999989,
+          0.0,
+          0.0,
+          0.03132875918508826,
+          0.12257137690233288
+         ],
+         "load_sharing_details": [
+          {
+           "chunk_details": [
+            {
+             "adjusted_similarity": 0.9999999999999998,
+             "original_similarity": 0.9999999999999999,
+             "reference_chunk_idx": 0
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.2481291227729256,
+             "reference_chunk_idx": 4
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.27386127875258304,
+             "reference_chunk_idx": 5
+            }
+           ],
+           "generated_chunk_idx": 0,
+           "load_sharing_penalty": 0.49266986615816377,
+           "num_refs_shared": 3,
+           "semantic_coverage": 0.5073301338418362
+          },
+          {
+           "chunk_details": [
+            {
+             "adjusted_similarity": 1.0000000000000002,
+             "original_similarity": 1.0000000000000002,
+             "reference_chunk_idx": 2
+            },
+            {
+             "adjusted_similarity": 0.12257137690233288,
+             "original_similarity": 0.3901300514950184,
+             "reference_chunk_idx": 7
+            }
+           ],
+           "generated_chunk_idx": 2,
+           "load_sharing_penalty": 0.3049349742524907,
+           "num_refs_shared": 2,
+           "semantic_coverage": 0.6950650257475093
+          },
+          {
+           "chunk_details": [
+            {
+             "adjusted_similarity": 0.9999999999999989,
+             "original_similarity": 0.9999999999999992,
+             "reference_chunk_idx": 3
+            },
+            {
+             "adjusted_similarity": 0.03132875918508826,
+             "original_similarity": 0.34740416688982556,
+             "reference_chunk_idx": 6
+            }
+           ],
+           "generated_chunk_idx": 3,
+           "load_sharing_penalty": 0.32629791655508766,
+           "num_refs_shared": 2,
+           "semantic_coverage": 0.6737020834449123
+          }
+         ],
+         "original_las": 0.657440577488794,
+         "original_similarities": [
+          0.9999999999999999,
+          1.0,
+          1.0000000000000002,
+          0.9999999999999992,
+          0.2481291227729256,
+          0.27386127875258304,
+          0.34740416688982556,
+          0.3901300514950184
+         ]
+        }
+       },
        "value": 0.8021347694026755
       },
       "vcs": {
@@ -8520,8 +9251,10 @@
     "NAS": 1.0,
     "Precision Global NAS": 1.0,
     "Precision Local NAS": 1.0,
+    "Precision Local_SAS": 1.0,
     "Recall Global NAS": 1.0,
     "Recall Local NAS": 1.0,
+    "Recall Local_SAS": 1.0,
     "SAS": 1.0,
     "VCS": 1.0,
     "internals": {
@@ -8855,7 +9588,6 @@
       "global_nas": {
        "f1": 1.0,
        "precision": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -8879,7 +9611,6 @@
         "value": 1.0
        },
        "recall": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -9183,7 +9914,42 @@
        "global_sas_internals": {
         "value": 1.0
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 1.0,
+         "adjusted_similarities": [
+          0.9999999999999999,
+          1.0000000000000002,
+          0.9999999999999998,
+          0.9999999999999999
+         ],
+         "load_sharing_details": [],
+         "original_las": 1.0,
+         "original_similarities": [
+          0.9999999999999999,
+          1.0000000000000002,
+          0.9999999999999998,
+          0.9999999999999999
+         ]
+        },
+        "recall": {
+         "adjusted_las": 1.0,
+         "adjusted_similarities": [
+          0.9999999999999999,
+          1.0000000000000002,
+          0.9999999999999998,
+          0.9999999999999999
+         ],
+         "load_sharing_details": [],
+         "original_las": 1.0,
+         "original_similarities": [
+          0.9999999999999999,
+          1.0000000000000002,
+          0.9999999999999998,
+          0.9999999999999999
+         ]
+        }
+       },
        "value": 1.0
       },
       "vcs": {
@@ -9247,8 +10013,10 @@
     "NAS": 0.64,
     "Precision Global NAS": 0.7272727272727273,
     "Precision Local NAS": 0.5714285714285714,
+    "Precision Local_SAS": 0.9999999999999999,
     "Recall Global NAS": 0.7272727272727273,
     "Recall Local NAS": 0.5714285714285714,
+    "Recall Local_SAS": 1.0,
     "SAS": 0.9967977517851404,
     "VCS": 0.6388434872016064,
     "internals": {
@@ -9862,7 +10630,6 @@
       "global_nas": {
        "f1": 0.7272727272727273,
        "precision": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -9898,7 +10665,6 @@
         "value": 0.7272727272727273
        },
        "recall": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -10462,7 +11228,58 @@
        "global_sas_internals": {
         "value": 0.9967977517851404
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 0.9999999999999999,
+         "adjusted_similarities": [
+          0.9999999999999992,
+          0.9999999999999999,
+          1.0,
+          1.0000000000000002,
+          1.0000000000000002,
+          1.0,
+          0.9999999999999994,
+          1.0000000000000004
+         ],
+         "load_sharing_details": [],
+         "original_las": 0.9999999999999999,
+         "original_similarities": [
+          0.9999999999999992,
+          0.9999999999999999,
+          1.0,
+          1.0000000000000002,
+          1.0000000000000002,
+          1.0,
+          0.9999999999999994,
+          1.0000000000000004
+         ]
+        },
+        "recall": {
+         "adjusted_las": 1.0,
+         "adjusted_similarities": [
+          0.9999999999999999,
+          1.0,
+          1.0000000000000002,
+          0.9999999999999992,
+          1.0,
+          0.9999999999999994,
+          1.0000000000000004,
+          1.0000000000000002
+         ],
+         "load_sharing_details": [],
+         "original_las": 1.0,
+         "original_similarities": [
+          0.9999999999999999,
+          1.0,
+          1.0000000000000002,
+          0.9999999999999992,
+          1.0,
+          0.9999999999999994,
+          1.0000000000000004,
+          1.0000000000000002
+         ]
+        }
+       },
        "value": 0.9967977517851404
       },
       "vcs": {
@@ -10592,8 +11409,10 @@
     "NAS": 0.6877828054298644,
     "Precision Global NAS": 0.8636363636363636,
     "Precision Local NAS": 0.5714285714285714,
+    "Precision Local_SAS": 0.9999999999999999,
     "Recall Global NAS": 0.8636363636363636,
     "Recall Local NAS": 0.5714285714285714,
+    "Recall Local_SAS": 1.0,
     "SAS": 0.9967977517851404,
     "VCS": 0.6867797965926452,
     "internals": {
@@ -11207,7 +12026,6 @@
       "global_nas": {
        "f1": 0.8636363636363636,
        "precision": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          true,
@@ -11243,7 +12061,6 @@
         "value": 0.8636363636363636
        },
        "recall": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          true,
          true,
@@ -11807,7 +12624,58 @@
        "global_sas_internals": {
         "value": 0.9967977517851404
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 0.9999999999999999,
+         "adjusted_similarities": [
+          0.9999999999999992,
+          0.9999999999999999,
+          1.0,
+          1.0000000000000002,
+          1.0000000000000002,
+          1.0,
+          0.9999999999999994,
+          1.0000000000000004
+         ],
+         "load_sharing_details": [],
+         "original_las": 0.9999999999999999,
+         "original_similarities": [
+          0.9999999999999992,
+          0.9999999999999999,
+          1.0,
+          1.0000000000000002,
+          1.0000000000000002,
+          1.0,
+          0.9999999999999994,
+          1.0000000000000004
+         ]
+        },
+        "recall": {
+         "adjusted_las": 1.0,
+         "adjusted_similarities": [
+          0.9999999999999999,
+          1.0,
+          1.0000000000000002,
+          0.9999999999999992,
+          1.0,
+          0.9999999999999994,
+          1.0000000000000004,
+          1.0000000000000002
+         ],
+         "load_sharing_details": [],
+         "original_las": 1.0,
+         "original_similarities": [
+          0.9999999999999999,
+          1.0,
+          1.0000000000000002,
+          0.9999999999999992,
+          1.0,
+          0.9999999999999994,
+          1.0000000000000004,
+          1.0000000000000002
+         ]
+        }
+       },
        "value": 0.9967977517851404
       },
       "vcs": {
@@ -11937,8 +12805,10 @@
     "NAS": 0.8545424542765155,
     "Precision Global NAS": 0.6153846153846154,
     "Precision Local NAS": 1.0,
+    "Precision Local_SAS": 0.37101913032003053,
     "Recall Global NAS": 1.0,
     "Recall Local NAS": 0.9470885331404902,
+    "Recall Local_SAS": 0.08472646593305652,
     "SAS": 0.0,
     "VCS": 0.0,
     "internals": {
@@ -12377,7 +13247,6 @@
       "global_nas": {
        "f1": 0.761904761904762,
        "precision": {
-        "alignment_window_height": 3,
         "in_rn_zone": [
          false,
          false,
@@ -12398,7 +13267,6 @@
         "value": 0.6153846153846154
        },
        "recall": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          true,
          false,
@@ -12846,7 +13714,87 @@
        "global_sas_internals": {
         "value": 0.4062678954103026
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 0.37101913032003053,
+         "adjusted_similarities": [
+          0.41180923783575,
+          0.26600248962870215,
+          0.4352456634956394
+         ],
+         "load_sharing_details": [],
+         "original_las": 0.37101913032003053,
+         "original_similarities": [
+          0.41180923783575,
+          0.26600248962870215,
+          0.4352456634956394
+         ]
+        },
+        "recall": {
+         "adjusted_las": 0.08472646593305652,
+         "adjusted_similarities": [
+          0.26600248962870215,
+          0.41180923783575,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+         ],
+         "load_sharing_details": [
+          {
+           "chunk_details": [
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.4352456634956394,
+             "reference_chunk_idx": 2
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.1489677845447717,
+             "reference_chunk_idx": 3
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.26949286210118834,
+             "reference_chunk_idx": 4
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.31947317069844305,
+             "reference_chunk_idx": 5
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.3105121744991967,
+             "reference_chunk_idx": 6
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.42669703166021483,
+             "reference_chunk_idx": 7
+            }
+           ],
+           "generated_chunk_idx": 2,
+           "load_sharing_penalty": 0.6816018855000909,
+           "num_refs_shared": 6,
+           "semantic_coverage": 0.318398114499909
+          }
+         ],
+         "original_las": 0.3235250518079883,
+         "original_similarities": [
+          0.26600248962870215,
+          0.41180923783575,
+          0.4352456634956394,
+          0.1489677845447717,
+          0.26949286210118834,
+          0.31947317069844305,
+          0.3105121744991967,
+          0.42669703166021483
+         ]
+        }
+       },
        "value": 0.0
       },
       "vcs": {
@@ -12931,8 +13879,10 @@
     "NAS": 0.860377358490566,
     "Precision Global NAS": 0.8636363636363636,
     "Precision Local NAS": 0.8571428571428571,
+    "Precision Local_SAS": 0.9999999999999999,
     "Recall Global NAS": 0.8636363636363636,
     "Recall Local NAS": 0.8571428571428571,
+    "Recall Local_SAS": 1.0,
     "SAS": 0.9967977517851404,
     "VCS": 0.8599288157909794,
     "internals": {
@@ -13546,7 +14496,6 @@
       "global_nas": {
        "f1": 0.8636363636363636,
        "precision": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          true,
@@ -13582,7 +14531,6 @@
         "value": 0.8636363636363636
        },
        "recall": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          true,
          true,
@@ -14146,7 +15094,58 @@
        "global_sas_internals": {
         "value": 0.9967977517851404
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 0.9999999999999999,
+         "adjusted_similarities": [
+          0.9999999999999992,
+          0.9999999999999999,
+          1.0,
+          1.0000000000000002,
+          1.0000000000000002,
+          1.0,
+          0.9999999999999994,
+          1.0000000000000004
+         ],
+         "load_sharing_details": [],
+         "original_las": 0.9999999999999999,
+         "original_similarities": [
+          0.9999999999999992,
+          0.9999999999999999,
+          1.0,
+          1.0000000000000002,
+          1.0000000000000002,
+          1.0,
+          0.9999999999999994,
+          1.0000000000000004
+         ]
+        },
+        "recall": {
+         "adjusted_las": 1.0,
+         "adjusted_similarities": [
+          0.9999999999999999,
+          1.0,
+          1.0000000000000002,
+          0.9999999999999992,
+          1.0,
+          0.9999999999999994,
+          1.0000000000000004,
+          1.0000000000000002
+         ],
+         "load_sharing_details": [],
+         "original_las": 1.0,
+         "original_similarities": [
+          0.9999999999999999,
+          1.0,
+          1.0000000000000002,
+          0.9999999999999992,
+          1.0,
+          0.9999999999999994,
+          1.0000000000000004,
+          1.0000000000000002
+         ]
+        }
+       },
        "value": 0.9967977517851404
       },
       "vcs": {
@@ -14274,8 +15273,10 @@
     "NAS": 0.0,
     "Precision Global NAS": 0,
     "Precision Local NAS": 1.0,
+    "Precision Local_SAS": 1.0000000000000002,
     "Recall Global NAS": 0,
     "Recall Local NAS": 1.0,
+    "Recall Local_SAS": 1.0000000000000002,
     "SAS": 1.0,
     "VCS": 0.0,
     "internals": {
@@ -14399,7 +15400,6 @@
       "global_nas": {
        "f1": 0.0,
        "precision": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false
         ],
@@ -14414,7 +15414,6 @@
         "value": 0
        },
        "recall": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false
         ],
@@ -14501,7 +15500,30 @@
        "global_sas_internals": {
         "value": 1.0
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 1.0000000000000002,
+         "adjusted_similarities": [
+          1.0000000000000002
+         ],
+         "load_sharing_details": [],
+         "original_las": 1.0000000000000002,
+         "original_similarities": [
+          1.0000000000000002
+         ]
+        },
+        "recall": {
+         "adjusted_las": 1.0000000000000002,
+         "adjusted_similarities": [
+          1.0000000000000002
+         ],
+         "load_sharing_details": [],
+         "original_las": 1.0000000000000002,
+         "original_similarities": [
+          1.0000000000000002
+         ]
+        }
+       },
        "value": 1.0
       },
       "vcs": {
@@ -14538,8 +15560,10 @@
     "NAS": 0.47058823529411764,
     "Precision Global NAS": 0.8,
     "Precision Local NAS": 0.3333333333333333,
+    "Precision Local_SAS": 0.1903244641457611,
     "Recall Global NAS": 0.8,
     "Recall Local NAS": 0.3333333333333333,
+    "Recall Local_SAS": 0.1903244641457611,
     "SAS": 0.0,
     "VCS": 0.0,
     "internals": {
@@ -14873,7 +15897,6 @@
       "global_nas": {
        "f1": 0.8000000000000002,
        "precision": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -14897,7 +15920,6 @@
         "value": 0.8
        },
        "recall": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -15239,7 +16261,80 @@
        "global_sas_internals": {
         "value": 0.553185691343506
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 0.1903244641457611,
+         "adjusted_similarities": [
+          0.0,
+          0.42697393166517855,
+          0.0,
+          0.33432392491786583
+         ],
+         "load_sharing_details": [
+          {
+           "chunk_details": [
+            {
+             "adjusted_similarity": 0.0,
+             "generated_chunk_idx": 0,
+             "original_similarity": 0.46625240412015684
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "generated_chunk_idx": 2,
+             "original_similarity": 0.09028938981432692
+            }
+           ],
+           "load_sharing_penalty": 0.7217291030327582,
+           "num_gens_shared": 2,
+           "reference_chunk_idx": 0,
+           "semantic_coverage": 0.2782708969672419
+          }
+         ],
+         "original_las": 0.329459912629382,
+         "original_similarities": [
+          0.46625240412015684,
+          0.42697393166517855,
+          0.09028938981432692,
+          0.33432392491786583
+         ]
+        },
+        "recall": {
+         "adjusted_las": 0.1903244641457611,
+         "adjusted_similarities": [
+          0.0,
+          0.42697393166517855,
+          0.0,
+          0.33432392491786583
+         ],
+         "load_sharing_details": [
+          {
+           "chunk_details": [
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.46625240412015684,
+             "reference_chunk_idx": 0
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.1651445647689541,
+             "reference_chunk_idx": 2
+            }
+           ],
+           "generated_chunk_idx": 0,
+           "load_sharing_penalty": 0.6843015155554446,
+           "num_refs_shared": 2,
+           "semantic_coverage": 0.31569848444455545
+          }
+         ],
+         "original_las": 0.3481737063680388,
+         "original_similarities": [
+          0.46625240412015684,
+          0.42697393166517855,
+          0.1651445647689541,
+          0.33432392491786583
+         ]
+        }
+       },
        "value": 0.0
       },
       "vcs": {
@@ -15303,8 +16398,10 @@
     "NAS": 0.6382043073699568,
     "Precision Global NAS": 0.6923076923076923,
     "Precision Local NAS": 0.6386979044864147,
+    "Precision Local_SAS": 0.08472646593305652,
     "Recall Global NAS": 0.6153846153846154,
     "Recall Local NAS": 0.6125741132772069,
+    "Recall Local_SAS": 0.37101913032003053,
     "SAS": 0.0,
     "VCS": 0.0,
     "internals": {
@@ -15743,7 +16840,6 @@
       "global_nas": {
        "f1": 0.6515837104072398,
        "precision": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -15779,7 +16875,6 @@
         "value": 0.6923076923076923
        },
        "recall": {
-        "alignment_window_height": 3,
         "in_rn_zone": [
          false,
          false,
@@ -16212,7 +17307,87 @@
        "global_sas_internals": {
         "value": 0.4062678954103026
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 0.08472646593305652,
+         "adjusted_similarities": [
+          0.2660024896287021,
+          0.4118092378357501,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+         ],
+         "load_sharing_details": [
+          {
+           "chunk_details": [
+            {
+             "adjusted_similarity": 0.0,
+             "generated_chunk_idx": 2,
+             "original_similarity": 0.4352456634956395
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "generated_chunk_idx": 3,
+             "original_similarity": 0.14896778454477172
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "generated_chunk_idx": 4,
+             "original_similarity": 0.26949286210118834
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "generated_chunk_idx": 5,
+             "original_similarity": 0.31947317069844305
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "generated_chunk_idx": 6,
+             "original_similarity": 0.31051217449919666
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "generated_chunk_idx": 7,
+             "original_similarity": 0.4266970316602149
+            }
+           ],
+           "load_sharing_penalty": 0.6816018855000909,
+           "num_gens_shared": 6,
+           "reference_chunk_idx": 2,
+           "semantic_coverage": 0.318398114499909
+          }
+         ],
+         "original_las": 0.3235250518079883,
+         "original_similarities": [
+          0.2660024896287021,
+          0.4118092378357501,
+          0.4352456634956395,
+          0.14896778454477172,
+          0.26949286210118834,
+          0.31947317069844305,
+          0.31051217449919666,
+          0.4266970316602149
+         ]
+        },
+        "recall": {
+         "adjusted_las": 0.37101913032003053,
+         "adjusted_similarities": [
+          0.4118092378357501,
+          0.2660024896287021,
+          0.4352456634956395
+         ],
+         "load_sharing_details": [],
+         "original_las": 0.37101913032003053,
+         "original_similarities": [
+          0.4118092378357501,
+          0.2660024896287021,
+          0.4352456634956395
+         ]
+        }
+       },
        "value": 0.0
       },
       "vcs": {
@@ -16285,8 +17460,10 @@
     "NAS": 0.6382043073699568,
     "Precision Global NAS": 0.6153846153846154,
     "Precision Local NAS": 0.6125741132772069,
+    "Precision Local_SAS": 0.37101913032003053,
     "Recall Global NAS": 0.6923076923076923,
     "Recall Local NAS": 0.6386979044864147,
+    "Recall Local_SAS": 0.08472646593305652,
     "SAS": 0.0,
     "VCS": 0.0,
     "internals": {
@@ -16725,7 +17902,6 @@
       "global_nas": {
        "f1": 0.6515837104072398,
        "precision": {
-        "alignment_window_height": 3,
         "in_rn_zone": [
          false,
          false,
@@ -16746,7 +17922,6 @@
         "value": 0.6153846153846154
        },
        "recall": {
-        "alignment_window_height": 1,
         "in_rn_zone": [
          false,
          false,
@@ -17194,7 +18369,87 @@
        "global_sas_internals": {
         "value": 0.4062678954103026
        },
-       "local_sas_internals": {},
+       "local_sas_internals": {
+        "precision": {
+         "adjusted_las": 0.37101913032003053,
+         "adjusted_similarities": [
+          0.41180923783575,
+          0.26600248962870215,
+          0.4352456634956394
+         ],
+         "load_sharing_details": [],
+         "original_las": 0.37101913032003053,
+         "original_similarities": [
+          0.41180923783575,
+          0.26600248962870215,
+          0.4352456634956394
+         ]
+        },
+        "recall": {
+         "adjusted_las": 0.08472646593305652,
+         "adjusted_similarities": [
+          0.26600248962870215,
+          0.41180923783575,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+         ],
+         "load_sharing_details": [
+          {
+           "chunk_details": [
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.4352456634956394,
+             "reference_chunk_idx": 2
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.1489677845447717,
+             "reference_chunk_idx": 3
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.26949286210118834,
+             "reference_chunk_idx": 4
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.31947317069844305,
+             "reference_chunk_idx": 5
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.3105121744991967,
+             "reference_chunk_idx": 6
+            },
+            {
+             "adjusted_similarity": 0.0,
+             "original_similarity": 0.42669703166021483,
+             "reference_chunk_idx": 7
+            }
+           ],
+           "generated_chunk_idx": 2,
+           "load_sharing_penalty": 0.6816018855000909,
+           "num_refs_shared": 6,
+           "semantic_coverage": 0.318398114499909
+          }
+         ],
+         "original_las": 0.3235250518079883,
+         "original_similarities": [
+          0.26600248962870215,
+          0.41180923783575,
+          0.4352456634956394,
+          0.1489677845447717,
+          0.26949286210118834,
+          0.31947317069844305,
+          0.3105121744991967,
+          0.42669703166021483
+         ]
+        }
+       },
        "value": 0.0
       },
       "vcs": {
