@@ -4,6 +4,7 @@ import torch.nn.functional as F
 from typing import Any, Callable, Dict, List, Tuple
 
 from ._utils import _calculate_f1, _compute_sas
+from ._validation import _validate_embedding_output
 
 
 def _apply_scaling_function(similarity: float, semantic_coverage: float) -> float:
@@ -114,10 +115,10 @@ def _compute_global_sas_metrics(
     embedding_fn: Callable
 ) -> float:
 
-    emb_all = embedding_fn([reference_text, generated_text])
-    if len(emb_all) < 2:
-        return 0.0
-    
+    emb_all = _validate_embedding_output(
+        embedding_fn([reference_text, generated_text]), 2, "embedding_fn_global_sas"
+    )
+
     ref_vec = emb_all[0].unsqueeze(0)
     gen_vec = emb_all[1].unsqueeze(0)
     sim = F.cosine_similarity(ref_vec, gen_vec, dim=1)

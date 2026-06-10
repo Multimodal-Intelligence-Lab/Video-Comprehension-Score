@@ -9,7 +9,11 @@ from ._config import (
     DEFAULT_Rn,
     DEFAULT_CHUNK_SIZE,
 )
-from ._utils import _validate_seg_embed_functions
+from ._validation import (
+    _validate_parameters,
+    _validate_seg_embed_functions,
+    _validate_texts,
+)
 from ._segmenting import _segment_and_chunk_texts, _build_similarity_matrix
 from ._windows import _get_alignment_windows
 from ._matching import _calculate_alignment_based_matches
@@ -149,8 +153,20 @@ def compute_vcs_score(
     Raises
     ------
     ValueError
-        If ``embedding_fn_global_sas`` is None, or if ``segmenter_fn`` or an
-        embedding function is not callable.
+        If any input is invalid: missing/non-callable functions, empty or
+        non-str texts, out-of-range parameters (``chunk_size`` < 1,
+        ``context_cutoff_value`` outside [0, 1],
+        ``context_window_control`` <= 0, ``Rn`` < 0, bools where numbers are
+        expected), a segmenter that produces no chunks, or an embedding
+        function that returns anything other than a finite 2-D
+        ``torch.Tensor`` with one row per input text.
+
+    Warns
+    -----
+    UserWarning
+        If embedding rows are not L2-normalized. VCS uses raw dot products
+        as similarities, so un-normalized embeddings produce unbounded or
+        misleading scores.
     
     Examples
     --------
@@ -234,6 +250,8 @@ def compute_vcs_score(
         embedding_fn_local_sas = embedding_fn_global_sas
 
     _validate_seg_embed_functions(segmenter_fn, embedding_fn_global_sas, embedding_fn_local_sas)
+    _validate_texts(reference_text, generated_text)
+    _validate_parameters(chunk_size, context_cutoff_value, context_window_control, Rn)
 
     # ===== METHOD: EMBED =====
     # Global Embed (GE)
