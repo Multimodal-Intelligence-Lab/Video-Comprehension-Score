@@ -11,16 +11,15 @@ from ._config import (
 )
 from ._utils import _validate_seg_embed_functions
 from ._segmenting import _segment_and_chunk_texts, _build_similarity_matrix
-from ._alignment_windows import _get_alignment_windows
-from ._alignment_based_matching import _calculate_alignment_based_matches
-
-from ._metrics import (
+from ._windows import _get_alignment_windows
+from ._matching import _calculate_alignment_based_matches
+from ._sas import (
     _compute_global_sas_metrics,
     _compute_local_sas_metrics,
     _compute_sas_metrics,
-    _compute_nas_metrics,
-    _compute_vcs_metrics,
 )
+from ._nas import _compute_nas_metrics
+from ._vcs import _compute_vcs_metrics
 
 def compute_vcs_score(
     reference_text: str,

@@ -44,3 +44,17 @@ def test_no_visualization_stack_imported():
 def test_no_visualization_exports():
     assert not [name for name in vcs.__all__ if "visualize" in name or "pdf" in name]
     assert not hasattr(vcs, "visualize_metrics_summary")
+
+
+def test_every_module_imports():
+    """The v2 package is a single flat level: every vcs.* module must import
+    cleanly (catches broken relative imports after the flatten)."""
+    import importlib
+    import pkgutil
+
+    modules = [m.name for m in pkgutil.walk_packages(vcs.__path__, prefix="vcs.")]
+    assert modules, "expected at least the flat private modules"
+    for name in modules:
+        importlib.import_module(name)
+    # flat layout: nothing nested below vcs.<module>
+    assert not [m for m in modules if m.count(".") > 1]
