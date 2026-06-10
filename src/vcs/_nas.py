@@ -31,34 +31,28 @@ def _calculate_actual_penalty(
     collect_details: bool = True,
 ) -> Tuple[np.ndarray, Dict[str, Any]]:
 
+    # Vectorized form of v1's three per-element loops. Every operation is
+    # elementwise (comparisons, subtraction, one division), so results are
+    # IEEE-identical to the scalar loops - fuzz-verified against the frozen
+    # v1 implementation.
+    if len(alignment_windows) == 0:
+        starts = np.zeros(0, dtype=int)
+        ends = np.zeros(0, dtype=int)
+    else:
+        windows_arr = np.asarray(alignment_windows)
+        starts, ends = windows_arr[:, 0], windows_arr[:, 1]
+
     valid_indices = best_indices >= 0
+    in_window = valid_indices & (starts <= best_indices) & (best_indices < ends)
 
-    in_window = np.zeros_like(best_indices, dtype=bool)
-    for i, idx in enumerate(best_indices):
-        if idx >= 0:
-            start, end = alignment_windows[i]
-            in_window[i] = start <= idx < end
-
-    penalties = np.zeros(len(best_indices), dtype=float)
-    for i, (idx, is_valid, is_in_window) in enumerate(zip(best_indices, valid_indices, in_window)):
-        if not is_valid:
-            continue
-        if is_in_window:
-            continue
-
-        start, end = alignment_windows[i]
-        dist = start - idx if idx < start else idx - (end - 1)
-        dist = 0 if dist <= Rn else dist
-        penalties[i] = dist / float(length) if length else 0
+    raw_dist = np.where(best_indices < starts, starts - best_indices, best_indices - (ends - 1))
+    capped_dist = np.where(raw_dist <= Rn, 0, raw_dist)
+    penalized = valid_indices & ~in_window
+    penalties = np.where(penalized, capped_dist / float(length) if length else 0.0, 0.0)
 
     in_rn_zone = np.zeros_like(best_indices, dtype=bool)
-    for i, idx in enumerate(best_indices):
-        if idx >= 0:
-            start, end = alignment_windows[i]
-            original_in_window = start <= idx < end
-            if not original_in_window and Rn > 0:
-                rn_in_zone = (start - Rn <= idx < end + Rn)
-                in_rn_zone[i] = rn_in_zone
+    if Rn > 0:
+        in_rn_zone = penalized & (starts - Rn <= best_indices) & (best_indices < ends + Rn)
 
     internals = {
         "penalties": penalties.tolist() if isinstance(penalties, np.ndarray) else penalties,

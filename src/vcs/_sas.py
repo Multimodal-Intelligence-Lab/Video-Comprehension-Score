@@ -73,8 +73,15 @@ def _apply_semantic_load_penalty(
     adjusted_sim = sim_values.copy()
     load_sharing_details = []
 
-    # Group this side's chunks by the opposite-side chunk they chose
-    for group_idx in range(opposite_len):
+    # Group this side's chunks by the opposite-side chunk they chose.
+    # np.unique discovers the shared targets directly (ascending, matching
+    # v1's range() visit order) instead of probing every possible target;
+    # the per-group member selection and np.sum reduction are unchanged,
+    # so results stay bit-identical.
+    unique_targets, target_counts = np.unique(indices, return_counts=True)
+    for group_idx, target_count in zip(unique_targets, target_counts):
+        if group_idx < 0 or group_idx >= opposite_len or target_count < 2:
+            continue
         members_sharing_this_group = np.where(indices == group_idx)[0]
         num_sharing = len(members_sharing_this_group)
 
