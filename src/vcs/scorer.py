@@ -418,7 +418,8 @@ def _run_vcs_pipeline(
     precision_aligned_matches, precision_aligned_indices, precision_sim_values, precision_match_details = (
         _calculate_alignment_based_matches(
             sim_matrix, prec_align_windows, "precision",
-            context_cutoff_value, context_window_control
+            context_cutoff_value, context_window_control,
+            collect_details=return_internals,
         )
     )
 
@@ -426,7 +427,8 @@ def _run_vcs_pipeline(
     recall_aligned_matches, recall_aligned_indices, recall_sim_values, recall_match_details = (
         _calculate_alignment_based_matches(
             sim_matrix, rec_align_windows, "recall",
-            context_cutoff_value, context_window_control
+            context_cutoff_value, context_window_control,
+            collect_details=return_internals,
         )
     )
 
@@ -451,7 +453,8 @@ def _run_vcs_pipeline(
         recall_aligned_matches, recall_aligned_indices, recall_sim_values,
         prec_align_windows, rec_align_windows,
         ref_chunks, gen_chunks,
-        Rn=Rn
+        Rn=Rn,
+        collect_details=return_internals,
     )
 
     # ===== METHOD: VCS =====

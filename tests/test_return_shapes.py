@@ -112,3 +112,16 @@ def test_internals_dimensions_match_chunk_counts():
 def test_vcs_value_is_invariant_to_return_flags(flags):
     baseline = compute_vcs_score(**_kwargs())["VCS"]
     assert compute_vcs_score(**_kwargs(), **flags)["VCS"] == baseline
+
+
+@pytest.mark.parametrize("name", [
+    "typical_8v3_defaults", "duplication_load_sharing", "rn_2", "reordered_8v8",
+])
+def test_all_metrics_identical_with_and_without_internals(name):
+    """Detail collection is skipped entirely when internals are not
+    requested (v2 perf gating) - every score must be bit-identical either
+    way."""
+    kwargs = build_call_kwargs(next(c for c in CASES if c["name"] == name))
+    lean = compute_vcs_score(**kwargs, return_all_metrics=True)
+    full = compute_vcs_score(**kwargs, return_all_metrics=True, return_internals=True)
+    assert lean == {k: v for k, v in full.items() if k != "internals"}

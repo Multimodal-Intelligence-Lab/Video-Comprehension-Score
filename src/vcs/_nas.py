@@ -27,7 +27,8 @@ def _calculate_actual_penalty(
     direction: str,
     Rn: int = 0,
     ref_len: int = None,
-    gen_len: int = None
+    gen_len: int = None,
+    collect_details: bool = True,
 ) -> Tuple[np.ndarray, Dict[str, Any]]:
 
     valid_indices = best_indices >= 0
@@ -75,11 +76,13 @@ def _calculate_global_nas(
     direction: str,
     ref_len: int = None,
     gen_len: int = None,
-    Rn: int = 0
+    Rn: int = 0,
+    collect_details: bool = True,
 ) -> Tuple[float, Dict[str, Any]]:
 
     penalties, internals = _calculate_actual_penalty(
-        best_indices, alignment_windows, length, direction, Rn, ref_len, gen_len
+        best_indices, alignment_windows, length, direction, Rn, ref_len, gen_len,
+        collect_details,
     )
 
     max_total_penalty = _calculate_max_penalty(alignment_windows, length)
@@ -88,11 +91,12 @@ def _calculate_global_nas(
     
     global_nas = 1 - (total_penalty / max_total_penalty) if max_total_penalty else 0
 
-    internals.update({
-        "max_penalty": max_total_penalty,
-        "total_penalty": total_penalty,
-        "value": global_nas
-    })
+    if collect_details:
+        internals.update({
+            "max_penalty": max_total_penalty,
+            "total_penalty": total_penalty,
+            "value": global_nas
+        })
 
     return global_nas, internals
 
@@ -202,8 +206,8 @@ def _compute_actual_line_length(
     y_axis: int, 
     x_axis: int,
     Rn: int = 0,
-    floor_path_dy_map: Dict[int, int] = None
-
+    floor_path_dy_map: Dict[int, int] = None,
+    collect_details: bool = True,
 ) -> Tuple[float, List[Dict[str, Any]]]: 
     x_arr = np.array(x) if not isinstance(x, np.ndarray) else x
     y_arr = np.array(y) if not isinstance(y, np.ndarray) else y
@@ -267,6 +271,8 @@ def _compute_actual_line_length(
         # Length remains 0, segment not calculable
         
         # Store segment details for internals
+        if not collect_details:
+            continue
         segments.append({
             "start": (int(x_arr[i]), int(y_arr[i])),
             "end": (int(x_arr[i+1]), int(y_arr[i+1])),
@@ -289,7 +295,8 @@ def _calculate_local_nas(
     ref_len: int,
     gen_len: int,
     swap: bool = False,
-    Rn: int = 0
+    Rn: int = 0,
+    collect_details: bool = True,
 ) -> Tuple[float, Dict[str, Any]]:
     if not aligned:
         return 0.0, {"message": "No aligned segments"}
@@ -318,7 +325,7 @@ def _calculate_local_nas(
             dy = floor_path[i+1][1] - floor_path[i][1]
             floor_path_dy_map[x_pos] = dy
     
-    actual_line_length, segments = _compute_actual_line_length(sx, sy, source_len, target_len, Rn, floor_path_dy_map)
+    actual_line_length, segments = _compute_actual_line_length(sx, sy, source_len, target_len, Rn, floor_path_dy_map, collect_details)
     average_ideal_line_length = (floor_ideal_line_length + ceil_ideal_line_length) / 2
 
     if floor_ideal_line_length <= actual_line_length <= ceil_ideal_line_length:
@@ -327,6 +334,9 @@ def _calculate_local_nas(
         local_nas = actual_line_length / floor_ideal_line_length if floor_ideal_line_length else 0.0
     else:
         local_nas = ceil_ideal_line_length / actual_line_length if actual_line_length else 0.0
+
+    if not collect_details:
+        return local_nas, {}
 
     actual_path = [(int(x), int(y)) for x, y in zip(sx, sy)]
 
@@ -358,17 +368,18 @@ def _compute_nas_metrics(
     recall_alignment_windows: List[Tuple[int, int]],
     ref_chunks: List[str],
     gen_chunks: List[str],
-    Rn: int = 0
+    Rn: int = 0,
+    collect_details: bool = True,
 ) -> Tuple[Dict[str, float], Dict[str, Any]]:
 
     precision_global_nas, precision_global_nas_internals = _calculate_global_nas(
         precision_indices, precision_alignment_windows, ref_len, "precision",
-        ref_len=ref_len, gen_len=gen_len, Rn=Rn
+        ref_len=ref_len, gen_len=gen_len, Rn=Rn, collect_details=collect_details
     )
 
     recall_global_nas, recall_global_nas_internals = _calculate_global_nas(
         recall_indices, recall_alignment_windows, gen_len, "recall",
-        ref_len=ref_len, gen_len=gen_len, Rn=Rn
+        ref_len=ref_len, gen_len=gen_len, Rn=Rn, collect_details=collect_details
     )
 
     global_nas = _calculate_f1(precision_global_nas, recall_global_nas)
@@ -383,8 +394,8 @@ def _compute_nas_metrics(
         if g_idx >= 0 and r_idx >= 0 and g_idx < len(gen_chunks) and r_idx < len(ref_chunks):
             recall_aligned_segments.append((g_idx + 1, r_idx + 1, gen_chunks[g_idx], ref_chunks[r_idx]))
     
-    precision_local_nas, precision_local_nas_internals = _calculate_local_nas(precision_aligned_segments, precision_alignment_windows, ref_len, gen_len, Rn=Rn)
-    recall_local_nas, recall_local_nas_internals = _calculate_local_nas(recall_aligned_segments, recall_alignment_windows, ref_len, gen_len, swap=True, Rn=Rn)
+    precision_local_nas, precision_local_nas_internals = _calculate_local_nas(precision_aligned_segments, precision_alignment_windows, ref_len, gen_len, Rn=Rn, collect_details=collect_details)
+    recall_local_nas, recall_local_nas_internals = _calculate_local_nas(recall_aligned_segments, recall_alignment_windows, ref_len, gen_len, swap=True, Rn=Rn, collect_details=collect_details)
 
     local_nas = _calculate_f1(precision_local_nas, recall_local_nas)
 
