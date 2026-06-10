@@ -173,11 +173,16 @@ def test_normalized_embeddings_do_not_warn():
 # --- validation must not change valid-input behavior ----------------------------
 
 def test_valid_golden_case_unaffected():
+    # Golden comparisons must use the tolerant comparator: exact == against
+    # the committed file fails on hardware whose BLAS rounds float64 ops
+    # differently by ~1e-16 (this exact mistake broke CI once).
     import json
     from pathlib import Path
 
-    from helpers import canonicalize
+    from helpers import assert_structurally_equal, canonicalize
     golden = json.loads((Path(__file__).parent / "golden" / "golden_cases.json").read_text())
     case = next(c for c in CASES if c["name"] == "typical_8v3_defaults")
     out = compute_vcs_score(**build_call_kwargs(case), return_all_metrics=True, return_internals=True)
-    assert canonicalize(out) == golden["cases"]["typical_8v3_defaults"]["output"]
+    assert_structurally_equal(
+        canonicalize(out), golden["cases"]["typical_8v3_defaults"]["output"], atol=1e-12
+    )
