@@ -56,7 +56,11 @@ jobs:
           make html
           
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
+        with:
+          # Re-create the Pages site if GitHub unpublished it during a quiet
+          # period (observed 2026-06: "Get Pages site failed ... Not Found").
+          enablement: true
         
       - name: Prepare website files
         run: |
