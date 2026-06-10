@@ -34,116 +34,76 @@ def _apply_scaling_function(similarity: float, semantic_coverage: float) -> floa
         return (similarity - (1 - semantic_coverage)) / semantic_coverage
 
 
-def _apply_semantic_load_penalty_precision(
-    precision_sim_values: np.ndarray,
-    precision_indices: np.ndarray,
-    ref_len: int
+def _apply_semantic_load_penalty(
+    sim_values: np.ndarray,
+    indices: np.ndarray,
+    opposite_len: int,
+    direction: str,
 ) -> Tuple[np.ndarray, Dict[str, Any]]:
     """
-    Apply semantic load sharing penalty for precision direction.
-    
-    Groups generated chunks by their chosen reference chunk and calculates
-    semantic coverage based on demand vs supply ratio.
-    
+    Apply the semantic load sharing penalty for one matching direction.
+
+    Chunks are grouped by the opposite-side chunk they matched to; when two
+    or more chunks share one target, their semantic coverage (total supply /
+    total demand) scales every member through the affine scaling function.
+    The computation is direction-symmetric; only the internals key names
+    differ ("who shared whom"), so they are parameterized by direction:
+
+    - precision: generated chunks grouped by chosen reference chunk
+    - recall:    reference chunks grouped by chosen generated chunk
+
     Returns:
         Tuple containing adjusted similarities and internal calculation details
     """
-    if precision_sim_values.size == 0:
-        return precision_sim_values, {"load_sharing_details": []}
-    
-    adjusted_sim = precision_sim_values.copy()
+    if direction == "precision":
+        group_key, count_key, member_key = (
+            "reference_chunk_idx", "num_gens_shared", "generated_chunk_idx",
+        )
+    elif direction == "recall":
+        group_key, count_key, member_key = (
+            "generated_chunk_idx", "num_refs_shared", "reference_chunk_idx",
+        )
+    else:
+        raise ValueError(f"direction must be 'precision' or 'recall', got {direction!r}")
+
+    if sim_values.size == 0:
+        return sim_values, {"load_sharing_details": []}
+
+    adjusted_sim = sim_values.copy()
     load_sharing_details = []
-    
-    # Group generated chunks by their chosen reference chunk
-    for reference_chunk_idx in range(ref_len):
-        # Find all generated chunks that chose this reference chunk
-        generated_chunks_sharing_this_ref = np.where(precision_indices == reference_chunk_idx)[0]
-        num_gens_sharing_this_ref = len(generated_chunks_sharing_this_ref)
-        
-        if num_gens_sharing_this_ref >= 2:  # Only apply penalty when load sharing occurs
+
+    # Group this side's chunks by the opposite-side chunk they chose
+    for group_idx in range(opposite_len):
+        members_sharing_this_group = np.where(indices == group_idx)[0]
+        num_sharing = len(members_sharing_this_group)
+
+        if num_sharing >= 2:  # Only apply penalty when load sharing occurs
             # Calculate semantic coverage ratio: total_supply / total_demand
-            total_supply = np.sum(precision_sim_values[generated_chunks_sharing_this_ref])
-            total_demand = num_gens_sharing_this_ref  # Each generated chunk demands 1 unit
+            total_supply = np.sum(sim_values[members_sharing_this_group])
+            total_demand = num_sharing  # Each member chunk demands 1 unit
             semantic_coverage = total_supply / total_demand
             chunk_details = []
-            
-            # Apply scaling function to each generated chunk sharing this reference chunk
-            for generated_chunk_idx in generated_chunks_sharing_this_ref:
-                original_similarity = precision_sim_values[generated_chunk_idx]
+
+            # Apply scaling function to each member sharing this group
+            for member_idx in members_sharing_this_group:
+                original_similarity = sim_values[member_idx]
                 adjusted_similarity = _apply_scaling_function(original_similarity, semantic_coverage)
-                adjusted_sim[generated_chunk_idx] = adjusted_similarity
-                
+                adjusted_sim[member_idx] = adjusted_similarity
+
                 chunk_details.append({
-                    "generated_chunk_idx": int(generated_chunk_idx),
+                    member_key: int(member_idx),
                     "original_similarity": float(original_similarity),
                     "adjusted_similarity": float(adjusted_similarity)
                 })
-            
+
             load_sharing_details.append({
-                "reference_chunk_idx": int(reference_chunk_idx),
-                "num_gens_shared": int(num_gens_sharing_this_ref),
+                group_key: int(group_idx),
+                count_key: int(num_sharing),
                 "semantic_coverage": float(semantic_coverage),
                 "load_sharing_penalty": float(1 - semantic_coverage),
                 "chunk_details": chunk_details
             })
-    
-    internals = {"load_sharing_details": load_sharing_details}
-    return adjusted_sim, internals
 
-
-def _apply_semantic_load_penalty_recall(
-    recall_sim_values: np.ndarray,
-    recall_indices: np.ndarray,
-    gen_len: int
-) -> Tuple[np.ndarray, Dict[str, Any]]:
-    """
-    Apply semantic load sharing penalty for recall direction.
-    
-    Groups reference chunks by their chosen generated chunk and calculates
-    semantic coverage based on demand vs supply ratio.
-    
-    Returns:
-        Tuple containing adjusted similarities and internal calculation details
-    """
-    if recall_sim_values.size == 0:
-        return recall_sim_values, {"load_sharing_details": []}
-    
-    adjusted_sim = recall_sim_values.copy()
-    load_sharing_details = []
-    
-    # Group reference chunks by their chosen generated chunk
-    for generated_chunk_idx in range(gen_len):
-        # Find all reference chunks that chose this generated chunk
-        reference_chunks_sharing_this_gen = np.where(recall_indices == generated_chunk_idx)[0]
-        num_refs_sharing_this_gen = len(reference_chunks_sharing_this_gen)
-        
-        if num_refs_sharing_this_gen >= 2:  # Only apply penalty when load sharing occurs
-            # Calculate semantic coverage ratio: total_supply / total_demand
-            total_supply = np.sum(recall_sim_values[reference_chunks_sharing_this_gen])
-            total_demand = num_refs_sharing_this_gen  # Each reference chunk demands 1 unit
-            semantic_coverage = total_supply / total_demand
-            chunk_details = []
-            
-            # Apply scaling function to each reference chunk sharing this generated chunk
-            for reference_chunk_idx in reference_chunks_sharing_this_gen:
-                original_similarity = recall_sim_values[reference_chunk_idx]
-                adjusted_similarity = _apply_scaling_function(original_similarity, semantic_coverage)
-                adjusted_sim[reference_chunk_idx] = adjusted_similarity
-                
-                chunk_details.append({
-                    "reference_chunk_idx": int(reference_chunk_idx),
-                    "original_similarity": float(original_similarity),
-                    "adjusted_similarity": float(adjusted_similarity)
-                })
-            
-            load_sharing_details.append({
-                "generated_chunk_idx": int(generated_chunk_idx),
-                "num_refs_shared": int(num_refs_sharing_this_gen),
-                "semantic_coverage": float(semantic_coverage),
-                "load_sharing_penalty": float(1 - semantic_coverage),
-                "chunk_details": chunk_details
-            })
-    
     internals = {"load_sharing_details": load_sharing_details}
     return adjusted_sim, internals
 
@@ -195,11 +155,11 @@ def _compute_local_sas_metrics(
     """
     
     # Apply semantic load sharing penalty to both directions
-    adjusted_precision_sim, precision_internals = _apply_semantic_load_penalty_precision(
-        precision_sim_values, precision_indices, ref_len
+    adjusted_precision_sim, precision_internals = _apply_semantic_load_penalty(
+        precision_sim_values, precision_indices, ref_len, "precision"
     )
-    adjusted_recall_sim, recall_internals = _apply_semantic_load_penalty_recall(
-        recall_sim_values, recall_indices, gen_len
+    adjusted_recall_sim, recall_internals = _apply_semantic_load_penalty(
+        recall_sim_values, recall_indices, gen_len, "recall"
     )
     
     # Calculate final Local_SAS scores
