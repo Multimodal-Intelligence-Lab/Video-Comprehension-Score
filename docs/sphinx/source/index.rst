@@ -24,8 +24,8 @@ VCS is a Python library specifically designed to overcome these challenges by ev
 
 **Core Components of VCS:**
 
-- 🌍 **Global Alignment Score (GAS)**: Captures overall thematic alignment, tolerating stylistic variations without penalizing valid linguistic differences.
-- 🎯 **Local Alignment Score (LAS)**: Checks detailed semantic correspondence at a chunk-level, allowing minor descriptive variations while penalizing significant inaccuracies or omissions.
+- 🌍 **Global Semantic Alignment Score (Global SAS)**: Captures overall thematic alignment, tolerating stylistic variations without penalizing valid linguistic differences.
+- 🎯 **Local Semantic Alignment Score (Local SAS)**: Checks detailed semantic correspondence at a chunk-level, allowing minor descriptive variations while penalizing significant inaccuracies or omissions.
 - 📖 **Narrative Alignment Score (NAS)**: Evaluates chronological consistency, balancing the need for both strict event sequencing and permissible narrative flexibility.
 
 Initially developed for evaluating video comprehension by comparing generated and human-written video narratives, VCS is versatile enough for broader applications, including document-level narrative comparisons, analysis of extensive narrative content, and various other narrative similarity tasks.
@@ -35,7 +35,7 @@ To understand how VCS works in detail, please read our research paper or explore
 .. raw:: html
 
    <p>
-   <a href="https://arxiv.org/abs/placeholder-link" target="_blank">📄 Research Paper</a>
+   <a href="https://openprairie.sdstate.edu/etd2/1722/" target="_blank">📄 Research Paper</a>
    ·
    <a href="https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/" target="_blank">📓 Interactive Playground</a>
    </p>
@@ -44,9 +44,9 @@ To understand how VCS works in detail, please read our research paper or explore
    :target: https://pypi.org/project/video-comprehension-score/
    :alt: PyPI version
 
-.. image:: https://img.shields.io/badge/python-3.11+-blue.svg
+.. image:: https://img.shields.io/badge/python-3.10+-blue.svg
    :target: https://www.python.org/downloads/
-   :alt: Python 3.11+
+   :alt: Python 3.10+
 
 .. image:: https://img.shields.io/badge/License-MIT-yellow.svg
    :target: https://opensource.org/licenses/MIT
@@ -58,13 +58,10 @@ Key Features
 Explore the comprehensive capabilities that make VCS a powerful narrative evaluation toolkit:
 
 **🧮 Comprehensive Metric Suite**
-   Computes VCS along with detailed breakdowns: GAS (global thematic similarity), LAS with precision/recall components, and NAS with distance-based and line-based sub-metrics. Access all internal calculations including penalty systems, mapping windows, and alignment paths.
+   Computes VCS along with detailed breakdowns: Global SAS (global thematic similarity), Local SAS with precision/recall components, and NAS with global and local sub-metrics. Access all internal calculations including penalty systems, alignment windows, and alignment paths.
 
-**📊 Advanced Visualization Engine**
-   11 specialized visualization functions including similarity heatmaps, alignment analysis, best-match visualizations, narrative flow diagrams, and precision/recall breakdowns. Each metric component can be visualized with publication-quality plots.
-
-**📋 Professional PDF Reports**
-   Generate comprehensive multi-page PDF reports with all metrics, visualizations, and analysis details. Supports both complete reports and customizable selective reports. Professional formatting suitable for research publications.
+**🔍 Transparent Internals**
+   Every intermediate quantity — similarity matrices, alignment windows, match selections, penalty terms, and narrative paths — is returned via ``return_internals=True`` for downstream analysis or custom tooling.
 
 **⚙️ Flexible Configuration System**
    Fine-tune evaluation with configurable parameters: chunk sizes, similarity thresholds, context windows, and NAS Regularizer (Rn). Supports custom segmentation and embedding functions for domain-specific applications.

@@ -11,14 +11,14 @@
 <div align="center">
 
 [![PyPI version](https://img.shields.io/pypi/v/video-comprehension-score?color=teal&style=for-the-badge)](https://badge.fury.io/py/video-comprehension-score)
-[![Python 3.11+](https://img.shields.io/badge/python-3.11+-teal?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-teal?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-teal?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Documentation](https://img.shields.io/badge/docs-github.io-teal?style=for-the-badge&logo=gitbook&logoColor=white)](https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/)
 
 </div>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/placeholder-link">📄 Research Paper</a>
+  <a href="https://openprairie.sdstate.edu/etd2/1722/">📄 Research Paper</a>
   ·
   <a href="https://colab.research.google.com/drive/1l6GXWNBGFM1UwGohnIu1b071bn8ekJIf?usp=sharing">📓 Interactive Notebook</a>
 </p>
@@ -45,9 +45,9 @@ VCS is a Python library specifically designed to overcome these challenges by ev
 
 **Core Components of VCS:**
 
-- 🌍 **Global Alignment Score (GAS)**: Captures overall thematic alignment, tolerating stylistic variations without penalizing valid linguistic differences.
+- 🌍 **Global Semantic Alignment Score (Global SAS)**: Captures overall thematic alignment, tolerating stylistic variations without penalizing valid linguistic differences.
 
-- 🎯 **Local Alignment Score (LAS)**: Checks detailed semantic correspondence at a chunk-level, allowing minor descriptive variations while penalizing significant inaccuracies or omissions.
+- 🎯 **Local Semantic Alignment Score (Local SAS)**: Checks detailed semantic correspondence at a chunk-level, allowing minor descriptive variations while penalizing significant inaccuracies or omissions.
 
 - 📖 **Narrative Alignment Score (NAS)**: Evaluates chronological consistency, balancing the need for both strict event sequencing and permissible narrative flexibility.
 
@@ -109,31 +109,25 @@ Initially developed for evaluating video comprehension by comparing generated an
 
 ## 🌟 Key Features
 
-Explore the comprehensive capabilities that make VCS a powerful narrative evaluation toolkit. **To understand these features in detail, read our [research paper](https://arxiv.org/abs/placeholder-link), then visit our [interactive playground](https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/) to see them in action.**
+Explore the comprehensive capabilities that make VCS a powerful narrative evaluation toolkit. **To understand these features in detail, read our [research paper](https://openprairie.sdstate.edu/etd2/1722/), then visit our [interactive playground](https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/) to see them in action.**
 
 <table width="100%" align="center" style="border: none; border-collapse: collapse;">
   <tr style="background-color: transparent;">
     <td style="padding: 10px; border: none; vertical-align: top;">
       <details style="border: 1px solid #14b8a6; border-radius: 12px; padding: 20px; background: linear-gradient(145deg, #1f2937, #111827); color: #e5e7eb; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
         <summary style="cursor: pointer; font-weight: bold; font-size: 1.2em; color: #6ee7b7;">🧮 Comprehensive Metric Suite</summary>
-        <p style="padding-top: 10px;">Computes VCS along with detailed breakdowns: GAS (global thematic similarity), LAS with precision/recall components, and NAS with distance-based and line-based sub-metrics. Access all internal calculations including penalty systems, mapping windows, and alignment paths.</p>
+        <p style="padding-top: 10px;">Computes VCS along with detailed breakdowns: Global SAS (global thematic similarity), Local SAS with precision/recall components, and NAS with global and local sub-metrics. Access all internal calculations including penalty systems, alignment windows, and alignment paths.</p>
       </details>
     </td>
     <td style="padding: 10px; border: none; vertical-align: top;">
       <details style="border: 1px solid #14b8a6; border-radius: 12px; padding: 20px; background: linear-gradient(145deg, #1f2937, #111827); color: #e5e7eb; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-        <summary style="cursor: pointer; font-weight: bold; font-size: 1.2em; color: #6ee7b7;">📊 Advanced Visualization Engine</summary>
-        <p style="padding-top: 10px;">11 specialized visualization functions including similarity heatmaps, alignment analysis, best-match visualizations, narrative flow diagrams, and precision/recall breakdowns. Each metric component can be visualized with publication-quality plots.</p>
+        <summary style="cursor: pointer; font-weight: bold; font-size: 1.2em; color: #6ee7b7;">🔍 Transparent Internals</summary>
+        <p style="padding-top: 10px;">Every intermediate quantity — similarity matrices, alignment windows, match selections, penalty terms, and narrative paths — is returned via <code>return_internals=True</code> for downstream analysis or custom tooling.</p>
       </details>
     </td>
   </tr>
   <tr style="background-color: transparent;">
-    <td style="padding: 10px; border: none; vertical-align: top;">
-      <details style="border: 1px solid #14b8a6; border-radius: 12px; padding: 20px; background: linear-gradient(145deg, #1f2937, #111827); color: #e5e7eb; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-        <summary style="cursor: pointer; font-weight: bold; font-size: 1.2em; color: #6ee7b7;">📋 Professional PDF Reports</summary>
-        <p style="padding-top: 10px;">Generate comprehensive multi-page PDF reports with all metrics, visualizations, and analysis details. Supports both complete reports and customizable selective reports. Professional formatting suitable for research publications.</p>
-      </details>
-    </td>
-    <td style="padding: 10px; border: none; vertical-align: top;">
+    <td colspan="2" style="padding: 10px; border: none; vertical-align: top;">
       <details style="border: 1px solid #14b8a6; border-radius: 12px; padding: 20px; background: linear-gradient(145deg, #1f2937, #111827); color: #e5e7eb; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
         <summary style="cursor: pointer; font-weight: bold; font-size: 1.2em; color: #6ee7b7;">⚙️ Flexible Configuration System</summary>
         <p style="padding-top: 10px;">Fine-tune evaluation with configurable parameters: chunk sizes, similarity thresholds, context windows, and NAS Regularizer (Rn). Supports custom segmentation and embedding functions for domain-specific applications.</p>
@@ -244,9 +238,9 @@ Before installing VCS, make sure your system meets these requirements:
 
 <img src="https://img.shields.io/badge/Python-3.10+-306998?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
 
-**Required: Python 3.11 or higher**
+**Required: Python 3.10 or higher**
 
-VCS Metrics uses modern Python features and requires Python 3.11+ for optimal performance and compatibility.
+VCS Metrics uses modern Python features and requires Python 3.10+ for optimal performance and compatibility.
 
 </div>
 
@@ -257,11 +251,11 @@ VCS Metrics uses modern Python features and requires Python 3.11+ for optimal pe
 
 <div style="background: linear-gradient(145deg, #fed7d7, #fca5a5); padding: 20px; border-radius: 12px; border: 2px solid #dc2626;">
 
-<img src="https://img.shields.io/badge/PyTorch-1.9+-ee4c2c?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch"/>
+<img src="https://img.shields.io/badge/PyTorch-2.0+-ee4c2c?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch"/>
 
-**Required: PyTorch 1.9.0+**
+**Required: PyTorch 2.0+ (installed automatically)**
 
-VCS needs PyTorch but doesn't install it automatically to avoid conflicts. Get it from the [official PyTorch website](https://pytorch.org/get-started/locally/).
+As of VCS 2.0.0, PyTorch is a declared dependency. For a specific CUDA or CPU-only build, install PyTorch first from the [official PyTorch website](https://pytorch.org/get-started/locally/) — pip will keep your existing torch.
 
 **💡 Pro Tip:** In Google Colab, PyTorch is pre-installed!
 
@@ -276,7 +270,7 @@ VCS needs PyTorch but doesn't install it automatically to avoid conflicts. Get i
 <tr>
 <td align="center">
 
-**💡 Note:** VCS automatically installs dependencies: numpy≥1.20.0, matplotlib≥3.5.0, seaborn≥0.11.0
+**💡 Note:** VCS automatically installs dependencies: numpy≥1.20.0, torch≥2.0
 
 </td>
 </tr>
@@ -580,16 +574,7 @@ try:
     print(f"Local SAS Score: {result['Local_SAS']:.4f}")
     print(f"NAS Score: {result['NAS']:.4f}")
     print("✅ VCS is working correctly!")
-    
-    # Generate visualization (optional)
-    if 'internals' in result:
-        try:
-            fig = vcs.visualize_metrics_summary(result['internals'])
-            print("📊 Visualization generated successfully!")
-            # fig.show()  # Uncomment to display
-        except Exception as viz_error:
-            print(f"⚠️ Visualization failed (this is normal in some environments): {viz_error}")
-    
+
 except Exception as e:
     print(f"❌ Error running VCS: {e}")
     print("💡 Make sure PyTorch is installed and try restarting your kernel")
@@ -651,9 +636,9 @@ Once you're comfortable with the basics, you can fine-tune VCS behavior for your
 | `return_all_metrics` | False | Return detailed metric breakdown |
 
 **When set to `True`, you get:**
-- Individual GAS, LAS, NAS scores
-- LAS precision and recall components
-- Distance-based and line-based NAS sub-metrics
+- Individual Global SAS, Local SAS, NAS scores
+- Local SAS precision and recall components
+- Global and Local NAS sub-metrics
 - Complete metric breakdown for analysis
 
 </div>
@@ -673,9 +658,9 @@ Once you're comfortable with the basics, you can fine-tune VCS behavior for your
 
 **When set to `True`, you get:**
 - Similarity matrices and alignment paths
-- Mapping windows and penalty calculations
+- Alignment windows and penalty calculations
 - Text chunks and segmentation details
-- All data needed for visualization
+- Every intermediate quantity for downstream analysis
 
 </div>
 
@@ -704,7 +689,7 @@ result = compute_vcs_score(
     context_window_control=3.0,    # Tighter windows
     Rn=1,                         # Some reordering OK
     return_all_metrics=True,       # Get detailed breakdown
-    return_internals=True          # Get visualization data
+    return_internals=True          # Get internal computation data
 )
 ```
 
@@ -719,7 +704,7 @@ result = compute_vcs_score(
 <tr>
 <td align="center">
 
-**📚 For complete API documentation and visualization guides, visit our [API Documentation](https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/)**
+**📚 For complete API documentation, visit our [API Documentation](https://multimodal-intelligence-lab.github.io/Video-Comprehension-Score/)**
 
 </td>
 </tr>
@@ -761,7 +746,7 @@ result = compute_vcs_score(
 </details>
 
 <details>
-<summary><strong>🔗 Can I use different embedding functions for GAS and LAS?</strong></summary>
+<summary><strong>🔗 Can I use different embedding functions for Global SAS and Local SAS?</strong></summary>
 <p>Yes, you can specify different embedding functions for Global SAS and Local SAS using the <code>embedding_fn_global_sas</code> and <code>embedding_fn_local_sas</code> parameters respectively. This allows you to optimize each component with models best suited for their specific evaluation tasks.</p>
 </details>
 
@@ -770,47 +755,32 @@ result = compute_vcs_score(
 ## 🏗️ Project Structure
 
 ```
-vcs/
-├── 📁 src/vcs/                  # Main package source code
-│   ├── 📄 __init__.py           # Package initialization
+Video-Comprehension-Score/
+├── 📁 src/vcs/                  # Main package source code (flat layout)
+│   ├── 📄 __init__.py           # Public API (compute_vcs_score + constants)
 │   ├── 📄 scorer.py             # Main VCS API entry point
-│   ├── 📄 _config.py            # Configuration settings
-│   ├── 📁 _metrics/             # Core VCS metrics implementations
-│   │   ├── 📁 _gas/             # Global Alignment Score
-│   │   ├── 📁 _las/             # Local Alignment Score  
-│   │   ├── 📁 _nas/             # Narrative Alignment Score with components
-│   │   │   └── 📁 _nas_components/  # Distance NAS, Line NAS, Regularize NAS
-│   │   └── 📁 _vcs/             # Combined VCS computation
-│   ├── 📁 _visualize_vcs/       # Comprehensive visualization suite
-│   │   ├── 📁 _similarity_matrix/  # Similarity matrix visualizations
-│   │   ├── 📁 _best_match/      # Best match analysis plots
-│   │   ├── 📁 _distance_nas/    # Distance-based NAS visualizations
-│   │   ├── 📁 _line_nas/        # Line-based NAS visualizations
-│   │   ├── 📁 _mapping_windows/ # Context window visualizations
-│   │   ├── 📁 _metrics_summary/ # Overall metrics summary plots
-│   │   ├── 📁 _pdf_report/      # PDF report generation
-│   │   ├── 📁 _text_chunks/     # Text chunk visualizations
-│   │   ├── 📁 _window_regularizer/ # Window regularizer plots
-│   │   ├── 📁 _las/             # LAS-specific visualizations
-│   │   └── 📁 _config/          # Visualization configuration
-│   ├── 📁 _segmenting/          # Text segmentation utilities
-│   ├── 📁 _matching/            # Optimal text matching algorithms
-│   ├── 📁 _mapping_windows/     # Context window management
-│   └── 📁 _utils/               # Helper utilities
+│   ├── 📄 _config.py            # Default configuration constants
+│   ├── 📄 _utils.py             # Shared combiners (F1, SAS/VCS scaling)
+│   ├── 📄 _segmenting.py        # Segmenting, chunking, similarity matrix
+│   ├── 📄 _windows.py           # Alignment window construction
+│   ├── 📄 _matching.py          # Alignment-based best-match selection
+│   ├── 📄 _sas.py               # Global/Local SAS + load-sharing penalty
+│   ├── 📄 _nas.py               # Global/Local NAS + penalties + line band
+│   └── 📄 _vcs.py               # Final VCS combination
+├── 📁 tests/                    # Offline characterization + property tests
+│   ├── 📄 embedder.py           # Deterministic hashed-trigram embedder
+│   ├── 📁 golden/               # Pinned golden outputs + generator
+│   └── 📄 test_*.py             # Test modules
 ├── 📁 docs/                     # Documentation and interactive demos
 │   ├── 📄 index.html            # Main documentation website
-│   ├── 📁 pages/                # Documentation pages
-│   │   ├── 📄 api.html          # API reference
-│   │   ├── 📄 playground.html   # Interactive playground
-│   │   └── 📄 example.html      # Usage examples
+│   ├── 📁 pages/                # Documentation pages (api, playground, example)
 │   ├── 📁 widgets/              # Interactive visualization widgets
 │   ├── 📁 sphinx/               # Sphinx documentation source
 │   └── 📁 assets/               # Documentation assets (CSS, JS, videos)
 ├── 📁 .github/                  # GitHub configuration
 │   ├── 📁 assets/               # README assets (images, gifs)
-│   ├── 📁 scripts/              # GitHub automation scripts
 │   └── 📁 workflows/            # CI/CD automation pipelines
-│       ├── 📄 test.yml          # Continuous testing
+│       ├── 📄 test.yml          # Tests, lint, build on every push/PR
 │       ├── 📄 publish.yml       # Package publishing
 │       └── 📄 deploy-docs.yml   # Documentation deployment
 ├── 📄 pyproject.toml           # Package configuration & dependencies
@@ -818,7 +788,6 @@ vcs/
 ├── 📄 DEPLOYMENT.md            # Release and deployment guide
 ├── 📄 CHANGELOG.md             # Version history and changes
 ├── 📄 MANIFEST.in              # Package manifest
-├── 📄 tag_version.py           # Version tagging script
 ├── 📄 LICENSE                  # MIT license
 └── 📄 README.md                # This documentation
 ```
@@ -924,7 +893,7 @@ We use manual version management with clear release workflows:
 | **Version Type** | **When to Use** | **Example** |
 |:---|:---:|:---|
 | Patch (1.0.4 → 1.0.5) | Bug fixes, docs | Fix calculation error |
-| Minor (1.0.4 → 1.1.0) | New features | Add visualization |
+| Minor (1.0.4 → 1.1.0) | New features | Add a new entry point |
 | Major (1.0.4 → 2.0.0) | Breaking changes | Redesign API |
 
 </td>
@@ -943,7 +912,7 @@ Our comprehensive CI/CD pipeline ensures code quality and reliability on every c
 
 ### 🚀 **What Gets Tested**
 
-**✅ Matrix Testing** - Python 3.11+ compatibility  
+**✅ Matrix Testing** - Python 3.10–3.13 compatibility  
 **✅ Package Validation** - Import testing & API availability  
 **✅ Integration Testing** - Full getting-started example  
 **✅ Code Quality** - Flake8 linting & complexity checks  

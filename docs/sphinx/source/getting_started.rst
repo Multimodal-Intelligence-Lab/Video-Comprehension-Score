@@ -63,22 +63,22 @@ For development or to get the latest features:
 PyTorch Installation
 ~~~~~~~~~~~~~~~~~~~~
 
-VCS Metrics requires PyTorch >= 1.9.0 but doesn't install it automatically to avoid conflicts with existing installations.
+As of VCS 2.0.0, PyTorch is a declared dependency and installs automatically
+with ``pip install video-comprehension-score``.
 
 .. note::
-   **PyTorch Requirements**: VCS Metrics requires PyTorch version 1.9.0 or higher. Please visit the `official PyTorch website <https://pytorch.org/get-started/locally/>`_ to download the appropriate version for your system configuration (CPU/GPU, operating system, etc.). In Google Colab, PyTorch is pre-installed, so no additional installation is needed.
+   **GPU builds**: ``pip`` resolves a default PyTorch build. If you want a
+   specific CUDA (or CPU-only) build, install PyTorch first following the
+   `official PyTorch instructions <https://pytorch.org/get-started/locally/>`_,
+   then install VCS — pip will keep your existing torch. In Google Colab,
+   PyTorch is pre-installed, so no extra step is needed.
 
 Requirements
 ------------
 
-- **Python 3.11+**
+- **Python 3.10+**
 - numpy >= 1.20.0
-- matplotlib >= 3.5.0
-- seaborn >= 0.11.0
-- PyTorch >= 1.9.0 (install separately)
-
-.. note::
-   **Python Version Compatibility**: While VCS Metrics supports Python 3.8+, we recommend using Python 3.11 or higher for optimal performance and compatibility with the latest dependencies.
+- torch >= 2.0 (installed automatically as of 2.0.0)
 
 Core Function Requirements
 --------------------------
@@ -304,8 +304,8 @@ These parameters control what information VCS returns to you:
    
    **Returns when True:**
    - Individual Global_SAS, Local_SAS, SAS, NAS scores
-   - LAS precision and recall components
-   - Distance-based and line-based NAS sub-metrics
+   - Local SAS precision and recall components
+   - Global and Local NAS sub-metrics with precision/recall breakdowns
    - Complete metric breakdown for detailed analysis
 
 **return_internals** (default: False)
@@ -313,9 +313,9 @@ These parameters control what information VCS returns to you:
    
    **Returns when True:**
    - Similarity matrices and alignment paths
-   - Mapping windows and penalty calculations
+   - Alignment windows and penalty calculations
    - Text chunks and segmentation details
-   - All data needed for VCS visualization functions
+   - Every intermediate quantity, for downstream analysis or custom tooling
 
 Configuration Example
 ~~~~~~~~~~~~~~~~~~~~~
@@ -485,16 +485,7 @@ Here's a complete working example using lightweight models:
        print(f"SAS Score: {result['SAS']:.4f}")
        print(f"NAS Score: {result['NAS']:.4f}")
        print("✅ VCS is working correctly!")
-       
-       # Generate visualization (optional)
-       if 'internals' in result:
-           try:
-               fig = vcs.visualize_metrics_summary(result['internals'])
-               print("📊 Visualization generated successfully!")
-               # fig.show()  # Uncomment to display
-           except Exception as viz_error:
-               print(f"⚠️ Visualization failed (this is normal in some environments): {viz_error}")
-       
+
    except Exception as e:
        print(f"❌ Error running VCS: {e}")
        print("💡 Make sure PyTorch is installed and try restarting your kernel")
