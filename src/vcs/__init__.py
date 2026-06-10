@@ -1,18 +1,14 @@
 
 # Import version from package metadata
 try:
-    from importlib.metadata import version
+    from importlib.metadata import PackageNotFoundError, version
     __version__ = version("video-comprehension-score")
-except ImportError:
-    # Fallback for Python < 3.8
-    from importlib_metadata import version
-    __version__ = version("video-comprehension-score")
-except Exception:
-    # Final fallback
-    __version__ = "1.0.0"
+except PackageNotFoundError:
+    # Running from a source tree without an installed distribution
+    __version__ = "0.0.0+unknown"
 
 __author__ = "Harsh Dubey"
-__email__ = "chulwoo.pack@sdstate.edu"
+__email__ = "had7143@gmail.com"
 
 # Main scoring function
 from .scorer import compute_vcs_score

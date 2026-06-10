@@ -1,13 +1,12 @@
-import math
 import numpy as np
 from typing import List, Tuple, Optional, Dict, Any
 
 def _find_best_match_with_context(
     similarity_array: np.ndarray,
-    alignment_windows: Optional[Tuple[int, int]] = None,
-    context_cutoff_value: float = 0.6,
-    context_window_ctrl: float = 5.0
-) -> Tuple[int, Dict[str, Any]]:  # Return type changed to include details
+    alignment_windows: Optional[Tuple[int, int]],
+    context_cutoff_value: float,
+    context_window_ctrl: float
+) -> Tuple[int, Dict[str, Any]]:
 
     if similarity_array.size == 0:
         return -1, {}
@@ -175,8 +174,11 @@ def _calculate_alignment_based_matches(
                 best_indices[r_idx] = g_idx
                 sim_values[r_idx] = sim_matrix[r_idx, g_idx]
         
-        matches = [(best_indices[r_idx], r_idx) 
-                  for r_idx in range(ref_len) 
+        matches = [(best_indices[r_idx], r_idx)
+                  for r_idx in range(ref_len)
                   if best_indices[r_idx] >= 0]
-    
+
+    else:
+        raise ValueError(f"direction must be 'precision' or 'recall', got {direction!r}")
+
     return matches, best_indices, sim_values, match_details

@@ -57,6 +57,14 @@ def _compute_actual_line_length(
             floor_dy = None
             if floor_path_dy_map and x_arr[i] in floor_path_dy_map:
                 floor_dy = abs(floor_path_dy_map[x_arr[i]])
+            if floor_dy is None:
+                raise RuntimeError(
+                    f"Rn-capped segment at x={int(x_arr[i])} has no floor-path dy "
+                    f"to substitute (floor_path_dy_map keys: "
+                    f"{sorted(floor_path_dy_map) if floor_path_dy_map else []}). "
+                    "This indicates an internal inconsistency between the ideal "
+                    "line band and the actual path."
+                )
             segment_length = math.sqrt(dx[i]**2 + floor_dy**2)
             lengths[i] = segment_length
             calculation_method = "Rn_capped"

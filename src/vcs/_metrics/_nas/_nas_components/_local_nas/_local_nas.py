@@ -30,7 +30,7 @@ def _calculate_local_nas(
     sx = np.array([point[sx_idx] for point in sorted_aligned])
     sy = np.array([point[sy_idx] for point in sorted_aligned])
 
-    floor_ideal_line_length, ceil_ideal_line_length, floor_path, ceil_path = _compute_ideal_narrative_line_band(alignment_windows, source_len, target_len)
+    floor_ideal_line_length, ceil_ideal_line_length, floor_path, ceil_path = _compute_ideal_narrative_line_band(alignment_windows)
 
     floor_path_dy_map = {}
     if len(floor_path) > 1:

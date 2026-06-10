@@ -297,9 +297,9 @@ from vcs import compute_vcs_score
 result = compute_vcs_score(
     reference_text="Your reference text here",
     generated_text="Your generated text here", 
-    segmenter_fn=your_segmenter_function,        # ← You provide this
-    embedding_fn_las=your_embedding_function,    # ← You provide this  
-    embedding_fn_gas=your_embedding_function,    # ← You provide this
+    segmenter_fn=your_segmenter_function,                # ← You provide this
+    embedding_fn_global_sas=your_embedding_function,     # ← You provide this
+    embedding_fn_local_sas=your_embedding_function,      # ← You provide this
     return_all_metrics=True
 )
 
@@ -568,16 +568,16 @@ try:
         reference_text=reference_text,
         generated_text=generated_text,
         segmenter_fn=simple_segmenter,
-        embedding_fn_las=lightweight_embedding_function,
-        embedding_fn_gas=lightweight_embedding_function,
+        embedding_fn_global_sas=lightweight_embedding_function,
+        embedding_fn_local_sas=lightweight_embedding_function,
         return_all_metrics=True,
         return_internals=True
     )
     
     print("🎯 VCS Results:")
     print(f"VCS Score: {result['VCS']:.4f}")
-    print(f"GAS Score: {result['GAS']:.4f}")
-    print(f"LAS Score: {result['LAS']:.4f}")
+    print(f"Global SAS Score: {result['Global_SAS']:.4f}")
+    print(f"Local SAS Score: {result['Local_SAS']:.4f}")
     print(f"NAS Score: {result['NAS']:.4f}")
     print("✅ VCS is working correctly!")
     
@@ -633,7 +633,7 @@ Once you're comfortable with the basics, you can fine-tune VCS behavior for your
 | `chunk_size` | 1 | Segment grouping |
 | `context_cutoff_value` | 0.6 | Similarity threshold |
 | `context_window_control` | 4.0 | Context window size |
-| `lct` | 0 | Narrative reordering tolerance |
+| `Rn` | 0 | Narrative reordering tolerance |
 
 </div>
 
@@ -697,8 +697,8 @@ result = compute_vcs_score(
     reference_text=ref_text,
     generated_text=gen_text,
     segmenter_fn=segmenter,
-    embedding_fn_las=embedder,
-    embedding_fn_gas=embedder,
+    embedding_fn_global_sas=embedder,
+    embedding_fn_local_sas=embedder,
     chunk_size=2,                  # Group segments
     context_cutoff_value=0.7,      # Higher threshold
     context_window_control=3.0,    # Tighter windows
@@ -757,12 +757,12 @@ result = compute_vcs_score(
 
 <details>
 <summary><strong>⏱️ How do I control the strictness of chronological matching?</strong></summary>
-<p>Use the <code>lct</code> (NAS Regularizer) parameter to control chronological matching strictness. A higher LCT value means more lenient chronological ordering, allowing for greater flexibility in narrative sequence evaluation. The default value is 0 for strict chronological matching.</p>
+<p>Use the <code>Rn</code> (NAS Regularizer) parameter to control chronological matching strictness. A higher Rn value means more lenient chronological ordering, allowing for greater flexibility in narrative sequence evaluation. The default value is 0 for strict chronological matching.</p>
 </details>
 
 <details>
 <summary><strong>🔗 Can I use different embedding functions for GAS and LAS?</strong></summary>
-<p>Yes, you can specify different embedding functions for Global Alignment Score (GAS) and Local Alignment Score (LAS) using the <code>embedding_fn_gas</code> and <code>embedding_fn_las</code> parameters respectively. This allows you to optimize each component with models best suited for their specific evaluation tasks.</p>
+<p>Yes, you can specify different embedding functions for Global SAS and Local SAS using the <code>embedding_fn_global_sas</code> and <code>embedding_fn_local_sas</code> parameters respectively. This allows you to optimize each component with models best suited for their specific evaluation tasks.</p>
 </details>
 
 ---

@@ -3,10 +3,6 @@ from typing import List, Callable, Dict, Any
 import numpy as np
 import torch
 
-from typing import List, Callable, Dict, Any
-import numpy as np
-import torch
-
 from ._config import (
     DEFAULT_CONTEXT_CUTOFF_VALUE,
     DEFAULT_CONTEXT_WINDOW_CONTROL,
@@ -144,8 +140,8 @@ def compute_vcs_score(
             Detailed calculation data for visualization and analysis, containing:
             
             - ``'texts'``: Original and processed text data
-            - ``'similarity'``: Similarity matrix and related data  
-            - ``'mapping_windows'``: Alignment window information
+            - ``'similarity'``: Similarity matrix and related data
+            - ``'alignment_windows'``: Alignment window information
             - ``'alignment'``: Detailed alignment results
             - ``'metrics'``: Breakdown of all metric calculations
             - ``'config'``: Configuration parameters used
@@ -154,9 +150,8 @@ def compute_vcs_score(
     Raises
     ------
     ValueError
-        If embedding functions are not callable, or if both embedding functions are None.
-    TypeError
-        If segmenter_fn is not callable or doesn't return a list of strings.
+        If ``embedding_fn_global_sas`` is None, or if ``segmenter_fn`` or an
+        embedding function is not callable.
     
     Examples
     --------
@@ -237,12 +232,13 @@ def compute_vcs_score(
     visualize_mapping_windows : Show alignment windows used for matching
     create_vcs_pdf_report : Generate comprehensive PDF analysis report
     """
-    if embedding_fn_local_sas is None and embedding_fn_global_sas is not None:
+    if embedding_fn_global_sas is None:
+        raise ValueError(
+            "embedding_fn_global_sas is required "
+            "(embedding_fn_local_sas defaults to it when omitted)."
+        )
+    if embedding_fn_local_sas is None:
         embedding_fn_local_sas = embedding_fn_global_sas
-    elif embedding_fn_global_sas is None and embedding_fn_local_sas is not None:
-        embedding_fn_global_sas = embedding_fn_local_sas
-    if embedding_fn_local_sas is None or embedding_fn_global_sas is None:
-        raise ValueError("Provide at least one embedding function (global or local).")
 
     _validate_seg_embed_functions(segmenter_fn, embedding_fn_global_sas, embedding_fn_local_sas)
 

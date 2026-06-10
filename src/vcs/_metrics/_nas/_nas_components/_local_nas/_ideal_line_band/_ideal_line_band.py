@@ -4,8 +4,6 @@ from typing import List, Tuple, Dict, Any
 
 def _compute_ideal_narrative_line_band(
     alignment_windows: List[Tuple[int, int]],
-    source_len: int,
-    target_len: int
 ) -> Tuple[float, float, List[Tuple[int, int]], List[Tuple[int, int]]]:
 
     n_windows = len(alignment_windows)
