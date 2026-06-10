@@ -89,5 +89,6 @@ dmypy.json
 .DS_Store
 
 # Development artifacts
-*.png
-*.pdf
+
+# Sphinx build output (deploy workflow rebuilds it fresh)
+docs/sphinx/build/

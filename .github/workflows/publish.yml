@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'Version to release (e.g., 1.0.0)'
+        description: 'Version to release (must match pyproject.toml, e.g. 2.0.0)'
         required: true
         type: string
       environment:
@@ -24,117 +24,67 @@ permissions:
 jobs:
   check-tests:
     runs-on: ubuntu-latest
-    outputs:
-      tests-passed: ${{ steps.check.outputs.tests-passed }}
     steps:
-    - name: Check if tests passed for current commit
-      id: check
+    - name: Check that tests passed for the current commit
       run: |
-        # Get current commit SHA
         CURRENT_SHA="${{ github.sha }}"
         echo "Checking tests for commit: $CURRENT_SHA"
-        
-        # For manual dispatch, we need to check tests for the current HEAD of main
-        if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-          echo "Manual trigger - checking test status for latest commit on main"
-          
-          # Wait for any running tests to complete (max 10 minutes)
-          for i in {1..60}; do
-            # Get test runs for current commit
-            curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-                 -H "Accept: application/vnd.github.v3+json" \
-                 "https://api.github.com/repos/${{ github.repository }}/actions/workflows/test.yml/runs?head_sha=$CURRENT_SHA&per_page=5" > test_runs.json
-            
-            # Check if there are any runs for this commit
-            run_count=$(jq '.total_count' test_runs.json)
-            if [ "$run_count" -eq 0 ]; then
-              echo "⏳ No test runs found for commit $CURRENT_SHA yet, waiting... (attempt $i/60)"
-              sleep 10
-              continue
+        for i in {1..60}; do
+          curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+               -H "Accept: application/vnd.github.v3+json" \
+               "https://api.github.com/repos/${{ github.repository }}/actions/workflows/test.yml/runs?head_sha=$CURRENT_SHA&per_page=5" > test_runs.json
+          run_count=$(jq '.total_count' test_runs.json)
+          if [ "$run_count" -eq 0 ]; then
+            echo "No test runs found yet, waiting... (attempt $i/60)"
+            sleep 10
+            continue
+          fi
+          status=$(jq -r '.workflow_runs[0].status' test_runs.json)
+          conclusion=$(jq -r '.workflow_runs[0].conclusion' test_runs.json)
+          echo "Test run status: $status, conclusion: $conclusion"
+          if [ "$status" = "completed" ]; then
+            if [ "$conclusion" = "success" ]; then
+              echo "Tests passed for $CURRENT_SHA"
+              exit 0
             fi
-            
-            # Check status of the test run
-            status=$(jq -r '.workflow_runs[0].status' test_runs.json)
-            conclusion=$(jq -r '.workflow_runs[0].conclusion' test_runs.json)
-            
-            echo "Test run status: $status, conclusion: $conclusion"
-            
-            if [ "$status" = "completed" ]; then
-              if [ "$conclusion" = "success" ]; then
-                echo "✅ Tests passed for commit $CURRENT_SHA"
-                echo "tests-passed=true" >> $GITHUB_OUTPUT
-                exit 0
-              else
-                echo "❌ Tests failed for commit $CURRENT_SHA (conclusion: $conclusion)"
-                echo "tests-passed=false" >> $GITHUB_OUTPUT
-                exit 1
-              fi
-            else
-              echo "⏳ Tests still running for commit $CURRENT_SHA... waiting (attempt $i/60)"
-              sleep 10
-            fi
-          done
-          
-          echo "❌ Timeout waiting for tests to complete"
-          echo "tests-passed=false" >> $GITHUB_OUTPUT
-          exit 1
-        else
-          # For releases/tags, assume tests passed (they run on push to main)
-          echo "✅ Release/tag trigger - assuming tests passed for commit $CURRENT_SHA"
-          echo "tests-passed=true" >> $GITHUB_OUTPUT
-        fi
+            echo "Tests did not pass for $CURRENT_SHA (conclusion: $conclusion)"
+            exit 1
+          fi
+          sleep 10
+        done
+        echo "Timeout waiting for tests to complete"
+        exit 1
 
   build:
     needs: check-tests
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-      with:
-        fetch-depth: 0  # Fetch all history for proper version calculation
-    
+    - uses: actions/checkout@v5
+
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: "3.11"
-    
-    - name: Create version tag and set version
+
+    # The version is the one COMMITTED in pyproject.toml - this job refuses
+    # to publish if the input doesn't match, instead of sed-editing an
+    # uncommitted version into the build like the old flow did.
+    - name: Assert requested version matches pyproject.toml
       run: |
-        echo "Fetching all tags:"
-        git fetch --tags
-        echo "Current tags:"
-        git tag -l v*.*.* | sort -V | tail -5
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
-        
-        VERSION="${{ github.event.inputs.version }}"
-        TAG="v$VERSION"
-        
-        # Check if tag already exists
-        if git tag -l | grep -q "^$TAG$"; then
-          echo "Tag $TAG already exists, skipping tag creation"
-        else
-          echo "Creating version tag: $TAG"
-          git tag -a "$TAG" -m "Release $TAG"
-          git push origin "$TAG"
+        PYPROJECT_VERSION=$(grep '^version = ' pyproject.toml | sed 's/version = "\(.*\)"/\1/')
+        if [ "$PYPROJECT_VERSION" != "${{ github.event.inputs.version }}" ]; then
+          echo "Requested ${{ github.event.inputs.version }} but pyproject.toml says $PYPROJECT_VERSION."
+          echo "Bump pyproject.toml in a commit first, then re-run."
+          exit 1
         fi
-        
-        # Update version in pyproject.toml only if different
-        CURRENT_VERSION=$(grep '^version = ' pyproject.toml | sed 's/version = "\(.*\)"/\1/')
-        if [ "$CURRENT_VERSION" != "$VERSION" ]; then
-          echo "Updating version from $CURRENT_VERSION to $VERSION in pyproject.toml"
-          sed -i "s/version = \".*\"/version = \"$VERSION\"/" pyproject.toml
-        else
-          echo "Version already set to $VERSION in pyproject.toml, skipping update"
-        fi
-    
-    - name: Install build dependencies
+
+    - name: Build package
       run: |
         python -m pip install --upgrade pip
-        pip install build
-    
-    - name: Build package
-      run: python -m build
-    
+        pip install build twine
+        python -m build
+        twine check dist/*
+
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
@@ -150,16 +100,11 @@ jobs:
       with:
         name: dist
         path: dist/
-    
+
     - name: Determine target repository
       id: target
       run: |
-        if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
-          TARGET="${{ github.event.inputs.environment }}"
-        else
-          TARGET="testpypi"  # Default for releases
-        fi
-        
+        TARGET="${{ github.event.inputs.environment }}"
         if [[ "$TARGET" == "pypi" ]]; then
           echo "repository_url=" >> $GITHUB_OUTPUT
           echo "environment=Production PyPI" >> $GITHUB_OUTPUT
@@ -167,8 +112,28 @@ jobs:
           echo "repository_url=https://test.pypi.org/legacy/" >> $GITHUB_OUTPUT
           echo "environment=Test PyPI" >> $GITHUB_OUTPUT
         fi
-    
+
     - name: Publish to ${{ steps.target.outputs.environment }}
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         repository-url: ${{ steps.target.outputs.repository_url }}
+
+  # Tag only AFTER a successful production publish, never before.
+  tag:
+    needs: publish
+    if: ${{ github.event.inputs.environment == 'pypi' }}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v5
+
+    - name: Create release tag
+      run: |
+        TAG="v${{ github.event.inputs.version }}"
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        if git ls-remote --tags origin | grep -q "refs/tags/$TAG$"; then
+          echo "Tag $TAG already exists, skipping"
+        else
+          git tag -a "$TAG" -m "Release $TAG"
+          git push origin "$TAG"
+        fi

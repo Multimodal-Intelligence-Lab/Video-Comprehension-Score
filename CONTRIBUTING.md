@@ -14,10 +14,9 @@ cd Video-Comprehension-Score
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Install development dependencies
-# Note: PyTorch is required but not auto-installed to avoid conflicts
-pip install torch  # Install PyTorch first (see https://pytorch.org)
-pip install -e .[dev]
+# Install development dependencies (torch installs automatically as of 2.0.0;
+# pre-install a specific CUDA/CPU build first if you need one)
+pip install -e .[dev,test]
 ```
 
 ### 2. Make Your Changes
@@ -63,10 +62,13 @@ git push origin feature/your-feature-name
 - **mypy** for type checking: `mypy src/`
 
 ### Testing
-- Testing is integrated into CI/CD workflows
-- All functionality is tested automatically via comprehensive CI tests
-- Tests include package validation, API testing, and integration testing
-- No separate test files - testing occurs in `.github/workflows/test.yml`
+- The test suite lives in `tests/` and runs offline (deterministic hashed
+  trigram embedder - no model downloads)
+- Run locally with `pip install -e .[test]` then `pytest tests/ -q`
+- Golden characterization tests pin the full metric output (atol=1e-12);
+  regenerate `tests/golden/golden_cases.json` ONLY for intentional output
+  changes, and review the JSON diff line by line
+- CI (`.github/workflows/test.yml`) runs the suite on Python 3.10-3.13
 
 ### Documentation
 - Update docstrings for new functions/classes
@@ -79,7 +81,7 @@ git push origin feature/your-feature-name
 
 ### **Continuous Testing** (Every PR/Push)
 When you submit a PR or push to main:
-1. **Automated Testing**: Runs on Python 3.11+
+1. **Automated Testing**: Runs on Python 3.10-3.13
 2. **Code Quality Checks**: Linting, formatting, type checking  
 3. **Build Verification**: Ensures package builds correctly
 4. **Fast Feedback**: Results in ~2-3 minutes
@@ -201,11 +203,10 @@ python -m build
 The standard two-step publishing process:
 
 **Step 1: TestPyPI (Testing)**
-1. Go to **Actions** → **"Build and Publish"**
-2. Click **"Run workflow"**
-3. Select **"testpypi"** from dropdown
-4. Click **"Run workflow"**
-5. **Test the package** on TestPyPI
+1. Bump `version` in `pyproject.toml` and merge that commit
+2. Go to **Actions** → **"Build and Publish"** → **"Run workflow"**
+3. Enter the version (must match pyproject.toml) and select **"testpypi"**
+4. **Test the package** on TestPyPI
 
 **Step 2: PyPI (Production)**
 1. After testing, go back to **Actions** → **"Build and Publish"**
@@ -214,23 +215,10 @@ The standard two-step publishing process:
 4. Click **"Run workflow"**
 5. **Package is live** on PyPI
 
-#### **Alternative: GitHub Release Method**
-You can also create GitHub releases for automatic TestPyPI publishing:
-1. **Create GitHub Release**:
-   - Go to GitHub → Releases → "Create a new release"
-   - Tag: `v1.2.0`
-   - Title: `Release v1.2.0`
-   - Description: What changed
-   - Click "Publish release"
-2. **Result**: Automatically publishes to TestPyPI only
-
-#### **Alternative: Direct Tag Push**
-```bash
-# Create and push version tag
-git tag -a v1.2.0 -m "Release v1.2.0: Add new features"
-git push origin v1.2.0
-# → Automatic TestPyPI publishing only
-```
+#### Version invariants
+- The requested version must equal the committed `pyproject.toml` version;
+  the workflow refuses to publish otherwise.
+- The `vX.Y.Z` tag is pushed automatically after a successful PyPI publish.
 
 ## 🤝 Getting Help
 

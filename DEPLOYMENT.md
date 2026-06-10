@@ -106,11 +106,12 @@ graph TD
 
 **Scenario 1: Standard Workflow**
 ```bash
-1. git commit -m "fix bug"              # Tests start automatically
-2. Go to Actions → "Build and Publish" # Manual trigger
-3. Select "testpypi"                    # Choose environment
-4. Click "Run workflow"                 # Publish waits for tests
-5. ✅ Tests pass → Package published    # Success
+1. Bump version in pyproject.toml and commit   # The committed version IS the release
+2. Go to Actions → "Build and Publish"         # Manual trigger
+3. Enter the same version + select "testpypi"  # Must match pyproject.toml exactly
+4. Click "Run workflow"                        # Publish waits for tests
+5. ✅ Tests pass → Package published           # Re-run with "pypi" when satisfied
+6. ✅ PyPI publish success → vX.Y.Z tag pushed # Tag only after success
 ```
 
 **Scenario 2: Tests Still Running**
@@ -247,23 +248,12 @@ The recommended approach for publishing packages:
 - Publishing **fails immediately** if tests fail
 - **No broken packages** can be accidentally published
 
-##### **Alternative: GitHub Release Method** (Optional)
-If you prefer automated releases:
-1. **Create GitHub Release**:
-   ```bash
-   # Via GitHub UI: Go to Releases → "Create a new release"
-   # Tag: v1.2.0, Title: "Release v1.2.0"
-   # Click "Publish release"
-   ```
-2. **Result**: Automatically publishes to TestPyPI only
-
-##### **Alternative: Tag-Based Release** (Optional)
-```bash
-# Create and push version tag
-git tag -a v1.2.0 -m "Release v1.2.0"
-git push origin v1.2.0
-# → Automatic TestPyPI publishing
-```
+##### Version/tag invariants (as of 2.0.0)
+- The workflow REFUSES to publish if the requested version differs from
+  the committed `pyproject.toml` version (the old flow sed-edited the
+  version into the build, so PyPI could disagree with the repo).
+- The `vX.Y.Z` tag is created only AFTER a successful production PyPI
+  publish - never before, so a failed publish leaves no stray tag.
 
 ---
 

@@ -18,8 +18,13 @@ except ImportError as e:
 project = 'VCS Metrics'
 copyright = '2024, Harsh Dubey, Chulwoo Pack'
 author = 'Harsh Dubey, Chulwoo Pack'
-release = '1.0.2'
-version = '1.0.2'
+try:
+    from importlib.metadata import PackageNotFoundError, version as _pkg_version
+    release = _pkg_version("video-comprehension-score")
+except PackageNotFoundError:
+    # building docs from a source tree without an installed distribution
+    release = "0.0.0+unknown"
+version = release
 
 # -- General configuration ---------------------------------------------------
 extensions = [

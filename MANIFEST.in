@@ -2,8 +2,9 @@ include README.md
 include LICENSE
 include CHANGELOG.md
 
-# Include all Python files
+# Include all Python files and the typing marker
 recursive-include src/vcs *.py
+include src/vcs/py.typed
 
 # Exclude everything else to keep package small
 prune docs

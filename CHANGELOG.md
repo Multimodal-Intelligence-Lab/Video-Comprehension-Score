@@ -5,7 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.0] - Unreleased
+## [2.0.0] - 2026-06-10
+
+### Changed
+- Package internals flattened: 23 nested packages (max depth 9, one
+  function per folder) are now 10 flat modules. All moved modules are
+  private; anything that imported `vcs._metrics.*` or other internal
+  paths must update (the public API is unchanged).
+- Performance: internals details (per-candidate selection dicts, segment
+  dicts, list exports) are built only when `return_internals=True`
+  (~8x lower peak allocations on the minimal path at 400x300 chunks);
+  reverse alignment-window construction is O(n log n) instead of
+  O(m*n); the Global-NAS penalty passes are vectorized. All rewrites
+  are fuzz-verified bit-identical against the v1 implementations.
+- `pyproject.toml` version is now the single source of truth for
+  releases: publish.yml refuses to publish a mismatched version (the old
+  flow sed-edited the version into the build) and tags only after a
+  successful PyPI publish.
+- Sphinx docs read their version from package metadata (was hardcoded
+  1.0.2 while the package said 1.0.0).
+- The package ships a `py.typed` marker: type checkers now use the
+  inline annotations.
 
 ### Removed (BREAKING)
 - The entire visualization suite: the 12 `visualize_*` functions and
