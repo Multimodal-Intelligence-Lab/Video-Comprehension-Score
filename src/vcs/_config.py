@@ -143,7 +143,6 @@ Examples
 See Also
 --------
 compute_vcs_score : Parameter description for detailed Rn behavior
-visualize_distance_nas : See Rn effects on penalty calculations
 """
 
 DEFAULT_CHUNK_SIZE = 1
@@ -191,5 +190,4 @@ Examples
 See Also
 --------
 compute_vcs_score : Detailed chunk_size parameter description
-visualize_text_chunks : See how chunking affects text organization
 """

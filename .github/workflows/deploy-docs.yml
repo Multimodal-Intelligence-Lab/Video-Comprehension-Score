@@ -30,16 +30,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-        
+        uses: actions/checkout@v5
+
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          # CPU torch first: torch is a declared dependency as of 2.0.0, and
+          # a bare install on Linux would pull multi-GB CUDA wheels.
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
           # Install the package first so autodoc can import it
           pip install -e .
           # Install documentation dependencies
@@ -72,7 +75,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload the docs directory which contains the main website
+          # Upload the docs directory which contains the main website.
+          # NOTE: docs/pages/api.html iframes sphinx/build/html/index.html,
+          # so the freshly built Sphinx output MUST be inside this artifact.
           path: './docs'
           
       - name: Deploy to GitHub Pages

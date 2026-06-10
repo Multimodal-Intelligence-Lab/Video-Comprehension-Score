@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.0.0] - Unreleased
 
+### Removed (BREAKING)
+- The entire visualization suite: the 12 `visualize_*` functions and
+  `create_vcs_pdf_report` are gone, along with the matplotlib and seaborn
+  dependencies. The metric itself is untouched. If you need the v1 plots,
+  pin `video-comprehension-score<2` or use the `legacy/v1-with-visualization`
+  branch.
+
+### Changed (BREAKING)
+- `torch>=2.0` is now a declared dependency (v1 imported torch but never
+  declared it, so `pip install video-comprehension-score` produced a
+  broken install in clean environments). Note: pip resolves torch>=2.2 on
+  Python 3.12 and >=2.6 on Python 3.13.
+- Supported Python versions are now 3.10–3.13 (v1 metadata claimed 3.8+
+  but the code uses `X | None` syntax, which crashes below 3.10).
+
 ### Added
 - `return_all_metrics=True` now includes `"Precision Local_SAS"` and
   `"Recall Local_SAS"`, as the `compute_vcs_score` docstring always

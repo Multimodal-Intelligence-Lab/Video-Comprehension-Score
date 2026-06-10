@@ -72,7 +72,7 @@ def _compute_actual_line_length(
         # CASE 3: Beyond LCT range or negative slopes
         # Length remains 0, segment not calculable
         
-        # Store segment details for visualization
+        # Store segment details for internals
         segments.append({
             "start": (int(x_arr[i]), int(y_arr[i])),
             "end": (int(x_arr[i+1]), int(y_arr[i+1])),

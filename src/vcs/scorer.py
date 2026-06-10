@@ -106,7 +106,7 @@ def compute_vcs_score(
         addition to the final VCS score. Useful for detailed analysis.
     return_internals : bool, default=False
         If True, includes detailed internal calculations and intermediate results.
-        Required for generating visualizations and detailed analysis reports.
+        Useful for downstream analysis and custom tooling.
     
     Returns
     -------
@@ -137,7 +137,7 @@ def compute_vcs_score(
         **With return_internals=True:**
         
         * ``'internals'`` : dict
-            Detailed calculation data for visualization and analysis, containing:
+            Detailed calculation data for analysis, containing:
             
             - ``'texts'``: Original and processed text data
             - ``'similarity'``: Similarity matrix and related data
@@ -225,12 +225,6 @@ def compute_vcs_score(
             return_internals=True
         )
     
-    See Also
-    --------
-    visualize_metrics_summary : Create overview visualization of all metrics
-    visualize_similarity_matrix : Visualize the similarity matrix between segments
-    visualize_mapping_windows : Show alignment windows used for matching
-    create_vcs_pdf_report : Generate comprehensive PDF analysis report
     """
     if embedding_fn_global_sas is None:
         raise ValueError(

@@ -29,3 +29,18 @@ def test_config_constants_exported_with_expected_values():
 def test_version_metadata_present():
     assert isinstance(vcs.__version__, str) and vcs.__version__
     assert isinstance(vcs.__author__, str) and vcs.__author__
+
+
+def test_no_visualization_stack_imported():
+    """v2.0.0 removed the visualization subtree; importing vcs must not pull
+    in matplotlib/seaborn (they are no longer dependencies at all)."""
+    import sys
+
+    assert "matplotlib" not in sys.modules
+    assert "seaborn" not in sys.modules
+    assert not any(name.startswith("vcs._visualize") for name in sys.modules)
+
+
+def test_no_visualization_exports():
+    assert not [name for name in vcs.__all__ if "visualize" in name or "pdf" in name]
+    assert not hasattr(vcs, "visualize_metrics_summary")

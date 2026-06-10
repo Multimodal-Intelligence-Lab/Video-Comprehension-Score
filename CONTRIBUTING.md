@@ -115,7 +115,7 @@ add multilingual support for similarity metrics
 refactor API to use async/await pattern
 fix edge case in text alignment algorithm
 fix bug in NAS calculation
-add new visualization feature
+add new scoring option
 update documentation
 improve code formatting
 ```
@@ -124,10 +124,8 @@ improve code formatting
 
 ```
 vcs/
-├── src/vcs/                 # Main package code
+├── src/vcs/                 # Main package code (flat modules)
 │   ├── __init__.py
-│   ├── _metrics/           # Core metrics implementations
-│   ├── _visualize_vcs/     # Visualization components
 │   └── scorer.py           # Main API
 ├── docs/                   # Documentation and website
 │   ├── sphinx/             # Sphinx documentation source
