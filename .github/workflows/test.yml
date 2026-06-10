@@ -36,8 +36,15 @@ jobs:
     - name: Lint (syntax errors and undefined names)
       run: flake8 src/ tests/ --count --select=E9,F63,F7,F82 --show-source --statistics
 
+    # On failure, surface the failing test names as workflow annotations so
+    # the cause is visible from the API without downloading runner logs.
     - name: Run test suite
-      run: pytest tests/ -q
+      run: |
+        set -o pipefail
+        pytest tests/ -q 2>&1 | tee pytest-output.txt || {
+          echo "::error title=pytest failures::$(grep -E '^(FAILED|ERROR)' pytest-output.txt | head -15 | tr '\n' ' ')"
+          exit 1
+        }
 
     - name: Build distribution
       run: python -m build

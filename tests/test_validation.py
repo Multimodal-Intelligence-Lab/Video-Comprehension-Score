@@ -160,9 +160,14 @@ def test_unnormalized_embeddings_warn_but_score():
 
 
 def test_normalized_embeddings_do_not_warn():
-    with warnings.catch_warnings():
-        warnings.simplefilter("error", UserWarning)
+    # Assert only on OUR warning: escalating every UserWarning to an error
+    # couples the test to environment noise (e.g. torch first-use warnings
+    # on CI runners that don't fire locally).
+    with warnings.catch_warnings(record=True) as caught:
+        warnings.simplefilter("always")
         call()
+    ours = [w for w in caught if "L2-normalized" in str(w.message)]
+    assert not ours, f"unexpected normalization warning: {ours[0].message}"
 
 
 # --- validation must not change valid-input behavior ----------------------------
