@@ -15,9 +15,14 @@ Main Scoring Function
 
    # Access this documentation interactively in your notebook or Python session
    help(vcs.compute_vcs_score)
-   
+
    # Or use ? in Jupyter/Colab for quick reference
    vcs.compute_vcs_score?
+
+Scoring from Pre-computed Embeddings
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. autofunction:: vcs.compute_vcs_from_embeddings
 
 Configuration Constants
 -----------------------

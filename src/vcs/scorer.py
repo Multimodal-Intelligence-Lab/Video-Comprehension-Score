@@ -10,17 +10,25 @@ from ._config import (
     DEFAULT_CHUNK_SIZE,
 )
 from ._validation import (
+    _resolve_chunk_texts,
+    _validate_chunk_embeddings,
+    _validate_doc_embedding,
     _validate_parameters,
     _validate_seg_embed_functions,
     _validate_texts,
 )
-from ._segmenting import _segment_and_chunk_texts, _build_similarity_matrix
+from ._segmenting import (
+    _segment_and_chunk_texts,
+    _build_similarity_matrix,
+    _similarity_from_chunk_embeddings,
+)
 from ._windows import _get_alignment_windows
 from ._matching import _calculate_alignment_based_matches
 from ._sas import (
     _compute_global_sas_metrics,
     _compute_local_sas_metrics,
     _compute_sas_metrics,
+    _global_sas_from_embeddings,
 )
 from ._nas import _compute_nas_metrics
 from ._vcs import _compute_vcs_metrics
@@ -268,6 +276,141 @@ def compute_vcs_score(
         ref_chunks, gen_chunks, embedding_fn_local_sas
     )
 
+    return _run_vcs_pipeline(
+        global_sas, sim_matrix, ref_len, gen_len, ref_chunks, gen_chunks,
+        chunk_size, context_cutoff_value, context_window_control, Rn,
+        return_all_metrics, return_internals,
+    )
+
+
+def compute_vcs_from_embeddings(
+    reference_doc_embedding: torch.Tensor,
+    generated_doc_embedding: torch.Tensor,
+    reference_chunk_embeddings: torch.Tensor,
+    generated_chunk_embeddings: torch.Tensor,
+    *,
+    reference_chunks: List[str] | None = None,
+    generated_chunks: List[str] | None = None,
+    context_cutoff_value: float = DEFAULT_CONTEXT_CUTOFF_VALUE,
+    context_window_control: float = DEFAULT_CONTEXT_WINDOW_CONTROL,
+    Rn: int = DEFAULT_Rn,
+    return_all_metrics: bool = False,
+    return_internals: bool = False,
+) -> Dict[str, Any]:
+    """Compute VCS directly from pre-computed embeddings.
+
+    Identical to :func:`compute_vcs_score` from the similarity computation
+    onward — given embeddings equal to what the embedding functions would
+    have produced, the two entry points return exactly equal results. Use
+    this when embeddings are already available (batch pipelines, cached
+    embeddings, sweeping VCS parameters without re-embedding).
+
+    Parameters
+    ----------
+    reference_doc_embedding : torch.Tensor
+        Document-level embedding of the full reference text, shape
+        ``(embedding_dim,)`` (a single-row 2-D tensor is also accepted).
+        Used for Global SAS via cosine similarity.
+    generated_doc_embedding : torch.Tensor
+        Document-level embedding of the full generated text, same shape
+        rules as ``reference_doc_embedding``.
+    reference_chunk_embeddings : torch.Tensor
+        Embeddings of the reference chunks in narrative order, shape
+        ``(n_reference_chunks, embedding_dim)``. Rows should be
+        L2-normalized — similarities are raw dot products.
+    generated_chunk_embeddings : torch.Tensor
+        Embeddings of the generated chunks in narrative order, shape
+        ``(n_generated_chunks, embedding_dim)``.
+    reference_chunks : list of str, optional
+        Chunk texts for the reference side. Texts appear only inside
+        ``internals`` (aligned-segment listings); they never affect any
+        score. When omitted, ``"<chunk i>"`` placeholders are used.
+    generated_chunks : list of str, optional
+        Chunk texts for the generated side; same rules.
+    context_cutoff_value : float, default=0.6
+        See :func:`compute_vcs_score`.
+    context_window_control : float, default=4.0
+        See :func:`compute_vcs_score`.
+    Rn : int, default=0
+        See :func:`compute_vcs_score`.
+    return_all_metrics : bool, default=False
+        See :func:`compute_vcs_score`.
+    return_internals : bool, default=False
+        See :func:`compute_vcs_score`. Note: since chunking already
+        happened upstream, ``internals['config']['chunk_size']`` is None
+        for this entry point.
+
+    Returns
+    -------
+    dict
+        Same structure as :func:`compute_vcs_score`.
+
+    Raises
+    ------
+    ValueError
+        If any embedding is not a finite torch.Tensor of the documented
+        shape, the two document embeddings (or the two chunk-embedding
+        matrices) disagree on embedding_dim, chunk texts are provided with
+        the wrong length, or a knob parameter is out of range.
+
+    Warns
+    -----
+    UserWarning
+        If embedding rows are not L2-normalized.
+    """
+    # chunk_size has no meaning here (chunks arrive pre-built): validate the
+    # remaining knobs against the same rules as compute_vcs_score.
+    _validate_parameters(1, context_cutoff_value, context_window_control, Rn)
+
+    ref_doc_vec = _validate_doc_embedding(reference_doc_embedding, "reference_doc_embedding")
+    gen_doc_vec = _validate_doc_embedding(generated_doc_embedding, "generated_doc_embedding")
+    if ref_doc_vec.shape != gen_doc_vec.shape:
+        raise ValueError(
+            f"document embeddings disagree on embedding_dim: "
+            f"{ref_doc_vec.shape[0]} vs {gen_doc_vec.shape[0]}"
+        )
+
+    ref_tensor = _validate_chunk_embeddings(reference_chunk_embeddings, "reference_chunk_embeddings")
+    gen_tensor = _validate_chunk_embeddings(generated_chunk_embeddings, "generated_chunk_embeddings")
+    if ref_tensor.shape[1] != gen_tensor.shape[1]:
+        raise ValueError(
+            f"chunk embeddings disagree on embedding_dim: "
+            f"{ref_tensor.shape[1]} vs {gen_tensor.shape[1]}"
+        )
+
+    ref_len, gen_len = ref_tensor.shape[0], gen_tensor.shape[0]
+    ref_chunks = _resolve_chunk_texts(reference_chunks, ref_len, "reference_chunks")
+    gen_chunks = _resolve_chunk_texts(generated_chunks, gen_len, "generated_chunks")
+
+    # Same two ops compute_vcs_score performs on freshly produced embeddings
+    global_sas = _global_sas_from_embeddings(ref_doc_vec, gen_doc_vec)
+    sim_matrix = _similarity_from_chunk_embeddings(ref_tensor, gen_tensor)
+
+    return _run_vcs_pipeline(
+        global_sas, sim_matrix, ref_len, gen_len, ref_chunks, gen_chunks,
+        None, context_cutoff_value, context_window_control, Rn,
+        return_all_metrics, return_internals,
+    )
+
+
+def _run_vcs_pipeline(
+    global_sas: float,
+    sim_matrix: np.ndarray,
+    ref_len: int,
+    gen_len: int,
+    ref_chunks: List[str],
+    gen_chunks: List[str],
+    chunk_size: int | None,
+    context_cutoff_value: float,
+    context_window_control: float,
+    Rn: int,
+    return_all_metrics: bool,
+    return_internals: bool,
+) -> Dict[str, Any]:
+    """Shared metric pipeline: everything downstream of the similarity
+    matrix. Both public entry points feed this with identical inputs, so
+    their outputs are identical by construction. chunk_size is None when
+    chunks arrived pre-embedded (compute_vcs_from_embeddings)."""
     # Alignment Window (AW)
     prec_align_windows, rec_align_windows = _get_alignment_windows(ref_len, gen_len)
 

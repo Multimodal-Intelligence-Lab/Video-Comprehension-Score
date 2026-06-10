@@ -10,8 +10,8 @@ except PackageNotFoundError:
 __author__ = "Harsh Dubey"
 __email__ = "had7143@gmail.com"
 
-# Main scoring function
-from .scorer import compute_vcs_score
+# Main scoring functions
+from .scorer import compute_vcs_score, compute_vcs_from_embeddings
 
 # Configuration constants
 from ._config import (
@@ -22,8 +22,9 @@ from ._config import (
 )
 
 __all__ = [
-    # Main function
+    # Main functions
     "compute_vcs_score",
+    "compute_vcs_from_embeddings",
 
     # Version and metadata
     "__version__",

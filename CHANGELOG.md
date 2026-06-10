@@ -23,6 +23,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   but the code uses `X | None` syntax, which crashes below 3.10).
 
 ### Added
+- New public entry point `compute_vcs_from_embeddings(...)`: computes VCS
+  directly from pre-computed document and chunk embeddings (for batch
+  pipelines, cached embeddings, or sweeping VCS knobs without
+  re-embedding). Given the embeddings the text entry point would produce,
+  results are exactly equal. Chunk texts are optional (placeholders appear
+  in internals); `internals["config"]["chunk_size"]` is `None` here.
+- Input validation on all entry points: clear `ValueError`s before any
+  computation for invalid texts, parameters, segmenter output, or
+  embedding shapes, and a `UserWarning` when embedding rows are not
+  L2-normalized (VCS similarities are raw dot products).
 - `return_all_metrics=True` now includes `"Precision Local_SAS"` and
   `"Recall Local_SAS"`, as the `compute_vcs_score` docstring always
   promised (v1 computed but dropped them).

@@ -112,17 +112,26 @@ def _apply_semantic_load_penalty(
 def _compute_global_sas_metrics(
     reference_text: str,
     generated_text: str,
-    embedding_fn: Callable
+    embedding_fn: Callable[[List[str]], torch.Tensor]
 ) -> float:
 
     emb_all = _validate_embedding_output(
         embedding_fn([reference_text, generated_text]), 2, "embedding_fn_global_sas"
     )
 
-    ref_vec = emb_all[0].unsqueeze(0)
-    gen_vec = emb_all[1].unsqueeze(0)
+    return _global_sas_from_embeddings(emb_all[0], emb_all[1])
+
+
+def _global_sas_from_embeddings(
+    reference_vec: torch.Tensor,
+    generated_vec: torch.Tensor,
+) -> float:
+    """Cosine similarity of two 1-D document embeddings. The single shared
+    site for this op so both entry points are bit-identical."""
+    ref_vec = reference_vec.unsqueeze(0)
+    gen_vec = generated_vec.unsqueeze(0)
     sim = F.cosine_similarity(ref_vec, gen_vec, dim=1)
-    
+
     return sim.item()
 
 

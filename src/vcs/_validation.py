@@ -99,6 +99,57 @@ def _validate_embedding_output(embeddings, expected_rows: int, fn_label: str) ->
     return embeddings
 
 
+def _validate_doc_embedding(embedding, label: str) -> torch.Tensor:
+    """Document-level embedding for compute_vcs_from_embeddings: a 1-D
+    tensor (embedding_dim,); a 2-D single-row tensor is accepted and
+    squeezed."""
+    if not isinstance(embedding, torch.Tensor):
+        raise ValueError(f"{label} must be a torch.Tensor, got {type(embedding).__name__}")
+    if embedding.dim() == 2 and embedding.shape[0] == 1:
+        embedding = embedding[0]
+    if embedding.dim() != 1 or embedding.shape[0] == 0:
+        raise ValueError(
+            f"{label} must be a 1-D tensor of shape (embedding_dim,) "
+            f"(or 2-D with a single row), got shape {tuple(embedding.shape)}"
+        )
+    if not torch.isfinite(embedding).all():
+        raise ValueError(f"{label} contains NaN or infinite values")
+    _warn_if_not_normalized(embedding.unsqueeze(0), label)
+    return embedding
+
+
+def _validate_chunk_embeddings(embeddings, label: str) -> torch.Tensor:
+    """Chunk-level embedding matrix for compute_vcs_from_embeddings: a 2-D
+    tensor (n_chunks, embedding_dim) with at least one row."""
+    if not isinstance(embeddings, torch.Tensor):
+        raise ValueError(f"{label} must be a torch.Tensor, got {type(embeddings).__name__}")
+    if embeddings.dim() != 2 or embeddings.shape[0] < 1:
+        raise ValueError(
+            f"{label} must be a 2-D tensor of shape (n_chunks, embedding_dim) "
+            f"with at least one row, got shape {tuple(embeddings.shape)}"
+        )
+    if not torch.isfinite(embeddings).all():
+        raise ValueError(f"{label} contains NaN or infinite values")
+    _warn_if_not_normalized(embeddings, label)
+    return embeddings
+
+
+def _resolve_chunk_texts(chunks, expected_len: int, label: str) -> List[str]:
+    """Chunk texts are optional in compute_vcs_from_embeddings (they only
+    appear in internals, never in any score); placeholders are generated
+    when omitted."""
+    if chunks is None:
+        return [f"<chunk {i}>" for i in range(expected_len)]
+    if not isinstance(chunks, list) or not all(isinstance(c, str) for c in chunks):
+        raise ValueError(f"{label} must be a list of str (or None for placeholders)")
+    if len(chunks) != expected_len:
+        raise ValueError(
+            f"{label} has {len(chunks)} texts but the corresponding chunk "
+            f"embeddings have {expected_len} rows"
+        )
+    return chunks
+
+
 def _warn_if_not_normalized(embeddings: torch.Tensor, fn_label: str, atol: float = 1e-3) -> None:
     norms = torch.linalg.vector_norm(embeddings.detach().to(torch.float64), dim=1)
     if not torch.allclose(norms, torch.ones_like(norms), rtol=0.0, atol=atol):

@@ -8,7 +8,7 @@ def _segment_and_chunk_texts(
     reference_text: str, 
     generated_text: str, 
     chunk_size: int,
-    segmenter_fn: Callable
+    segmenter_fn: Callable[[str], List[str]]
 ) -> Tuple[List[str], List[str]]:
 
     ref_segments = segmenter_fn(reference_text)
@@ -27,7 +27,7 @@ def _group_segments(segments: List[str], chunk_size: int) -> List[str]:
 def _build_similarity_matrix(
     ref_chunks: List[str],
     gen_chunks: List[str],
-    embedding_fn: Callable
+    embedding_fn: Callable[[List[str]], torch.Tensor]
 ) -> Tuple[np.ndarray, int, int]:
     
     ref_tensor = _validate_embedding_output(
@@ -36,5 +36,14 @@ def _build_similarity_matrix(
     gen_tensor = _validate_embedding_output(
         embedding_fn(gen_chunks), len(gen_chunks), "embedding_fn_local_sas"
     )
-    sim_matrix = torch.matmul(ref_tensor, gen_tensor.T).cpu().numpy()
+    sim_matrix = _similarity_from_chunk_embeddings(ref_tensor, gen_tensor)
     return sim_matrix, len(ref_chunks), len(gen_chunks)
+
+
+def _similarity_from_chunk_embeddings(
+    ref_tensor: torch.Tensor,
+    gen_tensor: torch.Tensor,
+) -> np.ndarray:
+    """Raw dot-product similarity matrix, shape (ref_len, gen_len). The
+    single shared site for this op so both entry points are bit-identical."""
+    return torch.matmul(ref_tensor, gen_tensor.T).cpu().numpy()
