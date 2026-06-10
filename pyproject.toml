@@ -43,6 +43,10 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+test = [
+    "pytest>=7",
+    "build",
+]
 dev = [
     "black>=21.0",
     "isort>=5.0",
