@@ -73,13 +73,3 @@ def test_swapping_texts_swaps_precision_and_recall_exactly(name):
         assert forward[key] == backward[mirror], (
             f"{key}: {forward[key]!r} != swapped {mirror}: {backward[mirror]!r}"
         )
-
-
-def test_local_embedder_defaults_to_global_embedder():
-    kwargs = build_call_kwargs(next(c for c in CASES if c["name"] == "typical_8v3_defaults"))
-    explicit = dict(kwargs)
-    explicit["embedding_fn_local_sas"] = kwargs["embedding_fn_global_sas"]
-    assert (
-        compute_vcs_score(**kwargs, return_all_metrics=True)
-        == compute_vcs_score(**explicit, return_all_metrics=True)
-    )

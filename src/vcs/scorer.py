@@ -38,8 +38,7 @@ def compute_vcs_score(
     reference_text: str,
     generated_text: str,
     segmenter_fn: Callable[[str], List[str]],
-    embedding_fn_global_sas: Callable[[List[str]], torch.Tensor],
-    embedding_fn_local_sas: Callable[[List[str]], torch.Tensor] | None = None,
+    embedding_fn: Callable[[List[str]], torch.Tensor],
     chunk_size: int = DEFAULT_CHUNK_SIZE,
     context_cutoff_value: float = DEFAULT_CONTEXT_CUTOFF_VALUE,
     context_window_control: float = DEFAULT_CONTEXT_WINDOW_CONTROL,
@@ -58,9 +57,9 @@ def compute_vcs_score(
 
     * **Global_SAS (Global Semantic Alignment Score)**: Measures overall semantic
       similarity between the full reference and generated texts using document-level
-      embeddings (Global_SAS Embedding).
+      embeddings.
     * **Local_SAS (Local Semantic Alignment Score)**: Evaluates segment-by-segment
-      semantic similarity using optimal alignment between text chunks (Local_SAS Embedding).
+      semantic similarity using optimal alignment between text chunks.
     * **NAS (Narrative Alignment Score)**: Assesses how well the narrative flow and
       chronological structure are preserved, combining Global NAS and Local NAS measures.
     * **SAS (Semantic Alignment Score)**: Scaled combination of Global_SAS and Local_SAS.
@@ -81,16 +80,14 @@ def compute_vcs_score(
         segmentation, clause segmentation, or custom domain-specific segmentation.
 
         Example: ``lambda text: text.split('.')`` for simple sentence splitting.
-    embedding_fn_global_sas : callable
-        Function to compute Global_SAS Embedding (document-level embeddings) for Global_SAS
-        calculation. Must take a list of strings and return a torch.Tensor of shape
+    embedding_fn : callable
+        Function to compute embeddings, used for BOTH the document-level
+        (Global_SAS) and chunk-level (Local_SAS) measurements — one
+        instrument, so the SAS combination compares like with like. Must
+        take a list of strings and return a torch.Tensor of shape
         (n_items, embedding_dim) where each row is an embedding.
 
         Example: A function that uses sentence transformers or other semantic models.
-    embedding_fn_local_sas : callable, optional
-        Function to compute Local_SAS Embedding (segment-level embeddings) for Local_SAS
-        calculation. If None, uses ``embedding_fn_global_sas`` for both Global_SAS and
-        Local_SAS calculations. Should follow the same signature as ``embedding_fn_global_sas``.
     chunk_size : int, default=1
         Number of consecutive segments to group together for analysis. Larger values
         create bigger comparison units but may lose fine-grained alignment details.
@@ -192,7 +189,7 @@ def compute_vcs_score(
             reference_text="Your reference text here",
             generated_text="Your generated text here",
             segmenter_fn=your_segmenter_function,
-            embedding_fn_global_sas=your_embedding_function
+            embedding_fn=your_embedding_function
         )
         print(f"VCS Score: {result['VCS']:.4f}")
 
@@ -204,7 +201,7 @@ def compute_vcs_score(
             reference_text="Your reference text here",
             generated_text="Your generated text here",
             segmenter_fn=your_segmenter_function,
-            embedding_fn_global_sas=your_embedding_function,
+            embedding_fn=your_embedding_function,
             return_all_metrics=True,
             return_internals=True
         )
@@ -217,23 +214,11 @@ def compute_vcs_score(
             reference_text="Your reference text here",
             generated_text="Your generated text here",
             segmenter_fn=your_segmenter_function,
-            embedding_fn_global_sas=your_embedding_function,
+            embedding_fn=your_embedding_function,
             chunk_size=2,
             context_cutoff_value=0.7,
             context_window_control=3.0,
             Rn=1
-        )
-
-    **Different Embedding Functions for Global and Local SAS:**
-
-    .. code-block:: python
-
-        result = compute_vcs_score(
-            reference_text="Your reference text here",
-            generated_text="Your generated text here",
-            segmenter_fn=your_segmenter_function,
-            embedding_fn_global_sas=your_global_embedding_function,
-            embedding_fn_local_sas=your_local_embedding_function
         )
 
     **Complete Configuration (All Parameters):**
@@ -244,8 +229,7 @@ def compute_vcs_score(
             reference_text="Your reference text here",
             generated_text="Your generated text here",
             segmenter_fn=your_segmenter_function,
-            embedding_fn_global_sas=your_global_embedding_function,
-            embedding_fn_local_sas=your_local_embedding_function,
+            embedding_fn=your_embedding_function,
             chunk_size=2,
             context_cutoff_value=0.7,
             context_window_control=3.0,
@@ -253,23 +237,15 @@ def compute_vcs_score(
             return_all_metrics=True,
             return_internals=True
         )
-    
-    """
-    if embedding_fn_global_sas is None:
-        raise ValueError(
-            "embedding_fn_global_sas is required "
-            "(embedding_fn_local_sas defaults to it when omitted)."
-        )
-    if embedding_fn_local_sas is None:
-        embedding_fn_local_sas = embedding_fn_global_sas
 
-    _validate_seg_embed_functions(segmenter_fn, embedding_fn_global_sas, embedding_fn_local_sas)
+    """
+    _validate_seg_embed_functions(segmenter_fn, embedding_fn)
     _validate_texts(reference_text, generated_text)
     _validate_parameters(chunk_size, context_cutoff_value, context_window_control, Rn)
 
     # ===== METHOD: EMBED =====
     # Global Embed (GE)
-    global_sas = _compute_global_sas_metrics(reference_text, generated_text, embedding_fn_global_sas)
+    global_sas = _compute_global_sas_metrics(reference_text, generated_text, embedding_fn)
 
     # Local Embed (LE): Segmenting and Chunking
     ref_chunks, gen_chunks = _segment_and_chunk_texts(
@@ -279,7 +255,7 @@ def compute_vcs_score(
     # ===== METHOD: ALIGNMENT =====
     # Build similarity matrix for alignment
     sim_matrix, ref_len, gen_len = _build_similarity_matrix(
-        ref_chunks, gen_chunks, embedding_fn_local_sas
+        ref_chunks, gen_chunks, embedding_fn
     )
 
     return _run_vcs_pipeline(
@@ -306,10 +282,15 @@ def compute_vcs_from_embeddings(
     """Compute VCS directly from pre-computed embeddings.
 
     Identical to :func:`compute_vcs_score` from the similarity computation
-    onward — given embeddings equal to what the embedding functions would
-    have produced, the two entry points return exactly equal results. Use
-    this when embeddings are already available (batch pipelines, cached
+    onward — given embeddings equal to what ``embedding_fn`` would have
+    produced, the two entry points return exactly equal results. Use this
+    when embeddings are already available (batch pipelines, cached
     embeddings, sweeping VCS parameters without re-embedding).
+
+    One-instrument contract: document and chunk embeddings should come
+    from the SAME embedder, like :func:`compute_vcs_score`'s single
+    ``embedding_fn`` — the SAS combination assumes Global_SAS and
+    Local_SAS measure with the same instrument.
 
     Parameters
     ----------

@@ -32,8 +32,7 @@ def main():
         )
         config = {key: value for key, value in kwargs.items()
                   if key not in ("reference_text", "generated_text",
-                                 "segmenter_fn", "embedding_fn_global_sas",
-                                 "embedding_fn_local_sas")}
+                                 "segmenter_fn", "embedding_fn")}
         payload["cases"][case["name"]] = {
             "config_overrides": config,
             "output": canonicalize(output),

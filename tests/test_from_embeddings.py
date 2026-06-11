@@ -9,7 +9,7 @@ import numpy as np
 import pytest
 import torch
 
-from cases import CASES, SEGMENTERS, EMBEDDERS, build_call_kwargs
+from cases import CASES, build_call_kwargs
 from embedder import embed_dim64
 from helpers import canonicalize
 from vcs import compute_vcs_from_embeddings, compute_vcs_score
@@ -20,18 +20,17 @@ def embeddings_for(case):
     """Reproduce exactly the embedding inputs compute_vcs_score would build."""
     kwargs = build_call_kwargs(case)
     segmenter = kwargs["segmenter_fn"]
-    global_embedder = kwargs["embedding_fn_global_sas"]
-    local_embedder = kwargs.get("embedding_fn_local_sas", global_embedder)
+    embedder = kwargs["embedding_fn"]
     chunk_size = kwargs.get("chunk_size", 1)
 
-    doc_embeds = global_embedder([kwargs["reference_text"], kwargs["generated_text"]])
+    doc_embeds = embedder([kwargs["reference_text"], kwargs["generated_text"]])
     ref_chunks = _group_segments(segmenter(kwargs["reference_text"]), chunk_size)
     gen_chunks = _group_segments(segmenter(kwargs["generated_text"]), chunk_size)
     return {
         "reference_doc_embedding": doc_embeds[0],
         "generated_doc_embedding": doc_embeds[1],
-        "reference_chunk_embeddings": local_embedder(ref_chunks),
-        "generated_chunk_embeddings": local_embedder(gen_chunks),
+        "reference_chunk_embeddings": embedder(ref_chunks),
+        "generated_chunk_embeddings": embedder(gen_chunks),
         "reference_chunks": ref_chunks,
         "generated_chunks": gen_chunks,
         "context_cutoff_value": kwargs.get("context_cutoff_value", 0.6),

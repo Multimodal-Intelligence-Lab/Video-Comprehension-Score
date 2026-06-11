@@ -132,7 +132,7 @@ def build_call_kwargs(case):
         "reference_text": case["ref"],
         "generated_text": case["gen"],
         "segmenter_fn": SEGMENTERS[case.get("segmenter", "default")],
-        "embedding_fn_global_sas": EMBEDDERS[case.get("global_embedder", "dim64")],
+        "embedding_fn": EMBEDDERS["dim64"],
     }
     kwargs.update(case["params"])
     return kwargs

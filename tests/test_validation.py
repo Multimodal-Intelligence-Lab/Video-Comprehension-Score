@@ -25,7 +25,7 @@ def call(**overrides):
         reference_text=REF,
         generated_text=GEN,
         segmenter_fn=split_sentences,
-        embedding_fn_global_sas=embed_dim64,
+        embedding_fn=embed_dim64,
     )
     kwargs.update(overrides)
     return compute_vcs_score(**kwargs)
@@ -33,12 +33,12 @@ def call(**overrides):
 
 # --- function arguments -----------------------------------------------------
 
-def test_missing_global_embedder_raises():
-    with pytest.raises(ValueError, match="embedding_fn_global_sas is required"):
-        call(embedding_fn_global_sas=None)
+def test_missing_embedder_raises():
+    with pytest.raises(ValueError, match="embedding_fn must be a callable"):
+        call(embedding_fn=None)
 
 
-@pytest.mark.parametrize("field", ["segmenter_fn", "embedding_fn_local_sas"])
+@pytest.mark.parametrize("field", ["segmenter_fn", "embedding_fn"])
 def test_non_callable_functions_raise(field):
     with pytest.raises(ValueError, match=field):
         call(**{field: "not callable"})
@@ -116,21 +116,21 @@ def test_embedder_returning_numpy_raises():
     def np_embedder(texts):
         return np.zeros((len(texts), 8))
     with pytest.raises(ValueError, match="must return a torch.Tensor"):
-        call(embedding_fn_global_sas=np_embedder)
+        call(embedding_fn=np_embedder)
 
 
 def test_embedder_returning_1d_tensor_raises():
     def flat_embedder(texts):
         return torch.ones(len(texts), dtype=torch.float64)
     with pytest.raises(ValueError, match="2-D tensor"):
-        call(embedding_fn_global_sas=flat_embedder)
+        call(embedding_fn=flat_embedder)
 
 
 def test_embedder_row_count_mismatch_raises():
     def short_embedder(texts):
         return torch.eye(max(len(texts) - 1, 1), 8, dtype=torch.float64)
     with pytest.raises(ValueError, match="embedding rows"):
-        call(embedding_fn_global_sas=short_embedder)
+        call(embedding_fn=short_embedder)
 
 
 @pytest.mark.parametrize("poison", [float("nan"), float("inf")])
@@ -140,14 +140,14 @@ def test_embedder_nan_or_inf_raises(poison):
         out[0, 0] = poison
         return out
     with pytest.raises(ValueError, match="NaN or infinite"):
-        call(embedding_fn_global_sas=poisoned_embedder)
+        call(embedding_fn=poisoned_embedder)
 
 
-def test_local_embedder_errors_name_the_local_function():
-    def bad_local(texts):
+def test_embedder_errors_name_the_function():
+    def bad_embedder(texts):
         return np.zeros((len(texts), 8))
-    with pytest.raises(ValueError, match="embedding_fn_local_sas"):
-        call(embedding_fn_local_sas=bad_local)
+    with pytest.raises(ValueError, match="embedding_fn"):
+        call(embedding_fn=bad_embedder)
 
 
 # --- L2 normalization: enforced internally ---------------------------------------
@@ -163,7 +163,7 @@ def test_unnormalized_embeddings_are_scale_invariant():
 
     baseline = call(return_all_metrics=True, return_internals=True)
     result = call(
-        embedding_fn_global_sas=scaled,
+        embedding_fn=scaled,
         return_all_metrics=True, return_internals=True,
     )
     assert_structurally_equal(canonicalize(result), canonicalize(baseline), atol=1e-12)
@@ -175,7 +175,7 @@ def test_compliant_embeddings_pass_through_bit_identical():
     from vcs._validation import _normalize_embedding_rows
 
     emb = embed_dim64(["a storm", "the boats"])
-    assert _normalize_embedding_rows(emb, "embedding_fn_global_sas") is emb
+    assert _normalize_embedding_rows(emb, "embedding_fn") is emb
 
 
 def test_compliant_embeddings_do_not_warn():
@@ -194,8 +194,8 @@ def test_zero_norm_embedding_row_raises():
         out = embed_dim64(texts).clone()
         out[0] = 0.0
         return out
-    with pytest.raises(ValueError, match="embedding_fn_global_sas.*L2 norm 0"):
-        call(embedding_fn_global_sas=zero_row)
+    with pytest.raises(ValueError, match="embedding_fn.*L2 norm 0"):
+        call(embedding_fn=zero_row)
 
 
 # --- validation must not change valid-input behavior ----------------------------

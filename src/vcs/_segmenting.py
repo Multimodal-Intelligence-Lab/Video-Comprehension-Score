@@ -31,10 +31,10 @@ def _build_similarity_matrix(
 ) -> Tuple[np.ndarray, int, int]:
     
     ref_tensor = _validate_embedding_output(
-        embedding_fn(ref_chunks), len(ref_chunks), "embedding_fn_local_sas"
+        embedding_fn(ref_chunks), len(ref_chunks), "embedding_fn"
     )
     gen_tensor = _validate_embedding_output(
-        embedding_fn(gen_chunks), len(gen_chunks), "embedding_fn_local_sas"
+        embedding_fn(gen_chunks), len(gen_chunks), "embedding_fn"
     )
     sim_matrix = _similarity_from_chunk_embeddings(ref_tensor, gen_tensor)
     return sim_matrix, len(ref_chunks), len(gen_chunks)

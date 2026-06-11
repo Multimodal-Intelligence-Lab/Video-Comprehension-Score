@@ -16,15 +16,12 @@ import torch
 
 def _validate_seg_embed_functions(
     segmenter_fn: Callable,
-    embedding_fn_global_sas: Callable,
-    embedding_fn_local_sas: Callable | None = None,
+    embedding_fn: Callable,
 ) -> None:
     if not callable(segmenter_fn):
         raise ValueError("segmenter_fn must be a callable function!")
-    if not callable(embedding_fn_global_sas):
-        raise ValueError("embedding_fn_global_sas must be a callable function!")
-    if embedding_fn_local_sas is not None and not callable(embedding_fn_local_sas):
-        raise ValueError("embedding_fn_local_sas must be a callable function!")
+    if not callable(embedding_fn):
+        raise ValueError("embedding_fn must be a callable function!")
 
 
 def _validate_texts(reference_text, generated_text) -> None:

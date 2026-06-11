@@ -123,7 +123,7 @@ def _compute_global_sas_metrics(
 ) -> float:
 
     emb_all = _validate_embedding_output(
-        embedding_fn([reference_text, generated_text]), 2, "embedding_fn_global_sas"
+        embedding_fn([reference_text, generated_text]), 2, "embedding_fn"
     )
 
     return _global_sas_from_embeddings(emb_all[0], emb_all[1])
