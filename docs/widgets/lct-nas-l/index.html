@@ -202,6 +202,8 @@
         .path-segment-standard { stroke: #059669; stroke-width: 4px; transition: all 0.3s ease; }
         .path-segment-lct-capped { stroke: #d97706; stroke-width: 4px; transition: all 0.3s ease; }
         .path-segment-invalid { stroke: #dc2626; stroke-width: 4px; stroke-dasharray: 6 3; transition: all 0.3s ease; }
+        /* halo under segments where the v2 formula and v3 exact bound disagree */
+        .path-segment-disagree { stroke: #a855f7; stroke-width: 9px; stroke-dasharray: 3 4; opacity: 0.5; }
 
         /* --- Modern Hover Cone Styles --- */
         .hover-cone-standard {
@@ -218,6 +220,14 @@
             stroke-width: 1.5;
             filter: drop-shadow(0 4px 12px rgba(245, 158, 11, 0.22)) drop-shadow(0 2px 6px rgba(245, 158, 11, 0.12));
             transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        /* reach cone of the NON-active bound rule, for visual comparison */
+        .hover-cone-ghost {
+            fill: rgba(100, 116, 139, 0.10);
+            stroke: rgba(100, 116, 139, 0.7);
+            stroke-width: 1.5;
+            stroke-dasharray: 5 4;
         }
 
         /* --- Segment Info Labels --- */
@@ -938,6 +948,13 @@
                 <div class="demo-card interactive-card rounded-xl p-4">
                     <div class="text-center mb-4">
                         <h2 class="text-lg font-bold text-slate-800">LCT Effect on Path Segment Classification</h2>
+                        <div class="flex items-center justify-center gap-2 mt-2 text-xs">
+                            <span class="text-slate-500 font-medium">Jump bound:</span>
+                            <div class="inline-flex rounded-lg border border-slate-300 overflow-hidden">
+                                <button id="boundRuleExactBtn" type="button">Exact per-step (v3)</button>
+                                <button id="boundRuleFormulaBtn" type="button">Global formula (v2)</button>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="relative w-full max-w-2xl mx-auto pt-4 pb-36 pl-20 pr-4">
@@ -954,8 +971,9 @@
                                 <div id="axisLabelContainerX"></div>
                             </div>
                         </div>
-                        <div class="absolute -bottom-0 left-0 right-0 grid grid-cols-3 gap-x-4 gap-y-1 text-center text-xs text-slate-600 bg-white/80 p-2 rounded-md">
-                            <div><span>LCT Window Base:</span><br><span id="lctWindowBaseDisplay" class="font-bold text-green-600">0</span></div>
+                        <div class="absolute -bottom-0 left-0 right-0 grid grid-cols-4 gap-x-4 gap-y-1 text-center text-xs text-slate-600 bg-white/80 p-2 rounded-md">
+                            <div id="formulaBaseCell"><span>Formula Base (v2):</span><br><span id="lctWindowBaseDisplay" class="font-bold text-green-600">0</span></div>
+                            <div id="exactBoundsCell"><span>Exact Bounds (v3):</span><br><span id="exactBoundsDisplay" class="font-bold text-teal-600">-</span></div>
                             <div><span>Expanded Window:</span><br><span id="expandedWindowDisplay" class="font-bold text-orange-600">0</span></div>
                             <div><span>Calculable Segments:</span><br><span id="calculableSegmentsDisplay" class="font-bold text-blue-600">0/0</span></div>
                         </div>
@@ -1053,6 +1071,7 @@
                             <button class="preset-btn text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="animateToScenario('deleteEnd')"><i class="fas fa-cut mr-1"></i>Delete End</button>
                             <button class="preset-btn text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="animateToScenario('deleteMiddle')"><i class="fas fa-cut mr-1"></i>Delete Middle</button>
                             <button class="preset-btn text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="animateToScenario('deleteBegin')"><i class="fas fa-cut mr-1"></i>Delete Begin</button>
+                            <button class="preset-btn text-white px-3 py-2 rounded-xl text-xs font-medium" onclick="animateToScenario('exactVsFormula')"><i class="fas fa-balance-scale mr-1"></i>8v3: v2 vs v3</button>
                         </div>
                     </div>
                 </div>
@@ -1087,6 +1106,7 @@
                             <li>For LCT > 0, each segment is surrounded by an expanded lct search zone(yellow color): if its immediate neighbor falls within this zone, the segment remains calculable and uses its floor‐path length instead of being marked invalid(red color).</li>
                             <li>It addresses the limitation where minor reorderings make segments non-calculable</li>
                             <li>Natural narrative variations are preserved while maintaining chronological integrity</li>
+                            <li>The "Jump bound" toggle above the chart switches the calculability bound between the v3 library's exact per-step value (from the mapping windows) and the v2 closed-form global value (2H-1 / 2H-2). Hovering a marker shows both reach cones (active rule solid, the other dashed); segments where the two rules disagree get a purple halo, and the "8v3: v2 vs v3" scenario lands directly on such a case.</li>
                         </ul>
                     </div>
                 </div>
@@ -1206,6 +1226,9 @@
     <script>
         // Global state
         let numUnitsY = 10, numUnitsX = 10, currentLct = 0;
+        // 'exact'  = v3 library: per-step in-band bound from the mapping windows
+        // 'formula' = v2 library: one global closed-form bound (2h-1 / 2h-2)
+        let boundRule = 'exact';
         let markers_config = [], currentPrecisionWindows = [], currentFloorPath = [], currentCeilPath = [];
         let currentFloorLength = 0, currentCeilLength = 0, currentActualLength = 0, currentLineNas = 0;
         let floorPathDyMap = {}, currentActualPathSegments = [], currentLctWindowBase = 0, currentExpandedLctWindow = 0;
@@ -1237,6 +1260,11 @@
             appBackground: document.getElementById('app-background'),
             lctWindowBaseDisplay: document.getElementById('lctWindowBaseDisplay'),
             expandedWindowDisplay: document.getElementById('expandedWindowDisplay'),
+            exactBoundsDisplay: document.getElementById('exactBoundsDisplay'),
+            formulaBaseCell: document.getElementById('formulaBaseCell'),
+            exactBoundsCell: document.getElementById('exactBoundsCell'),
+            boundRuleExactBtn: document.getElementById('boundRuleExactBtn'),
+            boundRuleFormulaBtn: document.getElementById('boundRuleFormulaBtn'),
             nasLScorePreview: document.getElementById('nasLScorePreview'),
             actualLengthPreview: document.getElementById('actualLengthPreview')
         };
@@ -1613,15 +1641,28 @@
             return dyMap;
         }
         
-        function computeActualLineLengthJS(actualPathPoints, totalRefChunks, totalGenChunks, RnValue, localFloorPathDyMap) {
+        function exactStepBound(windows, xFrom, xTo) {
+            // v3 library bound: the largest vertical jump a step can take while
+            // keeping BOTH endpoints inside their mapping windows — from the
+            // start of the window at xFrom to the last in-window index at xTo,
+            // i.e. (end - 1) - start. Varies per step; the v2 closed form
+            // (2h-1 / 2h-2 from the axis ratio) was one global value.
+            if (!windows) return null;
+            const wFrom = windows[xFrom], wTo = windows[xTo];
+            if (!wFrom || !wTo) return null;
+            return (wTo.end - 1) - wFrom.start;
+        }
+
+        function computeActualLineLengthJS(actualPathPoints, totalRefChunks, totalGenChunks, RnValue, localFloorPathDyMap, windows = currentPrecisionWindows, rule = boundRule) {
             if (!actualPathPoints || actualPathPoints.length <= 1) {
-                return { totalLength: 0.0, segments: [], lct_window_base: 0, expanded_lct_window: 0 };
+                return { totalLength: 0.0, segments: [], lct_window_base: 0, expanded_lct_window: 0, exact_bounds: [] };
             }
             const sortedPath = [...actualPathPoints].sort((a,b) => a.x - b.x);
             let currentTotalLength = 0; let pathSegments = [];
             const mappingWindowHeight = totalGenChunks > 0 ? Math.ceil(totalRefChunks / totalGenChunks) : 0;
             const ratio = totalGenChunks > 0 ? totalRefChunks / totalGenChunks : 0;
             const ratioDecimalPart = ratio - Math.floor(ratio);
+            // v2 closed-form global bound, kept for side-by-side comparison
             let lct_window_base;
             if (totalRefChunks <= totalGenChunks) {
                 lct_window_base = mappingWindowHeight;
@@ -1633,57 +1674,76 @@
                 }
             }
             lct_window_base = Math.max(0, lct_window_base);
-            let expanded_lct_window;
-            if (totalRefChunks <= totalGenChunks) {
-                expanded_lct_window = RnValue > 0 ? lct_window_base +  RnValue : lct_window_base;
-            } else {
-                if (ratioDecimalPart > 0 && ratioDecimalPart <= 0.5) {
-                    expanded_lct_window = RnValue > 0 ? lct_window_base +  RnValue : lct_window_base;
-                } else {
-                    expanded_lct_window = RnValue > 0 ? lct_window_base +  RnValue : lct_window_base;
-                }
-            }
-            
+            const expanded_lct_window = RnValue > 0 ? lct_window_base + RnValue : lct_window_base;
+
+            // Library CASE logic (identical in v2 and v3 — only the bound
+            // differs): at LCT=0 the jump must be in [0, bound]; at LCT>0,
+            // |dy| <= bound is standard and bound < |dy| <= bound+LCT is
+            // LCT-capped (floor-path length substituted).
+            const classify = (dyRaw, bound) => {
+                const dyForEval = RnValue > 0 ? Math.abs(dyRaw) : dyRaw;
+                if (dyForEval >= 0 && dyForEval <= bound) return 'standard';
+                if (RnValue > 0 && dyForEval > bound && dyForEval <= bound + RnValue) return 'lct-capped';
+                return 'invalid';
+            };
+
+            const exact_bounds = [];
             for (let i = 0; i < sortedPath.length - 1; i++) {
                 const p1 = sortedPath[i]; const p2 = sortedPath[i+1];
                 const dx_segment = p2.x - p1.x; const dy_segment_raw = p2.y - p1.y;
                 if (dx_segment <= 0) continue;
-                
-                const dy_for_eval = Math.abs(dy_segment_raw);
-                let segmentLength = 0; let calculation_method = "invalid"; let is_calculable = false;
-                
-                // Check if it's a naturally valid segment (positive slope within base window)
-                if (dy_segment_raw >= 0 && dy_for_eval <= lct_window_base) {
+
+                const exactRaw = exactStepBound(windows, p1.x, p2.x);
+                const exact_threshold = exactRaw !== null ? exactRaw : lct_window_base;
+                exact_bounds.push(exact_threshold);
+
+                const method_formula = classify(dy_segment_raw, lct_window_base);
+                const method_exact = classify(dy_segment_raw, exact_threshold);
+                const activeBound = rule === 'formula' ? lct_window_base : exact_threshold;
+                const calculation_method = rule === 'formula' ? method_formula : method_exact;
+
+                let segmentLength = 0; let is_calculable = false;
+                if (calculation_method === 'standard') {
                     segmentLength = Math.sqrt(dx_segment**2 + dy_segment_raw**2);
-                    is_calculable = true; calculation_method = "standard";
-                }
-                // Check if it's a negative slope made calculable by LCT (should be lct-capped)
-                else if (RnValue > 0 && dy_segment_raw < 0 && dy_for_eval <= expanded_lct_window) {
-                    let floor_dy_val = dy_segment_raw; 
+                    is_calculable = true;
+                } else if (calculation_method === 'lct-capped') {
+                    let floor_dy_val = dy_segment_raw;
                     if (localFloorPathDyMap && localFloorPathDyMap.hasOwnProperty(p1.x)) {
                         floor_dy_val = Math.abs(localFloorPathDyMap[p1.x]);
                     }
                     segmentLength = Math.sqrt(dx_segment**2 + floor_dy_val**2);
-                    is_calculable = true; calculation_method = "lct-capped";
+                    is_calculable = true;
                 }
-                // Check if it's a positive slope within LCT tolerance (also lct-capped)
-                else if (RnValue > 0 && dy_segment_raw >= 0 && dy_for_eval > lct_window_base && dy_for_eval <= expanded_lct_window) {
-                    let floor_dy_val = dy_segment_raw; 
-                    if (localFloorPathDyMap && localFloorPathDyMap.hasOwnProperty(p1.x)) {
-                        floor_dy_val = Math.abs(localFloorPathDyMap[p1.x]);
-                    }
-                    segmentLength = Math.sqrt(dx_segment**2 + floor_dy_val**2);
-                    is_calculable = true; calculation_method = "lct-capped";
-                }
-                
+
                 currentTotalLength += segmentLength;
                 pathSegments.push({
                     start: {x: p1.x, y: p1.y}, end: {x: p2.x, y: p2.y}, dx: dx_segment, dy: dy_segment_raw,
-                    threshold: lct_window_base, threshold_with_lct: expanded_lct_window,
+                    threshold: activeBound, threshold_with_lct: RnValue > 0 ? activeBound + RnValue : activeBound,
+                    formula_threshold: lct_window_base, exact_threshold: exact_threshold,
+                    method_formula: method_formula, method_exact: method_exact,
                     is_calculable: is_calculable, calculation_method: calculation_method, length: segmentLength
                 });
             }
-            return { totalLength: currentTotalLength, segments: pathSegments, lct_window_base: lct_window_base, expanded_lct_window: expanded_lct_window };
+            return { totalLength: currentTotalLength, segments: pathSegments, lct_window_base: lct_window_base, expanded_lct_window: expanded_lct_window, exact_bounds: exact_bounds };
+        }
+
+        function formatBoundRange(values) {
+            if (!values || values.length === 0) return '-';
+            const lo = Math.min(...values), hi = Math.max(...values);
+            return lo === hi ? lo.toFixed(1) : `${lo.toFixed(1)}–${hi.toFixed(1)}`;
+        }
+
+        function updateBoundDisplays(lengthData) {
+            elements.lctWindowBaseDisplay.textContent = lengthData.lct_window_base.toFixed(1);
+            elements.exactBoundsDisplay.textContent = formatBoundRange(lengthData.exact_bounds);
+            const activeBounds = boundRule === 'formula'
+                ? [lengthData.lct_window_base]
+                : (lengthData.exact_bounds.length ? lengthData.exact_bounds : [lengthData.lct_window_base]);
+            elements.expandedWindowDisplay.textContent = currentLct > 0
+                ? formatBoundRange(activeBounds.map(b => b + currentLct))
+                : formatBoundRange(activeBounds);
+            elements.formulaBaseCell.classList.toggle('opacity-40', boundRule !== 'formula');
+            elements.exactBoundsCell.classList.toggle('opacity-40', boundRule !== 'exact');
         }
 
         function calculateLineNAS(floorLength, ceilLength, actualLength) {
@@ -1711,33 +1771,42 @@
             const startX = (marker.currentX + 0.5) * cellWidthPx;
             const startY = chartHeightPx - ((marker.currentY + 0.5) * cellHeightPx);
             const endX = (marker.currentX + 1.5) * cellWidthPx;
-            
-            const baseWindow = currentLctWindowBase;
-            const expandedWindow = currentExpandedLctWindow;
-            
+
+            const formulaBound = currentLctWindowBase;
+            const exactRaw = exactStepBound(currentPrecisionWindows, marker.currentX, marker.currentX + 1);
+            const exactBound = exactRaw !== null ? exactRaw : formulaBound;
+            const activeBound = boundRule === 'formula' ? formulaBound : exactBound;
+            const ghostBound = boundRule === 'formula' ? exactBound : formulaBound;
+
             const coneGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
             coneGroup.id = 'hover-cone-group';
-            
-            if (currentLct === 0) {
-                const topYStandard = Math.max(0, chartHeightPx - ((marker.currentY + baseWindow + 0.5) * cellHeightPx));
-                const bottomYStandard = Math.min(chartHeightPx, chartHeightPx - ((marker.currentY + 0.5) * cellHeightPx));
-                
-                const standardCone = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
-                const pointsStandard = `${startX},${startY} ${endX},${topYStandard} ${endX},${bottomYStandard}`;
-                standardCone.setAttribute('points', pointsStandard);
-                standardCone.setAttribute('class', 'hover-cone-standard');
-                coneGroup.appendChild(standardCone);
-            } else {
-                const topY = Math.max(0, chartHeightPx - ((marker.currentY + expandedWindow + 0.5) * cellHeightPx));
-                const bottomY = Math.min(chartHeightPx, chartHeightPx - ((marker.currentY - expandedWindow + 0.5) * cellHeightPx));
-                
-                const lctCappedCone = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
-                const points = `${startX},${startY} ${endX},${topY} ${endX},${bottomY}`;
-                lctCappedCone.setAttribute('points', points);
-                lctCappedCone.setAttribute('class', 'hover-cone-lct-capped');
-                coneGroup.appendChild(lctCappedCone);
+
+            // reach of the next step under a given bound: [y, y+bound] at
+            // LCT=0 (only forward jumps count), ±(bound+LCT) at LCT>0
+            const conePoints = (bound) => {
+                if (currentLct === 0) {
+                    const topY = Math.max(0, chartHeightPx - ((marker.currentY + bound + 0.5) * cellHeightPx));
+                    const bottomY = Math.min(chartHeightPx, chartHeightPx - ((marker.currentY + 0.5) * cellHeightPx));
+                    return `${startX},${startY} ${endX},${topY} ${endX},${bottomY}`;
+                }
+                const reach = bound + currentLct;
+                const topY = Math.max(0, chartHeightPx - ((marker.currentY + reach + 0.5) * cellHeightPx));
+                const bottomY = Math.min(chartHeightPx, chartHeightPx - ((marker.currentY - reach + 0.5) * cellHeightPx));
+                return `${startX},${startY} ${endX},${topY} ${endX},${bottomY}`;
+            };
+
+            if (ghostBound !== activeBound) {
+                const ghostCone = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+                ghostCone.setAttribute('points', conePoints(ghostBound));
+                ghostCone.setAttribute('class', 'hover-cone-ghost');
+                coneGroup.appendChild(ghostCone);
             }
-            
+
+            const activeCone = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+            activeCone.setAttribute('points', conePoints(activeBound));
+            activeCone.setAttribute('class', currentLct === 0 ? 'hover-cone-standard' : 'hover-cone-lct-capped');
+            coneGroup.appendChild(activeCone);
+
             elements.actualPathSvg.appendChild(coneGroup);
         }
 
@@ -1785,16 +1854,22 @@
             let statusClass, segmentText;
             
             if (segment) {
-                if (segment.calculation_method === 'standard') {
-                    statusClass = 'standard';
-                    segmentText = `<hr class="my-1 border-slate-500"><strong class="text-green-400">In Window (Standard)</strong><br>|Δy|: ${Math.abs(segment.dy).toFixed(1)}, Base: ${segment.threshold.toFixed(1)}`;
-                } else if (segment.calculation_method === 'lct-capped') {
-                    statusClass = 'lct-capped';
-                    segmentText = `<hr class="my-1 border-slate-500"><strong class="text-yellow-400">Outside Window (Capped)</strong><br>|Δy|: ${Math.abs(segment.dy).toFixed(1)}, Exp: ${segment.threshold_with_lct.toFixed(1)}`;
-                } else { // 'invalid'
-                    statusClass = 'invalid';
-                    segmentText = `<hr class="my-1 border-slate-500"><strong class="text-red-400">Outside Window (Invalid)</strong><br>|Δy|: ${Math.abs(segment.dy).toFixed(1)}, Exp: ${segment.threshold_with_lct.toFixed(1)}`;
-                }
+                statusClass = segment.calculation_method === 'standard' ? 'standard'
+                    : segment.calculation_method === 'lct-capped' ? 'lct-capped' : 'invalid';
+                const ruleLine = (label, bound, method, active) => {
+                    const color = method === 'standard' ? 'text-green-400'
+                        : method === 'lct-capped' ? 'text-yellow-400' : 'text-red-400';
+                    const name = method === 'standard' ? 'Standard'
+                        : method === 'lct-capped' ? 'LCT-capped' : 'Invalid';
+                    const cls = active ? 'font-bold' : 'opacity-60';
+                    return `<span class="${cls}">${label} bound ${bound.toFixed(1)} → <span class="${color}">${name}</span></span>`;
+                };
+                const disagree = segment.method_formula !== segment.method_exact
+                    ? `<br><span class="text-purple-300 font-semibold">⚠ v2 and v3 disagree on this segment</span>` : '';
+                segmentText = `<hr class="my-1 border-slate-500">|Δy|: ${Math.abs(segment.dy).toFixed(1)}`
+                    + `<br>` + ruleLine('Exact (v3):', segment.exact_threshold, segment.method_exact, boundRule === 'exact')
+                    + `<br>` + ruleLine('Formula (v2):', segment.formula_threshold, segment.method_formula, boundRule === 'formula')
+                    + disagree;
             } else {
                 statusClass = 'standard';
                 segmentText = `<hr class="my-1 border-slate-500">End of path`;
@@ -1897,6 +1972,13 @@
                 const y1 = chartHeightPx - ((segment.start.y + 0.5) * cellHeightPx);
                 const x2 = (segment.end.x + 0.5) * cellWidthPx;
                 const y2 = chartHeightPx - ((segment.end.y + 0.5) * cellHeightPx);
+                if (segment.method_formula !== undefined && segment.method_formula !== segment.method_exact) {
+                    const halo = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                    halo.setAttribute('x1', x1); halo.setAttribute('y1', y1);
+                    halo.setAttribute('x2', x2); halo.setAttribute('y2', y2);
+                    halo.setAttribute('class', 'path-segment-disagree');
+                    svgElement.appendChild(halo);
+                }
                 const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
                 line.setAttribute('x1', x1);
                 line.setAttribute('y1', y1);
@@ -1955,8 +2037,7 @@
             animateNumber(elements.actualLengthDisplay, prevActualLength, currentActualLength);
             const calculableSegments = currentActualPathSegments.filter(s => s.is_calculable).length;
             elements.calculableSegmentsDisplay.textContent = `${calculableSegments}/${currentActualPathSegments.length}`;
-            elements.lctWindowBaseDisplay.textContent = currentLctWindowBase.toFixed(1);
-            elements.expandedWindowDisplay.textContent = currentExpandedLctWindow.toFixed(1);
+            updateBoundDisplays(lengthAndSegmentData);
 
             currentLineNas = calculateLineNAS(currentFloorLength, currentCeilLength, currentActualLength);
             animateNumber(elements.nasLScoreDisplay, prevLineNas, currentLineNas); updateDynamicBackground(currentLineNas);
@@ -2098,6 +2179,12 @@
                 case 'deleteEnd': config.targetGenLen = 7; break;
                 case 'deleteBegin': config.targetGenLen = 7; config.yMapping = (i) => i + 3; break;
                 case 'deleteMiddle': config.targetGenLen = 7; config.yMapping = (i) => (i < 3) ? i : i + 3; break;
+                // 8 ref vs 3 gen: the v2 formula allows |dy| <= 5 on every
+                // step, but between gen 0 and gen 1 no in-band path can jump
+                // more than (5-1)-0 = 4. The first segment (dy = 5) is
+                // Standard under v2 and Invalid under v3.
+                case 'exactVsFormula': config.targetRefLen = 8; config.targetGenLen = 3;
+                    config.yMapping = (i) => (i === 0) ? 0 : (i === 1) ? 5 : 6; break;
             }
             return config;
         }
@@ -2109,7 +2196,8 @@
                 lct2Rotation: "A more complex 3x3 rotation. This requires LCT=2 to make segments calculable. Notice how segments transition from invalid to LCT-capped.",
                 deleteEnd: "The generated sequence is shorter, ending prematurely. This affects path length calculation and reduces the total calculable segments.",
                 deleteMiddle: "A gap in the middle creates discontinuous segments. Some become invalid while others may remain calculable depending on LCT.",
-                deleteBegin: "Missing the start creates significant displacement. Most segments become invalid without sufficient LCT tolerance."
+                deleteBegin: "Missing the start creates significant displacement. Most segments become invalid without sufficient LCT tolerance.",
+                exactVsFormula: "8 ref vs 3 gen: the v2 global formula allows |dy| <= 5 everywhere, but the exact v3 bound between gen 0 and gen 1 is 4. Toggle the jump-bound rule and hover the first marker to compare both reach cones; the disagreeing segment gets a purple halo."
             };
             // Tip functionality disabled since scenarioTip element doesn't exist in HTML
             // const tipElement = document.getElementById('scenarioTip');
@@ -2413,11 +2501,27 @@
         elements.refLenInput.addEventListener('change', handleGridInputChange);
         elements.genLenInput.addEventListener('change', handleGridInputChange);
         elements.RnSlider.addEventListener('input', () => {
-            currentLct = parseInt(elements.RnSlider.value, 10); 
+            currentLct = parseInt(elements.RnSlider.value, 10);
             elements.RnValueDisplay.textContent = currentLct;
             updateLctDescription();
-            renderGenChunkMarkers(); 
+            renderGenChunkMarkers();
         });
+
+        function setBoundRule(rule) {
+            if (boundRule === rule) return;
+            boundRule = rule;
+            updateBoundRuleButtons();
+            clearHoverCone();
+            renderGenChunkMarkers();
+        }
+        function updateBoundRuleButtons() {
+            const active = 'px-3 py-1 font-semibold bg-teal-600 text-white';
+            const idle = 'px-3 py-1 font-semibold bg-white text-slate-500 hover:bg-slate-100';
+            elements.boundRuleExactBtn.className = boundRule === 'exact' ? active : idle;
+            elements.boundRuleFormulaBtn.className = boundRule === 'formula' ? active : idle;
+        }
+        elements.boundRuleExactBtn.addEventListener('click', () => setBoundRule('exact'));
+        elements.boundRuleFormulaBtn.addEventListener('click', () => setBoundRule('formula'));
 
         let resizeTimer;
         window.addEventListener('resize', () => {
@@ -2440,6 +2544,7 @@
         
         window.addEventListener('load', () => {
             lctExplorerManager.init();
+            updateBoundRuleButtons();
             initializeStateAndRender();
         });
     </script>
