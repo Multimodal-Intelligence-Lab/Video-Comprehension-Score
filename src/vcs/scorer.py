@@ -179,7 +179,10 @@ def compute_vcs_score(
         * ``'VCS Margin'`` : float - SAS + NAS - 1 in [-1, 1]; ranks
           candidates below the VCS zero gate (VCS > 0 iff margin > 0)
         * ``'Config'`` : str - library version + knob values used
-          (``vcs=...|chunk_size=...|rn=...|context_cutoff=...|context_window_control=...``)
+          (``vcs=...|chunk_size=...|rn=...|context_cutoff=...|context_window_control=...``).
+          Knob values are formatted as passed (``0.6``, ``1`` and ``1.0``
+          stay distinct) — compare Configs from runs that pass knobs the
+          same way.
             
         **With return_internals=True:**
         
@@ -363,7 +366,8 @@ def compute_vcs_from_embeddings(
     return_internals : bool, default=False
         See :func:`compute_vcs_score`. Note: since chunking already
         happened upstream, ``internals['config']['chunk_size']`` is None
-        for this entry point.
+        for this entry point and the ``'Config'`` string reads
+        ``chunk_size=none``.
 
     Returns
     -------

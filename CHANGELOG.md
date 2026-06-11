@@ -18,7 +18,10 @@ matched against the change's predicted footprint.
   SAS levels — the SAS combination `max(0, GAS + LAS - 1) / LAS` reads
   GAS and LAS as the same quantity at two granularities, which two
   different embedders silently break. Migration: rename the keyword,
-  drop the second embedder. Positional callers keep working.
+  drop the second embedder. Single-embedder positional callers (up to 4
+  positional arguments) keep working; v2 dual-embedder positional calls
+  fail loudly (the old 5th slot now lands on ``chunk_size``, which
+  rejects a callable).
   `compute_vcs_from_embeddings` documents the same one-instrument
   contract (doc + chunk embeddings from the same embedder).
 - **Embedding rows are L2-normalized internally** (replaces the v2
