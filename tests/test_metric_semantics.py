@@ -68,6 +68,25 @@ def test_no_signal_query_matches_in_window():
     assert out["Recall Global NAS"] == 1.0
 
 
+def test_no_signal_distinct_negatives_dethrone_argmax():
+    """Distinct negative similarities, with the LEAST negative one outside
+    the alignment window: unclamped, that argmax was the single candidate
+    and won wherever it sat; clamped to zeros, window-distance selection
+    takes over and an in-window chunk wins instead."""
+    raw = -(0.1 * e(0) + 0.5 * e(1) + 0.6 * e(2) + 0.7 * e(3))
+    neg_distinct = raw / torch.linalg.vector_norm(raw)
+    out = run([e(0), e(1), e(2), e(3)], [e(0), neg_distinct, e(3)])
+
+    segment = out["internals"]["best_match"]["precision"]["segments"][1]
+    window = segment["alignment_window"]
+    # raw argmax (ref 0, the least negative) sits outside the window...
+    assert not window["start"] <= 0 < window["end"]
+    # ...but selection lands inside it, at clamped similarity 0.0
+    selection = segment["selection"]
+    assert selection["selection_reason"] == "in_alignment_window"
+    assert window["start"] <= selection["selected_index"] < window["end"]
+
+
 def test_negative_gas_unclamped_dies_at_gate():
     """Doc-level GAS deliberately stays unclamped: anti-parallel document
     embeddings report Global_SAS = -1.0 and the SAS gate (not a clamp on
