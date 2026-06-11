@@ -165,17 +165,18 @@ def compute_vcs_score(
         non-str texts, out-of-range parameters (``chunk_size`` < 1,
         ``context_cutoff_value`` outside [0, 1],
         ``context_window_control`` <= 0, ``Rn`` < 0, bools where numbers are
-        expected), a segmenter that produces no chunks, or an embedding
+        expected), a segmenter that produces no chunks, an embedding
         function that returns anything other than a finite 2-D
-        ``torch.Tensor`` with one row per input text.
+        ``torch.Tensor`` with one row per input text, or an embedding row
+        with L2 norm 0 (which cannot be normalized).
 
-    Warns
+    Notes
     -----
-    UserWarning
-        If embedding rows are not L2-normalized. VCS uses raw dot products
-        as similarities, so un-normalized embeddings produce unbounded or
-        misleading scores.
-    
+    VCS uses raw dot products as similarities, so embedding rows are
+    L2-normalized internally: rows already within ``1e-12`` of unit norm
+    pass through bit-untouched, other rows are divided by their norms.
+    Scores are therefore scale-invariant in each embedding row.
+
     Examples
     --------
     **Basic Usage (Minimal Parameters):**
@@ -316,8 +317,9 @@ def compute_vcs_from_embeddings(
         rules as ``reference_doc_embedding``.
     reference_chunk_embeddings : torch.Tensor
         Embeddings of the reference chunks in narrative order, shape
-        ``(n_reference_chunks, embedding_dim)``. Rows should be
-        L2-normalized — similarities are raw dot products.
+        ``(n_reference_chunks, embedding_dim)``. Similarities are raw dot
+        products, so rows are L2-normalized internally (rows already at
+        unit norm pass through bit-untouched).
     generated_chunk_embeddings : torch.Tensor
         Embeddings of the generated chunks in narrative order, shape
         ``(n_generated_chunks, embedding_dim)``.
@@ -349,14 +351,10 @@ def compute_vcs_from_embeddings(
     ------
     ValueError
         If any embedding is not a finite torch.Tensor of the documented
-        shape, the two document embeddings (or the two chunk-embedding
-        matrices) disagree on embedding_dim, chunk texts are provided with
-        the wrong length, or a knob parameter is out of range.
-
-    Warns
-    -----
-    UserWarning
-        If embedding rows are not L2-normalized.
+        shape, any embedding row has L2 norm 0, the two document embeddings
+        (or the two chunk-embedding matrices) disagree on embedding_dim,
+        chunk texts are provided with the wrong length, or a knob parameter
+        is out of range.
     """
     # chunk_size has no meaning here (chunks arrive pre-built): validate the
     # remaining knobs against the same rules as compute_vcs_score.

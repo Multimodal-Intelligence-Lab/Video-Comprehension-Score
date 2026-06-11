@@ -3,11 +3,12 @@
 Cheap argument checks run before any computation; embedding-output checks
 run at the moment each embedding tensor is produced, before it is consumed.
 Everything raises ValueError with a message that names the offending
-argument — except the L2-normalization check, which only warns: VCS uses
-raw dot products as similarities, so un-normalized embeddings are almost
-certainly a mistake, but erroring would reject inputs v1 accepted.
+argument. Embedding rows are L2-normalized internally: VCS uses raw dot
+products as similarities, so the unit-norm contract is enforced rather
+than warned about — rows already within 1e-12 of unit norm pass through
+bit-untouched, off rows are renormalized, and zero-norm rows (which have
+no direction to normalize) raise.
 """
-import warnings
 from typing import Callable, List
 
 import torch
@@ -95,8 +96,7 @@ def _validate_embedding_output(embeddings, expected_rows: int, fn_label: str) ->
         )
     if not torch.isfinite(embeddings).all():
         raise ValueError(f"{fn_label} returned NaN or infinite values")
-    _warn_if_not_normalized(embeddings, fn_label)
-    return embeddings
+    return _normalize_embedding_rows(embeddings, fn_label)
 
 
 def _validate_doc_embedding(embedding, label: str) -> torch.Tensor:
@@ -114,8 +114,7 @@ def _validate_doc_embedding(embedding, label: str) -> torch.Tensor:
         )
     if not torch.isfinite(embedding).all():
         raise ValueError(f"{label} contains NaN or infinite values")
-    _warn_if_not_normalized(embedding.unsqueeze(0), label)
-    return embedding
+    return _normalize_embedding_rows(embedding.unsqueeze(0), label)[0]
 
 
 def _validate_chunk_embeddings(embeddings, label: str) -> torch.Tensor:
@@ -130,8 +129,7 @@ def _validate_chunk_embeddings(embeddings, label: str) -> torch.Tensor:
         )
     if not torch.isfinite(embeddings).all():
         raise ValueError(f"{label} contains NaN or infinite values")
-    _warn_if_not_normalized(embeddings, label)
-    return embeddings
+    return _normalize_embedding_rows(embeddings, label)
 
 
 def _resolve_chunk_texts(chunks, expected_len: int, label: str) -> List[str]:
@@ -150,14 +148,36 @@ def _resolve_chunk_texts(chunks, expected_len: int, label: str) -> List[str]:
     return chunks
 
 
-def _warn_if_not_normalized(embeddings: torch.Tensor, fn_label: str, atol: float = 1e-3) -> None:
+def _normalize_embedding_rows(
+    embeddings: torch.Tensor, fn_label: str, atol: float = 1e-12
+) -> torch.Tensor:
+    """Enforce the unit-norm contract on embedding rows.
+
+    Rows whose L2 norm is already within ``atol`` of 1 are not touched —
+    when every row complies, the INPUT TENSOR ITSELF is returned, so
+    compliant embeddings stay bit-identical by construction. Otherwise a
+    clone is returned with only the off rows divided by their norms.
+    Zero-norm rows have no direction to normalize and raise instead of
+    silently producing a garbage similarity row.
+    """
+    if embeddings.shape[0] == 0:
+        return embeddings
     norms = torch.linalg.vector_norm(embeddings.detach().to(torch.float64), dim=1)
-    if not torch.allclose(norms, torch.ones_like(norms), rtol=0.0, atol=atol):
-        warnings.warn(
-            f"{fn_label} returned embeddings whose rows are not L2-normalized "
-            "(row norms deviate from 1). VCS uses raw dot products as "
-            "similarities, so un-normalized embeddings produce unbounded or "
-            "misleading scores. Normalize each row to unit length.",
-            UserWarning,
-            stacklevel=3,
+    if (norms == 0.0).any():
+        row = int((norms == 0.0).nonzero()[0])
+        raise ValueError(
+            f"{fn_label} contains an all-zero embedding row (row {row} has "
+            "L2 norm 0), which cannot be normalized to unit length"
         )
+    off = (norms - 1.0).abs() > atol
+    if not bool(off.any()):
+        return embeddings
+    if not embeddings.dtype.is_floating_point:
+        raise ValueError(
+            f"{fn_label} returned non-unit-norm rows with a non-floating "
+            f"dtype ({embeddings.dtype}); provide floating-point embeddings "
+            "so the rows can be L2-normalized"
+        )
+    normalized = embeddings.clone()
+    normalized[off] = embeddings[off] / norms[off].to(embeddings.dtype).unsqueeze(1)
+    return normalized

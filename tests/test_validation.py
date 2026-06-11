@@ -1,9 +1,10 @@
 """Input-validation contract added in v2.0.0 (plan C9).
 
 Every invalid input must raise ValueError BEFORE any metric math runs,
-with a message naming the offending argument. The L2-normalization check
-is deliberately only a UserWarning (raw-dot-product similarity contract:
-erroring would reject inputs v1 accepted).
+with a message naming the offending argument. Since v3, embedding rows
+are L2-normalized internally (raw-dot-product similarity contract):
+compliant rows pass through bit-identical, off rows are renormalized,
+zero-norm rows raise.
 """
 import warnings
 
@@ -149,25 +150,52 @@ def test_local_embedder_errors_name_the_local_function():
         call(embedding_fn_local_sas=bad_local)
 
 
-# --- L2 normalization: warn, never raise ----------------------------------------
+# --- L2 normalization: enforced internally ---------------------------------------
 
-def test_unnormalized_embeddings_warn_but_score():
-    def unnormalized(texts):
+def test_unnormalized_embeddings_are_scale_invariant():
+    # Scaling every embedding row by a constant must not move any output:
+    # rows are renormalized internally. Tolerance, never exact — the
+    # renormalized row (c*v)/||c*v|| differs from v in the last ulps.
+    from helpers import assert_structurally_equal, canonicalize
+
+    def scaled(texts):
         return embed_dim64(texts) * 3.7
-    with pytest.warns(UserWarning, match="not L2-normalized"):
-        result = call(embedding_fn_global_sas=unnormalized)
-    assert "VCS" in result
+
+    baseline = call(return_all_metrics=True, return_internals=True)
+    result = call(
+        embedding_fn_global_sas=scaled,
+        return_all_metrics=True, return_internals=True,
+    )
+    assert_structurally_equal(canonicalize(result), canonicalize(baseline), atol=1e-12)
 
 
-def test_normalized_embeddings_do_not_warn():
+def test_compliant_embeddings_pass_through_bit_identical():
+    # The bit-no-op for compliant inputs is structural (the same tensor
+    # object comes back), not numerical luck.
+    from vcs._validation import _normalize_embedding_rows
+
+    emb = embed_dim64(["a storm", "the boats"])
+    assert _normalize_embedding_rows(emb, "embedding_fn_global_sas") is emb
+
+
+def test_compliant_embeddings_do_not_warn():
     # Assert only on OUR warning: escalating every UserWarning to an error
     # couples the test to environment noise (e.g. torch first-use warnings
     # on CI runners that don't fire locally).
     with warnings.catch_warnings(record=True) as caught:
         warnings.simplefilter("always")
         call()
-    ours = [w for w in caught if "L2-normalized" in str(w.message)]
+    ours = [w for w in caught if "normaliz" in str(w.message).lower()]
     assert not ours, f"unexpected normalization warning: {ours[0].message}"
+
+
+def test_zero_norm_embedding_row_raises():
+    def zero_row(texts):
+        out = embed_dim64(texts).clone()
+        out[0] = 0.0
+        return out
+    with pytest.raises(ValueError, match="embedding_fn_global_sas.*L2 norm 0"):
+        call(embedding_fn_global_sas=zero_row)
 
 
 # --- validation must not change valid-input behavior ----------------------------

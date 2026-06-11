@@ -141,10 +141,36 @@ def test_nan_chunk_embeddings_raise():
         compute_vcs_from_embeddings(**inputs)
 
 
-def test_unnormalized_chunk_embeddings_warn():
+def test_unnormalized_chunk_embeddings_are_scale_invariant():
+    # Rows are renormalized internally; tolerance, never exact — the
+    # renormalized row (c*v)/||c*v|| differs from v in the last ulps.
+    from helpers import assert_structurally_equal
+
     inputs = _square_inputs()
+    baseline = compute_vcs_from_embeddings(
+        **inputs, return_all_metrics=True, return_internals=True
+    )
     inputs["reference_chunk_embeddings"] = inputs["reference_chunk_embeddings"] * 2.5
-    with pytest.warns(UserWarning, match="not L2-normalized"):
+    inputs["generated_doc_embedding"] = inputs["generated_doc_embedding"] * 0.4
+    scaled = compute_vcs_from_embeddings(
+        **inputs, return_all_metrics=True, return_internals=True
+    )
+    assert_structurally_equal(canonicalize(scaled), canonicalize(baseline), atol=1e-12)
+
+
+def test_zero_norm_doc_embedding_raises():
+    inputs = _square_inputs()
+    inputs["reference_doc_embedding"] = torch.zeros_like(inputs["reference_doc_embedding"])
+    with pytest.raises(ValueError, match="reference_doc_embedding.*L2 norm 0"):
+        compute_vcs_from_embeddings(**inputs)
+
+
+def test_zero_norm_chunk_embedding_row_raises():
+    inputs = _square_inputs()
+    zeroed = inputs["generated_chunk_embeddings"].clone()
+    zeroed[1] = 0.0
+    inputs["generated_chunk_embeddings"] = zeroed
+    with pytest.raises(ValueError, match="generated_chunk_embeddings.*row 1.*L2 norm 0"):
         compute_vcs_from_embeddings(**inputs)
 
 
