@@ -65,7 +65,34 @@ def compute_vcs_score(
     * **SAS (Semantic Alignment Score)**: Scaled combination of Global_SAS and Local_SAS.
     * **VCS (Video Comprehension Score)**: The final combined score that balances all
       three metrics to provide an overall narrative similarity assessment.
-    
+
+    **Reading the score:**
+
+    VCS compounds its components. With SAS = NAS = x the score is
+    ``max(0, 2x - 1) / x``, so headline numbers run lower than raw cosine
+    intuition suggests:
+
+    ========  ======
+    SAS=NAS   VCS
+    ========  ======
+    <= 0.5    0.0
+    0.6       0.33
+    0.7       0.57
+    0.8       0.75
+    0.9       0.89
+    1.0       1.0
+    ========  ======
+
+    Calibrate expectations (and any pass/fail thresholds) on this scale.
+    VCS = 0.0 is a gate, not a fine-grained judgment: content (SAS) and
+    order (NAS) must both clear it. To rank candidates below the gate,
+    use ``'VCS Margin'`` from ``return_all_metrics``.
+
+    Repeated content is tolerated by design: generated chunks that
+    paraphrase the same reference chunk share that chunk's credit through
+    the load-sharing penalty, but correct content stated twice does not
+    score below correct content stated once.
+
     Parameters
     ----------
     reference_text : str
@@ -104,12 +131,19 @@ def compute_vcs_score(
         create smaller context windows (more restrictive), while smaller values 
         create larger context windows (more permissive).
     Rn : int, default=0
-        NAS Regularizer - allows flexibility in narrative ordering. 
-        Higher values permit more deviation from strict chronological order:
-        
+        NAS Regularizer - allows flexibility in narrative ordering.
+        Measured in CHUNKS (after ``chunk_size`` grouping, not in
+        sentences). Higher values permit more deviation from strict
+        chronological order:
+
         - ``Rn=0``: Strict chronological order required
         - ``Rn=1``: Small deviations allowed
         - ``Rn=2+``: More flexible chronological matching
+
+        Keep Rn small relative to the chunk count unless deliberately
+        relaxing order: at grid scale it disables the NAS dial entirely
+        (an intended escape hatch when order should not matter), and on
+        small grids a moderate Rn already blunts direction sensitivity.
     return_all_metrics : bool, default=False
         If True, returns all intermediate metrics (GAS, LAS, NAS components) in 
         addition to the final VCS score. Useful for detailed analysis.
@@ -177,7 +211,10 @@ def compute_vcs_score(
     VCS uses raw dot products as similarities, so embedding rows are
     L2-normalized internally: rows already within ``1e-12`` of unit norm
     pass through bit-untouched, other rows are divided by their norms.
-    Scores are therefore scale-invariant in each embedding row.
+    Scores are therefore scale-invariant in each embedding row. (float32
+    rows normalized by the caller rarely measure within ``1e-12`` in
+    float64 and are simply renormalized — results are identical either
+    way.)
 
     Examples
     --------

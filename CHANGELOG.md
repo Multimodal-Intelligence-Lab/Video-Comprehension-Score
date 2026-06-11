@@ -5,6 +5,82 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0] - 2026-06-10
+
+The first release that changes metric values. Every change below was
+golden-gated: each regeneration diff was classified leaf by leaf and
+matched against the change's predicted footprint.
+
+### Changed (BREAKING)
+- **Single `embedding_fn` parameter.** `compute_vcs_score`'s 4th
+  positional parameter is now `embedding_fn`; `embedding_fn_global_sas`
+  and `embedding_fn_local_sas` are gone. One instrument measures both
+  SAS levels — the SAS combination `max(0, GAS + LAS - 1) / LAS` reads
+  GAS and LAS as the same quantity at two granularities, which two
+  different embedders silently break. Migration: rename the keyword,
+  drop the second embedder. Positional callers keep working.
+  `compute_vcs_from_embeddings` documents the same one-instrument
+  contract (doc + chunk embeddings from the same embedder).
+- **Embedding rows are L2-normalized internally** (replaces the v2
+  `UserWarning`). Rows already within `1e-12` of unit norm pass through
+  bit-untouched (the same tensor object, so compliant float64 inputs
+  cannot change results); other rows are renormalized in the embedding
+  dtype; rows with L2 norm 0 now raise `ValueError`. Scores are
+  scale-invariant per embedding row. Note: float32 rows normalized by
+  the caller rarely measure within `1e-12` in float64 and are simply
+  renormalized — results are identical either way.
+- **Chunk similarities are clamped at 0.** Anti-correlated chunks carry
+  no more alignment signal than unrelated ones, and a negative
+  similarity no longer acts as less-than-zero evidence in LAS averages
+  or load-sharing coverage. Consequence: a chunk with NO positive signal
+  (all similarities <= 0) now matches inside its alignment window at
+  similarity 0.0 with no chronology penalty, instead of crowning its
+  least-negative cell wherever it sat. Document-level GAS is
+  deliberately NOT clamped — negative document cosines feed the SAS
+  gate. (Edge note: at extreme knob values, `context_cutoff_value`
+  near 0 with a small `context_window_control`, zero-similarity cells
+  can enter candidate sets that negative cells previously stayed out
+  of; at default and typical knobs candidate sets are unchanged.)
+- **`min(m, n) == 1` grids score Global NAS as vacuously perfect.**
+  When every alignment window spans the whole other side (single-chunk
+  texts, m-vs-1 grids), the max-penalty normalizer is 0 and no match
+  can deviate from chronology; that now scores 1.0 instead of 0.0.
+  Identical single-sentence texts score VCS = 1.0 (was 0.0). Content
+  judgment is unaffected: an m-vs-1 generation that drops content still
+  dies at the SAS gate.
+- **Local NAS uses the exact per-step in-band bound.** The old global
+  closed form (`2h-1` / `2h-2` from the axis ratio) applied one jump
+  threshold to every step; the bound is now derived per step from the
+  alignment windows: `(end_window(x_next) - 1) - start_window(x_curr)`.
+  Values move in non-square geometries (e.g. a dy=1 recall step at a
+  bound-0 position loses its credit). The `threshold` /
+  `threshold_with_Rn` internals keys keep their shape but now vary per
+  step. With `Rn > 0`, `|dy|` is compared against the forward bound (as
+  before, backward jumps are graded against the forward allowance).
+
+### Added
+- **`"VCS Margin"`** (under `return_all_metrics`): `SAS + NAS - 1` in
+  `[-1, 1]` — the shared numerator of both VCS scaling branches, so
+  `VCS > 0` iff margin > 0 and `VCS == margin / max(SAS, NAS)` when
+  positive. Unlike VCS it is not clamped, so it keeps ranking
+  candidates that the VCS zero gate maps to a flat 0. Also exposed as
+  `internals["metrics"]["vcs"]["margin"]`.
+- **`"Config"`** (under `return_all_metrics`): a provenance string
+  `vcs=<version>|chunk_size=...|rn=...|context_cutoff=...|context_window_control=...`
+  covering the library version and every knob the library controls
+  (the embedder's identity is the caller's to report). Reads
+  `chunk_size=none` from `compute_vcs_from_embeddings`. Because the
+  string embeds the package version, every release touches the golden
+  file by exactly that substring — an accepted consequence.
+- A metric-semantics test suite (`tests/test_metric_semantics.py`)
+  pinning the new behaviors with exact one-hot constructions, plus a
+  geometric property test that recomputes every Local-NAS threshold
+  from the alignment windows.
+
+### Removed
+- The `dual_embedders` golden case and the dim48 test embedder (the
+  dual-embedder API is gone).
+
 ## [2.0.0] - 2026-06-10
 
 ### Changed

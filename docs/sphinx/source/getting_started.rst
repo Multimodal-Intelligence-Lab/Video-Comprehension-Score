@@ -173,6 +173,15 @@ Embedding Function
 ~~~~~~~~~~~~~~~~~~
 
 The embedding function takes a list of strings and returns a PyTorch tensor with embeddings.
+The same function measures both the document level (Global SAS) and the chunk level
+(Local SAS), so the two SAS components compare like with like.
+
+.. note::
+   **Normalization**: VCS uses raw dot products as similarities and L2-normalizes
+   embedding rows internally since v3.0.0 — already-normalized rows pass through
+   untouched, and an all-zero embedding row raises ``ValueError``. Normalizing in
+   your own function (as the examples below do) remains good practice and changes
+   nothing in the result.
 
 **Function Signature:**
 
@@ -306,6 +315,8 @@ These parameters control what information VCS returns to you:
    - Individual Global_SAS, Local_SAS, SAS, NAS scores
    - Local SAS precision and recall components
    - Global and Local NAS sub-metrics with precision/recall breakdowns
+   - ``VCS Margin``: SAS + NAS - 1 in [-1, 1], ranks candidates below the VCS zero gate
+   - ``Config``: provenance string with the library version and every knob value used
    - Complete metric breakdown for detailed analysis
 
 **return_internals** (default: False)
@@ -336,8 +347,7 @@ Here's how to use these parameters in practice:
        reference_text=ref_text,
        generated_text=gen_text,
        segmenter_fn=segmenter,
-       embedding_fn_local_sas=embedder,
-       embedding_fn_global_sas=embedder,
+       embedding_fn=embedder,
        chunk_size=1,                    # Fine-grained analysis
        context_cutoff_value=0.7,        # More restrictive matching
        context_window_control=3.0,      # Tighter context windows
@@ -351,8 +361,7 @@ Here's how to use these parameters in practice:
        reference_text=ref_text,
        generated_text=gen_text,
        segmenter_fn=segmenter,
-       embedding_fn_local_sas=embedder,
-       embedding_fn_global_sas=embedder,
+       embedding_fn=embedder,
        chunk_size=2,                    # Group segments in pairs
        context_cutoff_value=0.5,        # More lenient matching
        context_window_control=5.0,      # Larger context windows
@@ -474,8 +483,7 @@ Here's a complete working example using lightweight models:
            reference_text=reference_text,
            generated_text=generated_text,
            segmenter_fn=simple_segmenter,
-           embedding_fn_local_sas=lightweight_embedding_function,
-           embedding_fn_global_sas=lightweight_embedding_function,
+           embedding_fn=lightweight_embedding_function,
            return_all_metrics=True,
            return_internals=True
        )

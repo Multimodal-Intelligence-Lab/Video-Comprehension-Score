@@ -292,8 +292,7 @@ result = compute_vcs_score(
     reference_text="Your reference text here",
     generated_text="Your generated text here", 
     segmenter_fn=your_segmenter_function,                # ← You provide this
-    embedding_fn_global_sas=your_embedding_function,     # ← You provide this
-    embedding_fn_local_sas=your_embedding_function,      # ← You provide this
+    embedding_fn=your_embedding_function,                # ← You provide this
     return_all_metrics=True
 )
 
@@ -562,8 +561,7 @@ try:
         reference_text=reference_text,
         generated_text=generated_text,
         segmenter_fn=simple_segmenter,
-        embedding_fn_global_sas=lightweight_embedding_function,
-        embedding_fn_local_sas=lightweight_embedding_function,
+        embedding_fn=lightweight_embedding_function,
         return_all_metrics=True,
         return_internals=True
     )
@@ -639,6 +637,8 @@ Once you're comfortable with the basics, you can fine-tune VCS behavior for your
 - Individual Global SAS, Local SAS, NAS scores
 - Local SAS precision and recall components
 - Global and Local NAS sub-metrics
+- `VCS Margin` (ranks candidates below the VCS zero gate)
+- `Config` provenance string (library version + knob values)
 - Complete metric breakdown for analysis
 
 </div>
@@ -682,8 +682,7 @@ result = compute_vcs_score(
     reference_text=ref_text,
     generated_text=gen_text,
     segmenter_fn=segmenter,
-    embedding_fn_global_sas=embedder,
-    embedding_fn_local_sas=embedder,
+    embedding_fn=embedder,
     chunk_size=2,                  # Group segments
     context_cutoff_value=0.7,      # Higher threshold
     context_window_control=3.0,    # Tighter windows
@@ -747,7 +746,12 @@ result = compute_vcs_score(
 
 <details>
 <summary><strong>🔗 Can I use different embedding functions for Global SAS and Local SAS?</strong></summary>
-<p>Yes, you can specify different embedding functions for Global SAS and Local SAS using the <code>embedding_fn_global_sas</code> and <code>embedding_fn_local_sas</code> parameters respectively. This allows you to optimize each component with models best suited for their specific evaluation tasks.</p>
+<p>No — since v3.0.0 a single <code>embedding_fn</code> measures both levels, by design. SAS combines Global SAS and Local SAS as the same quantity measured at two granularities (document vs. chunks); measuring them with two different models would silently break that comparison. If you have pre-computed embeddings, <code>compute_vcs_from_embeddings</code> follows the same one-instrument contract: document and chunk embeddings should come from the same embedder.</p>
+</details>
+
+<details>
+<summary><strong>📊 My scores look low — is something wrong?</strong></summary>
+<p>Probably not: VCS compounds its components. With SAS = NAS = x the score is max(0, 2x−1)/x, so 0.8-quality content in 0.8-quality order yields VCS ≈ 0.75, and anything at or below 0.5 on both gates to exactly 0. Calibrate thresholds on this scale rather than raw cosine intuition. To rank candidates that the zero gate maps to 0.0, use the <code>VCS Margin</code> output (SAS + NAS − 1) from <code>return_all_metrics</code>.</p>
 </details>
 
 ---
