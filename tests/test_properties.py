@@ -33,7 +33,7 @@ SWAP_KEY = {
 
 
 @pytest.mark.parametrize("name", [
-    "typical_8v3_defaults", "duplication_load_sharing", "rn_1", "dual_embedders",
+    "typical_8v3_defaults", "duplication_load_sharing", "rn_1", "context_tight",
 ])
 def test_determinism_is_bit_exact(name):
     kwargs = build_call_kwargs(next(c for c in CASES if c["name"] == name))

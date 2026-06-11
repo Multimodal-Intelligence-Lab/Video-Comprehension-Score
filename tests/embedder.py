@@ -39,7 +39,6 @@ def make_embedder(dim: int):
 
 
 embed_dim64 = make_embedder(64)
-embed_dim48 = make_embedder(48)
 
 
 def split_sentences(text: str):

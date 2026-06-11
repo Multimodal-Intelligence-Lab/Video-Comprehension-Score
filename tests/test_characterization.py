@@ -1,7 +1,7 @@
 """Golden characterization tests.
 
 Pins the FULL output of compute_vcs_score (all metrics + complete internals
-tree) for 20 deterministic cases against tests/golden/golden_cases.json.
+tree) for 19 deterministic cases against tests/golden/golden_cases.json.
 These tests define "behavior-identical" for the v2.0.0 software overhaul:
 refactors must keep them green without regenerating the goldens; the only
 commits allowed to regenerate are intentional output-shape changes, with

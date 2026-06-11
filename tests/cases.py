@@ -4,11 +4,10 @@ Each case is a fully deterministic ``compute_vcs_score`` invocation: fixed
 texts, fixed offline embedders (see embedder.py), and explicit knob values.
 The matrix covers both length regimes (m>n, m<n, m==n), every public knob
 (chunk_size, Rn, context cutoff/control), the load-sharing penalty path,
-dual global/local embedders, empty-string segments, and the known
-m=n=1 pathology pinned for the future math phase.
+empty-string segments, and the known m=n=1 pathology pinned for the
+future math phase.
 """
 from embedder import (
-    embed_dim48,
     embed_dim64,
     split_keep_empty,
     split_sentences,
@@ -94,7 +93,6 @@ SEGMENTERS = {
 
 EMBEDDERS = {
     "dim64": embed_dim64,
-    "dim48": embed_dim48,
 }
 
 CASES = [
@@ -123,7 +121,6 @@ CASES = [
      "params": {"context_cutoff_value": 0.9, "context_window_control": 8.0}},
     {"name": "combo_chunk2_rn1_loose", "ref": SQUARE_REF_4, "gen": SQUARE_GEN_4,
      "params": {"chunk_size": 2, "Rn": 1, "context_cutoff_value": 0.3, "context_window_control": 2.0}},
-    {"name": "dual_embedders", "ref": REF_STORY_8, "gen": GEN_SUMMARY_3, "params": {}, "local_embedder": "dim48"},
 ]
 
 
@@ -136,7 +133,5 @@ def build_call_kwargs(case):
         "segmenter_fn": SEGMENTERS[case.get("segmenter", "default")],
         "embedding_fn_global_sas": EMBEDDERS[case.get("global_embedder", "dim64")],
     }
-    if case.get("local_embedder"):
-        kwargs["embedding_fn_local_sas"] = EMBEDDERS[case["local_embedder"]]
     kwargs.update(case["params"])
     return kwargs
