@@ -44,6 +44,10 @@ def _similarity_from_chunk_embeddings(
     ref_tensor: torch.Tensor,
     gen_tensor: torch.Tensor,
 ) -> np.ndarray:
-    """Raw dot-product similarity matrix, shape (ref_len, gen_len). The
-    single shared site for this op so both entry points are bit-identical."""
-    return torch.matmul(ref_tensor, gen_tensor.T).cpu().numpy()
+    """Dot-product similarity matrix, shape (ref_len, gen_len), clamped at
+    0: anti-correlated chunks carry no more alignment signal than unrelated
+    ones, and a negative similarity must not act as LESS-than-zero evidence
+    anywhere downstream (load-penalty coverage, F1 inputs). The single
+    shared site for this op so both entry points are bit-identical.
+    Doc-level GAS is deliberately NOT clamped (it feeds the SAS gate)."""
+    return torch.matmul(ref_tensor, gen_tensor.T).clamp_min(0).cpu().numpy()
