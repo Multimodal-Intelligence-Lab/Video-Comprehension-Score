@@ -1,3 +1,15 @@
+from importlib.metadata import PackageNotFoundError, version
+
+
+def _resolve_version() -> str:
+    """Version from installed package metadata ('0.0.0+unknown' when no
+    distribution is installed, e.g. running from a raw source tree)."""
+    try:
+        return version("video-comprehension-score")
+    except PackageNotFoundError:
+        return "0.0.0+unknown"
+
+
 def _calculate_f1(precision: float, recall: float) -> float:
     denom = precision + recall
     return (2.0 * precision * recall / denom) if denom else 0.0

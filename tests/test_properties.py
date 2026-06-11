@@ -17,6 +17,8 @@ METRIC_BOUND_EPS = 1e-12
 
 SWAP_KEY = {
     "VCS": "VCS",
+    "VCS Margin": "VCS Margin",
+    "Config": "Config",
     "Global_SAS": "Global_SAS",
     "Local_SAS": "Local_SAS",
     "SAS": "SAS",
@@ -46,8 +48,12 @@ def test_determinism_is_bit_exact(name):
 def test_metrics_bounded(case):
     output = compute_vcs_score(**build_call_kwargs(case), return_all_metrics=True)
     for key, value in output.items():
-        assert -METRIC_BOUND_EPS <= value <= 1.0 + METRIC_BOUND_EPS, (
-            f"{case['name']}: {key} = {value!r} outside [0, 1]"
+        if key == "Config":  # str, not a metric
+            continue
+        # the margin is the one deliberately signed output: SAS + NAS - 1
+        lower = -1.0 if key == "VCS Margin" else 0.0
+        assert lower - METRIC_BOUND_EPS <= value <= 1.0 + METRIC_BOUND_EPS, (
+            f"{case['name']}: {key} = {value!r} outside [{lower}, 1]"
         )
 
 

@@ -31,6 +31,7 @@ from ._sas import (
     _global_sas_from_embeddings,
 )
 from ._nas import _compute_nas_metrics
+from ._utils import _resolve_version
 from ._vcs import _compute_vcs_metrics
 
 def compute_vcs_score(
@@ -144,6 +145,10 @@ def compute_vcs_score(
         * ``'Recall Local NAS'`` : float - Local NAS recall
         * ``'Local NAS'`` : float - Local Narrative Alignment Score
         * ``'NAS'`` : float - Final Narrative Alignment Score
+        * ``'VCS Margin'`` : float - SAS + NAS - 1 in [-1, 1]; ranks
+          candidates below the VCS zero gate (VCS > 0 iff margin > 0)
+        * ``'Config'`` : str - library version + knob values used
+          (``vcs=...|chunk_size=...|rn=...|context_cutoff=...|context_window_control=...``)
             
         **With return_internals=True:**
         
@@ -462,7 +467,18 @@ def _run_vcs_pipeline(
     )
 
     if return_all_metrics:
-        output: Dict[str, Any] = {**sas_metrics, **nas_metrics, **combined}
+        # The embedder's identity is the caller's to report — the library
+        # never sees a model name, so the Config string covers exactly the
+        # knobs the library controls (plus its own version).
+        config_string = (
+            f"vcs={_resolve_version()}"
+            f"|chunk_size={chunk_size if chunk_size is not None else 'none'}"
+            f"|rn={Rn}"
+            f"|context_cutoff={context_cutoff_value}"
+            f"|context_window_control={context_window_control}"
+        )
+        output: Dict[str, Any] = {**sas_metrics, **nas_metrics, **combined,
+                                  "Config": config_string}
     else:
         output = {
             "VCS": combined["VCS"],
@@ -562,6 +578,7 @@ def _run_vcs_pipeline(
                 },
                 "vcs": {
                     "value": combined["VCS"],
+                    "margin": combined["VCS Margin"],
                 },
             },
             "config": {

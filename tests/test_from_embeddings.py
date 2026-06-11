@@ -50,9 +50,17 @@ def test_exactly_equal_to_text_entry_point(case):
     )
 
     a, b = canonicalize(from_text), canonicalize(from_emb)
-    # the single documented difference: chunking happened upstream
+    # the single documented difference: chunking happened upstream, so the
+    # embeddings entry point reports chunk_size None / 'none' (internals
+    # field and Config string)
     assert b["internals"]["config"]["chunk_size"] is None
     a["internals"]["config"]["chunk_size"] = None
+    a_fields = dict(f.split("=", 1) for f in a["Config"].split("|"))
+    b_fields = dict(f.split("=", 1) for f in b["Config"].split("|"))
+    assert b_fields.pop("chunk_size") == "none"
+    a_fields.pop("chunk_size")
+    assert a_fields == b_fields
+    a["Config"] = b["Config"] = None
     assert a == b  # exact equality, floats included
 
 

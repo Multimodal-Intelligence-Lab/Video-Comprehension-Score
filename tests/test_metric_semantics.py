@@ -9,6 +9,7 @@ genuine float chain is involved.
 import pytest
 import torch
 
+import vcs
 from cases import CASES, build_call_kwargs
 from vcs import compute_vcs_from_embeddings, compute_vcs_score
 
@@ -194,3 +195,58 @@ def test_recall_bound_zero_step():
     assert seg["dy"] == 1
     assert seg["threshold"] == 0.0
     assert not seg["is_calculable"] and seg["calculation_method"] == "none"
+
+
+# --- VCS Margin + Config outputs ----------------------------------------------
+
+@pytest.mark.parametrize("case", CASES, ids=[case["name"] for case in CASES])
+def test_margin_is_the_vcs_gate_numerator(case):
+    """VCS Margin = SAS + NAS - 1 exactly; it shares the sign of VCS's
+    Lukasiewicz numerator, so VCS > 0 iff margin > 0, and when positive
+    VCS == margin / max(SAS, NAS) (approx: the pipeline computes the
+    numerator as a - (1 - b), which can differ from a + b - 1 by an ulp)."""
+    out = compute_vcs_score(**build_call_kwargs(case), return_all_metrics=True)
+    assert out["VCS Margin"] == out["SAS"] + out["NAS"] - 1.0
+    if out["VCS"] > 0:
+        assert out["VCS Margin"] > 0
+        assert out["VCS"] == pytest.approx(
+            out["VCS Margin"] / max(out["SAS"], out["NAS"]), abs=1e-12
+        )
+    else:
+        assert out["VCS Margin"] <= 0
+
+
+def test_margin_calibration_endpoints():
+    identical = next(c for c in CASES if c["name"] == "identical_4")
+    out = compute_vcs_score(**build_call_kwargs(identical), return_all_metrics=True)
+    assert out["VCS Margin"] == pytest.approx(1.0, abs=1e-12)
+
+    disjoint = next(c for c in CASES if c["name"] == "disjoint_4")
+    out = compute_vcs_score(**build_call_kwargs(disjoint), return_all_metrics=True)
+    assert out["VCS"] == 0.0
+    assert out["VCS Margin"] <= 0.0
+
+
+def test_margin_ranks_below_the_zero_gate():
+    """Two candidates both killed by the SAS gate (orthogonal docs) must
+    still order by margin: chunks in reference order keep their NAS and
+    sit at margin 0, a full reversal loses NAS too and ranks below."""
+    refs = [e(0), e(1), e(2), e(3)]
+    in_order = run(refs, [e(0), e(1), e(2), e(3)], ref_doc=e(4), gen_doc=e(5))
+    reversed_ = run(refs, [e(3), e(2), e(1), e(0)], ref_doc=e(4), gen_doc=e(5))
+    assert in_order["VCS"] == 0.0 and reversed_["VCS"] == 0.0
+    assert in_order["VCS Margin"] > reversed_["VCS Margin"]
+
+
+def test_config_string_fields():
+    case = next(c for c in CASES if c["name"] == "typical_8v3_defaults")
+    out = compute_vcs_score(**build_call_kwargs(case), return_all_metrics=True)
+    fields = dict(part.split("=", 1) for part in out["Config"].split("|"))
+    assert set(fields) == {
+        "vcs", "chunk_size", "rn", "context_cutoff", "context_window_control",
+    }
+    assert fields["vcs"] == vcs.__version__
+    assert fields["chunk_size"] == "1"
+    assert fields["rn"] == "0"
+    assert fields["context_cutoff"] == "0.6"
+    assert fields["context_window_control"] == "4.0"

@@ -24,6 +24,8 @@ METRIC_KEYS = {
     "Recall Local NAS",
     "Local NAS",
     "NAS",
+    "VCS Margin",
+    "Config",
 }
 
 INTERNALS_TOP_KEYS = {
@@ -72,6 +74,7 @@ def test_internals_subtree_key_sets():
     output = compute_vcs_score(**_kwargs(), return_all_metrics=True, return_internals=True)
     internals = output["internals"]
     assert set(internals["metrics"]) == INTERNALS_METRICS_KEYS
+    assert set(internals["metrics"]["vcs"]) == {"value", "margin"}
     assert set(internals["alignment"]) == {"precision", "recall"}
     for direction in ("precision", "recall"):
         assert set(internals["alignment"][direction]) == {

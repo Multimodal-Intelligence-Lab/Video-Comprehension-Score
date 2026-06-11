@@ -1,11 +1,8 @@
 
-# Import version from package metadata
-try:
-    from importlib.metadata import PackageNotFoundError, version
-    __version__ = version("video-comprehension-score")
-except PackageNotFoundError:
-    # Running from a source tree without an installed distribution
-    __version__ = "0.0.0+unknown"
+# Version from package metadata (shared with the per-result Config string)
+from ._utils import _resolve_version
+
+__version__ = _resolve_version()
 
 __author__ = "Harsh Dubey"
 __email__ = "had7143@gmail.com"
