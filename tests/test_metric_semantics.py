@@ -111,3 +111,67 @@ def test_vacuous_branch_unreachable_at_2x2():
     global_nas = out["internals"]["metrics"]["global_nas"]
     assert global_nas["precision"]["max_penalty"] > 0
     assert global_nas["recall"]["max_penalty"] > 0
+
+
+# --- C12: Local NAS per-step in-band bound ------------------------------------
+
+def _assert_segments_match_window_geometry(out, direction):
+    """Keystone geometric property: every segment's threshold must equal the
+    in-band bound recomputed from the alignment windows and the segment's
+    own recorded x positions — (end_window(x_to) - 1) - start_window(x_from)
+    (x positions 1-based, windows 0-based) — and the CASE partition must
+    follow from dy, the bound, and Rn."""
+    internals = out["internals"]
+    windows = internals["alignment_windows"][direction]
+    rn = internals["config"]["Rn"]
+    for seg in internals["metrics"]["local_nas"][direction]["segments"]:
+        x_from, x_to = seg["start"][0], seg["end"][0]
+        bound = (windows[x_to - 1][1] - 1) - windows[x_from - 1][0]
+        assert seg["threshold"] == float(bound)
+        assert seg["threshold_with_Rn"] == float(bound + rn)
+        dy_value = abs(seg["dy"]) if rn > 0 else seg["dy"]
+        if 0 <= dy_value <= bound:
+            assert seg["is_calculable"] and seg["calculation_method"] == "standard"
+        elif rn > 0 and bound < dy_value <= bound + rn:
+            assert seg["is_calculable"] and seg["calculation_method"] == "Rn_capped"
+        else:
+            assert not seg["is_calculable"] and seg["calculation_method"] == "none"
+
+
+@pytest.mark.parametrize("direction", ["precision", "recall"])
+@pytest.mark.parametrize("case", CASES, ids=[case["name"] for case in CASES])
+def test_local_nas_thresholds_match_window_geometry(case, direction):
+    out = compute_vcs_score(**build_call_kwargs(case), return_internals=True)
+    _assert_segments_match_window_geometry(out, direction)
+
+
+def test_per_step_bound_tightens_8v3_precision():
+    """8v3 precision windows are [(0,3), (2,5), (5,8)]: the old global
+    closed form allowed dy <= 5 on EVERY step, but between x=1 and x=2 no
+    in-band path can jump more than (5-1) - 0 = 4. A dy=5 step there is now
+    out of band (Rn=0) and exactly one Rn beyond the bound at Rn=1."""
+    refs = [e(i) for i in range(8)]
+    gens = [e(0), e(5), e(6)]  # matches land on refs 1, 6, 7 (1-based)
+
+    seg = run(refs, gens)["internals"]["metrics"]["local_nas"]["precision"]["segments"][0]
+    assert tuple(seg["start"]) == (1, 1) and tuple(seg["end"]) == (2, 6)
+    assert seg["dy"] == 5
+    assert seg["threshold"] == 4.0
+    assert not seg["is_calculable"] and seg["calculation_method"] == "none"
+
+    seg_rn = run(refs, gens, Rn=1)["internals"]["metrics"]["local_nas"]["precision"]["segments"][0]
+    assert seg_rn["threshold"] == 4.0 and seg_rn["threshold_with_Rn"] == 5.0
+    assert seg_rn["is_calculable"] and seg_rn["calculation_method"] == "Rn_capped"
+
+
+def test_recall_bound_zero_step():
+    """8v3 recall windows start [(0,1), (0,1), (0,2), ...]: between ref
+    positions 1 and 2 an in-band path cannot move at all (bound 0), while
+    the old global formula allowed dy <= 1 everywhere on the short axis."""
+    refs = [e(i) for i in range(8)]
+    gens = [e(0), e(1), e(5)]  # ref 2 matches gen 2 outside its (0,1) window
+
+    seg = run(refs, gens)["internals"]["metrics"]["local_nas"]["recall"]["segments"][0]
+    assert seg["dy"] == 1
+    assert seg["threshold"] == 0.0
+    assert not seg["is_calculable"] and seg["calculation_method"] == "none"

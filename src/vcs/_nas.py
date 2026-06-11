@@ -198,56 +198,56 @@ def _compute_ideal_narrative_line_band(
 
 
 def _compute_actual_line_length(
-    x: Union[List[int], np.ndarray], 
-    y: Union[List[float], np.ndarray], 
-    y_axis: int, 
-    x_axis: int,
+    x: Union[List[int], np.ndarray],
+    y: Union[List[float], np.ndarray],
+    alignment_windows: List[Tuple[int, int]],
     Rn: int = 0,
     floor_path_dy_map: Dict[int, int] = None,
     collect_details: bool = True,
-) -> Tuple[float, List[Dict[str, Any]]]: 
+) -> Tuple[float, List[Dict[str, Any]]]:
     x_arr = np.array(x) if not isinstance(x, np.ndarray) else x
     y_arr = np.array(y) if not isinstance(y, np.ndarray) else y
-    
+
     if len(x_arr) <= 1:
-        return 0.0, [] 
-    
+        return 0.0, []
+
     dx = np.diff(x_arr)
     dy = np.diff(y_arr)
-    
-    mapping_window_height = math.ceil(y_axis / x_axis) if x_axis else 0
+
     lengths = np.zeros_like(dx, dtype=float)
-    
-    ratio = y_axis / x_axis if x_axis else 0
-    ratio_decimal_part = ratio - math.floor(ratio)
-    
+
     segments = []
-    
-    if y_axis <= x_axis:
-        Rn_window = mapping_window_height
-    else:
-        if 0 < ratio_decimal_part <= 0.5:
-            Rn_window = (2 * mapping_window_height) - 2
-        else:
-            Rn_window = (2 * mapping_window_height) - 1
 
     for i in range(len(dx)):
 
+        # Per-step in-band bound: the largest vertical jump a step can take
+        # while keeping both endpoints inside their alignment windows — from
+        # the start of the window at this step's x to the last in-window
+        # index at the next step's x. x positions are 1-based, windows
+        # 0-based; window ends are exclusive. Replaces the old global
+        # closed form (2h-1 / 2h-2 from the axis ratio), which never
+        # exceeded the true band-wide max but applied one global bound to
+        # every step and undershot the per-geometry max in ~39% of grid
+        # shapes.
+        start_w = alignment_windows[int(x_arr[i]) - 1]
+        end_w = alignment_windows[int(x_arr[i + 1]) - 1]
+        bound = (end_w[1] - 1) - start_w[0]
+
         dy_value = abs(dy[i]) if Rn > 0 else dy[i]
-        
+
         is_calculable = False
         segment_length = 0.0
         calculation_method = "none"
-        
-        # CASE 1: Normal segments (reasonable vertical change)
-        if dy_value <= Rn_window and dy_value >= 0:
+
+        # CASE 1: Normal segments (in-band vertical change)
+        if dy_value <= bound and dy_value >= 0:
             is_calculable = True
             segment_length = math.sqrt(dx[i]**2 + dy[i]**2)
             lengths[i] = segment_length
             calculation_method = "standard"
-            
+
         # CASE 2: Large vertical jumps but within LCT range
-        elif Rn > 0 and dy_value > Rn_window and dy_value <= Rn_window+Rn:
+        elif Rn > 0 and dy_value > bound and dy_value <= bound + Rn:
             is_calculable = True
             floor_dy = None
             if floor_path_dy_map and x_arr[i] in floor_path_dy_map:
@@ -275,8 +275,8 @@ def _compute_actual_line_length(
             "end": (int(x_arr[i+1]), int(y_arr[i+1])),
             "dx": int(dx[i]),
             "dy": int(dy[i]),
-            "threshold": float(Rn_window),
-            "threshold_with_Rn": float(Rn_window+Rn),
+            "threshold": float(bound),
+            "threshold_with_Rn": float(bound + Rn),
             "is_calculable": is_calculable,
             "calculation_method": calculation_method,
             "length": float(segment_length)
@@ -289,8 +289,6 @@ def _compute_actual_line_length(
 def _calculate_local_nas(
     aligned: List[Tuple],
     alignment_windows,
-    ref_len: int,
-    gen_len: int,
     swap: bool = False,
     Rn: int = 0,
     collect_details: bool = True,
@@ -299,13 +297,9 @@ def _calculate_local_nas(
         return 0.0, {"message": "No aligned segments"}
     
     if not swap:
-        source_len = ref_len
-        target_len = gen_len
         sort_key = lambda point: point[0]
         sx_idx, sy_idx = 0, 1
     else:
-        source_len = gen_len
-        target_len = ref_len
         sort_key = lambda point: point[1]
         sx_idx, sy_idx = 1, 0
     
@@ -322,7 +316,7 @@ def _calculate_local_nas(
             dy = floor_path[i+1][1] - floor_path[i][1]
             floor_path_dy_map[x_pos] = dy
     
-    actual_line_length, segments = _compute_actual_line_length(sx, sy, source_len, target_len, Rn, floor_path_dy_map, collect_details)
+    actual_line_length, segments = _compute_actual_line_length(sx, sy, alignment_windows, Rn, floor_path_dy_map, collect_details)
     average_ideal_line_length = (floor_ideal_line_length + ceil_ideal_line_length) / 2
 
     if floor_ideal_line_length <= actual_line_length <= ceil_ideal_line_length:
@@ -391,8 +385,8 @@ def _compute_nas_metrics(
         if g_idx >= 0 and r_idx >= 0 and g_idx < len(gen_chunks) and r_idx < len(ref_chunks):
             recall_aligned_segments.append((g_idx + 1, r_idx + 1, gen_chunks[g_idx], ref_chunks[r_idx]))
     
-    precision_local_nas, precision_local_nas_internals = _calculate_local_nas(precision_aligned_segments, precision_alignment_windows, ref_len, gen_len, Rn=Rn, collect_details=collect_details)
-    recall_local_nas, recall_local_nas_internals = _calculate_local_nas(recall_aligned_segments, recall_alignment_windows, ref_len, gen_len, swap=True, Rn=Rn, collect_details=collect_details)
+    precision_local_nas, precision_local_nas_internals = _calculate_local_nas(precision_aligned_segments, precision_alignment_windows, Rn=Rn, collect_details=collect_details)
+    recall_local_nas, recall_local_nas_internals = _calculate_local_nas(recall_aligned_segments, recall_alignment_windows, swap=True, Rn=Rn, collect_details=collect_details)
 
     local_nas = _calculate_f1(precision_local_nas, recall_local_nas)
 

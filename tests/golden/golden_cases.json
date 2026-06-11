@@ -7,14 +7,14 @@
    "output": {
     "Global NAS": 0.8571428571428571,
     "Global_SAS": 0.4062678954103026,
-    "Local NAS": 1.0,
+    "Local NAS": 0.7387961250362585,
     "Local_SAS": 0.15066725925776717,
-    "NAS": 0.923076923076923,
+    "NAS": 0.7935814946947372,
     "Precision Global NAS": 1.0,
     "Precision Local NAS": 1.0,
     "Precision Local_SAS": 0.4524671540864706,
     "Recall Global NAS": 0.75,
-    "Recall Local NAS": 1.0,
+    "Recall Local NAS": 0.585786437626905,
     "Recall Local_SAS": 0.09038176347278969,
     "SAS": 0.0,
     "VCS": 0.0,
@@ -323,7 +323,7 @@
        "value": 0.4062678954103026
       },
       "local_nas": {
-       "f1": 1.0,
+       "f1": 0.7387961250362585,
        "precision": {
         "actual_line_length": 3.1622776601683795,
         "actual_path": [
@@ -381,7 +381,7 @@
         "value": 1.0
        },
        "recall": {
-        "actual_line_length": 3.414213562373095,
+        "actual_line_length": 2.0,
         "actual_path": [
          [
           1,
@@ -441,21 +441,21 @@
         ],
         "segments": [
          {
-          "calculation_method": "standard",
+          "calculation_method": "none",
           "dx": 1,
           "dy": 1,
           "end": [
            2,
            2
           ],
-          "is_calculable": true,
-          "length": 1.4142135623730951,
+          "is_calculable": false,
+          "length": 0.0,
           "start": [
            1,
            1
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          },
          {
           "calculation_method": "standard",
@@ -488,11 +488,11 @@
            3,
            2
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          }
         ],
-        "value": 1.0
+        "value": 0.585786437626905
        }
       },
       "local_sas": {
@@ -555,7 +555,7 @@
        }
       },
       "nas": {
-       "value": 0.923076923076923
+       "value": 0.7935814946947372
       },
       "sas": {
        "global_sas_internals": {
@@ -986,8 +986,8 @@
            1,
            1
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          },
          {
           "calculation_method": "standard",
@@ -1003,8 +1003,8 @@
            2,
            1
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          }
         ],
         "value": 1.0
@@ -2269,8 +2269,8 @@
            1,
            2
           ],
-          "threshold": 5.0,
-          "threshold_with_Rn": 5.0
+          "threshold": 4.0,
+          "threshold_with_Rn": 4.0
          },
          {
           "calculation_method": "none",
@@ -2414,8 +2414,8 @@
            1,
            2
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          },
          {
           "calculation_method": "none",
@@ -2465,8 +2465,8 @@
            4,
            3
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          },
          {
           "calculation_method": "standard",
@@ -2499,8 +2499,8 @@
            6,
            3
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          },
          {
           "calculation_method": "standard",
@@ -2516,8 +2516,8 @@
            7,
            3
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          }
         ],
         "value": 0.6386979044864147
@@ -3344,8 +3344,8 @@
            1,
            2
           ],
-          "threshold": 5.0,
-          "threshold_with_Rn": 5.0
+          "threshold": 4.0,
+          "threshold_with_Rn": 4.0
          },
          {
           "calculation_method": "standard",
@@ -3489,8 +3489,8 @@
            1,
            2
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          },
          {
           "calculation_method": "none",
@@ -3540,8 +3540,8 @@
            4,
            3
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          },
          {
           "calculation_method": "standard",
@@ -3574,8 +3574,8 @@
            6,
            3
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          },
          {
           "calculation_method": "standard",
@@ -3591,8 +3591,8 @@
            7,
            3
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          }
         ],
         "value": 0.6386979044864147
@@ -6980,17 +6980,17 @@
    "output": {
     "Global NAS": 0.616,
     "Global_SAS": 0.8647491917652395,
-    "Local NAS": 0.6757540731441998,
+    "Local NAS": 0.41652440196787055,
     "Local_SAS": 0.6835501509105936,
-    "NAS": 0.6444949819954763,
+    "NAS": 0.49699364222908177,
     "Precision Global NAS": 0.7,
     "Precision Local NAS": 0.7207592200561265,
     "Precision Local_SAS": 0.9999999999999998,
     "Recall Global NAS": 0.55,
-    "Recall Local NAS": 0.6360389693210724,
+    "Recall Local NAS": 0.2928932188134525,
     "Recall Local_SAS": 0.5192375170109276,
     "SAS": 0.8021347694026755,
-    "VCS": 0.55680138604482,
+    "VCS": 0.3729154040467648,
     "internals": {
      "alignment": {
       "precision": {
@@ -7524,7 +7524,7 @@
        "value": 0.8647491917652395
       },
       "local_nas": {
-       "f1": 0.6757540731441998,
+       "f1": 0.41652440196787055,
        "precision": {
         "actual_line_length": 4.242640687119286,
         "actual_path": [
@@ -7640,7 +7640,7 @@
         "value": 0.7207592200561265
        },
        "recall": {
-        "actual_line_length": 5.242640687119286,
+        "actual_line_length": 2.414213562373095,
         "actual_path": [
          [
           1,
@@ -7748,21 +7748,21 @@
         ],
         "segments": [
          {
-          "calculation_method": "standard",
+          "calculation_method": "none",
           "dx": 1,
           "dy": 1,
           "end": [
            2,
            2
           ],
-          "is_calculable": true,
-          "length": 1.4142135623730951,
+          "is_calculable": false,
+          "length": 0.0,
           "start": [
            1,
            1
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          },
          {
           "calculation_method": "standard",
@@ -7782,21 +7782,21 @@
           "threshold_with_Rn": 1.0
          },
          {
-          "calculation_method": "standard",
+          "calculation_method": "none",
           "dx": 1,
           "dy": 1,
           "end": [
            4,
            4
           ],
-          "is_calculable": true,
-          "length": 1.4142135623730951,
+          "is_calculable": false,
+          "length": 0.0,
           "start": [
            3,
            3
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          },
          {
           "calculation_method": "none",
@@ -7829,8 +7829,8 @@
            5,
            1
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          },
          {
           "calculation_method": "none",
@@ -7863,11 +7863,11 @@
            7,
            4
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          }
         ],
-        "value": 0.6360389693210724
+        "value": 0.2928932188134525
        }
       },
       "local_sas": {
@@ -7978,7 +7978,7 @@
        }
       },
       "nas": {
-       "value": 0.6444949819954763
+       "value": 0.49699364222908177
       },
       "sas": {
        "global_sas_internals": {
@@ -8091,7 +8091,7 @@
        "value": 0.8021347694026755
       },
       "vcs": {
-       "value": 0.55680138604482
+       "value": 0.3729154040467648
       }
      },
      "similarity": {
@@ -11728,14 +11728,14 @@
    "output": {
     "Global NAS": 0.761904761904762,
     "Global_SAS": 0.4062678954103026,
-    "Local NAS": 0.9728253410366666,
+    "Local NAS": 0.9441325018643627,
     "Local_SAS": 0.13795038268725518,
-    "NAS": 0.8545424542765155,
+    "NAS": 0.8432864443421226,
     "Precision Global NAS": 0.6153846153846154,
     "Precision Local NAS": 1.0,
     "Precision Local_SAS": 0.37101913032003053,
     "Recall Global NAS": 1.0,
-    "Recall Local NAS": 0.9470885331404902,
+    "Recall Local NAS": 0.8941770662809806,
     "Recall Local_SAS": 0.08472646593305652,
     "SAS": 0.0,
     "VCS": 0.0,
@@ -12234,7 +12234,7 @@
        "value": 0.4062678954103026
       },
       "local_nas": {
-       "f1": 0.9728253410366666,
+       "f1": 0.9441325018643627,
        "precision": {
         "actual_line_length": 3.6502815398728847,
         "actual_path": [
@@ -12297,8 +12297,8 @@
            1,
            2
           ],
-          "threshold": 5.0,
-          "threshold_with_Rn": 6.0
+          "threshold": 4.0,
+          "threshold_with_Rn": 5.0
          },
          {
           "calculation_method": "standard",
@@ -12321,7 +12321,7 @@
         "value": 1.0
        },
        "recall": {
-        "actual_line_length": 7.414213562373095,
+        "actual_line_length": 7.0,
         "actual_path": [
          [
           1,
@@ -12429,7 +12429,7 @@
         ],
         "segments": [
          {
-          "calculation_method": "standard",
+          "calculation_method": "Rn_capped",
           "dx": 1,
           "dy": -1,
           "end": [
@@ -12437,13 +12437,13 @@
            1
           ],
           "is_calculable": true,
-          "length": 1.4142135623730951,
+          "length": 1.0,
           "start": [
            1,
            2
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 2.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 1.0
          },
          {
           "calculation_method": "Rn_capped",
@@ -12493,8 +12493,8 @@
            4,
            3
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 2.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 1.0
          },
          {
           "calculation_method": "standard",
@@ -12527,8 +12527,8 @@
            6,
            3
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 2.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 1.0
          },
          {
           "calculation_method": "standard",
@@ -12544,11 +12544,11 @@
            7,
            3
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 2.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 1.0
          }
         ],
-        "value": 0.9470885331404902
+        "value": 0.8941770662809806
        }
       },
       "local_sas": {
@@ -12636,7 +12636,7 @@
        }
       },
       "nas": {
-       "value": 0.8545424542765155
+       "value": 0.8432864443421226
       },
       "sas": {
        "global_sas_internals": {
@@ -15950,8 +15950,8 @@
            1,
            2
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          },
          {
           "calculation_method": "none",
@@ -16001,8 +16001,8 @@
            4,
            3
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          },
          {
           "calculation_method": "standard",
@@ -16035,8 +16035,8 @@
            6,
            3
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          },
          {
           "calculation_method": "standard",
@@ -16052,8 +16052,8 @@
            7,
            3
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          }
         ],
         "value": 0.6386979044864147
@@ -16120,8 +16120,8 @@
            1,
            2
           ],
-          "threshold": 5.0,
-          "threshold_with_Rn": 5.0
+          "threshold": 4.0,
+          "threshold_with_Rn": 4.0
          },
          {
           "calculation_method": "standard",
@@ -16952,8 +16952,8 @@
            1,
            2
           ],
-          "threshold": 5.0,
-          "threshold_with_Rn": 5.0
+          "threshold": 4.0,
+          "threshold_with_Rn": 4.0
          },
          {
           "calculation_method": "standard",
@@ -17097,8 +17097,8 @@
            1,
            2
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          },
          {
           "calculation_method": "none",
@@ -17148,8 +17148,8 @@
            4,
            3
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          },
          {
           "calculation_method": "standard",
@@ -17182,8 +17182,8 @@
            6,
            3
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          },
          {
           "calculation_method": "standard",
@@ -17199,8 +17199,8 @@
            7,
            3
           ],
-          "threshold": 1.0,
-          "threshold_with_Rn": 1.0
+          "threshold": 0.0,
+          "threshold_with_Rn": 0.0
          }
         ],
         "value": 0.6386979044864147
