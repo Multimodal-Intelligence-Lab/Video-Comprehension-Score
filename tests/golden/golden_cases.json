@@ -665,15 +665,15 @@
     "chunk_size": 3
    },
    "output": {
-    "Global NAS": 0.0,
+    "Global NAS": 1.0,
     "Global_SAS": 0.4062678954103026,
     "Local NAS": 1.0,
     "Local_SAS": 0.0,
-    "NAS": 0.0,
-    "Precision Global NAS": 0,
+    "NAS": 1.0,
+    "Precision Global NAS": 1.0,
     "Precision Local NAS": 1.0,
     "Precision Local_SAS": 0.4930904691043906,
-    "Recall Global NAS": 0,
+    "Recall Global NAS": 1.0,
     "Recall Local NAS": 1.0,
     "Recall Local_SAS": 0.0,
     "SAS": 0.0,
@@ -867,7 +867,7 @@
      },
      "metrics": {
       "global_nas": {
-       "f1": 0.0,
+       "f1": 1.0,
        "precision": {
         "in_rn_zone": [
          false
@@ -880,7 +880,7 @@
          0.0
         ],
         "total_penalty": 0.0,
-        "value": 0
+        "value": 1.0
        },
        "recall": {
         "in_rn_zone": [
@@ -900,7 +900,7 @@
          0.0
         ],
         "total_penalty": 0.0,
-        "value": 0
+        "value": 1.0
        }
       },
       "global_sas": {
@@ -1066,7 +1066,7 @@
        }
       },
       "nas": {
-       "value": 0.0
+       "value": 1.0
       },
       "sas": {
        "global_sas_internals": {
@@ -14194,19 +14194,19 @@
   "single_chunk_identical": {
    "config_overrides": {},
    "output": {
-    "Global NAS": 0.0,
+    "Global NAS": 1.0,
     "Global_SAS": 1.0,
     "Local NAS": 1.0,
     "Local_SAS": 1.0000000000000002,
-    "NAS": 0.0,
-    "Precision Global NAS": 0,
+    "NAS": 1.0,
+    "Precision Global NAS": 1.0,
     "Precision Local NAS": 1.0,
     "Precision Local_SAS": 1.0000000000000002,
-    "Recall Global NAS": 0,
+    "Recall Global NAS": 1.0,
     "Recall Local NAS": 1.0,
     "Recall Local_SAS": 1.0000000000000002,
     "SAS": 1.0,
-    "VCS": 0.0,
+    "VCS": 1.0,
     "internals": {
      "alignment": {
       "precision": {
@@ -14326,7 +14326,7 @@
      },
      "metrics": {
       "global_nas": {
-       "f1": 0.0,
+       "f1": 1.0,
        "precision": {
         "in_rn_zone": [
          false
@@ -14339,7 +14339,7 @@
          0.0
         ],
         "total_penalty": 0.0,
-        "value": 0
+        "value": 1.0
        },
        "recall": {
         "in_rn_zone": [
@@ -14353,7 +14353,7 @@
          0.0
         ],
         "total_penalty": 0.0,
-        "value": 0
+        "value": 1.0
        }
       },
       "global_sas": {
@@ -14422,7 +14422,7 @@
        }
       },
       "nas": {
-       "value": 0.0
+       "value": 1.0
       },
       "sas": {
        "global_sas_internals": {
@@ -14455,7 +14455,7 @@
        "value": 1.0
       },
       "vcs": {
-       "value": 0.0
+       "value": 1.0
       }
      },
      "similarity": {

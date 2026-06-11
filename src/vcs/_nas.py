@@ -80,10 +80,13 @@ def _calculate_global_nas(
     )
 
     max_total_penalty = _calculate_max_penalty(alignment_windows, length)
-    
+
     total_penalty = np.sum(penalties)
-    
-    global_nas = 1 - (total_penalty / max_total_penalty) if max_total_penalty else 0
+
+    # max_total_penalty == 0 means every alignment window spans the whole
+    # other side (the min(m, n) == 1 family): no match can deviate, so the
+    # direction is vacuously perfect — not failed.
+    global_nas = 1 - (total_penalty / max_total_penalty) if max_total_penalty else 1.0
 
     if collect_details:
         internals.update({

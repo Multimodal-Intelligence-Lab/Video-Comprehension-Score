@@ -76,3 +76,38 @@ def test_negative_gas_unclamped_dies_at_gate():
     assert out["Global_SAS"] == -1.0
     assert out["SAS"] == 0.0
     assert out["VCS"] == 0.0
+
+
+# --- A1: min(m, n) == 1 makes Global NAS vacuously perfect --------------------
+
+def test_single_chunk_identity_scores_one():
+    out = run([e(0)], [e(0)])
+    assert out["Precision Global NAS"] == 1.0
+    assert out["Recall Global NAS"] == 1.0
+    assert out["VCS"] == 1.0
+
+
+def test_one_ref_many_gen_global_nas_vacuous():
+    out = run([e(0)], [e(0), e(1), e(2), e(3), e(4)])
+    assert out["Precision Global NAS"] == 1.0
+    assert out["Recall Global NAS"] == 1.0
+    assert out["Global NAS"] == 1.0
+
+
+def test_many_ref_one_gen_missing_content_dies_via_sas():
+    # The A1 fix must not hand out free points: a gen that dropped most of
+    # the reference still dies, but at the SAS gate where it belongs (GAS
+    # sees the missing content), not via a vacuous-chronology zero.
+    out = run([e(0), e(1), e(2), e(3), e(4)], [e(0)], ref_doc=e(5), gen_doc=e(6))
+    assert out["Global NAS"] == 1.0
+    assert out["SAS"] == 0.0
+    assert out["VCS"] == 0.0
+
+
+def test_vacuous_branch_unreachable_at_2x2():
+    # For min(m, n) >= 2 the max-penalty normalizer is positive: the
+    # vacuous-1.0 branch is exclusive to the min(m, n) == 1 family.
+    out = run([e(0), e(1)], [e(0), e(1)])
+    global_nas = out["internals"]["metrics"]["global_nas"]
+    assert global_nas["precision"]["max_penalty"] > 0
+    assert global_nas["recall"]["max_penalty"] > 0

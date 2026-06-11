@@ -105,9 +105,10 @@ CASES = [
     {"name": "duplication_load_sharing", "ref": SQUARE_REF_4, "gen": DUPLICATION_GEN_4, "params": {}},
     {"name": "reordered_8v8", "ref": REF_STORY_8, "gen": REORDERED_GEN_8, "params": {}},
     {"name": "half_omission_8v4", "ref": REF_STORY_8, "gen": HALF_OMISSION_GEN_4, "params": {}},
-    # Known v1 pathology (math-phase backlog item M1): with m = n = 1 the
-    # Global-NAS max-penalty normalizer is vacuously 0, so Global NAS = 0
-    # and VCS = 0.0 even for identical texts. Pinned on purpose.
+    # min(m, n) == 1: every alignment window spans the whole other side, so
+    # the Global-NAS max-penalty normalizer is vacuously 0. Scored 0.0 in
+    # v1/v2 (the old M1 pathology); since v3 it is vacuously perfect (1.0),
+    # so identical single-sentence texts score VCS = 1.
     {"name": "single_chunk_identical", "ref": SINGLE_SENTENCE, "gen": SINGLE_SENTENCE, "params": {}},
     {"name": "empty_string_segments", "ref": EMPTY_SEG_REF, "gen": EMPTY_SEG_GEN, "params": {}, "segmenter": "keep_empty"},
     {"name": "chunk_size_2", "ref": REF_STORY_8, "gen": GEN_SUMMARY_3, "params": {"chunk_size": 2}},
