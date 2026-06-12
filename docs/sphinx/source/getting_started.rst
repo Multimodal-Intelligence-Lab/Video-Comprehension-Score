@@ -315,7 +315,7 @@ These parameters control what information VCS returns to you:
    - Individual Global_SAS, Local_SAS, SAS, NAS scores
    - Local SAS precision and recall components
    - Global and Local NAS sub-metrics with precision/recall breakdowns
-   - ``VCS Margin``: SAS + NAS - 1 in [-1, 1], ranks candidates below the VCS zero gate
+   - ``SAS Margin``: Global_SAS + Local_SAS - 1 in [-2, 1], ranks candidates below the VCS zero gate by content
    - ``Config``: provenance string with the library version and every knob value used
    - Complete metric breakdown for detailed analysis
 

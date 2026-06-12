@@ -637,7 +637,7 @@ Once you're comfortable with the basics, you can fine-tune VCS behavior for your
 - Individual Global SAS, Local SAS, NAS scores
 - Local SAS precision and recall components
 - Global and Local NAS sub-metrics
-- `VCS Margin` (ranks candidates below the VCS zero gate)
+- `SAS Margin` (ranks candidates below the VCS zero gate by content)
 - `Config` provenance string (library version + knob values)
 - Complete metric breakdown for analysis
 
@@ -751,7 +751,7 @@ result = compute_vcs_score(
 
 <details>
 <summary><strong>📊 My scores look low — is something wrong?</strong></summary>
-<p>Probably not: VCS compounds its components. With SAS = NAS = x the score is max(0, 2x−1)/x, so 0.8-quality content in 0.8-quality order yields VCS ≈ 0.75, and anything at or below 0.5 on both gates to exactly 0. Calibrate thresholds on this scale rather than raw cosine intuition. To rank candidates that the zero gate maps to 0.0, use the <code>VCS Margin</code> output (SAS + NAS − 1) from <code>return_all_metrics</code>.</p>
+<p>Probably not: VCS compounds its components. With SAS = NAS = x the score is max(0, 2x−1)/x, so 0.8-quality content in 0.8-quality order yields VCS ≈ 0.75, and anything at or below 0.5 on both gates to exactly 0. Calibrate thresholds on this scale rather than raw cosine intuition. To rank candidates that the zero gate maps to 0.0, use the <code>SAS Margin</code> output (Global_SAS + Local_SAS − 1) from <code>return_all_metrics</code>.</p>
 </details>
 
 ---

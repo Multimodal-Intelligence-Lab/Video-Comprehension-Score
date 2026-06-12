@@ -62,12 +62,12 @@ matched against the change's predicted footprint.
   before, backward jumps are graded against the forward allowance).
 
 ### Added
-- **`"VCS Margin"`** (under `return_all_metrics`): `SAS + NAS - 1` in
-  `[-1, 1]` — the shared numerator of both VCS scaling branches, so
-  `VCS > 0` iff margin > 0 and `VCS == margin / max(SAS, NAS)` when
-  positive. Unlike VCS it is not clamped, so it keeps ranking
-  candidates that the VCS zero gate maps to a flat 0. Also exposed as
-  `internals["metrics"]["vcs"]["margin"]`.
+- **`"SAS Margin"`** (under `return_all_metrics`): `Global_SAS + Local_SAS - 1`
+  in `[-2, 1]` — the numerator of the SAS gate, so `SAS > 0` iff margin > 0
+  and `SAS == margin / Local_SAS` when positive. It is content-only (no NAS
+  term, hence Rn-invariant), so it keeps ranking candidates that the VCS
+  zero gate maps to a flat 0 by content, without inheriting NAS's below-gate
+  instability. Also exposed as `internals["metrics"]["sas"]["margin"]`.
 - **`"Config"`** (under `return_all_metrics`): a provenance string
   `vcs=<version>|chunk_size=...|rn=...|context_cutoff=...|context_window_control=...`
   covering the library version and every knob the library controls

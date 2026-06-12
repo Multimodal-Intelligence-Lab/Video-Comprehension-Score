@@ -228,7 +228,9 @@ def _compute_sas_metrics(
     Returns:
         Tuple containing:
         - Dict with "Global_SAS", "Precision Local_SAS", "Recall Local_SAS",
-          "Local_SAS", "SAS" scores
+          "Local_SAS", "SAS", and "SAS Margin" (Global_SAS + Local_SAS - 1,
+          the unclamped SAS-gate numerator; ranks candidates below the
+          VCS/SAS zero gate by content) scores
         - Dict with internals/breakdown information
     """
     local_sas = local_sas_metrics["Local_SAS"]
@@ -241,7 +243,8 @@ def _compute_sas_metrics(
         "Precision Local_SAS": local_sas_metrics["Precision Local_SAS"],
         "Recall Local_SAS": local_sas_metrics["Recall Local_SAS"],
         "Local_SAS": local_sas,
-        "SAS": sas
+        "SAS": sas,
+        "SAS Margin": global_sas + local_sas - 1.0,
     }
 
     internals = {

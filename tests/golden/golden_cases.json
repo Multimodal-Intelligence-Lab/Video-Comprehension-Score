@@ -18,8 +18,8 @@
     "Recall Local NAS": 0.585786437626905,
     "Recall Local_SAS": 0.09038176347278969,
     "SAS": 0.0,
+    "SAS Margin": -0.44306484533193025,
     "VCS": 0.0,
-    "VCS Margin": -0.20641850530526284,
     "internals": {
      "alignment": {
       "precision": {
@@ -619,10 +619,10 @@
          ]
         }
        },
+       "margin": -0.44306484533193025,
        "value": 0.0
       },
       "vcs": {
-       "margin": -0.20641850530526284,
        "value": 0.0
       }
      },
@@ -681,8 +681,8 @@
     "Recall Local NAS": 1.0,
     "Recall Local_SAS": 0.0,
     "SAS": 0.0,
+    "SAS Margin": -0.5937321045896974,
     "VCS": 0.0,
-    "VCS Margin": 0.0,
     "internals": {
      "alignment": {
       "precision": {
@@ -1129,10 +1129,10 @@
          ]
         }
        },
+       "margin": -0.5937321045896974,
        "value": 0.0
       },
       "vcs": {
-       "margin": 0.0,
        "value": 0.0
       }
      },
@@ -1185,8 +1185,8 @@
     "Recall Local NAS": 1.0,
     "Recall Local_SAS": 0.4047092226539212,
     "SAS": 0.0,
+    "SAS Margin": -0.04210508600257279,
     "VCS": 0.0,
-    "VCS Margin": 0.0,
     "internals": {
      "alignment": {
       "precision": {
@@ -1634,10 +1634,10 @@
          ]
         }
        },
+       "margin": -0.04210508600257279,
        "value": 0.0
       },
       "vcs": {
-       "margin": 0.0,
        "value": 0.0
       }
      },
@@ -1687,8 +1687,8 @@
     "Recall Local NAS": 0.6386979044864147,
     "Recall Local_SAS": 0.08472646593305652,
     "SAS": 0.0,
+    "SAS Margin": -0.455979930515239,
     "VCS": 0.0,
-    "VCS Margin": -1.0,
     "internals": {
      "alignment": {
       "precision": {
@@ -2706,10 +2706,10 @@
          ]
         }
        },
+       "margin": -0.455979930515239,
        "value": 0.0
       },
       "vcs": {
-       "margin": -1.0,
        "value": 0.0
       }
      },
@@ -2798,8 +2798,8 @@
     "Recall Local NAS": 0.6386979044864147,
     "Recall Local_SAS": 0.08472646593305652,
     "SAS": 0.0,
+    "SAS Margin": -0.45578172190244226,
     "VCS": 0.0,
-    "VCS Margin": -0.3617956926300432,
     "internals": {
      "alignment": {
       "precision": {
@@ -3784,10 +3784,10 @@
          ]
         }
        },
+       "margin": -0.45578172190244226,
        "value": 0.0
       },
       "vcs": {
-       "margin": -0.3617956926300432,
        "value": 0.0
       }
      },
@@ -3873,8 +3873,8 @@
     "Recall Local NAS": 0.0,
     "Recall Local_SAS": 0.14649283696262472,
     "SAS": 0.0,
+    "SAS Margin": -0.5068703171659019,
     "VCS": 0.0,
-    "VCS Margin": -1.0,
     "internals": {
      "alignment": {
       "precision": {
@@ -4644,10 +4644,10 @@
          ]
         }
        },
+       "margin": -0.5068703171659019,
        "value": 0.0
       },
       "vcs": {
-       "margin": -1.0,
        "value": 0.0
       }
      },
@@ -4714,8 +4714,8 @@
     "Recall Local NAS": 0.3333333333333333,
     "Recall Local_SAS": 0.14649283696262472,
     "SAS": 0.0,
+    "SAS Margin": -0.5068703171659019,
     "VCS": 0.0,
-    "VCS Margin": -1.0,
     "internals": {
      "alignment": {
       "precision": {
@@ -5485,10 +5485,10 @@
          ]
         }
        },
+       "margin": -0.5068703171659019,
        "value": 0.0
       },
       "vcs": {
-       "margin": -1.0,
        "value": 0.0
       }
      },
@@ -5555,8 +5555,8 @@
     "Recall Local NAS": 0.2357022603955158,
     "Recall Local_SAS": 0.5416666666666665,
     "SAS": 0.7103949234933105,
+    "SAS Margin": 0.4436425109500193,
     "VCS": 0.1729757756711332,
-    "VCS Margin": 0.12288111292409076,
     "internals": {
      "alignment": {
       "precision": {
@@ -6336,10 +6336,10 @@
          ]
         }
        },
+       "margin": 0.4436425109500193,
        "value": 0.7103949234933105
       },
       "vcs": {
-       "margin": 0.12288111292409076,
        "value": 0.1729757756711332
       }
      },
@@ -6406,8 +6406,8 @@
     "Recall Local NAS": 1.0,
     "Recall Local_SAS": 0.7132155264219757,
     "SAS": 0.3952636091397106,
+    "SAS Margin": 0.2819081430680286,
     "VCS": 0.3952636091397106,
-    "VCS Margin": 0.3952636091397106,
     "internals": {
      "alignment": {
       "precision": {
@@ -6959,10 +6959,10 @@
          ]
         }
        },
+       "margin": 0.2819081430680286,
        "value": 0.3952636091397106
       },
       "vcs": {
-       "margin": 0.3952636091397106,
        "value": 0.3952636091397106
       }
      },
@@ -7018,8 +7018,8 @@
     "Recall Local NAS": 0.2928932188134525,
     "Recall Local_SAS": 0.5192375170109276,
     "SAS": 0.8021347694026755,
+    "SAS Margin": 0.5482993426758331,
     "VCS": 0.3729154040467648,
-    "VCS Margin": 0.2991284116317572,
     "internals": {
      "alignment": {
       "precision": {
@@ -8117,10 +8117,10 @@
          ]
         }
        },
+       "margin": 0.5482993426758331,
        "value": 0.8021347694026755
       },
       "vcs": {
-       "margin": 0.2991284116317572,
        "value": 0.3729154040467648
       }
      },
@@ -8215,8 +8215,8 @@
     "Recall Local NAS": 1.0,
     "Recall Local_SAS": 1.0,
     "SAS": 1.0,
+    "SAS Margin": 1.0,
     "VCS": 1.0,
-    "VCS Margin": 1.0,
     "internals": {
      "alignment": {
       "precision": {
@@ -8910,10 +8910,10 @@
          ]
         }
        },
+       "margin": 1.0,
        "value": 1.0
       },
       "vcs": {
-       "margin": 1.0,
        "value": 1.0
       }
      },
@@ -8980,8 +8980,8 @@
     "Recall Local NAS": 0.5714285714285714,
     "Recall Local_SAS": 1.0,
     "SAS": 0.9967977517851404,
+    "SAS Margin": 0.9967977517851403,
     "VCS": 0.6388434872016064,
-    "VCS Margin": 0.6367977517851404,
     "internals": {
      "alignment": {
       "precision": {
@@ -10243,10 +10243,10 @@
          ]
         }
        },
+       "margin": 0.9967977517851403,
        "value": 0.9967977517851404
       },
       "vcs": {
-       "margin": 0.6367977517851404,
        "value": 0.6388434872016064
       }
      },
@@ -10379,8 +10379,8 @@
     "Recall Local NAS": 0.5714285714285714,
     "Recall Local_SAS": 1.0,
     "SAS": 0.9967977517851404,
+    "SAS Margin": 0.9967977517851403,
     "VCS": 0.6867797965926452,
-    "VCS Margin": 0.6845805572150048,
     "internals": {
      "alignment": {
       "precision": {
@@ -11642,10 +11642,10 @@
          ]
         }
        },
+       "margin": 0.9967977517851403,
        "value": 0.9967977517851404
       },
       "vcs": {
-       "margin": 0.6845805572150048,
        "value": 0.6867797965926452
       }
      },
@@ -11778,8 +11778,8 @@
     "Recall Local NAS": 0.8941770662809806,
     "Recall Local_SAS": 0.08472646593305652,
     "SAS": 0.0,
+    "SAS Margin": -0.45578172190244226,
     "VCS": 0.0,
-    "VCS Margin": -0.15671355565787737,
     "internals": {
      "alignment": {
       "precision": {
@@ -12764,10 +12764,10 @@
          ]
         }
        },
+       "margin": -0.45578172190244226,
        "value": 0.0
       },
       "vcs": {
-       "margin": -0.15671355565787737,
        "value": 0.0
       }
      },
@@ -12855,8 +12855,8 @@
     "Recall Local NAS": 0.8571428571428571,
     "Recall Local_SAS": 1.0,
     "SAS": 0.9967977517851404,
+    "SAS Margin": 0.9967977517851403,
     "VCS": 0.8599288157909794,
-    "VCS Margin": 0.8571751102757064,
     "internals": {
      "alignment": {
       "precision": {
@@ -14118,10 +14118,10 @@
          ]
         }
        },
+       "margin": 0.9967977517851403,
        "value": 0.9967977517851404
       },
       "vcs": {
-       "margin": 0.8571751102757064,
        "value": 0.8599288157909794
       }
      },
@@ -14252,8 +14252,8 @@
     "Recall Local NAS": 1.0,
     "Recall Local_SAS": 1.0000000000000002,
     "SAS": 1.0,
+    "SAS Margin": 1.0,
     "VCS": 1.0,
-    "VCS Margin": 1.0,
     "internals": {
      "alignment": {
       "precision": {
@@ -14499,10 +14499,10 @@
          ]
         }
        },
+       "margin": 1.0,
        "value": 1.0
       },
       "vcs": {
-       "margin": 1.0,
        "value": 1.0
       }
      },
@@ -14542,8 +14542,8 @@
     "Recall Local NAS": 0.3333333333333333,
     "Recall Local_SAS": 0.1903244641457611,
     "SAS": 0.0,
+    "SAS Margin": -0.25648984451073287,
     "VCS": 0.0,
-    "VCS Margin": -0.5294117647058824,
     "internals": {
      "alignment": {
       "precision": {
@@ -15313,10 +15313,10 @@
          ]
         }
        },
+       "margin": -0.25648984451073287,
        "value": 0.0
       },
       "vcs": {
-       "margin": -0.5294117647058824,
        "value": 0.0
       }
      },
@@ -15383,8 +15383,8 @@
     "Recall Local NAS": 0.6125741132772069,
     "Recall Local_SAS": 0.37101913032003053,
     "SAS": 0.0,
+    "SAS Margin": -0.45578172190244226,
     "VCS": 0.0,
-    "VCS Margin": -0.3617956926300432,
     "internals": {
      "alignment": {
       "precision": {
@@ -16369,10 +16369,10 @@
          ]
         }
        },
+       "margin": -0.45578172190244226,
        "value": 0.0
       },
       "vcs": {
-       "margin": -0.3617956926300432,
        "value": 0.0
       }
      },
@@ -16448,8 +16448,8 @@
     "Recall Local NAS": 0.6386979044864147,
     "Recall Local_SAS": 0.08472646593305652,
     "SAS": 0.0,
+    "SAS Margin": -0.45578172190244226,
     "VCS": 0.0,
-    "VCS Margin": -0.3617956926300432,
     "internals": {
      "alignment": {
       "precision": {
@@ -17434,10 +17434,10 @@
          ]
         }
        },
+       "margin": -0.45578172190244226,
        "value": 0.0
       },
       "vcs": {
-       "margin": -0.3617956926300432,
        "value": 0.0
       }
      },

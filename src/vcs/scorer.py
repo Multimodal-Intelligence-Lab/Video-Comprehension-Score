@@ -86,7 +86,7 @@ def compute_vcs_score(
     Calibrate expectations (and any pass/fail thresholds) on this scale.
     VCS = 0.0 is a gate, not a fine-grained judgment: content (SAS) and
     order (NAS) must both clear it. To rank candidates below the gate,
-    use ``'VCS Margin'`` from ``return_all_metrics``.
+    use ``'SAS Margin'`` from ``return_all_metrics``.
 
     Repeated content is tolerated by design: generated chunks that
     paraphrase the same reference chunk share that chunk's credit through
@@ -169,6 +169,9 @@ def compute_vcs_score(
         * ``'Precision Local_SAS'`` : float - Local_SAS precision component
         * ``'Recall Local_SAS'`` : float - Local_SAS recall component
         * ``'Local_SAS'`` : float - Local Semantic Alignment Score (F1 of precision/recall)
+        * ``'SAS Margin'`` : float - Global_SAS + Local_SAS - 1 in [-2, 1];
+          content-only (no NAS, hence Rn-invariant); ranks candidates below
+          the VCS zero gate by content (SAS > 0 iff margin > 0)
         * ``'Precision Global NAS'`` : float - Global NAS precision
         * ``'Recall Global NAS'`` : float - Global NAS recall
         * ``'Global NAS'`` : float - Global Narrative Alignment Score
@@ -176,8 +179,6 @@ def compute_vcs_score(
         * ``'Recall Local NAS'`` : float - Local NAS recall
         * ``'Local NAS'`` : float - Local Narrative Alignment Score
         * ``'NAS'`` : float - Final Narrative Alignment Score
-        * ``'VCS Margin'`` : float - SAS + NAS - 1 in [-1, 1]; ranks
-          candidates below the VCS zero gate (VCS > 0 iff margin > 0)
         * ``'Config'`` : str - library version + knob values used
           (``vcs=...|chunk_size=...|rn=...|context_cutoff=...|context_window_control=...``).
           Knob values are formatted as passed (``0.6``, ``1`` and ``1.0``
@@ -548,6 +549,7 @@ def _run_vcs_pipeline(
                 },
                 "sas": {
                     "value": sas_metrics["SAS"],
+                    "margin": sas_metrics["SAS Margin"],
                     "global_sas_internals": sas_internals.get("global_sas_internals", {}),
                     "local_sas_internals": sas_internals.get("local_sas_internals", {}),
                 },
@@ -600,7 +602,6 @@ def _run_vcs_pipeline(
                 },
                 "vcs": {
                     "value": combined["VCS"],
-                    "margin": combined["VCS Margin"],
                 },
             },
             "config": {

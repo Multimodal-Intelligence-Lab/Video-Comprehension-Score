@@ -17,7 +17,7 @@ METRIC_BOUND_EPS = 1e-12
 
 SWAP_KEY = {
     "VCS": "VCS",
-    "VCS Margin": "VCS Margin",
+    "SAS Margin": "SAS Margin",
     "Config": "Config",
     "Global_SAS": "Global_SAS",
     "Local_SAS": "Local_SAS",
@@ -50,8 +50,9 @@ def test_metrics_bounded(case):
     for key, value in output.items():
         if key == "Config":  # str, not a metric
             continue
-        # the margin is the one deliberately signed output: SAS + NAS - 1
-        lower = -1.0 if key == "VCS Margin" else 0.0
+        # SAS Margin is the one deliberately signed output: Global_SAS +
+        # Local_SAS - 1, and Global_SAS is unclamped, so it floors at -2
+        lower = -2.0 if key == "SAS Margin" else 0.0
         assert lower - METRIC_BOUND_EPS <= value <= 1.0 + METRIC_BOUND_EPS, (
             f"{case['name']}: {key} = {value!r} outside [{lower}, 1]"
         )

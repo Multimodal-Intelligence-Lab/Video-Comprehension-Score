@@ -197,45 +197,61 @@ def test_recall_bound_zero_step():
     assert not seg["is_calculable"] and seg["calculation_method"] == "none"
 
 
-# --- VCS Margin + Config outputs ----------------------------------------------
+# --- SAS Margin + Config outputs ----------------------------------------------
 
 @pytest.mark.parametrize("case", CASES, ids=[case["name"] for case in CASES])
-def test_margin_is_the_vcs_gate_numerator(case):
-    """VCS Margin = SAS + NAS - 1 exactly; it shares the sign of VCS's
-    Lukasiewicz numerator, so VCS > 0 iff margin > 0, and when positive
-    VCS == margin / max(SAS, NAS) (approx: the pipeline computes the
-    numerator as a - (1 - b), which can differ from a + b - 1 by an ulp)."""
-    out = compute_vcs_score(**build_call_kwargs(case), return_all_metrics=True)
-    assert out["VCS Margin"] == out["SAS"] + out["NAS"] - 1.0
-    if out["VCS"] > 0:
-        assert out["VCS Margin"] > 0
-        assert out["VCS"] == pytest.approx(
-            out["VCS Margin"] / max(out["SAS"], out["NAS"]), abs=1e-12
+def test_margin_is_the_sas_gate_numerator(case):
+    """SAS Margin = Global_SAS + Local_SAS - 1 exactly; it is the numerator
+    of the SAS gate, so SAS > 0 iff margin > 0, and when positive
+    SAS == margin / Local_SAS (approx: _compute_sas forms the numerator as
+    gas - (1 - las), which can differ from gas + las - 1 by an ulp). It
+    carries no NAS term -- the content-only analogue of the old VCS Margin --
+    and the internals expose it under metrics.sas.margin."""
+    out = compute_vcs_score(**build_call_kwargs(case),
+                            return_all_metrics=True, return_internals=True)
+    assert out["SAS Margin"] == out["Global_SAS"] + out["Local_SAS"] - 1.0
+    assert out["internals"]["metrics"]["sas"]["margin"] == out["SAS Margin"]
+    if out["SAS"] > 0:
+        assert out["SAS Margin"] > 0
+        assert out["SAS"] == pytest.approx(
+            out["SAS Margin"] / out["Local_SAS"], abs=1e-12
         )
     else:
-        assert out["VCS Margin"] <= 0
+        assert out["SAS Margin"] <= 0
 
 
 def test_margin_calibration_endpoints():
     identical = next(c for c in CASES if c["name"] == "identical_4")
     out = compute_vcs_score(**build_call_kwargs(identical), return_all_metrics=True)
-    assert out["VCS Margin"] == pytest.approx(1.0, abs=1e-12)
+    assert out["SAS Margin"] == pytest.approx(1.0, abs=1e-12)
 
     disjoint = next(c for c in CASES if c["name"] == "disjoint_4")
     out = compute_vcs_score(**build_call_kwargs(disjoint), return_all_metrics=True)
-    assert out["VCS"] == 0.0
-    assert out["VCS Margin"] <= 0.0
+    assert out["SAS"] == 0.0
+    assert out["SAS Margin"] <= 0.0
 
 
-def test_margin_ranks_below_the_zero_gate():
-    """Two candidates both killed by the SAS gate (orthogonal docs) must
-    still order by margin: chunks in reference order keep their NAS and
-    sit at margin 0, a full reversal loses NAS too and ranks below."""
+def test_margin_ranks_below_the_gate_by_content():
+    """Below the gate (orthogonal docs -> Global_SAS=0 -> SAS=0 -> VCS=0),
+    SAS Margin = Global_SAS + Local_SAS - 1 still ranks by CONTENT: a gen
+    that reproduces the reference chunks (Local_SAS=1) sits at margin 0,
+    while a gen orthogonal to every reference chunk (Local_SAS=0) sinks to
+    margin -1. And because there is no NAS term, the margin is INVARIANT to
+    chunk order -- exactly why it is sound where the old VCS Margin (which
+    inherited NAS below the gate) was not."""
     refs = [e(0), e(1), e(2), e(3)]
-    in_order = run(refs, [e(0), e(1), e(2), e(3)], ref_doc=e(4), gen_doc=e(5))
-    reversed_ = run(refs, [e(3), e(2), e(1), e(0)], ref_doc=e(4), gen_doc=e(5))
-    assert in_order["VCS"] == 0.0 and reversed_["VCS"] == 0.0
-    assert in_order["VCS Margin"] > reversed_["VCS Margin"]
+    full = run(refs, [e(0), e(1), e(2), e(3)], ref_doc=e(4), gen_doc=e(5))
+    empty = run(refs, [e(4), e(5), e(6), e(7)], ref_doc=e(4), gen_doc=e(5))
+    # both killed by the gate: no doc-level content survives
+    assert full["VCS"] == 0.0 and empty["VCS"] == 0.0
+    assert full["SAS"] == 0.0 and empty["SAS"] == 0.0
+    # ranked by content below the gate
+    assert full["SAS Margin"] == pytest.approx(0.0, abs=1e-12)
+    assert empty["SAS Margin"] == pytest.approx(-1.0, abs=1e-12)
+    assert full["SAS Margin"] > empty["SAS Margin"]
+    # no NAS term -> reordering the gen chunks cannot move the margin
+    reordered = run(refs, [e(3), e(2), e(1), e(0)], ref_doc=e(4), gen_doc=e(5))
+    assert reordered["SAS Margin"] == pytest.approx(full["SAS Margin"], abs=1e-12)
 
 
 def test_config_string_fields():
